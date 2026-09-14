@@ -1,0 +1,46 @@
+{
+  "blog_items_considered": 0,
+  "blog_recommendations": [],
+  "blog_stories_considered": 0,
+  "covered_dates": [],
+  "generated_at": "2026-09-14T00:30:04.788776+00:00",
+  "items_considered": 0,
+  "missing_dates": [
+    "2026-09-07",
+    "2026-09-08",
+    "2026-09-09",
+    "2026-09-10",
+    "2026-09-11",
+    "2026-09-12",
+    "2026-09-13"
+  ],
+  "period_end": "2026-09-13",
+  "period_id": "2026-W37",
+  "period_start": "2026-09-07",
+  "recommendations": [],
+  "report_type": "weekly",
+  "selection_policy": {
+    "archive_lookahead_days": 1,
+    "blog_limit": 30,
+    "blog_ranking": "score.total_score descending, then publication time descending; blog/article stories, including Japanese AI engineering sources, are pulled from daily top5 and radar",
+    "dedupe_keys": [
+      "arxiv_id",
+      "story_id",
+      "primary_link.url"
+    ],
+    "limit": 100,
+    "metadata_source": "ai",
+    "period_source": "target_date and report_type",
+    "ranking": "score.total_score descending, then publication time descending; paper-like stories are pulled from daily papers, top5, and radar",
+    "source_sections": [
+      "papers",
+      "top5",
+      "radar"
+    ]
+  },
+  "source_files": [],
+  "stories_considered": 0,
+  "summary": "本週（9/7 至 9/13）七個日期皆無收錄論文或技術文章，推薦數為零，故無研究方向與選文脈絡可摘要。建議待資料補齊後再行整理，以維持週報的完整與可讀性。",
+  "timezone": "UTC",
+  "title": "AI 研究週報：本週無收錄文章"
+}
