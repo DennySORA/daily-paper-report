@@ -10,7 +10,7 @@ research guides, and publishes a static Vue site.
 - `deepseek-v4-flash` is the only LLM and uses its 1M-token context window.
 - Full paper text is cached only on the Nano; it is never published or pushed to GitHub.
 - The Nano pushes validated static output to `gh-pages`; GitHub Pages serves
-  `paper.sorahane-kyoukai.org` from that branch.
+  `paper.dennysora.me` from that branch.
 - SQLite and small JSON caches are backed up to the `state` branch.
 - There are no repository workflow files. GitHub's internal Pages publication run is
   still expected when `gh-pages` changes.

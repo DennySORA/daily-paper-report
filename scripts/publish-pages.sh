@@ -4,9 +4,9 @@ set -euo pipefail
 
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 PUBLIC_DIR="${PUBLIC_DIR:-${ROOT_DIR}/runtime/public}"
-REMOTE_URL="${REMOTE_URL:-git@github.com:sorahane-kyoukai/daily-paper-report.git}"
+REMOTE_URL="${REMOTE_URL:-git@github.com:DennySORA/daily-paper-report.git}"
 PAGES_BRANCH="${PAGES_BRANCH:-gh-pages}"
-DOMAIN="${PAGES_DOMAIN:-paper.sorahane-kyoukai.org}"
+DOMAIN="${PAGES_DOMAIN:-paper.dennysora.me}"
 DEPLOY_KEY="${DEPLOY_KEY:-/etc/daily-paper-report/github_deploy_key}"
 PYTHON_BIN="${PYTHON_BIN:-python3}"
 if test -f "${DEPLOY_KEY}"; then

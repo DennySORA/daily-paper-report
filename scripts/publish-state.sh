@@ -5,7 +5,7 @@ set -euo pipefail
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 DATA_DIR="${DATA_DIR:-${ROOT_DIR}/runtime/data}"
 PUBLIC_DIR="${PUBLIC_DIR:-${ROOT_DIR}/runtime/public}"
-REMOTE_URL="${REMOTE_URL:-git@github.com:sorahane-kyoukai/daily-paper-report.git}"
+REMOTE_URL="${REMOTE_URL:-git@github.com:DennySORA/daily-paper-report.git}"
 STATE_BRANCH="${STATE_BRANCH:-state}"
 STATE_FILE="${DATA_DIR}/state.sqlite"
 DEPLOY_KEY="${DEPLOY_KEY:-/etc/daily-paper-report/github_deploy_key}"
