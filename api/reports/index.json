@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-14T00:30:23.541979+00:00",
+  "generated_at": "2026-09-21T00:30:40.658965+00:00",
   "latest": {
     "monthly": "2026-08",
-    "weekly": "2026-W37"
+    "weekly": "2026-W38"
   },
   "monthly": [
     {
@@ -75,6 +75,25 @@
     }
   ],
   "weekly": [
+    {
+      "blog_recommendation_count": 0,
+      "generated_at": "2026-09-21T00:30:04.404679+00:00",
+      "missing_dates": [
+        "2026-09-14",
+        "2026-09-15",
+        "2026-09-18",
+        "2026-09-19",
+        "2026-09-20"
+      ],
+      "path": "api/reports/weekly/2026-W38.json",
+      "period_end": "2026-09-20",
+      "period_id": "2026-W38",
+      "period_start": "2026-09-14",
+      "recommendation_count": 100,
+      "report_type": "weekly",
+      "summary": "本期收錄約百篇 AI 研究，主軸為 LLM 評測與獎勵訊號可靠性、Transformer 內部機制與 Looped 架構的推理效率，並涵蓋多代理系統風險、工具呼叫安全與隱私保護推論。選文強調理論驗證與可重現基準，適合關注模型可解釋性、評測方法與安全防禦的讀者。",
+      "title": "AI 研究週報：LLM 評測、模型內部與代理安全"
+    },
     {
       "blog_recommendation_count": 0,
       "generated_at": "2026-09-14T00:30:04.788776+00:00",
