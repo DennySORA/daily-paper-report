@@ -1,0 +1,46 @@
+{
+  "blog_items_considered": 0,
+  "blog_recommendations": [],
+  "blog_stories_considered": 0,
+  "covered_dates": [],
+  "generated_at": "2026-09-28T00:30:03.944678+00:00",
+  "items_considered": 0,
+  "missing_dates": [
+    "2026-09-21",
+    "2026-09-22",
+    "2026-09-23",
+    "2026-09-24",
+    "2026-09-25",
+    "2026-09-26",
+    "2026-09-27"
+  ],
+  "period_end": "2026-09-27",
+  "period_id": "2026-W39",
+  "period_start": "2026-09-21",
+  "recommendations": [],
+  "report_type": "weekly",
+  "selection_policy": {
+    "archive_lookahead_days": 1,
+    "blog_limit": 30,
+    "blog_ranking": "score.total_score descending, then publication time descending; blog/article stories, including Japanese AI engineering sources, are pulled from daily top5 and radar",
+    "dedupe_keys": [
+      "arxiv_id",
+      "story_id",
+      "primary_link.url"
+    ],
+    "limit": 100,
+    "metadata_source": "ai",
+    "period_source": "target_date and report_type",
+    "ranking": "score.total_score descending, then publication time descending; paper-like stories are pulled from daily papers, top5, and radar",
+    "source_sections": [
+      "papers",
+      "top5",
+      "radar"
+    ]
+  },
+  "source_files": [],
+  "stories_considered": 0,
+  "summary": "本期週報尚未收錄任何推薦論文或技術文章，各日期內容均待補充，故暫無研究方向與選讀脈絡可供總結，建議待資料齊備後再參閱完整報告。",
+  "timezone": "UTC",
+  "title": "AI 研究與技術文章週報"
+}
