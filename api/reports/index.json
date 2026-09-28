@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-21T00:30:40.658965+00:00",
+  "generated_at": "2026-09-28T00:30:42.779763+00:00",
   "latest": {
     "monthly": "2026-08",
-    "weekly": "2026-W38"
+    "weekly": "2026-W39"
   },
   "monthly": [
     {
@@ -75,6 +75,27 @@
     }
   ],
   "weekly": [
+    {
+      "blog_recommendation_count": 0,
+      "generated_at": "2026-09-28T00:30:03.944678+00:00",
+      "missing_dates": [
+        "2026-09-21",
+        "2026-09-22",
+        "2026-09-23",
+        "2026-09-24",
+        "2026-09-25",
+        "2026-09-26",
+        "2026-09-27"
+      ],
+      "path": "api/reports/weekly/2026-W39.json",
+      "period_end": "2026-09-27",
+      "period_id": "2026-W39",
+      "period_start": "2026-09-21",
+      "recommendation_count": 0,
+      "report_type": "weekly",
+      "summary": "本期週報尚未收錄任何推薦論文或技術文章，各日期內容均待補充，故暫無研究方向與選讀脈絡可供總結，建議待資料齊備後再參閱完整報告。",
+      "title": "AI 研究與技術文章週報"
+    },
     {
       "blog_recommendation_count": 0,
       "generated_at": "2026-09-21T00:30:04.404679+00:00",
