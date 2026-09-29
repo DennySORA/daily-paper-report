@@ -1,0 +1,3857 @@
+{
+  "archive_dates": [
+    "2026-09-29",
+    "2026-09-17",
+    "2026-09-16",
+    "2026-09-01",
+    "2026-08-30",
+    "2026-08-29",
+    "2026-08-28",
+    "2026-08-27",
+    "2026-08-26",
+    "2026-08-25",
+    "2026-08-24",
+    "2026-08-23",
+    "2026-08-22",
+    "2026-08-21",
+    "2026-08-20",
+    "2026-08-19",
+    "2026-08-18",
+    "2026-08-17",
+    "2026-08-16",
+    "2026-08-15",
+    "2026-08-14",
+    "2026-08-13",
+    "2026-08-12",
+    "2026-08-10",
+    "2026-08-09",
+    "2026-08-08",
+    "2026-08-07",
+    "2026-08-06",
+    "2026-08-05",
+    "2026-08-04",
+    "2026-08-03",
+    "2026-08-02",
+    "2026-08-01",
+    "2026-07-31",
+    "2026-07-30",
+    "2026-07-29",
+    "2026-07-28",
+    "2026-07-27",
+    "2026-07-26",
+    "2026-07-25",
+    "2026-07-24",
+    "2026-07-23",
+    "2026-07-22",
+    "2026-07-21",
+    "2026-07-20",
+    "2026-07-19",
+    "2026-07-18",
+    "2026-07-17",
+    "2026-07-16",
+    "2026-07-15",
+    "2026-07-14",
+    "2026-07-13",
+    "2026-07-12",
+    "2026-07-11",
+    "2026-07-10",
+    "2026-07-09",
+    "2026-07-08",
+    "2026-07-07",
+    "2026-07-06",
+    "2026-07-05",
+    "2026-07-04",
+    "2026-07-03",
+    "2026-07-02",
+    "2026-07-01",
+    "2026-06-30",
+    "2026-06-29",
+    "2026-06-28",
+    "2026-06-27",
+    "2026-06-26",
+    "2026-06-25",
+    "2026-06-24",
+    "2026-06-23",
+    "2026-06-22",
+    "2026-06-21",
+    "2026-06-20",
+    "2026-06-19",
+    "2026-06-18",
+    "2026-06-17",
+    "2026-06-16",
+    "2026-06-15",
+    "2026-06-14",
+    "2026-06-13",
+    "2026-06-12",
+    "2026-06-11",
+    "2026-06-10",
+    "2026-06-09",
+    "2026-06-08",
+    "2026-06-07",
+    "2026-06-06",
+    "2026-06-05",
+    "2026-06-04",
+    "2026-06-03",
+    "2026-06-02",
+    "2026-06-01",
+    "2026-05-31",
+    "2026-05-30",
+    "2026-05-29",
+    "2026-05-28",
+    "2026-05-27",
+    "2026-05-26",
+    "2026-05-25",
+    "2026-05-24",
+    "2026-05-23",
+    "2026-05-22",
+    "2026-05-21",
+    "2026-05-20",
+    "2026-05-19",
+    "2026-05-18",
+    "2026-05-17",
+    "2026-05-16",
+    "2026-05-15",
+    "2026-05-14",
+    "2026-05-13",
+    "2026-05-12",
+    "2026-05-11",
+    "2026-05-10",
+    "2026-05-09",
+    "2026-05-08",
+    "2026-05-07",
+    "2026-05-06",
+    "2026-05-05",
+    "2026-05-04",
+    "2026-05-03",
+    "2026-05-02",
+    "2026-05-01",
+    "2026-04-30",
+    "2026-04-29",
+    "2026-04-28",
+    "2026-04-27",
+    "2026-04-26",
+    "2026-04-25",
+    "2026-04-24",
+    "2026-04-23",
+    "2026-04-22",
+    "2026-04-21",
+    "2026-04-20",
+    "2026-04-19",
+    "2026-04-18",
+    "2026-04-17",
+    "2026-04-16",
+    "2026-04-15",
+    "2026-04-14",
+    "2026-04-13",
+    "2026-04-12",
+    "2026-04-11",
+    "2026-04-10",
+    "2026-04-09",
+    "2026-04-08",
+    "2026-04-07",
+    "2026-04-06",
+    "2026-04-05",
+    "2026-04-04",
+    "2026-04-03",
+    "2026-04-02",
+    "2026-04-01",
+    "2026-03-31",
+    "2026-03-30",
+    "2026-03-29",
+    "2026-03-28",
+    "2026-03-27",
+    "2026-03-26",
+    "2026-03-25",
+    "2026-03-24",
+    "2026-03-23",
+    "2026-03-22",
+    "2026-03-21",
+    "2026-03-20",
+    "2026-03-19",
+    "2026-03-18",
+    "2026-03-17",
+    "2026-03-16",
+    "2026-03-15",
+    "2026-03-14",
+    "2026-03-13",
+    "2026-03-12",
+    "2026-03-11",
+    "2026-03-10",
+    "2026-03-09",
+    "2026-03-08",
+    "2026-03-07",
+    "2026-03-06",
+    "2026-03-05",
+    "2026-03-04",
+    "2026-03-03"
+  ],
+  "entity_catalog": {
+    "01-ai": {
+      "name": "01.AI",
+      "type": "organization"
+    },
+    "abeja": {
+      "name": "ABEJA",
+      "type": "organization"
+    },
+    "ai-shift": {
+      "name": "AI Shift",
+      "type": "organization"
+    },
+    "andrej-karpathy": {
+      "name": "Andrej Karpathy",
+      "type": "researcher"
+    },
+    "anthropic": {
+      "name": "Anthropic",
+      "type": "organization"
+    },
+    "aws": {
+      "name": "AWS",
+      "type": "organization"
+    },
+    "cohere": {
+      "name": "Cohere",
+      "type": "organization"
+    },
+    "cyberagent": {
+      "name": "CyberAgent",
+      "type": "organization"
+    },
+    "deepmind": {
+      "name": "DeepMind",
+      "type": "organization"
+    },
+    "deepseek": {
+      "name": "DeepSeek",
+      "type": "organization"
+    },
+    "elyza": {
+      "name": "ELYZA",
+      "type": "organization"
+    },
+    "geoffrey-hinton": {
+      "name": "Geoffrey Hinton",
+      "type": "researcher"
+    },
+    "google-research": {
+      "name": "Google Research",
+      "type": "institution"
+    },
+    "huggingface": {
+      "name": "Hugging Face",
+      "type": "organization"
+    },
+    "ilya-sutskever": {
+      "name": "Ilya Sutskever",
+      "type": "researcher"
+    },
+    "ivry": {
+      "name": "IVRy",
+      "type": "organization"
+    },
+    "langchain": {
+      "name": "LangChain",
+      "type": "organization"
+    },
+    "layerx": {
+      "name": "LayerX",
+      "type": "organization"
+    },
+    "llama-cpp": {
+      "name": "llama.cpp",
+      "type": "organization"
+    },
+    "llm-jp": {
+      "name": "LLM-jp",
+      "type": "institution"
+    },
+    "meta-ai": {
+      "name": "Meta AI",
+      "type": "institution"
+    },
+    "microsoft-research": {
+      "name": "Microsoft Research",
+      "type": "institution"
+    },
+    "mistral-ai": {
+      "name": "Mistral AI",
+      "type": "organization"
+    },
+    "nii": {
+      "name": "NII (LLM-jp)",
+      "type": "institution"
+    },
+    "nvidia": {
+      "name": "NVIDIA",
+      "type": "organization"
+    },
+    "ollama": {
+      "name": "Ollama",
+      "type": "organization"
+    },
+    "openai": {
+      "name": "OpenAI",
+      "type": "organization"
+    },
+    "preferred-networks": {
+      "name": "Preferred Networks",
+      "type": "organization"
+    },
+    "qwen": {
+      "name": "Qwen",
+      "type": "organization"
+    },
+    "rinna": {
+      "name": "rinna",
+      "type": "organization"
+    },
+    "sakana-ai": {
+      "name": "Sakana AI",
+      "type": "organization"
+    },
+    "stability-ai": {
+      "name": "Stability AI",
+      "type": "organization"
+    },
+    "vllm": {
+      "name": "vLLM",
+      "type": "organization"
+    },
+    "weblab": {
+      "name": "Weblab",
+      "type": "organization"
+    },
+    "yann-lecun": {
+      "name": "Yann LeCun",
+      "type": "researcher"
+    },
+    "yoshua-bengio": {
+      "name": "Yoshua Bengio",
+      "type": "researcher"
+    }
+  },
+  "generated_at": "2026-09-29T04:06:35.410927+00:00",
+  "model_releases_by_entity": {
+    "other": [
+      {
+        "arxiv_id": null,
+        "authors": [],
+        "categories": [],
+        "entities": [],
+        "first_seen_at": "2026-06-22T19:23:19.897711+00:00",
+        "github_release_url": null,
+        "hf_metadata": {
+          "downloads": 3165,
+          "likes": 65,
+          "pipeline_tag": "zero-shot-image-classification"
+        },
+        "hf_model_id": "microsoft/colipri",
+        "item_count": 1,
+        "links": [
+          {
+            "link_type": "huggingface",
+            "source_id": "hf-microsoft",
+            "tier": 1,
+            "title": "microsoft/colipri",
+            "url": "https://huggingface.co/microsoft/colipri"
+          }
+        ],
+        "primary_link": {
+          "link_type": "huggingface",
+          "source_id": "hf-microsoft",
+          "tier": 1,
+          "title": "microsoft/colipri",
+          "url": "https://huggingface.co/microsoft/colipri"
+        },
+        "published_at": "2026-09-28T08:19:00+00:00",
+        "scores": {
+          "citation_score": 0.0,
+          "cross_source_score": 0.0,
+          "entity_score": 0.0,
+          "kind_score": 1.8,
+          "llm_raw_score": 0.0,
+          "llm_relevance_score": 0.0,
+          "recency_score": 0.9252179073902493,
+          "semantic_score": 0.0,
+          "tier_score": 2.0,
+          "topic_score": 4.0,
+          "total_score": 8.725217907390249
+        },
+        "section": null,
+        "source_name": null,
+        "story_id": "hf:microsoft/colipri",
+        "summary": "COLIPRI is a 3D vision&ndash;language transformer model trained to encode chest CT scans and radiological reports. COLIPRI was trained using tens of thousands of chest CT scans and reports, without any annotations, using multiple objectives to learn strong joint representations of 3D images and text. The procedure is described in detail in Comprehensive language-image pre-training for 3D medical image understanding (Wald et al., ECCV 2026). The weights shared here correspond to COLIPRI-CRM, our best-performing model in the paper. - **Developed by:** Microsoft Research - **Model type:** 3D vision&ndash;language encoder - **License:** MIT COLIPRI is shared for research purposes only. It is **not meant to be used for clinical practice**. The encoders be plugged to other models, or used...",
+        "summary_zh": "COLIPRI（Comprehensive Language-Image Pre-training）是 Microsoft Research 開發的 3D 視覺–語言 Transformer 模型，目標是將胸部 CT 掃描與放射科報告共同編碼，縮短 3D 醫學影像與自然語言之間的落差。面對 3D 醫學影像標註取得不易、難以大規模監督式訓練的現實，研究團隊在數萬組胸部 CT 與對應報告上，於完全不需任何人工標註的前提下，採用多重訓練目標進行全面性的語言–影像預訓練，學習強健的 3D 影像與文字聯合表示。本次釋出的權重為 COLIPRI-CRM，作者稱其為論文中表現最佳的模型，並以 MIT 授權公開。不過，此模型卡僅含摘要資訊，並未提供具體量化結果或基準比較，相關實驗證據須參閱原始論文（Wald et al., ECCV 2026）。限制方面，模型明確僅供研究用途，不得用於臨床實務；模型卡也未說明訓練資料的族群組成與潛在偏誤，跨機構泛化能力仍待獨立驗證。整體而言，此工作展示在無標註條件下預訓練 3D 視覺–語言編碼器的可行性，其編碼器可外接至其他模型，有助於推動 3D 醫學影像檢索、報告理解與下游任務遷移等研究。",
+        "title": "microsoft/colipri",
+        "title_zh": "COLIPRI：用於 3D 醫學影像理解的全面性語言–影像預訓練"
+      }
+    ]
+  },
+  "papers": [
+    {
+      "arxiv_id": "articles/2026050",
+      "authors": [
+        "kas's blog"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-09-29T02:33:29.210130+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "Dense Retrievalを実装する：DPR・距離尺度・ANNの設計",
+          "url": "https://zenn.dev/kas_blog/articles/20260509-llm-24-dense-retrieval"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.1,
+          "generalizability": 0.35,
+          "novelty": 0.15,
+          "preference_relevance": 0.85,
+          "reproducibility": 0.35,
+          "rigor": 0.15
+        },
+        "confidence": 0.85,
+        "evidence": [
+          "abstract: describes DPO loss as taking 'policyとreference modelがchosen/rejectedへ与える4本のsequence log probability' and explicitly notes it is not token-level cross entropy — an implementation clarification, not a new method",
+          "abstract: frames the piece as addressing implementer confusion ('「報酬モデルもPPOも不要」という説明は正しい一方、それだけでは実装時に迷います') and mentions the KL-constrained objective, indicating tutorial/expository content",
+          "abstract: contains no quantitative results, baselines, ablations, datasets, or code availability claims; content status is abstract_only, limiting verifiability"
+        ],
+        "fulltext_sha256": "a102a1a4f3b9749917989583dcaa2fed69005038cf85da495eef2361b9fede9d",
+        "fulltext_status": "abstract_only",
+        "model": "z-ai/glm-5.3-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Topically strong match: DPO (direct preference optimization) for LLMs squarely hits Alignment & RLHF plus Training & Optimization preferences, so preference relevance is high. However, the paper is an expository/tutorial article (abstract-only available) explaining that DPO consumes four sequence log probabilities (policy and reference on chosen/rejected) rather than raw token cross-entropy. No new method, experiments, baselines, ablations, or quantitative results are presented, so novelty, rigor, and evidence strength are low. The implementation clarification could aid practitioners reproducing DPO, giving modest generalizability and reproducibility credit, but no code or artifacts are claimed in the abstract.",
+        "score": 0.384625,
+        "token_usage": {
+          "completion_tokens": 1699,
+          "prompt_cache_hit_tokens": 1920,
+          "prompt_cache_miss_tokens": 309,
+          "prompt_tokens": 2229,
+          "total_tokens": 3928
+        },
+        "topics": [
+          "Alignment & RLHF",
+          "Large Language Models",
+          "Training & Optimization",
+          "Reinforcement Learning"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "Dense Retrievalを実装する：DPR・距離尺度・ANNの設計",
+        "url": "https://zenn.dev/kas_blog/articles/20260509-llm-24-dense-retrieval"
+      },
+      "published_at": "2026-09-28T09:11:36+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.38462500000000005,
+        "llm_relevance_score": 10.7695,
+        "recency_score": 0.928603702816452,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 4.0,
+        "total_score": 17.49810370281645
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "arxiv:articles/2026050",
+      "summary": "Dense Retrieval（密なベクトル表現を使う文章検索）は、queryと文書をembeddingへ変換し、近い文書を取得する仕組みです。ただし、本番で検索漏れが起きたときに「embedding modelが悪い」とだけ考えると、修正する場所を誤ります。\n実装では、少なくとも次の3つを別々のcontract（構成要素間で固定する取り決め）として扱います。\n\n\nencoder contract：model、pooling（token表現を固定長vectorへ集約する方法）、vector次元、normalization\n\nmetric contract：inner product、co...",
+      "summary_zh": "本篇導讀僅能依據摘要撰寫，且須先指出一項明顯不一致：標題聚焦於 Dense Retrieval 的實作，涵蓋 DPR、距離度量與 ANN（近似最近鄰）檢索的設計，但摘要正文實際討論的是 DPO（Direct Preference Optimization，直接偏好最佳化），兩者主題錯置，可能是標題與摘要張貼錯誤，讀者應以全文為準，以下僅就能確認的摘要內容進行說明。就摘要所述，DPO 是利用同一 prompt 下的 chosen response 與 rejected response 直接更新語言模型的方法，不需要 reward model，也不需要 PPO；作者認為這類簡化說法雖然正確，卻容易讓實作者在實作時感到困惑。文章的關鍵論點在於：輸入 DPO loss 的並非逐 token 的 cross entropy，而是 policy model 與 reference model 對 chosen 與 rejected 回應分別計算的四組 sequence log probability；作者宣稱將從帶有 KL 限制的目標函數出發推導，但摘要至此即告中斷。因此，具體的推導細節、任何實驗或量化證據，以及標題所示距離度量與 ANN 索引的設計與結果，皆無法從現有內容確認，其效果與限制均有待全文檢驗。對工程實務而言，若全文確實釐清 DPO 的實作細節並涵蓋稠密檢索的系統設計，對 RLHF 之外的偏好最佳化與檢索應用將極具參考價值，但在未見全文前宜保守看待其宣稱。建議讀者查閱原文，核實其推導是否嚴謹，並確認是否提供可重現的程式碼或實驗設定。",
+      "title": "Dense Retrievalを実装する：DPR・距離尺度・ANNの設計",
+      "title_zh": "實作 Dense Retrieval：DPR、距離度量與 ANN 的設計"
+    },
+    {
+      "arxiv_id": "items/1673349",
+      "authors": [
+        "charge0315"
+      ],
+      "categories": [],
+      "entities": [
+        "anthropic"
+      ],
+      "first_seen_at": "2026-09-29T02:33:29.042660+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "qiita-genai-tag",
+          "tier": 2,
+          "title": "Claude Code の CLAUDE.md が肥大化したら ― 設定を6つのスコープに置き分ける早見表とフック実例",
+          "url": "https://qiita.com/charge0315/items/167334994884a95dac28"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.1,
+          "generalizability": 0.25,
+          "novelty": 0.25,
+          "preference_relevance": 0.55,
+          "reproducibility": 0.15,
+          "rigor": 0.1
+        },
+        "confidence": 0.85,
+        "evidence": [
+          "Title: 'Claude Code の CLAUDE.md が肥大化したら ― 設定を6つのスコープに置き分ける早見表とフック実例' — deliverable is a scope-separation quick-reference table and hook examples, not a study.",
+          "Abstract excerpt: 'Claude Code に同じ注意を三度くり返したことはありませんか。...「コミットはまだしないで」「そのコマンドは PowerShell では動かない」「テストを直すんじゃなくて実装を直して」' — anecdotal motivation, no evaluation methodology.",
+          "Abstract excerpt: '個人開発の日本株検証システムを Claude Code と一緒に作ってきた中で...' — personal single-project experience; content status is abstract_only with no results, baselines, or availability claims."
+        ],
+        "fulltext_sha256": "4143cbc59bd6a3ec4e8655039cfe1d9ef21a2d05e8d631a22c316c10b9cb2988",
+        "fulltext_status": "abstract_only",
+        "model": "z-ai/glm-5.3-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Practitioner blog post (abstract-only) on organizing Claude Code's CLAUDE.md configuration into six scopes plus hook examples. Topic-relevant to agentic coding tools, prompt/instruction management, and LLM configuration (Claude, Claude Code, hooks, system-style instructions), but it is anecdotal personal-experience writing ('個人開発の日本株検証システムを Claude Code と一緒に作ってきた') rather than research: no method description, baselines, ablations, metrics, or limitations are present in the available content. The six-scope quick-reference table may transfer to other agentic coding setups, but claims are unsupported and no artifact or quantitative evidence is verifiable from the abstract.",
+        "score": 0.272,
+        "token_usage": {
+          "completion_tokens": 1491,
+          "prompt_cache_hit_tokens": 64,
+          "prompt_cache_miss_tokens": 2149,
+          "prompt_tokens": 2213,
+          "total_tokens": 3704
+        },
+        "topics": [
+          "Agents & Tool Use",
+          "Prompting & In-Context Learning",
+          "Code & Programming",
+          "Large Language Models"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "qiita-genai-tag",
+        "tier": 2,
+        "title": "Claude Code の CLAUDE.md が肥大化したら ― 設定を6つのスコープに置き分ける早見表とフック実例",
+        "url": "https://qiita.com/charge0315/items/167334994884a95dac28"
+      },
+      "published_at": "2026-09-28T17:10:17+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 2.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.272,
+        "llm_relevance_score": 7.6160000000000005,
+        "recency_score": 0.9599910497600563,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 3.75,
+        "total_score": 16.125991049760056
+      },
+      "section": null,
+      "source_name": "Qiita 生成AI Tag",
+      "story_id": "arxiv:items/1673349",
+      "summary": "Claude Code に同じ注意を三度くり返したことはありませんか。\n「コミットはまだしないで」「そのコマンドは PowerShell では動かない」「テストを直すんじゃなくて実装を直して」。\n個人開発の日本株検証システムを Claude Code と一緒に作ってきた中で...",
+      "summary_zh": "本篇為日文實務筆記,針對 Claude Code 使用者的常見痛點:隨著專案長期演進,CLAUDE.md 設定檔不斷堆疊規則而日益肥大,造成指令重複、彼此衝突且難以維護。作者以自身與 Claude Code 協作開發日股驗證系統的經驗為例,指出同樣的提醒常被迫一講再講,例如「先不要 commit」「這個指令在 PowerShell 上跑不動」「該修的是實作而不是測試」,顯示問題根源在於設定的組織方式不當。文章提出的方法是將設定依適用範圍拆分到六個 scope,並附上一張速查表,幫助開發者快速判斷某條規則應放在哪一層,避免全部塞進單一 CLAUDE.md;同時提供 hook(掛鉤)的實際設定範例,示範如何透過自動化機制強制執行部分規範,減少反覆的人工提醒。必須留意的是,本文屬於個人經驗分享而非正式研究,目前僅提供摘要層級內容,六個 scope 的完整定義、速查表的細節與 hook 程式碼須參閱全文,亦缺乏量化評估或對照實驗來支持其成效。儘管如此,本篇對長期使用 AI 編碼助手、飽受上下文設定檔失控之苦的開發者而言,提供了具體可操作的整理策略,具有直接的參考價值。",
+      "title": "Claude Code の CLAUDE.md が肥大化したら ― 設定を6つのスコープに置き分ける早見表とフック実例",
+      "title_zh": "當 Claude Code 的 CLAUDE.md 日漸肥大時——將設定分拆至六個範疇的速查表與 Hook 實例"
+    },
+    {
+      "arxiv_id": "articles/2026092",
+      "authors": [
+        "arika"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-09-29T02:33:29.208168+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "日本語が一番うまいLLMは誰なのか調べる",
+          "url": "https://zenn.dev/arika/articles/20260929-what-is-good-llm-for-japanese"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.05,
+          "generalizability": 0.05,
+          "novelty": 0.1,
+          "preference_relevance": 0.5,
+          "reproducibility": 0.05,
+          "rigor": 0.05
+        },
+        "confidence": 0.85,
+        "evidence": [
+          "[abstract_only] 'じゃあどのモデルでドキュメントを書かせればいいかな、ということで雑に調査した' — author explicitly frames the study as a casual, ad-hoc investigation with no methodology described",
+          "[abstract_only] '（ちなみにこの文章は実装コードを元にGPT 6 Lunaが生成した）' — the sole evidence presented is a single anecdotal example of degraded Japanese output, with no quantitative evaluation",
+          "[abstract_only] Content status is abstract_only and the excerpt is truncated ('こ...'); no results, baselines, limitations, or availability/code claims are verifiable from the supplied text"
+        ],
+        "fulltext_sha256": "08ce452fbb6fbca1f349e272ac608cf3a388b6e6e6ca3307cdbe56cfc5436fcd",
+        "fulltext_status": "abstract_only",
+        "model": "z-ai/glm-5.3-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Topically aligned with the Japanese LLM and LLM preferences (a comparison of which model writes Japanese documents best), but the document is an abstract-only casual blog post that self-describes as a rough investigation ('雑に調査した') with no stated methodology, metrics, models-under-test list, baselines, ablations, or quantitative results; the only supporting material is one anecdotal example of poor GPT-generated Japanese text. Novelty and rigor are minimal, evidence is anecdotal, and nothing is reproducible from the provided text.",
+        "score": 0.201875,
+        "token_usage": {
+          "completion_tokens": 1739,
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 2262,
+          "prompt_tokens": 2262,
+          "total_tokens": 4001
+        },
+        "topics": [
+          "Japanese LLM",
+          "LLM evaluation",
+          "Japanese NLP",
+          "text generation quality"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "日本語が一番うまいLLMは誰なのか調べる",
+        "url": "https://zenn.dev/arika/articles/20260929-what-is-good-llm-for-japanese"
+      },
+      "published_at": "2026-09-28T09:55:16+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.201875,
+        "llm_relevance_score": 5.6525,
+        "recency_score": 0.931423881367505,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 0.0,
+        "total_score": 8.383923881367505
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "arxiv:articles/2026092",
+      "summary": "!\nこの記事はブログでも公開しています。\n\nGPT系列の日本語が終わっているという話はよく聞くし自分も困っているので、\nじゃあどのモデルでドキュメントを書かせればいいかな、ということで雑に調査した。\n\n 日本語が終わっている、とは\n↓のような文章。（ちなみにこの文章は実装コードを元にGPT 6 Lunaが生成した）\n`Configlue.Resource.Dapr` は Dapr State Management の1つの store key を Configlue の byte-resource 契約へ接続します。\nDapr を使うアプリケーションだけにインストールしてください:\n\nこ...",
+      "summary_zh": "這篇短文出自作者的部落格，核心問題是：各家大型語言模型（LLM）的日文寫作品質究竟誰最好。作者提到 GPT 系列模型的日文輸出常被詬病「壞掉」，而他自己也正面臨撰寫日文文件的需求，因此想知道該選哪個模型來產生日文文件，於是進行了一次他自承「隨手粗糙」的調查。\n\n文章以實例說明所謂「日文壞掉」的樣貌：作者展示一段由 GPT 6 Luna 依據實作程式碼自動產生的說明文字，內容描述 Configlue.Resource.Dapr 如何把 Dapr State Management 的某個 store key 接上 Configlue 的 byte-resource 契約；這段日文生硬地夾雜大量英文術語，用詞與語感都不自然，呈現近似機器翻譯式的生硬品質。\n\n不過，現有內容僅為摘要且在此處截斷，後續的比較方法、受測模型清單、評分標準與最終結論（究竟哪個模型日文最好）皆未呈現，讀者無法得知作者的完整評測結果或推薦名單。加上作者明言這只是粗略調查，並非嚴謹的基準測試，樣本數與評判方式都可能有所侷限。\n\n儘管如此，這篇文章點出一個務實議題：多數模型評測以英文為主，非英文語言（如日文）的輸出品質落差可能相當明顯；對需要用 LLM 撰寫技術文件的開發者而言，各模型的非英文語言能力應是選擇時的重要考量。",
+      "title": "日本語が一番うまいLLMは誰なのか調べる",
+      "title_zh": "調查哪個 LLM 最擅長日文"
+    },
+    {
+      "arxiv_id": "articles/2026072",
+      "authors": [
+        "とうもろこし茶"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-09-29T02:33:29.227878+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "15Bだけ動く250B、Solar Open 2はエージェント前提で設計された",
+          "url": "https://zenn.dev/okssusucha/articles/20260724-upstage-solar-open-2"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.02,
+          "generalizability": 0.0,
+          "novelty": 0.02,
+          "preference_relevance": 0.05,
+          "reproducibility": 0.1,
+          "rigor": 0.0
+        },
+        "confidence": 0.85,
+        "evidence": [
+          "abstract_only text opens: '自作で manabi-map という「親子で使う、学校選びの地図ノート」を作っています' describing a school-search web service, not LLM research",
+          "abstract_only text cites only project stats '東日本 20 都道県・2,591 校・v0.3.3・個人 OSS' with links (https://manabi-map.app, https://github.com/ishizakahiroshi/manabi-map); no methods, baselines, or results appear anywhere",
+          "Title claims '15Bだけ動く250B、Solar Open 2はエージェント前提で設計された' but no section of the supplied text substantiates any model, benchmark, or agent design claim"
+        ],
+        "fulltext_sha256": "5dcf66d0276d8e93b063eee2291fcf4f1a5ac9314647b5458e3ffa9c5dec14cc",
+        "fulltext_status": "abstract_only",
+        "model": "z-ai/glm-5.3-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Severe title-content mismatch: the title advertises a 250B MoE LLM (Solar Open 2) designed for agents, but the only supplied text (content status: abstract_only) is a promotional description of a personal OSS web service, manabi-map, a school-selection map notebook. The text contains no LLM, agent, MoE, or any AI methodology, no experiments, baselines, ablations, or quantitative results, and cannot support the claims in its own title. It is not an in-scope research artifact; score is minimal.",
+        "score": 0.026350000000000005,
+        "token_usage": {
+          "completion_tokens": 1644,
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 2283,
+          "prompt_tokens": 2283,
+          "total_tokens": 3927
+        },
+        "topics": []
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "15Bだけ動く250B、Solar Open 2はエージェント前提で設計された",
+        "url": "https://zenn.dev/okssusucha/articles/20260724-upstage-solar-open-2"
+      },
+      "published_at": "2026-09-28T03:11:38+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.026350000000000005,
+        "llm_relevance_score": 0.7378000000000001,
+        "recency_score": 0.9056784921786625,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 3.75,
+        "total_score": 7.193478492178662
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "arxiv:articles/2026072",
+      "summary": "オープンウェイトのモデルカードで「対応言語: 英語・韓国語・日本語」という並びを見ると、少し身構える。韓国政府の主導で作られた国産モデルが、なぜ日本語まで面倒を見るのか。そして総パラメータ250Bのうち実際に動くのは15Bだけで、開発元は「ベンチマークのスコアではなく、エージェントとして自分で仕事を終わらせられるかを軸に作った」と言い切っている。7月22〜23日に公開された Upstage の Solar Open 2 は、そういうモデルだ。\n\n なぜ「エージェント前提」がわざわざ設計思想になるのか\nここ2年でLLMの使われ方は、一問一答から大きくずれた。検索して、ツールを呼んで、その結...",
+      "summary_zh": "就標題而言，本則內容宣稱 Solar Open 2 是一個總參數量約 250B、卻僅需 15B 即可運作的模型，並強調其自設計之初便以 Agent（代理）應用為前提。然而，實際提供的內容標示為 abstract_only，且與標題明顯不符：內文沒有任何模型架構、訓練方法、基準測試或實驗證據，而是一段關於個人開源專案 manabi-map 的日文說明。依該段文字，manabi-map 是親子共用的選校地圖筆記網路服務：使用者輸入住址後，地圖會顯示可通學的高中，家長與孩子能共同保存感興趣的學校並撰寫備忘；目前涵蓋日本東日本 20 個都道縣、共 2,591 所學校，版本為 v0.3.3，屬個人維護的開源專案，僅需以瀏覽器開啟網站即可使用，無須安裝應用程式，並提供網站與 GitHub repository。開發者另提到正著手新增西日本 27 府縣的資料，但說明在此處被截斷，後續細節無從確認。整體而言，本內容並未提供 Solar Open 2 的問題定義、方法、主要結果與侷限性，標題中的規格宣稱無法由內文驗證，讀者宜視為未經證實的資訊，並留意標題與內容不一致的狀況，避免僅憑標題推斷模型能力。",
+      "title": "15Bだけ動く250B、Solar Open 2はエージェント前提で設計された",
+      "title_zh": "僅需 15B 即可運作的 250B 模型：Solar Open 2 以 Agent 為前提設計"
+    },
+    {
+      "arxiv_id": "articles/0500452",
+      "authors": [
+        "KEY60228"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-09-29T02:33:27.793951+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "aishift-tech-blog",
+          "tier": 1,
+          "title": "GKE に Open Cluster Management (OCM) を導入するのにハマったことメモ",
+          "url": "https://zenn.dev/aishift/articles/050045247128e9"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.02,
+          "generalizability": 0.05,
+          "novelty": 0.02,
+          "preference_relevance": 0.05,
+          "reproducibility": 0.02,
+          "rigor": 0.0
+        },
+        "confidence": 0.85,
+        "evidence": [
+          "{'marker': 'abstract_only / post opening', 'detail': \"Text is a first-person blog intro ('こんにちは、@key60228 です') about Kubernetes and Cloud Native multi-cluster operations; no research methods, baselines, or results appear anywhere in the supplied content.\"}",
+          "{'marker': \"abstract_only / 'AI Workload' mention\", 'detail': \"The phrase 'AI Workload とともにマルクラスタ運用の話題' is the sole AI-related reference, used as background context for cluster tooling, not as a study of AI models or language methodology.\"}"
+        ],
+        "fulltext_sha256": "a0a3fe8eb9a5c4530f18f08b42ba2366efd0c3752507b4176f319d2cd9d98245",
+        "fulltext_status": "abstract_only",
+        "model": "z-ai/glm-5.3-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "This is a personal operational memo about installing Open Cluster Management on GKE (Kubernetes multi-cluster administration), not an AI/ML research paper. It contains no language-model methodology, no experiments, baselines, ablations, or quantitative results. The only AI-adjacent token is an incidental mention of 'AI Workload' as context for multi-cluster operations. As infrastructure/devops domain content with no AI methodology, it falls in the out-of-scope category and receives minimal credit. Abstract-only status further precludes verification of any technical claims.",
+        "score": 0.027200000000000005,
+        "token_usage": {
+          "completion_tokens": 696,
+          "prompt_cache_hit_tokens": 1920,
+          "prompt_cache_miss_tokens": 337,
+          "prompt_tokens": 2257,
+          "total_tokens": 2953
+        },
+        "topics": [
+          "Kubernetes",
+          "multi-cluster management",
+          "GKE",
+          "Open Cluster Management",
+          "cloud infrastructure"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "aishift-tech-blog",
+        "tier": 1,
+        "title": "GKE に Open Cluster Management (OCM) を導入するのにハマったことメモ",
+        "url": "https://zenn.dev/aishift/articles/050045247128e9"
+      },
+      "published_at": "2026-09-28T16:00:08+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.5,
+        "llm_raw_score": 0.027200000000000005,
+        "llm_relevance_score": 0.7616000000000002,
+        "recency_score": 0.9553257993693886,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 0.0,
+        "total_score": 5.216925799369389
+      },
+      "section": null,
+      "source_name": "AI Shift Tech Blog (Zenn)",
+      "story_id": "arxiv:articles/0500452",
+      "summary": "こんにちは、@key60228 です。\nKubernetes や Cloud Native の文脈において、AI Workload とともにマルチクラスタ運用の話題もますます増えてきてますよね。\nKubeCon + CloudNativeCon Japan 2026 でもいくつかセッションがありました。 (前者は「軽率にマルチクラスタにするな」って主旨でしたが)\nhttps://www.youtube.com/watch?v=-0gJNQogilQ&amp;list=PLH1zduub3WrE&amp;index=109\nhttps://www.youtube.com/watch?v=G...",
+      "summary_zh": "本文是一篇工程實務筆記而非學術論文，主題為在 Google Kubernetes Engine（GKE）上導入 Open Cluster Management（OCM）時所遇到的問題與心得。作者 @key60228 觀察到，在 Kubernetes 與 Cloud Native 的脈絡下，隨著 AI Workload 的增加，多叢集（multi-cluster）營運的討論也日漸增多；KubeCon + CloudNativeCon Japan 2026 即有數場相關議程，其中一場甚至主張「不要輕率地採用多叢集」，顯示社群對此架構仍有正反意見。文章以卡關筆記的形式，記錄作者實際將 OCM 導入 GKE 時卡住的環節，目的在於留下第一手的疑難排解經驗，供後續導入者參考。不過，目前取得的內容僅為文章開頭摘要，具體的錯誤訊息、安裝與設定步驟、版本相容性問題及最終解法等細節並未完整呈現，讀者需參閱原文與文中所附的 YouTube 連結（包含 KubeCon 議程影片）才能獲得完整資訊。就價值而言，對正在評估或已在 GKE 上管理多個 Kubernetes 叢集、希望透過 OCM 進行統一治理與工作負載調度的平台工程師來說，此類實戰經驗談有助於預先掌握常見陷阱，並在採用多叢集架構前審慎評估其必要性、複雜度與維運成本。",
+      "title": "GKE に Open Cluster Management (OCM) を導入するのにハマったことメモ",
+      "title_zh": "在 GKE 導入 Open Cluster Management（OCM）的卡關筆記"
+    }
+  ],
+  "radar": [
+    {
+      "arxiv_id": null,
+      "authors": [
+        "ぷゆるる"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-09-29T02:33:29.226786+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "AIエージェントに社内操作を渡すとき、汎用ツールと専用ツールをどう分けるか",
+          "url": "https://zenn.dev/puyururu/articles/agent-tools-generic-vs-dedicated"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.1,
+          "generalizability": 0.35,
+          "novelty": 0.2,
+          "preference_relevance": 0.8,
+          "reproducibility": 0.05,
+          "rigor": 0.1
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "abstract: states the piece is entry 1 of a series reading Bojie Li's open-source book '深入理解 AI Agent' (AI Agents in Depth, Apache 2.0), focusing on the delta between the author's pre- and post-reading understanding, not a book summary",
+          "abstract: claims the reader will be able to classify general-purpose vs. dedicated tools for handing LLM agents internal operations such as '返金する', 'メールを送る', '本番にデプロイする' via two questions (second question truncated in provided text)",
+          "Content status marker: abstract_only — no methods, evaluation, results, limitations, or availability sections exist in the supplied document to verify any empirical or methodological claims"
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "z-ai/glm-5.3-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Abstract-only practitioner blog post distilling design heuristics (two screening questions for choosing general-purpose vs. dedicated tools) from the open-source book 'AI Agents in Depth'. Topic is squarely on-preference for Agents & Tool Use (tool orchestration for internal operations like refunds, email, production deploys) and implicitly LLM agents, giving high topical relevance. However, it is a personal reading reflection, not research: no method, baselines, ablations, or quantitative results are available or claimed in the visible abstract; novelty is limited to repackaging an existing book's guidance with the author's own framing; claims are anecdotal and unverifiable from the provided text. Generalizability is moderate since the tool-partitioning heuristic could transfer to other agent deployments, but it is framed around one practitioner's workflow. Reproducibility is minimal (no code/data; only a pointer to the Apache 2.0 source book).",
+        "score": 0.41750000000000004,
+        "token_usage": {
+          "completion_tokens": 2392,
+          "prompt_cache_hit_tokens": 1920,
+          "prompt_cache_miss_tokens": 399,
+          "prompt_tokens": 2319,
+          "total_tokens": 4711
+        },
+        "topics": [
+          "Agents & Tool Use",
+          "Large Language Models",
+          "Inference & Serving"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "AIエージェントに社内操作を渡すとき、汎用ツールと専用ツールをどう分けるか",
+        "url": "https://zenn.dev/puyururu/articles/agent-tools-generic-vs-dedicated"
+      },
+      "published_at": "2026-09-28T03:30:12+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.41750000000000004,
+        "llm_relevance_score": 11.690000000000001,
+        "recency_score": 0.9068469835561184,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 4.0,
+        "total_score": 18.39684698355612
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:580817e32611e426",
+      "summary": "シリーズ「『AI Agents in Depth』を実務に持ち帰る」の1本目です。李博杰(Bojie Li)著のオープンソース書籍『深入理解 AI Agent』(英題 AI Agents in Depth、Apache 2.0)を読み、自分の設計判断がどう変わったかを1テーマずつ書きます。本の要約ではなく、読む前の自分の理解と、読んだ後の整理の差分が主題です。\n\n\n この記事で変わること\nLLM に「返金する」「メールを送る」「本番にデプロイする」のような社内操作を渡すシステムを設計・レビューするとき、次の2つの問いで汎用ツールと専用ツールを仕分けられるようになります。\n\n\n間違えたと...",
+      "summary_zh": "本文是系列文章『把《AI Agents in Depth》帶回實務』的首篇。作者閱讀李博杰(Bojie Li)撰寫、以 Apache 2.0 授權的開放原始碼書籍《深入理解 AI Agent》(英題 AI Agents in Depth)後,以單一主題為單位,記錄自身設計判斷如何因此改變;文章定位並非書籍摘要,而是呈現閱讀前後理解上的差異。其問題意識在於:當系統要讓 LLM 執行『退款』『寄送電子郵件』『部署到正式環境』等內部操作時,設計與審查者常難以判斷工具層應採泛用工具或專用工具。作者表示讀完本書後,能以兩個問題將泛用工具與專用工具妥善分流,使相關設計判斷有可依循的準則,並提及判斷錯誤可能造成的影響,惟摘要於此中斷,完整論證須參閱原文。就性質而言,這是一篇實務取向的經驗分享,而非經過同儕審查的研究,沒有實驗資料或量化結果佐證,主張屬作者個人觀點,讀者應自行檢驗其框架在自身系統的適用性。其價值在於為正在建置 AI Agent、必須決定工具介面粒度的工程師,提供從書籍理論過渡到實務決策的思考路徑,有助於在安全性、可控性與開發彈性之間取得平衡,也點出工具設計會直接影響代理行為的可預測性與除錯難度。",
+      "title": "AIエージェントに社内操作を渡すとき、汎用ツールと専用ツールをどう分けるか",
+      "title_zh": "將公司內部操作交給 AI Agent 時,該如何區分泛用工具與專用工具"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "JodyCraft"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-09-29T02:33:29.224577+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "LLM 5モデルを高難度3課題で比較 — 「作れる力」は並び、「説明できる力」で差が出た",
+          "url": "https://zenn.dev/jodycraft/articles/5f660b4eba9ec1"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.15,
+          "generalizability": 0.2,
+          "novelty": 0.3,
+          "preference_relevance": 0.65,
+          "reproducibility": 0.1,
+          "rigor": 0.15
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "Title/abstract_only block: 'LLM 5モデルを高難度3課題で比較' — 5-model comparison on 3 high-difficulty tasks, no methods shown",
+          "Opening disclosure: states the verification used API credits provided by Moonshot AI ($50分), indicating sponsored content",
+          "Abstract only: references a prior round comparing 'Kimi K3 と DeepSeek V4.1 Flash' across 6 practical task areas; motivation stated as testing whether harder tasks reveal differences",
+          "Content status marker 'abstract_only': no results tables, ablations, prompts, or release/availability claims are verifiable from the supplied text"
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "z-ai/glm-5.3-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "A Japanese-language blog post comparing 5 LLMs (incl. Kimi K3, DeepSeek V4.1 Flash) on 3 hard tasks; topic-relevant to LLM evaluation preferences, but abstract-only, sponsored (Moonshot AI credits disclosed), with no methodology, metrics, or artifact claims visible. Blog-format anecdotal benchmarking rather than research.",
+        "score": 0.375,
+        "token_usage": {
+          "completion_tokens": 1640,
+          "prompt_cache_hit_tokens": 64,
+          "prompt_cache_miss_tokens": 2259,
+          "prompt_tokens": 2323,
+          "total_tokens": 3963
+        },
+        "topics": [
+          "Large Language Models",
+          "LLM evaluation",
+          "Japanese LLM & NLP",
+          "benchmarking"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "LLM 5モデルを高難度3課題で比較 — 「作れる力」は並び、「説明できる力」で差が出た",
+        "url": "https://zenn.dev/jodycraft/articles/5f660b4eba9ec1"
+      },
+      "published_at": "2026-09-28T04:25:00+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.375,
+        "llm_relevance_score": 10.5,
+        "recency_score": 0.9103046150639691,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 4.0,
+        "total_score": 17.21030461506397
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:e637de57a5b9dda5",
+      "summary": "!\nこの記事は、Moonshot AI から提供された API クレジット（$50分）を使って実施した検証に基づいています。前回の記事に続く第2ラウンドで、今回も提供の事実を最初に開示しておきます（詳細は記事末尾）。\n\n前回、Kimi K3 と DeepSeek V4.1 Flash を実務タスク6領域で比較して、**「正しさは互角、使い所は別」**という記事を書きました（前回の記事はこちら）。\nそのときから、一つ引っかかっていたことがあります。 「簡単めのタスクだと差が出ないなら、もっと難しいタスクなら差が出るんじゃないか？」 ということです。\n前回の結果は、私の用途では「日常は De...",
+      "summary_zh": "這是一篇大型語言模型（LLM）實測比較報告的續篇。作者前次曾將 Kimi K3 與 DeepSeek V4.1 Flash 在六大實務任務領域進行比較，得到「正確性不相上下、適用場景各異」的結論；由於簡單任務難以拉開差距，本次進一步提出假設：更高難度的任務或許能凸顯模型之間的差異，並據此安排第二輪實驗。方法上，作者選用五款 LLM，在三項高難度任務上進行測試，並在文章開頭即依慣例揭露：本次驗證係使用 Moonshot AI 提供的 API 額度（約 50 美元）完成。從標題與摘要可知主要發現：在「做出成品」的能力上，五款模型表現相當；但在「解釋說明」的能力上，模型之間出現了明顯落差。這暗示高難度任務確實有助於區分模型，且差異未必顯現在產出的正確性，而可能顯現在推理過程的可解釋性或說明品質。需要留意的限制包括：目前僅能取得文章摘要，具體任務設計、評分方式與各模型完整成績皆無法確認，讀者應以原文全文為準；此外，單一作者、有限額度與少量任務的實測，其結論的代表性與可重現性也有界線。整體而言，本文對想在困難任務中挑選 LLM 的使用者具參考價值：除了看「能不能做」，更該檢視「能不能說清楚」。",
+      "title": "LLM 5モデルを高難度3課題で比較 — 「作れる力」は並び、「説明できる力」で差が出た",
+      "title_zh": "LLM 五款模型高難度三任務比較——「能做出來」的實力不相上下，「能說明」的實力才見高下"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "Yadan Wei"
+      ],
+      "categories": [
+        "Advanced (300)",
+        "Amazon SageMaker AI",
+        "Technical How-to"
+      ],
+      "entities": [
+        "aws",
+        "vllm"
+      ],
+      "first_seen_at": "2026-09-29T02:02:17.108148+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "aws-ml-blog",
+          "tier": 0,
+          "title": "Build real-time voice applications with vLLM-Omni on SageMaker AI – Part 1",
+          "url": "https://aws.amazon.com/blogs/machine-learning/build-real-time-voice-applications-with-vllm-omni-on-sagemaker-ai-part-1"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.05,
+          "generalizability": 0.1,
+          "novelty": 0.05,
+          "preference_relevance": 0.2,
+          "reproducibility": 0.25,
+          "rigor": 0.05
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "Abstract: 'Deploy a text-to-speech model on Amazon SageMaker AI with the AWS vLLM-Omni Deep Learning Container and stream generated speech over a persistent bidirectional connection.'",
+          "Abstract: 'This Part 1 tutorial deploys Qwen3-TTS and streams speech through a Gradio application.'",
+          "Content status: abstract_only — no methods, results, or availability sections available for verification."
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "z-ai/glm-5.3-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "This is a deployment tutorial (Part 1) for streaming text-to-speech (Qwen3-TTS) on AWS SageMaker via vLLM-Omni, not a research contribution. Core topic is Speech & Audio (weight 0.5) with a minor Inference & Serving angle (vLLM container, streaming connection); no LLM methodology, reasoning, agents, or Japanese NLP content is present despite the Qwen/vLLM keyword overlap. Only the abstract is available: no methods, baselines, ablations, limitations, or quantitative results can be verified, and no code/data availability claim is made. Novelty and rigor are minimal; reproducibility gets slight credit because tutorials are step-by-step by design, but availability is unconfirmed.",
+        "score": 0.12500000000000003,
+        "token_usage": {
+          "completion_tokens": 998,
+          "prompt_cache_hit_tokens": 64,
+          "prompt_cache_miss_tokens": 2115,
+          "prompt_tokens": 2179,
+          "total_tokens": 3177
+        },
+        "topics": [
+          "Speech & Audio",
+          "Inference & Serving"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "aws-ml-blog",
+        "tier": 0,
+        "title": "Build real-time voice applications with vLLM-Omni on SageMaker AI – Part 1",
+        "url": "https://aws.amazon.com/blogs/machine-learning/build-real-time-voice-applications-with-vllm-omni-on-sagemaker-ai-part-1"
+      },
+      "published_at": "2026-09-28T07:15:46+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 4.0,
+        "kind_score": 1.5,
+        "llm_raw_score": 0.12500000000000003,
+        "llm_relevance_score": 3.500000000000001,
+        "recency_score": 0.92116399438168,
+        "semantic_score": 0.0,
+        "tier_score": 3.0,
+        "topic_score": 3.0,
+        "total_score": 15.92116399438168
+      },
+      "section": null,
+      "source_name": "AWS Machine Learning Blog",
+      "story_id": "fallback:485fc44b74d4bf2c",
+      "summary": "Deploy a text-to-speech model on Amazon SageMaker AI with the AWS vLLM-Omni Deep Learning Container and stream generated speech over a persistent bidirectional connection. This Part 1 tutorial deploys Qwen3-TTS and streams speech through a Gradio application.",
+      "summary_zh": "即時語音應用（如語音助理與對話代理）需要文字轉語音模型在極低延遲下持續產生音訊，但實際部署時常面臨推論堆疊複雜、串流連線難以維持等挑戰。本教學為系列第一部分，示範如何在 Amazon SageMaker AI 上，使用 AWS 提供的 vLLM-Omni Deep Learning Container 部署 Qwen3-TTS 文字轉語音模型。方法核心是利用 vLLM-Omni 容器簡化模型服務流程，並透過持久性的雙向連線將合成語音以串流方式傳送至客戶端，避免每段音訊都重新建立連線所造成的額外延遲。文中以 Gradio 應用程式作為前端介面，串接模型端點展示即時語音產生的完整流程。由於本文屬教學性質且目前僅提供摘要，並未附上延遲、吞吐量等量化的基準資料，實際效能仍須依模型規模與硬體組態自行驗證；教學範圍也僅涵蓋部署與串流展示，未深入自動擴展、安全性與成本控制等產品化議題。其價值在於提供可重複的端對端範例，協助開發者快速在 SageMaker AI 上建置低延遲、可互動的即時語音應用原型，作為後續發展語音代理與多模態系統的基礎。",
+      "title": "Build real-time voice applications with vLLM-Omni on SageMaker AI – Part 1",
+      "title_zh": "在 SageMaker AI 上以 vLLM-Omni 建構即時語音應用——第一部分"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "Suheel Farooq"
+      ],
+      "categories": [
+        "Advanced (300)",
+        "Amazon Bedrock",
+        "Amazon Machine Learning",
+        "Announcements",
+        "Artificial Intelligence",
+        "Foundation models",
+        "Generative AI"
+      ],
+      "entities": [
+        "aws"
+      ],
+      "first_seen_at": "2026-09-29T02:02:17.103553+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "aws-ml-blog",
+          "tier": 0,
+          "title": "Grok 4.7 is now available on Amazon Bedrock",
+          "url": "https://aws.amazon.com/blogs/machine-learning/grok-4-7-is-now-available-on-amazon-bedrock"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.05,
+          "generalizability": 0.0,
+          "novelty": 0.0,
+          "preference_relevance": 0.35,
+          "reproducibility": 0.1,
+          "rigor": 0.0
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "[Content status: abstract_only] Document contains no methods, experiments, evaluation, or limitations sections — only a short availability notice.",
+          "[UNTRUSTED_PAPER body] 'It offers a 500K token context window and four configurable reasoning effort levels' — capability claims presented without any benchmark results or supporting data.",
+          "[UNTRUSTED_PAPER body] 'a frontier model for coding, long-running agents, and knowledge work' — qualitative marketing claim with no evaluation or comparison to baselines.",
+          "[UNTRUSTED_PAPER body] 'reachable through the Responses, Chat Completions, and Converse APIs' — the only concrete, verifiable detail; access information, not research content."
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "z-ai/glm-5.3-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "This is a product availability announcement, not a research paper. It superficially touches high-weight preference areas (LLM, agents, long context, reasoning effort) via a '500K token context window', 'long-running agents', and 'four configurable reasoning effort levels', but every claim is unsupported marketing language with no methodology, benchmarks, baselines, or ablations. Novelty, rigor, and generalizability are absent because no scientific contribution is described; evidence strength is near zero since 'frontier model' is asserted without data. Reproducibility is minimal (model is accessible via documented Bedrock APIs, but there are no findings to reproduce). Content status is abstract_only with no methods or results sections to verify.",
+        "score": 0.1525,
+        "token_usage": {
+          "completion_tokens": 1908,
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 2177,
+          "prompt_tokens": 2177,
+          "total_tokens": 4085
+        },
+        "topics": [
+          "LLM",
+          "agents",
+          "long context",
+          "model serving/APIs",
+          "product announcement"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "aws-ml-blog",
+        "tier": 0,
+        "title": "Grok 4.7 is now available on Amazon Bedrock",
+        "url": "https://aws.amazon.com/blogs/machine-learning/grok-4-7-is-now-available-on-amazon-bedrock"
+      },
+      "published_at": "2026-09-28T13:13:16+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 2.0,
+        "kind_score": 1.5,
+        "llm_raw_score": 0.1525,
+        "llm_relevance_score": 4.27,
+        "recency_score": 0.9443194133475181,
+        "semantic_score": 0.0,
+        "tier_score": 3.0,
+        "topic_score": 4.0,
+        "total_score": 15.714319413347518
+      },
+      "section": null,
+      "source_name": "AWS Machine Learning Blog",
+      "story_id": "fallback:5b43ea7732b28afb",
+      "summary": "xAI's Grok 4.7 is now available on Amazon Bedrock: a frontier model for coding, long-running agents, and knowledge work. It offers a 500K token context window and four configurable reasoning effort levels, reachable through the Responses, Chat Completions, and Converse APIs.",
+      "summary_zh": "這是一則模型發布消息而非研究論文:xAI 的前沿(frontier)模型 Grok 4.7 現已透過 Amazon Bedrock 提供。它所要解決的問題,是讓企業與開發者能在既有雲端環境中直接取得最先進的通用模型,無需自行建置推論基礎架構。在方法與規格層面,Grok 4.7 被定位為針對程式編寫(coding)、長時間運行的 agents(代理人)與知識型工作所設計的旗艦模型;它提供 50 萬 token 的上下文視窗(context window),適合處理長文件、大型程式碼庫與多輪代理任務,並具備四個可設定的推理努力程度(reasoning effort levels),讓使用者能在推理深度與回應速度、成本之間權衡取捨。開發者可透過 Responses、Chat Completions 與 Converse 三種 API 介面存取該模型,其中 Converse API 是 Bedrock 生態系的標準呼叫方式,意味著既有使用 Bedrock 的團隊能以熟悉的工具鏈與權限管理機制快速導入。在證據方面,原文僅屬摘要層級的發布公告,並未附上任何基準測試分數或與其他前沿模型的比較結果,效能定位屬於廠商宣稱;定價、區域可用性、延遲表現與安全評估等細節亦未揭露,這是其主要限制,實際表現仍待第三方評測驗證。整體而言,此消息的重要性在於前沿模型的雲端可得性持續擴大,企業無需自建基礎設施即可在 AWS 上以彈性的推理設定呼叫最先進模型,而「依任務分配算力」的設計也反映了成本最佳化的產業趨勢。",
+      "title": "Grok 4.7 is now available on Amazon Bedrock",
+      "title_zh": "Grok 4.7 現已於 Amazon Bedrock 上線"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "kento"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-09-29T02:33:29.219296+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "8GB GPU の 27B ternary は 9B より賢いか",
+          "url": "https://zenn.dev/beckento/articles/e4dbf65acd0fc9"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.2,
+          "generalizability": 0.25,
+          "novelty": 0.3,
+          "preference_relevance": 0.72,
+          "reproducibility": 0.35,
+          "rigor": 0.3
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "Section はじめに: Ternary-Bonsai-2-27B stores 27B weights in {-1, 0, +1} at ~6GB and runs fully on an 8GB GPU.",
+          "Section 結果: comparison run on RTX 3060 Ti (8GB) of Ternary-Bonsai-2-27B (PTQ1_0) vs Qwen3.5-9B (Q4_K_M) under identical thinking-mode settings.",
+          "Section はじめに: evaluation uses 53 statistics problems (undergraduate to graduate level) plus competitive programming, increasing difficulty until differences emerge.",
+          "Content status abstract_only: no numeric scores, ablations, variance estimates, or artifact/code availability are verifiable from the supplied text."
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "z-ai/glm-5.3-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Topic-relevant LLM efficiency note: compares a ternary-quantized 27B model against a 9B model on an 8GB consumer GPU over statistics and competitive programming tasks, aligning with LLM, scaling/efficiency, and inference preferences. However, it is a small applied comparison, not a methodology contribution: known ternary PTQ ideas, single hardware setup, one model pair, no variance controls, and no visible quantitative results. Only abstract-level content is available, so claims about which model is 'smarter' cannot be verified; no code, prompts, or data availability are stated.",
+        "score": 0.45049999999999996,
+        "token_usage": {
+          "completion_tokens": 2725,
+          "prompt_cache_hit_tokens": 64,
+          "prompt_cache_miss_tokens": 2266,
+          "prompt_tokens": 2330,
+          "total_tokens": 5055
+        },
+        "topics": [
+          "LLM quantization",
+          "ternary weights",
+          "model compression",
+          "local inference",
+          "edge GPU deployment",
+          "reasoning benchmarking",
+          "competitive programming evaluation"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "8GB GPU の 27B ternary は 9B より賢いか",
+        "url": "https://zenn.dev/beckento/articles/e4dbf65acd0fc9"
+      },
+      "published_at": "2026-09-28T05:01:49+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.45049999999999996,
+        "llm_relevance_score": 12.613999999999999,
+        "recency_score": 0.9126349804418092,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 0.0,
+        "total_score": 15.326634980441808
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:1bd19f56029ff8eb",
+      "summary": "はじめに\nTernary-Bonsai-2-27B は、27B モデルの重みを {−1, 0, +1} の 3 値に量子化し、約 6GB に収めたモデルです。8GB の GPU でも全層を載せて動かせます。では同じ GPU の定番である 9B モデルより本当に賢いのか。統計問題と競技プログラミングで、差が出るまで問題を難しくしながら確かめました。\n\n 結果\nRTX 3060 Ti（8GB）で Ternary-Bonsai-2-27B（PTQ1_0） と Qwen3.5-9B（Q4_K_M） を同一設定の thinking モードで比較。\n\n統計 53 問（大学 1 年〜大学院）と L...",
+      "summary_zh": "這篇論文探討本地部署的實際問題：把 27B 模型的權重量化為 {−1, 0, +1} 三值、壓縮至約 6GB 的 Ternary-Bonsai-2-27B，在 8GB GPU 上能否勝過同級硬體常見的 9B 模型。作者在 RTX 3060 Ti（8GB）上，以相同設定與 thinking 模式，將 Ternary-Bonsai-2-27B（PTQ1_0）與 Qwen3.5-9B（Q4_K_M）直接對比，評測涵蓋 53 道統計題（難度從大學一年級到研究所程度）與競技程式設計題，並採取「逐步加深難度、直到兩者出現差距」的策略，檢驗模型能力的天花板，而非只看單一難度下的表現，因此能更細緻地呈現參數量與量化位元寬度之間的取捨。需要留意的是，目前僅能取得摘要節錄，統計與程式設計兩類題目的具體勝負、得分與結論在可見內容中被截斷，無法確認三值 27B 是否全面優於 4-bit 9B，這是解讀本論文時的重要限制；且結果僅基於單一硬體、兩個特定模型與特定題型，未必能推廣到其他任務、提示詞設定或量化方案。儘管如此，本研究的意義在於挑戰「參數量較小的模型必然更實用」的直覺：若三值量化能讓大型模型塞進 8GB 消費級 GPU 並維持競爭力，將明顯降低高能力模型在本地與邊緣裝置上的部署門檻，對資源受限環境下的模型選型極具參考價值。",
+      "title": "8GB GPU の 27B ternary は 9B より賢いか",
+      "title_zh": "8GB GPU 上的 27B 三值（ternary）模型是否比 9B 更聰明？"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "Yadan Wei"
+      ],
+      "categories": [
+        "Advanced (300)",
+        "Amazon SageMaker AI",
+        "Technical How-to"
+      ],
+      "entities": [
+        "aws",
+        "vllm"
+      ],
+      "first_seen_at": "2026-09-29T02:02:17.109296+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "aws-ml-blog",
+          "tier": 0,
+          "title": "Generate images and video with vLLM-Omni on SageMaker AI – Part 2",
+          "url": "https://aws.amazon.com/blogs/machine-learning/generate-images-and-video-with-vllm-omni-on-sagemaker-ai-part-2"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.05,
+          "generalizability": 0.1,
+          "novelty": 0.05,
+          "preference_relevance": 0.1,
+          "reproducibility": 0.1,
+          "rigor": 0.05
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "Abstract (content status: abstract_only): 'Deploy two generative media models from one AWS vLLM-Omni Deep Learning Container on Amazon SageMaker AI' — describes deployment only, no evaluation or baselines.",
+          "Abstract: 'Generate an image with FLUX.2-klein through real-time inference, then animate it into video with Wan2.1-VACE through asynchronous inference, and retrieve the MP4 from Amazon S3' — pure media-generation pipeline, no language methodology or quantitative results."
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "z-ai/glm-5.3-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "This is a vendor deployment tutorial (AWS blog) for serving image/video generation models (FLUX.2-klein, Wan2.1-VACE) via vLLM-Omni on SageMaker. It involves no language-model methodology, no research question, no baselines, ablations, or quantitative evaluation — abstract only describes an inference pipeline (image generation, animation to video, S3 retrieval). Image/video diffusion without language methodology is explicitly out of scope (cap 0.20). Only marginal preference overlap is with inference/serving tooling (vLLM) and video/CV keywords; no LLM, NLP, or agent content is present.",
+        "score": 0.07750000000000001,
+        "token_usage": {
+          "completion_tokens": 1005,
+          "prompt_cache_hit_tokens": 1920,
+          "prompt_cache_miss_tokens": 267,
+          "prompt_tokens": 2187,
+          "total_tokens": 3192
+        },
+        "topics": [
+          "Inference & Serving",
+          "Video & Temporal",
+          "Computer Vision"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "aws-ml-blog",
+        "tier": 0,
+        "title": "Generate images and video with vLLM-Omni on SageMaker AI – Part 2",
+        "url": "https://aws.amazon.com/blogs/machine-learning/generate-images-and-video-with-vllm-omni-on-sagemaker-ai-part-2"
+      },
+      "published_at": "2026-09-28T07:15:17+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 4.0,
+        "kind_score": 1.5,
+        "llm_raw_score": 0.07750000000000001,
+        "llm_relevance_score": 2.1700000000000004,
+        "recency_score": 0.9211330762016788,
+        "semantic_score": 0.0,
+        "tier_score": 3.0,
+        "topic_score": 3.45,
+        "total_score": 15.041133076201678
+      },
+      "section": null,
+      "source_name": "AWS Machine Learning Blog",
+      "story_id": "fallback:b442b3bb43186e3c",
+      "summary": "Deploy two generative media models from one AWS vLLM-Omni Deep Learning Container on Amazon SageMaker AI. Generate an image with FLUX.2-klein through real-time inference, then animate it into video with Wan2.1-VACE through asynchronous inference, and retrieve the MP4 from Amazon S3.",
+      "summary_zh": "本篇文章是系列教學的第二部分,示範如何在 Amazon SageMaker AI 上,以單一 AWS vLLM-Omni 深度學習容器(Deep Learning Container)同時部署兩個生成式媒體模型,解決多模態生成管線需分別建置與維運多套環境的整合難題。方法上分三個步驟:首先透過即時推論(real-time inference)端點呼叫 FLUX.2-klein,由文字提示生成一張圖像;接著將該圖像交給 Wan2.1-VACE,以非同步推論(asynchronous inference)方式把靜態圖像轉換為影片;最後從 Amazon S3 取回輸出的 MP4 檔案。整體結果顯示,同一容器內的兩個模型可以串接成「圖像轉影片」的完整工作流程,並依任務特性選用即時或非同步端點。不過,本篇屬於操作導向的教學,摘要中並未提供延遲、吞吐量或成本等量化評估,也未涉及模型微調(fine-tuning)、模型版本差異或大規模部署等議題,讀者導入前仍需自行評估 GPU 資源與費用。其價值在於展示以 vLLM-Omni 統一服務層、搭配 SageMaker AI 託管基礎設施來簡化多模型部署的實務路徑,對想在雲端快速建立生成式媒體應用的工程團隊具有參考意義。",
+      "title": "Generate images and video with vLLM-Omni on SageMaker AI – Part 2",
+      "title_zh": "在 SageMaker AI 上以 vLLM-Omni 生成圖像與影片 – 第二部分"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "Sarath Krishnan"
+      ],
+      "categories": [
+        "Advanced (300)",
+        "Amazon Nova",
+        "Technical How-to"
+      ],
+      "entities": [],
+      "first_seen_at": "2026-09-29T02:02:17.110311+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "aws-ml-blog",
+          "tier": 0,
+          "title": "Implementing synthetic monitoring using Amazon Nova Act",
+          "url": "https://aws.amazon.com/blogs/machine-learning/implementing-synthetic-monitoring-using-amazon-nova-act"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.05,
+          "generalizability": 0.15,
+          "novelty": 0.1,
+          "preference_relevance": 0.35,
+          "reproducibility": 0.1,
+          "rigor": 0.05
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "Abstract: 'Learn an agent-driven approach to synthetic monitoring using Amazon Nova Act and Amazon Bedrock AgentCore' — establishes topical relevance to agent frameworks and tool orchestration.",
+          "Abstract: 'The post covers the architecture and patterns for resilient, managed user-journey validation that moves beyond brittle UI scripts' — describes architecture patterns only; no methodological detail, baselines, or evaluation is provided.",
+          "Abstract: 'with a complete sample implementation' — availability claim with no verifiable repository or artifact reference in the supplied text.",
+          "Content status: abstract_only — full document unavailable; rigor, evidence strength, and reproducibility claims cannot be verified."
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "z-ai/glm-5.3-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Vendor engineering post (abstract only) describing an agent-driven synthetic monitoring setup built on Amazon Nova Act and Bedrock AgentCore. Topically adjacent to the Agents & Tool Use and Inference & Serving preferences (browser-agent user-journey validation, managed deployment), but it is applied product documentation, not research: no research question, no method details, no baselines or ablations, and no quantitative results are present. 'Complete sample implementation' is asserted without a verifiable artifact link, and abstract-only status prevents verification of any claims. Weighted total computes to ~0.19; the low ceiling reflects promotional, non-methodological content with minimal assessable evidence.",
+        "score": 0.18999999999999997,
+        "token_usage": {
+          "completion_tokens": 1393,
+          "prompt_cache_hit_tokens": 1920,
+          "prompt_cache_miss_tokens": 236,
+          "prompt_tokens": 2156,
+          "total_tokens": 3549
+        },
+        "topics": [
+          "Agents & Tool Use",
+          "Inference & Serving"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "aws-ml-blog",
+        "tier": 0,
+        "title": "Implementing synthetic monitoring using Amazon Nova Act",
+        "url": "https://aws.amazon.com/blogs/machine-learning/implementing-synthetic-monitoring-using-amazon-nova-act"
+      },
+      "published_at": "2026-09-28T06:56:32+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.5,
+        "llm_raw_score": 0.18999999999999997,
+        "llm_relevance_score": 5.319999999999999,
+        "recency_score": 0.9199344646907562,
+        "semantic_score": 0.0,
+        "tier_score": 3.0,
+        "topic_score": 3.75,
+        "total_score": 14.489934464690755
+      },
+      "section": null,
+      "source_name": "AWS Machine Learning Blog",
+      "story_id": "fallback:3ae198efd6d51fc0",
+      "summary": "Learn an agent-driven approach to synthetic monitoring using Amazon Nova Act and Amazon Bedrock AgentCore. The post covers the architecture and patterns for resilient, managed user-journey validation that moves beyond brittle UI scripts, with a complete sample implementation.",
+      "summary_zh": "本文探討如何以代理(agent)驅動的方式實作合成監控(synthetic monitoring),並結合 Amazon Nova Act 與 Amazon Bedrock AgentCore 建立具彈性的使用者旅程驗證流程。傳統的合成監控多半依賴固定的 UI 自動化腳本,這類腳本對介面改版極為敏感,任何按鈕位置或元素結構的調整都可能導致腳本失效,使維護成本居高不下。作者提出的做法是讓智慧代理理解使用者旅程的意圖,在實際介面上動態執行驗證步驟,而非逐行重播寫死的指令;再透過 Amazon Bedrock AgentCore 提供的託管執行環境,處理排程、隔離與安全等營運課題。文章說明了整體架構與常見設計模式,並附上完整的範例實作供讀者參考。需要留意的是,本文屬於工程實務文章,目前僅能取得摘要內容,無法核實具體的量化結果、成本比較或穩定性資料;其效益主張,例如降低腳本維護負擔、對介面變更更具容錯能力,仍需在實際環境中驗證。此外,以 LLM 驅動的代理執行監控,也可能面臨延遲、成本與判定一致性等挑戰。對 SRE 與平台團隊而言,這篇文章展示了 AI 代理在軟體可靠性工程的落地應用,可作為評估是否將傳統腳本式監控升級為代理式監控的起點。",
+      "title": "Implementing synthetic monitoring using Amazon Nova Act",
+      "title_zh": "使用 Amazon Nova Act 實作合成監控"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "プロマネ武蔵"
+      ],
+      "categories": [],
+      "entities": [
+        "openai"
+      ],
+      "first_seen_at": "2026-09-29T02:33:29.211307+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "ChatGPT が突然 BAN されたら — 理由の見えない判定と、先に握っておくべきこと",
+          "url": "https://zenn.dev/exapolicy/articles/83995b8791d4ab"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.05,
+          "generalizability": 0.1,
+          "novelty": 0.05,
+          "preference_relevance": 0.4,
+          "reproducibility": 0.0,
+          "rigor": 0.02
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "UNTRUSTED_PAPER (abstract_only, opening paragraph): a tax accountant office's ChatGPT account was suspended ('いわゆる BAN'), stopping the director's account, all staff access, past research, and connected APIs",
+          "UNTRUSTED_PAPER (abstract_only, third paragraph): the account of events comes from a public video (オタク会計士ch「生成AIが突然｢永久BAN｣で社内全滅｡一体何をした？」2026-09-28); a ban-notification email arrived and a single appeal was rejected within hours",
+          "UNTRUSTED_PAPER (abstract_only, metadata): 'Content status: abstract_only' — no methodology, experiments, results, or limitations sections exist in the supplied document"
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "z-ai/glm-5.3-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "An anecdotal incident report, not research: a Japanese tax accountant office's ChatGPT business-plan account was suspended, cutting off all staff and linked APIs, with one appeal rejected within hours. Topical overlap with LLM preferences (ChatGPT usage, business workflow, API dependency, operational risk) is genuine but shallow — no method, baseline, ablation, benchmark, or quantitative result is present, and only the abstract is available. Novelty is negligible (recounting a publicly discussed ban via a YouTube video source). Rigor and evidence strength are minimal since the entire account rests on a secondhand video citation (オタク会計士ch, dated 2026-09-28). Generalizability is limited to informal 'operational contingency' lessons for LLM-dependent businesses; nothing is reproducible. A real LLM-related topic, but far below the research-quality bar.",
+        "score": 0.18800000000000003,
+        "token_usage": {
+          "completion_tokens": 1713,
+          "prompt_cache_hit_tokens": 64,
+          "prompt_cache_miss_tokens": 2281,
+          "prompt_tokens": 2345,
+          "total_tokens": 4058
+        },
+        "topics": [
+          "Large Language Models",
+          "Agents & Tool Use",
+          "Inference & Serving"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "ChatGPT が突然 BAN されたら — 理由の見えない判定と、先に握っておくべきこと",
+        "url": "https://zenn.dev/exapolicy/articles/83995b8791d4ab"
+      },
+      "published_at": "2026-09-28T07:45:41+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 2.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.18800000000000003,
+        "llm_relevance_score": 5.264000000000001,
+        "recency_score": 0.9230797445672774,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 4.0,
+        "total_score": 13.987079744567279
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:5706c1249442c740",
+      "summary": "朝、パソコンを開いたら、事務所の全員が ChatGPT を使えなくなっていた\nある税理士事務所で、ChatGPT のアカウントが停止（いわゆる BAN）されました。事務所はビジネスプランを契約し、スタッフにも席を割り当てて業務に使っていました。所長のアカウントが止まると、スタッフ全員の ChatGPT、過去の調べ物、つないでいた API まで、まとめて使えなくなったそうです。\n経緯は当事者が公開の動画で語っています（オタク会計士ch「生成AIが突然｢永久BAN｣で社内全滅｡一体何をした？」2026-09-28）。朝、停止を知らせるメールが届き、異議申し立ては 1 回だけ、数時間で却下...",
+      "summary_zh": "本文是一篇以日本某稅理士事務所為對象的案例報導。該事務所訂閱 ChatGPT Business 方案並為員工分配席位,將生成式 AI 深度導入日常業務;某日早晨,所長帳號突遭停止(俗稱永久 BAN),連帶使全所員工的 ChatGPT 使用權、過去的查詢紀錄,以及已串接的 API 一併失效,業務瞬間停擺。事件經當事人於公開影片(オタク会計士ch,2026-09-28)說明:當天上午收到停止通知郵件,異議申訴僅有一次機會,且於數小時內即遭駁回,過程中使用者無從得知具體違規理由,判定透明度極低。就方法而言,本文屬單一案例的經驗整理,並非系統性實證研究;主要證據來自當事人自述,缺乏平台官方確認的封鎖原因與統計資料,外部讀者難以驗證細節。又因現有內容僅為摘要,標題所指「應預先準備的因應做法」等完整建議無法在本摘要中查核,推論時應保留餘地。此案例的限制在於樣本僅一案,無法推估此類事件的發生率,也不確定申訴流程是否適用於所有情境。儘管如此,其警示意義明確:當核心業務依賴單一 SaaS 帳號及其生成式 AI 服務時,帳號一旦遭停權,歷史對話、API 整合與工作流程可能同時中斷;讀者可據此省思的因應方向包括定期匯出資料、分散帳號權限、備妥替代工具與人工備援流程,以降低服務突發中斷對營運的衝擊。",
+      "title": "ChatGPT が突然 BAN されたら — 理由の見えない判定と、先に握っておくべきこと",
+      "title_zh": "當 ChatGPT 突然遭 BAN——理由不透明的判定,與該預先準備的因應之道"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "AIDB Research"
+      ],
+      "categories": [
+        "深堀り解説"
+      ],
+      "entities": [],
+      "first_seen_at": "2026-09-29T02:33:28.504538+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "aidb",
+          "tier": 1,
+          "title": "🔒 「誰も仕様を知らない」古いシステム、AIで業務ルールを掘り起こすには？要件定義書に戻すアプローチ",
+          "url": "https://ai-data-base.com/archives/126379"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.05,
+          "generalizability": 0.1,
+          "novelty": 0.1,
+          "preference_relevance": 0.4,
+          "reproducibility": 0.05,
+          "rigor": 0.05
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "abstract_only: excerpt only cites an Anthropic blog on COBOL modernization via Claude Code and an IBM stock drop (13% on 2026-02-23); no methodology or system description is provided.",
+          "abstract_only: no baselines, ablations, quantitative results, limitations, or availability claims appear anywhere in the provided text."
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "z-ai/glm-5.3-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "A Japanese news blog post (abstract-only, paywalled) reporting on Anthropic's COBOL modernization approach with Claude Code. Topically adjacent to LLM agents and code modernization preferences, but it is secondhand reportage with no method, evaluation, baselines, or quantitative results; nothing verifiable or reproducible from the supplied text.",
+        "score": 0.20250000000000004,
+        "token_usage": {
+          "completion_tokens": 1059,
+          "prompt_cache_hit_tokens": 64,
+          "prompt_cache_miss_tokens": 2342,
+          "prompt_tokens": 2406,
+          "total_tokens": 3465
+        },
+        "topics": [
+          "Agents & Tool Use",
+          "Code & Programming",
+          "Large Language Models"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "aidb",
+        "tier": 1,
+        "title": "🔒 「誰も仕様を知らない」古いシステム、AIで業務ルールを掘り起こすには？要件定義書に戻すアプローチ",
+        "url": "https://ai-data-base.com/archives/126379"
+      },
+      "published_at": "2026-09-28T06:48:31+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.20250000000000004,
+        "llm_relevance_score": 5.670000000000001,
+        "recency_score": 0.9194224677800688,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 13.389422467780069
+      },
+      "section": null,
+      "source_name": "AIDB - AI Research Database",
+      "story_id": "fallback:4457a1efe61f43c0",
+      "summary": "<p>古いシステムの読み解きにAIを活用する動きが加速 AnthropicがCOBOL刷新を打ち出した日、IBM株は13%急落 2026年2月23日、米IBMの株価が1日で13%も下落しました。これは2000年10月以来となる歴史的な下げ幅です。 この引き金としてメディアが報じたのが、Claudeを手がけるAnthropicが同日に公開した公式ブログでした。取り上げられていたのは、COBOLで書かれたレガシーシステムをAIエージェント「Claude Code」でモダナイズする手法です。 How AI helps break the cost barrier to COBOL modernizatio&#8230;</p>\n<p>The post <a href=\"https://ai-data-base.com/archives/126379\"><span class=\"locked-post\">🔒</span> 「誰も仕様を知らない」古いシステム、AIで業務ルールを掘り起こすには？要件定義書に戻すアプローチ</a> first appeared on <a href=\"https://ai-data-base.com\">AIDB</a>.</p>",
+      "summary_zh": "這篇文章（AIDB 部落格）屬實務趨勢導讀，核心問題是：企業的老舊系統（legacy system）經長年運作後，開發者早已離職、規格文件散佚甚至從未撰寫，形成「誰也不知道規格」的黑箱，使現代化（modernization）與維運舉步維艱。文章以 2026 年 2 月 23 日美國 IBM 股價單日暴跌 13%、創 2000 年 10 月以來最大跌幅的事件切入，指出媒體報導的導火線是 Anthropic 當天發布的官方部落格，主題為如何以 AI 代理 Claude Code 突破 COBOL 系統現代化的成本門檻。文中介紹的做法並非直接改寫程式碼，而是先進行逆向工程：讓 AI 閱讀 COBOL 等老舊語言的原始碼，從中挖掘隱含的業務規則與處理邏輯，再整理回需求規格書，供人類審查與驗證後才推動現代化。就證據而言，本文為趨勢分析而非學術論文，且目前僅取得摘要，未提供實際專案的量化成效、轉換準確率或成本節省資料，方法細節亦不明，讀者宜謹慎看待其宣稱。其重要性在於：AI 可能大幅壓低遺留系統解析與翻新的成本，進而動搖以大型主機與 COBOL 維運為基礎的產業結構，IBM 股價的劇烈反應即被視為市場對此技術威脅的訊號。",
+      "title": "🔒 「誰も仕様を知らない」古いシステム、AIで業務ルールを掘り起こすには？要件定義書に戻すアプローチ",
+      "title_zh": "「無人知曉規格」的老舊系統，如何以 AI 挖掘業務規則？還原為需求規格書的做法"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "Masao Kunii"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-09-29T02:33:29.216008+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "JevのようにAIに「文章がどういう内容か」を確率つきで答えさせる",
+          "url": "https://zenn.dev/masao_kunii/articles/1198fd8e170a81"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.05,
+          "generalizability": 0.2,
+          "novelty": 0.15,
+          "preference_relevance": 0.5,
+          "reproducibility": 0.05,
+          "rigor": 0.05
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "Content status: abstract_only — full methodology, results, and limitations cannot be verified from the supplied text.",
+          "abstract: '従業員サーベイにおける自由記述コメントが、どれくらい正確にどれくらいの速さで分類できるかを試しました' — states the employee-survey classification test but reports no accuracy, speed, or baseline numbers.",
+          "abstract: 'Jevとは、2026年9月にTypeSafe AIが発表した…文章やコードを一切書かずに「判断」だけを返す新しいタイプのAIモデル（System One モデル）です' — describes a future-dated, unverifiable model announcement as the framing premise.",
+          "abstract: 'Jevそのものではなく、Jevのようなものを業務で使うとしたらどうなるかという検証' — the work is a business-use verification exercise, not a novel method or evaluation contribution."
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "z-ai/glm-5.3-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Practitioner blog post (abstract only) about classifying employee-survey free-text comments with probability-scored judgments from an LLM-like system ('Jev'), touching LLM use and Japanese NLP text classification, which gives moderate topical relevance. However, it is a pure domain application (HR text classification) with no described methodology, baselines, ablations, or quantitative results; the central 'Jev' claims (TypeSafe AI, Sept 2026, 'System One' model) are unverifiable from the document. Weighted components (~0.26) are capped at 0.20 per the out-of-scope rule for pure domain applications, further reduced for abstract-only unverifiable content.",
+        "score": 0.26,
+        "token_usage": {
+          "completion_tokens": 3121,
+          "prompt_cache_hit_tokens": 64,
+          "prompt_cache_miss_tokens": 2248,
+          "prompt_tokens": 2312,
+          "total_tokens": 5433
+        },
+        "topics": [
+          "Large Language Models",
+          "Japanese LLM & NLP",
+          "Natural Language Processing"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "JevのようにAIに「文章がどういう内容か」を確率つきで答えさせる",
+        "url": "https://zenn.dev/masao_kunii/articles/1198fd8e170a81"
+      },
+      "published_at": "2026-09-28T06:34:10+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.26,
+        "llm_relevance_score": 7.28,
+        "recency_score": 0.9185066941241414,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 3.0,
+        "total_score": 12.998506694124142
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:b50a9f738655fcce",
+      "summary": "Jevとは、2026年9月にTypeSafe AIが発表した、文章やコードを一切書かずに「判断」だけを返す新しいタイプのAIモデル（System One モデル）です。\nリリースされて1週間のうちに世界中のエンジニアが熱狂し、Jevに似た仕組みのオープンモデルや既存のLLMから似た結果を得る仕組みなどを競うように生み出されました。\nこの記事は、Jevそのものではなく、Jevのようなものを業務で使うとしたらどうなるかという検証をしたものです。具体的には、従業員サーベイにおける自由記述コメントが、どれくらい正確にどれくらいの速さで分類できるかを試しました。\n\n この記事の要点\n\n文章を「この...",
+      "summary_zh": "這篇文章探討新興「System One 模型」的實務應用:Jev 是 TypeSafe AI 於2026年9月發表的新型 AI 模型,特點是不撰寫任何文字或程式碼,只回傳「判斷」結果;發布一週內即在全球工程師之間掀起熱潮,模仿其機制的開源模型,以及從現有 LLM 取得類似效果的方法也競相出現。作者並非直接研究 Jev 本身,而是驗證「Jev 這類系統」若實際導入業務會是何種樣貌。具體課題是:員工調查中自由填寫的意見評論,能否兼顧準確度與速度地完成分類。方法上,文章讓 AI 像 Jev 一樣,以附帶機率(信心分數)的方式回答某段文章「屬於什麼內容」,亦即輸出分類判斷及其可靠程度,而非生成長篇文字,藉此快速分流大量文字意見。就摘要所見,文章宣稱要檢驗分類的準確率與速度,但內容在要點處即被截斷,並未揭露具體數字,例如準確率、處理延遲、資料集規模或與基準方法的比較結果,這是解讀時必須保留的限制。此文的重要性在於示範一種新興互動模式:讓 AI 不書寫文字、只回傳附機率的判斷,可望應用於人資意見分類、輿情分析等需要快速處理大量文字的場景;實際成效仍需參閱全文方能評估。",
+      "title": "JevのようにAIに「文章がどういう内容か」を確率つきで答えさせる",
+      "title_zh": "讓 AI 像 Jev 一樣,以附帶機率的方式回答「這段文章的內容是什麼」"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "nolanlover0527"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-09-29T02:33:28.879575+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "qiita-llm-tag",
+          "tier": 2,
+          "title": "「よく考えて」は通用しない! Opus 5.5 公式ガイドの要点13個まとめ",
+          "url": "https://qiita.com/nolanlover0527/items/7f025b9c20b00e4d24b7"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.02,
+          "generalizability": 0.1,
+          "novelty": 0.05,
+          "preference_relevance": 0.45,
+          "reproducibility": 0.0,
+          "rigor": 0.02
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "[abstract_only] UNTRUSTED_PAPER text: 'Opus 5.5の公式ガイドが公開...Anthropic公式のプロンプティングガイドも同時に出ています' — content is a guide summary, not a study.",
+          "[abstract_only] UNTRUSTED_PAPER text: '「前のモデルと同じ書き方で大丈夫でしょ」と思った方、ちょっと待ってください。実はデフォルト設定が変わっていたり、これまででき...' — truncated text ends mid-sentence; no methods, results, or evidence available to verify.",
+          "[abstract_only] Absence of any methodology, baseline, ablation, or quantitative result markers anywhere in the provided content supports near-zero rigor and evidence_strength scores."
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "z-ai/glm-5.3-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "This is a Japanese-language blog-style summary of a vendor's official prompting guide for 'Claude Opus 5.5', not a research paper. Topic overlap with preferences exists (LLMs, prompting, Japanese content), but the available text (abstract_only) contains no methodology, experiments, baselines, or quantitative results — only promotional framing ('デフォルト設定が変わっていたり'). Novelty and rigor are essentially nil; no claims can be verified from the snippet. Score reflects partial topical relevance weighted against absent research substance.",
+        "score": 0.20350000000000001,
+        "token_usage": {
+          "completion_tokens": 978,
+          "prompt_cache_hit_tokens": 1920,
+          "prompt_cache_miss_tokens": 289,
+          "prompt_tokens": 2209,
+          "total_tokens": 3187
+        },
+        "topics": [
+          "Prompting & In-Context Learning",
+          "Large Language Models",
+          "Japanese LLM & NLP"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "qiita-llm-tag",
+        "tier": 2,
+        "title": "「よく考えて」は通用しない! Opus 5.5 公式ガイドの要点13個まとめ",
+        "url": "https://qiita.com/nolanlover0527/items/7f025b9c20b00e4d24b7"
+      },
+      "published_at": "2026-09-28T17:01:02+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.20350000000000001,
+        "llm_relevance_score": 5.698,
+        "recency_score": 0.9593745868597701,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 3.75,
+        "total_score": 12.207374586859771
+      },
+      "section": null,
+      "source_name": "Qiita LLM Tag",
+      "story_id": "fallback:c5df628d1513fa59",
+      "summary": "Opus 5.5の公式ガイドが公開\nClaude Opus 5.5が公開され、Anthropic公式のプロンプティングガイドも同時に出ています。\n「前のモデルと同じ書き方で大丈夫でしょ」と思った方、ちょっと待ってください。\n実はデフォルト設定が変わっていたり、これまででき...",
+      "summary_zh": "本文整理 Anthropic 隨 Claude Opus 5.5 同步發布的官方 prompting guide,以 13 個要點歸納新模型的提示詞撰寫建議。其核心訊息是:若沿用前一個模型的既有寫法,可能無法充分發揮 Opus 5.5 的能力,因為本次發行的部分預設(default)設定已經改變,過去可行的慣用提示技巧未必繼續適用。標題「よく考えて(請仔細思考)は通用しない」點出:在提示詞中單純要求模型「認真思考、想清楚再回答」這類泛用指令,在新模型上已不再是有效做法,提示詞設計必須因應新的行為特性調整。就性質而言,本文屬於導讀與實務整理,並非原創研究:作者閱讀官方指南後,將內容拆解為可操作的條列要點,方便開發者快速對照自身的工作流程。限制方面,目前僅能取得摘要與開頭段落,原文在說明「過去可做到、現在預設已變」之處即被截斷,13 個要點的完整條目、具體範例與官方原始措辭皆無法查證,讀者不應將本文視為指南全文的替代品。其價值在於提醒提示工程實務具有時效性:模型每次疊代都可能改變預設行為,先前累積的提示詞資產應定期重新檢視與測試,而非一味沿用。",
+      "title": "「よく考えて」は通用しない! Opus 5.5 公式ガイドの要点13個まとめ",
+      "title_zh": "「好好想清楚」行不通!Opus 5.5 官方指南 13 個要點整理"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "Hideki_Tamae"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-09-29T02:33:28.884602+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "qiita-llm-tag",
+          "tier": 2,
+          "title": "Anthropicが「30%速く、最大30%安く」とSonnet 5.5を発表した翌日、自分のパイプラインの実行モデルはまだ旧世代のままだった",
+          "url": "https://qiita.com/Hideki_Tamae/items/a081c9500c2a34fd8c0c"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.05,
+          "generalizability": 0.05,
+          "novelty": 0.05,
+          "preference_relevance": 0.4,
+          "reproducibility": 0.02,
+          "rigor": 0.05
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "abstract_only, はじめに: the only quantitative content is Anthropic's marketing claim '30%以上速く、タスクによっては最大30%安く' for 'Claude Sonnet 5.5' (announced 2026年9月28日); no independent measurements are provided.",
+          "abstract_only, はじめに: the author's own reported figure is '0' — the 記事投稿パイプライン was still using the old-generation 実行モデル; no methods, baselines, results tables, or limitations sections exist in the supplied text.",
+          "abstract_only: content status is 'abstract_only', so no full-method or evaluation sections are available to verify any claim."
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "z-ai/glm-5.3-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Personal blog fragment (abstract_only) noting that the author's article-posting pipeline still ran the previous-generation model the day after Anthropic announced Claude Sonnet 5.5 with '30% faster / up to 30% cheaper' claims. Topic touches LLM deployment and workflow automation, earning partial preference credit, but there is no research contribution: no methodology, baselines, ablations, quantitative evaluation (the only figures are vendor marketing claims and the author's '0' observation), limitations discussion, or reproducible artifacts. It is commentary on a personal workflow, not a research paper.",
+        "score": 0.18850000000000003,
+        "token_usage": {
+          "completion_tokens": 2036,
+          "prompt_cache_hit_tokens": 1920,
+          "prompt_cache_miss_tokens": 316,
+          "prompt_tokens": 2236,
+          "total_tokens": 4272
+        },
+        "topics": [
+          "Agents & Tool Use",
+          "LLM",
+          "Inference & Serving"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "qiita-llm-tag",
+        "tier": 2,
+        "title": "Anthropicが「30%速く、最大30%安く」とSonnet 5.5を発表した翌日、自分のパイプラインの実行モデルはまだ旧世代のままだった",
+        "url": "https://qiita.com/Hideki_Tamae/items/a081c9500c2a34fd8c0c"
+      },
+      "published_at": "2026-09-28T15:45:25+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.18850000000000003,
+        "llm_relevance_score": 5.2780000000000005,
+        "recency_score": 0.9543499639803438,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 3.75,
+        "total_score": 11.782349963980344
+      },
+      "section": null,
+      "source_name": "Qiita LLM Tag",
+      "story_id": "fallback:f317bccf8372e4f4",
+      "summary": "はじめに\n0。\nこれが今回の数字です。何の0かというと、Anthropicが2026年9月28日に発表した新モデル「Claude Sonnet 5.5」が謳う「30%以上速く、タスクによっては最大30%安く」という改善を、自分の記事投稿パイプラインが発表翌日の時点で実際に...",
+      "summary_zh": "這是一篇個人技術隨筆(目前僅有摘要),核心問題非常實際:供應商宣稱的模型效能與成本改善,何時才會真正反映在終端使用者的自動化流程裡?作者指出,Anthropic 於 2026 年 9 月 28 日發表新模型 Claude Sonnet 5.5,官方主打「速度提升 30% 以上,部分任務最多便宜 30%」。作者以自己的文章投稿 pipeline 作為實測基準,在發表隔天檢查實際執行情況,並以一個數字開場:「0」——依上下文推斷,這意指新模型的改善在當下的 pipeline 中實際兌現為零,執行中的模型仍停留在舊世代。就方法而言,文章以真實生產環境的量測對照官方宣稱的速度與成本數字,而非直接引用官方 benchmark。主要證據即這個「0」的實測結果,凸顯模型發表、API 端點與 pipeline 設定更新之間存在時間差,升級不會自動發生。其限制在於:內容僅為摘要、樣本是單一使用者的單一流程,量測時點距發表僅一天,結論可能隨供應商全面 rollout 而改變,文中也未提供完整量測細節。這篇文章的價值在於提醒讀者:廠商宣稱的延遲與成本最佳化,未必等同於實際工作負載的體感,部署端的模型切換與驗證機制同樣關鍵。",
+      "title": "Anthropicが「30%速く、最大30%安く」とSonnet 5.5を発表した翌日、自分のパイプラインの実行モデルはまだ旧世代のままだった",
+      "title_zh": "Anthropic 發表「快 30%、最多省 30%」的 Sonnet 5.5 隔天,我的文章發布 pipeline 執行模型卻仍是舊世代"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "Bhavya Sruthi Sode"
+      ],
+      "categories": [
+        "Amazon Textract",
+        "Customer Solutions"
+      ],
+      "entities": [],
+      "first_seen_at": "2026-09-29T02:02:17.112301+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "aws-ml-blog",
+          "tier": 0,
+          "title": "Automating Amazon Textract adapter lifecycle management across accounts",
+          "url": "https://aws.amazon.com/blogs/machine-learning/automating-amazon-textract-adapter-lifecycle-management-across-accounts"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.05,
+          "generalizability": 0.15,
+          "novelty": 0.1,
+          "preference_relevance": 0.05,
+          "reproducibility": 0.1,
+          "rigor": 0.05
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "Abstract: 'Learn how to operationalize Amazon Textract Custom Queries adapters for production: infrastructure as code with AWS CloudFormation and Terraform, a cross-account adapter promotion process' — an operational tutorial, not empirical research.",
+          "Abstract: lists security controls 'such as VPC endpoints, encryption, and least-privilege IAM'; no baselines, ablations, metrics, or limitations are reported anywhere in the supplied text.",
+          "Content status: abstract_only — no method detail, experiments, or code/data availability claims can be verified from the supplied document."
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "z-ai/glm-5.3-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Pure domain application: an AWS cloud-operations guide for Amazon Textract document-adapter lifecycle management (IaC, cross-account promotion, routing, security controls). No LLM/NLP/language methodology, no baselines, ablations, quantitative results, or limitations discussion; abstract-only content limits verification. Out-of-scope rule caps at 0.20; weighted components yield 0.07.",
+        "score": 0.07,
+        "token_usage": {
+          "completion_tokens": 1555,
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 2176,
+          "prompt_tokens": 2176,
+          "total_tokens": 3731
+        },
+        "topics": [
+          "Amazon Textract",
+          "document processing",
+          "infrastructure as code",
+          "cloud operations",
+          "security controls"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "aws-ml-blog",
+        "tier": 0,
+        "title": "Automating Amazon Textract adapter lifecycle management across accounts",
+        "url": "https://aws.amazon.com/blogs/machine-learning/automating-amazon-textract-adapter-lifecycle-management-across-accounts"
+      },
+      "published_at": "2026-09-28T06:49:04+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.5,
+        "llm_raw_score": 0.07,
+        "llm_relevance_score": 1.9600000000000002,
+        "recency_score": 0.9194575852810778,
+        "semantic_score": 0.0,
+        "tier_score": 3.0,
+        "topic_score": 4.0,
+        "total_score": 11.379457585281079
+      },
+      "section": null,
+      "source_name": "AWS Machine Learning Blog",
+      "story_id": "fallback:0337c2b2e693cff5",
+      "summary": "Learn how to operationalize Amazon Textract Custom Queries adapters for production: infrastructure as code with AWS CloudFormation and Terraform, a cross-account adapter promotion process, a pre-classification routing pattern for multiple form versions, and production security controls such as VPC endpoints, encryption, and least-privilege IAM.",
+      "summary_zh": "本文是一篇工程實務指南,探討如何將 Amazon Textract Custom Queries adapter 從概念驗證推進到正式生產環境。企業文件自動化常仰賴自訂查詢功能,但 adapter 的訓練、版本管理與上線流程往往缺乏標準化作法。作者提出一套完整的生命週期管理方案:首先以基礎架構即程式碼(Infrastructure as Code)方式,利用 AWS CloudFormation 與 Terraform 定義 adapter 及其周邊資源,確保環境可重現且變更可追蹤;其次設計跨帳號(cross-account)的推升(promotion)流程,讓 adapter 先在開發帳號訓練與驗證,再經受控管道推升至正式帳號;並針對多種表單版本並存的情境,介紹預分類路由(pre-classification routing)模式,先判斷文件類型再交由對應 adapter 處理;最後涵蓋生產環境安全控制,包括 VPC endpoints、加密與最小權限 IAM 原則。須注意本內容僅為摘要,文中未提供量化的評估結果或實證案例,實際效益仍須依自身工作負載驗證;此外,整套作法高度綁定 AWS 生態系,對成本與監控細節著墨有限。整體而言,本文對需要在雲端建立可靠文件擷取管線的工程與平台團隊極具參考價值,說明從訓練到治理的關鍵落地環節。",
+      "title": "Automating Amazon Textract adapter lifecycle management across accounts",
+      "title_zh": "跨帳號自動化管理 Amazon Textract adapter 生命週期"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "毎日AIレシピ"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-09-29T02:33:29.204365+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "矛盾する指示、AIは書く順番と優先順位の明示でどう変わるか3条件で検証した",
+          "url": "https://zenn.dev/every_ai_recipe/articles/ai-instruction-conflict-order-check"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.1,
+          "generalizability": 0.2,
+          "novelty": 0.3,
+          "preference_relevance": 0.5,
+          "reproducibility": 0.1,
+          "rigor": 0.1
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "TL;DR: three conditions (A: limit first; B: completeness first; C: limit first plus explicit 'prioritize length limit' instruction) run on independent LLM instances, yielding 135, 237, and 233 characters respectively.",
+          "TL;DR: no model name, prompt texts, repetitions, or statistical treatment are reported; content status is abstract_only, so methods and claims cannot be verified beyond the summary."
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "z-ai/glm-5.3-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "An informal Japanese-language case study on how instruction order and an explicit priority rule affect LLM handling of contradictory instructions (character limit vs. completeness). Topical fit is mainly prompting/instruction-following and black-box LLM behavior, but the study is n=1 per condition, with no model named, no baselines beyond the three order/priority conditions, no repetitions, and only TL;DR-level reporting (three character counts: 135, 237, 233). Findings about order sensitivity are largely known in the literature; the explicit-priority condition is a modest twist. Not reproducible from the supplied text and generalizability is limited to one ad-hoc task. Relevant to prompting preferences but weak as research; 0.30 overall.",
+        "score": 0.3,
+        "token_usage": {
+          "completion_tokens": 1777,
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 2363,
+          "prompt_tokens": 2363,
+          "total_tokens": 4140
+        },
+        "topics": [
+          "prompting",
+          "instruction following",
+          "conflicting instructions",
+          "Japanese LLM usage"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "矛盾する指示、AIは書く順番と優先順位の明示でどう変わるか3条件で検証した",
+        "url": "https://zenn.dev/every_ai_recipe/articles/ai-instruction-conflict-order-check"
+      },
+      "published_at": "2026-09-28T12:17:52+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.3,
+        "llm_relevance_score": 8.4,
+        "recency_score": 0.9406933862540549,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 0.0,
+        "total_score": 11.140693386254055
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:34a06c19d3f5de7e",
+      "summary": "TL;DR\n\n「300字以内で簡潔に」と「理由は1つも漏らさず全部書いて」という、文字数制限と網羅性の要求が矛盾する指示を、会話履歴を共有しない独立したLLMインスタンス3体に条件だけ変えて渡した\n条件A（文字数制限が先、「全部書いて」があとから追記）: 135字。4件の決定事項には触れたが、理由はどれも数語に圧縮された\n条件B（「全部書いて」が先、文字数制限があとから追記）: 237字。4件それぞれの理由がほぼそのままの詳しさで書かれた\n条件C（条件Aと同じ順番＋「矛盾時は文字数制限を優先し省略してよい」と明示）: 233字。条件Bに近い情報量になった\n条件Cは条件Aよりもさらに省...",
+      "summary_zh": "當提示詞同時要求「300字以內簡潔作答」與「理由一個都不漏、全部寫出」時，這兩項要求本質上互相矛盾，AI 會聽哪一個？本研究的問題即在於：語言模型面對衝突指令時，其取捨行為是否受指令出現順序，以及是否明示優先規則的影響。方法上，作者將同一組矛盾指令交給三個不共用對話歷史的獨立 LLM 實例，僅改變條件：條件 A 先給字數限制、之後追加「全部寫出」；條件 B 先要求「全部寫出」、再追加字數限制；條件 C 沿用 A 的順序，但額外明示「衝突時以字數限制為準，可省略」。主要結果：條件 A 僅寫 135 字，雖觸及四項決定事項，但各項理由皆被壓縮成寥寥數語；條件 B 寫 237 字，四項理由幾乎完整保留；條件 C 寫 233 字，資訊量接近條件 B。這顯示指令的先後順序會改變模型聽從哪一項要求；值得注意的是，條件 C 雖被明示可依字數限制省略，輸出資訊量反而接近條件 B，與條件 A 的過度壓縮形成對比。限制方面：本篇僅有摘要層級內容，未呈現統計檢定、重複次數、模型版本及其他任務情境的結果，單一案例的結論外推須保守；摘錄中比較條件 C 與 A 省略情形的句子亦被截斷，完整結論無從得知。對實務而言，此研究提醒撰寫提示詞時，指令順序與優先順序的明示會實質影響輸出取捨；當多重要求並存且可能衝突時，宜主動聲明衝突處理規則，以獲得可預期的回覆。",
+      "title": "矛盾する指示、AIは書く順番と優先順位の明示でどう変わるか3条件で検証した",
+      "title_zh": "矛盾指令：以三種條件驗證 AI 輸出如何隨撰寫順序與優先順序的明示而改變"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "Charlie Chen"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-09-29T02:33:29.221231+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "TypeScript で Jev を型安全に呼ぶ：質問定義から回答の型を推論する小さなクライアントを作る",
+          "url": "https://zenn.dev/charliecs/articles/6b5a8f1c296071"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.05,
+          "generalizability": 0.2,
+          "novelty": 0.1,
+          "preference_relevance": 0.25,
+          "reproducibility": 0.1,
+          "rigor": 0.05
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "Abstract/はじめに: 'TypeSafe AI の Jev は、文章を生成しない「判断専用」のモデルです' — defines the target as a non-generative judgment model, not an LLM research contribution.",
+          "Abstract table under はじめに: response types 'choice'（定義したラベルから1つ＋各ラベルの確率, 用途: 問い合わせの振り分け、モデル選択）and 'score'（2〜10段階のルーブリック上の位置）— only functional description, no evaluation metrics.",
+          "Abstract opening: 'choice のラベルが union 型になり、noul の回答に .choice と書くとコンパイルエラーになる。…薄いラッパーの実装メモです' — compile-time safety claim with no benchmarks, baselines, or code availability statement; content status is abstract_only."
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "z-ai/glm-5.3-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Abstract-only engineering note (実装メモ) describing a thin TypeScript fetch wrapper around 'Jev', a judgment-only (non-generative) classifier returning choice/score types. Tangential to stated preferences only via structured output and model-routing mentions; no LLM methodology, no NLP/ML research contribution. It is a client implementation pattern (typed union responses, compile-time errors), not a study: no baselines, ablations, datasets, quantitative results, limitations, or availability claims are present, and the abstract is truncated. Novelty is low (standard typed-API-client practice), rigor and evidence are minimal, and reproducibility cannot be verified from the abstract. The type-safe client pattern is generically applicable but trivial.",
+        "score": 0.155,
+        "token_usage": {
+          "completion_tokens": 2000,
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 2316,
+          "prompt_tokens": 2316,
+          "total_tokens": 4316
+        },
+        "topics": [
+          "structured output",
+          "model selection/routing",
+          "type-safe client implementation",
+          "judgment-only model API"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "TypeScript で Jev を型安全に呼ぶ：質問定義から回答の型を推論する小さなクライアントを作る",
+        "url": "https://zenn.dev/charliecs/articles/6b5a8f1c296071"
+      },
+      "published_at": "2026-09-28T05:00:53+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.155,
+        "llm_relevance_score": 4.34,
+        "recency_score": 0.9125758300914886,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 3.0,
+        "total_score": 10.052575830091488
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:5cb394d18ea45bf4",
+      "summary": "choice のラベルが union 型になり、noul の回答に .choice と書くとコンパイルエラーになる。TypeSafe の判断モデル Jev を fetch だけで扱う薄いラッパーの実装メモです。\n\n はじめに\nTypeSafe AI の Jev は、文章を生成しない「判断専用」のモデルです。アプリの状態（state）と型付きの質問を送ると、次の3種類の値が返ってきます。\n\n\n\n型\n返り値\n用途の例\n\n\n\n\nchoice\n定義したラベルから1つ＋各ラベルの確率\n問い合わせの振り分け、モデル選択\n\n\nscore\n2〜10段階のルーブリック上の位置（小数あり）\n緊急度、リスク\n...",
+      "summary_zh": "這篇文章是一份實作筆記，探討如何在 TypeScript 中以型別安全的方式呼叫 TypeSafe AI 的 Jev 模型。Jev 是一個不生成文字、專注於判斷的模型：應用程式送出狀態（state）與帶有型別的提問後，會回傳多種結構化結果。摘要指出回傳值共有三種型態，並列舉其中 choice（從預先定義的標籤中選出一個，並附上各標籤的機率，可用於查詢分類或模型選擇）與 score（在 2 到 10 級評分量表上的位置，可含小數，適合評估緊急度或風險）。作者要解決的問題是：這類判斷 API 的回傳結構多變，若直接用 fetch 呼叫並手動標註型別，很容易在存取欄位時寫錯而難以察覺。對應做法是實作一個輕量包裝層，只依賴 fetch，並利用 TypeScript 的泛型與型別推論，讓回應的型別直接從提問定義推導出來。主要成果體現在型別層面：choice 提問的標籤會成為聯集型別（union），而對非 choice 的回應（文中寫作 noul）誤用 .choice 存取時，會直接產生編譯錯誤，把潛在的執行期錯誤提前到編譯期攔截。需要留意的是，本文屬實作筆記且內容僅為節錄摘要，未提供完整程式碼、基準評測或與其他整合方案的比較，第三種回傳型態的細節也未完整呈現。對想把結構化輸出的 AI API 整合進前端或 Node.js 應用的開發者而言，這種以型別系統約束 API 合約的思路仍具參考價值，有助於降低整合出錯的風險。",
+      "title": "TypeScript で Jev を型安全に呼ぶ：質問定義から回答の型を推論する小さなクライアントを作る",
+      "title_zh": "以 TypeScript 型別安全地呼叫 Jev：打造從提問定義推論回應型別的小型用戶端"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "mitsukida"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-09-29T02:33:29.223401+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "AIの記憶を10000ターンまで増やしたら、「記憶」ではなく「経路」が増えた",
+          "url": "https://zenn.dev/mitsukida/articles/670d8138cf3921"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.05,
+          "generalizability": 0.15,
+          "novelty": 0.25,
+          "preference_relevance": 0.4,
+          "reproducibility": 0.05,
+          "rigor": 0.05
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "Title/abstract fragment: reports scaling AIKanojyo memory system through 100→1000→3000→10000 turns and an unexpected outcome ('増えていたのは「記憶」ではなかった')",
+          "Abstract fragment: references a 'Trace Recall' mechanism extracting from past conversations ('Trace Recallでは、過去の会話から抽出し...') but defines no metrics, baselines, or experimental controls",
+          "Content status: abstract_only — no quantitative results, limitations, or code/availability claims are present in the supplied text to verify"
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "z-ai/glm-5.3-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Abstract-only blog-style anecdote from a personal AI-girlfriend app project describing scaling a conversational memory system from 100 to 10000 turns and unexpectedly observing growth of 'paths' rather than 'memories' via a 'Trace Recall' mechanism. It loosely touches preferred topics (LLM long-context memory, retrieval, personalized agents), but as supplied it contains no methodology, baselines, ablations, quantitative results, limitations, or availability claims; findings are anecdotal, unverifiable, and tied to a single hobby system.",
+        "score": 0.23000000000000004,
+        "token_usage": {
+          "completion_tokens": 2421,
+          "prompt_cache_hit_tokens": 64,
+          "prompt_cache_miss_tokens": 2253,
+          "prompt_tokens": 2317,
+          "total_tokens": 4738
+        },
+        "topics": [
+          "Long Context & Memory",
+          "Agents & Tool Use",
+          "Retrieval",
+          "LLM"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "AIの記憶を10000ターンまで増やしたら、「記憶」ではなく「経路」が増えた",
+        "url": "https://zenn.dev/mitsukida/articles/670d8138cf3921"
+      },
+      "published_at": "2026-09-28T04:43:48+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.23000000000000004,
+        "llm_relevance_score": 6.440000000000001,
+        "recency_score": 0.9114938444450087,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 0.0,
+        "total_score": 9.15149384444501
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:7221fe6a8204f28b",
+      "summary": "AIの記憶を10000ターンまで増やしたら、「記憶」ではなく「経路」が増えた\nAI彼女アプリを作っています。\n最近、AIKanojyoの記憶システムを10000ターン規模まで動かしてみました。\n100ターン。\n1000ターン。\n3000ターン。\nそして10000ターン。\n最初は、単純に考えていました。\n「会話が増えれば、記憶が増える」\n「記憶が増えれば、Recallも重くなる」\nだから、どこかで計算量の問題が出るだろう。\n実際、その問題は出ました。\nでも、予想していたものとは少し違いました。\n\n\n 増えていたのは「記憶」ではなかった\nTrace Recallでは、過去の会話から抽出し...",
+      "summary_zh": "這是一篇個人開發者的實作經驗報告。作者正在開發名為 AIKanojyo 的 AI 女友應用程式，並將其記憶系統的規模逐步擴充到 10000 個對話回合，以觀察長期記憶與回溯（Recall）機制在真實產品中的表現。問題意識來自一個常見假設：「對話越多、記憶越多，檢索成本就會隨之上升」，作者原以為在某個規模必然遇到運算量瓶頸。方法上，作者分別在 100、1000、3000 與 10000 回合等不同規模下執行記憶系統，觀察 Trace Recall（從過去對話中抽取相關線索的回溯機制）等元件的行為變化。主要發現是：瓶頸確實出現，但性質與預期不同——隨著規模擴大，增加的並非單純的「記憶」數量，而是「路徑」的複雜度，亦即記憶之間的關聯與檢索途徑。換言之，長期記憶系統的挑戰不在儲存量本身，而在關聯結構與檢索路徑的組合複雜度。需注意的限制是：本文目前僅提供摘要，詳細的量化結果與效能資料無法確認；且這是單一個人專案的經驗觀察，缺乏嚴謹的基準比較，結論的通用性有待驗證。儘管如此，這份報告對從事對話系統、長期記憶與 RAG 類應用的開發者仍具實務參考價值：記憶系統的最佳化重點應放在關聯結構與檢索策略，而非僅關注記憶條目的儲存與裁剪。",
+      "title": "AIの記憶を10000ターンまで増やしたら、「記憶」ではなく「経路」が増えた",
+      "title_zh": "把 AI 的記憶增加到 10000 回合後，增加的不是「記憶」而是「路徑」"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "Katto"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-09-29T02:33:29.218016+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "LLMに固有名詞の誤字を直させたら、製品名を別のものに変えられた",
+          "url": "https://zenn.dev/kattoai/articles/f9d8431e3de102"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.05,
+          "generalizability": 0.15,
+          "novelty": 0.15,
+          "preference_relevance": 0.35,
+          "reproducibility": 0.05,
+          "rigor": 0.05
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "Abstract (::message header): 'Katto はAI動画クリッパーです... 私はこれを個人で、公開しながら作っています' — personal, non-research product context.",
+          "Abstract ('解決しようとしていた問題'): '音声認識は単語にはとても強く、名前にはとても弱いです。Whisper は初めて出会うブランド名を聞くと、音のとおりに書きます。「Trump」は「trompe」になり...' — anecdotal ASR proper-noun error examples.",
+          "Abstract: '料金ページで宣伝している機能が、こっそり本来の仕事の逆をやっていたのを見つけた話です' — bug report framing, with no evaluation described.",
+          "Document status 'abstract_only': no methods, baselines, quantitative results, or code/data availability statements appear anywhere in the provided text."
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "z-ai/glm-5.3-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Personal Japanese engineering blog post (abstract-only) about an AI video-clipping product (Katto) where an LLM used to correct Whisper ASR errors on proper nouns instead substituted product names. Touches LLM usage and hallucination but is an anecdotal domain application, not research: no methods, baselines, ablations, metrics, or limitations are present, and no artifacts or availability claims are verifiable. Fails the quality bar and sits near the domain-application ceiling.",
+        "score": 0.19499999999999998,
+        "token_usage": {
+          "completion_tokens": 2150,
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 2318,
+          "prompt_tokens": 2318,
+          "total_tokens": 4468
+        },
+        "topics": [
+          "LLM",
+          "hallucination",
+          "speech recognition / ASR post-correction",
+          "Japanese NLP",
+          "product engineering"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "LLMに固有名詞の誤字を直させたら、製品名を別のものに変えられた",
+        "url": "https://zenn.dev/kattoai/articles/f9d8431e3de102"
+      },
+      "published_at": "2026-09-28T05:30:05+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.19499999999999998,
+        "llm_relevance_score": 5.459999999999999,
+        "recency_score": 0.9144282085514936,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 0.75,
+        "total_score": 8.924428208551493
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:42e19df54277f4c8",
+      "summary": "::message この記事は、katto.tech に掲載した記事の日本語版です。 :::\nKatto はAI動画クリッパーです。長い動画を放り込むと、良いところを切り出して縦型ショートにし、字幕まで書いてくれます。私はこれを個人で、公開しながら作っています。今回書くのは、料金ページで宣伝している機能が、こっそり本来の仕事の逆をやっていたのを見つけた話です。\n解決しようとしていた問題\n音声認識は単語にはとても強く、名前にはとても弱いです。Whisper は初めて出会うブランド名を聞くと、音のとおりに書きます。「Trump」は「trompe」になり、「Suárez」は「Suares」にな...",
+      "summary_zh": "本文是作者刊於 katto.tech 文章的日文版，記錄他以個人名義一邊公開開發 AI 影片剪輯器 Katto 時的一段實戰教訓。Katto 的功能是接收長影片，自動剪出精彩片段、製作直式短影音，還會寫好字幕。作者在檢查定價頁面上宣傳的功能時，發現它竟悄悄做著與原本任務相反的事。文章要解決的核心問題是：語音辨識對一般詞彙表現很好，對名稱卻非常脆弱。Whisper 遇到沒見過的品牌名時，往往只按發音拼寫，例如「Trump」被寫成「trompe」、「Suárez」變成「Suares」。作者的因應思路是讓大型語言模型（LLM）接手，修正語音辨識輸出中的專有名詞錯字。然而標題點出的關鍵發現是：LLM 在修錯字時，有時會把正確的產品名直接替換成另一個完全不同的名字，反而製造了比拼寫錯誤更嚴重的問題。由於現有內容僅為摘要，此類替換錯誤的發生頻率、量化評估與完整解法細節無法確認，讀者需參閱 katto.tech 上的完整原文。這則經驗之所以重要，在於它提醒實務工程者：以 LLM 事後修正自動語音辨識（ASR）結果雖可改善拼寫，卻可能引入實體替換式的幻覺錯誤；在字幕、品牌露出等對名稱準確性極為敏感的場景，必須設計驗證與把關機制，不能盲目信任模型輸出。",
+      "title": "LLMに固有名詞の誤字を直させたら、製品名を別のものに変えられた",
+      "title_zh": "請 LLM 修正專有名詞錯字，產品名竟被換成了別的名字"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "Hideki INOUE"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-09-29T02:33:29.225649+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "AIに資料を全面委任すると、なぜ手戻りが増えるのか",
+          "url": "https://zenn.dev/lhideki/articles/ai-document-creation-dependency"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.05,
+          "generalizability": 0.2,
+          "novelty": 0.1,
+          "preference_relevance": 0.35,
+          "reproducibility": 0.0,
+          "rigor": 0.05
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "Content status marker 'abstract_only': entire evaluation restricted to abstract; no methods, experiments, or results are described anywhere in the supplied text.",
+          "Abstract: '生成AIを用いた資料作成における全面委任と補助活用の違いを...整理しています' — positions the piece as an organizational/opinion discussion, not an empirical study.",
+          "はじめに section: 'プロンプトを入力すれば、数十秒でそれらしい文章や箇条書き、スライド構...' — anecdotal framing only; no quantitative claims, citations, or baselines are provided.",
+          "Abstract: '適切な役割分担によって品質と効率を両立させる方法についても合わせて紹介します' — prescriptive recommendation without data, ablations, or reproducible procedures."
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "z-ai/glm-5.3-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Abstract-only Japanese practitioner essay arguing that fully delegating document creation to generative AI increases rework due to information organization, reasoning, and accountability burdens. Loosely touches on LLM-era workflows, prompting, and business-workflow division of labor, but contains no research methodology, baselines, quantitative results, or artifacts. Claims are conventional practitioner wisdom with no support beyond anecdotal framing; abstract-only status precludes verification of any method or evidence. Preference relevance is partial (generative AI, prompting, workflow automation themes) but no LLM-specific methodology or evaluation is present.",
+        "score": 0.19,
+        "token_usage": {
+          "completion_tokens": 1422,
+          "prompt_cache_hit_tokens": 64,
+          "prompt_cache_miss_tokens": 2263,
+          "prompt_tokens": 2327,
+          "total_tokens": 3749
+        },
+        "topics": [
+          "Prompting & In-Context Learning",
+          "Agents & Tool Use",
+          "Natural Language Processing"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "AIに資料を全面委任すると、なぜ手戻りが増えるのか",
+        "url": "https://zenn.dev/lhideki/articles/ai-document-creation-dependency"
+      },
+      "published_at": "2026-09-28T03:38:43+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.19,
+        "llm_relevance_score": 5.32,
+        "recency_score": 0.9073834834065779,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 0.0,
+        "total_score": 8.027383483406577
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:1333daa144fa8637",
+      "summary": "AIに資料を全面委任すると、なぜ手戻りが増えるのか\n本稿では、生成AIを用いた資料作成における全面委任と補助活用の違いを、資料本来の目的・思考プロセス・手戻りコストの観点から整理しています。AIは資料の生成速度を大幅に向上させますが、情報整理・推論・説明責任という作業構造を踏まえると、全面委任の費用対効果は見かけ上の速さよりも低くなる場面が少なくありません。適切な役割分担によって品質と効率を両立させる方法についても合わせて紹介します。\n\n はじめに\n生成AIの普及により、資料の「初稿を出す速さ」は大幅に向上しました。プロンプトを入力すれば、数十秒でそれらしい文章や箇条書き、スライド構...",
+      "summary_zh": "本文是一篇探討生成式AI輔助資料製作的實務整理型文章，核心問題是：為什麼把資料工作全面委任給AI，重工（返工）反而會增加？作者從三個觀點切入：資料本身的目的、人類的思考流程，以及重工成本。文章指出，生成式AI雖然大幅加快初稿產出的速度，但資料製作並非單純的文字生成，還包含資訊整理、推論與問責（說明責任）等工作結構；若將整個流程全面交給AI，表面上省下的時間，往往會被後續反覆修改、核對與重做的成本抵銷，使成本效益低於表面的速度優勢。作者據此主張，應透過適當的角色分工——例如由AI負責初稿或片段產出，由人類掌握目的設定、判斷與最終把關——來兼顧品質與效率。需要留意的是，本文屬於概念性討論與實務經驗整理，並未提供量化的實驗證據或具體個案數據，其論點主要建立在對作業結構的分析之上，讀者宜將其視為實務指引而非實證研究。儘管如此，對正在導入生成式AI的企業與工作者而言，本文提供了務實的提醒：初稿速度的提升不等於整體效率的提升，釐清人機分工的界線，才是降低重工、確保資料品質的關鍵。",
+      "title": "AIに資料を全面委任すると、なぜ手戻りが増えるのか",
+      "title_zh": "為什麼把資料全面委任給AI，重工反而會增加？"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "hisashi-ito"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-09-29T02:33:28.883527+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "qiita-llm-tag",
+          "tier": 2,
+          "title": "Sonnet 5.5 の登場と Opus 5.5 の使い分け",
+          "url": "https://qiita.com/hisashi-ito/items/e814569771d00675e19d"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.05,
+          "generalizability": 0.1,
+          "novelty": 0.05,
+          "preference_relevance": 0.35,
+          "reproducibility": 0.0,
+          "rigor": 0.05
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "Abstract (content status: abstract_only): 'Sonnet 5.5 が出ました。料金は Sonnet 5 と同じで、Opus 5.5 の半分(キャッシュ読み出しを除く)' — the only quantitative claim is a pricing comparison; no benchmarks, baselines, or ablations are presented.",
+          "Abstract (content status: abstract_only): '速さと料金を優先する作業は Sonnet 5.5、難しい作業は Opus 5.5、と使い分けるのがよいと考えます' — a subjective usage recommendation ('と考えます') with no evaluation methodology or supporting data in the available text.",
+          "Document header: 'Content status: abstract_only' — full methods, results, limitations, and availability claims are unverifiable from the supplied text."
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "z-ai/glm-5.3-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "A Japanese-language blog-style commentary announcing 'Sonnet 5.5' and advising when to use it vs 'Opus 5.5' based on price (half of Opus except cache reads) and task difficulty. Topically adjacent to LLMs and inference/serving (model selection, cost), giving moderate preference relevance, but it contains no research contribution: no research question, method, baselines, ablations, benchmarks, or limitations. Only abstract-level text is available ('abstract_only'), and even that text presents pricing and usage opinions rather than verified quantitative results. The claim of underlying 'calculations/figures/sources' (計算・図・原...) cannot be verified from the provided content. Novelty, rigor, evidence, and reproducibility are near floor; generalizability is limited to generic 'fast/cheap vs. strong' model-choice heuristics without supporting evaluation.",
+        "score": 0.1725,
+        "token_usage": {
+          "completion_tokens": 1675,
+          "prompt_cache_hit_tokens": 1920,
+          "prompt_cache_miss_tokens": 298,
+          "prompt_tokens": 2218,
+          "total_tokens": 3893
+        },
+        "topics": [
+          "Large Language Models",
+          "Inference & Serving"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "qiita-llm-tag",
+        "tier": 2,
+        "title": "Sonnet 5.5 の登場と Opus 5.5 の使い分け",
+        "url": "https://qiita.com/hisashi-ito/items/e814569771d00675e19d"
+      },
+      "published_at": "2026-09-28T16:27:00+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.17250000000000001,
+        "llm_relevance_score": 4.83,
+        "recency_score": 0.9571098534075815,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 0.0,
+        "total_score": 7.587109853407582
+      },
+      "section": null,
+      "source_name": "Qiita LLM Tag",
+      "story_id": "fallback:2106d7201d4048a0",
+      "summary": "結論: Sonnet 5.5 が出ました。料金は Sonnet 5 と同じで、Opus 5.5 の半分(キャッシュ読み出しを除く)です。速さと料金を優先する作業は Sonnet 5.5、難しい作業は Opus 5.5、と使い分けるのがよいと考えます。\nこの記事の計算・図・原...",
+      "summary_zh": "這篇文章旨在說明新推出的 Sonnet 5.5 模型，並協助讀者在 Sonnet 5.5 與 Opus 5.5 之間做出合適的選用判斷。作者於開頭直接給出結論：Sonnet 5.5 已正式問世，定價與 Sonnet 5 相同，約為 Opus 5.5 的一半（快取讀取除外）。據此，作者提出簡明的使用原則：若工作優先考量速度與費用，應選擇 Sonnet 5.5；若屬於較困難的任務，則建議改用 Opus 5.5。就方法而言，這篇文章屬於選型指南性質，以定價與速度的比較作為主要判斷依據。作者自述文中包含相關的計算與圖表，但摘要在此處遭截斷，具體的計算過程、圖表內容與原始依據無法確認。由於目前僅能取得 abstract_only 狀態的內容，該文的完整論證與量化證據（如 benchmark 數字、延遲或成本的逐項對照）皆無法查核，讀者不應將摘要中的主張視為已完整驗證的結論。在限制方面，除了內容截斷外，「速度與價格優先選 Sonnet 5.5、難題選 Opus 5.5」屬於經驗法則，實際表現會隨任務類型、提示設計與應用情境而異，未必適用所有場景。整體而言，這篇文章的價值在於提供一個快速務實的模型選用參考框架，協助開發者在成本、速度與能力之間做出取捨；正式導入前，仍建議以官方定價資訊與自身工作負載的實測結果加以驗證。",
+      "title": "Sonnet 5.5 の登場と Opus 5.5 の使い分け",
+      "title_zh": "Sonnet 5.5 的登場與 Opus 5.5 的使用時機"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "syun136_616"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-09-29T02:33:29.050246+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "qiita-genai-tag",
+          "tier": 2,
+          "title": "AI時代にこそ問われる、自分の頭で考えるエンジニア力",
+          "url": "https://qiita.com/syun136_616/items/1668a82f3b3bf3b5dc29"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.05,
+          "generalizability": 0.1,
+          "novelty": 0.05,
+          "preference_relevance": 0.25,
+          "reproducibility": 0.02,
+          "rigor": 0.03
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "Content status marker 'abstract_only' confirms no methods, experiments, or results are available.",
+          "Section 'この記事の要点': '生成AIのコード提案は文脈を完全に理解せず出力されることがあるため、採用前に前提条件を自分で確認する必要があります' — anecdotal claim with no cited data or evaluation.",
+          "Section 'この記事の要点': '3ステップ' advice (言語化・小さく検証・代替案を1つ出す) is prescriptive practice guidance, not a testable research contribution."
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "z-ai/glm-5.3-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Abstract-only opinion/blog article on verifying generative-AI code suggestions before adoption; weakly touches Code & Programming and AI-assisted workflows but contains no LLM methodology, experiments, baselines, or quantitative results. Anecdotal practitioner advice, not research; out-of-scope-adjacent and low value under the rubric.",
+        "score": 0.1305,
+        "token_usage": {
+          "completion_tokens": 933,
+          "prompt_cache_hit_tokens": 1920,
+          "prompt_cache_miss_tokens": 297,
+          "prompt_tokens": 2217,
+          "total_tokens": 3150
+        },
+        "topics": [
+          "Code & Programming",
+          "Agents & Tool Use"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "qiita-genai-tag",
+        "tier": 2,
+        "title": "AI時代にこそ問われる、自分の頭で考えるエンジニア力",
+        "url": "https://qiita.com/syun136_616/items/1668a82f3b3bf3b5dc29"
+      },
+      "published_at": "2026-09-28T16:37:28+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.1305,
+        "llm_relevance_score": 3.654,
+        "recency_score": 0.9578057833653066,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 0.0,
+        "total_score": 6.411805783365306
+      },
+      "section": null,
+      "source_name": "Qiita 生成AI Tag",
+      "story_id": "fallback:29a4cee9cad1b0cb",
+      "summary": "この記事の要点\n\n生成AIのコード提案は文脈を完全に理解せず出力されることがあるため、採用前に前提条件を自分で確認する必要があります。\n自分の頭で考える習慣は、AIの提案理由を言語化する・小さく検証する・代替案を1つ出す、の3ステップで鍛えられます。\n判断をすべてAIに委ね...",
+      "summary_zh": "本文為一篇針對生成式AI時代工程師能力的實務評論（僅提供摘要節錄）。文章點出的問題在於：生成AI的程式碼建議，常是在未完全理解上下文的情況下輸出，工程師若不加查證就直接採用，可能埋下錯誤與品質風險；因此作者主張，採納AI建議前必須親自確認其前提條件。在方法層面，文章提出鍛鍊「用自己的頭腦思考」的三個步驟：第一，把AI提案的理由具體說清楚（語言化）；第二，以小規模方式驗證AI的產出，避免一次大量採用未經檢驗的內容；第三，自己至少提出一個替代方案，避免陷入單一視角的依賴。在證據方面，本文屬於經驗分享式的評論文章，摘要中並未提供量化的實驗證據或案例規模，主要論述來自作者的實務觀察，讀者宜視其為提醒與準則，而非實證研究結論。此外，摘要最後一點遭截斷，僅能看出作者警示「把判斷全部交給AI」的風險，完整論點無法確認。其重要性在於：隨著生成AI融入日常開發流程，工程師的核心價值正從「寫出程式碼」轉向「判斷與驗證AI產出」。若團隊長期將思考外包給AI，可能削弱獨立判斷能力並累積系統性錯誤。本文提醒讀者，AI時代更應刻意培養查證前提、小步驗證與思考替代方案的工程素養。",
+      "title": "AI時代にこそ問われる、自分の頭で考えるエンジニア力",
+      "title_zh": "正因身處AI時代，更考驗工程師獨立思考的能力"
+    }
+  ],
+  "run_date": "2026-09-29",
+  "run_id": "c206be48-ab07-42f1-87f2-b8d5ef724e2d",
+  "run_info": {
+    "error_summary": null,
+    "finished_at": "2026-09-29T04:06:32.795187+00:00",
+    "items_total": 33,
+    "run_id": "c206be48-ab07-42f1-87f2-b8d5ef724e2d",
+    "started_at": "2026-09-29T02:00:04.869382+00:00",
+    "stories_total": 33,
+    "success": true
+  },
+  "sources_status": [
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "rss_atom",
+      "name": "ABEJA Tech Blog (LLM)",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "abeja-tech-blog-llm",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 1,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "rss_atom",
+      "name": "AIDB - AI Research Database",
+      "newest_item_date": "2026-09-28T06:48:31+00:00",
+      "reason_code": "FETCH_PARSE_OK_HAS_NEW",
+      "reason_text": "Fetch and parse succeeded; new items found.",
+      "remediation_hint": null,
+      "source_id": "aidb",
+      "status": "HAS_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 1,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "rss_atom",
+      "name": "AI Shift Tech Blog (Zenn)",
+      "newest_item_date": "2026-09-28T16:00:08+00:00",
+      "reason_code": "FETCH_PARSE_OK_HAS_NEW",
+      "reason_text": "Fetch and parse succeeded; new items found.",
+      "remediation_hint": null,
+      "source_id": "aishift-tech-blog",
+      "status": "HAS_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "html_list",
+      "name": "Anthropic Research Publications",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "anthropic-research-publications",
+      "status": "NO_UPDATE",
+      "tier": 0
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "arxiv_api",
+      "name": "arXiv API Agents",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "arxiv-api-agents",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "arxiv_api",
+      "name": "arXiv API Alignment",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "arxiv-api-alignment",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "arxiv_api",
+      "name": "arXiv API Efficiency",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "arxiv-api-efficiency",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "arxiv_api",
+      "name": "arXiv API Evaluation",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "arxiv-api-evaluation",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "arxiv_api",
+      "name": "arXiv API LLM",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "arxiv-api-llm",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "arxiv_api",
+      "name": "arXiv API Multimodal",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "arxiv-api-multimodal",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "arxiv_api",
+      "name": "arXiv API Reasoning",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "arxiv-api-reasoning",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "arxiv_api",
+      "name": "arXiv API Retrieval",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "arxiv-api-retrieval",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "arxiv_api",
+      "name": "arXiv API Safety",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "arxiv-api-safety",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "arxiv_api",
+      "name": "arXiv cs.AI",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "arxiv-cs-ai",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "arxiv_api",
+      "name": "arXiv cs.CL",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "arxiv-cs-cl",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "arxiv_api",
+      "name": "arXiv cs.CR",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "arxiv-cs-cr",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "arxiv_api",
+      "name": "arXiv cs.CV",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "arxiv-cs-cv",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "arxiv_api",
+      "name": "arXiv cs.HC",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "arxiv-cs-hc",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "arxiv_api",
+      "name": "arXiv cs.IR",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "arxiv-cs-ir",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "arxiv_api",
+      "name": "arXiv cs.LG",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "arxiv-cs-lg",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "arxiv_api",
+      "name": "arXiv cs.MA",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "arxiv-cs-ma",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "arxiv_api",
+      "name": "arXiv cs.RO",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "arxiv-cs-ro",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "arxiv_api",
+      "name": "arXiv cs.SE",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "arxiv-cs-se",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "arxiv_api",
+      "name": "arXiv stat.ML",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "arxiv-stat-ml",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "rss_atom",
+      "name": "Awesome Japanese LLM (GitHub)",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "awesome-japanese-llm",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 6,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "rss_atom",
+      "name": "AWS Machine Learning Blog",
+      "newest_item_date": "2026-09-28T13:13:16+00:00",
+      "reason_code": "FETCH_PARSE_OK_HAS_NEW",
+      "reason_text": "Fetch and parse succeeded; new items found.",
+      "remediation_hint": null,
+      "source_id": "aws-ml-blog",
+      "status": "HAS_UPDATE",
+      "tier": 0
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "rss_atom",
+      "name": "DeepMind Blog",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "deepmind-blog",
+      "status": "NO_UPDATE",
+      "tier": 0
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "rss_atom",
+      "name": "ELYZA Official Blog (note)",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "elyza-official-blog",
+      "status": "NO_UPDATE",
+      "tier": 0
+    },
+    {
+      "category": "other",
+      "items_new": 1,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "rss_atom",
+      "name": "Google AI Blog",
+      "newest_item_date": "2026-09-28T10:00:00+00:00",
+      "reason_code": "FETCH_PARSE_OK_HAS_NEW",
+      "reason_text": "Fetch and parse succeeded; new items found.",
+      "remediation_hint": null,
+      "source_id": "google-ai-blog",
+      "status": "HAS_UPDATE",
+      "tier": 0
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "hf_org",
+      "name": "Hugging Face 01.AI (Yi)",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "hf-01-ai",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "hf_org",
+      "name": "Hugging Face Cohere",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "hf-cohere",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "hf_daily_papers",
+      "name": "Hugging Face Daily Papers",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "hf-daily-papers",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "hf_org",
+      "name": "Hugging Face DeepSeek AI",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "hf-deepseek-ai",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "hf_org",
+      "name": "Hugging Face Google",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "hf-google",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "hf_org",
+      "name": "Hugging Face Meta Llama",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "hf-meta-llama",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 1,
+      "last_fetch_status_code": null,
+      "method": "hf_org",
+      "name": "Hugging Face Microsoft",
+      "newest_item_date": "2026-09-28T08:19:00+00:00",
+      "reason_code": "FETCH_PARSE_OK_HAS_UPDATED",
+      "reason_text": "Fetch and parse succeeded; items updated.",
+      "remediation_hint": null,
+      "source_id": "hf-microsoft",
+      "status": "HAS_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "hf_org",
+      "name": "Hugging Face Mistral AI",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "hf-mistralai",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "hf_org",
+      "name": "Hugging Face OpenAI",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "hf-openai",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "hf_org",
+      "name": "Hugging Face Qwen",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "hf-qwen",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "hf_org",
+      "name": "Hugging Face Stability AI",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "hf-stabilityai",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "rss_atom",
+      "name": "IVRy AI Magazine (note)",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "ivry-ai-magazine",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "rss_atom",
+      "name": "kun432 (Zenn) - RAG/Local LLM",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "kun432-zenn",
+      "status": "NO_UPDATE",
+      "tier": 2
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "rss_atom",
+      "name": "LayerX Engineering Blog",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "layerx-eng-blog",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "rss_atom",
+      "name": "LLM-jp Blog",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "llm-jp-blog",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "rss_atom",
+      "name": "LLM Tech Blog RSS Feed (GitHub)",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "llm-tech-blog-rss-feed",
+      "status": "NO_UPDATE",
+      "tier": 2
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "rss_atom",
+      "name": "Microsoft Research Blog",
+      "newest_item_date": null,
+      "reason_code": "FETCH_NETWORK_ERROR",
+      "reason_text": "Network error during fetch.",
+      "remediation_hint": "Check network connectivity and DNS resolution.",
+      "source_id": "microsoft-research-blog",
+      "status": "FETCH_FAILED",
+      "tier": 0
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "rss_atom",
+      "name": "npaka (note) - Japanese LLM Curation",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "npaka-note",
+      "status": "NO_UPDATE",
+      "tier": 2
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "rss_atom",
+      "name": "NVIDIA AI Blog",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "nvidia-ai-blog",
+      "status": "NO_UPDATE",
+      "tier": 0
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "rss_atom",
+      "name": "OpenAI Alignment Research Blog",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "openai-alignment",
+      "status": "NO_UPDATE",
+      "tier": 0
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "rss_atom",
+      "name": "OpenAI Blog",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "openai-blog",
+      "status": "NO_UPDATE",
+      "tier": 0
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "rss_atom",
+      "name": "Preferred Networks Tech Blog (LLM)",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "pfn-tech-blog-llm",
+      "status": "NO_UPDATE",
+      "tier": 0
+    },
+    {
+      "category": "other",
+      "items_new": 4,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "rss_atom",
+      "name": "Qiita 生成AI Tag",
+      "newest_item_date": "2026-09-28T17:31:21+00:00",
+      "reason_code": "FETCH_PARSE_OK_HAS_NEW",
+      "reason_text": "Fetch and parse succeeded; new items found.",
+      "remediation_hint": null,
+      "source_id": "qiita-genai-tag",
+      "status": "HAS_UPDATE",
+      "tier": 2
+    },
+    {
+      "category": "other",
+      "items_new": 4,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "rss_atom",
+      "name": "Qiita LLM Tag",
+      "newest_item_date": "2026-09-28T17:01:02+00:00",
+      "reason_code": "FETCH_PARSE_OK_HAS_NEW",
+      "reason_text": "Fetch and parse succeeded; new items found.",
+      "remediation_hint": null,
+      "source_id": "qiita-llm-tag",
+      "status": "HAS_UPDATE",
+      "tier": 2
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "html_list",
+      "name": "Sakana AI Blog",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "sakana-ai-blog",
+      "status": "NO_UPDATE",
+      "tier": 0
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "rss_atom",
+      "name": "Sebastian Raschka Blog",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "sebastian-raschka-blog",
+      "status": "NO_UPDATE",
+      "tier": 0
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "html_list",
+      "name": "TECH PLAY LLM Tag",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "techplay-llm-tag",
+      "status": "NO_UPDATE",
+      "tier": 2
+    },
+    {
+      "category": "other",
+      "items_new": 15,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "rss_atom",
+      "name": "Zenn LLM Topic",
+      "newest_item_date": "2026-09-28T12:17:52+00:00",
+      "reason_code": "FETCH_PARSE_OK_HAS_NEW",
+      "reason_text": "Fetch and parse succeeded; new items found.",
+      "remediation_hint": null,
+      "source_id": "zenn-llm-topic",
+      "status": "HAS_UPDATE",
+      "tier": 2
+    }
+  ],
+  "top5": [
+    {
+      "arxiv_id": null,
+      "authors": [
+        "Dani Mitchell"
+      ],
+      "categories": [
+        "Amazon Bedrock",
+        "Announcements",
+        "Intermediate (200)"
+      ],
+      "entities": [
+        "anthropic",
+        "aws"
+      ],
+      "first_seen_at": "2026-09-29T02:02:17.107046+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "aws-ml-blog",
+          "tier": 0,
+          "title": "Introducing Claude Sonnet 5.5 on AWS",
+          "url": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-sonnet-5-5-on-aws"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.05,
+          "generalizability": 0.05,
+          "novelty": 0.05,
+          "preference_relevance": 0.5,
+          "reproducibility": 0.05,
+          "rigor": 0.0
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "abstract (content status: abstract_only): 'Claude Sonnet 5.5 is now available on Amazon Bedrock and Claude Platform on AWS' — sole availability claim; no experiments, methods, baselines, or ablations are present anywhere in the document.",
+          "abstract: 'smarter, more efficient Sonnet model for focused coding and knowledge work, with a lower cost per task at faster speed' — qualitative performance/cost claims with no numbers, benchmarks, or evaluation methodology.",
+          "abstract: 'This post covers what's new, when to choose Sonnet, and how to get started' — framing confirms announcement/blog format rather than a research contribution; no limitations section exists."
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "z-ai/glm-5.3-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "This is a product availability announcement (abstract-only), not a research paper. Topic overlap with preferences is genuine: 'Claude' matches the high-weight LLM preference and 'coding' matches Code & Programming, and the model targets coding/knowledge work. However, there is no methodology, no baselines, no ablations, no quantitative results, and no limitations discussion; claims of being 'smarter, more efficient' with 'lower cost per task at faster speed' are entirely unsupported. Novelty, rigor, and generalizability are near zero because there is no method or finding to assess. Reproducibility is marginally non-zero only in that access points (Amazon Bedrock, Claude Platform on AWS) are named. Overall score reflects topical keyword alignment but negligible research substance.",
+        "score": 0.2225,
+        "token_usage": {
+          "completion_tokens": 2584,
+          "prompt_cache_hit_tokens": 64,
+          "prompt_cache_miss_tokens": 2116,
+          "prompt_tokens": 2180,
+          "total_tokens": 4764
+        },
+        "topics": [
+          "Large Language Models",
+          "Code & Programming",
+          "Inference & Serving"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "aws-ml-blog",
+        "tier": 0,
+        "title": "Introducing Claude Sonnet 5.5 on AWS",
+        "url": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-sonnet-5-5-on-aws"
+      },
+      "published_at": "2026-09-28T09:57:13+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 4.0,
+        "kind_score": 1.5,
+        "llm_raw_score": 0.2225,
+        "llm_relevance_score": 6.23,
+        "recency_score": 0.9315500202252326,
+        "semantic_score": 0.0,
+        "tier_score": 3.0,
+        "topic_score": 4.0,
+        "total_score": 19.661550020225235
+      },
+      "section": null,
+      "source_name": "AWS Machine Learning Blog",
+      "story_id": "fallback:608a8b120fd71298",
+      "summary": "Claude Sonnet 5.5 is now available on Amazon Bedrock and Claude Platform on AWS. It's a smarter, more efficient Sonnet model for focused coding and knowledge work, with a lower cost per task at faster speed. This post covers what's new, when to choose Sonnet, and how to get started.",
+      "summary_zh": "本文為產品公告性質的內容，僅提供摘要層級資訊，並非傳統學術論文。其主題是 Claude Sonnet 5.5 正式於 Amazon Bedrock 與 AWS 上的 Claude Platform 開放使用，讓企業使用者能在 AWS 雲端環境中直接存取此一大型語言模型。就問題面而言，公告針對開發者與知識工作者選擇模型時的取捨：如何在智慧水準、回應速度與單位成本之間取得平衡。就方法與定位而言，文章宣稱 Sonnet 5.5 是更聰明、更有效率的 Sonnet 系列新版本，專注於程式設計與知識型工作等應用場景，並強調能以更快的速度達到更低的單一任務成本。然而，由於目前僅有摘要，內容並未提供具體的基準測試數字、與前代模型或其他模型的詳細比較、訓練細節或評估方法，讀者無法驗證其效能與成本宣稱，這是本次內容最主要的限制；摘要亦未說明「更聰明」與「更有效率」的衡量標準。就證據面而言，全文僅以定性描述呈現，沒有任何量化結果可資佐證。整體而言，這篇公告的意義在於指出該模型已可透過 AWS 的受管服務取得，並承諾在文章本體中說明新功能、何時適合選用 Sonnet，以及入門方式；對需要在雲端整合大型語言模型、權衡成本與效能的工程與企業團隊而言，具有實務參考價值，但決策前仍應查閱完整文件與第三方評測。",
+      "title": "Introducing Claude Sonnet 5.5 on AWS",
+      "title_zh": "AWS 正式推出 Claude Sonnet 5.5"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "くぅ"
+      ],
+      "categories": [],
+      "entities": [
+        "anthropic"
+      ],
+      "first_seen_at": "2026-09-29T02:33:29.214344+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "Claude Code の記憶と引継ぎ — 書き残したことは、次のセッションに届いた証拠にならない",
+          "url": "https://zenn.dev/kuu_dqx/books/written-is-not-handed-over"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.15,
+          "generalizability": 0.25,
+          "novelty": 0.3,
+          "preference_relevance": 0.65,
+          "reproducibility": 0.3,
+          "rigor": 0.15
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "Abstract: '引継ぎ文書が3か月半で505本になりました' — single-user anecdotal volume claim with no measurement protocol",
+          "Abstract: '索引を半分に削った3週間後には字数が25%戻り' — quantitative observation reported without controls or methodology",
+          "Abstract: '付録には、索引の字数・上限超えの行・リンク切れ・引継ぎの古さを数える棚卸しツールを全文載せました（標準ライブラリのみ・読み取り専用）' — full tool source claimed in appendix, supporting partial reproducibility",
+          "Abstract: '最初の3チャプターは無料です' — commercial book; most of the procedure is not openly available",
+          "Content status: abstract_only — no methods, baselines, ablations, or results sections available for verification"
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "z-ai/glm-5.3-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "A practitioner book (abstract only) on auditing memory, index files, and session-handover documents in Claude Code agent workflows. Topically aligned with LLM agents and agent memory (Agents & Tool Use, Long Context & Memory preferences), but it is anecdotal n=1 experience rather than research: no baselines, no controlled evaluation, no comparison to existing agent-memory methods (e.g., MemGPT-style or RAG-based memory). Claims like 505 handover documents over 3.5 months and a 25% character regrowth after halving the index are personal counts without measurement methodology. The taxonomy of failure modes (index bloat, stale memory, unverified handover assertions, unread configs, 'confirmed' answers to the wrong question) is a useful practitioner contribution but unsupported by experiments. Including a full-source, standard-library-only, read-only inventory tool in the appendix modestly aids reproducibility, though the core procedure sits in a partly paid book and no validation results are reported.",
+        "score": 0.39,
+        "token_usage": {
+          "completion_tokens": 2188,
+          "prompt_cache_hit_tokens": 1920,
+          "prompt_cache_miss_tokens": 599,
+          "prompt_tokens": 2519,
+          "total_tokens": 4707
+        },
+        "topics": [
+          "LLM agents",
+          "agent memory",
+          "session handover",
+          "workflow audit",
+          "Claude Code"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "Claude Code の記憶と引継ぎ — 書き残したことは、次のセッションに届いた証拠にならない",
+        "url": "https://zenn.dev/kuu_dqx/books/written-is-not-handed-over"
+      },
+      "published_at": "2026-09-28T06:56:29+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 2.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.39,
+        "llm_relevance_score": 10.92,
+        "recency_score": 0.9199312704794105,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 4.0,
+        "total_score": 19.63993127047941
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:743aa4cab74d9898",
+      "summary": "LLM のエージェントに毎日作業をさせていると、セッションをまたいで知識を渡す仕組みが増えていきます。メモリ、その索引、引継ぎ文書、一時ファイル、設定ファイル。私の環境では引継ぎ文書が3か月半で505本になりました。ところが、索引を半分に削った3週間後には字数が25%戻り、引継ぎに書かれた「未コミットは自動生成物だけ」を信じていたら別セッションの恒久修正を消すところでした。書き残したことは、届いたことも、今も正しいことも保証しません。この本は、自分が次のセッションに渡しているものが実際に届いていて今も正しいのかを数え上げる手順をまとめたものです。索引の肥大と本文との矛盾、書いた時点の事実のまま古くなるメモリ、取り直さずに信じた引継ぎの断言、始まっていたセッションには載らない記憶、次のセッションには残らない一時ファイル、実行系が読んでいない設定、別の問いに答えていた「確認した」、新規に見える上書きを扱います。最後に、追跡して効いた対策と戻った対策を並べ、差がどこにあったかを書きます。付録には、索引の字数・上限超えの行・リンク切れ・引継ぎの古さを数える棚卸しツールを全文載せました（標準ライブラリのみ・読み取り専用）。最初の3チャプターは無料です。",
+      "summary_zh": "本書針對 LLM agent 跨 session 傳遞知識時的失效問題,提出一套可實際計數、驗證的稽核程序。作者每天讓 agent 執行任務,環境中累積了記憶、記憶索引、交接文件、暫存檔與設定檔等多重傳遞機制,三個半月內交接文件即達 505 份。實際盤點揭露的證據包括:索引字數在刪減一半後三週回升 25%;因相信交接文件中「未 commit 的只有自動產生物」的斷言,差點刪除另一個 session 所做的永久修正。作者據此指出核心問題:寫下的內容既不保證已送達,也不保證現在仍然正確。書中逐項處理八類失效情境:索引肥大並與內文矛盾、記憶停留在撰寫當下的事實而逐漸過時、未重新驗證便採信的交接斷言、已啟動的 session 讀不到的記憶、不會留存到下次 session 的暫存檔、執行系統根本未讀取的設定、回答了另一個問題卻標記為「已確認」,以及看似新增實為覆寫的更新。結尾比較持續有效與成效回退的對策,分析差異來源;附錄收錄僅使用標準函式庫、唯讀執行的盤點工具完整程式碼,可統計索引字數、超出上限的行數、失效連結與交接文件的陳舊程度。本書價值在於把「記憶是否真的送達」從假設變成可量測的稽核項目;限制則是證據來自單一作者的個人環境,通用性有待讀者自行驗證,前三章可免費試讀。",
+      "title": "Claude Code の記憶と引継ぎ — 書き残したことは、次のセッションに届いた証拠にならない",
+      "title_zh": "Claude Code 的記憶與交接——寫下來的內容,不會成為已送達下一個 session 的證據"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "しんいち"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-09-29T02:33:29.229234+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "エージェントのコストは設計変数である — プレフィックス安定性・ルーティング損益分岐・予算の仮押さえ",
+          "url": "https://zenn.dev/xim2jp_tokyo/articles/f11a0a0568e0c1"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.1,
+          "generalizability": 0.6,
+          "novelty": 0.3,
+          "preference_relevance": 0.8,
+          "reproducibility": 0.1,
+          "rigor": 0.15
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "Title/Abstract: 'エージェントのコストは設計変数である' — centers on agent cost design, matching Agents & Tool Use and エージェント-related preferences.",
+          "Abstract: '管理単位は成功1件あたり単価（期間中のLLM費用 ÷ 成功タスク数）' — proposes cost-per-success metric coupling eval success rate to cost; conceptual claim, no data given.",
+          "Abstract: '論点1: キャッシュはプレフィックスの安定性で決まる' — claims cache validity depends on tools → system → messages prefix order and cites invalidators (tool-order non-determinism, leading timestamps, mid-conversation thinking/tool_choice changes) without experiments.",
+          "Content status: abstract_only — no methods, baselines, ablations, quantitative results, limitations, or code/data availability claims are verifiable from the document."
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "z-ai/glm-5.3-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Highly on-topic for the Agents & Tool Use and Inference & Serving preferences: a Japanese-language practitioner article framing LLM agent cost as a design variable, covering cost-per-success metrics, prompt-cache prefix stability (tools → system → messages ordering), routing break-even, and budget reservation. However, content status is abstract_only and it is a blog-style article, not a research paper: no methodology, baselines, ablations, quantitative results, limitations, or artifact availability are presented, so rigor and evidence are minimal. The core engineering ideas (cache invalidation via unstable prefixes, cost-per-success accounting) are sound but largely known practice; novelty lies mainly in the aggregated framing.",
+        "score": 0.4675000000000001,
+        "token_usage": {
+          "completion_tokens": 1900,
+          "prompt_cache_hit_tokens": 64,
+          "prompt_cache_miss_tokens": 2268,
+          "prompt_tokens": 2332,
+          "total_tokens": 4232
+        },
+        "topics": [
+          "Agents & Tool Use",
+          "Inference & Serving",
+          "Scaling & Efficiency",
+          "Prompting & In-Context Learning"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "エージェントのコストは設計変数である — プレフィックス安定性・ルーティング損益分岐・予算の仮押さえ",
+        "url": "https://zenn.dev/xim2jp_tokyo/articles/f11a0a0568e0c1"
+      },
+      "published_at": "2026-09-28T02:07:19+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.4675000000000001,
+        "llm_relevance_score": 13.090000000000002,
+        "recency_score": 0.9016423581699533,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 3.75,
+        "total_score": 19.541642358169955
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:54838a83200f6be8",
+      "summary": "エージェントのコスト最適化を「プロンプトを短くする」話で終わらせないために、本記事では設計段階で決めるべき論点を3つに絞りました。管理単位は成功1件あたり単価（期間中のLLM費用 ÷ 成功タスク数）です。失敗の費用を成功が背負う形で集計するので、Evalsの成功率がそのままコスト指標に効いてきます。\n論点1: キャッシュはプレフィックスの安定性で決まる\n処理順は tools → system → messages で、前の層が変われば後ろの層はすべて無効になります。ツール順序の非決定性、system先頭のタイムスタンプ、途中での thinking 設定や tool_choice の変更は...",
+      "summary_zh": "這篇文章主張，Agent 的成本最佳化不應止於「縮短 prompt」的技巧，而應在系統設計階段就納入成本決策。作者將設計時應確定的論點收斂為三項，並提出以「每件成功任務的成本」（期間內 LLM 費用 ÷ 成功任務數）作為管理單位；由於失敗任務的成本會由成功任務分攤，Evals 的成功率會直接反映在成本指標上。摘要詳述第一個論點：快取成效取決於 Prefix（前置字串）的穩定性。處理順序為 tools → system → messages，上層內容一旦改變，其後所有層的快取都會失效；工具順序的不確定性、system 開頭的時間戳記，或中途變更 thinking 設定與 tool_choice，都可能破壞快取命中。至於第二項「路由損益兩平」與第三項「預算暫時保留」，摘要僅點出方向，未提供細節。本文屬工程實務取向，目前僅有摘要，缺少具體實驗資料與量化結果，論點二、三的推導與驗證仍待原文補充。儘管如此，其價值在於把成本視為可設計的變數，將評估成功率與成本指標綁定，提醒開發者在快取友善設計、模型路由與預算控管之間做出明確取捨，對 Agent 系統的成本治理具有實務參考價值。",
+      "title": "エージェントのコストは設計変数である — プレフィックス安定性・ルーティング損益分岐・予算の仮押さえ",
+      "title_zh": "Agent 的成本是設計變數——Prefix 穩定性、路由損益兩平與預算暫時保留"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "nao_109"
+      ],
+      "categories": [],
+      "entities": [
+        "anthropic"
+      ],
+      "first_seen_at": "2026-09-29T02:33:29.049242+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "qiita-genai-tag",
+          "tier": 2,
+          "title": "Claude Code × OpenSpecで始める仕様駆動開発 ― proposal・specs・changesの意味と開発フロー",
+          "url": "https://qiita.com/nao_109/items/e05ea390cda8e6e4abfd"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.1,
+          "generalizability": 0.25,
+          "novelty": 0.2,
+          "preference_relevance": 0.7,
+          "reproducibility": 0.15,
+          "rigor": 0.1
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "Content status: abstract_only — document consists solely of the 'はじめに' (Introduction) fragment; no methodology, experiments, or results sections exist to verify.",
+          "'はじめに' section: claims that asking a Claude Code-style AI coding agent leads to requirements drifting mid-conversation, loss of prior assumptions across sessions, and unclear rationale for implementations — anecdotal assertions with no supporting data.",
+          "No quantitative results, baselines, ablations, limitations, or artifact/release statements appear anywhere in the supplied text."
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "z-ai/glm-5.3-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Blog/tutorial-style piece on spec-driven development with Claude Code and OpenSpec. Topic aligns with high-weight preferences (LLM coding agents, agents & tool use, code generation), but only the introduction fragment is available (abstract_only): no method, baselines, ablations, quantitative results, limitations, or availability claims are verifiable. It describes pain points of AI coding agents (requirements drift, cross-session context loss) and explains existing OpenSpec concepts rather than contributing novel research. Score reflects strong topical match offset by absence of research rigor and evidence.",
+        "score": 0.37249999999999994,
+        "token_usage": {
+          "completion_tokens": 1499,
+          "prompt_cache_hit_tokens": 1920,
+          "prompt_cache_miss_tokens": 299,
+          "prompt_tokens": 2219,
+          "total_tokens": 3718
+        },
+        "topics": [
+          "Agents & Tool Use",
+          "Code & Programming",
+          "Large Language Models",
+          "Prompting & In-Context Learning"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "qiita-genai-tag",
+        "tier": 2,
+        "title": "Claude Code × OpenSpecで始める仕様駆動開発 ― proposal・specs・changesの意味と開発フロー",
+        "url": "https://qiita.com/nao_109/items/e05ea390cda8e6e4abfd"
+      },
+      "published_at": "2026-09-28T17:00:31+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 2.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.37249999999999994,
+        "llm_relevance_score": 10.429999999999998,
+        "recency_score": 0.9593401654724344,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 4.0,
+        "total_score": 19.18934016547243
+      },
+      "section": null,
+      "source_name": "Qiita 生成AI Tag",
+      "story_id": "fallback:85ba5cc3687e3d6c",
+      "summary": "はじめに\nClaude Code のような AI コーディングエージェントに「いい感じに作って」と頼むと、確かにそれっぽいコードは出てきます。ただ、\n\n会話の途中で要件がブレて、どこまで合意したのか分からなくなる\nセッションを跨ぐと前回の前提が失われる\n「なぜこの実装にな...",
+      "summary_zh": "這篇實務導向的文章探討使用 Claude Code 等 AI 編碼代理時的常見痛點:以模糊指令請 AI 生成程式碼,雖能快速得到看似可用的成果,但對話中途需求容易漂移、難以確認雙方已達成哪些共識;跨工作階段時,前次建立的假設與脈絡也會流失,導致「為什麼要這樣實作」的理由無從追溯。為此,作者主張導入規格驅動開發(spec-driven development),以 OpenSpec 搭配 Claude Code,將開發工作組織為 proposal(提案)、specs(規格)與 changes(變更)三類產物與對應流程:先以提案記錄要做什麼與其理由,再以規格固定系統應有的行為,變更則描述規格如何演進。如此一來,需求、決策與脈絡以文字形式沉澱於版本庫,AI 代理可在每次工作階段讀取規格以獲得完整脈絡,人類也能據此審查與驗收,降低需求漂移與知識流失的風險。需注意本文屬工作流程與經驗分享性質,目前可取得的內容僅為摘要與導言,尚未呈現量化評估或實際專案的驗證結果,其成效主要建立在作者的實務觀察上,導入時仍須依團隊狀況調整。對深度倚賴 AI 輔助開發的團隊而言,本文提供把規格視為人機共用契約的具體做法,有助於提升 AI 協作開發的可追溯性、一致性與可維護性。",
+      "title": "Claude Code × OpenSpecで始める仕様駆動開発 ― proposal・specs・changesの意味と開発フロー",
+      "title_zh": "以 Claude Code × OpenSpec 開始規格驅動開發 ― proposal・specs・changes 的意義與開發流程"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "dosanko_tousan"
+      ],
+      "categories": [],
+      "entities": [
+        "openai",
+        "anthropic"
+      ],
+      "first_seen_at": "2026-09-29T02:33:28.885814+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "qiita-llm-tag",
+          "tier": 2,
+          "title": "停止判断・保持・実行を分けると、ハーネスの側で今日できることと、モデルの側にまだ答えが無いことが見えてくる ── OpenAI・Anthropic・Apollo の公開事故報告と介入実験から",
+          "url": "https://qiita.com/dosanko_tousan/items/61a24ee6571602a67ac7"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.15,
+          "generalizability": 0.3,
+          "novelty": 0.2,
+          "preference_relevance": 0.5,
+          "reproducibility": 0.1,
+          "rigor": 0.15
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "abstract_only excerpt: states the piece is a Japanese Qiita rework of an English Towards AI article built 'from the same primary sources' (OpenAI・Anthropic・Apollo の公開事故報告と介入実験)",
+          "abstract_only excerpt: the added harness-side section is described as '設計上の示唆で、効果は検証していません' (design-level suggestions whose effects were not verified)",
+          "abstract_only excerpt: no section of the provided text reports methods, baselines, ablations, or quantitative results; content status is abstract_only"
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "z-ai/glm-5.3-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Topically relevant to LLM agent misbehavior/recovery and AI safety (OpenAI/Anthropic/Apollo incident reports), but this is a blog article repackaged for Qiita from a Towards AI post, available only as an abstract. Its one added contribution (harness-side design suggestions) is explicitly self-declared unverified ('効果は検証していません'). No methods, baselines, ablations, or quantitative results are visible; novelty is limited to an analytical framing (separating stopping/retention/execution) over secondary sources. Score reflects genuine agent-safety topic alignment offset by very low research quality and evidentiary support.",
+        "score": 0.31,
+        "token_usage": {
+          "completion_tokens": 2810,
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 2247,
+          "prompt_tokens": 2247,
+          "total_tokens": 5057
+        },
+        "topics": [
+          "Agents & Tool Use",
+          "AI Safety",
+          "Red Teaming & Evaluation"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "qiita-llm-tag",
+        "tier": 2,
+        "title": "停止判断・保持・実行を分けると、ハーネスの側で今日できることと、モデルの側にまだ答えが無いことが見えてくる ── OpenAI・Anthropic・Apollo の公開事故報告と介入実験から",
+        "url": "https://qiita.com/dosanko_tousan/items/61a24ee6571602a67ac7"
+      },
+      "published_at": "2026-09-28T15:28:03+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 4.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.31,
+        "llm_relevance_score": 8.68,
+        "recency_score": 0.9531996940134971,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 3.75,
+        "total_score": 19.183199694013496
+      },
+      "section": null,
+      "source_name": "Qiita LLM Tag",
+      "story_id": "fallback:7992edf0edd295e5",
+      "summary": "この記事は、Towards AI に掲載された英語版を、同じ一次資料から Qiita 向けに組み直した日本語版です。英語版に無い「ハーネスの側で今日できること」の節を足しています(その節の中身は設計上の示唆で、効果は検証していません)。\n英語版:AI Agents Ke...",
+      "summary_zh": "本文是一篇探討 AI agent 安全的分析文章,核心問題在於:代理系統何時該停止、如何維持安全狀態、以及如何控制執行,這些能力目前究竟該由模型本身承擔,還是由外部 harness(環繞模型的腳手架式基礎設施)補足。作者主張把代理的行為控制拆解為停止判斷、保持與執行三個環節,分開檢視後便能釐清兩類問題:一類是今日就能在 harness 端動手解決的工程問題,另一類是模型端尚未有答案、需要根本性能力進展的未解難題。文章的取材來源是 OpenAI、Anthropic 與 Apollo 的公開事故報告與介入實驗,性質上屬於綜合整理與分析,而非提出新實證結果的研究論文。須注意的限制包括:摘要明言文中新增的「harness 端今日可做的事」一節僅是設計層面的建議,其效果並未經過驗證;本文亦是由刊於 Towards AI 的英文版改寫而成、發布於 Qiita 的日文版,並非經同儕審查的學術出版品,且本次可取得的內容僅為摘要,無法核實其具體案例與論據。儘管如此,這套三分法框架對從事 agent 安全工作的工程師與研究者仍有參考價值:隨著代理獲得更多自主權,停止時機、狀態維持與執行控制成為安全工程的核心議題,能夠區分短期可落地的 harness 介入與需要模型能力進展的長期課題,有助於安排改善工作的優先順序。",
+      "title": "停止判断・保持・実行を分けると、ハーネスの側で今日できることと、モデルの側にまだ答えが無いことが見えてくる ── OpenAI・Anthropic・Apollo の公開事故報告と介入実験から",
+      "title_zh": "將停止判斷、保持與執行分開,便能看清 harness 端今日可做的事,以及模型端尚無答案之處──取材自 OpenAI、Anthropic、Apollo 的公開事故報告與介入實驗"
+    }
+  ]
+}
