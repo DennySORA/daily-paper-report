@@ -77,10 +77,12 @@ After each run, `scripts/prepare-public.py` finalizes `api/` (archive dates,
 `catalog.json`, `search.json`), `scripts/publish-pages.sh` publishes that data
 without the private score/translation caches, and `scripts/publish-state.sh`
 snapshots state. Both publishers refuse invalid inputs before pushing.
-`prepare-public.py` also fills Traditional Chinese text from the translation cache
-into any published story that lacks it; `scripts/translate-missing.py` translates
-the stories that have no cached translation yet (run it under the pipeline lock or
-against a private copy and merge with `--merge`). The site
+Chinese titles and guides come from the pipeline's LLM translation phase. After a
+daily run, `scripts/translate-missing.py` retries that translation for the last
+two days' stories that still lack it (a transient provider error no longer leaves a
+day untranslated), and `prepare-public.py` fills cached translations into any
+published story that lacks them. Run the tool by hand under the pipeline lock, or
+against a private copy and fold the result in with `--merge`. The site
 itself deploys from GitHub Actions whenever `frontend/` changes on `main`
 (`gh workflow run frontend.yml` redeploys it manually). The Nano requires a
 repository-specific SSH deploy key with write access; personal SSH keys must not be copied.

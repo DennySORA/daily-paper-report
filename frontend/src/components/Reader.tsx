@@ -30,7 +30,6 @@ import { formatCompact, formatDay, formatInt, formatTimestamp, utcDate } from '.
 import { paragraphs, segmentEvidence } from '../lib/text'
 import { useLang } from '../state/lang'
 import { setPref, setRead, toggleSaved, useLibrary } from '../state/library'
-import { useMachineTranslation } from './MachineTranslation'
 import { CompactScorecard, RankBreakdown, Scorecard } from './Scorecard'
 import { Badge, CopyButton, ExternalLink, ICON, ICON_SM, Kbd } from './ui'
 
@@ -89,9 +88,10 @@ function Prose({ text, lang }: { text: string; lang: 'zh' | 'en' }) {
 }
 
 /**
- * 摘要 / Summary in the reading language: the Chinese guide or the English
- * abstract. When the reading language has no text, the other one is shown with
- * an on-device translation option; the other language stays one toggle away.
+ * 摘要 / Summary in the reading language: the Chinese guide written by the
+ * pipeline's LLM, or the English abstract. When the reading language has no
+ * text yet, the other one is shown and labelled; nothing is machine-translated
+ * in the browser.
  */
 function Summary({ story }: { story: Story }) {
   const { lang, t } = useLang()
@@ -100,7 +100,6 @@ function Summary({ story }: { story: Story }) {
   const other = lang === 'zh' ? story.abstract || null : story.summaryZh
   const fallbackLang = lang === 'zh' ? 'en' : 'zh'
   const shown = own ?? other
-  const translation = useMachineTranslation(own === null && other ? [other] : [], fallbackLang)
 
   return (
     <Section
@@ -109,13 +108,16 @@ function Summary({ story }: { story: Story }) {
       title={t('摘要', 'Summary')}
       aside={
         own === null && other ? (
-          <span className="flex flex-wrap items-center gap-2">
-            <Badge tone="warning">
-              <TriangleAlert {...ICON_SM} />
-              {t('尚無中文導讀', 'No English abstract')}
-            </Badge>
-            {translation.control}
-          </span>
+          <Badge
+            tone="warning"
+            title={t(
+              '每日 LLM 翻譯尚未產生這篇的中文標題與導讀，先顯示英文摘要。',
+              'The source has no English abstract; showing the Chinese guide.',
+            )}
+          >
+            <TriangleAlert {...ICON_SM} />
+            {t('中文導讀尚未產生', 'No English abstract')}
+          </Badge>
         ) : null
       }
     >
@@ -126,10 +128,7 @@ function Summary({ story }: { story: Story }) {
       ) : own !== null ? (
         <Prose text={own} lang={lang} />
       ) : (
-        <Prose
-          text={translation.texts[0] ?? shown}
-          lang={translation.translated ? lang : fallbackLang}
-        />
+        <Prose text={shown} lang={fallbackLang} />
       )}
       {own !== null && other ? (
         <details
@@ -153,13 +152,16 @@ function Summary({ story }: { story: Story }) {
 function Rationale({ text }: { text: string }) {
   const { t } = useLang()
   const { prefs } = useLibrary()
-  const translation = useMachineTranslation([text], 'en')
   return (
     <Section
       id="rationale-title"
       icon={<Quote {...ICON_SM} className="text-fg-3" />}
       title={t('評審理由', 'Assessment')}
-      aside={translation.control ?? <span className="text-caption text-fg-3">LLM</span>}
+      aside={
+        <span className="text-caption text-fg-3">
+          {t('LLM 評分時撰寫（英文）', 'Written by the scoring LLM')}
+        </span>
+      }
     >
       <details
         open={prefs.rationaleOpen}
@@ -169,7 +171,7 @@ function Rationale({ text }: { text: string }) {
         <summary className="cursor-pointer text-meta text-fg-3 select-none group-open:mb-2">
           {prefs.rationaleOpen ? t('收合', 'Collapse') : t('展開評審理由', 'Show assessment')}
         </summary>
-        <Prose text={translation.texts[0] ?? text} lang={translation.translated ? 'zh' : 'en'} />
+        <Prose text={text} lang="en" />
       </details>
     </Section>
   )
@@ -177,22 +179,19 @@ function Rationale({ text }: { text: string }) {
 
 function Evidence({ items }: { items: string[] }) {
   const { t } = useLang()
-  const translation = useMachineTranslation(items, 'en')
   return (
     <Section
       id="evidence-title"
       icon={<Quote {...ICON_SM} className="text-fg-3" />}
       title={t('全文證據', 'Evidence')}
       aside={
-        translation.control ?? (
-          <span className="text-caption text-fg-3">
-            {t(`${items.length} 則摘錄`, `${items.length} excerpts`)}
-          </span>
-        )
+        <span className="text-caption text-fg-3">
+          {t(`${items.length} 則摘錄`, `${items.length} excerpts`)}
+        </span>
       }
     >
-      <ol className="flex flex-col gap-3" lang={translation.translated ? 'zh-Hant' : 'en'}>
-        {translation.texts.map((item, index) => (
+      <ol className="flex flex-col gap-3" lang="en">
+        {items.map((item, index) => (
           <li key={index} className="grid grid-cols-[24px_minmax(0,1fr)] gap-2">
             <span className="mono pt-0.5 text-caption text-fg-3">
               {String(index + 1).padStart(2, '0')}

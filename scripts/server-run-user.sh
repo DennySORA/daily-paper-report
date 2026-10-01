@@ -40,6 +40,15 @@ case "${MODE}" in
   *) echo "Usage: $0 daily|weekly|monthly" >&2; exit 2 ;;
 esac
 
+if test "${MODE}" = "daily"; then
+  # Retry the LLM translation (titles and guides) for stories the run could not
+  # translate, e.g. after a transient provider error. Never blocks publishing.
+  LLM_TRANSLATION_CONCURRENCY="${LLM_TRANSLATION_CONCURRENCY:-4}" \
+    "${PYTHON_BIN}" scripts/translate-missing.py "${PUBLIC_DIR}" \
+    --fulltext-cache "${CACHE_DIR}/fulltext" --since "$(date -u -d '2 days ago' +%F)" \
+    || echo "Translation retry failed; publishing the translations that exist." >&2
+fi
+
 "${PYTHON_BIN}" scripts/backup-state.py \
   "${DATA_DIR}/state.sqlite" "${ROOT_DIR}/backups"
 scripts/publish-state.sh

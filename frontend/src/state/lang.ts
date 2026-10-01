@@ -9,7 +9,7 @@ export interface Bilingual {
   en: string
 }
 
-/** BCP 47 tags for the document and the browser translator. */
+/** BCP 47 tags for the document language. */
 export const LANG_TAG: Record<Lang, string> = { zh: 'zh-Hant-TW', en: 'en' }
 
 export function setLang(lang: Lang): void {

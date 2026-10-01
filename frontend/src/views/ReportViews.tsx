@@ -2,7 +2,6 @@ import { CalendarRange, ChevronLeft, ChevronRight, TriangleAlert } from 'lucide-
 import { useMemo } from 'react'
 import { Link, useParams } from 'react-router'
 import { route } from '../app/routes'
-import { useMachineTranslation } from '../components/MachineTranslation'
 import { ReaderLayout } from '../components/ReaderLayout'
 import { Badge, ErrorMessage, ICON, ICON_SM, LoadingRows, StateMessage } from '../components/ui'
 import { NotFoundError, safeReportPath, useCatalog, useReport, useReportIndex } from '../data/api'
@@ -60,15 +59,9 @@ function ReportHeader({
   const { lang, t } = useLang()
   const { older, newer } = siblings(index, type, period)
   const label = TYPE_LABEL[type][lang]
-  // Report titles and summaries are written in Chinese; English readers can translate them.
-  const source = report ? [report.title, report.summary ?? ''].filter(Boolean) : []
-  const translation = useMachineTranslation(source, 'zh')
-  const [title, summary] = report
-    ? [
-        translation.texts[0] ?? report.title,
-        report.summary ? (translation.texts[1] ?? report.summary) : null,
-      ]
-    : [`${label} ${period}`, null]
+  // Report titles and summaries are written in Chinese by the report LLM.
+  const title = report?.title ?? `${label} ${period}`
+  const summary = report?.summary ?? null
 
   return (
     <header className="flex flex-col gap-2 px-4 pt-3 pb-3 lg:px-3">
@@ -83,7 +76,6 @@ function ReportHeader({
         {report ? (
           <Coverage covered={report.covered_dates.length} missing={report.missing_dates} />
         ) : null}
-        {translation.control}
         <nav
           className="ml-auto flex items-center gap-1"
           aria-label={t(`${label}切換`, `${label} navigation`)}
@@ -134,7 +126,7 @@ function ReportHeader({
       <h1
         id="view-title"
         tabIndex={-1}
-        lang={translation.translated ? 'en' : 'zh-Hant'}
+        lang={report ? 'zh-Hant' : undefined}
         className="text-title font-semibold text-balance outline-none"
       >
         {title}
@@ -144,10 +136,7 @@ function ReportHeader({
           <summary className="cursor-pointer text-meta text-fg-3 select-none">
             {t('本期摘要', 'Summary')}
           </summary>
-          <div
-            className={translation.translated ? 'prose-en mt-1' : 'prose-zh mt-1 text-ui'}
-            lang={translation.translated ? 'en' : 'zh-Hant'}
-          >
+          <div className="prose-zh mt-1 text-ui" lang="zh-Hant">
             {paragraphs(summary).map((paragraph, position) => (
               <p key={position}>{paragraph}</p>
             ))}

@@ -62,10 +62,9 @@ force-pushes; both retry on a rejected fast-forward.
   `dpr.prefs.v1`. Strings sit next to their component as `t(zh, en)`; there
   is no i18n package or key catalogue. 摘要／Summary shows the Chinese guide
   or the English abstract for the chosen language, with the other one behind
-  a disclosure (`E`). Text that only exists in the other language (missing
-  guides, LLM assessment, evidence, report summaries) can be translated
-  on-device through the browser Translator API, labelled as such; browsers
-  without it say so instead.
+  a disclosure (`E`). Chinese titles and guides come only from the pipeline's
+  LLM translation; nothing is machine-translated in the browser, and a story
+  still waiting for its translation is labelled as such.
 - **Signatures**: the six-dimension scorecard (compact strip under the title,
   sticky side panel when the pane is wider than 1024 px); keyboard triage
   (`J`/`K`/`O`/`P`/`S`/`M`/`E`, `1–5`, `[`/`]`, `F`, `B`, `?`); `⌘K` palette that
