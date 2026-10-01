@@ -3,6 +3,9 @@
 The site shell (index.html, assets) is built and deployed by the frontend
 workflow; this step only completes the data it reads:
 
+- Stories still missing Traditional Chinese text get it from the translation
+  cache (api/translations_zh.json) in day, daily and report files, exactly as
+  the renderer would have injected it.
 - api/daily.json gets the list of published days (archive_dates).
 - api/reports/index.json exists even before the first weekly report.
 - api/catalog.json lists every published day with section counts and the
@@ -36,6 +39,70 @@ def write_json(path: Path, payload: object, *, indent: int | None = None) -> Non
     temporary = path.with_name(f".{path.name}.tmp")
     temporary.write_text(text + "\n", encoding="utf-8")
     os.replace(temporary, path)
+
+
+def write_digest(path: Path, payload: object) -> None:
+    """Rewrite a digest in the renderer's format (sorted keys, two-space indent)."""
+    text = json.dumps(payload, ensure_ascii=False, sort_keys=True, indent=2)
+    temporary = path.with_name(f".{path.name}.tmp")
+    temporary.write_text(text + "\n", encoding="utf-8")
+    os.replace(temporary, path)
+
+
+def load_translations(api: Path) -> dict[str, dict[str, Any]]:
+    """Cached Traditional Chinese titles and guides keyed by story id."""
+    try:
+        data = json.loads((api / "translations_zh.json").read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return {}
+    if not isinstance(data, dict):
+        return {}
+    return {
+        str(key): value
+        for key, value in data.items()
+        if isinstance(value, dict) and value.get("title_zh")
+    }
+
+
+def fill_translations(
+    items: list[dict[str, Any]], translations: dict[str, dict[str, Any]]
+) -> int:
+    """Add cached title_zh/summary_zh to stories that lack them; never overwrite."""
+    filled = 0
+    for story in items:
+        if story.get("title_zh"):
+            continue
+        entry = translations.get(str(story.get("story_id")))
+        if entry is None:
+            continue
+        story["title_zh"] = entry["title_zh"]
+        if entry.get("summary_zh"):
+            story["summary_zh"] = entry["summary_zh"]
+        filled += 1
+    return filled
+
+
+def fill_reports(reports_dir: Path, translations: dict[str, dict[str, Any]]) -> int:
+    """Fill missing translations in weekly and monthly report recommendations."""
+    filled = 0
+    for path in sorted(reports_dir.glob("*/*.json")):
+        try:
+            report = json.loads(path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            continue
+        if not isinstance(report, dict):
+            continue
+        items = [
+            story
+            for key in ("recommendations", "blog_recommendations")
+            for story in report.get(key) or []
+            if isinstance(story, dict)
+        ]
+        count = fill_translations(items, translations)
+        if count:
+            write_digest(path, report)
+            filled += count
+    return filled
 
 
 def load_days(day_dir: Path) -> list[tuple[str, dict[str, Any]]]:
@@ -153,12 +220,23 @@ def main() -> None:
     if not daily.is_file():
         raise SystemExit(f"Refusing to finalize: missing {daily}")
 
+    translations = load_translations(api)
     days = load_days(api / "day")
+    filled = 0
+    for day, digest in days:
+        count = fill_translations([story for _, story in stories(digest)], translations)
+        if count:
+            write_digest(api / "day" / f"{day}.json", digest)
+            filled += count
+    filled += fill_reports(api / "reports", translations)
     published = sorted((day for day, _ in days), reverse=True)
 
     payload = json.loads(daily.read_text(encoding="utf-8"))
+    fill_translations([story for _, story in stories(payload)], translations)
     payload["archive_dates"] = published
-    write_json(daily, payload, indent=2)
+    write_digest(daily, payload)
+    if filled:
+        sys.stdout.write(f"Filled {filled} cached translations into published files.\n")
 
     reports_index = api / "reports" / "index.json"
     if not reports_index.exists():

@@ -76,7 +76,11 @@ Timers use UTC and a shared six-hour lock:
 After each run, `scripts/prepare-public.py` finalizes `api/` (archive dates,
 `catalog.json`, `search.json`), `scripts/publish-pages.sh` publishes that data
 without the private score/translation caches, and `scripts/publish-state.sh`
-snapshots state. Both publishers refuse invalid inputs before pushing. The site
+snapshots state. Both publishers refuse invalid inputs before pushing.
+`prepare-public.py` also fills Traditional Chinese text from the translation cache
+into any published story that lacks it; `scripts/translate-missing.py` translates
+the stories that have no cached translation yet (run it under the pipeline lock or
+against a private copy and merge with `--merge`). The site
 itself deploys from GitHub Actions whenever `frontend/` changes on `main`
 (`gh workflow run frontend.yml` redeploys it manually). The Nano requires a
 repository-specific SSH deploy key with write access; personal SSH keys must not be copied.
