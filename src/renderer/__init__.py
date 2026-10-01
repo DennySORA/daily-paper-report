@@ -1,11 +1,9 @@
-"""Static HTML renderer module."""
+"""Static JSON renderer module."""
 
 from src.renderer.io import AtomicWriter
 from src.renderer.models import (
     DailyDigest,
     GeneratedFile,
-    RenderConfig,
-    RenderContext,
     RenderManifest,
     RenderResult,
     RunInfo,
@@ -20,8 +18,6 @@ __all__ = [
     "AtomicWriter",
     "DailyDigest",
     "GeneratedFile",
-    "RenderConfig",
-    "RenderContext",
     "RenderManifest",
     "RenderResult",
     "RenderState",

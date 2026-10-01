@@ -208,7 +208,6 @@ def generate_test_output(output_dir: Path) -> None:
         ranker_output=ranker_output,
         sources_status=sources_status,
         run_info=run_info,
-        recent_runs=[run_info],
     )
 
     for _f in result.manifest.files:

@@ -5,7 +5,7 @@ from dataclasses import dataclass, field
 
 @dataclass
 class RendererMetrics:
-    """Metrics for the static HTML renderer.
+    """Metrics for the static JSON renderer.
 
     Collects render_duration_ms, render_failures_total, render_bytes_total.
     """
@@ -15,8 +15,6 @@ class RendererMetrics:
     _render_bytes_total: int = 0
     _files_generated: int = 0
     _json_render_ms: float = 0.0
-    _html_render_ms: float = 0.0
-    _template_durations: dict[str, float] = field(default_factory=dict)
 
     _instance: "RendererMetrics | None" = field(default=None, repr=False)
 
@@ -68,23 +66,6 @@ class RendererMetrics:
         """
         self._json_render_ms = duration_ms
 
-    def record_html_duration(self, duration_ms: float) -> None:
-        """Record HTML rendering duration.
-
-        Args:
-            duration_ms: Duration in milliseconds.
-        """
-        self._html_render_ms = duration_ms
-
-    def record_template_duration(self, template_name: str, duration_ms: float) -> None:
-        """Record per-template rendering duration.
-
-        Args:
-            template_name: Name of the template.
-            duration_ms: Duration in milliseconds.
-        """
-        self._template_durations[template_name] = duration_ms
-
     @property
     def render_duration_ms(self) -> float:
         """Get total render duration."""
@@ -117,6 +98,4 @@ class RendererMetrics:
             "render_bytes_total": self._render_bytes_total,
             "files_generated": self._files_generated,
             "json_render_ms": self._json_render_ms,
-            "html_render_ms": self._html_render_ms,
-            "template_durations": dict(self._template_durations),
         }

@@ -8,7 +8,6 @@ from pydantic import ValidationError
 from src.renderer.models import (
     DailyDigest,
     GeneratedFile,
-    RenderContext,
     RenderManifest,
     RenderResult,
     RunInfo,
@@ -205,21 +204,6 @@ class TestRenderManifest:
         manifest.add_file(gf2)
         assert manifest.total_bytes == 800
         assert len(manifest.files) == 2
-
-
-class TestRenderContext:
-    """Tests for RenderContext dataclass."""
-
-    def test_creation(self) -> None:
-        """Can create RenderContext."""
-        ctx = RenderContext(
-            run_id="test",
-            run_date="2026-01-15",
-            generated_at="2026-01-15T00:00:00Z",
-        )
-        assert ctx.timezone == "UTC"
-        assert ctx.top5 == []
-        assert ctx.archive_dates == []
 
 
 class TestRenderResult:

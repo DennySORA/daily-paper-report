@@ -1,18 +1,16 @@
-"""Main static HTML renderer orchestrator."""
+"""Main static JSON renderer orchestrator."""
 
 import time
-from datetime import UTC, datetime, timedelta
+from datetime import UTC, datetime
 from pathlib import Path
 
 import structlog
 
 from src.features.config.schemas.entities import EntityConfig
 from src.ranker.models import RankerOutput
-from src.renderer.html_renderer import HtmlRenderer
 from src.renderer.json_renderer import JsonRenderer
 from src.renderer.metrics import RendererMetrics
 from src.renderer.models import (
-    RenderContext,
     RenderManifest,
     RenderResult,
     RunInfo,
@@ -25,27 +23,21 @@ logger = structlog.get_logger()
 
 
 class StaticRenderer:
-    """Orchestrates static HTML and JSON rendering.
+    """Orchestrates static JSON API rendering.
 
     Implements the rendering state machine:
-        RENDER_PENDING -> RENDERING_JSON -> RENDERING_HTML -> RENDER_DONE|RENDER_FAILED
+        RENDER_PENDING -> RENDERING_JSON -> RENDER_DONE|RENDER_FAILED
 
     Produces:
+        - api/day/YYYY-MM-DD.json
         - api/daily.json
-        - index.html
-        - day/YYYY-MM-DD.html
-        - archive.html
-        - sources.html
-        - status.html
     """
 
-    def __init__(  # noqa: PLR0913
+    def __init__(
         self,
         run_id: str,
         output_dir: Path,
-        timezone: str = "UTC",
         metrics: RendererMetrics | None = None,
-        retention_days: int = 90,
         entity_configs: list[EntityConfig] | None = None,
         translations: dict[str, object] | None = None,
     ) -> None:
@@ -54,17 +46,13 @@ class StaticRenderer:
         Args:
             run_id: Unique run identifier.
             output_dir: Output directory for rendered files.
-            timezone: Timezone for date display.
             metrics: Optional metrics instance.
-            retention_days: Number of days to retain day pages.
             entity_configs: Optional entity configurations for entity catalog.
             translations: Optional translation map (story_id -> TranslationEntry).
         """
         self._run_id = run_id
         self._output_dir = Path(output_dir)
-        self._timezone = timezone
         self._metrics = metrics or RendererMetrics.get_instance()
-        self._retention_days = retention_days
         self._entity_configs = entity_configs or []
         self._translations = translations
 
@@ -81,16 +69,14 @@ class StaticRenderer:
         ranker_output: RankerOutput,
         sources_status: list[SourceStatus],
         run_info: RunInfo,
-        recent_runs: list[RunInfo],
         target_date: str | None = None,
     ) -> RenderResult:
-        """Render all static pages.
+        """Render the JSON API files.
 
         Args:
             ranker_output: Output from the ranker.
             sources_status: Per-source status list.
             run_info: Current run information.
-            recent_runs: Recent run history for status page.
             target_date: Optional target date (YYYY-MM-DD) for backfill rendering.
                         If not provided, uses current UTC date.
 
@@ -116,10 +102,9 @@ class StaticRenderer:
         )
 
         try:
-            # Collect archive dates before rendering (needed for both JSON and HTML)
+            # Collect archive dates from existing per-date JSON before rendering
             archive_dates = self._get_archive_dates(run_date)
 
-            # Phase 1: Render JSON
             self._state_machine.to_rendering_json()
             json_renderer = JsonRenderer(
                 run_id=self._run_id,
@@ -136,33 +121,6 @@ class StaticRenderer:
                 archive_dates=archive_dates,
             )
             manifest.add_file(json_file)
-
-            # Phase 2: Render HTML
-            self._state_machine.to_rendering_html()
-
-            context = RenderContext(
-                run_id=self._run_id,
-                run_date=run_date,
-                generated_at=generated_at,
-                timezone=self._timezone,
-                top5=list(ranker_output.top5),
-                model_releases_by_entity=dict(ranker_output.model_releases_by_entity),
-                papers=list(ranker_output.papers),
-                radar=list(ranker_output.radar),
-                sources_status=sources_status,
-                recent_runs=recent_runs,
-                archive_dates=archive_dates,
-            )
-
-            html_renderer = HtmlRenderer(
-                run_id=self._run_id,
-                output_dir=self._output_dir,
-                metrics=self._metrics,
-            )
-            html_renderer.render(context, manifest)
-
-            # Prune old day pages if needed
-            self._prune_old_day_pages(run_date)
 
             # Complete
             self._state_machine.to_done()
@@ -237,50 +195,13 @@ class StaticRenderer:
         except ValueError:
             return False
 
-    def _prune_old_day_pages(self, reference_date: str) -> int:
-        """Prune day pages older than retention period.
-
-        Args:
-            reference_date: Render run date used as the retention anchor.
-
-        Returns:
-            Number of files pruned.
-        """
-        day_dir = self._output_dir / "day"
-        if not day_dir.exists():
-            return 0
-
-        cutoff_date = datetime.strptime(reference_date, "%Y-%m-%d").replace(
-            tzinfo=UTC
-        ) - timedelta(days=self._retention_days)
-        cutoff_str = cutoff_date.strftime("%Y-%m-%d")
-        pruned = 0
-
-        for html_file in day_dir.glob("*.html"):
-            date_str = html_file.stem
-            if self._is_valid_date(date_str) and date_str < cutoff_str:
-                html_file.unlink()
-                pruned += 1
-                self._log.debug("day_page_pruned", file=str(html_file))
-
-        if pruned > 0:
-            self._log.info(
-                "day_pages_pruned",
-                count=pruned,
-                retention_days=self._retention_days,
-            )
-
-        return pruned
-
 
 def render_static(  # noqa: PLR0913
     ranker_output: RankerOutput,
     output_dir: Path,
     run_id: str,
-    timezone: str = "UTC",
     sources_status: list[SourceStatus] | None = None,
     run_info: RunInfo | None = None,
-    recent_runs: list[RunInfo] | None = None,
     entity_configs: list[EntityConfig] | None = None,
 ) -> RenderResult:
     """Pure function API for static rendering.
@@ -289,10 +210,8 @@ def render_static(  # noqa: PLR0913
         ranker_output: Output from the ranker.
         output_dir: Output directory for rendered files.
         run_id: Unique run identifier.
-        timezone: Timezone for date display.
         sources_status: Per-source status list.
         run_info: Current run information.
-        recent_runs: Recent run history.
         entity_configs: Optional entity configurations for entity catalog.
 
     Returns:
@@ -307,13 +226,9 @@ def render_static(  # noqa: PLR0913
             started_at=datetime.now(UTC),
         )
 
-    if recent_runs is None:
-        recent_runs = [run_info]
-
     renderer = StaticRenderer(
         run_id=run_id,
         output_dir=output_dir,
-        timezone=timezone,
         entity_configs=entity_configs,
     )
 
@@ -321,5 +236,4 @@ def render_static(  # noqa: PLR0913
         ranker_output=ranker_output,
         sources_status=sources_status,
         run_info=run_info,
-        recent_runs=recent_runs,
     )

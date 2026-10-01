@@ -131,7 +131,6 @@ class TestStatusRendering:
                 ranker_output=sample_ranker_output,
                 sources_status=sample_sources_status,
                 run_info=run_info,
-                recent_runs=[run_info],
             )
 
             assert result.success
@@ -185,7 +184,6 @@ class TestStatusRendering:
                 ranker_output=sample_ranker_output,
                 sources_status=sample_sources_status,
                 run_info=run_info,
-                recent_runs=[run_info],
             )
 
             assert result.success
@@ -203,12 +201,12 @@ class TestStatusRendering:
             assert hf["remediation_hint"] is not None
             assert "timeout" in hf["remediation_hint"].lower()
 
-    def test_html_sources_page_rendered(
+    def test_per_date_json_includes_sources_status(
         self,
         sample_ranker_output: RankerOutput,
         sample_sources_status: list[SourceStatus],
     ) -> None:
-        """Placeholder day page is rendered for the frontend."""
+        """Per-date JSON archive carries sources_status; no HTML page is written."""
         with tempfile.TemporaryDirectory() as tmpdir:
             output_dir = Path(tmpdir)
             run_id = "test-run-123"
@@ -227,17 +225,18 @@ class TestStatusRendering:
                 ranker_output=sample_ranker_output,
                 sources_status=sample_sources_status,
                 run_info=run_info,
-                recent_runs=[run_info],
                 target_date="2026-01-15",
             )
 
             assert result.success
 
-            day_path = output_dir / "day" / "2026-01-15.html"
-            assert day_path.exists()
-            assert "Placeholder" in day_path.read_text()
+            day_json_path = output_dir / "api" / "day" / "2026-01-15.json"
+            day_data = json.loads(day_json_path.read_text())
+            assert day_data["run_date"] == "2026-01-15"
+            assert len(day_data["sources_status"]) == 4
+            assert not (output_dir / "day").exists()
 
-    def test_html_sources_shows_summary_counts(
+    def test_json_sources_status_supports_summary_counts(
         self,
         sample_ranker_output: RankerOutput,
         sample_sources_status: list[SourceStatus],
@@ -261,7 +260,6 @@ class TestStatusRendering:
                 ranker_output=sample_ranker_output,
                 sources_status=sample_sources_status,
                 run_info=run_info,
-                recent_runs=[run_info],
                 target_date="2026-01-15",
             )
 
@@ -300,7 +298,6 @@ class TestStatusRendering:
                 ranker_output=sample_ranker_output,
                 sources_status=sources_status,
                 run_info=run_info,
-                recent_runs=[run_info],
             )
 
             json_path = output_dir / "api" / "daily.json"
@@ -313,7 +310,6 @@ class TestStatusRendering:
                 ranker_output=sample_ranker_output,
                 sources_status=sources_status,
                 run_info=run_info,
-                recent_runs=[run_info],
             )
 
             with open(json_path) as f:

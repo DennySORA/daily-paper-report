@@ -131,14 +131,12 @@ class TestRendererIntegration:
         renderer = StaticRenderer(
             run_id="integration-test-run",
             output_dir=temp_output_dir,
-            timezone="UTC",
         )
 
         result = renderer.render(
             ranker_output=ranker_output,
             sources_status=sources_status,
             run_info=run_info,
-            recent_runs=[run_info],
             target_date="2026-01-15",
         )
 
@@ -146,10 +144,10 @@ class TestRendererIntegration:
         assert result.success
         assert result.error_summary is None
 
-        # Verify JSON and placeholder day file exist
+        # Verify daily and per-date JSON exist and no HTML day page is written
         assert (temp_output_dir / "api" / "daily.json").is_file()
-        day_path = temp_output_dir / "day" / "2026-01-15.html"
-        assert day_path.is_file()
+        assert (temp_output_dir / "api" / "day" / "2026-01-15.json").is_file()
+        assert not (temp_output_dir / "day").exists()
 
         # Verify JSON content
         json_data = json.loads((temp_output_dir / "api" / "daily.json").read_text())
@@ -165,7 +163,7 @@ class TestRendererIntegration:
         self,
         temp_output_dir: Path,
     ) -> None:
-        """Malicious content is properly escaped."""
+        """Malicious content stays verbatim JSON data and is never emitted as HTML."""
         RendererMetrics.reset()
 
         xss_story = create_story(
@@ -195,7 +193,6 @@ class TestRendererIntegration:
             ranker_output=ranker_output,
             sources_status=[],
             run_info=run_info,
-            recent_runs=[run_info],
             target_date="2026-01-15",
         )
 
@@ -204,21 +201,20 @@ class TestRendererIntegration:
         json_data = json.loads((temp_output_dir / "api" / "daily.json").read_text())
         assert json_data["top5"][0]["title"] == '<img src=x onerror="alert(1)">'
 
-        placeholder = (temp_output_dir / "day" / "2026-01-15.html").read_text()
-        assert 'onerror="alert(1)"' not in placeholder
+        assert list(temp_output_dir.rglob("*.html")) == []
 
-    def test_render_preserves_existing_day_pages(
+    def test_render_leaves_legacy_day_pages_untouched(
         self,
         temp_output_dir: Path,
     ) -> None:
-        """Existing day pages are preserved (within retention)."""
+        """Legacy day/*.html files are neither pruned nor added to."""
         RendererMetrics.reset()
 
-        # Create pre-existing day pages
+        # Create pre-existing legacy day pages, including one far past retention
         day_dir = temp_output_dir / "day"
         day_dir.mkdir(parents=True)
         (day_dir / "2026-01-14.html").write_text("<html>yesterday</html>")
-        (day_dir / "2026-01-13.html").write_text("<html>older</html>")
+        (day_dir / "2025-01-01.html").write_text("<html>old</html>")
 
         ranker_output = RankerOutput(
             top5=[],
@@ -235,25 +231,27 @@ class TestRendererIntegration:
         renderer = StaticRenderer(
             run_id="test",
             output_dir=temp_output_dir,
-            retention_days=90,
         )
 
         result = renderer.render(
             ranker_output=ranker_output,
             sources_status=[],
             run_info=run_info,
-            recent_runs=[run_info],
             target_date="2026-01-15",
         )
 
         assert result.success
 
-        # Previous day pages should still exist
+        # Legacy day pages are not pruned
         assert (day_dir / "2026-01-14.html").is_file()
-        assert (day_dir / "2026-01-13.html").is_file()
+        assert (day_dir / "2025-01-01.html").is_file()
 
-        # Placeholder for the target date should be created
-        assert (day_dir / "2026-01-15.html").is_file()
+        # No HTML page is created for the target date
+        assert not (day_dir / "2026-01-15.html").exists()
+
+        # Archive dates come only from api/day/*.json, not legacy HTML pages
+        json_data = json.loads((temp_output_dir / "api" / "daily.json").read_text())
+        assert json_data["archive_dates"] == ["2026-01-15"]
 
     def test_json_output_is_deterministic(
         self,
@@ -295,7 +293,6 @@ class TestRendererIntegration:
                 ranker_output=ranker_output,
                 sources_status=[],
                 run_info=run_info,
-                recent_runs=[run_info],
             )
 
         # Compare JSON (excluding generated_at which changes)

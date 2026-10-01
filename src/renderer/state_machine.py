@@ -14,14 +14,12 @@ class RenderState(Enum):
 
     State transitions:
         RENDER_PENDING -> RENDERING_JSON: Begin JSON rendering
-        RENDERING_JSON -> RENDERING_HTML: JSON complete, begin HTML rendering
-        RENDERING_HTML -> RENDER_DONE: All rendering complete
-        RENDERING_JSON/RENDERING_HTML -> RENDER_FAILED: Rendering failed
+        RENDERING_JSON -> RENDER_DONE: JSON rendering complete
+        RENDER_PENDING/RENDERING_JSON -> RENDER_FAILED: Rendering failed
     """
 
     RENDER_PENDING = auto()
     RENDERING_JSON = auto()
-    RENDERING_HTML = auto()
     RENDER_DONE = auto()
     RENDER_FAILED = auto()
 
@@ -56,10 +54,6 @@ class RenderStateMachine:
             RenderState.RENDER_FAILED,
         },
         RenderState.RENDERING_JSON: {
-            RenderState.RENDERING_HTML,
-            RenderState.RENDER_FAILED,
-        },
-        RenderState.RENDERING_HTML: {
             RenderState.RENDER_DONE,
             RenderState.RENDER_FAILED,
         },
@@ -127,10 +121,6 @@ class RenderStateMachine:
     def to_rendering_json(self) -> None:
         """Transition to RENDERING_JSON state."""
         self.transition(RenderState.RENDERING_JSON)
-
-    def to_rendering_html(self) -> None:
-        """Transition to RENDERING_HTML state."""
-        self.transition(RenderState.RENDERING_HTML)
 
     def to_done(self) -> None:
         """Transition to RENDER_DONE state."""

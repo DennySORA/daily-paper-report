@@ -1,4 +1,4 @@
-"""Data models for the static HTML renderer."""
+"""Data models for the static JSON renderer."""
 
 from dataclasses import dataclass, field
 from datetime import datetime
@@ -6,8 +6,6 @@ from enum import Enum
 from typing import TYPE_CHECKING, Annotated
 
 from pydantic import BaseModel, ConfigDict, Field
-
-from src.linker.models import Story
 
 
 if TYPE_CHECKING:
@@ -177,37 +175,6 @@ class RenderManifest:
 
 
 @dataclass
-class RenderContext:
-    """Context for rendering templates.
-
-    Attributes:
-        run_id: Run identifier.
-        run_date: Date of run (YYYY-MM-DD).
-        generated_at: When rendering started.
-        timezone: Timezone for date display.
-        top5: Top 5 stories.
-        model_releases_by_entity: Model releases grouped by entity.
-        papers: Papers section.
-        radar: Radar section.
-        sources_status: Per-source status list.
-        recent_runs: Recent run info for status page.
-        archive_dates: List of archive dates for archive page.
-    """
-
-    run_id: str
-    run_date: str
-    generated_at: str
-    timezone: str = "UTC"
-    top5: list[Story] = field(default_factory=list)
-    model_releases_by_entity: dict[str, list[Story]] = field(default_factory=dict)
-    papers: list[Story] = field(default_factory=list)
-    radar: list[Story] = field(default_factory=list)
-    sources_status: list[SourceStatus] = field(default_factory=list)
-    recent_runs: list[RunInfo] = field(default_factory=list)
-    archive_dates: list[str] = field(default_factory=list)
-
-
-@dataclass
 class RenderResult:
     """Result of the rendering operation.
 
@@ -220,22 +187,3 @@ class RenderResult:
     success: bool
     manifest: RenderManifest
     error_summary: str | None = None
-
-
-@dataclass
-class RenderConfig:
-    """Configuration for static rendering.
-
-    Groups rendering parameters to reduce function argument count.
-
-    Attributes:
-        output_dir: Output directory for rendered files.
-        run_id: Unique run identifier.
-        timezone: Timezone for date display.
-        retention_days: Number of days to retain day pages.
-    """
-
-    output_dir: str
-    run_id: str
-    timezone: str = "UTC"
-    retention_days: int = 90

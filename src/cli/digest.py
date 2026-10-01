@@ -90,7 +90,6 @@ class RunOptions:
     dry_run: bool = False
     lookback_hours: int = 24
     source_max_items: int | None = None
-    retention_days: int = 90
     skip_translation: bool = False
     target_date: str | None = None
 
@@ -847,8 +846,6 @@ def _run_rendering_phase(  # noqa: PLR0913
     renderer = StaticRenderer(
         run_id=run_id,
         output_dir=options.output_dir,
-        timezone=options.timezone,
-        retention_days=options.retention_days,
         entity_configs=list(effective_config.entities.entities),
         translations=translations,
     )
@@ -857,7 +854,6 @@ def _run_rendering_phase(  # noqa: PLR0913
         ranker_output=ranker_result.output,
         sources_status=sources_status,
         run_info=run_info,
-        recent_runs=[run_info],
         target_date=options.target_date,
     )
 
@@ -1145,13 +1141,6 @@ def cli() -> None:
     help="Per-source max_items override for this run. If omitted, use each source's configured max_items. 0 means unlimited while still using safe API fetch caps.",
 )
 @click.option(
-    "--retention-days",
-    "retention_days",
-    type=int,
-    default=90,
-    help="Number of days to retain archive pages (default: 90).",
-)
-@click.option(
     "--date",
     "target_date",
     type=str,
@@ -1177,7 +1166,6 @@ def run(  # noqa: PLR0913
     dry_run: bool,
     lookback_hours: int,
     source_max_items: int | None,
-    retention_days: int,
     target_date: str | None,
     skip_translation: bool,
 ) -> None:
@@ -1211,7 +1199,6 @@ def run(  # noqa: PLR0913
         dry_run=dry_run,
         lookback_hours=lookback_hours,
         source_max_items=source_max_items,
-        retention_days=retention_days,
         skip_translation=skip_translation,
         target_date=target_date,
     )
@@ -1360,7 +1347,7 @@ def render(
     json_logs: bool,
     verbose: bool,
 ) -> None:
-    """Render static HTML pages from fixture data.
+    """Render the JSON API files from fixture data.
 
     This command is primarily for testing the renderer with sample data.
     In production, rendering happens as part of the full pipeline run.
@@ -1423,14 +1410,12 @@ def render(
     renderer = StaticRenderer(
         run_id=run_id,
         output_dir=output_dir,
-        timezone=timezone,
     )
 
     result: RenderResult = renderer.render(
         ranker_output=ranker_output,
         sources_status=[],
         run_info=run_info,
-        recent_runs=[run_info],
     )
 
     if result.success:
@@ -1474,11 +1459,11 @@ def clear_archives(
     json_logs: bool,
     verbose: bool,
 ) -> None:
-    """Clear all day archive HTML files.
+    """Clear legacy day archive HTML files.
 
-    This command removes all day/YYYY-MM-DD.html files from the output
-    directory. Useful when the frontend panel design changes and you
-    need to regenerate all archives with the new design.
+    Removes leftover day/YYYY-MM-DD.html files written by earlier versions;
+    the digest commands now write only JSON under api/. The api/day/*.json
+    archives are never touched.
     """
     run_id = str(uuid.uuid4())
 
@@ -1784,13 +1769,13 @@ def backfill(  # noqa: C901, PLR0913, PLR0915
 ) -> None:
     """Backfill historical day archives from existing database data.
 
-    Generates day/YYYY-MM-DD.html and api/day/YYYY-MM-DD.json for one
-    specified date using items already stored in the state database.
+    Generates api/day/YYYY-MM-DD.json for one specified date using items
+    already stored in the state database.
 
     Note: This command does NOT fetch new data from sources. It only
     re-renders from existing database content.
     Existing day archives are skipped by default to avoid downgrading
-    previously enriched historical pages (e.g., zh translations and
+    previously enriched historical archives (e.g., zh translations and
     LLM relevance scores). Use --overwrite-existing to force regeneration.
     """
     from datetime import timedelta
@@ -1862,9 +1847,7 @@ def backfill(  # noqa: C901, PLR0913, PLR0915
         generated_count = 0
         skipped_existing_count = 0
 
-        # Ensure day directories exist (for HTML routing and JSON data)
-        day_dir = output_dir / "day"
-        day_dir.mkdir(parents=True, exist_ok=True)
+        # Ensure the per-date JSON archive directory exists
         api_day_dir = output_dir / "api" / "day"
         api_day_dir.mkdir(parents=True, exist_ok=True)
 
@@ -1987,13 +1970,6 @@ def backfill(  # noqa: C901, PLR0913, PLR0915
                     archive_dates=sorted_archive_dates,
                     skip_daily_json=True,  # Don't overwrite daily.json during backfill
                 )
-
-                # Create placeholder HTML file (will be replaced by Vue SPA)
-                placeholder_path = day_dir / f"{target_date}.html"
-                placeholder_content = (
-                    f"<!-- Placeholder for {target_date} - replaced by Vue SPA -->\n"
-                )
-                placeholder_path.write_text(placeholder_content)
 
                 generated_count += 1
                 log.info(

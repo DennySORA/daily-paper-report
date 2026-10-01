@@ -12,6 +12,16 @@ from src.renderer.state_machine import (
 class TestRenderStateMachine:
     """Tests for RenderStateMachine."""
 
+    def test_all_states_defined(self) -> None:
+        """Render lifecycle has only JSON rendering states."""
+        expected_states = {
+            "RENDER_PENDING",
+            "RENDERING_JSON",
+            "RENDER_DONE",
+            "RENDER_FAILED",
+        }
+        assert {state.name for state in RenderState} == expected_states
+
     def test_initial_state_is_pending(self) -> None:
         """State machine starts in RENDER_PENDING."""
         sm = RenderStateMachine("test-run")
@@ -28,18 +38,10 @@ class TestRenderStateMachine:
         sm.to_rendering_json()
         assert sm.state == RenderState.RENDERING_JSON
 
-    def test_valid_transition_json_to_html(self) -> None:
-        """Can transition from RENDERING_JSON to RENDERING_HTML."""
+    def test_valid_transition_json_to_done(self) -> None:
+        """Can transition from RENDERING_JSON to RENDER_DONE."""
         sm = RenderStateMachine("test")
         sm.to_rendering_json()
-        sm.to_rendering_html()
-        assert sm.state == RenderState.RENDERING_HTML
-
-    def test_valid_transition_html_to_done(self) -> None:
-        """Can transition from RENDERING_HTML to RENDER_DONE."""
-        sm = RenderStateMachine("test")
-        sm.to_rendering_json()
-        sm.to_rendering_html()
         sm.to_done()
         assert sm.state == RenderState.RENDER_DONE
         assert sm.is_done()
@@ -60,40 +62,27 @@ class TestRenderStateMachine:
         sm.to_failed()
         assert sm.state == RenderState.RENDER_FAILED
 
-    def test_valid_transition_to_failed_from_html(self) -> None:
-        """Can transition from RENDERING_HTML to FAILED."""
-        sm = RenderStateMachine("test")
-        sm.to_rendering_json()
-        sm.to_rendering_html()
-        sm.to_failed()
-        assert sm.state == RenderState.RENDER_FAILED
-
-    def test_invalid_transition_pending_to_html(self) -> None:
-        """Cannot skip from PENDING directly to RENDERING_HTML."""
-        sm = RenderStateMachine("test")
-        with pytest.raises(RenderStateError) as exc_info:
-            sm.to_rendering_html()
-        assert exc_info.value.from_state == RenderState.RENDER_PENDING
-        assert exc_info.value.to_state == RenderState.RENDERING_HTML
-
     def test_invalid_transition_pending_to_done(self) -> None:
         """Cannot go from PENDING directly to DONE."""
         sm = RenderStateMachine("test")
-        with pytest.raises(RenderStateError):
+        with pytest.raises(RenderStateError) as exc_info:
             sm.to_done()
+        assert exc_info.value.from_state == RenderState.RENDER_PENDING
+        assert exc_info.value.to_state == RenderState.RENDER_DONE
 
-    def test_invalid_transition_json_to_done(self) -> None:
-        """Cannot skip from RENDERING_JSON to DONE."""
+    def test_invalid_transition_json_to_pending(self) -> None:
+        """Cannot go back from RENDERING_JSON to PENDING."""
         sm = RenderStateMachine("test")
         sm.to_rendering_json()
-        with pytest.raises(RenderStateError):
-            sm.to_done()
+        with pytest.raises(RenderStateError) as exc_info:
+            sm.transition(RenderState.RENDER_PENDING)
+        assert exc_info.value.from_state == RenderState.RENDERING_JSON
+        assert exc_info.value.to_state == RenderState.RENDER_PENDING
 
     def test_terminal_state_done_no_transitions(self) -> None:
         """Cannot transition from DONE."""
         sm = RenderStateMachine("test")
         sm.to_rendering_json()
-        sm.to_rendering_html()
         sm.to_done()
         with pytest.raises(RenderStateError):
             sm.to_failed()
@@ -109,9 +98,14 @@ class TestRenderStateMachine:
         """can_transition returns correct boolean."""
         sm = RenderStateMachine("test")
         assert sm.can_transition(RenderState.RENDERING_JSON)
-        assert not sm.can_transition(RenderState.RENDERING_HTML)
         assert not sm.can_transition(RenderState.RENDER_DONE)
         assert sm.can_transition(RenderState.RENDER_FAILED)
+
+        sm.to_rendering_json()
+        assert sm.can_transition(RenderState.RENDER_DONE)
+        assert sm.can_transition(RenderState.RENDER_FAILED)
+        assert not sm.can_transition(RenderState.RENDERING_JSON)
+        assert not sm.can_transition(RenderState.RENDER_PENDING)
 
     def test_is_terminal_false_for_pending(self) -> None:
         """PENDING is not terminal."""
@@ -125,7 +119,6 @@ class TestRenderStateMachine:
         assert not sm.is_failed()
 
         sm.to_rendering_json()
-        sm.to_rendering_html()
         sm.to_done()
         assert sm.is_done()
         assert not sm.is_failed()
