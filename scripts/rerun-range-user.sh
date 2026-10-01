@@ -30,16 +30,18 @@ STATUS_FILE="${ROOT_DIR}/logs/rerun-${RANGE_ID}.status"
 export DATA_DIR PUBLIC_DIR CACHE_DIR PYTHON_BIN DEPLOY_KEY
 export FULLTEXT_CACHE_DIR="${CACHE_DIR}/fulltext"
 cd "${APP_DIR}"
+# Label status lines with the models that actually score and translate.
+MODELS="$("${PYTHON_BIN}" -c 'from src.settings.app import get_settings; s = get_settings(); print(f"scoring={s.llm_scoring_model} translation={s.translation_model}")')"
 
 exec 9>"${ROOT_DIR}/pipeline.lock"
 flock -w 21600 9 || { echo "Could not acquire pipeline lock" >&2; exit 1; }
 trap 'status=$?; printf "failed exit=%s at=%s\n" "$status" "$(date -u +%FT%TZ)" >"${STATUS_FILE}"; exit "$status"' ERR
-printf 'running started=%s model=deepseek-v4-flash range=%s..%s\n' \
-  "$(date -u +%FT%TZ)" "${START_DATE}" "${END_DATE}" >"${STATUS_FILE}"
+printf 'running started=%s %s range=%s..%s\n' \
+  "$(date -u +%FT%TZ)" "${MODELS}" "${START_DATE}" "${END_DATE}" >"${STATUS_FILE}"
 
 CURRENT="${START_DATE}"
 while [[ "${CURRENT}" < "${END_DATE}" || "${CURRENT}" == "${END_DATE}" ]]; do
-  echo "rerun_daily date=${CURRENT} model=deepseek-v4-flash"
+  echo "rerun_daily date=${CURRENT} ${MODELS}"
   "${PYTHON_BIN}" main.py backfill \
     --config config/sources.yaml --entities config/entities.yaml \
     --topics config/topics.yaml --state "${DATA_DIR}/state.sqlite" \
@@ -49,7 +51,7 @@ while [[ "${CURRENT}" < "${END_DATE}" || "${CURRENT}" == "${END_DATE}" ]]; do
 done
 
 while IFS= read -r PERIOD; do
-  echo "rerun_weekly period=${PERIOD} model=deepseek-v4-flash"
+  echo "rerun_weekly period=${PERIOD} ${MODELS}"
   "${PYTHON_BIN}" main.py report --type weekly --out "${PUBLIC_DIR}" \
     --tz UTC --period "${PERIOD}" --limit 100 --archive-lookahead-days 1 \
     --ai-metadata --json-logs
@@ -70,7 +72,7 @@ PY
 )
 
 while IFS= read -r PERIOD; do
-  echo "rerun_monthly period=${PERIOD} model=deepseek-v4-flash"
+  echo "rerun_monthly period=${PERIOD} ${MODELS}"
   "${PYTHON_BIN}" main.py report --type monthly --out "${PUBLIC_DIR}" \
     --tz UTC --period "${PERIOD}" --limit 100 --archive-lookahead-days 1 \
     --ai-metadata --json-logs
@@ -94,6 +96,6 @@ PY
 scripts/publish-state.sh
 "${PYTHON_BIN}" scripts/prepare-public.py "${PUBLIC_DIR}"
 scripts/publish-pages.sh
-printf 'complete finished=%s model=deepseek-v4-flash range=%s..%s\n' \
-  "$(date -u +%FT%TZ)" "${START_DATE}" "${END_DATE}" >"${STATUS_FILE}"
+printf 'complete finished=%s %s range=%s..%s\n' \
+  "$(date -u +%FT%TZ)" "${MODELS}" "${START_DATE}" "${END_DATE}" >"${STATUS_FILE}"
 echo "rerun_complete range=${START_DATE}..${END_DATE}"

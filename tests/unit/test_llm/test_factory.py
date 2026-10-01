@@ -12,7 +12,7 @@ def test_factory_creates_default_client() -> None:
     client = create_llm_client(api_key="test-key")
     assert isinstance(client, OpenAICompatibleClient)
     assert isinstance(client, LlmClient)
-    assert client.model == "z-ai/glm-5.3-flash"
+    assert client.model == "xiaomi/mimo-v2.6-pro"
 
 
 def test_factory_requires_key() -> None:
@@ -28,7 +28,7 @@ def test_factory_rejects_empty_model() -> None:
 def test_factory_passes_base_url() -> None:
     client = create_llm_client(
         api_key="test-key",
-        model="z-ai/glm-5.3-flash",
+        model="xiaomi/mimo-v2.6-pro",
         base_url="https://openrouter.ai/api/v1",
     )
-    assert client.model == "z-ai/glm-5.3-flash"
+    assert client.model == "xiaomi/mimo-v2.6-pro"

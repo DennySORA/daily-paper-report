@@ -30,7 +30,7 @@ import httpx
 
 # ── LLM API settings ──────────────────────────────────────────────
 LLM_BASE_URL = "https://api.deepseek.com"
-LLM_MODEL = "deepseek-flash"
+LLM_MODEL = "deepseek-v4-flash"
 MAX_TOKENS = 8192  # Enough for batch stories x 400 chars Chinese + JSON
 BATCH_SIZE = 5  # Keep small to avoid JSON truncation from token limits
 MIN_REQUEST_INTERVAL = 0.5  # seconds

@@ -12,8 +12,8 @@ def test_empty_optional_env_values_are_ignored(monkeypatch: MonkeyPatch) -> None
     settings = AppSettings(_env_file=None)
 
     assert settings.llm_api_key is None
-    assert settings.llm_model == "z-ai/glm-5.3-flash"
-    assert settings.llm_scoring_model == "z-ai/glm-5.3-flash"
+    assert settings.llm_model == "xiaomi/mimo-v2.6-pro"
+    assert settings.llm_scoring_model == "xiaomi/mimo-v2.6-pro"
     assert settings.llm_base_url == "https://openrouter.ai/api/v1"
 
 
@@ -36,7 +36,7 @@ def test_translation_uses_its_own_provider(monkeypatch: MonkeyPatch) -> None:
 
     assert settings.translation_api_key is None
     assert settings.translation_base_url == "https://api.deepseek.com"
-    assert settings.translation_model == "deepseek-flash"
+    assert settings.translation_model == "deepseek-v4-flash"
 
     monkeypatch.setenv("TRANSLATION_API_KEY", "sk-translation")
     assert AppSettings(_env_file=None).translation_api_key == "sk-translation"

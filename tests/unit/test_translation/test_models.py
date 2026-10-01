@@ -3,7 +3,10 @@
 from __future__ import annotations
 
 import json
+import sys
+import threading
 from pathlib import Path
+from typing import Any
 
 import pytest
 
@@ -166,3 +169,61 @@ class TestTranslationCache:
 
         raw = json.loads(cache_path.read_text(encoding="utf-8"))
         assert "\u57fa\u65bc" in raw["s1"]["title_zh"]
+
+    def test_save_while_workers_put(self, tmp_path: Path) -> None:
+        """Concurrent translation workers may add entries during a save."""
+        cache_path = tmp_path / "cache.json"
+        cache = TranslationCache(cache_path)
+        for index in range(2000):
+            cache.put(
+                TranslationEntry(story_id=f"seed-{index}", title_zh="t", summary_zh="s")
+            )
+
+        def worker(prefix: str) -> None:
+            for index in range(3000):
+                cache.put(
+                    TranslationEntry(
+                        story_id=f"{prefix}-{index}", title_zh="t", summary_zh="s"
+                    )
+                )
+
+        interval = sys.getswitchinterval()
+        sys.setswitchinterval(1e-6)
+        try:
+            threads = [
+                threading.Thread(target=worker, args=(f"w{n}",)) for n in range(4)
+            ]
+            for thread in threads:
+                thread.start()
+            while any(thread.is_alive() for thread in threads):
+                cache.save()
+            for thread in threads:
+                thread.join()
+        finally:
+            sys.setswitchinterval(interval)
+        cache.save()
+
+        saved = json.loads(cache_path.read_text(encoding="utf-8"))
+        assert len(saved) == len(cache.entries) == 2000 + 4 * 3000
+
+    def test_failed_save_keeps_previous_file(
+        self, tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+    ) -> None:
+        """An interrupted save never leaves a truncated cache behind."""
+        cache_path = tmp_path / "cache.json"
+        cache = TranslationCache(cache_path)
+        cache.put(TranslationEntry(story_id="s1", title_zh="t", summary_zh="s"))
+        cache.save()
+        before = cache_path.read_text(encoding="utf-8")
+
+        def broken_dump(obj: object, fp: Any, **kwargs: object) -> None:
+            fp.write('{"s1": {"title_zh": "t')
+            raise OSError("disk full")
+
+        cache.put(TranslationEntry(story_id="s2", title_zh="t2", summary_zh="s2"))
+        monkeypatch.setattr("src.features.translation.models.json.dump", broken_dump)
+        with pytest.raises(OSError, match="disk full"):
+            cache.save()
+
+        assert cache_path.read_text(encoding="utf-8") == before
+        assert [path.name for path in tmp_path.iterdir()] == ["cache.json"]

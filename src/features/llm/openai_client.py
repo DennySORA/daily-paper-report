@@ -17,7 +17,7 @@ from src.features.llm.errors import LlmApiError
 logger = structlog.get_logger()
 
 OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
-DEFAULT_MODEL = "z-ai/glm-5.3-flash"
+DEFAULT_MODEL = "xiaomi/mimo-v2.6-pro"
 CONTEXT_LIMIT_TOKENS = 1_000_000
 INPUT_BUDGET_TOKENS = 900_000
 MAX_INPUT_CHARS = 1_800_000

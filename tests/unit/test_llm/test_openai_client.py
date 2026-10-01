@@ -28,7 +28,7 @@ def test_request_uses_json_mode_and_excludes_reasoning(mock_post: MagicMock) -> 
     client = OpenAICompatibleClient(api_key="secret")
     assert client.generate_content("Return json", "System") == '{"ok":true}'
     body = mock_post.call_args.kwargs["json"]
-    assert body["model"] == "z-ai/glm-5.3-flash"
+    assert body["model"] == "xiaomi/mimo-v2.6-pro"
     assert body["response_format"] == {"type": "json_object"}
     assert body["reasoning"] == {"exclude": True}
     assert body["max_tokens"] == 8192
@@ -95,10 +95,10 @@ def test_empty_model_is_rejected() -> None:
 def test_deepseek_requests_non_thinking_mode(mock_post: MagicMock) -> None:
     mock_post.return_value = _response()
     OpenAICompatibleClient(
-        api_key="secret", model="deepseek-flash", base_url="https://api.deepseek.com"
+        api_key="secret", model="deepseek-v4-flash", base_url="https://api.deepseek.com"
     ).generate_content("json")
     body = mock_post.call_args.kwargs["json"]
-    assert body["model"] == "deepseek-flash"
+    assert body["model"] == "deepseek-v4-flash"
     assert body["thinking"] == {"type": "disabled"}
     assert "reasoning" not in body
 

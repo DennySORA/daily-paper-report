@@ -3,6 +3,8 @@
 from __future__ import annotations
 
 import json
+import tempfile
+import threading
 from dataclasses import dataclass
 from pathlib import Path
 
@@ -73,7 +75,9 @@ class TranslationCache:
     """Manages persistent cache of translations in a JSON file.
 
     Stores translations as a dict mapping story_id to TranslationEntry,
-    serialized to ``api/translations_zh.json``.
+    serialized to ``api/translations_zh.json``. Concurrent translation
+    workers may ``put`` while another thread saves, so mutations and the
+    save snapshot share a lock, and saves replace the file atomically.
     """
 
     def __init__(self, cache_path: Path) -> None:
@@ -84,12 +88,15 @@ class TranslationCache:
         """
         self._path = cache_path
         self._entries: dict[str, TranslationEntry] = {}
+        self._lock = threading.Lock()
+        self._save_lock = threading.Lock()
         self._log = logger.bind(component="translation", subcomponent="cache")
 
     @property
     def entries(self) -> dict[str, TranslationEntry]:
-        """Return the current cache entries."""
-        return self._entries
+        """Return a snapshot of the current cache entries."""
+        with self._lock:
+            return dict(self._entries)
 
     def load(self) -> None:
         """Load cached translations from disk.
@@ -102,10 +109,13 @@ class TranslationCache:
 
         try:
             raw = json.loads(self._path.read_text(encoding="utf-8"))
+            loaded = {}
             for story_id, entry_data in raw.items():
                 if isinstance(entry_data, dict):
                     entry_data.setdefault("story_id", story_id)
-                    self._entries[story_id] = TranslationEntry.from_dict(entry_data)
+                    loaded[story_id] = TranslationEntry.from_dict(entry_data)
+            with self._lock:
+                self._entries.update(loaded)
             self._log.info(
                 "translation_cache_loaded",
                 count=len(self._entries),
@@ -119,16 +129,35 @@ class TranslationCache:
             )
 
     def save(self) -> None:
-        """Persist current cache entries to disk."""
-        self._path.parent.mkdir(parents=True, exist_ok=True)
-        data = {sid: entry.to_dict() for sid, entry in self._entries.items()}
-        self._path.write_text(
-            json.dumps(data, indent=2, ensure_ascii=False),
-            encoding="utf-8",
-        )
+        """Persist current cache entries to disk.
+
+        Readers and an interrupted run see either the previous or the new
+        complete file, never a partial one.
+        """
+        with self._save_lock:
+            with self._lock:
+                data = {sid: entry.to_dict() for sid, entry in self._entries.items()}
+            self._path.parent.mkdir(parents=True, exist_ok=True)
+            temp_path = None
+            try:
+                with tempfile.NamedTemporaryFile(
+                    mode="w",
+                    encoding="utf-8",
+                    dir=self._path.parent,
+                    prefix=f".{self._path.name}.",
+                    suffix=".tmp",
+                    delete=False,
+                ) as temp_file:
+                    temp_path = Path(temp_file.name)
+                    json.dump(data, temp_file, indent=2, ensure_ascii=False)
+                temp_path.replace(self._path)
+                temp_path = None
+            finally:
+                if temp_path and temp_path.exists():
+                    temp_path.unlink()
         self._log.info(
             "translation_cache_saved",
-            count=len(self._entries),
+            count=len(data),
             path=str(self._path),
         )
 
@@ -189,4 +218,5 @@ class TranslationCache:
         Args:
             entry: Translation entry to cache.
         """
-        self._entries[entry.story_id] = entry
+        with self._lock:
+            self._entries[entry.story_id] = entry

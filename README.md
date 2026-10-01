@@ -1,15 +1,16 @@
 # Daily Paper Report
 
 Daily Paper Report collects AI research and technical news, deduplicates stories,
-extracts complete paper text, scores papers with DeepSeek, writes Traditional Chinese
+extracts complete paper text, scores papers with MiMo-V2.6-Pro, writes Traditional Chinese
 research guides, and publishes them to a static React reader.
 
 ## Runtime architecture
 
 - The data pipeline runs on the Nano server in an ARM64 Docker container.
-- Scoring and report metadata use the `LLM_*` settings (OpenRouter by default).
+- Paper scoring (which papers are selected) and report metadata use the `LLM_*`
+  settings: `xiaomi/mimo-v2.6-pro` through OpenRouter by default.
 - Chinese titles and guides use only the `TRANSLATION_*` settings: DeepSeek's own API
-  with `deepseek-flash` in non-thinking JSON mode. Without `TRANSLATION_API_KEY` the
+  with `deepseek-v4-flash` in non-thinking JSON mode. Without `TRANSLATION_API_KEY` the
   translation phase is skipped; it never falls back to the scoring provider.
 - Full paper text is cached only on the Nano; it is never published or pushed to GitHub.
 - GitHub Pages serves `paper.dennysora.me` from `gh-pages`, which has two writers

@@ -13,8 +13,8 @@ def test_cli_configures_translation_model() -> None:
     """The CLI should wire the configured LLM settings for translation."""
     settings = SimpleNamespace(
         llm_api_key="llm-key",
-        llm_model="z-ai/glm-5.3-flash",
-        llm_scoring_model="z-ai/glm-5.3-flash",
+        llm_model="xiaomi/mimo-v2.6-pro",
+        llm_scoring_model="xiaomi/mimo-v2.6-pro",
         llm_max_tokens=8192,
         llm_base_url="https://openrouter.ai/api/v1",
     )
@@ -26,7 +26,7 @@ def test_cli_configures_translation_model() -> None:
 
     assert create_client.call_args.kwargs == {
         "api_key": "llm-key",
-        "model": "z-ai/glm-5.3-flash",
+        "model": "xiaomi/mimo-v2.6-pro",
         "max_tokens": 8192,
         "base_url": "https://openrouter.ai/api/v1",
     }
@@ -36,8 +36,8 @@ def test_cli_configures_scoring_model() -> None:
     """Scoring/report metadata should use the dedicated scoring model."""
     settings = SimpleNamespace(
         llm_api_key="llm-key",
-        llm_model="z-ai/glm-5.3-flash",
-        llm_scoring_model="z-ai/glm-5.3-flash",
+        llm_model="xiaomi/mimo-v2.6-pro",
+        llm_scoring_model="xiaomi/mimo-v2.6-pro",
         llm_max_tokens=8192,
         llm_base_url="https://openrouter.ai/api/v1",
     )
@@ -49,7 +49,7 @@ def test_cli_configures_scoring_model() -> None:
 
     assert create_client.call_args.kwargs == {
         "api_key": "llm-key",
-        "model": "z-ai/glm-5.3-flash",
+        "model": "xiaomi/mimo-v2.6-pro",
         "max_tokens": 8192,
         "base_url": "https://openrouter.ai/api/v1",
     }

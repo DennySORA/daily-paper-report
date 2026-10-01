@@ -32,9 +32,9 @@ class AppSettings(BaseSettings):
         default="https://openrouter.ai/api/v1",
         validation_alias=AliasChoices("LLM_BASE_URL", "DEEPSEEK_BASE_URL"),
     )
-    llm_model: str = Field(default="z-ai/glm-5.3-flash", validation_alias="LLM_MODEL")
+    llm_model: str = Field(default="xiaomi/mimo-v2.6-pro", validation_alias="LLM_MODEL")
     llm_scoring_model: str = Field(
-        default="z-ai/glm-5.3-flash", validation_alias="LLM_SCORING_MODEL"
+        default="xiaomi/mimo-v2.6-pro", validation_alias="LLM_SCORING_MODEL"
     )
     llm_max_tokens: int = Field(
         default=8192,
@@ -49,7 +49,7 @@ class AppSettings(BaseSettings):
         default="https://api.deepseek.com", validation_alias="TRANSLATION_BASE_URL"
     )
     translation_model: str = Field(
-        default="deepseek-flash", validation_alias="TRANSLATION_MODEL"
+        default="deepseek-v4-flash", validation_alias="TRANSLATION_MODEL"
     )
     fulltext_cache_dir: str | None = Field(
         default=None, validation_alias="FULLTEXT_CACHE_DIR"

@@ -699,7 +699,7 @@ def _create_translation_client(settings: object) -> "LlmClient":
 
     return create_llm_client(
         api_key=getattr(settings, "translation_api_key", None),
-        model=getattr(settings, "translation_model", "deepseek-flash"),
+        model=getattr(settings, "translation_model", "deepseek-v4-flash"),
         max_tokens=getattr(settings, "llm_max_tokens", 8192),
         base_url=getattr(settings, "translation_base_url", "https://api.deepseek.com"),
     )
