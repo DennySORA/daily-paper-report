@@ -4,9 +4,13 @@ import { Link } from 'react-router'
 import { route } from '../app/routes'
 import type { DayIndex } from '../data/days'
 import { formatDay, formatMonth } from '../lib/format'
+import { useLang } from '../state/lang'
 import { ICON, ICON_SM } from './ui'
 
-const WEEK_HEAD = ['日', '一', '二', '三', '四', '五', '六']
+const WEEK_HEAD = {
+  zh: ['日', '一', '二', '三', '四', '五', '六'],
+  en: ['S', 'M', 'T', 'W', 'T', 'F', 'S'],
+}
 
 function monthCells(month: string): Array<string | null> {
   const [year, value] = month.split('-').map(Number) as [number, number]
@@ -59,12 +63,13 @@ export function MonthGrid({
   onPick?: () => void
   dense?: boolean
 }) {
+  const { lang, t } = useLang()
   const published = new Set(index.dates)
   return (
-    <div role="group" aria-label={formatMonth(month)} onKeyDown={onGridKeyDown}>
+    <div role="group" aria-label={formatMonth(month, lang)} onKeyDown={onGridKeyDown}>
       <div className="grid grid-cols-7 gap-1" aria-hidden="true">
-        {WEEK_HEAD.map((day) => (
-          <span key={day} className="text-center text-caption text-fg-3">
+        {WEEK_HEAD[lang].map((day, position) => (
+          <span key={position} className="text-center text-caption text-fg-3">
             {day}
           </span>
         ))}
@@ -80,11 +85,17 @@ export function MonthGrid({
               <span
                 key={day}
                 className={`flex flex-col items-center justify-center rounded-md text-meta ${dense ? 'h-9' : 'h-14'} ${missing ? 'border border-dashed border-line text-fg-disabled' : 'text-fg-disabled/60'}`}
-                title={missing ? `${formatDay(day)} 沒有日報` : undefined}
+                title={
+                  missing
+                    ? t(`${formatDay(day, lang)} 沒有日報`, `No digest on ${formatDay(day, lang)}`)
+                    : undefined
+                }
               >
                 <span className="mono">{label}</span>
-                {missing && !dense ? <span className="text-caption">缺</span> : null}
-                <span className="sr-only">{missing ? `${day} 沒有日報` : ''}</span>
+                {missing && !dense ? <span className="text-caption">{t('缺', 'none')}</span> : null}
+                <span className="sr-only">
+                  {missing ? t(`${day} 沒有日報`, `no digest on ${day}`) : ''}
+                </span>
               </span>
             )
           }
@@ -98,7 +109,14 @@ export function MonthGrid({
               data-day-link
               data-day={day}
               aria-current={isCurrent ? 'date' : undefined}
-              aria-label={`${formatDay(day)}${info ? `，${info.top5 + info.papers + info.radar} 篇` : ''}`}
+              aria-label={`${formatDay(day, lang)}${
+                info
+                  ? t(
+                      `，${info.top5 + info.papers + info.radar} 篇`,
+                      `, ${info.top5 + info.papers + info.radar} items`,
+                    )
+                  : ''
+              }`}
               className={`flex flex-col items-center justify-center rounded-md border text-meta transition-colors ${dense ? 'h-9' : 'h-14 gap-0.5'} ${
                 isCurrent
                   ? 'border-accent-fg bg-selection text-fg'
@@ -145,6 +163,7 @@ export function DatePicker({ index, current }: { index: DayIndex; current: strin
     })
   }
   const close = () => dialog.current?.close()
+  const { lang, t } = useLang()
 
   return (
     <>
@@ -153,8 +172,8 @@ export function DatePicker({ index, current }: { index: DayIndex; current: strin
         type="button"
         className="btn btn-icon"
         onClick={open}
-        aria-label="選擇日期"
-        title="選擇日期"
+        aria-label={t('選擇日期', 'Choose a date')}
+        title={t('選擇日期', 'Choose a date')}
         disabled={index.dates.length === 0}
       >
         <CalendarDays {...ICON} />
@@ -173,20 +192,20 @@ export function DatePicker({ index, current }: { index: DayIndex; current: strin
             <button
               type="button"
               className="btn btn-quiet btn-icon"
-              aria-label="上一個月"
+              aria-label={t('上一個月', 'Previous month')}
               disabled={position <= 0}
               onClick={() => months[position - 1] && setMonth(months[position - 1]!)}
             >
               <ChevronLeft {...ICON} />
             </button>
             <h2 id="date-picker-title" className="text-heading font-semibold" aria-live="polite">
-              {formatMonth(month)}
+              {formatMonth(month, lang)}
             </h2>
             <div className="flex items-center gap-1">
               <button
                 type="button"
                 className="btn btn-quiet btn-icon"
-                aria-label="下一個月"
+                aria-label={t('下一個月', 'Next month')}
                 disabled={position === -1 || position >= months.length - 1}
                 onClick={() => months[position + 1] && setMonth(months[position + 1]!)}
               >
@@ -195,7 +214,7 @@ export function DatePicker({ index, current }: { index: DayIndex; current: strin
               <button
                 type="button"
                 className="btn btn-quiet btn-icon"
-                aria-label="關閉"
+                aria-label={t('關閉', 'Close')}
                 onClick={close}
               >
                 <X {...ICON_SM} />
@@ -206,8 +225,8 @@ export function DatePicker({ index, current }: { index: DayIndex; current: strin
           <p className="flex items-center gap-3 text-caption text-fg-3">
             {index.partial ? null : (
               <span className="inline-flex items-center gap-1">
-                <span className="size-1.5 rounded-full bg-accent-fg" aria-hidden="true" />有 LLM
-                評分
+                <span className="size-1.5 rounded-full bg-accent-fg" aria-hidden="true" />
+                {t('有 LLM 評分', 'LLM scored')}
               </span>
             )}
             <span className="inline-flex items-center gap-1">
@@ -215,7 +234,7 @@ export function DatePicker({ index, current }: { index: DayIndex; current: strin
                 className="size-3 rounded-sm border border-dashed border-line"
                 aria-hidden="true"
               />
-              缺少日報
+              {t('缺少日報', 'No digest')}
             </span>
           </p>
         </div>

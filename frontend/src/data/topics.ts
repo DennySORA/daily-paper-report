@@ -94,13 +94,16 @@ const CANONICAL: Array<[label: string, zh: string, aliases: string[]]> = [
 
 export interface TopicInfo {
   key: string
+  /** Traditional Chinese label (the original wording for free-form topics). */
   label: string
+  /** English label: the canonical name, or the original wording. */
+  labelEn: string
   canonical: boolean
 }
 
 const BY_ALIAS = new Map<string, TopicInfo>()
 for (const [label, zh, aliases] of CANONICAL) {
-  const info: TopicInfo = { key: fold(label), label: zh, canonical: true }
+  const info: TopicInfo = { key: fold(label), label: zh, labelEn: label, canonical: true }
   BY_ALIAS.set(fold(label), info)
   for (const alias of aliases) BY_ALIAS.set(fold(alias), info)
 }
@@ -111,7 +114,8 @@ function fold(value: string): string {
 
 export function topicInfo(raw: string): TopicInfo {
   const key = fold(raw)
-  return BY_ALIAS.get(key) ?? { key, label: raw.trim(), canonical: false }
+  const text = raw.trim()
+  return BY_ALIAS.get(key) ?? { key, label: text, labelEn: text, canonical: false }
 }
 
 /** Deduplicated topics in their original order, canonical labels first-wins. */
@@ -126,4 +130,8 @@ export function normalizeTopics(raw: readonly string[] | undefined): TopicInfo[]
     result.push(info)
   }
   return result
+}
+
+export function topicLabel(info: Pick<TopicInfo, 'label' | 'labelEn'>, lang: 'zh' | 'en'): string {
+  return lang === 'en' ? info.labelEn : info.label
 }

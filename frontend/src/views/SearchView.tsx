@@ -6,13 +6,18 @@ import { ErrorMessage, ICON, LoadingRows, Meter, StateMessage } from '../compone
 import { NotFoundError, paths, useDoc } from '../data/api'
 import { searchStories } from '../data/search'
 import { SECTION_LABEL, type SectionKey } from '../data/story'
-import { topicInfo } from '../data/topics'
+import { topicInfo, topicLabel } from '../data/topics'
 import type { SearchIndex } from '../data/types'
 import { formatInt, formatScore } from '../lib/format'
 import { useLibrary } from '../state/library'
+import { useLang } from '../state/lang'
 
 const RESULT_LIMIT = 500
-const KIND_FILTER = { all: '全部類型', arxiv: 'arXiv 論文', blog: '文章' } as const
+const KIND_FILTER = {
+  all: { zh: '全部類型', en: 'All kinds' },
+  arxiv: { zh: 'arXiv 論文', en: 'arXiv papers' },
+  blog: { zh: '文章', en: 'Articles' },
+} as const
 type KindFilter = keyof typeof KIND_FILTER
 
 export function SearchView() {
@@ -23,6 +28,7 @@ export function SearchView() {
   const deferred = useDeferredValue(query)
   const [doc, retry] = useDoc<SearchIndex>(paths.search)
   const library = useLibrary()
+  const { lang, t } = useLang()
   const input = useRef<HTMLInputElement>(null)
 
   useEffect(() => {
@@ -55,15 +61,20 @@ export function SearchView() {
         <div className="flex items-center gap-3">
           <Search {...ICON} className="text-fg-3" />
           <h1 id="view-title" tabIndex={-1} className="text-title font-semibold outline-none">
-            搜尋
+            {t('搜尋', 'Search')}
           </h1>
           {doc.status === 'ready' ? (
-            <span className="text-meta text-fg-3">{formatInt(doc.data.rows.length)} 篇已收錄</span>
+            <span className="text-meta text-fg-3">
+              {t(
+                `${formatInt(doc.data.rows.length, lang)} 篇已收錄`,
+                `${formatInt(doc.data.rows.length, lang)} indexed`,
+              )}
+            </span>
           ) : null}
         </div>
         <div className="flex max-w-[880px] flex-wrap items-center gap-2">
           <label className="relative flex min-w-[240px] flex-1 items-center">
-            <span className="sr-only">搜尋關鍵字</span>
+            <span className="sr-only">{t('搜尋關鍵字', 'Search terms')}</span>
             <Search
               size={16}
               strokeWidth={1.75}
@@ -75,13 +86,16 @@ export function SearchView() {
               name="q"
               type="search"
               className="input h-10 w-full pl-9 text-heading"
-              placeholder="標題、主題、作者或 arXiv 編號（以空白分隔多個關鍵字）"
+              placeholder={t(
+                '標題、主題、作者或 arXiv 編號（以空白分隔多個關鍵字）',
+                'Title, topic, author or arXiv id (space-separated terms)',
+              )}
               value={query}
               onChange={(event) => update({ q: event.target.value })}
             />
           </label>
           <label className="flex items-center">
-            <span className="sr-only">類型</span>
+            <span className="sr-only">{t('類型', 'Kind')}</span>
             <select
               name="kind"
               className="input h-10"
@@ -92,7 +106,7 @@ export function SearchView() {
             >
               {(Object.keys(KIND_FILTER) as KindFilter[]).map((key) => (
                 <option key={key} value={key}>
-                  {KIND_FILTER[key]}
+                  {KIND_FILTER[key][lang]}
                 </option>
               ))}
             </select>
@@ -105,26 +119,39 @@ export function SearchView() {
               checked={zhOnly}
               onChange={(event) => update({ zh: event.target.checked ? '1' : null })}
             />
-            只看有中文導讀
+            {t('只看有中文導讀', 'Only with a Chinese guide')}
           </label>
         </div>
       </header>
 
       <div className="px-2 pb-4">
         <div className="panel max-w-[1100px]">
-          {doc.status === 'loading' ? <LoadingRows label="載入搜尋索引中" count={5} /> : null}
+          {doc.status === 'loading' ? (
+            <LoadingRows label={t('載入搜尋索引中', 'Loading the search index')} count={5} />
+          ) : null}
           {doc.status === 'error' ? (
             doc.error instanceof NotFoundError ? (
-              <StateMessage title="搜尋索引尚未產生">
-                索引會在下一次資料發布時建立。目前可在各日報清單中使用篩選。
+              <StateMessage title={t('搜尋索引尚未產生', 'The search index is not published yet')}>
+                {t(
+                  '索引會在下一次資料發布時建立。目前可在各日報清單中使用篩選。',
+                  'It is built with the next data publication. Use the filters in each digest meanwhile.',
+                )}
               </StateMessage>
             ) : (
-              <ErrorMessage error={doc.error} onRetry={retry} what="搜尋索引" />
+              <ErrorMessage
+                error={doc.error}
+                onRetry={retry}
+                what={t('搜尋索引', 'the search index')}
+              />
             )
           ) : null}
           {doc.status === 'ready' && !deferred.trim() ? (
-            <StateMessage title="輸入關鍵字開始搜尋">
-              例如：<span className="mono">agent memory</span>、<span className="mono">推理</span>、
+            <StateMessage title={t('輸入關鍵字開始搜尋', 'Type to search every published story')}>
+              {t('例如：', 'For example: ')}
+              <span className="mono">agent memory</span>
+              {lang === 'en' ? ', ' : '、'}
+              <span className="mono">{t('推理', 'reasoning')}</span>
+              {lang === 'en' ? ', ' : '、'}
               <span className="mono">2609.38149</span>
             </StateMessage>
           ) : null}
@@ -136,8 +163,11 @@ export function SearchView() {
                   aria-live="polite"
                 >
                   {hits.length > RESULT_LIMIT
-                    ? `${hits.length} 筆結果，顯示前 ${RESULT_LIMIT} 筆`
-                    : `${hits.length} 筆結果`}
+                    ? t(
+                        `${hits.length} 筆結果，顯示前 ${RESULT_LIMIT} 筆`,
+                        `${hits.length} results, showing the first ${RESULT_LIMIT}`,
+                      )
+                    : t(`${hits.length} 筆結果`, `${hits.length} results`)}
                 </p>
                 <ol className="flex flex-col gap-0.5 p-1.5">
                   {hits.slice(0, RESULT_LIMIT).map((hit) => (
@@ -150,19 +180,19 @@ export function SearchView() {
                           <span
                             className={`text-ui ${hit.id in library.read ? 'text-fg-2' : 'font-medium text-fg'}`}
                           >
-                            {hit.titleZh ?? hit.title}
+                            {lang === 'en' ? hit.title : (hit.titleZh ?? hit.title)}
                           </span>
-                          {hit.titleZh ? (
+                          {lang === 'zh' && hit.titleZh ? (
                             <span className="truncate text-meta text-fg-3" lang="en">
                               {hit.title}
                             </span>
                           ) : null}
                           <span className="flex min-w-0 flex-wrap items-center gap-x-2 text-caption text-fg-3">
                             <span className="text-entity">
-                              {SECTION_LABEL[hit.section as SectionKey] ?? hit.section}
+                              {SECTION_LABEL[hit.section as SectionKey]?.[lang] ?? hit.section}
                             </span>
                             {hit.topics.slice(0, 3).map((topic) => (
-                              <span key={topic}>{topicInfo(topic).label}</span>
+                              <span key={topic}>{topicLabel(topicInfo(topic), lang)}</span>
                             ))}
                             {hit.authors[0] ? (
                               <span lang="en">{hit.authors.join(', ')}</span>
@@ -186,8 +216,13 @@ export function SearchView() {
                 </ol>
               </>
             ) : (
-              <StateMessage title={`沒有符合「${deferred}」的結果`}>
-                試著減少關鍵字，或改用英文標題中的詞彙。
+              <StateMessage
+                title={t(`沒有符合「${deferred}」的結果`, `Nothing matches “${deferred}”`)}
+              >
+                {t(
+                  '試著減少關鍵字，或改用英文標題中的詞彙。',
+                  'Try fewer terms, or words from the English title.',
+                )}
               </StateMessage>
             )
           ) : null}

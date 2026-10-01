@@ -7,6 +7,7 @@ import {
   RotateCw,
 } from 'lucide-react'
 import { useEffect, useRef, useState, type ReactNode } from 'react'
+import { useLang } from '../state/lang'
 
 export const ICON = { size: 16, strokeWidth: 1.75, 'aria-hidden': true } as const
 export const ICON_SM = { size: 14, strokeWidth: 1.75, 'aria-hidden': true } as const
@@ -55,6 +56,7 @@ export function ExternalLink({
   className?: string
   primary?: boolean
 }) {
+  const { t } = useLang()
   return (
     <a
       className={`btn ${primary ? 'btn-primary' : ''} ${className}`}
@@ -64,7 +66,7 @@ export function ExternalLink({
     >
       {children}
       <ExternalIcon {...ICON_SM} />
-      <span className="sr-only">（在新分頁開啟）</span>
+      <span className="sr-only">{t('（在新分頁開啟）', ' (opens in a new tab)')}</span>
     </a>
   )
 }
@@ -75,14 +77,13 @@ type CopyState = 'idle' | 'copied' | 'failed'
 export function CopyButton({
   text,
   label,
-  copiedLabel = '已複製',
   quiet = false,
 }: {
   text: string
   label: string
-  copiedLabel?: string
   quiet?: boolean
 }) {
+  const { t } = useLang()
   const [state, setState] = useState<CopyState>('idle')
   const timer = useRef<number | undefined>(undefined)
   useEffect(() => () => window.clearTimeout(timer.current), [])
@@ -98,6 +99,7 @@ export function CopyButton({
     timer.current = window.setTimeout(() => setState('idle'), 1800)
   }
 
+  const copied = t('已複製', 'Copied')
   return (
     <button type="button" className={`btn ${quiet ? 'btn-quiet' : ''}`} onClick={copy}>
       {state === 'copied' ? (
@@ -108,10 +110,14 @@ export function CopyButton({
         <Copy {...ICON_SM} />
       )}
       <span>
-        {state === 'copied' ? copiedLabel : state === 'failed' ? '無法存取剪貼簿' : label}
+        {state === 'copied'
+          ? copied
+          : state === 'failed'
+            ? t('無法存取剪貼簿', 'Clipboard unavailable')
+            : label}
       </span>
       <span className="sr-only" role="status">
-        {state === 'copied' ? copiedLabel : state === 'failed' ? '複製失敗' : ''}
+        {state === 'copied' ? copied : state === 'failed' ? t('複製失敗', 'Copy failed') : ''}
       </span>
     </button>
   )
@@ -158,14 +164,15 @@ export function ErrorMessage({
   onRetry: () => void
   what: string
 }) {
+  const { t } = useLang()
   return (
     <StateMessage
       icon="error"
-      title={`${what}載入失敗`}
+      title={t(`${what}載入失敗`, `Could not load ${what}`)}
       actions={
         <button type="button" className="btn" onClick={onRetry}>
           <RotateCw {...ICON_SM} />
-          重試
+          {t('重試', 'Retry')}
         </button>
       }
     >

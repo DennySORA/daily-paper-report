@@ -11,10 +11,10 @@ export interface StoryFilter {
   sort: SortKey
 }
 
-export const SORT_LABEL: Record<SortKey, string> = {
-  rank: '原始排序',
-  score: 'LLM 分數',
-  time: '發表時間',
+export const SORT_LABEL: Record<SortKey, { zh: string; en: string }> = {
+  rank: { zh: '原始排序', en: 'Ranked' },
+  score: { zh: 'LLM 分數', en: 'LLM score' },
+  time: { zh: '發表時間', en: 'Newest' },
 }
 
 export function parseFilter(params: URLSearchParams, sections: readonly SectionKey[]): StoryFilter {
@@ -44,7 +44,7 @@ function matchesQuery(story: Story, terms: string[]): boolean {
       story.titleEn,
       story.arxivId ?? '',
       story.authors.join(' '),
-      story.topics.map((topic) => `${topic.label} ${topic.key}`).join(' '),
+      story.topics.map((topic) => `${topic.label} ${topic.labelEn} ${topic.key}`).join(' '),
       story.categories.join(' '),
       story.group ?? '',
     ].join('\n'),
@@ -86,6 +86,7 @@ export function applyFilter(
 export interface TopicCount {
   key: string
   label: string
+  labelEn: string
   count: number
 }
 
@@ -97,7 +98,13 @@ export function topicCounts(groups: StoryGroup[]): TopicCount[] {
       for (const topic of story.topics) {
         const entry = counts.get(topic.key)
         if (entry) entry.count += 1
-        else counts.set(topic.key, { key: topic.key, label: topic.label, count: 1 })
+        else
+          counts.set(topic.key, {
+            key: topic.key,
+            label: topic.label,
+            labelEn: topic.labelEn,
+            count: 1,
+          })
       }
     }
   }

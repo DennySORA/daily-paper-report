@@ -2,6 +2,7 @@ import { CalendarRange, ChevronLeft, ChevronRight, TriangleAlert } from 'lucide-
 import { useMemo } from 'react'
 import { Link, useParams } from 'react-router'
 import { route } from '../app/routes'
+import { useMachineTranslation } from '../components/MachineTranslation'
 import { ReaderLayout } from '../components/ReaderLayout'
 import { Badge, ErrorMessage, ICON, ICON_SM, LoadingRows, StateMessage } from '../components/ui'
 import { NotFoundError, safeReportPath, useCatalog, useReport, useReportIndex } from '../data/api'
@@ -9,8 +10,12 @@ import { reportGroups } from '../data/story'
 import type { ReportDigest, ReportIndex, ReportIndexEntry, ReportType } from '../data/types'
 import { formatInt, formatTimestamp } from '../lib/format'
 import { paragraphs } from '../lib/text'
+import { useLang } from '../state/lang'
 
-const TYPE_LABEL: Record<ReportType, string> = { weekly: '週報', monthly: '月報' }
+const TYPE_LABEL: Record<ReportType, { zh: string; en: string }> = {
+  weekly: { zh: '週報', en: 'Weekly' },
+  monthly: { zh: '月報', en: 'Monthly' },
+}
 
 const reportHref = (type: ReportType, period: string) =>
   type === 'weekly' ? route.weekly(period) : route.monthly(period)
@@ -28,10 +33,15 @@ function siblings(index: ReportIndex | null, type: ReportType, period: string) {
 }
 
 function Coverage({ covered, missing }: { covered: number; missing: string[] }) {
-  if (missing.length === 0) return <Badge tone="success">資料完整</Badge>
+  const { t } = useLang()
+  if (missing.length === 0) return <Badge tone="success">{t('資料完整', 'Complete')}</Badge>
   return (
-    <Badge tone="warning" title={missing.join('、')}>
-      <TriangleAlert {...ICON_SM} />缺 {missing.length} 天{covered ? `（涵蓋 ${covered} 天）` : ''}
+    <Badge tone="warning" title={missing.join(', ')}>
+      <TriangleAlert {...ICON_SM} />
+      {t(
+        `缺 ${missing.length} 天${covered ? `（涵蓋 ${covered} 天）` : ''}`,
+        `${missing.length} days missing${covered ? ` (${covered} covered)` : ''}`,
+      )}
     </Badge>
   )
 }
@@ -47,11 +57,23 @@ function ReportHeader({
   period: string
   index: ReportIndex | null
 }) {
+  const { lang, t } = useLang()
   const { older, newer } = siblings(index, type, period)
+  const label = TYPE_LABEL[type][lang]
+  // Report titles and summaries are written in Chinese; English readers can translate them.
+  const source = report ? [report.title, report.summary ?? ''].filter(Boolean) : []
+  const translation = useMachineTranslation(source, 'zh')
+  const [title, summary] = report
+    ? [
+        translation.texts[0] ?? report.title,
+        report.summary ? (translation.texts[1] ?? report.summary) : null,
+      ]
+    : [`${label} ${period}`, null]
+
   return (
     <header className="flex flex-col gap-2 px-4 pt-3 pb-3 lg:px-3">
       <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
-        <Badge tone="accent">{TYPE_LABEL[type]}</Badge>
+        <Badge tone="accent">{label}</Badge>
         <span className="mono text-meta text-fg-2">{period}</span>
         {report ? (
           <span className="mono text-meta text-fg-3">
@@ -61,18 +83,27 @@ function ReportHeader({
         {report ? (
           <Coverage covered={report.covered_dates.length} missing={report.missing_dates} />
         ) : null}
-        <nav className="ml-auto flex items-center gap-1" aria-label={`${TYPE_LABEL[type]}切換`}>
+        {translation.control}
+        <nav
+          className="ml-auto flex items-center gap-1"
+          aria-label={t(`${label}切換`, `${label} navigation`)}
+        >
           {older ? (
             <Link
               to={reportHref(type, older)}
               className="btn btn-icon"
-              aria-label={`上一期：${older}`}
-              title="上一期（[）"
+              aria-label={t(`上一期：${older}`, `Previous: ${older}`)}
+              title={t('上一期（[）', 'Previous ([)')}
             >
               <ChevronLeft {...ICON} />
             </Link>
           ) : (
-            <button type="button" className="btn btn-icon" disabled aria-label="沒有更早的報告">
+            <button
+              type="button"
+              className="btn btn-icon"
+              disabled
+              aria-label={t('沒有更早的報告', 'No earlier report')}
+            >
               <ChevronLeft {...ICON} />
             </button>
           )}
@@ -80,33 +111,44 @@ function ReportHeader({
             <Link
               to={reportHref(type, newer)}
               className="btn btn-icon"
-              aria-label={`下一期：${newer}`}
-              title="下一期（]）"
+              aria-label={t(`下一期：${newer}`, `Next: ${newer}`)}
+              title={t('下一期（]）', 'Next (])')}
             >
               <ChevronRight {...ICON} />
             </Link>
           ) : (
-            <button type="button" className="btn btn-icon" disabled aria-label="沒有更新的報告">
+            <button
+              type="button"
+              className="btn btn-icon"
+              disabled
+              aria-label={t('沒有更新的報告', 'No later report')}
+            >
               <ChevronRight {...ICON} />
             </button>
           )}
           <Link to={route.reports()} className="btn btn-quiet">
-            全部報告
+            {t('全部報告', 'All reports')}
           </Link>
         </nav>
       </div>
       <h1
         id="view-title"
         tabIndex={-1}
+        lang={translation.translated ? 'en' : 'zh-Hant'}
         className="text-title font-semibold text-balance outline-none"
       >
-        {report?.title ?? `${TYPE_LABEL[type]} ${period}`}
+        {title}
       </h1>
-      {report?.summary ? (
+      {summary ? (
         <details className="group max-w-[860px]">
-          <summary className="cursor-pointer text-meta text-fg-3 select-none">本期摘要</summary>
-          <div className="prose-zh mt-1 text-ui">
-            {paragraphs(report.summary).map((paragraph, position) => (
+          <summary className="cursor-pointer text-meta text-fg-3 select-none">
+            {t('本期摘要', 'Summary')}
+          </summary>
+          <div
+            className={translation.translated ? 'prose-en mt-1' : 'prose-zh mt-1 text-ui'}
+            lang={translation.translated ? 'en' : 'zh-Hant'}
+          >
+            {paragraphs(summary).map((paragraph, position) => (
               <p key={position}>{paragraph}</p>
             ))}
           </div>
@@ -118,6 +160,7 @@ function ReportHeader({
 
 export function ReportView({ type }: { type: ReportType }) {
   const { period = '' } = useParams()
+  const { lang, t } = useLang()
   const path = safeReportPath(type, period)
   const [doc, retry] = useReport(path)
   const [indexDoc] = useReportIndex()
@@ -127,6 +170,7 @@ export function ReportView({ type }: { type: ReportType }) {
   const entities = catalog.status === 'ready' ? catalog.data.entities : undefined
   const groups = useMemo(() => (report ? reportGroups(report, entities) : []), [report, entities])
   const { older, newer } = siblings(index, type, period)
+  const label = TYPE_LABEL[type][lang]
   const header = <ReportHeader report={report} type={type} period={period} index={index} />
 
   if (path === null || (doc.status === 'error' && doc.error instanceof NotFoundError)) {
@@ -134,10 +178,10 @@ export function ReportView({ type }: { type: ReportType }) {
       <div className="flex min-h-0 flex-1 flex-col">
         {header}
         <StateMessage
-          title={`找不到${TYPE_LABEL[type]} ${period}`}
+          title={t(`找不到${label} ${period}`, `${label} report ${period} not found`)}
           actions={
             <Link to={route.reports()} className="btn">
-              查看全部報告
+              {t('查看全部報告', 'See all reports')}
             </Link>
           }
         />
@@ -148,7 +192,7 @@ export function ReportView({ type }: { type: ReportType }) {
     return (
       <div className="flex min-h-0 flex-1 flex-col">
         {header}
-        <ErrorMessage error={doc.error} onRetry={retry} what="報告" />
+        <ErrorMessage error={doc.error} onRetry={retry} what={t('報告', 'the report')} />
       </div>
     )
   }
@@ -156,7 +200,7 @@ export function ReportView({ type }: { type: ReportType }) {
     return (
       <div className="flex min-h-0 flex-1 flex-col">
         {header}
-        <LoadingRows label="載入報告中" />
+        <LoadingRows label={t('載入報告中', 'Loading the report')} />
       </div>
     )
   }
@@ -169,26 +213,37 @@ export function ReportView({ type }: { type: ReportType }) {
       header={header}
       status={
         <footer className="flex h-[26px] flex-none items-center gap-4 border-t border-line-subtle bg-canvas px-3 text-caption text-fg-3">
-          <span className="mono">產生於 {formatTimestamp(report.generated_at)}</span>
           <span className="mono">
-            考量 {formatInt(report.stories_considered)} 則論文 ·{' '}
-            {formatInt(report.blog_stories_considered)} 則文章
+            {t('產生於', 'Generated')} {formatTimestamp(report.generated_at, lang)}
+          </span>
+          <span className="mono">
+            {t(
+              `考量 ${formatInt(report.stories_considered, lang)} 則論文 · ${formatInt(report.blog_stories_considered, lang)} 則文章`,
+              `${formatInt(report.stories_considered, lang)} papers · ${formatInt(report.blog_stories_considered, lang)} articles considered`,
+            )}
           </span>
         </footer>
       }
       prevDocHref={older ? reportHref(type, older) : null}
       nextDocHref={newer ? reportHref(type, newer) : null}
-      emptyTitle="本期沒有推薦項目"
+      emptyTitle={t('本期沒有推薦項目', 'No recommendations in this period')}
       emptyBody={
         report.missing_dates.length
-          ? `這段期間有 ${report.missing_dates.length} 天缺少日報，無法彙整推薦。`
-          : '這段期間沒有符合條件的論文或文章。'
+          ? t(
+              `這段期間有 ${report.missing_dates.length} 天缺少日報，無法彙整推薦。`,
+              `${report.missing_dates.length} days in this period have no digest to draw from.`,
+            )
+          : t(
+              '這段期間沒有符合條件的論文或文章。',
+              'No papers or articles qualified in this period.',
+            )
       }
     />
   )
 }
 
 function ReportRow({ entry }: { entry: ReportIndexEntry }) {
+  const { t } = useLang()
   return (
     <li>
       <Link
@@ -201,7 +256,7 @@ function ReportRow({ entry }: { entry: ReportIndexEntry }) {
             {entry.period_start.slice(5)} – {entry.period_end.slice(5)}
           </span>
         </span>
-        <span className="flex min-w-0 flex-col gap-1">
+        <span className="flex min-w-0 flex-col gap-1" lang="zh-Hant">
           <span className="text-ui font-medium text-fg">{entry.title}</span>
           {entry.summary ? (
             <span className="line-clamp-2 text-meta text-fg-3">{entry.summary}</span>
@@ -209,10 +264,18 @@ function ReportRow({ entry }: { entry: ReportIndexEntry }) {
         </span>
         <span className="flex flex-wrap items-start gap-1.5 sm:flex-col sm:items-end">
           <span className="mono text-meta text-fg-2">
-            {entry.recommendation_count} 論文 · {entry.blog_recommendation_count} 文章
+            {t(
+              `${entry.recommendation_count} 論文 · ${entry.blog_recommendation_count} 文章`,
+              `${entry.recommendation_count} papers · ${entry.blog_recommendation_count} articles`,
+            )}
           </span>
           {entry.missing_dates.length ? (
-            <Badge tone="warning">缺 {entry.missing_dates.length} 天</Badge>
+            <Badge tone="warning">
+              {t(
+                `缺 ${entry.missing_dates.length} 天`,
+                `${entry.missing_dates.length} days missing`,
+              )}
+            </Badge>
           ) : null}
         </span>
       </Link>
@@ -221,23 +284,29 @@ function ReportRow({ entry }: { entry: ReportIndexEntry }) {
 }
 
 export function ReportsIndexView() {
+  const { lang, t } = useLang()
   const [doc, retry] = useReportIndex()
   return (
     <div className="scroll-region flex min-h-0 flex-1 flex-col">
       <header className="flex flex-wrap items-center gap-3 px-4 pt-3 pb-3 lg:px-3">
         <CalendarRange {...ICON} className="text-fg-3" />
         <h1 id="view-title" tabIndex={-1} className="text-title font-semibold outline-none">
-          週報與月報
+          {t('週報與月報', 'Weekly and monthly reports')}
         </h1>
         {doc.status === 'ready' ? (
           <span className="text-meta text-fg-3">
-            {doc.data.weekly.length} 份週報 · {doc.data.monthly.length} 份月報
+            {t(
+              `${doc.data.weekly.length} 份週報 · ${doc.data.monthly.length} 份月報`,
+              `${doc.data.weekly.length} weekly · ${doc.data.monthly.length} monthly`,
+            )}
           </span>
         ) : null}
       </header>
-      {doc.status === 'loading' ? <LoadingRows label="載入報告索引中" /> : null}
+      {doc.status === 'loading' ? (
+        <LoadingRows label={t('載入報告索引中', 'Loading the report index')} />
+      ) : null}
       {doc.status === 'error' ? (
-        <ErrorMessage error={doc.error} onRetry={retry} what="報告索引" />
+        <ErrorMessage error={doc.error} onRetry={retry} what={t('報告索引', 'the report index')} />
       ) : null}
       {doc.status === 'ready' ? (
         <div className="grid grid-cols-1 gap-2 px-2 pb-4 xl:grid-cols-2">
@@ -255,7 +324,7 @@ export function ReportsIndexView() {
                   id={`reports-${type}`}
                   className="flex items-baseline gap-2 border-b border-line-subtle px-4 py-2.5 text-heading font-semibold"
                 >
-                  {TYPE_LABEL[type]}
+                  {TYPE_LABEL[type][lang]}
                   <span className="mono text-meta font-normal text-fg-3">{entries.length}</span>
                 </h2>
                 {entries.length ? (
@@ -265,7 +334,12 @@ export function ReportsIndexView() {
                     ))}
                   </ul>
                 ) : (
-                  <StateMessage title={`還沒有${TYPE_LABEL[type]}`} />
+                  <StateMessage
+                    title={t(
+                      `還沒有${TYPE_LABEL[type].zh}`,
+                      `No ${TYPE_LABEL[type].en.toLowerCase()} reports yet`,
+                    )}
+                  />
                 )}
               </section>
             )

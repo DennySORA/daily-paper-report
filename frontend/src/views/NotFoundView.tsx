@@ -1,24 +1,26 @@
 import { Link, useLocation } from 'react-router'
 import { route } from '../app/routes'
 import { StateMessage } from '../components/ui'
+import { useLang } from '../state/lang'
 
 export function NotFoundView() {
   const location = useLocation()
+  const { t } = useLang()
   const from = new URLSearchParams(location.search).get('from')
   return (
     <div className="flex min-h-0 flex-1 flex-col px-2">
       <h1 id="view-title" tabIndex={-1} className="sr-only">
-        找不到頁面
+        {t('找不到頁面', 'Page not found')}
       </h1>
       <StateMessage
-        title="找不到這個頁面"
+        title={t('找不到這個頁面', 'This page does not exist')}
         actions={
           <>
             <Link to={route.latest()} className="btn btn-primary">
-              前往最新日報
+              {t('前往最新日報', 'Go to the latest digest')}
             </Link>
             <Link to={route.archive()} className="btn">
-              查看封存
+              {t('查看封存', 'Open the archive')}
             </Link>
           </>
         }

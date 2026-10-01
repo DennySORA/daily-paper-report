@@ -18,6 +18,7 @@ import { flatten } from '../data/filter'
 import { digestGroups, type Story } from '../data/story'
 import type { DailyDigest } from '../data/types'
 import { formatDay, formatDuration, formatInt, formatTimestamp } from '../lib/format'
+import { useLang } from '../state/lang'
 
 function DayHeader({
   date,
@@ -28,6 +29,7 @@ function DayHeader({
   index: DayIndex
   stories: Story[]
 }) {
+  const { lang, t } = useLang()
   const shown = date ?? index.latest
   const { older, newer } = shown ? neighbours(index.dates, shown) : { older: null, newer: null }
   const isLatest = shown !== null && shown === index.latest
@@ -42,22 +44,27 @@ function DayHeader({
           tabIndex={-1}
           className="text-title font-semibold whitespace-nowrap outline-none"
         >
-          {shown ? formatDay(shown) : '日報'}
+          {shown ? formatDay(shown, lang) : t('日報', 'Daily digest')}
         </h1>
-        {isLatest ? <Badge tone="accent">最新</Badge> : null}
+        {isLatest ? <Badge tone="accent">{t('最新', 'Latest')}</Badge> : null}
       </div>
-      <nav className="flex items-center gap-1" aria-label="日期切換">
+      <nav className="flex items-center gap-1" aria-label={t('日期切換', 'Change date')}>
         {older ? (
           <Link
             to={route.day(older)}
             className="btn btn-icon"
-            aria-label={`前一天：${older}`}
-            title="前一天（[）"
+            aria-label={t(`前一天：${older}`, `Previous day: ${older}`)}
+            title={t('前一天（[）', 'Previous day ([)')}
           >
             <ChevronLeft {...ICON} />
           </Link>
         ) : (
-          <button type="button" className="btn btn-icon" disabled aria-label="沒有更早的日報">
+          <button
+            type="button"
+            className="btn btn-icon"
+            disabled
+            aria-label={t('沒有更早的日報', 'No earlier digest')}
+          >
             <ChevronLeft {...ICON} />
           </button>
         )}
@@ -66,26 +73,31 @@ function DayHeader({
           <Link
             to={route.day(newer)}
             className="btn btn-icon"
-            aria-label={`後一天：${newer}`}
-            title="後一天（]）"
+            aria-label={t(`後一天：${newer}`, `Next day: ${newer}`)}
+            title={t('後一天（]）', 'Next day (])')}
           >
             <ChevronRight {...ICON} />
           </Link>
         ) : (
-          <button type="button" className="btn btn-icon" disabled aria-label="沒有更新的日報">
+          <button
+            type="button"
+            className="btn btn-icon"
+            disabled
+            aria-label={t('沒有更新的日報', 'No later digest')}
+          >
             <ChevronRight {...ICON} />
           </button>
         )}
         {!isLatest && index.latest ? (
           <Link to={route.latest()} className="btn btn-quiet">
-            回到最新
+            {t('回到最新', 'Latest')}
           </Link>
         ) : null}
       </nav>
       {stories.length ? (
         <dl className="ml-auto flex flex-wrap items-center gap-x-4 gap-y-1 text-meta">
           <div className="flex items-center gap-1.5">
-            <dt className="text-fg-3">中文導讀</dt>
+            <dt className="text-fg-3">{t('中文導讀', 'Chinese guides')}</dt>
             <dd
               className={`mono m-0 ${translated < stories.length ? 'text-warning' : 'text-fg-2'}`}
             >
@@ -93,7 +105,7 @@ function DayHeader({
             </dd>
           </div>
           <div className="flex items-center gap-1.5">
-            <dt className="text-fg-3">LLM 評分</dt>
+            <dt className="text-fg-3">{t('LLM 評分', 'LLM scored')}</dt>
             <dd className="mono m-0 text-fg-2">
               {evaluated}/{stories.length}
             </dd>
@@ -105,6 +117,7 @@ function DayHeader({
 }
 
 function RunStatus({ digest }: { digest: DailyDigest }) {
+  const { lang, t } = useLang()
   const run = digest.run_info
   const failed = digest.sources_status.filter((source) => source.status.includes('FAIL')).length
   return (
@@ -115,22 +128,32 @@ function RunStatus({ digest }: { digest: DailyDigest }) {
         ) : (
           <CircleAlert {...ICON_SM} className="text-danger" />
         )}
-        {run.success ? '產生成功' : '產生失敗'}
+        {run.success ? t('產生成功', 'Run succeeded') : t('產生失敗', 'Run failed')}
       </span>
       <span className="flex items-center gap-1.5 whitespace-nowrap">
         <Clock {...ICON_SM} />
-        <span className="mono">{formatTimestamp(digest.generated_at)}</span>
-        <span>· 執行 {formatDuration(run.started_at, run.finished_at)}</span>
+        <span className="mono">{formatTimestamp(digest.generated_at, lang)}</span>
+        <span>
+          · {t('執行', 'took')} {formatDuration(run.started_at, run.finished_at, lang)}
+        </span>
       </span>
       <span className="mono hidden whitespace-nowrap xl:inline">
-        {formatInt(run.items_total)} 項目 · {formatInt(run.stories_total)} 則故事
+        {t(
+          `${formatInt(run.items_total, lang)} 項目 · ${formatInt(run.stories_total, lang)} 則故事`,
+          `${formatInt(run.items_total, lang)} items · ${formatInt(run.stories_total, lang)} stories`,
+        )}
       </span>
       <Link
         to={`${route.sources()}?date=${digest.run_date}`}
         className="ml-auto whitespace-nowrap hover:text-fg"
       >
-        來源 {digest.sources_status.length}
-        {failed ? <span className="text-danger"> · 失敗 {failed}</span> : null}
+        {t('來源', 'Sources')} {digest.sources_status.length}
+        {failed ? (
+          <span className="text-danger">
+            {' '}
+            · {t('失敗', 'failed')} {failed}
+          </span>
+        ) : null}
       </Link>
     </footer>
   )
@@ -141,6 +164,7 @@ export function DigestView() {
   const path = safeDayPath(date)
   const [doc, retry] = useDoc<DailyDigest>(path)
   const index = useDayIndex()
+  const { t } = useLang()
   const digest = doc.status === 'ready' ? doc.data : null
   const groups = useMemo(() => (digest ? digestGroups(digest) : []), [digest])
   const shown = date ?? digest?.run_date ?? null
@@ -155,21 +179,27 @@ export function DigestView() {
         {header}
         <StateMessage
           icon="empty"
-          title={date ? `${date} 沒有日報` : '找不到日報'}
+          title={
+            date
+              ? t(`${date} 沒有日報`, `No digest for ${date}`)
+              : t('找不到日報', 'Digest not found')
+          }
           actions={
             <>
               {older ? (
                 <Link to={route.day(older)} className="btn">
-                  前一份：{older}
+                  {t('前一份：', 'Previous: ')}
+                  {older}
                 </Link>
               ) : null}
               {newer ? (
                 <Link to={route.day(newer)} className="btn">
-                  後一份：{newer}
+                  {t('後一份：', 'Next: ')}
+                  {newer}
                 </Link>
               ) : null}
               <Link to={route.archive()} className="btn btn-quiet">
-                查看封存
+                {t('查看封存', 'Open the archive')}
               </Link>
             </>
           }
@@ -177,10 +207,12 @@ export function DigestView() {
           {date && index.missing.has(date) ? (
             <p className="flex items-center gap-1.5">
               <TriangleAlert {...ICON_SM} className="text-warning" />
-              這一天的管線沒有產生資料。
+              {t('這一天的管線沒有產生資料。', 'The pipeline produced no data that day.')}
             </p>
           ) : (
-            <p>這個日期不在已發布的日報中。</p>
+            <p>
+              {t('這個日期不在已發布的日報中。', 'This date is not among the published digests.')}
+            </p>
           )}
         </StateMessage>
       </div>
@@ -191,7 +223,7 @@ export function DigestView() {
     return (
       <div className="flex min-h-0 flex-1 flex-col">
         {header}
-        <ErrorMessage error={doc.error} onRetry={retry} what="日報" />
+        <ErrorMessage error={doc.error} onRetry={retry} what={t('日報', 'the digest')} />
       </div>
     )
   }
@@ -200,7 +232,7 @@ export function DigestView() {
     return (
       <div className="flex min-h-0 flex-1 flex-col">
         {header}
-        <LoadingRows label="載入日報中" />
+        <LoadingRows label={t('載入日報中', 'Loading the digest')} />
       </div>
     )
   }
@@ -214,8 +246,11 @@ export function DigestView() {
       status={<RunStatus digest={digest} />}
       prevDocHref={older ? route.day(older) : null}
       nextDocHref={newer ? route.day(newer) : null}
-      emptyTitle="這份日報沒有任何項目"
-      emptyBody="管線當天可能沒有收集到新的論文或文章。"
+      emptyTitle={t('這份日報沒有任何項目', 'This digest has no items')}
+      emptyBody={t(
+        '管線當天可能沒有收集到新的論文或文章。',
+        'The pipeline may not have collected new papers or articles that day.',
+      )}
     />
   )
 }

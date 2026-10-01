@@ -17,15 +17,20 @@ import { Link } from 'react-router'
 import { useEffect, type ReactNode } from 'react'
 import {
   KIND_LABEL,
+  LINK_LABEL,
   SECTION_LABEL,
   bibtex,
   isSafeHttpUrl,
   readingLinks,
+  storyTitles,
   type Story,
 } from '../data/story'
+import { topicLabel } from '../data/topics'
 import { formatCompact, formatDay, formatInt, formatTimestamp, utcDate } from '../lib/format'
 import { paragraphs, segmentEvidence } from '../lib/text'
+import { useLang } from '../state/lang'
 import { setPref, setRead, toggleSaved, useLibrary } from '../state/library'
+import { useMachineTranslation } from './MachineTranslation'
 import { CompactScorecard, RankBreakdown, Scorecard } from './Scorecard'
 import { Badge, CopyButton, ExternalLink, ICON, ICON_SM, Kbd } from './ui'
 
@@ -64,56 +69,182 @@ function Section({
   )
 }
 
-function Evidence({ items }: { items: string[] }) {
-  return (
-    <ol className="flex flex-col gap-3">
-      {items.map((item, index) => (
-        <li key={index} className="grid grid-cols-[24px_minmax(0,1fr)] gap-2">
-          <span className="mono pt-0.5 text-caption text-fg-3">
-            {String(index + 1).padStart(2, '0')}
-          </span>
-          <p className="prose-en text-ui">
-            {segmentEvidence(item).map((segment, part) =>
-              segment.kind === 'link' && isSafeHttpUrl(segment.value) ? (
-                <a
-                  key={part}
-                  href={segment.value}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="break-all text-info underline underline-offset-2"
-                >
-                  {segment.value}
-                </a>
-              ) : segment.kind === 'ref' ? (
-                <span key={part} className="mono rounded-sm bg-sunken px-1 text-meta text-file">
-                  {segment.value}
-                </span>
-              ) : (
-                <span key={part}>{segment.value}</span>
-              ),
-            )}
-          </p>
-        </li>
+/** Paragraphs in the reading style of their language. */
+function Prose({ text, lang }: { text: string; lang: 'zh' | 'en' }) {
+  return lang === 'zh' ? (
+    <div className="prose-zh" lang="zh-Hant">
+      {paragraphs(text).map((paragraph, index) => (
+        <p key={index}>{paragraph}</p>
       ))}
-    </ol>
+    </div>
+  ) : (
+    <div className="prose-en" lang="en">
+      {paragraphs(text).map((paragraph, index) => (
+        <p key={index} className="mb-3 last:mb-0">
+          {paragraph}
+        </p>
+      ))}
+    </div>
+  )
+}
+
+/**
+ * 摘要 / Summary in the reading language: the Chinese guide or the English
+ * abstract. When the reading language has no text, the other one is shown with
+ * an on-device translation option; the other language stays one toggle away.
+ */
+function Summary({ story }: { story: Story }) {
+  const { lang, t } = useLang()
+  const { prefs } = useLibrary()
+  const own = lang === 'zh' ? story.summaryZh : story.abstract || null
+  const other = lang === 'zh' ? story.abstract || null : story.summaryZh
+  const fallbackLang = lang === 'zh' ? 'en' : 'zh'
+  const shown = own ?? other
+  const translation = useMachineTranslation(own === null && other ? [other] : [], fallbackLang)
+
+  return (
+    <Section
+      id="summary-title"
+      icon={<ScrollText {...ICON_SM} className="text-fg-3" />}
+      title={t('摘要', 'Summary')}
+      aside={
+        own === null && other ? (
+          <span className="flex flex-wrap items-center gap-2">
+            <Badge tone="warning">
+              <TriangleAlert {...ICON_SM} />
+              {t('尚無中文導讀', 'No English abstract')}
+            </Badge>
+            {translation.control}
+          </span>
+        ) : null
+      }
+    >
+      {shown === null ? (
+        <p className="text-meta text-fg-3">
+          {t('來源沒有提供摘要。', 'The source has no summary.')}
+        </p>
+      ) : own !== null ? (
+        <Prose text={own} lang={lang} />
+      ) : (
+        <Prose
+          text={translation.texts[0] ?? shown}
+          lang={translation.translated ? lang : fallbackLang}
+        />
+      )}
+      {own !== null && other ? (
+        <details
+          open={prefs.abstractOpen}
+          onToggle={(event) => setPref('abstractOpen', event.currentTarget.open)}
+          className="group rounded-md border border-line-subtle px-3 py-2"
+        >
+          <summary className="cursor-pointer text-meta text-fg-3 select-none group-open:mb-2">
+            {lang === 'zh' ? '英文原文' : 'Chinese guide (中文導讀)'}
+            <span className="ml-2 hidden md:inline">
+              <Kbd>E</Kbd>
+            </span>
+          </summary>
+          <Prose text={other} lang={fallbackLang} />
+        </details>
+      ) : null}
+    </Section>
+  )
+}
+
+function Rationale({ text }: { text: string }) {
+  const { t } = useLang()
+  const { prefs } = useLibrary()
+  const translation = useMachineTranslation([text], 'en')
+  return (
+    <Section
+      id="rationale-title"
+      icon={<Quote {...ICON_SM} className="text-fg-3" />}
+      title={t('評審理由', 'Assessment')}
+      aside={translation.control ?? <span className="text-caption text-fg-3">LLM</span>}
+    >
+      <details
+        open={prefs.rationaleOpen}
+        onToggle={(event) => setPref('rationaleOpen', event.currentTarget.open)}
+        className="group"
+      >
+        <summary className="cursor-pointer text-meta text-fg-3 select-none group-open:mb-2">
+          {prefs.rationaleOpen ? t('收合', 'Collapse') : t('展開評審理由', 'Show assessment')}
+        </summary>
+        <Prose text={translation.texts[0] ?? text} lang={translation.translated ? 'zh' : 'en'} />
+      </details>
+    </Section>
+  )
+}
+
+function Evidence({ items }: { items: string[] }) {
+  const { t } = useLang()
+  const translation = useMachineTranslation(items, 'en')
+  return (
+    <Section
+      id="evidence-title"
+      icon={<Quote {...ICON_SM} className="text-fg-3" />}
+      title={t('全文證據', 'Evidence')}
+      aside={
+        translation.control ?? (
+          <span className="text-caption text-fg-3">
+            {t(`${items.length} 則摘錄`, `${items.length} excerpts`)}
+          </span>
+        )
+      }
+    >
+      <ol className="flex flex-col gap-3" lang={translation.translated ? 'zh-Hant' : 'en'}>
+        {translation.texts.map((item, index) => (
+          <li key={index} className="grid grid-cols-[24px_minmax(0,1fr)] gap-2">
+            <span className="mono pt-0.5 text-caption text-fg-3">
+              {String(index + 1).padStart(2, '0')}
+            </span>
+            <p className="prose-en text-ui">
+              {segmentEvidence(item).map((segment, part) =>
+                segment.kind === 'link' && isSafeHttpUrl(segment.value) ? (
+                  <a
+                    key={part}
+                    href={segment.value}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="break-all text-info underline underline-offset-2"
+                  >
+                    {segment.value}
+                  </a>
+                ) : segment.kind === 'ref' ? (
+                  <span key={part} className="mono rounded-sm bg-sunken px-1 text-meta text-file">
+                    {segment.value}
+                  </span>
+                ) : (
+                  <span key={part}>{segment.value}</span>
+                ),
+              )}
+            </p>
+          </li>
+        ))}
+      </ol>
+    </Section>
   )
 }
 
 function Facts({ story }: { story: Story }) {
+  const { lang, t } = useLang()
   const ev = story.evaluation
   const rows: Array<[string, ReactNode]> = [
     ['story_id', story.id],
-    ['發表時間', formatTimestamp(story.publishedAt)],
-    ['首次收錄', formatTimestamp(story.firstSeenAt)],
-    ['收錄來源', story.sourceId || '未知'],
+    [t('發表時間', 'Published'), formatTimestamp(story.publishedAt, lang)],
+    [t('首次收錄', 'First seen'), formatTimestamp(story.firstSeenAt, lang)],
+    [t('收錄來源', 'Collected from'), story.sourceId || t('未知', 'unknown')],
   ]
-  if (ev?.model) rows.push(['評分模型', ev.model])
-  if (ev?.promptVersion) rows.push(['提示版本', ev.promptVersion])
-  if (ev?.fulltextSha) rows.push(['全文 SHA-256', `${ev.fulltextSha.slice(0, 16)}…`])
+  if (ev?.model) rows.push([t('評分模型', 'Scoring model'), ev.model])
+  if (ev?.promptVersion) rows.push([t('提示版本', 'Prompt version'), ev.promptVersion])
+  if (ev?.fulltextSha)
+    rows.push([t('全文 SHA-256', 'Full-text SHA-256'), `${ev.fulltextSha.slice(0, 16)}…`])
   if (ev?.tokens?.total_tokens)
     rows.push([
-      'Token 用量',
-      `${formatInt(ev.tokens.prompt_tokens)} 輸入 · ${formatInt(ev.tokens.completion_tokens)} 輸出`,
+      t('Token 用量', 'Tokens'),
+      t(
+        `${formatInt(ev.tokens.prompt_tokens, lang)} 輸入 · ${formatInt(ev.tokens.completion_tokens, lang)} 輸出`,
+        `${formatInt(ev.tokens.prompt_tokens, lang)} in · ${formatInt(ev.tokens.completion_tokens, lang)} out`,
+      ),
     ])
   return (
     <dl className="grid grid-cols-[auto_minmax(0,1fr)] gap-x-4 gap-y-1.5 text-meta">
@@ -141,6 +272,7 @@ export function Reader({
   /** False while the pane only previews the first item nobody has chosen yet. */
   markOnOpen: boolean
 }) {
+  const { lang, t } = useLang()
   const library = useLibrary()
   const read = story.id in library.read
   const saved = story.id in library.saved
@@ -158,17 +290,17 @@ export function Reader({
   const links = readingLinks(story)
   const bib = bibtex(story)
   const ev = story.evaluation
-  const primaryTitle = story.titleZh ?? story.titleEn
+  const { title, subtitle } = storyTitles(story, lang)
   const published = utcDate(story.publishedAt)
 
   return (
     <article className="@container animate-enter" aria-labelledby="reader-title" key={story.id}>
-      <div className="mx-auto flex max-w-[1180px] flex-col gap-6 px-5 pt-5 pb-16 @3xl:px-8 @3xl:pt-7">
+      <div className="mx-auto flex max-w-[1180px] flex-col gap-6 px-5 pt-5 pb-16 @3xl:px-8 @3xl:pt-6">
         {narrow ? (
           <div className="flex items-center justify-between gap-2">
             <Link to={nav.closeHref} className="btn btn-quiet -ml-2">
               <ArrowLeft {...ICON} />
-              返回列表
+              {t('返回列表', 'Back to list')}
             </Link>
             <span className="mono text-meta text-fg-3">
               {nav.index + 1} / {nav.total}
@@ -179,10 +311,10 @@ export function Reader({
         <header className="flex flex-col gap-3">
           <div className="flex flex-wrap items-center gap-1.5">
             <Badge tone="accent">
-              {SECTION_LABEL[story.section]}
+              {SECTION_LABEL[story.section][lang]}
               {story.report ? ` #${story.report.rank}` : ` #${story.rank}`}
             </Badge>
-            <Badge tone="entity">{KIND_LABEL[story.kind]}</Badge>
+            <Badge tone="entity">{KIND_LABEL[story.kind][lang]}</Badge>
             {story.arxivId ? (
               <span className="mono text-meta text-file">{story.arxivId}</span>
             ) : null}
@@ -191,18 +323,23 @@ export function Reader({
                 {category}
               </span>
             ))}
-            {published ? <span className="text-meta text-fg-3">· 發表於 {published}</span> : null}
+            {published ? (
+              <span className="text-meta text-fg-3">
+                · {t('發表於', 'published')} {published}
+              </span>
+            ) : null}
           </div>
           <h1
             id="reader-title"
             tabIndex={-1}
+            lang={title === story.titleEn ? 'en' : 'zh-Hant'}
             className="text-title font-semibold text-balance text-fg outline-none"
           >
-            {primaryTitle}
+            {title}
           </h1>
-          {story.titleZh ? (
+          {subtitle ? (
             <p className="text-heading font-normal text-fg-2" lang="en">
-              {story.titleEn}
+              {subtitle}
             </p>
           ) : null}
           {story.authors.length ? (
@@ -210,7 +347,12 @@ export function Reader({
               <Users {...ICON_SM} className="mt-[3px] flex-none text-fg-3" />
               <span lang="en">
                 {story.authors.slice(0, 12).join(', ')}
-                {story.authors.length > 12 ? ` 等 ${story.authors.length} 位作者` : ''}
+                {story.authors.length > 12
+                  ? t(
+                      ` 等 ${story.authors.length} 位作者`,
+                      ` and ${story.authors.length - 12} more`,
+                    )
+                  : ''}
               </span>
             </p>
           ) : null}
@@ -228,12 +370,12 @@ export function Reader({
           <div
             className="flex flex-wrap items-center gap-2 pt-1"
             role="group"
-            aria-label="閱讀操作"
+            aria-label={t('閱讀操作', 'Reading actions')}
           >
             {links.map((link) =>
               isSafeHttpUrl(link.href) ? (
                 <ExternalLink key={link.href} href={link.href} primary={link.primary}>
-                  {link.label}
+                  {LINK_LABEL[link.kind][lang]}
                 </ExternalLink>
               ) : null,
             )}
@@ -242,24 +384,24 @@ export function Reader({
               className="btn"
               aria-pressed={saved}
               onClick={() => toggleSaved(story)}
-              title="快捷鍵 S"
+              title={t('快捷鍵 S', 'Shortcut S')}
             >
               {saved ? (
                 <BookmarkCheck {...ICON_SM} className="text-accent-fg" />
               ) : (
                 <BookmarkPlus {...ICON_SM} />
               )}
-              {saved ? '已收藏' : '收藏'}
+              {saved ? t('已收藏', 'Saved') : t('收藏', 'Save')}
             </button>
             <button
               type="button"
               className="btn btn-quiet"
               aria-pressed={read}
               onClick={() => setRead(story.id, !read)}
-              title="快捷鍵 M"
+              title={t('快捷鍵 M', 'Shortcut M')}
             >
               {read ? <CircleCheck {...ICON_SM} className="text-fg-2" /> : <Circle {...ICON_SM} />}
-              {read ? '已讀' : '未讀'}
+              {read ? t('已讀', 'Read') : t('未讀', 'Unread')}
             </button>
             {bib ? <CopyButton text={bib} label="BibTeX" quiet /> : null}
           </div>
@@ -270,110 +412,15 @@ export function Reader({
         </div>
 
         <div className="grid grid-cols-1 gap-8 @5xl:grid-cols-[minmax(0,1fr)_300px] @5xl:gap-10">
-          <div className="flex min-w-0 max-w-[680px] flex-col gap-8">
-            {story.summaryZh ? (
-              <Section
-                id="guide-title"
-                icon={<ScrollText {...ICON_SM} className="text-fg-3" />}
-                title="中文導讀"
-              >
-                <div className="prose-zh">
-                  {paragraphs(story.summaryZh).map((paragraph, index) => (
-                    <p key={index}>{paragraph}</p>
-                  ))}
-                </div>
-              </Section>
-            ) : (
-              <Section
-                id="guide-title"
-                icon={<ScrollText {...ICON_SM} className="text-fg-3" />}
-                title="英文摘要"
-                aside={
-                  <Badge tone="warning" title="翻譯階段未產生這篇的中文導讀">
-                    <TriangleAlert {...ICON_SM} />
-                    尚無中文導讀
-                  </Badge>
-                }
-              >
-                {story.abstract ? (
-                  <div className="prose-en" lang="en">
-                    {paragraphs(story.abstract).map((paragraph, index) => (
-                      <p key={index} className="mb-3 last:mb-0">
-                        {paragraph}
-                      </p>
-                    ))}
-                  </div>
-                ) : (
-                  <p className="text-meta text-fg-3">來源沒有提供摘要。</p>
-                )}
-              </Section>
-            )}
-
-            {ev?.rationale ? (
-              <Section
-                id="rationale-title"
-                icon={<Quote {...ICON_SM} className="text-fg-3" />}
-                title="評審理由"
-                aside={<span className="text-caption text-fg-3">LLM 依評分標準撰寫（英文）</span>}
-              >
-                <details
-                  open={library.prefs.rationaleOpen}
-                  onToggle={(event) => setPref('rationaleOpen', event.currentTarget.open)}
-                  className="group"
-                >
-                  <summary className="cursor-pointer text-meta text-fg-3 select-none group-open:mb-2">
-                    {library.prefs.rationaleOpen ? '收合' : '展開評審理由'}
-                  </summary>
-                  <p className="prose-en" lang="en">
-                    {ev.rationale}
-                  </p>
-                </details>
-              </Section>
-            ) : null}
-
-            {ev?.evidence.length ? (
-              <Section
-                id="evidence-title"
-                icon={<Quote {...ICON_SM} className="text-fg-3" />}
-                title="全文證據"
-                aside={<span className="text-caption text-fg-3">{ev.evidence.length} 則摘錄</span>}
-              >
-                <Evidence items={ev.evidence} />
-              </Section>
-            ) : null}
-
-            {story.summaryZh && story.abstract ? (
-              <Section
-                id="abstract-title"
-                icon={<ScrollText {...ICON_SM} className="text-fg-3" />}
-                title="英文摘要"
-              >
-                <details
-                  open={library.prefs.abstractOpen}
-                  onToggle={(event) => setPref('abstractOpen', event.currentTarget.open)}
-                  className="group"
-                >
-                  <summary className="cursor-pointer text-meta text-fg-3 select-none group-open:mb-2">
-                    {library.prefs.abstractOpen ? '收合' : '展開英文摘要'}
-                    <span className="ml-2 hidden md:inline">
-                      <Kbd>E</Kbd>
-                    </span>
-                  </summary>
-                  <div className="prose-en" lang="en">
-                    {paragraphs(story.abstract).map((paragraph, index) => (
-                      <p key={index} className="mb-3 last:mb-0">
-                        {paragraph}
-                      </p>
-                    ))}
-                  </div>
-                </details>
-              </Section>
-            ) : null}
+          <div className="flex max-w-[680px] min-w-0 flex-col gap-8">
+            <Summary story={story} />
+            {ev?.rationale ? <Rationale text={ev.rationale} /> : null}
+            {ev?.evidence.length ? <Evidence items={ev.evidence} /> : null}
           </div>
 
           <aside
             className="flex min-w-0 flex-col gap-8 @5xl:sticky @5xl:top-6 @5xl:self-start"
-            aria-label="評分與資料"
+            aria-label={t('評分與資料', 'Scores and facts')}
           >
             <div className="hidden @5xl:block">
               <Scorecard evaluation={ev} rankScores={story.rankScores} />
@@ -388,7 +435,7 @@ export function Reader({
               <Section
                 id="topics-title"
                 icon={<Tag {...ICON_SM} className="text-fg-3" />}
-                title="主題"
+                title={t('主題', 'Topics')}
               >
                 <div className="flex flex-wrap gap-1.5">
                   {story.topics.map((topic) => (
@@ -396,9 +443,9 @@ export function Reader({
                       key={topic.key}
                       to={topicHref(topic.key)}
                       className="chip"
-                      title={`篩選「${topic.label}」`}
+                      title={t(`篩選「${topic.label}」`, `Filter by “${topic.labelEn}”`)}
                     >
-                      {topic.label}
+                      {topicLabel(topic, lang)}
                     </Link>
                   ))}
                 </div>
@@ -409,20 +456,21 @@ export function Reader({
               <Section
                 id="model-title"
                 icon={<Tag {...ICON_SM} className="text-fg-3" />}
-                title="模型資訊"
+                title={t('模型資訊', 'Model')}
               >
                 <dl className="grid grid-cols-[auto_minmax(0,1fr)] gap-x-4 gap-y-1.5 text-meta">
-                  <dt className="text-fg-3">模型</dt>
+                  <dt className="text-fg-3">{t('模型', 'Model')}</dt>
                   <dd className="mono m-0 break-all text-file">{story.hf.modelId}</dd>
                   {story.hf.pipeline_tag ? (
                     <>
-                      <dt className="text-fg-3">任務</dt>
+                      <dt className="text-fg-3">{t('任務', 'Task')}</dt>
                       <dd className="mono m-0 text-fg-2">{story.hf.pipeline_tag}</dd>
                     </>
                   ) : null}
-                  <dt className="text-fg-3">下載／喜歡</dt>
+                  <dt className="text-fg-3">{t('下載／喜歡', 'Downloads / likes')}</dt>
                   <dd className="mono m-0 text-fg-2">
-                    {formatCompact(story.hf.downloads)} / {formatCompact(story.hf.likes)}
+                    {formatCompact(story.hf.downloads, lang)} /{' '}
+                    {formatCompact(story.hf.likes, lang)}
                   </dd>
                 </dl>
               </Section>
@@ -431,7 +479,7 @@ export function Reader({
             <Section
               id="links-title"
               icon={<Link2 {...ICON_SM} className="text-fg-3" />}
-              title="來源連結"
+              title={t('來源連結', 'Sources')}
             >
               <ul className="flex flex-col gap-1.5">
                 {story.links.map((link) =>
@@ -457,7 +505,9 @@ export function Reader({
             </Section>
 
             <details className="rounded-md border border-line-subtle bg-sunken/60 px-3 py-2">
-              <summary className="cursor-pointer text-meta text-fg-2 select-none">機器資訊</summary>
+              <summary className="cursor-pointer text-meta text-fg-2 select-none">
+                {t('機器資訊', 'Machine facts')}
+              </summary>
               <div className="mt-2">
                 <Facts story={story} />
               </div>
@@ -468,20 +518,20 @@ export function Reader({
         {narrow ? (
           <nav
             className="flex items-center justify-between gap-2 border-t border-line-subtle pt-4"
-            aria-label="上一篇與下一篇"
+            aria-label={t('上一篇與下一篇', 'Previous and next')}
           >
             {nav.prevHref ? (
               <Link to={nav.prevHref} className="btn">
                 <ChevronLeft {...ICON_SM} />
-                上一篇
+                {t('上一篇', 'Previous')}
               </Link>
             ) : (
               <span />
             )}
-            <span className="text-meta text-fg-3">{formatDay(story.date)}</span>
+            <span className="text-meta text-fg-3">{formatDay(story.date, lang)}</span>
             {nav.nextHref ? (
               <Link to={nav.nextHref} className="btn">
-                下一篇
+                {t('下一篇', 'Next')}
                 <ChevronRight {...ICON_SM} />
               </Link>
             ) : (

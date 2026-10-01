@@ -1,6 +1,7 @@
 import {
   Archive,
   Bookmark,
+  Languages,
   CalendarDays,
   CalendarRange,
   CornerDownLeft,
@@ -26,6 +27,7 @@ import { useDayIndex } from '../data/days'
 import { searchStories, type SearchHit } from '../data/search'
 import type { SearchIndex } from '../data/types'
 import { formatDay } from '../lib/format'
+import { setLang, useLang } from '../state/lang'
 import { ICON_SM, Kbd } from './ui'
 
 interface Command {
@@ -66,6 +68,7 @@ export function CommandPalette({
   const listId = useId()
   const navigate = useNavigate()
   const index = useDayIndex()
+  const { lang, t } = useLang()
   const [query, setQuery] = useState('')
   const [active, setActive] = useState(0)
   // The story index is requested only while the palette is open; later opens hit the cache.
@@ -94,48 +97,59 @@ export function CommandPalette({
     const views: Command[] = [
       {
         id: 'v-latest',
-        group: '前往',
-        label: '最新日報',
+        group: t('前往', 'Go to'),
+        label: t('最新日報', 'Latest digest'),
         icon: <Newspaper {...ICON_SM} />,
         run: go(route.latest()),
       },
       {
         id: 'v-archive',
-        group: '前往',
-        label: '封存',
-        detail: '依月份瀏覽每日日報',
+        group: t('前往', 'Go to'),
+        label: t('封存', 'Archive'),
+        detail: t('依月份瀏覽每日日報', 'Browse daily digests by month'),
         icon: <Archive {...ICON_SM} />,
         run: go(route.archive()),
       },
       {
         id: 'v-reports',
-        group: '前往',
-        label: '週報與月報',
+        group: t('前往', 'Go to'),
+        label: t('週報與月報', 'Weekly and monthly reports'),
         icon: <CalendarRange {...ICON_SM} />,
         run: go(route.reports()),
       },
       {
         id: 'v-saved',
-        group: '前往',
-        label: '收藏',
+        group: t('前往', 'Go to'),
+        label: t('收藏', 'Saved papers'),
         icon: <Bookmark {...ICON_SM} />,
         run: go(route.saved()),
       },
       {
         id: 'v-sources',
-        group: '前往',
-        label: '來源狀態',
+        group: t('前往', 'Go to'),
+        label: t('來源狀態', 'Source status'),
         icon: <Activity {...ICON_SM} />,
         run: go(route.sources()),
       },
       {
         id: 'v-keys',
-        group: '前往',
-        label: '鍵盤快捷鍵',
+        group: t('前往', 'Go to'),
+        label: t('鍵盤快捷鍵', 'Keyboard shortcuts'),
         icon: <Keyboard {...ICON_SM} />,
         run: () => {
           onClose()
           onShowShortcuts()
+        },
+      },
+      {
+        id: 'v-lang',
+        group: t('前往', 'Go to'),
+        label: lang === 'en' ? '切換為中文' : 'Switch to English',
+        detail: lang === 'en' ? 'Traditional Chinese' : '介面與閱讀語言',
+        icon: <Languages {...ICON_SM} />,
+        run: () => {
+          setLang(lang === 'en' ? 'zh' : 'en')
+          onClose()
         },
       },
     ]
@@ -145,31 +159,34 @@ export function CommandPalette({
     )
     const dates: Command[] = matchDates(deferred, index.dates).map((day) => ({
       id: `d-${day}`,
-      group: '日期',
-      label: formatDay(day),
+      group: t('日期', 'Dates'),
+      label: formatDay(day, lang),
       icon: <CalendarDays {...ICON_SM} />,
       run: go(route.day(day)),
     }))
     const hits: SearchHit[] = searchIndex ? searchStories(searchIndex, deferred, 30) : []
     const stories: Command[] = hits.map((hit) => ({
       id: `s-${hit.id}`,
-      group: '論文與文章',
-      label: hit.titleZh ?? hit.title,
-      detail: `${hit.date}${hit.titleZh ? ` · ${hit.title}` : ''}`,
+      group: t('論文與文章', 'Papers and articles'),
+      label: lang === 'en' ? hit.title : (hit.titleZh ?? hit.title),
+      detail: `${hit.date}${lang === 'zh' && hit.titleZh ? ` · ${hit.title}` : ''}`,
       icon: <FileText {...ICON_SM} />,
       run: go(storyHref(hit.date, hit.id)),
     }))
     const searchAll: Command = {
       id: 'search-all',
-      group: '搜尋',
-      label: `在全部內容中搜尋「${deferred.trim()}」`,
+      group: t('搜尋', 'Search'),
+      label: t(
+        `在全部內容中搜尋「${deferred.trim()}」`,
+        `Search everything for “${deferred.trim()}”`,
+      ),
       icon: <Search {...ICON_SM} />,
       run: go(route.search(deferred.trim())),
     }
     return [...dates, ...matchedViews, ...stories, searchAll]
     // go/onClose are stable for the palette's lifetime
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [deferred, index.dates, searchIndex])
+  }, [deferred, index.dates, searchIndex, lang])
 
   const current = Math.min(active, Math.max(0, commands.length - 1))
 
@@ -196,7 +213,7 @@ export function CommandPalette({
     <dialog
       ref={dialog}
       className="overlay mx-auto mt-[12vh] mb-auto w-[min(640px,calc(100vw-24px))] animate-pop p-0"
-      aria-label="指令面板"
+      aria-label={t('指令面板', 'Command palette')}
       onClose={() => {
         setQuery('')
         setActive(0)
@@ -216,9 +233,12 @@ export function CommandPalette({
           aria-controls={listId}
           aria-activedescendant={commands.length ? `${listId}-${current}` : undefined}
           aria-autocomplete="list"
-          aria-label="搜尋論文、日期或指令"
+          aria-label={t('搜尋論文、日期或指令', 'Search papers, dates or commands')}
           className="h-12 min-w-0 flex-1 bg-transparent text-heading text-fg outline-none placeholder:text-fg-3"
-          placeholder="搜尋論文、日期（例如 0930）或指令…"
+          placeholder={t(
+            '搜尋論文、日期（例如 0930）或指令…',
+            'Search papers, dates (e.g. 0930) or commands…',
+          )}
           value={query}
           onChange={(event) => {
             setQuery(event.target.value)
@@ -231,7 +251,7 @@ export function CommandPalette({
       <ul
         id={listId}
         role="listbox"
-        aria-label="結果"
+        aria-label={t('結果', 'Results')}
         className="max-h-[min(420px,60vh)] overflow-y-auto p-1.5"
       >
         {commands.map((command, position) => {
@@ -269,16 +289,16 @@ export function CommandPalette({
       </ul>
       <div className="flex items-center gap-3 border-t border-line px-3 py-2 text-caption text-fg-3">
         <span>
-          <Kbd>↑</Kbd> <Kbd>↓</Kbd> 選擇
+          <Kbd>↑</Kbd> <Kbd>↓</Kbd> {t('選擇', 'select')}
         </span>
         <span>
-          <Kbd>Enter</Kbd> 開啟
+          <Kbd>Enter</Kbd> {t('開啟', 'open')}
         </span>
         <span className="ml-auto" aria-live="polite">
           {indexState === 'loading'
-            ? '正在載入論文索引…'
+            ? t('正在載入論文索引…', 'Loading the paper index…')
             : indexState === 'missing'
-              ? '論文索引尚未產生'
+              ? t('論文索引尚未產生', 'The paper index is not published yet')
               : null}
         </span>
       </div>

@@ -51,14 +51,25 @@ force-pushes; both retry on a rejected fast-forward.
 
 - **Task**: read the daily AI-paper digest in Traditional Chinese, triage by
   LLM scorecard, keep a reading list, revisit days and periodic reports.
-- **Composition**: workbench reader — top bar with the command palette,
-  primary navigation (200 px, 56 px rail below 1280 px), ranked list
-  (320–420 px) and a raised reading pane. Below 1024 px the list is the page
-  and the reader opens as a full-screen layer with back/forward navigation.
+- **Composition**: workbench reader — top bar with the command palette and
+  the language switch, primary navigation (200 px, or a 56 px rail below
+  1280 px and whenever it is collapsed with `B`), ranked list (320–420 px,
+  hidden with `F` for full-width reading) and a raised reading pane with its
+  own toolbar. Below 1024 px the list is the page and the reader opens as a
+  full-screen layer with back/forward navigation.
+- **Languages** (requested by the owner): the interface and the reading
+  language switch between Traditional Chinese and English, stored in
+  `dpr.prefs.v1`. Strings sit next to their component as `t(zh, en)`; there
+  is no i18n package or key catalogue. 摘要／Summary shows the Chinese guide
+  or the English abstract for the chosen language, with the other one behind
+  a disclosure (`E`). Text that only exists in the other language (missing
+  guides, LLM assessment, evidence, report summaries) can be translated
+  on-device through the browser Translator API, labelled as such; browsers
+  without it say so instead.
 - **Signatures**: the six-dimension scorecard (compact strip under the title,
   sticky side panel when the pane is wider than 1024 px); keyboard triage
-  (`J`/`K`/`O`/`P`/`S`/`M`/`E`, `1–5`, `[`/`]`, `?`); `⌘K` palette that jumps to
-  dates, views and any published story.
+  (`J`/`K`/`O`/`P`/`S`/`M`/`E`, `1–5`, `[`/`]`, `F`, `B`, `?`); `⌘K` palette that
+  jumps to dates, views and any published story.
 - **Typography**: system sans with PingFang TC / Noto Sans TC; Chinese guide
   at 16/28 px capped at 680 px; English text 15/26 px; mono only for ids,
   scores, dates and shortcuts.
@@ -73,5 +84,5 @@ force-pushes; both retry on a rejected fast-forward.
 - **States**: loading rows, empty day, filtered-to-nothing, missing day with
   neighbours, missing story id, fetch error with retry, missing translation,
   missing evaluation, missing search index, storage unavailable.
-- **Reading state**: read marks, saved papers and two disclosure preferences
-  stay in this browser's `localStorage` (`dpr.*.v1`).
+- **Reading state**: read marks, saved papers, language, collapsed panels and
+  disclosure preferences stay in this browser's `localStorage` (`dpr.*.v1`).

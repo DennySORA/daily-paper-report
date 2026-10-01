@@ -5,9 +5,11 @@ import { CopyButton, ICON, ICON_SM, Meter, StateMessage } from '../components/ui
 import { formatScore } from '../lib/format'
 import { bibtex } from '../data/story'
 import { removeSaved, useLibrary } from '../state/library'
+import { useLang } from '../state/lang'
 
 export function SavedView() {
   const library = useLibrary()
+  const { lang, t } = useLang()
   const saved = Object.values(library.saved).sort((a, b) => b.savedAt.localeCompare(a.savedAt))
   const bib = saved
     .map(bibtex)
@@ -19,12 +21,17 @@ export function SavedView() {
       <header className="flex flex-wrap items-center gap-3 px-4 pt-3 pb-3 lg:px-3">
         <Bookmark {...ICON} className="text-fg-3" />
         <h1 id="view-title" tabIndex={-1} className="text-title font-semibold outline-none">
-          收藏
+          {t('收藏', 'Saved')}
         </h1>
-        <span className="text-meta text-fg-3">{saved.length} 篇 · 只儲存在這個瀏覽器</span>
+        <span className="text-meta text-fg-3">
+          {t(
+            `${saved.length} 篇 · 只儲存在這個瀏覽器`,
+            `${saved.length} papers · stored in this browser only`,
+          )}
+        </span>
         {bib ? (
           <span className="ml-auto">
-            <CopyButton text={bib} label="複製全部 BibTeX" />
+            <CopyButton text={bib} label={t('複製全部 BibTeX', 'Copy all BibTeX')} />
           </span>
         ) : null}
       </header>
@@ -32,14 +39,16 @@ export function SavedView() {
         <div className="panel max-w-[1100px]">
           {saved.length === 0 ? (
             <StateMessage
-              title="還沒有收藏的論文"
+              title={t('還沒有收藏的論文', 'No saved papers yet')}
               actions={
                 <Link to={route.latest()} className="btn">
-                  前往最新日報
+                  {t('前往最新日報', 'Go to the latest digest')}
                 </Link>
               }
             >
-              在閱讀窗格按「收藏」或快捷鍵 <kbd className="kbd">S</kbd>，之後就能在這裡找到。
+              {t('在閱讀窗格按「收藏」或快捷鍵', 'Press Save in the reading pane, or')}{' '}
+              <kbd className="kbd">S</kbd>
+              {t('，之後就能在這裡找到。', ', to find papers here later.')}
             </StateMessage>
           ) : (
             <ul className="flex flex-col gap-0.5 p-1.5">
@@ -51,15 +60,16 @@ export function SavedView() {
                   >
                     <span className="flex min-w-0 flex-col gap-0.5">
                       <span className="text-ui font-medium text-fg">
-                        {paper.titleZh ?? paper.titleEn}
+                        {lang === 'en' ? paper.titleEn : (paper.titleZh ?? paper.titleEn)}
                       </span>
-                      {paper.titleZh ? (
+                      {lang === 'zh' && paper.titleZh ? (
                         <span className="truncate text-meta text-fg-3" lang="en">
                           {paper.titleEn}
                         </span>
                       ) : null}
                       <span className="mono text-caption text-fg-3">
-                        {paper.arxivId ?? paper.id} · 收藏於 {paper.savedAt.slice(0, 10)}
+                        {paper.arxivId ?? paper.id} · {t('收藏於', 'saved')}{' '}
+                        {paper.savedAt.slice(0, 10)}
                       </span>
                     </span>
                     <span className="flex flex-col items-end gap-1">
@@ -77,8 +87,11 @@ export function SavedView() {
                   <button
                     type="button"
                     className="btn btn-quiet btn-icon"
-                    aria-label={`移除收藏：${paper.titleZh ?? paper.titleEn}`}
-                    title="移除收藏"
+                    aria-label={t(
+                      `移除收藏：${paper.titleZh ?? paper.titleEn}`,
+                      `Remove from saved: ${paper.titleEn}`,
+                    )}
+                    title={t('移除收藏', 'Remove from saved')}
                     onClick={() => removeSaved(paper.id)}
                   >
                     <Trash2 {...ICON_SM} />

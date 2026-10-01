@@ -15,55 +15,72 @@ import {
 
 export type SectionKey = 'top5' | 'papers' | 'radar' | 'releases' | 'recommendations' | 'blogs'
 
-export const SECTION_LABEL: Record<SectionKey, string> = {
-  top5: '精選',
-  papers: '論文',
-  radar: '雷達',
-  releases: '模型發布',
-  recommendations: '論文推薦',
-  blogs: '技術文章',
+type Bilingual = { zh: string; en: string }
+
+export const SECTION_LABEL: Record<SectionKey, Bilingual> = {
+  top5: { zh: '精選', en: 'Top 5' },
+  papers: { zh: '論文', en: 'Papers' },
+  radar: { zh: '雷達', en: 'Radar' },
+  releases: { zh: '模型發布', en: 'Models' },
+  recommendations: { zh: '論文推薦', en: 'Papers' },
+  blogs: { zh: '技術文章', en: 'Articles' },
 }
 
-export const SECTION_HINT: Record<SectionKey, string> = {
-  top5: '當日必讀',
-  papers: '依綜合分數排序',
-  radar: '值得追蹤',
-  releases: '依機構分組',
-  recommendations: '期間精選論文',
-  blogs: '期間精選文章',
+export const SECTION_HINT: Record<SectionKey, Bilingual> = {
+  top5: { zh: '當日必讀', en: 'Must read' },
+  papers: { zh: '依綜合分數排序', en: 'By overall score' },
+  radar: { zh: '值得追蹤', en: 'Worth watching' },
+  releases: { zh: '依機構分組', en: 'By organization' },
+  recommendations: { zh: '期間精選論文', en: 'Picked papers' },
+  blogs: { zh: '期間精選文章', en: 'Picked articles' },
 }
 
 export type StoryKind = 'paper' | 'blog' | 'model' | 'release' | 'link'
 
-export const KIND_LABEL: Record<StoryKind, string> = {
-  paper: 'arXiv',
-  blog: '文章',
-  model: '模型',
-  release: '版本發布',
-  link: '連結',
+export const KIND_LABEL: Record<StoryKind, Bilingual> = {
+  paper: { zh: 'arXiv', en: 'arXiv' },
+  blog: { zh: '文章', en: 'Article' },
+  model: { zh: '模型', en: 'Model' },
+  release: { zh: '版本發布', en: 'Release' },
+  link: { zh: '連結', en: 'Link' },
 }
 
-export const COMPONENT_LABEL: Record<ComponentKey, string> = {
-  preference_relevance: '偏好相關',
-  novelty: '新穎性',
-  rigor: '嚴謹度',
-  evidence_strength: '證據強度',
-  generalizability: '可推廣性',
-  reproducibility: '可重現性',
+export const COMPONENT_LABEL: Record<ComponentKey, Bilingual> = {
+  preference_relevance: { zh: '偏好相關', en: 'Relevance' },
+  novelty: { zh: '新穎性', en: 'Novelty' },
+  rigor: { zh: '嚴謹度', en: 'Rigor' },
+  evidence_strength: { zh: '證據強度', en: 'Evidence' },
+  generalizability: { zh: '可推廣性', en: 'Generality' },
+  reproducibility: { zh: '可重現性', en: 'Reproducibility' },
 }
 
-export const COMPONENT_HINT: Record<ComponentKey, string> = {
-  preference_relevance: '與關注主題（LLM、代理、安全等）的契合程度',
-  novelty: '方法或發現相對既有研究的新意',
-  rigor: '基線、消融、統計與實驗設計的完整性',
-  evidence_strength: '結論是否有量化結果與對照支持',
-  generalizability: '結論在模型、資料與情境間的適用範圍',
-  reproducibility: '程式碼、資料與超參數的公開程度',
+export const COMPONENT_HINT: Record<ComponentKey, Bilingual> = {
+  preference_relevance: {
+    zh: '與關注主題（LLM、代理、安全等）的契合程度',
+    en: 'Fit with the tracked topics (LLMs, agents, safety, …)',
+  },
+  novelty: { zh: '方法或發現相對既有研究的新意', en: 'How new the method or finding is' },
+  rigor: {
+    zh: '基線、消融、統計與實驗設計的完整性',
+    en: 'Baselines, ablations, statistics and experimental design',
+  },
+  evidence_strength: {
+    zh: '結論是否有量化結果與對照支持',
+    en: 'Whether claims are backed by quantified, controlled results',
+  },
+  generalizability: {
+    zh: '結論在模型、資料與情境間的適用範圍',
+    en: 'How far results carry across models, data and settings',
+  },
+  reproducibility: {
+    zh: '程式碼、資料與超參數的公開程度',
+    en: 'Availability of code, data and hyperparameters',
+  },
 }
 
 export interface Evaluation {
   score: number | null
-  components: Array<{ key: ComponentKey; label: string; value: number | null }>
+  components: Array<{ key: ComponentKey; value: number | null }>
   confidence: number | null
   rationale: string
   evidence: string[]
@@ -129,11 +146,7 @@ function evaluationOf(raw: RawStory): Evaluation | null {
   const status = ev.fulltext_status
   return {
     score: num(ev.score),
-    components: COMPONENT_KEYS.map((key) => ({
-      key,
-      label: COMPONENT_LABEL[key],
-      value: num(ev.components?.[key]),
-    })),
+    components: COMPONENT_KEYS.map((key) => ({ key, value: num(ev.components?.[key]) })),
     confidence: num(ev.confidence),
     rationale: cleanText(ev.rationale),
     evidence: (ev.evidence ?? []).map((item) => cleanText(item)).filter(Boolean),
@@ -210,7 +223,7 @@ export function digestGroups(digest: DailyDigest): StoryGroup[] {
   const releases: Story[] = []
   for (const [entity, items] of Object.entries(digest.model_releases_by_entity ?? {})) {
     for (const raw of items) {
-      const name = catalog[entity]?.name ?? (entity === 'other' ? '其他' : entity)
+      const name = catalog[entity]?.name ?? (entity === 'other' ? 'Other' : entity)
       releases.push(toStory(raw, 'releases', releases.length + 1, date, catalog, name))
     }
   }
@@ -242,8 +255,18 @@ export function reportGroups(
   ]
 }
 
+export type LinkKind = 'arxiv' | 'pdf' | 'html' | 'huggingface' | 'source'
+
+export const LINK_LABEL: Record<LinkKind, Bilingual> = {
+  arxiv: { zh: '開啟 arXiv', en: 'Open arXiv' },
+  pdf: { zh: 'PDF', en: 'PDF' },
+  html: { zh: 'HTML 全文', en: 'HTML' },
+  huggingface: { zh: '開啟 Hugging Face', en: 'Open Hugging Face' },
+  source: { zh: '開啟原文', en: 'Open source' },
+}
+
 export interface PaperLink {
-  label: string
+  kind: LinkKind
   href: string
   primary?: boolean
 }
@@ -253,15 +276,24 @@ export function readingLinks(story: Story): PaperLink[] {
   if (story.arxivId) {
     const id = encodeURIComponent(story.arxivId)
     return [
-      { label: '開啟 arXiv', href: `https://arxiv.org/abs/${id}`, primary: true },
-      { label: 'PDF', href: `https://arxiv.org/pdf/${id}` },
-      { label: 'HTML 全文', href: `https://arxiv.org/html/${id}` },
+      { kind: 'arxiv', href: `https://arxiv.org/abs/${id}`, primary: true },
+      { kind: 'pdf', href: `https://arxiv.org/pdf/${id}` },
+      { kind: 'html', href: `https://arxiv.org/html/${id}` },
     ]
   }
-  if (story.hf) {
-    return [{ label: '開啟 Hugging Face', href: story.url, primary: true }]
-  }
-  return story.url ? [{ label: '開啟原文', href: story.url, primary: true }] : []
+  if (story.hf) return [{ kind: 'huggingface', href: story.url, primary: true }]
+  return story.url ? [{ kind: 'source', href: story.url, primary: true }] : []
+}
+
+/** Title in the reading language, with the other language as a subtitle when useful. */
+export function storyTitles(
+  story: Story,
+  lang: 'zh' | 'en',
+): { title: string; subtitle: string | null } {
+  if (lang === 'en') return { title: story.titleEn, subtitle: null }
+  return story.titleZh
+    ? { title: story.titleZh, subtitle: story.titleEn }
+    : { title: story.titleEn, subtitle: null }
 }
 
 export type BibSource = Pick<

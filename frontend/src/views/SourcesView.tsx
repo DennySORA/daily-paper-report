@@ -14,20 +14,26 @@ import {
 import { NotFoundError, isIsoDate, paths, safeDayPath, useDoc } from '../data/api'
 import type { DailyDigest, SourceStatus } from '../data/types'
 import { formatDay, formatDuration, formatInt, formatTimestamp } from '../lib/format'
+import { useLang } from '../state/lang'
 
-function sourceState(source: SourceStatus): { tone: Tone; label: string; order: number } {
-  if (source.status.includes('FAIL')) return { tone: 'danger', label: '失敗', order: 0 }
-  if (source.status === 'HAS_UPDATE') return { tone: 'success', label: '有新內容', order: 1 }
-  if (source.status === 'NO_UPDATE') return { tone: 'neutral', label: '無變更', order: 2 }
-  return { tone: 'warning', label: source.status, order: 1 }
+type Label = { zh: string; en: string }
+
+function sourceState(source: SourceStatus): { tone: Tone; label: Label; order: number } {
+  if (source.status.includes('FAIL'))
+    return { tone: 'danger', label: { zh: '失敗', en: 'Failed' }, order: 0 }
+  if (source.status === 'HAS_UPDATE')
+    return { tone: 'success', label: { zh: '有新內容', en: 'New items' }, order: 1 }
+  if (source.status === 'NO_UPDATE')
+    return { tone: 'neutral', label: { zh: '無變更', en: 'No change' }, order: 2 }
+  return { tone: 'warning', label: { zh: source.status, en: source.status }, order: 1 }
 }
 
-const METHOD_LABEL: Record<string, string> = {
-  rss_atom: 'RSS／Atom',
-  arxiv_api: 'arXiv API',
-  hf_org: 'Hugging Face 機構',
-  hf_daily_papers: 'HF Daily Papers',
-  html_list: 'HTML 清單',
+const METHOD_LABEL: Record<string, Label> = {
+  rss_atom: { zh: 'RSS／Atom', en: 'RSS/Atom' },
+  arxiv_api: { zh: 'arXiv API', en: 'arXiv API' },
+  hf_org: { zh: 'Hugging Face 機構', en: 'Hugging Face org' },
+  hf_daily_papers: { zh: 'HF Daily Papers', en: 'HF Daily Papers' },
+  html_list: { zh: 'HTML 清單', en: 'HTML list' },
 }
 
 function Fact({ label, children }: { label: string; children: ReactNode }) {
@@ -41,6 +47,7 @@ function Fact({ label, children }: { label: string; children: ReactNode }) {
 
 export function SourcesView() {
   const [params] = useSearchParams()
+  const { lang, t } = useLang()
   const requested = params.get('date')
   const path = isIsoDate(requested) ? safeDayPath(requested) : paths.latest
   const [doc, retry] = useDoc<DailyDigest>(path)
@@ -62,59 +69,71 @@ export function SourcesView() {
       <header className="flex flex-wrap items-center gap-3 px-4 pt-3 pb-3 lg:px-3">
         <Activity {...ICON} className="text-fg-3" />
         <h1 id="view-title" tabIndex={-1} className="text-title font-semibold outline-none">
-          來源狀態
+          {t('來源狀態', 'Source status')}
         </h1>
         {digest ? (
           <Link
             to={route.day(digest.run_date)}
             className="text-meta text-accent-fg hover:underline"
           >
-            {formatDay(digest.run_date)} 的執行
+            {t(
+              `${formatDay(digest.run_date, lang)} 的執行`,
+              `Run of ${formatDay(digest.run_date, lang)}`,
+            )}
           </Link>
         ) : null}
       </header>
 
-      {doc.status === 'loading' ? <LoadingRows label="載入執行紀錄中" /> : null}
+      {doc.status === 'loading' ? (
+        <LoadingRows label={t('載入執行紀錄中', 'Loading the run record')} />
+      ) : null}
       {doc.status === 'error' ? (
         doc.error instanceof NotFoundError ? (
-          <StateMessage title={`${requested ?? ''} 沒有執行紀錄`} />
+          <StateMessage
+            title={t(`${requested ?? ''} 沒有執行紀錄`, `No run record for ${requested ?? ''}`)}
+          />
         ) : (
-          <ErrorMessage error={doc.error} onRetry={retry} what="執行紀錄" />
+          <ErrorMessage error={doc.error} onRetry={retry} what={t('執行紀錄', 'the run record')} />
         )
       ) : null}
 
       {digest ? (
         <div className="flex flex-col gap-2 px-2 pb-4">
-          <section className="panel p-4" aria-label="執行摘要">
+          <section className="panel p-4" aria-label={t('執行摘要', 'Run summary')}>
             <dl className="grid grid-cols-2 gap-x-6 gap-y-3 sm:grid-cols-3 xl:grid-cols-6">
-              <Fact label="結果">
+              <Fact label={t('結果', 'Result')}>
                 <span className="inline-flex items-center gap-1.5">
                   {digest.run_info.success ? (
                     <CircleCheck {...ICON_SM} className="text-success" />
                   ) : (
                     <CircleAlert {...ICON_SM} className="text-danger" />
                   )}
-                  {digest.run_info.success ? '成功' : '失敗'}
+                  {digest.run_info.success ? t('成功', 'Succeeded') : t('失敗', 'Failed')}
                 </span>
               </Fact>
-              <Fact label="開始">
+              <Fact label={t('開始', 'Started')}>
                 <span className="mono text-meta">
-                  {formatTimestamp(digest.run_info.started_at)}
+                  {formatTimestamp(digest.run_info.started_at, lang)}
                 </span>
               </Fact>
-              <Fact label="耗時">
-                {formatDuration(digest.run_info.started_at, digest.run_info.finished_at)}
+              <Fact label={t('耗時', 'Duration')}>
+                {formatDuration(digest.run_info.started_at, digest.run_info.finished_at, lang)}
               </Fact>
-              <Fact label="收集項目">
-                <span className="mono">{formatInt(digest.run_info.items_total)}</span>
+              <Fact label={t('收集項目', 'Items collected')}>
+                <span className="mono">{formatInt(digest.run_info.items_total, lang)}</span>
               </Fact>
-              <Fact label="合併故事">
-                <span className="mono">{formatInt(digest.run_info.stories_total)}</span>
+              <Fact label={t('合併故事', 'Stories')}>
+                <span className="mono">{formatInt(digest.run_info.stories_total, lang)}</span>
               </Fact>
-              <Fact label="來源">
+              <Fact label={t('來源', 'Sources')}>
                 <span className="mono">
-                  {sources.length} · 有新內容 {updated}
-                  {failed ? <span className="text-danger"> · 失敗 {failed}</span> : null}
+                  {sources.length} · {t('有新內容', 'new items')} {updated}
+                  {failed ? (
+                    <span className="text-danger">
+                      {' '}
+                      · {t('失敗', 'failed')} {failed}
+                    </span>
+                  ) : null}
                 </span>
               </Fact>
             </dl>
@@ -130,34 +149,34 @@ export function SourcesView() {
               id="sources-table-title"
               className="border-b border-line-subtle px-4 py-2.5 text-heading font-semibold"
             >
-              各來源抓取結果
+              {t('各來源抓取結果', 'Results by source')}
             </h2>
             <div
               className="overflow-x-auto"
               role="region"
-              aria-label="來源表格（可水平捲動）"
+              aria-label={t('來源表格（可水平捲動）', 'Source table (scrolls horizontally)')}
               tabIndex={0}
             >
               <table className="w-full min-w-[760px] border-collapse text-meta">
                 <thead>
                   <tr className="bg-sunken text-left text-caption text-fg-3">
                     <th scope="col" className="px-4 py-2 font-medium">
-                      來源
+                      {t('來源', 'Source')}
                     </th>
                     <th scope="col" className="px-3 py-2 font-medium">
-                      狀態
+                      {t('狀態', 'Status')}
                     </th>
                     <th scope="col" className="px-3 py-2 font-medium">
-                      方式
+                      {t('方式', 'Method')}
                     </th>
                     <th scope="col" className="px-3 py-2 text-right font-medium">
-                      新增／更新
+                      {t('新增／更新', 'New / updated')}
                     </th>
                     <th scope="col" className="px-3 py-2 font-medium">
-                      最新項目
+                      {t('最新項目', 'Newest item')}
                     </th>
                     <th scope="col" className="px-4 py-2 font-medium">
-                      說明
+                      {t('說明', 'Details')}
                     </th>
                   </tr>
                 </thead>
@@ -184,11 +203,11 @@ export function SourcesView() {
                             ) : (
                               <Minus {...ICON_SM} />
                             )}
-                            {state.label}
+                            {state.label[lang]}
                           </Badge>
                         </td>
                         <td className="px-3 py-2 text-fg-2">
-                          {METHOD_LABEL[source.method] ?? source.method}
+                          {METHOD_LABEL[source.method]?.[lang] ?? source.method}
                         </td>
                         <td className="mono px-3 py-2 text-right text-fg-2">
                           {source.items_new} / {source.items_updated}

@@ -5,8 +5,10 @@ import { MonthGrid } from '../components/Calendar'
 import { ICON, ICON_SM, LoadingRows, StateMessage } from '../components/ui'
 import { useDayIndex } from '../data/days'
 import { formatDay, formatMonth } from '../lib/format'
+import { useLang } from '../state/lang'
 
 export function ArchiveView() {
+  const { lang, t } = useLang()
   const index = useDayIndex()
   const months = [...new Set([...index.dates, ...index.missing].map((day) => day.slice(0, 7)))]
     .sort()
@@ -17,22 +19,26 @@ export function ArchiveView() {
       <header className="flex flex-wrap items-center gap-3 px-4 pt-3 pb-3 lg:px-3">
         <Archive {...ICON} className="text-fg-3" />
         <h1 id="view-title" tabIndex={-1} className="text-title font-semibold outline-none">
-          封存
+          {t('封存', 'Archive')}
         </h1>
         {index.status === 'ready' ? (
           <span className="text-meta text-fg-3">
-            {index.dates.length} 份日報
+            {t(`${index.dates.length} 份日報`, `${index.dates.length} digests`)}
             {index.missing.size ? (
-              <span className="text-warning"> · 缺 {index.missing.size} 天</span>
+              <span className="text-warning">
+                {t(` · 缺 ${index.missing.size} 天`, ` · ${index.missing.size} days missing`)}
+              </span>
             ) : null}
           </span>
         ) : null}
       </header>
 
-      {index.status === 'loading' ? <LoadingRows label="載入日報清單中" /> : null}
+      {index.status === 'loading' ? (
+        <LoadingRows label={t('載入日報清單中', 'Loading the digest list')} />
+      ) : null}
       {index.status === 'error' ? (
-        <StateMessage icon="error" title="無法載入日報清單">
-          請稍後重新整理頁面。
+        <StateMessage icon="error" title={t('無法載入日報清單', 'Could not load the digest list')}>
+          {t('請稍後重新整理頁面。', 'Reload the page in a moment.')}
         </StateMessage>
       ) : null}
 
@@ -48,12 +54,14 @@ export function ArchiveView() {
             >
               <div className="flex items-baseline justify-between gap-2">
                 <h2 id={`month-${month}`} className="text-heading font-semibold">
-                  {formatMonth(month)}
+                  {formatMonth(month, lang)}
                 </h2>
                 <span className="text-meta text-fg-3">
-                  {days.length} 份
+                  {t(`${days.length} 份`, `${days.length} digests`)}
                   {missing.length ? (
-                    <span className="text-warning"> · 缺 {missing.length} 天</span>
+                    <span className="text-warning">
+                      {t(` · 缺 ${missing.length} 天`, ` · ${missing.length} missing`)}
+                    </span>
                   ) : null}
                 </span>
               </div>
@@ -62,14 +70,15 @@ export function ArchiveView() {
                 <ol className="flex flex-col gap-1 border-t border-line-subtle pt-3">
                   {days.map((day) => {
                     const info = index.info.get(day)
-                    const lead = info?.lead_title_zh ?? info?.lead_title
+                    const lead =
+                      lang === 'en' ? info?.lead_title : (info?.lead_title_zh ?? info?.lead_title)
                     return (
                       <li key={day}>
                         <Link
                           to={route.day(day)}
                           className="row grid grid-cols-[96px_minmax(0,1fr)] gap-3 px-2 py-1.5 text-meta"
                         >
-                          <span className="mono text-fg-2">{formatDay(day).slice(5)}</span>
+                          <span className="mono text-fg-2">{formatDay(day, lang).slice(5)}</span>
                           <span className="truncate text-fg-3">{lead ?? '—'}</span>
                         </Link>
                       </li>
@@ -81,8 +90,10 @@ export function ArchiveView() {
                 <p className="flex items-start gap-1.5 text-caption text-fg-3">
                   <TriangleAlert {...ICON_SM} className="mt-0.5 flex-none text-warning" />
                   <span>
-                    缺少日報：
-                    <span className="mono">{missing.map((day) => day.slice(5)).join('、')}</span>
+                    {t('缺少日報：', 'No digest: ')}
+                    <span className="mono">
+                      {missing.map((day) => day.slice(5)).join(lang === 'en' ? ', ' : '、')}
+                    </span>
                   </span>
                 </p>
               ) : null}

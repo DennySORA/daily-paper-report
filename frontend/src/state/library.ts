@@ -3,7 +3,7 @@ import type { Story } from '../data/story'
 
 /**
  * Per-viewer reading state kept in this browser only: read marks, saved papers
- * and two display preferences. Storage can be unavailable (private mode,
+ * and display preferences (language, collapsed panels, disclosures). Storage can be unavailable (private mode,
  * blocked site data); the in-memory copy keeps working for the session.
  */
 export interface SavedPaper {
@@ -20,9 +20,14 @@ export interface SavedPaper {
   publishedAt: string | null
 }
 
+export type Lang = 'zh' | 'en'
+
 export interface Prefs {
+  lang: Lang
   abstractOpen: boolean
   rationaleOpen: boolean
+  navCollapsed: boolean
+  listCollapsed: boolean
 }
 
 interface LibraryState {
@@ -32,7 +37,18 @@ interface LibraryState {
 }
 
 const KEYS = { read: 'dpr.read.v1', saved: 'dpr.saved.v1', prefs: 'dpr.prefs.v1' } as const
-const DEFAULT_PREFS: Prefs = { abstractOpen: false, rationaleOpen: true }
+const DEFAULT_PREFS: Prefs = {
+  lang: 'zh',
+  abstractOpen: false,
+  rationaleOpen: true,
+  navCollapsed: false,
+  listCollapsed: false,
+}
+
+function sanitizePrefs(stored: Partial<Prefs>): Prefs {
+  const prefs = { ...DEFAULT_PREFS, ...stored }
+  return { ...prefs, lang: prefs.lang === 'en' ? 'en' : 'zh' }
+}
 
 function readKey<T>(key: string, fallback: T): T {
   try {
@@ -58,7 +74,7 @@ function loadState(): LibraryState {
   return {
     read: readKey(KEYS.read, {}),
     saved: readKey(KEYS.saved, {}),
-    prefs: { ...DEFAULT_PREFS, ...readKey<Partial<Prefs>>(KEYS.prefs, {}) },
+    prefs: sanitizePrefs(readKey<Partial<Prefs>>(KEYS.prefs, {})),
   }
 }
 
