@@ -5858,7 +5858,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:a5e981ec926c2409",
       "summary": "With the new Spring AI AgentCore SDK, you can build production-ready AI agents and run them on the highly scalable AgentCore Runtime. The Spring AI AgentCore SDK is an open source library that brings Amazon Bedrock AgentCore capabilities into Spring AI. In this post, we build an AI agent starting with a chat endpoint, then adding streaming responses, conversation memory, and tools for web browsing and code execution.",
-      "title": "Spring AI SDK for Amazon Bedrock AgentCore is now Generally Available"
+      "summary_zh": "本文宣布 Spring AI AgentCore SDK 正式一般可用。這是一個開源函式庫，把 Amazon Bedrock AgentCore 的能力帶入 Spring AI 生態，讓開發者能以熟悉的 Java 與 Spring 框架建構可正式上線的 AI 代理，並部署到具高度擴展性的 AgentCore Runtime 上執行。文章以逐步實作示範：先建立一個聊天端點，再加入串流回應、對話記憶，以及網頁瀏覽與程式碼執行等工具能力。這對於既有 Java 後端團隊尤其重要，因為它降低了把代理功能整合進企業系統的門檻。不過目前僅有摘要，缺少延遲、併發、成本與安全隔離等實測數據，也未交代版本相容性與部署限制。導入前仍建議自行驗證工具呼叫的可靠性與權限控管。",
+      "title": "Spring AI SDK for Amazon Bedrock AgentCore is now Generally Available",
+      "title_zh": "Amazon Bedrock AgentCore 的 Spring AI SDK 正式推出"
     },
     {
       "arxiv_id": null,
@@ -5912,7 +5914,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:a5efc12a2cf7da4d",
       "summary": "This post explores how Amazon SageMaker HyperPod provides a comprehensive solution for inference workloads. We walk you through the platform’s key capabilities for dynamic scaling, simplified deployment, and intelligent resource management. By the end of this post, you’ll understand how to use the HyperPod automated infrastructure, cost optimization features, and performance enhancements to reduce your total cost of ownership by up to 40% while accelerating your generative AI deployments from concept to production.",
-      "title": "Best practices to run inference on Amazon SageMaker HyperPod"
+      "summary_zh": "本文探討 Amazon SageMaker HyperPod 如何為推論工作負載提供完整解法，並逐一說明其在動態擴展、簡化部署與智慧資源管理上的關鍵能力。文章指出，HyperPod 的自動化基礎設施、成本最佳化功能與效能強化，可協助團隊降低最多四成的總持有成本，同時把生成式 AI 應用從概念推進到正式上線。對需要長時間穩定服務大型模型的團隊而言，重點在於把叢集維運、擴縮容與資源排程交由平台處理，讓人力集中在模型與應用層。不過目前僅有摘要，未提供基準測試方法、模型規模、成本計算假設與四成數字的適用條件，也未討論多租戶隔離與故障復原。建議讀者把該數字視為特定情境下的宣稱，並以自身負載驗證。",
+      "title": "Best practices to run inference on Amazon SageMaker HyperPod",
+      "title_zh": "在 Amazon SageMaker HyperPod 上執行推論的最佳實務"
     },
     {
       "arxiv_id": null,
@@ -5966,7 +5970,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:844daa32956423ec",
       "summary": "We're excited to announce the launch of Amazon SageMaker JumpStart optimized deployments. SageMaker JumpStart improved deployments address the need for rich and straightforward deployment customization on SageMaker JumpStart by offering pre-defined deployment configurations, designed for specific use cases. Customers maintain the same level of visibility into the details of their proposed deployments, but now deployments are optimized for their specific use case and performance constraint.",
-      "title": "Use-case based deployments on SageMaker JumpStart"
+      "summary_zh": "本文宣布 Amazon SageMaker JumpStart 推出最佳化部署功能。過去在 JumpStart 上部署模型雖然方便，但客製選項有限，使用者難以針對特定情境調整實例類型與組態。新功能提供預先定義的部署配置，針對特定使用情境與效能限制進行最佳化，例如低延遲互動或高吞吐批次處理；同時客戶仍可檢視所提部署的細節，維持對底層資源的掌握。這降低了從範例模型走向正式服務之間的落差，對快速驗證想法或建立原型特別有幫助。不過目前僅有摘要，未說明支援的模型清單、可調整的參數範圍、價格差異或與自訂部署的效能比較，也未交代配置更新與版本遷移方式。導入前建議先確認情境配置是否符合實際流量特徵。",
+      "title": "Use-case based deployments on SageMaker JumpStart",
+      "title_zh": "SageMaker JumpStart 上以使用情境為基礎的部署方式"
     },
     {
       "arxiv_id": null,
@@ -6030,7 +6036,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:34c34f8d01315289",
       "summary": "In this post, we walk through how Guidesly built Jack AI on AWS using AWS Lambda, AWS Step Functions, Amazon Simple Storage Service (Amazon S3), Amazon Relational Database Service (Amazon RDS), Amazon SageMaker AI, and Amazon Bedrock to ingest trip media, enrich it with context, apply computer vision and generative AI, and publish marketing-ready content across multiple channels—securely, reliably, and at scale.",
-      "title": "How Guidesly built AI-generated trip reports for outdoor guides on AWS"
+      "summary_zh": "這是一篇 AWS 官方部落格文章，說明戶外嚮導服務平台 Guidesly 如何以「Jack AI」系統自動產出可作為行銷素材的旅遊報告。問題在於嚮導帶團後累積大量照片與影片，人工整理成行銷文案耗時且難以規模化。方法上，團隊以 AWS Lambda 與 AWS Step Functions 串接工作流程，將旅遊媒體存入 Amazon S3，並透過 Amazon RDS 保存結構化資料，再以 Amazon SageMaker AI 進行電腦視覺分析、以 Amazon Bedrock 的生成式 AI 模型產生文字內容，最後跨多個通路發布。文中強調整套流程兼顧安全性、可靠性與規模化。摘要僅涵蓋系統架構與服務清單，未提供準確率、處理量或成本等量化證據，也未說明失敗案例與限制，因此實際效益仍待驗證。此文值得關注之處，在於示範如何把生成式 AI 與既有雲端服務組合，落地為貼近垂直產業需求的自動化內容產線。",
+      "title": "How Guidesly built AI-generated trip reports for outdoor guides on AWS",
+      "title_zh": "Guidesly 如何在 AWS 上為戶外嚮導打造 AI 生成的旅遊報告"
     },
     {
       "arxiv_id": null,
@@ -6086,7 +6094,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:0590f1a2fcd584bc",
       "summary": "In this post, we introduce the Generative AI Path-to-Value (P2V) framework, a structured approach to help you move generative AI initiatives from concept to production and sustained value creation.",
-      "title": "Navigating the generative AI journey: The Path-to-Value framework from AWS"
+      "summary_zh": "本文由 AWS 提出「生成式 AI 價值路徑」（Generative AI Path-to-Value, P2V）框架，屬於方法論與顧問性質的指引，而非實證研究。其問題意識在於：許多企業雖已投入生成式 AI 的概念驗證，卻難以從展示階段推進到正式上線，更難持續創造可衡量的商業價值。P2V 主張以結構化步驟協助組織盤點使用情境、評估價值與可行性、規劃從概念到生產的落地路徑，並在部署後持續追蹤與擴展價值。摘要僅描述框架目的與定位，未揭露具體階段名稱、評估指標、導入案例或量化成效，因此無法判斷其相對於既有 AI 成熟度模型或產品化方法論的差異與優勢。對台灣企業而言，此類框架可作為內部討論的共同語言，用來對齊業務與技術團隊的期待，但在採用前仍應搭配自身資料治理、成本與風險評估，避免把方法論誤認為已驗證的成效保證。",
+      "title": "Navigating the generative AI journey: The Path-to-Value framework from AWS",
+      "title_zh": "導航生成式 AI 之旅：AWS 的 Path-to-Value 價值路徑框架"
     },
     {
       "arxiv_id": null,
@@ -6137,7 +6147,9 @@
       "source_name": "Google AI Blog",
       "story_id": "fallback:e702cfde740a92dc",
       "summary": "Video showing Skills in Chrome",
-      "title": "Turn your best AI prompts into one-click tools in Chrome"
+      "summary_zh": "這則內容的可用資訊極為有限，摘要顯示其主體是一段展示 Chrome 中「Skills」功能的影片，並未提供文字說明、技術細節或實測結果。從標題可推知，其訴求是讓使用者把自己反覆使用的 AI 提示（prompt）封裝成 Chrome 內的一鍵工具，藉此省去每次重新輸入或複製貼上的步驟，將提示工程成果轉化為日常瀏覽器工作流程的一部分。由於缺乏正式摘要，無法確認其實作方式、支援的模型與服務、是否需要開發者權限、資料是否上傳雲端，以及是否有隱私或權限控管的設計。就目前可見資訊而言，此類功能若能順利運作，對需要頻繁呼叫生成式 AI 的行銷、客服與研究人員確實可能提升效率；但在沒有規格與評測的情況下，讀者不宜據此推論其效能、安全性或相容性，建議直接查看原始影片與官方文件再行評估。",
+      "title": "Turn your best AI prompts into one-click tools in Chrome",
+      "title_zh": "把最常用的 AI 提示變成一鍵工具，直接放進 Chrome"
     },
     {
       "arxiv_id": null,
@@ -6189,7 +6201,9 @@
       "source_name": "Google AI Blog",
       "story_id": "fallback:e8e01813c4a87b52",
       "summary": "Woman working with a large tool. On the left are the Google and MIT FutureTech logos, \"AI for the Economy Forum\", and \"Innovation and Adaption in the New Era\"",
-      "title": "Bringing people together at AI for the Economy Forum"
+      "summary_zh": "此則內容屬於活動公告性質，可見資訊僅包含視覺素材描述：畫面中有一位操作大型工具的女士，左側並列 Google 與 MIT FutureTech 的標誌，以及「AI for the Economy Forum」與「Innovation and Adaption in the New Era」等字樣。由此可推斷，這是一場由 Google 與 MIT FutureTech 等機構共同參與、聚焦人工智慧與經濟發展的論壇，主軸圍繞新時代的創新與調適，可能涵蓋 AI 對生產力、勞動市場與產業結構的影響。由於沒有正式摘要，議程、講者名單、發表的研究成果或政策建議皆無從得知，也無任何量化證據可供引用。對關注 AI 經濟影響的讀者而言，這類論壇的價值通常在於促成學界、產業與政策制定者之間的對話，並形塑後續研究與監理方向；但若需引用具體結論，仍應取得會議記錄、簡報或後續報告，不宜僅憑活動宣傳素材推論立場或成效。",
+      "title": "Bringing people together at AI for the Economy Forum",
+      "title_zh": "齊聚「AI for the Economy Forum」：串連產官學的經濟對話"
     }
   ],
   "run_date": "2026-04-15",

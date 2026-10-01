@@ -215,7 +215,9 @@
         "source_name": null,
         "story_id": "hf:mistralai/mistral-medium-3.5-128b",
         "summary": "Mistral Medium 3.5 is our first flagship merged model. It is a dense 128B model with a 256k context window, handling instruction-following, reasoning, and coding in a single set of weights. Mistral Medium 3.5 replaces its predecessor Mistral Medium 3.1 and Magistral in Le Chat. It also replaces Devstral 2 in our coding agent Vibe. Concretely, expect better performance for instruct, reasoning and coding tasks in a new unified model in comparison with our previous released models. Reasoning effort is configurable per request, so the same model can answer a quick chat reply or work through a complex agentic run. We trained the vision encoder from scratch to handle variable image sizes and aspect ratios. Find more information on our blog. > To speed up local inference using vLLM or SGLang,...",
-        "title": "mistralai/Mistral-Medium-3.5-128B"
+        "summary_zh": "Mistral Medium 3.5 是 Mistral 首個旗艦級合併模型，採稠密架構、總參數量 128B，具備 256k 上下文視窗，將指令遵循、推理與程式碼能力整合在同一組權重中。問題在於過往通用對話、推理與寫程式往往需要不同模型分別處理，增加部署與切換成本。此模型以統一權重取代前代 Mistral Medium 3.1 與 Magistral 在 Le Chat 中的角色，並取代編碼代理 Vibe 中的 Devstral 2；推理強度可依每次請求調整，因此同一模型既能回應快速聊天，也能執行複雜的代理式長流程。視覺編碼器則從零訓練，以支援可變影像尺寸與長寬比。摘要指出在指令、推理與程式任務上相較先前發布模型有更好表現，並提及可透過 vLLM 或 SGLang 加速本地推論。限制在於目前僅有模型卡層級的敘述，缺乏公開基準分數、評測方法與安全評估細節，參數與效能宣稱難以獨立驗證。其意義在於朝向單一模型涵蓋多任務、可調推理預算的整合路線，對降低推論基礎設施複雜度具參考價值。",
+        "title": "mistralai/Mistral-Medium-3.5-128B",
+        "title_zh": "mistralai/Mistral-Medium-3.5-128B"
       }
     ],
     "other": [
@@ -4321,7 +4323,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:2afe12e533858cfe",
       "summary": "Generate recommendations from production traces, validate them with batch evaluation and A/B testing, and ship with confidence. AI agents that perform well at launch don’t stay that way. As models evolve, user behavior shifts, and prompts get reused in new contexts they were never designed for. Agent quality quietly degrades. In most teams, the improvement […]",
-      "title": "Introducing the agent quality loop: AgentCore Optimization now in preview"
+      "summary_zh": "本文介紹 AgentCore Optimization 的預覽版本，核心論點是 AI 代理上線後品質往往會悄悄劣化：模型持續演進、使用者行為改變、提示被挪用到原本未設計的情境，導致表現下滑。此工具的做法是從正式環境的執行軌跡產生改善建議，再以批次評估與 A/B 測試驗證，確認有效後才上線，形成所謂的代理品質迴圈。不過摘要未提供具體基準數據、支援的模型或框架範圍，也未說明成本與延遲影響，評估方法的嚴謹度仍待驗證。對台灣團隊而言，這類以生產軌跡驅動持續改善的工作流程，意味著代理維運將從一次性調校走向常態化監控與回饋，是評估代理平台時值得納入的關鍵能力。",
+      "title": "Introducing the agent quality loop: AgentCore Optimization now in preview",
+      "title_zh": "代理品質迴圈登場：AgentCore Optimization 進入預覽階段"
     },
     {
       "arxiv_id": null,
@@ -4378,7 +4382,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:dd5c100f9f0de3f8",
       "summary": "Amazon SageMaker AI now offers an agentic experience that changes this. Developers describe their use case using natural language, and the AI coding agent streamlines the entire journey, from use case definition and data preparation through technique selection, evaluation, and deployment. In this post, we walk you through the model customization lifecycle using SageMaker AI agent skills.",
-      "title": "Agent-guided workflows to accelerate model customization in Amazon SageMaker AI"
+      "summary_zh": "本文說明 Amazon SageMaker AI 新增的代理式體驗，試圖解決模型客製化流程冗長、需要跨多個步驟與工具切換的問題。開發者以自然語言描述使用情境後，AI 編碼代理會串接整段流程，涵蓋使用情境定義、資料準備、技術選擇、評估到部署，文中以 SageMaker AI 的代理技能示範模型客製化生命週期。不過摘要未提供量化基準，例如相較手動流程節省多少時間、產出模型的準確度差異，也未交代代理在技術選擇上的可靠度與錯誤處理機制，以及權限與資料治理細節。對台灣企業而言，此類代理導向工作流程可望降低機器學習專案的進入門檻，讓較小團隊也能完成客製化模型，但實際效益仍須以自身資料與合規需求驗證。",
+      "title": "Agent-guided workflows to accelerate model customization in Amazon SageMaker AI",
+      "title_zh": "以代理引導的工作流程加速 Amazon SageMaker AI 中的模型客製化"
     },
     {
       "arxiv_id": "2605.02771",
@@ -5510,7 +5516,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:9fbdad109ff132d3",
       "summary": "Building meaningful dashboards demands hours of manual setup, even for experienced BI professionals.&nbsp;Amazon Quick now generates complete multi-sheet dashboards from natural language prompts, taking you from one or more datasets to a production-ready analysis in minutes. Data analysts building recurring operations reports, program managers preparing a leadership review, or engineers exploring a new dataset can […]",
-      "title": "Generate dashboards from natural language prompts in Amazon Quick"
+      "summary_zh": "本文介紹 Amazon Quick 的新功能：使用者只要以自然語言下提示，系統便能從一或多個資料集生成完整的多工作表儀表板，把原本需要數小時手動設定的工作縮短到數分鐘，產出可直接用於正式環境的分析。文中鎖定的使用者包括製作例行營運報告的資料分析師、準備高階主管檢視資料的專案經理，以及探索新資料集的工程師。不過摘要未說明支援的資料來源種類、生成結果的正確性驗證方式、權限與資料治理機制，也未提供與人工建置流程的對照數據。對台灣的商業智慧實務而言，這類功能可望緩解分析人力瓶頸，讓例行報表自動化，但生成式儀表板能否通過稽核與口徑一致性要求，仍是導入時的關鍵考量。",
+      "title": "Generate dashboards from natural language prompts in Amazon Quick",
+      "title_zh": "在 Amazon Quick 中以自然語言提示生成儀表板"
     },
     {
       "arxiv_id": "2605.02825",
@@ -5618,7 +5626,9 @@
       "source_name": "Google AI Blog",
       "story_id": "fallback:4cf38a08d01402c2",
       "summary": "Gemini API",
-      "title": "Reduce friction and latency for long-running jobs with Webhooks in Gemini API"
+      "summary_zh": "本文主題為 Gemini API 新增的 Webhooks 機制，目的是改善長時間執行工作的體驗。既有做法通常需要用戶端不斷輪詢以確認任務是否完成，既增加延遲也造成不必要的請求負擔；改用 Webhook 後，伺服器可在工作完成時主動回呼通知，讓開發者減少輪詢邏輯與等待時間，並更容易把生成式 AI 任務整合進既有的非同步工作流程。不過目前可取得的內容僅有標題與極短的摘要，未交代支援的模型、回呼格式、重試與簽章驗證機制、失敗處理方式，也沒有延遲或成本改善的量化數據。對台灣開發團隊而言，若此機制正式可用，將有助於影片生成、批次推論等長時任務的系統設計，但實際導入前仍須確認可靠性與安全性細節。",
+      "title": "Reduce friction and latency for long-running jobs with Webhooks in Gemini API",
+      "title_zh": "以 Gemini API 的 Webhooks 降低長時間執行工作的摩擦與延遲"
     },
     {
       "arxiv_id": null,
@@ -5672,7 +5682,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:d9099f68ebb550cb",
       "summary": "Today, Amazon SageMaker AI introduces capacity aware instance pool for new and existing inference endpoints. You define a prioritized list of instance types, and SageMaker AI automatically works through your list whenever capacity is constrained at creation, during scale-out, and during scale-in. Your endpoint provisions on available AI Infrastructure without manual intervention. This capability is available for Single Model Endpoints, Inference Component-based endpoints, and Asynchronous Inference&nbsp;endpoints.",
-      "title": "Capacity-aware inference: Automatic instance fallback for SageMaker AI endpoints"
+      "summary_zh": "本文介紹 Amazon SageMaker AI 針對新舊推論端點推出的容量感知執行個體池。使用者只需定義一份依優先順序排列的執行個體類型清單，當建立端點、擴展或縮減時遇到容量受限，SageMaker AI 便會依序嘗試清單中的選項，自動在可取得的 AI 基礎設施上完成佈署，無須人工介入。此能力支援單一模型端點、以推論元件為基礎的端點，以及非同步推論端點。摘要未提供容量不足情境的實測成功率、切換延遲、成本差異，也未說明不同執行個體類型之間的效能落差如何處理。對台灣企業而言，這項功能有助於降低推論服務因區域容量波動而中斷的風險，但在效能一致性要求高的場景，仍需評估自動遞補帶來的表現變異。",
+      "title": "Capacity-aware inference: Automatic instance fallback for SageMaker AI endpoints",
+      "title_zh": "容量感知推論：SageMaker AI 端點的自動執行個體遞補"
     },
     {
       "arxiv_id": null,
@@ -5725,7 +5737,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:a251bc13a9f5c628",
       "summary": "In this post, you learn how to get started with Dataset Q&amp;A, explore real-world use cases with hands-on examples, and discover advanced capabilities like auto-discovery across all your data assets and multi-dataset querying in a single conversation.",
-      "title": "Introducing Dataset Q&A: Expanding natural language querying for structured datasets in Amazon Quick"
+      "summary_zh": "本文介紹 Amazon Quick 的 Dataset Q&A 功能，把自然語言查詢擴展到結構化資料集。文章說明如何開始使用，並以實作範例展示真實世界的應用情境，同時介紹進階能力，例如跨所有資料資產的自動探索，以及在單一對話中進行多資料集查詢。其問題意識在於：傳統商業智慧工具要求使用者先理解資料結構與查詢語法，形成分析門檻；自然語言介面則讓非技術使用者能直接提問。不過摘要未交代支援的資料來源與欄位型態限制、查詢轉譯的準確率、權限控管，以及錯誤查詢的處理方式，也缺乏與既有 BI 查詢流程的量化比較。對台灣組織而言，此功能有助於讓資料近用更普及，但查詢結果的可追溯性與治理機制仍是導入關鍵。",
+      "title": "Introducing Dataset Q&A: Expanding natural language querying for structured datasets in Amazon Quick",
+      "title_zh": "Dataset Q&A 登場：擴展 Amazon Quick 對結構化資料集的自然語言查詢"
     },
     {
       "arxiv_id": null,
@@ -5784,7 +5798,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:f79b8fef9db69745",
       "summary": "Business leaders across industries rely on operational dashboards as the shared source of truth that their teams execute against daily. But dashboards are built to answer known questions. When teams need to explore further, ad-hoc, multi-dimensional, or unforeseen questions, they hit a bottleneck. They wait hours or days for BI teams to build new views […]",
-      "title": "Beyond BI: How the Dataset Q&A feature of Amazon Quick powers the next generation of data decisions"
+      "summary_zh": "本文以商業領導者的實務處境為切入點，指出營運儀表板雖是團隊共同依循的真相來源，但儀表板只能回答已知問題；當團隊需要臨時、多維度或事前未預期的探索時，便會遇到瓶頸，往往得等待 BI 團隊花數小時甚至數天建置新檢視。Amazon Quick 的 Dataset Q&A 主打以自然語言直接查詢結構化資料，讓非技術使用者自行取得答案，藉此縮短決策週期。不過摘要未提供準確率、回應時間或使用者滿意度等量化證據，也未討論多資料集查詢時的語意一致性與權限治理問題。對台灣企業而言，這代表資料取用權從集中式 BI 團隊下放的可能方向，但如何確保查詢結果可信、口徑一致，仍是能否規模化落地的核心挑戰。",
+      "title": "Beyond BI: How the Dataset Q&A feature of Amazon Quick powers the next generation of data decisions",
+      "title_zh": "超越 BI：Amazon Quick 的 Dataset Q&A 如何驅動新一代資料決策"
     },
     {
       "arxiv_id": null,
@@ -5836,7 +5852,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:8e6d3755a1dee2e2",
       "summary": "Amazon Quick introduces Amazon S3 Tables (Apache Iceberg tables) as a new data source. With this feature, customers can directly query and visualize Apache Iceberg tables stored in an Amazon S3 table bucket without the need for intermediate data layers. In this post, we explored how Amazon Quick’s new Amazon S3 Tables data source enables near real-time analytics while streamlining modern data architectures.",
-      "title": "From data lake to AI-ready analytics: Introducing new data source with S3 Tables in Amazon Quick"
+      "summary_zh": "這篇 AWS 官方部落格文章介紹 Amazon Quick 新增 Amazon S3 Tables（Apache Iceberg 資料表）作為資料來源。問題在於，現代分析架構往往需要在資料湖與查詢引擎之間架設中介資料層，導致延遲增加、維運成本上升，也讓近即時分析難以落實。文中提出的做法是讓客戶直接查詢並視覺化存放在 Amazon S3 table bucket 中的 Apache Iceberg 資料表，不再需要中間資料層，藉此縮短從資料落地到洞察的時間。文章以架構說明與操作導向為主，屬於產品功能公告與入門導覽，並未提供量化基準測試、延遲數據或與其他方案的對照實驗，因此效益宣稱仍需依實際工作負載驗證。其意義在於把開放表格格式直接接上 BI 與分析體驗，簡化資料架構、降低重複搬移資料的需求，對已採用 Iceberg 與 S3 的團隊尤具參考價值。整體而言，這是實務導入指引，而非嚴謹的學術評估，讀者應留意其缺乏可重現的效能證據，並自行評估治理、權限與成本面向的影響。",
+      "title": "From data lake to AI-ready analytics: Introducing new data source with S3 Tables in Amazon Quick",
+      "title_zh": "從資料湖到 AI 就緒分析：Amazon Quick 以 S3 Tables 導入新資料來源"
     },
     {
       "arxiv_id": null,
@@ -5894,7 +5912,9 @@
       "source_name": "Google AI Blog",
       "story_id": "fallback:f1e2aa8601ac0603",
       "summary": "mp4 featuring an underwater video and a mobile AI video mockup.",
-      "title": "The latest AI news we announced in April 2026"
+      "summary_zh": "此條目為一則 AI 消息彙整的摘要，內容僅描述一段包含水下影片與行動裝置 AI 影片示意畫面的 mp4 素材，並未交代具體的研究問題、技術方法、模型架構或實驗結果，也未提供任何可驗證的量化指標。由於可見資訊極少，無法判斷其涉及的技術細節，例如是否為影片生成、視覺理解或多模態代理等方向，也無從得知評測基準、資料集與限制。就目前可取得的內容而言，該素材很可能只是產品或研究發布貼文中的多媒體展示，用來示意某項行動端 AI 影片功能。其重要性在於反映 AI 影片相關功能的發布節奏，但缺乏方法與證據支撐，讀者不宜據此推論效能或適用範圍。建議讀者回到原始發布頁面與完整部落格文章，確認模型名稱、評估方式與實際限制後再做判斷，避免僅憑展示素材形成結論。",
+      "title": "The latest AI news we announced in April 2026",
+      "title_zh": "2026 年 4 月我們發布的最新 AI 消息"
     }
   ],
   "run_date": "2026-05-05",

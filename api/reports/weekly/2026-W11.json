@@ -178,7 +178,9 @@
       "source_name": null,
       "story_id": "arxiv:2603.09877",
       "summary": "Unified multimodal models (UMMs) that integrate understanding, reasoning, generation, and editing face inherent trade-offs between maintaining strong semantic comprehension and acquiring powerful generation capabilities. In this report, we present InternVL-U, a lightweight 4B-parameter UMM that democratizes these capabilities within a unified framework. Guided by the principles of unified contextual modeling and modality-specific modular design with decoupled visual representations, InternVL-U integrates a state-of-the-art Multimodal Large Language Model (MLLM) with a specialized MMDiT-based visual generation head. To further bridge the gap between aesthetic generation and high-level intelligence, we construct a comprehensive data synthesis pipeline targeting high-semantic-density tasks, such as text rendering and scientific reasoning, under a reasoning-centric paradigm that leverages Chain-of-Thought (CoT) to better align abstract user intent with fine-grained visual generation details. Extensive experiments demonstrate that InternVL-U achieves a superior performance - efficiency balance. Despite using only 4B parameters, it consistently outperforms unified baseline models with over 3x larger scales such as BAGEL (14B) on various generation and editing tasks, while retaining strong multimodal understanding and reasoning capabilities.",
-      "title": "InternVL-U: Democratizing Unified Multimodal Models for Understanding, Reasoning, Generation and Editing"
+      "summary_zh": "整合理解、推理、生成與編輯的統一多模態模型（UMM）面臨內在取捨：維持強大語意理解能力的同時，又要取得強勁的生成能力，兩者往往互相牽制。本文提出 InternVL-U，一個僅 4B 參數的輕量級統一多模態模型，主張在單一框架內普及這些能力。設計上遵循統一脈絡建模與模組化設計原則，並採用解耦的視覺表徵，將最先進的多模態大型語言模型（MLLM）與專用的 MMDiT 視覺生成頭結合。為縮小美感生成與高階智慧之間的落差，作者建構一套完整的資料合成流程，針對文字渲染、科學推理等高語意密度任務，並以推理為中心的範式，運用思維鏈（CoT）讓抽象的使用者意圖更精準對應到細緻的視覺生成細節。實驗顯示，InternVL-U 在生成與編輯任務上取得更佳的性能與效率平衡，雖僅 4B 參數，仍穩定勝過規模大三倍以上的統一基線模型，例如 14B 的 BAGEL，同時保有強健的多模態理解與推理能力。摘要未提供完整基準清單、人類偏好評估細節與失敗案例分析，其通用性仍待檢驗。此工作的重要性在於證明小型統一模型亦具競爭力，可降低研究與部署門檻。",
+      "title": "InternVL-U: Democratizing Unified Multimodal Models for Understanding, Reasoning, Generation and Editing",
+      "title_zh": "InternVL-U：讓統一多模態模型在理解、推理、生成與編輯上更普及"
     },
     {
       "arxiv_id": "2603.10573",
@@ -423,7 +425,9 @@
       "source_name": null,
       "story_id": "arxiv:2603.09951",
       "summary": "Training large language models (LLMs) on Python execution traces grounds them in code execution and enables the line-by-line execution prediction of whole Python programs, effectively turning them into neural interpreters (FAIR CodeGen Team et al., 2025). However, developers rarely execute programs step by step; instead, they use debuggers to stop execution at certain breakpoints and step through relevant portions only while inspecting or modifying program variables. Existing neural interpreter approaches lack such interactive control. To address this limitation, we introduce neural debuggers: language models that emulate traditional debuggers, supporting operations such as stepping into, over, or out of functions, as well as setting breakpoints at specific source lines. We show that neural debuggers -- obtained via fine-tuning large LLMs or pre-training smaller models from scratch -- can reliably model both forward execution (predicting future states and outputs) and inverse execution (inferring prior states or inputs) conditioned on debugger actions. Evaluated on CruxEval, our models achieve strong performance on both output and input prediction tasks, demonstrating robust conditional execution modeling. Our work takes first steps towards future agentic coding systems in which neural debuggers serve as a world model for simulated debugging environments, providing execution feedback or enabling agents to interact with real debugging tools. This capability lays the foundation for more powerful code generation, program understanding, and automated debugging.",
-      "title": "Towards a Neural Debugger for Python"
+      "summary_zh": "大型語言模型在 Python 執行軌跡上訓練後，能逐行預測整個程式的執行結果，形同「類神經直譯器」，但真實開發者並非逐步執行程式，而是倚賴除錯器設定中斷點、只走訪關切片段並檢視或修改變數。既有類神經直譯器缺乏這種互動控制能力。本文因此提出「類神經除錯器」：讓語言模型模擬傳統除錯器，支援 step into、step over、step out 以及於特定原始碼行設定中斷點等操作。作者以微調大型模型或從頭預訓練較小模型兩種途徑取得此類模型，並證明其能在除錯動作條件下，可靠地模擬正向執行（預測未來狀態與輸出）與反向執行（推論先前狀態或輸入）。在 CruxEval 上的評估顯示，模型於輸出與輸入預測兩項任務皆有強勁表現，展現穩健的條件式執行建模能力。限制在於目前僅於摘要層級報告單一基準的結果，尚未說明跨語言、長程相依或真實除錯工具整合的泛化程度。此工作的意義在於為未來的代理式程式開發系統鋪路：類神經除錯器可充當模擬除錯環境的世界模型，提供執行回饋，或讓代理與真實除錯工具互動，進而強化程式生成、程式理解與自動化除錯。",
+      "title": "Towards a Neural Debugger for Python",
+      "title_zh": "邁向 Python 的類神經除錯器"
     },
     {
       "arxiv_id": "2603.09896",
@@ -476,7 +480,9 @@
       "source_name": null,
       "story_id": "arxiv:2603.09896",
       "summary": "Sports have long attracted broad attention as they push the limits of human physical and cognitive capabilities. Amid growing interest in spatial intelligence for vision-language models (VLMs), sports provide a natural testbed for understanding high-intensity human motion and dynamic object interactions. To this end, we present CourtSI, the first large-scale spatial intelligence dataset tailored to sports scenarios. CourtSI contains over 1M QA pairs, organized under a holistic taxonomy that systematically covers spatial counting, distance measurement, localization, and relational reasoning, across representative net sports including badminton, tennis, and table tennis. Leveraging well-defined court geometry as metric anchors, we develop a semi-automatic data engine to reconstruct sports scenes, enabling scalable curation of CourtSI. In addition, we introduce CourtSI-Bench, a high-quality evaluation benchmark comprising 3,686 QA pairs with rigorous human verification. We evaluate 25 proprietary and open-source VLMs on CourtSI-Bench, revealing a remaining human-AI performance gap and limited generalization from existing spatial intelligence benchmarks. These findings indicate that sports scenarios expose limitations in spatial intelligence capabilities captured by existing benchmarks. Further, fine-tuning Qwen3-VL-8B on CourtSI improves accuracy on CourtSI-Bench by 23.5 percentage points. The adapted model also generalizes effectively to CourtSI-Ext, an evaluation set built on a similar but unseen sport, and demonstrates enhanced spatial-aware commentary generation. Together, these findings demonstrate that CourtSI provides a scalable pathway toward advancing spatial intelligence of VLMs in sports.",
-      "title": "Stepping VLMs onto the Court: Benchmarking Spatial Intelligence in Sports"
+      "summary_zh": "運動長期以來是人類體能與認知極限的試煉場，也為視覺語言模型（VLM）的空間智慧提供高強度、高動態的天然測試環境。然而既有空間智慧基準多聚焦靜態或通用場景，難以反映高速運動中的物件互動。本文提出 CourtSI，首個針對運動情境的大規模空間智慧資料集，內含超過 100 萬組問答，涵蓋空間計數、距離量測、定位與關係推理等四類任務，橫跨羽球、網球與桌球等球網運動。方法上以明確的球場幾何作為度量錨點，設計半自動資料引擎重建運動場景，使資料蒐集具可擴充性；並另外建構 CourtSI-Bench，含 3,686 組經嚴謹人工驗證的問答，作為高品質評測集。作者評測 25 個商用與開源 VLM，結果顯示人機之間仍有明顯效能落差，且既有空間智慧基準的泛化能力有限，說明運動情境能凸顯現有評測未捕捉的能力缺口。在 CourtSI 上微調 Qwen3-VL-8B 後，CourtSI-Bench 準確率提升 23.5 個百分點，且能有效泛化至相似但未見運動的 CourtSI-Ext，並展現更強的空间感知賽評生成能力。限制是幾何錨點依賴場地假設，跨運動推廣仍待驗證；整體而言，CourtSI 為推進 VLM 運動空間智慧提供了可擴充的路徑。",
+      "title": "Stepping VLMs onto the Court: Benchmarking Spatial Intelligence in Sports",
+      "title_zh": "讓視覺語言模型走上球場：運動場景中的空間智慧評測"
     },
     {
       "arxiv_id": "2603.10848",
@@ -656,7 +662,9 @@
       "source_name": null,
       "story_id": "arxiv:2603.09542",
       "summary": "Vision-Language-Action (VLA) models are formulated to ground instructions in visual context and generate action sequences for robotic manipulation. Despite recent progress, VLA models still face challenges in learning related and reusable primitives, reducing reliance on large-scale data and complex architectures, and enabling exploration beyond demonstrations. To address these challenges, we propose a novel Neuro-Symbolic Vision-Language-Action (NS-VLA) framework via online reinforcement learni",
-      "title": "NS-VLA: Towards Neuro-Symbolic Vision-Language-Action Models"
+      "summary_zh": "視覺—語言—動作（VLA）模型旨在將指令落地於視覺情境，並產生可供機器人操作的動作序列。儘管近期進展顯著，VLA 模型仍面臨多項挑戰：難以學得彼此相關且可重複使用的基礎動作單元（primitive）、難以降低對大規模資料與複雜架構的依賴，以及難以在示範資料之外進行探索。為此，作者提出嶄新的神經符號視覺—語言—動作框架（NS-VLA），以線上強化學習為核心途徑。受限於本文僅提供摘要，且摘要於「透過線上強化學習」處截斷，故無法得知完整的符號模組設計、與神經網路的耦合方式、獎勵設計細節，以及實驗環境與量化結果。可確認的是其問題意識集中於樣本效率、可重用性與探索能力三者的平衡，並試圖結合符號推理的可解釋與結構化優勢，補足純神經 VLA 在長程組合與泛化上的不足。此研究方向若成立，將有助於降低機器人操作對大量示範資料的依賴，並提升模型面對未見任務時的自主探索與組合能力，對通用機器人代理的發展具潛在意義。建議讀者參閱全文以確認方法細節與實證強度。",
+      "title": "NS-VLA: Towards Neuro-Symbolic Vision-Language-Action Models",
+      "title_zh": "NS-VLA：邁向神經符號視覺—語言—動作模型"
     },
     {
       "arxiv_id": "2603.08127",
@@ -1074,7 +1082,9 @@
       "source_name": null,
       "story_id": "arxiv:2603.09740",
       "summary": "Vision-Language Navigation in Continuous Environments (VLN-CE) requires agents to learn complex reasoning from long-horizon human interactions. While Multi-modal Large Language Models (MLLMs) have driven recent progress, current training paradigms struggle to balance generalization capability, error recovery and training stability. Specifically, (i) policies derived from SFT suffer from compounding errors, struggling to recover from out-of-distribution states, and (ii) Reinforcement Fine-Tuning ",
-      "title": "Let's Reward Step-by-Step: Step-Aware Contrastive Alignment for Vision-Language Navigation in Continuous Environments"
+      "summary_zh": "連續環境中的視覺語言導航（VLN-CE）要求代理從長程人類互動中學習複雜推理。多模態大型語言模型（MLLM）雖推動近期進展，現行訓練範式卻難以在泛化能力、錯誤恢復與訓練穩定性之間取得平衡。具體而言，以監督式微調（SFT）衍生的策略容易累積誤差，遇到分布外狀態時難以回復；而強化微調雖有助於探索，卻常面臨獎勵稀疏與訓練不穩的問題。本文提出「逐步獎勵」的步驟感知對比對齊方法，訴求在長程導航軌跡中對每個步驟給出更細緻的訊號，使模型不僅學到最終是否成功，也能區辨中途決策的優劣，進而改善錯誤回復與訓練穩定性。受限於僅有摘要，且摘要於「Reinforcement Fine-Tuning」處截斷，故無法得知對比對齊的具體損失設計、步驟獎勵的來源（如進度估計或子目標完成度）、實驗基準與量化增益。可確認的是其問題意識鎖定 SFT 的複合誤差與 RL 微調的穩定性落差，並試圖以步驟層級訊號橋接兩者。若此方法有效，將提升代理在真實連續空間中的穩健性與可恢復性，對 embodied AI 與互動式導航具實務意義。建議讀者查閱全文以確認方法與實證細節。",
+      "title": "Let's Reward Step-by-Step: Step-Aware Contrastive Alignment for Vision-Language Navigation in Continuous Environments",
+      "title_zh": "逐步給獎勵：連續環境視覺語言導航的步驟感知對比對齊"
     },
     {
       "arxiv_id": "2603.08391",
@@ -1197,7 +1207,9 @@
       "source_name": null,
       "story_id": "arxiv:2603.09453",
       "summary": "Foundation models are increasingly being deployed in contexts where understanding the uncertainty of their outputs is critical to ensuring responsible deployment. While Bayesian methods offer a principled approach to uncertainty quantification, their computational overhead renders their use impractical for training or inference at foundation model scale. State-of-the-art models achieve parameter counts in the trillions through carefully engineered sparsity including Mixture-of-Experts (MoE) laye",
-      "title": "Variational Routing: A Scalable Bayesian Framework for Calibrated Mixture-of-Experts Transformers"
+      "summary_zh": "基礎模型日益部署於必須理解輸出不确定性的情境，以確保負責任的使用。貝氏方法雖提供原則化的不確定性量化途徑，其計算開銷卻使在基礎模型規模下進行訓練或推論變得不可行。當前頂尖模型透過精心設計的稀疏化（包括混合專家 MoE 層）將參數量推升至兆級，但路由機制的確定性本質使其難以表達不確定性，且校準（calibration）問題在長尾或分布外輸入上尤其明顯。本文提出「變分路由」（Variational Routing），一個可擴充的貝氏框架，將 MoE 的路由決策改以變分分布建模，從而在不大幅增加計算成本的前提下，為專家選擇賦予不確定性估計，並改善模型輸出的校準。受限於僅有摘要，且摘要於「Mixture-of-Experts (MoE) laye」處截斷，無法得知變分後驗的參數化方式、推論時的近似策略（如蒙地卡羅取樣或變分下界最佳化）、與既有稀疏路由的計算量對比，以及語言建模或下游任務的量化結果。可確認的是其問題意識在於貝氏不確定性與兆級稀疏模型的相容性。若該框架可行，將為大規模基礎模型提供可負擔的校準與不確定性訊號，對高風險領域的部署安全與棄權機制具關鍵意義。建議讀者參閱全文確認理論與實證。",
+      "title": "Variational Routing: A Scalable Bayesian Framework for Calibrated Mixture-of-Experts Transformers",
+      "title_zh": "變分路由：可擴充的貝氏框架實現校正良好的混合專家 Transformer"
     },
     {
       "arxiv_id": "2603.08706",
@@ -1412,7 +1424,9 @@
       "source_name": null,
       "story_id": "arxiv:2603.09652",
       "summary": "With the rapid advancement of Large Language Models (LLMs) in code generation, human-AI interaction is evolving from static text responses to dynamic, interactive HTML-based applications, which we term MiniApps. These applications require models to not only render visual interfaces but also construct customized interaction logic that adheres to real-world principles. However, existing benchmarks primarily focus on algorithmic correctness or static layout reconstruction, failing to capture the capabilities required for this new paradigm. To address this gap, we introduce MiniAppBench, the first comprehensive benchmark designed to evaluate principle-driven, interactive application generation. Sourced from a real-world application with 10M+ generations, MiniAppBench distills 500 tasks across six domains (e.g., Games, Science, and Tools). Furthermore, to tackle the challenge of evaluating open-ended interactions where no single ground truth exists, we propose MiniAppEval, an agentic evaluation framework. Leveraging browser automation, it performs human-like exploratory testing to systematically assess applications across three dimensions: Intention, Static, and Dynamic. Our experiments reveal that current LLMs still face significant challenges in generating high-quality MiniApps, while MiniAppEval demonstrates high alignment with human judgment, establishing a reliable standard for future research. Our code is available in github.com/MiniAppBench.",
-      "title": "MiniAppBench: Evaluating the Shift from Text to Interactive HTML Responses in LLM-Powered Assistants"
+      "summary_zh": "隨著大型語言模型在程式生成上的快速進展，人機互動正從靜態文字回應演變為動態、互動式的 HTML 應用，作者稱之為 MiniApp。此類應用不僅要求模型渲染視覺介面，還須建構符合真實世界原則的客製化互動邏輯，例如狀態管理、輸入驗證與即時回饋。然而既有基準多聚焦演算法正確性或靜態版面重建，未能捕捉此新範式所需的能力。為填補此缺口，本文提出 MiniAppBench，首個以原則驅動、評測互動式應用生成的綜合基準，資料源自一個累積超過一千萬次生成的真實應用，蒸餾出橫跨遊戲、科學、工具等六個領域的 500 項任務。針對開放式互動難以定義單一標準答案的評測挑戰，作者另提出 MiniAppEval，一個代理式評測框架，運用瀏覽器自動化進行類人探索性測試，從意圖、靜態與動態三個維度系統性評估應用。實驗顯示當前 LLM 在生成高品質 MiniApp 上仍面臨顯著挑戰，而 MiniAppEval 與人類判斷具高度一致性，可作為未來研究的可靠標準。限制在於任務數僅 500 項、領域覆蓋有限，且代理評測仍可能受瀏覽器環境差異影響；儘管如此，此基準為互動式程式生成建立了可量測的方向。",
+      "title": "MiniAppBench: Evaluating the Shift from Text to Interactive HTML Responses in LLM-Powered Assistants",
+      "title_zh": "MiniAppBench：評測 LLM 助理從文字轉向互動式 HTML 回應的轉變"
     },
     {
       "arxiv_id": "2603.08013",
@@ -2333,7 +2347,9 @@
       "source_name": null,
       "story_id": "arxiv:2603.09250",
       "summary": "Personalized large language models (LLMs) rely on memory retrieval to incorporate user-specific histories, preferences, and contexts. Existing approaches either overload the LLM by feeding all the user's past memory into the prompt, which is costly and unscalable, or simplify retrieval into a one-shot similarity search, which captures only surface matches. Cognitive science, however, shows that human memory operates through a dual process: Familiarity, offering fast but coarse recognition, and R",
-      "title": "Evoking User Memory: Personalizing LLM via Recollection-Familiarity Adaptive Retrieval"
+      "summary_zh": "個人化大型語言模型依賴記憶檢索來納入使用者專屬的歷史、偏好與情境。既有做法有兩類缺陷：一是把使用者所有過往記憶塞入提示，造成模型負擔沉重、成本高昂且難以擴充；二是將檢索簡化為一次性相似度搜尋，只能捕捉表層匹配，難以因應間接或需要聯想的查詢。認知科學指出，人類記憶運作於雙歷程架構：熟悉度（familiarity）提供快速但粗略的辨識，而回憶（recollection）則負責逐步且具情境細節的重建。本文據此提出「回憶—熟悉度自適應檢索」，讓個人化 LLM 能依查詢需求動態調配兩種歷程：對簡單、表層匹配即可解答的查詢採用低成本的熟悉度路徑，對需要情境重建或跨事件連結的查詢則啟動較深層的回憶路徑，從而在效果與成本之間取得平衡。受限於僅有摘要，且摘要於「Familiarity, offering fast but coarse recognition, and R」處截斷，無法得知雙歷程的具體實作、路由判準、記憶表徵方式、基準資料集與量化增益。可確認的是其問題意識在於檢索的規模可擴充性與深度取捨。若此架構成立，將為長期個人化助理提供更贴近人類記憶的檢索機制，對成本敏感且要求高準確度的部署場景具實務價值。",
+      "title": "Evoking User Memory: Personalizing LLM via Recollection-Familiarity Adaptive Retrieval",
+      "title_zh": "喚起使用者記憶：透過回憶—熟悉度自適應檢索實現 LLM 個人化"
     },
     {
       "arxiv_id": "2603.11677",
@@ -2665,7 +2681,9 @@
       "source_name": null,
       "story_id": "arxiv:2603.09906",
       "summary": "While reasoning in LLMs plays a natural role in math, code generation, and multi-hop factual questions, its effect on simple, single-hop factual questions remains unclear. Such questions do not require step-by-step logical decomposition, making the utility of reasoning highly counterintuitive. Nevertheless, we find that enabling reasoning substantially expands the capability boundary of the model's parametric knowledge recall, unlocking correct answers that are otherwise effectively unreachable.",
-      "title": "Thinking to Recall: How Reasoning Unlocks Parametric Knowledge in LLMs"
+      "summary_zh": "推理在大型語言模型中的角色，於數學、程式生成與多跳事實問答等任務上相當自然；然而對簡單的單跳事實問題，其效果卻長期不明。這類問題不需逐步邏輯分解，理論上模型應能直接由參數知識回答，因此推理是否有助益顯得反直覺。本文發現，當模型被允許進行推理時，其參數知識回憶的能力邊界會顯著擴張，能解鎖原本實際上無法觸及的正確答案——亦即部分事實並非不存在於權重中，而是難以在直接解碼路徑上被提取。此現象意味推理可作為一種「檢索式」的內部計算，協助模型繞過單次前饋解碼的瓶頸，重新組合並定位儲存於參數中的知識。受限於僅有摘要，無法得知所用模型家族與規模、推理長度與格式的控制方式、提示設計、評測的事實問答資料集，以及效益在不同模型與知識稀有度上的分布；亦不清楚推理是否僅提升提取率，或伴隨幻覺風險上升。可確認的是其對「推理只對複雜任務有用」的直覺提出挑戰。此發現對理解 LLM 知識儲存與提取機制、以及如何在延遲成本與事實召回率之間取捨，具重要意涵。",
+      "title": "Thinking to Recall: How Reasoning Unlocks Parametric Knowledge in LLMs",
+      "title_zh": "思考以喚回：推理如何解鎖 LLM 中的參數知識"
     },
     {
       "arxiv_id": "2603.08561",
@@ -2854,7 +2872,9 @@
       "source_name": null,
       "story_id": "arxiv:2603.09835",
       "summary": "Sequential multi-agent reasoning frameworks such as Chain-of-Agents (CoA) handle long-context queries by decomposing inputs into chunks and processing them sequentially using LLM-based worker agents that read from and update a bounded shared memory. From a probabilistic perspective, CoA aims to approximate the conditional distribution corresponding to a model capable of jointly reasoning over the entire long context. CoA achieves this through a latent-state factorization in which only bounded su",
-      "title": "Chow-Liu Ordering for Long-Context Reasoning in Chain-of-Agents"
+      "summary_zh": "Chain-of-Agents（CoA）這類序列式多智慧體推理框架，會把長脈絡查詢切成多個區塊，交由以 LLM 為基礎的工作者智慧體依序處理，並透過一個有界共享記憶體讀寫與更新。從機率觀點來看，CoA 的目標是逼近一個能在整體長脈絡上聯合推理的模型所對應的條件分布，其做法是採用潛在狀態分解，使每個智慧體只需存取有界的資訊。本文指出，這種序列處理的成效高度取決於區塊的排序方式，因此借鏡 Chow-Liu 樹的結構學習概念來決定排序，讓相依性較強的區塊在序列中更靠近，以降低共享記憶體在傳遞過程中的資訊遺失。摘要僅止於問題設定與方法動機的陳述，未提供具體實驗數據、基準比較或消融結果，因此其實際增益仍待完整論文驗證；此外，Chow-Liu 排序所依賴的相依性估計是否在真實長文本上穩定，也是需要檢驗的限制。此工作的意義在於把長脈絡多智慧體推理的瓶頸，從單純的記憶體容量問題重新定位為排序與資訊結構問題，為後續的長文本推理系統設計提供新的切入點。",
+      "title": "Chow-Liu Ordering for Long-Context Reasoning in Chain-of-Agents",
+      "title_zh": "以 Chow-Liu 排序實現 Chain-of-Agents 的長脈絡推理"
     },
     {
       "arxiv_id": "2603.10863",

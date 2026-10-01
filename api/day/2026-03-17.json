@@ -4421,7 +4421,8 @@
       "source_name": null,
       "story_id": "arxiv:2603.15599",
       "summary": "Recent conversational memory systems invest heavily in LLM-based structuring at ingestion time and learned retrieval policies at query time. We show that neither is necessary. SmartSearch retrieves from raw, unstructured conversation history using a fully deterministic pipeline: NER-weighted substring matching for recall, rule-based entity discovery for multi-hop expansion, and a CrossEncoder+ColBERT rank fusion stage -- the only learned component -- running on CPU in ~650ms. Oracle analysis on ",
-      "title": "SmartSearch: How Ranking Beats Structure for Conversational Memory Retrieval"
+      "title": "SmartSearch: How Ranking Beats Structure for Conversational Memory Retrieval",
+      "title_zh": "SmartSearch：在對話記憶檢索中，排序為何勝過結構化處理"
     },
     {
       "arxiv_id": "2603.15590",
@@ -4480,7 +4481,9 @@
       "source_name": null,
       "story_id": "arxiv:2603.15590",
       "summary": "There have been numerous attempts to distill quadratic attention-based large language models (LLMs) into sub-quadratic linearized architectures. However, despite extensive research, such distilled models often fail to match the performance of their teacher LLMs on various downstream tasks. We set out the goal of lossless distillation, which we define in terms of tolerance-corrected Win-and-Tie rates between student and teacher on sets of tasks. To this end, we introduce an effective distillation",
-      "title": "Effective Distillation to Hybrid xLSTM Architectures"
+      "summary_zh": "將二次注意力的大型語言模型（LLM）蒸餾為次二次的線性化架構，過去已有許多嘗試，但蒸餾後的模型在諸多下游任務上往往仍無法追上教師模型，效能落差始終存在。本文作者因此提出「無損蒸餾」的目標，並以學生與教師在多組任務上的「容差修正勝負與平手率」（tolerance-corrected Win-and-Tie rates）來定義何謂無損，讓評估不再只看單一平均分數，而能反映逐題對比的分布情形。方法上，作者提出一套有效的蒸餾流程，將教師模型的知識遷移至混合式 xLSTM 架構，結合遞迴式長短期記憶的序列建模能力與注意力式架構的優勢。摘要僅止於此，尚未揭露具體的蒸餾損失設計、資料規模與實驗結果，因此無法確認是否真能達成所宣稱的無損水準，也無法判斷其增益在多大程度上來自架構選擇或訓練技巧。此工作的意義在於替線性化與次二次架構的蒸餾設立了較嚴格的評估標準；若能成立，將有助於在推論成本與模型品質之間取得更好的折衷，對需要長序列、低延遲部署的實務情境尤其關鍵。",
+      "title": "Effective Distillation to Hybrid xLSTM Architectures",
+      "title_zh": "有效蒸餾至混合式 xLSTM 架構"
     },
     {
       "arxiv_id": "2603.15566",
@@ -4532,7 +4535,9 @@
       "source_name": null,
       "story_id": "arxiv:2603.15566",
       "summary": "As AI coding agents become both primary producers and consumers of source code, the software industry faces an accelerating loss of institutional knowledge. Each commit captures a code diff but discards the reasoning behind it - the constraints, rejected alternatives, and forward-looking context that shaped the decision. I term this discarded reasoning the Decision Shadow. This paper proposes Lore, a lightweight protocol that restructures commit messages - using native git trailers - into self-c",
-      "title": "Lore: Repurposing Git Commit Messages as a Structured Knowledge Protocol for AI Coding Agents"
+      "summary_zh": "當 AI 編碼代理同時成為原始碼的主要生產者與消費者，軟體產業正面臨機構知識加速流失的問題。每一次提交只保留程式碼差異，卻丟棄了背後的理由：當時的约束條件、被否決的替代方案，以及塑造該決策的前瞻性脈絡。作者將這種被丟棄的推理稱為「決策陰影」（Decision Shadow），並指出若不正視，代理產出的程式碼將愈來愈難以維護與審計。為此，本文提出 Lore，一套輕量協定，利用 Git 原生的 trailer 機制重新結構化提交訊息，使其成為具自我描述性的知識載體，讓後續的 AI 代理能直接讀取決策脈絡，而非仅看到差異內容。摘要在此中斷，尚未說明協定的欄位設計、解析與檢索方式，也未提供任何代理在採用 Lore 前後的效能或正確率對照，因而無法評估其實際效益與相容性成本。此倡議的價值在於把版本控制從程式碼儲存庫提升為決策知識庫，替 AI 輔助軟體工程的脈絡保存與可追溯性提供了一個低摩擦的切入點。",
+      "title": "Lore: Repurposing Git Commit Messages as a Structured Knowledge Protocol for AI Coding Agents",
+      "title_zh": "Lore：將 Git 提交訊息再利用為 AI 編碼代理的結構化知識協定"
     },
     {
       "arxiv_id": "2603.15547",
@@ -4589,7 +4594,9 @@
       "source_name": null,
       "story_id": "arxiv:2603.15547",
       "summary": "Modeling plausible student misconceptions is critical for AI in education. In this work, we examine how large language models (LLMs) reason about misconceptions when generating multiple-choice distractors, a task that requires modeling incorrect yet plausible answers by coordinating solution knowledge, simulating student misconceptions, and evaluating plausibility. We introduce a taxonomy for analyzing the strategies used by state-of-the-art LLMs, examining their reasoning procedures and compari",
-      "title": "Can LLMs Model Incorrect Student Reasoning? A Case Study on Distractor Generation"
+      "summary_zh": "在 AI 教育應用中，模擬學生合理的迷思概念至關重要，因為教學系統必須能預測學習者可能犯的錯，才能給予適性回饋。本文以選擇題的誘答選項生成為案例，探討大型語言模型如何推理迷思概念。此任務要求模型同時協調三件事：掌握正確解法知識、模擬學生的錯誤思路，並判斷該錯誤是否足夠合理而具吸引力，因此是檢驗模型是否真正理解學習者心智模型的良好試金石。作者提出一套分類架構，用以分析當前最先進 LLM 所採用的策略，檢視其推理程序並比較不同模型之間的差異。摘要僅止於此，未揭露受測模型清單、題目領域、評估指標與人類專家的一致性，也沒有說明生成誘答選項的品質是否優於既有方法，因此無法判斷其結論的普遍性。此研究的意義在於把「模型能否模擬錯誤」從直覺宣稱轉為可分析的行為分類，對教育科技、評量設計與模型評測方法都有參考價值，也提醒我們正確率之外的認知建模能力同樣值得衡量。",
+      "title": "Can LLMs Model Incorrect Student Reasoning? A Case Study on Distractor Generation",
+      "title_zh": "大型語言模型能模擬錯誤的學生推理嗎？以誘答選項生成為例"
     },
     {
       "arxiv_id": "2603.15510",
@@ -4643,7 +4650,9 @@
       "source_name": null,
       "story_id": "arxiv:2603.15510",
       "summary": "The synthesis of inductive loop invariants is a critical bottleneck in automated program verification. While Large Language Models (LLMs) show promise in mitigating this issue, they often fail on hard instances, generating invariants that are invalid or computationally ineffective. While fine-tuning is a natural route to mitigate this limitation, obtaining high-quality training data for invariant generation remains an open challenge. We present a rigorous data curation pipeline designed to extra",
-      "title": "Not All Invariants Are Equal: Curating Training Data to Accelerate Program Verification with SLMs"
+      "summary_zh": "歸納式迴圈不變式（inductive loop invariants）的合成是自動化程式驗證的關鍵瓶頸。大型語言模型雖展現緩解此問題的潛力，但在困難實例上仍經常失敗，生成的不變式不是無效，就是雖然正確卻在計算上無助於驗證，導致驗證器無法收斂。微調是自然的改善途徑，然而要取得高品質的不變式生成訓練資料仍是未解問題：公開資料中的不變式品質參差不齊，且難以判斷哪些樣本真正能提升驗證效率。作者因此提出一套嚴謹的資料策劃流程，用以萃取、篩選並排序訓練樣本，並主張不同不變式對驗證的貢獻並不相等，必須加以區辨。摘要止於此，未交代策劃準則的具體判準、資料規模、所用的小型語言模型（SLM）尺寸，也未提供與未策劃基線或大型模型的對照數據，因此無法確認加速幅度與泛化能力。此工作的意義在於把焦點從模型規模轉向資料品質，若能成立，將使程式驗證在有限算力下更具可行性，對形式化方法與軟體安全實務皆具影響。",
+      "title": "Not All Invariants Are Equal: Curating Training Data to Accelerate Program Verification with SLMs",
+      "title_zh": "並非所有不變式都一樣：以小型語言模型策劃訓練資料以加速程式驗證"
     },
     {
       "arxiv_id": "2603.15459",
@@ -6202,7 +6211,9 @@
       "source_name": null,
       "story_id": "arxiv:2603.15611",
       "summary": "Reinforcement learning for code generation relies on verifiable rewards from unit test pass rates. Yet high-quality test suites are scarce, existing datasets offer limited coverage, and static rewards fail to adapt as models improve. Recent self-play methods unify code and test generation in a single model, but face a inherent dilemma: white-box access leads to self-collusion where the model produces trivial tests for easy rewards, yet black-box restriction yields generic tests that miss implementation-specific bugs. We introduce Code-A1, an adversarial co-evolution framework that jointly optimizes a Code LLM and a Test LLM with opposing objectives. The Code LLM is rewarded for passing more tests, while the Test LLM is rewarded for exposing more defects. This architectural separation eliminates self-collusion risks and safely enables white-box test generation, where the Test LLM can inspect candidate code to craft targeted adversarial tests. We further introduce a Mistake Book mechanism for experience replay and a composite reward balancing test validity with adversarial difficulty. Experiments on Qwen2.5-Coder models demonstrate that Code-A1 achieves code generation performance matching or exceeding models trained on human-annotated tests, while significantly improving test generation capability.",
-      "title": "Code-A1: Adversarial Evolving of Code LLM and Test LLM via Reinforcement Learning"
+      "summary_zh": "以強化學習訓練程式碼生成時，獎勵多半來自單元測試通過率，但高品質測試套件稀少、既有資料集覆蓋不足，且靜態獎勵無法隨模型進步而調整。近期自我對弈方法雖把程式碼與測試生成統一於同一模型，卻陷入兩難：白箱存取會導致模型互相勾結、產出僅能輕易通過的測試以換取獎勵，而黑箱限制則只能產生通用測試，難以捕捉實作層級的錯誤。本文提出 Code-A1，將 Code LLM 與 Test LLM 拆分為兩個對立目標的模型共同最佳化：程式碼模型因通過更多測試而受獎勵，測試模型則因揭露更多缺陷而受獎勵。此架構分離消除了自我勾結風險，並讓測試模型得以檢視候選程式碼，安全地進行白箱式的針對性對抗測試。作者另設計 Mistake Book 機制進行經驗回放，以及兼顧測試有效性與對抗難度的複合獎勵。在 Qwen2.5-Coder 系列上的實驗顯示，其程式碼生成表現可匹敵甚至超越以人工標註測試訓練的模型，同時顯著提升測試生成能力。摘要未提供資料集規模、對抗訓練穩定性分析與計算成本細節，但其以架構分離解決自我勾結的思路，對可驗證獎勵的程式碼強化學習具啟發性。",
+      "title": "Code-A1: Adversarial Evolving of Code LLM and Test LLM via Reinforcement Learning",
+      "title_zh": "Code-A1：透過強化學習讓程式碼模型與測試模型對抗共演化"
     },
     {
       "arxiv_id": "2603.15031",
@@ -6248,7 +6259,8 @@
       "source_name": null,
       "story_id": "arxiv:2603.15031",
       "summary": "Residual connections with PreNorm are standard in modern LLMs, yet they accumulate all layer outputs with fixed unit weights. This uniform aggregation causes uncontrolled hidden-state growth with depth, progressively diluting each layer's contribution. We propose Attention Residuals (AttnRes), which replaces this fixed accumulation with softmax attention over preceding layer outputs, allowing each layer to selectively aggregate earlier representations with learned, input-dependent weights. To address the memory and communication overhead of attending over all preceding layer outputs for large-scale model training, we introduce Block AttnRes, which partitions layers into blocks and attends over block-level representations, reducing the memory footprint while preserving most of the gains of full AttnRes. Combined with cache-based pipeline communication and a two-phase computation strategy, Block AttnRes becomes a practical drop-in replacement for standard residual connections with minimal overhead.\n  Scaling law experiments confirm that the improvement is consistent across model sizes, and ablations validate the benefit of content-dependent depth-wise selection. We further integrate AttnRes into the Kimi Linear architecture (48B total / 3B activated parameters) and pre-train on 1.4T tokens, where AttnRes mitigates PreNorm dilution, yielding more uniform output magnitudes and gradient distribution across depth, and improves downstream performance across all evaluated tasks.",
-      "title": "Attention Residuals"
+      "title": "Attention Residuals",
+      "title_zh": "注意力殘差連接（AttnRes）"
     },
     {
       "arxiv_id": "2603.15401",
@@ -6307,7 +6319,9 @@
       "source_name": null,
       "story_id": "arxiv:2603.15401",
       "summary": "Agent skills, structured procedural knowledge packages injected at inference time, are increasingly used to augment LLM agents on software engineering tasks. However, their real utility in end-to-end development settings remains unclear. We present SWE-Skills-Bench, the first requirement-driven benchmark that isolates the marginal utility of agent skills in real-world software engineering (SWE). It pairs 49 public SWE skills with authentic GitHub repositories pinned at fixed commits and requirem",
-      "title": "SWE-Skills-Bench: Do Agent Skills Actually Help in Real-World Software Engineering?"
+      "summary_zh": "代理技能是指在推論階段注入的結構化程序性知識套件，近來被大量用來強化大型語言模型代理在軟體工程任務上的表現，但其在端到端開發情境中的實際效益仍不清楚。本文提出 SWE-Skills-Bench，號稱首個以需求驅動、專門隔離代理技能邊際效用的基準。此基準將 49 個公開的 SWE 技能，與釘選在固定 commit 的真實 GitHub 儲存庫及需求配對，形成可控且可重現的測試環境，以便觀察在相同任務與程式碼基礎下，加入技能前後的差異。由於摘要於此處截斷，實際的評估指標、任務數量、對照組設計、以及技能帶來的增益或反效果皆未揭露，讀者無法據此判斷技能是否真能提升解決率或反而造成干擾。此工作的價值在於把「技能是否有用」從經驗傳聞轉為可量測的問題，並強調需以真實儲存庫與需求層級任務來檢驗，對代理工具鏈的設計與資源配置具有實務意義。",
+      "title": "SWE-Skills-Bench: Do Agent Skills Actually Help in Real-World Software Engineering?",
+      "title_zh": "SWE-Skills-Bench：代理技能在真實軟體工程中真的有用嗎？"
     },
     {
       "arxiv_id": "2603.15619",
@@ -6372,7 +6386,8 @@
       "source_name": null,
       "story_id": "arxiv:2603.15619",
       "summary": "Scaling depth is a key driver for large language models (LLMs). Yet, as LLMs become deeper, they often suffer from signal degradation: informative features formed in shallow layers are gradually diluted by repeated residual updates, making them harder to recover in deeper layers. We introduce mixture-of-depths attention (MoDA), a mechanism that allows each attention head to attend to sequence KV pairs at the current layer and depth KV pairs from preceding layers. We further describe a hardware-e",
-      "title": "Mixture-of-Depths Attention"
+      "title": "Mixture-of-Depths Attention",
+      "title_zh": "深度混合注意力（MoDA）：讓注意力頭跨層取用深度鍵值"
     },
     {
       "arxiv_id": "2603.14923",
@@ -6425,7 +6440,8 @@
       "source_name": null,
       "story_id": "arxiv:2603.14923",
       "summary": "We introduce directional routing, a lightweight mechanism that gives each transformer attention head learned suppression directions controlled by a shared router, at 3.9% parameter cost. We train a 433M-parameter model alongside an identical baseline in a single run, then trace the resulting circuits through mechanistic interpretability.\n  Routing becomes the model's dominant computational pathway. Disabling it collapses factual recall to near-zero probability across all 8 test prompts and drops",
-      "title": "Directional Routing in Transformers"
+      "title": "Directional Routing in Transformers",
+      "title_zh": "Transformer 中的方向性路由機制"
     }
   ]
 }

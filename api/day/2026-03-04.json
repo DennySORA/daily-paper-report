@@ -3076,7 +3076,9 @@
       "source_name": null,
       "story_id": "arxiv:2603.03762",
       "summary": "Fine-grained visual understanding is shifting from static classification to knowledge-augmented reasoning, where models must justify as well as recognise. Existing approaches remain limited by closed-set taxonomies and single-label prediction, leading to significant degradation under open-set or context-dependent conditions. We present the Knowledge-Augmented Fine-Grained Reasoning Agent (KFRA), a unified framework that transforms fine-grained perception into evidence-driven reasoning. KFRA oper",
-      "title": "Seeing as Experts Do: A Knowledge-Augmented Agent for Open-Set Fine-Grained Visual Understanding"
+      "summary_zh": "細粒度視覺理解正從靜態分類轉向知識增強的推理，模型不僅要辨識，還必須提出理由。既有方法受限於封閉集分類體系與單一標籤預測，在開放集或依賴情境的條件下效能明顯下滑。本文提出知識增強細粒度推理代理（KFRA），一個把細粒度感知轉化為證據驅動推理的統一框架。KFRA 以代理方式運作，透過外部知識的檢索與整合，對視覺證據進行逐步推理，並產生可檢驗的判斷依據，以因應類別不在訓練標籤集合內、或需依情境判定的情況。摘要僅止於問題動機與框架定位，未揭露具體的知識來源、檢索機制、代理流程細節，也沒有提供資料集、基準比較或消融實驗等量化證據，因此其相對現有方法的優勢仍待完整論文佐證。可能的限制包括外部知識的品質與延遲成本，以及在長尾類別上檢索失敗時的穩健性。此工作的意義在於把細粒度辨識重新定義為開放集推理問題，為可解釋且可擴充的視覺理解系統指出方向。",
+      "title": "Seeing as Experts Do: A Knowledge-Augmented Agent for Open-Set Fine-Grained Visual Understanding",
+      "title_zh": "如專家般觀看：面向開放集細粒度視覺理解的知识增強代理"
     },
     {
       "arxiv_id": "2603.03714",
@@ -3134,7 +3136,9 @@
       "source_name": null,
       "story_id": "arxiv:2603.03714",
       "summary": "We study a systematic bias in modern image generation models: the mention order of entities in text spuriously determines spatial layout and entity--role binding. We term this phenomenon Order-to-Space Bias (OTS) and show that it arises in both text-to-image and image-to-image generation, often overriding grounded cues and causing incorrect layouts or swapped assignments. To quantify OTS, we introduce OTS-Bench, which isolates order effects with paired prompts differing only in entity order and ",
-      "title": "Order Is Not Layout: Order-to-Space Bias in Image Generation"
+      "summary_zh": "本文研究現代影像生成模型中一個系統性偏誤：文本裡實體被提及的先後順序，會非預期地決定空間版面與實體—角色的綁定關係。作者將此現象命名為 Order-to-Space Bias（OTS，順序—空間偏誤），並指出它同時出現在文字生圖與圖生圖的情境中，且往往壓過原本有依據的線索，導致版面錯誤或角色對調。為了量化 OTS，作者提出 OTS-Bench，以成對提示詞進行測試，兩者僅在實體出現順序上不同，藉此隔離順序造成的影響。摘要僅描述問題定義與基準設計，未提供各模型的具體偏誤比率、緩解方法的效果或人類評估結果，因此無法判斷偏誤的嚴重程度與普遍性。可能的限制在於基準是否能涵蓋多物件、複雜場景與不同語言提示。此工作的意義在於揭示擴散式生成模型的隱性歸納偏誤，提醒研究者在評估生成品質時，必須把提示詞順序視為獨立的干擾變因。",
+      "title": "Order Is Not Layout: Order-to-Space Bias in Image Generation",
+      "title_zh": "順序不等於版面：影像生成中的順序—空間偏誤"
     },
     {
       "arxiv_id": "2603.03664",
@@ -3189,7 +3193,9 @@
       "source_name": null,
       "story_id": "arxiv:2603.03664",
       "summary": "Learning-to-communicate (LTC) in partially observable environments has received increasing attention in deep multi-agent reinforcement learning, where the control and communication strategies are jointly learned. Meanwhile, the impact of communication on decision-making has been extensively studied in control theory. In this paper, we seek to formalize and better understand LTC by bridging these two lines of work, through the lens of information structures (ISs). To this end, we formalize LTC in",
-      "title": "Principled Learning-to-Communicate with Quasi-Classical Information Structures"
+      "summary_zh": "在部分可觀測環境中的「學習通訊」（Learning-to-Communicate, LTC）近年受到深度多智慧體強化學習關注，其中控制策略與通訊策略會被聯合學習；與此同時，控制理論社群也長期研究通訊對決策的影響。本文試圖銜接這兩條研究路線，以「資訊結構」（information structure, IS）為透鏡，對 LTC 進行形式化與更深入的理解。作者提出以準古典資訊結構（quasi-classical information structures）來刻畫多智慧體在共享與私有觀測下的通訊條件，並據此分析聯合學習通訊時可達成的協調效果與理論界限。摘要僅交代研究動機與形式化取徑，未提供定理陳述、收斂保證、實驗環境或與既有 LTC 方法的數值比較，因此其實質貢獻仍待完整論文驗證。可能的限制在於理論假設與深度學習實務之間的落差，例如有限通訊頻寬、非平穩環境與部分觀測下的最佳性。此工作的意義在於為多智慧體通訊學習提供可與控制理論對話的共同語言，有助於設計更具原則性的通訊機制。",
+      "title": "Principled Learning-to-Communicate with Quasi-Classical Information Structures",
+      "title_zh": "具準古典資訊結構的通訊學習理論化"
     },
     {
       "arxiv_id": "2603.03640",
@@ -3244,7 +3250,9 @@
       "source_name": null,
       "story_id": "arxiv:2603.03640",
       "summary": "With the availability of open APIs in social robots, it has become easier to customize general-purpose tools to meet users' needs. However, interpreting high-level user instructions, selecting and configuring appropriate tools, and executing them reliably remain challenging for users without programming experience. To address these challenges, we introduce MistyPilot, an agentic LLM-driven framework for autonomous tool selection, orchestration, and parameter configuration. MistyPilot comprises t",
-      "title": "MistyPilot: An Agentic Fast-Slow Thinking LLM Framework for Misty Social Robots"
+      "summary_zh": "隨著社交機器人開放 API 日益普及，使用者雖可自訂通用工具以滿足需求，但對沒有程式設計經驗的人而言，解讀高階指令、挑選與設定合適工具，並可靠地執行，仍然相當困難。為此，本文提出 MistyPilot，一個由 LLM 驅動的代理框架，負責自主進行工具選擇、協調與參數設定。MistyPilot 採用快慢思考的雙層架構，先以較快的方式理解使用者意圖並篩選候選工具，再以較慢的推理完成參數配置與執行規劃，藉此在反應速度與正確性之間取得平衡。摘要僅止於框架定位與動機，未揭露實際的模組組成、所使用的 LLM、評估任務設計或與基線方法的量化比較，也未說明在真實機器人平台上失敗時的復原策略與延遲表現。可能的限制包括對工具描述品質的依賴，以及多步驟編排在高風險實體互動中的安全性。此工作的意義在於把社交機器人的工具使用門檻，從撰寫程式降低為自然語言指令，朝向更普及的人機協作邁進。",
+      "title": "MistyPilot: An Agentic Fast-Slow Thinking LLM Framework for Misty Social Robots",
+      "title_zh": "MistyPilot：為 Misty 社交機器人設計的代理式快慢思考 LLM 框架"
     },
     {
       "arxiv_id": "2603.03536",
@@ -3300,7 +3308,9 @@
       "source_name": null,
       "story_id": "arxiv:2603.03536",
       "summary": "Current LLM-based conversational recommender systems (CRS) primarily optimize recommendation accuracy and user satisfaction. We identify an underexplored vulnerability in which recommendation outputs may negatively impact users by violating personalized safety constraints, when individualized safety sensitivities -- such as trauma triggers, self-harm history, or phobias -- are implicitly inferred from the conversation but not respected during recommendation. We formalize this challenge as person",
-      "title": "SafeCRS: Personalized Safety Alignment for LLM-Based Conversational Recommender Systems"
+      "summary_zh": "本篇論文指出，目前以大型語言模型（LLM）為基礎的對話式推薦系統（CRS）幾乎都把重心放在推薦準確度與使用者滿意度上，卻忽略了一項深層的風險：推薦結果可能反過來傷害使用者。作者特別關注「個人化安全限制」被違反的情況，例如使用者在對話中隱含透露的創傷觸發因子、自傷史或特定畏懼症，系統卻在推薦時未加以尊重。論文將此問題形式化為個人化安全對齊的挑戰，主張安全不應只有一套通用準則，而需依照每位使用者從對話中推得的敏感度進行調整。由於目前僅取得摘要，具體方法細節、資料集與實驗數據尚未公開，因此無法確認其對齊策略、評估指標與實證結果。可以預期的是，這類研究填補了推薦系統安全研究中長期被忽略的個人化面向，對心理健康敏感場景的應用特別重要，也提醒開發者在追求推薦品質時必須同時考量潛在傷害，並留意由對話推論敏感屬性的隱私與倫理爭議。",
+      "title": "SafeCRS: Personalized Safety Alignment for LLM-Based Conversational Recommender Systems",
+      "title_zh": "SafeCRS：以 LLM 為基礎之對話式推薦系統的個人化安全對齊"
     },
     {
       "arxiv_id": "2603.03456",

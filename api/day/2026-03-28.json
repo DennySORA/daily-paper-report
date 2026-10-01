@@ -776,7 +776,9 @@
       "source_name": null,
       "story_id": "hf:mistralai/voxtral-4b-tts-2603",
       "summary": "Voxtral TTS is a frontier, open-weights text-to-speech model that’s fast, instantly adaptable, and produces lifelike speech for voice agents. The model is released with BF16 weights and a set of reference voices. These voices are licensed under CC BY-NC 4, which is the license that the model inherits. For more details, see our: - ✍️ Blog post - 🔬 Research Paper Voxtral TTS delivers enterprise-grade text-to-speech for production voice agents, with the following capabilities: - **Realistic, expressive speech** with natural prosody and emotional range across 9 major languages, with support for diverse dialects - **Text-to-Speech generation** with 20 preset voices and easy adaptation to new voices - **Multilingual support**: English, French, Spanish, German, Italian, Portuguese, Dutch,...",
-      "title": "mistralai/Voxtral-4B-TTS-2603"
+      "summary_zh": "Voxtral TTS 是 Mistral AI 釋出的前沿開源權重文字轉語音模型，主打快速、可即時調適，並能為語音代理人產生近似真人的語音。模型以 BF16 權重形式發布，並附上一組參考語音，這些語音採用 CC BY-NC 4.0 授權，模型本身亦繼承相同授權，意味著不得用於商業用途，這是採用前必須注意的限制。能力方面，官方宣稱具備真實且富表情的語音，涵蓋自然韻律與情緒範圍，支援九種主要語言並能處理多樣方言；提供二十種預設語音，且可容易地調適到新的聲音；多語言支援包含英語、法語、西班牙語、德語、義大利語、葡萄牙語、荷蘭語等。定位為面向生產環境語音代理的企業級文字轉語音。不過摘要並未提供客觀評測數據，例如自然度分數、延遲量測或與同級模型的比較，也未說明調適新語音所需的資料量與訓練成本。對台灣開發者而言，此模型的意義在於提供一個可自行部署、可微調的開源語音合成選項，但在商業產品中使用前務必釐清授權限制。",
+      "title": "mistralai/Voxtral-4B-TTS-2603",
+      "title_zh": "mistralai/Voxtral-4B-TTS-2603：開源權重的文字轉語音模型"
     }
   ]
 }

@@ -813,7 +813,9 @@
       "source_name": null,
       "story_id": "hf:mistralai/mistral-medium-3.5-128b",
       "summary": "Mistral Medium 3.5 is our first flagship merged model. It is a dense 128B model with a 256k context window, handling instruction-following, reasoning, and coding in a single set of weights. Mistral Medium 3.5 replaces its predecessor Mistral Medium 3.1 and Magistral in Le Chat. It also replaces Devstral 2 in our coding agent Vibe. Concretely, expect better performance for instruct, reasoning and coding tasks in a new unified model in comparison with our previous released models. Reasoning effort is configurable per request, so the same model can answer a quick chat reply or work through a complex agentic run. We trained the vision encoder from scratch to handle variable image sizes and aspect ratios. Find more information on our blog. > To speed up local inference using vLLM or SGLang,...",
-      "title": "mistralai/Mistral-Medium-3.5-128B"
+      "summary_zh": "Mistral Medium 3.5 是 Mistral 首個旗艦級合併模型，採稠密架構、總參數量 128B，具備 256k 上下文視窗，將指令遵循、推理與程式碼能力整合在同一組權重中。問題在於過往通用對話、推理與寫程式往往需要不同模型分別處理，增加部署與切換成本。此模型以統一權重取代前代 Mistral Medium 3.1 與 Magistral 在 Le Chat 中的角色，並取代編碼代理 Vibe 中的 Devstral 2；推理強度可依每次請求調整，因此同一模型既能回應快速聊天，也能執行複雜的代理式長流程。視覺編碼器則從零訓練，以支援可變影像尺寸與長寬比。摘要指出在指令、推理與程式任務上相較先前發布模型有更好表現，並提及可透過 vLLM 或 SGLang 加速本地推論。限制在於目前僅有模型卡層級的敘述，缺乏公開基準分數、評測方法與安全評估細節，參數與效能宣稱難以獨立驗證。其意義在於朝向單一模型涵蓋多任務、可調推理預算的整合路線，對降低推論基礎設施複雜度具參考價值。",
+      "title": "mistralai/Mistral-Medium-3.5-128B",
+      "title_zh": "mistralai/Mistral-Medium-3.5-128B"
     }
   ]
 }

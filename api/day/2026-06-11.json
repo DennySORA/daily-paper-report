@@ -4878,7 +4878,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:9dfcc8d44b6e2b65",
       "summary": "Agent-EvalKit is an open-source toolkit (Apache 2.0) that makes this evaluation infrastructure available by integrating with AI coding assistants, including Claude Code, Kiro CLI, and Kilo Code. This post walks through how Agent-EvalKit works across its six evaluation phases, using a travel research agent built with the Strands Agents SDK and Amazon Bedrock as a running example.",
-      "title": "Evaluate AI agents systematically with Agent-EvalKit"
+      "summary_zh": "本文介紹 Agent-EvalKit，一套以 Apache 2.0 授權釋出的開源工具包，目的在於讓 AI 代理的評估基礎設施更容易被一般開發團隊採用。其作法是把評估流程整合進常見的 AI 程式開發助理，包括 Claude Code、Kiro CLI 與 Kilo Code，讓開發者能在既有的工作環境中直接建立與執行評估，而不必自行拼湊測試框架。文章以一個旅遊研究代理作為貫穿全文的範例，該代理以 Strands Agents SDK 搭配 Amazon Bedrock 建構，藉此展示工具包在六個評估階段中的實際運作方式。這六個階段大致涵蓋從定義評估目標、準備任務與資料、執行代理、收集軌跡，到評分與分析結果的完整循環，強調評估應是可重複、可比較的流程，而非一次性的抽查。對於正在把代理推上正式環境的團隊而言，這類工具能協助及早發現行為退化、工具呼叫錯誤與任務失敗等問題。限制在於目前僅有摘要可見，各階段的評分準則、支援的模型與代理框架範圍、成本與延遲的衡量方式，以及與既有 CI 流程的整合細節均未說明，實際適用性仍須閱讀完整文件與程式碼後才能判斷。",
+      "title": "Evaluate AI agents systematically with Agent-EvalKit",
+      "title_zh": "用 Agent-EvalKit 系統化評估 AI 代理"
     },
     {
       "arxiv_id": "2606.13474",

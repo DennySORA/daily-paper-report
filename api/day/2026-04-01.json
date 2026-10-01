@@ -180,7 +180,9 @@
         "source_name": null,
         "story_id": "hf:mistralai/voxtral-4b-tts-2603",
         "summary": "Voxtral TTS is a frontier, open-weights text-to-speech model that’s fast, instantly adaptable, and produces lifelike speech for voice agents. The model is released with BF16 weights and a set of reference voices. These voices are licensed under CC BY-NC 4, which is the license that the model inherits. For more details, see our: - ✍️ Blog post - 🔬 Research Paper Voxtral TTS delivers enterprise-grade text-to-speech for production voice agents, with the following capabilities: - **Realistic, expressive speech** with natural prosody and emotional range across 9 major languages, with support for diverse dialects - **Text-to-Speech generation** with 20 preset voices and easy adaptation to new voices - **Multilingual support**: English, French, Spanish, German, Italian, Portuguese, Dutch,...",
-        "title": "mistralai/Voxtral-4B-TTS-2603"
+        "summary_zh": "Voxtral TTS 是 Mistral AI 釋出的前沿開源權重文字轉語音模型，主打快速、可即時調適，並能為語音代理人產生近似真人的語音。模型以 BF16 權重形式發布，並附上一組參考語音，這些語音採用 CC BY-NC 4.0 授權，模型本身亦繼承相同授權，意味著不得用於商業用途，這是採用前必須注意的限制。能力方面，官方宣稱具備真實且富表情的語音，涵蓋自然韻律與情緒範圍，支援九種主要語言並能處理多樣方言；提供二十種預設語音，且可容易地調適到新的聲音；多語言支援包含英語、法語、西班牙語、德語、義大利語、葡萄牙語、荷蘭語等。定位為面向生產環境語音代理的企業級文字轉語音。不過摘要並未提供客觀評測數據，例如自然度分數、延遲量測或與同級模型的比較，也未說明調適新語音所需的資料量與訓練成本。對台灣開發者而言，此模型的意義在於提供一個可自行部署、可微調的開源語音合成選項，但在商業產品中使用前務必釐清授權限制。",
+        "title": "mistralai/Voxtral-4B-TTS-2603",
+        "title_zh": "mistralai/Voxtral-4B-TTS-2603：開源權重的文字轉語音模型"
       }
     ]
   },
@@ -4143,7 +4145,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:d89a72f212b89f59",
       "summary": "I'm excited to announce that AWS Security Agent on-demand penetration testing and AWS DevOps Agent are now generally available, representing a new class of AI capabilities we announced at re:Invent called frontier agents. These autonomous systems work independently to achieve goals, scale massively to tackle concurrent tasks, and run persistently for hours or days without constant human oversight. Together, these agents are changing the way we secure and operate software. In preview, customers and partners report that AWS Security Agent compresses penetration testing timelines from weeks to hours and the AWS DevOps Agent supports 3–5x faster incident resolution.",
-      "title": "AWS launches frontier agents for security testing and cloud operations"
+      "summary_zh": "AWS 宣布兩款被稱為「前沿代理」的服務正式可用：AWS Security Agent 提供隨選滲透測試，AWS DevOps Agent 則協助雲端營運。這類自主系統的核心問題在於，傳統安全測試與事故處理高度依賴人力排程，難以同時應付大量並行任務，也無法長時間持續運作。新系統主打能獨立朝目標推進、大規模平行處理，並在數小時甚至數天內持續執行而無須全程人工監督。文中引述預覽期間客戶與合作夥伴的回饋，指出 Security Agent 可把滲透測試時程從數週壓縮到數小時，DevOps Agent 則讓事故處理速度提升約三至五倍。然而，這些數字來自早期採用者的自述，缺乏獨立基準、樣本規模與失敗案例的說明；代理長時間自主運作也帶來權限控管、誤判風險與可稽核性等治理問題。其意義在於代理式 AI 正進入安全與維運等關鍵流程，但效益與風險仍需更嚴謹的驗證。",
+      "title": "AWS launches frontier agents for security testing and cloud operations",
+      "title_zh": "AWS 推出前沿代理，用於安全測試與雲端營運"
     },
     {
       "arxiv_id": "2603.29723",
@@ -5101,7 +5105,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:986d71b0dd4eb716",
       "summary": "Traditional frameworks designed for static deployments cannot address the dynamic interactions that define agentic workloads. AI Risk Intelligence (AIRI), from AWS Generative AI Innovation Center, provides the automated rigor required to govern agents at enterprise scale—a fundamental reimagining of how security, operations, and governance work together systemically.",
-      "title": "Can your governance keep pace with your AI ambitions? AI risk intelligence in the agentic era"
+      "summary_zh": "本文指出，為靜態部署設計的傳統治理框架，已無法因應代理式工作負載所帶來的動態互動。其問題核心在於：當 AI 代理會自行規劃步驟、呼叫工具並與其他代理協作時，風險不再只是模型層級的偏誤或幻覺，而是橫跨身分權限、資料流動、工具呼叫與跨系統相依性的系統性風險，靜態的政策檢查點與事後稽核因此容易失效。AWS Generative AI Innovation Center 提出的 AI Risk Intelligence（AIRI）主張以自動化的嚴謹度，在企業規模下治理代理，並把安全、營運與治理重新整合為一套系統性作法。不過，目前僅有摘要，未說明 AIRI 的具體機制，例如風險分類法、評估指標、偵測流程或與現有合規框架的對應方式，也沒有任何實證數據佐證其有效性。因此可將其視為治理議題的框架性主張，而非已驗證的解決方案；其價值在於提醒企業，代理部署的可治理性應與功能開發同步規劃，並留意自動化治理本身可能引入的新風險。",
+      "title": "Can your governance keep pace with your AI ambitions? AI risk intelligence in the agentic era",
+      "title_zh": "治理能否跟上 AI 野心？代理時代的 AI 風險情報"
     },
     {
       "arxiv_id": "2603.29933",

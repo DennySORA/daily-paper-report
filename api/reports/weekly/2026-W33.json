@@ -1231,7 +1231,9 @@
       "source_name": "Google AI Blog",
       "story_id": "fallback:c874aa30356ec56f",
       "summary": "AMIE promotional video",
-      "title": "AMIE, our research medical AI system, demonstrates real-time clinical video consultation capabilities in a first-of-its-kind study."
+      "summary_zh": "本項成果介紹 Google 的研究型醫療 AI 系統 AMIE，並在一項首創研究中展示其具備即時臨床視訊問診的能力。問題背景在於，多數醫療對話 AI 僅以文字或靜態測驗評估，缺乏貼近真實診間的互動情境；AMIE 則嘗試在視訊問診中同時處理語音、視覺與臨床推理，模擬醫師與病患的雙向溝通。方法上，系統以大型語言模型為核心，結合即時語音與影像串流理解，並針對診斷對話進行調校，使其能在問診過程中蒐集病史、追問關鍵症狀並提出鑑別診斷。目前可見的證據僅限於官方發布的示範影片與研究摘要，尚未提供同儕審查的完整實驗數據、受試者規模或臨床試驗結果，因此其實際診斷準確度、安全性與在不同科別與族群上的泛化能力仍待驗證。此工作的意義在於把醫療 AI 的評測場景從文字推進到即時影音互動，若能搭配嚴謹的臨床驗證與法規審查，未來可望輔助偏鄉或醫療資源不足地區的初步問診，但現階段仍應視為研究方向而非可直接部署的臨床工具。",
+      "title": "AMIE, our research medical AI system, demonstrates real-time clinical video consultation capabilities in a first-of-its-kind study.",
+      "title_zh": "AMIE：研究型醫療 AI 系統首度展現實時臨床視訊問診能力"
     },
     {
       "arxiv_id": null,
@@ -5280,7 +5282,9 @@
       "source_name": null,
       "story_id": "arxiv:2608.15046",
       "summary": "A fraction of a point of benchmark accuracy is the usual evidence that a compressed model is equivalent to its original. That quantity is least informative when two models are most alike: a net delta is what survives cancellation between opposing per-item changes, and cancellation is most complete in the regime equivalence claims occupy. Across an atlas of 1,707 paired model-by-task cells mined from public per-item evaluation dumps (1.3B-405B), churn runs roughly five times the net accuracy delt",
-      "title": "Certifying Compressed Language Models: An Audit and a Statistical Toolkit"
+      "summary_zh": "這篇論文針對「壓縮模型與原模型等價」這類說法提出統計檢驗框架。作者指出，業界慣用的「基準準確率只差零點幾分」是最沒有資訊量的證據：淨差異是正反逐題變化互相抵銷後的殘餘，而兩個模型越相似，抵銷越徹底。作者從公開的逐題評測檔中建立含 1,707 個「模型×任務」配對格的圖譜（1.3B 至 405B），發現逐題翻轉量約為淨準確率差的五倍，且 145 格分數與基準完全相同、其中 128 格仍有逐題差異。在預先登錄的稽核中，17 個等價宣稱有 16 個合格，卻沒有任何一個事先宣告數值容差，也沒有釋出任務相符的逐題輸出，5 個甚至無法以數值評估。作者補上缺漏的工具：在宣告邊界下的配對等價檢定（TOST）與認證表，所需題數由壓縮下觀測到的分歧率推算，而非獨立二項變異數，配對設計可省下 2.3 至 14.7 倍算力，池化後為 4.2 倍。控制實驗以位元組完全相同的校準樣本配對 GPTQ 與 AWQ、五個隨機種子，八格中五格贏家因校準抽樣而反轉，支持 H3。限制包括圖譜屬觀察性、非量化方法的母體普查，稽核僅 16 個來源、非盛行率估計，且二值正確性模型不涵蓋連續或評分型指標。作者最後提出五行報告標準：宣告邊界、執行配對檢定、並列翻轉量與淨差距、引用實際樣本數、釋出逐題輸出。",
+      "title": "Certifying Compressed Language Models: An Audit and a Statistical Toolkit",
+      "title_zh": "壓縮語言模型的認證：一份稽核與一套統計工具組"
     },
     {
       "arxiv_id": "2608.14320",

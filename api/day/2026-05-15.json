@@ -4250,7 +4250,9 @@
       "source_name": "Microsoft Research Blog",
       "story_id": "fallback:f29961841cd4ae2d",
       "summary": "<p>Our recent paper, “LLMs Corrupt Your Documents When You Delegate”, has generated discussion about the reliability of AI systems in delegated workflows. We appreciate the interest in this work and want to clarify several important points about what the paper does—and does not—claim. The research aims to develop robust evaluation methods for long-horizon delegated and [&#8230;]</p>\n<p>The post <a href=\"https://www.microsoft.com/en-us/research/blog/further-notes-on-our-recent-research-on-ai-delegation-and-long-horizon-reliability/\">Further Notes on Our Recent Research on AI Delegation and Long-Horizon Reliability</a> appeared first on <a href=\"https://www.microsoft.com/en-us/research\">Microsoft Research</a>.</p>",
-      "title": "Further Notes on Our Recent Research on AI Delegation and Long-Horizon Reliability"
+      "summary_zh": "微軟研究院針對其論文《LLMs Corrupt Your Documents When You Delegate》引發的討論提出澄清，說明該研究真正主張與未主張的內容。團隊指出，研究目標是為長時程的委派式工作流程建立穩健的評估方法，而非宣稱大型語言模型在實務上普遍會破壞文件。目前取得的內容僅為部落格摘要與後設資訊，未包含實驗設計、資料集規模、模型清單、量化結果或錯誤率，也未交代評估方法的限制與外部效度問題。因此外界對該工作的解讀應保持節制。其重要性在於把「代理人長時間自主執行任務」的可靠度問題正式化為可量測的研究議題，並提醒企業在採用委派式自動化時，需建立監控與復原機制。",
+      "title": "Further Notes on Our Recent Research on AI Delegation and Long-Horizon Reliability",
+      "title_zh": "關於我們近期「AI 委派與長時程可靠性」研究的進一步說明"
     },
     {
       "arxiv_id": null,
@@ -4303,7 +4305,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:74a793e2af1c8289",
       "summary": "In this post, we walk through how to configure document-level ACLs for your S3 knowledge base in Amazon Quick. You will learn how to set up and verify an ACL configuration that enforces document-level permissions across chat and automated workflows.",
-      "title": "Restrict access to sensitive documents in your Amazon Quick knowledge bases for Amazon S3"
+      "summary_zh": "本文介紹如何在 Amazon Quick 的 Amazon S3 知識庫上設定文件層級的存取控制清單（ACL），讓不同使用者與自動化工作流程只能看到被授權的文件。內容涵蓋組態設定步驟與驗證方式，確認權限規則在聊天介面與自動化流程中都能一致生效。這解決的是企業把內部文件接上生成式 AI 之後常見的權限外洩風險：知識庫若未繼承來源系統的權限模型，檢索結果可能把機密內容暴露給不該看到的人。文章屬於實作導向的技術部落格，目前僅有摘要，未提供效能影響、同步延遲或大規模權限矩陣的實測資料。對已採用 RAG 架構的團隊而言，這是把治理落實到檢索層的重要參考。",
+      "title": "Restrict access to sensitive documents in your Amazon Quick knowledge bases for Amazon S3",
+      "title_zh": "在 Amazon Quick 的 Amazon S3 知識庫中限制敏感文件的存取"
     },
     {
       "arxiv_id": "2605.14998",

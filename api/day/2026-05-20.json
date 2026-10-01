@@ -5447,7 +5447,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:a954cb92b81dede6",
       "summary": "In this post, you’ll learn how to use Amazon Nova Sonic, Amazon Bedrock AgentCore, and Strands BidiAgent to build scalable, maintainable voice agents that handle these challenges efficiently, resulting in more responsive and intelligent customer interactions. We’ll explore three popular architectural patterns for voice agents, highlighting their trade-offs and best practices for minimizing latency.",
-      "title": "Scalable voice agent design with Amazon Nova Sonic: multi-agent, tools, and session segmentation"
+      "summary_zh": "本文為 Amazon 的技術實作文章，探討如何運用 Amazon Nova Sonic、Amazon Bedrock AgentCore 與 Strands BidiAgent 來建構可擴展且易於維護的語音代理，以因應語音互動中的常見挑戰，並帶來更即時、更靈活的客戶互動體驗。文章聚焦三個常見的語音代理架構模式，逐一比較其取捨，並整理降低延遲的最佳實務做法。內容涵蓋多代理協作、工具呼叫，以及工作階段切分（session segmentation）等設計考量，適合正在評估語音代理架構的工程團隊參考。須注意本文屬產品與架構導向的實務分享，並非同儕審查的研究論文，摘要亦未提供量化基準或實驗數據，因此各架構在真實負載下的延遲與成本表現仍需讀者自行驗證。",
+      "title": "Scalable voice agent design with Amazon Nova Sonic: multi-agent, tools, and session segmentation",
+      "title_zh": "以 Amazon Nova Sonic 設計可擴展語音代理：多代理、工具與工作階段切分"
     },
     {
       "arxiv_id": null,
@@ -5501,7 +5503,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:2ee5ef2f0b98af62",
       "summary": "In this post, we show three ways to implement Programmatic tool calling (PTC) on Amazon Bedrock: a self-hosted Docker sandbox on ECS for maximum control, a managed solution using Amazon Bedrock AgentCore Code Interpreter, and an Anthropic SDK-compatible path through a proxy for teams that prefer that developer experience.",
-      "title": "Implementing programmatic tool calling on Amazon Bedrock"
+      "summary_zh": "本文為 Amazon 的技術實作文章，說明在 Amazon Bedrock 上實作程式化工具呼叫（Programmatic tool calling, PTC）的三種途徑。第一種是在 ECS 上自架 Docker 沙箱，取得最大的控制權與隔離彈性；第二種是採用受管方案，使用 Amazon Bedrock AgentCore Code Interpreter，以較低維運成本換取便利性；第三種則是透過代理（proxy）提供與 Anthropic SDK 相容的介面，讓偏好既有開發體驗的團隊能平滑遷移。文章的核心價值在於把工具呼叫從單純的函式呼叫，提升為由模型產生並執行程式碼的流程，藉此處理更複雜的多步驟任務。惟本文屬產品導向的實務分享，非研究論文，摘要未提供效能、成本或安全性上的量化比較，三種方案的取捨仍須依實際工作負載評估。",
+      "title": "Implementing programmatic tool calling on Amazon Bedrock",
+      "title_zh": "在 Amazon Bedrock 上實作程式化工具呼叫"
     },
     {
       "arxiv_id": null,
@@ -5556,7 +5560,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:7617cd4f28203301",
       "summary": "In this post, we demonstrate how you can extend the conversational memory of Kiro CLI by implementing a custom Model Context Protocol (MCP) server that integrates with Amazon Bedrock AgentCore Memory. You can use Kiro CLI to interact with AI agents of Kiro directly from your terminal. Amazon Bedrock AgentCore Memory is a fully managed service that allows AI agents to retain information from past interactions, creating more intelligent and context-aware conversations. By implementing a custom MCP server, you can provide Kiro CLI with tools to store and retrieve conversation context, monitor memory usage, and manage the underlying Bedrock Agent Core Memory infrastructure.",
-      "title": "Extending conversational memory in Kiro CLI using Amazon Bedrock AgentCore Memory"
+      "summary_zh": "這篇文章說明如何替 Kiro CLI 擴充對話記憶能力。Kiro CLI 讓使用者可直接在終端機中與 Kiro 的 AI 代理互動，而 Amazon Bedrock AgentCore Memory 是一項全託管服務，能讓 AI 代理保留過去互動中的資訊，使對話更具智慧與情境感知能力。作者提出的作法是自行實作一個 Model Context Protocol（MCP）伺服器，並與 Bedrock AgentCore Memory 整合，藉此為 Kiro CLI 提供工具，用來儲存與檢索對話情境、監控記憶體使用量，以及管理底層的 Bedrock AgentCore Memory 基礎設施。此摘要僅涵蓋文章的動機與方法輪廓，未提供具體的效能數據、延遲或成本量測，也沒有說明實作限制與失敗情境，因此無法評估其實際效益。其重要性在於示範了如何透過標準化的 MCP 介面，把託管式記憶服務接進命令列代理，為需要長期情境的終端機工作流程提供可延伸的架構範例。",
+      "title": "Extending conversational memory in Kiro CLI using Amazon Bedrock AgentCore Memory",
+      "title_zh": "以 Amazon Bedrock AgentCore Memory 擴充 Kiro CLI 的對話記憶"
     },
     {
       "arxiv_id": null,
@@ -5611,7 +5617,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:f74ddfd55f05fe19",
       "summary": "Today, we’re announcing three new capabilities available in SageMaker Python SDK v3.8.0. In this post, we walk through each capability with code examples you can use to get started. For complete end-to-end walkthroughs, see the accompanying notebooks for Lake Formation governance and Iceberg table properties in the SageMaker Python SDK repository.",
-      "title": "Accelerate ML feature pipelines with new capabilities in Amazon SageMaker Feature Store"
+      "summary_zh": "這篇文章宣布 Amazon SageMaker Feature Store 推出三項新功能，並隨 SageMaker Python SDK v3.8.0 一同提供。文中以程式碼範例逐一介紹各項功能，讓讀者能快速上手；若需要完整的端到端操作示範，則可參考 SageMaker Python SDK 儲存庫中隨附的筆記本，內容涵蓋 Lake Formation 治理以及 Iceberg 資料表屬性。問題背景在於機器學習特徵管線常因資料治理、儲存格式與同步流程而變得複雜且難以維護，因此這批更新聚焦於簡化特徵的建立、治理與運用。不過摘要僅止於功能宣告，未提供任何效能基準、延遲、吞吐量或成本數據，也沒有說明適用範圍與已知限制，讀者仍需自行以筆記本驗證。其意義在於把資料湖治理與開放資料表格式更緊密地整合進特徵儲存流程，對需要合規與可重現性的 ML 團隊具有實務價值。",
+      "title": "Accelerate ML feature pipelines with new capabilities in Amazon SageMaker Feature Store",
+      "title_zh": "以 Amazon SageMaker Feature Store 新功能加速 ML 特徵管線"
     },
     {
       "arxiv_id": null,
@@ -5668,7 +5676,9 @@
       "source_name": "Google AI Blog",
       "story_id": "fallback:bf36dc46b6eb3079",
       "summary": "a series of colorful icons representing Google I/O against a black background",
-      "title": "I/O 2026: Welcome to the agentic Gemini era"
+      "summary_zh": "此條目來自 Google I/O 2026 的官方發表內容，標題宣示進入所謂的代理式 Gemini 時代，但所擷取的內容僅為一段圖片描述，提到在黑底上排列的一系列彩色圖示，代表 Google I/O。由於缺乏可用的正文，無法得知具體發布的模型版本、代理能力細節、評估結果、適用範圍或限制，也沒有任何基準測試、延遲或成本資訊可供判讀。因此本摘要僅能指出該公告的存在與其主題方向，不宜推論任何未經證實的技術細節。從趨勢來看，主標題指向由被動回應轉向可自主執行任務的代理式系統，這類系統通常涉及工具呼叫、長時間任務規劃與多步驟執行，對產品整合與安全治理都會帶來新的要求。讀者若需了解實際能力，仍應查閱完整發表內容與後續技術文件。",
+      "title": "I/O 2026: Welcome to the agentic Gemini era",
+      "title_zh": "I/O 2026：迎接代理式 Gemini 時代"
     },
     {
       "arxiv_id": null,
@@ -5721,7 +5731,9 @@
       "source_name": "Google AI Blog",
       "story_id": "fallback:c7ce86d797d8a5e0",
       "summary": "Gemini 3.5 text and multi-colored star icon on an abstract blue background.",
-      "title": "Gemini 3.5: frontier intelligence with action"
+      "summary_zh": "此條目為 Gemini 3.5 的官方發布項目，標題強調前沿智慧並結合行動能力，然而所擷取的內容僅是一段圖片說明，描述在抽象藍色背景上的 Gemini 3.5 文字與多色星形圖示，並未包含任何可分析的技術正文。因此無法確認模型規模、訓練方法、多模態支援範圍、代理或工具使用機制，也沒有任何基準測試分數、延遲、成本或安全性評估結果可供引用。本摘要僅能忠實記錄該公告的主題與定位，不應推測未提及的能力或數據。就產業意義而言，把前沿推理與實際行動能力並列，反映當前模型競爭正從單純的語言理解與生成，轉向能在真實環境中完成任務的系統，這也連帶牽動可靠性、權限控制與錯誤復原等工程議題。讀者應以完整發表與第三方評測為準。",
+      "title": "Gemini 3.5: frontier intelligence with action",
+      "title_zh": "Gemini 3.5：具備行動能力的前沿智慧"
     },
     {
       "arxiv_id": null,
@@ -5772,7 +5784,9 @@
       "source_name": "Google AI Blog",
       "story_id": "fallback:263862ace44c9111",
       "summary": "Text that reads \"The best of a search engine with the best of AI\"",
-      "title": "A new era for AI Search"
+      "summary_zh": "此條目為 Google 關於搜尋產品更新的官方公告，標題宣告 AI 搜尋進入新時代，主視覺文字則強調把搜尋引擎的優點與 AI 的優點結合起來。不過所擷取的內容僅止於這段標語式的圖片文字，沒有提供任何具體的產品名稱、功能清單、模型版本、評估數據或上線時程，因此無法判斷其實際改變了哪些檢索與摘要流程，也無從得知準確度、延遲、來源引用方式或成本結構等關鍵指標。本摘要僅能如實呈現公告的主題方向，不應推論未經證實的功能細節。其意義在於主流搜尋正從關鍵字比對與排序，轉向由生成式模型主導的理解與彙整，這將同時影響內容出版者的流量結構、資訊來源的可追溯性，以及使用者對答案可信度的判斷方式。相關成效仍須以官方後續說明與獨立評測為準。",
+      "title": "A new era for AI Search",
+      "title_zh": "AI 搜尋的新時代"
     },
     {
       "arxiv_id": null,
@@ -5824,7 +5838,9 @@
       "source_name": "Google AI Blog",
       "story_id": "fallback:362b6ee54a211d6b",
       "summary": "Google Workspace",
-      "title": "New ways to create and get things done in Google Workspace"
+      "summary_zh": "此條目為 Google Workspace 的官方公告，標題指出將提供在 Workspace 中建立內容與完成工作的新方式，但所擷取的內容僅有產品名稱字樣，沒有任何正文、功能說明、模型資訊或評估結果，因此無法確認新增的具體能力、支援的語言與地區、推出的方案層級，也沒有任何準確度、延遲或成本數據可供判讀。本摘要僅能忠實記錄該公告的存在與主題方向，不應推測未被提及的細節。就產業脈絡而言，把生成式與代理式能力嵌入文件、試算表、郵件與會議等工作場域，代表辦公室套件正從被動的工具箱轉為可主動協助完成任務的協作平台，這也牽動企業的資料治理、權限邊界與稽核需求。實際功能與適用範圍仍須以官方完整說明為準，讀者不宜僅憑標語判斷其成熟度。",
+      "title": "New ways to create and get things done in Google Workspace",
+      "title_zh": "Google Workspace 中建立與完成工作的新方式"
     },
     {
       "arxiv_id": null,
@@ -5875,7 +5891,9 @@
       "source_name": "Google AI Blog",
       "story_id": "fallback:8a87b16e1a03b887",
       "summary": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/Collection-Hero.gif\" />At Google I/O 2026, we shared how we’re making AI more helpful for everyone. See everything we announced.",
-      "title": "I/O 2026"
+      "summary_zh": "此條目為 Google I/O 2026 的整體回顧頁面，說明大會在讓 AI 對所有人都更有幫助這個方向上所分享的內容，並導引讀者查看所有發表項目。所擷取的內容除了活動主視覺圖片外，僅有這段簡短的概述文字，沒有列出任何具體的模型版本、產品名稱、功能細節或效能數據，因此無法就技術層面進行分析，也無從判斷各項發表的成熟度與適用範圍。本摘要僅能如實呈現這是一份彙整性的公告索引，不應推論未提及的技術內容。其意義在於開發者大會的發表已高度集中在 AI 相關主題，涵蓋模型、代理、搜尋與工作場域等面向，對開發者生態與產品路線具有指標作用。若需了解各項目的實際能力、限制與量測結果，仍應查閱對應的個別技術文件與後續評測。",
+      "title": "I/O 2026",
+      "title_zh": "I/O 2026 總覽"
     },
     {
       "arxiv_id": null,
@@ -5930,7 +5948,9 @@
       "source_name": "Google AI Blog",
       "story_id": "fallback:2f6813b2a0c979b1",
       "summary": "The image shows colorful icons. The copy reads: More magic in one plan. More power, more perks, same price.",
-      "title": "Everything new in our Google AI subscriptions, fresh from I/O 2026"
+      "summary_zh": "此條目為 Google 在 I/O 2026 之後公布的 AI 訂閱方案更新說明，主打在同一方案中提供更多功能與權益，並強調價格維持不變。不過所擷取的內容僅為一段視覺描述，提到彩色圖示與一句行銷文案，沒有列出各方案的層級差異、可用模型、使用額度、地區限制或任何效能與成本數據，因此無法評估其實際價值或與競品的相對優劣。本摘要僅能忠實記錄這是一項訂閱方案的權益調整公告，不應推測未公布的技術細節。就市場脈絡而言，把更多進階 AI 能力納入既有訂閱層級，反映生成式服務正從單點試用走向常態化訂閱，並以權益包裹作為留存與差異化手段。實際可用範圍與條款仍須以官方方案頁面與後續說明為準，讀者不宜僅憑宣傳標語判斷。",
+      "title": "Everything new in our Google AI subscriptions, fresh from I/O 2026",
+      "title_zh": "I/O 2026 發表的 Google AI 訂閱方案更新總覽"
     },
     {
       "arxiv_id": null,
@@ -5981,7 +6001,9 @@
       "source_name": "Google AI Blog",
       "story_id": "fallback:903a1fd4c017fba6",
       "summary": "A graphic features the text \"How people are using AI Mode in the U.S.\" surrounded by colorful, stylized illustrations of a pencil, planet, banana, gift box, cursor, gamepad, and lipstick on a light blue background.",
-      "title": "How AI Mode is changing the way people search in the U.S."
+      "summary_zh": "本文探討美國使用者在搜尋行為上因 AI 模式出現而產生的變化，屬於產品觀察與使用者行為分析的類別。目前僅取得摘要層級的內容，原文以一張資訊圖表呈現，圖上標示「美國民眾如何使用 AI 模式」字樣，周圍搭配鉛筆、行星、香蕉、禮物盒、游標、遊戲手把與唇膏等色彩鮮明的插畫，背景為淺藍色。從可取得的內容判斷，作者意圖以視覺化方式整理使用者實際搜尋意圖與查詢類型的分佈，讓讀者快速掌握 AI 搜尋與傳統關鍵字搜尋在行為上的差異。由於正文、資料來源、取樣方法、觀察期間與樣本規模皆未公開，無法確認其調查設計是否具代表性，也無從評估統計顯著性與外部效度。限制在於摘要未提供任何量化結果，讀者難以據此推論趨勢強度。儘管如此，此議題對搜尋產品設計、內容發布策略與使用者資訊尋求行為研究具參考價值，後續若能看到完整方法與資料，才能判斷其結論是否穩健。",
+      "title": "How AI Mode is changing the way people search in the U.S.",
+      "title_zh": "AI 模式如何改變美國民眾的搜尋方式"
     }
   ],
   "run_date": "2026-05-20",

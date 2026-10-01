@@ -211,7 +211,9 @@
         "source_name": null,
         "story_id": "hf:mistralai/mistral-medium-3.5-128b",
         "summary": "Mistral Medium 3.5 is our first flagship merged model. It is a dense 128B model with a 256k context window, handling instruction-following, reasoning, and coding in a single set of weights. Mistral Medium 3.5 replaces its predecessor Mistral Medium 3.1 and Magistral in Le Chat. It also replaces Devstral 2 in our coding agent Vibe. Concretely, expect better performance for instruct, reasoning and coding tasks in a new unified model in comparison with our previous released models. Reasoning effort is configurable per request, so the same model can answer a quick chat reply or work through a complex agentic run. We trained the vision encoder from scratch to handle variable image sizes and aspect ratios. Find more information on our blog. > To speed up local inference using vLLM or SGLang,...",
-        "title": "mistralai/Mistral-Medium-3.5-128B"
+        "summary_zh": "Mistral Medium 3.5 是 Mistral 首個旗艦級合併模型，採稠密架構、總參數量 128B，具備 256k 上下文視窗，將指令遵循、推理與程式碼能力整合在同一組權重中。問題在於過往通用對話、推理與寫程式往往需要不同模型分別處理，增加部署與切換成本。此模型以統一權重取代前代 Mistral Medium 3.1 與 Magistral 在 Le Chat 中的角色，並取代編碼代理 Vibe 中的 Devstral 2；推理強度可依每次請求調整，因此同一模型既能回應快速聊天，也能執行複雜的代理式長流程。視覺編碼器則從零訓練，以支援可變影像尺寸與長寬比。摘要指出在指令、推理與程式任務上相較先前發布模型有更好表現，並提及可透過 vLLM 或 SGLang 加速本地推論。限制在於目前僅有模型卡層級的敘述，缺乏公開基準分數、評測方法與安全評估細節，參數與效能宣稱難以獨立驗證。其意義在於朝向單一模型涵蓋多任務、可調推理預算的整合路線，對降低推論基礎設施複雜度具參考價值。",
+        "title": "mistralai/Mistral-Medium-3.5-128B",
+        "title_zh": "mistralai/Mistral-Medium-3.5-128B"
       }
     ],
     "qwen": [
@@ -5001,7 +5003,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:4bf9f230bc7ed812",
       "summary": "In this post, we introduce a systematic framework for LLM migration or upgrade in generative AI production, encompassing essential tools, methodologies, and best practices. The framework facilitates transitions between different LLMs by providing robust protocols for prompt conversion and optimization.",
-      "title": "AWS Generative AI Model Agility Solution: A comprehensive guide to migrating LLMs for generative AI production"
+      "summary_zh": "這篇 AWS 文章提出一套系統化框架，用於在生成式 AI 正式環境中移轉或升級大型語言模型（LLM）。問題在於模型迭代快速，當更好或更具成本效益的模型出現時，企業往往因提示（prompt）與既有流程高度綁定而難以更換，形成供應商鎖定與升級停滯。文中框架涵蓋必要工具、方法論與最佳實務，並提供提示轉換與最佳化的穩健協定，讓不同 LLM 之間的過渡更可控，降低重寫提示、重測品質與重新驗證的時間成本。文章定位為實務指南，重點在流程與方法層面的整理，而非提出新的模型架構或演算法；摘要未揭露具體基準測試、移轉成功率、延遲或成本變化等量化證據，也未說明在代理式多步工作流、工具呼叫與長上下文情境下的適用邊界。其意義在於把模型可替換性視為架構設計目標，協助團隊在維持品質的前提下保有選型彈性。讀者應將此框架視為起點，並自行建立涵蓋品質、安全與成本的內部評測，以驗證移轉後實際表現。",
+      "title": "AWS Generative AI Model Agility Solution: A comprehensive guide to migrating LLMs for generative AI production",
+      "title_zh": "AWS 生成式 AI 模型敏捷性解決方案：在正式環境移轉 LLM 的完整指南"
     },
     {
       "arxiv_id": "2604.28147",
@@ -6238,7 +6242,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:448a7ca6ddea4a02",
       "summary": "In this post, we take a deeper look at how RLAIF or RL with LLM-as-a-judge works with Amazon Nova models effectively.",
-      "title": "Reinforcement fine-tuning with LLM-as-a-judge"
+      "summary_zh": "這篇文章探討如何以 LLM-as-a-judge 的方式進行強化學習微調，也就是常稱的 RLAIF，並說明其與 Amazon Nova 模型搭配時的實務運作。問題在於傳統 RLHF 需要大量人工標註偏好，成本高且難以擴展，而當任務涉及開放式生成、推理或難以用規則判斷的品質時，人工回饋更成為瓶頸。文中介紹以大型語言模型擔任評審、產生獎勵訊號，再以此訊號驅動強化學習微調，藉此在較低成本下迭代模型行為。文章屬於應用導向的技術解說，重點在流程設計與工具搭配，但摘要未提供具體資料集、獎勵模型設計細節、訓練規模，亦未揭露相對於 RLHF 或監督式微調的量化增益與基準分數。已知風險包括評審模型的偏誤、可被利用的獎勵漏洞（reward hacking）以及評估與訓練同源造成的循環性，這些都會影響結果可信度。其意義在於展示以模型回饋取代部分人工標註的可行路徑，對需要持續對齊與客製化的團隊具參考價值，但讀者應自行設計獨立評測與人為抽查，確認獎勵訊號是否真能反映目標品質。",
+      "title": "Reinforcement fine-tuning with LLM-as-a-judge",
+      "title_zh": "以 LLM-as-a-judge 進行強化學習微調"
     },
     {
       "arxiv_id": null,
@@ -6288,7 +6294,9 @@
       "source_name": "Microsoft Research Blog",
       "story_id": "fallback:b1ca59423ba8ba07",
       "summary": "<p>Safe agents don’t guarantee a safe ecosystem of interconnected agents. Microsoft Research examines what breaks when AI agents interact and why network-level risks require new approaches.</p>\n<p>The post <a href=\"https://www.microsoft.com/en-us/research/blog/red-teaming-a-network-of-agents-understanding-what-breaks-when-ai-agents-interact-at-scale/\">Red-teaming a network of agents: Understanding what breaks when AI agents interact at scale</a> appeared first on <a href=\"https://www.microsoft.com/en-us/research\">Microsoft Research</a>.</p>",
-      "title": "Red-teaming a network of agents: Understanding what breaks when AI agents interact at scale"
+      "summary_zh": "這是 Microsoft Research 的部落格文章，關注一個常被忽略的落差：個別代理安全，並不保證由多個代理互連而成的生態系安全。問題在於當 AI 代理大規模彼此互動、交換訊息與呼叫工具時，會湧現出單體測試看不到的網路層級風險，例如錯誤訊息在代理鏈中擴散、權限與信任關係被串接利用，或個別良性行為在組合後產生非預期的集體後果。文中以紅隊測試為方法，檢視這些互動在什麼條件下失效，並主張需要針對網路層級設計新的評估與防禦取徑，而非僅沿用單一代理的安全準則。文章屬研究觀點與問題界定性質，摘要未提供具體實驗設定、攻擊案例數量、量測指標或緩解措施的成效數據，因此無法判斷各類風險的實際發生率與嚴重度排序。其意義在於把代理安全從單點防護提升到系統與生態系層次，提醒部署多代理系統的團隊須考量互動拓撲、資訊流與信任邊界。讀者應留意此為方向性倡議，後續仍需可重現的基準與實證來支撐對應的防禦設計。",
+      "title": "Red-teaming a network of agents: Understanding what breaks when AI agents interact at scale",
+      "title_zh": "對代理網路進行紅隊測試：理解 AI 代理大規模互動時會出現什麼問題"
     },
     {
       "arxiv_id": null,
@@ -6352,7 +6360,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:26d09db537fe7aa7",
       "summary": "In this post, we show how Sun Finance used Amazon Bedrock, Amazon Textract, and Amazon Rekognition to build an AI-powered identity verification (IDV) pipeline. The solution improved extraction accuracy from 79.7% to 90.8%, cut per-document costs by 91%, and reduced processing time from up to 20 hours to under 5 seconds. You'll learn how combining specialized OCR with large language model (LLM) structuring outperformed using either tool alone. You'll also learn how to architect a serverless fraud detection system using vector similarity search.",
-      "title": "Sun Finance automates ID extraction and fraud detection with generative AI on AWS"
+      "summary_zh": "這篇文章說明 Sun Finance 如何運用 Amazon Bedrock、Amazon Textract 與 Amazon Rekognition 打造 AI 驅動的身分驗證（IDV）流程。問題在於身分文件格式繁雜、品質不一，純 OCR 抽取在真實場景中容易出錯，而人工覆核又造成處理時間與成本居高不下。其作法是把專門的 OCR 與大型語言模型（LLM）結構化能力結合，先抽取文字再轉為結構化欄位，並以向量相似度搜尋架構出無伺服器（serverless）詐欺偵測系統。文中提出的主要證據為：抽取準確率由 79.7% 提升至 90.8%，單份文件成本降低 91%，處理時間從最長 20 小時縮短到 5 秒以內，並指出 OCR 與 LLM 結構化搭配的成效優於單獨使用任一工具。限制在於這些數字來自單一企業案例，缺少跨客戶、跨文件型態的驗證，也未交代錯誤樣態、模型版本與人為覆核比例，且向量相似度檢索在對抗性偽造下的穩健性仍待檢驗。其意義在於示範生成式 AI 與專門視覺服務互補的實務架構，對需要兼顧準確率、成本與延遲的金融身分驗證場景具參考價值。",
+      "title": "Sun Finance automates ID extraction and fraud detection with generative AI on AWS",
+      "title_zh": "Sun Finance 以 AWS 生成式 AI 自動化身分文件抽取與詐欺偵測"
     },
     {
       "arxiv_id": null,
@@ -6407,7 +6417,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:5f50b39398d697ba",
       "summary": "This post demonstrates how agentic AI assistant from Amazon Quick transform data analytics into a self-service capability by using Amazon Simple Storage Service (Amazon S3) as a storage, Amazon SageMaker and AWS Glue for lakehouse, Amazon Athena for serverless SQL querying across multiple storage formats (S3 Table, Iceberg, and Parquet).",
-      "title": "Unleashing Agentic AI Analytics on Amazon SageMaker with Amazon Athena and Amazon Quick"
+      "summary_zh": "本文介紹如何以 Amazon Quick 的代理式 AI 助理，把資料分析轉變為自助式能力。問題在於企業資料散落於多種儲存格式，分析往往需仰賴專門團隊，難以規模化。方法上，以 Amazon Simple Storage Service（Amazon S3）作為儲存層，Amazon SageMaker 與 AWS Glue 建構 lakehouse，並以 Amazon Athena 進行無伺服器 SQL 查詢，可跨 S3 Table、Iceberg 與 Parquet 等多種格式。使用者透過自然語言即可驅動代理完成查詢與探索，降低操作門檻。惟本文目前僅有摘要，未提供效能實測、成本數據或查詢準確率等具體證據，也尚未討論權限治理與資料品質等限制。其意義在於示範代理式 AI 如何與既有資料湖倉堆疊整合，讓非技術人員也能取得洞察，對推動資料民主化與分析自助化具參考價值。",
+      "title": "Unleashing Agentic AI Analytics on Amazon SageMaker with Amazon Athena and Amazon Quick",
+      "title_zh": "在 Amazon SageMaker 上釋放代理式 AI 分析能力：結合 Amazon Athena 與 Amazon Quick"
     },
     {
       "arxiv_id": null,
@@ -6460,7 +6472,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:e6de3fa131a20748",
       "summary": "In this post, you will configure Amazon Bedrock AgentCore Gateway to access private endpoints using Resource Gateway, a managed construct that provisions Elastic Network Interfaces (ENIs) directly inside your Amazon VPC, one per subnet. You will explore two implementation modes (managed and self-managed) and walk through three practical scenarios: connecting to a private Amazon API Gateway endpoint, integrating with a MCP server on Amazon Elastic Kubernetes Service (Amazon EKS), and accessing a private REST API.",
-      "title": "Configuring Amazon Bedrock AgentCore Gateway for secure access to private resources"
+      "summary_zh": "本文探討如何讓 Amazon Bedrock AgentCore Gateway 安全地連線至私有端點。問題在於代理常需存取部署於 Amazon VPC 內、不對外暴露的服務，直接開放公網會帶來資安風險。方法採用 Resource Gateway 這項受管建構，於使用者 VPC 的每個子網中佈建 Elastic Network Interface（ENI），並區分受管與自行管理兩種實作模式。文中以三個實務情境說明：連接私有 Amazon API Gateway 端點、整合執行於 Amazon Elastic Kubernetes Service（Amazon EKS）上的 MCP 伺服器，以及存取私有 REST API。此設計可讓代理在維持網路隔離的前提下取得所需資源。惟摘要未揭露延遲、吞吐量或成本等量化結果，也未比較兩種模式的維運負擔。其價值在於提供兼顧安全與可擴充性的私有資源接取範式，對企業導入代理式 AI 時的網路治理具指標意義。",
+      "title": "Configuring Amazon Bedrock AgentCore Gateway for secure access to private resources",
+      "title_zh": "為 Amazon Bedrock AgentCore Gateway 設定私有資源的安全存取"
     },
     {
       "arxiv_id": null,
@@ -6506,7 +6520,9 @@
       "source_name": "DeepMind Blog",
       "story_id": "fallback:a02315dbaf70bfbd",
       "summary": "Researching the path to AI-augmented care and development of an AI co-clinician.",
-      "title": "Enabling a new model for healthcare with AI co-clinician"
+      "summary_zh": "本文聚焦於 AI 輔助醫療照護的發展路徑，以及 AI 共同臨床師（AI co-clinician）的研發方向。問題在於臨床工作量龐大、人力短缺，而現行工具多半只能處理片段任務，難以真正融入診療流程。文中探討如何讓 AI 與臨床人員協作，而非單純取代，並研究通往 AI 強化照護的可行路線。惟目前內容僅有摘要層級的描述，未提供模型架構、訓練資料、評估指標或臨床試驗結果等具體證據，也尚未討論法規遵循、責任歸屬與病患隱私等關鍵限制。其重要性在於提出「共同臨床師」的角色定位，將 AI 視為臨床團隊的一員，若能搭配嚴謹的驗證與治理機制，可望提升照護品質與可及性，並為後續研究與政策討論建立議題框架。",
+      "title": "Enabling a new model for healthcare with AI co-clinician",
+      "title_zh": "以 AI 共同臨床師開啟醫療照護新模式"
     }
   ],
   "run_date": "2026-05-01",

@@ -4253,7 +4253,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:081fc7e83fa50f32",
       "summary": "You can use ToolSimulator, an&nbsp;LLM-powered tool simulation framework within Strands Evals, to thoroughly and safely test AI agents that rely on external tools, at scale. Instead of risking live API calls that expose personally identifiable information (PII), trigger unintended actions, or settling for static mocks that break with multi-turn workflows, you can use ToolSimulator's large language model (LLM)-powered simulations to validate your agents. Available today as part of the Strands Evals Software Development Kit (SDK), ToolSimulator helps you catch integration bugs early, test edge cases comprehensively, and ship production-ready agents with confidence.",
-      "title": "ToolSimulator: scalable tool testing for AI agents"
+      "summary_zh": "這篇來自 AWS 的技術公告介紹 ToolSimulator，一套隸屬於 Strands Evals SDK 的工具模擬框架。問題出發點在於：當 AI 代理需要呼叫外部工具時，直接打真實 API 可能洩漏個資（PII）、觸發非預期動作，而靜態 mock 又難以支撐多輪工作流程，導致整合錯誤往往延後才被發現。ToolSimulator 的做法是以大型語言模型驅動的工具模擬，讓代理在受控環境中執行大規模測試，藉此驗證工具呼叫行為。公告主張能及早捕捉整合 bug、更完整覆蓋邊界情境，並讓團隊更有信心交付可用於正式環境的代理。限制在於：文件僅為摘要層級，未提供模擬保真度、成本或與真實 API 落差的量化證據，模擬結果與線上行為的一致性仍需自行驗證。對正在建構工具呼叫型代理的團隊而言，這提供了一條兼顧安全與可擴展性的測試路徑。",
+      "title": "ToolSimulator: scalable tool testing for AI agents",
+      "title_zh": "ToolSimulator：為 AI 代理打造可規模化的工具測試框架"
     },
     {
       "arxiv_id": "2604.17886",
@@ -5436,7 +5438,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:01bf2ae55b555d5d",
       "summary": "In this post, we'll show you how to build a complete omnichannel ordering system using Amazon Bedrock AgentCore, an agentic platform, to build, deploy, and operate highly effective AI agents securely at scale using any framework and foundation model and Amazon Nova 2 Sonic.",
-      "title": "Omnichannel ordering with Amazon Bedrock AgentCore and Amazon Nova 2 Sonic"
+      "summary_zh": "這是 AWS 的實作導向技術文章，目標是示範如何打造一套完整的全通路（omnichannel）訂購系統。文章的核心組件有兩個：一是 Amazon Bedrock AgentCore，定位為代理式平台，訴求能跨框架與基礎模型、以安全且可規模化的方式建構、部署與營運高效的 AI 代理；二是 Amazon Nova 2 Sonic。全通路訂購的難點在於使用者可能透過語音、文字或不同前端通路下單，系統必須維持一致的會話狀態、正確解析商品與數量，並與後端訂單流程串接。此文屬於教學性質，主要提供架構與實作步驟，並未在摘要中揭露準確率、延遲或成本等量化評測結果，也未說明極端情境下的失敗模式。對想評估代理平台是否能承載實際交易流程的工程團隊，可作為導入的起點參考，但仍需自行以真实負載驗證其可靠性。",
+      "title": "Omnichannel ordering with Amazon Bedrock AgentCore and Amazon Nova 2 Sonic",
+      "title_zh": "以 Amazon Bedrock AgentCore 與 Amazon Nova 2 Sonic 建構全通路訂購系統"
     },
     {
       "arxiv_id": null,
@@ -5495,7 +5499,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:4ee8b9f7abd4ca23",
       "summary": "Today, we are thrilled to announce the availability of G7e instances powered by NVIDIA RTX PRO 6000 Blackwell Server Edition GPUs on Amazon SageMaker AI. You can provision nodes with 1, 2, 4, and 8 RTX PRO 6000 GPU instances, with each GPU providing 96 GB of GDDR7 memory. This launch provides the capability to use a single-node GPU, G7e.2xlarge instance to host powerful open source foundation models (FMs) like GPT-OSS-120B, Nemotron-3-Super-120B-A12B (NVFP4 variant), and Qwen3.5-35B-A3B, offering organizations a cost-effective and high-performing option.",
-      "title": "Accelerate Generative AI Inference on Amazon SageMaker AI with G7e Instances"
+      "summary_zh": "這是 AWS 的產品發布公告，宣布在 Amazon SageMaker AI 上推出由 NVIDIA RTX PRO 6000 Blackwell Server Edition GPU 驅動的 G7e 執行個體。使用者可佈建搭載 1、2、4 或 8 顆 RTX PRO 6000 GPU 的節點，每顆 GPU 提供 96 GB GDDR7 記憶體。發布重點在於單節點單 GPU 的 G7e.2xlarge 即可承載大型開源基礎模型，文中點名 GPT-OSS-120B、Nemotron-3-Super-120B-A12B（NVFP4 變體）與 Qwen3.5-35B-A3B，主打兼具成本效益與效能。對需要自架推論的組織而言，記憶體容量是能否放入大模型的關鍵門檻，96 GB 的配置有助於減少跨節點切分的複雜度。不過公告僅陳述硬體規格與可用模型，未提供吞吐量、延遲、每 token 成本或與前代執行個體的對比數據，實際加速幅度仍待獨立評測。",
+      "title": "Accelerate Generative AI Inference on Amazon SageMaker AI with G7e Instances",
+      "title_zh": "以 G7e 執行個體在 Amazon SageMaker AI 上加速生成式 AI 推論"
     },
     {
       "arxiv_id": null,
@@ -5545,7 +5551,9 @@
       "source_name": "Microsoft Research Blog",
       "story_id": "fallback:93d2cd373d0b5f21",
       "summary": "<p>Doug Burger, sustainability expert Amy Luers, and optimization researcher Ishai Menache examine the global emissions implications of datacenter operations, efficiency gains, and AI's potential across electrification, materials, and food systems.</p>\n<p>The post <a href=\"https://www.microsoft.com/en-us/research/podcast/can-we-ai-our-way-to-a-more-sustainable-world/\">Can we AI our way to a more sustainable world?</a> appeared first on <a href=\"https://www.microsoft.com/en-us/research\">Microsoft Research</a>.</p>",
-      "title": "Can we AI our way to a more sustainable world?"
+      "summary_zh": "這是 Microsoft Research 播客節目的介紹貼文。節目由 Doug Burger 主持，與談人包括永續領域專家 Amy Luers 以及最佳化研究者 Ishai Menache，討論的主題是 AI 與永續之間的雙向關係。一方面，資料中心營運本身帶來全球排放，與談人檢視其能源使用與效率提升空間；另一方面，他們也探討 AI 在電氣化、材料與糧食系統等領域可能帶來的減排潛力。貼文屬對談性質，並未提出新的實驗數據或具體模型方法，也未給出量化的淨排放結論，因此不能視為對「AI 是否淨減碳」的定論。其價值在於把資料中心能耗與應用端效益放在同一個框架下權衡，並提醒效率增益可能被需求反彈效應抵銷。對關心 AI 永續議題的研究者與政策制定者，這是一份適合入門的觀點整理。",
+      "title": "Can we AI our way to a more sustainable world?",
+      "title_zh": "我們能否用 AI 走向更永續的世界？"
     }
   ],
   "run_date": "2026-04-21",

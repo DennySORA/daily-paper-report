@@ -806,7 +806,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:484b3aa5c34b07f9",
       "summary": "In this post, we show how connecting the Visier Workforce AI platform with Amazon Quick through Model Context Protocol (MCP) gives every knowledge worker a unified agentic workspace to ask questions in. Visier helps ground the workspace in live workforce data and the organizational context that surrounds it while letting your users act on the conversational results without switching tools.",
-      "title": "Building Workforce AI Agents with Visier and Amazon Quick"
+      "summary_zh": "這篇文章說明如何把 Visier 的勞動力 AI 平台與 Amazon Quick 透過 Model Context Protocol（MCP）串接起來，讓一般知識工作者能在單一代理式工作空間中以自然語言提問。問題核心在於人力資源與組織相關資料長期散落於人資系統、儀表板與試算表中，員工若要取得如人力編制、流動率或技能分布等答案，往往得切換多個工具並具備查詢能力，形成分析門檻。方法上，Visier 負責以即時勞動力資料與組織脈絡為工作空間提供依據，避免模型產生脫離現況的回答；Amazon Quick 則作為對話與行動的介面，透過 MCP 標準化協定取得外部工具與資料來源。文中強調使用者能直接依對話結果採取後續行動，無須離開現有環境，藉此縮短從提問到決策的路徑。不過此篇屬產品與架構介紹性質，未提供量化基準、導入案例成效或延遲與準確率數據，也尚未討論權限控管、敏感個資與法規遵循等實務限制。其意義在於展示 MCP 如何把企業內部脈絡資料接上通用代理介面，為人資與營運場景提供可複製的整合範式。",
+      "title": "Building Workforce AI Agents with Visier and Amazon Quick",
+      "title_zh": "以 Visier 與 Amazon Quick 打造勞動力 AI 代理"
     },
     {
       "arxiv_id": null,
@@ -859,7 +861,9 @@
       "source_name": "Google AI Blog",
       "story_id": "fallback:0269e4bdf4e72bb2",
       "summary": "Black screen with illustrations including a laptop with document and email icons streaming out, a smiling person holding a phone and looking at a checklist, and a user activating Gemini Live",
-      "title": "8 Gemini tips for organizing your space (and life)"
+      "summary_zh": "這是一篇以生活應用為主的 Gemini 使用技巧整理，主打以 AI 協助使用者整理實體空間與日常事務。就摘要可見的素材而言，內容以視覺化插圖構成，包括筆電旁不斷湧出文件與電子郵件圖示的畫面、手持手機查看待辦清單的微笑人物，以及使用者啟用 Gemini Live 的情境，暗示文章涵蓋檔案與郵件整理、待辦事項管理，以及語音即時互動等面向。其問題意識在於現代人面對資訊與物品雙重堆積，缺乏一套可持續的整理流程，因此嘗試以對話式 AI 作為統籌入口。由於目前僅有摘要層級資訊，無法確認八項技巧的具體步驟、所支援的語言與地區、是否需要特定訂閱方案，也沒有任何量化成效或使用者研究佐證。此外，涉及個資與家庭影像的處理方式、資料保存政策等隱私限制亦未說明。此類內容的價值在於降低一般使用者接觸生成式 AI 的門檻，把代理能力導入日常收納與行程規劃，但讀者仍應留意實際可用功能隨版本與地區而異。",
+      "title": "8 Gemini tips for organizing your space (and life)",
+      "title_zh": "8 個 Gemini 整理空間與生活的小技巧"
     },
     {
       "arxiv_id": null,
@@ -911,7 +915,9 @@
       "source_name": null,
       "story_id": "hf:deepseek-ai/deepseek-v4-pro",
       "summary": "Technical Report👁️ We present a preview version of **DeepSeek-V4** series, including two strong Mixture-of-Experts (MoE) language models — **DeepSeek-V4-Pro** with 1.6T parameters (49B activated) and **DeepSeek-V4-Flash** with 284B parameters (13B activated) — both supporting a context length of **one million tokens**. DeepSeek-V4 series incorporate several key upgrades in architecture and optimization: 1. **Hybrid Attention Architecture:** We design a hybrid attention mechanism combining Compressed Sparse Attention (CSA) and Heavily Compressed Attention (HCA) to dramatically improve long-context efficiency. In the 1M-token context setting, DeepSeek-V4-Pro requires only **27% of single-token inference FLOPs** and **10% of KV cache** compared with DeepSeek-V3.2. 2. **Manifold-Constrained...",
-      "title": "deepseek-ai/DeepSeek-V4-Pro"
+      "summary_zh": "DeepSeek 發布 DeepSeek-V4 系列的預覽版本，包含兩款混合專家（MoE）語言模型：DeepSeek-V4-Pro 具 1.6 兆參數、每次推論啟動 49B，DeepSeek-V4-Flash 則為 284B 參數、啟動 13B，兩者皆支援一百萬 token 的上下文長度。架構上主打混合注意力機制，結合壓縮稀疏注意力（CSA）與高度壓縮注意力（HCA），以改善長上下文效率；在百萬 token 設定下，V4-Pro 的單 token 推論 FLOPs 僅需 DeepSeek-V3.2 的 27%，KV 快取更降至 10%。摘要另提及流形約束等設計，但技術報告內容遭截斷，缺乏完整評測與基準數據，因此其實際能力仍待驗證。對長上下文應用而言，此舉顯示以稀疏與壓縮注意力換取效率，正成為超大規模 MoE 模型的主流路線。",
+      "title": "deepseek-ai/DeepSeek-V4-Pro",
+      "title_zh": "DeepSeek-V4-Pro：1.6T 參數混合專家語言模型預覽版"
     },
     {
       "arxiv_id": null,
@@ -963,7 +969,9 @@
       "source_name": null,
       "story_id": "hf:deepseek-ai/deepseek-v4-flash",
       "summary": "Technical Report👁️ We present a preview version of **DeepSeek-V4** series, including two strong Mixture-of-Experts (MoE) language models — **DeepSeek-V4-Pro** with 1.6T parameters (49B activated) and **DeepSeek-V4-Flash** with 284B parameters (13B activated) — both supporting a context length of **one million tokens**. DeepSeek-V4 series incorporate several key upgrades in architecture and optimization: 1. **Hybrid Attention Architecture:** We design a hybrid attention mechanism combining Compressed Sparse Attention (CSA) and Heavily Compressed Attention (HCA) to dramatically improve long-context efficiency. In the 1M-token context setting, DeepSeek-V4-Pro requires only **27% of single-token inference FLOPs** and **10% of KV cache** compared with DeepSeek-V3.2. 2. **Manifold-Constrained...",
-      "title": "deepseek-ai/DeepSeek-V4-Flash"
+      "summary_zh": "此為 DeepSeek-V4 系列預覽版本中的輕量選項。DeepSeek-V4-Flash 採混合專家（MoE）架構，總參數 284B、每次推論僅啟動 13B，並與同系列的 DeepSeek-V4-Pro（1.6T 參數、啟動 49B）一樣支援一百萬 token 的上下文長度。系列在架構與最佳化上有數項關鍵升級，包括結合壓縮稀疏注意力（CSA）與高度壓縮注意力（HCA）的混合注意力機制，用以大幅提升長上下文效率；在百萬 token 情境下，大模型版本的單 token 推論 FLOPs 與 KV 快取分別降至前代的 27% 與 10%。摘要未提供 Flash 版本的獨立基準成績、推論延遲與部署成本，且技術報告內容被截斷，效能主張仍需完整驗證。其意義在於以較小啟動參數提供長上下文能力，利於成本敏感的實際部署。",
+      "title": "deepseek-ai/DeepSeek-V4-Flash",
+      "title_zh": "DeepSeek-V4-Flash：284B 參數高效混合專家模型預覽版"
     }
   ]
 }

@@ -5547,7 +5547,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:4921bf508cb480a0",
       "summary": "Today, we're excited to announce Claude Cowork in Amazon Bedrock. You can now run Cowork and Claude Code Desktop through Amazon Bedrock, directly or using an LLM gateway. In this post, we walk through how Claude Cowork integrates with Amazon Bedrock and show an example of how knowledge workers use it in practice.",
-      "title": "From developer desks to the whole organization: Running Claude Cowork in Amazon Bedrock"
+      "summary_zh": "這則 AWS 公告宣布 Claude Cowork 正式進駐 Amazon Bedrock，使用者可直接透過 Amazon Bedrock 執行 Cowork 與 Claude Code Desktop，或改由 LLM gateway 介接。企業在導入此類 AI 協作工具時，常見障礙在於資料治理、身分控管與費用歸屬難以統一，若僅停留在個別開發者自行訂閱的層次，便無法擴散到整個組織。文中以實際範例說明知識工作者如何在日常工作中使用 Cowork，展示其整合方式。目前公開內容僅有摘要，未提供權限模型、資料留存政策、延遲或單位成本等細節，也缺乏大規模部署的成效數據。其意義在於把代理式開發工具納入既有雲端治理框架，讓組織能在可控前提下從個人試用推進到全員採用，對已在 Bedrock 上布局的企業尤其相關。",
+      "title": "From developer desks to the whole organization: Running Claude Cowork in Amazon Bedrock",
+      "title_zh": "從開發者桌面到整個組織：在 Amazon Bedrock 上執行 Claude Cowork"
     },
     {
       "arxiv_id": null,
@@ -5600,7 +5602,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:661680e4a7fa3d52",
       "summary": "In this post, we show how to combine DVC (Data Version Control), Amazon SageMaker AI, and Amazon SageMaker AI MLflow Apps to build end-to-end ML model lineage. We walk through two deployable patterns — dataset-level lineage and record-level lineage — that you can run in your own AWS account using the companion notebooks.",
-      "title": "End-to-end lineage with DVC and Amazon SageMaker AI MLflow apps"
+      "summary_zh": "這篇 AWS 技術文章說明如何結合 DVC（Data Version Control）、Amazon SageMaker AI 與 Amazon SageMaker AI MLflow Apps，建立端到端的機器學習模型血統（lineage）追蹤。在實務上，模型從資料前處理、特徵工程到訓練與部署牽涉多個環節，一旦缺乏可追溯的紀錄，當模型表現退化或需要稽核時便難以定位問題來源，也難以符合法規要求。文中提出兩種可部署的模式：資料集層級血統與紀錄層級血統，並附上配套筆記本，讓讀者能直接在自己的 AWS 帳號中執行驗證。目前公開內容僅為摘要，未揭露兩種模式在儲存開銷、查詢效能與導入複雜度上的取捨，也缺乏與其他血統工具的比較。其價值在於提供可落地的實作範式，對需要可重現性與合規稽核的 ML 團隊具參考意義。",
+      "title": "End-to-end lineage with DVC and Amazon SageMaker AI MLflow apps",
+      "title_zh": "以 DVC 與 Amazon SageMaker AI MLflow Apps 建立端到端血統追蹤"
     },
     {
       "arxiv_id": null,
@@ -5652,7 +5656,9 @@
       "source_name": "Google AI Blog",
       "story_id": "fallback:49df723a425ffa54",
       "summary": "The Road to Google Marketing Live graphic. May 20, 2026, 9am PT. White background with colorful bottom gradient.",
-      "title": "3 new ways Ads Advisor is making Google Ads safer and faster"
+      "summary_zh": "這是 Google 官方部落格貼文，並非研究論文，因此僅有摘要與一張宣傳 Google Marketing Live（2026 年 5 月 20 日上午 9 點太平洋時間）的主視覺圖。貼文主軸是介紹 Ads Advisor 的三項新功能，號稱能讓 Google Ads 的運作更安全也更快速，但公告本身並未揭露這三項做法的技術細節、評估方式或實測結果，也未說明其與既有廣告審核或風險控管機制的差異。對廣告主與投放團隊而言，這類工具通常涉及帳戶安全審查、政策合規提示與效能建議等面向，若能落實，理論上有助於降低違規風險並縮短最佳化作業時間；不過在缺乏方法說明與量化指標的情況下，其實際效益仍待後續技術文件與實測驗證。建議讀者將此視為產品發布訊息，而非可檢驗的研究成果。",
+      "title": "3 new ways Ads Advisor is making Google Ads safer and faster",
+      "title_zh": "Ads Advisor 讓 Google Ads 更安全、更快速的三大新做法"
     }
   ],
   "run_date": "2026-04-22",

@@ -802,7 +802,9 @@
       "source_name": "Google AI Blog",
       "story_id": "fallback:27fbba90e71e7e68",
       "summary": "Photos of animals being identified by the SpeciesNet AI model",
-      "title": "How our open-source AI model SpeciesNet is helping to promote wildlife conservation"
+      "summary_zh": "本文介紹開源 AI 模型 SpeciesNet 在野生動物保育中的應用。內容指出，相機陷阱所拍攝的大量動物照片會由 SpeciesNet 模型進行辨識，以協助研究者與保育團體處理過去難以人工消化的影像資料。摘要僅以一句話說明照片正被該模型辨識，未交代模型架構、訓練資料來源、分類的物種範圍、準確率或與人工標註的比較，也未說明部署方式、授權條款與在野外實際使用時的限制，例如夜間紅外線影像、遮擋或罕見物種造成的誤判。由於缺乏量化證據，無法評估其相對既有工具的實際增益。不過，作為開源釋出的模型，其意義在於降低保育監測的技術門檻，讓資源有限的團隊也能運用自動化影像辨識，加速物種分布調查與棲地保護決策，並可望透過社群協作持續擴充可辨識的物種清單。",
+      "title": "How our open-source AI model SpeciesNet is helping to promote wildlife conservation",
+      "title_zh": "開源 AI 模型 SpeciesNet 如何協助野生動物保育"
     }
   ]
 }

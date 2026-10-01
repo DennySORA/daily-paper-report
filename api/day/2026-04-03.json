@@ -382,7 +382,9 @@
         "source_name": null,
         "story_id": "hf:google/gemma-4-e4b-it",
         "summary": "Hugging Face | Launch Blog | Documentation License: Apache 2.0 | Authors: Google DeepMind Gemma is a family of open models built by Google DeepMind. Gemma 4 models are multimodal, handling text and image input (with audio supported on small models) and generating text output. This release includes open-weights models in both pre-trained and instruction-tuned variants. Gemma 4 features a context window of up to 256K tokens and maintains multilingual support in over 140 languages. Featuring both Dense and Mixture-of-Experts (MoE) architectures, Gemma 4 is well-suited for tasks like text generation, coding, and reasoning. The models are available in four distinct sizes: **E2B**, **E4B**, **26B A4B**, and **31B**. Their diverse sizes make them deployable in environments ranging from high-end...",
-        "title": "google/gemma-4-E4B-it"
+        "summary_zh": "此儲存庫為 Google DeepMind Gemma 4 系列中的 E4B 指令微調版本，與同系列的 E2B 同屬較小尺寸，採 Apache 2.0 授權。模型為多模態設計，可接受文字與圖像輸入並輸出文字，小尺寸模型另支援音訊；上下文視窗最高 256K tokens，支援超過 140 種語言。架構涵蓋稠密與混合專家（MoE）兩種路線，擅長文字生成、程式撰寫與推理任務。Gemma 4 共推出 E2B、E4B、26B A4B 與 31B 四種規模，開發者可依部署環境的算力、記憶體與延遲要求選擇，從高階伺服器到資源受限的邊緣裝置皆涵蓋。官方提供 Hugging Face 頁面、發布部落格與文件連結。需注意摘要並未提供任何基準測試數據、訓練資料說明或安全評估結果，E4B 相對 E2B 的實際效能增益與成本差異亦無從判斷，建議使用前先自行以目標任務進行評測。",
+        "title": "google/gemma-4-E4B-it",
+        "title_zh": "google/gemma-4-E4B-it：Gemma 4 中型多模態指令微調模型"
       },
       {
         "arxiv_id": null,
@@ -432,7 +434,9 @@
         "source_name": null,
         "story_id": "hf:google/gemma-4-e2b-it",
         "summary": "Hugging Face | Launch Blog | Documentation License: Apache 2.0 | Authors: Google DeepMind Gemma is a family of open models built by Google DeepMind. Gemma 4 models are multimodal, handling text and image input (with audio supported on small models) and generating text output. This release includes open-weights models in both pre-trained and instruction-tuned variants. Gemma 4 features a context window of up to 256K tokens and maintains multilingual support in over 140 languages. Featuring both Dense and Mixture-of-Experts (MoE) architectures, Gemma 4 is well-suited for tasks like text generation, coding, and reasoning. The models are available in four distinct sizes: **E2B**, **E4B**, **26B A4B**, and **31B**. Their diverse sizes make them deployable in environments ranging from high-end...",
-        "title": "google/gemma-4-E2B-it"
+        "summary_zh": "Gemma 4 是 Google DeepMind 推出的開源模型系列，採用 Apache 2.0 授權，此版為其中較小型的 E2B 指令微調（instruction-tuned）變體。模型具備多模態能力，可處理文字與圖像輸入並產生文字輸出，小型模型另支援音訊輸入；上下文視窗最高可達 256K tokens，並維持超過 140 種語言的多語支援。架構上同時涵蓋稠密（Dense）與混合專家（Mixture-of-Experts, MoE）設計，適合文字生成、程式撰寫與推理等任務。系列共提供 E2B、E4B、26B A4B 與 31B 四種尺寸，範圍從可在終端裝置或邊緣環境部署的小模型，到需要高階硬體的大型模型，讓開發者可依算力與延遲需求取捨。官方提供 Hugging Face 頁面、發布部落格與文件。摘要未揭露基準測試分數、微調資料組成與安全性評測結果，因此實際效能、幻覺率與風險控管仍待使用者自行驗證。",
+        "title": "google/gemma-4-E2B-it",
+        "title_zh": "google/gemma-4-E2B-it：Gemma 4 小型多模態指令微調模型"
       },
       {
         "arxiv_id": null,
@@ -4594,7 +4598,9 @@
       "source_name": "DeepMind Blog",
       "story_id": "fallback:fe2dd0963a6f0ea0",
       "summary": "Gemma 4: Our most intelligent open models to date, purpose-built for advanced reasoning and agentic workflows.",
-      "title": "Gemma 4: Byte for byte, the most capable open models"
+      "summary_zh": "Gemma 4 是 Google 推出、號稱迄今最智慧且能力最強的開源模型系列。依據摘要，此系列專為進階推理與代理式工作流程（agentic workflows）量身打造，顯示其設計目標不再僅限於一般文字生成，而是朝向需要多步驟推理、工具使用與任務規劃的應用場景。標題以「位元到位元」強調模型在效率與能力之間的比例關係，暗示團隊在架構與訓練上追求每一單位參數或每一單位運算資源的最佳化。目前僅取得極簡摘要，尚未揭露模型規模、訓練資料組成、評估基準、推論成本、授權條款與是否開放權重等關鍵資訊，也無法確認其在數學、程式、長脈絡或多模態任務上的具體表現，以及與同期開源模型的相對優劣。對研究者而言，值得關注的是此類模型若真能兼顧推理深度與部署效率，將影響代理系統的建構方式與地端應用可行性，但在完整技術報告與基準數據公布前，相關宣稱仍宜審慎看待。",
+      "title": "Gemma 4: Byte for byte, the most capable open models",
+      "title_zh": "Gemma 4：位元到位元，迄今最強能力的開源模型"
     },
     {
       "arxiv_id": null,
@@ -4648,7 +4654,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:107fcc70afa876dc",
       "summary": "In this post, we explore how ActorSimulator in Strands Evaluations SDK addresses the challenge with structured user simulation that integrates into your evaluation pipeline.",
-      "title": "Simulate realistic users to evaluate multi-turn AI agents in Strands Evals"
+      "summary_zh": "本文介紹 Strands Evaluations SDK 中的 ActorSimulator，處理多回合 AI 代理評估時缺乏真實使用者互動的難題。傳統評估多依賴靜態測試案例或單回合提示，難以反映代理在來回對話中維持狀態、追問與修正的能力，也使評估結果與實際部署落差甚大。ActorSimulator 的做法是以結構化使用者模擬產生具角色設定與目標的對話行為，並可直接整合進既有的評估流程，讓開發者以可重現的方式檢驗代理在多輪互動下的表現。文章以實作導向說明其如何嵌入評估管線，並探討此設計對代理開發的意義：能以較低成本反覆測試、擴大涵蓋情境，同時降低人工受試者的需求。限制在於模擬使用者終究是模型產生的行為，可能帶有與真實使用者不同的偏誤與分布落差，因此仍需以真人資料校準。由於本文屬技術部落格性質的摘要，缺少量化基準與跨系統比較，其有效性仍待更多實證。",
+      "title": "Simulate realistic users to evaluate multi-turn AI agents in Strands Evals",
+      "title_zh": "在 Strands Evals 中以擬真使用者模擬評估多回合 AI 代理"
     },
     {
       "arxiv_id": "2604.02241",

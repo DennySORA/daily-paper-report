@@ -801,7 +801,9 @@
       "source_name": null,
       "story_id": "hf:qwen/qwen3-embedding-0.6b",
       "summary": "The Qwen3 Embedding model series is the latest proprietary model of the Qwen family, specifically designed for text embedding and ranking tasks. Building upon the dense foundational models of the Qwen3 series, it provides a comprehensive range of text embeddings and reranking models in various sizes (0.6B, 4B, and 8B). This series inherits the exceptional multilingual capabilities, long-text understanding, and reasoning skills of its foundational model. The Qwen3 Embedding series represents significant advancements in multiple text embedding and ranking tasks, including text retrieval, code retrieval, text classification, text clustering, and bitext mining. **Exceptional Versatility**: The embedding model has achieved state-of-the-art performance across a wide range of downstream...",
-      "title": "Qwen/Qwen3-Embedding-0.6B"
+      "summary_zh": "Qwen3 Embedding 系列是 Qwen 家族最新的文字嵌入與排序模型，建構於 Qwen3 系列的稠密基礎模型之上，提供 0.6B、4B 與 8B 三種尺寸的嵌入與重排序模型。此系列繼承基礎模型的多語能力、長文本理解與推理能力，並在文字檢索、程式碼檢索、文字分類、文字聚類與雙語文本探勘等多項任務上宣稱取得進展，其中嵌入模型在多個下游評測上達到領先水準。本次條目對應的是 0.6B 版本，主打輕量部署與廣泛適用性，適合資源受限或需低延遲的檢索場景。需注意的是，摘要僅止於能力陳述，未提供各評測基准的具體分數、與同級模型的比較細節，也未說明長文本上限與推論成本。對需要多語檢索或 RAG 管線的團隊而言，此系列提供了不同規模的選擇，但實際選型仍應以自身語料與指標驗證。",
+      "title": "Qwen/Qwen3-Embedding-0.6B",
+      "title_zh": "Qwen/Qwen3-Embedding-0.6B"
     }
   ]
 }

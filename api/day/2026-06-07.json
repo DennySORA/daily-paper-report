@@ -307,7 +307,9 @@
       "source_name": "AIDB - AI Research Database",
       "story_id": "fallback:b92e581b4d8c46dc",
       "summary": "<p>新しいAIモデルが登場するたび、性能の数字は華々しく語られます。しかしそのモデルが何個のパラメータでできているのか、どれだけ大きいのかは、ほとんど明かされません。 たとえば自社サービスにどのモデルを組み込むか迷っているとします。Aは高性能ですが応答が遅く、料金も高い。Bは性能こそ及ばないものの安く速い。AがBより優れているのは設計が賢いからなのか、それとも単に巨大なだけなのか。そこが分かれば選びやすいのに、肝心の大きさだけが伏せられています。 ところが外から質問を投げ込むだけで、モデルのおおよその大きさを言い当てる手立てが示されました。手がかりになったのは、意外にも誰もが知る古典の名作たちです&#8230;</p>\n<p>The post <a href=\"https://ai-data-base.com/archives/110616\"><span class=\"locked-post\">🔒</span> Claude、Gemini、GPT、Qwenのモデルサイズ（パラメーターサイズ）を推定する</a> first appeared on <a href=\"https://ai-data-base.com\">AIDB</a>.</p>",
-      "title": "🔒 Claude、Gemini、GPT、Qwenのモデルサイズ（パラメーターサイズ）を推定する"
+      "summary_zh": "本文關注大型語言模型發展中一個長期不透明的環節：模型規模。每當新模型發布，榜單上的效能數字總是被熱烈討論，但模型究竟由多少參數構成、體積多大，官方幾乎從不公布。作者指出這對實際選型造成困擾：假設團隊要在自家服務中挑選模型，A 效能高但回應慢、費用貴，B 效能略遜但便宜又快速，此時若知道 A 只是「比較大」而非「設計比較聰明」，決策邏輯會完全不同。文中介紹一種僅從外部對模型提問、便能大致推估其參數規模的方法，而作為推估線索的素材，竟是許多人耳熟能詳的古典文學名著。原文僅有摘要與付費牆提示，並未揭露該方法的完整原理、抽樣流程、誤差範圍與驗證對象，因此推估結果的精確度仍待檢驗。本文的意義在於示範了一種「黑箱模型外部探測」的研究取徑，若方法可靠，將有助於模型選擇、成本預估，以及對模型能力來源（規模還是訓練配方）的理解，也牽動外界對模型透明度與資訊揭露的討論。",
+      "title": "🔒 Claude、Gemini、GPT、Qwenのモデルサイズ（パラメーターサイズ）を推定する",
+      "title_zh": "推估 Claude、Gemini、GPT、Qwen 的模型規模（參數量）"
     },
     {
       "arxiv_id": "commit/9272130",
@@ -405,7 +407,9 @@
       "source_name": "Awesome Japanese LLM (GitHub)",
       "story_id": "fallback:33b9bf4a4ef446b5",
       "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">Sarashina2.2-TTS を音声合成 (TTS) セクションに追加 (#672)\n\nSB Intuitions の Sarashina2.2 (0.5B) ベースの日本語TTSモデル (CosyVoice + HiFT-GAN)。\nライセンスは Sarashina Model NonCommercial License。README.md / en / fr の3言語に反映。\n\nCo-authored-by: Claude Opus 4.8 &lt;noreply@anthropic.com&gt;</pre>",
-      "title": "Sarashina2.2-TTS を音声合成 (TTS) セクションに追加 (#672)"
+      "summary_zh": "本文是一則開源專案的合併請求紀錄，內容相當簡短。變更目的是把 SB Intuitions 推出的日語 TTS 模型 Sarashina2.2-TTS 收錄進專案的語音合成（Text-to-Speech）段落。技術上，該模型以 Sarashina2.2（0.5B）為基礎，並結合 CosyVoice 與 HiFT-GAN 元件構成語音合成流程。授權方面採用 Sarashina Model NonCommercial License，屬非商業使用條款，使用者在導入前須確認自身情境是否符合。此次變更同步反映在 README.md 以及英文、法文共三種語言的說明文件，並註明由 Claude Opus 4.8 協同撰寫。由於原始內容僅有提交訊息與摘要，缺乏模型評測數據、音質指標、推論延遲或與其他 TTS 系統的比較，因此本文的價值在於提供一筆可追溯的資源登錄線索：對於想尋找日語語音合成方案、或關注 0.5B 級小型 TTS 模型可行性與授權限制的開發者，可據此進一步查閱專案原始碼與模型卡。",
+      "title": "Sarashina2.2-TTS を音声合成 (TTS) セクションに追加 (#672)",
+      "title_zh": "將 Sarashina2.2-TTS 加入語音合成（TTS）段落（#672）"
     },
     {
       "arxiv_id": null,
@@ -453,7 +457,9 @@
       "source_name": "Awesome Japanese LLM (GitHub)",
       "story_id": "fallback:060765c09826c840",
       "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">Update Contributors Image</pre>",
-      "title": "Update Contributors Image"
+      "summary_zh": "本文是一則極為精簡的版本庫提交紀錄，內容僅為「更新貢獻者圖片」。從性質來看，這屬於文件或網站維運層級的例行變更，通常是專案自動化流程或維護者更新 README 中的貢獻者頭像牆、貢獻者名單圖檔，或同步 GitHub 上的 contributors 圖片。由於原文僅有標題與提交訊息，完全沒有提供背景說明、變更原因、實作方式、影響範圍或任何技術內容，也不涉及方法論、實驗設計或數據結果，因此無法從中萃取研究貢獻或工程洞見。此類紀錄的意義僅在於保存專案維護的可追溯性，讓協作者日後回溯時能確認該次提交的用途；對一般讀者而言並不具備可引用的技術內涵。若需了解實際變更，仍須檢視對應的 diff 與相關檔案。",
+      "title": "Update Contributors Image",
+      "title_zh": "更新貢獻者圖片"
     }
   ]
 }

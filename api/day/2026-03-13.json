@@ -4438,7 +4438,9 @@
       "source_name": "Microsoft Research Blog",
       "story_id": "fallback:66a816d8923c5d1f",
       "summary": "<p>As AI agents transition from simple chatbots to autonomous systems capable of managing cloud incidents, navigating complex web interfaces, and executing multi-step API workflows, a new challenge has emerged: transparency. When a human makes a mistake, we can usually trace the logic. But when an AI agent fails, perhaps by hallucinating a tool output or [&#8230;]</p>\n<p>The post <a href=\"https://www.microsoft.com/en-us/research/blog/systematic-debugging-for-ai-agents-introducing-the-agentrx-framework/\">Systematic debugging for AI agents: Introducing the AgentRx framework</a> appeared first on <a href=\"https://www.microsoft.com/en-us/research\">Microsoft Research</a>.</p>",
-      "title": "Systematic debugging for AI agents: Introducing the AgentRx framework"
+      "summary_zh": "當 AI 代理從單純的聊天機器人，演進為能處理雲端事故、操作複雜網頁介面、執行多步驟 API 工作流程的自動化系統時，透明度成為新的挑戰。人類犯錯時，我們通常能追溯其推理脈絡；但 AI 代理失敗時，例如幻覺出不存在的工具輸出，或在中途誤判狀態，問題往往難以定位，因為決策散布在多次模型呼叫、工具回應與環境狀態變化之間。本文介紹微軟研究院的 AgentRx 框架，訴求為代理提供系統化的除錯能力，讓開發者能沿著執行軌跡檢視每一步的輸入、輸出與判斷，找出失敗的根源，而非僅憑最終結果猜測。摘要止於此，未說明其追蹤機制、與現有可觀測性工具的整合方式，也未提供案例研究或量化評估，因此無法判斷其診斷準確率與額外開銷。其意義在於把軟體工程長期累積的除錯思維帶入代理系統，若能落實，將有助於提升自主任務的可靠性與可審計性，這是代理走向生產環境的必經門檻。",
+      "title": "Systematic debugging for AI agents: Introducing the AgentRx framework",
+      "title_zh": "AI 代理的系統化除錯：AgentRx 框架簡介"
     },
     {
       "arxiv_id": "2603.12117",

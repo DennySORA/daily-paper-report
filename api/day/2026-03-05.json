@@ -156,7 +156,9 @@
         "source_name": null,
         "story_id": "hf:google/timesfm-2.5-200m-transformers",
         "summary": "TimesFM (Time Series Foundation Model) is a pretrained decoder-only model for time-series forecasting. This repository contains the **Transformers** port of the official TimesFM 2.5 PyTorch release. **Resources and Technical Documentation**: * Original model: google/timesfm-2.5-200m-pytorch * Paper: A decoder-only foundation model for time-series forecasting * Transformers docs: TimesFM 2.5 This model is converted from the official TimesFM 2.5 PyTorch checkpoint and integrated into `transformers` as `TimesFm2_5ModelForPrediction`. The converted checkpoint preserves the original architecture and forecasting behavior, including: * patch-based inputs for time-series contexts * decoder-only self-attention stack * point and quantile forecasts",
-        "title": "google/timesfm-2.5-200m-transformers"
+        "summary_zh": "TimesFM（Time Series Foundation Model）是 Google 釋出的預訓練解碼器架構模型，專門用於時間序列預測。此儲存庫提供官方 TimesFM 2.5 PyTorch 版本的 Transformers 移植版，方便使用者直接在 Hugging Face transformers 生態系中載入。模型由官方 PyTorch 檢查點轉換而來，整合為 TimesFm2_5ModelForPrediction，並保留原本的架構與預測行為，包括以 patch 為基礎的時間序列輸入、解碼器自注意力堆疊，以及點預測與分位數預測輸出。官方同時提供原始模型 google/timesfm-2.5-200m-pytorch、技術論文「A decoder-only foundation model for time-series forecasting」與 Transformers 文件等資源。值得注意的是，摘要僅描述模型設計與轉換方式，未提供誤差指標、基準比較或推論成本等量化證據，也未說明適用情境與失敗案例。對需要零樣本或少量樣本預測的實務者而言，此移植降低了整合門檻，但實際準確度與領域泛化能力仍需自行評測。",
+        "title": "google/timesfm-2.5-200m-transformers",
+        "title_zh": "google/timesfm-2.5-200m-transformers：時間序列基礎模型的 Transformers 版本"
       },
       {
         "arxiv_id": null,
@@ -208,7 +210,9 @@
         "source_name": null,
         "story_id": "hf:microsoft/vibevoice-asr-hf",
         "summary": "**VibeVoice-ASR** is a unified speech-to-text model designed to handle **60-minute long-form audio** in a single pass, generating structured transcriptions containing **Who (Speaker), When (Timestamps), and What (Content)**, with support for **Customized Hotwords** and over **50 languages**. ➡️ **Demo:** VibeVoice-ASR-Demo ➡️ **Report:** VibeVoice-ASR Technical Report - **🕒 60-minute Single-Pass Processing**: Unlike conventional ASR models that slice audio into short chunks (often losing global context), VibeVoice ASR accepts up to **60 minutes** of continuous audio input within 64K token length. This ensures consistent speaker tracking and semantic coherence across the entire hour. - **👤 Customized Hotwords**: Users can provide customized hotwords (e.g., specific names, technical terms,...",
-        "title": "microsoft/VibeVoice-ASR-HF"
+        "summary_zh": "VibeVoice-ASR 是一款統一的語音轉文字模型，主打能在單次推論中處理長達 60 分鐘的長篇音訊，並輸出結構化轉錄結果，同時標註「誰（講者）」、「何時（時間戳）」與「什麼（內容）」三類資訊，另支援自訂熱詞與超過 50 種語言。傳統 ASR 模型通常把音訊切成短片段再逐一辨識，因而容易遺失全域脈絡；VibeVoice 則可在 64K token 長度內直接接受最多 60 分鐘的連續音訊輸入，藉此維持整段錄音中講者追蹤的一致性與語意連貫性。自訂熱詞功能讓使用者提供特定人名、專業術語等詞彙，以提升領域場景的辨識正確率。摘要僅描述模型定位與功能特色，未提供字元錯誤率等量化基準、與其他長音訊 ASR 系統的比較，也未說明在高度重疊語音或噪音環境下的表現與失效情況，因此其實際效能仍待技術報告佐證。此工作的價值在於把長音訊辨識從「分段拼接」推向「單次全域處理」，對會議紀錄、Podcast 與逐字稿等需要長時間脈絡的應用具指標意義。",
+        "title": "microsoft/VibeVoice-ASR-HF",
+        "title_zh": "微軟 VibeVoice-ASR：單次處理 60 分鐘長音訊的語音辨識模型"
       }
     ],
     "other": [

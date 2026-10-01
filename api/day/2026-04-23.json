@@ -4525,7 +4525,9 @@
       "source_name": "Microsoft Research Blog",
       "story_id": "fallback:2bd95276c2736203",
       "summary": "<p>Deploying large language models (LLMs) in real-world, high-stakes settings is harder than it should be. In high-stakes settings like law, medicine, and cloud incident response, performance and reliability can quickly break down because adapting models to domain-specific requirements is a slow and manual process that is difficult to reproduce. The core challenge is domain adaptation, [&#8230;]</p>\n<p>The post <a href=\"https://www.microsoft.com/en-us/research/blog/autoadapt-automated-domain-adaptation-for-large-language-models/\">AutoAdapt: Automated domain adaptation for large language models</a> appeared first on <a href=\"https://www.microsoft.com/en-us/research\">Microsoft Research</a>.</p>",
-      "title": "AutoAdapt: Automated domain adaptation for large language models"
+      "summary_zh": "微軟研究院發布的 AutoAdapt 聚焦於大型語言模型在司法、醫療與雲端事故應變等高風險場域的落地困境。這類場域對效能與可靠性要求極高，但現行將模型調適到特定領域需求的流程既緩慢又高度依賴人工，且難以重現，導致部署成本居高不下。貼文指出核心挑戰在於領域調適本身，並提出以自動化方式處理此問題的研究方向。目前公開內容僅有摘要，尚未揭露具體方法細節、實驗設計與量化結果，因此無法判斷其相較既有 fine-tuning 或提示工程流程的實際增益。整體而言，此工作的重要性在於把高風險領域的模型客製化從手工藝推向可重複、可規模化的工程流程，對需要合規與可審計性的產業尤具參考價值。後續應關注其是否提供可重現的基準與成本比較。",
+      "title": "AutoAdapt: Automated domain adaptation for large language models",
+      "title_zh": "AutoAdapt：大型語言模型的自動化領域調適"
     },
     {
       "arxiv_id": "2604.20490",
@@ -5711,7 +5713,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:85cc9e4326911be3",
       "summary": "Company-wise memory in Amazon Bedrock, powered by Amazon Neptune and Mem0, provides AI agents with persistent, company-specific context—enabling them to learn, adapt, and respond intelligently across multiple interactions. TrendMicro, one of the largest antivirus software companies in the world, developed the Trend’s Companion chatbot, so their customers can explore information through natural, conversational interactions",
-      "title": "Company-wise memory in Amazon Bedrock with Amazon Neptune and Mem0"
+      "summary_zh": "這篇 AWS 技術文章介紹如何在 Amazon Bedrock 上，結合 Amazon Neptune 圖形資料庫與 Mem0 記憶框架，為 AI 代理建立具持續性且專屬於個別企業的上下文記憶。傳統代理在多次互動之間往往無法保留狀態，導致使用者必須反覆提供背景資訊，難以形成真正的長期助理體驗。此方案讓代理能學習、調適並在多輪互動中維持一致且聰明的回應。文中以趨勢科技（TrendMicro）開發的 Trend's Companion 聊天機器人為案例，說明客戶如何透過自然對話探索資訊。目前公開內容僅為摘要，未提供準確度、延遲或成本等量化指標，也未交代記憶寫入與檢索的策略細節。其意義在於把代理記憶從單次會話延伸到企業層級的知識累積，對需要客戶長期脈絡的服務場景具實務價值。",
+      "title": "Company-wise memory in Amazon Bedrock with Amazon Neptune and Mem0",
+      "title_zh": "以 Amazon Neptune 與 Mem0 在 Amazon Bedrock 實現企業級記憶機制"
     },
     {
       "arxiv_id": null,
@@ -5766,7 +5770,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:9fcd2c406e08f9ea",
       "summary": "Today, we're introducing new capabilities that further streamline the agent building experience, removing the infrastructure barriers that slow teams down at every stage of agent development from the first prototype through production deployment.",
-      "title": "Get to your first working agent in minutes: Announcing new features in Amazon Bedrock AgentCore"
+      "summary_zh": "這則 AWS 公告說明 Amazon Bedrock AgentCore 推出一系列新能力，目標是進一步簡化代理的建構體驗，移除阻礙團隊推進的基礎設施門檻。文章指出，從最初的原型到正式上線的生產部署，各階段都存在拖慢團隊的工程障礙，而新功能正是針對這些痛點設計，讓開發者能把心力放在代理邏輯而非底層維運。目前公開內容僅止於摘要層級，未具體列出新增功能的清單，也缺乏效能、成本或可用區域等量化佐證，亦未說明與既有代理框架的整合方式。就意義而言，此舉反映雲端業者正把代理開發從需要自行拼裝的基礎設施工作，轉向平台化的託管服務，對想快速驗證代理構想的團隊可望降低前期投入。後續值得觀察其實際可用性與計價模式。",
+      "title": "Get to your first working agent in minutes: Announcing new features in Amazon Bedrock AgentCore",
+      "title_zh": "數分鐘內打造第一個可運作的代理：Amazon Bedrock AgentCore 新功能發布"
     },
     {
       "arxiv_id": null,
@@ -5821,7 +5827,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:045b21a3733c5f87",
       "summary": "In this post, we walk through building a scalable, event-driven transcription pipeline that automatically processes audio files uploaded to Amazon Simple Storage Service (Amazon S3), and show you how to use Amazon EC2 Spot Instances and buffered streaming inference to further reduce costs.",
-      "title": "Cost-effective multilingual audio transcription at scale with Parakeet-TDT and AWS Batch"
+      "summary_zh": "這篇 AWS 技術文章示範如何建構一套可擴展、事件驅動的語音轉錄管線，能自動處理上傳至 Amazon Simple Storage Service（Amazon S3）的音訊檔案。實務上，大量多語音訊的轉錄往往面臨運算成本與吞吐量的兩難，尤其在檔案分批抵達、負載忽高忽低的情境下更難兼顧。文中說明如何運用 Amazon EC2 Spot Instances 以及緩衝式串流推論（buffered streaming inference）進一步壓低費用，並以 Parakeet-TDT 模型作為轉錄核心。目前公開內容僅為摘要，未提供字元錯誤率、端到端延遲或具體節省比例等量化數據，也未交代 Spot 執行個體被回收時的容錯設計。其價值在於把批次推論、事件驅動與成本最佳化整合成可複製的參考架構，對需要處理跨語系音訊的團隊具實務參考意義。",
+      "title": "Cost-effective multilingual audio transcription at scale with Parakeet-TDT and AWS Batch",
+      "title_zh": "以 Parakeet-TDT 與 AWS Batch 實現可規模化且具成本效益的多語音訊轉錄"
     },
     {
       "arxiv_id": null,
@@ -5875,7 +5883,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:a89cddbcc772e249",
       "summary": "Today, Amazon SageMaker AI&nbsp; supports optimized generative AI inference recommendations. By delivering validated, optimal deployment configurations with performance metrics, Amazon SageMaker AI keeps your model developers focused on building accurate models, not managing infrastructure.",
-      "title": "Amazon SageMaker AI now supports optimized generative AI inference recommendations"
+      "summary_zh": "這則 AWS 公告指出，Amazon SageMaker AI 開始支援經最佳化的生成式 AI 推論建議功能。生成式模型部署時，開發者常須在執行個體型號、平行化策略與批次設定等大量組態中反覆試錯，既耗時又難以確認是否達到最佳效能，基礎設施調校往往排擠了模型開發的心力。此功能提供經過驗證的最佳部署組態，並附帶效能指標，讓模型開發者能專注於打造準確的模型，而非管理底層基礎設施。目前公開內容僅為摘要，未說明建議涵蓋哪些模型家族、驗證基準的定義方式，以及是否支援自訂模型或特定推論引擎，也缺乏成本節省幅度的量化證據。其意義在於把推論部署的調校知識產品化，有望縮短從模型到上線的落差，對推論成本敏感的團隊尤具吸引力。",
+      "title": "Amazon SageMaker AI now supports optimized generative AI inference recommendations",
+      "title_zh": "Amazon SageMaker AI 現支援經最佳化的生成式 AI 推論建議"
     },
     {
       "arxiv_id": null,
@@ -5924,7 +5934,9 @@
       "source_name": "Google AI Blog",
       "story_id": "fallback:198c86da146aed79",
       "summary": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Were_launching_two_TPUs_social.max-600x600.format-webp.webp\" />The eighth generation of Google’s TPU includes two specialized chips that will power the future of AI.",
-      "title": "We're launching two specialized TPUs for the agentic era."
+      "summary_zh": "這則 Google 公告宣布推出第八代 TPU，並首度在同一世代中納入兩款專用晶片，用以支撐未來的 AI 工作負載，並明確以「代理時代」作為定位。隨著代理式系統需要頻繁呼叫工具、維持長上下文並進行多輪推理，傳統單一取向的加速器在訓練與推論之間的取捨日益吃緊，因此針對不同階段設計專用晶片成為合理方向。不過目前公開內容僅止於摘要與一張社群預覽圖，未揭露兩款晶片的具體分工、算力與記憶體頻寬等規格，也沒有任何基準測試數據或能源效率比較，因此無法評估其實際競爭力與部署可得性。其意義在於顯示超大規模業者正把硬體設計更緊密地對齊代理工作負載的形態，後續值得觀察開發者能否透過雲端服務實際取用。",
+      "title": "We're launching two specialized TPUs for the agentic era.",
+      "title_zh": "為代理時代推出兩款專用 TPU"
     }
   ],
   "run_date": "2026-04-23",

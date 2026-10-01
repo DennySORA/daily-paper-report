@@ -4763,7 +4763,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:cf5b7b5048aa13b6",
       "summary": "In this post, we walk through the end-to-end workflow of using RFT on Amazon Bedrock with OpenAI-compatible APIs: from setting up authentication, to deploying a Lambda-based reward function, to kicking off a training job and running on-demand inference on your fine-tuned model.",
-      "title": "Reinforcement fine-tuning on Amazon Bedrock with OpenAI-Compatible APIs: a technical walkthrough"
+      "summary_zh": "這是一篇技術導覽文章，說明如何在 Amazon Bedrock 上使用強化學習微調（Reinforcement Fine-Tuning，RFT），並透過相容於 OpenAI 的 API 介面完成整體流程。文章處理的問題是：大型語言模型在特定任務上往往需要的不只是監督式微調，而是透過獎勵訊號引導模型產生更符合目標的輸出，RFT 正是為此設計。作者以端到端的方式走過完整工作流，包括設定身分驗證、部署以 Lambda 為基礎的獎勵函式、啟動訓練工作，以及對微調後的模型執行隨需推論。相容於 OpenAI 的 API 意味著既有以 OpenAI 介面開發的程式碼可較容易遷移，降低改用門檻。不過摘要並未提供任何實驗數據，例如獎勵設計對最終品質的影響、訓練成本、收斂速度，或與其他微調方法的比較，也未討論獎勵函式設計不當可能導致的獎勵駭客問題。其重要性在於把強化學習微調從研究手法推向受管理的雲端服務，對想在實務產品中導入偏好最佳化的團隊提供具體操作路徑。",
+      "title": "Reinforcement fine-tuning on Amazon Bedrock with OpenAI-Compatible APIs: a technical walkthrough",
+      "title_zh": "在 Amazon Bedrock 上以相容於 OpenAI 的 API 進行強化學習微調：技術實作導覽"
     },
     {
       "arxiv_id": "2603.24524",
@@ -5328,7 +5330,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:093f71cb2e531aa1",
       "summary": "In this post, we explore how the multimodal foundation models (FMs) of Amazon Bedrock enable scalable video understanding through three distinct architectural approaches. Each approach is designed for different use cases and cost-performance trade-offs.",
-      "title": "Unlocking video insights at scale with Amazon Bedrock multimodal models"
+      "summary_zh": "這篇文章探討如何運用 Amazon Bedrock 的多模態基礎模型（foundation models）來實現可規模化的影片理解，並提出三種不同的架構取向。問題背景在於影片資料量大、時間維度高，直接送入模型往往面臨成本與延遲的雙重壓力，因此需要依使用情境選擇合適的處理策略。三種架構分別針對不同的應用場景與成本效能取捨而設計，讓開發者可依需求在準確度、處理速度與費用之間做出權衡，例如以抽樣影格搭配文字查詢、或是先做片段切分再逐段理解等不同思路。文章屬於架構層面的技術分享，摘要並未揭露具體的模型名稱、影格取樣率、評估資料集或準確度與成本量測數字，因此無法判斷各架構在實際工作負載下的表現差距。其重要性在於指出影片理解並非單一解法，而是需要依場景選擇架構的工程問題，對正在規劃大規模影音分析管線的團隊而言，提供了在受管理雲端服務上權衡成本與效能的思考框架，也提醒實作者必須自行以自有資料驗證適用性。",
+      "title": "Unlocking video insights at scale with Amazon Bedrock multimodal models",
+      "title_zh": "以 Amazon Bedrock 多模態模型大規模解鎖影片洞察"
     }
   ],
   "run_date": "2026-03-26",

@@ -429,7 +429,9 @@
       "source_name": "AI Shift Tech Blog (Zenn)",
       "story_id": "fallback:ad12042867d3e4e1",
       "summary": "こんにちは\nAIチームの戸田です\nAI Shift主催のLocal LLM Meetupの第２回を開催することとなりました。\nhttps://cyberagent.connpass.com/event/397378/\nLocal LLM を開発の相棒として使ってみる個人参加型ハッカソンという形式です。\n過去の記事でも何度かLocal LLMを触ってきましたが、今回は「読む」だけでなく「各自の手で動かす」会になります。\nhttps://zenn.dev/aishift/articles/5b048ff347fd7b\nhttps://zenn.dev/aishift/articles/5a5...",
-      "title": "AI Shift Local LLM Meetup #2 に向けて、Macで動くLocal LLM開発環境を準備する"
+      "summary_zh": "本文由 AI Shift 的 AI 團隊成員戶田撰寫，預告該公司主辦的第二屆 Local LLM Meetup，活動形式為個人參與型的黑客松，主題是把本地 LLM 當作開發工作的夥伴。作者回顧過去幾篇文章多半只是「閱讀」本地 LLM 的相關知識，這次活動則要求參與者親手在自己的機器上把模型跑起來，因此文章重點放在如何在 Mac 上準備可用的本地 LLM 開發環境。摘要僅止於活動介紹與動機說明，未提供具體的模型清單、執行框架、量化設定、記憶體需求或效能實測數字，因此無法評估不同方案在 Apple 晶片上的實際表現。對台灣開發者而言，其參考價值在於凸顯本地端推論已成為實務選項，能兼顧隱私、離線可用性與成本控制，但需注意硬體資源限制。",
+      "title": "AI Shift Local LLM Meetup #2 に向けて、Macで動くLocal LLM開発環境を準備する",
+      "title_zh": "為 AI Shift Local LLM Meetup #2 準備可在 Mac 上執行的本地 LLM 開發環境"
     },
     {
       "arxiv_id": null,
@@ -482,7 +484,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:f378121f3df2741f",
       "summary": "In this post, we walk through the problem space, our architecture on Amazon Bedrock and Amazon OpenSearch Serverless, the evaluation methodology we built on OpenStreetMap ground truth, four experiments that compared embedding models, fusion strategies, captioning, and search methods, and the practical guidance you can apply when building a similar system. You’ll learn which design choices move the needle for geospatial semantic search, including why Amazon Nova Multimodal Embeddings delivered the highest F1 scores across both benchmark queries in our evaluation. The work described here evolved into Vexcel Intelligence, a searchable imagery product.",
-      "title": "Embed the world: Multimodal AI for searchable aerial imagery at scale"
+      "summary_zh": "本文描述如何為大規模航拍影像建立語意搜尋能力，並說明其解題脈絡、在 Amazon Bedrock 與 Amazon OpenSearch Serverless 上的系統架構，以及以 OpenStreetMap 地面真值為基礎所建立的評估方法。作者進行四組實驗，分別比較不同的嵌入模型、融合策略、影像描述生成（captioning）與搜尋方法，並歸納出可套用於類似系統的實務建議，指出哪些設計選擇真正影響地理空間語意搜尋的效果。其中 Amazon Nova Multimodal Embeddings 在兩組基準查詢上取得最高的 F1 分數。此工作後續演變為可搜尋影像產品 Vexcel Intelligence。摘要未揭露各實驗的完整數據、資料規模與失敗案例，因此結論的外部效度仍待檢驗。對地理空間與遙測應用而言，其意義在於示範如何以多模態嵌入把龐大影像資產轉為可自然語言查詢的檢索系統。",
+      "title": "Embed the world: Multimodal AI for searchable aerial imagery at scale",
+      "title_zh": "嵌入整個世界：大規模可搜尋航拍影像的多模態 AI"
     },
     {
       "arxiv_id": null,
@@ -532,7 +536,9 @@
       "source_name": "Qiita 生成AI Tag",
       "story_id": "fallback:1052fa601929498f",
       "summary": "git worktreeは、本流(main)を汚さずに別ブランチの作業を物理的に分けるための仕組みだ。並行して機能開発を進める人や、AIエージェントに作業を任せる人ほど「worktreeに隔離しておけば本流は安全」と考える。claude -w &lt;名前&gt; でworktreeの...",
-      "title": "worktreeで隔離したはずが、編集が全部mainに着地していた——Claude Codeの静かなデータ消失(起票#70069)"
+      "summary_zh": "這篇文章談的是一個關於 git worktree 隔離機制的問題：開發者原本以為把工作放進獨立的 worktree，就能避免污染主線（main），但實際上編輯結果卻全部落到 main 上，形成一種沒有錯誤訊息的靜默資料遺失。作者指出，越是同時進行多條功能開發、或把工作交給 AI 代理執行的人，越容易相信「放進 worktree 就安全」這個直覺。文中以 claude -w <名稱> 這類指令建立 worktree 的操作為切入點，說明隔離邊界的判定可能在實際流程中失效。需要說明的是，目前公開的內容僅有摘要，尚未提供完整的重現步驟、版本資訊與實驗數據，因此無法確認問題的觸發條件與影響範圍。這類議題值得關注，是因為多代理與平行開發已成為常態工作型態，一旦隔離假設不成立，開發者可能在不知情的狀況下覆寫主線程式碼，而事後追查相當困難。",
+      "title": "worktreeで隔離したはずが、編集が全部mainに着地していた——Claude Codeの静かなデータ消失(起票#70069)",
+      "title_zh": "以為用 worktree 隔離，結果編輯全部落在 main 上——Claude Code 的靜默資料遺失（議題 #70069）"
     },
     {
       "arxiv_id": null,
@@ -582,7 +588,9 @@
       "source_name": "Qiita LLM Tag",
       "story_id": "fallback:e00056e8a181517b",
       "summary": "はじめに\n2026年6月22日、Google は Gemini Interactions API の一般提供（GA: Generally Available）を正式に発表しました。\nこれまでベータ版・パブリックプレビューとして提供されていたこの API が正式版となり、G...",
-      "title": "Google Gemini Interactions API が正式GA——統一インターフェースで最新モデルに接続する方法"
+      "summary_zh": "這篇文章介紹 Google 於 2026 年 6 月 22 日正式宣布 Gemini Interactions API 進入一般可用（GA）階段。該 API 先前以 beta 與公開預覽形式提供，如今轉為正式版本，代表介面與服務水準已達可投入正式環境的狀態。文章的核心關切在於「統一介面」這件事：過去要連接不同世代或不同能力的模型，往往需要切換多套呼叫方式與參數結構，而 Interactions API 試圖用單一抽象層來簡化這個問題，讓開發者以一致的請求格式存取最新的 Gemini 模型。對已在正式環境運行的團隊而言，GA 通常意味著更明確的版本承諾與支援政策，因此如何評估從預覽版遷移、以及統一介面在延遲與功能覆蓋上的取捨，是實務上的重點。不過目前僅有摘要內容，具體的端點設計、定價與遷移細節仍待完整文件確認。",
+      "title": "Google Gemini Interactions API が正式GA——統一インターフェースで最新モデルに接続する方法",
+      "title_zh": "Google Gemini Interactions API 正式 GA——以統一介面連接最新模型的方法"
     },
     {
       "arxiv_id": null,
@@ -632,7 +640,9 @@
       "source_name": "Qiita LLM Tag",
       "story_id": "fallback:0f23404079c2c9c0",
       "summary": "はじめに\n2026年6月22日、Anthropic の Claude API において、主要モデルが広範囲にわたってエラー率の上昇を経験するインシデントが発生しました。Opus 4.8 / 4.7 / 4.6、Sonnet 4.6、Haiku 4.5 という現在アクティブ...",
-      "title": "Claude API 主要モデル広範囲エラー障害の詳細と本番運用対策"
+      "summary_zh": "這篇文章記錄了 2026 年 6 月 22 日 Anthropic 的 Claude API 發生的一起事故：多個主要模型出現錯誤率大範圍上升的情況。文中點名當時處於活躍狀態的模型，包括 Opus 4.8、4.7、4.6，Sonnet 4.6 以及 Haiku 4.5，顯示受影響範圍並非單一模型，而是橫跨不同能力層級的產品線。對依賴這些模型提供服務的團隊來說，這類事件的關鍵不只是當下的可用性，而是如何在錯誤率上升時維持服務品質，例如重試策略、退避機制、多供應商備援與降級路徑的設計。文章以此為基礎討論正式營運面的因應做法。需要提醒的是，目前可見內容僅為摘要，事故的根因分析、持續時間與官方事後檢討並未完整揭露，因此相關結論應以官方狀態頁與後續報告為準。",
+      "title": "Claude API 主要モデル広範囲エラー障害の詳細と本番運用対策",
+      "title_zh": "Claude API 主要模型大範圍錯誤故障的細節與正式環境應對措施"
     },
     {
       "arxiv_id": null,
@@ -682,7 +692,9 @@
       "source_name": "Zenn LLM Topic",
       "story_id": "fallback:735d067b514f6884",
       "summary": "はじめに\n「Opusをサブエージェントとして呼べばいいか」——そう思って構成を考えたら、思ったより性能が出ない構造になることに気づいた。\nこの記事では、Claude Codeのマルチエージェント構成でOpusの性能を引き出せない理由と、設計と実装を別セッション・別モデルに分離して解決するパターンを紹介する。\n結論から言うと、オーケストレーターと実装者のモデルを一致させることが鍵だった。\n\n オーケストレーターがボトルネックになる仕組み\nClaude Codeでマルチエージェントを組むとき、こういう構成を考えやすい。\nコンシェルジュ（Sonnet）\n  ↓ Agent(model=\"o...",
-      "title": "Claude Code でOpusを使い切る——設計はSonnet、実装はプロジェクト直起動"
+      "summary_zh": "這篇文章從一個常見的架構直覺出發：既然 Opus 能力較強，那就把它當成子代理來呼叫。作者實際推演後發現，這樣的組法反而會讓整體表現不如預期，並進一步分析原因。文中的關鍵觀察是「協調者與實作者的模型必須一致」：當負責統籌的協調者使用較弱的模型（例如 Sonnet），而被呼叫的實作者使用 Opus 時，協調者本身會成為瓶頸，因為它必須負責拆解任務、傳遞脈絡與驗收成果，這些環節一旦受限，下游再強也發揮不出來。作者提出的解法是把設計與實作切分到不同工作階段與不同模型，讓規劃以 Sonnet 進行，實作則以專案直啟的方式交由 Opus 執行。文中以多代理架構的組態為例說明這個模式。須留意目前僅有摘要，缺乏可量化的效能比較，因此結論宜視為架構經驗分享而非嚴謹基準測試。",
+      "title": "Claude Code でOpusを使い切る——設計はSonnet、実装はプロジェクト直起動",
+      "title_zh": "在 Claude Code 中把 Opus 用到極致——設計交給 Sonnet，實作直接以專案啟動"
     },
     {
       "arxiv_id": null,
@@ -732,7 +744,9 @@
       "source_name": "Zenn LLM Topic",
       "story_id": "fallback:8c27969d846356c8",
       "summary": "Sakana AI が「Fugu」を出した。触る前にドキュメントとベンチを読んだ感想を先に言っておくと、これは「賢い新モデル」ではなく「賢い束ね方を1モデルの皮で包んだ」プロダクトだ。OpenAI 互換の API を1本叩くと、裏では複数のモデルがチームを組んで答えを返してくる。呼ぶ側からは普通の1モデルにしか見えない。\n最初に押さえたいのは、面白さの在りかだ。「複数モデルを合議させる」こと自体は新しくない。Mixture-of-Agents もアンサンブルも前からある。Fugu が一歩踏み込んでいるのは2点で、ひとつは束ね方を人手のワークフローではなく学習で獲得していること、もうひとつ...",
-      "title": "Sakana Fugu を読み解く：マルチエージェントを「1つのモデル」として出す設計と、叩く側に効く3つの変化"
+      "summary_zh": "這篇文章解讀 Sakana AI 推出的 Fugu。作者強調，Fugu 並不是一個更聰明的新模型，而是把「聰明的模型組合方式」用單一模型的介面包裝起來的產品：呼叫端只要打一支 OpenAI 相容的 API，背後實際上是一組模型協同合作後回傳答案，從外部看起來就像一個普通模型。文中指出，「讓多個模型合議」本身並不新穎，Mixture-of-Agents 與集成方法早已存在；Fugu 的推進之處在於兩點，其中一點是組合方式並非由人工流程寫死，而是透過學習獲得。作者也整理了這類設計對呼叫端可能帶來的三項變化，涉及成本、延遲與除錯可觀測性等面向。需要說明的是，目前僅有摘要內容，具體的訓練方法、基準測試數字與失敗案例尚未完整呈現，因此對其實際效益仍應保留評估空間。",
+      "title": "Sakana Fugu を読み解く：マルチエージェントを「1つのモデル」として出す設計と、叩く側に効く3つの変化",
+      "title_zh": "解讀 Sakana Fugu：把多代理包裝成「單一模型」的設計，以及對呼叫端帶來的三項變化"
     },
     {
       "arxiv_id": null,
@@ -782,7 +796,9 @@
       "source_name": "Zenn LLM Topic",
       "story_id": "fallback:0d5bf654b1367e6a",
       "summary": "この本のざっくり要約\n『ChatGPT/LLMによる自然言語処理入門』は、従来のBERT/RNN系NLPの基礎から、ChatGPT APIを活用した実装までを一冊で繋ぐことを意図した入門書だ。Python実装を軸に、テキスト分類・要約・対話システム構築といった実用ユースケースを扱っており、NLP初学者が「動くものを作る」ところまで到達することを主目的としている。\n\n\n 章ごとのポイント(5章ぶん)\n\n NLPの基礎とトークナイズ\nテキストを数値表現に変換するまでの流れ——形態素解析、BPEトークナイズ、埋め込みベクトルの概念——を丁寧に解説している。MeCabやsentencepie...",
-      "title": "ChatGPT/LLMによる自然言語処理入門 を読んだ実務エンジニアの正直レビュー — どこが効いてどこは古いか"
+      "summary_zh": "這是一篇實務工程師對《ChatGPT/LLM による自然言語処理入門》的書評。該書的定位是把傳統 BERT、RNN 系自然語言處理的基礎，一路接到以 ChatGPT API 實作的應用，試圖用一本書串起前後兩代技術。內容以 Python 實作為主軸，涵蓋文字分類、摘要與對話系統建構等實務案例，主要目標是讓初學者能做出「真的能跑的東西」。書評依照五個章節整理重點，開頭談自然語言處理基礎與斷詞：從文字轉為數值表示的流程，包括形態素解析、BPE 分詞與嵌入向量的概念，並介紹 MeCab、sentencepiece 等工具。作者提醒，這類入門書的價值在於建立完整的實作路徑，但模型與工具演進極快，部分章節在今日看來已有時代落差。目前公開內容僅為摘要，完整評價與逐章細節仍待原文確認。",
+      "title": "ChatGPT/LLMによる自然言語処理入門 を読んだ実務エンジニアの正直レビュー — どこが効いてどこは古いか",
+      "title_zh": "《ChatGPT/LLM 自然語言處理入門》讀後心得——實務工程師的誠實評論：哪裡有效、哪裡已過時"
     },
     {
       "arxiv_id": null,
@@ -832,7 +848,9 @@
       "source_name": "Qiita LLM Tag",
       "story_id": "fallback:ebb4228357214e93",
       "summary": "はじめに\n2026年6月22日、Anthropic がリリースノートを更新し、Claude Fable 5・Claude Mythos 5・Claude Opus 4.8 に関する複数の重要な変更が明らかになりました。中でも thinking モードの制約変更 と サンプ...",
-      "title": "Claude Fable 5 & Opus 4.8 の破壊的変更と移行ガイド"
+      "summary_zh": "這篇文章整理 Anthropic 於 2026 年 6 月 22 日更新發布說明後，所揭露關於 Claude Fable 5、Claude Mythos 5 與 Claude Opus 4.8 的多項重要變更。文中特別指出兩類影響較大的調整：一是 thinking 模式（思考模式）的條件限制出現變動，二是與取樣相關的參數行為改變。對已上線的系統而言，這類變更之所以被形容為破壞性，是因為它們往往不會讓程式直接崩潰，而是悄悄改變輸出分布或推理行為，使得既有提示詞與參數設定的效果與過去不同，進而影響評測結果與使用者體驗。因此作者以遷移指南的形式，協助開發者盤點受影響的呼叫方式並調整設定。需要提醒的是，目前可見內容僅為摘要，具體的參數差異、受影響的模型版本範圍與官方建議的替代做法並未完整列出，實作前應以官方發布說明為準。",
+      "title": "Claude Fable 5 & Opus 4.8 の破壊的変更と移行ガイド",
+      "title_zh": "Claude Fable 5 與 Opus 4.8 的破壞性變更與遷移指南"
     },
     {
       "arxiv_id": null,
@@ -882,7 +900,9 @@
       "source_name": "Qiita 生成AI Tag",
       "story_id": "fallback:66d799cba1154932",
       "summary": "API開発のたびに「OpenAPI（Swagger）の定義書、また手で書かなきゃ……」とため息をついていませんか？エンドポイントが増えるほどyamlの記述量も膨らみ、コードとの整合性を保つのも一苦労です。この記事では、Claude Codeを使ってOpenAPI定義を効率的...",
-      "title": "Claude CodeでOpenAPI（Swagger）の作り方｜手順とプロンプト例を徹底解説"
+      "summary_zh": "這篇文章處理的是 API 開發中相當常見的痛點：OpenAPI（Swagger）定義文件往往得手動撰寫，隨著端點數量增加，YAML 的描述量也跟著膨脹，而且還要持續與實際程式碼保持一致性，維護成本很高。作者因此提出以 Claude Code 協助產生與更新 OpenAPI 規格的做法，並以流程步驟搭配提示詞範例來說明，讓讀者能依序套用到自己的專案上，而不是只給出抽象建議。文章也強調提示詞的設計方式會直接影響產出品質，因此提供了具體範例供參考。需要說明的是，目前僅有摘要內容，實際的提示詞全文、範例專案與驗證方式尚未完整呈現，且自動產生的規格仍需要人工複核，才能確保與程式行為相符，不建議在未檢查的情況下直接作為對外契約。",
+      "title": "Claude CodeでOpenAPI（Swagger）の作り方｜手順とプロンプト例を徹底解説",
+      "title_zh": "如何用 Claude Code 產生 OpenAPI（Swagger）規格｜流程與提示詞範例完整解說"
     },
     {
       "arxiv_id": null,
@@ -932,7 +952,9 @@
       "source_name": "Zenn LLM Topic",
       "story_id": "fallback:c86175cb8d96061f",
       "summary": "この記事で分かること\nClaude Code のトークン代に怯えて「削減ツール」を探すと、いま日本語圏でもこの4つが必ず出てきます。\n\n\nrtk（Rust Token Killer）\n\nheadroom（44.3k⭐、Netflixのエンジニア発）\nlean-ctx\nh5i\n\nそして全部が「最大90〜99%削減」と謳っています。ここで多くの人がこう詰まります。\n\n「で、結局どれを入れればいいの？ 全部？ どれか1つ？ 重複しない？」\n\n結論を先に言うと、この4つは競合していません。圧縮する“レイヤー”が違うので、正しくは「積層（layer）」して使います。 rtk と headroo...",
-      "title": "【2026年最新】Claude Codeトークン削減ツール完全整理 — rtk・headroom・lean-ctx・h5iの使い分け"
+      "summary_zh": "本文是一篇整理型技術文章，鎖定 Claude Code 使用者的詞元（token）成本焦慮，盤點日語圈目前最常被提及的四套詞元削減工具：以 Rust 撰寫的 rtk（Rust Token Killer）、在 GitHub 上累積約 44.3k 星、由 Netflix 工程師發起的 headroom、lean-ctx，以及 h5i。作者指出，這四套工具對外都宣稱可達到最高九成至九成九的削減幅度，因此許多讀者會陷入「到底該裝哪一套、要不要全裝、彼此會不會衝突」的選擇困難。文章的核心論點是：這四者並非互相競爭的替代方案，而是作用於不同的壓縮「層級」，因此正確的用法是把他們「積層（layer）」起來搭配使用，而非從中挑一個。文中以 rtk 與 headroom 為例展開說明這種分層關係，但摘要僅涵蓋開頭段落，其餘各工具的具體機制、適用情境與實測數據未在可見內容中呈現。對每天以 Claude Code 進行開發、在意 API 詞元支出與上下文預算的工程師而言，這篇提供了一個以「分層」取代「二選一」的思考框架，但實際效益仍須以完整內文的量測為準。,",
+      "title": "【2026年最新】Claude Codeトークン削減ツール完全整理 — rtk・headroom・lean-ctx・h5iの使い分け",
+      "title_zh": "【2026年最新】Claude Code 詞元削減工具完整整理：rtk、headroom、lean-ctx、h5i 的使用分野"
     },
     {
       "arxiv_id": null,
@@ -982,7 +1004,9 @@
       "source_name": "Zenn LLM Topic",
       "story_id": "fallback:1488bc3cc2aea253",
       "summary": "この記事について\n約2年前、Sakana AIが公開していた自然言語モデルを使って、商品名のクレンジングタスクを試した記事を書きました。\nhttps://zenn.dev/shintaroamaike/articles/fbfd7c0284c01a\n当時はまだ「面白いアプローチをする研究系スタートアップ」という印象でしたが、2026年6月22日に正式リリースされた「Sakana Fugu」を見ると、その成長ぶりに驚かされます。\n研究から商用プロダクトへ、そして「AIの使い方そのものを変えよう」というビジョンを持った会社に変貌していました。本記事では、公式情報をもとにFuguがどんなモ...",
-      "title": "Sakana AI「Fugu」正式リリース——マルチエージェントを1本のAPIとして届ける新プロダクト"
+      "summary_zh": "本文是 Sakana AI 新產品「Sakana Fugu」正式發布後的介紹與回顧。作者先回溯約兩年前曾用 Sakana AI 當時公開的自然語言模型嘗試商品名稱清理（cleansing）任務，並附上當年的 Zenn 文章連結；當時他對這家公司的印象仍停留在「擅長有趣研究取向的研究型新創」。到了 2026 年 6 月 22 日 Fugu 正式發布，作者對其成長幅度感到驚訝，認為 Sakana AI 已從研究團隊蛻變為具備商用產品、並懷抱「改變 AI 使用方式本身」願景的公司。文章的核心定位是介紹 Fugu 究竟是什麼樣的多代理人產品：其主打訴求是把多代理人（multi-agent）架構包裝成單一 API 交付，讓開發者不必自行處理代理人協調、訊息傳遞與流程編排等複雜度，即可在應用中取得多代理人協作的能力。作者表示內容主要依據官方資訊整理。不過摘要僅涵蓋文章前言，Fugu 的實際架構細節、支援的代理人數量與角色設計、定價與可用性、以及任何效能或基準測試結果，均未在可見範圍內出現，因此本文目前只能視為發布消息的導讀，實測與限制仍有待後續資料補充。,",
+      "title": "Sakana AI「Fugu」正式リリース——マルチエージェントを1本のAPIとして届ける新プロダクト",
+      "title_zh": "Sakana AI「Fugu」正式發布：把多代理人封裝成單一 API 的新產品"
     },
     {
       "arxiv_id": null,
@@ -1032,7 +1056,9 @@
       "source_name": "AIDB - AI Research Database",
       "story_id": "fallback:2a917ce0c3bbda3b",
       "summary": "<p>ChatGPTが登場した直後、人々はそれを「すごい新技術」として語っていました。検索の代わりになるのか。仕事に使えるのか。どんな質問をすればよいのか。最初の関心は、まだ正体のよく分からない道具を試すことに向いていました。 それから3年。ChatGPTは珍しい実験的な技術ではなく、日々の仕事や生活の中に入り込む製品へと変わりました。使い方を尋ねる投稿は減り、代わりに「思ったように動かない」「前と違う」「会話が消えた」といった不満が増えています。ユーザーの関心は、驚きから期待へ、期待から失望やこだわりへと移っていったのです。 この変化は、単なる利用量の増加ではありません。3年分のオンライン上の声を&#8230;</p>\n<p>The post <a href=\"https://ai-data-base.com/archives/111513\"><span class=\"locked-post\">🔒</span> ChatGPTの使われ方は、3年間でどう変わってきたか</a> first appeared on <a href=\"https://ai-data-base.com\">AIDB</a>.</p>",
-      "title": "🔒 ChatGPTの使われ方は、3年間でどう変わってきたか"
+      "summary_zh": "本文以三年為尺度，觀察 ChatGPT 從橫空出世到成為日常產品的過程中，使用者關注焦點與討論語氣的遷移。作者指出，ChatGPT 剛問世時，人們把它當成「厲害的新技術」來談：它能否取代搜尋、能否用於工作、該怎麼問問題才對；初期關心的本質是把一個來歷不明的工具拿來試探。三年之後，ChatGPT 已不再是罕見的實驗性技術，而是滲入日常工作與生活的成熟產品。隨之而來的變化是討論型態的轉向：詢問「怎麼用」的貼文變少，取而代之的是「它不照我想的方式運作」、「跟以前不一樣」、「對話紀錄不見了」這類不滿與抱怨。使用者的心理從驚訝走到期待，再從期待走向失望與講究，這是一種期待值被現實校準後的必然過程。作者強調，這種轉變並不只是使用量成長那麼簡單，而是三年份線上聲音所累積出的質變，值得用長期語料的角度去解讀。不過目前僅能看到文章開頭與站方摘要格式，實際採用的資料來源、分析方法與量化結果尚未揭露，因此本文現階段可視為一份以話語變遷為切角的觀察導讀，其結論仍需完整內文佐證。,",
+      "title": "🔒 ChatGPTの使われ方は、3年間でどう変わってきたか",
+      "title_zh": "🔒 ChatGPT 的實際使用方式，三年來如何轉變"
     },
     {
       "arxiv_id": null,
@@ -1078,7 +1104,9 @@
       "source_name": "npaka (note) - Japanese LLM Curation",
       "story_id": "fallback:74b6480db4fdee36",
       "summary": "<p id=\"3665565a-dcee-4aba-b8f7-468b4bece206\" name=\"3665565a-dcee-4aba-b8f7-468b4bece206\">「stackchan-mcp」を試してみたのでまとめました。</p><figure id=\"037a10fd-eeed-40d7-8755-270daa1ef5ba\" name=\"037a10fd-eeed-40d7-8755-270daa1ef5ba\"><blockquote><p id=\"a054edad-a375-40ad-a950-fa3bd1ea1089\" name=\"a054edad-a375-40ad-a950-fa3bd1ea1089\"><strong>・stackchan-mcp v0.12.0</strong></p></blockquote>\n<figcaption></figcaption></figure><br /><a href=\"https://note.com/npaka/n/n9d82cc8d5fd2\">続きをみる</a>",
-      "title": "stackchan-mcp を試す"
+      "summary_zh": "本文是一篇簡短的實作紀錄，作者實際試用了 stackchan-mcp（版本 v0.12.0），並把過程整理成筆記。stackchan-mcp 是針對 Stack-chan（可動的桌上型小機器人）所提供的 MCP（Model Context Protocol）伺服器實作，用途是讓支援 MCP 的 AI 用戶端能以標準化介面控制這台實體裝置，例如驅動其表情、動作或語音等輸出，藉此把大型語言模型的能力延伸到具身互動的場景。作者在文中以版本號標註測試環境，並附上引用區塊與外部連結，指向 note 平台上的完整文章〈続きをみる〉。受限於可見內容僅為前言與版本資訊，本文並未透露實際測試了哪些工具或資源、通訊方式與設定步驟、延遲或穩定性表現，也沒有說明是否遭遇安裝或相容性問題、與其他 MCP 伺服器相比的差異，以及具體可複製的指令範例。因此目前只能確認這是一份以 v0.12.0 為基準的試用紀錄，對於想評估是否導入 Stack-chan 作為 AI 代理實體介面的開發者而言，仍須閱讀完整原文才能取得可操作的細節與評價。,",
+      "title": "stackchan-mcp を試す",
+      "title_zh": "試用 stackchan-mcp 的心得整理"
     },
     {
       "arxiv_id": null,
@@ -1126,7 +1154,9 @@
       "source_name": "Zenn LLM Topic",
       "story_id": "fallback:2e4b5ee6f14de00d",
       "summary": "どうも、AIエンジニアの@noprogllamaです。\nAI（人工知能, Artificial Intelligence）Agent Skillは、AIエージェントに渡す再利用用の手順書です。\nたとえば、毎晩「今日見る記事を選んで、残タスクも見て、明日に回すものを決めて」とAIに頼むとします。毎回それを口で説明するのは面倒なので、先に手順書としてまとめておく。これがSkillです。\n手順書は、直すと良くなることがあります。\nでも、直したつもりで別の場所が壊れることもあります。あるあるですよね。\nそこで今回は、AI用の問題集を作りました。\nやったことは、以下の通り。\n\nAIに渡す問題を作...",
-      "title": "AIの手順書を、問題集でテストしてみた。Waza風evalをCodexで回す話"
+      "summary_zh": "本文作者是 AI 工程師 @noprogllama，主題是如何替 AI 代理人的「技能」建立可重複驗證的評測。所謂 Agent Skill，指的是交給 AI 代理人重複使用的操作手冊；例如每晚要求 AI「挑出今天要讀的文章、檢視剩餘任務、決定哪些延到明天」，與其每次口頭交代，不如先寫成手冊。問題在於：手冊修改後有時確實變好，但也常出現「以為改好了、結果別處被弄壞」的典型情況。因此作者替 AI 做了一份「題庫」（問題集），用類似 Waza 風格的 eval 流程在 Codex 上執行，以測驗手冊修改後是否真的帶來淨效益。可見內容只列出作者要做的事情清單開頭，尚未揭露題目的設計原則、評分標準、執行次數與成本、以及前後版本的對照結果等具體數字。對正在維運 prompt 或 skill 文件的團隊而言，本文的價值在於把「手冊改動」從主觀感覺推進到可回歸測試的工程實務：好的手冊需要能被測、被比較，才不會在反覆調整中悄悄退步。實際成效與限制仍須以完整內文為準。,",
+      "title": "AIの手順書を、問題集でテストしてみた。Waza風evalをCodexで回す話",
+      "title_zh": "用題庫測試 AI 的操作手冊：在 Codex 上跑 Waza 風格 eval 的實作紀實"
     },
     {
       "arxiv_id": null,
@@ -1174,7 +1204,9 @@
       "source_name": "Zenn LLM Topic",
       "story_id": "fallback:457c70d77984f6db",
       "summary": "この話は、ウルトラマラソンのトレーニング用に作った Intervals.icu × Stryd の MCP サーバ開発から出た話で、LLMに練習計画のレビューをさせていた。\nhttps://github.com/methylone/Intervals-MCP-Server-with-STRYD\n計画は順調に進んでいるか。オーバートレーニングの兆候はないか。安静時心拍、HRV、直近の運動量、主観疲労などを見ながら、次の練習をどう調整するか。そういう判断を、トレーニング理論と日々のデータから推論できないかと思った。\n最初は、判断をかなり if-then ルールに寄せていた。\n「安静時心拍が6...",
-      "title": "弱いモデルのための足場が、賢いモデルの檻になる話"
+      "summary_zh": "本文源自作者為超馬訓練所開發的 Intervals.icu × Stryd MCP 伺服器經驗，其用途是讓大型語言模型協助檢視訓練計畫。作者想解決的判斷包括：計畫是否按進度推進、是否出現過度訓練徵兆，以及如何綜合安靜心率、HRV、近期運動量與主觀疲勞感來調整下一次訓練。起初他把判斷邏輯高度偏向 if-then 規則，例如「安靜心率連續偏高就降量」這類硬性條件，等於替模型鋪好一層鷹架，讓能力較弱的模型也能給出堪用建議。但文章標題點出的張力在於：當模型本身變聰明、能自行從訓練理論與每日資料推論時，這層為了補強弱模型而設計的鷹架，反而成了限制其判斷的牢籠，可能壓抑模型察覺規則之外情境的能力。可見內容僅止於規則化做法的開端，尚未呈現實際調整前後的預測品質對照、具體指標變化或失敗案例。對正在設計工具呼叫與決策流程的開發者而言，本文提出一個關鍵提醒：護欄與提示結構應隨模型能力演進而鬆綁，否則以保護為名的設計會變成效能天花板，值得在導入 agent 決策時納入檢討。,",
+      "title": "弱いモデルのための足場が、賢いモデルの檻になる話",
+      "title_zh": "為弱模型搭的鷹架，會變成聰明模型的牢籠"
     },
     {
       "arxiv_id": null,
@@ -1222,7 +1254,9 @@
       "source_name": "Zenn LLM Topic",
       "story_id": "fallback:69ea6079b1c844ec",
       "summary": "AIエージェントを「動かす」から「運用する」へ。タスク成功率やレイテンシをSLI/SLOに落とし、hallucination率を測り、Evalsで退行を止め、コストを監視し、ツール呼び出しの監査ログから可観測性を得て、人間の承認フローを設計し、multi-agent障害をポストモーテムにつなぐ。SREの実務をエージェント運用に翻訳した実践書。すべてのコード例は標準ライブラリのみで、ビルド時に実行検証している。",
-      "title": "AIエージェント時代のSRE — 監視・評価・自律運用設計"
+      "summary_zh": "本文是一本面向實務的指南，主張 AI 代理人的工作重心必須從「把它跑起來」轉向「把它營運好」，也就是把站點可靠性工程（SRE）的既有方法論翻譯到代理人運維場景。作者提出的具體做法涵蓋多個層面：先把任務成功率與延遲轉化為 SLI/SLO，讓代理人品質有可衡量的服務目標；再量測幻覺率（hallucination rate），並透過 Evals 建立回歸測試，及早攔住能力退步；同時監控推論成本，避免自主運作失控；並從工具呼叫的稽核日誌取得可觀測性，使每一次外部動作都可追溯；此外還須設計人類核准流程，讓高風險操作保留人工把關；最後把多代理人（multi-agent）系統的故障納入事後檢討（post-mortem），形成組織學習。作者強調書中所有程式範例只使用標準函式庫，並在建置時實際執行驗證，以確保範例可重現。受限於可見內容僅為摘要，各項指標的具體門檻、Evals 題庫設計、成本模型與多代理人故障分類等細節尚未呈現。對已把代理人推進到正式環境的團隊而言，本文提供了一套把可靠性工程語言套用到代理人運維的整合框架。,",
+      "title": "AIエージェント時代のSRE — 監視・評価・自律運用設計",
+      "title_zh": "AI 代理人時代的 SRE：監控、評估與自主運維設計"
     },
     {
       "arxiv_id": null,
@@ -1270,7 +1304,9 @@
       "source_name": "Zenn LLM Topic",
       "story_id": "fallback:50d224cbfa31a8bb",
       "summary": "Gemma 4が公開され、Ollamaでも12B・E4B・26Bを手元で試せるようになりました。\nそこで今回は、RTX 4070（VRAM 12GB）上で以下の5モデルを同じ条件で動かし、速度・VRAM・正解性を実測しました。\n\nGemma 4 12B\nGemma 4 E4B\nQwen3 14B\nPhi-4-mini\nGemma 4 26B MoE\n\n検証課題は、以前クラウドモデルのClaude Opus 4.8 / Fable 5に投げたものと同じです。SemVer実装、ベイズ推定、画像読取を、同じ採点基準で比較しました。\n元記事はこちらです。この記事にも主要なグラフと検証スクリーンシ...",
-      "title": "Gemma 4をRTX 4070 12GBで実測した：12B/E4B/26BとQwen3/Phi-4を同一テストで比較"
+      "summary_zh": "本文是在消費級硬體上進行的模型實測。Gemma 4 發布後，使用者已可透過 Ollama 在本機執行 12B、E4B 與 26B 等版本，作者因此在 RTX 4070（VRAM 12GB）上，以相同條件跑五個模型：Gemma 4 12B、Gemma 4 E4B、Qwen3 14B、Phi-4-mini，以及 Gemma 4 26B MoE，並比較三項指標：推論速度、VRAM 佔用量，以及答題正確性。評測題目沿用他先前對雲端模型 Claude Opus 4.8 與 Fable 5 使用過的同一套任務，內容包括 SemVer 版本號實作、貝氏推定（Bayesian inference）與圖像讀取，並以一致的評分標準對照，使本機模型與雲端模型的表現能放在同一把尺上衡量。這種設計讓讀者能直接看出在 12GB 顯示記憶體的有限預算下，哪些模型跑得動、哪些會因記憶體不足或量化而犧牲品質。受限於可見內容僅為前言，各模型的實際 token/s 數字、峰值 VRAM、逐題正確率與 MoE 架構在單卡上的效率差異均未揭露，因此本文現階段可視為一份設定說明，完整結論仍須以原文的圖表與實測截圖為準。對想在單張中階顯卡上挑選本地模型的開發者具參考價值。",
+      "title": "Gemma 4をRTX 4070 12GBで実測した：12B/E4B/26BとQwen3/Phi-4を同一テストで比較",
+      "title_zh": "在 RTX 4070 12GB 上實測 Gemma 4：12B、E4B、26B 與 Qwen3、Phi-4 的同題比較"
     },
     {
       "arxiv_id": null,
@@ -1318,7 +1354,9 @@
       "source_name": "Zenn LLM Topic",
       "story_id": "fallback:20845085d0061e27",
       "summary": "プロローグ\n近年、スマートフォンのSoC（System on Chip）性能向上に伴い、クラウド（ChatGPTやGeminiのAPIなど）を介さず、スマートフォン端末内で完全に完結して動作する「ローカルLLM」の実装が現実味を帯びてきました。\n私自身、Androidのネイティブアプリ（Kotlin/Jetpack Compose）の開発経験は全くありませんでした。しかし今回、GoogleのローカルAI推論エンジンである LiteRT-LM（旧 TensorFlow Lite LLM Inference API） を使い、Android上で画像や音声に対応した「マルチモーダルローカル...",
-      "title": "スマホだけでAI脳になる！ 未経験でもAIと作るローカルLLM ～基本のチャット構築編～"
+      "summary_zh": "本文為系列文章的入門篇，探討如何在智慧型手機端完全離線執行本地端 LLM，而不必依賴 ChatGPT 或 Gemini 等雲端 API。作者指出，隨著手機 SoC 效能提升，在裝置內完成推論已逐漸可行。本文的核心方法是不使用 Android 原生開發的既有經驗，改用 Google 的本地推論引擎 LiteRT-LM（前身為 TensorFlow Lite LLM Inference API），在 Android 平台上建構支援文字、圖像與語音輸入的多模態本地端聊天功能。全文以實作導向，說明如何與 AI 結對協作來完成開發。由於目前僅有摘要，具體的延遲數據、模型規模、記憶體占用與準確率評估等量化結果尚未揭露，也未討論裝置相容性與耗電等限制。其重要性在於示範了不以雲端為前提的行動 AI 應用路徑，對重視隱私、離線可用性與成本控制的開發者具有參考價值，也讓沒有行動開發背景的人能理解本地端 LLM 的建構流程。",
+      "title": "スマホだけでAI脳になる！ 未経験でもAIと作るローカルLLM ～基本のチャット構築編～",
+      "title_zh": "只靠手機就能擁有 AI 大腦！零經驗也能與 AI 共創的本地端 LLM ～基礎聊天架構篇～"
     },
     {
       "arxiv_id": null,
@@ -1366,7 +1404,9 @@
       "source_name": "Zenn LLM Topic",
       "story_id": "fallback:03adeee1030a1644",
       "summary": "はじめに\n「LLMをプロダクトに組み込みたいけど、どのフレームワークを選べばいいのか分からない」——そう感じたことはないだろうか。\nこの記事では、TypeScript製AIエージェントフレームワーク Mastra について調べた内容を整理する。まだ実際には触っていない。近く自分のプロダクト（EchoMask）への実戦投入を検討しており、その前に概念を頭に入れておくための事前学習メモだ。\n結論を先出しすると、Mastraは「LLMに対話的に頼む道具」ではなく、**「LLMをコードの一部として組み込む枠組み」**だった。この違いを理解するだけで、どこで使うべきかが見えてくる。\n\n Mas...",
-      "title": "Mastraを触る前に整理した概念マップ——TypeScriptでLLMをif-elseの代わりに使う"
+      "summary_zh": "本文針對「想把 LLM 整合進產品，卻不知道該選哪個框架」的疑問，整理作者對 TypeScript 製 AI 代理框架 Mastra 的調查筆記。作者坦言尚未實際動手，只是在把產品 EchoMask 正式導入前先建立概念基礎。文章的核心結論是：Mastra 並非「用對話方式拜託 LLM 做事」的工具，而是一套把 LLM 當成程式碼一部分來嵌入的框架；理解這個定位差異，就能判斷它適合用在什麼地方。全文屬於事前學習性質的概念梳理，並未提供效能基準、推論成本或實際部署的量化證據，也缺少與其他框架的實測比較，因此結論仍待後續實作驗證。其價值在於協助開發者釐清 LLM 在軟體架構中的角色轉變，避免把代理框架誤用為聊天介面，對評估 TypeScript 生態系中 AI 代理方案的工程師具有導引意義，後續實戰結果值得關注。",
+      "title": "Mastraを触る前に整理した概念マップ——TypeScriptでLLMをif-elseの代わりに使う",
+      "title_zh": "在動手玩 Mastra 之前先整理好的概念地圖——用 TypeScript 把 LLM 當成 if-else 的替代品"
     }
   ],
   "run_date": "2026-06-23",
@@ -2292,7 +2332,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:32d35135fbeba165",
       "summary": "In this post, we walk you through how to deploy ComfyUI workflows on Amazon SageMaker AI processing jobs to generate hundreds of high-quality images in a single batch. You learn how to set up the infrastructure using AWS Cloud Development Kit (AWS CDK), configure GPU-accelerated processing, and automate image generation at scale. You can then adapt this solution to your ComfyUI workflows specific to your needs. We will guide you through a practical, step-by-step process to automate ComfyUI workflows to generate hundreds of high-quality images in a single batch empowering you to scale your creative pipeline.",
-      "title": "Running ComfyUI workflows on Amazon SageMaker AI processing jobs"
+      "summary_zh": "本文說明如何將 ComfyUI 影像生成工作流程部署到 Amazon SageMaker AI 的處理任務（processing jobs）上，以單一批次產生數百張高品質圖片。方法上，作者以 AWS Cloud Development Kit（AWS CDK）建立基礎設施，設定具 GPU 加速的運算環境，並自動化大規模影像生成流程，讓使用者可依自身需求改寫工作流程。文章屬於實作導向的逐步教學，重點在於把原本偏互動式的 ComfyUI 管線轉為可批次排程的雲端任務，以擴展創意生產線的吞吐量。摘要未提供具體的生成數量基準、成本比較或品質評估指標，因此效能提升幅度仍缺乏量化證據。對需要大量視覺素材的團隊而言，此模式的意義在於示範如何以既有雲端工具鏈，將生成式 AI 從個人操作推進到可重複、可擴充的生產級流程。",
+      "title": "Running ComfyUI workflows on Amazon SageMaker AI processing jobs",
+      "title_zh": "在 Amazon SageMaker AI 處理任務上執行 ComfyUI 工作流程"
     },
     {
       "arxiv_id": null,
@@ -2345,7 +2387,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:d1c8d84b5f3466a7",
       "summary": "In this post, you will learn how Ampersend built a pay-per-intelligence routing layer on top of Amazon Bedrock AgentCore Payments. AI agents autonomously route tasks to the most effective model, pay per request, and operate within spending budgets. You will also see how the two-hop payment pattern works end-to-end and how to get started with your own implementation.",
-      "title": "Building pay-per-intelligence for AI agents: How Ampersend uses Amazon Bedrock AgentCore Payments"
+      "summary_zh": "本文介紹 Ampersend 如何在 Amazon Bedrock AgentCore Payments 之上，建構一套「按智慧付費」的路由層。其核心構想是讓 AI 代理自主判斷並把任務導向最合適的模型，依每次請求付費，同時嚴格控制在預先設定的支出預算之內。文章進一步說明所謂「兩跳（two-hop）付款模式」的端到端運作方式，並提供讀者自行實作的入門指引。此設計針對的是多模型並存環境下的成本與品質權衡問題：代理不再固定綁定單一模型，而是依任務難度動態選型。摘要未揭露路由準確率、延遲或實際節省成本等量化結果，也沒有討論失敗重試與預算超支的邊界情況。對企業而言，其意義在於把模型選擇與計費機制納入代理架構的一等公民，讓自動化流程具備可審計的成本治理能力。",
+      "title": "Building pay-per-intelligence for AI agents: How Ampersend uses Amazon Bedrock AgentCore Payments",
+      "title_zh": "為 AI 代理打造「按智慧付費」：Ampersend 如何運用 Amazon Bedrock AgentCore Payments"
     },
     {
       "arxiv_id": null,
@@ -2400,7 +2444,9 @@
       "source_name": "Preferred Networks Tech Blog (LLM)",
       "story_id": "fallback:a24b721e2857b1cc",
       "summary": "<p>はじめに みなさん、こんにちは。PLaMo事後学習チームの今村です。我々は本日、国産生成AI基盤モデルPLaMo™︎の新たなフラグシップモデルPLaMo 3.0 Primeをリリースしました。PLaMo 3.0 Prim [&#8230;]</p>\n<p>投稿 <a href=\"https://tech.preferred.jp/ja/blog/plamo-3-0-prime-release/\" rel=\"nofollow\">PLaMo 3.0 Primeをリリースしました</a> は <a href=\"https://tech.preferred.jp/ja\" rel=\"nofollow\">Preferred Networks Tech Blog</a> に最初に表示されました。</p>",
-      "title": "PLaMo 3.0 Primeをリリースしました"
+      "summary_zh": "Preferred Networks 的 PLaMo 事後學習團隊宣布推出日本國產生成式 AI 基礎模型 PLaMo 系列的新旗艦版本 PLaMo 3.0 Prime。貼文由團隊成員今村撰寫，屬於官方技術部落格的發布公告，說明新模型是既有 PLaMo 基礎模型的重要更新。摘要內容僅止於發布訊息與團隊問候，未交代模型參數量、訓練資料組成、上下文長度、評測基準或推論成本等技術細節，因此無法判斷其在日語理解與生成任務上的實際表現，也無從與其他開源或商用模型進行客觀比較。對關注非英語系主權模型的讀者而言，其意義在於日本本土基礎模型的迭代仍在持續，後續需參閱完整技術報告，才能評估其在實際產品部署中的可用性與競爭力。",
+      "title": "PLaMo 3.0 Primeをリリースしました",
+      "title_zh": "PLaMo 3.0 Prime 正式發布"
     },
     {
       "arxiv_id": null,
@@ -2452,7 +2498,9 @@
       "source_name": null,
       "story_id": "hf:deepseek-ai/deepseek-v4-pro",
       "summary": "Technical Report👁️ We present a preview version of **DeepSeek-V4** series, including two strong Mixture-of-Experts (MoE) language models — **DeepSeek-V4-Pro** with 1.6T parameters (49B activated) and **DeepSeek-V4-Flash** with 284B parameters (13B activated) — both supporting a context length of **one million tokens**. DeepSeek-V4 series incorporate several key upgrades in architecture and optimization: 1. **Hybrid Attention Architecture:** We design a hybrid attention mechanism combining Compressed Sparse Attention (CSA) and Heavily Compressed Attention (HCA) to dramatically improve long-context efficiency. In the 1M-token context setting, DeepSeek-V4-Pro requires only **27% of single-token inference FLOPs** and **10% of KV cache** compared with DeepSeek-V3.2. 2. **Manifold-Constrained...",
-      "title": "deepseek-ai/DeepSeek-V4-Pro"
+      "summary_zh": "DeepSeek 發布 DeepSeek-V4 系列的預覽版本，包含兩款混合專家（MoE）語言模型：DeepSeek-V4-Pro 具 1.6 兆參數、每次推論啟動 49B，DeepSeek-V4-Flash 則為 284B 參數、啟動 13B，兩者皆支援一百萬 token 的上下文長度。架構上主打混合注意力機制，結合壓縮稀疏注意力（CSA）與高度壓縮注意力（HCA），以改善長上下文效率；在百萬 token 設定下，V4-Pro 的單 token 推論 FLOPs 僅需 DeepSeek-V3.2 的 27%，KV 快取更降至 10%。摘要另提及流形約束等設計，但技術報告內容遭截斷，缺乏完整評測與基準數據，因此其實際能力仍待驗證。對長上下文應用而言，此舉顯示以稀疏與壓縮注意力換取效率，正成為超大規模 MoE 模型的主流路線。",
+      "title": "deepseek-ai/DeepSeek-V4-Pro",
+      "title_zh": "DeepSeek-V4-Pro：1.6T 參數混合專家語言模型預覽版"
     },
     {
       "arxiv_id": null,
@@ -2504,7 +2552,9 @@
       "source_name": null,
       "story_id": "hf:deepseek-ai/deepseek-v4-flash",
       "summary": "Technical Report👁️ We present a preview version of **DeepSeek-V4** series, including two strong Mixture-of-Experts (MoE) language models — **DeepSeek-V4-Pro** with 1.6T parameters (49B activated) and **DeepSeek-V4-Flash** with 284B parameters (13B activated) — both supporting a context length of **one million tokens**. DeepSeek-V4 series incorporate several key upgrades in architecture and optimization: 1. **Hybrid Attention Architecture:** We design a hybrid attention mechanism combining Compressed Sparse Attention (CSA) and Heavily Compressed Attention (HCA) to dramatically improve long-context efficiency. In the 1M-token context setting, DeepSeek-V4-Pro requires only **27% of single-token inference FLOPs** and **10% of KV cache** compared with DeepSeek-V3.2. 2. **Manifold-Constrained...",
-      "title": "deepseek-ai/DeepSeek-V4-Flash"
+      "summary_zh": "此為 DeepSeek-V4 系列預覽版本中的輕量選項。DeepSeek-V4-Flash 採混合專家（MoE）架構，總參數 284B、每次推論僅啟動 13B，並與同系列的 DeepSeek-V4-Pro（1.6T 參數、啟動 49B）一樣支援一百萬 token 的上下文長度。系列在架構與最佳化上有數項關鍵升級，包括結合壓縮稀疏注意力（CSA）與高度壓縮注意力（HCA）的混合注意力機制，用以大幅提升長上下文效率；在百萬 token 情境下，大模型版本的單 token 推論 FLOPs 與 KV 快取分別降至前代的 27% 與 10%。摘要未提供 Flash 版本的獨立基準成績、推論延遲與部署成本，且技術報告內容被截斷，效能主張仍需完整驗證。其意義在於以較小啟動參數提供長上下文能力，利於成本敏感的實際部署。",
+      "title": "deepseek-ai/DeepSeek-V4-Flash",
+      "title_zh": "DeepSeek-V4-Flash：284B 參數高效混合專家模型預覽版"
     }
   ]
 }

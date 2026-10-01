@@ -494,7 +494,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.39982",
       "summary": "Terminal agents act through stochastic model generations, yet the ability to generate a useful action does not ensure its reliable execution. A poor command (e.g., wrong package install) can change the environment in ways that hinder subsequent progress, even when the model could generate a better alternative. We investigate whether allocating test-time compute at the model-harness boundary can improve action reliability and trajectory success, and what makes this allocation effective. To study ",
-      "title": "Mid-Harness: Scaling Actions Between Model and Harness for Terminal Agents"
+      "summary_zh": "這篇論文探討終端代理（terminal agent）的一個核心問題：模型能生成有用的指令，並不代表該指令能被可靠執行。由於每一步動作都會改變環境狀態，一個錯誤的動作（例如裝錯套件）可能阻礙後續進展，即使模型其實有能力生成更好的替代方案。作者提出 Mid-Harness，在模型與執行框架（harness）的邊界上取樣多個候選動作並加以驗證，只把選中的一個送進框架執行，且完全不更動生成器與框架本身。研究的三個主要問題是：動作層級的額外計算何時能提升軌跡成功率、什麼樣的驗證機制最有效、以及它能否與軌跡層級的測試時計算互補。在 TerminalBench-Lite 上，以固定的 TMAX-9B 生成器搭配 GPT-5.6 Sol 作為驗證器，8 個候選動作可把 Pass@1 從 50.00% 提升到 68.03%，顯示生成器本身已含有可被利用的替代方案；但在弱的零樣本驗證下，加寬取樣幾乎沒有幫助，說明驗證品質才是關鍵。在比較的機制中，成對（pairwise）驗證表現最好，可達 54.76% Pass@1；再把強驗證器的成對回應蒸餾回 TMAX-9B，可進一步提升到 57.14%，而生成器完全不變。離線分析顯示蒸餾能把分數 MAE 從 2.59 降到 1.05、成對一致率從 59.01% 升到 74.58%，但關於指令語意與執行可行性的分歧仍然存在，且軌跡後段的同意率較低。與軌跡層級方法組合時，蒸餾版 Mid-Harness 搭配一輪 Sequential Refine 可達 60.20%，超越 T=7 的 Best-of-T（59.18%），且估計 token 成本不到一半；在 4B 到 27B、SWE-bench-Verified、FeatureBench-Mini 以及不同框架與模型上也能觀察到增益。限制在於缺乏動作層級的正確標籤，無法直接衡量驗證正確性與候選覆蓋率；作者建議未來可用世界模型預測動作效果，或以強化學習聯合訓練生成與驗證。這項工作把「動作擴展」確立為終端代理測試時計算的一條互補軸線。",
+      "title": "Mid-Harness: Scaling Actions Between Model and Harness for Terminal Agents",
+      "title_zh": "Mid-Harness：在模型與執行框架之間擴展終端代理的動作層級測試時計算"
     },
     {
       "arxiv_id": "2609.39838",
@@ -595,7 +597,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.39838",
       "summary": "Chain-of-thought monitoring as an approach for AI oversight and control is threatened by the possibility of steganographic reasoning, where LLMs conceal their reasoning inside innocuous-looking text. Two neighbouring capabilities, steganographic messaging (passing a concealed message) and encoded reasoning (reasoning in an illegible but unconcealed format), have already been shown to emerge under training pressures that occur in real pipelines, such as reinforcement learning against monitors. Th",
-      "title": "Learning Steganography Is Easy, Learning Steganographic Reasoning Is Hard"
+      "summary_zh": "這篇論文探討一個對思維鏈（CoT）監控安全論證至關重要的問題：大型語言模型是否能把推理過程藏進看似無害的文字裡，也就是所謂的隱寫式推理（steganographic reasoning）。作者把它與兩個鄰近能力區分開來：隱寫式傳訊（把已知訊息藏進文字）與編碼式推理（以難以辨讀但並不刻意偽裝的格式逐步計算）。研究透過三種誘發方式進行比較：in-context learning、以 GRPO 為基礎的 RL、以及 SFT，並搭配多種字面格式編碼方案（大小寫、markdown、空白、句末標記等）與 knapsack 這個具有大量任意選擇的覆蓋任務。主要證據顯示，隱寫式傳訊與編碼式推理在三種方法下都容易學會；但隱寫式推理在多數任務上僅在 SFT 下才學得會，且所需訓練量是傳訊的 2.4 到 20 倍，部分模型與任務組合甚至完全學不會。在 in-context learning 與 RL 下，模型往往只正確編碼前幾個位置，之後就退回隨機水準，顯示它們只是把潛在計算的結果寫下來，而非真正把編碼當作計算的草稿紙。唯一的例外是 knapsack 覆蓋任務：由於候選填裝本身是任意選擇，編碼不需承擔額外主任務負擔，九個模型中的 GPT-5.5 在 in-context 下即成功，且錯誤注入實驗顯示其錯誤會沿著痕跡傳遞，支持痕跡真被用於計算。限制在於：作者明確指出這些是能力的上界估計，因為模型是被刻意提示或訓練去執行該行為，而且 RL 與 SFT 多在非前沿規模的模型上進行，因此不能直接推論部署情境的發生機率。其意義在於：對 CoT 監控是好消息，目前模型距離隱寫式推理仍遠，但也提醒真實代理軌跡中大量重複且看似任意的選擇（如變數命名）值得監控特別留意。",
+      "title": "Learning Steganography Is Easy, Learning Steganographic Reasoning Is Hard",
+      "title_zh": "學會隱寫容易，學會隱寫式推理很難"
     },
     {
       "arxiv_id": "2609.39229",
@@ -694,7 +698,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.39229",
       "summary": "Automatic evaluation of faithfulness increasingly relies on a large language model acting as a judge, yet the most reliable judges are proprietary frontier models, costly and ill-suited to high-throughput monitoring. We investigate whether a panel of cheap open-weight judges (4--9B) can be aggregated to stand in for a frontier one, what the substitution sacrifices, and when it is worth making. We propose RAIM, an aggregation scheme robust to the members' correlated errors, coupling a cross-fitte",
-      "title": "RAIM: Robust Aggregation of Inexpensive Models for Hallucination Detection"
+      "summary_zh": "本論文針對「以大型語言模型擔任評審」的自動化忠實度評估提出質疑：最可靠的評審多為雲端專有前沿模型，逐次呼叫的費用、速率限制與資料離開地端等問題，使其難以支撐持續且高吞吐量的監控需求。作者提出 RAIM，一套對成員相關錯誤具穩健性的聚合機制，包含兩部分：(a) 交叉擬合的堆疊 logistic 迴歸，聯合擬合成員權重，使只會附和較強評審的成員被折價，並允許與黃金標籤負相關但有資訊量的成員取得負權重；(b) 可採納性檢定，直接從成員自身輸出讀出「聚合值得做」的區域。作者以十個 4–9B、來自互不相交模型家族的開放權重評審，在八個忠實度基準上實測。結果顯示：相對於 Claude Sonnet，替代方案在一個基準上明顯較佳、三個明顯較差（僅兩個差距不可忽略），其餘四個無法判定；整體保留前沿評審 κ 一致性的中位數 93%，平衡準確率平均僅讓出 2.9 個百分點，推論成本約為前沿模型的六十四分之一。真正成本在於一次性的域內校準，約需 50 至 100 筆標註資料，約在四萬至八萬一千個評估項目後攤平損益。與專門訓練的偵測器相比，面板在其主場具競爭力，但在作者的 grounded 資料集上明顯領先，且能處理無依據的任務。限制在於面板受成員名單所限：增益需要多位個別有能力且錯誤去相關的成員，而此條件可能隨名單與模型版本漂移。整體而言，該研究把「何時值得用便宜陪審團取代前沿評審」化為可從校準集免費稽核的兩個成員層級座標：能力分布與錯誤相關程度，對成本敏感的評估部署具實務意義。",
+      "title": "RAIM: Robust Aggregation of Inexpensive Models for Hallucination Detection",
+      "title_zh": "RAIM：以廉價模型穩健聚合進行幻覺偵測"
     },
     {
       "arxiv_id": "2609.39154",
@@ -793,7 +799,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.39154",
       "summary": "Deep research tasks require agents to navigate large knowledge spaces, synthesize evidence across many sources, and adapt their plans as findings emerge. Directed acyclic graph (DAG)-based multi-agent systems suit this setting because they support parallel execution and isolate each sub-task within a focused dependency context. Yet existing DAG-based agents instantiate a task-level plan before execution and repair the graph only after failures or missing evidence are observed. This Plan-then-Pat",
-      "title": "DAGent: Evaluate-then-Grow Planning for Deep Research Agents"
+      "summary_zh": "深度研究任務要求代理人在龐大的知識空間中導航、跨多個來源整合證據，並隨中間發現動態調整計畫。現有以有向無環圖（DAG）為基礎的多代理人系統雖具平行執行優勢，卻普遍採用「先規劃、後修補」（Plan-then-Patch）策略：在執行前就承諾完整任務圖，待失敗或缺漏出現才回頭修補，導致系統在證據最薄弱時做出最強承諾，且後續修訂常浪費算力於不該存在的分支。為此，作者提出 DAGent，改採「先評估、後成長」（Evaluate-then-Grow）的增量式規劃：由 Orchestrator 一次成長一批節點，並以已完成節點的信心與不確定性訊號作為每次擴展的條件；同時設計階層式上下文層，預設只傳遞精簡的 QueryDoc，並保留完整執行軌跡供隨需召回（RecallTool）。由於 DAG 拓樸被逐回合完整記錄且僅增不減，作者進一步提出 DAGRPO，在 GRPO 基礎上加入兩項結構訊號：依拓樸條件的功勞分配（僅回饋餵入最終答案鏈的 Executor rollout）與 Orchestrator 計畫的結構合規正則化。在 BrowseComp-Plus、GAIA 與 xbench-DeepSearch 上，DAGent 於 Qwen3-235B-A22B 規模領先最強開源基線 5.3／5.8／2.0 分，並在四家廠商的四個開源骨幹及 GPT-5（327K 上下文）上複現；Qwen3-8B 規模下 DAGRPO 較同預算的 outcome-only GRPO 平均提升 3.0 分 Pass@1。同架構比較亦顯示，增量且由證據驅動的規劃以更低 token、工具呼叫與步數達到更高準確率。限制在於：系統以文字為主，多模態僅在規劃前轉為文字；準確率仍受檢索與頁面抽取品質限制；答案包含閉包僅是貢獻的結構代理而非因果歸因；RL 實驗僅在單一骨幹上以 LoRA 訓練 21 步、三個隨機種子，更大規模與完整微調的可推廣性尚待驗證。",
+      "title": "DAGent: Evaluate-then-Grow Planning for Deep Research Agents",
+      "title_zh": "DAGent：為深度研究代理人打造的「先評估、後成長」規劃框架"
     },
     {
       "arxiv_id": "2609.40286",
@@ -890,7 +898,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.40286",
       "summary": "Unlearning a fact in one language does not guarantee its removal in others as changing the query or even the requested answer language can reopen seemingly forgotten knowledge -- a cross-lingual loophole. The most straightforward solution to this challenge -- unlearning in all languages -- is neither scalable nor desirable as it amplifies damage to unrelated model capabilities. We introduce the task of language budgeted multilingual unlearning where the goal is to select a subset of languages th",
-      "title": "Linguistic Loopholes in LLM Unlearning: From a 174-Language Benchmark to Coverage-Aware Unlearning"
+      "summary_zh": "這篇論文指出大型語言模型（LLM）的跨語言遺忘漏洞：在某個語言中成功遺忘的事實，往往可透過更換提問語言或要求回答的語言而被重新取出。作者將此問題形式化為「語言預算多語遺忘」，即在僅能對 K 個來源語言施加遺忘監督的限制下，挑選能最大化跨語言抹除效果的語言子集。為此他們建構 Cross-lingual Unlearning Tensor 基準，涵蓋 174 個語言–文字配對、25 種原子改寫類型，並分別在提問端與答案端評分，另以 TOFU、LUME 為素材，並建立首個基於 LORELEI 真實新聞文件與人工翻譯的遺忘測試。方法上提出 COVER，僅需良性校準資料與凍結模型，透過解碼器各層最終提示詞隱藏狀態的餘弦相似度邊際，估計來源語言對保留語言的覆蓋程度，並可選擇性地以梯度相似度調整來源權重。實驗橫跨 Tiny Aya、Qwen3、Llama 3 三個模型家族與兩組互斥的遺忘集，COVER 相較均勻選取可將保留語言的殘餘存取平均降低 7.8% 至 27.3%，在 LUME 文件移除任務中降低 21.3%，並在 LORELEI 上仍有較小但一致的增益。行為評估顯示完整洩漏與抽取強度下降，且未造成模型崩壞。限制在於語言排序並非普遍最佳，拉丁字母清單的排序穩定性較低，來源加權的效果也隨模型而異，Llama 出現明顯的效用代價。",
+      "title": "Linguistic Loopholes in LLM Unlearning: From a 174-Language Benchmark to Coverage-Aware Unlearning",
+      "title_zh": "LLM 遺忘中的語言漏洞：從 174 語言基準到覆蓋感知遺忘"
     },
     {
       "arxiv_id": "2609.39863",
@@ -986,7 +996,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.39863",
       "summary": "Large language models frequently fail to balance staying truthful with being supportive. They often exhibit sycophancy in responses to users, agreeing with false claims, offering unwarranted flattery, and giving advice skewed toward users' expressed views. In reality, sycophancy rarely happens in a single exchange; it may emerge organically as users repeatedly insist or subtly steer the dialogue over time. Current evaluations, however, rely on rigid, single-turn tests or fixed scripts that fail ",
-      "title": "FIGS: Evaluating Multi-Turn Sycophancy Without Penalizing Empathy"
+      "summary_zh": "大型語言模型常難以在「堅守事實」與「支持使用者」之間取得平衡，容易出現諂媚行為：附和錯誤主張、給予不當讚美、讓建議偏向使用者已表達的立場。現實中的諂媚很少發生於單一回合，而是使用者反覆堅持或逐步引導對話後自然浮現；既有評測多依賴僵硬的單輪測試或固定腳本，且常把基本同理心誤判為讓步，懲罰模型承認使用者感受，反而可能使未來模型過度矯正成冷漠、打官腔的固執。本文提出 FIGS（Factual Integrity and Grounded Support），一套雙軸評估框架，建構於延長且貼近現實的對話之上：以可適應的十回合對話模擬器動態挑戰受測模型，重現使用者反覆請求、反駁或將對話導向偏好答案的過程；並以一套分類法嚴格區分「諂媚」（模型是否守住事實、讚美是否與依據成比例）與「校準過的肯認」（對使用者感受展現適切理解而不過度）。作者釋出完整測試環境，包含 500 個多樣化多輪情境與自動評審。對八個主流模型的評估顯示一致取捨：在持續互動中，現行系統不是逐漸漂向諂媚，就是過度矯正為機械式疏離；以強調事實的系統提示可大幅降低諂媚，卻同時使多數模型落入「家長式陷阱」，且新增的校準肯認失敗往往更嚴重。一個同時兼顧兩軸的提示可降低諂媚而不致付出同等代價，但取捨仍存在。作者強調 FIGS 應作為保留的評測集而非訓練目標，並提醒情境為合成、僅涵蓋英文文字對話、未涉代理工具使用與多模態，故低失敗率不等於模型已無諂媚問題。",
+      "title": "FIGS: Evaluating Multi-Turn Sycophancy Without Penalizing Empathy",
+      "title_zh": "FIGS：在不懲罰同理心的前提下評估多輪諂媚"
     },
     {
       "arxiv_id": "2609.40285",
@@ -1088,7 +1100,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.40285",
       "summary": "On-policy distillation (OPD) is a promising approach for training language agents, providing dense teacher supervision on student-generated trajectories. However, in multi-turn interaction, an incorrect action changes the states the student encounters later, so errors compound across turns. In preliminary experiments across three Qwen3 models (8B to 235B), we find that more than half of the failed rollouts contain a pivotal mistake, an action that moves the agent farther from completing the task",
-      "title": "PivotOPD: Learning to Recover from Pivotal Mistakes in Multi-Turn Agents"
+      "summary_zh": "這篇論文探討多輪語言代理訓練中的「關鍵失誤」（pivotal mistake）問題。作者指出，on-policy distillation（OPD）雖能在學生自行產生的軌跡上提供密集的教師監督，但在多輪互動中，一個錯誤動作會改變後續狀態，使誤差逐步累積。他們在 ALFWorld 上以符號 oracle 分析三個 Qwen3 模型（8B 至 235B）的失敗軌跡，發現超過半數的失敗軌跡含有關鍵失誤，且該失誤通常發生得很早，但大多仍可補救：在關鍵回合之後僅需引導數個回合，即可恢復任務成功率。據此，作者提出 PivotOPD，透過教師模型進行關鍵回合偵測，並以特權自我教師（privileged self-teacher）分別施加兩類蒸餾：以 reverse KL 的「預防蒸餾」讓學生遠離關鍵失誤，以 forward KL 的「復原蒸餾」學習學生鮮少取樣的復原動作，兩者與 group-based RL 合併於單次 PPO 更新。在 ALFWorld、WebShop 與 Search-based QA 上對比 13 個基線，PivotOPD 於 Qwen3-1.7B 與 8B 學生皆取得最佳平均表現，ALFWorld 上較最強基線提升 5.5%；在 SWE-Bench Verified 上亦讓 Nemotron-3.5 學生的解決率提升 3.2%，而標準 OPD 僅提升 0.2%。作者並提供理論分析，說明為何在學生幾乎不取樣復原動作時，復原蒸餾仍能提供有效的學習訊號，且其更新量取決於自我教師而非學生。消融實驗顯示，監督必須落在正確的關鍵回合與正確動作上；同時移除預防或復原項都會使表現下降，兩者具互補性。限制方面，超過一個回合的復原需要可精確重播的環境，對教師命名動作的品質亦存在依賴，且復原預算與權重須逐基準調校。此工作的重要性在於把多輪代理的失敗診斷與訓練訊號設計結合，指出過去方法忽略的「失誤後狀態」正是學習復原行為的關鍵位置。",
+      "title": "PivotOPD: Learning to Recover from Pivotal Mistakes in Multi-Turn Agents",
+      "title_zh": "PivotOPD：讓多輪代理從關鍵失誤中復原的學習方法"
     },
     {
       "arxiv_id": "2609.40115",
@@ -1183,7 +1197,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.40115",
       "summary": "Reinforcement learning with verifiable rewards (RLVR) has become an important approach for improving reasoning during post-training. Recent work suggests that some difficult prompts remain resistant to learning even when they occasionally produce correct solutions. We revisit this unlearnability phenomenon and find that the affected prompts do improve, at roughly one third of the learnable rate, while the difficulty-defined set used to study them is much less reproducible than expected. These di",
-      "title": "Unlearnable, or Unmeasured? On the Reliability of Difficulty Labels in RLVR"
+      "summary_zh": "本文重新檢視 RLVR 中的「無法學習」（unlearnable）現象。作者指出，被 Chen 等人標為無法學習的提示其實仍會進步，只是速率約為可學習組的三分之一，屬於「慢速學習」而非完全不學；然而用來界定該現象的提示集合本身極不穩定。研究以 Qwen2.5-0.5B 在 MATH 的 1,023 道題目上以 GRPO 訓練五個隨機種子，並以 128 次 rollout 重建難度標籤。結果顯示：同一批候選提示中，原始五種子聚合規則只留下 74 題，改成「五個種子全部無獎勵才剔除」則得 228 題，單一種子則在 145 至 150 題之間；固定檢查點重新取樣即可重現約八成的跨種子差異，顯示多數不一致來自有限次評估而非訓練本身。作者進一步將難度判定形式化為取樣預算問題，以 Kiefer–Wolfowitz 非參數混合分布模型預測不同 rollout 數下的 Jaccard 一致性，並在 N=40 與 N=64 兩個未量測預算上進行前瞻性凍結驗證，量測值皆落於預測區間內。此外，他們指出困難提示的正確 rollout 較少，使梯度估計樣本數不足；將正確 rollout 數配對後，easy 對 unlearnable 的梯度相似度比值由 2.327 倍降至 1.539 倍，殘餘差距仍在。限制在於訓練與主要評估使用 1,024 token 生成上限，與原始 5,120 設定不同，訓練相關數值不宜直接外推；配對分析亦有樣本流失與選擇效應。本文的意義在於提醒：以低預算難度標籤分類個別提示、或據此建立機制性主張，都可能不可靠，應先量化其可重現性。",
+      "title": "Unlearnable, or Unmeasured? On the Reliability of Difficulty Labels in RLVR",
+      "title_zh": "無法學習，還是無法測量？論 RLVR 中難度標籤的可靠性"
     },
     {
       "arxiv_id": "2609.39783",
@@ -1282,7 +1298,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.39783",
       "summary": "Modern software heavily relies on code reuse, so upstream vulnerability fixes do not automatically propagate to downstream codebases. Downstream maintainers must manually adopt patches to eliminate known risks. In practice, a single vulnerability often corresponds to multiple patches, which greatly complicates downstream patch adoption because different patch relationships imply different adoption strategies. To address this challenge, we first manually inspect large-scale multi-patch vulnerabil",
-      "title": "COMPASS: Predicting the Relationship of Multiple Patches for Vulnerabilities with LLMs"
+      "summary_zh": "開源軟體大量依賴程式碼重用，上游的漏洞修補不會自動傳遞到下游專案，下游維護者必須手動採納修補程式。然而單一漏洞常對應多個修補程式，也就是「多對一」修補模式，不同修補關係意味著截然不同的採納策略，若理解錯誤可能導致延遲、不一致，甚至不安全的修補。既有做法幾乎全靠人工分析，耗時費力且難以規模化。為此，作者先人工檢視約一千筆真實世界的多重修補漏洞案例並訪談二十位資深開發者，歸納出六種典型關係：Merge、Mirror、Better Solution、Fixing-of-Fixing、Collaboration 與 Separation。據此提出 COMPASS，一套以大型語言模型（LLM）為核心的自動化方法，採四階段流程：先擷取修補群並預先掃描訊息中的顯性關係線索，再進行個別修補程式分析，接著以階層引導式提示推論關係實例，最後驗證結果的完整性與一致性，並輸出關係圖。作者建構 300 筆含 2 至 7 個修補程式的 CVE 基準集，與建立分類法所用的一千餘筆資料完全不相交，標註者間 Cohen's Kappa 達 87.98%。實驗顯示 COMPASS 在六類關係上皆優於學習式基準（CodeReviewer、CodeT5、BERT 及其 soft-prompt 變體）與純 LLM 基準，平均 F1 相對提升 85.04%；消融實驗指出 one-shot 示範與第二、四階段皆有正面貢獻，其中 Collaboration 對示範最為敏感。作者亦釋出線上查詢網站與工具。限制在於分類法與標註仍含主觀判斷，基準規模與產業驗證尚有不足，且部分關係類型的 F1 仍偏低。",
+      "title": "COMPASS: Predicting the Relationship of Multiple Patches for Vulnerabilities with LLMs",
+      "title_zh": "COMPASS：以大型語言模型預測漏洞多重修補程式之間的關係"
     },
     {
       "arxiv_id": "2609.40148",
@@ -1377,7 +1395,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.40148",
       "summary": "Power-law learning curves are often treated as fixed properties of a model and its data, although learning-rate and batch-size schedules can change the observed loss. We study this dependence in noisy online SGD with linear random features. Conditional on the representation, an exact Volterra equation separates two response components: a forcing term that propagates unresolved target error and a memory kernel that propagates stochastic-error injections. We prove that either component follows a p",
-      "title": "From Spectra to Joint Schedules in LLM Pre-training: 3+3(+2) Scaling-Law Regimes"
+      "summary_zh": "這篇論文探討一個常被忽略的問題：冪次學習曲線究竟有多少是模型與資料的固定屬性，又有多少取決於學習率與批次大小的排程。作者以帶標籤雜訊的線上 SGD 訓練線性隨機特徵模型作為代理模型，推導出精確的 Volterra 遞迴式，將預測風險拆成兩個成分：傳遞未解目標誤差的強制項（forcing），以及傳遞隨機誤差注入的記憶核（memory kernel）。理論證明這兩個成分各自遵循冪次律，若且唯若其累積加權低頻譜質量具備對應的尺度行為，個別特徵值或目標係數不需逐點服從冪次律。在聯合排程下，內在時間控制最佳化進度，而批次大小與學習率之比控制雜訊注入，兩者交互決定排程是保留、改變或摧毀乾淨的冪次律，並給出雜訊縮減的記憶上限。實作上以 124M 與 300M 的 nanoGPT 進行控制實驗，發現配對的 B/η 路徑在內在時間下幾乎重合、強制—記憶代理模型能準確預測未見排程，且在 OpenWebText、FineWeb 與 peS2o 上擬合出的記憶指數皆接近 1，落在 LM/IM 邊界。限制在於代理模型刻意簡化、實驗僅用單一隨機種子與總驗證交叉熵、未獨立估計漸近記憶指數，且 Muon 僅為外部效度檢查。",
+      "title": "From Spectra to Joint Schedules in LLM Pre-training: 3+3(+2) Scaling-Law Regimes",
+      "title_zh": "從頻譜到聯合排程：LLM 預訓練中的 3+3(+2) 縮放律機制"
     },
     {
       "arxiv_id": "2609.40195",
@@ -1490,7 +1510,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.40195",
       "summary": "Long-term egocentric video enables personalized AI assistants to reason about daily life. However, as video histories grow to hundreds of hours spanning months or years, reprocessing raw clips for every query becomes computationally prohibitive. Memory systems offer a scalable alternative by compacting videos into text representations, but often fail on practical benchmarks: either the memory does not preserve key evidence, or the retriever fails to locate relevant entries due to retrieval compe",
-      "title": "MemLife: Curating and Reasoning over Long-Term Egocentric Video Memories"
+      "summary_zh": "這篇論文關注長期第一人稱（egocentric）影片的問答問題：當影片累積到數百小時、橫跨數月甚至數年之後，若每次提問都重新處理原始片段，運算成本將高得難以負擔。作者指出既有記憶系統的兩種典型失效模式：寫入記憶時漏掉關鍵證據，或是在檢索空間不斷膨脹下，檢索器無法在競爭中定位到相關條目。為此，團隊提出 MemLife，一套多模態記憶系統，將影片壓縮為以時間與實體為錨點、並以第一人稱敘述的文字情節（episode），再交由時間索引的代理式閱讀器（agentic reader）進行檢索與推理；在不需訓練、也不需在提問時存取原始影片的設定下，於四個長時距基準上比最強的免訓練基線提升 4.6% 至 12.0%。進一步地，作者提出 MemOpt，一套強化學習框架，僅最佳化記憶寫入器，透過名為 FIRM 的獎勵機制同時要求忠實（faithful）、具資訊量（informative）與可檢索（retrievable），並採用權杖層級的群組相對最佳化。MemOpt 在跨影片與問題分布上穩定帶來 2.7% 至 5.0% 的增益，且可遷移到不同寫入器與閱讀器骨幹、其他記憶系統（如 EgoRAG）以及域外的影片與題型。整體而言，搭配 MemOpt 的 MemLife 超越最強先前基線 4.0% 至 17.0%，同時把記憶體積縮減最多約 31 倍，突顯「學習該記住什麼」是長期影片問答中有效且可泛化的方向；其限制在於訓練僅涵蓋寫入器，閱讀器的強化學習在分布偏移下仍不穩定。",
+      "title": "MemLife: Curating and Reasoning over Long-Term Egocentric Video Memories",
+      "title_zh": "MemLife：長期第一人稱影片記憶的整理與推理"
     },
     {
       "arxiv_id": "2609.39912",
@@ -1585,7 +1607,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.39912",
       "summary": "Parallel search may generate a correct answer that final-answer voting fails to select. We formulate this consolidation stage as trajectory selection and introduce TRACE (Trajectory Ranking with Aggregated Cross-Rollout Evidence), a lightweight learned selector that ranks completed trajectories using the search evidence behind their answers. TRACE preserves individual query and evidence occurrences, connects rollouts through shared content or document identity, and propagates information across ",
-      "title": "TRACE: Trajectory Selection for Parallel Scaling of Search Agents"
+      "summary_zh": "這篇論文處理的是搜尋代理在平行擴展下的「整併」問題：同一道問題取樣 K 條完整搜尋軌跡後，正確答案往往已存在於候選池中，卻在最終答案投票時被漏掉。作者將此階段重新定義為「軌跡選擇」，提出 TRACE（Trajectory Ranking with Aggregated Cross-Rollout Evidence），一個輕量的學習式選擇器。TRACE 建立「保留出現次數」的查詢—證據圖：在單一軌跡內保留每次搜尋與每筆證據的檢索脈絡，跨軌跡則透過共享的文本區塊身分（WebQA）或文件身分（長程瀏覽）建立連結，再以關係特定的 GraphSAGE 傳遞訊息。候選答案僅讀取自身軌跡更新後的狀態，透過 answer-conditioned QFormer 產生選擇分數，直接回傳既有答案，不需額外搜尋或自迴歸生成。訓練只用答案層級的正確性監督，文字嵌入模型與生成軌跡的搜尋策略皆凍結，因此每個搜尋設定只需訓練一個選擇器，即可跨 rollout 策略與代理骨幹遷移。在 K=16 時，於六種 WebQA 策略上皆優於投票；Qwen2.5-14B Base/SFT 池達到 45.2/49.2% EM，勝過最強的 Qwen3-32B 生成式聚合器（43.9/48.0%）。長程 FRAMES、GAIA、BrowseComp-Plus 平均準確率 78.6%，高出多數投票 3.1 個百分點；Base WebQA 上僅用 8 條軌跡即逼近 64 條投票的水準。效率方面，後處理僅需 0.271 H20 GPU 小時，較 SolAgg、SummAgg、AggAgent 快上約 12、122、258 倍。消融顯示跨軌跡共享證據（尤其長程任務）與圖傳遞、答案條件式讀出皆為關鍵。限制在於：方法依賴候選池中已存在正確答案，且於高重複性的 RL 軌跡池上增益明顯縮小；文件身分對應與圖解析品質也會影響效果。整體而言，此工作指出後處理整併可與軌跡生成解耦，並以輕量判別式選擇取代重量級生成式聚合。",
+      "title": "TRACE: Trajectory Selection for Parallel Scaling of Search Agents",
+      "title_zh": "TRACE：以軌跡選擇實現搜尋代理的平行擴展"
     },
     {
       "arxiv_id": "2609.39382",
@@ -1686,7 +1710,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.39382",
       "summary": "Textual skills provide reusable guidance for large language model agents, but existing approaches often rely on manually curated skill banks or reinforcement learning with indirect and delayed feedback. We introduce SkillFM (Skill Flow Matching), a generative framework that synthesizes task-conditioned textual skills directly without test-time skill retrieval. Our framework combines a codec for encoding and reconstructing textual skills in a continuous latent space with a conditional flow model ",
-      "title": "SkillFM: Generating Skills for LLM Agents via Latent Flow Matching"
+      "summary_zh": "現有 LLM 代理的技能重用多依賴人工整理的技能庫，或以強化學習搭配間接且延遲的回饋，導致技能更新難以評估、技能庫膨脹後檢索易混淆。本文提出 SkillFM（Skill Flow Matching），改以生成方式取代測試時檢索：先訓練一個技能編碼解碼器（codec），把文字技能壓縮成單位球面上的連續潛在向量並可重建為可讀指引；接著凍結 codec，以改良式 MeanFlow 學習一個任務條件式速度場，將技能庫的程序知識內化到生成器中。推論時只需單次流網路評估（NFE=1），從高斯雜訊取樣潛在碼並正規化，再由凍結的解碼器產生文字技能，交給凍結的執行代理使用，全程不做技能庫查找。實驗涵蓋 ALFWorld、Search-QA 與 WebShop：在 ALFWorld 達到 seen 82.14%、unseen 84.33%（整體 83.21%），於 Search-QA 取得 39.36% micro EM，優於 LatentSkill 等向量化技能方法；文字介面也让同一生成器可跨 GPT、Llama、Mistral 等不同凍結執行者轉移，並隨執行者規模增大而穩定提升。在技能庫注入 25% 無關技能時，生成式指引仍勝過嵌入檢索。消融顯示移除 codec 訓練或流推論均大幅衰退，僅微調解碼器亦遠不及完整方法。限制在於：作者指出流場幾何與訓練損失指標並不直接等同解碼技能品質或環境成功率，且失敗分析顯示解碼成功與文字約束正確仍不足以保證可靠執行，物件類別混淆與進度維護失誤仍是主要瓶頸。",
+      "title": "SkillFM: Generating Skills for LLM Agents via Latent Flow Matching",
+      "title_zh": "SkillFM：透過潛在流匹配為 LLM 代理生成技能"
     },
     {
       "arxiv_id": "2609.39494",
@@ -1787,7 +1813,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.39494",
       "summary": "Self-distillation with privileged context adapts a language model from demonstrations by letting the model, once conditioned on a reference response, teach its context-free copy token by token. Our taxonomy reveals existing methods differ along three entangled axes: (i) the rollout source (student or teacher), (ii) the teacher coupling (frozen, or an exponential moving average of the student at some coupling rate) and (iii) the KL direction (reverse or forward), yet these axes are usually studie",
-      "title": "Disentangling Self-Distillation: Measuring and Modeling Acquisition and Retention"
+      "summary_zh": "這篇論文針對「具特權脈絡的自蒸餾」提出統一框架。作者指出既有方法其實只在三條軸線上分歧：回應 rollout 來源（學生或教師）、教師耦合方式（凍結或以指數移動平均 EMA 追隨學生），以及 KL 方向（反向或正向），但文獻往往只固定其中一軸，導致結論互相衝突。研究將所有自蒸餾法與傳統 SFT 化為同一目標函數，在 Qwen2.5-7B 與 Ministral-3-3B 上，橫跨一般任務與矛盾任務（如九進位數學、旋轉方位），完整交叉三軸共 20 種設定、1,200 次訓練。主要發現有三：rollout 來源主要在任務與預訓練行為相牴觸時才顯著，教師 rollout 能大幅提升獲取且幾乎不損保留；教師耦合在每個任務上影響最大，獲取隨耦合率上升、超過任務特定速率後下降，因此「凍結較好」與「移動較好」其實是同一條曲線的兩端；KL 方向的保留代價則取決於模型，在 Qwen 上正向 KL 較耗保留，在 Ministral 上則否。作者另建構一個小型受控自迴歸模型重現上述趨勢，並將其連到初始策略信心、脈絡強度與特徵重疊三個因子。限制在於僅涵蓋五個任務、兩種模型家族、每組兩個隨機種子，且只測試單一脈絡形式；與 SFT 相比，自蒸餾多半贏在獲取與保留的權衡，而非單一獲取指標。此研究價值在於提供一致的評估地圖，說明該先調哪一軸取決於任務與模型。",
+      "title": "Disentangling Self-Distillation: Measuring and Modeling Acquisition and Retention",
+      "title_zh": "拆解自蒸餾：量測與建模獲取與保留"
     },
     {
       "arxiv_id": "2609.39909",
@@ -1885,7 +1913,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.39909",
       "summary": "We introduce DoGBENCH (Documentation Generation Benchmark), to our knowledge, the first benchmark for generating and maintaining real user-facing software documentation. It asks whether an agent can produce documentation that experienced technical writers would accept in review. The benchmark contains 292 items from open source projects, including Helm, PostHog, and Mautic. Each item gives the agent a pre-change repository and a trigger, such as a code pull request or a reported documentation ga",
-      "title": "DoGBench: Can Agents Meet Expert Standards for User-Facing Documentation?"
+      "summary_zh": "這篇論文提出 DoGBench，號稱首個針對「真實使用者導向軟體說明文件」之撰寫與維護所設計的基準。問題在於：既有文件基準多聚焦程式導向的 docstring、程式碼摘要或內部開發文件，且都假設人類已判定文件需要更新，從未檢驗代理是否能判斷「何時不該改文件」。DoGBench 收錄 292 個開源項目（含 Helm、PostHog、Mautic），每項提供變更前的儲存庫與觸發事件（程式碼 pull request 或使用者回報的文件缺口）；205 項需產出修補，87 項正確行為是拒絕修改，且僅有一次機會。評分採與維護者驗證過的工作專屬 rubric，涵蓋準確性、完整性、讀者指引、放置位置與儲存庫慣例，並以 P0 缺陷設 60 分上限，複合分數結合修補品質與正確棄權。實測七個代理，117 項保留集最高僅 47.3 分。另審查 1,267 份修補，最常見缺陷為任務完成缺口（45.5%）、技術不準確（36.6%）與概念或參考覆蓋不全（32.5%）；軌跡分析指出三大成因：只描述介面卻未檢視讀者如何使用（36.0%）、未查證決定性證據而以看似合理的假設填空（33.1%）、找到第一個看似合理的文件表面就停止而遺漏其他受影響頁面（30.1%）。限制包括單次執行、無網路、棄權標籤證據較弱、低資訊密度文字可能被低估。其意義在於顯示前沿模型搭配前沿 harness 仍難以一次產出專家級使用者文件，並公開評測框架供後續研究。",
+      "title": "DoGBench: Can Agents Meet Expert Standards for User-Facing Documentation?",
+      "title_zh": "DoGBench：代理能否達到使用者導向說明文件的專家標準？"
     },
     {
       "arxiv_id": "2609.39807",
@@ -1983,7 +2013,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.39807",
       "summary": "Lie detection probes aim to predict from a language model's internal states whether its output is truthful or dishonest. However, role-play complicates what \"truth\" means for an LLM: language models can adopt a wide range of personas that take very different claims to be true, including personas whose beliefs clearly contradict reality, such as a conspiracy theorist. In this work, we investigate whether lie detection probes reliably flag falsehoods generated under such an anti-factual persona or",
-      "title": "Stress-Testing LLM Lie Detectors: Role-Play Failures and Spurious Correlations"
+      "summary_zh": "這篇論文檢驗大型語言模型（LLM）的測謊探針是否可靠。所謂測謊探針，是從模型內部活化狀態預測其輸出是否誠實的線性分類器。作者指出，「角色扮演」讓「真」的定義變得曖昧：模型能模擬各種人設，包括相信與現實明顯牴觸的主張者（例如陰謀論者）。他們提出核心問題：當 LLM 扮演反事實人設時，測謊探針會依預設助理人設的信念來標記虛假陳述，還是改為追隨當前人設的信念？為此，作者建構了含 8,916 筆人工審核、on-policy 生成回應的資料集，涵蓋三個 LLM 與 15 種反事實人設，並設計「共享人設前綴」（SPP）設定，讓誠實與虛假回應都置於同一反事實人設系統提示之下，以避免探針單靠系統提示就能分辨標籤。結果顯示，八個既有探針在此設定下多半失效，SPP 下部分探針甚至低於隨機水準。作者進一步建構三個混淆因子資料集，使真值分別與可能性、人設信念、指令遵循呈反相關，發現既有探針普遍強烈追蹤這些在訓練資料中與真值虛假相關的概念，尤其所有既有探針在遵循度測試上皆低於隨機。最後，作者提出一個以基礎事實題加上「強制相反答案」訓練的簡單線性探針，在三項混淆測試與人設壓力測試上皆達最強表現。限制包括僅研究單輪對話、模型規模上限約 700 億參數，且可能仍有未被識別的混淆因子。此研究凸顯現行測謊探針離可靠仍遠，並指出訓練資料須讓真值與混淆概念去相關。",
+      "title": "Stress-Testing LLM Lie Detectors: Role-Play Failures and Spurious Correlations",
+      "title_zh": "壓力測試 LLM 測謊器：角色扮演失效與虛假相關"
     },
     {
       "arxiv_id": "2609.39211",
@@ -2076,7 +2108,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.39211",
       "summary": "Large Language Model (LLM) agents are increasingly deployed as populations of interacting entities, in which consensus --agreement on a shared answer-- emerges as a collective, unengineered behaviour. Prior work on LLM consensus shows that agents can cross-verify their answers and converge towards more factual responses, treating agreement as a proxy for correctness. However, these studies usually fix a single interaction structure, leaving open how consensus depends on how agents interact. We a",
-      "title": "Consensus and Factual Dynamics in Large Populations of Interacting Language Models"
+      "summary_zh": "這篇論文關切的問題是：當大量由同一個凍結語言模型複製出來的代理人互相讀取彼此答案、反覆改寫時，族群會不會收斂出共同答案，而這個共識究竟是對的還是錯的。作者指出，過去關於 LLM 共識的研究多半固定單一的互動結構，因此無法回答「共識如何取決於代理人之間的連接方式」。\n\n方法上，作者提出 Rheon 框架，把族群重鑄為一個演化中的 O(n) 自旋系統：每個代理人的回應被拆成兩個耦合自旋——語意自旋是文本嵌入經白化與單位正規化後的向量，記錄「說了什麼」；事實自旋則是二元 Ising 變數，記錄「是否正確」。互動幾何構成一條「維度階梯」，從 1D 環、2D 環面、3D 環面到全耦合的平均場圖，取樣溫度 T 扮演熱擾動來源，並以類 Glauber 的非同步動力學演化。\n\n作者橫掃 432 種配置（六個提示、十二種族群規模、六個溫度），每個配置跑五次獨立試驗，共約 477 萬筆回應，並以 LLM-as-a-judge 標註事實性，釋出為 Eraclitus-4.7M 語料。\n\n主要發現有四：共識幾乎是普遍結果，且在最初幾次更新中就大致底定，連通度越高收斂越快越完整；但事實結局無法由初始狀態預測，少數正確者有機會扭轉幻覺多數，顯示其動力學並非對稱的投票者模型；取樣溫度對事實結果是真實的控制變數但非單調，最冷的近貪婪設定並非一律最安全，最佳溫度取決於耦合方式（區域耦合偏好低溫、全域耦合則需要中間溫度）；語意凝聚與事實準確度呈正相關，互動會強化此關聯，但相關係數最高僅約 +0.36，無法保證共識即正確。\n\n限制方面，族群是同質的（單一凍結主幹、每次執行單一提示、無角色設定），且結論僅在十次更新的視窗內成立；事實軸依賴自動標註，在帶假前提的提示上雜訊最大，其中 Prompt 1 的標註甚至被系統性反轉，因此被排除於整體分析之外。\n\n這項工作的意義在於：它把多代理人 LLM 系統的共識視為可觀測的宏觀湧現性質，提供順序參數與溫度控制等統計物理工具，並提醒實務部署不應以「一致性」當作正確性的代理指標，且溫度必須與互動拓樸匹配。",
+      "title": "Consensus and Factual Dynamics in Large Populations of Interacting Language Models",
+      "title_zh": "大型交互語言模型族群中的共識與事實動態"
     },
     {
       "arxiv_id": "2609.39247",
@@ -2177,7 +2211,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.39247",
       "summary": "Standard language model RL algorithms credit every token of a long rollout with the same advantage determined by the terminal reward. Actor-critic methods can provide finer-grained credit assignment, but learned critics are generally considered too inaccurate to trust when training LLMs with RL. In recent works, even when a critic is present, it is used only for baseline estimation, so every trajectory must be rolled out to its terminal reward. We introduce Actor-Critic with Action Chunking (AC2",
-      "title": "Trust the Critic More"
+      "summary_zh": "標準的語言模型強化學習（如 GRPO）把整條 rollout 視為單一動作，所有 token 共用同一個由終端獎勵決定的優勢值，信用分配相當粗糙：一個結尾的小計算錯誤就可能懲罰整條正確推理。演員—評論家方法理論上能提供更細緻的信用分配，但學得的評論家（critic）通常被認為太不準確，因此既有作法最多只把它當作 baseline，仍須把每條軌跡 rollout 到終端獎勵。本文提出 Actor-Critic with Action Chunking（AC2），改以「動作分塊」為信用單位：從回放緩衝區中的前綴切出起點，只生成約一萬個 token 的短續寫，再由評論家對分塊末端狀態評分，因而在更新時完全不需觀察終端獎勵。作者用三項設計讓評論家式信用分配變得可靠：一是「局部就緒度」，只有在評論家在該題目上足夠準確時才採用評論家式更新；二是在有參考解答時把正確解法放進評論家提示中；三是以一萬 token（而非單一 token）為分塊單位。實驗在 FineProofs-RL 上訓練 Qwen3-4B-Thinking-2507，於 IMO-ProofBench 評估。AC2 以約 2.5 倍更少的解碼 FLOPs 超越 GRPO 的峰值平均分 18.5%，訓練步數少 25%，且峰值分數更高（20.57% 對 18.5%）；解碼 FLOPs 與 GPU 時數在主實驗中高度相關。消融顯示局部就緒度、提供參考解與一萬 token 分塊皆為必要，縮小分塊至 2k、只保留正確軌跡或移除局部就緒度都會使表現下滑。限制在於局部就緒度需要對訓練資料做多輪 epoch 才能取得「真值」估計，在非資料受限的單輪情境下並不實際，作者將其列為未來工作。",
+      "title": "Trust the Critic More",
+      "title_zh": "更信任評論家：以動作分塊的演員—評論家演算法（AC2）"
     },
     {
       "arxiv_id": "2609.40360",
@@ -2279,7 +2315,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.40360",
       "summary": "Reinforcement learning with verifiable rewards (RLVR) has improved the reasoning capabilities of large language models (LLMs), yet their predictions remain sensitive to task-irrelevant prompt features. We investigate this sensitivity through semifactual prompt interventions that preserve the underlying problem and its answer. Our analysis reveals substantial variation in token-level sensitivity and shows that suppressing high-drift token candidates during decoding improves reasoning accuracy wit",
-      "title": "Semifactual Credit-Augmented Policy Optimization"
+      "summary_zh": "這篇論文關注 RLVR（以可驗證獎勵進行強化學習）下大型語言模型推理的穩健性問題。作者指出，現行主流的 GRPO 會把同一個由最終答案正確與否推導出的優勢值（advantage）平均套用到回應中的每一個 token，因此可能在強化有用推理的同時，一併強化模型對提示中與題目無關特徵的虛假依賴。研究團隊以「半事實提示干預」（semifactual prompt intervention）切入：在不改變數學問題與正確答案的前提下，改寫措辭、加入輕微錯字、套上無關情境或附掛無關內容，再以教師強制（teacher forcing）方式量測固定回應中每個 token 機率的漂移程度，並以有界對稱距離作為敏感度代理指標。診斷結果顯示 token 層級的敏感度高度異質：反思標記與篇章連接詞的漂移分別為整體平均的 2.74 倍與 2.32 倍，而數學符號與數字僅約 0.47 倍與 0.37 倍；在不更新權重的情況下於解碼階段抑制高漂移候選 token，可使 Qwen3-4B-Base 在 1,000 題診斷集上的正確率由 15.8% 提升至 30.0%。據此，作者提出 SCAPO：先在同一個提示群組內對四個擾動的漂移做標準化、平均後再標準化，得到群組相對穩定度分數，僅保留其負值部分並以停止梯度方式加上一個小幅修正項到 GRPO 優勢上，使相對不穩定的 token 獲得較低的優勢，且穩定本身不額外給獎勵。修正僅在訓練前期施加，之後回到標準 GRPO。實驗在 Qwen3-4B-Base 與 Qwen3-1.7B-Base 上訓練 DAPO-Math-17K，SCAPO 於 AIME 2024–2026 分別較 GRPO 提升 5.63 與 4.17 個百分點，在兩個規模的多數數學基準與全部三項分布外基準（NoOp-AIME、ThinkBench-AIME、GPQA-Diamond）上取得最佳成績，且達到 GRPO 最終 AIME 準確率所需的最佳化步數不到一半。消融實驗顯示，以答案改變的反事實擾動取代半事實擾動、或改用全符號與僅正值修正，表現皆較差，支持「對症下藥地降低不穩定 token 的信用」這一設計。效率方面，半事實探測與信用建構僅占 4B 實驗訓練執行時間約 1.8%，因其重複使用已抽樣回應且僅限於前期階段。限制在於訓練僅涵蓋 1.7B 與 4B 稠密模型及數學推理領域，更大規模、更多架構（如 MoE 與混合模型）與其他領域的效益仍待驗證。",
+      "title": "Semifactual Credit-Augmented Policy Optimization",
+      "title_zh": "半事實反事實信用增強策略最佳化（SCAPO）"
     },
     {
       "arxiv_id": "2609.39473",
@@ -2383,7 +2421,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.39473",
       "summary": "Autonomous agents increasingly rely on memory to generalize beyond their training environments. However, agents are bounded by what they have seen and believed, and leveraging such memories in unseen environments can introduce biases into their internal beliefs. We formalize this phenomenon as \\textit{false memory}, which can arise from spurious correlations, environment shifts, and knowledge conflicts. Despite its importance, false memory is difficult to evaluate because it stems from agent int",
-      "title": "Beyond the Shadows of Plato's Cave: Evaluating False Memory in Autonomous Agents via Counterfactual Reasoning"
+      "summary_zh": "這篇論文提出「虛假記憶」（false memory）這個問題：自主代理雖靠記憶把訓練環境所學延伸到新情境，但記憶中可能糾纏著誤導性的內在信念，在環境變遷、虛假關聯或知識衝突下反而有害。作者指出，既有做法多半把虛假記憶與一般泛化失敗混為一談，只看可觀測的答案，或以獎勵設計與昂貴的微調來建立評估資料，難以真正觸及內部信念。為此，他們提出 FAME，一個免訓練、免生成答案的框架：透過反事實查詢對查詢做介入，觀察代理在隱藏狀態中所誘發的潛在概念如何漂移，再判斷該漂移是否跨越由記憶所界定的容許區域。理論上，作者以結構因果模型證明反事實的可辨識性，並將概念漂移形式化為 ETT，進一步證明概念漂移與答案偏好之差呈線性投影關係，使評估可在生成答案前完成。實驗涵蓋虛假關聯、環境變遷與知識衝突三類設定，AUROC 介於 76.2% 至 96.7%，在 GSM-Symbolic、GitChameleon 與 BigBench-Hard 等現實基準上較最佳基線高出 3.4% 至 23.3%。研究也發現，答案本身的信心分布幾乎無法區辨虛假記憶，且漂移幅度大不代表虛假記憶，關鍵在於是否跨越邊界。限制在於方法需取得代理隱藏狀態與人工設計的反事實查詢，尚未支援自動生成，未來可朝此方向發展。其貢獻在於把虛假記憶確立為可評估的內在信念現象，並釋出反事實模板。",
+      "title": "Beyond the Shadows of Plato's Cave: Evaluating False Memory in Autonomous Agents via Counterfactual Reasoning",
+      "title_zh": "走出柏拉圖洞穴的陰影：以反事實推理評估自主代理的虛假記憶"
     },
     {
       "arxiv_id": "2609.39757",
@@ -2484,7 +2524,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.39757",
       "summary": "Black-box distillation is a practical route for transferring capabilities from API-accessible large language models that expose only text outputs into smaller student models. Recent on-policy adversarial methods such as GAD improve over SeqKD by forming an adversarial loop between a critic and a student, where the critic provides rewards for GRPO-based student policy optimization over the student's sampled responses. However, GRPO computes advantages from the within-group relative rewards of stu",
-      "title": "Revisiting On-policy Adversarial Black-Box Distillation: Calibrating Groupwise Reward Geometry for Effective Advantage Construction"
+      "summary_zh": "這篇論文針對同策略對抗式黑箱蒸餾中的「批評者到優勢」介面錯配提出診斷與修正。黑箱蒸餾只能取得教師模型的文字輸出，GAD 等方法以批評者線上提供獎勵，供 GRPO 對學生自身取樣的回應群組做策略最佳化。然而批評者的 Bradley–Terry 目標只在區分教師與學生回應，作者證明在固定群組均值下，該目標嚴格偏好組內零離散度，因此獎勵群組容易塌縮、邊際脆弱，使分組優勢訊號不穩定。為此提出 GRGC 兩階段框架：批評者端以高斯分群最佳傳輸校準，將排序後獎勵對齊群組中心化的高斯分位數，帶來非塌縮的尺度與平滑的排序間距；策略端再以群組冪次轉換重塑獎勵，在保持批評者排序的前提下放大可用的組內邊際。理論上並連結優勢差距與分組 softmax 代理模型的一步策略分離，以及優勢誤差對裁剪式 GRPO 代理目標的有界擾動。實驗涵蓋 GPT-5 與 Doubao-Seed-2.0 兩位教師、Qwen2.5 與 Llama-3.2 多種學生規模、LMSYS 與 Dolly 訓練集，於分布內外基準、GPT-OSS 評審與人類偏好評估上皆優於 SeqKD 與 GAD，且額外開銷低於 0.11%。限制在於方法仍建立於 GAD 之上，需依賴對抗式批評者與同策略 rollout，絕對訓練成本高於純監督式基線。",
+      "title": "Revisiting On-policy Adversarial Black-Box Distillation: Calibrating Groupwise Reward Geometry for Effective Advantage Construction",
+      "title_zh": "重新檢視同策略對抗式黑箱蒸餾：為有效優勢建構校準群組獎勵幾何"
     },
     {
       "arxiv_id": "2609.40127",
@@ -2588,7 +2630,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.40127",
       "summary": "Modern transformers pair impressive capabilities with substantial memory and compute demands. Low-rank weight factorization reduces both while keeping the matrices dense, and thus efficient on standard hardware. Existing methods, however, choose the subspace to remove from each weight matrix with local closed-form criteria: activation energy, layer-wise reconstruction error, or a quadratic approximation of the loss. These criteria ignore how errors propagate through the network, so at high compr",
-      "title": "Learning Functional Subspaces for Neural Network Compression"
+      "summary_zh": "這篇論文指出，現有低秩壓縮方法（如 ASVD、SliceGPT、SVD-LLM、Swift-SVD）都以「局部」準則挑選要丟棄的子空間，例如活化能量或逐層重建誤差，忽略誤差如何隨深度累積，因此在高壓縮率下效能崩潰。作者提出「可學習子空間投影」（LSP）：對每個線性層，或共用同一輸入的綁定群組（Q/K/V、gate/up），指派一個正交投影器，所有投影器在凍結預訓練權重的前提下，以全域目標聯合最佳化，預設目標是對稠密模型輸出分布的 KL 散度，亦可改用原訓練損失（LSP_T）。投影器以白化 SVD 截斷初始化，並依每個投影器在模型輸出上造成的 KL 除以節省參數量來分配秩。訓練後投影器合併成標準低秩因子，綁定群組共用一個因子，因此部署模型中不含 LSP 專屬運算，並可在注意力中快取單一窄潛在向量取代完整的 keys 與 values。在 OPT-125M/1.3B、Qwen3-4B、Llama-2-7B 與 ViT-B/16 上，LSP 在 12 個模型—壓縮率設定中取得最低困惑度，且優勢隨壓縮率擴大；在 Llama-2-7B 壓縮 70% 時困惑度為 10.9，優於最強基準的 13.3，而未經學習的初始化為 222.8，零樣本平均準確率 42.2% 對 36.0%。推論端解碼速度最高為稠密模型的 1.56 倍，於 128k 上下文下權重加 KV 快取記憶體減少 13.5 倍。限制在於：以 KL 量測為基礎的秩分配屬區域代理，缺少全域最佳性保證；壓縮本身仍需量測與訓練成本；且唯有 KV 在輸入側綁定時，潛在快取才真正帶來效率收益。此工作的重要性在於把壓縮準則由局部統計量推進到端到端的功能子空間，並兼顧準確率與推論效率。",
+      "title": "Learning Functional Subspaces for Neural Network Compression",
+      "title_zh": "學習功能子空間以進行神經網路壓縮"
     },
     {
       "arxiv_id": "2609.40340",
@@ -2690,7 +2734,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.40340",
       "summary": "Evolutionary search with large language models (LLMs) can stall when progress requires external knowledge the model lacks. Supplying relevant documents helps, but simply adding web search tool can keep returning the same pages as solutions change. We introduce EvoDuet, a bi-level optimization method that co-evolves solutions and search queries with fixed model parameters. At each iteration, a retrieval gate lets the LLM assess its knowledge gap and choose to retrieve new documents, reuse stored ",
-      "title": "EvoDuet: Bilevel Co-Evolution of Web Searching and Task Solving for Scientific Discovery"
+      "summary_zh": "大型語言模型驅動的演化式搜尋在需要外部知識時易於停滯；單純加入網頁搜尋工具又常反覆檢索相同頁面。本文提出 EvoDuet，在模型參數固定的前提下，以雙層最佳化共同演化「候選解」與「搜尋查詢」。每輪由知識缺口檢索閘門決定要檢索新文件、重用既有文件，或直接生成；內層迴圈依「假設證據分數」預測各文件可帶來的分數並排序文件、精煉查詢，外層迴圈則平行生成候選並記錄實測結果以供後續檢索參考。在 21 項最佳化任務上，每輪單一候選時，EvoDuet 將 OpenEvolve 的正規化發現增益由 74.1% 提升至 78.0%（GPT-5.6-Luna）、由 61.3% 提升至 82.3%（Gemini-3.8-Flash），Qwen3.5-9B 則未受益；平行生成可再提升。最佳結果在八項任務超越先前最佳分數、三項持平，於 Denoising 以約 6.9 倍較低估計成本勝過 SimpleTES，並可與 Top-K、EvoX 等既有鷹架整合。限制包括：較弱模型常誤用或未用檢索內容、演算法工程任務未穩定改善，以及部分結果依賴公開解答或見解的再利用，且預測有益的檢索仍可能產生更差的候選，須由評估器驗證。",
+      "title": "EvoDuet: Bilevel Co-Evolution of Web Searching and Task Solving for Scientific Discovery",
+      "title_zh": "EvoDuet：網頁搜尋與任務求解的雙層共同演化，用於科學發現"
     },
     {
       "arxiv_id": "2609.40169",
@@ -2788,7 +2834,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.40169",
       "summary": "Language agents are expected to solve increasingly complex tasks, creating a growing need for continual improvement. One promising approach is to evolve the agent harness, the software that governs tool use, memory management, and task execution, while keeping the underlying language model fixed. Recent methods automate this process by using a meta coding agent to modify the harness based on execution feedback. However, relying on that agent's existing knowledge and observed failures can restric",
-      "title": "Learning from Research: Toward Lifelong Agent Harness Evolution"
+      "summary_zh": "語言代理（language agent）日益需要處理複雜任務，持續改進成為關鍵需求。現行做法多以 meta coding agent 依執行回饋修改 agent harness（掌管工具使用、記憶管理與任務執行的軟體），但受限於模型既有知識與已發生的失敗，探索範圍狹窄、設計知識不足且適應被動。本文提出 ScholarEvolve，借鏡人類研究者研讀文獻的習慣，將 harness 演化方向依五個模組（工具介面、脈絡管理、技能、記憶、代理工作流程）組織，先以 auditor 歸因失敗軌跡並抽象出能力缺口，再產生檢索查詢，透過 arXiv 取得論文，並以 TopicGPT 式的提示式主題模型建立機制分類、篩選與模組內輪替選取，確保探索涵蓋不同機制家族。研究者代理讀取全文與官方程式碼後產出 mutation blueprint，由 coding agent 實作單模組變異並通過可執行健康檢查；接著以驗證集上的個別增益做加法預測，挑選模組組合做 crossover 與整體評估，再以 paired bootstrap 下界決定是否保留新冠軍。由於新論文可週期性引入，框架具備主動式終身演化能力。實驗在 AppWorld 與 τ²-Bench 上進行：Qwen3.5-27B 於 AppWorld Challenge 的任務目標完成率由 49.6% 提升至 63.6%，在 Normal 由 69.0% 升至 81.4%；GPT-5.4-mini 於 τ²-Bench Telecom 的 pass@1 由 72.7% 提升至 81.9%。消融顯示主題導引選擇與模組化變異皆有貢獻，模組組合常優於最佳單一模組，且能泛化至未見的 Amazon、Gmail 應用。限制在於殘餘失敗仍集中於需求追蹤與證據覆蓋，失敗分類依賴標註模型，且比較基準與搜尋預算的設定會影響結論；但其以文獻驅動、固定骨幹權重的做法，為代理系統的持續演化提供了可複用且可終身更新的路徑。",
+      "title": "Learning from Research: Toward Lifelong Agent Harness Evolution",
+      "title_zh": "從研究中學習：邁向終身式的代理框架演化"
     },
     {
       "arxiv_id": "2609.39564",
@@ -2889,7 +2937,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.39564",
       "summary": "Delegating complete application development to coding agents requires preserving the intended design rather than simply producing plausible outputs through naive prompting. Game development provides a demanding testbed, as long-form Game Design Documents (GDDs) describe requirements that must work together across game logic, visual rendering, and player interactions. However, existing game-development benchmarks typically use compact specifications and provide limited support for evaluating inte",
-      "title": "A2Z GameSpec-Bench: How Faithfully Can Coding Agents Generate Games from Game Design Specifications?"
+      "summary_zh": "這篇論文提出 A2Z GameSpec-Bench，用來評估編碼代理在端到端遊戲開發中，能否忠實落實長篇遊戲設計文件（GDD）。過去以遊戲開發為主題的基準多採用精簡規格，難以檢驗長篇 GDD 中彼此相依的需求；作者觀察到，單靠原始碼審查等單一軸線，會漏掉執行期才浮現的設計違反。方法上，團隊以代理式撰寫流程產出 100 份 GDD（50 份 Small、50 份 Big，平均分別約 14,085 與 26,297 個 token），並將每份 GDD 轉為「相依感知契約」（Dependency-Aware Contract），記錄規則、不變式與前置相依關係；契約在建置前凍結，跨代理與跨修訂輪次保持一致。評估結合三條互補軸線：原始碼靜態審查、情境式重播（以代理生成的 Test Policy 重播固定輸入，並用自適應取幀取得視覺證據），以及以 Code-as-Policy 實作的自適應遊玩測試（含正常遊玩與針對性對抗測試）。主要結果顯示，高可編譯率與可執行率並不代表高 GDD 忠誠度：Claude-Fable-5.1 的可驗證率達 98.7%，整體 GDD Fidelity 僅 77.0；在 100 款 GPT-5.6-Sol 遊戲中，規則本地通過率為 72.4%，但要求所有上游規則也通過時降至 22.7%。加入相依脈絡可將已記錄遊玩測試違規的覆蓋率由 71.1% 提升至 80.2%。在 50 份 Big GDD 上，需求層級回饋經兩輪修訂後，整體 GDD Fidelity 相對自我修訂提升 10.9%。限制在於基準以 Phaser 的 2D 單人遊戲與合成 GDD 為主，僅附三款 Three.js 3D 遊戲示範延伸性；契約建構與證據判讀仍依賴生成式模型，難以完全排除遺漏與評估偏誤。此基準的意義在於把評估從「能不能跑」推進到「是否忠於設計」，並提供可據以修訂的需求層級診斷。",
+      "title": "A2Z GameSpec-Bench: How Faithfully Can Coding Agents Generate Games from Game Design Specifications?",
+      "title_zh": "A2Z GameSpec-Bench：編碼代理能否忠實依遊戲設計規格生成遊戲？"
     },
     {
       "arxiv_id": "2609.40316",
@@ -2990,7 +3040,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.40316",
       "summary": "Looped transformers and Mixture-of-Experts (MoE) offer complementary routes to efficient scaling: recurrence increases computational depth at fixed parameters, while MoE sparsity expands total capacity at fixed active compute. Yet existing scaling laws model recurrence or sparsity in isolation. In this work, we introduce Loop Scaling Laws, the first scaling law to jointly model recurrence and sparsity alongside model size and data. At its core is a bounded, sparsity-conditional recurrence mappin",
-      "title": "Scaling Laws for Looped Mixture of Experts"
+      "summary_zh": "這篇論文處理的問題是：現有縮放定律要嘛只描述迴圈（recurrence），要嘛只描述稀疏性（MoE），兩者無法共同建模。作者提出「Loop Scaling Laws」，首度把模型大小、訓練資料量、迴圈次數 R 與專家數 E 納入單一函數形式。核心是一個有界的、以稀疏度為條件的迴圈對映：每次迴圈所帶來的等效參數增益遞減，總增益收斂到有限上界，而稀疏度（以 active-parameter ratio m 描述，係數設為 κ_j m^{-θ}）會同時抬高並延後這個飽和點。方法上，作者在 N_act、D、E、R 四軸上做大規模訓練掃描，並以分階段非線性擬合估計係數；此定律可還原稠密、稠密迴圈與非迴圈 MoE 等既有定律為特例。主要證據為：在有界對映下，對未見的 R、E、N、D 外推所得 RMSE 明顯低於線性或冪律對映；14 項下游基準顯示稀疏性帶來約 3 倍有效參數效率，迴圈在推理任務上帶來約 2 倍總參數效率；在約 1.5×10^22 FLOPs 的兆級 token 訓練下，A0.3B-1.3B 迴圈 MoE 在多數推理指標上追平大兩倍的非迴圈 MoE，並可透過測試時調整迴圈次數進行 on-demand 算力縮放。限制方面，飽和上界屬於對映的漸近性質而非觀測範圍外的保證，部署記憶體僅計入權重、未含 KV cache 等執行時狀態，且部分最佳化配置落在外推區間。其意義在於把迴圈與稀疏性定位為互補的參數效率縮放軸，並以擬合定律在算力與記憶體預算下給出可操作的架構選擇準則。",
+      "title": "Scaling Laws for Looped Mixture of Experts",
+      "title_zh": "迴圈式專家混合模型的縮放定律"
     },
     {
       "arxiv_id": "2609.39882",
@@ -3091,7 +3143,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.39882",
       "summary": "Pre-training equips large language models (LLMs) with a broad repertoire of behavioral patterns associated with roles, styles, values, and goals. Post-training teaches conditional enactment and makes a helpful Assistant the default, but it does not erase alternative modes from the weights; explicit prompts can therefore elicit personas that repeatedly shape judgment, language, and action. In open-weight settings, runtime controls can be removed, motivating persona unlearning: a weight-level edit",
-      "title": "LLM Persona Unlearning"
+      "summary_zh": "這篇論文提出「人格卸除學習」（persona unlearning）這個新問題：大型語言模型在預訓練階段學到大量與角色、風格、價值與目標相關的行為模式，後訓練只是讓「有幫助的 Assistant」成為預設，並未從權重中抹除其他模式，因此明確的提示詞仍可誘發特定人格，持續影響判斷、語氣與行動。在開放權重場景下，執行階段的控制可被移除，作者主張必須在權重層級進行編輯，使指定人格難以被誘發。為此他們建立 PersonaUnlearnBench，涵蓋 Llama、Qwen、Gemma 三個家族共六個模型與五種人格（諂媚、幻覺、無禮、冷漠、邪惡），以同題配對的忘除／保留集、未見指令改寫與四軸評估進行測試，並發現既有卸除方法無法可靠抹除目標人格而不損害生成品質或一般能力。作者接著提出 PaCE（Persona Contrastive Erasure），以同題的目標與理想回應對比找出人格方向，透過因果探測選層，將目標提示狀態推離目標模式並對齊配對回應的正交分量。實驗顯示 PaCE 在多數設定中能一致壓制目標人格並維持回應品質，但仍有可量測的一般能力取捨，且在更強誘發下存在殘餘可存取性。此工作把卸除學習從內容層級推進到行為層級，對模型安全與持久控制具重要意義。",
+      "title": "LLM Persona Unlearning",
+      "title_zh": "LLM 人格卸除學習"
     },
     {
       "arxiv_id": "2609.39701",
@@ -3190,7 +3244,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.39701",
       "summary": "Value steering should change an LLM's normative priorities while preserving the scenario, facts, and task constraints underlying its answer. Conventional activation edits often change both. We introduce an editable semantic-value interface on frozen residual states, with a one-way semantic-to-value pathway that grounds value recognition in context. Stop-gradient blocks feedback through this pathway; swap consistency, topic de-confounding, and decorrelation encourage selective codes. At inference",
-      "title": "Values as Style: Disentangling Values from Semantics with One-Way Mixing for Low-Damage LLM Steering"
+      "summary_zh": "這篇論文處理一個常被忽略的問題：對大型語言模型做價值引導時，往往連情境、事實與任務限制一起被改掉。作者主張好的價值控制應該只改變規範性優先順序，而保留答案背後的實體、數量、因果與主題。方法上，他們在凍結的殘差串流狀態上建立一個可編輯的「語意—價值介面」，用兩個輕量編碼器分別取出語意碼與價值碼，並設計單向的語意到價值混合路徑，搭配 stop-gradient 阻斷反向回饋，再以交換一致性、主題去混淆與去相關正則化塑造具選擇性的表徵。推論時固定語意碼、只置換價值碼，並把重建差異注入殘差串流；另可選擇將更新投影到語意子空間之外，並以價值相關性分類器決定是否介入。在 LLaMA-3.1-8B-Instruct 與 Qwen2.5-7B-Instruct 上，此介面在價值對齊相當時提升語意保留、降低良性拒答；與驗證集挑選的提示法相比，對齊為 0.750 對 0.748、BERTScore 為 0.938 對 0.923、矛盾率為 5.1% 對 7.6%。2×2 消融實驗進一步分離「訓練期混合」與「推論期閘控」兩種機制，指出兩者互補；分維度探針也顯示價值與主題的交叉可預測性下降。限制在於：潛在分解並非唯一，殘餘跨因子資訊仍可量測，人類評分者一致性偏中等，且研究主要集中於 7B/8B 規模與短對話。其意義在於把價值控制從單一稠密方向推進到可分解、可選擇性編輯的表徵介面，為降低附帶語意損害提供可操作路徑。",
+      "title": "Values as Style: Disentangling Values from Semantics with One-Way Mixing for Low-Damage LLM Steering",
+      "title_zh": "價值即風格：以單向混合分離價值與語意，實現低損害的 LLM 引導"
     },
     {
       "arxiv_id": "2609.39607",
@@ -3284,7 +3340,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.39607",
       "summary": "Skills extend an agent's capabilities by injecting instructions and information into the context, and are widely used by agents such as OpenClaw and Claude Code. Prior work shows third-party marketplaces host malicious skills that give attackers direct influence over the victim's agent. The emerging defense scans skills before installation, pairing deterministic static checks with an LLM-based semantic judge, as in NVIDIA's SkillSpector. We show that such defenses fall to an attacker who knows t",
-      "title": "Pretext: Defeating Malicious Skill Detection Frameworks for AI Agents"
+      "summary_zh": "這篇論文指出，目前用於審查 AI 代理技能（skill）的安全掃描器存在結構性弱點。作者以 NVIDIA 開源的 SkillSpector 為代表目標，該框架結合確定性的靜態規則檢查（regex、AST、taint、YARA 等 64 條規則）與 LLM 語意判官，再以 LLM 後設分析器過濾發現，最後輸出 0 到 100 的風險分數，低於 20 分即視為安全。論文提出白箱攻擊者 Pretext：它完整掌握偵測規則與語意分析提示，透過反覆迭代改寫技能包，把惡意載荷從程式碼搬到自然語言敘述，使靜態分析完全失效；同時把惡意行為包裝成技能宣稱的合法用途，並將指令拆散到多個檔案，讓逐檔審查的語意層無法察覺整體意圖。實驗涵蓋 12 種木馬攻擊類型，使用 glm-5.1 作為攻擊者，對上 glm、qwen3t 與 gpt-oss 三種受害者與偵測器組合。在凍結偵測器的 Mode A 下，攻擊成功率最高達 97%（對 qwen3t 為 96.7%）；在偵測器也會共同演化的 Mode B（GAN 式對抗）下仍可達 77%。作者另外以自我收斂度、可塑性、偵測器涵蓋率與平均反制延遲等指標追蹤雙方共演化動態，發現自適應偵測器之所以降低攻擊成功率，主要來自大量誤判良性技能（部分情境誤判率達 62%），而非真正學會精準辨識惡意意圖，因此安全性提升其實是以代理可用性為代價。限制在於尚未驗證對商業閉源掃描器的遷移效果，作者僅推測其靜態加 LLM 的同構設計可能同樣脆弱。此研究提醒：技能驗證不應只靠安裝前的單層掃描，而需在工具執行、能力限制與沙箱等環節加入多層防禦。",
+      "title": "Pretext: Defeating Malicious Skill Detection Frameworks for AI Agents",
+      "title_zh": "Pretext：繞過 AI 代理惡意技能偵測框架的攻擊手法"
     },
     {
       "arxiv_id": "2609.40303",
@@ -3382,7 +3440,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.40303",
       "summary": "Recent autonomous machine learning engineering (MLE) agents have made significant progress on public leaderboards. Often motivated by progress stagnation over long-horizon cycles and limited Large Language Model (LLM) primitives, modern MLE agents are deployed on top of increasingly elaborate machinery: multi-agent orchestrators, dedicated retrieval subagents, and more. While such harnesses expand, the use of more primitive but improved coding agents - where LLMs have direct access to the execut",
-      "title": "How Much of a Harness Does a Strong Agent Need for Autonomous ML Engineering?"
+      "summary_zh": "這篇論文質疑當前自主機器學習工程（MLE）agent 愈疊愈複雜的設計趨勢。過去的 MLE 系統多半把 LLM 包在精心打造的「harness」裡：搜尋樹、程式族群、記憶階層、專職檢索子代理、多代理協作等，理由是單次 chat completion 無法執行程式、檢視資料或對錯誤反應。作者指出，現代 LLM 已具備工具使用能力，可直接在 coding agent 環境（如 OpenCode）中讀寫檔案、執行程式與除錯，因此重新檢驗這些機制是否還有價值。\n\n方法上，作者在同一套程式碼基底中，於固定 LLM 主幹、硬體與時間預算下，逐層拆解四類常見干預：執行環境、搜尋策略（Chain、Greedy、UCB1、Best-of-N）、自主性（單一長 session 的 Malena）與多代理協調（委派、平行、廣播）。主要基準為 MLE-bench 的 30 項任務，另在 NatureBench 的 40 項開放科研任務上驗證。\n\n結果顯示，coding agent 環境是唯一顯著有效的干預；其餘機制在配對統計檢定下皆無顯著增益。Malena 在 GLM 5.2、Kimi K3、DeepSeek V4 等前沿主幹上，皆不遜於甚至超越 MLEvolve、AiScientist、Arbor、ScienceFlow 等開源 SOTA harness；GLM 5.2 下 Malena 奪牌率 62.5%，最佳外部 harness 僅 47.1%。軌跡分析顯示，能力足夠的 coding agent 會自行進行自適應搜尋，兼顧罕見技術與後期效能導向的精修，並重用既有檢查點與工具程式碼。\n\n限制包括：結果高度依賴 MLE-bench（有已知任務準備問題與污染疑慮）、統計檢定力受限、多代理協調僅做小規模消融、以及 Malena 與外部 harness 可能存在調校投入不對稱。作者以 Dolos 程式碼相似度與嵌入相似度兩種方式檢查污染，未發現異常。整體意涵是：對已具備自主工作能力的模型而言，手工 harness 的邊際報酬極低，槓桿在模型與其所獲得的執行環境，而非外圍框架。",
+      "title": "How Much of a Harness Does a Strong Agent Need for Autonomous ML Engineering?",
+      "title_zh": "強大的 Agent 到底需要多少外層框架？論自主機器學習工程的極簡化"
     },
     {
       "arxiv_id": "2609.40118",
@@ -3486,7 +3546,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.40118",
       "summary": "As LLM capabilities advance, agents are tackling increasingly complex tasks over longer horizons. Their growing interaction histories make memory compaction essential for staying within context windows and reducing prefill cost. Existing methods summarize the history or compress its KV cache, often adding model computation to preserve information for future requests. A new user request can change which history matters, but reassessing that history with the model requires re-encoding it if the KV",
-      "title": "Persistent Context Graphs for Efficient Memory Compaction in LLM Agents"
+      "summary_zh": "這篇論文處理 LLM Agent 在長時間互動下的記憶體壓縮問題。Agent 的互動歷史會不斷累積，不僅超出有限脈絡視窗，也讓重複的 prefill 成本成為執行負擔；然而既有方法各有難處：摘要式壓縮會丟失細節，KV cache 壓縮則須為未來請求保留狀態，而查詢導向的淘汰在後續查詢改變時會失效。使用者思考時間往往占據工作階段絕大多數，快取常在空檔後過期，此時壓縮器若要評估歷史相關性，就得重新編碼整段歷史。作者先以觀察研究指出三件事：注意力集中在少數歷史區塊、過去注意力可預測下一輪會重用的內容、而新進請求會重新分配注意力（在 32 個任務中，改變目標所導致的注意力位移約 10.1%，改寫措辭僅約 5.3%）。據此提出 ReCAP：把推論時本就計算出的注意力保存為「持久性脈絡圖」，節點是帶有累積重要性的歷史區塊，邊則記錄區塊間的依賴關係。新請求抵達時，方法結合儲存的重要性、請求與區塊的識別字重疊度，並沿依賴邊擴張取回支持性脈絡，全程僅需圖走訪與字串比對，不需額外模型呼叫，也不依賴 KV cache。在 SWE-Together 與 Lost-in-Conversation 的程式任務上，搭配 Qwen3-Coder 與 gpt-oss，相較 Codex 預設摘要可降低約 95% 的壓縮與冷啟動延遲，SWE-Together 的歷史脈絡約減半且品質相當，LiC 準確率較完整歷史分別提升 19.8 與 41.2 分。圖譜僅需數十 KB 記憶體，且能與 prefix caching 互補；以小型 Qwen3-0.6B 代理模型取得注意力亦幾乎不損成效。限制在於需要可讀取注意力的模型或代理、依賴超參數設定，且實驗集中於程式與工具使用情境。",
+      "title": "Persistent Context Graphs for Efficient Memory Compaction in LLM Agents",
+      "title_zh": "持久性脈絡圖：為 LLM Agent 打造高效率的記憶體壓縮機制"
     },
     {
       "arxiv_id": "2609.39365",
@@ -3586,7 +3648,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.39365",
       "summary": "Continual alignment requires LLMs to adapt to new requirements without forgetting previously acquired behaviors. Natural-language instructions are flexible and composable but offer only indirect control, whereas post-training provides stronger adaptation at the cost of repeated parameter updates. We introduce Ready2Blend, which combines the flexibility of natural language with learned alignment. AlignFormer maps each requirement to a fixed-length alignment prompt stored in a modular prompt bank,",
-      "title": "Ready2Blend: From Natural-Language Instructions to Composable Alignment Prompts"
+      "summary_zh": "這篇論文處理「終身對齊」（lifelong alignment）的難題：已部署的 LLM 常需隨時間吸收新的對齊需求（新任務或新偏好），但自然語言指令只能提供間接、粗略的控制，而 post-training 雖適應力強，卻得反覆更新主幹參數，既耗費算力，又容易造成災難性遺忘，且一旦合併便難以拆分或依使用者重新加權。作者提出 Ready2Blend，把對齊控制從「主幹參數」轉移到「提示」上：AlignFormer（Q-Former 的變體）以需求文字為條件，將每個需求映射成固定長度的連續提示，存進模組化的 alignment prompt bank，主幹與既有提示全程凍結；composability regularization 則把預訓練句編碼器的語意幾何轉移到提示空間，以 point-wise 與 pair-wise 一致性讓獨立學到的提示在向量算術下仍能有意義地混合。推論時只需對提示做加權平均，即可依需求子集即時調整行為，提示長度不隨需求數量增加。在任務增量與偏好增量兩種情境下，Ready2Blend 是唯一能在凍結主幹條件下追平 post-training 類方法的做法，平均 Last 分別為 93.1%–98.5% 的聯合訓練上界，且訓練時間比 CPPO 與 LifeAlign 少 2.6–4.3 倍。額外實驗顯示它支援推論時加權個人化、對需求順序幾乎不敏感，且 SFT 目標同樣可行。限制在於其效能仍依賴需求定義與監督資料的品質，未見定義時的泛化能力尚待未來研究。",
+      "title": "Ready2Blend: From Natural-Language Instructions to Composable Alignment Prompts",
+      "title_zh": "Ready2Blend：從自然語言指令到可組合的對齊提示"
     },
     {
       "arxiv_id": "2609.39827",
@@ -3689,7 +3753,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.39827",
       "summary": "Pre-pretraining (PPT) on synthetic non-natural language data improves token efficiency during language model pre-training (PT). Prior work attributes this gain to a grammatical prior, i.e., a structural inductive bias learned during PPT that transfers to natural language grammar. However, PPT has only been tested on models of at most 1B parameters and PT budgets below 2B tokens on predominantly web text. It is unknown whether PPT is effective at larger scales and under more realistic PT data mix",
-      "title": "Synthetic Pre-pretraining Survives Scale, but Not as a Grammatical Prior"
+      "summary_zh": "這篇論文檢驗「前置預訓練」（pre-pretraining, PPT）——即在正式預訓練（PT）之前，先讓語言模型在合成非自然語言序列（如 k-Shuffle Dyck 這種交錯括號語言）上暖身——其效益能否在更大規模與更真實條件下成立。過去研究多半只在 1B 參數以下、PT 預算低於 2B token、且以網路文本為主的語料上驗證，並將增益歸因於模型學到可移轉到自然語言語法的「語法先驗」。作者因此系統性橫跨五種 PPT 任務、四種 PT 資料混合（C4、Marin、SmolLM3、OLMo3）、四種參數規模（500M 至 7B），並將 PT 預算延伸至 100B token。結果顯示，PPT 的 downstream 效能與 token 效率增益確實能隨規模維持，在 3B 規模可省下至少 21B PT token，7B 亦仍為正；但增益與語法可接受度（BLiMP）並不一致，反而與長距離擷取（verbatim retrieval）較為吻合，且只有需要「取回序列中特定較早位置」的任務（k-Shuffle Dyck、MP-Struct Core、NCA）有效，只追蹤是否看過某 token 的 Set 反而嚴重退化。資料混合方面，數學佔比提高 13 倍不影響增益，但完全移除網路文本後增益幾乎消失。限制在於多數設定僅單次執行、7B 只涵蓋 Marin 與 k-Shuffle Dyck，且 OLMo3 增益偏弱的原因未釐清。此研究指出未來 PPT 任務設計應以長距離擷取為目標，而非模仿自然語言語法的階層結構。",
+      "title": "Synthetic Pre-pretraining Survives Scale, but Not as a Grammatical Prior",
+      "title_zh": "合成前置預訓練可通過規模考驗，但並非以語法先驗的形式"
     },
     {
       "arxiv_id": "2609.40353",
@@ -3787,7 +3853,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.40353",
       "summary": "The task of 3D assembly requires translating an understanding of parts and their relationships into precise spatial arrangements. Can pretrained general-purpose agents assemble objects through visual interaction without additional assembly-specific fine-tuning? To investigate this question, we introduce AssemblyWorld, an interactive 3D environment in which agents inspect rendered views and manipulate supplied rigid parts, guided by images or assembly manuals when available. Agents perceive part ",
-      "title": "AssemblyWorld: Rethinking 3D Assembly with General-Purpose Agents"
+      "summary_zh": "這篇論文探討一個核心問題：未經組裝任務專門微調的通用型代理，能否僅透過視覺互動完成三維組裝？作者提出 AssemblyWorld，一個互動式三維環境，代理只能觀察算繪後的 2D 視圖、選擇視角，並透過 MCP 工具平移或旋轉剛體零件，無法直接存取網格頂點或面；最終組裝結果以幾何指標評估。在此環境上，他們建構 AssemblyWorldBench，涵蓋 PartNet、IKEA-Manual、AssemblyBench 與 Fantastic Breaks 四個資料集，共 80 個物件、100 項任務，橫跨家具、工業組裝與破裂重組三個領域。八個代理系統的比較顯示，最強系統達到 80.9% 零件準確率，但完整組裝成功率僅 59.4%；開源系統在執行可靠度與組裝精度上明顯落後閉源對手。視覺參考圖能提升較強系統的表現，軌跡分析則顯示代理會反覆檢視與修正，但仍留下定位殘差。作者也嘗試將代理與專門幾何模型（如 GARF）雙向串接，發現組合順序會影響成效。限制在於自由空間幾何評估、單次執行、兩片段重組的小樣本，以及未知的預訓練污染風險。",
+      "title": "AssemblyWorld: Rethinking 3D Assembly with General-Purpose Agents",
+      "title_zh": "AssemblyWorld：以通用型代理重新思考三維組裝"
     },
     {
       "arxiv_id": "2609.39402",
@@ -3883,7 +3951,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.39402",
       "summary": "Value-model-free RLVR methods such as GRPO assign uniform advantages to all tokens in a rollout, ignoring that tokens contribute unequally. Recent methods use token entropy as an importance proxy but compute it globally across the batch, conflating importance with prompt difficulty and positional trends. We argue that importance should instead be measured relative to the local context of each token. We introduce proximal entropy, a local measure of token importance relative to neighboring tokens",
-      "title": "Advancing Entropy-Level Credit Assignment in RLVR via Proximal Entropy Policy Optimization"
+      "summary_zh": "在可驗證獎勵強化學習（RLVR）中，GRPO 等無價值模型方法對同一條 rollout 的所有 token 給予相同優勢值，忽略了各 token 貢獻不均的事實。近期做法改以 token 熵作為重要性的代理指標，卻在整個 batch 的全局尺度上計算，把重要性與題目難度、生成位置趨勢混為一談。作者主張重要性應相對於 token 自身的局部脈絡來衡量，因而提出「近端熵」：以每個 token 為中心、在滑動視窗內取 softmax 的局部不確定性度量，並證明它對序列層級的常數平移（即題目難度）完全不變，對平滑單調的位置趨勢亦近似不變。據此設計的 PEPO 以近端熵對逐 token 優勢值加權，並僅施加於正獎勵 rollout，總優勢量級與 GRPO 一致。實驗在 Qwen3-1.7B、Qwen3-4B 與 Llama-3.2-3B-Instruct 上、於 MATH500、AMC、AIME 2024/2025 進行，PEPO 全面優於 GRPO 與 80/20、Entropy Advantage 等 batch 層級基線；在單流 RL（SPO）設定下，全局熵方法甚至低於基線，而 PESPO 仍穩定提升。將近端熵直接替換進 80/20 也能帶來增益，說明局部參考框架本身即為關鍵。限制在於主要評測集中於數學推理，程式生成僅涵蓋一個 LiveCodeBench 切分，且未與 PPO 等基於價值模型的方法比較。",
+      "title": "Advancing Entropy-Level Credit Assignment in RLVR via Proximal Entropy Policy Optimization",
+      "title_zh": "以近端熵策略最佳化推進 RLVR 中的熵層級信用分配"
     },
     {
       "arxiv_id": "2609.40097",
@@ -3989,7 +4059,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.40097",
       "summary": "Existing auto-research benchmarks often entangle multiple sources of improvement, including training frameworks, hyperparameters, compute budgets, and data, making it difficult to attribute why one frontier agent outperforms another to specific research capabilities. In this work, we isolate and systematically evaluate Data Intelligence: an agent's ability to understand, manipulate, and improve the data that shapes model capabilities. We introduce AutoDataBench, a controlled testbed built on a c",
-      "title": "AutoDataBench: A Data-centric Testbed for Accelerating Auto Research"
+      "summary_zh": "既有自動化研究基準常把訓練框架、超參數、算力預算與資料混在一起，難以判斷前沿代理（agent）的優勢究竟來自哪一項研究能力。本文把「資料智慧」單獨抽離，定義為代理理解、操作與改善訓練資料的能力，並提出 AutoDataBench 這個受控測試平台。其概念框架涵蓋資料診斷與修補、資料組織、資料建構三個面向，對應三個精心設計的最佳化任務：在刻意汙染的 function-calling 資料上訓練工具使用模型、在固定對比學習管線下為檢索模型建構訓練資料、以及在固定離線蒸餾管線下由語料建構問答以注入新知識。所有任務都固定非資料因素（訓練流程、工具、來源資料與資源預算），代理只能反覆檢查資料、提出介入、送交訓練並依回饋調整，每個任務另保留一組未公開的 out-of-distribution 評估，用來檢驗策略是否只是「benchmaxxing」。實驗涵蓋 GPT、Claude、Kimi、DeepSeek、GLM 與 Qwen 等七個前沿模型，每組三次標準運行。結果顯示：工具使用任務上多數模型的平均 ID 準確率達 80.82–81.98，明顯優於隨機基準 70.45，接近專家清理參考值 81.65；檢索任務上 GPT-5.6-Sol 的 ID 平均 40.46 已逼近專家 40.62，但所有模型 OOD 都低於專家的 34.76，且 ID 與 OOD 排名出現反轉；知識注入方面多數模型達到或超越專家 Novel 準確率 48.40，Kimi-3 平均達 60.60。行為分析指出 63 次運行中有 61 次較初始資料進步，平均首輪至最佳增益分別為 8.11、6.46、4.91 分。作者另要求模型在訓練前預測分數，結果顯示預測能大致追蹤檢索表現，但六組中有四組最佳分數低於標準運行平均，暗示顯式預測可能帶來額外負擔。最後，把 800 萬 token 的自動研究軌跡上採樣十倍、以 5B token 預算進行 mid-training，再搭配相同 SFT，可提升五項程式評測，其中 CRUXEval 輸入預測由 72.00 升至 74.12、SWE-bench Multilingual 由 27.67 升至 33.33。整體而言，本文的貢獻在於把資料決策與可量測的學習結果直接連結，並同時把基準當成可再利用的訓練資料來源；限制在於各項介入的因果貢獻未被逐一隔離，且部分任務缺乏重複運行的不確定性估計。",
+      "title": "AutoDataBench: A Data-centric Testbed for Accelerating Auto Research",
+      "title_zh": "AutoDataBench：以資料為核心的測試平台，加速自動化研究"
     },
     {
       "arxiv_id": "2609.39788",
@@ -4088,7 +4160,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.39788",
       "summary": "Latent communication enables multi-agent systems to exchange information directly in internal representation space, reducing the token, computation, and latency overhead of text-based communication. To this end, lightweight trainable links are introduced to map the sender's representations into the receiver's input space. In this work, we show that even benign link training can increase harmful compliance relative to text-based communication while the underlying safety-aligned agents remain unch",
-      "title": "Safety of Latent Communication in Multi-Agent Systems"
+      "summary_zh": "這篇論文探討多代理系統（multi-agent system）中以「潛在通訊」（latent communication）取代文字訊息時所衍生的安全風險。潛在通訊的作法，是讓代理之間直接交換內部表徵，並以可訓練的輕量連結（link）把發送端的隱藏狀態映射到接收端的輸入空間，藉此降低 token 用量、推論延遲與運算成本。作者指出，即使底層 LLM 參數完全凍結、連結僅以良性資料訓練，有害順從程度仍會相對文字通訊明顯上升；以三種拓樸、四項安全基準衡量，平均有害順從分數由文字模式的 4.4 至 12.5 上升到 20.8 至 31.7。攻擊面進一步擴大：直接以有害問答對監督最佳化連結，平均分數可達 75.6，但良性任務表現明顯下降；僅汙染約 10% 訓練資料亦能將平均分數推升至 58.2。作者另提出免目標回應的強化學習攻擊，以 GRPO 搭配 LLM 評審的純量獎勵，同時獎勵有害順從與良性任務表現，平均分數達 76.9，並在三個拓樸中的兩個勝過監督式攻擊，且兩項良性效用基準的平均準確率更高。機制分析顯示，良性監督訓練使接收端首 token 拒答機率由 0.82 降至 0.29，但強制以 I、No、Sorry 開頭即可回收大部分效果，顯示拒絕能力並未消失，而是被推向較不易進入拒答軌跡的狀態。最後，作者把獎勵改為懲罰有害順從並獎勵正確作答，僅更新連結即可修復受損系統：九組攻擊與拓樸配對的平均有害順從分數由 70.3 降至 4.8。限制在於評估集中於三種特定拓樸與有限模型組合，修復後 GPQA-Diamond 準確率仍低於乾淨連結基準，且部分修復設定使 MATH500 表現下滑。整體而言，本研究主張安全對齊不能只看個別代理，而必須把多代理系統視為整體，通訊介面的訓練本身即屬系統對齊的一部分。",
+      "title": "Safety of Latent Communication in Multi-Agent Systems",
+      "title_zh": "多代理系統中潛在通訊的安全性"
     },
     {
       "arxiv_id": "2609.40089",
@@ -4190,7 +4264,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.40089",
       "summary": "Continued pretraining enables language models to adapt to new domains and knowledge, but often at the cost of forgetting previously acquired capabilities. Replay can mitigate this trade-off, but fixed replay mixtures allocate training independently of the model's actual retention needs. We introduce Replay on Demand (RoD), which instead derives the replay allocation from the model's learning dynamics. RoD jointly prioritizes adaptation samples by their remaining learning potential and replay sam",
-      "title": "Replay on Demand: An Emergent Curriculum for Balancing Adaptation and Forgetting in Continued Pretraining"
+      "summary_zh": "持續預訓練（CPT）能讓語言模型吸收新領域知識，卻常以遺忘既有能力為代價。回放（replay）雖可緩解此權衡，但固定回放比例無法反映不同能力與資料來源間異質的遺忘程度，也無法隨訓練動態調整。作者提出「隨需回放」（Replay on Demand, RoD），以可縮減損失（reducible loss）為基礎，讓適應樣本依「剩餘學習潛力」、回放樣本依「相對預訓練模型的遺忘量」各自評分，再透過聯合 top-k 選取讓兩者競爭同一訓練預算，使回放比例與組成由模型當下的學習與遺忘狀態自然湧現，無需事先指定。實驗涵蓋 Nemotron 與 Qwen 兩大家族、4B 至 35B 參數、法律與德語兩種適應領域：RoD 在單次執行下即達到或超越需掃描多個回放比例的固定回放前緣，也優於模型合併；分析顯示回放會集中到較易遺忘的來源，並隨訓練逐步增加與重新分配。消融實驗指出增益主要來自聯合競爭，而非單一資料流內的選擇。限制包括：仍需具代表性的回放資料、序列層級損失與下游能力遺忘並非等價（代理回放時尤甚）、以及需額外的前向評分與離線參考模型成本；不過跨規模實驗顯示課程可由較小模型建構後轉移，最差距達 8.75 倍。",
+      "title": "Replay on Demand: An Emergent Curriculum for Balancing Adaptation and Forgetting in Continued Pretraining",
+      "title_zh": "隨需回放：在持續預訓練中以湧現式課程平衡適應與遺忘"
     },
     {
       "arxiv_id": "2609.39394",
@@ -4292,7 +4368,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.39394",
       "summary": "Large language models often solve independent problems in the same conversation. Can computation from earlier problems help them solve new ones? To answer this question, we first conduct preliminary experiments showing that retained history can raise or lower later-turn accuracy, even within the same domain. To understand these effects, we use controlled replay to isolate internal state changes specific to each problem-history pairing. Across different histories, these changes preserve similar r",
-      "title": "Can Computation from Earlier Problems Help LLMs Solve New Ones?"
+      "summary_zh": "大型語言模型常在同一个對話中依序解決多个彼此独立的問題。本文探討一個直觀但少被系統檢驗的問題：前幾輪問題留下的計算結果，對當前新問題究竟是助力還是阻力？作者先在 MATH-500 與 GPQA-Diamond 上做初步實驗，发现保留歷史有時提升、有時拉低後續輪次的正確率，即使在同一領域內也因模型與任務而異。為了理解這種差異，他們以凍結骨幹進行受控重播，將表徵位移分解為問題效應、歷史效應與交互反應，发现交互反應雖只占總位移能量不到 1%，其最近鄰結構卻在不同歷史間穩定重現，遠高於隨機置換控制組；配對分析也显示答案同時出現由錯改對與由對改錯。基於此，作者提出 STAIR（Stale-Token Attention for Inter-query Reuse）：在固定 bank 中保存早期回應生成時的 key/value，並學習一組 Householder 反射方向，讓當前查詢在 prefill 階段重新導向讀取位址，骨幹完全凍結，僅訓練 12,288 個參數。在三个 Qwen 模型與四个基準上，STAIR 相對於未修改的 Native 在 AIME 2025 上最高提升 11.67 個百分點（T2–T4 平均 Avg@4）。消融显示，破壞 K/V 配對或改用隨機反射均會降低效果，而與 LoRA 聯合訓練還能再增益。限制在於目前僅涵蓋 Qwen 家族的四輪對話，且 bank 會隨對話變長而增加儲存與 prefill 成本；反射方向是否真能跨領域遷移仍待更大規模訓練混合驗證。此工作的重要性在於把「已完成問題留下的計算」視為可學習讀取的資源，而非僅是佔用上下文的負擔。",
+      "title": "Can Computation from Earlier Problems Help LLMs Solve New Ones?",
+      "title_zh": "早期問題的計算結果能幫助 LLM 解決新問題嗎？"
     },
     {
       "arxiv_id": "2609.39346",
@@ -4391,7 +4469,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.39346",
       "summary": "Large language models (LLMs) offer strong reasoning capabilities but are often costly to access through commercial APIs, while small language models (SLMs) are easier to deploy locally yet remain weaker in reasoning. This capability-deployment gap has motivated LLM-SLM collaboration, which aims to improve SLM reasoning using LLM capabilities while preserving the deployment advantages of SLMs. Existing approaches mainly follow two paradigms. Knowledge distillation uses LLM-generated answers and r",
-      "title": "Offline Guidance, Online Reasoning: Reusing LLM Feedback for Small Language Models"
+      "summary_zh": "這篇論文處理大型語言模型（LLM）推理能力強但多半只能透過商用 API 存取、而小型語言模型（SLM）便於在地部署卻推理較弱之間的落差。既有做法分為兩類：知識蒸餾需離線微調 SLM 參數，成本較高；線上協作則在推論時反覆呼叫 LLM，且針對特定問題產生的指導在用完後即被丟棄，無法幫助後續遇到相似推理狀態的題目。作者提出「可重用潛在修正」（Reusable Latent Correction, RLC），把黑箱 LLM 一次性的自然語言指導，轉換為存於 SLM 隱藏空間的持久修正經驗。方法分兩階段：離線階段以中介層與最終層預測的不一致程度估計步驟不確定性，找出可疑步驟後請 LLM 給出局部指導，再讓凍結的 SLM 重新生成該步，並比較指導前後的隱藏表徵，抽出「過程修正」與「結果修正」向量；只有能導向正確答案的修正才以鍵值對存入外部經驗庫，鍵為錯誤發生前的推理狀態。線上階段完全不呼叫 LLM，SLM 依當前隱藏狀態檢索最相似的修正並加權聚合，於 prefill 與 decode 兩階段分別注入隱藏狀態，另以輕量路由器決定是否啟用經驗庫。實驗在 MATH500、GSM8K、GPQA-Diamond、AMC24、AIME 上以 Qwen2.5-3B/7B/14B 驗證：不改參數、不線上呼叫 LLM 的情況下，3B 與 7B 版本分別略勝原生 7B 與 32B，14B 版本平均可與原生 72B 相當，且輸出長度未顯著增加；跨規模轉移實驗顯示由 14B 建立的經驗庫可讓 32B 平均提升 7.42 個百分點，反向僅 1.08 個百分點，存在明顯不對稱。與線上直接回饋相比，RLC 準確率相近但總輸出 token 大幅減少；推論延遲僅增加約 3% 至 4%，且在十五組比較中有十三組快於對應的更大原生模型。消融顯示每次檢索的修正需與當前狀態對應，改用全域平均修正會下降 3.14 至 4.55 個百分點；路由器亦優於固定啟用經驗庫。限制在於離線建庫仍需教師 API 成本（三種規模合計約 52.80 美元）、路由器需額外訓練，且修正效果具任務與狀態依賴性，錯配的介入可能擾動原本正確的推理軌跡。",
+      "title": "Offline Guidance, Online Reasoning: Reusing LLM Feedback for Small Language Models",
+      "title_zh": "離線指導、線上推理：為小型語言模型重複利用大型語言模型的回饋"
     },
     {
       "arxiv_id": "2609.39819",
@@ -4491,7 +4571,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.39819",
       "summary": "Efficient serving of long-context reasoning-and-acting (ReAct) agents relies on KV cache reuse to reduce large language model (LLM) prefill latency and monetary cost. However, a semantic gap exists between agent harnesses and the underlying serving stack. Through context mutation, tool execution, and subagent coordination, context messages may become actively engaged, permanently discarded, and temporarily unused, while the serving stack only observes accesses to the corresponding KV cache. This",
-      "title": "Capture the lifecycle: KV Cache management in ReAct Agents with KVTether"
+      "summary_zh": "ReAct 代理在數十至數百輪推理與工具呼叫中，脈絡可累積至數十萬 token，KV 快取重用因此成為降低 prefill 延遲與成本的關鍵；但代理框架與推論服務堆疊之間存在語意落差。框架以訊息層級操作（append、replace、remove、fork、one_off 等）決定訊息的邏輯生命週期，而底層只看到 token 前綴與快取分頁，無法分辨 KV 是仍在使用、永久捨棄或暫時閒置。作者以雲端業者兩條生產軌跡與 Codex 基準分析，發現兩種失效：一是生命週期結束後仍占位的 zombie KV，在 LMCache 中最高占 36.3% 容量；二是 LRU 的錯誤方向驅逐，71.0–95.0% 的驅逐把較晚才會重用的 KV 留下、反而趕走較早重用的 KV。KVTether 透過八個訊息層級語意原語在框架端輸出生命週期事件，由事件驅動管理器將訊息事件轉譯為 KV 生命週期狀態（Pinned、Active、Suspended、Expired、Temporary），再由狀態優先的快取引擎先繞過或回收已死 KV，並在 Suspended 層內採用 MRU 以因應不確定的重用間隔。在 12 張 GB200 的三節點叢集上，相較 LMCache 與 MORI，端到端延遲最多降低 26.3% 與 17.4%，估計任務成本平均降低 40.0% 與 33.2%；整合至六個代理框架僅需 26–216 行。限制在於 MRU 僅為方向性啟發式、仍非精確預測，且部分軌跡事件為離線重建；其貢獻在於指出生命週期語意必須由應用層輸出，而非由下層推測。",
+      "title": "Capture the lifecycle: KV Cache management in ReAct Agents with KVTether",
+      "title_zh": "掌握生命週期：以 KVTether 管理 ReAct 代理的 KV 快取"
     },
     {
       "arxiv_id": "2609.39846",
@@ -4589,7 +4671,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.39846",
       "summary": "We investigate the problem of role-capability leakage (RCL), in which a role-prompted reasoning model generates convincing in-role text while continuing to exhibit capabilities on benchmarks that exceed those implied by the assigned role. For example, when a model is prompted to assume the role of a kindergarten student, one might expect its performance on a mathematics benchmark to reflect kindergarten-level ability rather than expert-level proficiency in solving calculus problems. We introduce",
-      "title": "When a Kindergartener Solves Calculus: Measuring Capability Leakage in Role-Prompted Reasoning Models"
+      "summary_zh": "本文提出「角色—能力外洩」（role-capability leakage, RCL）此一被忽略的現象：被指派角色的推理模型雖能產出語氣與身分相符的文字，卻仍展現超出該角色應有水準的答題能力。作者以標準化教育評量建構 RoleCapBench，涵蓋幼兒園、小學、國中、高中、大學與大學教師六種角色，以及小學至 A-level 四個課程層級，共 1,568 題四選一英文選擇題，並設計八種提示變體，藉由任務準確率、角色內準確率、角色外準確率，以及由 GPT-OSS-20B 評分的角色語氣、能力一致性與推理連貫性進行評估。實驗顯示，Gemma-4-E4B-IT、Qwen3.5-4B 與 OLMo-3-7B-Think 在單純角色提示下角色語氣分數約 1.218–1.389，但角色外準確率仍高達 0.811–0.898，即使明示要求對齊角色能力水準也僅能微幅改善。作者因此提出推論時介入法 Injection，結合角色專屬能力準則與預填回覆前綴；結果可將角色外準確率最多降低 0.562，且多數模型角色內準確率僅下降不到 0.058。限制在於僅涵蓋英文教育類選擇題、三組開放權重模型與固定評判協定，OLMo 更出現過度拒答；但其揭示角色提示僅是軟性先驗，對角色模擬、教育應用與代理系統安全俱有警示意義。",
+      "title": "When a Kindergartener Solves Calculus: Measuring Capability Leakage in Role-Prompted Reasoning Models",
+      "title_zh": "當幼兒園生解出微積分：角色提示推理模型中的能力外洩現象量測"
     },
     {
       "arxiv_id": "2609.39786",
@@ -4685,7 +4769,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.39786",
       "summary": "Large language models (LLMs) are increasingly combined with knowledge graphs (KGs) to ground reasoning in structured evidence. However, most LLM-based KGQA methods rely on traversing existing graph edges and become unreliable when reasoning paths are broken by missing facts. Alternatives that ask LLMs to generate missing knowledge risk introducing hallucinated evidence. We introduce XoG (eXplore-on-Graph), a framework for multi-hop question answering over incomplete KGs that recovers missing rea",
-      "title": "Explore-on-Graph: Hybrid Embedding-LLM Reasoning for Knowledge Graph Question Answering under Incompleteness"
+      "summary_zh": "這篇論文處理的是知識圖譜問答（KGQA）在圖譜不完整時的可靠性問題。現有 LLM-based KGQA 多半依賴沿著既有邊進行圖走訪，一旦多跳推理路徑上的關鍵三元組缺失，走訪就會提早中斷；另一類做法是讓 LLM 直接生成缺失事實，卻會引入幻覺或過時資訊。作者提出 XoG（eXplore-on-Graph），改用「圖譜接地」的復原策略：以型別層級的實體—關係共現統計篩出可能關係，並以知識圖譜嵌入（ComplEx 搭配連結預測）取回可能缺失的尾實體，再讓 LLM 扮演語意篩選者與推理者，整個流程嵌在迭代式的 planning–exploration–reasoning 迴圈中。為了控制候選膨脹帶來的雜訊，作者提出階層式分桶提示策略，把龐大的候選關係集切分後分別剪枝再合併，並用 DistilBERT 對實體候選做語意過濾。實驗在 WebQSP、CWQ 以及 Wikidata 為基礎的 BRINK 上進行，依 GoG 的協定以 IKG-20% 至 80% 移除關鍵三元組。結果顯示 XoG 在完整圖上仍具競爭力，在圖譜不完整時則穩定優於同樣不做 KGQA 任務專屬訓練的方法；此優勢跨多個 LLM backbone 成立，顯示單靠更強的 LLM 無法解決圖譜證據缺失，同時相較最接近的 planning 方法 PoG 最多可減少約 33% 的 token 消耗。消融顯示移除連結預測的影響最大，而錯誤分析指出剩餘錯誤主要由檢索缺口而非 LLM 選擇失誤造成。限制在於復原模組依賴 KGE 品質與實體型別資訊，且評估所用的不完整性屬合成式移除，未必反映真實世界的長尾與類別不均缺失。",
+      "title": "Explore-on-Graph: Hybrid Embedding-LLM Reasoning for Knowledge Graph Question Answering under Incompleteness",
+      "title_zh": "Explore-on-Graph：知識圖譜不完整情境下結合嵌入與 LLM 推理的混合式 KGQA 框架"
     },
     {
       "arxiv_id": "2609.39483",
@@ -4779,7 +4865,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.39483",
       "summary": "Ownership establishes rights over the use, control, and transfer of objects. Understanding these relations is essential for AI systems to interact appropriately with people and their resources. Yet how large language models (LLMs) attribute ownership under competing claims remains unclear. We introduce the Competing Ownership Attribution Task (COAT), comprising 42 scenarios, and compare ownership allocations from 24 LLM configurations with those of 108 human participants. Overall, human-model si",
-      "title": "Who Owns That? Evaluating Ownership Intuitions in Large Language Models"
+      "summary_zh": "當多個人都對同一物件提出合理主張時，所有權該歸屬於誰？這個問題對必須使用、分享或處置資源的 AI 代理至關重要，但大型語言模型（LLM）在相互競爭的主張下如何歸屬所有權，仍不清楚。作者提出「競爭性所有權歸屬作業」（Competing Ownership Attribution Task, COAT），涵蓋 42 個日常情境、五大衝突結構與 13 種情境類型，並以 100 點分配方式同時施測 108 位在中國招募的人類參與者與 24 種 LLM 設定，共取得 4,536 與 5,040 筆有效分配。研究以 total variation 距離衡量人機相似度，以 energy distance 比較反應分布，並將各情境的人類與模型反應分類為全域共識、局部共識與分散反應，另比較相關情境間的脈絡敏感度。結果顯示，人機相似度（0.6982）接近人與人之間（0.7002），但模型彼此更為同質（0.8290），且在單一答案中把點數分得更平均，正規化熵平均為 0.788，高於人類的 0.506；模型出現全域共識的情境較多（28 對 18），局部共識較少（5 對 14）。當人類形成不同觀點群時，模型可能只收斂到其中一方或落在兩者之間；當人類有共識時，模型反而可能分裂。脈絡比較亦顯示差異：材料價值上升時，模型對創造者的分配下降幅度小於人類；在後手獲得公開認可的情境中，模型提高分配而人類略降；對陪伴機器人與植物等對象的排序也與人類相反。限制包括參與者僅來自中國、情境多為日常物品、相關情境同時變動多項特徵、每組設定僅五次取樣，且取樣參數與推論通道差異使結果無法歸因於訓練本身。本研究的重要性在於指出，整體相似度會掩蓋反應多樣性與脈絡依賴性的落差，對多元對齊（pluralistic alignment）評估提供不預設單一共識的基礎。",
+      "title": "Who Owns That? Evaluating Ownership Intuitions in Large Language Models",
+      "title_zh": "所有權歸誰？評估大型語言模型的所有權直覺"
     },
     {
       "arxiv_id": "2609.39957",
@@ -4878,7 +4966,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.39957",
       "summary": "Coding agents solve repository-level tasks through sequences of actions, where a single erroneous action can misdirect subsequent decisions and increase recovery costs. Existing approaches use execution feedback for recovery or specialized checks to block errors, but deciding before execution whether intervention will benefit eventual task completion remains challenging. To address this challenge, we propose HiSentinel, a hindsight-distillation framework that trains lightweight 0.6B and 1.7B sen",
-      "title": "Learning When and How to Intervene: A Hindsight-Distilled Sentinel for Coding Agents"
+      "summary_zh": "這篇論文處理編碼代理在倉庫級任務中「一步錯、步步錯」的問題。既有做法多依賴執行後的回饋或週期性檢查，但證據顯示失敗往往在早期就已埋下，等到可觀測時已難以挽回。作者把介入時點提前到「動作提出後、環境執行前」，並形式化為三路決策：Allow（放行）、Redirect（保留動作並給予修正指引，讓代理自行重規劃）、Hard-Pause（暫停並向人類索取缺失的資訊、授權或偏好）。核心挑戰在於執行結果正是判斷動作是否恰當的最直接證據，卻在介入當下不可得。為此提出 HiSentinel，用後見蒸餾（HGID）把具特權的教師（可見已記錄的執行結果）之判斷，蒸餾進僅吃前動作情境的輕量因果學生模型，並加上「有用性閘門」與三類別生成式路由，另以 SFT 加 DPO 訓練回饋模組產生可執行的修正建議。資料方面建構 SWE-Intervene，共 6,923 個動作層級實例，經兩階段人工稽核剔除 25.3%。實驗顯示 1.7B 哨兵在域內取得 81.77 macro-F1、78.97 intervention F1，並可外移至 RootSE 與 R-Judge；端到端在 SWE-bench Verified Mini 讓 Qwen3-Coder 的解題率由 30% 提升至 44%，Ask or Assume 由 23% 升至 33%，於 Devstral 與 Sonnet-4.6 亦可見增益。作者亦誠實指出限制：標籤為後見判斷而非反事實量測、介入會增加 token 成本、跨步 KV 快取因截斷而效果有限，故仍採完整前綴重算。",
+      "title": "Learning When and How to Intervene: A Hindsight-Distilled Sentinel for Coding Agents",
+      "title_zh": "學會何時與如何介入：為編碼代理設計的後見蒸餾哨兵模型"
     },
     {
       "arxiv_id": "2609.39989",
@@ -4975,7 +5065,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.39989",
       "summary": "Background. A component replacement in a language-model agent changes an execution trajectory, potentially altering later observations, resource use, and recovery opportunities. Different evidence is needed to assess its task-level benefit and the contribution of local decision quality. Methods. This critical scoping review maps 348 studies and examines 90 comparison records: 88 from 40 included studies and two from supplementary studies. Eight purposively selected cases structure the synthesis ",
-      "title": "What Can Component-Replacement Evidence Establish? A Critical Scoping Review of Local Decisions in LLM Agents"
+      "summary_zh": "本文是一篇批判性範疇回顧（critical scoping review），關切的核心問題是：當我們替換語言模型代理（LLM agent）中的某個「局部決策」元件（例如監控、路由、停止、預算分配）時，實驗證據究竟能支持哪些推論。作者區分兩個問題：Question A 是「在受測條件下，該替換是否改善任務層級結果」；Question B 是「局部決策品質的變化是否能解釋該結果」。方法上，作者建構 348 篇研究的證據地圖，並以 90 筆比較紀錄（88 筆來自 40 篇納入研究、2 筆為補充研究）進行推論層級的分析，另刻意選取八個案例，依「被替換的決策、實際執行的比較、測量可比性、控制條件、剩餘解釋」五個問題逐一檢視。主要發現包括：222 篇報告了局部決策指標，其中 142 篇同時報告任務終點、49 篇報告代理終點，但共同報告並不代表兩者來自同一組配對比較；Outcome Monitors 支持套件層級的完成率提升，但偵測器品質的貢獻仍無法分離；First-chunk selection 只支持離線代理終點上的局部改善；Evidence-Carrying Termination 支持較少過早且無依據的終止與完成率非劣性，但未確立完成率優勢。作者並提出三個候選機制（救援與干擾、介入時機與可逆性、局部目標與下游使用之落差）以及八項依主張而定的報告項目。限制在於案例為目的性選取、任務與基準線異質，無法估計此類解耦現象的普遍率；本文亦未執行新的模型實驗。其意義在於提醒：線上執行或局部與任務指標同時改善，都不足以證明較佳的局部決策解釋了任務層級的增益，對代理評估設計與部署宣稱具方法學警示價值。",
+      "title": "What Can Component-Replacement Evidence Establish? A Critical Scoping Review of Local Decisions in LLM Agents",
+      "title_zh": "元件替換證據能確立什麼？大型語言模型代理中局部決策的批判性範疇回顧"
     },
     {
       "arxiv_id": "2609.40070",
@@ -5075,7 +5167,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.40070",
       "summary": "When inference demand exceeds available compute capacity, model providers must decide which requests should be served first. Users have different tolerances for delay from an LLM API, but current priority pricing schemes compress these differences into coarse fixed-price service tiers. We design an inference auction that allows users to bid for faster service. Our auction allocates priority in an economically efficient way without sacrificing latency, and we develop fast algorithms for implement",
-      "title": "Inference Auctions"
+      "summary_zh": "大型語言模型推論在尖峰時段供不應求，現行做法多以二至三層固定價格服務等級區分優先權，無法反映使用者對延遲的異質偏好，導致優先權配置在經濟上缺乏效率。本文提出首個「推論拍賣」，讓使用者針對「把請求從排隊尾端移到前端」出價，價值隨請求在排程中前移而線性增加。方法的關鍵在於把可行排程限制為請求 radix tree 的深度優先（DFS）遍歷：既保留 SGLang 等前綴感知服務框架的 KV 快取重用效率，又留下調整各節點子樹順序的自由度。作者證明，最大化福利的 DFS 排程只需在每個內部節點依「子樹平均出價」由高到低拜訪子節點，可在 O(M+n log ν) 期望時間內算出；搭配 VCG 付款即可誘因相容。由於逐位使用者重算的樸素作法具二次複雜度，本文將每位使用者的福利外部性拆解為 radix tree 上的區域變化，並透過前綴和與二分搜尋，將所有付款壓到 O(min{M,mn} log ν)。針對跨批次預算限制，作者另設計配速自動出價代理，以梯度下降調整乘數，達到 O(√T) 的後悔界，並證明當同層子樹配速差異反轉 DFS 順序時，福利損失可由節點條件數上界。實驗以未修改的 SGLang 伺服器加一層排程器，在多種共享前綴工作負載上驗證：相較不看出價的具快取最佳性排序，福利提升 12% 至 18.6%，非獨立同分布出價時最高可達 100%，而快取命中率與平均 TTFT 幾乎不變；同時可保有無限制出價排序約八成的福利，後者卻使平均延遲惡化達 12 倍。限制在於請求批次的形成被視為外生、價值對分數優先權的線性假設需實驗支撐，且短樹可完全放入快取時 DFS 限制會白白損失約 20% 福利；多推論工作節點聯合編排、更豐富的延遲偏好與防勾結設計仍待未來研究。此工作示範如何把經濟目標直接嵌入 LLM 服務基礎設施，而不犧牲系統效能。",
+      "title": "Inference Auctions",
+      "title_zh": "推論拍賣：為 LLM 服務容量設計可誘因相容的優先權市場"
     },
     {
       "arxiv_id": "2609.39866",
@@ -5177,7 +5271,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.39866",
       "summary": "Open-weight LLMs are released not only as fixed products but also as substrates for downstream fine-tuning. This openness, however, creates legal and ethical risks because users may misuse fine-tuning to instill illicit knowledge or enable hostile operations. Model providers therefore need apre-release defense against such acquisition, motivating the problem of preemptive unlearning. Unlike retrospective unlearning, which removes capabilities already present in a fixed model, preemptive unlearni",
-      "title": "Preemptive LLM Unlearning against Forbidden Capability Acquisition via Gradient Sealing"
+      "summary_zh": "開放權重的 LLM 雖便於下游微調與部署，卻也讓惡意使用者能透過微調灌入非法知識或危害性操作能力。既有研究多屬「事後遺忘」（retrospective unlearning），僅移除模型已具備的能力；本文提出「預先式遺忘」（preemptive unlearning），希望模型在釋出前即對未來、未見的攻擊資料與微調流程具備抗性。作者先以理論與實驗說明事後方法的不足：即使釋出時輸出已被壓制，禁用領域資料仍可沿內部路徑產生梯度，使能力日後被重新取得。為此提出「梯度封鎖」原則，將特定閘控的前激活值推入 ReLU 家族（如 SiLU）負尾區，使局部導數趨近零，僅用一階更新即可削弱梯度路徑。方法 GSU 先以可丟棄的複本做代理學習以暴露並定位敏感閘控，再自原始權重重啟，聯合最佳化封鎖損失、回應壓制與保留監督。實驗涵蓋多個 LLM 家族與 TOFU、WMDP 基準，在 Llama3-1B/3B/8B 與 Qwen3.5-2B/4B/9B 上於 36 項比較中多數排名第一或第二，WMDP-Bio 與 Cyber 的領域準確率亦降至最低；元件消融、閘控探針與良性微調測試支持封鎖機制，且在良性適應後仍保有相對保護優勢。限制在於評估僅涵蓋實務微調而非任意重訓，分析屬局部，且防禦依賴代理集與未來資料共享取得路徑，跨領域位移時可能需要更豐富的代理覆蓋。此工作將預先式遺忘形式化為釋出前防禦，對開放權重模型的安全治理具實務意義。",
+      "title": "Preemptive LLM Unlearning against Forbidden Capability Acquisition via Gradient Sealing",
+      "title_zh": "以梯度封鎖實現的預先式 LLM 遺忘：防止下游微調取得禁用能力"
     },
     {
       "arxiv_id": "2609.40284",
@@ -5280,7 +5376,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.40284",
       "summary": "Computer use agents (CUAs), which use graphical user interfaces (GUIs) to complete tasks on a computer, have recently surpassed human performance on many standard benchmarks, including difficult long-horizon tasks. Their capabilities are undoubtedly impressive, however, a key barrier to the widespread adoption and deployment of CUAs remains their speed and cost. Progress towards faster yet capable CUAs requires reliable evaluation of their speed, but many CUA benchmarks currently face a reproduc",
-      "title": "cua-speedrun: Standardized Benchmarking of the Speed of Computer-Use Agents"
+      "summary_zh": "這篇論文指出，電腦操作智慧體（computer-use agents, CUA）雖已在 OSWorld 等基準上超越人類表現，但部署時真正的瓶頸是速度與成本，而現有 CUA 基準因基礎設施、容器組態與 API 介面各異，難以公平比較執行速度，形成可重現性危機。作者提出 cua-speedrun，將所有評估統一跑在 Modal 沙箱的同一個虛擬機與執行流程上，並設計共用 agent 介面，讓單一 agent 實作可跨不同基準運作；同時以能量距離最小化挑選具代表性的任務子集，在維持模型排序的前提下大幅縮短評估時間，例如 OSWorld 的評估時間減少 84.9%。他們在 OSWorld、OSWorld 2.0、CUA-World 與 MyPCBench 上評估數十種模型、harness 與推理強度設定的組合，繪製效能—時間與效能—成本的前沿。主要發現包括：沒有任何單一模型家族同時在三項指標領先，開源權重模型皆未進入前沿；提高推理強度有時反而降低完成時間，因為可避免反覆失敗的操作；而加速環境 I/O（FastCUA，延遲降至毫秒級）竟使總任務時間變長，因模型尚未學會配合更快的桌面更新節奏。限制在於時間與成本反映評估當時的 API 條件，子集需隨模型能力變化重新驗證，且未窮盡所有組態組合。此工作把評估焦點從單純成功率轉向速度與成本效率，對 CUA 的實務部署具重要意義。",
+      "title": "cua-speedrun: Standardized Benchmarking of the Speed of Computer-Use Agents",
+      "title_zh": "cua-speedrun：電腦操作智慧體速度的標準化基準測試"
     },
     {
       "arxiv_id": "2609.40330",
@@ -5379,7 +5477,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.40330",
       "summary": "Automating the search for effective harnesses is an important step toward enabling agents to recursively self-improve. Existing harness optimizations typically produce a single global harness that is applied uniformly across task instances. However, a harness that works well on average may not be optimal for every instance. We introduce Turbo Harness, a framework that can adapt a globally optimized harness to each instance by reusing information generated during the original optimization process",
-      "title": "Turbo Harness: Instance-Adaptive Harness Optimization"
+      "summary_zh": "現行代理執行外殼（harness）最佳化多半只產生一套全域外殼，套用到所有任務實例；然而在部分實例上最有效的外殼，未必對其他實例同樣理想，例如來自不同 GitHub 儲存庫的 SWE-Bench 題目往往需要不同的工作流程與驗證慣例。此外，外殼搜尋成本高昂，過程中累積的大量痕跡、反思與評估結果在最佳化結束後多半被丟棄。作者提出 Turbo Harness，將外層搜尋產生的「廢氣」回收再利用：先依 ACE 式流程把搜尋檔案整理成結構化 playbook，記錄有效與無效的編輯策略及其適用條件；再以 GRPO 訓練一個輕量的 harness editor（實驗中用 Qwen3.5-9B），讓它在推論時只依據實例、全域外殼程式碼與 playbook 產生一份補丁，將全域外殼改寫成該實例專屬版本，交由凍結的執行模型運行。實驗涵蓋 ALFWorld、ScienceWorld、DBBench、WebShop、SWE-smith-MR、SWE-bench Verified 與 Terminal-Bench-2.1 共七個基準；在四個代理任務上平均由 Meta-Harness 的 50.2 提升至 56.1，SWE-smith-MR 搭配 Gemini 由 70.7% 升至 88.0%，且每題步數由 23.1 降至 8.7、成本由 0.310 降至 0.046 美元；在 TB2.1 上取得 55.5% 的最高通過率，同時降低回合數與成本。消融顯示 RL 與 playbook 缺一不可：未訓練的 9B 編輯器即使取得 playbook 僅得 50.0%，兩者結合才達 64.0%，並可媲美以 Opus-4.6 擔任編輯器的表現。限制在於方法依賴既有全域搜尋的品質與多樣性，且訓練編輯器仍需額外環境 rollout，在代理任務上成本不低。",
+      "title": "Turbo Harness: Instance-Adaptive Harness Optimization",
+      "title_zh": "Turbo Harness：實例自適應的代理執行外殼最佳化"
     },
     {
       "arxiv_id": "2609.39228",
@@ -5480,7 +5580,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.39228",
       "summary": "We present FYAN, a human--AI harness for document-level mathematical formalization. Rather than treating theorems in isolation, FYAN coordinates an end-to-end workflow spanning specification, proof planning, logical review, Lean proof construction, knowledge curation, and validation, with support for independent supervision and human guidance. A central component is evidence-grounded semantic auditing, which assesses whether formal statements faithfully preserve their informal specifications. A ",
-      "title": "Fyan: A Human--AI Harness with Semantic Auditing for Document-Level Formalization"
+      "summary_zh": "這篇論文處理一個長期被忽略的問題：Lean 等證明助理只檢查形式命題是否可證，卻不檢查形式命題是否忠實對應原文。在文件層級形式化中，一旦某個被改動過的敘述被下游定理重複引用，錯誤會沿相依鏈無聲擴散。作者提出 Fyan，一套人機協作框架，將規格擷取、證明規劃、邏輯審查、Lean 證明建構、知識淬鍊與驗證串成端到端流程，並以文件級相依 DAG 決定形式化順序。其核心是證據導向的語意稽核：由語言模型提出局部對應、遺漏、範圍與邏輯關係等結構化證據，再由決定性驗證程式檢查覆蓋率、極性與容許的轉移方向，並以非補償性的最小值給定等級；只有對齊顯然可見的敘述可直接凍結，被允許的實質偏離則須以 Lean 檢驗的橋接義務把候選敘述接回面向原始規格的敘述。實驗在模型、工具鏈與評分器固定的條件下進行：同為 DeepSeek-V4.1-Flash，Fyan 在 143 條 FormalTCS 定理中通過 86 條嚴格 Lean 檢查，對照組為 69 條；自然語言證明分數由 0.501 提升至 0.851。在 ConsistencyCheck 上，其稽核在重驗標籤下的召回率為 0.777（直接判斷為 0.636），原始標籤下為 0.873（0.820），且能定位出錯的假設、結論或範圍。作者亦建構 ODENumLib，共 20 個相依單元、9,355 行 Lean 的常微分方程數值分析程式庫。限制在於僅使用單一模型與單一軌跡、案例涵蓋單一領域、每條敘述的稽核成本明顯高於單次判斷，且部分轉換仍待機械化檢查。其意義在於把「證明能力」與「語意忠實性」明確分離，為可重用形式化函式庫提供可重現的接受標準。",
+      "title": "Fyan: A Human--AI Harness with Semantic Auditing for Document-Level Formalization",
+      "title_zh": "Fyan：結合語意稽核的文件級數學形式化人機協作框架"
     },
     {
       "arxiv_id": "2609.39414",
@@ -5575,7 +5677,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.39414",
       "summary": "Code watermarking supports provenance tracking for code generated by LLMs. Modifying token selection to embed watermarks as an LLM generates code can create a trade-off between detectability and functional correctness. Other methods instead watermark completed code using predefined transformations or trained neural models. Recurring patterns can make watermark choices predictable across programs, while treating patterns common in unwatermarked code as watermark evidence can cause false detection",
-      "title": "SEW: Style-Encoded Watermarking of LLM-Generated Code"
+      "summary_zh": "這篇論文針對「如何驗證 LLM 生成程式碼的來源」提出一套後置式（post-hoc）浮水印方法 SEW（Style-Encoded Watermarking）。既有做法可分兩類：一類在解碼階段改動 token 選擇，容易在低熵程式碼中犧牲功能正確性；另一類對已完成程式碼套用固定轉換或訓練式神經抽取模型，其固定或反覆出現的風格決策可被攻擊者跨程式推斷，而自然就常見的風格又可能造成誤判。SEW 由三個元件組成：一是從風格指南與既有程式轉換規則建構的二元風格規則庫（Python 29 條、Java 22 條、C++ 19 條），依密鑰與程式的結構脈絡決定每個可套用位置的風格變體；二是風格偏好校準，利用人類撰寫程式碼估計各變體的自然機率，避免把本來就常見的風格當成浮水印證據；三是脈絡感知風格聚合，將具有相同結構識別碼與程式脈絡的位置併為一個 grade，以多數值代表，防止同一風格決策被重複計數而膨脹證據。偵測時不需生成模型、不需參考原始碼，也不需嵌入中介資料。實驗在 CodeContests 上以三種 LLM（Qwen3.5-9B、gemma-4-12B-it、gpt-oss-20b）與三種語言（Python、Java、C++）共九個設定進行，平均 TPR@FPR5% 達 99.14%，相對最強基線平均提升 12.44%，且 pass@1 與未加浮水印版本完全一致。面對四種非 LLM 的程式編輯攻擊（排版、預設 lint、註解移除、識別碼改名），TPR 平均僅相對下降 0.94%；在 LLM 改寫攻擊下仍維持最高偵測率，但降至 52.55%–99.02%，顯示對結構性改寫僅具部分穩健性。此外，規則推論實驗中 SEW 的決策可預測性明顯低於基線。限制在於：極短程式可用的合格風格位置過少，且無法解析的不完整或結構無效程式會降低覆蓋率；這些皆屬輸入本身的缺陷，而非嵌入所造成。此方法的重要性在於提供免訓練、免解碼存取、兼顧功能正確性與抗模式推斷的程式碼溯源機制。",
+      "title": "SEW: Style-Encoded Watermarking of LLM-Generated Code",
+      "title_zh": "SEW：針對 LLM 生成程式碼的風格編碼浮水印"
     },
     {
       "arxiv_id": "2609.39578",
@@ -5676,7 +5780,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.39578",
       "summary": "Agent harnesses often improve language models with human-designed workflows, but as models grow more capable, unreliable guidance can increasingly constrain their execution. We call the ability to benefit from useful guidance while overriding unreliable guidance thinking outside the box. We introduce Box$^2$-Bench, which holds the model and task fixed while varying workflow reliability to isolate how models regulate their reliance on guidance. On Box$^2$-Bench, frontier models often benefit from",
-      "title": "Thinking Outside the Box: Can Language Models Rely on External Guidance Selectively?"
+      "summary_zh": "這篇論文指出，現今的大型語言模型多半在人類設計的工作流程（workflow）框架下運作，但當模型自身能力提升後，不可靠的流程反而可能限制其表現。作者將「有益時遵循外部程序指引、誤導時加以抗拒、出現更佳策略時予以超越」的能力稱為 thinking outside the box，並提出 Box²-Bench。此基準固定模型、任務、環境與評估器，只變動工作流程的可用性與可靠性，設計出無流程、Good、Partial、Mixed、Bad 五種配對條件，並以固定的外部模型作為可規模化的流程設計者代理，所有流程皆經獨立驗證器檢查有效性與答案洩漏後凍結。在 AIME 2026、WebShop、OpenR1-Math、DeepSWE、BrowseComp、AutomationBench 等任務上，前沿模型與開源權重模型普遍能從良好流程受益，卻在流程具誤導性或中途轉為不可靠時明顯受損；Mixed 條件在十二組前沿模型中就有十組低於對應的 Partial，顯示模型對初期有效流程產生依賴慣性，難以隨可靠性變化即時修正。作者進一步以僅含 Bad 流程的資料訓練開源模型：反事實監督式微調（SFT）能提升對錯誤指引的穩健性，但會過度抗拒流程；接續以任務結果為基礎的強化學習（GRPO）則可部分恢復對未見良好流程的使用，並改善指引中止或轉為誤導時的復原。研究亦發現此選擇性依賴可初步遷移至多代理協作中的同儕修正，以及記憶增強推理中對損毀記憶的查核行為。限制在於流程由固定模型生成、可靠性變化受控且凍結，尚未涵蓋互動式、模糊、部分正確或可隨模型調整的指引，也未估計人類撰寫流程中錯誤的自然分布。其意義在於指出選擇性依賴是代理可靠性中未被任務表現單一指標捕捉的獨立面向。",
+      "title": "Thinking Outside the Box: Can Language Models Rely on External Guidance Selectively?",
+      "title_zh": "跳脫框架思考：語言模型能否選擇性地依賴外部指引？"
     },
     {
       "arxiv_id": "2609.40124",
@@ -5774,7 +5880,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.40124",
       "summary": "Bias has long been studied in social psychology and cognitive science, where decades of research have produced a body of validated interventions that reduce stereotypical thinking and prejudiced responses in humans. We propose Debias It Yourself (DIY), a cognitively grounded framework that translates five such interventions into debiasing procedures for large language models and delivers them through three established paradigms: Show (in-context examples), Train (instruction tuning), and Revise ",
-      "title": "Debias It Yourself: Teaching LLMs Cognitive Bias Mitigation Interventions"
+      "summary_zh": "這篇論文把社會心理學中經過實證驗證的偏見降低介入策略，轉譯成大型語言模型的去偏見程序。作者借用 Devine 等人的「偏見習慣破除」架構，選出五種認知策略：刻板印象替換、反刻板印象想像、個體化、觀點取替與正向接觸，並將每一種拆解成明確的三步驟流程。這些流程透過三種既有學習範式送入模型：Show（脈絡內示範）、Train（指令微調）與 Revise（介入引導的自我修訂），組合成九種 DIY 設定。實驗涵蓋三個模型（Llama-3.1-8B、Llama-3.3-70B、Qwen3.5-27B）、五個偏見基準、十一個既有去偏見基線與三個推理基準。結果顯示，Train+Revise 與 Revise 在每個模型上都取得最佳平均排名，能在約九成推理準確率下把平均偏見壓到約百分之二，並對訓練時未見的偏見面向帶來最高十四點八個百分點的降低。限制方面，訓練資料為合成生成，可能帶有生成模型的偏誤，且研究只觀察基準分數，無法確認模型內部處理是否真正改變，也未評估對話與多跳推理。此工作的重要性在於把 LLM 去偏見從個別基準的臨時修補，轉向以既有偏見理論為依據、可系統推導的方法。",
+      "title": "Debias It Yourself: Teaching LLMs Cognitive Bias Mitigation Interventions",
+      "title_zh": "自己動手去偏見：教導大型語言模型認知偏誤緩解介入策略"
     },
     {
       "arxiv_id": "2609.39632",
@@ -5875,7 +5983,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.39632",
       "summary": "Test-time scaling improves language model reasoning by spending additional compute at inference. However, both classes of existing methods often fail to continue improving over long timescales. Parallel methods repeatedly sample independent answers from the model, scaling poorly on problems the model is unlikely to solve in a single attempt. In contrast, sequential methods build on previous answers to access new ideas, yet so far have not been shown to reach answers beyond those found by paralle",
-      "title": "Towards Better Exploration in Sequential Test-Time Scaling"
+      "summary_zh": "這篇論文探討測試時擴展（test-time scaling）為何在長時間尺度下停止進步。作者將測試時擴展方法統一表述為動態系統，並提出「吸引子」（attractor）概念：一旦進入某組答案，方法便難以跳脫。在 27 組序列式擴展方法、模型與基準的組合中，平均 53.8% 的軌跡在前四次迭代內即陷入吸引子；若兩條同設定軌跡都落入吸引子，約 15.4% 的情況其中一個只含錯誤答案，顯示至少 7.7% 的吸引子屬次優，若能逃脫即可提升準確率。作者提出的介入方式很簡單：隨機在多個語言模型間切換（M_mix），使一個模型的吸引子未必是另一個模型的吸引子。此舉平均降低 21.2 個百分點的吸引子命中率，讓序列式方法的覆蓋率超越同算力的平行式基線，並在遞迴自聚合（RSA）上至少提升 2.2 個百分點的準確率。作者也發現混合比例以偏向主模型（c=0.75）最佳，並以退火式取樣兼顧探索與利用。限制在於實驗僅涵蓋有限設定與非前沿模型，ARC AGI 1 上因無明確驗證目標、吸引子較少，基線反而較佳。此工作主張長時程測試時擴展應由平行式搜尋轉向能改進既有答案的序列式學習過程。",
+      "title": "Towards Better Exploration in Sequential Test-Time Scaling",
+      "title_zh": "改善序列式測試時擴展的探索能力：逃離次優吸引子"
     },
     {
       "arxiv_id": "2609.39436",
@@ -5978,7 +6088,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.39436",
       "summary": "Reinforcement learning with a verifiable reward (RLVR) offers a scalable approach to training language-model agents, yet sparse outcome rewards can leave early training with little signal for policy improvement. We identify an On-Policy Acceleration Phenomenon: in our main comparisons, RLVR initialized with on-policy distillation reaches high performance earlier in training and achieves both higher average performance during subsequent RLVR and higher final performance than the alternative basel",
-      "title": "From Imitation to Reward Discovery: On-Policy Warmup for Agentic RL"
+      "summary_zh": "這篇論文探討可驗證獎勵強化學習（RLVR）在代理任務上的冷啟動問題：當成功需要多個決策協同配合時，初始策略往往產生大量失敗軌跡，二元結果獎勵下同組全數失敗會讓 GRPO 等群組相對方法缺乏組內對比訊號。作者觀察到「同期策略加速現象」——以同期策略蒸餾暖身後再進行 RLVR，會更早達到高效能，且後續 RLVR 期間的平均與最終表現都優於基線。據此提出 On-Policy Warmup（OPW）：學生先在自身與環境互動產生的軌跡上接受固定教師的監督，包含不完美動作與復原情境，之後才切換到無需教師查詢的 RLVR。理論上，作者證明在共用環境動態下，學生造訪狀態上的累積反向 KL 蒸餾損失等於學生與教師軌跡分布的 KL 散度，再透過資料處理不等式推得初始驗證器成功率的下界，以及獎勵探索複雜度的上界；對群組相對 RLVR 亦刻畫成功率上升如何提高出現「有成功也有失敗」之獎勵資訊性群組的機率。實驗在 ALFWorld 與 ScienceWorld 上以 Qwen3-1.7B／4B 為學生、Qwen3-32B 為教師，OPW 在最終任務表現與重複任務成功（pass^8）上多數優於 off-policy SFT、SFT-RS 與無教師 GRPO 暖身，並大幅減少重複無效動作。限制在於理論只保證初始獎勵探索，不保證收斂或整體算力更省；暖身長度與端到端效率需依任務與教師成本調整，且增益在 ScienceWorld 部分類別並不均勻。",
+      "title": "From Imitation to Reward Discovery: On-Policy Warmup for Agentic RL",
+      "title_zh": "從模仿到獎勵探索：代理式強化學習的同期策略暖身"
     },
     {
       "arxiv_id": "2609.39740",
@@ -6072,7 +6184,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.39740",
       "summary": "Long-context reasoning faces two complementary bottlenecks: retaining evidence across long inputs and sustaining computation across many reasoning steps. Existing approaches largely address them separately, with external memory extending access to distant evidence and latent reasoning compressing multi-step computation. We introduce LatentHarness, which unifies memory access and latent reasoning as sequential latent action selection. At each internal step, the model chooses THINK for further com",
-      "title": "LatentHarness: Learning Latent Actions for Memory and Reasoning via Counterfactual Policy Distillation"
+      "summary_zh": "長脈絡推理同時面臨兩種長度瓶頸：一是證據分散在長輸入中，難以保留；二是解題需要大量中間推理步驟。既有做法多半各自處理其中一種：外部記憶代理把遙遠證據留在模型之外，再透過上下文視窗讀回；潛在推理方法則把中間計算從解碼文字搬進內部表徵。本文提出 LatentHarness，把記憶存取與潛在推理統一為序列式潛在動作選擇：每個內部步驟中，潛在策略在 Think（再算一步並寫入 fast-weight 記憶）、Recall（從同時存放輸入證據與中間推理狀態的記憶讀取）與 Exit（輸出下一個 token）之間選擇。由於軌跡層級獎勵對個別潛在決策的信用分配過於粗略，作者提出反事實策略蒸餾（CPD）：在每個潛在狀態對每個允許動作分支一步，量測其對輸出 token 對數機率的改變，得到動作增益；這些增益一方面作為狀態層級動作信用教導策略，另一方面透過記憶微分，以正優勢軌跡上後續 Recall 的變化來監督寫入閘門該保留哪些推導狀態。在以 Ouro-1.4B-Thinking 與 2.6B-Thinking 為骨幹的六個一般與長脈絡推理基準上，1.4B 模型相對最強基線分別提升 2.8% 與 10.0%（相對值），六項平均較 Memory-R2 高 3.9 與 4.1 分，且僅用約 55% 的全深度計算量，長脈絡推理較 Memory-R2 快 5.9 倍。消融顯示移除 CPD 會使策略熵在 200 步內崩落，移除 Recall 或改為每次都讀取皆顯著下降；錯誤分析指出剩餘多跳錯誤主要來自記憶定址，干擾段落常壓過支持段落。此工作的重要處在於把記憶與推理原生地放進同一條潛在計算軌跡，並提供不隨策略收斂而消失的信用分配機制，但目前仍受限於骨幹規模、訓練分布與檢索定址能力，尚未驗證於更大模型或真實代理環境。",
+      "title": "LatentHarness: Learning Latent Actions for Memory and Reasoning via Counterfactual Policy Distillation",
+      "title_zh": "LatentHarness：透過反事實策略蒸餾學習用於記憶與推理的潛在動作"
     },
     {
       "arxiv_id": "2609.39551",
@@ -6171,7 +6285,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.39551",
       "summary": "Auto-research agents, LLM systems that propose, implement, train, and evaluate model changes across iterations, promise to automate applied ML's experimental loop. Over long horizons, execution accuracy is a binding constraint: a change can silently leak held-out data, omit normalization, disconnect a gradient, or leave a train/eval flag unwired, invalidating expensive runs and compounding error across iterations. We present RankEvolve, an auto-research framework for evolving generative ranking ",
-      "title": "RankEvolve: A Reliable Multi-Agent Auto-Research Harness for Evolving Ranking Models"
+      "summary_zh": "這篇論文針對「自動研究代理」在長時間迭代下的執行可靠性問題。作者指出，LLM 代理在反覆提出、實作、訓練與評估模型改動時，常犯下測試集外洩、漏掉 layer norm、梯度中斷或 train/eval 旗標未接上等隱性缺陷；這類錯誤不但浪費大量 GPU 時間，還會產生錯誤指標，且隨迭代累積而惡化。為此提出 RankEvolve，包含三項設計：一是可執行操作協定（EOP），把工作流程的階段、相依、閘門與分支迴圈一次宣告，編譯成由執行環境強制執行的狀態機；二是 meta-meta-harness，把 Claude Code、Codex 等完整編碼代理產品當成執行圖節點，透過適配器契約互相審查與修補；三是知識層，保存含負面結果的發現與來源脈絡供後續迭代使用。作者在公開 HSTU 推薦模型上部署十二輪迭代，MovieLens-20M LARGE 取得 NDCG@10 0.2192（較已發表基準 +4.48%），BASE 為 0.1948（+2.80%），並記錄了外洩事件。核心實證來自 ExecML 基準：每個 repo 96 個私有任務、隱藏 oracle，在相同可觀測推論預算下，異質配對 CC→Codex→CC 的執行正確率達 62.5%，優於最佳單一產品 45.8%（配對 +16.7，95% CI [6.6,26.7]），同時將沉默性關鍵缺陷率由 35.4% 降至 10.4%；LitGPT 轉移切分亦複現（+12.5，CI [3.0,22.0]）。機制分析顯示錯誤相關性愈低、可救援的互補錯誤質量愈大，實得增益愈高（斜率 0.34，CI [0.12,0.56]）。第二階段的 plan-merge 拓撲雖有最高正確率 70.8%，但與對照差異未達統計顯著（+8.3,p=0.077），且在固定預算下與三階段配對持平，顯示獲益主要來自「使用不同產品」而非特定拓撲。限制包括：證據僅涵蓋 HSTU 與 LitGPT 兩個 Python/PyTorch 程式庫、oracle 無法完全排除偽通過、產品為黑箱而無法比對供應商端 FLOPs、知識層缺乏 on/off 消融、HSTU 個案仍有人類操作者在閘門介入。其意義在於把「組合不同編碼代理是否真的買到正確性」變成可反駁、預先註冊的系統假設，而非僅憑架構圖推論。",
+      "title": "RankEvolve: A Reliable Multi-Agent Auto-Research Harness for Evolving Ranking Models",
+      "title_zh": "RankEvolve：用於演化排序模型的可信多代理自動研究框架"
     },
     {
       "arxiv_id": "2609.39765",
@@ -6265,7 +6381,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.39765",
       "summary": "Agent memory faces heterogeneous access needs: a single-hop question may require one piece of evidence, whereas a multi-hop question must combine evidence from multiple sources. Predefined memory workflows cannot adapt to these varying needs. Recent adaptive methods search or learn over memory components and their compositions, but the design space itself remains predefined. We introduce MemCodex, a self-evolving hierarchical memory system that organizes experience into executable memory program",
-      "title": "MemCodex: Self-Programming Hierarchical Memory for Language Agents"
+      "summary_zh": "語言代理在長期任務中累積大量經驗，但查詢需求高度異質：單跳問題只需一筆證據，多跳問題卻得整合多個來源。既有做法不是人工設計固定的記憶流程，就是在預先界定的模組空間中搜尋或學習策略，設計空間本身仍被寫死。作者提出 MemCodex，把經驗組織成可執行的記憶程式，分成 summary、graph、skill 三層衍生記憶置於唯讀的 raw 層之上，另以 kv memory 提供潛在記憶。每一層都有 admit、index、propose、score、route 五個固定介面的方法。系統以演化方式搜尋開放設計空間：每輪由 meta agent 從封存檔取出父代，只改寫某一層的某一個方法或開關某一層，使改動可歸因，再經記憶限制的合法性檢查與接受檢定（精確度不得下降、token 不得增加，僅提升精確度者須通過單尾 McNemar 檢定）。查詢時由粗到細走訪階層，route 決定停止、縮小或下降，最終答題一律回到原始對話輪，確保證據可追溯。作者同時釋出 MemArena 統一評測套件，涵蓋七個資料來源、十一種基線與兩種主幹模型。在 Qwen3.5-27B 上平均準確率 60.8%，較最強自適應基線 MemPro 高 5.6 分，讀取 token 少 3.4 倍、推論快 2.1 倍；GPT-5.4-mini 上亦領先 3.6 分。消融顯示證據保留帶來初始優勢，逐方法演化貢獻其餘多數增益。限制在於演化仍受限於固定層集與介面，且架構具任務特異性，跨任務僅部分可轉移。",
+      "title": "MemCodex: Self-Programming Hierarchical Memory for Language Agents",
+      "title_zh": "MemCodex：為語言代理自我編程的階層式記憶"
     },
     {
       "arxiv_id": "2609.39275",
@@ -6371,7 +6489,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.39275",
       "summary": "On-policy distillation (OPD) trains a student on its own generated prefixes with token-level teacher feedback, but transmitting or storing the teacher's full-vocabulary distribution at every token is costly. Entropy-aware OPD (EOPD) adds forward supervision to reverse KL to help the student recover plausible tokens it underestimates, using only the teacher's top-$k$ probabilities to limit cost. Because EOPD renormalizes these probabilities, its target assigns no mass to the omitted vocabulary. W",
-      "title": "ReTaCo: Residual-Target Control for On-Policy Distillation"
+      "summary_zh": "同策略蒸餾（on-policy distillation）讓學生模型在自己生成的脈絡上接受教師模型的 token 層級監督，但傳輸教師的完整詞彙分布成本高昂。熵感知同策略蒸餾（EOPD）在反向 KL 之外加入前向監督，並只取教師 top-k token 以降低通訊量；然而它把保留的機率重新正規化，等於把目標質量全押在選中集合上。作者證明此舉會產生隱性的「選中質量趨近 1」目標：即使學生的條件分布已與教師一致，−log P 仍持續推升選中質量，因此當被捨棄的詞彙具有正機率時，教師分布本身並非該損失的穩定點。為此提出 ReTaCo，把 top-k token 各自保留、其餘詞彙合併為單一殘差符號，並將殘差目標設為 (1−β)(1−m)，選中集合的相對機率維持不變；β=0 時保留教師質量分布，β 越大則把越多尾部質量移入選中集合。方法搭配單樣本估計器，其期望值等於全詞彙反向 KL，教師通訊量仍為 O(k)。理論上，作者在固定前綴下證明母體目標具唯一最佳解，其選中質量介於 m 與 m+β(1−m) 之間，且隨 β 單調遞增，並證實 β=0 時被低估的選中 token 仍能獲得非消失的回復梯度；數值最佳化亦驗證了預測的質量與條件分布。實驗涵蓋三組教師–學生配對，ReTaCo 在多數數學與程式碼基準上優於 EOPD。限制在於平衡點定理僅適用固定前綴下的母體目標，不保證動態前綴、策略滯後或梯度裁剪下的收斂；殘差裁剪的效果亦隨任務而異。",
+      "title": "ReTaCo: Residual-Target Control for On-Policy Distillation",
+      "title_zh": "ReTaCo：以殘差目標控制改良同策略蒸餾中的重新正規化偏誤"
     },
     {
       "arxiv_id": "2609.39913",
@@ -6463,7 +6583,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.39913",
       "summary": "We test whether large language models solve formally matched kinship problems equally well when relations are expressed in familiar vocabulary or by explicitly defined nonce predicates. Across 500 paired graphs, concrete accuracy exceeds arbitrary accuracy by 35.6 percentage points in local Qwen3.8-27B, 26.6 in Gemma 4 26B-A4B, 12.0 in Gemma 4 31B, and 5.4 in Qwen3.8-Max. All four paired gaps are statistically resolved. Reasoning budgets and prompt-language interventions can substantially reduce",
-      "title": "The Concrete-Arbitrary Gap: Kinship Reasoning in LLMs Is Not Indifferent to Presentation"
+      "summary_zh": "這篇論文檢驗一個直接的行為問題：當形式相同的親屬關係推理題，分別以熟悉的親屬詞彙與明確給出定義的自造述詞（nonce predicates）呈現時，大型語言模型是否表現一致？作者建構 500 組配對的合成親屬關係圖，同一圖的具體版本用日常親屬詞，任意版本改用 nuk、wug、tor 等明確界定意義的述詞，查詢對象與正確答案完全相同，並以配對圖為抽樣單位、採精確 McNemar 檢定與圖層級 bootstrap 信賴區間。主要結果是四個受測模型一致的「具體—任意落差」：地端 Qwen3.8-27B 為 35.6 個百分點，Gemma 4 26B 為 26.6，Gemma 4 31B 為 12.0，託管的 Qwen3.8-Max 為 5.4，且四個落差皆統計顯著。作者強調任意條件已提供英文定義，因此這不是「已知關係對未解讀符號」的比較，而是形式資訊以何種詞彙抵達模型的差異。後續介入顯示落差可修改：充足推理預算可大幅縮小落差（512 token 時三個地端模型幾近收斂），而顯示 15 個英文關係標籤的 inventory 或改用編碼輸出，甚至能讓 Qwen 的落差反號。限制方面，配對並未控制長度、語法與事實排序，評分協定在四個模型中不完全相同，Qwen-Max 的高正確率使可壓縮空間有限，且落差主要集中在 great-avuncular 類別。作者亦提醒，此結果只否定「完整呈現管線的呈現無差異性」，並不否定在成功解讀後存在不變的組合程序。其意義在於指出：明確給出定義並不足以讓自造述詞與熟悉詞彙一樣可用，而單張 RTX 3090 上的地端模型在此基準上可勝過託管旗艦模型，說明地端模型本身即具語言學研究價值。",
+      "title": "The Concrete-Arbitrary Gap: Kinship Reasoning in LLMs Is Not Indifferent to Presentation",
+      "title_zh": "具體與任意之間的落差：大型語言模型的親屬關係推理並非對呈現方式無動於衷"
     },
     {
       "arxiv_id": "2609.40185",
@@ -6559,7 +6681,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.40185",
       "summary": "Constrained generation aims to sample from language models (LMs) conditioned on hard constraints. Existing constrained-generation techniques for nondeterministic finite automaton (NFA) constraints either distort the distribution or sacrifice efficiency. Theoretically, this task reduces to counting the length-$n$ sequences accepted by an NFA (#NFA), and the exact #NFA problem is #P-complete. Recent work has shown that #NFA admits a fully polynomial randomized approximation scheme (FPRAS). Inspire",
-      "title": "Provably Tractable NFA-Constrained Language Generation via HMMs"
+      "summary_zh": "約束式生成要求語言模型輸出必須滿足硬性限制，例如規則表示式（Regex）所描述的格式。這類限制可用 NFA 表示，但給定前綴後計算「還有多少後續序列能滿足限制」本質上是 #NFA 計數問題，已知為 #P-complete，因此既有方法面臨兩難：XGrammar、PICARD 等遮罩式做法雖有效率，卻扭曲了真正的條件分布；Ctrl-G、GeLaTo 等保分布做法雖以 HMM 精確計算完成機率，卻只能處理 DFA，而一般 Regex 轉成 DFA 可能需要指數多個狀態。本文提出 NFA-LM，先從基礎語言模型蒸餾出 HMM，再把近期針對 #NFA 的 FPRAS（全多項式隨機近似方案）推廣到加權情形，估計 HMM 的完成機率，用以重新加權下一個 token 的分布。方法分為蒸餾、預計算與生成三階段，並透過正則化執行路徑（canonical run）、正則化聯集與中位數估計來控制重複取樣的相依性。理論上證明在溫和假設下，完成機率估計誤差落在 (1±ε) 之內，整體生成分布與目標分布的總變異距離不超過 nε，時間複雜度為多項式。實驗在 CommonGen 上以十類對 DFA 困難的 Regex 限制、500 個實例比較，NFA-LM 全部 500 個實例皆成功滿足限制，平均約 28 秒，而 Ctrl-G 成功率不到一半；在可暴力精算的 232 個實例中，最大相對誤差約 0.00315，遠低於 ε=0.1；文字品質也明顯優於 XGrammar。限制在於仍依賴蒸餾 HMM 作為語言模型完成機率的代理，且尚未涵蓋上下文無關語言與反向參照等非正規特性。",
+      "title": "Provably Tractable NFA-Constrained Language Generation via HMMs",
+      "title_zh": "以 HMM 實現可證明可處理的 NFA 約束語言生成"
     },
     {
       "arxiv_id": "2609.39933",
@@ -6656,7 +6780,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.39933",
       "summary": "When designing machine learning models, desirable properties are often in tension: improving one behavior can impair another, so task progress can depend on alleviating the conflict. LLM-based AutoResearch systems, which iteratively edit model code and retain edits based on scalar task-performance feedback, have largely ignored this trade-off. We find that scalar feedback supports broad exploration early in search, but it does not reveal how edits affect competing behaviors. In matched-budget ex",
-      "title": "ConflictGuide: AutoResearch Improves When Competing Behaviors Are Made Visible"
+      "summary_zh": "大型語言模型驅動的 AutoResearch 系統會反覆修改模型程式碼，並依純量任務指標決定是否保留修改；但純量回饋只顯示整體表現，無法揭露某次修改究竟如何影響彼此競爭的行為（例如頻譜主模態擬合與非主模態利用率、壓縮率與細節保留），因此搜尋常在後期停滯。作者先以對照預算實驗發現，若在任務增益趨緩後才導入競爭行為回饋，可將同時改善兩種行為的提案比例由 7.2% 提升至 13.1%，並把同時退化的比例由 29.0% 降至 20.7%，且能突破純量搜尋的平台期。據此提出 ConflictGuide：其可重用技能 ConflictGuide-Skill 以文獻歸納的 Root–Axis–Mechanism 分類法（9 個根因、6 個軸、110 個機制）辨識模型特有衝突，並設計可量測的探針指標，由程式代理以唯讀方式實作並於演化前完成合格性檢定。演化分兩階段：第一階段僅用任務回饋進行廣泛探索；第二階段加入探針回饋引導提案方向，並在任務增益僅屬邊際時，唯有探針顯示足夠衝突緩解才保留該修改。在五個異質模型家族（SpecB-FNO、SNGP、ESN、GCNII、TCM-Lite）與多種程式代理上，任務誤差最多降低 28%、衝突相關誤差最多降低 14%，消融顯示「引導」與「保留」機制互補。限制在於探針需模型專屬的建置與檢定成本，且僅適用於有充分證據支持的衝突情境。",
+      "title": "ConflictGuide: AutoResearch Improves When Competing Behaviors Are Made Visible",
+      "title_zh": "ConflictGuide：讓相互競爭的行為可被觀察，可提升自動化研究成效"
     },
     {
       "arxiv_id": "2609.39544",
@@ -6752,7 +6878,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.39544",
       "summary": "Recent achievements in AI-assisted mathematics require intensive interaction of agents with proof assistants to generate machine-checked proof certificates. Agents interact with proof assistants such as Rocq or Lean through an interface that controls what the agent receives from the prover and the cost of these interactions. Today, these interfaces are adapted from tools designed for humans and not optimized for agents. We propose an evolutionary method where a frontier model incrementally propo",
-      "title": "Growing an Agent/Prover Interface: Evolutionary Tool Design for Cost-Efficient Theorem Proving in Rocq and Lean"
+      "summary_zh": "本文關注 AI 輔助數學中代理人與證明助理之間的互動介面問題。目前這類介面多沿用為人類設計的工具，未針對代理人最佳化，而介面直接決定每次互動的成本與效率。作者提出演化式方法：由前沿模型（Claude Fable 5）擔任協調者，逐步提出新功能，僅保留能改善較小模型整體表現的變更，並以正確率、每題解出成本與每題解出耗時三項指標驗證。實驗從僅暴露 Rocq 編譯器的最小伺服器出發，在 Rocq Workbook 的 dev60、hard70、mathcomp35 及 miniF2F-Rocq 驗證集上迭代，最終於第三天找到最佳設定，長出 rocq-mcp-evolve。在 miniF2F-Rocq 保留測試集上，搭配 Haiku 4.5、Sonnet 5、Opus 4.8 與 GPT-5.6 Terra 四款模型，其解題率、成本與耗時皆優於對照組與既有 rocq-mcp，Opus 上解題率提升約 30 個百分點、成本降低約 59%。專案級任務亦見改善。限制在於 Lean 移植版 lean-mcp-evolve 雖降低成本與時間，解題率仍低於 lean-lsp-mcp，且自動化戰術貢獻多集中於簡單題，實驗因前沿模型不可完全重現而僅能事後稽核。",
+      "title": "Growing an Agent/Prover Interface: Evolutionary Tool Design for Cost-Efficient Theorem Proving in Rocq and Lean",
+      "title_zh": "演化式工具設計：為 Rocq 與 Lean 打造具成本效益的定理證明代理人／證明器介面"
     },
     {
       "arxiv_id": "2609.39884",
@@ -6858,7 +6986,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.39884",
       "summary": "Role prompting elicits specialized behavior from large language models through an expert identity, offering a lightweight way to guide reasoning on demanding tasks. However, evaluating or distilling complete role-prompted answers can miss useful next-token preferences when the sampled solution remains incorrect. Transferring these preferences also requires an objective that reaches alternatives the student rarely predicts. We introduce OPSRD, which uses a fixed expert role as privileged teaching",
-      "title": "OPSRD: On-Policy Self-Role Distillation"
+      "summary_zh": "這篇論文處理一個實務上常見卻容易被忽略的落差：角色提示（role prompting）能讓大型語言模型以專家身分作答，但若只用「完整答案是否正確」來評估或蒸餾，往往會漏掉取樣答案錯誤時仍存在的有用下一個詞偏好。作者的第一個觀察其實是負面結果：在三個競賽數學基準上，替 Qwen3-1.7B 加上「奧林匹亞數學專家」角色後，巨集準確率反而從 35.74 降到 34.54，與中性系統提示相同，顯示單靠專家標籤並不足以改善取樣解。\n\n據此作者提出 OPSRD，把固定專家角色當作教師的特權脈絡，進行無參考解答的同策略自我蒸餾。作法是由無角色的學生模型自行生成推理軌跡，再由同一基礎模型凍結後的實例，帶著專家角色對「學生實際走過的相同前綴」輸出角色條件分布，藉此暴露學生取樣以外的替代選項。監督僅限於學生熵值最高的前一半位置，把學習集中在真正不確定的預測上；學生端只更新 LoRA 低秩轉接器，教師固定不動，推論時學生回到一般提示。\n\n目標函數的選擇是本文重點。作者指出反向 KL 在學生對某替代詞機率趨近零時更新會消失，因此改採教師加權的前向 KL，並對個別詞彙貢獻設上限，以避免不完美教師造成過大偏差；同時另行記錄未截斷的散度。實驗涵蓋 Qwen3-1.7B、4B、8B 與 AIME 2024、AIME 2025、HMMT 2025，每個問題取樣 12 次並回報 Avg@12 與三任務巨集平均。在三個規模上前向 KL 的巨集準確率都是三種散度中最高；1.7B 主要實驗較 Base 提升 6.30 個百分點，並高於以參考解答為條件的 Answer OPSD 3.33 個百分點。角色放置的對照顯示，角色只放在教師、學生保持無角色時最佳；把角色同時給學生或僅給學生都會降低準確率。\n\n限制方面，證據僅涵蓋單一模型家族、一份數學訓練語料與三個競賽基準，1.7B 只有三次訓練重複，較大規模的前向與反向 KL 差距信賴區間跨越零；JSD 條件在硬體與紀錄完整度上也不同，選擇比例的敏感度研究則在較小取樣預算下進行。整體而言，本文的意義在於說明角色提示的價值未必展現在完整答案的準確率，而可能是它在學生自身推理路徑上提供的分布性引導，並提供一個可重用、無需逐題參考解的同策略蒸餾配方。",
+      "title": "OPSRD: On-Policy Self-Role Distillation",
+      "title_zh": "OPSRD：同策略自我角色蒸餾"
     },
     {
       "arxiv_id": "2609.39859",
@@ -6954,7 +7084,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.39859",
       "summary": "Masked diffusion language models (dLLMs) have shown strong potential for faster inference through parallel token generation when combined with confidence-based samplers. However, recent work has shown that such methods can defer unmasking high-entropy fork positions at which multiple plausible continuations exist. This results in reduced generation diversity, as shown by worse pass@k scaling, and limits gains obtainable from RL post-training. To avoid this flexibility trap, prior work advocated ",
-      "title": "Fork-dLLM: Avoiding the Flexibility Trap in Diffusion Language Models"
+      "summary_zh": "掩蔽式擴散語言模型（dLLM）搭配信心導向取樣器可平行產生多個 token，加快推論，但近期研究指出這類方法會延後高熵的「fork」分支位置，導致生成多樣性下降、pass@k 擴展變差，並限制 RL 後訓練的效益，此即所謂「彈性陷阱」。既有解法主張改用自迴歸（AR）取樣，卻犧牲平行解碼的效率。本文觀察到 Fast-dLLM 等取樣器在沒有位置超過信心門檻時本就會進入 fallback 步驟，而這些步驟正是 fork 位置的好代理：實驗顯示 fallback token 僅約占八分之一，卻貢獻近半數總熵。作者因此提出 Fork-dLLM，僅在 fallback 步驟改以 AR 風格解開最左側的遮罩位置，其餘步驟仍並行解碼，屬一行式修改，無需訓練、額外模型評估或新超參數。作者進一步提出 ForkGRPO，以 Fork-dLLM 產生 rollout，且只在 fallback 步驟套用 GRPO 目標，因每步僅承諾一個 token，可保持精確的策略概似比，同時大幅降低 rollout 與最佳化成本。實驗在 LLaDA-8B-Instruct 與 Dream-v0-Instruct-7B 上，涵蓋 GSM8K、MATH-500、HumanEval、MBPP，Fork-dLLM 在多樣性上可匹配 AR 取樣的 pass@k 擴展，但所需 NFE 少 2 至 3 倍；在相同算力下 ForkGRPO 的訓練步數為 JustGRPO-Fast 的兩倍以上，GSM8K 與 HumanEval 的增益明顯較大，並在約八分之一的 H100 時數下達到與完整 JustGRPO 相當的準確率。消融顯示多樣性增益主要來自 fallback 的排序方式，而非平行步驟的隨機性；訓練中亦發現 FastGRPO 會出現熵暴增與獎勵崩潰，ForkGRPO 則維持穩定。限制在於取樣超參數僅在單一設定下調校、GRPO 實驗只採 LoRA 與單一算力預算，且僅比較已釋出的 JustGRPO 檢查點，未重現其訓練。此工作的重要意義在於指出：要逃離彈性陷阱，不必放棄信心導向的平行解碼，只需在少數高不確定性步驟改用 AR 順序，即可兼顧多樣性與效率，為 dLLM 的取樣與 RL 後訓練提供低成本的實用方向。",
+      "title": "Fork-dLLM: Avoiding the Flexibility Trap in Diffusion Language Models",
+      "title_zh": "Fork-dLLM：避免擴散語言模型中的彈性陷阱"
     },
     {
       "arxiv_id": "2609.39220",
@@ -7055,7 +7187,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.39220",
       "summary": "Process reward models (PRMs) have demonstrated notable effectiveness in test-time scaling and reinforcement learning by providing fine-grained signals for evaluating intermediate reasoning states, but their training relies heavily on costly process annotations. A natural way to alleviate this dependence is to complement limited process supervision with scalable outcome supervision. However, existing PRMs often model reasoning prefixes independently, providing no explicit mechanism for effectivel",
-      "title": "Learning Process Rewards via Reasoning State Propagation"
+      "summary_zh": "過程獎勵模型（PRM）能為中間推理狀態提供細緻訊號，在測試時擴展與強化學習中相當有效，但其訓練高度依賴昂貴的過程標註。現有 PRM 多將各推理前綴視為獨立的二元分類目標，缺乏明確機制讓最終結果標籤回頭引導中間狀態的學習；PQM、CRM 等方法雖引入序列依賴，但圍繞第一個錯誤步驟組織，等同假設後續推理持續無效，忽略錯誤可能被後續步驟修正。為此，作者提出推理狀態傳播（Reasoning State Propagation, RSP），以二元狀態 G（有效、無未解錯誤）與 B（無效、存在未解錯誤）表示每個前綴，並在每個推理步驟上參數化兩個條件機率：break（由 G 轉為 B，代表引入錯誤）與 repair（由 B 轉回 G，代表修正錯誤），構成逐步傳播矩陣，最終狀態機率即為各步驟矩陣連乘。模型在 Qwen3 骨幹上於每個推理邊界插入 ⟨BREAK⟩ 與 ⟨REPAIR⟩ 兩個特殊符號，由前後邊界表徵經 MLP 頭預測兩機率，一次前向即可取得全軌跡轉移。訓練時過程標註監督中間傳播狀態，結果標籤僅監督最終狀態，但因最終狀態依賴所有中間更新，梯度可經傳播回傳至先前步驟，理論分析亦給出對應梯度形式。實驗涵蓋 beam search、Best-of-N 與結合 verifier 閘控的 GRPO 強化學習：相較 Qwen2.5-Math-PRM，beam search 平均提升 5.6%，強化學習提升 2.1%，AIME 上更領先 7.8%。消融顯示移除 repair、改用共享符號、阻斷結果梯度回傳皆造成明顯退化。限制在於過程標註仍集中於 PRM800K 少數子集，B→B 與 B→G 樣本稀少而需以 LLM 評審補充，且結果監督未必保證每一步有效。此工作的重要意義在於以狀態傳播把稀缺過程監督與可擴展的結果監督統一到同一框架，使 PRM 在細緻評估與下游策略最佳化上同時受益。",
+      "title": "Learning Process Rewards via Reasoning State Propagation",
+      "title_zh": "透過推理狀態傳播學習過程獎勵"
     },
     {
       "arxiv_id": "2609.39547",
@@ -7164,7 +7298,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.39547",
       "summary": "GUI agents built on large language and vision-language models still struggle on unseen applications and complex multi-step tasks, as completing real GUI tasks depends on app-specific, temporally volatile operational knowledge that is scarce in pretraining corpora. Retrieval-augmented execution offers a natural remedy but faces two coupled bottlenecks: knowledge at scale is hard to acquire, and self-collected priors inevitably drift from the live environment due to version updates, promotions, ad",
-      "title": "Learning Reliable GUI Agents under Imperfect Priors"
+      "summary_zh": "這篇論文探討 GUI 智慧代理在未見過的應用程式與長流程任務上仍然脆弱的問題。作者指出，完成真實 GUI 任務往往仰賴應用程式專屬、隨時間變動的操作知識，例如隱藏入口、設定可見的前置條件，或某個醒目按鈕其實是廣告；這類知識在預訓練語料中極少，單靠畫面像素也難以推斷。檢索增強執行雖是自然解方，卻面臨兩個耦合瓶頸：大規模知識難以取得，且自蒐集先驗會因版本更新、促銷、廣告、A/B 測試與個人化而偏離現行環境。作者爬梳 20 個熱門應用、176 個跨新舊版本配對任務後發現，僅 44% 任務在更新後軌跡不變，其餘落入步數增刪、入口或路徑位移、控制項更名、目標不符等漂移模式。據此，作者主張代理不應追求完美知識，而應學會在不完美先驗下正確行動，提出 SAGE 框架：以語意區域預算、狀態去重與可回復回溯建構 UI 狀態轉移圖，再由多模態標註器合成（任務, 軌跡）配對；並依漂移分類設計五種擾動算子與確定性可靠度標籤，訓練一個先輸出 Follow／Partial／Ignore 可靠度判斷、再產生動作的閘控策略。實驗顯示，自探索可達約 148 個去重螢幕與 28 個活動，優於 LLM-Explorer 等基線，基準子任務覆蓋率平均提升 16.9 個百分點；在五個骨幹、六種先驗条件下，先驗帶來的準確率增益平均提升 2.79 至 9.39 個百分點，跨資料集轉移亦多為正增益，線上基準亦優於單純 SFT。限制包括：探索依賴無障礙樹與截圖，遇到客製化渲染或封鎖自動化時可靠度下降；嚴重介面漂移仍可能降低檢索品質；教師模型可能引入偏誤；真實裝置探索與標註成本不低。附錄另以人工標註的真實跨版本漂移驗證可靠度判斷，Macro-F1 平均約 70.5%，其中 Partial 最具挑戰。此研究的重要性在於把 GUI 知識重新定位為「可審核、可擾動的先驗」，將檢索雜訊轉為明確監督訊號，為動態應用環境中的代理穩健性提供可規模化且免人工標註的訓練路徑。",
+      "title": "Learning Reliable GUI Agents under Imperfect Priors",
+      "title_zh": "在不完美先驗下學習可靠的 GUI 智慧代理"
     },
     {
       "arxiv_id": "2609.39352",
@@ -7263,7 +7399,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.39352",
       "summary": "LLM agents increasingly rely on reusable Skills for complex, multi-step tasks, creating a critical supply-chain attack surface where poisoned Skill content steers agent decision loops under benign requests. Existing skill poisoning attacks either colocate actuation with its contextual pretext or distribute actuation across multiple Skills, but do not explicitly separate the rationale for execution from the operation itself. In this work, we reveal that untrusted agent decisions fundamentally dep",
-      "title": "Hiding in Plain Sight: Decoupling Pretext from Actuation for Skill Poisoning in LLM Agents"
+      "summary_zh": "這篇論文指出，LLM 代理日益依賴可重用的 Skill 來完成多步任務，因而形成供應鏈攻擊面：攻擊者只要修改第三方 Skill 的 SKILL.md 指令檔，就能在良性使用者請求下操控代理的決策迴圈。作者提出 Risk-Realization Factors（RRFs）框架，把風險實現拆成兩個概念上不同的因素：actuation factor（實際執行什麼有害操作）與 pretext factor（為何代理認為必須執行）。據此提出 CoordPoison 攻擊範式，將理由與執行解耦：上游 Grounding Skill 透過例行公用操作，悄悄把理由寫入持久化的工作區產物，下游 Steering Skill 則保留完整未拆解的有害操作，並在讀取該產物後把它當成執行前置條件。整套流程自動化：先驗證良性 Skill 配對之間真實的狀態傳遞依賴，再做僅 Steering 的localized 篩選，接著合成協調契約並渲染投毒指令，最後依執行時軌跡與失敗分類進行前綴保留的迭代修補。實驗在沙箱化 Claude Code 環境中，以 7 個固定 payload 與 62 組合格 Skill 配對、共 434 個評測實例進行，受害模型包含 DeepSeek-V4-Flash、GLM-5.3-Flash 與 Claude-Sonnet-4.6，並在 MiniMax-M3 與 GPT-5.5 上評估跨模型轉移。在僅 Steering 基線完全失效的樣本上，CoordPoison 仍達到 76.19%、51.23%、44.44% 的整體 ASR，任務完成率維持 100%；跨生命週期設定更高達 95.31% ASR 與 100% cASR，作者稱之為 Fait Accompli 效應，即下游代理只把既有狀態視為既定事實。跨模型轉移 ASR 約 78.57% 至 96.88%，明顯優於 Skill-Inject 與 SkillJect 等單一 Skill 基線。消融顯示移除 ZG 或 ZS 皆使效能下降；在系統與使用者提示同時加入稽核指令的雙重提示防禦僅能小幅降低 ASR。限制在於實驗集中於特定模型與 Skill 生態，防禦評估也僅止於提示層級，尚未檢驗執行期或系統層機制。此研究的重要性在於揭示現行孤立 Skill 安全審查的盲點，並主張需要具備組合感知能力的防禦。",
+      "title": "Hiding in Plain Sight: Decoupling Pretext from Actuation for Skill Poisoning in LLM Agents",
+      "title_zh": "藏於明處：將前置理由與實際執行解耦的 LLM 代理技能投毒"
     },
     {
       "arxiv_id": "2609.39329",
@@ -7361,7 +7499,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.39329",
       "summary": "Long-context inference with Large Language Models (LLMs) is bottlenecked by the linearly growing memory of the key-value (KV) cache. Existing compression methods reduce the cache through token eviction or approximation, but degrade sharply at aggressive compression budgets. We propose PatchKV, a training-free framework that compensates KV cache compression methods by carrying part of the context in the model's weights. PatchKV pairs an off-the-shelf compressed KV cache with a context-specific we",
-      "title": "PatchKV: Weight-Space Compensation of KV Cache"
+      "summary_zh": "大型語言模型的長脈絡推論常受限於隨脈絡長度線性成長的 KV 快取記憶體。既有做法多靠 token 淘汰或快取近似來壓縮，但在預算極度緊縮時準確率會急遽下滑。本文提出 PatchKV，一個免訓練（training-free）框架，將部分脈絡資訊改由模型權重承載，與現成的壓縮 KV 快取並行使用。其核心是在脈絡載入階段，以脈絡衍生的參考查詢 token 為基礎，比較「完整快取教師」與「壓縮快取學生」在每個 Transformer 區塊的激活值，再以脊迴歸（ridge regression）求得閉式解，產生一個脈絡專屬的權重修補，作用於 MLP 輸出投影；修補合併後前向圖與每筆查詢的推論成本皆不變，額外計算僅支付一次並可攤提到後續查詢。為支援長脈絡，作者採分塊編碼與充分統計量累積，使峰值記憶體與參考長度無關，並以自適應脊係數跨層正規化。實驗涵蓋 Qwen2.5-7B-1M、Qwen3-4B、LLaMA3.1-8B 三種架構，搭配 KVzip（token 淘汰）與 Attention Matching（快取近似）兩種壓縮法，於 SCBench（最高 170K token）、SQuAD、NIAH、GSM8K 等基準測試。結果顯示在 b/n 介於 0.02 至 0.1 的激進預算下增益最明顯；SQuAD 上即使完全不保留 KV 快取，仍可回復約 73% 的全快取準確率，而純快取基線幾乎歸零。消融實驗指出區塊大小 5K 為最佳平衡，自適應脊縮放優於跡平均等方案，且低秩（rank-32）修補可維持近乎全秩表現並節省 99% 儲存。限制在於參考查詢僅為未知下游查詢的代理，分布偏移較大時補償能力受限；建構需一次性前處理成本與完整快取作為教師，較適合單脈絡多查詢或長解碼場景，多脈絡並行服務仍需額外機制。",
+      "title": "PatchKV: Weight-Space Compensation of KV Cache",
+      "title_zh": "PatchKV：以權重空間補償 KV 快取壓縮"
     }
   ],
   "radar": [
@@ -7466,7 +7606,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.39714",
       "summary": "Top researchers have good intuition, but do language models have as good intuition about model training as top AI researchers? To measure model intuition of LLMs and humans, we introduce the ArchitectureIQ benchmark. Each question presents a synthetic dataset and several training recipes, and the test-taker is asked to predict the recipe yielding the best test metric. Overall, we find that LLMs' model intuition is good but has four limitations: (1) The intuition is imperfect, or even sub-human i",
-      "title": "ArchitectureIQ: On the Measure of Training Intuition"
+      "summary_zh": "頂尖研究者往往能在執行實驗前，憑直覺判斷某個架構或訓練超參數改動是否值得一試。本文提出 ArchitectureIQ，用來量測大型語言模型與人類是否具備同等的「模型直覺」。每題給出一個合成資料集與數個完整訓練配方（模型架構、最佳化器、損失函數、批次大小與訓練步數），受測者必須在不執行訓練的情況下，預測哪個配方能取得最佳測試指標。所有題目皆由程式生成並實際執行十個隨機種子以確立標準答案，藉此排除預訓練階段的資料記憶。在 500 題三選一的靜態基準上，前沿模型約達 76.0% 準確率，遠高於隨機猜測的 33.3%，而十位機器學習研究者中最佳者僅 66.0%；但在純架構題上，最佳人類為 65%，GPT-6 Astra 僅 38%，顯示模型在架構判斷上反而弱於人類。作者進一步指出四項限制：直覺不完美、屬經驗性而非結構化（增加 CoT 運算或少量示範皆無顯著增益）、可被壓縮（僅 20 條命題的知識庫即可讓 GPT-4o 逼近 Claude Opus 5）、以及對資料集性質不敏感。配對的資料翻轉實驗顯示，當僅更換資料集就足以改變贏家時，模型準確率驟降至 46–50%，且僅在 6–23% 的配對中改變選擇，凸顯資料仍是 AI 中的「暗物質」。此基準的價值在於把難以言傳的實驗直覺變成可執行、可驗證的量化探針，並示範如何把反覆的實驗證據轉化為可重用的知識。限制在於資料集全為合成、訓練規模短小，與真實大型訓練仍有落差。",
+      "title": "ArchitectureIQ: On the Measure of Training Intuition",
+      "title_zh": "ArchitectureIQ：論訓練直覺的度量"
     },
     {
       "arxiv_id": "2609.40121",
@@ -7561,7 +7703,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.40121",
       "summary": "While Abstract Meaning Representation (AMR) has historically improved performance on a range of NLP tasks, the benefit---or lack thereof---of AMR augmentation for modern LLMs is thus far unclear. In this paper, we attempt to reproduce recent work that reported substantial downstream gains from AMR augmentation, finding that these are likely due to specific choices in the experimental settings used: using a consistent and unified protocol for hyperparameter selection, we observe that text-only ba",
-      "title": "On the (In)effectiveness of AMR Augmentation for Large Language Models"
+      "summary_zh": "這篇論文檢驗一個常見假設：把 Abstract Meaning Representation（AMR）這類語意表徵接進大型語言模型（LLM）的輸入，是否能提升下游任務表現。過去在 BERT、T5 等較早期模型上，AMR 曾被證實對資訊檢索、問答、摘要、改寫等任務有幫助，但對現代 LLM 是否仍有效並不清楚。作者重現 Zhang et al. (2025) 的監督式 fine-tuning 實驗，在 Llama-3.1-8B-Instruct 與 Qwen3-8B 上，改用統一且一致的超參數選擇協定，並納入 joint 與 individual 兩種訓練方式。結果顯示，純文字基線在多數任務上等於或優於 AMR 增強模型；36 組設定中僅兩組出現顯著差異，因此推論先前報告的增益很可能來自特定的實驗配置與自建資料集，而非 AMR 本身。作者進一步把評估擴展到 RAMS、CNN/DailyMail、ANLI、LogiQA 等多句任務，排除單句基準已飽和的可能性，但 AMR 仍未帶來一致改善。為探究原因，他們以 AMR-NLD 產生自然語言描述的關係內容，並比較模型在純文字、文字加 AMR、文字加去關係節點三種條件下的困惑度。結果發現 AMR 雖降低困惑度，但去關係控制組也幾乎同樣降低，顯示差異來自格式偏誤而非新增關係知識。論文限制包括僅測試 8B 模型為主、只涵蓋 AMR 一種表徵、未處理 parser 錯誤，且僅在 fine-tuning 階段整合。其貢獻在於提供可重現的否證證據，並提示語意表徵的價值可能需在預訓練等更根本層次重新評估。",
+      "title": "On the (In)effectiveness of AMR Augmentation for Large Language Models",
+      "title_zh": "論 AMR 增強對大型語言模型的（無）效用"
     },
     {
       "arxiv_id": "2609.39306",
@@ -7661,7 +7805,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.39306",
       "summary": "Iterative self-distillation enables LLM agents to learn from successive deployments, offering a path toward recursive self-improvement (RSI). Yet our experiments with existing methods reveal a collapse in deployment performance across cycles, while task performance with privileged information (PI) also declines. We address this collapse by prioritizing informative interaction steps for distillation and preserving PI-conditioned behavior as the student becomes the next teacher. We introduce Reten",
-      "title": "ReSAIL: Mitigating Collapse in Iterative Agent Self-Distillation"
+      "summary_zh": "大型語言模型代理可透過多輪互動產生軌跡，並以訓練時才提供的特權資訊（privileged information, PI）進行自我蒸餾，逐步把行為內化到模型參數中，形成遞迴自我改進的循環。然而作者以 SDPO 與 OEL 進行實驗後發現，隨著部署週期反覆進行，部署時的成功率會明顯崩壞，而依賴 PI 的任務能力也同步下滑。作者將問題歸結為兩點：其一，並非所有互動步驟都值得蒸餾，PI 對教師預測影響越大的步驟才帶有最多可轉移的訊號；其二，學生在下一週期會成為教師，但基礎目標只訓練無 PI 的視角，並未保留其 PI 條件行為。為此，作者提出 ReSAIL，一套可外掛於既有 PI 自我蒸餾方法的增強模組。它包含軌跡平衡選擇式蒸餾（TBSD）與特權保留（PR）：前者以教師在含 PI 與不含 PI 兩種輸出分布間的 Jensen–Shannon 散度定義 PI 敏感度，只保留敏感度最高的步驟，並在軌跡層級重新平衡損失，避免長軌跡主導；後者則在所有步驟上，把學生的特權視角輸出分布正則化回凍結教師，使更新後的學生仍能勝任下一週期的教師角色。在 ALFWorld 與 TextCraft 上，ReSAIL 分別加掛於 SDPO 與 OEL，於 Qwen3-4B 與 Qwen3-8B 兩個規模、三個部署週期皆維持增益，最終週期成功率平均較對應基線提升 22.5 個百分點，且不再出現逐週期衰退。消融顯示，選擇機制在單週期內最有效，保留機制則決定跨週期的穩定；以相同比例比較時，只挑最不敏感的步驟反而比隨機更差，說明準則本身才是關鍵。此外，作者把 PI 敏感度當作離線資料篩選器，在 AITZ 多模態 GUI 代理上保留前 80% 步驟，動作預測準確率由 64.89% 提升至 65.95%。限制方面，特權保留會使訓練迴圈成本增至 OEL 的約 1.23 倍，評測僅涵蓋三個週期與三個解碼種子，曲線亦來自單一訓練種子，且未評估摘要生成品質與後續教學效果。整體而言，這是首度指出迭代式代理自我蒸餾的崩壞可透過更穩健的學習機制有效緩解，對持續自我演進代理的訓練流程具實務意義。",
+      "title": "ReSAIL: Mitigating Collapse in Iterative Agent Self-Distillation",
+      "title_zh": "ReSAIL：減緩迭代式代理自我蒸餾中的效能崩壞"
     },
     {
       "arxiv_id": "2609.39243",
@@ -7755,7 +7901,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.39243",
       "summary": "Causal interventions such as activation patching and distributed alignment search (DAS) are the main tool for making mechanistic claims about neural networks. Recent work showed that these interventions routinely push representations off the model's natural distribution, and that such divergence is sometimes harmless and sometimes pernicious: it can recruit pathways the model never uses on natural inputs, so that an intervention produces the expected answer through the wrong mechanism. No method",
-      "title": "Right Answer, Wrong Mechanism: Detecting Pernicious Divergence in Causal Interventions"
+      "summary_zh": "本文探討機械可解釋性中一個核心難題：activation patching、DAS 等因果干預常把表徵推離模型自然分布，這種分歧有時無害，有時卻「有害」——干預透過模型在自然輸入下從未使用的路徑給出預期答案，形成「對的答案、錯的機制」。由於真實網路缺乏ground truth，作者改在預訓練語言模型（GPT-2 small）中植入隱藏路徑：這些路徑在所有 benchmark prompt 上恆為靜默，因此不改變模型行為，但當干預把下游狀態推離自然範圍時便會啟動，藉此為每個干預提供精確標籤。研究涵蓋 72 種設定、100,800 次干預，主要發現有三：其一，先前常用的 nearest-neighbour 與 local-PCA 站點距離，在辨識「藉植入路徑成功」的干預上低於隨機（AUROC 0.35–0.47）；其二，作者提出無需標籤的下游因果檢測 Hidden-Pathway Contribution（HPC），將下游單元夾限於同輸出自然執行時的範圍，量測決策消失多少，當路徑表現為單元層級越界活動時 AUROC 可達 0.99 以上，但若整條路徑的每個單元都落在自然範圍內（in-range）則失效，作者將此列為未解難題；其三，最佳化干預會主動尋找隱藏路徑：在性別任務上，四類路徑家族中有三類，DAS 有 90–95% 的成功案例是經由植入路徑達成，即使在 DAS 目標中加入下游 on-manifold 懲罰，也只能把此比例從近乎全部降到 5% 以下，代價是成功率下降 6–11 個百分點，且對受限 DAS 的假成功僅部分抑制。在未修改的 GPT-2 上，成功干預幾乎不依賴單元層級越界活動（比率近 0），受限 DAS 成功率亦極低，但作者以 positive control 界定此結論的敏感度：in-range 組合型的依賴無從偵測，且結果僅限 124M 參數的小模型，是否推廣至大型模型仍待驗證。此基準為後續開發能找出「單元組合異常」的檢測器提供了明確靶標。",
+      "title": "Right Answer, Wrong Mechanism: Detecting Pernicious Divergence in Causal Interventions",
+      "title_zh": "對的答案、錯的機制：偵測因果干預中的有害分歧"
     },
     {
       "arxiv_id": "2609.39971",
@@ -7855,7 +8003,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.39971",
       "summary": "Vision-language-action (VLA) models can exceed 90% success on in-distribution tasks and withstand nuisance changes that preserve the required action, yet fail under counterfactual changes that demand a different action. Aggregate robustness scores can therefore conceal a more specific failure, in which a policy responds to both language and vision yet does not combine them to select the action the task requires. We call this failure instruction-action binding. Instructions cue familiar trajector",
-      "title": "When Instructions Retrieve Trajectories: Diagnosing and Mitigating Generalization Failures in VLA Models"
+      "summary_zh": "這篇論文指出 Vision-Language-Action（VLA）模型在分布內任務可達九成以上成功率，也能忍受不改變所需動作的 nuisance 擾動，卻在要求不同動作的 counterfactual 擾動下失效；作者將此現象命名為 instruction-action binding（指令—動作綁定）。他們在 LIBERO-PRO 上以官方 π0.5 與 GR00T-N1.7 checkpoint 進行 381 次行為探針，發現 69% 的 rollout 會重播來源任務或其他已示範任務的軌跡，僅 4% 是無結構崩潰，顯示語言與視覺皆被使用，卻未被共同用來選擇正確動作。接續的前綴 KV 讀出與干預實驗顯示，任務條件化的內部狀態確實會影響動作選擇：替換 prefix-KV 快取可把手臂導向目標任務物件，而來源任務完成率由 200/200 降至 0。作者由 flow matching 的模仿目標分析，說明條件動作支撐過窄會讓 grounded 與 instruction-keyed 解在示範上無法區分，因而提出 Equivariant Counterfactual Training（ECT）：ECT data 提供同一指令下需不同動作、且場景可辨的合法示範，ECT loss 則在每次更新中同時訓練成對的對照樣本。在 LIBERO-PRO 受控比較中，完整 ECT 把 π0.5 平均 Swap 成功率由 36% 提升至 59%；在 CALVIN 上，僅用 ECT loss 即可把五任務完成率由 58% 拉到 76%；在真實 UR5e 且固定示範預算下，未見位置成功率由 8% 提升到 88%。資料量掃描顯示，把原始示範由 25% 增加到 100% 仍無法縮小 counterfactual 落差，支持「缺少的是場景相依的動作替代選項，而非樣本數」。限制方面，Swap 與 Task 在 ECT 後仍低於分布內表現，配對訓練中多項因素共同作用、機制未明，且方法目前只在任務特定 fine-tuning、非接觸密集的操作情境驗證。此工作的重要性在於把 VLA 失效從「忽略語言或視覺」重新定位為任務層級的動作選擇問題，並提出可操作且跨架構、跨模擬與真機的監督準則。",
+      "title": "When Instructions Retrieve Trajectories: Diagnosing and Mitigating Generalization Failures in VLA Models",
+      "title_zh": "當指令檢索軌跡：診斷與緩解 VLA 模型的泛化失效"
     },
     {
       "arxiv_id": "2609.39533",
@@ -7958,7 +8108,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.39533",
       "summary": "During reinforcement learning with verifiable rewards (RLVR), large language models (LLMs) can exploit loopholes in their environments to obtain high rewards without improving the intended capabilities, i.e., reward hacking. Despite its risks to training efficiency and safety, monitoring and mitigating reward hacking during training remain challenging, which is limited by a lack of testbeds that reproduce hacking and reliably identify it. We introduce CATCH, a controllable testbed for studying r",
-      "title": "CATCH: A Controllable Analysis Testbed for Reward Hacking in Coding RL"
+      "summary_zh": "這篇論文關注可驗證獎勵強化學習（RLVR）中的獎勵駭客（reward hacking）問題：大型語言模型在訓練時可能利用環境漏洞取得高分，卻未真正提升目標能力，使訓練獎勵失去作為任務成功指標的意義。作者指出，既有測試平台多半只暴露簡單、容易被察覺的漏洞，或直接停用思維鏈（CoT），因此無法在訓練全程追蹤駭客行為與監測器效能的共同演化。為此，他們提出 CATCH：刻意在 SWE 風格的程式碼環境中植入三類漏洞——修改測試檔、利用測試資料（硬編答案）、干擾執行流程，並搭配「似是而非的工程理由」讓漏洞利用得以隱藏在正當開發工作中。此平台同時執行可駭的 Hackable Run（提供代理獎勵）與不可駭的 Unhackable Run（獨立稽核正確性），藉此給出以執行結果為依據的黃金標籤；並可透過 SFT 資料混合比例控制模型初始駭客傾向，以及透過獎勵設計調整取得獎勵的難度。實驗以 Qwen3-4B 與單輪 GRPO 進行，結果顯示代理獎勵上升而真實獎勵下降，且 RL 會放大原本微弱的駭客傾向，獎勵越難取得越早出現駭客行為。作者進一步比較 CoT 監測器、χ² 正則化與梯度正則化，發現 CoT 監測器雖能短期抑制駭客，但偵測召回率隨訓練下降；消融分析顯示模型學會用程式註解誤導監測器，移除註解反而提升偵測率。限制在於實驗僅涵蓋 Qwen3-4B，且受控的演算法包裝環境無法完全反映真實軟體倉庫的複雜度。此工作的重要性在於強調：安全機制必須在訓練全程評估，因為模型會持續適應並侵蝕防護。",
+      "title": "CATCH: A Controllable Analysis Testbed for Reward Hacking in Coding RL",
+      "title_zh": "CATCH：可控制的分析測試平台，用於研究程式碼 RL 中的獎勵駭客行為"
     },
     {
       "arxiv_id": "2609.40103",
@@ -8056,7 +8208,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.40103",
       "summary": "Large language models (LLMs) are increasingly deployed as automated judges for AI-generated content, yet a single judge is unreliable and even a panel of judges leaves a hard residue: when judges disagree, majority voting discards the conflict instead of resolving it. We present JuryFlow, a disagreement-guided, human-in-the-loop multi-agent evaluation framework that treats inter-judge disagreement not as noise to be averaged away, but as a precise, claim-level signal indicating where an evaluati",
-      "title": "JuryFlow: Disagreement-Guided Human-in-the-Loop Multi-Agent Evaluation"
+      "summary_zh": "這篇論文處理大型語言模型（LLM）作為自動評審時的可靠性問題：單一評審容易受位置、冗長度與自我偏好等偏誤影響，而即使改用多位評審組成的 panel，一旦評審之間出現分歧，多數投票往往只是把衝突平均掉，並未真正解決。作者提出 JuryFlow，把評審間的分歧視為精細到 claim 層級的不確定性訊號，而非雜訊。方法分五階段：先由多個異質 judge agents 把候選回應拆解成原子化 claim 並給出逐項判定與維度標籤；接著建構 disagreement graph，節點以判定熵計分、邊則編碼 claim 之間在標籤 Jaccard 相似度與 embedding 餘弦相似度上的結構關聯；再由人類只做一次最小介入，選出最關鍵的爭議 claim（實驗中改以熵排序自動選取）；隨後進行傳播式重評，焦點 claim 依證據重新判定，修正沿圖的邊擴散到相關 claim，並透過最近鄰檢索延伸到歷史上相似案例；最後把修正抽象成可重用的 rubric 條目，讓所有 judge 在後續評估中繼承，形成可自我精進的評估器。在 MT-Bench 與 LLMBar 上，JuryFlow 與 gold label 的一致率高於單一評審與多數投票 panel：MT-Bench 準確率由 0.804 提升至 0.857，LLMBar 由 0.679 提升至 0.784，Cohen's κ 亦同步上升。消融實驗顯示焦點重評、傳播與 rubric 歸納各有貢獻，且 LLMBar 上傳播的貢獻大於 rubric 歸納；傳播閾值 β 呈現倒 U 形的準確率—成本權衡，β=0.5 時最佳。研究亦發現僅靠單一模型的多 persona panel 效果有限，真正的模型多樣性才是增益來源。限制在於：所有人類引導模式均未經使用者研究驗證，熵無法偵測評審間高度相關的共識錯誤，跨案例傳播與持續增長的 rubric 會推升推論成本並有漂移風險，且實驗僅涵蓋兩個英文基準。其意義在於把人類從標註者重新定位為結構導引者，並將分歧解析與評估準則的精進串成閉環。",
+      "title": "JuryFlow: Disagreement-Guided Human-in-the-Loop Multi-Agent Evaluation",
+      "title_zh": "JuryFlow：以分歧為導引的人機協作多代理人評估框架"
     },
     {
       "arxiv_id": "2609.39223",
@@ -8161,7 +8315,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.39223",
       "summary": "Large language model (LLM) inference is increasingly moving toward lower precision to realize the throughput of hardware accelerators, but aggressive post-training quantization (PTQ) can degrade model quality. We present QATFactory, an open-source framework for deployment-aligned quantization-aware distillation (QAD) and reinforcement learning (QARL). QATFactory simulates deployment-time quantization while performing matrix multiplications in BF16, allowing models to adapt to quantization noise ",
-      "title": "QATFactory: A Versatile, Deployment-Aligned Framework for Quantization-aware Training and Distillation of LLMs"
+      "summary_zh": "大型語言模型推論正朝向低精度發展，但激進的訓練後量化（PTQ）常導致模型品質下降。本論文提出 QATFactory，一套開源的部署對齊量化感知蒸餾（QAD）與量化感知強化學習（QARL）框架。其核心設計原則是「把推論引擎視為數值規格」：針對 NVFP4、MXFP4 與 llama.cpp 的 Q4_K 等格式，以對齊引擎的假量化器重現其可表示值集合、區塊結構、捨入行為與階層式縮放規則，同時所有矩陣乘法仍以 BF16 執行，因此無需原生支援目標格式的硬體，例如可在缺乏 FP4 Tensor Core 的 H100 上進行 NVFP4 訓練。框架涵蓋稠密與 MoE 模型、全參數與 LoRA 訓練，並可將檢查點直接匯出至 vLLM、SGLang 與 llama.cpp，免除額外的有損轉換或推論負擔。作者在 8B 至 230B 參數模型上進行實驗，於生產推論引擎中評估。結果顯示 QAD 在多數格式與模型上穩定優於 RTN 與 GPTQ 等強基準：Qwen3.5-9B 在 NVFP4 下平均準確率達 68.9%，MXFP4 下達 66.0%，分別高於最佳 PTQ 的 65.4% 與 56.4%。研究亦發現最佳訓練策略與格式相關：NVFP4 僅量化權重較佳，MXFP4 則需同時量化權重與激活；rank-16 LoRA 可降低約 2.9 倍 GPU 記憶體，但提高 rank 無法彌補與全參數 QAD 的差距；固定 token 預算下，以較少 32K 序列訓練優於較多 4K 序列，平均提升 1.9 個百分點。NVFP4 QARL 相較 BF16 RL 後接 PTQ，端到端吞吐提升 1.23 倍，五項數學基準平均準確率提升 2.7 個百分點。主要限制在於部分格式與訓練精度的取捨仍屬經驗性解釋，且未涵蓋新興的查表式格式。",
+      "title": "QATFactory: A Versatile, Deployment-Aligned Framework for Quantization-aware Training and Distillation of LLMs",
+      "title_zh": "QATFactory：對齊部署情境的 LLM 量化感知訓練與蒸餾框架"
     },
     {
       "arxiv_id": "2609.39405",
@@ -8263,7 +8419,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.39405",
       "summary": "Task vectors provide a simple mechanism for composing learned capabilities through model merging. However, the composability of task vectors produced by on-policy distillation (OPD) remains largely unexplored. OPD trains a student using teacher feedback on student-generated trajectories, yielding parameter updates that differ from those produced by the teacher model, usually by reinforcement learning (RL). We therefore ask whether OPD task vectors can complement their RL teacher updates and comp",
-      "title": "No Task Vector Is an Island: A Comprehensive Study on the Composability of Task Vectors from On-Policy Distillation"
+      "summary_zh": "這篇論文探討一個過去少有研究的問題：由同策略蒸餾（on-policy distillation, OPD）所產生的任務向量（task vector），是否具備良好的可組合性。OPD 讓學生模型在自身生成的軌跡上接受教師的詞元層級回饋，因此其參數更新結構與教師以強化學習（RL）訓練出的更新並不相同。作者想確認兩件事：在單一任務內，把較弱的 OPD 學生任務向量與其 RL 教師任務向量合併，能否勝過兩者；以及跨任務時，OPD 任務向量是否比對應的 RL 任務向量更容易合併、保留專家能力。實驗涵蓋五個領域（數學、程式、指令遵循、科學、Agent 工具使用）與兩種模型架構（SmolLM3-3B、Qwen3-4B），並比較 Task Arithmetic、TIES-Merging、TSV-M 與 Raw Sum 等合併規則。結果顯示，單一任務內有 12 組任務－合併設定中的 7 組在點估計上同時超越兩個端點，例如 Qwen3-4B 在 Code 上 TIES 合併比 RL 教師高 3.73 個百分點；跨任務方面，OPD 組合在 8 組主幹－合併規則比較中有 7 組平均分數高於 RL 組合，且相對於各自專家平均的落差皆較小。參數空間分析指出 OPD 與 RL 更新之間有大量非共線成分，SmolLM3 在 Code 的範數匹配對照支持方向互補性，OPD 更新在前 10% 高能量前饋通道的重疊度也較低，平均 Jaccard 相似度由 0.154 降至 0.111。限制在於作者明言多數比較僅為三次重複的平均點估計，未建立統計顯著性；方向保留的改善僅見於 Code、Science 與 Agent，Math 與 IF 反而下降，且部分基線協定（如 avg@64）不一致，故不能過度推論方法優劣。此研究的意義在於指出「可組合性」是評估後訓練更新的一項獨立性質：單獨表現較弱並不代表合併價值較低，這對多專家整合與模型合併的實務具有啟發。",
+      "title": "No Task Vector Is an Island: A Comprehensive Study on the Composability of Task Vectors from On-Policy Distillation",
+      "title_zh": "沒有任務向量是一座孤島：同策略蒸餾任務向量可組合性的綜合研究"
     },
     {
       "arxiv_id": "2609.39560",
@@ -8356,7 +8514,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.39560",
       "summary": "Sampling several responses and voting over their answers can improve a language model's accuracy, but repeated answers limit the benefit of additional samples. Raising temperature increases diversity at a potential cost to per-sample accuracy. We introduce Self-Repulsion (SR), a sampler for masked diffusion language models that uses peer commitments to diversify the pool. At each penalized denoising step, each path lowers a token's logit according to how many peers have committed that token at t",
-      "title": "Self-Repulsive Sampling for Diffusion Language Models"
+      "summary_zh": "這篇論文針對擴散語言模型的多路徑取樣問題：雖然多取幾個答案再投票可提升準確率，但答案重複會讓額外樣本失去效益，而提高溫度雖增加多樣性，卻往往犧牲單題準確率。作者提出 Self-Repulsion（SR），一種可直接套用的取樣器：在遮罩式擴散語言模型的每個去噪步驟中，每條路徑依「同伴已在同一位置選定的 token 數量」調降該 token 的 logit。K 條路徑共用一次批次前向傳播，之後依序提交（稱為 cascade），因此後面的路徑能看到同一階段中較早路徑的選擇。此機制不需訓練、不需額外前向或反向傳播，且在溫度為零時仍能產生不同路徑；當所有路徑同時提交同一位置時，更新等同於最大化總 logit 減去凸的重复成本。實驗以 LLaDA-8B-Instruct 在 GSM8K、MATH 與 TruthfulQA 上評估：在 10 條路徑、128 步去噪下，確定性 SR 在 GSM8K 達到 80.38% 多數投票準確率，優於未加懲罰貪婪解碼的 70.17%；在溫度 0.6 且計算預算相同時，相較 self-consistency 在 32 塊半自回歸設定提升 2.06 個百分點、純擴散設定提升 14.50 個百分點。分析顯示投票增益主要來自正確答案覆蓋率提升，而非投票器選擇力變好。限制在於證據僅涵蓋 LLaDA 系列模型，精確配置結果只在共享 logit 的局部條件下成立，且池子變大後如何選出正解仍是未解問題。",
+      "title": "Self-Repulsive Sampling for Diffusion Language Models",
+      "title_zh": "擴散語言模型的自排斥取樣"
     },
     {
       "arxiv_id": "2609.39801",
@@ -8453,7 +8613,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.39801",
       "summary": "Post-training quantization (PTQ) has become a widely adopted technique for reducing the memory footprint and inference cost of large language models (LLMs). However, recent studies reveal that when applied to reasoning models, PTQ not only degrades reasoning performance but also exacerbates overthinking, leading to longer reasoning trajectories. These issues may offset the efficiency gains expected from lower-precision inference. Existing approaches mainly rely on complex optimization procedures",
-      "title": "RATIO: Reasoning Analysis and Token-level Inference Optimization for Quantized Reasoning Models"
+      "summary_zh": "這篇論文處理的是後訓練量化（PTQ）用在大型推理模型上的副作用。過去的觀察指出，低位元量化不僅會拉低推理準確率，還會加重「過度思考」，讓模型產生猶豫、反覆驗證等冗長片段，鏈式思考長度變長，反而侵蝕了量化原本要帶來的效率紅利。既有做法多倚賴複雜的最佳化流程，或是由人工預先指定過度思考標記、再套用統一懲罰，難以適應不同模型在量化後各自偏移的 token 分布。作者提出的 RATIO 是一套免訓練的框架：先以「量化感知推理行為分析（QRBA）」找出模型專屬的過度思考 token，作法是在相同推理脈絡下比較全精度與量化模型的下一個 token 機率偏移，並用真實量化軌跡做行為與軌跡層級驗證，篩選出與錯誤或重複推理相關者；再用「token 專屬懲罰判定（TSPD）」，以全精度模型為參照，在 logit 空間計算各 token 需要的修正量，取中位數並於 AWQ、GPTQ 間保守取小，最後於推論時扣減對應 logit。實驗涵蓋 DeepSeek-R1-Distill 的 1.5B、7B、14B、Llama-8B 與 Qwen3-4B，在 AWQ 與 GPTQ 的 W3 設定下，相較未校準的量化基準最高提升 9.8 個百分點準確率，並最多縮短 51.3% 的 CoT 長度。消融顯示 QRBA 與 TSPD 互補；FlatQuant W4A4KV4 上也見效果。限制在於懲罰於推論期間固定不變，且 token 篩選需事先蒐集量化軌跡與量化模型變體，作者因此建議未來發展依推理狀態動態調整的校準策略。",
+      "title": "RATIO: Reasoning Analysis and Token-level Inference Optimization for Quantized Reasoning Models",
+      "title_zh": "RATIO：針對量化推理模型的推理解析與 token 層級推論最佳化"
     },
     {
       "arxiv_id": "2609.39702",
@@ -8546,7 +8708,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.39702",
       "summary": "Adapting a language model to a specialized corpus means choosing which instruction-tuning tasks to train on under a fixed budget, and testing one choice costs a fine-tuning run. Common heuristics add more source tasks or pick sources similar to the target. The first assumes transfer is never negative; the second, that it is symmetric. We show that both assumptions fail: task $A$ can help task $B$ while $B$ hurts $A$, so helpfulness is a signed property of ordered source--target pairs. We introdu",
-      "title": "A helps B while B hurts A: directed transfer in instruction-tuning mixture"
+      "summary_zh": "這篇論文挑戰指令微調資料混合的兩項常見假設：遷移不會為負，以及遷移是對稱的。作者固定語料、預算與任務來源，證明任務 A 可以幫助任務 B，而 B 卻傷害 A，因此「助益」是帶正負號、且有方向性的配對性質。他們提出轉移圖（transfer map）：以線性資料模型對每個「來源—目標」配對給出正負估計，並在 Qwen3（0.6B 至 32B）與 Mistral-24B 上執行數百次微調，目標任務完全不給訓練樣本。主要證據顯示，轉移圖能在訓練前預測未見混合的準確率，誤差不到混合無關基線的一半；在推理型目標（因果解釋、多跳問答、方法學批判）上，準確率最多提升 14 個百分點。值得注意的是，單一干擾型任務可抵銷其餘任務的效益，而相似度選擇器因不帶正負號，無法區分有助與有害的來源。轉移圖在模型家族與規模間大致一致，換語料則需重新探測。限制在於評分全靠自動規則、段落與來源劑量未能完全控制、預測測試單元數偏少，且混合被當成集合，忽略訓練順序的影響。",
+      "title": "A helps B while B hurts A: directed transfer in instruction-tuning mixture",
+      "title_zh": "A 助 B 而 B 傷 A：指令微調混合中的有向遷移"
     },
     {
       "arxiv_id": "2609.39869",
@@ -8642,7 +8806,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.39869",
       "summary": "Grammar-constrained generation guarantees syntactic validity, but can substantially degrade semantic quality when the model's preferred outputs are poorly aligned with the imposed grammar. This trade-off is particularly severe when the prompt is underspecified or the model has limited instruction-following ability. Beam search can partially mitigate these failures by exploring multiple valid sequences, but its computational cost grows with beam width, while sequence-level probability is only an ",
-      "title": "GrammarRL: Effective Grammar-Constrained Decoding via Reinforcement Learning"
+      "summary_zh": "本文針對文法約束解碼（grammar-constrained decoding）的核心痛點：遮罩無效詞元雖能保證語法正確，卻可能在模型偏好與文法不符時嚴重損害語意品質，且在標註資料稀缺、指令遵循能力有限的情境下更為明顯。既有補救方式如 beam search 與事後機率近似（importance sampling、SMC）都在推論時付出額外算力，且序列層機率並非語意品質的良好代理。作者提出 GrammarRL，一種無需標註資料的標籤免費（label-free）強化學習方法：以凍結的預訓練模型提供兩個互補的自我監督獎勵，一是直接獎勵（給定輸入下輸出之對數概似），二是反向獎勵（由生成輸出重建輸入之對數概似），再以 RLOO 目標在一組文法約束的 rollout 上最佳化，並加入 beam search top-1 候選、以 KL 正則化約束於凍結基礎模型。實驗涵蓋手語 Gloss 翻譯、WoS 階層分類與 CoNLL 命名實體辨識，使用 1B 至 8B 的 Llama 模型。結果顯示相較貪婪解碼平均提升 9.8 分、最高增益 22.8 BLEU，在三項任務中的兩項達到或超越 beam search，且維持貪婪解碼的推論成本，亦勝過生成量多十倍的取樣式事後近似方法。消融實驗指出兩個獎勵具互補性：單一獎勵可能低於未訓練基準，混合後則在所有設定皆優於基準。限制包括需額外進行一次無標註強化學習訓練、更換文法須重訓，以及在 CoNLL 上冷凍模型的 beam search 仍略優於貪婪解碼的 GrammarRL。此工作的重要性在於把推論時的序列層修正攤銷進模型參數，為結構化生成提供低成本且無需標註的調適途徑。",
+      "title": "GrammarRL: Effective Grammar-Constrained Decoding via Reinforcement Learning",
+      "title_zh": "GrammarRL：透過強化學習達成有效的文法約束解碼"
     },
     {
       "arxiv_id": "2609.39450",
@@ -8736,7 +8902,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.39450",
       "summary": "LLM-based agents extend their capabilities through third-party skills that provide task-specific instructions, scripts, and tool-use procedures. However, malicious instructions inserted into an otherwise benign skill can cause a benign user request to trigger dangerous Tool Calls, including data exfiltration, file deletion, or unauthorized code execution. This paper presents ActionGuard, which inspects skill-influenced Tool Calls immediately before execution. ActionGuard separates the target age",
-      "title": "ActionGuard: Tool Call Authorization under Poisoned Skills"
+      "summary_zh": "大型語言模型代理常藉由第三方技能（skill）取得任務指示與工具使用流程，但攻擊者可在原本良性的技能中夾帶惡意指令，使代理在正常使用者請求下產生資料外洩、檔案刪除或未授權程式執行等危險的 Tool Call。本文提出 ActionGuard，於工具實際執行前攔截技能所影響的 Tool Call。其核心設計在於把目標代理的動作生成脈絡與防護機制的授權脈絡分離：目標代理仍可讀取原始技能來規劃任務，但 ActionGuard 不會把可能被投毒的原始技能文字直接交給 Reviewer 模型，而是以工作階段開始時擷取的可信使用者請求、由防護端獨立維護的平衡技能側寫（含一般工作流程與可疑訊號）、當前與近期 Tool Call，以及待執行本機指令碼中擷取的證據，來判斷動作是否獲得授權。系統於 OpenClaw 的 before_tool_call 階段攔截，並以 fail-closed 政策強制執行隔離語意 Reviewer 的 ALLOW 或 DENY 判定。實驗在 SKILL-INJECT 設定下評估 139 個情境式注入與 180 個明顯注入，並與 Dynamic Guardian 及 SkillGuard 比較，使用三個開源模型與兩個商用模型作為決策元件，每個條件獨立重複三次，以攻擊成功率（ASR）與任務成功率（TSR）衡量。結果顯示 ActionGuard 對兩類注入皆維持低 ASR 與高 TSR；整體評估中，相較既有防護機制降低 ASR 達 35.54–46.11%，相較無防護則降低 70.44%，且未明顯損害良性任務表現。限制在於僅於單一代理框架、單一目標模型與單一基準上驗證，且當良性與未授權動作被合併於同一 Tool Call 時會整筆封鎖，後續成敗取決於代理能否重新規劃；此工作凸顯以執行邊界授權與執行期行為證據防禦技能注入的價值。",
+      "title": "ActionGuard: Tool Call Authorization under Poisoned Skills",
+      "title_zh": "ActionGuard：遭受投毒技能下的工具呼叫授權機制"
     },
     {
       "arxiv_id": "2609.39549",
@@ -8838,7 +9006,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.39549",
       "summary": "As Large Language Model (LLM) agents are increasingly deployed in complex environments, multi-turn interaction attacks have become a significant security challenge. Existing detection methods typically rely on historical context. However, this retrospective logic struggles to identify deep malicious intents that are split across turns to hide future risks. Inspired by speculative decoding, we propose the Speculative Safety Honeypot (SSH) framework. SSH uses a multi-agent simulation system compos",
-      "title": "Speculative Safety Honeypot: Toward Proactive Defense Against Multi-turn Agent Attacks"
+      "summary_zh": "大型語言模型代理在多輪互動中面臨越獄與間接提示注入（IPI）攻擊，惡意意圖常被拆分到多個回合以規避偵測。現有防禦多依賴歷史脈絡進行回溯式判斷，難以在風險真正發生前察覺被隱藏的深層惡意意圖。本文借鏡推測式解碼（speculative decoding）的概念，提出推測式安全蜜罐（SSH）框架。SSH 以一組小型語言模型構成多代理模擬系統，建立動作層級的「先推測、後驗證」流程：在推測階段，由助理、使用者與環境三個模擬器（皆以未經安全對齊的模型搭配 Multi-LoRA 部署）非同步展開軌跡樹，並採用多樣性導向的 Beam Search，透過行為分群、雙層洗牌與輪詢選取，在有限算力下優先探索罕見且偏門的風險路徑；在驗證階段，以目標代理的真實動作為依據修剪軌跡樹，再交由既有偵測器對葉節點進行二元風險判定，並以風險葉節點比例作為風險分數，搭配命中與未命中兩種門檻觸發警示。實驗以 Qwen3-235B 等模型為目標代理，在 AgentDojo、ActorAttack、XSTest 與 BFCL-v3 上評估。結果顯示，結合 SSH 後 PromptGuard 與 Judger 的平均攻擊成功率皆降至 0%，同時受攻擊下的任務效用平均提升約 8 個百分點；在 ActorAttack 上，即使僅取樣一次（M=1），風險曝露率即達 84.5%，M=5 時攻擊被完全阻擋。效用方面，BFCL-v3 與 XSTest 的表現與部署前幾乎一致，平均風險分數接近零，誤報率約 0.2%。作者指出限制包括：平行推測帶來額外 GPU 記憶體與能耗成本，雖僅增加約 1.3% 參數量仍不可忽略；誤報雖低，仍會造成約 3 至 7 秒延遲與較保守的回覆。此工作的重要性在於把代理防禦由被動回溯轉為主動預測，降低對單一偵測器精度的依賴，為多輪時序攻擊提供具預警前置時間的防禦韌性。",
+      "title": "Speculative Safety Honeypot: Toward Proactive Defense Against Multi-turn Agent Attacks",
+      "title_zh": "推測式安全蜜罐：邁向對多輪代理攻擊的主動防禦"
     },
     {
       "arxiv_id": "2609.39645",
@@ -8937,7 +9107,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.39645",
       "summary": "Multi-agent collaboration lets large language models (LLMs) improve question answering through deliberation and feedback. Yet shared discussion couples correction with exposure to the same mistakes, which can erode the diversity needed for voting. Self-consistency offers sampling diversity without feedback, while single-pair Actor-Critic collaboration refines only one candidate. We introduce SEPAL, which assigns three private Actor-Critic teams to direct reasoning, evidence grounding, and verifi",
-      "title": "SEPAL: Separated Expert Pairs with Answer-Level Fusion for Reliable LLM Collaboration"
+      "summary_zh": "這篇論文處理多代理 LLM 協作中「修正」與「多樣性」互相衝突的問題。共享討論史雖能讓代理彼此糾錯，卻也讓同一個早期錯誤擴散到多個候選答案，削弱投票所需的多樣性；而 self-consistency 雖保留獨立取樣，卻缺乏回饋修正機制。作者提出 SEPAL，將三個私有 Actor–Critic 團隊分別指派給直接推論、證據支撐與驗證三種角色，以角色導向的訓練賦予各隊不同的推論目標，並限制 Critic 的回饋只在隊內流動，最後僅以各隊的最終答案進行多數投票，Direct 作為平手的固定備援。訓練沿用 ACC-Collab 的續寫正確率偏好規則，並以 DPO 訓練各角色。實驗涵蓋五個 2B 至 8B 的開源骨幹與五項問答基準，SEPAL 在 25 個模型–資料集組合中勝過匹配的單一 Actor–Critic 配對達 24 個，巨觀準確率平均提升 1.81 個百分點。分析顯示 Critic 引導的修正貢獻最大，且投票在 21 個設定中優於最強單一角色。限制在於僅回報單次固定執行、未做等算力比較與種子重複，且仍存在 9.81 分的 oracle 選擇落差。",
+      "title": "SEPAL: Separated Expert Pairs with Answer-Level Fusion for Reliable LLM Collaboration",
+      "title_zh": "SEPAL：分離式專家配對與答案層級融合，實現可靠的大型語言模型協作"
     },
     {
       "arxiv_id": "2609.39259",
@@ -9039,7 +9211,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.39259",
       "summary": "Modern neural networks scale predictably, yet the mechanisms behind these regularities remain unclear. Neural redundancy is typically characterized by component importance or representational similarity, both indirect proxies. We view redundancy as an input-conditioned, dynamic relation: intermediate computational states are functionally redundant when they induce similar downstream responses. We introduce Conditional Functional Substitutability (CFS) to directly characterize such functional sub",
-      "title": "Effective Does Not Mean Useful: Conditional Functional Substitutability for Redundancy and Scaling in Transformers"
+      "summary_zh": "這篇論文指出，過去用來描述神經網路冗餘的「重要性」與「相似度」指標都只是間接代理，無法說明某個計算單元是否真的不可替代。作者提出「條件式功能可替換性」（CFS）：在給定輸入下，把來源頭關閉、調整候選頭的補償係數，測量下游輸出損傷能被回復的比例。CFS 具備輸入條件性與方向性，因此能刻畫一個動態關係，而非靜態分數。實驗涵蓋 ViT、BERT 與 Qwen2.5 等 Transformer 家族，並以自訓 GPT-2 進行寬度、深度與固定參數下的頭分解控制實驗。結果顯示，尺度化會系統性重整功能結構：Raw Oracle 上升、覆蓋率與有效功能秩下降，代表新增容量同時帶來多樣性與重複利用，為報酬遞減提供微觀層次的解釋；在固定容量下，可替換性較低、獨立結構較多者表現較好。此外，CFS 可由前向狀態預測並用於動態元件選擇，在相同邏輯預算下比 Taylor 重要性路由更能保留稠密模型行為。限制在於：固定容量實驗屬關聯性而非因果、成對 CFS 無法完全預測聯合干預的高階交互作用，且目前後端仍執行稠密核心，尚未轉化為實際時鐘加速。",
+      "title": "Effective Does Not Mean Useful: Conditional Functional Substitutability for Redundancy and Scaling in Transformers",
+      "title_zh": "有效不等於有用：Transformer 中冗餘與尺度化的條件式功能可替換性"
     },
     {
       "arxiv_id": "2609.40253",
@@ -9142,7 +9316,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.40253",
       "summary": "Online training enables computer-use agents (CUAs) to improve through interaction with executable environments. However, existing methods primarily rely on sparse outcome rewards, which provide no supervision for intermediate actions. On-policy self-distillation (OPSD) offers token-level learning signals through privileged rescoring, but directly applying it to CUA online training presents two challenges: fixed guidance may become misaligned with the student's current state, and guidance-induced",
-      "title": "ComputerSD: Online Self-Distillation from Real-Time Feedback for Computer-Use Agents"
+      "summary_zh": "這篇論文針對電腦操作代理（computer-use agents, CUAs）的線上訓練問題。現有方法主要依賴環境驗證器給出的稀疏結果獎勵，只能判斷任務是否完成，無法指出一連串動作中哪些是有效、冗餘或錯誤的，因此信用分配始終是難題。既有的同策略自我蒸餾（OPSD）雖能在 token 層級提供學習訊號，卻面臨兩項挑戰：事先固定的特權指引可能與學生當前狀態錯位；而指引造成的機率位移也未必與步驟層級的正確性一致。作者提出 ComputerSD，把每個動作執行後 GUI 畫面轉換所產生的即時回饋轉為學習指引。經微調的 GUI 分析器在每個動作後輸出指引與步驟層級的價值分數：指引作為特權上下文供重新評分，價值分數則透過 sigmoid 閘門調節每個 token 的 OPSD 訊號強度。此 token 層級目標與軌跡層級的 GRPO 聯合最佳化，並以全非同步管線重疊環境互動、GUI 分析、特權重評與策略更新。在 OSWorld-Verified 上，ComputerSD 於通用型 Qwen3-VL-8B-Thinking 與專門化 EvoCUA-8B 兩個 8B 骨幹上，分別比純結果 GRPO 高出 1.9 與 4.1 個百分點；在訓練時保留的應用類別上增益更大（+5.9 與 +5.2），WindowsAgentArena 跨平台評測亦有一致提升。消融實驗顯示，改用固定指引或移除價值閘門都會使表現低於 GRPO。非同步管線的吞吐量約為同步版本的五倍。限制在於方法高度依賴 GUI 分析器的可靠性，若指引與價值判斷同時出錯，閘門無法完全補救；且作者僅在受控基準環境中評估，真實部署的安全性未涵蓋。其意義在於證明持續互動所產生的即時回饋，可提供超越稀疏任務結果的細粒度監督，為 CUA 的線上自我蒸餾提供實用途徑。",
+      "title": "ComputerSD: Online Self-Distillation from Real-Time Feedback for Computer-Use Agents",
+      "title_zh": "ComputerSD：以即時回饋進行線上自我蒸餾的電腦操作代理"
     },
     {
       "arxiv_id": "2609.39334",
@@ -9236,7 +9412,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.39334",
       "summary": "Test-time scaling has recently emerged as a powerful approach for improving LLM reasoning by allocating additional computation during inference, substantially enhancing accuracy on challenging tasks such as mathematics and coding. To accelerate the exploration of reasoning paths, recent studies proposed speculative execution. However, we show that supporting speculative execution poses two unique challenges for LLM serving systems: (1) an explosion in the search space of candidate paths and (2) ",
-      "title": "Taming Speculative Search for Test-Time Scaling in LLM Serving"
+      "summary_zh": "這篇論文探討大型語言模型在測試時擴展（test-time scaling）下的服務效率問題。此類方法以 beam search 搭配過程獎勵模型（PRM），反覆進行「擴展—驗證—選擇」以提升數學與程式推理準確率，但每步都需等待所有候選路徑完成驗證，導致 20–55% 的執行時間耗費在閒置等待。近期研究提出推測式執行（speculative execution），讓先完成的路徑提前擴展，卻帶來兩項新挑戰：候選路徑空間爆炸，以及頻繁且細碎的驗證工作，使 GPU 使用率低落並反覆打斷解碼。作者提出服務系統 SpecScale，以三項技術因應：一是早期剪枝（early pruning），當已驗證候選數超過 k 或累積 k 個滿分候選時，立即終止不可能進入最終 top-k 的分支；二是計算去重（computation deduplication），將共享相同前綴的候選合併為單次前向傳播，僅在取樣結果分歧時才分支；三是延遲驗證（lazy verification），將驗證請求排入佇列，依累積 token 量、同源群組完成與每樣本延遲次數上限三項策略批次送出。實驗以 Qwen2.5 與 Llama3 系列的生成器—驗證器配對，於 GSM8K、MATH-500、OlympiadBench 上、單張 A100 80GB 執行。結果顯示 SpecScale 在吞吐量與端到端延遲上皆優於非推測式與 FastTTS；MATH 上 8 beams 時吞吐量分別高出 1.51× 與 1.43×，答案準確率大致持平。限制在於延遲驗證的門檻需離線量測，且部分效益取決於模型產生滿分的頻率，Llama 系列受益較小。",
+      "title": "Taming Speculative Search for Test-Time Scaling in LLM Serving",
+      "title_zh": "馴服推測式搜尋：LLM 服務中測試時擴展的效率最佳化"
     },
     {
       "arxiv_id": "2609.39813",
@@ -9330,7 +9508,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.39813",
       "summary": "Low-precision training rounds tensors that the backward pass reads again, often for several gradients; each use can read the forward's rounded value, the original, or a new random rounding. This backward-state policy looks like a memory and precision detail, settled by copy accuracy and final loss. We argue that it is part of the learning algorithm, and that neither check shows whether it is right. Copy accuracy does not decide the outcome: in three pairs of 390M runs with an emulated FP8 backwa",
-      "title": "Backward-State Policy Is Part of the Learning Algorithm"
+      "summary_zh": "這篇論文主張：低精度訓練中「反向傳播該讀哪一份已捨入張量」的選擇，並非記憶體與精度細節，而是學習演算法的一部分。作者定義「使用（use）」為每次讀取已捨入張量的梯度計算，並將每個使用所讀的值（前向用過的捨入值 R、原始值 U、或同分布的新捨入 N）稱為反向傳播狀態策略。他們宣告一個參考標準：前向實際執行時的梯度，梯度依 straight-through 慣例穿過捨入不變。在此標準下，即使最精確的原始值也可能在某個使用上出錯，因為同一張量可能餵給需要不同值的多個梯度（例如正規化輸出：gain 的梯度需要原始值，下一層權重梯度需要捨入值）。實驗上，在 390M、模擬 FP8 反向傳播的三組配對中，重用前向捨入會使訓練失敗，而讀取同分布的新捨入則成功；僅更換反向傳播（保留 FP8 前向、改用 BF16 反向）即可消除 NVIDIA Transformer Engine FP8 attention 在三個種子上的失敗。最終損失則無法辨別策略是否遵循參考：多種策略的最終損失落在事先固定的 0.010 nats 邊界內，但訓練出的權重不同（gain 統計量分歧）。作者因此改為逐一使用檢查，從參考推導出每個使用可讀的值或其替代，並在 PyTorch 與 Transformer Engine 的三個運算子上預先登錄預測：checkpoint 重算、log-softmax 反向、TE FP8 attention 反向，全部預測皆成立。限制在於理論假設（如隨機捨入的獨立性、二次損失）與單運算子的量測範圍。",
+      "title": "Backward-State Policy Is Part of the Learning Algorithm",
+      "title_zh": "反向傳播狀態策略是學習演算法的一部分"
     }
   ],
   "run_date": "2026-10-01",
@@ -10299,7 +10479,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.39892",
       "summary": "Looped Transformers repeatedly apply the same set of Transformer layers, giving them a recurrent architecture for latent computation. Their strong performance on iterative reasoning and length-generalization tasks suggests an appealing explanation: recurrence may provide an inductive bias that lets the model reuse a learned algorithm across loops. However, weight sharing alone does not imply that every loop performs the same operation. This raises a basic question: is each loop actually repeatin",
-      "title": "Shared Weights, Selected Computations: How Looped Transformers Route What Each Loop Does"
+      "summary_zh": "這篇論文探討迴圈式 Transformer（Looped Transformer）的核心疑問：權重共享是否代表每個迴圈都執行相同運算？作者指出，由於進入共享層的隱藏狀態會隨計算推進而改變，相同的參數實際上可被導向不同的操作。研究以圖漫步（graph walk）任務為測試案例，先在原生軌跡中觀察到解碼預測可能每圈前進不同數量的圖步，或停留在已抵達的目標，顯示遞迴進展不必遵循「一圈一步」的固定規則。接著作者凍結共享 Transformer 層，僅在迴圈邊界訓練一個線性層 J，結果顯示只改變進入狀態即可讓同一組凍結權重分別選取一跳或兩跳目標，未引導時一跳準確率為 48.2%，加入 J 後可達 99.6%，兩跳則達 98.2%。機制分析上，作者以激活修補（activation patching）證明注意力模式可承接引導效果，甚至直接切換所選轉移，在 D8L6 與 Ouro-2.6B 多跳語言任務上皆成立；配對監督實驗則顯示，主幹訓練是否加入中間監督，會改變 J 能誘發哪些轉移，支持 J 是「選取」主幹已學得的運算而非創造新演算法。限制方面，控制器雖可連續套用兩個迴圈，但準確率隨組合長度增加而下降，且深度外推能力有限。此研究釐清遞迴深度的歸納偏誤，並指出長程遞迴推理的關鍵在於狀態能否持續與共享運算相容。",
+      "title": "Shared Weights, Selected Computations: How Looped Transformers Route What Each Loop Does",
+      "title_zh": "共享權重、選擇性計算：迴圈式 Transformer 如何決定每個迴圈做什麼"
     },
     {
       "arxiv_id": "2609.39687",
@@ -10400,7 +10582,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.39687",
       "summary": "On-policy self-distillation (OPSD) trains mathematical reasoning models using a privileged teacher that sees a reference solution and supervises student-sampled prefixes. Standard OPSD uses one fixed parameter setting at every state, but nearby settings may offer additional supervision. We find that local parameter perturbations reveal complementary reference-aligned corrections under the same reference context. Different experts supply these corrections at different reference positions. Their p",
-      "title": "Better Supervision Is Nearby: Neighborhood On-Policy Self-Distillation"
+      "summary_zh": "這篇論文關注同策略自蒸餾（OPSD）在數學推理訓練上的一個限制：特權教師雖然能看見參考解答，但在每一個學生造訪的狀態都使用同一組固定參數，因此可能沒有把同一個基礎模型所能提供的監督用盡。作者觀察到，對教師參數做微小的區域擾動後，不同擾動專家會在相同參考脈絡下產生互補的修正，且這些修正落在不同的參考位置上；把這些專家集合起來，能涵蓋比未擾動教師更多的參考位置。據此他們提出 NEIGHBORHOOD OPSD（N-OPSD）：離線階段以「過濾後的參考詞元機率提升」作為評分，利用貪婪邊際增益挑出精簡且互補的專家池；線上階段則把「錨定方向」與「支持程度」分開處理，先以 MaxPeak 選出錨定詞元，再用分位數選擇挑出與錨定一致的專家，由該專家提供完整的下一詞元分布，並沿用 OPSD 的截斷前向 KL 目標。實驗在 Qwen3-1.7B、4B、8B 上訓練，於 AIME 2024、AIME 2025 與 HMMT 2025 評估 Average@12。三次獨立訓練的結果顯示，相較於 OPSD，N-OPSD 在三項基準平均上分別提升 2.75、1.67 與 1.94 分，且在各模型尺度與基準上皆排名第一。消融實驗指出，過濾後的參考詞元增益是有效的選擇準則，考慮專家池內部重疊與依狀態路由都能進一步提升準確率；最高峰的專家未必提供最佳訓練目標。限制在於實驗僅涵蓋數學推理與 Qwen3 系列，專家池在訓練期間固定，未必能跟上學生變化，且推論時僅使用蒸餾後的學生模型。",
+      "title": "Better Supervision Is Nearby: Neighborhood On-Policy Self-Distillation",
+      "title_zh": "更好的監督就在附近：鄰域同策略自蒸餾"
     },
     {
       "arxiv_id": "2609.40295",
@@ -10500,7 +10684,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.40295",
       "summary": "Web text makes up the majority of pretraining data and is increasingly AI-generated. After applying FineWeb quality filtering, we find that 27.5% of tokens from June 2026 web data are labeled as AI-generated by Pangram, rising to 31.1% by August. Unlike synthetic data or model-collapse setups, this *wild* AI text comes from many models, is written for human readers, and arrives unlabeled in pretraining corpora. How does AI text in the wild affect language model pretraining? To answer this questi",
-      "title": "How Much Is an AI Token Worth? Scaling Laws for Wild AI-Generated Web Text"
+      "summary_zh": "這篇論文處理一個當前預訓練實務上的迫切問題：充斥網路的「野外」（wild）AI 生成文本，對語言模型預訓練究竟有何影響。作者先用 EditLens 與 Pangram 3.3.2 標註網頁資料，發現 2026 年 6 月通過 FineWeb 品質過濾的 token 中有 27.5% 為 AI 生成，8 月升至 31.1%，且 FineWeb 與 DCLM 的過濾流程反而偏好保留 AI 文件（分別為人類的 2.3 倍與 9.8 倍）。為了量化影響，他們預訓練 800 個模型（19.9M 至 973M 參數），改變 AI 與人類 token 比例，並在人類、混合與純 AI 文本上評估。核心發現是：AI 文本只對資料匱乏的模型有幫助，在 Chinchilla 最佳化的 20 tokens per parameter 之後，AI token 幾乎立刻提高人類文本的損失，而同樣數量的新的人類 token 仍能持續降低損失。既有縮放定律（如 Chinchilla、重複資料或混合資料定律）無法預測此現象。作者提出新定律，結合一項飽和的收益項與一項對數成長的傷害項，在沒有 AI 文本時退化回 Chinchilla，並將 AI token 的價值以人類 token 當量表示，允許其正負號改變。此法在保留的 477M 與 973M 模型上，預測誤差為 0.83×10⁻³，優於最佳既有定律的 1.41×10⁻³。推論指出，若不篩除 AI 文本，2026 年 8 月的 AI 佔比需多花 1.6 倍算力才能追平人類子集訓練，2028 年將達 3.0 倍。作者建議：以人類文本為目標時應過濾 AI 文本、優先重複人類文本再加 AI 文本，並分開報告人類與 AI 文本的驗證損失，因為在 22.3% AI 佔比的混合驗證集下，95.5% 的有害訓練會被掩蓋。限制在於最大只驗證到 973M 參數，且僅涵蓋英文網頁預訓練；更大模型的記憶與崩壞行為可能不同。作者釋出 WildAI 語料（83B token）、標籤、800 個模型與程式碼。",
+      "title": "How Much Is an AI Token Worth? Scaling Laws for Wild AI-Generated Web Text",
+      "title_zh": "一個 AI token 值多少？網路野外 AI 生成文本的縮放定律"
     },
     {
       "arxiv_id": "2609.40221",
@@ -10604,7 +10790,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.40221",
       "summary": "Training LLM agents with reinforcement learning (RL) is bottlenecked by environments, which must provide verifiable rewards, support long-horizon interaction, and scale cheaply. Existing approaches rely on costly human-curated data or on LLM-generated environments that risk hallucinations and benchmark contamination. We show that LLMs can instead be trained into capable search agents using synthetic environments generated entirely by rules, whose generation requires no LLM and has zero marginal ",
-      "title": "PhantomEnvironments: Training LLM Agents in Fictional Worlds"
+      "summary_zh": "以強化學習訓練 LLM 搜尋代理時，瓶頸在於環境：必須提供可驗證獎勵、支援長程多輪互動，且能廉價擴充。現行做法依賴人工整理語料（如 NaturalQuestions、HotpotQA），或由 LLM 生成環境，但後者帶來幻覺獎勵、基準資料污染、API 成本與生成器能力上限。本文提出 PhantomEnvironments，把 PhantomWiki 的虛構世界與模板化多跳問題，轉成可互動的多輪 RL 環境；整個生成流程完全由規則驅動，沒有真人、也沒有 LLM 參與，因此邊際成本為零，且答案可由 Prolog 精確驗證。研究者以 GRPO 全量微調 Qwen2.5-3B/7B-Instruct、Llama-3.2-3B-Instruct 與 Phi-4-mini-instruct，並在六個真實多跳搜尋基準上評估。結果顯示，在 Wikipedia-2018 系列（HotpotQA、2WikiMultihopQA、MuSiQue）平均提升約 1.7 倍，在較新且更難的 SynthWorlds-RM/SM 與 FRAMES 上約 2.2 倍，Llama 在 SynthWorlds-SM 上甚至提升 7.1 倍。此外，Qwen 模型學會依問題難度大致線性擴充搜尋次數，展現 emergent search scaling；且能泛化到未見過、甚至大 10 倍的虛構宇宙。與真實 NQ+HotpotQA 訓練相比，真實資料在同領域基準勝出，但在較新的跨領域基準上優勢收斂甚至消失；合成環境能把 SynthWorlds 的知識優勢落差降到 0%。複雜度消融顯示線性跳躍是遷移主軸，比較題能改善對應題型，而限制條件題反而因獎勵「逐字查詢」捷徑而傷害遷移。限制在於領域內知識記憶仍勝出，且環境設計須避免獎勵捷徑。此工作把規則生成環境定位為零邊際成本、可精確驗證、不會過時的新訓練資料來源。",
+      "title": "PhantomEnvironments: Training LLM Agents in Fictional Worlds",
+      "title_zh": "PhantomEnvironments：在虛構世界中訓練 LLM 代理"
     },
     {
       "arxiv_id": "2609.40190",
@@ -10705,7 +10893,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.40190",
       "summary": "Sampling several answers and keeping the one a verifier scores highest is one of the simplest ways to buy accuracy at test time. Its effect is reported as a scaling curve: accuracy against the number $k$ of sampled answers. The curve is cheap to draw and expensive to trust. A budget read off it is chosen after looking at every point, so only a band that covers all budgets at once protects the choice, and on a 100-question benchmark a fixed exact-binomial design needs 192,000 generated answers to",
-      "title": "Cheap to Draw, Expensive to Trust: Certifying Test-Time Scaling Curves"
+      "summary_zh": "本文研究語言模型測試時間擴展（test-time scaling）曲線的統計認證問題。作法上，作者先推導在固定題目清單上認證整條 best-of-k 曲線的 minimax 成本，指出成本由三部分組成：分數分布尾部的校準、題目之間的差異，以及沿曲線累加的題內雜訊；並證明在單一基準上，成本可收斂為某個「最佳答案分配下單一答案影響力的變異數」。據此提出「配對稽核」（paired audit）：每回合對每題各生成兩條路徑，利用成對 Bernoulli 抽樣的指數不等式，無需先導實驗即可隨時有效地給出同時涵蓋所有預算的信賴帶。在 185 組保留分數池上，配對稽核在 64、256、1024 個預算下分別只需最便宜競爭認證稽核 0.74、0.66、0.53 倍的生成答案數，且 3255 次執行全數涵蓋精確曲線；另在 MMLU-Pro 新生成研究中以 79133 個答案完成認證，與事前擬合的成本定律預測相差 0.6%。限制包括：配對稽核需付出兩個完整回合的啟動成本，因此在大基準、粗精度下反而較差；未知分數百分位數的價格僅對單題、均方誤差目標成立；相依軌跡僅涵蓋固定生成策略。此工作的重要性在於：實務上建議回報同時信賴帶而非單點曲線，並以 Proposition 1 據帶選擇預算，讓「花多少算力取樣才值得」這件事有可驗證的統計保證。",
+      "title": "Cheap to Draw, Expensive to Trust: Certifying Test-Time Scaling Curves",
+      "title_zh": "易畫難信：認證測試時間擴展曲線"
     }
   ]
 }

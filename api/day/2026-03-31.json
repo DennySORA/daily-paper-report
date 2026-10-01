@@ -4349,7 +4349,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:d3e4be48e4379691",
       "summary": "In this post, you'll learn how Ring implemented metadata-driven filtering for Region-specific content, separated content management into ingestion, evaluation and promotion workflows, and achieved cost savings while scaling up.",
-      "title": "How Ring scales global customer support with Amazon Bedrock Knowledge Bases"
+      "summary_zh": "本文說明 Ring 如何運用 Amazon Bedrock Knowledge Bases 擴展其全球客戶支援。其問題在於跨區域客服需要正確的在地內容，但集中式的知識庫容易讓不同地區的客戶看到不適用的說明；同時，內容一旦更新，如何在維持品質的前提下快速上線也是一大挑戰。作法是導入以中介資料（metadata）為基礎的過濾機制，讓系統能依區域篩選出對應的內容，並把內容管理拆分成擷取、評估與正式上線三個獨立流程，使內容變更能先經過品質檢核再發布，而非直接進入生產環境。文中指出，Ring 在擴大规模的同時也達成了成本節省。不過，摘要未提供具體量化指標，例如客服處理時間、自助解決率、準確度或成本降幅，也未說明評估流程的判準與人工介入程度，因此難以評估效益的普遍性。其參考價值在於展示以中介資料與分階段工作流來治理檢索增強生成（RAG）內容的實務模式，但成效仍需更完整的數據佐證。",
+      "title": "How Ring scales global customer support with Amazon Bedrock Knowledge Bases",
+      "title_zh": "Ring 如何以 Amazon Bedrock Knowledge Bases 擴展全球客服"
     },
     {
       "arxiv_id": null,
@@ -4409,7 +4411,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:857f220e61522f73",
       "summary": "In this post, we walk through two use cases that help enhance the user viewing experience using agentic AI tools and frameworks including Strands Agents SDK, Amazon Bedrock AgentCore, and Amazon Nova Sonic 2.0. This agentic AI system uses a Model Context Protocol (MCP) to deliver a personal entertainment concierge that understands user preferences through natural dialogue.",
-      "title": "Deliver hyper-personalized viewer experiences with an agentic AI movie assistant using Amazon Bedrock AgentCore and Amazon Nova Sonic 2.0"
+      "summary_zh": "本文以兩個使用案例，說明如何運用代理式 AI 工具與框架提升觀影體驗，技術組合包括 Strands Agents SDK、Amazon Bedrock AgentCore 與 Amazon Nova Sonic 2.0。其問題意識在於：串流平台內容龐雜，使用者往往難以在短時間內找到符合當下心情與偏好的作品，傳統推薦系統又多依賴歷史行為，缺乏可對話的互動性。作法是建構一套個人化娛樂助理，透過 Model Context Protocol（MCP）連接外部工具與資料來源，並以自然對話理解使用者偏好，進而提供推薦與操作協助；Nova Sonic 2.0 則負責語音層面的互動。不過，目前僅有摘要，未見架構細節、延遲與成本數據、推薦準確度或使用者研究結果，也未討論語音辨識錯誤、偏好推斷偏誤、隱私與內容授權等限制。其意義在於示範代理與語音模型的組合如何把推薦從單向輸出轉為雙向對話，對娛樂與客服場景具參考價值，但實際效益仍待評估。",
+      "title": "Deliver hyper-personalized viewer experiences with an agentic AI movie assistant using Amazon Bedrock AgentCore and Amazon Nova Sonic 2.0",
+      "title_zh": "以 Amazon Bedrock AgentCore 與 Nova Sonic 2.0 打造代理式電影助理"
     },
     {
       "arxiv_id": null,
@@ -4464,7 +4468,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:665fe1f098128d99",
       "summary": "In this post, we explore the challenges that Volkswagen Group faced in producing brand-compliant marketing assets at scale. We walk through how we built a generative AI solution that generates photorealistic vehicle images, validates technical accuracy at the component level, and helps enforce brand guideline compliance alignment across the ten brands.",
-      "title": "Reimagine marketing at Volkswagen Group with generative AI"
+      "summary_zh": "這是一篇實務性質的技術分享，探討 Volkswagen 集團在大量產出符合品牌規範的行銷素材時所遭遇的困難。問題核心在於：集團旗下擁有十個品牌，各自有嚴格的品牌識別與視覺準則，人工製作不僅耗時，也難以在規模化之下維持一致性與技術正確性。作者說明他們如何建構一套生成式 AI 解決方案，能夠生成擬真度極高的車輛影像，並在零組件層級驗證技術準確度，例如車燈、輪圈、車身比例等細節是否符合實車規格，同時協助跨十個品牌對齊品牌規範的遵循情形。文中並未提供具體的量化評估數據、模型架構細節或人工審核的比較基準，因此其實際效益仍缺乏可驗證的證據。此案例的意義在於展示生成式 AI 在企業行銷內容生產流程中的落地方式，特別是將「品牌合規檢查」與「技術正確性驗證」納入生成管線，對同樣面臨多品牌、多語系素材治理的企業具有參考價值，但也提醒讀者需留意生成內容在法規與品牌風險上的審核機制。",
+      "title": "Reimagine marketing at Volkswagen Group with generative AI",
+      "title_zh": "以生成式 AI 重新構想 Volkswagen 集團的行銷作業"
     },
     {
       "arxiv_id": "2603.28160",
@@ -5138,7 +5144,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:0e0eaf220400527b",
       "summary": "In this post, we show you how to use Amazon SageMaker AI to build and deploy a deep learning model for detecting solar flares using data from the European Space Agency's STIX instrument.",
-      "title": "Build a solar flare detection system on SageMaker AI LSTM networks and ESA STIX data"
+      "summary_zh": "這是一篇教學導向的技術文章，目標是示範如何運用 Amazon SageMaker AI 建立並部署一套深度學習模型，用來偵測太陽閃焰。問題背景在於太陽閃焰會對衛星通訊、電力網與太空任務造成干擾，若能及早且自動化偵測，將有助於預警與後續觀測排程。方法上，作者採用 LSTM 這類適合處理時間序列的遞迴神經網路，並使用歐洲太空總署 STIX 儀器所取得的 X 射線觀測資料作為訓練來源，STIX 搭載於 Solar Orbiter 任務，能提供高時間解析度的閃焰觀測。文章涵蓋從資料前處理、模型訓練到在 SageMaker 上部署推論端點的完整流程。不過摘要僅止於流程概述，未揭露模型準確率、召回率、誤報率或與傳統偵測方法的比較結果，也沒有討論類別不平衡、延遲推論等實務限制。其重要性在於展示雲端受管理服務如何降低太空天氣機器學習應用的工程門檻，對想將時間序列深度學習導入科學觀測領域的團隊具有實作參考價值。",
+      "title": "Build a solar flare detection system on SageMaker AI LSTM networks and ESA STIX data",
+      "title_zh": "在 SageMaker AI 上以 LSTM 網路與 ESA STIX 資料建構太陽閃焰偵測系統"
     },
     {
       "arxiv_id": "2603.28600",

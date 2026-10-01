@@ -205,7 +205,9 @@
         "source_name": null,
         "story_id": "hf:deepseek-ai/deepseek-v4-pro",
         "summary": "Technical Report👁️ We present a preview version of **DeepSeek-V4** series, including two strong Mixture-of-Experts (MoE) language models — **DeepSeek-V4-Pro** with 1.6T parameters (49B activated) and **DeepSeek-V4-Flash** with 284B parameters (13B activated) — both supporting a context length of **one million tokens**. DeepSeek-V4 series incorporate several key upgrades in architecture and optimization: 1. **Hybrid Attention Architecture:** We design a hybrid attention mechanism combining Compressed Sparse Attention (CSA) and Heavily Compressed Attention (HCA) to dramatically improve long-context efficiency. In the 1M-token context setting, DeepSeek-V4-Pro requires only **27% of single-token inference FLOPs** and **10% of KV cache** compared with DeepSeek-V3.2. 2. **Manifold-Constrained...",
-        "title": "deepseek-ai/DeepSeek-V4-Pro"
+        "summary_zh": "DeepSeek 發布 DeepSeek-V4 系列的預覽版本，包含兩款混合專家（MoE）語言模型：DeepSeek-V4-Pro 具 1.6 兆參數、每次推論啟動 49B，DeepSeek-V4-Flash 則為 284B 參數、啟動 13B，兩者皆支援一百萬 token 的上下文長度。架構上主打混合注意力機制，結合壓縮稀疏注意力（CSA）與高度壓縮注意力（HCA），以改善長上下文效率；在百萬 token 設定下，V4-Pro 的單 token 推論 FLOPs 僅需 DeepSeek-V3.2 的 27%，KV 快取更降至 10%。摘要另提及流形約束等設計，但技術報告內容遭截斷，缺乏完整評測與基準數據，因此其實際能力仍待驗證。對長上下文應用而言，此舉顯示以稀疏與壓縮注意力換取效率，正成為超大規模 MoE 模型的主流路線。",
+        "title": "deepseek-ai/DeepSeek-V4-Pro",
+        "title_zh": "DeepSeek-V4-Pro：1.6T 參數混合專家語言模型預覽版"
       },
       {
         "arxiv_id": null,
@@ -257,7 +259,9 @@
         "source_name": null,
         "story_id": "hf:deepseek-ai/deepseek-v4-flash",
         "summary": "Technical Report👁️ We present a preview version of **DeepSeek-V4** series, including two strong Mixture-of-Experts (MoE) language models — **DeepSeek-V4-Pro** with 1.6T parameters (49B activated) and **DeepSeek-V4-Flash** with 284B parameters (13B activated) — both supporting a context length of **one million tokens**. DeepSeek-V4 series incorporate several key upgrades in architecture and optimization: 1. **Hybrid Attention Architecture:** We design a hybrid attention mechanism combining Compressed Sparse Attention (CSA) and Heavily Compressed Attention (HCA) to dramatically improve long-context efficiency. In the 1M-token context setting, DeepSeek-V4-Pro requires only **27% of single-token inference FLOPs** and **10% of KV cache** compared with DeepSeek-V3.2. 2. **Manifold-Constrained...",
-        "title": "deepseek-ai/DeepSeek-V4-Flash"
+        "summary_zh": "此為 DeepSeek-V4 系列預覽版本中的輕量選項。DeepSeek-V4-Flash 採混合專家（MoE）架構，總參數 284B、每次推論僅啟動 13B，並與同系列的 DeepSeek-V4-Pro（1.6T 參數、啟動 49B）一樣支援一百萬 token 的上下文長度。系列在架構與最佳化上有數項關鍵升級，包括結合壓縮稀疏注意力（CSA）與高度壓縮注意力（HCA）的混合注意力機制，用以大幅提升長上下文效率；在百萬 token 情境下，大模型版本的單 token 推論 FLOPs 與 KV 快取分別降至前代的 27% 與 10%。摘要未提供 Flash 版本的獨立基準成績、推論延遲與部署成本，且技術報告內容被截斷，效能主張仍需完整驗證。其意義在於以較小啟動參數提供長上下文能力，利於成本敏感的實際部署。",
+        "title": "deepseek-ai/DeepSeek-V4-Flash",
+        "title_zh": "DeepSeek-V4-Flash：284B 參數高效混合專家模型預覽版"
       },
       {
         "arxiv_id": null,
@@ -308,7 +312,9 @@
         "source_name": null,
         "story_id": "hf:deepseek-ai/deepseek-v4-pro-base",
         "summary": null,
-        "title": "deepseek-ai/DeepSeek-V4-Pro-Base"
+        "summary_zh": "此條目對應 Hugging Face 上的 DeepSeek-V4-Pro-Base 模型頁面，目前僅有摘要層級的內容，缺乏論文正文、架構說明與實驗證據。從命名推測，Pro 代表該系列中能力較強、規模較大的版本，Base 則意味著它仍是未經指令微調與人類回饋對齊的基礎模型，需自行搭配後訓練流程才能用於對話或代理任務。由於沒有可查證的技術細節，我們無法說明其參數規模、是否採用混合專家架構、上下文視窗長度、訓練語料構成，以及推論成本與延遲表現。基準評測、多語言能力、長文本理解、程式與數學推理等面向的成績同樣無從確認，也無法判斷其在安全性與偏誤上的表現。因此本條目目前僅具索引意義，讀者不宜據此推測模型實力。建議等待官方完整技術報告、模型卡與第三方評測公布後再做採用決策，並同時確認授權範圍與商用條件。",
+        "title": "deepseek-ai/DeepSeek-V4-Pro-Base",
+        "title_zh": "deepseek-ai/DeepSeek-V4-Pro-Base"
       },
       {
         "arxiv_id": null,
@@ -359,7 +365,9 @@
         "source_name": null,
         "story_id": "hf:deepseek-ai/deepseek-v4-flash-base",
         "summary": null,
-        "title": "deepseek-ai/DeepSeek-V4-Flash-Base"
+        "summary_zh": "此條目為 Hugging Face 上釋出的模型頁面，目前僅提供摘要層級資訊，尚無可查證的論文正文、方法細節或實驗數據。就現有資訊判斷，DeepSeek-V4-Flash-Base 屬 DeepSeek 第四代系列中的輕量版本，命名中的 Flash 通常指向較低延遲與較高推論吞吐量的設計取向，Base 則表示其為尚未經過指令微調與對齊後處理的基礎模型。然而，由於摘要內容付之闕如，我們無法確認其參數量、上下文長度、注意力機制變化、訓練資料組成、Tokenizer 設計，也無從得知是否採用 MoE 架構或任何效率最佳化手段。同樣缺乏的還包括基準測試成績、與同系列 Pro 版本的對照結果，以及安全性與偏誤評估。因此本條目現階段僅能視為模型發布的索引資訊，不宜據以推論其實際能力或適用場景。建議讀者待官方釋出完整技術報告、模型卡與評測結果後再行評估，並留意授權條款與商用限制。",
+        "title": "deepseek-ai/DeepSeek-V4-Flash-Base",
+        "title_zh": "deepseek-ai/DeepSeek-V4-Flash-Base"
       }
     ],
     "other": [
@@ -669,7 +677,9 @@
         "source_name": null,
         "story_id": "hf:qwen/qwen3.5-397b-a17b",
         "summary": "> This repository contains model weights and configuration files for the post-trained model in the Hugging Face Transformers format. > These artifacts are compatible with Hugging Face Transformers, vLLM, SGLang, KTransformers, etc. > For users seeking managed, scalable inference without infrastructure maintenance, the official Qwen API service is provided by Alibaba Cloud Model Studio. > In particular, **Qwen3.5-Plus** is the hosted version corresponding to Qwen3.5-397B-A17B with more production features, e.g., 1M context length by default, official built-in tools, and adaptive tool use. > For more information, please refer to the User Guide. Over recent months, we have intensified our focus on developing foundation models that deliver exceptional utility and performance. Qwen3.5...",
-        "title": "Qwen/Qwen3.5-397B-A17B"
+        "summary_zh": "此模型庫提供 Qwen3.5-397B-A17B 後訓練模型的權重與組態檔，採用 Hugging Face Transformers 格式，並相容於 Transformers、vLLM、SGLang、KTransformers 等推論框架，方便使用者在自建環境中部署。針對不願自行維護基礎設施的使用者，官方另提供由阿里雲 Model Studio 代管的 API 服務；文中特別指出 Qwen3.5-Plus 即為對應的托管版本，預設具備 1M 上下文長度、官方內建工具與自適應工具使用等生產級功能。內容屬於模型發布說明，並非研究論文，因此沒有方法章節、基準測試細節或消融實驗，也未揭露訓練資料組成、參數量配置的設計理由，以及與前代或其他同級模型的量化比較，讀者無法從中評估其實際能力邊界與授權限制。其意義在於提供一個超大規模且支援長脈絡的開源權重選項，讓社群能在本地或混合雲環境中進行微調與推論，同時也反映當前前沿模型以托管服務與開放權重並行的發布策略。",
+        "title": "Qwen/Qwen3.5-397B-A17B",
+        "title_zh": "Qwen/Qwen3.5-397B-A17B"
       },
       {
         "arxiv_id": null,
@@ -6781,7 +6791,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:2ce925215cb9aed8",
       "summary": "In this post, we'll explore how multimodal BioFMs work, showcase real-world applications in drug discovery and clinical development, and contextualize how AWS enables organizations to build and deploy multimodal BioFMs.",
-      "title": "Applying multimodal biological foundation models across therapeutics and patient care"
+      "summary_zh": "這篇文章探討多模態生物基礎模型（multimodal BioFMs）如何在藥物開發與臨床照護兩端發揮作用，並說明 AWS 如何協助組織建置與部署這類模型。問題背景在於生物醫學資料本質上高度異質，涵蓋基因體序列、蛋白質結構、顯微影像、病理切片、電子病歷與臨床試驗紀錄等，過去多由各自獨立的模型分別處理，難以捕捉跨模態的交互作用，也讓從標靶發現到病患分層的流程出現斷點。方法上，BioFM 透過大規模自監督預訓練學習跨模態表徵，再以少量標註資料進行微調，支援諸如分子性質預測、標靶互動推論、影像判讀輔助與臨床終點預測等任務。文章亦指出雲端基礎設施在資料治理、運算擴充、模型托管與法規遵循上的角色，使研究機構與生技公司能以可重現的方式部署。不過此篇屬應用綜述，未提供具體基準數字、試驗結果或成本效益分析，對於模型幻覺、分佈外推與病患隱私等風險著墨有限。其意義在於勾勒一條從基礎模型到治療與照護現場的實作路徑，惟臨床採用仍需前瞻性驗證與監管審查。",
+      "title": "Applying multimodal biological foundation models across therapeutics and patient care",
+      "title_zh": "多模態生物基礎模型於治療開發與病患照護的應用"
     },
     {
       "arxiv_id": null,
@@ -6832,7 +6844,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:5dea6e6f7a83f948",
       "summary": "Amazon Quick changes how you work. You can set it up in minutes and by the end of the day, you will wonder how you ever worked without it. Quick connects with your applications, tools, and data, creating a personal knowledge graph that learns your priorities, preferences, and network.",
-      "title": "Amazon Quick for marketing: From scattered data to strategic action"
+      "summary_zh": "這篇文章以行銷場景為例，說明 Amazon Quick 如何把分散各處的資料收斂為可執行的策略行動。問題在於行銷團隊的洞察往往散落於廣告平台、客戶關係管理系統、內容工具與試算表之間，導致決策依賴人工彙整，反應速度落後於市場變化。文中主張 Quick 可在數分鐘內完成設定，並能連接使用者既有的應用程式、工具與資料，建立個人化的知識圖譜，從中學習使用者的優先事項、偏好與協作網路，進而提供更貼近情境的回應。摘要強調使用者當天就會感受到工作方式的改變，但未具體說明連接器數量、支援的資料來源種類、查詢延遲、準確率或任何客戶導入前後的量化指標。此外，個人知識圖譜涉及行為與協作關係的蒐集，隱私界線、資料保留期限與企業治理機制均未交代，也沒有提及與既有行銷自動化平台的競合關係。其意義在於示範通用型代理如何從被動查詢工具轉為貼近個人工作脈絡的助理，惟實務成效仍待獨立評測與試用驗證。",
+      "title": "Amazon Quick for marketing: From scattered data to strategic action",
+      "title_zh": "Amazon Quick 行銷應用：從散落資料到策略行動"
     },
     {
       "arxiv_id": null,
@@ -6881,7 +6895,9 @@
       "source_name": "Google AI Blog",
       "story_id": "fallback:f83322acbbfd4996",
       "summary": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/What_is_a_TPU_social.max-600x600.format-webp.webp\" />Learn how Google’s TPUs power increasingly demanding AI workloads with this new video.",
-      "title": "Here’s how our TPUs power increasingly demanding AI workloads."
+      "summary_zh": "這則貼文介紹 Google 的 Tensor Processing Unit（TPU）如何支撐需求持續攀升的 AI 工作負載，並以一支新影片作為主要內容載體。文中僅附上一張社群分享用的縮圖，並引導讀者觀看影片以了解 TPU 的設計理念與實際應用，屬於宣傳與科普性質的發布，而非技術論文。就已知資訊而言，可推測內容涵蓋 TPU 作為專用加速晶片的定位，以及其在訓練與推論大規模模型時相對通用 GPU 的效益考量，並可能觸及叢集互連、記憶體頻寬與能源效率等面向。然而摘要未提供任何架構細節、世代規格、效能數字或與競爭對手的對照基準，也無法確認是否討論軟體堆疊如 XLA 編譯器與框架支援。對於成本、供應鏈與實際客戶案例同樣缺乏可查證資訊。其意義在於突顯自研加速器已成為超大規模 AI 基礎設施的關鍵一環，但讀者若要評估技術實力，仍須取得官方技術白皮書或第三方基準測試結果。",
+      "title": "Here’s how our TPUs power increasingly demanding AI workloads.",
+      "title_zh": "Google TPU 如何支撐日益嚴苛的 AI 工作負載"
     },
     {
       "arxiv_id": null,
@@ -6932,7 +6948,9 @@
       "source_name": "Google AI Blog",
       "story_id": "fallback:7fd8287f20cb3491",
       "summary": "Aerial image of the data center",
-      "title": "Elevating Austria: Google invests in its first data center in the Alps."
+      "summary_zh": "這則消息宣布 Google 在奧地利阿爾卑斯山區投資興建其於該國的首座資料中心，並以一張空拍影像作為主要視覺素材。摘要層級的資訊僅止於此，未揭露選址城市、園區規模、伺服器容量、投資金額、動土與上線時程，也沒有說明將採用何種冷卻方案、再生能源比例，以及對當地電網與水資源的影響評估。從產業脈絡來看，此舉反映超大規模雲端業者正把基礎設施往歐洲內陸延伸，以降低延遲、滿足資料落地與主權要求，並貼近中東歐日益成長的企業與公部門需求。阿爾卑斯山區的低溫環境有利於自然冷卻，可望改善電力使用效率，但同時也牽涉高山生態、土地利用與地方社群溝通等爭議。由於缺乏量化承諾與環境影響說明，目前難以評估其實質效益。其意義在於顯示 AI 帶動的運算需求正重塑歐洲資料中心版圖，後續仍須觀察 Google 是否公布能源採購與水資源管理的具體目標。",
+      "title": "Elevating Austria: Google invests in its first data center in the Alps.",
+      "title_zh": "提升奧地利：Google 於阿爾卑斯山區投資首座資料中心"
     }
   ],
   "run_date": "2026-04-24",

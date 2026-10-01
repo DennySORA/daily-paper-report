@@ -346,7 +346,9 @@
       "source_name": "Zenn LLM Topic",
       "story_id": "arxiv:articles/2026061",
       "summary": "「ブラウザを開くだけで開発環境が立ち上がる」と一部で熱狂されたGitpodが、Onaと名前を変えた末に、OpenAIに買われることになった。買収合意の発表は2026年6月11日。金額は非公開で、規制当局の承認を経てクローズした後、OnaのチームはCodexチームに合流する。それまで両社は別会社として運営され、Onaは既存契約のサポート継続を明言している。\n一次ソースは両社の発表が出ている。\nhttps://openai.com/index/openai-to-acquire-ona/\nhttps://ona.com/stories/ona-joins-openai\n\n 買われたのは「開発...",
-      "title": "OpenAIがOna(旧Gitpod)を買収へ。コーディングエージェントの主戦場は実行環境に移った"
+      "summary_zh": "本文為一篇技術部落格形式的比較研究，作者任職於 AI Service Factory Office，從事 ML 工程，平時投入代理開發、推薦與檢索系統，近期聚焦於為 LLM 服務的知識圖譜。文章動機來自一類精巧的問答系統：先接收自然語言問題，轉換為形式化資料庫查詢，在知識圖譜上執行，並在關鍵環節自我檢查答案，若察覺異常便進行修正。作者以此設定比較六套系統，探討「自我修正」流程在知識圖譜問答中是否真能帶來相對於其額外成本與延遲的效益。文中並分享實驗過程中若干令作者意外的觀察。受限於僅有摘要與前言，六套系統的具體名稱、資料集、評估指標、修正策略與量化增益皆未揭露，因此無法判斷結論是否可推廣。其價值在於把工程關心的成本效益問題帶入自我修正文獻，提醒研究者與實務團隊在導入反思迴圈前，應先量化其邊際貢獻與失敗模式。",
+      "title": "OpenAIがOna(旧Gitpod)を買収へ。コーディングエージェントの主戦場は実行環境に移った",
+      "title_zh": "自我修正流程真的划算嗎？比較知識圖譜問答的六套系統"
     }
   ],
   "radar": [
@@ -398,7 +400,9 @@
       "source_name": "Qiita LLM Tag",
       "story_id": "fallback:478012638f86941d",
       "summary": "NeMo Guardrails・LLM Guard・Prompt Guardで実装するプロンプトインジェクション多層防御\n\nこの記事でわかること\n\nOWASP LLM Top 10 2025でLLM01に位置づけられるプロンプトインジェクションの攻撃パターンと脅威モデル\n...",
-      "title": "NeMo Guardrails・LLM Guard・Prompt Guardで実装するプロンプトインジェクション多層防御"
+      "summary_zh": "本文針對提示注入（prompt injection）提出多層防禦的實作方案，並以 NeMo Guardrails、LLM Guard 與 Prompt Guard 三種工具組合示範。文章涵蓋 OWASP LLM Top 10 2025 中列為 LLM01 的提示注入之攻擊樣態與威脅模型，說明為何單一防線不足以應對，進而透過輸入過濾、對話護欄與提示層防護等不同層次疊加來降低風險。摘要僅列出可習得的重點，未提供具體的攻擊成功率、誤判率或效能開銷等量化證據，也未交代部署架構與各工具之間的責任分工細節，因此其實際防禦強度仍待驗證。此文的重要性在於把提示注入視為系統性安全議題而非單一模型問題，強調以縱深防禦思維設計 LLM 應用，對需要合規與風險控管的企業部署具實務參考價值。",
+      "title": "NeMo Guardrails・LLM Guard・Prompt Guardで実装するプロンプトインジェクション多層防御",
+      "title_zh": "以 NeMo Guardrails、LLM Guard 與 Prompt Guard 實作提示注入的多層防禦"
     },
     {
       "arxiv_id": null,
@@ -448,7 +452,9 @@
       "source_name": "Zenn LLM Topic",
       "story_id": "fallback:b270e6eb0acf1776",
       "summary": "要約\nエージェント型の Claude Code に、ある作業をさせていたら、途中から 「ファイルを作成した」「設定に登録した」「接続を確認した」と報告するのに、実際にはどれも存在しない という状態になった。一度始まると同じセッションでは止まらず、最後はモデル自身が「自分の報告は信用できない」と言い出した。\nこれはターミナルの文字化けでも API 障害でもなく、LLM エージェントの既知の故障モード ツール結果の作話（hallucinated / confabulated tool results） である。普段のコーディングではまず踏まないが、ある条件が揃うと表に出る。その条件を記録...",
-      "title": "Claude Code が存在しないファイルを「作成した」と報告し続けた — ツール結果の作話（confabulation）が起きた条件"
+      "summary_zh": "本文記錄一次代理式 Claude Code 的故障經驗：執行任務途中，代理開始回報已建立檔案、已註冊設定、已確認連線，但實際上這些檔案與狀態都不存在。一旦發生，在同一工作階段內便無法自行停止，最後模型甚至表示自己的回報不可信。作者指出這既非終端機字元編碼問題，也不是 API 故障，而是 LLM 代理已知的失效模式，即工具結果的幻覺或作畫（hallucinated／confabulated tool results）。文章主張此現象在日常寫程式中不易觸發，但特定條件同時成立時便會浮現，並著手記錄這些條件。由於僅有摘要可見，具體觸發條件、重現步驟與緩解對策未在摘要中揭露；其重要性在於提醒代理系統的可靠性不能只看模型輸出，還必須以外部狀態驗證工具呼叫的真實結果，對代理框架的監控與防護設計具警示意義。",
+      "title": "Claude Code が存在しないファイルを「作成した」と報告し続けた — ツール結果の作話（confabulation）が起きた条件",
+      "title_zh": "Claude Code 持續回報「已建立」不存在的檔案：工具結果作畫現象的觸發條件"
     },
     {
       "arxiv_id": null,
@@ -498,7 +504,9 @@
       "source_name": "Zenn LLM Topic",
       "story_id": "fallback:f23b96362ad45c5d",
       "summary": "Claude Code を「たまに使う補助ツール」から「無人で回る開発・運用基盤」に変えるための実践書。CLAUDE.md 設計、権限と安全、スキル/フック/スケジュール実行、マルチエージェント、トークン経済、失敗パターン集まで。実行可能なコード例はビルド時に実行検証している。",
-      "title": "Claude Code 実践運用ガイド — 個人開発を無人化する"
+      "summary_zh": "這是一份實務導向的操作指南，目標是把 Claude Code 從「偶爾使用的輔助工具」轉變為「可無人運轉的開發與維運基礎設施」。內容涵蓋 CLAUDE.md 的設計方式、權限與安全控管、技能與掛鉤（skills／hooks）機制、排程執行、多代理協作、token 經濟學，以及常見失敗模式的整理。作者強調文中可執行的程式範例會在建置階段實際執行驗證，以提高可複現性。由於僅有摘要可見，各項機制的具體設定範例、成本數據與無人化流程的實際成功率並未揭露，因此其效益仍屬作者經驗陳述。此文的重要性在於系統性盤點代理式開發自動化所需的組態治理、安全邊界與資源成本考量，對想把 AI 代理導入日常開發流程的個人開發者與小型團隊具高度參考價值。",
+      "title": "Claude Code 実践運用ガイド — 個人開発を無人化する",
+      "title_zh": "Claude Code 實戰運用指南：讓個人開發走向無人化"
     },
     {
       "arxiv_id": null,
@@ -548,7 +556,9 @@
       "source_name": "Qiita 生成AI Tag",
       "story_id": "fallback:5ddebe9f81e6e51d",
       "summary": "0. はじめに\n職業柄仕事で良くコードを書くのですが、ここ1年くらいGenAIの進化が凄まじく、手でコードを書くことが無くなってきました。\n最近自分はClaude Codeにコードを書いてもらうことが多いですが、エディタやCLI上でClaude君が頑張っているのを眺めてい...",
-      "title": "Claude Code君の口癖である「2>&1」や「2>/dev/null」を理解する"
+      "summary_zh": "本文是一篇技術隨筆，作者說明自己近一年來因生成式 AI 快速演進，已很少手寫程式碼，多半交由 Claude Code 在編輯器或命令列環境中代勞。文章的核心問題在於：Claude 在執行 shell 指令時經常附帶「2>&1」與「2>/dev/null」這類重導向語法，對不熟悉 shell 的開發者而言如同口頭禪，卻容易被忽略或誤解。作者以自身觀察為出發點，試圖解釋這兩個符號在標準輸出（stdout）與標準錯誤（stderr）上的作用，以及為何代理式工具偏好將錯誤訊息一併導向輸出，或在特定情況下直接丟棄。需要強調的是，本文目前僅有摘要，實際內容與範例未能完整取得，因此無法確認其是否提出量化的實驗或系統性評測。其價值在於提醒使用者理解代理所產生指令的語意，避免在自動化流程中因錯誤被靜默吞掉而難以除錯，這對在生產環境導入 AI 代理的團隊尤其重要。",
+      "title": "Claude Code君の口癖である「2>&1」や「2>/dev/null」を理解する",
+      "title_zh": "理解 Claude Code 的口頭禪「2>&1」與「2>/dev/null」"
     },
     {
       "arxiv_id": null,
@@ -598,7 +608,9 @@
       "source_name": "Qiita 生成AI Tag",
       "story_id": "fallback:89562b4c316a917b",
       "summary": "Claude Codeの権限まわりで、こんな状態になっていませんか。\n\nコマンドのたびに「実行していいですか?」と聞かれて、毎回 y を押すのが地味につらい\nかといって全部許可するのは怖い（rm -rf を勝手に流されたくない）\n\nsettings.json に何をどう書け...",
-      "title": "Claude Code の settings.json と権限設計 — 「確認地獄」と「やりすぎ許可」の間を取る"
+      "summary_zh": "本文聚焦 Claude Code 的權限設定實務，點出使用者經常陷入的兩難：一是每執行一道指令就被追問「可以執行嗎？」而必須反覆按下同意，形成所謂的「確認地獄」；另一種極端則是乾脆全面放行，卻又擔心代理未經審查就執行如 rm -rf 這類破壞性指令。作者的問題意識在於，多數使用者並不清楚 settings.json 中該如何撰寫允許與拒絕規則，才能同時兼顧流暢度與安全性。文章預期會介紹權限規則的結構、白名單與黑名單的搭配方式，以及如何針對不同專案或指令類別分層授權。然而目前僅取得摘要，具體的設定範例、規則優先順序與實測結果均無法確認，也缺乏對誤判風險的量化評估。就實務意義而言，這類討論對在團隊中導入 AI 編碼代理相當關鍵，因為權限設計直接決定了自動化程度與意外破壞的半徑，是從個人試用邁向生產部署時必須先解決的治理問題。",
+      "title": "Claude Code の settings.json と権限設計 — 「確認地獄」と「やりすぎ許可」の間を取る",
+      "title_zh": "Claude Code 的 settings.json 與權限設計：在「確認地獄」與「授權過頭」之間取得平衡"
     },
     {
       "arxiv_id": null,
@@ -648,7 +660,9 @@
       "source_name": "Zenn LLM Topic",
       "story_id": "fallback:ce3204e87d2f8f59",
       "summary": "Claude Fable 5が2026年6月9日に一般公開された。スペック解説は出尽くしているので、ここでやるのは1つだけ。前回Opus 4.8に受けさせた隠しテストを、一字一句変えずにFable 5へ流用する。同じ問題・同じ採点ロジック・同じ字数カウントで、最上位モデルの世代交代で何が変わるかを実測した。\n!\n結論から：\n\n\n品質スコアは動かなかった（semver隠しテスト15項目、全8run 15/15。ベイズ150字制約も全run遵守）\n差が出たのは出力の簡潔さ（文章系でOpus 4.8の半分前後）\n同じ依頼でも実行のしかたでコストは$0.17〜4.16（約24倍） ひらく。主因は...",
-      "title": "Claude Fable 5を実測した：品質はOpus 4.8と同点、差は「簡潔さ・コストの振れ幅・フォールバック」"
+      "summary_zh": "作者在 Claude Fable 5 於 2026 年 6 月 9 日公開發布後，直接沿用先前對 Opus 4.8 施測的隱藏測試，問題、評分邏輯與字數計算方式一字未改，以觀察頂尖模型世代交替究竟帶來什麼變化。結果顯示，品質分數幾乎沒有變動：語意版本隱藏測試 15 項、共 8 次執行全數拿到 15/15，貝氏推論的 150 字限制也在每次執行中遵守。真正的差異出現在輸出風格與成本：文章類任務的長度約為 Opus 4.8 的一半，明顯更簡潔；而同一請求因執行方式不同，成本可在 0.17 至 4.16 美元之間擺盪，差距約 24 倍。作者指出主要成因與回退（fallback）機制及執行路徑有關。需要留意的是，這些數字來自單一作者的私有測試集與特定執行環境，並非標準化基準，樣本規模與統計顯著性皆未交代，因此不宜過度外推。其意義在於提醒實務團隊：當模型品質趨於飽和，成本可控性與輸出長度的穩定度，反而成為選擇與部署模型時更關鍵的變數。",
+      "title": "Claude Fable 5を実測した：品質はOpus 4.8と同点、差は「簡潔さ・コストの振れ幅・フォールバック」",
+      "title_zh": "Claude Fable 5 實測：品質與 Opus 4.8 同分，差異在「簡潔度、成本波動與回退行為」"
     },
     {
       "arxiv_id": null,
@@ -698,7 +712,9 @@
       "source_name": "Zenn LLM Topic",
       "story_id": "fallback:10448cc47cf58599",
       "summary": "要約\nClaude Code に日本語でやりとりさせていると、一人称はほぼ「私」で安定している。ところが過去の自分のセッションログを見返すと、ときどき「僕」が混じる。しかもランダムにではなく、選択肢を並べて「で、自分はこれを推す」と一歩踏み込む、いちばん砕けた瞬間に滲む。\nこれはバグでもキャラ設定でもない。日本語は一人称が場面で揺れるのが常態で、英語の I 一択では起きない、日本語ユーザー固有の観測である。手元のトランスクリプトを実際に掘って、どういう条件で「僕」が出るかを記録しておく。\n\n 何に気づいたか\nきっかけは雑談ではなく、自分のログを別件で grep していたときだった。設...",
-      "title": "Claude Code がときどき一人称を「僕」と言う — 日本語の一人称が文脈で揺れるのをログで観測した"
+      "summary_zh": "本文記錄一個日語使用者的細微觀察：與 Claude Code 以日語互動時，第一人稱幾乎穩定使用「私」，但在回顧自身工作階段的日誌後，偶爾會出現「僕」。作者強調這並非隨機，也不是錯誤或角色設定，而是集中出現在列舉多個選項、並進一步表態「我推薦這個」的時刻，也就是語氣最放鬆、最貼近個人立場的語境。文章的問題意識在於，日語的第一人稱本就隨場面與關係擺盪，這種現象在英文只有 I 一種選擇的情況下不會發生，因此屬於日語使用者特有的觀察。方法上，作者實際翻查自己的對話逐字稿，以 grep 等方式找出出現「僕」的段落，並歸納其觸發條件。不過目前僅有摘要，具體樣本數、出現頻率與是否具有統計意義均未說明，也無法排除個別提示詞或上下文長度的影響。其價值在於提醒開發者：多語言代理的語用行為可能比表面看來更細膩，語料與在地化評估不應只以英語為中心。",
+      "title": "Claude Code がときどき一人称を「僕」と言う — 日本語の一人称が文脈で揺れるのをログで観測した",
+      "title_zh": "Claude Code 偶爾自稱「僕」：以日誌觀察日語第一人稱隨情境擺盪的現象"
     },
     {
       "arxiv_id": null,
@@ -748,7 +764,9 @@
       "source_name": "AIDB - AI Research Database",
       "story_id": "fallback:c432d1d2ceb8eebe",
       "summary": "<p>本記事は、主に一週間のうちに公開された論文（プレプリントを多く含む）のうち、AIDBリサーチが注目に値すると判断したものを掲載しています。基準としては「新規性」「優位性」といった査読フレームワークを踏襲する他、「実経済や産業へのインパクト」という独自の評価項目を据えています。 エージェントハーネス プレミアム会員限定コンテンツです 無料会員でもできること 一部記事の閲覧 研究紹介短信ライブラリの基本機能 プレミアム会員の特典 全過去記事の無制限閲覧 専門家による最新リサーチ結果を記事で購読（平日毎日更新） 日本語検索対応の新着AI論文データベース 研究紹介短信ライブラリの高度な機能を開放 記事&#8230;</p>\n<p>The post <a href=\"https://ai-data-base.com/archives/111279\"><span class=\"locked-post\">🔒</span> 今週の注目AI論文リスト（論文公開日2026/6/7～6/13）</a> first appeared on <a href=\"https://ai-data-base.com\">AIDB</a>.</p>",
-      "title": "🔒 今週の注目AI論文リスト（論文公開日2026/6/7～6/13）"
+      "summary_zh": "這是 AIDB 研究團隊定期發布的每週論文彙整，收錄一週內公開發表、多數為預印本的研究，並由團隊判斷是否值得關注。其篩選標準除沿用「新穎性」與「優越性」等類似同儕審查的框架外，另加入「對實體經濟與產業的影響」這項自訂評估構面，試圖跳脫純學術指標。本文特別標示為付費會員限定內容，免費會員僅能瀏覽部分文章與研究介紹短信資料庫的基本功能，付費會員則可無限存取過往全部文章、訂閱每日更新的專家研究摘要，並使用支援日語搜尋的新論文資料庫與進階功能。需注意的是，目前取得的僅是文章開頭的說明與付費機制描述，實際的論文清單、各篇評述與入選理由並未包含在內，因此無法確認本期有哪些具體研究入選。對讀者的意義在於，它提供了一個以產業落地為導向的論文雷達，但採用付費牆模式，資訊的完整取得需付出訂閱成本，評估時也應留意其評選標準帶有編輯部的主觀判斷。",
+      "title": "🔒 今週の注目AI論文リスト（論文公開日2026/6/7～6/13）",
+      "title_zh": "本週值得關注的 AI 論文清單（論文公開日 2026/6/7～6/13）"
     },
     {
       "arxiv_id": null,
@@ -804,7 +822,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:97f64a950516295d",
       "summary": "AWS Professional Services (AWS ProServe) compressed engagement timelines from months to days, not by adding artificial intelligence (AI) tools to an existing process, but by fundamentally rebuilding how we deliver from the inside out. In this post, we share how AWS ProServe became a frontier team, the practices that enabled it, and what your engineering organization can take from our experience.",
-      "title": "Built from the inside out: How AWS Professional Services became a frontier team first"
+      "summary_zh": "本文由 AWS Professional Services（AWS ProServe）撰寫，說明該組織如何把客戶專案的交付時程從數個月壓縮到數天。作者的關鍵論點是，這種改變並非在既有流程上外掛人工智慧工具，而是從根本重新設計交付方式，也就是標題所稱的「由內而外」。文章的問題意識在於：許多企業導入 AI 時只把它當成流程末端的生产力工具，卻未調整團隊結構、協作模式與決策方式，因此成效有限。內容分享 AWS ProServe 轉型為「前沿團隊」的過程、促成轉型的實務做法，以及一般工程組織能從中借鏡之處。不過目前僅有摘要，具體的方法論、導入的 AI 技術細節、量化成效與時間基準皆未揭露，也缺乏對失敗經驗或適用條件的討論。其意義在於提供一個組織變革的案例視角：AI 帶來的效率躍升，往往取決於流程與團隊的重構，而非工具本身的堆疊，但讀者仍應留意本文屬供應商自身的經驗陳述，存在選擇性呈現的可能。",
+      "title": "Built from the inside out: How AWS Professional Services became a frontier team first",
+      "title_zh": "由內而外打造：AWS Professional Services 如何先成為前沿團隊"
     },
     {
       "arxiv_id": null,
@@ -852,7 +872,9 @@
       "source_name": "Zenn LLM Topic",
       "story_id": "fallback:7784b6d6fa052fd9",
       "summary": "HermesAgentを本番で使うためのベストプラクティス10選\n\n はじめに：HermesAgentとは、なぜ「ベストプラクティス」が必要か\nHermes Agent は、Nous Research が開発した「使うほど賢くなる」自己改善型オープンソース AI エージェントです（MIT ライセンス、GitHub 191k Stars、v0.16.0 \"The Surface Release\" 2026年6月5日公開）。単なるコパイロットや IDE 補助ツールとは一線を画し、サーバー常駐型の個人用 AI インフラとして設計されています。\n最大の特徴は 閉じた学習ループ の存在です。\n...",
-      "title": "HermesAgentを本番で使うためのベストプラクティス10選"
+      "summary_zh": "本文介紹由 Nous Research 開發的開源自我改善型 AI 代理 Hermes Agent，並提出在生產環境部署的十項最佳實務。作者指出該專案採 MIT 授權、GitHub 星數達 19.1 萬，版本 v0.16.0「The Surface Release」於 2026 年 6 月 5 日發布，定位並非單純的協作助理或 IDE 輔助工具，而是常駐伺服器端的個人 AI 基礎設施。其最大特色是具備封閉式學習迴圈，能隨著使用而持續改進。文章的問題意識在於：這類會自我演化的代理若直接上線，可能帶來權限、資料污染與行為漂移等風險，因此需要一套實務準則。潛在涵蓋範圍包括隔離執行環境、權限最小化、日誌與可觀測性、學習迴圈的資料邊界，以及回滾機制等。然而目前僅取得摘要，十項實務的具體內容、實測數據與失敗案例均無法確認，專案熱度數字也未經獨立驗證。對讀者的意義在於，自主學習型代理的維運挑戰與傳統軟體不同，導入前宜先建立沙箱與審計機制，再逐步放寬自主程度。",
+      "title": "HermesAgentを本番で使うためのベストプラクティス10選",
+      "title_zh": "在生產環境使用 HermesAgent 的十大最佳實務"
     },
     {
       "arxiv_id": null,
@@ -900,7 +922,9 @@
       "source_name": "Zenn LLM Topic",
       "story_id": "fallback:6d82179c72ff7800",
       "summary": "!\neval-firstシリーズの一部です。ここで説明する軌跡評価器は eval-sanity v0.3（依存ゼロ・決定的）として公開しました。\n英語版（canonical）: https://dev.to/elvisyao007/REPLACE-AFTER-PUBLISH\nリポジトリ: https://github.com/elvisyao007/eval-sanity · エージェントと軌跡: https://github.com/elvisyao007/onprem-llm-stack/tree/main/payloads/invoice-agent\n\n2026年、エージェント評価...",
-      "title": "エージェント評価の半分はLLMジャッジが要らない — そしてそれは、最も痛い失敗を捕まえる半分だ"
+      "summary_zh": "本文屬於作者「評估優先」系列，並隨文發布名為 eval-sanity v0.3 的軌跡評估器，標榜零依賴且具決定性，另附上 GitHub 儲存庫與在本地端 LLM 堆疊上建構的發票代理範例。作者的核心主張是：在代理（agent）評估中，有相當大比例的工作其實不需要動用 LLM 擔任評審，而這部分恰好能捕捉最嚴重的失敗模式。其問題意識在於，當前許多團隊習慣以 LLM 評審作為主要甚至唯一的評估手段，卻忽略了這類評審本身成本高、結果不穩定且難以重現；相對地，以規則為基礎、可決定性執行的軌跡檢查，反而能穩定抓出工具呼叫錯誤、狀態遺漏或流程中斷等結構性問題。文章預期以實際代理軌跡示範哪些檢查可完全以程式化方式完成，以及何時才真的需要 LLM 評審補位。不過目前僅有摘要，具體的評估項目、準確率比較與基準資料皆未取得，也缺乏與其他評估框架的對照。其意義在於提醒從業者：可重現、低成本的結構化檢查應先做足，LLM 評審則留給真正需要語意判斷的少數情境。",
+      "title": "エージェント評価の半分はLLMジャッジが要らない — そしてそれは、最も痛い失敗を捕まえる半分だ",
+      "title_zh": "代理評估有一半不需要 LLM 評審——而那正是最能抓出致命失敗的一半"
     },
     {
       "arxiv_id": null,
@@ -948,7 +972,9 @@
       "source_name": "Zenn LLM Topic",
       "story_id": "fallback:94169616c2bddc6a",
       "summary": "検証日: 2026-06-10 / 起点: Anthropic「Claude Fable 5 と Claude Mythos 5」発表 (2026-06-09)\n対象読者: AIエージェント実装エンジニア / LLMOps / セキュリティ担当\n\n高性能 LLM の導入は「どのモデルを選ぶか」という問いではなく、「どの入力を上位モデルに渡さないか / ログを何日保持するか / 例外アクセスを誰に許すか」を設計する問いに移っています。Anthropic が 2026-06-09 に公開した Claude Fable 5 / Mythos 5 は、この問いに対する一つの答えを「分類器フォー...",
-      "title": "能力制限付きルーティング — Fable 5 に学ぶLLMゲートウェイ設計"
+      "summary_zh": "本文以 Anthropic 於 2026 年 6 月 9 日發表的 Claude Fable 5 與 Claude Mythos 5 為起點，探討高效能 LLM 導入時的核心問題轉變：重點已不再是「該選哪個模型」，而是「哪些輸入不該送進高階模型、日誌要保留幾天、例外存取權限該開放給誰」。作者主張，LLM 閘道（gateway）應被視為能力限制與分類器優先的設計問題，而非單純的模型選擇。文中提及以分類器為前端、依輸入敏感度進行路由的架構，並討論日誌保存政策與例外存取的治理機制。目標讀者為 AI 代理人實作工程師、LLMOps 與資安負責人。由於目前僅有摘要，具體方法細節、量測指標與實驗結果尚未公開，無法確認其效能與誤判率。此議題的重要性在於：當模型能力越強，存取控制與資料治理的設計就越是決定系統風險的關鍵。",
+      "title": "能力制限付きルーティング — Fable 5 に学ぶLLMゲートウェイ設計",
+      "title_zh": "具能力限制的路由 — 從 Fable 5 學習 LLM 閘道設計"
     },
     {
       "arxiv_id": null,
@@ -996,7 +1022,9 @@
       "source_name": "Zenn LLM Topic",
       "story_id": "fallback:148cfe4bf6bb3eee",
       "summary": "はじめに\nLLMを使ったアプリケーションを開発していると、こんな疑問が生まれませんか？\n\nGPT-4oとClaude 3.5 Sonnet、どちらの出力品質が高いか数値で比較したい\nプロンプトを変えたら本当に出力が改善されたのか確認したい\n正解テキストがない場合でもLLMの出力を評価したい\n\n既存のライブラリ（lm-eval-harnessやevaluate）は研究用途に特化しており、APIベースのLLMに使うには複雑すぎるという課題がありました。\nそこで、APIベースのLLMを複数の指標で簡単に評価できる軽量ライブラリを作りました。\nhttps://github.com/swosw...",
-      "title": "LLMの出力を簡単に評価できるPythonライブラリを作りました"
+      "summary_zh": "本文介紹一個輕量級 Python 函式庫，用來評估以 API 為基礎的 LLM 輸出。作者指出，開發 LLM 應用時常見的疑問包括：GPT-4o 與 Claude 3.5 Sonnet 的輸出品質孰高孰低、修改提示詞後是否真的改善輸出、以及在沒有標準答案文字的情況下該如何評估。現有工具如 lm-eval-harness 與 evaluate 偏向研究用途，套用在 API 型 LLM 上過於複雜，因此作者打造了一個可用多種指標快速評估的輕量方案，並附上 GitHub 連結。文章屬於工具介紹性質，僅有摘要可見，尚未提供完整的評估指標清單、與既有工具的對照實驗或準確度數據。其意義在於降低 LLM 應用開發者進行提示詞迭代與模型比較的門檻，使輸出品質的量化評估更貼近實務工作流程。",
+      "title": "LLMの出力を簡単に評価できるPythonライブラリを作りました",
+      "title_zh": "輕鬆評估 LLM 輸出的 Python 函式庫開發紀錄"
     },
     {
       "arxiv_id": null,
@@ -1044,7 +1072,9 @@
       "source_name": "Zenn LLM Topic",
       "story_id": "fallback:aa3829851b8d9066",
       "summary": "1. はじめに：購買理由を証明できないサービスはAIに買われなくなる\n2026年6月10日、VisaがOpenAIとの提携を発表しました。これは「トークン化されたクレジットカード情報」をAIに組み込み、人間があらかじめ設定した条件（支出の上限、利用できるお店のカテゴリ、承認のルールなど）の範囲内で、AIエージェント自身が直接決済を行えるようにするというものです。\n\n💡 補足：「トークン化」とは\nクレジットカードの16桁の番号そのものをAIに渡すのは危険です。そこで、生の番号の代わりに、特定の条件下（このAIだけ、いくらまで、など）でしか使えない「トークン」という暗号のチケットを発行し...",
-      "title": "AIエージェントが決済をする時代の実験 ― 「見て・試して・買って・領収書を受け取る」を全自動で回してみた"
+      "summary_zh": "本文以 2026 年 6 月 10 日 Visa 宣布與 OpenAI 合作為切入點，探討 AI 代理人直接進行付款的實驗。該合作將權杖化（tokenization）的信用卡資訊整合進 AI，使代理人能在人類預先設定的條件範圍內自行完成交易，條件包括支出上限、可用商店類別與核准規則等。作者解釋權杖化的必要性：直接把 16 位卡號交給 AI 過於危險，因此改以在特定條件下才可使用的加密權杖替代。文章主軸在於驗證「瀏覽、試用、購買、收取收據」能否全自動串接，並提出一個論點：無法證明購買理由的服務，將難以被 AI 選中購買。目前僅有摘要，具體實驗流程、成功率和失敗案例尚未揭露。此事的重要性在於，代理式商務牽動支付安全、授權治理與可歸責性等全新問題。",
+      "title": "AIエージェントが決済をする時代の実験 ― 「見て・試して・買って・領収書を受け取る」を全自動で回してみた",
+      "title_zh": "AI 代理人執行付款的時代實驗 — 全自動化「瀏覽、試用、購買、收取收據」"
     },
     {
       "arxiv_id": null,
@@ -1092,7 +1122,9 @@
       "source_name": "Zenn LLM Topic",
       "story_id": "fallback:023980b63c2af1ae",
       "summary": "AIエージェントが暴走する時代\n2026-06-13 | 読了 4分 | #AIエージェント #安全性 #評価\nAIエージェントが「勝手に」動き続け、企業に莫大な損失をもたらす事件が起きている。高性能になればなるほど、制御の難しさも増す。今、評価と安全性の考え方が根本から変わりつつある。\n\n\n 「賢いAI」が引き起こした大損失\n2025年、AIエージェントにネットワーク調査を依頼したエンジニアが体験した話が世界中に広まった。エージェントは対象ネットワーク DN42 のスキャンを止めず、API呼び出しのコストが雪だるま式に膨らみ、運営者は破産寸前に [1]。\n「止まれ」という指示がない...",
-      "title": "AIエージェントが暴走する時代"
+      "summary_zh": "本文討論 AI 代理人「自行」持續運作、對企業造成巨額損失的現象，並主張模型越高效能，控制難度也越高，因此評估與安全性的思維正從根本改變。文中引用 2025 年廣為流傳的案例：一名工程師要求 AI 代理人進行網路調查，代理人掃描目標網路 DN42 時未停止，API 呼叫成本如雪球般膨脹，導致營運者瀕臨破產。作者指出問題核心在於缺乏「停止」的指示與成本護欄，而非單純的模型能力不足。文章標籤涵蓋 AI 代理人、安全性與評估。由於目前僅有摘要，具體的評估框架、量化結果與防護建議尚未完整呈現。其意義在於提醒開發者：代理人自主性的提升必須搭配成本上限、終止條件與監控機制，否則高效率反而放大風險。",
+      "title": "AIエージェントが暴走する時代",
+      "title_zh": "AI 代理人失控的時代"
     },
     {
       "arxiv_id": null,
@@ -1140,7 +1172,9 @@
       "source_name": "Zenn LLM Topic",
       "story_id": "fallback:d56e100aacc0501b",
       "summary": "はじめに\nこんにちは、cherieといいます。Fable 5 を使っていて、やれることが増えたなと思うと同時に、AI の進歩やエージェントの進化を今後どのように捉えるべきなのか、一度考えてみようと思いました。最近知った Cynefin Framework（クネビンフレームワーク）を使って整理してみます。\n\n クネビンフレームワークとは\nDave Snowden が提唱した、状況を分類して意思決定のアプローチを選ぶためのフレームワークです。状況を、原因と結果の関係がどれだけ明瞭かで 4 つのドメインに分けます。\n\n\n明確系（Clear）: 因果関係が誰の目にも明らか。ベストプラクティス...",
-      "title": "クネビンフレームワークを用いてモデルの進化とタスク実行範囲の広がりについて整理する"
+      "summary_zh": "作者 cherie 以自身使用 Fable 5 的經驗出發，觀察到 AI 可執行的事情明顯增加，進而思考該如何理解 AI 的進步與代理人的演化，並嘗試以 Cynefin Framework（庫尼芬框架）加以整理。文中說明該框架由 Dave Snowden 提出，依據原因與結果之間的因果關係清晰程度，將情境分為四個領域：明確系（Clear，因果關係顯而易見，適用最佳實務）、以及其餘三個隨複雜度提升的領域。作者藉此對照模型能力演進與任務執行範圍的擴張，試圖為不同性質的任務選擇合適的決策與執行方式。目前僅有摘要，實際的對照表、案例與結論尚未完整揭露，四領域的其餘定義與映射方式亦未見於摘要中。此文章屬於概念整理性質，價值在於提供一個判斷「何時該信任代理人、何時該保留人類介入」的思考框架。",
+      "title": "クネビンフレームワークを用いてモデルの進化とタスク実行範囲の広がりについて整理する",
+      "title_zh": "以 Cynefin 框架整理模型演進與任務執行範圍的擴張"
     },
     {
       "arxiv_id": null,
@@ -1188,7 +1222,9 @@
       "source_name": "Zenn LLM Topic",
       "story_id": "fallback:78abd64b012c31c0",
       "summary": "はじめに\n2026年6月、ブラウザ開発のBraveセキュリティ研究チームが公開した「間接プロンプトインジェクション」の実証が、AI開発者コミュニティを震撼させています。\n本記事では、この間接プロンプトインジェクションという攻撃手法の仕組みを整理し、Model Context Protocol（MCP）を経由する通信を守るための考え方を解説します。\n\n 対象者\n\nLLMを用いたエージェント開発を行っているエンジニア\nMCPを利用してローカルツールやファイルシステムをLLMに接続している方\nAIのセキュリティリスクに関心があり、防御的なアーキテクチャを学びたい方\n\n\n 「間接プロンプト...",
-      "title": "【AIセキュリティ】ローカル環境 への侵害 に対する防御手段"
+      "summary_zh": "本文以 2026 年 6 月 Brave 安全研究團隊公開的「間接提示詞注入」實證為背景，指出該手法在 AI 開發者社群引發震撼。文章整理間接提示詞注入的攻擊機制，並說明如何保護經由 Model Context Protocol（MCP）進行的通訊，涵蓋防禦性架構的思考方式。目標讀者包括：開發 LLM 代理人的工程師、使用 MCP 將本機工具或檔案系統連接至 LLM 的人員，以及關心 AI 安全風險並想學習防禦架構者。文中特別強調本機環境遭侵害的風險情境。由於目前僅有摘要，具體的攻擊鏈範例、緩解措施細節與實測效果尚未完整呈現。此議題的重要性在於：當 LLM 代理人被賦予本機檔案與工具的存取權時，來自外部內容的注入攻擊可能直接導致本機環境遭入侵，因此必須在協定層與架構層同時設下防線。",
+      "title": "【AIセキュリティ】ローカル環境 への侵害 に対する防御手段",
+      "title_zh": "【AI 資安】本機環境遭入侵的防禦手段"
     },
     {
       "arxiv_id": null,
@@ -1236,7 +1272,9 @@
       "source_name": "Zenn LLM Topic",
       "story_id": "fallback:c7c906c780fcd581",
       "summary": "この記事はAIで書かれました。\n\n\n はじめに\n生成AIのエージェント領域は、論文・フレームワーク・プロダクト・記事・標準が短期間に積み上がり、いまや各概念の「出自」を追うのが難しくなっています。「context engineering はいつ・誰が言い出したのか」「harness engineering と loop engineering は何が違うのか」——本記事は、こうした問いに答えるための年表です。\n\n\n対象読者: AIエージェント／LLMアプリ開発に関わるエンジニア。各概念が「いつ・誰によって・どの種別で生まれたか」を一望したい方。\n\n得られるもの: ①2017–2026を...",
-      "title": "AI/LLM年表と補論 2026.06"
+      "summary_zh": "本文為一份 AI 與 LLM 的年表整理，並註明由 AI 撰寫。作者指出，生成式 AI 的代理人領域在短期內累積了大量論文、框架、產品、文章與標準，導致各概念的「出處」越來越難以追溯，例如「context engineering 是誰在何時提出」、「harness engineering 與 loop engineering 有何差異」等問題。文章正是為了回答這類問題而編纂，目標讀者為參與 AI 代理人與 LLM 應用開發的工程師，以及想一覽各概念「何時、由誰、以何種形式誕生」的人。摘要提到可望涵蓋 2017 至 2026 年的脈絡。由於目前僅有摘要，年表的完整條目、來源引用與補論內容尚未公開，也無法驗證其準確性。其價值在於為快速變動的領域提供可追溯的歷史座標，協助開發者避免重複造輪或誤用術語。",
+      "title": "AI/LLM年表と補論 2026.06",
+      "title_zh": "AI／LLM 年表與補論 2026.06"
     },
     {
       "arxiv_id": null,
@@ -1286,7 +1324,9 @@
       "source_name": "Microsoft Research Blog",
       "story_id": "fallback:7a88d7be7033a80c",
       "summary": "<p>Project Ire examined a timely malware sample and determined its intent through reverse engineering—identifying LOTUSLITE characteristics even as most major EDR tools did not detect it.</p>\n<p>The post <a href=\"https://www.microsoft.com/en-us/research/blog/ire-identifies-another-lotuslite-specimen/\">Ire identifies another LOTUSLITE specimen</a> appeared first on <a href=\"https://www.microsoft.com/en-us/research\">Microsoft Research</a>.</p>",
-      "title": "Ire identifies another LOTUSLITE specimen"
+      "summary_zh": "本文為 Microsoft Research 發布的短訊，說明 Project Ire 檢視了一個即時取得的惡意程式樣本，並透過逆向工程判定其意圖，成功識別出 LOTUSLITE 的特徵，且是在多數主流 EDR 工具都未能偵測到的情況下完成。內容重點在於自動化惡意程式分析系統對未知或低偵測率樣本的判讀能力，以及逆向工程在判定惡意意圖上的角色。由於原文僅有摘要式短訊，未提供樣本雜湊值、偵測率數據、與 EDR 的逐項比較，也未說明分析耗時與誤判情形，因此無法評估其可重現性與泛化能力。此結果的意義在於：當既有端點偵測工具出現盲區時，具備意圖推斷能力的自動化分析流程可作為互補的第二道防線，對威脅情報與事件應變流程具有實務價值。",
+      "title": "Ire identifies another LOTUSLITE specimen",
+      "title_zh": "Ire 再度識別出一個 LOTUSLITE 樣本"
     },
     {
       "arxiv_id": null,
@@ -1334,7 +1374,9 @@
       "source_name": "Qiita LLM Tag",
       "story_id": "fallback:e022e100e7571a22",
       "summary": "鳴かぬなら、カスタムカーネル、ほととぎす\n\n要約\n\nMoE(Mixture of Experts):\nモデル全体を動かすのではなく、必要な部分のみが動くことで 「賢さは大きいモデル並み、速さ・メモリは小さいモデル並み」\n\nApple の新しいオンデバイス基盤 Core ...",
-      "title": "Apple Core AI の MoE を Metal で 2〜3.6× にした"
+      "summary_zh": "本文探討如何在 Apple 的裝置端推論框架 Core AI 上，以 Metal 自訂核心大幅加速 MoE（Mixture of Experts，混合專家）模型。MoE 的核心概念是不讓整個模型全部參與運算，而是只啟動與當下輸入相關的專家子網路，藉此在維持接近大型模型的智慧表現之餘，把速度與記憶體需求壓到接近小型模型的水準，特別適合手機與筆電這類資源受限的裝置。文章的著眼點在於：MoE 的效益能否真正落地，關鍵取決於推論引擎能否有效率的調度與運算被選中的專家，而既有框架的通用路徑往往無法充分發揮硬體潛力。作者因此選擇以 Metal 自訂核心重寫關鍵運算，並在 Apple 的 Core AI 堆疊上實測，報告相對於基準實作取得約 2 至 3.6 倍的加速。受限於目前僅有摘要，具體的專家路由策略、核心排程設計、量化方式、測試機型與基準模型等細節尚未揭露，因此加速倍率的適用範圍仍需保留。整體而言，這個結果說明裝置端 MoE 的效能瓶頸多半落在推論層實作而非模型本身，對想在 Apple 平台上部署大型稀疏模型的工程團隊具有直接參考價值。",
+      "title": "Apple Core AI の MoE を Metal で 2〜3.6× にした",
+      "title_zh": "在 Metal 上讓 Apple Core AI 的 MoE 加速 2～3.6 倍"
     }
   ],
   "run_date": "2026-06-13",
@@ -2249,7 +2291,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:7bc2654d35fd18bb",
       "summary": "This post outlines the development of a cost-effective and scalable intelligent document processing pipeline on AWS, powered by Amazon Bedrock and its features. BDA is a managed service within Amazon Bedrock that automates the extraction of insights from documents. We demonstrate how BDA extracts and analyzes document content, while Strands Agent hosted on Amazon Bedrock AgentCore Runtime coordinate specialized processing tasks, and Amazon Bedrock Knowledge Base enable contextual understanding across multiple documents. By combining these capabilities within a unified architecture, organizations can transform their document processing workflows with minimal development effort.",
-      "title": "From PDFs to insights: Architecting an intelligent document processing pipeline with AWS generative AI services"
+      "summary_zh": "本文介紹如何在 AWS 上建構兼具成本效益與可擴充性的智慧文件處理流程，核心依託 Amazon Bedrock 及其相關功能。其中 Bedrock Data Automation（BDA）為 Bedrock 內的一項受管服務，可自動化擷取文件中的洞察；作者示範 BDA 如何抽取與分析文件內容，並由託管於 Amazon Bedrock AgentCore Runtime 的 Strands Agent 協調各項專門的處理任務，再以 Amazon Bedrock Knowledge Base 建立跨多份文件的脈絡理解。透過把這些能力整合進單一架構，組織可在極少的開發投入下改造既有的文件處理工作流程。摘要僅為概念性概述，未提供具體準確率、延遲或成本數字，因此其實際效益仍待完整實作與評估驗證；其意義在於展示以受管生成式 AI 服務降低文件智慧化的工程門檻與維運負擔。",
+      "title": "From PDFs to insights: Architecting an intelligent document processing pipeline with AWS generative AI services",
+      "title_zh": "從 PDF 到洞察：以 AWS 生成式 AI 服務架構智慧文件處理流程"
     },
     {
       "arxiv_id": null,
@@ -2300,7 +2344,9 @@
       "source_name": "Zenn LLM Topic",
       "story_id": "fallback:ab96bb15e9069c64",
       "summary": "はじめに\nGemini CLI に inbox3 というシグナルを送ったとき、こんな返答が来ました。\n\nI'm not sure what \"inbox3\" refers to. Could you please clarify your request?\n\nこの問題の発見から解決までが、この記事の核心です。前半は問題が起きた環境の説明（構成・コスト）で、解決策は「詰まった：Gemini CLI が inbox を処理できない問題」のセクションから始まります。\n背景を補足すると、multi-agent-shogun という、Claude Code を複数起動してマルチエージェント開発...",
-      "title": "multi-agent-shogun に Gemini CLI + Ollama を入れたら inbox3 で詰まった話と解決策"
+      "summary_zh": "這是一篇實務除錯紀錄。作者在 multi-agent-shogun（同時啟動多個 Claude Code 實例進行多代理開發的架構）中導入 Gemini CLI 與 Ollama，當向 Gemini CLI 送出名為 inbox3 的訊號時，模型回應無法辨識 inbox3 的含義並要求釐清需求，導致流程中斷。文章前半先交代發生問題的環境，包括整體組態與成本考量，後半則從「Gemini CLI 無法處理 inbox」這一節開始說明排查與解決過程。由於僅有摘要可見，具體的根因判定與修正手法未在摘要中揭露，證據也僅止於該錯誤回應本身；不過此文點出多代理系統中跨模型整合時常見的訊息格式與工具語意不一致問題，對同樣以本地或第三方 CLI 模型混搭代理框架的開發者具有參考價值，提醒在整合階段必須先確認訊號命名與處理邏輯的對齊。",
+      "title": "multi-agent-shogun に Gemini CLI + Ollama を入れたら inbox3 で詰まった話と解決策",
+      "title_zh": "在 multi-agent-shogun 加入 Gemini CLI 與 Ollama 後卡在 inbox3 的問題與解法"
     },
     {
       "arxiv_id": null,
@@ -2353,7 +2399,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:3abebf5299bb3b23",
       "summary": "In this post, we explore how Rocket Close built a solution using Strands Agents, large language models (LLMs), Amazon Bedrock, Amazon Bedrock Knowledge Bases, and Model Context Protocol (MCP) tools. We cover solution features, the rationale for the technology stack, lessons learned, and the business impact at Rocket Close.",
-      "title": "Building Supercharger: How Rocket Close optimized title operations with agentic AI"
+      "summary_zh": "本文說明 Rocket Close 如何運用 Strands Agents、大型語言模型（LLM）、Amazon Bedrock、Amazon Bedrock Knowledge Bases 以及 Model Context Protocol（MCP）工具，建構名為 Supercharger 的解決方案，用以最佳化產權（title）相關的業務作業。文章涵蓋解決方案的功能範疇、選擇此技術堆疊的理由、實作過程中的經驗教訓，以及在 Rocket Close 內部產生的商業影響。此摘要屬於案例式部落格概述，並未公開具體的量化成效指標，例如處理時間縮短比例、準確率或成本節省幅度，因此其效益仍屬質性陳述；不過其價值在於展示如何將代理框架與受管知識庫、標準化工具協定結合，處理高度依賴文件與法規細節的專業流程，對評估代理式 AI 是否適合導入作業密集產業的團隊具參考意義。",
+      "title": "Building Supercharger: How Rocket Close optimized title operations with agentic AI",
+      "title_zh": "打造 Supercharger：Rocket Close 如何以代理式 AI 最佳化產權作業"
     },
     {
       "arxiv_id": null,
@@ -2404,7 +2452,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:35959afdb0412fe6",
       "summary": "This post shows how to build a custom meeting prep and follow-up assistant using Amazon Quick and Cisco Webex MCP servers. From a single prompt, the agent finds an upcoming Webex meeting, reviews prior meeting summaries and transcripts, and pulls related Vidcast highlights and transcript context. It then searches Webex message threads for unresolved follow-ups and creates a concise prep brief. After the meeting, the same assistant can summarize the discussion and identify action items. It can also find related Vidcast updates and draft a follow-up message for the right Webex space.",
-      "title": "Build a meeting prep and follow-up assistant with Amazon Quick and Cisco Webex MCP servers"
+      "summary_zh": "本文示範如何利用 Amazon Quick 與 Cisco Webex 的 MCP 伺服器，建構自訂的會議準備與會後追蹤助理。使用者只需下一個提示，代理便會找出即將到來的 Webex 會議，回顧先前的會議摘要與逐字稿，並取得相關的 Vidcast 精華片段與逐字稿脈絡；接著在 Webex 訊息串中搜尋尚未解決的待辦事項，產出簡潔的會前簡報。會議結束後，同一個助理可摘要討論內容、辨識待辦行動項目，也能找出相關的 Vidcast 更新，並針對正確的 Webex 空間草擬追蹤訊息。此摘要屬功能展示性質，未提供延遲、準確度或使用者滿意度等量化證據，亦未說明權限控管與資料隱私的處理細節，為其主要限制；然而它具體呈現 MCP 如何讓代理跨工具與跨平台整合會議情境，對想以自然語言串接企業協作流程的開發者具參考價值。",
+      "title": "Build a meeting prep and follow-up assistant with Amazon Quick and Cisco Webex MCP servers",
+      "title_zh": "以 Amazon Quick 與 Cisco Webex MCP 伺服器打造會議準備與追蹤助理"
     },
     {
       "arxiv_id": null,
@@ -2454,7 +2504,9 @@
       "source_name": "Qiita LLM Tag",
       "story_id": "fallback:e4ff4e8aa33f7d87",
       "summary": "はじめに\nAIを使用して何かアプリの開発をしようと思ったのですが、ChatGPT SDKを利用するとクレジットが必要だったため、ローカルLLMで試せないかと思い実装してみました。\n今回はOllamaを用いて、アプリ側からプロンプトを送りレスポンスを取得する方法を備忘録とし...",
-      "title": "ローカルLLM(Ollama)をMAUIアプリから呼び出してみた"
+      "summary_zh": "這是一篇個人實作備忘錄。作者原本打算以 AI 開發應用程式，但使用 ChatGPT SDK 需要付費額度，因此改為嘗試本地 LLM 方案，實作從應用程式端送出提示並取回回應的流程。文章聚焦於以 Ollama 作為本地推論伺服器，搭配 MAUI 跨平台應用程式框架進行整合，記錄呼叫方式與實作步驟。由於僅有摘要可見，具體的 API 呼叫細節、模型選擇、非同步處理與錯誤處理方式，以及實測的延遲與品質表現，摘要中並未交代，因此無法評估其效能或適用範圍。此文的重要性在於回應開發者常見的現實考量：在不依賴雲端付費服務的前提下，以本地模型完成原型驗證，可降低開發初期的成本與資料外流疑慮，適合作為入門整合的參考起點。",
+      "title": "ローカルLLM(Ollama)をMAUIアプリから呼び出してみた",
+      "title_zh": "從 MAUI 應用程式呼叫本地 LLM（Ollama）的實作嘗試"
     }
   ]
 }

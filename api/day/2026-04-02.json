@@ -1585,7 +1585,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:3569825ddb187224",
       "summary": "This post demonstrates how to build an automated competitive price intelligence system that streamlines manual workflows, supporting teams to make data-driven pricing decisions with real-time market insights.",
-      "title": "Automating competitive price intelligence with Amazon Nova Act"
+      "summary_zh": "本文示範如何建立一套自動化的競品價格情報系統，把原本高度人工作業的價格蒐集與比對流程加以自動化。其問題意識在於：定價決策往往仰賴零散、更新緩慢的市場資訊，團隊必須花費大量人力反覆巡查競品頁面與整理報表，導致反應速度落後於市場變化。文中以 Amazon Nova Act 作為核心，透過代理式的瀏覽與操作能力執行重複性的資料擷取與彙整，讓定價團隊能取得即時市場洞察，進而做出以資料為基礎的決策。不過，目前僅有摘要，未見具體架構圖、提示設計、成功率或成本數據，也無法確認其對抗網站改版、反爬機制與價格變動頻率的能力，以及資料品質與合規性的處理方式。儘管如此，此類示範反映代理式 AI 正從問答走向實際業務流程自動化，對零售、電商與訂閱制服務的定價作業具有參考價值，後續仍需實測其穩定性與維護成本。",
+      "title": "Automating competitive price intelligence with Amazon Nova Act",
+      "title_zh": "以 Amazon Nova Act 自動化競品價格情報"
     },
     {
       "arxiv_id": null,
@@ -1635,7 +1637,9 @@
       "source_name": "Google AI Blog",
       "story_id": "fallback:d60fc9cc1d496241",
       "summary": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/bfc_keyword_before_after_white_.max-600x600.format-webp_QNQ8psB.webp\" />Google partnered with the Brazilian government on a satellite imagery map to help protect the country’s forests.",
-      "title": "We’re creating a new satellite imagery map to help protect Brazil’s forests."
+      "summary_zh": "Google 與巴西政府合作推出一套新的衛星影像地圖，用於協助保護該國森林。這則消息的核心問題是森林濫伐監測長期面臨時效與可及性的落差：官方雖有監測體系，但資料發布往往滯後，且不易被地方政府、執法單位與民間組織以直觀方式使用。此次合作以衛星影像為基礎，透過視覺化的前後對照呈現地表變化，讓森林覆蓋的增減更容易被辨識與溝通，進而支持巡查、執法與政策溝通等用途。需要強調的是，目前僅有摘要與一張示意影像，未提供地圖的空間解析度、更新頻率、涵蓋範圍、演算法或人工判讀流程，也沒有任何量化成效，例如偵測到的濫伐面積或執法行動數。此外，雲層遮蔽、季節性變化與影像判讀的誤差都是此類系統的已知限制。其意義在於把遙測資料轉為可操作的情報，但實際政策效果仍待獨立驗證。",
+      "title": "We’re creating a new satellite imagery map to help protect Brazil’s forests.",
+      "title_zh": "打造新的衛星影像地圖，協助守護巴西森林"
     },
     {
       "arxiv_id": null,
@@ -1696,7 +1700,9 @@
       "source_name": "Google AI Blog",
       "story_id": "fallback:4bfdd8c08babed5b",
       "summary": "March 2026 AI Recap showing new updates",
-      "title": "The latest AI news we announced in March 2026"
+      "summary_zh": "這是一篇 2026 年 3 月的 AI 消息月度回顧，主旨在於彙整當月發布的各項更新，方便讀者快速掌握產業動態。就目前可見的內容而言，僅有一句概述，並未列出任何具體的模型發布、產品功能、基準測試結果或研究論文，因此無法判斷其涵蓋範圍、技術深度與取捨標準，也難以評估各項更新的重要性排序是否合理。此類回顧文章的價值通常取決於編輯是否提供可追溯的原始連結、是否區分產品行銷與技術突破，以及是否說明資料來源與時間範圍；在缺乏這些細節的情況下，讀者不宜直接引用其中的結論。建議把此文視為索引式的線索來源，後續仍需回到官方公告與技術文件查證，並留意月度回顧常見的偏誤，例如偏重自家產品、忽略同期的重要學術進展。整體意義在於提供時間軸上的定位，而非技術評估。",
+      "title": "The latest AI news we announced in March 2026",
+      "title_zh": "2026 年 3 月 AI 重點消息回顧"
     }
   ],
   "run_date": "2026-04-02",
@@ -2494,7 +2500,9 @@
       "source_name": "Microsoft Research Blog",
       "story_id": "fallback:d874f04a9f301af3",
       "summary": "<p>AI benchmarks report how large language models (LLMs) perform on specific tasks but provide little insight into their underlying capabilities that drive their performance. They do not explain failures or reliably predict outcomes on new tasks. To address this, Microsoft researchers in collaboration with Princeton University and&#160;Universitat&#160;Politècnica&#160;de València introduce ADeLe (opens in new tab) (AI [&#8230;]</p>\n<p>The post <a href=\"https://www.microsoft.com/en-us/research/blog/adele-predicting-and-explaining-ai-performance-across-tasks/\">ADeLe: Predicting and explaining AI performance across tasks</a> appeared first on <a href=\"https://www.microsoft.com/en-us/research\">Microsoft Research</a>.</p>",
-      "title": "ADeLe: Predicting and explaining AI performance across tasks"
+      "summary_zh": "現行 AI 基準測試多半只報告大型語言模型（LLM）在特定任務上的分數，卻鮮少說明驅動這些表現的底層能力，既無法解釋失敗原因，也難以可靠預測模型在新任務上的結果。微軟研究院與普林斯頓大學、瓦倫西亞理工大學合作提出 ADeLe，目標是同時做到「預測」與「解釋」。受限於目前僅有摘要，本文無法確認其具體方法細節，例如是否以能力分解、任務嵌入或可解釋特徵來建立預測模型，也尚無公開的量化成果與實驗設計可供檢視。可合理推測其貢獻在於把評估從單點分數轉向能力層級的理解，若能成立，將有助於模型選擇、風險評估與評測設計，讓團隊在部署前就對新任務的表現有更可靠的預期。仍需注意摘要本身未提供基準涵蓋範圍、樣本規模與泛化限制，其外部效度有待後續驗證。",
+      "title": "ADeLe: Predicting and explaining AI performance across tasks",
+      "title_zh": "ADeLe：預測並解釋 AI 在不同任務上的表現"
     },
     {
       "arxiv_id": "2604.01128",

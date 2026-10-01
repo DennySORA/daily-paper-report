@@ -217,7 +217,9 @@
         "source_name": null,
         "story_id": "hf:deepseek-ai/deepseek-v4-pro",
         "summary": "Technical Report👁️ We present a preview version of **DeepSeek-V4** series, including two strong Mixture-of-Experts (MoE) language models — **DeepSeek-V4-Pro** with 1.6T parameters (49B activated) and **DeepSeek-V4-Flash** with 284B parameters (13B activated) — both supporting a context length of **one million tokens**. DeepSeek-V4 series incorporate several key upgrades in architecture and optimization: 1. **Hybrid Attention Architecture:** We design a hybrid attention mechanism combining Compressed Sparse Attention (CSA) and Heavily Compressed Attention (HCA) to dramatically improve long-context efficiency. In the 1M-token context setting, DeepSeek-V4-Pro requires only **27% of single-token inference FLOPs** and **10% of KV cache** compared with DeepSeek-V3.2. 2. **Manifold-Constrained...",
-        "title": "deepseek-ai/DeepSeek-V4-Pro"
+        "summary_zh": "DeepSeek 發布 DeepSeek-V4 系列的預覽版本，包含兩款混合專家（MoE）語言模型：DeepSeek-V4-Pro 具 1.6 兆參數、每次推論啟動 49B，DeepSeek-V4-Flash 則為 284B 參數、啟動 13B，兩者皆支援一百萬 token 的上下文長度。架構上主打混合注意力機制，結合壓縮稀疏注意力（CSA）與高度壓縮注意力（HCA），以改善長上下文效率；在百萬 token 設定下，V4-Pro 的單 token 推論 FLOPs 僅需 DeepSeek-V3.2 的 27%，KV 快取更降至 10%。摘要另提及流形約束等設計，但技術報告內容遭截斷，缺乏完整評測與基準數據，因此其實際能力仍待驗證。對長上下文應用而言，此舉顯示以稀疏與壓縮注意力換取效率，正成為超大規模 MoE 模型的主流路線。",
+        "title": "deepseek-ai/DeepSeek-V4-Pro",
+        "title_zh": "DeepSeek-V4-Pro：1.6T 參數混合專家語言模型預覽版"
       },
       {
         "arxiv_id": null,
@@ -269,7 +271,9 @@
         "source_name": null,
         "story_id": "hf:deepseek-ai/deepseek-v4-flash",
         "summary": "Technical Report👁️ We present a preview version of **DeepSeek-V4** series, including two strong Mixture-of-Experts (MoE) language models — **DeepSeek-V4-Pro** with 1.6T parameters (49B activated) and **DeepSeek-V4-Flash** with 284B parameters (13B activated) — both supporting a context length of **one million tokens**. DeepSeek-V4 series incorporate several key upgrades in architecture and optimization: 1. **Hybrid Attention Architecture:** We design a hybrid attention mechanism combining Compressed Sparse Attention (CSA) and Heavily Compressed Attention (HCA) to dramatically improve long-context efficiency. In the 1M-token context setting, DeepSeek-V4-Pro requires only **27% of single-token inference FLOPs** and **10% of KV cache** compared with DeepSeek-V3.2. 2. **Manifold-Constrained...",
-        "title": "deepseek-ai/DeepSeek-V4-Flash"
+        "summary_zh": "此為 DeepSeek-V4 系列預覽版本中的輕量選項。DeepSeek-V4-Flash 採混合專家（MoE）架構，總參數 284B、每次推論僅啟動 13B，並與同系列的 DeepSeek-V4-Pro（1.6T 參數、啟動 49B）一樣支援一百萬 token 的上下文長度。系列在架構與最佳化上有數項關鍵升級，包括結合壓縮稀疏注意力（CSA）與高度壓縮注意力（HCA）的混合注意力機制，用以大幅提升長上下文效率；在百萬 token 情境下，大模型版本的單 token 推論 FLOPs 與 KV 快取分別降至前代的 27% 與 10%。摘要未提供 Flash 版本的獨立基準成績、推論延遲與部署成本，且技術報告內容被截斷，效能主張仍需完整驗證。其意義在於以較小啟動參數提供長上下文能力，利於成本敏感的實際部署。",
+        "title": "deepseek-ai/DeepSeek-V4-Flash",
+        "title_zh": "DeepSeek-V4-Flash：284B 參數高效混合專家模型預覽版"
       }
     ],
     "other": [
@@ -4683,7 +4687,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:a746b9335754122f",
       "summary": "We’re announcing OS Level Actions for AgentCore Browser. This new capability unblocks these scenarios by exposing direct OS control through the InvokeBrowser API, so agents can interact with content visible on the screen, not only what's accessible through the browser's web layer. By combining full-desktop screenshots with mouse and keyboard control at the OS level, agents can observe native UI, reason about it, and act on it within the same session. This post walks through how OS Level Actions work, what actions are supported, and how to get started.",
-      "title": "Introducing OS Level Actions in Amazon Bedrock AgentCore Browser"
+      "summary_zh": "本文宣布 Amazon Bedrock AgentCore Browser 新增「OS Level Actions」功能，解決的是一個常見限制：以往代理只能操作瀏覽器網頁層可存取的內容，對於畫面中可見、但不在網頁 DOM 中的原生介面元素束手無策。新作法透過 InvokeBrowser API 直接暴露作業系統層級的控制能力，結合全桌面螢幕截圖與滑鼠、鍵盤操作，讓代理能在同一個工作階段中觀察原生 UI、進行推理並執行動作。文章說明其運作機制、支援的動作類型，以及如何開始使用。不過目前僅有摘要，未提供支援的作業系統範圍、延遲、安全性邊界、權限控管細節，也沒有準確度或任務完成率的量化評估。其意義在於把代理的操作範圍從網頁延伸到整個桌面，對需要自動化舊式或原生應用程式的工作流程特別關鍵。",
+      "title": "Introducing OS Level Actions in Amazon Bedrock AgentCore Browser",
+      "title_zh": "Amazon Bedrock AgentCore Browser 推出作業系統層級動作"
     },
     {
       "arxiv_id": null,
@@ -4736,7 +4742,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:c5236ab65730b3a5",
       "summary": "Today, we’re excited to announce that Amazon SageMaker AI MLflow Apps now support MLflow version 3.10, bringing enhanced capabilities for generative AI development and streamlined experiment tracking to your generative AI workflows. Building on the foundations established with Amazon SageMaker AI MLflow Apps, this latest version introduces powerful new features for observability, evaluation, and generative […]",
-      "title": "Streamlining generative AI development with MLflow v3.10 on Amazon SageMaker AI"
+      "summary_zh": "本文宣布 Amazon SageMaker AI 的 MLflow Apps 開始支援 MLflow 3.10 版，目的是簡化生成式 AI 的開發流程與實驗追蹤。問題在於生成式 AI 工作流程通常涉及大量提示版本、模型變體與評估結果，若缺乏一致的管理機制，難以比較與重現。此次更新在既有的 SageMaker AI MLflow Apps 基礎上，加入可觀測性、評估與生成式 AI 相關的新功能，讓團隊能在受管理的環境中統一記錄實驗。不過目前僅有摘要，未說明新功能的具體介面、支援的評估指標、與其他 AWS 服務的整合方式，也沒有成本或效能數據。其意義在於把 MLflow 生態系帶進託管服務，降低自行維運追蹤伺服器的負擔，對需要治理與稽核生成式 AI 實驗的企業團隊具有實務價值。",
+      "title": "Streamlining generative AI development with MLflow v3.10 on Amazon SageMaker AI",
+      "title_zh": "以 Amazon SageMaker AI 上的 MLflow v3.10 簡化生成式 AI 開發"
     },
     {
       "arxiv_id": "2605.03636",
@@ -5623,7 +5631,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:9cec6b2c266b2e9e",
       "summary": "AI agents in production require secure access to external services. Amazon Bedrock AgentCore Identity, available as a standalone service, secures how your AI agents access external services whether they run on compute platforms like Amazon ECS, Amazon EKS, AWS Lambda, or on-premises. This post implements Authorization Code Grant (3-legged OAuth) on Amazon ECS with secure session binding and scoped tokens.",
-      "title": "Secure AI agents with Amazon Bedrock AgentCore Identity on Amazon ECS"
+      "summary_zh": "本文聚焦於正式環境中 AI 代理的安全問題：代理必須存取外部服務，但若憑證管理不當，將帶來嚴重的權限風險。作者介紹 Amazon Bedrock AgentCore Identity，這是一項可獨立使用的服務，能統一管控代理存取外部服務的方式，且不受運算平台限制，涵蓋 Amazon ECS、Amazon EKS、AWS Lambda 及地端部署。實作上以 Amazon ECS 為例，採用 Authorization Code Grant（三足式 OAuth）流程，並結合安全工作階段綁定與範圍受限的權杖（scoped tokens），以降低權杖外洩與濫用的影響。目前僅有摘要，未提供效能開銷、權杖生命週期設定或攻擊情境的實測結果。其意義在於把代理的身分與授權視為基礎設施層級議題，對要在生產環境規模化部署代理的團隊是必要的參考。",
+      "title": "Secure AI agents with Amazon Bedrock AgentCore Identity on Amazon ECS",
+      "title_zh": "在 Amazon ECS 上以 Amazon Bedrock AgentCore Identity 強化 AI 代理安全"
     },
     {
       "arxiv_id": "2605.03799",
@@ -5786,7 +5796,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:833bc6ec61e80d7f",
       "summary": "In this post, you will learn how you can use Amazon Nova Foundation Models in Amazon Bedrock to apply generative AI techniques for both business protection and enhancement. You can identify obvious and disguised attempts at direct contact while gaining valuable insights into customer sentiment and service improvement opportunities.",
-      "title": "Intelligence-driven message defense and insights using Amazon Bedrock"
+      "summary_zh": "本文說明如何運用 Amazon Bedrock 中的 Amazon Nova 基礎模型，將生成式 AI 技術同時應用於業務防護與業務增進。要解決的問題是：不當的訊息往來中，除了明顯的直接聯絡意圖外，還有經過偽裝、試圖規避偵測的接觸行為，傳統規則式過濾難以辨識。方法上以基礎模型進行語意判讀，一方面識別明顯與偽裝的直接接觸嘗試，另一方面從訊息內容萃取客戶情緒與服務改善機會，讓同一套流程兼具防禦與洞察雙重價值。目前僅有摘要，未揭露資料集、評估指標、準確率或誤判率，也沒有與既有過濾方案的對照，因此效益仍待驗證。其意義在於展示生成式 AI 如何把風險控管與客戶體驗分析整合於單一平台，適合金融、電商等高度依賴訊息往來的產業參考。",
+      "title": "Intelligence-driven message defense and insights using Amazon Bedrock",
+      "title_zh": "以 Amazon Bedrock 打造智慧化訊息防禦與洞察"
     },
     {
       "arxiv_id": "2605.03623",
@@ -6008,7 +6020,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:0db77e243e7cf91e",
       "summary": "Hapag-Lloyd's Digital Customer Experience and Engineering team, distributed between Hamburg and Gdańsk, drives digital innovation by developing and maintaining customer-facing web and mobile products. In this post, we walk you through our generative AI–powered feedback analysis solution built using Amazon Bedrock, Elasticsearch, and open-source frameworks like LangChain and LangGraph",
-      "title": "How Hapag-Lloyd uses Amazon Bedrock to transform customer feedback into actionable insights"
+      "summary_zh": "本文由 Hapag-Lloyd 的數位客戶體驗與工程團隊撰寫，該團隊分布於漢堡與格但斯克，負責開發與維護面向客戶的網頁及行動產品。要解決的問題是：客戶回饋數量龐大且分散，人工分析難以即時轉化為可執行的營運洞察。其方法是以生成式 AI 建構回饋分析解決方案，技術組合包括 Amazon Bedrock、Elasticsearch，以及 LangChain、LangGraph 等開源框架，用以串接擷取、分析與彙整流程。目前僅有摘要，文章並未提供準確度、處理量、延遲或成本等量化結果，也未說明多語言支援範圍與人工覆核機制。其意義在於示範傳統航運企業如何把生成式 AI 導入客戶體驗流程，對同樣面臨大量非結構化回饋的產業具有實務參考價值。",
+      "title": "How Hapag-Lloyd uses Amazon Bedrock to transform customer feedback into actionable insights",
+      "title_zh": "Hapag-Lloyd 如何運用 Amazon Bedrock 將客戶回饋轉化為可行洞察"
     },
     {
       "arxiv_id": null,
@@ -6058,7 +6072,9 @@
       "source_name": "Microsoft Research Blog",
       "story_id": "fallback:026daadce0a9f757",
       "summary": "<p>Microsoft researchers share advances in building and operating large-scale distributed systems, spanning datacenters, networking, and the growing intersection with AI during  NSDI ’26.</p>\n<p>The post <a href=\"https://www.microsoft.com/en-us/research/blog/microsoft-at-nsdi-2026-advances-in-large-scale-networked-systems/\">Microsoft at NSDI 2026: Advances in large-scale networked systems</a> appeared first on <a href=\"https://www.microsoft.com/en-us/research\">Microsoft Research</a>.</p>",
-      "title": "Microsoft at NSDI 2026: Advances in large-scale networked systems"
+      "summary_zh": "這是 Microsoft Research 針對 NSDI 2026 所發布的與會預告，並非單篇研究論文，因此沒有實驗方法或結果數據。內容指出 Microsoft 研究人員將在 NSDI ’26 分享建構與營運大規模分散式系統的進展，涵蓋資料中心、網路技術，以及這些領域與 AI 日益交會的議題。摘要僅止於主題範圍的概述，未列出個別論文標題、作者、具體技術貢獻或量測結果，讀者無法從中得知各項工作的細節。其意義在於顯示系統與網路研究社群正把重心移向支撐 AI 工作負載的基礎設施，例如大規模訓練與推論所需的網路拓撲、排程與資源管理；對關注資料中心網路與 AI 基礎設施交會的研究者而言，可作為後續追蹤該會議論文的索引。",
+      "title": "Microsoft at NSDI 2026: Advances in large-scale networked systems",
+      "title_zh": "Microsoft 在 NSDI 2026：大規模網路系統的進展"
     },
     {
       "arxiv_id": null,
@@ -6106,7 +6122,9 @@
       "source_name": "Google AI Blog",
       "story_id": "fallback:f60145b542dd5827",
       "summary": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/futurevisionxprize_social.max-600x600.format-webp.webp\" />Google is partnering with XPRIZE and Range Media Partners on the $3.5 million Future Vision film competition.",
-      "title": "Google is partnering with XPRIZE and Range Media Partners on the $3.5 million Future Vision film competition."
+      "summary_zh": "這則公告說明 Google 攜手 XPRIZE 與 Range Media Partners，共同推出總獎金 350 萬美元的 Future Vision 影片競賽。從目前僅有的摘要可見，活動主軸在於以影像創作描繪未來願景，並由三方共同出資與推動；不過原始內容未交代競賽的報名資格、評選標準、獎項分配、時程，以及是否涉及生成式 AI 影音工具的運用。因此本次僅能確認合作架構與獎金規模，其餘細節仍待官方後續公布。對台灣關注 AI 內容創作、影視科技與創投生態的讀者而言，此案值得留意之處在於大型科技公司與非營利競賽組織、媒體公司結盟的模式，可能成為 AI 輔助影像創作人才與技術曝光的新管道，也可能牽動相關工具與平台的採用趨勢。",
+      "title": "Google is partnering with XPRIZE and Range Media Partners on the $3.5 million Future Vision film competition.",
+      "title_zh": "Google 與 XPRIZE、Range Media Partners 合作舉辦 350 萬美元的 Future Vision 影片競賽"
     }
   ],
   "run_date": "2026-05-06",

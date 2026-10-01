@@ -9498,7 +9498,9 @@
       "source_name": null,
       "story_id": "arxiv:2608.15046",
       "summary": "A fraction of a point of benchmark accuracy is the usual evidence that a compressed model is equivalent to its original. That quantity is least informative when two models are most alike: a net delta is what survives cancellation between opposing per-item changes, and cancellation is most complete in the regime equivalence claims occupy. Across an atlas of 1,707 paired model-by-task cells mined from public per-item evaluation dumps (1.3B-405B), churn runs roughly five times the net accuracy delt",
-      "title": "Certifying Compressed Language Models: An Audit and a Statistical Toolkit"
+      "summary_zh": "這篇論文針對「壓縮模型與原模型等價」這類說法提出統計檢驗框架。作者指出，業界慣用的「基準準確率只差零點幾分」是最沒有資訊量的證據：淨差異是正反逐題變化互相抵銷後的殘餘，而兩個模型越相似，抵銷越徹底。作者從公開的逐題評測檔中建立含 1,707 個「模型×任務」配對格的圖譜（1.3B 至 405B），發現逐題翻轉量約為淨準確率差的五倍，且 145 格分數與基準完全相同、其中 128 格仍有逐題差異。在預先登錄的稽核中，17 個等價宣稱有 16 個合格，卻沒有任何一個事先宣告數值容差，也沒有釋出任務相符的逐題輸出，5 個甚至無法以數值評估。作者補上缺漏的工具：在宣告邊界下的配對等價檢定（TOST）與認證表，所需題數由壓縮下觀測到的分歧率推算，而非獨立二項變異數，配對設計可省下 2.3 至 14.7 倍算力，池化後為 4.2 倍。控制實驗以位元組完全相同的校準樣本配對 GPTQ 與 AWQ、五個隨機種子，八格中五格贏家因校準抽樣而反轉，支持 H3。限制包括圖譜屬觀察性、非量化方法的母體普查，稽核僅 16 個來源、非盛行率估計，且二值正確性模型不涵蓋連續或評分型指標。作者最後提出五行報告標準：宣告邊界、執行配對檢定、並列翻轉量與淨差距、引用實際樣本數、釋出逐題輸出。",
+      "title": "Certifying Compressed Language Models: An Audit and a Statistical Toolkit",
+      "title_zh": "壓縮語言模型的認證：一份稽核與一套統計工具組"
     },
     {
       "arxiv_id": "2608.15022",

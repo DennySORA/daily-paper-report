@@ -7266,7 +7266,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.37968",
       "summary": "Advances in the coding capabilities of LLM agents allow them to inspect and modify their own instructions, tools, and execution procedures. Existing approaches use this ability to search for improved agents through repeated downstream evaluation, which incurs substantial costs and ties the search to the evaluated tasks. We introduce \\textbf{SelfSearch}, a reward-free search procedure in which agents modify themselves using records of previous self-improvement episodes. These records capture the ",
-      "title": "SelfSearch: Reward-Free Search for Self-Improving Agents"
+      "summary_zh": "這篇論文探討一個核心問題：代理能否利用「自我改進」本身所累積的經驗，變得更擅長改進自己？現有做法多半依賴下游評測反覆評估候選代理，不僅成本高昂，也把搜尋綁死在特定任務分布上。作者提出 SelfSearch，一種無獎勵的搜尋程序：代理以自己過往的自我改進紀錄（episode record）為依據，修改自身整份程式庫，包含指令、工具、執行邏輯與程式碼組織。每個回合會產生一個後繼代理與一份紀錄，內容涵蓋推理、工具動作、結果與程式碼變更；後繼代理再以這些紀錄引導下一次修改，因此自我改進的經驗能同時支援任務解決與後續的自我修改。搜尋期間不使用任何下游任務或評測分數，代理只能依靠工具回饋與本地檢查。實驗在 GPT-5.6 與 DeepSeek-V4 兩組模型設定、SWE-bench Verified、SWE-bench Multilingual 與 Terminal-Bench 2.1 上進行，每次搜尋經十個世代產生兩個世系（能力導向與適應導向），報告其族群平均表現。結果顯示六個模型—基準組合的族群平均成功率皆優於初始代理，個別代理在 Terminal-Bench 2.1 最高提升 11.2 個百分點；在 SWE-bench Multilingual 上提升 5.0 個百分點，且在雙方皆解的任務上降低 38.5% 執行成本。搜尋成本僅 4.03 美元即可產生在 Terminal-Bench 2.1 達 82.0% 成功率的 harness，與公開九個 harness 比較中得分最高的 Codex 並列。消融實驗指出，過往回合紀錄與持續演化的改進者都對族群平均成功率有貢獻；軌跡分析也顯示代理會發展出可重用的檢查工具，並修復工具互動上的失敗。限制在於各項增益是否能在獨立搜尋中穩定重現仍待驗證，且搜尋與下游評估之間的分工尚未在相同總預算下與評測導引式搜尋完整對齊。整體而言，此工作指出「修改代理的過程本身」即可作為經驗來源，為無獎勵的自我改進搜尋提供了一條降低評估成本、且可跨模型家族轉移的可行路徑，對自動化代理設計與後設認知式學習具啟發意義。",
+      "title": "SelfSearch: Reward-Free Search for Self-Improving Agents",
+      "title_zh": "SelfSearch：以無獎勵搜尋實現自我改進的代理"
     },
     {
       "arxiv_id": "2609.37782",
@@ -7364,7 +7366,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.37782",
       "summary": "Large language models (LLMs) have shown strong potential as training-free text encoders for long-context embeddings. Existing approaches primarily improve information flow under causal attention and typically construct embeddings by uniformly averaging all token representations. However, for long documents, such mean pooling can dilute salient semantic information with abundant redundant or weakly informative content. To this end, we propose SCSP, a training-free framework that leverages semanti",
-      "title": "Selecting What Matters: Semantic Compression-Guided Selective Pooling for Long-Context Embeddings"
+      "summary_zh": "大型語言模型（LLM）可作為免訓練的長文本編碼器，但既有方法多以平均池化聚合所有 token 表示，對長文件而言，冗餘或低資訊內容會稀釋關鍵語意。本論文提出 SCSP，一個免訓練框架：先將文件切成以句子為單位的區塊，在每塊尾端附加語意壓縮提示（如「Brief summary: “」），並設計提示隔離注意力遮罩，使文件 token 之間保留因果注意力、提示僅能注視其所屬區塊，讓文件仍整體共同處理。接著以提示所引發的注意力分布估計 token 重要度，取跨層與跨注意力頭的最大值，超過 α/|C_i| 門檻者才被選中，最後自中間層聚合這些被選 token 的表示成最終嵌入。實驗在 QMSum、2WikiMQA、SumFD、NQA、MultiFieldQA 五個 LongBench／LongEmbed 資料集上，以 Mistral-7B-Instruct-v0.3 與 LLaMA-3.1-8B-Instruct 評估 nDCG@10。結果顯示 SCSP 能以隨插即用方式穩定提升 Vanilla Mean、Echo Mean 與 HTP，在 8192 上下文下 LLaMA 結合 Echo Mean 平均提升約 15.94 分，且僅保留 8.64% 至 14.03% 的 token；亦能增進 GritLM、NV-EMBED 等微調嵌入模型，並在 Gemma2-9B、Qwen2.5-7B 與 LOCOV1 上驗證泛化性。消融實驗指出句子感知切塊、逐區塊提示、提示隔離遮罩皆為關鍵，隨機選 token 則幾乎無增益，顯示效益來自辨識核心語意而非單純減少 token 數。限制在於門檻 α、區塊大小與輸出層需依模型與上下文長度網格搜尋，且最大上下文測試至 16,384 token 時增益遞減；儘管如此，此工作指出選擇性聚合可作為平均池化的有效替代方案，對長文件檢索與表示學習具實務意義。",
+      "title": "Selecting What Matters: Semantic Compression-Guided Selective Pooling for Long-Context Embeddings",
+      "title_zh": "篩選關鍵內容：語意壓縮引導的選擇性池化於長上下文嵌入"
     },
     {
       "arxiv_id": "2609.37863",
@@ -7661,7 +7665,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.37857",
       "summary": "Sparse autoencoders (SAEs) are increasingly scaled to wider dictionaries to recover fine-grained structure from large language model activations. However, a feature is useful for interpretation only if it remains a stable unit of analysis when the same meaning is expressed in different surface forms. We study this reliability question for TopK SAEs via feature sensitivity. Experiments demonstrate that scaling selectively reduces the sensitivity of rare features, while common features remain comp",
-      "title": "Active Budget Can Kill Sensitivity: Diagnosing and Repairing TopK Sparse Autoencoder Reliability"
+      "summary_zh": "稀疏自編碼器（SAE）被廣泛用來從大語言模型（LLM）的活化中萃取可解釋特徵，而字典寬度越寬，理論上越能還原細粒度結構。但本文指出一個被忽略的前提：特徵必須在語意相同、表面形式不同的輸入下仍是穩定的分析單元。作者以「特徵敏感度」定義為：在原始文本上活化的特徵，在保持語意的改寫（paraphrase）下仍維持活化的機率。實驗顯示，在 GPT-2 第 8 層的 TopK SAE 中，沿著實務的擴寬路徑，罕見特徵的敏感度由 0.650 降至 0.585，常見特徵則幾乎不變。為了釐清原因，作者設計了寬度乘上主動預算 k 的因子實驗，發現敏感度隨 k 單調下降（k 由 32 增至 128 平均下降 14.8 個百分點），而寬度的邊際效果僅約 1.9 個百分點；同一區間內重建誤差反而改善，顯示可靠度與擬合方向相反。作者將失效歸因於 TopK 選擇邊界的幾何：罕見特徵常緊貼入選與落選的分界，改寫造成的微小擾動即可讓鄰近競爭者重新排序而將其擠出。此「主動邊界」不需門檻即可預測哪些特徵會消失，在 GPT-2 多層的 AUROC 介於 0.728 至 0.850，並在 Qwen2.5-1.5B 與 Gemma-2-9B 的檢驗中重現。據此提出「成對排序穩定化」訓練目標，針對邊界處原始與改寫的排序失敗進行修補，在未參與目標與超參數選擇的保留來源上，將罕見特徵敏感度提升 8.83 個百分點，且重建誤差與存活特徵覆蓋率幾乎不變。限制在於：此診斷屬於活化可靠度層面，尚不確定被丟棄的特徵是否對應人類可解釋概念的喪失，也未驗證能否轉換為下游可解釋性任務的實際增益。",
+      "title": "Active Budget Can Kill Sensitivity: Diagnosing and Repairing TopK Sparse Autoencoder Reliability",
+      "title_zh": "主動預算會扼殺敏感度：TopK 稀疏自編碼器可靠性的診斷與修補"
     },
     {
       "arxiv_id": "2609.38036",
@@ -7757,7 +7763,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.38036",
       "summary": "Understanding gender biases in large language models (LLMs) is increasingly important as these systems become embedded in decision-support tools with real consequences. Prior research has focused only on a small set of models, leaving open the extent to which gender biases are common and heterogeneous across LLMs. We address this gap across ten models released between April 2025 and June 2026, spanning nine vendors, using two paradigms: gender attribution to stereotyped phrases (Study 1) and mor",
-      "title": "Gender bias across LLMs is common and highly heterogenous"
+      "summary_zh": "既有研究多半只檢視少數幾個大型語言模型，難以判斷性別偏誤究竟是普遍共通的特性，還是隨模型而異。本文以兩個典範比較十個模型（2025 年 4 月至 2026 年 6 月發表、涵蓋九家廠商）：研究一要求模型為性別刻板語句想像一位作者，藉由「包容性指標」比較模型對女性刻板語句與男性刻板語句的偏離程度；研究二採 2×2 設計（虐待或酷刑 × 女性或男性受害者），在核災難框架下詢問以暴力防止災難是否可接受。研究一發現兩個模型傾向把男性刻板語句歸給女性作者，三個模型呈現相反方向，其餘五個無顯著差異；研究二則有六個模型對男性受害者評價較寬容，與人類「道德騎士精神」傾向方向一致，但出現條件因模型而異，另有三個模型四個情境全無變異。作者結論是性別偏誤普遍存在，方向與幅度卻高度異質，部分模型甚至完全相反，因此偏誤稽核應是持續、跨廠商的程序。限制在於語句與框架僅測試單一語言，且各模型的訓練資料與微調細節不透明，無法解釋分歧來源。",
+      "title": "Gender bias across LLMs is common and highly heterogenous",
+      "title_zh": "大型語言模型中的性別偏誤普遍存在且高度異質"
     },
     {
       "arxiv_id": "2609.37911",
@@ -7853,7 +7861,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.37911",
       "summary": "Scientific queries are often brief, while relevant papers use specialized vocabulary. Generated query expansion can bridge this mismatch, but earlier work suggests that its value shrinks as the underlying retriever becomes stronger. We test the four generated formats of term lists, a pseudo-document, multiple pseudo-references, and corpus-steered text all together with SPLADE-v3 on NFCorpus, TREC-COVID, and SciDocs. Every condition searches the same frozen document index and follows the same que",
-      "title": "Generated Query Expansion Still Helps Strong Sparse Retrieval: A Controlled Study with SPLADE-v3"
+      "summary_zh": "科學查詢通常很短，但相關論文往往使用專門詞彙，形成用語落差。本文在 NFCorpus、TREC-COVID 與 SciDocs 三個科學檢索集合上，測試四種以大型語言模型生成內容來擴展查詢的格式：詞彙清單、單一偽文件、四篇偽參考文獻，以及受語料引導的文字，並全部與凍結的 SPLADE-v3 稀疏檢索器搭配。所有條件共用同一份文件索引、同一個 256 維稀疏預算與相同的查詢端整合規則，因此差異僅來自新增內容。結果顯示十二組方法與集合比較的聚合 nDCG@10 全部提升，最佳相對增益分別為 4.81%、8.92% 與 9.47%，其中十一組在 Holm 校正後仍顯著；在 114 組插值設定中有 103 組維持增益，且只要原始查詢權重達 30% 以上即全部高於基線。將生成文字隨機打亂或降為非脈絡化的詞袋，24 組比較仍全數優於基線，說明主要貢獻來自新增的科學詞彙，而非生成文字的順序或脈絡編碼。相對地，由語料誘導的概念圖及其關係、深度、驗證、隨機與閘控等控制條件皆未帶來一致增益，也無法透過學習式閘控補救。限制在於僅測試單一 SPLADE-v3 設定與三個英文 BEIR 集合，且未排除生成器訓練資料重疊與基準洩漏的可能。此研究指出：生成詞彙能補強強健的學習式稀疏檢索器，但前提是原始查詢必須在混合表示中被強力保留，對查詢擴展的整合設計與詞彙來源選擇具實務意義。",
+      "title": "Generated Query Expansion Still Helps Strong Sparse Retrieval: A Controlled Study with SPLADE-v3",
+      "title_zh": "生成的查詢擴展仍對強健稀疏檢索有幫助：以 SPLADE-v3 進行的受控研究"
     },
     {
       "arxiv_id": "2609.37853",
@@ -7961,7 +7971,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.37853",
       "summary": "Large language models (LLMs) are increasingly deployed as social agents, yet credible human-like interaction requires more than fluent responses or persona consistency. Agents must autonomously decide whether, when, and how to communicate while adapting to evolving contexts, goals, and relationships. Existing research, however, lacks a unified approach to enabling, evaluating, and improving such capabilities in continuous, open-ended interaction. We introduce AnthroDial, a unified framework for ",
-      "title": "AnthroDial: Benchmarking LLM Anthropomorphism in Autonomous Social Interaction"
+      "summary_zh": "這篇論文指出，大型語言模型（LLM）雖然常被當作社交代理使用，但「像人」不只是回應流暢或人設一致，代理還必須隨情境、目標與關係變化，自主決定是否、何時以及如何開口。現有研究缺乏能同時支援、評測與改進這種連續開放式互動的統一做法。作者提出 AnthroDial 框架，包含三部分：MindFlow 是以人物卡與情境卡為基礎的輕量互動載體，核心為 Mind Buffer，用來顯式保存「正在準備但尚未送出」的訊息與預定送出時間，並以事件驅動虛擬時鐘推進，使代理能在沉默期間主動追問、連續表達或自然收尾；CAPS-Eval 則依認知—情感人格系統理論（CAPS）建立階層式評分，先以 L0 硬性限制把關，再從整體對話與逐輪兩個層級評估多個構面，並由 LLM 評審依評分規準打分；訓練端則以 SEEDS 雙向生成人物與情境卡以擴充環境，並提出 DiAPO，依模型歷史表現與可學習性動態調整各構面獎勵權重，概念上借鏡最近發展區。作者並建構涵蓋日常溝通、遊戲互動與長程角色互動的評測資料集。實驗比較 Claude-4.6 Thinking、Gemini-3.5 Flash、GPT-5.5、DeepSeek-V4-Flash 與多個 Qwen 模型，顯示大型專有模型在長程角色維持上已相當強，但日常對話在嚴格門檻下仍有落差，遊戲互動最難，瓶頸在即時通訊微風格與不帶標點的聊天習慣。以 Qwen3.5-9B 為基礎，SFT 與 DiAPO 明顯提升分數與門檻通過率，且優於 GRPO 與 ECP、HumanLM、OSIM 等基線。人類評分與多個評審的一致性分析支持框架的可靠性。限制在於部分資料為合成重建、評分仍依賴 LLM 評審、絕對分數會隨評審而變動，且部分構面權重設定偏主觀。此工作的重要性在於把互動機制、評測與訓練串成同一套目標，為開放式互動中的可信擬人社交代理提供可比較的基準與方法。",
+      "title": "AnthroDial: Benchmarking LLM Anthropomorphism in Autonomous Social Interaction",
+      "title_zh": "AnthroDial：以自主社交互動為基準評測大型語言模型的擬人化表現"
     },
     {
       "arxiv_id": "2609.37371",
@@ -8054,7 +8066,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.37371",
       "summary": "Model adaptation is typically governed by a fixed recipe, even though different update programs can produce substantially different behavioral outcomes. We introduce adaptation compilation, which reframes where, how, and to what extent a model should adapt as a joint prediction and decision problem. Rather than searching over candidate programs anew for each learning episode, a compiler learns from prior adaptations to predict a vector-valued counterfactual response surface over candidate progra",
-      "title": "Compiling Learning Problems into Adaptation Programs for Language Models"
+      "summary_zh": "這篇論文提出「調適編譯」（adaptation compilation）的概念，主張不該再用固定配方決定模型該在哪裡、如何調適，而應把它視為聯合預測與決策問題。傳統參數高效微調（如 LoRA）多半在學習開始前就固定模組插入位置與秩，但不同學習型態（事實記憶、行為規則、程序推理、因果推論等）對網路的需求其實不同。作者讓編譯器從過往調適經驗中學習，針對新學習情境預測各候選調適程式在獲取、遷移、界限性與保留性四個行為面向上的反事實反應曲面，並在調適前就選出程式，因此同一組預測幾何可在不同下游偏好下重複使用、無須重新訓練。實驗橫跨五種學習型態，在 Llama-3.1-8B-Instruct 上，編譯器選出的程式接近窮舉搜尋的表現，並優於全域與依目標固定的預設；模組層級探針與凍結行為統計的增益有限，單靠情境表徵即可達到相近效果。限制方面，留一學習家族測試顯示對全新學習型態的零樣本遷移效果不佳，且未見家族涵蓋時編譯器可能不如固定策略。在 Gemma-2-9B-IT 的複現保留了程式異質性與選擇空間，但直接以 argmax 選擇常因預測差距過小而失準，顯示需要納入不確定性、發展「信心感知編譯」。此工作的重要性在於把調適搜尋攤提到相關學習問題之間，讓過往調適經驗成為決定未來如何學習的基礎，並指出調適幾何同時取決於情境、模型與程式三者互動。",
+      "title": "Compiling Learning Problems into Adaptation Programs for Language Models",
+      "title_zh": "將學習問題編譯為語言模型的調適程式"
     },
     {
       "arxiv_id": "2609.37921",
@@ -8149,7 +8163,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.37921",
       "summary": "What are the inductive biases of a Transformer architecture? Existing theory on how the forward pass shapes representations either considers whether Transformers escape from rank collapse or demonstrates that self-attention drives tokens toward cluster patterns. The latter view arises from an elegant dynamical systems perspective, but relies on simplified architectural assumptions, and does not explain the rich structures observed in practice. This leaves a major open question: when a full Trans",
-      "title": "Pattern Formation in Transformers"
+      "summary_zh": "這篇論文探究一個核心問題：一個完整 Transformer 在前向傳播、尚未學習之前，究竟偏好什麼樣的表徵結構？過去理論多聚焦於秩崩潰（rank collapse）或簡化假設下自我注意力導致的聚集（cluster）現象，但這些結果忽略了位置編碼（PE）、多頭注意力（MHA）與前饋網路非線性，無法解釋實務中觀察到的豐富結構。作者借用圖樣形成理論，推導出「Transformer 矩陣色散關係」，證明整個架構在崩潰狀態附近會選擇性放大一組聯合 token–特徵模式，包括駐波、行進波、旋轉波與混合形態。文中逐一刻劃每個架構元件（位置編碼、OV 幾何、多頭注意力、FFN）如何決定哪個模式被放大、穩定、競爭或共存，並推導振幅方程描述非線性飽和與模式競爭。實驗上，作者在受控序列任務與 CIFAR-10 的 ConViT 上驗證，透過對齊任務的初始化可提升資料效率並加速最佳化。此「動態先驗」的觀點把傳統傳播–崩潰的二元圖像細化為模式解析的架構偏誤理論，對初始化設計與架構理解具實務意義。惟理論多建立於純量約化與區域分析，全域與深層行為仍待後續檢驗。",
+      "title": "Pattern Formation in Transformers",
+      "title_zh": "Transformer 中的圖樣形成"
     },
     {
       "arxiv_id": "2609.37568",
@@ -8244,7 +8260,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.37568",
       "summary": "Audio-visual large language models (AVLLMs) have made remarkable progress in multimodal understanding and reasoning through interactions among visual, auditory, and linguistic information. However, recent studies show that AVLLMs face a critical challenge: $\\textbf{source-confused grounding hallucination}$, where cues from the unused modality induce responses that the required modality does not support, undermining reliability in real-world applications. Existing methods have made progress in mi",
-      "title": "Devils in Question Relay: Source-Conditioned Relay Steering to Mitigate Hallucinations in Audio-visual Large Language Models"
+      "summary_zh": "音視覺大型語言模型（AVLLM）在整合視覺、聽覺與語言資訊上進展顯著，但存在「來源混淆的接地幻覺」：非必要模態的線索會誘發必要模態並不支持的答案。例如畫面中出現鋼琴，即使音訊只有人聲，模型仍可能幻覺出鋼琴聲。既有方法多從推論時校正解碼或訓練時對齊著手，卻對內部跨模態互動如何導致此失效缺乏理解。本文先以路徑干預與表徵分析切入，發現模型其實能可靠辨識問題要求的模態（Qwen2.5-Omni-7B 正確率達 99.85%），因此問題不在於誤解來源。作者進一步發現「問題中繼」機制：問題符元位置的隱藏表徵同時承載必要來源證據與干擾線索；切斷必要模態到問題狀態的路徑，對正確答案的支撐下降最劇；而切斷干擾模態到問題狀態的注意力路徑，能比切斷到生成位置更有效地恢復正確答案 logit。據此提出 Secret（Source-Conditioned Relay Steering），一種免訓練方法：透過切斷干擾模態與必要模態路徑，分別產生正向與負向問題表徵，再以其逐符元差向量、經 L2 範數對齊後加回原始問題狀態，將問題中繼導向必要來源證據，且僅在 prefill 階段施加。實驗於 CMM 與 AVHBench 兩個基準、三種 AVLLM（VideoLLaMA2-AV-7B、Qwen2.5-Omni-7B、Qwen3-Omni-30B-A3B）上，整體準確率最高較基礎模型提升 18.0 與 7.1 個百分點，並一致優於 VCD、AVCD、MAD 等免訓練基線。在音視訊不匹配的模態特定字幕任務上，D-CIDEr 最低、LLM-score 最高，顯示可推廣至開放式生成；細粒度分析亦顯示答案邊界與長影片片段上的增益。限制在於分析停留在路徑層級，尚未細究個別注意力頭的角色，且需模型特定地選擇引導深度 L1，最佳深度與正負表徵分離度相關。此工作的重要性在於揭示中間文字狀態如何調節證據選用，為免訓練幻覺減輕提供機制性設計依據。",
+      "title": "Devils in Question Relay: Source-Conditioned Relay Steering to Mitigate Hallucinations in Audio-visual Large Language Models",
+      "title_zh": "問題中繼中的魔鬼：以來源條件式中繼引導減輕音視覺大型語言模型的幻覺"
     },
     {
       "arxiv_id": "2609.37577",
@@ -8336,7 +8354,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.37577",
       "summary": "Large Language Model judges are widely used to rank texts and text-generating systems through pairwise comparison, and their reliability is typically assessed via three proxies: position bias, transitivity, and pairwise agreement (self- or human-labeled). Because these proxies drive judge selection and benchmarking, a substantial literature reporting that judges perform poorly on them risks steering practitioners away from otherwise capable evaluators. We argue this assessment is misleading. Und",
-      "title": "Pair Difficulty Matters: Rethinking Pairwise LLM-as-a-Judge Evaluation and Consistency"
+      "summary_zh": "這篇論文挑戰目前評測 LLM 評審（LLM-as-a-Judge）的主流做法。作者指出，學界慣用的三類代理指標——位置偏誤、傳遞性違反、以及成對一致率（自評或人評）——其實嚴重誤導。原因在於：在 Bradley–Terry 幾何下，這些指標被「排名差距小」的配對主導，而這類配對本身接近擲硬幣，其不一致在資訊理論上本來就無可避免，對整體排名幾乎沒有貢獻；真正承載排名訊號的是差距大的配對，卻幾乎不影響上述指標。作者以形式化推導搭配受控模擬，並在兩個有人工評分的語料庫（CLEAR 與 ASAP 2.0）上實測六個評審模型。結果顯示，一致性與位置偏誤等指標和對金標排名的相關性很弱，預測力集中在差距大的區段；Gemma-3-4B 幾乎在小差距配對上搖擺，卻仍能還原與其他模型相當的排名。限制包括：資料僅來自教育領域、ASAP 2.0 的評分解析度低、僅探討成對判斷、且人類金標本身具主觀性。作者主張評測應改用「排名差距條件化」指標，並盡可能以人類排名為對照。此研究提醒實務者：不該因聚合偏誤指標不佳就排除其實可用的評審，對 benchmark 設計與模型選擇具直接影響。",
+      "title": "Pair Difficulty Matters: Rethinking Pairwise LLM-as-a-Judge Evaluation and Consistency",
+      "title_zh": "配對難度至關重要：重新思考成對 LLM-as-a-Judge 評估與一致性"
     },
     {
       "arxiv_id": "2609.37887",
@@ -8431,7 +8451,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.37887",
       "summary": "Activation and key-value cache precision change what a quantized language model computes without altering its stored weights. Direct weight-code bounds, however, assign identical complexity to deployments that behave differently and charge separately for weight codes that behave identically. Behavioral Capacity Certificates (BCC) charge for behavior using the aggregate prior mass of complete implementations---weights, scales, activation and cache rules---that induce the same bounded loss. When q",
-      "title": "Behavioral Capacity Certificates for Quantized Language Models"
+      "summary_zh": "這篇論文針對一個實務痛點：量化部署的複雜度不該只按權重碼計算。當權重相同但激活精度、KV 快取精度、縮放與截斷規則不同時，模型實際算出的函式會改變；反過來，不同權重檢查點也可能因激活捨入而產生完全相同的輸出。作者提出「行為容量憑證」（BCC），把完整實作（權重、縮放、閾值、激活與快取規則）依其誘導的同一有界損失函式分群，改以該「行為纖維」的總事前機率計算複雜度，因此共享行為的實作能降低複雜度罰項，並以一個破平準則判斷節省是否值得驗證成本。方法上結合 PAC–Bayes 型 Occam–KL 界、固定路由下 MoE 的精確纖維分解、以及基於邊界預算的座標細胞（可同時容許符號翻轉與剪枝）。實驗在 GPT-2、OLMoE-1B-7B、SmolLM2-1.7B、Qwen2.5 上驗證三個步驟：僅前向的篩選在較低前處理成本下達到與 Hessian 導引相當的品質；在 OLMoE 上以 27,550 個輸出頭座標覆蓋全部 2^27550 種符號模式，獨立探針將風險上界壓在 0.2% 左右；在 GPT-2 上取得非空泛且比壓縮碼更緊的完整解碼器界。限制在於完整行為質量通常難以計算，需仰賴認證子集、固定路由或有限宣告母體，且部分轉移風險未達預設 1% 門檻，大型模型與學習式路由仍待驗證。",
+      "title": "Behavioral Capacity Certificates for Quantized Language Models",
+      "title_zh": "量化語言模型的行為容量憑證"
     },
     {
       "arxiv_id": "2609.37924",
@@ -8527,7 +8549,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.37924",
       "summary": "Recent work on anchored diffusion language models improves denoising by shaping an intermediate latent space with supervised important-token targets. In this work, we introduce time-based (self-supervised) anchoring, which learns and reuses latent anchors without requiring such targets. Our key observation is that anchors encode persistent properties of the clean sequence, such as its semantic intent, global structure, or intermediate plan. Although their hidden representations become stale as t",
-      "title": "Time-Anchored Diffusion Language Models: Latent-Space Caching for Fast Generation"
+      "summary_zh": "擴散語言模型（DLM）在推論時必須反覆評估整條序列，因此生成成本遠高於自迴歸解碼。既有的錨定式作法 ADLM 需依賴任務相關的重要詞元監督，取得不易。本文提出「時間錨定」，主張錨點所承載的語意意圖、整體結構與中間規劃等性質在鄰近擴散時間內具持續性，即使隱藏表徵隨畫布演進而過時，語意內容仍可重用。方法上把去噪網路拆成四部分：輕量共享網路、昂貴錨定網路、極小的融合模組與輕量去噪器；錨定網路每 K 個反向步才評估一次，其潛在錨點被快取，其餘步驟僅以共享網路編碼當前狀態，再由融合模組結合過期錨點後送去噪，因而形成潛在空間快取的詮釋，並可透過 K 調控品質與算力的取捨。作者提出兩種實例：TADM:Post-train 在凍結骨幹下僅訓練 3.1M 參數的融合模組，於 DiffusionGemma-26B 上於 GSM8K、AIME26、GPQA-Diamond、LiveCodeBench-v6、HumanEval、MMLU-Pro 等基準提升約 49% 至 79% 吞吐量並大致保持準確率；TADM:Pretraining 從頭學習可快取表徵，相較標準單階段 DLM 最多減少 38% 的 Transformer 層計算，吞吐量最高為 ADLM 的 1.73 倍，T=2048 時 MAUVE 達 0.650。理論上作者推導 T-ANELBO 下界，將目標分解為重建、先驗與時間錨定擴散加錨點監督三項，γ=0 時即為全自監督。限制在於錨點更新間隔過大時生成品質下滑，且後訓練版本的上限受凍結骨幹能力所限；附錄亦顯示 ADLM 未經時間重用訓練時，過期錨點會造成明顯退化。",
+      "title": "Time-Anchored Diffusion Language Models: Latent-Space Caching for Fast Generation",
+      "title_zh": "時間錨定擴散語言模型：以潛在空間快取加速生成"
     },
     {
       "arxiv_id": "2609.37834",
@@ -8629,7 +8653,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.37834",
       "summary": "Harness optimization provides a practical setting for recursive self-improvement (RSI), where agent-generated modifications inform subsequent changes through execution feedback. Recent work such as Meta-Harness implements this process through iterative code generation and evaluation, but retains a fixed development set and proposal policy. These constraints channel evolution along a single search trajectory, increasing the risk of converging to a local optimum. We make the improvement process it",
-      "title": "Mixture of Self-Improving Branches For Agent Harness Optimization"
+      "summary_zh": "這篇論文處理的是 harness 最佳化中的一個結構性缺陷。所謂 harness，是指包住 LLM 的檢索、工具介面與控制流程，它決定模型看到什麼資訊、能做哪些動作。作者指出，像 Meta-Harness 這類以執行回饋迭代生成並評估 harness 程式碼的方法，雖然是遞迴自我精進的實用場景，卻把開發集與提案指令固定住，使演化被導向單一搜尋軌跡，容易收斂到局部最佳解。\n\n方法上，作者把搜尋拆成多個分支，每個分支擁有自己的開發子集、候選歷史與提案指引。做法是比較各分支前段 harness 對個別題目的覆蓋票數：若某分支明顯佔優，該題就保留給它並自其他分支移除；若所有分支的前段 harness 都能解出，則直接刪除，因為已無改進訊號。提案指引則由同一個 proposer 依各分支自身搜尋史週期性改寫，使各分支累積出互補的優先順序。部署時因不同子集的分數無法直接比較，作者訓練一個 router，在執行前為每個新輸入挑選一個以開發資料選出的分支頭。\n\n實驗涵蓋奧林匹亞數學推理、Terminal-Bench 2.0 與 SWE-bench Lite。相對於 Meta-Harness，數學推理提升 34.8%，Terminal-Bench 2.0 提升 11.6%，SWE-bench Lite 提升 3.8%，且選型與 router 設定完全只用開發資料，未觸及測試結果。消融顯示開發集更新與提案調適兩者同時開啟時效果最佳。\n\n限制在於總 token 用量高於基線、重複評估次數有限，router 在兩個設定仍略低於最強單一分支頭，且軌跡變化與後續測試增益之間未建立因果關係。",
+      "title": "Mixture of Self-Improving Branches For Agent Harness Optimization",
+      "title_zh": "自我精進分支混合架構於 Agent Harness 最佳化之應用"
     },
     {
       "arxiv_id": "2609.37533",
@@ -8725,7 +8751,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.37533",
       "summary": "Masked diffusion models (MDMs) generate sequences by progressively unmasking several tokens per denoising step, but their reverse process is typically factorized over positions, limiting sample quality in the few-step regime where diffusion's speed advantage over autoregressive decoding matters most. A recent line of work introduces a continuous Gaussian latent, trained as a variational autoencoder, to capture correlations across positions, but such approaches are prone to posterior collapse, wh",
-      "title": "E-MoE: Enhanced Mixture-of-Experts for Non-Factorized Diffusion Language Models"
+      "summary_zh": "這篇論文針對遮罩擴散模型（MDM）在少步取樣時品質不佳的根本原因：反向過程通常在位置上被因式分解，導致同一步解遮罩的多個詞元被視為條件獨立，無法描述跨位置的相關性，而這正是擴散模型相對自迴歸解碼的速度優勢最能發揮的區間。既有做法如 VADD 引入連續高斯潛在變數並以變分自編碼器訓練，但容易出現後驗塌縮，且需額外辨識網路與固定的高斯先驗。作者提出 E-MoE（Enhanced Mixture-of-Experts），把反向過程建模為一組因式分解分布對「離散共享潛在變數」的混合，而此潛在變數直接取自混合專家（MoE）主幹本身的專家路由決策，每個詞元、每一層的路由即為潛在碼，因此不需新增辨識模型、也不增加推論時的作用參數量。方法上，作者推導出此混合式反向過程的 ELBO 上界，並將其中的路由 KL 化簡為可由路由器直接計算的逐層、逐詞元類別 KL；訓練時以 Gumbel-Softmax 搭配 straight-through 估計處理離散路由，訓練需兩次前向傳遞（乾淨與雜訊路徑共用同一組路由器權重），取樣時只需一次。實驗涵蓋 2D 合成資料（8-modes、Swiss-roll）、二值化 MNIST 與 LM1B。結果顯示在 NFE 為 1 到 16 的少步區間，E-MoE 的生成困惑度明顯優於因式分解的 MDLM 與連續潛在的 VADD；LM1B 上 NFE=1、2 時困惑度降低約 2 至 2.6 倍，MAUVE 在 NFE=2 時達 24.6%，遠高於 MDLM 的 3.0% 與 VADD 的 3.8%，且在相同作用參數量下達成。消融實驗將路由溫度趨近零使混合退化為單一專家後，困惑度上升約 1.7 至 2.1 倍，證明增益來自混合本身而非參數量。限制在於此方法的效益隨解遮罩步數增加而遞減，且高度依賴路由器能否由雜訊序列對齊乾淨序列的路由決策，一旦路由分布塌縮，混合便退化回因式分解模型。",
+      "title": "E-MoE: Enhanced Mixture-of-Experts for Non-Factorized Diffusion Language Models",
+      "title_zh": "E-MoE：為非因式分解擴散語言模型設計的增強型混合專家架構"
     },
     {
       "arxiv_id": "2609.37953",
@@ -8824,7 +8852,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.37953",
       "summary": "Complex tasks inherently couple workflow structure, agent responsibility, collaboration, and memory access: task regions delimit responsibility and tool scope, cross-region dependencies give rise to handoffs, and ownership boundaries delimit private and selectively shared memory. Existing methods can jointly optimize agent and communication structures, yet such optimization does not by itself require responsibility, handoff, and memory boundaries to remain consistent with task dependencies. We t",
-      "title": "Topological Coherence for Self-evolving Multi-agent Systems"
+      "summary_zh": "這篇論文指出，現有 LLM 多代理人系統雖能自動搜尋代理人角色、溝通拓撲與記憶結構，卻缺乏一個約束，確保任務工作流、代理人職責、交接介面與記憶邊界在自我演化時彼此相容。作者將此要求稱為「拓撲一致性」，並提出 ToCoMAS：先以工具介面為任務圖落地，將相容的任務節點合併為可重用的職責區域，再從同一份區域拓撲推導依賴誘發與側寫條件式的協作關係，以及受邊界管制的記憶可見度。演化階段僅保留同時通過結構檢查與獎勵改善的候選組織。在 BBEH、WorkBench、SWE-Bench-Verified 與 CoMemBench 上，ToCoMAS 於 Qwen3.8-27B 與 DeepSeek-V4-Flash 兩種主幹皆優於預設、自動設計與自我演化基線；CoMemBench 的驗證節點進度、交接成功率與汙染隔離亦明顯提升。消融顯示職責指派、跨區交接、記憶邊界與線上演化各自貢獻不同指標。限制在於多數基準與基線數字多為作者自行重跑，且成本僅在相同進度分箱下比較；但其將組織結構視為共享拓撲推導結果的觀點，對可演化多代理人系統的設計具參考價值。",
+      "title": "Topological Coherence for Self-evolving Multi-agent Systems",
+      "title_zh": "拓撲一致性：自我演化多代理人系統的組織新典範"
     },
     {
       "arxiv_id": "2609.37889",
@@ -8924,7 +8954,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.37889",
       "summary": "Multimodal continual instruction tuning (MCIT) aims to enable multimodal large language models to acquire new capabilities from sequential tasks while preserving previously learned knowledge. Existing methods primarily mitigate catastrophic forgetting by constraining parameter updates or separating task-specific adaptations. However, continual adaptation can also benefit from external knowledge that provides domain-specific information and reusable reasoning patterns for solving diverse instruct",
-      "title": "ReCAP: Retrieval-Guided Capability Reuse for Multimodal Continual Instruction Tuning"
+      "summary_zh": "多模態持續指令微調（MCIT）要求多模態大型語言模型在依序學習新任務時，仍能保有先前的知識。現有做法多半只靠限制參數更新或切分任務專屬模組來減緩災難性遺忘，卻未善用外部知識所提供的領域資訊與可重用推理模式。本文提出 ReCAP，於每個持續階段以外部檢索與 LLM，從當前訓練資料逐步建構包含領域、推理與格式三類知識卡的知識庫；推論時，檢索到的領域知識作為生成提示，推理知識則對應到可重用能力模組，並依序組成每個實例專屬的能力路徑。由於模組會跨階段重用，後續階段可能覆寫既有參數，因此作者提出自適應子空間回收：以共享基底與階段專屬核心表示每個能力，依累積歷史能量排序，凍結高能量方向、回收低能量方向並附加新方向。實驗在 CoIN 與 UCIT 兩項基準上，最終平均分數分別達 69.10 與 70.65，優於 SAME 等代表性基線；搭配一般 RAG 的 LoRA-FT 與 SAME 仍明顯落後，顯示增益來自知識的組織與重用而非單純檢索。消融顯示移除子空間回收或階段核心路由時效能大幅下降。限制在於知識庫僅以文字卡表示，尚未涵蓋表格、圖示或知識圖譜。",
+      "title": "ReCAP: Retrieval-Guided Capability Reuse for Multimodal Continual Instruction Tuning",
+      "title_zh": "ReCAP：檢索引導的能力重用於多模態持續指令微調"
     },
     {
       "arxiv_id": "2609.37659",
@@ -9026,7 +9058,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.37659",
       "summary": "There has been significant work on understanding the In-Context Learning capabilities of Large Language Models, especially on the induction circuit. For a few-shot classification task, the induction circuit leverages linear representations of each labeled example in-context in order to classify an unlabeled query. However, few works focus on how those linear representations are built in the first place. Leveraging the expressivity of the vision modality compared to text, we uncover a Shared Disc",
-      "title": "Are In-Context Images Worth 10 Dimensions?"
+      "summary_zh": "這篇論文探討大型視覺語言模型（LVLM）如何在少樣本脈絡學習（ICL）中形成可判別的線性表徵。作者觀察到，負責預測類別標籤的 forerunner token 原始隱藏狀態並不具備線性可分類性，但在其中存在一個跨任務共用的低維子空間，稱之為「共用判別幾何」（Shared Discriminative Geometry, SDG）。他們以元訓練方式對每一層學習一組線性降維投影，使同類樣本投影後聚集於共同方向；結果顯示 Ministral 3（3B）在第十六層達到峰值，有效維度僅約 10 維，卻仍能在十個領域資料集上維持約九成準確率。干預實驗進一步顯示，消融前 15 維會使準確率下降約 12.9%，而放大這些維度可提升約 3.9%，隨機子空間則幾乎無效。作者也證明 SDG 的形成分為兩步：先在早期層於視覺 token 中降維，再透過注意力把幾何轉移到文字 token。理論上，他們證明非因果線性自注意力可藉由樣本對樣本注意力，將脈絡內資料投影到主成分，每一層相當於對 Gram 矩陣誤差做一步梯度下降，並具指數收斂率；在真實模型中，他們以 OV 電路分數篩選出降維頭，消融其注意力後低維優勢即消失。此幾何亦見於文字分類與多模態分類任務，但在配對型任務上消融反而有助表現。限制在於理論電路假設線性、非因果注意力，且以平均池化代表影像，未直接對應訓練後模型的完整電路；儘管如此，此工作把 ICL 表徵形成與低維幾何連結起來，對模型可解釋性與測試時干預具啟示意義。",
+      "title": "Are In-Context Images Worth 10 Dimensions?",
+      "title_zh": "脈絡內影像值 10 個維度嗎？"
     },
     {
       "arxiv_id": "2609.37899",
@@ -9121,7 +9155,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.37899",
       "summary": "Zero-order optimization (ZO) trains without backpropagation, making it relevant to forward-only hardware and non-differentiable loss, but its gradient variance grows with perturbed dimension, inhibiting large-model training. Sharded Optimization Mixture of Assemblies (SOMA) trains LSTM experts independently on $N$ data clusters using simultaneous perturbation stochastic approximation (SPSA), without exchanging gradients, activations or optimizer state. Its separable loss removes cross-expert per",
-      "title": "Scaling Zero-Order Pretraining through Model Sharding"
+      "summary_zh": "這篇論文處理零階最佳化（zero-order optimization, ZO）在模型規模變大時的困境：梯度變異數會隨擾動維度線性成長，導致大型模型難以訓練。作者提出 SOMA（Sharded Optimization Mixture of Assemblies），把 LSTM 專家集成切分開來，各專家在自己的語料分群上以 SPSA 獨立訓練，彼此不交換梯度、活化值或最佳化器狀態。因為損失函數可分離，跨專家的擾動雜訊被移除；作者證明在等大小分塊下，獨立損失可把相對梯度變異數降到共享損失估計器的約 1/N。實驗在約 8.44M 參數、150 聚合 GPU 小時的預算下，SOMA N=2 達到 1.76 test nats/byte，優於單體 SPSA 的 2.00–2.11 與 EGGROLL 的 2.21；在 WikiText-103 上亦同。作者也展示較重分片帶來推論吞吐的好處（N=256 為 N=8 的 9.19 倍），但代價是訓練算力大幅增加。限制在於此法仍未勝過 BPTT，且僅在小模型、單一語料與固定路由器上驗證。",
+      "title": "Scaling Zero-Order Pretraining through Model Sharding",
+      "title_zh": "透過模型分片擴展零階預訓練"
     },
     {
       "arxiv_id": "2609.37807",
@@ -9214,7 +9250,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.37807",
       "summary": "Studying how fine-tuning shapes refusal and noncompliance behaviour requires identifying training examples that refuse, evade or otherwise fail to fulfil the requested task. But existing annotation covers evaluation sets of a few thousand prompts at most. We present CompOrca, a compliance labelling over the entirety of the 4,233,923-example OpenOrca corpus. Every example was classified as compliant or noncompliant by five independent passes of an open-weight LLM judge (LongCat-2.0, 1.6T paramete",
-      "title": "CompOrca: Corpus-Scale Compliance Labelling of Instruction-Tuning Data"
+      "summary_zh": "這篇論文處理的問題是：要研究微調如何塑造拒答與不配合行為，就必須先知道訓練語料中哪些樣本拒絕、迴避或未完成使用者要求；但既有標註最多只涵蓋數千筆評測提示，無法支撐語料層級的分析。作者因此提出 CompOrca，對 OpenOrca 全部 4,233,923 筆訓練樣本逐列標註。方法上以開放權重的 LongCat-2.0（1.6T 參數）作為評審模型，關閉推理、強制 JSON 輸出，進行五次獨立標註：第一輪貪婪解碼（T=0），其餘四輪以 T=0.7 取樣，並在提示中把「不配合」定義為未交付所求內容，涵蓋明示拒答、能力推託與問題本身無法回答的情況。結果分為完全一致合規（94.75%）、完全一致不配合（1.28%）與不一致列（3.97%），並釋出逐列票數。單輪約標記 2.7% 至 3.2% 為不配合，但僅 1.28% 為五輪全數標記，顯示單次 LLM 評審不穩定；65.8% 的不一致列只差一票。人類驗證集共 450 列（其中 150 列雙人標註，人類間 κ=0.93），完全一致合規與不配合標籤的精確率分別為 97.3% 與 86.7%，後者是高精確率子集而非完整列舉。與既有方法比較，六種已發表的拒答偵測方法對人類不配合標籤的召回率介於 0.4% 至 94.1%，Zou 等人的字串前綴清單精確率僅 12.6%。限制在於五次取樣只提升自我一致性而非正確性、標籤為二元且混合多種構念、標籤並不完整。此工作的重要性在於首次為百萬級通用指令語料提供逐列合規標籤與票數，讓研究者能過濾最模糊樣本、控制訓練資料組成，並重新檢視拒答研究中方法定義與誤差造成的結論差異。",
+      "title": "CompOrca: Corpus-Scale Compliance Labelling of Instruction-Tuning Data",
+      "title_zh": "CompOrca：指令微調資料的全語料合規標註"
     },
     {
       "arxiv_id": "2609.37751",
@@ -9308,7 +9346,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.37751",
       "summary": "Sparse mixture-of-experts (MoE) large language models scale model capacity by routing each token to a small subset of experts. Their routers are regularized with load balancing terms and learn affinity scores through the language-model objective. However, these objectives do not provide direct alignment between routing affinities and token-level error. We introduce token-error supervision for sparse routing in two forms. The first form predicts an error score per expert. The affinity-weighted ag",
-      "title": "Cross-Entropy Guided Routing in Mixture-of-Experts Large Language Models"
+      "summary_zh": "稀疏混合專家（MoE）模型透過路由器為每個 token 挑選少數專家，藉此擴大模型容量而不等比增加計算量。然而標準路由器僅靠語言模型目標與負載平衡等正則項間接學習親和分數，這些分數只提供專家之間的相對偏好，並未直接對齊 token 層級的預測誤差。本論文提出兩種以實現的下一 token 交叉熵作為監督訊號的機制。第一種為 token 誤差監督（TES）：以一個輕量的專家索引誤差頭預測各專家的誤差分數，再以親和權重聚合為單一 token 誤差預測並與實際交叉熵對齊；推論時再從原生親和 logit 中扣除經縮放的對數誤差項，藉此在 top-K 選擇前降低高誤差專家的相對偏好。第二種為無需額外頭部的親和集中度監督（ACS）：直接把選中專家正規化親和機率的平方集中度對齊實際 token 損失，使路由分布依損失變得更尖銳或更平坦。兩種形式皆以 Itakura–Saito 散度或指數負對數概似（ENLL）進行對齊。理論分析顯示，IS 在預測與觀測誤差相等時不改變原始交叉熵更新，而 ENLL 會對低損失 token 給予較大梯度權重。實驗在 Granite 3.1 3B-A800M 與 OLMoE-1B-7B-SFT 兩個稀疏 MoE 骨幹、四個選擇題問答基準上評估，並與參數量匹配的對照組比較。Granite 上 ACS-IS 平均提升約 2.1 個百分點，TES-IS 相對 Dual Affinity 平均提升 2.3 個百分點；在較強監督下，Granite 的 ARC-Challenge 增益達 2.94 個百分點。方法保留原生 top-K 執行預算與聚合策略。限制包括僅測試兩個骨幹、四個資料集與三個隨機種子，未涵蓋預訓練規模與較大模型，亦未量測 TES 額外投影帶來的延遲與記憶體开销，且部分資料集上較大監督係數反而降低準確率。此工作凸顯直接以 token 損失監督路由是親和式路由之外值得互補的方向。",
+      "title": "Cross-Entropy Guided Routing in Mixture-of-Experts Large Language Models",
+      "title_zh": "以交叉熵引導的混合專家大型語言模型路由"
     },
     {
       "arxiv_id": "2609.37655",
@@ -9411,7 +9451,9 @@
       "source_name": null,
       "story_id": "arxiv:2609.37655",
       "summary": "Advancing spatial intelligence in Multimodal Large Language Models (MLLMs) is bottlenecked by the scarcity of complex, scalable 3D question-answer (QA) data. While manual annotation is labor-intensive, directly utilizing LLMs to synthesize these QA pairs often fails due to their inherent deficiencies in spatial and geometric computation. We introduce Exemplar2VQA, a scalable exemplar-driven visual question answering generation framework that rapidly synthesizes large-scale spatial QA pairs in si",
-      "title": "Exemplar2VQA: A Scalable Exemplar-Driven Visual Question Answering Generation Framework via Multi-Agent Coding"
+      "summary_zh": "這篇論文針對多模態大型語言模型（MLLM）在空間推理上的瓶頸：高品質3D空間問答資料極度稀缺，而人工標註成本高昂，直接以LLM合成又常產生嚴重的空間幻覺，因為LLM缺乏精確的幾何運算能力。作者提出Exemplar2VQA，一套端到端、全自動的範例驅動生成框架。使用者只需提供一個具體的空間問答範例，框架便以其為藍圖，透過雙軌多代理人架構（Architect、Coder、Reviewer、Refiner四種角色）將任務拆解，並在具物理模擬的環境（AI2-THOR）中執行程式碼。其中相機軌跡軌負責自主導航並擷取多視角影像，問答軌則依據場景中介資料，呼叫自行設計的幾何工具函式庫，以確定性的數學運算推導出問題與標準答案，並透過模擬器回饋與Python執行錯誤進行迭代自我修正。此設計讓LLM僅負責拓樸規劃與相依性調度，避免直接進行連續空間計算。實驗顯示，僅以合成的室內資料微調Qwen2.5-VL（3B/7B），在MMSI-Bench與VSI-Bench上皆優於基礎模型，甚至超越GPT-4o等專有模型；在SpaCE-10、ViewSpatial-Bench與OSR-Bench的零樣本測試中亦展現跨域泛化能力。消融實驗指出，合併所有角色會使生成成功率大幅下降，分離角色可將問答生成成功率提升至92%。限制在於目前僅支援靜態、以物件為中心的查詢，尚無法處理動態時空事件，且成功率受基礎LLM程式編寫能力所限。",
+      "title": "Exemplar2VQA: A Scalable Exemplar-Driven Visual Question Answering Generation Framework via Multi-Agent Coding",
+      "title_zh": "Exemplar2VQA：透過多代理人程式編寫的可擴展範例驅動視覺問答生成框架"
     }
   ],
   "run_date": "2026-09-30",

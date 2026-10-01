@@ -804,7 +804,9 @@
       "source_name": null,
       "story_id": "hf:microsoft/vibevoice-asr-hf",
       "summary": "**VibeVoice-ASR** is a unified speech-to-text model designed to handle **60-minute long-form audio** in a single pass, generating structured transcriptions containing **Who (Speaker), When (Timestamps), and What (Content)**, with support for **Customized Hotwords** and over **50 languages**. ➡️ **Demo:** VibeVoice-ASR-Demo ➡️ **Report:** VibeVoice-ASR Technical Report - **🕒 60-minute Single-Pass Processing**: Unlike conventional ASR models that slice audio into short chunks (often losing global context), VibeVoice ASR accepts up to **60 minutes** of continuous audio input within 64K token length. This ensures consistent speaker tracking and semantic coherence across the entire hour. - **👤 Customized Hotwords**: Users can provide customized hotwords (e.g., specific names, technical terms,...",
-      "title": "microsoft/VibeVoice-ASR-HF"
+      "summary_zh": "VibeVoice-ASR 是一款統一的語音轉文字模型，主打能在單次推論中處理長達 60 分鐘的長篇音訊，並輸出結構化轉錄結果，同時標註「誰（講者）」、「何時（時間戳）」與「什麼（內容）」三類資訊，另支援自訂熱詞與超過 50 種語言。傳統 ASR 模型通常把音訊切成短片段再逐一辨識，因而容易遺失全域脈絡；VibeVoice 則可在 64K token 長度內直接接受最多 60 分鐘的連續音訊輸入，藉此維持整段錄音中講者追蹤的一致性與語意連貫性。自訂熱詞功能讓使用者提供特定人名、專業術語等詞彙，以提升領域場景的辨識正確率。摘要僅描述模型定位與功能特色，未提供字元錯誤率等量化基準、與其他長音訊 ASR 系統的比較，也未說明在高度重疊語音或噪音環境下的表現與失效情況，因此其實際效能仍待技術報告佐證。此工作的價值在於把長音訊辨識從「分段拼接」推向「單次全域處理」，對會議紀錄、Podcast 與逐字稿等需要長時間脈絡的應用具指標意義。",
+      "title": "microsoft/VibeVoice-ASR-HF",
+      "title_zh": "微軟 VibeVoice-ASR：單次處理 60 分鐘長音訊的語音辨識模型"
     }
   ]
 }

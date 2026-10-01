@@ -786,7 +786,9 @@
       "source_name": "Sebastian Raschka Blog",
       "story_id": "fallback:93e4f423cf1082e6",
       "summary": "How coding agents use tools, memory, and repo context to make LLMs work better in practice",
-      "title": "Components of A Coding Agent"
+      "summary_zh": "本文探討程式編寫代理（coding agent）的系統設計，說明這類代理如何運用工具、記憶機制與程式碼庫脈絡，讓大型語言模型在實際軟體開發場景中發揮更好的效果。目前僅取得摘要，全文尚未公開，因此無法確認具體方法與實驗設計。從摘要可見，作者關注的重點並非模型本身的規模或訓練方式，而是代理外圍的工程架構：工具呼叫讓模型能讀寫檔案、執行測試與命令列指令；記憶機制負責累積跨回合的任務狀態與經驗；程式碼庫脈絡則提供檔案結構、相依關係與既有慣例等資訊，使模型產出更貼近專案需求。三者互相配合，形成代理在真實儲存庫中完成多步驟任務的基礎。此類研究的重要性在於，當底層模型能力逐漸趨同時，代理的架構設計往往才是決定實務表現的關鍵，也牽涉可重現性、安全性與成本等議題。由於缺乏實驗數據與基準比較，目前難以評估各構件的實際貢獻比例，仍需等待完整論文方能驗證。",
+      "title": "Components of A Coding Agent",
+      "title_zh": "程式編寫代理的組成要素"
     }
   ]
 }

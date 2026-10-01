@@ -811,7 +811,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:a8d3dc54bd488186",
       "summary": "In this post, we explain how P-EAGLE works, how we integrated it into vLLM starting from v0.16.0 (PR#32887), and how to serve it with our pre-trained checkpoints.",
-      "title": "P-EAGLE: Faster LLM inference with Parallel Speculative Decoding in vLLM"
+      "summary_zh": "本文為一篇技術部落格，說明 P-EAGLE 的運作原理，以及如何將其整合進 vLLM。作者指出，自 vLLM v0.16.0 起（對應 PR#32887）已納入此機制，並進一步介紹如何使用其預先訓練的檢查點來提供服務。投機解碼的核心概念，是以較輕量的草稿模型先提出多個候選 token，再由目標模型平行驗證，藉此在不改變輸出分布的前提下降低延遲；P-EAGLE 的「平行」特性應是在草稿生成與驗證流程上進一步提升吞吐量，但摘要未交代其具體演算法變更、接受率數據，也未提供與既有 EAGLE 或 Medusa 等方法的延遲與吞吐量對照。內容僅止於摘要層次，缺少實驗設定、硬體規格與重現指令，因此無法獨立驗證其加速幅度。對實務而言，其價值在於把學術界的投機解碼技術落地到主流推論伺服器，讓服務端能以較低改動成本換取推論速度，對高併發的 LLM 部署尤具吸引力。",
+      "title": "P-EAGLE: Faster LLM inference with Parallel Speculative Decoding in vLLM",
+      "title_zh": "P-EAGLE：在 vLLM 中以平行投機解碼加速 LLM 推論"
     },
     {
       "arxiv_id": null,

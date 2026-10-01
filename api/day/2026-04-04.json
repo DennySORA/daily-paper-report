@@ -1086,7 +1086,9 @@
       "source_name": null,
       "story_id": "hf:microsoft/dayhoff-170m-grs-ss-134000",
       "summary": "Dayhoff is an Atlas of both protein sequence data and generative language models — a centralized resource that brings together 3.34 billion protein sequences across 1.7 billion clusters of metagenomic and natural protein sequences (GigaRef), 46 million structure-derived synthetic sequences (BackboneRef), and 16 million multiple sequence alignments (OpenProteinSet). These models can natively predict zero-shot mutation effects on fitness, scaffold structural motifs by conditioning on evolutionary or structural context, and perform guided generation of novel proteins within specified families. Learning from metagenomic and structure-based synthetic data from the Dayhoff Atlas increased the cellular expression rates of generated proteins, highlighting the real-world value of expanding the...",
-      "title": "microsoft/Dayhoff-170M-GRS-SS-134000"
+      "summary_zh": "本模型屬於微軟 Dayhoff 系列，該系列同時是蛋白質序列資料集與生成式語言模型的整合資源。資料面涵蓋三大來源：GigaRef 收錄 33.4 億條蛋白質序列，聚類為 17 億個叢集，包含宏基因體與天然序列；BackboneRef 提供 4,600 萬條由結構衍生的合成序列；OpenProteinSet 則包含 1,600 萬筆多重序列比對。模型在能力上主打零樣本預測突變對適應度的影響、依演化或結構脈絡進行結構模體支架設計，以及在指定蛋白質家族內引導生成新序列。摘要指出，從 Dayhoff Atlas 的宏基因體與結構合成資料中學習，可提升生成蛋白質的細胞表現率，顯示擴充此類資料具有實務價值。不過目前僅公布摘要，模型規模標示為 1.7 億參數，其確切訓練細節、評估基準、與其他蛋白質語言模型的比較結果，以及生成序列的實驗驗證範圍，均尚未完整揭露，因此對其實際優勢仍宜保留。",
+      "title": "microsoft/Dayhoff-170M-GRS-SS-134000",
+      "title_zh": "Dayhoff-170M-GRS-SS-134000"
     },
     {
       "arxiv_id": null,
@@ -1136,7 +1138,9 @@
       "source_name": null,
       "story_id": "hf:microsoft/dayhoff-170m-grs-ss-122000",
       "summary": "Dayhoff is an Atlas of both protein sequence data and generative language models — a centralized resource that brings together 3.34 billion protein sequences across 1.7 billion clusters of metagenomic and natural protein sequences (GigaRef), 46 million structure-derived synthetic sequences (BackboneRef), and 16 million multiple sequence alignments (OpenProteinSet). These models can natively predict zero-shot mutation effects on fitness, scaffold structural motifs by conditioning on evolutionary or structural context, and perform guided generation of novel proteins within specified families. Learning from metagenomic and structure-based synthetic data from the Dayhoff Atlas increased the cellular expression rates of generated proteins, highlighting the real-world value of expanding the...",
-      "title": "microsoft/Dayhoff-170M-GRS-SS-122000"
+      "summary_zh": "此條目為微軟 Dayhoff 系列的一員，該系列結合蛋白質序列圖譜與生成式語言模型，定位為集中式資源。資料組成包括 GigaRef 的 33.4 億條序列（聚為 17 億叢集）、BackboneRef 的 4,600 萬條結構衍生合成序列，以及 OpenProteinSet 的 1,600 萬筆多重序列比對。模型宣稱具備三項原生能力：零樣本預測突變對適應度的影響、依據演化或結構脈絡支架化結構模體，以及在指定家族內引導生成新穎蛋白質。摘要並提到，利用 Dayhoff Atlas 的宏基因體與結構合成資料進行學習，能提高生成蛋白質的細胞表現率，凸顯擴大資料規模的現實意義。目前僅有摘要可參考，1.7 億參數版本的訓練配方、資料去重與污染控制、評估指標與基線比較皆未公開，生成蛋白質的濕實驗驗證規模亦不明，因此其相對優勢仍待完整論文佐證。",
+      "title": "microsoft/Dayhoff-170M-GRS-SS-122000",
+      "title_zh": "Dayhoff-170M-GRS-SS-122000"
     },
     {
       "arxiv_id": null,
@@ -1186,7 +1190,9 @@
       "source_name": null,
       "story_id": "hf:microsoft/dayhoff-170m-grs-ss-110000",
       "summary": "Dayhoff is an Atlas of both protein sequence data and generative language models — a centralized resource that brings together 3.34 billion protein sequences across 1.7 billion clusters of metagenomic and natural protein sequences (GigaRef), 46 million structure-derived synthetic sequences (BackboneRef), and 16 million multiple sequence alignments (OpenProteinSet). These models can natively predict zero-shot mutation effects on fitness, scaffold structural motifs by conditioning on evolutionary or structural context, and perform guided generation of novel proteins within specified families. Learning from metagenomic and structure-based synthetic data from the Dayhoff Atlas increased the cellular expression rates of generated proteins, highlighting the real-world value of expanding the...",
-      "title": "microsoft/Dayhoff-170M-GRS-SS-110000"
+      "summary_zh": "本模型是微軟 Dayhoff Atlas 系列中的 1.7 億參數版本，該系列同時提供蛋白質序列資料與生成式語言模型。資料涵蓋 GigaRef 的 33.4 億條宏基因體與天然蛋白質序列（聚為 17 億叢集）、BackboneRef 的 4,600 萬條結構衍生合成序列，以及 OpenProteinSet 的 1,600 萬筆多重序列比對。模型主打零樣本突變適應度預測、依演化或結構脈絡的結構模體支架化，以及指定家族內的新穎蛋白質引導生成。摘要強調，從此圖譜的宏基因體與結構合成資料學習可提升生成蛋白的細胞表現率。由於僅有摘要，模型架構、訓練 compute、資料前處理與評估協定均未說明，與既有蛋白質語言模型的基準比較、生成序列的實驗驗證強度，以及是否開放下載與授權條件，皆有待完整論文與模型卡補充，現階段不宜過度推論其實際效能。",
+      "title": "microsoft/Dayhoff-170M-GRS-SS-110000",
+      "title_zh": "Dayhoff-170M-GRS-SS-110000"
     },
     {
       "arxiv_id": null,
@@ -1236,7 +1242,9 @@
       "source_name": null,
       "story_id": "hf:microsoft/dayhoff-170m-grs-ss-98000",
       "summary": "Dayhoff is an Atlas of both protein sequence data and generative language models — a centralized resource that brings together 3.34 billion protein sequences across 1.7 billion clusters of metagenomic and natural protein sequences (GigaRef), 46 million structure-derived synthetic sequences (BackboneRef), and 16 million multiple sequence alignments (OpenProteinSet). These models can natively predict zero-shot mutation effects on fitness, scaffold structural motifs by conditioning on evolutionary or structural context, and perform guided generation of novel proteins within specified families. Learning from metagenomic and structure-based synthetic data from the Dayhoff Atlas increased the cellular expression rates of generated proteins, highlighting the real-world value of expanding the...",
-      "title": "microsoft/Dayhoff-170M-GRS-SS-98000"
+      "summary_zh": "此模型隸屬微軟 Dayhoff 系列，該系列將蛋白質序列圖譜與生成式語言模型整合為單一資源。資料端包含 GigaRef 的 33.4 億條序列、BackboneRef 的 4,600 萬條結構衍生合成序列，以及 OpenProteinSet 的 1,600 萬筆多重序列比對。模型能力包括零樣本預測突變對適應度的影響、依演化或結構脈絡支架化結構模體，以及在指定家族內引導生成新蛋白。摘要指出，從 Dayhoff Atlas 的宏基因體與結構合成資料中學習，可提升生成蛋白質的細胞表現率，說明資料擴充具實務價值。目前僅公開摘要，1.7 億參數規模下的架構選擇、訓練資料配比、評估基準與消融實驗皆未揭露，生成蛋白的實驗驗證細節亦不明確，因此對其效能與通用性應保持審慎，等待完整技術報告再行判讀。",
+      "title": "microsoft/Dayhoff-170M-GRS-SS-98000",
+      "title_zh": "Dayhoff-170M-GRS-SS-98000"
     },
     {
       "arxiv_id": null,
@@ -1286,7 +1294,9 @@
       "source_name": null,
       "story_id": "hf:microsoft/dayhoff-170m-grs-ss-86000",
       "summary": "Dayhoff is an Atlas of both protein sequence data and generative language models — a centralized resource that brings together 3.34 billion protein sequences across 1.7 billion clusters of metagenomic and natural protein sequences (GigaRef), 46 million structure-derived synthetic sequences (BackboneRef), and 16 million multiple sequence alignments (OpenProteinSet). These models can natively predict zero-shot mutation effects on fitness, scaffold structural motifs by conditioning on evolutionary or structural context, and perform guided generation of novel proteins within specified families. Learning from metagenomic and structure-based synthetic data from the Dayhoff Atlas increased the cellular expression rates of generated proteins, highlighting the real-world value of expanding the...",
-      "title": "microsoft/Dayhoff-170M-GRS-SS-86000"
+      "summary_zh": "本條目屬於微軟 Dayhoff 系列，該系列同時是蛋白質序列資料集與生成式語言模型的集中資源。資料包含 GigaRef 的 33.4 億條宏基因體與天然蛋白質序列（17 億叢集）、BackboneRef 的 4,600 萬條結構衍生合成序列，以及 OpenProteinSet 的 1,600 萬筆多重序列比對。模型宣稱可零樣本預測突變適應度效應、依演化或結構脈絡支架化結構模體，並在指定家族內引導生成新穎蛋白質。摘要提到，從 Dayhoff Atlas 的宏基因體與結構合成資料學習能提升生成蛋白的細胞表現率，彰顯擴大資料規模的價值。惟目前僅有摘要，模型細節、訓練成本、評估方法與基線比較均未公開，生成序列的實驗驗證範圍亦不清楚，故對其實際表現仍應保留，需待完整論文與模型卡釋出後再評估。",
+      "title": "microsoft/Dayhoff-170M-GRS-SS-86000",
+      "title_zh": "Dayhoff-170M-GRS-SS-86000"
     }
   ]
 }

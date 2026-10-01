@@ -826,7 +826,9 @@
       "source_name": "Google AI Blog",
       "story_id": "fallback:53d5b491c2dfa77f",
       "summary": "Alphabet CEO Sundar Pichai in conversation on the I/O 2026 Dialogues stage",
-      "title": "Catch up on the Dialogues stage at Google I/O 2026."
+      "summary_zh": "這是 Google 官方部落格的一則活動側寫，目前僅有標題與一張主視覺圖片，畫面為 Alphabet 執行長 Sundar Pichai 在 I/O 2026 的 Dialogues 舞台上進行對談，並沒有提供任何技術內容、數據或研究成果。文章性質屬於大會活動紀錄，目的在於呈現 I/O 2026 期間 Dialogues 舞台的對談陣容與討論主題，可能涉及產業趨勢、產品策略與 AI 發展方向等軟性議題。由於僅有摘要層級資訊，我們無法得知對談的具體內容、參與者名單，也無從判斷其中是否觸及模型架構、評測方法或部署細節。對台灣讀者而言，這則訊息可作為追蹤大型科技公司策略敘事的線索，理解其對 AI 長期布局的公開說法；但不宜將高層對談視為技術證據，評估時仍應以正式論文、技術報告與可重現的實驗結果為依據。",
+      "title": "Catch up on the Dialogues stage at Google I/O 2026.",
+      "title_zh": "回顧 Google I/O 2026 的 Dialogues 對談舞台"
     }
   ]
 }

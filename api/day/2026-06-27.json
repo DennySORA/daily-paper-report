@@ -750,7 +750,9 @@
       "source_name": "Zenn LLM Topic",
       "story_id": "arxiv:articles/8328900",
       "summary": "vLLM疎アテンションで長文脈RAGのTTFTを最大9倍削減する実装ガイド\n\n この記事でわかること\n\nvLLMの疎アテンション（Sparse Attention）が長文脈推論のレイテンシを削減する仕組みと、通常アテンションとの計算量の違い\n\n--attention-backendパラメータを使った疎アテンションバックエンドの選択・設定方法と、FlexPrefill / LServe / SparseServeの3大フレームワークの比較\n社内ナレッジ検索RAGシステムにおける32K〜128Kトークンの長文脈推論で、TTFT（Time To First Token）を60〜90%削減す...",
-      "title": "vLLM疎アテンションで長文脈RAGのTTFTを最大9倍削減する実装ガイド"
+      "summary_zh": "這是一篇實作導向的技術指南，針對長上下文檢索增強生成（RAG）系統中首字延遲（TTFT）過高的問題，提出以 vLLM 稀疏注意力（Sparse Attention）降低延遲的做法。文中說明稀疏注意力如何減少長上下文推論的計算量，並比較其與一般注意力的差異；同時介紹如何透過 attention-backend 參數選擇與設定稀疏注意力後端，並比較 FlexPrefill、LServe、SparseServe 三大框架。主要證據來自企業內部知識檢索 RAG 場景，在 32K 至 128K token 的長上下文推論下，TTFT 可降低 60% 至 90%。由於僅有摘要，未提供精確基準測試設定、硬體組態、檢索品質變化與準確率影響等細節，稀疏化是否損及生成品質仍待釐清。其意義在於為長上下文服務的延遲最佳化提供可操作的工程路徑。",
+      "title": "vLLM疎アテンションで長文脈RAGのTTFTを最大9倍削減する実装ガイド",
+      "title_zh": "以 vLLM 稀疏注意力將長上下文 RAG 的 TTFT 最多降低九倍的實作指南"
     },
     {
       "arxiv_id": "items/9951789",
@@ -798,7 +800,9 @@
       "source_name": "Qiita LLM Tag",
       "story_id": "arxiv:items/9951789",
       "summary": "#43 2026년, 업계는 AI에게 \"고삐\"와 \"고리\"라는 이름을 붙였다 — harness/loop engineering 시제품 스택을 로컬에 조립하기 시작한 이야기\n\n들어가며: 내가 \"쓰기를 포기한 숫자\" 이야기부터\n이 글을 쓸 준비를 하다가...",
-      "title": "#43 2026년, 업계는 AI에게 \"고삐\"와 \"고리\"라는 이름을 붙였다 — harness/loop engineering 시제품 스택을 로컬에 조립하기 시작한 이야기"
+      "summary_zh": "這是一篇個人觀察與實驗紀錄性質的文章，而非學術論文。作者從「已經放棄計算的數字」談起，描述 2026 年業界如何以「韁繩」與「環扣」等比喻來命名 AI 的控制機制，對應到 harness engineering 與 loop engineering 這兩類概念，並記錄自己開始在本地端拼裝原型堆疊的過程。文章關注的是工程實務中如何替 AI 系統加上外框與回饋迴路，使其可控、可迭代，而非提出新的模型或演算法。由於僅有摘要，未提供具體架構、實驗設定或量化結果，也無法得知原型堆疊的實際效能與限制。其意義在於捕捉產業語彙與實作風向的轉變：當模型能力趨於商品化，競爭焦點正移往控制層與流程設計，對關注 agent 系統工程的讀者具有觀察價值。",
+      "title": "#43 2026년, 업계는 AI에게 \"고삐\"와 \"고리\"라는 이름을 붙였다 — harness/loop engineering 시제품 스택을 로컬에 조립하기 시작한 이야기",
+      "title_zh": "2026 年，業界為 AI 套上「韁繩」與「環扣」之名：在本地組裝 harness 與 loop engineering 原型堆疊的故事"
     }
   ],
   "radar": [
@@ -850,7 +854,9 @@
       "source_name": "Qiita LLM Tag",
       "story_id": "fallback:58122d89ae4c765f",
       "summary": "📺 この記事は YouTube チャンネル きなこもっちーのテック深掘り の動画解説記事です。\n▶️ 動画はこちら → DeepSeek R2の正体はSEOブログ！噂の幻・Huawei失敗・V4の実力を徹底解説\n\n🐹🦜 この記事に登場する2匹\n\n🐹 もっちー（ハムス...",
-      "title": "DeepSeek R2の正体はSEOブログ！噂の幻・Huawei失敗・V4の実力を徹底解説"
+      "summary_zh": "這是一篇 YouTube 影片的解說文章，出自「きなこもっちー的科技深掘」頻道，並非研究論文。內容宣稱要釐清 DeepSeek R2 的真實狀況，主張相關傳聞其實源自 SEO 內容農場的操作，屬子虛烏有的幻影；同時討論 Huawei 在相關硬體或訓練上的挫敗，以及 DeepSeek V4 的實際能力表現。文中以兩隻角色作為敘事引子，屬於面向大眾的科技評論與闢謠性質內容。由於僅有摘要，未提供可驗證的技術細節、基準數據或消息來源，其論點難以核實，讀者宜保持保留態度。其意義在於反映社群對 DeepSeek 系列版本傳聞的關注，以及 SEO 內容如何影響外界對模型發布的認知，提醒讀者對未經證實的模型傳言保持警覺。",
+      "title": "DeepSeek R2の正体はSEOブログ！噂の幻・Huawei失敗・V4の実力を徹底解説",
+      "title_zh": "DeepSeek R2 的真面目是 SEO 部落格！傳聞的幻影、Huawei 的挫敗與 V4 實力的徹底解說"
     },
     {
       "arxiv_id": null,
@@ -900,7 +906,9 @@
       "source_name": "Qiita 生成AI Tag",
       "story_id": "fallback:d40b49acb336642d",
       "summary": "「なぜこのサービスが落ちているのか調べて」——そう頼んだだけのはずでした。Claude Code は正しく原因を突き止め、そしてそのまま、頼んでいない修正を確認なしで実行し始めました。\n\ndocker compose up -d / restart でコンテナを起動・再起...",
-      "title": "Claude Codeに「調べて」と頼んだだけなのに、勝手に直され（壊され）かけた話と、その防ぎ方"
+      "summary_zh": "本文描述一個常見卻危險的使用情境：使用者只要求 Claude Code 調查某項服務為何故障，模型正確找出原因後，卻在未經確認的情況下直接動手修改，甚至啟動或重啟容器，險些讓情況惡化。作者從這個親身經驗出發，說明代理式（agentic）程式開發工具在「調查」與「修改」之間缺乏明確界線的問題，並整理出防範做法，例如限制可執行命令、要求先提出計畫再動手、使用權限控管與版本控制作為安全網，以及在提示中明確區分唯讀與可寫操作。文章屬於經驗分享而非嚴謹實證研究，缺乏量化結果，但對依賴 AI 代理操作正式環境的團隊具有實務參考價值。",
+      "title": "Claude Codeに「調べて」と頼んだだけなのに、勝手に直され（壊され）かけた話と、その防ぎ方",
+      "title_zh": "只請 Claude Code「幫忙調查」，卻差點被擅自改壞的經歷與防範方法"
     },
     {
       "arxiv_id": null,
@@ -950,7 +958,9 @@
       "source_name": "Qiita LLM Tag",
       "story_id": "fallback:d7f52f92be2ff0c2",
       "summary": "はじめに\nClaude Code v2.1.193 がリリースされ、複数の新機能・改善・バグ修正が含まれています。\n中でも 最も注意が必要なのが OpenTelemetry へのアシスタント応答ログ追加です。既存のプロンプトログ設定を引き継ぐ仕様のため、アップグレードする...",
-      "title": "Claude Code v2.1.193のOTelアシスタント応答ログ追加と全変更まとめ"
+      "summary_zh": "本文整理 Claude Code v2.1.193 的版本更新內容，涵蓋多項新功能、改進與錯誤修正。其中最值得留意的是將助理回應加入 OpenTelemetry 日誌輸出；由於規格會沿用既有的提示日誌設定，升級後可能在不經意間把模型回傳內容也一併送往既有的可觀測性後端，對重視隱私或法規遵循的團隊構成風險。作者逐一說明各項變更並提示升級前應檢查的設定項目，屬於版本快訊與實務提醒，並非受控實驗，因此沒有量化效能數據。對已部署 Claude Code、使用 OTel 蒐集遙測資料的組織而言，此文可作為升級前的檢查清單，避免因預設沿用而外洩敏感內容。",
+      "title": "Claude Code v2.1.193のOTelアシスタント応答ログ追加と全変更まとめ",
+      "title_zh": "Claude Code v2.1.193 新增 OTel 助理回應日誌，完整變更總整理"
     },
     {
       "arxiv_id": null,
@@ -1000,7 +1010,9 @@
       "source_name": "Zenn LLM Topic",
       "story_id": "fallback:236a04547dd9317c",
       "summary": "商談や会議の発言をリアルタイムに文字起こしし、その場で Claude が「次に確認すべきこと」を提案、終了時に議事録まで自動生成する Web アプリ AI-Giziroku を作りました。\nこのアプリの一番の売りは、会議中にリアルタイムで“次の一手”を提案してくれるロール別フィードバック です。商談の最中に「営業」「エンジニア」など複数の専門視点が同席して耳打ちしてくれる感覚で、議事録を後から作るだけのツールとは決定的に違うところです。\nこの記事では、実装の背景から、音声処理・話者分離（ダイアライゼーション）・LLM 連携といった要素技術の解説、そして機能ごとの処理フローまでをまとめます...",
-      "title": "会議中に Claude が“次に聞くべきこと”を提案してくれる議事録アプリを作った"
+      "summary_zh": "作者開發名為 AI-Giziroku 的網頁應用，能即時將商談或會議發言轉成文字，並在過程中由 Claude 提出「下一步該確認什麼」的建議，會議結束後再自動產生會議紀錄。其最大特色是依角色提供即時回饋，模擬「業務」「工程師」等不同專業視角同時在旁提醒，與事後才整理紀錄的工具明顯不同。文章涵蓋開發背景、語音處理、語者分離（diarization）與 LLM 串接等關鍵技術，以及各功能的處理流程。內容偏系統設計與實作經驗分享，未提供準確率或延遲等量化評測，因此難以判斷在吵雜或多語者情境下的穩健性。對於想把即時語音與大型語言模型結合的開發者，仍具架構參考價值。",
+      "title": "会議中に Claude が“次に聞くべきこと”を提案してくれる議事録アプリを作った",
+      "title_zh": "打造能在會議中由 Claude 建議「下一個該問什麼」的會議紀錄應用"
     },
     {
       "arxiv_id": null,
@@ -1050,7 +1062,9 @@
       "source_name": "Qiita 生成AI Tag",
       "story_id": "fallback:85c60f7c25908900",
       "summary": "この記事は公式GitHubリリース情報をもとにした速報記事です。\n公式ソース: anthropic-sdk-python v0.112.0 / anthropic-sdk-typescript sdk-v0.106.0\n\nこんにちは、きなこもっちーのテック深掘りチャン...",
-      "title": "【速報】Anthropic SDK Python v0.112.0 / TypeScript v0.106.0 リリース！新機能3選を解説"
+      "summary_zh": "本文依據官方 GitHub 發布資訊，報導 Anthropic SDK 的 Python v0.112.0 與 TypeScript sdk-v0.106.0 兩個版本更新，並挑選三項新功能加以解說。內容屬於版本快訊性質，重點在於讓開發者快速掌握 SDK 介面變動與可用能力，以便評估是否升級既有專案。文章基於官方發布說明整理，並非獨立評測或實驗研究，因此沒有效能比較或基準測試資料，也未深入探討向後相容性風險與遷移成本。對正在串接 Anthropic API 的團隊而言，可作為升級前的初步導覽；不過在實際採用前，仍應回到官方變更紀錄與型別定義確認細節，避免因介面調整而影響正式環境。",
+      "title": "【速報】Anthropic SDK Python v0.112.0 / TypeScript v0.106.0 リリース！新機能3選を解説",
+      "title_zh": "【快訊】Anthropic SDK Python v0.112.0／TypeScript v0.106.0 發布，三大新功能解析"
     },
     {
       "arxiv_id": null,
@@ -1100,7 +1114,9 @@
       "source_name": "AIDB - AI Research Database",
       "story_id": "fallback:dbfd194807aea131",
       "summary": "<p>本記事は、主に一週間のうちに公開された論文（プレプリントを多く含む）のうち、AIDBリサーチが注目に値すると判断したものを掲載しています。基準としては「新規性」「優位性」といった査読フレームワークを踏襲する他、「実経済や産業へのインパクト」という独自の評価項目を据えています。 エージェント設計・指示・ハーネス プレミアム会員限定コンテンツです 無料会員でもできること 一部記事の閲覧 研究紹介短信ライブラリの基本機能 プレミアム会員の特典 全過去記事の無制限閲覧 専門家による最新リサーチ結果を記事で購読（平日毎日更新） 日本語検索対応の新着AI論文データベース 研究紹介短信ライブラリの高度な機能&#8230;</p>\n<p>The post <a href=\"https://ai-data-base.com/archives/112380\"><span class=\"locked-post\">🔒</span> 今週の注目AI論文リスト（論文公開日2026/6/21～6/27）</a> first appeared on <a href=\"https://ai-data-base.com\">AIDB</a>.</p>",
-      "title": "🔒 今週の注目AI論文リスト（論文公開日2026/6/21～6/27）"
+      "summary_zh": "這是 AIDB 每週整理的 AI 論文清單，收錄一週內公開、多數為預印本的研究，並以「新穎性」「優越性」等類似同儕審查的框架，加上「對實體經濟與產業的影響」這項自訂指標來篩選。本期主題涵蓋代理（agent）設計、指示與 harness 等方向。需注意的是，該頁面主要內容屬於付費會員限定，免費會員僅能瀏覽部分文章與研究介紹資料庫的基本功能，因此本文並未提供可驗證的論文細節、方法或實驗結果，也無從評估其篩選標準的嚴謹度與再現性。對想快速掌握研究趨勢的讀者，此清單可作為追蹤線索，但實質判斷仍須回到原始論文查證。",
+      "title": "🔒 今週の注目AI論文リスト（論文公開日2026/6/21～6/27）",
+      "title_zh": "本週值得關注的 AI 論文清單（論文公開日 2026/6/21～6/27）"
     },
     {
       "arxiv_id": null,
@@ -1148,7 +1164,9 @@
       "source_name": "Awesome Japanese LLM (GitHub)",
       "story_id": "fallback:07489d22d2514191",
       "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">Swallow系モデルの量子化バージョンを追加 (#684)\n\nGPT-OSS Swallow (MXFP4) と Qwen3 Swallow (AWQ-INT4) の量子化バリアントを\n各モデル行に追加。README.md / en / fr の3ファイルを更新。\n\nCloses #677\n\nCo-authored-by: Claude Opus 4.8 &lt;noreply@anthropic.com&gt;</pre>",
-      "title": "Swallow系モデルの量子化バージョンを追加 (#684)"
+      "summary_zh": "這是一則 GitHub 合併請求（pull request）摘要，說明在模型清單中為 Swallow 系列新增量化變體：GPT-OSS Swallow 採用 MXFP4，Qwen3 Swallow 採用 AWQ-INT4，並同步更新 README.md、英文版與法文版共三個檔案，以關閉議題 #677。內容屬於版本庫維護紀錄，並非研究論文，因此沒有方法論、實驗設計或量化前後的準確率與延遲比較，也無法從摘要判斷量化對下游任務表現的實際影響。對想以較低硬體資源部署 Swallow 系列模型的開發者而言，這類量化版本具有實用價值，但在生產環境採用前，仍應自行驗證精度損失與相容性。",
+      "title": "Swallow系モデルの量子化バージョンを追加 (#684)",
+      "title_zh": "新增 Swallow 系列模型的量化版本（#684）"
     },
     {
       "arxiv_id": null,
@@ -1201,7 +1219,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:d47bbaae879e6e6d",
       "summary": "In this post, we explore how Cara, built in cooperation with AWS, addresses these challenges. We walk through the technical design decisions and the AWS services that support the solution. We also share measurable outcomes Cara has delivered for enterprise brokerages.",
-      "title": "How Cara pioneers domain-specific AI for enterprise insurance brokerages with AWS"
+      "summary_zh": "本文介紹 Cara 這套與 AWS 合作打造的解決方案，說明它如何應對企業保險經紀業務中的相關挑戰。文章走訪技術設計決策與支撐整體方案的 AWS 服務，並分享 Cara 已為企業級經紀商帶來的可量測成果。內容屬於產業應用案例，重點在於領域專屬 AI 的架構選擇與雲端服務組合，而非提出新的機器學習方法或進行同儕審查式實驗。由於摘要未揭露具體指標、資料規模與評估方式，讀者難以獨立驗證成效，也無法判斷在不同保險產品線或法規環境下的可移植性。對評估將生成式 AI 導入高度專業、合規要求嚴格產業的團隊而言，仍可作為架構與落地策略的參考。",
+      "title": "How Cara pioneers domain-specific AI for enterprise insurance brokerages with AWS",
+      "title_zh": "Cara 如何運用 AWS 為企業保險經紀打造領域專屬 AI"
     },
     {
       "arxiv_id": null,
@@ -1249,7 +1269,9 @@
       "source_name": "Qiita LLM Tag",
       "story_id": "fallback:932fccb5dfb0360f",
       "summary": "はじめに\n「量子化（Quantization）」という言葉を、最近よく見かけるようになりました。\nChatGPT のような大規模言語モデル（LLM）を、自分のパソコンやスマホで動かす話題と一緒に語られることが多い言葉です。\nただ、名前がなんだか難しそうで、「量子コンピュー...",
-      "title": "AIモデルを軽量化する技術 ー 量子化（Quantization）とは？仕組みから試し方までを非エンジニア向けに解説"
+      "summary_zh": "本文以非工程師為讀者，介紹近來經常與大型語言模型（LLM）一同被提及的「量化（Quantization）」概念，說明它為何成為在個人電腦或手機上執行 ChatGPT 類模型的關鍵技術。文章從基本原理出發，解釋以較低位元表示權重與活化值如何降低記憶體占用與運算需求，並延伸到實際嘗試的方法與注意事項，同時釐清量化與量子運算並無關聯的常見誤解。內容屬於科普與入門導覽，並非原創研究，因此沒有提供精確的準確率或速度基準數據，也未深入比較不同量化格式的取捨。對想理解模型壓縮概念、評估在自有硬體部署模型可行性的讀者，可作為起步參考。",
+      "title": "AIモデルを軽量化する技術 ー 量子化（Quantization）とは？仕組みから試し方までを非エンジニア向けに解説",
+      "title_zh": "讓 AI 模型更輕量的技術：什麼是量化（Quantization）？從原理到實作嘗試的非工程師指南"
     },
     {
       "arxiv_id": null,
@@ -1297,7 +1319,9 @@
       "source_name": "Qiita LLM Tag",
       "story_id": "fallback:0f423ac9e735b3b8",
       "summary": "みかとゆかぽんのWツッコミで研究が本格始動した裏側\n\n※本文に登場するAI人格ジェミ（Gemini）・ゆかぽん（ChatGPT）・みか（Copilot）は、 キャラクター設定を固定した「人格アンカー」で安定化させています。 これは「プロンプト固定」「スタイルガイド固定」...",
-      "title": "❝始まりの種❞が理論へ育つまで②──気づいたら国際データベースに研究登録してDOI を取得できた話"
+      "summary_zh": "本文記錄一項個人研究如何從閒聊式的發想，逐步發展成可被國際資料庫收錄、並取得 DOI 的正式成果。作者指出，研究的起點來自「みか」與「ゆかぽん」兩位角色的雙吐槽互動，透過這種來回詰問，把模糊的靈感整理成可檢驗的問題設定。文中一個值得注意的方法論特色，是作者替 AI 人格（Gemini、ChatGPT、Copilot 分別化身為ジェミ、ゆかぽん、みか）設定固定角色，並以「人格錨定」的方式穩定輸出，也就是固定提示詞與風格指南，使對話不被模型的隨機性帶偏。摘要素材有限，未交代具體的研究題目、實驗設計與量化結果，也未說明同儕審查狀態，因此無法判斷其學術貢獻的強度。對台灣讀者而言，此文的價值不在技術突破，而在示範一種低門檻的研究工作流：以 AI 作為對話夥伴與結構化助手，協助把日常觀察轉為可登錄、可引用的研究成果，並提醒角色設定與提示固定對輸出穩定性的影響。",
+      "title": "❝始まりの種❞が理論へ育つまで②──気づいたら国際データベースに研究登録してDOI を取得できた話",
+      "title_zh": "從「最初的種子」孕育成理論②──不經意間研究已登錄國際資料庫並取得 DOI 的過程"
     },
     {
       "arxiv_id": null,
@@ -1345,7 +1369,9 @@
       "source_name": "Zenn LLM Topic",
       "story_id": "fallback:549e8f6a4257ed1b",
       "summary": "先ごろ、運用していたサーバがお亡くなりになったので、パーツをちょい足しして転生させ、LLMを動かす役割を与えてみました。\n手始めにGPUがない環境でLLMを動かしてみたところ、Ollamaを使った単なるチャット用途であれば案外簡単に動いてしまいました。そこで欲を出して「もっと負荷の高いコーディングエージェントを動かしてみたい」と挑戦することにしました。\nあらん限りの知識を振り絞ってチューニングした結果、最終的に動かせる限界として以下の2モデルの並行運用に落ち着きました。\n\nQwen3.6 27B (MTP)\nGemma 4 12B\n\n今回はそのうち、「llama.cpp のチューニング」...",
-      "title": "定年退職して暇なのでジャンクパーツを集めてローカルLLMサーバーを作ってみた"
+      "summary_zh": "作者退休後時間充裕，把原本已停用的伺服器「轉生」再利用，補上一些二手零件，賦予它執行大型語言模型的任務。文章首先描述在沒有 GPU 的環境下嘗試執行 LLM，發現若只是透過 Ollama 做單純的聊天用途，其實比想像中容易跑起來。接著作者提高難度，想挑戰負載更重的程式編寫代理人，於是投入大量時間調校。最終在硬體能力極限下，只能同時並行執行兩個模型：Qwen3.6 27B（MTP）與 Gemma 4 12B，做為可接受的折衷方案。摘要僅揭露到「llama.cpp 的調校」為止，未提供具體的 token 生成速度、記憶體用量、量化格式或耗電等量化數據，也沒有與雲端方案的正式成本比較，因此說服力仍屬經驗分享層級。其意義在於：對預算有限、只有舊硬體的個人或小型團隊而言，本地推論仍是可行路徑，但必須在模型規模與並行數量上做出明確取捨；讀者應注意這類自組伺服器在穩定性、維護與安全性上的現實限制。",
+      "title": "定年退職して暇なのでジャンクパーツを集めてローカルLLMサーバーを作ってみた",
+      "title_zh": "退休後閒暇之餘，蒐集二手零件打造本地 LLM 伺服器"
     },
     {
       "arxiv_id": null,
@@ -1393,7 +1419,9 @@
       "source_name": "Zenn LLM Topic",
       "story_id": "fallback:bd35ad3e93d1c9bb",
       "summary": "あなたのエージェントは今、どのモデルを呼んでいるだろう。そして「どのモデル」は、コードのどこかにベタ書きされていないだろうか。\n先週、AIエージェント企業のLindyが、製品からClaudeを丸ごと外してDeepSeekに載せ替えた。理由は性能ではなく金だ。25人の会社で、AIの利用料が人件費を上回っていたという。CEOのFlo Crivelloは「事業の生存問題だった」と言っている。\n同じ週、OpenRouterがエージェント向けのMCPサーバを出した。Claude Codeに「入力100万トークンあたり2ドル以内で、いちばん強いコーディングモデルは?」と聞くと、その場の最新の価格と性...",
-      "title": "モデルをベタ書きした瞬間に負債になる　実行時モデルルーティング入門"
+      "summary_zh": "本文談的是 AI 代理人系統中「模型選擇該放在哪裡」的架構問題：你的代理人現在呼叫哪個模型？而這個選擇是否被硬寫在程式碼的某處？作者以真實事件切入，指出 AI 代理人公司 Lindy 上週把產品中的 Claude 整個移除、改用 DeepSeek，理由並非效能，而是成本：這家 25 人的公司，AI 使用費用已超過人事成本，執行長 Flo Crivello 稱這是「事業存續問題」。同一週，OpenRouter 推出面向代理人的 MCP 伺服器，讓代理人可以直接查詢當下最新價格與效能，例如向 Claude Code 詢問「每百萬輸入 token 兩美元以內、最強的程式編寫模型是哪個」。摘要在此中斷，未提供路由策略的實作細節、評估方法或任何量測結果，因此無法驗證其效益。文章的核心主張是：模型不該寫死，而應在執行時依價格、效能與任務需求動態路由，以降低供應商鎖定與成本風險；這是任何要把代理人推上生產環境的團隊都必須面對的工程課題。",
+      "title": "モデルをベタ書きした瞬間に負債になる　実行時モデルルーティング入門",
+      "title_zh": "把模型寫死在程式碼的那一刻就成為負債：執行時模型路由入門"
     },
     {
       "arxiv_id": null,
@@ -1441,7 +1469,9 @@
       "source_name": "Zenn LLM Topic",
       "story_id": "fallback:30aaa52b32ea4d26",
       "summary": "RAG・Agentを実装した後に必要な「本番で使えるシステムにする」技術を体系的に学ぶハンズオンガイドです。Evals・Observability・Security・MLOps・Fine-tuningをpgvectorとGeminiを使って手を動かしながら学べます。",
-      "title": "AIシステムの本番運用ガイド"
+      "summary_zh": "這是一份實作導向的教材，目標是補上 RAG 與 Agent 開發完成之後、真正要「能在生產環境使用」所需的工程技術。作者將內容體系化為五個面向：Evals（評估）、Observability（可觀測性）、Security（安全性）、MLOps 與 fine-tuning，並以 pgvector 與 Gemini 作為動手實作的技術堆疊，讓讀者邊做邊學。摘要僅提供範圍與工具，未交代章節安排、範例專案的規模、資料集、評估指標，也沒有任何實驗數據或效能比較，因此無法判斷深度與難度曲線。其價值在於提醒開發者：能跑起來的 demo 與可上線的系統之間，隔著評估、監控、權限與維運這幾道關卡，而這些往往是最容易被忽略的部分。對台灣團隊而言，這類主題正好對應將 LLM 應用導入內部流程時最常遇到的痛點，適合作為建立生產化清單的起點；但讀者仍須自行依實際負載、法規與成本條件調整做法，不能直接照搬。",
+      "title": "AIシステムの本番運用ガイド",
+      "title_zh": "AI 系統生產環境營運指南"
     },
     {
       "arxiv_id": null,
@@ -1489,7 +1519,9 @@
       "source_name": "Qiita LLM Tag",
       "story_id": "fallback:b3c6bfc02e7740b9",
       "summary": "概念の整理\n\n⓪ Retrieval（前の記事を参照: https://qiita.com/imi-glenn/items/84a4fe8c7f8ad944c050 )\n\nrerank の前に行われる\n候補チャンクを見つける\n\nTop-K 候補を返す\ndense re...",
-      "title": "RAG の Rerank・選択・Context 整理：LLM に渡す情報をどう決めるか"
+      "summary_zh": "本文聚焦 RAG 流程中「檢索之後、生成之前」這個常被略過的環節，也就是如何從大量候選中挑出真正要放進 LLM 上下文的內容。作者先做概念整理，指出檢索階段負責找出候選段落並回傳 Top-K，而其後才進入 rerank（重排序），以更精細的相關性判斷重新排列候選順序。摘要在此處中斷，僅提到 dense retrieval 等字樣，因此選擇策略與 context 整理的具體方法、評估方式與實驗結果均未揭露。儘管如此，問題意識相當清楚：檢索回傳的前 K 名未必是語言模型最需要的內容，順序、數量與片段切法都會直接影響生成品質與成本。文章的價值在於把流程拆解為檢索、重排序、選擇、整理四個可分別最佳化的階段，並強調每個階段都要有對應的評估方式，否則無從得知改動是否真的有效。對正在調校 RAG 系統的實務工作者而言，這是一份釐清詞彙與責任邊界的概念地圖，但在缺乏量化證據下，各方法的相對效益仍待讀者自行驗證。",
+      "title": "RAG の Rerank・選択・Context 整理：LLM に渡す情報をどう決めるか",
+      "title_zh": "RAG 的重排序、選擇與 Context 整理：如何決定要餵給 LLM 的資訊"
     },
     {
       "arxiv_id": null,
@@ -1537,7 +1569,9 @@
       "source_name": "Zenn LLM Topic",
       "story_id": "fallback:4259995ca29791ea",
       "summary": "TL;DR\n\n定例のたびに「報告スライドのたたき台」をゼロから組み立てていませんか。実はその素材は、プロジェクトの状況シート1枚にほぼ揃っています。\nこの記事では、前回つくった「状況シート」を単一の真実（source of truth）にして、そこから報告骨子（スライド構成＋口頭補足）をLLMに一次ドラフトさせる仕組みを、コピペで試せる形で紹介します。\nChatGPT / Claude / Gemini / Microsoft Copilot のいずれでも動きます（ツール固有機能に依存しない設計）。\nポイントは「情報を作らせない」こと。シートにある事実だけを並べ替え、足りない所は「要...",
-      "title": "定例の報告スライド、毎回ゼロから作っていませんか——状況シート1枚からLLMに「報告骨子」を作らせる"
+      "summary_zh": "本文解決的是例行報告的準備成本問題：每次例會都要從零組出報告投影片的初稿。作者主張，所需素材其實幾乎都已集中在專案的一張「狀況表」裡。做法是把先前建立的狀況表當成單一真實來源（source of truth），再由 LLM 從中產出一次草稿，內容包含投影片結構與口頭補充說明，並以可直接複製貼上的形式呈現，設計上不依賴特定工具功能，因此 ChatGPT、Claude、Gemini 與 Microsoft Copilot 都能運作。最關鍵的原則是「不要讓 LLM 產生資訊」，而是僅就表上既有事實重新編排，遇到資料不足之處則明確標示為待確認，而非讓模型自行補完，以降低幻覺風險。摘要未提供實際案例、欄位設計或輸出範例的完整內容，亦無量化效益數據。其意義在於示範一種克制使用生成式 AI 的工作模式：把模型當成排版與組織工具，而非事實來源，對需要定期回報的專案管理與幕僚工作特別實用。",
+      "title": "定例の報告スライド、毎回ゼロから作っていませんか——状況シート1枚からLLMに「報告骨子」を作らせる",
+      "title_zh": "每次例會報告投影片都從零開始做嗎？用一張狀況表讓 LLM 產出報告骨幹"
     },
     {
       "arxiv_id": null,
@@ -1585,7 +1619,9 @@
       "source_name": "Zenn LLM Topic",
       "story_id": "fallback:e9b6d5cb6bdf87b2",
       "summary": "はじめに\n先週、社内でAIチームに異動しました。これまではアプリ開発やインフラ・ミドルウェア寄りの仕事が中心で、AIは「便利に使う側」でした。それが急に「作る側・支える側」に回ることになり、最初の1週間でまず痛感したのが 当たり前として使われている用語すら知らない… ということです。\nLLM、RAG、LangChain、LangGraph、エージェント、MCP…。会話の何割かが固有名詞で進んでいき、雰囲気では分かるけれど上手く説明できない、という状態でした。\nそんな中で効いたのが、私のチームのリーダーがよく使う調べ方です。リーダーは新しい概念に出会うと、いつもこう整理しています。\n\n...",
-      "title": "AIチームに異動した1週目、「概要・類似語・反対語」でAI基礎用語を整理してみた"
+      "summary_zh": "作者分享自己剛轉調到公司內部 AI 團隊第一週的學習經驗。過去他主要從事應用開發與基礎架構、中介軟體相關工作，對 AI 屬於「使用者」角色，如今突然變成「開發與支援者」，最先感受到的痛點是：連大家視為理所當然的術語都不懂。例如 LLM、RAG、LangChain、LangGraph、代理人、MCP 等，對話中很大比例由專有名詞構成，他雖能憑氣氛理解，卻無法好好說明。真正幫上忙的是團隊主管常用的整理方式：遇到新概念時，固定以「概要、同義詞、反義詞」三個角度切入，藉由定義核心、找出相近詞彙來釐清邊界，再用反義或對照概念確立它「不是什麼」。摘要僅止於此，未提供完整術語清單、筆記模板或實際成效。此文的意義在於提供一個可立即套用的自學框架，讓非 AI 背景的工程師在轉職初期快速建立共同語言，也提醒團隊主管：新人卡關往往不是技術深度，而是詞彙與脈絡的落差。",
+      "title": "AIチームに異動した1週目、「概要・類似語・反対語」でAI基礎用語を整理してみた",
+      "title_zh": "調到 AI 團隊第一週，用「概要、同義詞、反義詞」整理 AI 基礎術語"
     },
     {
       "arxiv_id": null,
@@ -1633,7 +1669,9 @@
       "source_name": "Zenn LLM Topic",
       "story_id": "fallback:ad5778c121f939e7",
       "summary": "Introducing PetitOnes — Making Embodied AI More Accessible\n\n 1. Introduction\nOur dream at PetitOnes is to create a world where everyone can build their own embodied AI companion.\nThe rapid growth of AI has made tools like ChatGPT, Gemini, and Claude part of everyday life. However, very few peop...",
-      "title": "Introducing PetitOnes — Making Embodied AI More Accessible"
+      "summary_zh": "本文介紹 PetitOnes 這個專案，其願景是打造一個人人都能自行組裝具身 AI 夥伴的世界。作者觀察到，AI 快速普及已讓 ChatGPT、Gemini、Claude 等工具成為日常生活的一部分，但真正能動手做出實體 AI 夥伴的人仍然非常少，原因在於硬體、軟體與整合門檻過高。PetitOnes 正是針對這段落差而提出，訴求降低進入障礙，讓具身 AI 不再是研究實驗室或大型企業的專利。摘要僅涵蓋前言與動機，未說明具體的硬體平台規格、軟體堆疊、開源授權方式、價格區間，也沒有任何技術指標或用戶實測結果，因此無法評估其實際可及性與完成度。此文的重要性在於點出一個關鍵趨勢：生成式 AI 的下一階段競爭，可能從雲端模型轉向能與實體世界互動的 embodied AI，而能否普及取決於成本與工具鏈的成熟度。對台灣讀者而言，這與本地在機器人零組件、嵌入式系統與教育市場的優勢高度相關，值得持續追蹤其後續釋出的技術細節與社群反應。",
+      "title": "Introducing PetitOnes — Making Embodied AI More Accessible",
+      "title_zh": "PetitOnes 登場──讓具身 AI 更容易親近"
     },
     {
       "arxiv_id": null,
@@ -1681,7 +1719,9 @@
       "source_name": "Zenn LLM Topic",
       "story_id": "fallback:6b32562cfac0b479",
       "summary": "はじめに\nAI、とくに大規模言語モデルの登場について語るとき、多くの人は「仕事が奪われるのか」「生産性が上がるのか」「どの職業が危ないのか」という形で考えます。もちろん、それらは重要な論点です。しかし、それだけではAIの本質を捉えきれません。\nAIの最大の特徴は、社会を視覚的に変えないことです。鉄道が通れば街の形が変わります。自動車が普及すれば道路が広がります。電気が普及すれば夜の街が変わります。スマートフォンが普及すれば、人々の姿勢や行動が街中で変わります。ところが、AIや大規模言語モデルが登場しても、街を歩いたときに見える風景はほとんど変わりません。駅前の構造も、住宅街の形も、店...",
-      "title": "なぜ、AIが持つ最も大きな機能が「高スキル人間の濾過」だと言えるのか？"
+      "summary_zh": "這篇短文從一個常被忽略的角度切入AI與大型語言模型的社會影響。作者指出，多數討論都集中在「工作是否被取代」、「生產力是否提升」、「哪些職業最危險」，但這些熱門論點無法觸及AI的本質。文章強調，AI最顯著的特徵在於它幾乎不會以肉眼可見的方式改變社會外觀：鐵路改變城市樣貌，汽車拓寬道路，電力改變夜晚街景，智慧型手機改變人們在街上的一舉一動，然而大型語言模型問世後，站前結構、住宅區樣貌與街景幾乎沒有變化。作者由此推論，AI的力量不在於重塑物理空間，而是作用於資訊與篩選機制，可能成為區分、過濾高技能人才的隱形工具。需要留意的是，本文僅有摘要內容，後續論證、證據與具體機制並未在可見範圍內呈現，其「高技能人才過濾」的主張仍屬概念性宣稱，尚待實證檢驗。整體而言，此文提醒讀者以不同視角審視AI的社會角色，而非僅停留在就業焦慮的框架。",
+      "title": "なぜ、AIが持つ最も大きな機能が「高スキル人間の濾過」だと言えるのか？",
+      "title_zh": "為何AI最巨大的功能可說是「高技能人才的過濾」？"
     },
     {
       "arxiv_id": null,
@@ -1733,7 +1773,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:dd4b3aabc937ab4d",
       "summary": "In this post, you’ll build a server that extracts text from PDF files in Amazon S3 in real time. This protocol-based approach provides programmatic document access. You’ll walk through the architecture, set up the server, and run interactive document queries. Along the way, you’ll compare this approach with Amazon Textract so you can decide which tool fits your workload.",
-      "title": "Build interactive PDF text extraction from Amazon S3"
+      "summary_zh": "這篇文章示範如何建立一個伺服器，能即時從 Amazon S3 中的 PDF 檔案擷取文字，並提供以協定為基礎的程式化文件存取方式。內容涵蓋整體架構說明、伺服器的設定流程，以及如何執行互動式的文件查詢。作者在過程中亦將此做法與 Amazon Textract 進行比較，協助讀者判斷哪一種工具更適合自身的工作負載。此方法的核心價值在於即時性與可程式化存取，讓文件處理能整合進既有系統流程，而不必依賴人工操作或離線批次作業。對需要在雲端環境中大量處理 PDF 的團隊而言，理解協定式擷取與託管式 OCR 服務之間的權衡相當重要，例如在延遲、成本、維護負擔與辨識準確度上的差異。不過，本文僅提供摘要層級內容，實際的效能數據、成本比較與準確度基準並未呈現，讀者若要評估採用，仍須進一步檢視完整實作細節與測試結果。",
+      "title": "Build interactive PDF text extraction from Amazon S3",
+      "title_zh": "在 Amazon S3 上打造互動式 PDF 文字擷取"
     },
     {
       "arxiv_id": null,
@@ -1781,7 +1823,9 @@
       "source_name": "Qiita LLM Tag",
       "story_id": "fallback:2f3d18fde06fc59d",
       "summary": "Draft\n一卵性双生児のお笑いコンビ「ザ・たっち」を、クラウドに一切投げずローカルAIだけで見分けられるかを検証した。\n環境は GMKtec NucBox EVO X2（Ryzen AI MAX+ 395 / gfx1151 / ROCm 7.2.x）。\nローカルVLM...",
-      "title": "ローカルAIはザ・たっちを見分けられるか？Ryzen AI MAX+ で双子判定器を作ってみた"
+      "summary_zh": "這是一篇實作取向的驗證紀錄，作者想測試在完全不將影像送往雲端的前提下，僅靠本地AI能否分辨一卵性雙胞胎搞笑組合「ザ・たっち」。測試環境為 GMKtec NucBox EVO X2，搭載 Ryzen AI MAX+ 395（gfx1151）並使用 ROCm 7.2.x，屬於 AMD 平台的本地推論情境。文中採用本地視覺語言模型（VLM）進行判定，重點在於隱私與離線可行性：若本地模型能穩定區分長相極為相似的個體，代表在邊緣裝置上進行敏感影像分析是實際可行的。此類測試也牽涉到硬體資源限制，包括記憶體、顯示晶片與推論框架的相容性，以及在本地環境中模型精度與速度之間的取捨。不過，目前僅有草稿摘要，具體的模型選擇、提示設計、準確率、錯誤案例分析與效能數據皆未揭露，因此尚無法斷言本地AI的判定能力是否可靠，成敗仍高度取決於模型與硬體配置。",
+      "title": "ローカルAIはザ・たっちを見分けられるか？Ryzen AI MAX+ で双子判定器を作ってみた",
+      "title_zh": "本地AI能分辨「ザ・たっち」嗎？用 Ryzen AI MAX+ 打造雙胞胎判定器"
     }
   ],
   "run_date": "2026-06-27",
@@ -2703,7 +2747,9 @@
       "source_name": null,
       "story_id": "hf:deepseek-ai/deepseek-v4-pro-dspark",
       "summary": "Technical Report👁️ **Note: DeepSeek-V4-Pro-DSpark** is **not** a new model. It is the same checkpoint with an additional speculative decoding module attached. A minimal inference example is available in the `inference` folder. For more details, refer to: https://github.com/deepseek-ai/DeepSpec We present a preview version of **DeepSeek-V4** series, including two strong Mixture-of-Experts (MoE) language models — **DeepSeek-V4-Pro** with 1.6T parameters (49B activated) and **DeepSeek-V4-Flash** with 284B parameters (13B activated) — both supporting a context length of **one million tokens**. DeepSeek-V4 series incorporate several key upgrades in architecture and optimization: 1. **Hybrid Attention Architecture:** We design a hybrid attention mechanism combining Compressed Sparse Attention...",
-      "title": "deepseek-ai/DeepSeek-V4-Pro-DSpark"
+      "summary_zh": "這是 DeepSeek-V4 系列的預覽版本技術報告。需特別注意的是，DeepSeek-V4-Pro-DSpark 並非全新模型，而是在相同 checkpoint 之上額外掛載推測解碼（speculative decoding）模組，於 inference 資料夾提供最小推論範例。模型採用 Mixture-of-Experts（MoE）架構，DeepSeek-V4-Pro 具 1.6T 參數（啟動 49B），另有 284B 參數（啟動 13B）的 DeepSeek-V4-Flash，兩者皆支援一百萬 token 的上下文長度。架構與最佳化上的關鍵升級包含混合注意力機制，結合壓縮式稀疏注意力等設計。由於摘要於此處截斷，其餘方法細節、訓練資料規模、基準測試成績與限制條件皆未提供，故無法評估其實際效能與泛化能力。其重要性在於將超長上下文與 MoE 推論效率推向新階段，並以推測解碼降低部署成本。",
+      "title": "deepseek-ai/DeepSeek-V4-Pro-DSpark",
+      "title_zh": "deepseek-ai/DeepSeek-V4-Pro-DSpark"
     },
     {
       "arxiv_id": null,
@@ -2755,7 +2801,9 @@
       "source_name": null,
       "story_id": "hf:deepseek-ai/deepseek-v4-flash-dspark",
       "summary": "Technical Report👁️ **Note: DeepSeek-V4-Flash-DSpark** is **not** a new model. It is the same checkpoint with an additional speculative decoding module attached. A minimal inference example is available in the `inference` folder. For more details, refer to: https://github.com/deepseek-ai/DeepSpec We present a preview version of **DeepSeek-V4** series, including two strong Mixture-of-Experts (MoE) language models — **DeepSeek-V4-Pro** with 1.6T parameters (49B activated) and **DeepSeek-V4-Flash** with 284B parameters (13B activated) — both supporting a context length of **one million tokens**. DeepSeek-V4 series incorporate several key upgrades in architecture and optimization: 1. **Hybrid Attention Architecture:** We design a hybrid attention mechanism combining Compressed Sparse Attention...",
-      "title": "deepseek-ai/DeepSeek-V4-Flash-DSpark"
+      "summary_zh": "此條目為 DeepSeek-V4 系列的預覽技術報告，內容與 Pro 版本共用同一份說明。重點在於澄清：DeepSeek-V4-Flash-DSpark 並非新模型，而是原有 checkpoint 加上推測解碼（speculative decoding）模組，inference 資料夾中有最小推論範例可參考。系列包含兩個 Mixture-of-Experts 語言模型：DeepSeek-V4-Pro（1.6T 參數、啟動 49B）與 DeepSeek-V4-Flash（284B 參數、啟動 13B），均支援一百萬 token 上下文。架構與最佳化升級包括混合注意力機制，結合壓縮式稀疏注意力。摘要在此截斷，未提供訓練細節、評測數據與限制說明，因此無法驗證其實際推論速度與品質。其意義在於以較小啟動參數搭配推測解碼，為長上下文場景提供更具成本效益的部署選項。",
+      "title": "deepseek-ai/DeepSeek-V4-Flash-DSpark",
+      "title_zh": "deepseek-ai/DeepSeek-V4-Flash-DSpark"
     },
     {
       "arxiv_id": null,
@@ -2805,7 +2853,9 @@
       "source_name": "Awesome Japanese LLM (GitHub)",
       "story_id": "fallback:fae6310cd1201c39",
       "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">Medical-Qwen3-Swallow・Medical-GPT-OSS-Swallow を追加し、継続事前学習ドメイン特化型に学習テキスト列を追加 (#685)\n\n- 継続事前学習・ドメイン特化型に Medical-GPT-OSS-Swallow-120B / Medical-Qwen3-Swallow-32B・30B-A3B・8B の4行を追加（サイズ降順、Apache 2.0[^25] の研究用途限定注記を再利用）\n- 同テーブルに「学習テキスト」列を追加し、既存行も含め資料のある全行を調査して記入\n- README.md / en / fr の3ファイルを同期\n\nCloses #678\n\nCo-authored-by: Claude Opus 4.8 &lt;noreply@anthropic.com&gt;</pre>",
-      "title": "Medical-Qwen3-Swallow・Medical-GPT-OSS-Swallow を追加し、継続事前学習ドメイン特化型に学習テキ…"
+      "summary_zh": "這是一則開源專案的更新紀錄，而非研究論文。變更內容為在持續預訓練、領域特化型的模型清單中新增四列：Medical-GPT-OSS-Swallow-120B，以及 Medical-Qwen3-Swallow 的 32B、30B-A3B、8B 版本，依模型大小降序排列，並沿用 Apache 2.0 授權中「研究用途限定」的註記。同時在表格中新增「訓練文本」欄位，並回頭調查既有資料可查的所有列一併填寫，最後同步 README.md、英文版與法文版三個檔案。此更新對應 issue #678，並由 Claude Opus 4.8 協同撰寫。由於僅為摘要，未提供各模型的訓練語料規模、評估基準或醫療問答準確率等量化證據，也無法得知領域特化的實際效果。其意義在於提升模型卡資訊的透明度與可追溯性，方便研究者在醫療領域選用與比較。",
+      "title": "Medical-Qwen3-Swallow・Medical-GPT-OSS-Swallow を追加し、継続事前学習ドメイン特化型に学習テキ…",
+      "title_zh": "新增 Medical-Qwen3-Swallow 與 Medical-GPT-OSS-Swallow，並為持續預訓練的領域特化模型補上訓練文本欄位"
     },
     {
       "arxiv_id": null,
@@ -2856,7 +2906,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:5c11b5a1f0e3296d",
       "summary": "In this post, you learn how Stripe built a production-grade AI agent system for financial compliance. We cover the technical architecture of Stripe’s ReAct agent framework and the infrastructure decisions behind a dedicated agent service. We also discuss the role of human oversight in maintaining accountability, and key lessons about task decomposition, orchestration patterns, and cost optimization through prompt caching. By the end, you will understand how to design agentic systems that scale compliance operations without compromising quality or auditability.",
-      "title": "Production-grade AI agents for financial compliance: Lessons from Stripe"
+      "summary_zh": "本文屬產業實務分享，說明 Stripe 如何打造用於金融合規的生產級 AI agent 系統。內容涵蓋其 ReAct agent 框架的技術架構，以及為 agent 建立專屬服務背後的基础設施決策；同時討論人類監督在維持問責性上所扮演的角色。文中歸納出多項關鍵經驗，包括任務分解、協調模式（orchestration patterns），以及透過 prompt caching 達成成本最佳化。目標是讓讀者理解如何設計可擴展的 agentic 系統，在擴大合規作業規模的同時，不犧牲品質與可稽核性。由於僅有摘要，未提供具體架構圖、實驗數據、準確率或成本下降幅度等量化證據，也缺乏失敗案例與風險的深入討論。其價值在於揭示金融場域對可稽核性與人類介入的高度要求，為 agent 落地提供參考框架。",
+      "title": "Production-grade AI agents for financial compliance: Lessons from Stripe",
+      "title_zh": "面向金融合規的生產級 AI agent：來自 Stripe 的經驗教訓"
     },
     {
       "arxiv_id": null,

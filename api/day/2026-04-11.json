@@ -895,7 +895,9 @@
       "source_name": null,
       "story_id": "hf:google/timesfm-2.5-200m-transformers",
       "summary": "TimesFM (Time Series Foundation Model) is a pretrained decoder-only model for time-series forecasting. This repository contains the **Transformers** port of the official TimesFM 2.5 PyTorch release. **Resources and Technical Documentation**: * Original model: google/timesfm-2.5-200m-pytorch * Paper: A decoder-only foundation model for time-series forecasting * Transformers docs: TimesFM 2.5 This model is converted from the official TimesFM 2.5 PyTorch checkpoint and integrated into `transformers` as `TimesFm2_5ModelForPrediction`. The converted checkpoint preserves the original architecture and forecasting behavior, including: * patch-based inputs for time-series contexts * decoder-only self-attention stack * point and quantile forecasts",
-      "title": "google/timesfm-2.5-200m-transformers"
+      "summary_zh": "TimesFM（Time Series Foundation Model）是 Google 釋出的預訓練解碼器架構模型，專門用於時間序列預測。此儲存庫提供官方 TimesFM 2.5 PyTorch 版本的 Transformers 移植版，方便使用者直接在 Hugging Face transformers 生態系中載入。模型由官方 PyTorch 檢查點轉換而來，整合為 TimesFm2_5ModelForPrediction，並保留原本的架構與預測行為，包括以 patch 為基礎的時間序列輸入、解碼器自注意力堆疊，以及點預測與分位數預測輸出。官方同時提供原始模型 google/timesfm-2.5-200m-pytorch、技術論文「A decoder-only foundation model for time-series forecasting」與 Transformers 文件等資源。值得注意的是，摘要僅描述模型設計與轉換方式，未提供誤差指標、基準比較或推論成本等量化證據，也未說明適用情境與失敗案例。對需要零樣本或少量樣本預測的實務者而言，此移植降低了整合門檻，但實際準確度與領域泛化能力仍需自行評測。",
+      "title": "google/timesfm-2.5-200m-transformers",
+      "title_zh": "google/timesfm-2.5-200m-transformers：時間序列基礎模型的 Transformers 版本"
     },
     {
       "arxiv_id": null,
@@ -1049,7 +1051,9 @@
       "source_name": null,
       "story_id": "hf:google/gemma-4-e2b-it",
       "summary": "Hugging Face | Launch Blog | Documentation License: Apache 2.0 | Authors: Google DeepMind Gemma is a family of open models built by Google DeepMind. Gemma 4 models are multimodal, handling text and image input (with audio supported on small models) and generating text output. This release includes open-weights models in both pre-trained and instruction-tuned variants. Gemma 4 features a context window of up to 256K tokens and maintains multilingual support in over 140 languages. Featuring both Dense and Mixture-of-Experts (MoE) architectures, Gemma 4 is well-suited for tasks like text generation, coding, and reasoning. The models are available in four distinct sizes: **E2B**, **E4B**, **26B A4B**, and **31B**. Their diverse sizes make them deployable in environments ranging from high-end...",
-      "title": "google/gemma-4-E2B-it"
+      "summary_zh": "Gemma 4 是 Google DeepMind 推出的開源模型系列，採用 Apache 2.0 授權，此版為其中較小型的 E2B 指令微調（instruction-tuned）變體。模型具備多模態能力，可處理文字與圖像輸入並產生文字輸出，小型模型另支援音訊輸入；上下文視窗最高可達 256K tokens，並維持超過 140 種語言的多語支援。架構上同時涵蓋稠密（Dense）與混合專家（Mixture-of-Experts, MoE）設計，適合文字生成、程式撰寫與推理等任務。系列共提供 E2B、E4B、26B A4B 與 31B 四種尺寸，範圍從可在終端裝置或邊緣環境部署的小模型，到需要高階硬體的大型模型，讓開發者可依算力與延遲需求取捨。官方提供 Hugging Face 頁面、發布部落格與文件。摘要未揭露基準測試分數、微調資料組成與安全性評測結果，因此實際效能、幻覺率與風險控管仍待使用者自行驗證。",
+      "title": "google/gemma-4-E2B-it",
+      "title_zh": "google/gemma-4-E2B-it：Gemma 4 小型多模態指令微調模型"
     },
     {
       "arxiv_id": null,
@@ -1099,7 +1103,9 @@
       "source_name": null,
       "story_id": "hf:google/gemma-4-e4b-it",
       "summary": "Hugging Face | Launch Blog | Documentation License: Apache 2.0 | Authors: Google DeepMind Gemma is a family of open models built by Google DeepMind. Gemma 4 models are multimodal, handling text and image input (with audio supported on small models) and generating text output. This release includes open-weights models in both pre-trained and instruction-tuned variants. Gemma 4 features a context window of up to 256K tokens and maintains multilingual support in over 140 languages. Featuring both Dense and Mixture-of-Experts (MoE) architectures, Gemma 4 is well-suited for tasks like text generation, coding, and reasoning. The models are available in four distinct sizes: **E2B**, **E4B**, **26B A4B**, and **31B**. Their diverse sizes make them deployable in environments ranging from high-end...",
-      "title": "google/gemma-4-E4B-it"
+      "summary_zh": "此儲存庫為 Google DeepMind Gemma 4 系列中的 E4B 指令微調版本，與同系列的 E2B 同屬較小尺寸，採 Apache 2.0 授權。模型為多模態設計，可接受文字與圖像輸入並輸出文字，小尺寸模型另支援音訊；上下文視窗最高 256K tokens，支援超過 140 種語言。架構涵蓋稠密與混合專家（MoE）兩種路線，擅長文字生成、程式撰寫與推理任務。Gemma 4 共推出 E2B、E4B、26B A4B 與 31B 四種規模，開發者可依部署環境的算力、記憶體與延遲要求選擇，從高階伺服器到資源受限的邊緣裝置皆涵蓋。官方提供 Hugging Face 頁面、發布部落格與文件連結。需注意摘要並未提供任何基準測試數據、訓練資料說明或安全評估結果，E4B 相對 E2B 的實際效能增益與成本差異亦無從判斷，建議使用前先自行以目標任務進行評測。",
+      "title": "google/gemma-4-E4B-it",
+      "title_zh": "google/gemma-4-E4B-it：Gemma 4 中型多模態指令微調模型"
     }
   ]
 }

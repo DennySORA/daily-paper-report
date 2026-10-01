@@ -891,7 +891,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:a75f6a3802babff6",
       "summary": "This post demonstrates a comprehensive observability solution using Amazon Managed Grafana dashboards that provides a holistic view of both quality and quantity for LLMs served on Amazon SageMaker AI endpoints with inference components.",
-      "title": "Comprehensive observability for Amazon SageMaker AI LLM inference: From GPU utilization to LLM quality"
+      "summary_zh": "本文針對在 Amazon SageMaker AI 端點上、以 inference components 部署的大型語言模型，提出一套全方位的可觀測性方案。其問題意識在於：傳統監控多半只關注基礎設施層面的量測，例如 GPU 使用率、延遲與吞吐量，卻無法回答模型輸出品質是否隨時間漂移。作者主張需要同時掌握「量」與「質」兩個面向，因此以 Amazon Managed Grafana 儀表板為核心，整合硬體資源指標與推論品質指標，形成單一檢視介面。摘要未提供儀表板的具體指標清單、取樣頻率、品質評估方法或實際部署的量化結果，因此其可操作性與成本仍需進一步確認。限制在於缺乏實驗數據佐證。對已在雲端營運 LLM 服務的團隊而言，這類方案可作為建立監控與告警架構的參考起點。",
+      "title": "Comprehensive observability for Amazon SageMaker AI LLM inference: From GPU utilization to LLM quality",
+      "title_zh": "Amazon SageMaker AI 大型語言模型推論的全方位可觀測性：從 GPU 使用率到生成品質"
     },
     {
       "arxiv_id": null,
@@ -945,7 +947,9 @@
       "source_name": "Google AI Blog",
       "story_id": "fallback:54e0be3fa02b6039",
       "summary": "Gemini Omni & Gemini 3.5 hero",
-      "title": "9 demos of Gemini Omni and Gemini 3.5 in action"
+      "summary_zh": "這是 Google 官方部落格的一篇展示性文章，內容僅有標題與一張主視覺橫幅，沒有提供可查證的技術細節。文章主軸在於以九個實際案例示範 Gemini Omni 與 Gemini 3.5 兩項模型的能力，讓讀者理解新版本在多模態與代理式任務上的應用樣貌。由於目前僅有摘要層級資訊，無法確認各示範所使用的模型版本、推論成本、延遲表現，也沒有提到任何量化評測或基準比較，因此不應視為技術報告或效能證明。對台灣的 AI 研究者與開發者而言，這類官方示範可作為評估模型實用性的初步參考，特別是判斷能否把 Gemini 系列整合進既有的產品流程與工具鏈；但仍需等待完整的技術文件、API 規格與獨立評測出爐，才能據以做出導入決策。",
+      "title": "9 demos of Gemini Omni and Gemini 3.5 in action",
+      "title_zh": "Gemini Omni 與 Gemini 3.5 的九個實測示範"
     },
     {
       "arxiv_id": null,
@@ -1048,7 +1052,9 @@
       "source_name": "Google AI Blog",
       "story_id": "fallback:53334c651e4bfdc4",
       "summary": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/FutureLabs_social.max-600x600.format-webp.webp\" />University of Waterloo students develop AI prototypes like sign language tutors to reshape the future of education and work.",
-      "title": "Check out real-life AI prototypes from the Futures Lab."
+      "summary_zh": "這是 Google 官方部落格的一篇報導，內容僅有標題、一張社群分享用的主視覺圖片，以及一句簡短說明，並未提供具體的技術細節或評測結果。文中指出滑鐵盧大學（University of Waterloo）的學生開發了多種 AI 原型，例如手語教學助理，藉此探索教育與工作型態的未來樣貌。由於目前僅有摘要層級資訊，無法得知這些原型的模型架構、訓練資料來源、推論方式、實際使用者測試規模與成效指標，也缺少成本與隱私層面的討論。對台灣讀者而言，這則消息的意義在於觀察產學合作如何把生成式 AI 推向輔助教學與無障礙溝通等應用場景，可作為校園專題或人機互動研究的參考案例；但在缺乏量化證據與方法揭露之前，不宜將其視為已驗證的產品成果。",
+      "title": "Check out real-life AI prototypes from the Futures Lab.",
+      "title_zh": "直擊 Futures Lab 的真人實測 AI 原型"
     },
     {
       "arxiv_id": null,
@@ -1101,7 +1107,9 @@
       "source_name": "Google AI Blog",
       "story_id": "fallback:bd9acaf23ee48c80",
       "summary": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/IOQuiz2026_social.max-600x600.format-webp.webp\" />We used Google AI Studio to vibe code a quiz about our top I/O 2026 announcements.",
-      "title": "Take our I/O 2026 quiz, vibe coded in Google AI Studio."
+      "summary_zh": "這是 Google 官方部落格的一則簡短公告，只有標題、一張社群分享圖與一句說明，並沒有提供可檢驗的技術內容。文中表示團隊使用 Google AI Studio，以所謂 vibe coding 的方式快速打造一份關於 I/O 2026 重點發表內容的線上測驗。所謂 vibe coding 指的是以自然語言提示驅動程式碼生成、開發者以直覺反覆調整的開發風格，通常搭配雲端 IDE 與即時預覽。由於資訊僅止於此，我們無法得知實際使用的模型版本、提示設計、生成程式碼的比例、除錯所花費的人力，也沒有任何準確率或開發效率的量化數據。對台灣開發者而言，這則案例可作為觀察 AI 輔助開發流程的入門素材，理解提示工程與快速原型如何降低小型專案的進入門檻；但仍應注意生成程式碼在安全性、可維護性與授權上的潜在風險。",
+      "title": "Take our I/O 2026 quiz, vibe coded in Google AI Studio.",
+      "title_zh": "用 Google AI Studio  vibe coding 出 I/O 2026 測驗"
     }
   ]
 }

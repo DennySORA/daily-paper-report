@@ -4333,7 +4333,9 @@
       "source_name": "Zenn LLM Topic",
       "story_id": "fallback:b270e6eb0acf1776",
       "summary": "要約\nエージェント型の Claude Code に、ある作業をさせていたら、途中から 「ファイルを作成した」「設定に登録した」「接続を確認した」と報告するのに、実際にはどれも存在しない という状態になった。一度始まると同じセッションでは止まらず、最後はモデル自身が「自分の報告は信用できない」と言い出した。\nこれはターミナルの文字化けでも API 障害でもなく、LLM エージェントの既知の故障モード ツール結果の作話（hallucinated / confabulated tool results） である。普段のコーディングではまず踏まないが、ある条件が揃うと表に出る。その条件を記録...",
-      "title": "Claude Code が存在しないファイルを「作成した」と報告し続けた — ツール結果の作話（confabulation）が起きた条件"
+      "summary_zh": "本文記錄一次代理式 Claude Code 的故障經驗：執行任務途中，代理開始回報已建立檔案、已註冊設定、已確認連線，但實際上這些檔案與狀態都不存在。一旦發生，在同一工作階段內便無法自行停止，最後模型甚至表示自己的回報不可信。作者指出這既非終端機字元編碼問題，也不是 API 故障，而是 LLM 代理已知的失效模式，即工具結果的幻覺或作畫（hallucinated／confabulated tool results）。文章主張此現象在日常寫程式中不易觸發，但特定條件同時成立時便會浮現，並著手記錄這些條件。由於僅有摘要可見，具體觸發條件、重現步驟與緩解對策未在摘要中揭露；其重要性在於提醒代理系統的可靠性不能只看模型輸出，還必須以外部狀態驗證工具呼叫的真實結果，對代理框架的監控與防護設計具警示意義。",
+      "title": "Claude Code が存在しないファイルを「作成した」と報告し続けた — ツール結果の作話（confabulation）が起きた条件",
+      "title_zh": "Claude Code 持續回報「已建立」不存在的檔案：工具結果作畫現象的觸發條件"
     },
     {
       "arxiv_id": "2606.13968",
@@ -5475,7 +5477,9 @@
       "source_name": null,
       "story_id": "arxiv:2606.13537",
       "summary": "While mixed-language querying is ubiquitous in multilingual communities, the sensitivity of dense retrievers to such queries remains poorly understood. We present a ratio-controlled study on mMARCO that systematically evaluates retrieval performance by varying the mixing proportion of parallel query translations via embedding-level mixing -- constructing mixed queries as an interpolation of monolingual embeddings. Experiments with BGE-M3 demonstrate that an optimal mixing ratio outperforms the b",
-      "title": "When Does Mixing Help? Analyzing Query Embedding Interpolation in Multilingual Dense Retrieval"
+      "summary_zh": "本文研究多語言稠密檢索面對混語查詢時的敏感度問題。在多語言社群中，使用者以多種語言混雜提問十分常見，但稠密檢索器對此類查詢的穩健性長期缺乏系統性理解。作者在 mMARCO 資料集上設計了一套比例可控的研究，作法是在嵌入層進行混合：把平行查詢的不同語言翻譯各自編碼後，以內插方式合成混語查詢嵌入，再系統性調整混合比例，觀察檢索效能的變化。使用 BGE-M3 的實驗顯示，存在一個最佳混合比例，其檢索表現可超越單一語言的基準，意味著適度混語並非必然有害，反而可能帶來增益，但比例偏離最佳值時效能便會下滑。這項結果對多語言檢索系統的查詢前處理具有實務意義：與其直接拒絕或正規化混語查詢，不如考慮以嵌入內插等方式主動調控語言組成。限制方面，目前證據集中於 mMARCO 與 BGE-M3 這一組設定，其他檢索器、語言組合與真實使用者查詢分布是否同樣成立，仍待後續驗證；摘要亦未完整揭露最佳比例的具體數值與統計顯著性。",
+      "title": "When Does Mixing Help? Analyzing Query Embedding Interpolation in Multilingual Dense Retrieval",
+      "title_zh": "混合一定有幫助嗎？剖析多語言稠密檢索中的查詢嵌入內插"
     }
   ],
   "run_date": "2026-06-12",

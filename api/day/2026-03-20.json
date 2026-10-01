@@ -722,7 +722,9 @@
       "source_name": null,
       "story_id": "arxiv:2603.18718",
       "summary": "Memory-augmented LLM agents maintain external memory banks to support long-horizon interaction, yet most existing systems treat construction, retrieval, and utilization as isolated subroutines. This creates two coupled challenges: strategic blindness on the forward path of the memory cycle, where construction and retrieval are driven by local heuristics rather than explicit strategic reasoning, and sparse, delayed supervision on the backward path, where downstream failures rarely translate into ",
-      "title": "MemMA: Coordinating the Memory Cycle through Multi-Agent Reasoning and In-Situ Self-Evolution"
+      "summary_zh": "這篇論文針對記憶增強的 LLM 代理（memory-augmented LLM agents）提出改進方法。這類代理會維護外部記憶庫以支援長程互動，但現有系統多半把記憶的建構、檢索與利用視為彼此孤立的子程序，因而產生兩個相互糾結的難題。第一是記憶週期前向路徑上的策略盲點：建構與檢索往往由局部啟發式規則驅動，缺乏明確的策略推理，導致存入與取出的內容未必對應任務真正所需。第二是後向路徑上的監督稀疏與延遲：下游任務的失敗很少能有效回溯並轉化為對記憶機制的修正訊號，使得錯誤持續累積而難以自我改善。MemMA 的構想是以多代理推理協調整個記憶週期，並透過就地自我演化讓記憶在運作過程中即時調整，而非事後批次更新。摘要僅止於問題定義與方法方向，未提供基準測試、評估指標或與現有方法的比較數據，因此其實際增益仍待驗證。其重要性在於把記憶視為需要策略性協調的整體流程，對長程代理的可靠性研究具有啟發意義。",
+      "title": "MemMA: Coordinating the Memory Cycle through Multi-Agent Reasoning and In-Situ Self-Evolution",
+      "title_zh": "MemMA：以多代理推理與就地自我演化協調記憶週期"
     },
     {
       "arxiv_id": "2603.18683",
@@ -783,7 +785,9 @@
       "source_name": null,
       "story_id": "arxiv:2603.18683",
       "summary": "While large language models excel in diverse domains, their performance on complex longhorizon agentic decision-making tasks remains limited. Most existing methods concentrate on designing effective reward models (RMs) to advance performance via multi-turn reinforcement learning. However, they suffer from delayed propagation in sparse outcome rewards and unreliable credit assignment with potentially overly fine-grained and unfocused turnlevel process rewards. In this paper, we propose (HISR) exp",
-      "title": "HISR: Hindsight Information Modulated Segmental Process Rewards For Multi-turn Agentic Reinforcement Learning"
+      "summary_zh": "大型語言模型雖在多方領域表現優異，但在需要長時間規劃的代理式決策任務上仍受限。既有方法多半著重設計更好的獎勵模型（reward model），再搭配多輪強化學習來提升表現，卻同時面臨兩項困境：稀疏的結果獎勵造成延遲傳播，而逐輪的過程獎勵又可能過度細碎且失焦，導致信用分配不可靠。本文提出 HISR，其核心構想是以「事後資訊」（hindsight information）來調變分段式的過程獎勵，將每一段軌跡中實際觀察到的後續結果回饋到該段的獎勵計算，使過程獎勵既能保留階段性指引，又能與最終成效對齊。由於目前僅有摘要可取得，具體的調變函數設計、訓練流程與實驗配置尚待論文正文說明；摘要亦未提供基準比較或量化結果，因此實際增益幅度仍待驗證。就意義而言，此工作指向一個關鍵問題：如何在稀疏回饋的多輪代理任務中，取得介於結果獎勵與逐輪獎勵之間的折衷，讓信用分配更可靠，可望為多輪代理式 RL 的獎勵設計提供新方向。",
+      "title": "HISR: Hindsight Information Modulated Segmental Process Rewards For Multi-turn Agentic Reinforcement Learning",
+      "title_zh": "HISR：以事後資訊調變的分段過程獎勵之多輪代理式強化學習"
     },
     {
       "arxiv_id": "2603.18676",
@@ -835,7 +839,9 @@
       "source_name": null,
       "story_id": "arxiv:2603.18676",
       "summary": "MANAR (Memory-augmented Attention with Navigational Abstract Conceptual Representation), contextualization layer generalizes standard multi-head attention (MHA) by instantiating the principles of Global Workspace Theory (GWT). While MHA enables unconstrained all-to-all communication, it lacks the functional bottleneck and global integration mechanisms hypothesized in cognitive models of consciousness. MANAR addresses this by implementing a central workspace through a trainable memory of abstract",
-      "title": "MANAR: Memory-augmented Attention with Navigational Abstract Conceptual Representation"
+      "summary_zh": "本論文提出 MANAR（Memory-augmented Attention with Navigational Abstract Conceptual Representation），一個可視為情境化層（contextualization layer）的架構，其設計理念來自認知科學中的全域工作空間理論（Global Workspace Theory, GWT）。標準的多頭注意力（MHA）允許任意兩兩位置之間無限制地互相通訊，雖具高度表達彈性，卻缺乏認知模型所假設的功能性瓶頸與全域整合機制，也就是一個能彙整並廣播資訊的中央工作空間。MANAR 試圖補上這一塊：以一組可訓練的抽象記憶單元來實現中央工作空間，並搭配導航式機制在抽象概念表徵間移動與整合。摘要僅止於概念層次的說明，未交代記憶的更新規則、導航的操作方式、與 MHA 的參數與計算量差異，亦未提供任何實驗或量化結果，因此其效益、可擴充性與是否真能對應 GWT 的認知假設，仍有待正文檢驗。其意義在於把注意力機制與認知理論中的全域整合構想連結，為架構設計提供一條不同於純效率導向的思路。",
+      "title": "MANAR: Memory-augmented Attention with Navigational Abstract Conceptual Representation",
+      "title_zh": "MANAR：具導航式抽象概念表徵的記憶增強注意力"
     },
     {
       "arxiv_id": "2603.18564",
@@ -891,7 +897,9 @@
       "source_name": null,
       "story_id": "arxiv:2603.18564",
       "summary": "Recent work has shown that Transformers can perform in-context learning for linear regression under restrictive assumptions, including i.i.d. data, Gaussian noise, and Gaussian regression coefficients. However, real-world data often violate these assumptions: the distributions of inputs, noise, and coefficients are typically unknown, non-Gaussian, and may exhibit dependency across the prompt. This raises a fundamental question: can Transformers learn effectively in-context under realistic distri",
-      "title": "Transformers Learn Robust In-Context Regression under Distributional Uncertainty"
+      "summary_zh": "近期研究顯示，Transformer 能針對線性迴歸執行脈絡內學習（in-context learning），但這些結果多半建立在相當嚴格的假設上，例如資料為獨立同分布、雜訊為高斯、迴歸係數亦為高斯。然而真實世界的資料經常違反這些條件：輸入、雜訊與係數的分布往往未知、非高斯，甚至在同一段提示（prompt）內彼此相依。這使得一個根本問題浮現：在貼近現實的分布不確定性之下，Transformer 是否仍能有效地進行脈絡內學習？論文以此為出發點，研究 Transformer 在分布不確定情境中的穩健性，探討其能否在缺乏明確分布假設時仍維持良好的迴歸表現。由於目前僅取得摘要，作者具體採用的理論架構、誤差上界、實驗設計與基準比較皆未揭露，也尚不清楚穩健性在何種條件下會失效。此工作的價值在於把脈絡內學習的分析從理想化假設推向更貼近實務的分布不確定設定，若能給出理論刻畫或實證界線，將有助於理解 Transformer 迴歸能力的適用範圍與其內在限制。",
+      "title": "Transformers Learn Robust In-Context Regression under Distributional Uncertainty",
+      "title_zh": "Transformer 在不確定分布下學習穩健的脈絡內迴歸"
     },
     {
       "arxiv_id": "2603.19172",
@@ -946,7 +954,9 @@
       "source_name": null,
       "story_id": "arxiv:2603.19172",
       "summary": "Despite the computational efficiency of MoE models, the excessive memory footprint and I/O overhead inherent in multi-expert architectures pose formidable challenges for real-time inference on resource-constrained edge platforms. While existing static methods struggle with a rigid latency-accuracy trade-off, we observe that expert importance is highly skewed and depth-dependent. Motivated by these insights, we propose DyMoE, a dynamic mixed-precision quantization framework designed for high-perf",
-      "title": "DyMoE: Dynamic Expert Orchestration with Mixed-Precision Quantization for Efficient MoE Inference on Edge"
+      "summary_zh": "混合專家（MoE）模型雖具備計算效率優勢，但其多專家架構帶來龐大的記憶體占用與 I/O 負擔，對資源受限的邊緣裝置而言，即時推論是一大挑戰。既有的靜態方法多半只能在延遲與準確率之間做僵硬的取捨，無法隨情境調整。本文的出發點是一項觀察：專家的重要性高度偏斜，且與網路深度相關，也就是不同層、不同輸入所倚重的專家差異明顯。基於此，作者提出 DyMoE，一套動態混合精度量化框架，針對高效能邊緣推論設計，讓不同專家依其重要性與所處深度採用不同位元精度，並搭配動態的專家調度機制，以在有限記憶體與頻寬下盡量維持準確率。由於摘要僅止於動機與方法概述，具體的量化位元配置策略、調度演算法、硬體測試平台與量化結果皆未提供，其相對靜態基線的延遲與準確率增益仍待驗證。此研究的重要性在於指出 MoE 邊緣部署的關鍵不在單一靜態壓縮率，而在依深度與輸入動態分配資源，為資源受限環境下的 MoE 推論提供可行方向。",
+      "title": "DyMoE: Dynamic Expert Orchestration with Mixed-Precision Quantization for Efficient MoE Inference on Edge",
+      "title_zh": "DyMoE：混合精度量化與動態專家調度之邊緣端 MoE 高效推論"
     },
     {
       "arxiv_id": "2603.18579",
