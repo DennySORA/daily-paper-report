@@ -635,16 +635,16 @@ def _run_translation_phase(
     cached_translations = _load_cached_translations(output_dir, unique_stories, log)
 
     settings = get_settings()
-    if not _has_llm_credentials(settings):
+    if not getattr(settings, "translation_api_key", None):
         if cached_translations:
             log.info(
                 "translation_phase_using_cached",
-                reason="no_llm_credentials",
+                reason="no_translation_credentials",
                 cached_count=len(cached_translations),
             )
             return cached_translations
 
-        log.info("translation_phase_skipped", reason="no_llm_credentials")
+        log.info("translation_phase_skipped", reason="no_translation_credentials")
         return None
 
     log.info("phase_started", phase="translation")
@@ -664,7 +664,7 @@ def _run_translation_phase(
                 story["fulltext_sha256"] = document.sha256
                 story["fulltext_status"] = document.status.value
 
-        client = _create_configured_llm_client(settings)
+        client = _create_translation_client(settings)
         processor = TranslationProcessor(client=client, output_dir=output_dir)
 
         result = processor.translate(unique_stories)
@@ -691,6 +691,18 @@ def _run_translation_phase(
 def _has_llm_credentials(settings: object) -> bool:
     """Return whether the required LLM credential is present."""
     return bool(getattr(settings, "llm_api_key", None))
+
+
+def _create_translation_client(settings: object) -> "LlmClient":
+    """Create the translation client from its dedicated provider settings."""
+    from src.features.llm.factory import create_llm_client
+
+    return create_llm_client(
+        api_key=getattr(settings, "translation_api_key", None),
+        model=getattr(settings, "translation_model", "deepseek-flash"),
+        max_tokens=getattr(settings, "llm_max_tokens", 8192),
+        base_url=getattr(settings, "translation_base_url", "https://api.deepseek.com"),
+    )
 
 
 def _create_configured_llm_client(

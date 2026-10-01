@@ -139,13 +139,13 @@ def translate(
         return
 
     settings = get_settings()
-    if not settings.llm_api_key:
-        raise SystemExit("No LLM credential configured for the application.")
+    if not settings.translation_api_key:
+        raise SystemExit("TRANSLATION_API_KEY is not configured for the application.")
     client = create_llm_client(
-        api_key=settings.llm_api_key,
-        model=settings.llm_model,
+        api_key=settings.translation_api_key,
+        model=settings.translation_model,
         max_tokens=settings.llm_max_tokens,
-        base_url=settings.llm_base_url,
+        base_url=settings.translation_base_url,
     )
     processor = TranslationProcessor(client=client, output_dir=public_dir)
     # Full papers go one per request; abstracts are short enough to batch.

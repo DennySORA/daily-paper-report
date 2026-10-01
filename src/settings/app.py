@@ -40,6 +40,17 @@ class AppSettings(BaseSettings):
         default=8192,
         validation_alias=AliasChoices("LLM_MAX_TOKENS", "DEEPSEEK_MAX_TOKENS"),
     )
+    # Translation has its own provider (DeepSeek's API by default) and never
+    # falls back to the scoring LLM's key or endpoint.
+    translation_api_key: str | None = Field(
+        default=None, validation_alias="TRANSLATION_API_KEY"
+    )
+    translation_base_url: str = Field(
+        default="https://api.deepseek.com", validation_alias="TRANSLATION_BASE_URL"
+    )
+    translation_model: str = Field(
+        default="deepseek-flash", validation_alias="TRANSLATION_MODEL"
+    )
     fulltext_cache_dir: str | None = Field(
         default=None, validation_alias="FULLTEXT_CACHE_DIR"
     )

@@ -89,3 +89,26 @@ def test_empty_content_fails(mock_post: MagicMock) -> None:
 def test_empty_model_is_rejected() -> None:
     with pytest.raises(ValueError, match="model must be"):
         OpenAICompatibleClient(api_key="secret", model="")
+
+
+@patch("src.features.llm.openai_client.httpx.post")
+def test_deepseek_requests_non_thinking_mode(mock_post: MagicMock) -> None:
+    mock_post.return_value = _response()
+    OpenAICompatibleClient(
+        api_key="secret", model="deepseek-flash", base_url="https://api.deepseek.com"
+    ).generate_content("json")
+    body = mock_post.call_args.kwargs["json"]
+    assert body["model"] == "deepseek-flash"
+    assert body["thinking"] == {"type": "disabled"}
+    assert "reasoning" not in body
+
+
+@patch("src.features.llm.openai_client.httpx.post")
+def test_rejected_request_reports_provider_message(mock_post: MagicMock) -> None:
+    refused = MagicMock(status_code=403, headers={})
+    refused.json.return_value = {
+        "error": {"message": "Provider refused", "metadata": {"provider_name": "Z.AI"}}
+    }
+    mock_post.return_value = refused
+    with pytest.raises(LlmApiError, match=r"403: Provider refused \(provider: Z.AI\)"):
+        OpenAICompatibleClient(api_key="secret").generate_content("json")

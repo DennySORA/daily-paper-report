@@ -87,6 +87,9 @@ class OpenAICompatibleClient:
             "max_tokens": self._max_tokens,
             "response_format": {"type": "json_object"},
         }
+        if "api.deepseek.com" in self._base_url:
+            # DeepSeek: non-thinking mode keeps JSON output fast and cheap.
+            body["thinking"] = {"type": "disabled"}
         if "openrouter.ai" in self._base_url:
             # Reasoning is mandatory for some OpenRouter models; only request
             # that its text stay out of the response content.
@@ -116,8 +119,10 @@ class OpenAICompatibleClient:
             if response.status_code == HTTPStatus.OK:
                 return response
             if response.status_code not in _RETRYABLE or attempt >= _MAX_RETRIES:
+                detail = _error_detail(response)
                 raise LlmApiError(
-                    f"LLM API returned {response.status_code}",
+                    f"LLM API returned {response.status_code}"
+                    + (f": {detail}" if detail else ""),
                     status_code=response.status_code,
                 )
             self._sleep_before_retry(attempt, response.headers.get("Retry-After"))
@@ -161,6 +166,21 @@ class OpenAICompatibleClient:
             )
             self._log.info("llm_usage", **self.last_usage.__dict__)
         return content
+
+
+def _error_detail(response: httpx.Response) -> str:
+    """Provider's error message for logs; never the request or credentials."""
+    try:
+        data = response.json()
+    except ValueError:
+        return ""
+    error = data.get("error") if isinstance(data, dict) else None
+    if not isinstance(error, dict):
+        return ""
+    message = str(error.get("message") or "").strip()
+    metadata = error.get("metadata")
+    provider = metadata.get("provider_name") if isinstance(metadata, dict) else None
+    return (f"{message} (provider: {provider})" if provider else message)[:300]
 
 
 def _as_int(value: object) -> int:

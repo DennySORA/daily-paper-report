@@ -7,7 +7,10 @@ research guides, and publishes them to a static React reader.
 ## Runtime architecture
 
 - The data pipeline runs on the Nano server in an ARM64 Docker container.
-- `deepseek-v4-flash` is the only LLM and uses its 1M-token context window.
+- Scoring and report metadata use the `LLM_*` settings (OpenRouter by default).
+- Chinese titles and guides use only the `TRANSLATION_*` settings: DeepSeek's own API
+  with `deepseek-flash` in non-thinking JSON mode. Without `TRANSLATION_API_KEY` the
+  translation phase is skipped; it never falls back to the scoring provider.
 - Full paper text is cached only on the Nano; it is never published or pushed to GitHub.
 - GitHub Pages serves `paper.dennysora.me` from `gh-pages`, which has two writers
   with disjoint paths: the Nano publishes validated report data under `api/`
@@ -21,7 +24,7 @@ Requirements: Python 3.13, [uv](https://docs.astral.sh/uv/), Node.js 22, and pnp
 
 ```bash
 cp .env.example .env
-# Set DEEPSEEK_API_KEY in .env
+# Set LLM_API_KEY (scoring) and TRANSLATION_API_KEY (DeepSeek) in .env
 uv sync --frozen
 uv run pytest
 uv run ruff check .

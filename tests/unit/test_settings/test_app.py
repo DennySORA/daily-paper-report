@@ -24,3 +24,19 @@ def test_legacy_deepseek_key_alias(monkeypatch: MonkeyPatch) -> None:
     settings = AppSettings(_env_file=None)
 
     assert settings.llm_api_key == "legacy-key"
+
+
+def test_translation_uses_its_own_provider(monkeypatch: MonkeyPatch) -> None:
+    monkeypatch.setenv("LLM_API_KEY", "sk-or-scoring")
+    monkeypatch.delenv("TRANSLATION_API_KEY", raising=False)
+    monkeypatch.delenv("TRANSLATION_BASE_URL", raising=False)
+    monkeypatch.delenv("TRANSLATION_MODEL", raising=False)
+
+    settings = AppSettings(_env_file=None)
+
+    assert settings.translation_api_key is None
+    assert settings.translation_base_url == "https://api.deepseek.com"
+    assert settings.translation_model == "deepseek-flash"
+
+    monkeypatch.setenv("TRANSLATION_API_KEY", "sk-translation")
+    assert AppSettings(_env_file=None).translation_api_key == "sk-translation"

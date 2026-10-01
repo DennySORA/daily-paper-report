@@ -7,7 +7,7 @@ It overwrites the existing translations_zh.json cache.
 
 Usage:
     # Set the API key via environment variable (or pass via --api-key)
-    export LLM_API_KEY="sk-or-..."
+    export TRANSLATION_API_KEY="sk-..."
 
     # Re-translate everything
     python scripts/retranslate.py --out public
@@ -29,8 +29,8 @@ import httpx
 
 
 # ── LLM API settings ──────────────────────────────────────────────
-LLM_BASE_URL = "https://openrouter.ai/api/v1"
-LLM_MODEL = "z-ai/glm-5.3-flash"
+LLM_BASE_URL = "https://api.deepseek.com"
+LLM_MODEL = "deepseek-flash"
 MAX_TOKENS = 8192  # Enough for batch stories x 400 chars Chinese + JSON
 BATCH_SIZE = 5  # Keep small to avoid JSON truncation from token limits
 MIN_REQUEST_INTERVAL = 0.5  # seconds
@@ -94,6 +94,7 @@ def chat_completion(
             {"role": "user", "content": prompt},
         ],
         "stream": False,
+        "thinking": {"type": "disabled"},
         "max_tokens": max_tokens,
     }
 
@@ -271,8 +272,8 @@ def main() -> None:
     )
     parser.add_argument(
         "--api-key",
-        default=os.environ.get("LLM_API_KEY", ""),
-        help="LLM API key (or set LLM_API_KEY env var)",
+        default=os.environ.get("TRANSLATION_API_KEY", ""),
+        help="DeepSeek API key (or set TRANSLATION_API_KEY env var)",
     )
     parser.add_argument(
         "--date-from",
@@ -300,7 +301,7 @@ def main() -> None:
     args = parser.parse_args()
 
     if not args.api_key:
-        print("Error: LLM_API_KEY not set. Use --api-key or set env var.")
+        print("Error: TRANSLATION_API_KEY not set. Use --api-key or set env var.")
         sys.exit(1)
 
     api_day_dir = args.out / "api" / "day"
