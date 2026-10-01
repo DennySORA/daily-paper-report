@@ -189,7 +189,9 @@
         "source_name": null,
         "story_id": "hf:mistralai/mistral-small-4-119b-2603-eagle",
         "summary": "Mistral Small 4 is a powerful hybrid model capable of acting as both a general instruction model and a reasoning model. It unifies the capabilities of three different model families—**Instruct**, **Reasoning** (previously called Magistral), and **Devstral**—into a single, unified model. With its multimodal capabilities, efficient architecture, and flexible mode switching, it is a powerful general-purpose model for any task. In a latency-optimized setup, Mistral Small 4 achieves a **40% reduction in end-to-end completion time**, and in a throughput-optimized setup, it handles **3x more requests per second** compared to Mistral Small 3. Mistral Small 4 includes the following architectural choices: - **MoE**: 128 experts, 4 active. - **119B parameters**, with **6.5B activated per token**. -...",
-        "title": "mistralai/Mistral-Small-4-119B-2603-eagle"
+        "summary_zh": "Mistral Small 4 是一款混合式模型，能同時勝任一般指令跟隨與推理任務，其核心貢獻在於將三種不同模型家族（Instruct、Reasoning 與 Devstral）的能力整合進單一模型，並透過架構設計提升效率。在架構上，它採用 Mixture-of-Experts (MoE) 設計，共有 128 個專家，每次執行僅啟用其中 4 個；模型總參數量為 119B，但每個 token 僅啟動 6.5B 參數，這種稀疏啟動方式大幅降低計算成本。此外，模型具備多模態能力，能處理多種類型的輸入，並支援彈性的模式切換，使其能針對不同任務需求動態調整行為。在效能方面，研究人員在延遲最佳化的設定下，測得端到端完成時間較 Mistral Small 3 縮短 40%；而在吞吐量最佳化的情境中，每秒可處理的請求數則提升至 3 倍，顯示其在服務部署上的實用價值。然而，本文僅提供摘要，未揭露詳細的訓練資料、基準測試比較或模式切換的具體機制，因此無法完整評估其在不同任務上的實際表現與潛在限制。這項工作的意義在於，單一模型若能有效涵蓋多種用途，將可簡化部署流程並降低營運成本，對於需要同時處理複雜推理與日常指令的應用場景，提供了一個值得參考的解決方案。未來研究可進一步探討其模式切換的可靠性、MoE 架構的擴展性，以及與其他同等級模型的量化比較。",
+        "title": "mistralai/Mistral-Small-4-119B-2603-eagle",
+        "title_zh": "Mistral Small 4：整合指令、推理與開發用途的統一混合模型"
       }
     ]
   },

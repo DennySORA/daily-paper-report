@@ -1296,7 +1296,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.22771",
       "summary": "Large language models (LLMs) exhibit systematic political bias across a variety of sensitive contexts. We find that LLMs handle counterpart topics from opposing political sides asymmetrically. We refer to this phenomenon as covert political bias and identify 7 categories of techniques through which it operates. We propose two metrics for covert bias: Sentiment Consistency measures symmetry in rhetoric and framing across paired political prompts; Helpfulness Consistency measures symmetric depth a",
-      "title": "Reducing Political Manipulation with Consistency Training"
+      "summary_zh": "大型語言模型（LLMs）在敏感情境中表現出系統性的政治偏見，對立政治議題的處理方式呈現不對稱性，本文將此現象稱為隱蔽政治偏見，並歸納出七種運作機制。為量化此偏見，研究提出 `Sentiment Consistency` 和 `Helpfulness Consistency` 兩項指標。為減少這類偏見，論文引入了 `Political Consistency Training (PCT)`，這是一種 `RL` 訓練方法，包含 `Sentiment Consistency Training` 和 `Helpfulness Consistency Training` 兩種互補範式。實驗結果表明，`PCT` 能有效保持模型的整體有用性，顯著降低隱蔽政治偏見，並能泛化到未見過的基準測試上。",
+      "title": "Reducing Political Manipulation with Consistency Training",
+      "title_zh": "透過一致性訓練減少政治操縱"
     },
     {
       "arxiv_id": "2605.22769",

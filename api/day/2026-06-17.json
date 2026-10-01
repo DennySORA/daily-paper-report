@@ -409,7 +409,9 @@
         "source_name": null,
         "story_id": "hf:stabilityai/stable-audio-3-medium-base",
         "summary": "> **Note:** This is the base (pre-trained) model intended for fine-tuning. If you are looking to generate audio directly, please use Stable Audio 3 Medium instead. Please note: For commercial use, please refer to https://stability.ai/license `Stable Audio 3` is a family of fast latent diffusion models (small, medium, large) for variable length audio generation and editing. Since our models can generate several minutes of audio, variable-length generations are key to avoid the cost of producing full-length generations for short sounds. We also support inpainting, enabling targeted audio editing and the continuation of short recordings. Our latent diffusion models operate on top of a novel semantic-acoustic autoencoder that projects audio into a compact latent space, enabling efficient...",
-        "title": "stabilityai/stable-audio-3-medium-base"
+        "summary_zh": "Stable Audio 3 是 Stability AI 推出的系列音訊生成模型，涵蓋 small、medium 與 large 三種規模，主要功能是根據文字描述或起始片段生成與編輯長度可變的音訊。這篇摘要聚焦於 base（預訓練）版本，此版本專為下游微調（fine-tuning）設計，並非直接用於生成的最終產品；若需直接生成音訊，應使用完整的 Stable Audio 3 Medium 模型。其核心方法建立在潛在擴散模型（latent diffusion）之上，並引入了一種新穎的「語意-聲學自動編碼器」（semantic-acoustic autoencoder）。該編碼器能將原始音訊壓縮至一個緊湊的潛在空間，透過語意特徵與聲學細節的結合，使模型得以高效運算，進而生成長達數分鐘的連續音訊，同時支援變長度生成，避免為了短的音效而付出生成整段音的計算成本。此外，模型也支援 inpainting（修補）功能，讓使用者可針對音訊中的特定區段進行編輯，或延續一段簡短錄音，形成更具彈性的創作工具。摘要中並未提供具體的實驗數據或評估結果，僅說明模型架構與用途；因此，其生成品質與效能需參閱官方文件或後續研究。此模型的開放對於研究與開發者尤為重要，因為預訓練權重可作為微調基礎，加速客製化音訊生成模型的發展，同時也反映出目前音訊生成領域朝向多尺寸、可微調與高效率的趨勢。需要注意的是，商業使用須遵守 Stability AI 的授權規範，使用者應詳閱相關條款。",
+        "title": "stabilityai/stable-audio-3-medium-base",
+        "title_zh": "Stable Audio 3 Medium Base：可微調的潛在擴散音訊生成模型"
       },
       {
         "arxiv_id": null,

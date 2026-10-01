@@ -702,7 +702,9 @@
       "source_name": "Zenn LLM Topic",
       "story_id": "arxiv:articles/2026062",
       "summary": "「このリクエストはどのモデルに投げるべきか」。LLMルーティングの議論はずっとこの問いを中心に回ってきた。安いモデルで足りるか、それとも高いモデルにエスカレーションするか。要は1リクエストにつき1モデルを選ぶ、という前提だった。\nvLLMプロジェクトが6月16日に公開した Fusion は、その前提を外しにきている。1つ選ぶのではなく、複数のモデルに同じリクエストを同時に答えさせ、別のモデルがそれらを突き合わせて1つの回答に束ねる。発想自体は研究界隈で言うMixture-of-Agentsに近いが、これを推論サーバの「ルーター」の機能として、設定ファイル数行で本番運用に乗せられる形にした...",
-      "title": "1つのモデルを選ぶのをやめる、vLLM Semantic RouterのFusion"
+      "summary_zh": "當開發者嘗試將 xAI 的 Grok 4.3 整合至現有的 Amazon Bedrock 應用時，若直接沿用 boto3 的 converse() 或 InvokeModel 介面，將立即遭遇障礙。因為 Grok 4.3 雖然已登上 Bedrock 平台，卻不支援其招牌的 Converse 與 InvokeModel API，而是要求透過 OpenAI SDK 以相容模式調用，AWS 官方文件甚至直接指示 pip install openai。這種看似矛盾的設計，實則反映 AWS 正將 Bedrock 逐步重塑為一個「OpenAI 相容的模型閘道」，其關鍵入口便是新推出的 Mantle 組件。此舉將改變現有 Bedrock 生態系的接取慣例，對多模型管理與遷移策略帶來深遠影響。",
+      "title": "1つのモデルを選ぶのをやめる、vLLM Semantic RouterのFusion",
+      "title_zh": "Grok 4.3 無法透過 Bedrock 的 Converse 呼叫，僅能經由 OpenAI 相容的 Mantle 通道"
     },
     {
       "arxiv_id": "articles/8328900",

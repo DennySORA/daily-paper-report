@@ -202,7 +202,9 @@
         "source_name": null,
         "story_id": "hf:mistralai/mistral-small-4-119b-2603",
         "summary": "Mistral Small 4 is a powerful hybrid model capable of acting as both a general instruction model and a reasoning model. It unifies the capabilities of three different model families—**Instruct**, **Reasoning** (previously called Magistral), and **Devstral**—into a single, unified model. With its multimodal capabilities, efficient architecture, and flexible mode switching, it is a powerful general-purpose model for any task. In a latency-optimized setup, Mistral Small 4 achieves a **40% reduction in end-to-end completion time**, and in a throughput-optimized setup, it handles **3x more requests per second** compared to Mistral Small 3. To further improve efficiency you can either take advantages of: - Speculative decoding thanks to our trained eagle head...",
-        "title": "mistralai/Mistral-Small-4-119B-2603"
+        "summary_zh": "Mistral Small 4 是一個高效能的混合模型，旨在同時勝任一般指令遵循與推理任務，並將過往分散於 Instruct、Reasoning（前稱 Magistral）與 Devstral 三條模型家族的能力整合於單一模型之中。此設計讓使用者無需在不同任務間切換模型，即可獲得統一的對話、推理與程式碼生成體驗；同時模型具備多模態能力，可處理視覺與文字等多種輸入。在架構上，Mistral Small 4 採用高效設計，並透過模式切換機制靈活調整運作方式。根據官方數據，在延遲最佳化配置下，其端到端完成時間較 Mistral Small 3 縮短 40%；在吞吐量最佳化配置下，每秒可處理的請求數則提升至三倍。為進一步改善推論效率，模型提供兩種輔助機制：其一為推測解碼（speculative decoding），藉由訓練好的 eagle head 加速生成；其二為……（此處摘要僅能根據已知內容描述，原文後續細節未提供）。整體而言，Mistral Small 4 的價值在於以單一模型取代多種專門模型，簡化部署與使用流程，同時在速度與吞吐量上取得顯著進展，適合需要高即時性與高併發的應用場景。然而，官方摘要未提供具體的基準測試數據、模型參數量或與其他大型語言模型（如 GPT-4 或 Llama 系列）的比較，因此其宣稱的效率提升需透過獨立驗證確認。此外，多模態能力的實際表現與推理深度尚待詳細評估。這項工作反映了 AI 模型整合化的趨勢，未來可能減少對多模型管線的依賴，並促進更輕量且快速的邊緣部署，但實際採用時仍需考量任務特定需求與資源限制。",
+        "title": "mistralai/Mistral-Small-4-119B-2603",
+        "title_zh": "Mistral Small 4：統一指令、推理與程式碼能力的混合高效模型"
       }
     ],
     "other": [
@@ -253,7 +255,9 @@
         "source_name": null,
         "story_id": "hf:mistralai/leanstral-2603",
         "summary": "Leanstral is the first open-source code agent designed for Lean 4, a proof assistant capable of expressing complex mathematical objects such as perfectoid spaces and software specifications like properties of Rust fragments. Built as part of the Mistral Small 4 family, it combines multimodal capabilities and an efficient architecture, making it both performant and cost-effective compared to existing closed-source alternatives. For more details about the model and its scope, please read the related blog post. Leanstral incorporates the following architectural choices: - **MoE**: 128 experts, 4 active per token - **Model Size**: 119B parameters with 6.5B activated per token - **Context Length**: 256k tokens - **Multimodal Input**: Accepts text and image input, producing text output...",
-        "title": "mistralai/Leanstral-2603"
+        "summary_zh": "Leanstral 是首個專為 Lean 4 設計的開源程式碼代理，Lean 4 是一個形式化證明助手，能夠表達如 perfectoid spaces 這類複雜數學物件，以及如 Rust 程式碼片段屬性這類軟體規格。該模型屬於 Mistral Small 4 系列，融合多模態能力與高效架構，使其在效能與成本上相較於現有封閉原始碼替代方案更具競爭力。其具體架構選擇包括：採用混合專家（MoE）設計，包含 128 個專家，每個 token 啟動其中 4 個；模型總參數量達 119B，但每個 token 僅啟動 6.5B 參數，藉此兼顧規模與推論效率；上下文長度支援 256k tokens，可處理長篇證明或規格文件；輸入支援文字與影像，輸出則為文字。此模型的誕生填補了 Lean 4 工具鏈中開源強大程式碼代理的空白。然而，由於本文僅提供摘要，並未揭露具體訓練資料、微調方法、與基準測試的詳細比較結果，也無法評估其在實際證明任務中的成功率與錯誤型態。其局限性可能包括對複雜數學證明的泛化能力、與社群既有工具的整合程度，以及多模態輸入在證明輔助上的實際效用。儘管如此，Leanstral 的出現對形式化數學與軟體驗證領域意義重大，因為它降低了使用 Lean 4 的門檻，使更多研究人員與開發者能借助 AI 輔助撰寫形式化證明，加速數學定理的機器驗證與高保證軟體的開發。其成本效益特性也讓資源有限的研究團隊得以採用，進一步推動開放科學與可信賴 AI 的進程。",
+        "title": "mistralai/Leanstral-2603",
+        "title_zh": "Leanstral-2603：首個開源 Lean 4 程式碼代理"
       }
     ]
   },

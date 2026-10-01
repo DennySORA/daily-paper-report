@@ -307,7 +307,9 @@
         "source_name": null,
         "story_id": "hf:google/gemma-4-31b-it-qat-q4_0-unquantized-assistant",
         "summary": "Hugging Face | Launch Blog | Documentation License: Apache 2.0 | Authors: Google DeepMind > This model card is for the new versions of the Gemma 4 family optimized with Quantization-Aware Training (QAT), which allows preserving similar quality to bfloat16 while dramatically reducing the memory requirements to load the model. > Four versions of the QAT checkpoints are available: > * **Unquantized QAT checkpoints** (Q4_0): Half-precision weights extracted from the QAT pipeline, ideal for custom downstream compilation and research. Available for Gemma 4 E2B, E4B, 12B, 26B A4B, and 31B, and their drafter models. > * **GGUF** (Q4_0): Ready-to-deploy formats for broad ecosystem compatibility. Available for Gemma 4 E2B, E4B, 12B, 26B A4B, and 31B. > * **Mobile-optimized** (wNa8o8): A custom...",
-        "title": "google/gemma-4-31B-it-qat-q4_0-unquantized-assistant"
+        "summary_zh": "此模型卡介紹 Google DeepMind 推出的 Gemma 4 系列新版本，這些版本經過量化感知訓練（Quantization-Aware Training, QAT），旨在以較低的記憶體需求維持接近 bfloat16 的模型品質。文中指出 QAT 檢查點提供四種版本：未量化 QAT 檢查點（Q4_0），這些是從 QAT 流程中提取的半精度權重，適合自訂下游編譯與研究；GGUF（Q4_0）格式則為廣泛生態系統相容性而設計，可直接部署；以及針對行動裝置最佳化的版本。雖然摘要僅提供概覽，未揭露具體評測數據，但核心方法論是透過 QAT 在訓練期間模擬量化效應，使模型在推論時能適應低精度表示，從而大幅減少記憶體占用。此舉對於在資源受限的環境（如邊緣裝置或行動裝置）部署大型語言模型至關重要，因為它能讓開發者與研究人員在有限硬體上執行高效能模型。然而，摘要未詳述 QAT 與標準後訓練量化（PTQ）的品質差異、實際記憶體節省幅度、或對不同任務的影響，讀者需參考後續技術報告以獲取完整證據。此模型的發布反映了 AI 部署效率的趨勢，即透過更聰明的訓練策略來平衡模型效能與資源消耗，對於推動大型語言模型的普及化具有實質意義。",
+        "title": "google/gemma-4-31B-it-qat-q4_0-unquantized-assistant",
+        "title_zh": "Google Gemma 4 31B QAT Q4_0 未量化助理模型"
       }
     ],
     "stability-ai": [

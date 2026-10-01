@@ -345,7 +345,9 @@
         "source_name": null,
         "story_id": "hf:google/gemma-4-12b",
         "summary": "Hugging Face | Launch Blog | Documentation License: Apache 2.0 | Authors: Google DeepMind > This model card is for the Gemma 4 12B Unified model, which is part of the Gemma 4 family of open models. Built with the same multimodal functionality as Gemma 4 E2B and E4B (text, audio, image, and video inputs), it brings native audio and vision understanding directly to local environments without the need for separate encoders. This unified approach to multimodality makes the model encoder-free, offering a deployment size that is perfect for consumer devices and streamlined local execution. Gemma is a family of open models built by Google DeepMind. Gemma 4 models are multimodal, handling text and image input (with audio supported on E2B, E4B, and 12B) and generating text output. This release...",
-        "title": "google/gemma-4-12B"
+        "summary_zh": "本模型卡介紹了 Google DeepMind 推出的 Gemma 4 12B 統一模型，屬於 Gemma 4 開源模型家族的一部分。此模型繼承了 Gemma 4 E2B 與 E4B 的多模態功能，能處理文字、音訊、影像與影片輸入，但特別的是，它採用無編碼器的統一架構，將音訊與視覺理解能力直接內建於模型中，無需額外的編碼器，因此部署體積更精簡，適合消費級裝置與本地端執行。Gemma 4 模型本身即為多模態，可處理文字與影像輸入，而 12B 版本進一步支援音訊輸入，並能生成文字輸出。此設計旨在降低多模態 AI 的部署門檻，使開發者能在資源受限的環境中執行複雜的視覺與聽覺理解任務。本文基於模型卡內容，僅提供概述性資訊，並未包含完整的技術報告或實證數據。因此，對於模型在特定任務上的精確效能、訓練細節或與其他模型的比較，無法在此提供確切數據。此模型的意義在於，它展示了將多模態能力整合至單一、體積友善的模型中，是推動邊緣運算與普及化 AI 的重要一步，同時維持開源精神，讓研究社群能在此基礎上進行開發與研究。然而，實際應用仍需考量硬體需求、推理速度與潛在的偏見等限制，這些細節需待完整技術文件公佈後方能驗證。",
+        "title": "google/gemma-4-12B",
+        "title_zh": "Gemma 4 12B：具備原生多模態能力的統一開源模型"
       },
       {
         "arxiv_id": null,
@@ -395,7 +397,9 @@
         "source_name": null,
         "story_id": "hf:google/gemma-4-12b-it",
         "summary": "Hugging Face | Launch Blog | Documentation License: Apache 2.0 | Authors: Google DeepMind > This model card is for the Gemma 4 12B Unified model, which is part of the Gemma 4 family of open models. Built with the same multimodal functionality as Gemma 4 E2B and E4B (text, audio, image, and video inputs), it brings native audio and vision understanding directly to local environments without the need for separate encoders. This unified approach to multimodality makes the model encoder-free, offering a deployment size that is perfect for consumer devices and streamlined local execution. Gemma is a family of open models built by Google DeepMind. Gemma 4 models are multimodal, handling text and image input (with audio supported on E2B, E4B, and 12B) and generating text output. This release...",
-        "title": "google/gemma-4-12B-it"
+        "summary_zh": "本模型卡介紹了 Google DeepMind 推出的 Gemma 4 12B 統一模型，屬於 Gemma 4 開源模型家族。與 Gemma 4 E2B 和 E4B 類似，該模型支援文字、音訊、影像和視訊輸入，但特別強調其「無編碼器」的設計，直接將原生音訊與視覺理解整合至本地環境，無需額外的編碼器模組。這種統一多模態方法能顯著縮小部署體積，適合消費級裝置與簡化的本地執行。模型基於 Apache 2.0 授權釋出，主要目標是讓開發者與研究人員在資源受限的環境中也能使用強大的多模態能力。文中指出，Gemma 4 12B 的定位是平衡效能與效率，其架構與訓練細節（如 RLHF、fine-tuning 等）可能沿用 Gemma 家族既有技術，但此處僅提供概要，未揭露具體參數或基準測試數據。由於摘要內容有限，無法評估其在各任務上的實際表現或限制，例如多模態整合的潛在權衡、推理速度或記憶體需求。然而，此模型的發布意義在於推動開源多模態 AI 的普及，讓開發者能在邊緣裝置上實現即時的視覺與音訊理解，降低對雲端依賴，並促進隱私保護與離線應用。未來研究可進一步探討其與大型模型的效能差距，以及在不同硬體上的可擴展性。",
+        "title": "google/gemma-4-12B-it",
+        "title_zh": "Google Gemma 4 12B 統一多模態模型"
       }
     ]
   },

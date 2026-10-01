@@ -365,7 +365,9 @@
       "source_name": "Zenn LLM Topic",
       "story_id": "arxiv:articles/2026062",
       "summary": "「AIに文章を書かせる」のはもう日常になった。一方で「AIに自分の代わりに画面を操作させる」、つまりブラウザをクリックしフォームに入力しスクロールさせる、いわゆる computer use(コンピュータ操作)はずっと別トラックの難しい技術だった。APIが用意されていない社内システム、複数アプリをまたぐ手作業、毎回手で回すE2Eテスト。こういう「APIでは届かない仕事」をAIに任せたいときに必要になるのがこれだ。\nGoogleは2026年5月19日にGA化していた主力モデル Gemini 3.5 Flash に、2026年6月24日、この画面操作を「組み込みツール(computer use...",
-      "title": "Gemini 3.5 Flashのcomputer useがブラウザもスマホもPCも操作する"
+      "summary_zh": "當開發者嘗試將 xAI 的 Grok 4.3 整合至現有的 Amazon Bedrock 應用時，若直接沿用 boto3 的 converse() 或 InvokeModel 介面，將立即遭遇障礙。因為 Grok 4.3 雖然已登上 Bedrock 平台，卻不支援其招牌的 Converse 與 InvokeModel API，而是要求透過 OpenAI SDK 以相容模式調用，AWS 官方文件甚至直接指示 pip install openai。這種看似矛盾的設計，實則反映 AWS 正將 Bedrock 逐步重塑為一個「OpenAI 相容的模型閘道」，其關鍵入口便是新推出的 Mantle 組件。此舉將改變現有 Bedrock 生態系的接取慣例，對多模型管理與遷移策略帶來深遠影響。",
+      "title": "Gemini 3.5 Flashのcomputer useがブラウザもスマホもPCも操作する",
+      "title_zh": "Grok 4.3 無法透過 Bedrock 的 Converse 呼叫，僅能經由 OpenAI 相容的 Mantle 通道"
     },
     {
       "arxiv_id": "2606.25886",

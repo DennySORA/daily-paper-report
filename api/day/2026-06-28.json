@@ -2113,7 +2113,9 @@
       "source_name": "Zenn LLM Topic",
       "story_id": "arxiv:articles/2026062",
       "summary": "オープンウェイトのLLMで「賢さ」を語るとき、私たちはたいていベンチマークの順位表を見る。NVIDIAが6月4日に公開したNemotron 3 Ultraは、その順位表で世界一を取りにいったモデルではない。550Bという規模のわりに、知能指数の総合点では中国勢のKimi K2.6に負けている。にもかかわらずこのモデルが面白いのは、勝負どころを「賢さ」ではなく「同じ精度をどれだけ速く安く出せるか」に置き、そのためにアーキテクチャを土台から組み替えてきたからだ。長時間動き続けるエージェントを実際に運用したことがある人ほど、この割り切りは刺さると思う。\n\n トークン課金で効いてくるのは賢さより...",
-      "title": "速さに振った550B、NVIDIA Nemotron 3 Ultraの中身を読む"
+      "summary_zh": "當開發者嘗試將 xAI 的 Grok 4.3 整合至現有的 Amazon Bedrock 應用時，若直接沿用 boto3 的 converse() 或 InvokeModel 介面，將立即遭遇障礙。因為 Grok 4.3 雖然已登上 Bedrock 平台，卻不支援其招牌的 Converse 與 InvokeModel API，而是要求透過 OpenAI SDK 以相容模式調用，AWS 官方文件甚至直接指示 pip install openai。這種看似矛盾的設計，實則反映 AWS 正將 Bedrock 逐步重塑為一個「OpenAI 相容的模型閘道」，其關鍵入口便是新推出的 Mantle 組件。此舉將改變現有 Bedrock 生態系的接取慣例，對多模型管理與遷移策略帶來深遠影響。",
+      "title": "速さに振った550B、NVIDIA Nemotron 3 Ultraの中身を読む",
+      "title_zh": "Grok 4.3 無法透過 Bedrock 的 Converse 呼叫，僅能經由 OpenAI 相容的 Mantle 通道"
     },
     {
       "arxiv_id": null,

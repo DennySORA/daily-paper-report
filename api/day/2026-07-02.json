@@ -626,7 +626,9 @@
         "source_name": null,
         "story_id": "hf:google/tabfm-1.0.0-pytorch",
         "summary": "TabFM is a zero-shot tabular foundation model from Google Research. It supports classification and regression on structured/tabular data with mixed numerical and categorical columns, requiring no fine-tuning or hyperparameter search - training examples are passed as context and predictions are made in a single forward pass. This repository contains the **PyTorch** weights. For the JAX/Flax weights see google/tabfm-1.0.0-jax. pip install tabfm[pytorch] **Classification:** from tabfm import TabFMClassifier, tabfm_v1_0_0_pytorch as tabfm_v1_0_0 model = tabfm_v1_0_0.load(model_type=\"classification\")",
-        "title": "google/tabfm-1.0.0-pytorch"
+        "summary_zh": "TabFM 是 Google Research 推出的零樣本表格基礎模型，專為混合數值與類別欄位的結構化數據設計，支援分類與迴歸任務，且完全無需微調或超參數調整。模型將訓練範例視為上下文，並在一次前向傳遞中直接輸出預測結果，顯著簡化了傳統表格數據建模的繁瑣流程。本倉庫收錄的是 PyTorch 版本的權重，方便熟悉 PyTorch 生態的開發者直接整合與應用。",
+        "title": "google/tabfm-1.0.0-pytorch",
+        "title_zh": "google/tabfm-1.0.0-pytorch"
       },
       {
         "arxiv_id": null,

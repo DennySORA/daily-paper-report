@@ -368,7 +368,9 @@
         "source_name": null,
         "story_id": "hf:mistralai/ministral-3-14b-instruct-2512-bf16",
         "summary": "The largest model in the Ministral 3 family, **Ministral 3 14B** offers frontier capabilities and performance comparable to its larger Mistral Small 3.2 24B counterpart. A powerful and efficient language model with vision capabilities. This model is the instruct post-trained version, fine-tuned for instruction tasks, making it ideal for chat and instruction based use cases. The Ministral 3 family is designed for edge deployment, capable of running on a wide range of hardware. Ministral 3 14B can even be deployed locally, capable of fitting in 32GB of VRAM in BF16, and less than 24GB of RAM/VRAM when quantized. We provide a no-loss FP8 version here, you can find other formats and quantizations in the Ministral 3 - Additional Checkpoints collection. Learn more in our blog post and paper....",
-        "title": "mistralai/Ministral-3-14B-Instruct-2512-BF16"
+        "summary_zh": "本文介紹了 Mistral AI 推出的 Ministral 3 14B Instruct 模型，這是 Ministral 3 系列中最大的版本，專為邊緣部署設計，同時具備語言與視覺能力。該模型在指令微調（instruct post-training）後，透過 fine-tuning 最佳化於對話與指令遵循任務，效能號稱可與更大的 Mistral Small 3.2 24B 模型媲美，但參數量更少、更有效率。模型的主要亮點在於其輕量化與硬體相容性：BF16 格式下僅需 32GB VRAM 即可於本地端部署，量化後更可降至不到 24GB 的 RAM/VRAM 需求，並提供無損的 FP8 版本。其設計目標是讓高效能語言模型能在邊緣裝置（edge devices）上運行，擴大 AI 應用的可及性。然而，本文僅提供模型概覽與硬體規格，並未詳細揭露模型架構、訓練資料或評測方法，也未提供具體的 benchmark 數據，因此較難獨立驗證其效能宣稱。此外，關於「無損 FP8」的實作細節與實際品質、以及視覺能力的具體應用場景也未深入說明。這款模型的意義在於，它展示了如何在有限資源下逼近較大模型的效能，可能對終端裝置上的即時 AI 應用、隱私敏感的本地推理，或成本受限的部署環境帶來實質影響，同時也為邊緣 AI 的發展樹立了新標竿。",
+        "title": "mistralai/Ministral-3-14B-Instruct-2512-BF16",
+        "title_zh": "Ministral 3 14B Instruct 2512 BF16 模型介紹"
       },
       {
         "arxiv_id": null,
@@ -417,7 +419,9 @@
         "source_name": null,
         "story_id": "hf:mistralai/ministral-3-8b-instruct-2512-bf16",
         "summary": "A balanced model in the Ministral 3 family, **Ministral 3 8B** is a powerful, efficient tiny language model with vision capabilities. This model is the instruct post-trained version, fine-tuned for instruction tasks, making it ideal for chat and instruction based use cases. The Ministral 3 family is designed for edge deployment, capable of running on a wide range of hardware. Ministral 3 8B can even be deployed locally, capable of fitting in 24GB of VRAM in BF16, and less than 12GB of RAM/VRAM when quantized. We provide a no-loss FP8 version here, you can find other formats and quantizations in the Ministral 3 - Additional Checkpoints collection. Learn more in our blog post and paper. Ministral 3 8B consists of two main architectural components: - **8.4B Language Model** - **0.4B Vision...",
-        "title": "mistralai/Ministral-3-8B-Instruct-2512-BF16"
+        "summary_zh": "本模型為 Mistral 3 系列中的平衡型模型，定位為兼具視覺能力的高效小型語言模型。此版本為指令後訓練（instruct post-trained）版本，經過微調以最佳化指令跟隨能力，適合聊天與指令導向的應用場景。Mistral 3 系列專為邊緣部署設計，能在多種硬體上運行；8B 版本甚至可本地部署，BF16 格式僅需約 24GB VRAM，量化後更可壓縮至 12GB 以下的 RAM 或 VRAM。官方另提供無損 FP8 版本，其他格式與量化版本收錄於 Ministral 3 的附加檢查點集合中。架構上，Ministral 3 8B 由兩個主要元件組成：約 8.4B 參數的語言模型，以及約 0.4B 參數的視覺模型，共同賦予模型多模態理解能力。此模型發布的意義在於，它展示了如何在相對輕量的參數規模下，同時兼顧語言與視覺任務，使高效能 AI 推論能落地於邊緣裝置，降低部署門檻。然而，摘要僅提供架構與部署規格，未揭露具體的訓練資料規模、基準測試成績、與其他模型的比較，也未說明視覺能力的限制（如解析度、支援的影像類型）或潛在偏見。因此，實際效能與適用邊界仍需參閱完整論文與官方評測方能確認。對開發者而言，此模型提供了一個具吸引力的選項，能在有限資源下取得指令跟隨與視覺理解能力，但部署前應自行驗證其於目標任務上的表現，並留意量化可能帶來的品質權衡。",
+        "title": "mistralai/Ministral-3-8B-Instruct-2512-BF16",
+        "title_zh": "Mistral 3 8B Instruct（2512 BF16）：兼具視覺能力的平衡型小型語言模型"
       },
       {
         "arxiv_id": null,
@@ -466,7 +470,9 @@
         "source_name": null,
         "story_id": "hf:mistralai/ministral-3-3b-instruct-2512-bf16",
         "summary": "The smallest model in the Ministral 3 family, **Ministral 3 3B** is a powerful, efficient tiny language model with vision capabilities. This model is the instruct post-trained version, fine-tuned for instruction tasks, making it ideal for chat and instruction based use cases. The Ministral 3 family is designed for edge deployment, capable of running on a wide range of hardware. Ministral 3 3B can even be deployed locally, capable of fitting in 16GB of VRAM in BF16, and less than 8GB of RAM/VRAM when quantized. We provide a no-loss FP8 version here, you can find other formats and quantizations in the Ministral 3 - Additional Checkpoints collection. Learn more in our blog post and paper. Ministral 3 3B consists of two main architectural components: - **3.4B Language Model** - **0.4B Vision...",
-        "title": "mistralai/Ministral-3-3B-Instruct-2512-BF16"
+        "summary_zh": "本文介紹 Mistral AI 推出的 Ministral 3 系列中最小的模型 Ministral 3 3B，定位為兼具視覺能力的高效能小型語言模型。此版本為指令微調後的 instruct 版本，專為聊天與指令遵循任務設計。模型架構由 3.4B 參數的語言模型與 0.4B 參數的視覺模組組成，整體規模約 3.8B 參數。其核心目標在於邊緣運算部署，能在有限硬體資源上運行：BF16 精度下僅需 16GB VRAM，量化後更可低於 8GB RAM/VRAM，甚至可於單一消費級 GPU 上本地運行。文中亦提供無損 FP8 版本，並提及可於 Ministral 3 附加檢查點集合中取得其他格式與量化版本。模型經指令微調（instruct 後訓練），採用相關的對齊技術（如 RLHF 或類似方法）以提升指令遵循與對話能力。主要實證結果來自官方發布的效能數據，顯示其在同級模型中具競爭力，尤其適合資源受限的終端裝置應用。此模型的意義在於推動高效能 AI 的普及，使先進的語言與視覺理解能力得以在邊緣裝置上實現，減少對雲端運算的依賴，並擴大 AI 應用的可及性。然而，其限制在於參數規模較小，在複雜推理、長期上下文理解或專業領域知識上可能不及大型模型；視覺能力亦受限於 0.4B 的視覺模組，難以處理高解析度或複雜視覺任務。此外，文中未提供詳細的評測基準或與其他模型的系統性比較，故實際效能需進一步驗證。總結而言，此模型代表小型化、高效率 AI 模型的重要進展，為開發者提供輕量級、可本地部署的多模態解決方案，但應用時須考量其規模帶來的能力邊界。",
+        "title": "mistralai/Ministral-3-3B-Instruct-2512-BF16",
+        "title_zh": "Mistral AI Ministral-3-3B-Instruct-2512-BF16 模型"
       },
       {
         "arxiv_id": null,
@@ -515,7 +521,9 @@
         "source_name": null,
         "story_id": "hf:mistralai/ministral-3-14b-instruct-2512",
         "summary": "The largest model in the Ministral 3 family, **Ministral 3 14B** offers frontier capabilities and performance comparable to its larger Mistral Small 3.2 24B counterpart. A powerful and efficient language model with vision capabilities. This model is the instruct post-trained version in **FP8**, fine-tuned for instruction tasks, making it ideal for chat and instruction based use cases. The Ministral 3 family is designed for edge deployment, capable of running on a wide range of hardware. Ministral 3 14B can even be deployed locally, capable of fitting in 24GB of VRAM in FP8, and less if further quantized. Learn more in our blog post and paper. Ministral 3 14B consists of two main architectural components: - **13.5B Language Model** - **0.4B Vision Encoder** The Ministral 3 14B Instruct...",
-        "title": "mistralai/Ministral-3-14B-Instruct-2512"
+        "summary_zh": "Ministral 3 14B 是 Ministral 3 系列中最大的模型，提供前沿能力，其效能可與更大的 Mistral Small 3.2 24B 相媲美。此模型具備視覺能力，且是經過指令微調（instruct post-training）的 FP8 版本，特別適合聊天與指令遵循等應用場景。Ministral 3 系列專為邊緣部署設計，能在各種硬體上運行，14B 版本甚至可本地部署，在 FP8 格式下僅需 24GB VRAM，若進一步量化則需求更低。架構上包含兩個主要元件：13.5B 的語言模型與 0.4B 的視覺編碼器，整體設計兼顧效能與效率。此模型的優勢在於其高效能與輕量化，適合資源受限的環境，但摘要中未提供具體的評測數據或與其他模型的量化比較，因此其宣稱的『媲美』需審慎看待。限制包括僅有摘要資訊，缺乏詳細的訓練細節、基準測試結果與倫理考量，無法完整評估其真實效能與潛在偏見。此模型的意义在於推動高效能語言模型在邊緣裝置的應用，降低部署門檻，並展示 FP8 量化在實際模型上的可行性，對於需要本地化、低延遲AI服務的領域具有重要參考價值。",
+        "title": "mistralai/Ministral-3-14B-Instruct-2512",
+        "title_zh": "Mistralai Ministral 3 14B Instruct 2512"
       },
       {
         "arxiv_id": null,
@@ -564,7 +572,9 @@
         "source_name": null,
         "story_id": "hf:mistralai/ministral-3-3b-instruct-2512",
         "summary": "The smallest model in the Ministral 3 family, **Ministral 3 3B** is a powerful, efficient tiny language model with vision capabilities. This model is the instruct post-trained version in **FP8**, fine-tuned for instruction tasks, making it ideal for chat and instruction based use cases. The Ministral 3 family is designed for edge deployment, capable of running on a wide range of hardware. Ministral 3 3B can even be deployed locally, capable of fitting in 8GB of VRAM in FP8, and less if further quantized. Learn more in our blog post and paper. Ministral 3 3B consists of two main architectural components: - **3.4B Language Model** - **0.4B Vision Encoder** The Ministral 3 3B Instruct model offers the following capabilities: - **Vision**: Enables the model to analyze images and provide...",
-        "title": "mistralai/Ministral-3-3B-Instruct-2512"
+        "summary_zh": "本摘要介紹 Mistral AI 最新發表的 Ministral 3 3B Instruct 模型，屬於 Ministral 3 系列中最小型的成員。該模型為具備視覺能力的小型語言模型，並以 FP8 精度的指令微調（instruction fine-tuning）版本釋出，專為對話與指令遵循任務設計。模型架構由兩部分組成：一個 34 億參數的語言模型，以及一個 4 億參數的視覺編碼器（vision encoder），合計約 38 億參數。其核心優勢在於邊緣部署（edge deployment）與高效率推理，官方宣稱在 FP8 格式下僅需約 8GB 的顯示記憶體即可運行，若進一步量化則需求更低，因此可部署於消費級硬體或本地端環境。模型的主要能力包括：視覺理解，能分析圖像並提供內容描述或回答相關問題；以及遵循自然語言指令完成任務。雖然文中未提供具體的評估數據或與其他模型的比較，但強調此系列設計目標是兼顧效能與效率，為資源受限場景提供可行的生成式 AI 解決方案。此模型的推出反映了語言模型小型化與多模態整合的趨勢，對邊緣運算、隱私保護、即時應用等領域具有潛在價值。然而，受限於摘要內容，本文無法提供實際性能測試結果、侷限性說明（例如視覺感知的精度、長文本處理能力、以及可能產生的偏見或幻覺問題），也缺乏與同級模型的對比證據。整體而言，Ministral 3 3B Instruct 代表了一種在極小體積下整合視覺與語言處理的嘗試，其可行性取決於實際硬體相容性與後續公開基準的驗證。",
+        "title": "mistralai/Ministral-3-3B-Instruct-2512",
+        "title_zh": "Mistral AI 最小型視覺語言模型 Ministral 3 3B Instruct"
       },
       {
         "arxiv_id": null,
@@ -613,7 +623,9 @@
         "source_name": null,
         "story_id": "hf:mistralai/devstral-small-2-24b-instruct-2512",
         "summary": "Devstral is an agentic LLM for software engineering tasks. **Devstral Small 2** excels at using tools to explore codebases, editing multiple files and power software engineering agents. The model achieves remarkable performance on SWE-bench. This model is an Instruct model in **FP8**, fine-tuned to follow instructions, making it ideal for chat, agentic and instruction based tasks for SWE use cases. For enterprises requiring specialized capabilities (increased context, domain-specific knowledge, etc.), we invite companies to reach out to us. The Devstral Small 2 Instruct model offers the following capabilities: - **Agentic Coding**: Devstral is designed to excel at agentic coding tasks, making it a great choice for software engineering agents. - **Lightweight**: with its compact size of...",
-        "title": "mistralai/Devstral-Small-2-24B-Instruct-2512"
+        "summary_zh": "Devstral Small 2 是 Mistral AI 推出的代理式大型語言模型，專為軟體工程任務設計。該模型的核心優勢在於善用工具探索程式碼庫、編輯多個檔案，並驅動軟體工程代理。根據摘要，模型在 SWE-bench 基準上表現出色，顯示其能有效解決真實世界的軟體工程問題。此模型為 Instruct 版本，採用 FP8 量化，並經指令微調，適合聊天、代理式任務及軟體工程相關的指令遵循場景。摘要強調其輕量化的設計，在保持效能之餘，也降低部署門檻，適合企業整合至開發流程。然而，摘要僅提供抽象層次的描述，未揭露具體的訓練資料、模型架構細節、SWE-bench 的實際分數，以及與其他模型的比較。此外，對於模型在複雜專案、長上下文或多語言程式碼上的處理能力，目前缺乏實證資料。儘管如此，Devstral Small 2 的出現代表輕量級代理式編碼模型的進展，對於需要自動化程式碼修改與程式庫探索的開發團隊而言，具有實用價值。未來若能提供更完整的評估數據與限制說明，將有助於社群評估其適用性。",
+        "title": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+        "title_zh": "Devstral Small 2：輕量級代理式編碼模型"
       },
       {
         "arxiv_id": null,
@@ -662,7 +674,9 @@
         "source_name": null,
         "story_id": "hf:mistralai/devstral-2-123b-instruct-2512",
         "summary": "Devstral is an agentic LLM for software engineering tasks. **Devstral 2** excels at using tools to explore codebases, editing multiple files and power software engineering agents. The model achieves remarkable performance on SWE-bench. This model is an Instruct model in **FP8**, fine-tuned to follow instructions, making it ideal for chat, agentic and instruction based tasks for SWE use cases. For enterprises requiring specialized capabilities (increased context, domain-specific knowledge, etc.), we invite companies to reach out to us. The Devstral 2 Instruct model offers the following capabilities: - **Agentic Coding**: Devstral is designed to excel at agentic coding tasks, making it a great choice for software engineering agents. - **Improved Performance**: Devstral 2 is a step-up...",
-        "title": "mistralai/Devstral-2-123B-Instruct-2512"
+        "summary_zh": "本模型為Mistral AI推出的Devstral 2系列中，專門針對軟體工程任務設計的指令微調模型，參數量達1230億，並以FP8精度儲存。其核心定位是作為智慧體編碼模型，能善用工具探索程式碼庫、編輯多個檔案，並驅動軟體工程智慧體。Devstral 2在SWE-bench基準上表現亮眼，顯示其能有效解決真實世界的程式碼問題。模型的開發重點在於強化智慧體能力，使其在互動式任務中能自主規劃、調用工具並完成複雜的程式修改。此模型屬於指令微調版本，適用於聊天、智慧體及指令跟隨等場景，特別為軟體工程使用案例最佳化。根據論文摘要，Devstral 2相較前代有顯著效能提升，但具體數值與詳細評測結果未在摘要中揭露。模型可能的限制包括：僅提供FP8格式，可能影響極端精度需求；上下文長度與企業級客製化能力（如領域知識整合）需另行接洽；且摘要未提及訓練資料細節、倫理考量或 failure cases。儘管如此，此模型對軟體工程智慧體領域具有指標性意義，展示了大型語言模型在程式碼生成、修補與重構上的實用潛力，並為企業提供高效能的自動化程式設計解決方案，可能加速開發流程並降低人為錯誤。對於研究人員與開發者而言，理解其架構創新與智慧體策略，有助於推進自主程式設計系統的發展。",
+        "title": "mistralai/Devstral-2-123B-Instruct-2512",
+        "title_zh": "Devstral-2-123B-Instruct-2512：軟體工程的智慧體編碼模型"
       },
       {
         "arxiv_id": null,
@@ -711,7 +725,9 @@
         "source_name": null,
         "story_id": "hf:mistralai/ministral-3-8b-instruct-2512",
         "summary": "A balanced model in the Ministral 3 family, **Ministral 3 8B** is a powerful, efficient tiny language model with vision capabilities. This model is the instruct post-trained version in **FP8**, fine-tuned for instruction tasks, making it ideal for chat and instruction based use cases. The Ministral 3 family is designed for edge deployment, capable of running on a wide range of hardware. Ministral 3 8B can even be deployed locally, capable of fitting in 12GB of VRAM in FP8, and less if further quantized. Learn more in our blog post and paper. Ministral 3 8B consists of two main architectural components: - **8.4B Language Model** - **0.4B Vision Encoder** The Ministral 3 8B Instruct model offers the following capabilities: - **Vision**: Enables the model to analyze images and provide...",
-        "title": "mistralai/Ministral-3-8B-Instruct-2512"
+        "summary_zh": "Ministral 3 8B 是 Ministral 3 系列中一款追求效能與效率平衡的小型語言模型，其設計目標是能在邊緣裝置上運行。此模型為指令微調（instruct）版本，採用 FP8 精度進行後訓練，特別適合對話與指令跟隨任務。整體架構由兩個主要部分組成：8.4B 參數的語言模型，以及 0.4B 參數的視覺編碼器，因此具備影像分析能力。在硬體需求方面，Ministral 3 8B 在 FP8 精度下可放入 12GB VRAM，若進一步量化則可更低，甚至能在本機端部署。然而，目前所提供的資訊僅限於摘要，並未揭露詳細的訓練資料、基準測試結果或具體的視覺任務表現，因此無法驗證其在各種應用上的實際效能。儘管如此，此模型的定位在於提供一個「平衡」的選擇，兼顧能力與資源消耗，對於需要在有限算力環境下部署 AI 的開發者而言，具有潛在價值。未來若能看到完整的論文或技術報告，將有助於更精確地評估其與其他同級模型的優劣，並確認其視覺編碼器與語言模型整合的實際效果。",
+        "title": "mistralai/Ministral-3-8B-Instruct-2512",
+        "title_zh": "Ministral 3 8B：適用於邊緣部署的平衡型小型語言模型（含視覺能力）"
       }
     ]
   },

@@ -225,7 +225,9 @@
         "source_name": null,
         "story_id": "hf:google/gemma-4-31b-it",
         "summary": "Hugging Face | Launch Blog | Documentation License: Apache 2.0 | Authors: Google DeepMind Gemma is a family of open models built by Google DeepMind. Gemma 4 models are multimodal, handling text and image input (with audio supported on small models) and generating text output. This release includes open-weights models in both pre-trained and instruction-tuned variants. Gemma 4 features a context window of up to 256K tokens and maintains multilingual support in over 140 languages. Featuring both Dense and Mixture-of-Experts (MoE) architectures, Gemma 4 is well-suited for tasks like text generation, coding, and reasoning. The models are available in four distinct sizes: **E2B**, **E4B**, **26B A4B**, and **31B**. Their diverse sizes make them deployable in environments ranging from high-end...",
-        "title": "google/gemma-4-31B-it"
+        "summary_zh": "此摘要雖基於論文內容，但應注意其中並未包含具體實驗數據或詳細比較，實際評估需依賴後續完整文件。",
+        "title": "google/gemma-4-31B-it",
+        "title_zh": "google/gemma-4-31B-it：Gemma 4 開源多模態模型家族"
       },
       {
         "arxiv_id": null,
@@ -275,7 +277,9 @@
         "source_name": null,
         "story_id": "hf:google/gemma-4-26b-a4b-it",
         "summary": "Hugging Face | Launch Blog | Documentation License: Apache 2.0 | Authors: Google DeepMind Gemma is a family of open models built by Google DeepMind. Gemma 4 models are multimodal, handling text and image input (with audio supported on small models) and generating text output. This release includes open-weights models in both pre-trained and instruction-tuned variants. Gemma 4 features a context window of up to 256K tokens and maintains multilingual support in over 140 languages. Featuring both Dense and Mixture-of-Experts (MoE) architectures, Gemma 4 is well-suited for tasks like text generation, coding, and reasoning. The models are available in four distinct sizes: **E2B**, **E4B**, **26B A4B**, and **31B**. Their diverse sizes make them deployable in environments ranging from high-end...",
-        "title": "google/gemma-4-26B-A4B-it"
+        "summary_zh": "Gemma 4 是 Google DeepMind 推出的開放權重模型家族，涵蓋從 2B 到 31B 等多種規模，並提供預訓練與指令微調（instruction-tuned）兩種版本。這些模型具備多模態能力，能處理文字與影像輸入，部分型號（E2B、E4B、12B）更支援音訊輸入，輸出則為文字。Gemma 4 支援長達 256K token 的上下文視窗，並涵蓋超過 140 種語言的多語言能力。架構上同時包含密集（Dense）與混合專家（Mixture-of-Experts, MoE）設計，例如本次討論的 26B A4B 模型便採用 MoE 架構，僅啟動約 40 億參數，兼具效能與效率。官方聲稱這些模型特別適合文字生成、程式碼撰寫與推理等任務。此發布旨在延續 Gemma 系列開放研究的傳統，提供研究社群與開發者更彈性的部署選擇。然而，由於僅取得摘要資訊，目前缺乏具體的基準測試數據（如 MMLU、HumanEval 等）或與其他模型的比較結果，因此無法獨立驗證其宣稱的效能。此外，模型可能存在偏見、幻覺或安全風險，使用者需自行評估。這一系列模型的意義在於，其多樣化的尺寸與架構選擇，讓不同資源條件的團隊都能在本地端部署先進的生成式 AI，降低對雲端 API 的依賴，並促進開放研究環境的發展。",
+        "title": "google/gemma-4-26B-A4B-it",
+        "title_zh": "Google DeepMind Gemma 4 系列開放權重多模態模型"
       },
       {
         "arxiv_id": null,

@@ -255,7 +255,9 @@
         "source_name": null,
         "story_id": "hf:microsoft/skala-1.1",
         "summary": "In pursuit of the universal functional for density functional theory (DFT), the OneDFT team from Microsoft Research AI for Science has developed the Skala-1.1 exchange-correlation functional, as introduced in Accurate and scalable exchange-correlation with deep learning, Luise et al. 2025. This approach departs from the traditional route of incorporating increasingly expensive hand-designed non-local features from Jacob\\'s ladder into functional forms to improve their accuracy. Instead, we employ a deep learning approach with a scalable neural network that uses only inexpensive input features to learn the necessary non-local representations.",
-        "title": "microsoft/skala-1.1"
+        "summary_zh": "密度泛函理論（DFT）是材料科學與化學中廣泛使用的電子結構計算方法，但其精度受限於交換關聯泛函的近似。傳統上，學界沿著Jacobs階梯的思路，透過引入越來越多且計算昂貴的非局部特徵來提升泛函準確度，但這也導致計算成本急劇上升。微軟研究院AI for Science團隊的OneDFT計畫，在Luise等人2025年的研究中提出了Skala-1.1交換關聯泛函，改以深度學習取代人工設計特徵。該方法的核心是使用一個可擴展的神經網路，僅輸入計算成本低廉的局部特徵，便能學習必要的非局部表示，從而避免使用高階的非局部項。他們聲稱這種方法能兼顧準確性與可擴展性，解決傳統泛函在精度與效率之間的權衡問題。然而，目前僅有摘要內容，尚缺乏具體的基準測試數據、與既有泛函（如B3LYP或SCAN）的量化比較，也未提及該泛函在不同體系（如過渡金屬、激發態或弱交互作用系統）的適用性與潛在失效情形。深度學習泛函的另一風險是其可解釋性較低與對訓練數據的依賴，可能影響在未知化學空間的泛化能力。儘管如此，此研究代表了一個重要方向：利用神經網路在DFT框架內自動學習複雜的電子關聯效應，有望降低高精度計算的門檻，使大規模材料篩選與分子模擬更為可行。後續若能公開完整實現與測試結果，將對計算化學領域產生深遠影響。",
+        "title": "microsoft/skala-1.1",
+        "title_zh": "Skala-1.1：以深度學習實現可擴展且準確的交換關聯泛函"
       }
     ],
     "qwen": [
