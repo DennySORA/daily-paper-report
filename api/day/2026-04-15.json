@@ -194,7 +194,9 @@
         "source_name": null,
         "story_id": "hf:google/tipsv2-g14-dpt",
         "summary": "DPT (Dense Prediction Transformer) heads for depth estimation, surface normal prediction, and semantic segmentation on top of the frozen TIPSv2 g/14 backbone. The backbone is loaded automatically. The depth and normals heads are trained on the NYU Depth V2 dataset and segmentation is trained on the ADE20K dataset (150 classes). | Variant | Vision params | Text params | Embed dim | DPT Heads | |---------|--------------|-------------|-----------|-----------| | B/14 | 86M | 110M | 768 | B/14-dpt | | L/14 | 303M | 184M | 1024 | L/14-dpt | | SO400m/14 | 412M | 448M | 1152 | SO400m/14-dpt | | g/14 | 1.1B | 389M | 1536 | g/14-dpt | pip install transformers torch torchvision sentencepiece from transformers import AutoModel from torchvision import transforms",
-        "title": "google/tipsv2-g14-dpt"
+        "summary_zh": "這份模型卡介紹 google/tipsv2-g14-dpt,一套在完全凍結的 TIPSv2 g/14 骨幹網路上加裝 DPT(Dense Prediction Transformer)預測頭的模型,用於三項密集預測任務:深度估計、表面法線預測與語意分割。其方法核心在於保留大規模預訓練主幹的全部權重,僅訓練輕量的 DPT 頭,藉此降低下游適配的運算成本。深度與法線預測頭以室內資料集 NYU Depth V2 訓練,分割頭則在包含 150 個類別的 ADE20K 上訓練。模型卡並列出整個變體家族的規模:B/14(視覺 86M、文字 110M、嵌入維度 768)、L/14(303M、184M、1024)、SO400m/14(412M、448M、1152)與 g/14(1.1B、389M、1536),各變體都有對應的 -dpt 版本;使用時可透過 pip 安裝 transformers、torch、torchvision 與 sentencepiece,骨幹會隨預測頭自動載入。主要限制是此內容僅達摘要層級,未提供任何基準分數、消融實驗或視覺化結果,各任務的實際精度無法核實;深度與法線頭取材自室內場景,跨到戶外、低光或不同感測器的泛化能力仍待驗證,而凍結骨幹也可能設下任務特定適配的上限。儘管如此,它具體展示了以 TIPSv2 這類同時具備視覺與文字參數的主幹,搭配 DPT 即可快速組出多任務密集預測系統,對想在有限運算預算下部署感知模組的工程團隊,以及尋找穩定預訓練特徵來源的研究者,都是值得留意的現成基礎。",
+        "title": "google/tipsv2-g14-dpt",
+        "title_zh": "google/tipsv2-g14-dpt:在凍結 TIPSv2 g/14 骨幹網路上以 DPT 頭進行深度估計、法線預測與語意分割"
       },
       {
         "arxiv_id": null,
@@ -244,7 +246,9 @@
         "source_name": null,
         "story_id": "hf:google/tipsv2-so400m14-dpt",
         "summary": "DPT (Dense Prediction Transformer) heads for depth estimation, surface normal prediction, and semantic segmentation on top of the frozen TIPSv2 SO400m/14 backbone. The backbone is loaded automatically. The depth and normals heads are trained on the NYU Depth V2 dataset and segmentation is trained on the ADE20K dataset (150 classes). | Variant | Vision params | Text params | Embed dim | DPT Heads | |---------|--------------|-------------|-----------|-----------| | B/14 | 86M | 110M | 768 | B/14-dpt | | L/14 | 303M | 184M | 1024 | L/14-dpt | | SO400m/14 | 412M | 448M | 1152 | SO400m/14-dpt | | g/14 | 1.1B | 389M | 1536 | g/14-dpt | pip install transformers torch torchvision sentencepiece from transformers import AutoModel from torchvision import transforms",
-        "title": "google/tipsv2-so400m14-dpt"
+        "summary_zh": "本模型卡介紹 google/tipsv2-so400m14-dpt，這是在凍結的 TIPSv2 SO400m/14 骨幹之上加裝 DPT（Dense Prediction Transformer）密集預測頭的模型，支援三種密集預測任務：深度估計、表面法線預測與語意分割。其核心方法是將 TIPSv2 骨幹凍結、僅訓練任務專用的 DPT 頭，藉此保留骨幹於大規模預訓練中習得的通用視覺表徵，並以較低成本適配多個下游任務；載入模型時骨幹會自動一併載入。依官方說明，深度與法線預測頭在 NYU Depth V2 資料集上訓練，語意分割頭則在 ADE20K 資料集（150 類）上訓練。模型卡另列出 B/14、L/14、SO400m/14 與 g/14 等變體，視覺參數量約 86M 至 1.1B、嵌入維度介於 768 至 1536，可透過 transformers 函式庫搭配 torch、torchvision 與 sentencepiece 使用。需要強調的是，此摘要並未提供 RMSE、mIoU 等定量結果或與其他方法的比較，實際效能仍須查閱完整文件或自行實測驗證。限制方面，目前僅有摘要層級資訊，訓練細節、授權與偏誤說明尚未呈現；凍結骨幹雖具效率優勢，在領域差異較大的資料上可能不如完整 fine-tuning。整體而言，本模型的價值在於以單一強大骨幹快速支援深度、法線與分割等多種視覺任務，對需要通用密集預測能力的應用深具參考價值。",
+        "title": "google/tipsv2-so400m14-dpt",
+        "title_zh": "google/tipsv2-so400m14-dpt：凍結 TIPSv2 SO400m/14 骨幹上的 DPT 密集預測頭"
       },
       {
         "arxiv_id": null,
@@ -294,7 +298,9 @@
         "source_name": null,
         "story_id": "hf:google/tipsv2-l14-dpt",
         "summary": "DPT (Dense Prediction Transformer) heads for depth estimation, surface normal prediction, and semantic segmentation on top of the frozen TIPSv2 L/14 backbone. The backbone is loaded automatically. The depth and normals heads are trained on the NYU Depth V2 dataset and segmentation is trained on the ADE20K dataset (150 classes). | Variant | Vision params | Text params | Embed dim | DPT Heads | |---------|--------------|-------------|-----------|-----------| | B/14 | 86M | 110M | 768 | B/14-dpt | | L/14 | 303M | 184M | 1024 | L/14-dpt | | SO400m/14 | 412M | 448M | 1152 | SO400m/14-dpt | | g/14 | 1.1B | 389M | 1536 | g/14-dpt | pip install transformers torch torchvision sentencepiece from transformers import AutoModel from torchvision import transforms",
-        "title": "google/tipsv2-l14-dpt"
+        "summary_zh": "本模型為 TIPSv2 L/14 的 DPT（Dense Prediction Transformer）變體，目標是將預訓練的視覺—語言骨幹網路擴充至密集預測任務，涵蓋深度估計、表面法線預測與語意分割。方法上，TIPSv2 L/14 骨幹以凍結（frozen）方式保留原始權重，其上疊加 DPT 架構的預測頭：深度與法線頭於 NYU Depth V2 資料集訓練，分割頭則於包含 150 個類別的 ADE20K 資料集訓練；使用時骨幹會自動載入，降低取用門檻。規格方面，L/14 版本約有 3.03 億視覺參數、1.84 億文字參數，嵌入維度為 1024，並另有 B/14、SO400m/14 與 g/14 等不同規模及對應 DPT 頭可供選擇。需要留意的是，原始內容僅為摘要層級資訊，並未附上深度、法線或分割任務的定量結果與基準比較，因此其實際效能仍須查證原始評測報告，不宜過度推論。整體而言，此工作展示了以單一凍結骨幹搭配輕量預測頭即可快速支援多種下游任務的做法，透過 pip 安裝 transformers、torch 等套件即可重現，對模型重用、遷移學習與多任務密集預測應用具有實務參考價值。",
+        "title": "google/tipsv2-l14-dpt",
+        "title_zh": "google/tipsv2-l14-dpt：凍結 TIPSv2 L/14 骨幹搭配 DPT 預測頭之密集預測模型"
       },
       {
         "arxiv_id": null,
@@ -344,7 +350,9 @@
         "source_name": null,
         "story_id": "hf:google/tipsv2-b14-dpt",
         "summary": "DPT (Dense Prediction Transformer) heads for depth estimation, surface normal prediction, and semantic segmentation on top of the frozen TIPSv2 B/14 backbone. The backbone is loaded automatically. The depth and normals heads are trained on the NYU Depth V2 dataset and segmentation is trained on the ADE20K dataset (150 classes). | Variant | Vision params | Text params | Embed dim | DPT Heads | |---------|--------------|-------------|-----------|-----------| | B/14 | 86M | 110M | 768 | B/14-dpt | | L/14 | 303M | 184M | 1024 | L/14-dpt | | SO400m/14 | 412M | 448M | 1152 | SO400m/14-dpt | | g/14 | 1.1B | 389M | 1536 | g/14-dpt | pip install transformers torch torchvision sentencepiece from transformers import AutoModel from torchvision import transforms",
-        "title": "google/tipsv2-b14-dpt"
+        "summary_zh": "此模型為 TIPSv2 系列的密集預測版本，目的在檢視凍結的預訓練視覺骨幹能否支援像素級的下游任務。方法上，作者在凍結的 TIPSv2 B/14 骨幹網路上搭載 DPT（Dense Prediction Transformer）頭部，分別處理深度估測、表面法線預測與語意分割三項任務：深度與法線頭部以 NYU Depth V2 資料集訓練，語意分割頭部則在含 150 個類別的 ADE20K 資料集上訓練。由於骨幹權重維持凍結，訓練僅涉及 DPT 頭部，屬於參數高效的遷移學習做法，可直接反映骨幹表徵的品質。文件亦提供整體規模對照：除 B/14（視覺 86M、文字 110M、嵌入維度 768）之外，尚有 L/14、SO400m/14 與 g/14 等版本，視覺參數最高達 1.1B，嵌入維度至 1536，各規模皆附對應的 -dpt 頭部，並可透過 transformers 函式庫的 AutoModel 自動載入骨幹，搭配 torch、torchvision 與 sentencepiece 即可使用。需要留意的是，此頁面僅收錄摘要層級資訊，未附具體定量結果，故無法引用確切的效能數字，實際表現應以完整論文或模型卡為準。整體而言，此工作展示將影像—文字預訓練模型延伸至深度、法線與分割等密集任務的可行路徑，對需要多任務視覺理解的應用深具參考價值。",
+        "title": "google/tipsv2-b14-dpt",
+        "title_zh": "google/tipsv2-b14-dpt：於凍結 TIPSv2 B/14 骨幹上搭建 DPT 密集預測頭部"
       },
       {
         "arxiv_id": null,
@@ -394,7 +402,9 @@
         "source_name": null,
         "story_id": "hf:google/tipsv2-g14",
         "summary": "TIPSv2 (Text-Image Pre-training with Spatial awareness) is a family of contrastive vision-language models that produce spatially rich image features aligned with text embeddings. This is the Giant variant with 1.1B vision params and 389M text params. Try the code snippets below or check out the GitHub repo for more use cases and visualizations, including zero-shot segmentation. | Variant | Vision params | Text params | Embed dim | DPT Heads | |---------|--------------|-------------|-----------|-----------| | B/14 | 86M | 110M | 768 | B/14-dpt | | L/14 | 303M | 184M | 1024 | L/14-dpt | | SO400m/14 | 412M | 448M | 1152 | SO400m/14-dpt | | g/14 | 1.1B | 389M | 1536 | g/14-dpt | pip install transformers torch torchvision sentencepiece scikit-learn from transformers import AutoModel model =...",
-        "title": "google/tipsv2-g14"
+        "summary_zh": "TIPSv2（Text-Image Pre-training with Spatial awareness）是一系列對比式視覺—語言模型，其訴求為產生具空間豐富性的圖像特徵，並與文字嵌入對齊，以補足傳統對比預訓練特徵偏重全域語意、空間資訊不足的問題，讓零樣本分割等需要空間理解的下游任務得以受惠。本次收錄的 g/14 為系列中最大的 Giant 變體：視覺端約 1.1B 參數、文字端約 389M 參數，嵌入維度為 1536，並附對應的 g/14-dpt（DPT heads）版本；系列另提供 B/14、L/14 與 SO400m/14 等較小變體（嵌入維度 768 至 1152），可依運算資源取捨。模型已整合於 Hugging Face transformers 套件，官方同時提供程式碼範例與 GitHub 專案，展示包括零樣本分割在內的應用與視覺化結果。限制方面：目前僅有摘要式模型卡資訊，缺少完整論文的訓練細節、評估基準與消融實驗，故實際效能與訓練成本無法確切驗證；此外，1.1B 的視覺參數量對推論硬體與部署成本要求較高，實用時需自行衡量。整體而言，此模型展示了將空間感知納入對比式視覺—語言預訓練的研究方向，若其空間對齊特徵經後續實證可靠，將有助於統一影像—文字檢索與稠密預測任務的基礎模型生態。",
+        "title": "google/tipsv2-g14",
+        "title_zh": "TIPSv2（g/14）：具空間感知的文字—圖像對比預訓練模型（Giant 變體）"
       },
       {
         "arxiv_id": null,
@@ -444,7 +454,9 @@
         "source_name": null,
         "story_id": "hf:google/tipsv2-so400m14",
         "summary": "TIPSv2 (Text-Image Pre-training with Spatial awareness) is a family of contrastive vision-language models that produce spatially rich image features aligned with text embeddings. This is the SO400m variant with 412M vision params and 448M text params. Try the code snippets below or check out the GitHub repo for more use cases and visualizations, including zero-shot segmentation. | Variant | Vision params | Text params | Embed dim | DPT Heads | |---------|--------------|-------------|-----------|-----------| | B/14 | 86M | 110M | 768 | B/14-dpt | | L/14 | 303M | 184M | 1024 | L/14-dpt | | SO400m/14 | 412M | 448M | 1152 | SO400m/14-dpt | | g/14 | 1.1B | 389M | 1536 | g/14-dpt | pip install transformers torch torchvision sentencepiece scikit-learn from transformers import AutoModel model =...",
-        "title": "google/tipsv2-so400m14"
+        "summary_zh": "TIPSv2（Text-Image Pre-training with Spatial awareness）是一系列以對比式學習訓練的視覺—語言模型，針對一般對比式預訓練產生的影像特徵缺乏空間結構、難以直接支援密集預測任務的問題，提出強調空間感知的預訓練方式。TIPSv2 的影像特徵除了保有與文字嵌入（text embedding）的對齊能力，也蘊含更豐富的空間資訊，因此可直接應用於零樣本分割（zero-shot segmentation）等下游任務。本頁收錄 SO400m/14 變體：視覺端約 412M 參數、文字端約 448M 參數、嵌入維度 1152，並搭配 SO400m/14-dpt 的 DPT 頭部以輸出空間特徵；整個系列另含 B/14、L/14 與 g/14 等規模，嵌入維度介於 768 至 1536，可依運算資源與應用需求選用。官方在模型卡中提供 transformers、torch、torchvision 等套件的程式碼範例，並有 GitHub 專案收錄更多用法與視覺化展示，降低研究者上手門檻。需要留意的是，此頁面僅為摘要層級資訊，並未呈現完整的基準測試數字、訓練資料組成或消融實驗結果，其相較於 CLIP、SigLIP 等既有模型的具體優劣，仍須查閱原始論文才能確認。整體而言，TIPSv2 展示了將空間感知融入對比式預訓練的可行性，對需要同時處理影像分類、分割與定位的應用場景具有實用參考價值。",
+        "title": "google/tipsv2-so400m14",
+        "title_zh": "TIPSv2 SO400m/14：具空間感知的文字—影像對比預訓練模型"
       },
       {
         "arxiv_id": null,
@@ -494,7 +506,9 @@
         "source_name": null,
         "story_id": "hf:google/tipsv2-l14",
         "summary": "TIPSv2 (Text-Image Pre-training with Spatial awareness) is a family of contrastive vision-language models that produce spatially rich image features aligned with text embeddings. This is the Large variant with 303M vision params and 184M text params. Try the code snippets below or check out the GitHub repo for more use cases and visualizations, including zero-shot segmentation. | Variant | Vision params | Text params | Embed dim | DPT Heads | |---------|--------------|-------------|-----------|-----------| | B/14 | 86M | 110M | 768 | B/14-dpt | | L/14 | 303M | 184M | 1024 | L/14-dpt | | SO400m/14 | 412M | 448M | 1152 | SO400m/14-dpt | | g/14 | 1.1B | 389M | 1536 | g/14-dpt | pip install transformers torch torchvision sentencepiece scikit-learn from transformers import AutoModel model =...",
-        "title": "google/tipsv2-l14"
+        "summary_zh": "TIPSv2(Text-Image Pre-training with Spatial awareness)是 Google 推出的對比式視覺-語言預訓練模型系列,核心目標是讓影像特徵在與文字嵌入對齊的同時,保留豐富的空間資訊。此為其中的 Large(L/14)版本:視覺端約 303M 參數、文字端約 184M 參數,嵌入維度為 1024,並配有 L/14-dpt 的 DPT 頭部;系列另提供 B/14、SO400m/14 與 g/14 等規模,參數量與嵌入維度隨規模遞增。模型已整合至 Hugging Face transformers,可透過 AutoModel 載入,官方 GitHub 儲存庫提供安裝說明、程式碼範例與視覺化工具,並展示零樣本分割等應用。就證據而言,目前公開內容僅達摘要與模型卡層級,並未附上具體基準資料或與其他方法的詳細比較,空間感知設計帶來的實際增益仍需以完整論文與第三方實測驗證。限制方面,大型變體參數量可觀,推論成本、硬體需求與部署複雜度都必須納入考量,零樣本分割的效能宣稱也有待重現。整體而言,TIPSv2 代表在對比式預訓練中融入空間感知的研究方向,對需要同時理解語意與像素級空間結構的下游任務(如分割與檢索)具參考價值,值得追蹤其後續完整評估結果。",
+        "title": "google/tipsv2-l14",
+        "title_zh": "TIPSv2-L/14:具空間感知的對比式視覺-語言預訓練模型"
       },
       {
         "arxiv_id": null,
@@ -544,7 +558,9 @@
         "source_name": null,
         "story_id": "hf:google/tipsv2-b14",
         "summary": "TIPSv2 (Text-Image Pre-training with Spatial awareness) is a family of contrastive vision-language models that produce spatially rich image features aligned with text embeddings. This is the Base variant with 86M vision params and 110M text params. Try the code snippets below or check out the GitHub repo for more use cases and visualizations, including zero-shot segmentation. | Variant | Vision params | Text params | Embed dim | DPT Heads | |---------|--------------|-------------|-----------|-----------| | B/14 | 86M | 110M | 768 | B/14-dpt | | L/14 | 303M | 184M | 1024 | L/14-dpt | | SO400m/14 | 412M | 448M | 1152 | SO400m/14-dpt | | g/14 | 1.1B | 389M | 1536 | g/14-dpt | pip install transformers torch torchvision sentencepiece scikit-learn from transformers import AutoModel model =...",
-        "title": "google/tipsv2-b14"
+        "summary_zh": "TIPSv2（Text-Image Pre-training with Spatial awareness）是 Google 推出的對比式視覺—語言模型家族，針對傳統 CLIP 類模型影像特徵缺乏空間資訊、難以支援稠密預測任務的痛點而設計。其核心做法是在文字—影像對比預訓練中導入空間感知，使產出的影像特徵既與文字嵌入對齊，又保留豐富的空間結構，因而可直接用於零樣本分割（zero-shot segmentation）等下游應用。本模型為 Base（B/14）變體，視覺端約 86M 參數、文字端約 110M 參數、嵌入維度 768，並搭配 B/14-dpt 的 DPT head 輸出稠密特徵；同系列另提供 L/14、SO400m/14 與 g/14 等規模，嵌入維度介於 1024 至 1536，可透過 transformers 程式庫載入，官方 GitHub 亦提供視覺化與使用範例。須留意的是，目前僅有模型卡與摘要層級的資訊，尚未公開完整論文的定量實驗，例如在各分割或檢索基準上的具體表現，效能證據仍待後續資料補充，讀者宜以官方釋出內容為準。整體而言，TIPSv2 的價值在於縮短影像層級對比預訓練與稠密預測之間的落差，讓單一模型同時支援分類、檢索與分割，對需要空間理解的多模態系統深具參考意義。",
+        "title": "google/tipsv2-b14",
+        "title_zh": "TIPSv2：空間感知的文字—影像對比預訓練模型（Base 變體）"
       },
       {
         "arxiv_id": null,

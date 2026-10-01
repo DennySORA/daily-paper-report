@@ -167,7 +167,9 @@
         "source_name": null,
         "story_id": "hf:microsoft/phi-4-reasoning-vision-15b",
         "summary": "Official Microsoft Blog Technical Report Try Phi-4-Reasoning-Vision-15B on Microsoft Foundry **Developer:** Microsoft Corporation **Authorized Representative:** Microsoft Ireland Operations Limited, 70 Sir John Rogerson's Quay, Dublin 2, D02 R296, Ireland **Release Date:** March 4, 2026 **License:** MIT **Parameters:** 15B **Context Length:** 16,384 tokens **Inputs:** Text and Images",
-        "title": "microsoft/Phi-4-reasoning-vision-15B"
+        "summary_zh": "本頁面為 Microsoft 於 2026 年 3 月 4 日發布的 Phi-4-reasoning-vision-15B 官方模型說明，目前僅提供摘要層級資訊，完整技術報告細節尚未公開。就定位而言，此模型屬於 Phi 系列小型語言模型的延伸，聚焦於推理（reasoning）與視覺理解（vision）兩種能力的整合：參數量為 15B，可同時接受文字與影像輸入，脈絡長度為 16,384 個 tokens，目標是在相對精簡的規模下提供多模態逐步推理能力，作為大型閉源模型之外的輕量選項。方法層面，頁面並未說明訓練資料組成、資料課程設計或強化學習流程，僅指出模型已上架 Microsoft Foundry 供使用者試用。證據方面，現有內容未附任何基準測試分數、安全性評估或消融實驗結果，因此無法單憑本頁面驗證其實際效能，讀者應查閱官方技術報告與部落格，並以第三方重現結果為準。限制上，16K 的脈絡長度對長文件或大量影像輸入可能構成約束，而其能力邊界、偏誤與安全風險仍待完整評估文件補足。此釋出的意義在於：Microsoft 以寬鬆的 MIT 授權公開中等規模的多模態推理模型權重，有利於本地部署、學術重現與下游 fine-tuning，為開源多模態推理生態提供可及性高、成本低廉的基礎選項，也延續 Phi 系列以小型高效模型挑戰大型模型性價比的路線。",
+        "title": "microsoft/Phi-4-reasoning-vision-15B",
+        "title_zh": "Microsoft Phi-4-reasoning-vision-15B 推理視覺模型"
       }
     ]
   },

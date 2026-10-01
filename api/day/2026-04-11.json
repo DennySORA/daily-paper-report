@@ -945,7 +945,9 @@
       "source_name": null,
       "story_id": "hf:google/tipsv2-b14",
       "summary": "TIPSv2 (Text-Image Pre-training with Spatial awareness) is a family of contrastive vision-language models that produce spatially rich image features aligned with text embeddings. This is the Base variant with 86M vision params and 110M text params. | Variant | Vision params | Text params | Embed dim | |---------|--------------|-------------|-----------| | B/14 | 86M | 110M | 768 | | L/14 | 303M | 184M | 1024 | | SO400m/14 | 412M | 448M | 1152 | | g/14 | 1.1B | 389M | 1536 | pip install transformers torch torchvision sentencepiece scikit-learn from transformers import AutoModel model = AutoModel.from_pretrained(\"google/tipsv2-b14\", trust_remote_code=True)",
-      "title": "google/tipsv2-b14"
+      "summary_zh": "TIPSv2（Text-Image Pre-training with Spatial awareness）是 Google 推出的對比式視覺—語言模型家族，針對傳統 CLIP 類模型影像特徵缺乏空間資訊、難以支援稠密預測任務的痛點而設計。其核心做法是在文字—影像對比預訓練中導入空間感知，使產出的影像特徵既與文字嵌入對齊，又保留豐富的空間結構，因而可直接用於零樣本分割（zero-shot segmentation）等下游應用。本模型為 Base（B/14）變體，視覺端約 86M 參數、文字端約 110M 參數、嵌入維度 768，並搭配 B/14-dpt 的 DPT head 輸出稠密特徵；同系列另提供 L/14、SO400m/14 與 g/14 等規模，嵌入維度介於 1024 至 1536，可透過 transformers 程式庫載入，官方 GitHub 亦提供視覺化與使用範例。須留意的是，目前僅有模型卡與摘要層級的資訊，尚未公開完整論文的定量實驗，例如在各分割或檢索基準上的具體表現，效能證據仍待後續資料補充，讀者宜以官方釋出內容為準。整體而言，TIPSv2 的價值在於縮短影像層級對比預訓練與稠密預測之間的落差，讓單一模型同時支援分類、檢索與分割，對需要空間理解的多模態系統深具參考意義。",
+      "title": "google/tipsv2-b14",
+      "title_zh": "TIPSv2：空間感知的文字—影像對比預訓練模型（Base 變體）"
     },
     {
       "arxiv_id": null,
@@ -995,7 +997,9 @@
       "source_name": null,
       "story_id": "hf:google/tipsv2-b14-dpt",
       "summary": "DPT (Dense Prediction Transformer) heads for depth estimation, surface normal prediction, and semantic segmentation on top of the frozen TIPSv2 B/14 backbone. The backbone is loaded automatically. The depth and normals heads are trained on the NYU Depth V2 dataset and segmentation is trained on the ADE20K dataset (150 classes). pip install transformers torch torchvision sentencepiece from transformers import AutoModel from torchvision import transforms from PIL import Image import requests model = AutoModel.from_pretrained(\"google/tipsv2-b14-dpt\", trust_remote_code=True) model.eval().cuda() url = \"https://raw.githubusercontent.com/google-deepmind/tips/main/scenic/images/example_image_2.jpg\" image = Image.open(requests.get(url, stream=True).raw)",
-      "title": "google/tipsv2-b14-dpt"
+      "summary_zh": "此模型為 TIPSv2 系列的密集預測版本，目的在檢視凍結的預訓練視覺骨幹能否支援像素級的下游任務。方法上，作者在凍結的 TIPSv2 B/14 骨幹網路上搭載 DPT（Dense Prediction Transformer）頭部，分別處理深度估測、表面法線預測與語意分割三項任務：深度與法線頭部以 NYU Depth V2 資料集訓練，語意分割頭部則在含 150 個類別的 ADE20K 資料集上訓練。由於骨幹權重維持凍結，訓練僅涉及 DPT 頭部，屬於參數高效的遷移學習做法，可直接反映骨幹表徵的品質。文件亦提供整體規模對照：除 B/14（視覺 86M、文字 110M、嵌入維度 768）之外，尚有 L/14、SO400m/14 與 g/14 等版本，視覺參數最高達 1.1B，嵌入維度至 1536，各規模皆附對應的 -dpt 頭部，並可透過 transformers 函式庫的 AutoModel 自動載入骨幹，搭配 torch、torchvision 與 sentencepiece 即可使用。需要留意的是，此頁面僅收錄摘要層級資訊，未附具體定量結果，故無法引用確切的效能數字，實際表現應以完整論文或模型卡為準。整體而言，此工作展示將影像—文字預訓練模型延伸至深度、法線與分割等密集任務的可行路徑，對需要多任務視覺理解的應用深具參考價值。",
+      "title": "google/tipsv2-b14-dpt",
+      "title_zh": "google/tipsv2-b14-dpt：於凍結 TIPSv2 B/14 骨幹上搭建 DPT 密集預測頭部"
     },
     {
       "arxiv_id": null,

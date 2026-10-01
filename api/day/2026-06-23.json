@@ -310,7 +310,9 @@
         "source_name": null,
         "story_id": "hf:microsoft/colipri",
         "summary": "COLIPRI is a 3D vision&ndash;language transformer model trained to encode chest CT scans and reports. COLIPRI was trained using tens of thousands of chest CT scans and reports, without any annotations, using multiple objectives to learn strong joint representations of 3D images and text. The procedure is described in detail in our manuscript, _Comprehensive language-image pre-training for 3D medical image understanding_ (Wald et al. 2026). The weights shared here correspond to our best-performing model, COLIPRI-CRM. - **Developed by:** Microsoft Health Futures - **Model type:** 3D vision&ndash;language encoder - **License:** MIT COLIPRI is shared for research purposes only. It is **not meant to be used for clinical practice**. The encoders be plugged to other models, or used independently...",
-        "title": "microsoft/colipri"
+        "summary_zh": "COLIPRI（Comprehensive Language-Image Pre-training）是 Microsoft Research 開發的 3D 視覺–語言 Transformer 模型，目標是將胸部 CT 掃描與放射科報告共同編碼，縮短 3D 醫學影像與自然語言之間的落差。面對 3D 醫學影像標註取得不易、難以大規模監督式訓練的現實，研究團隊在數萬組胸部 CT 與對應報告上，於完全不需任何人工標註的前提下，採用多重訓練目標進行全面性的語言–影像預訓練，學習強健的 3D 影像與文字聯合表示。本次釋出的權重為 COLIPRI-CRM，作者稱其為論文中表現最佳的模型，並以 MIT 授權公開。不過，此模型卡僅含摘要資訊，並未提供具體量化結果或基準比較，相關實驗證據須參閱原始論文（Wald et al., ECCV 2026）。限制方面，模型明確僅供研究用途，不得用於臨床實務；模型卡也未說明訓練資料的族群組成與潛在偏誤，跨機構泛化能力仍待獨立驗證。整體而言，此工作展示在無標註條件下預訓練 3D 視覺–語言編碼器的可行性，其編碼器可外接至其他模型，有助於推動 3D 醫學影像檢索、報告理解與下游任務遷移等研究。",
+        "title": "microsoft/colipri",
+        "title_zh": "COLIPRI：用於 3D 醫學影像理解的全面性語言–影像預訓練"
       }
     ]
   },

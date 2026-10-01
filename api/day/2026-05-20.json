@@ -226,7 +226,9 @@
         "source_name": null,
         "story_id": "hf:microsoft/fara-7b",
         "summary": "Official Microsoft Blog Technical Report Try Fara-7B on Microsoft Foundry **Developer:** Microsoft Research **Description:** Fara-7B is Microsoft's first agentic small language model (SLM) designed specifically for computer use. With only 7 billion parameters, Fara-7B is an ultra-compact Computer Use Agent (CUA) that achieves state-of-the-art performance within its size class and is competitive with larger, more resource-intensive agentic systems. **Model Architecture:** Multimodal decoder-only language model that takes an image (screenshot) + text context. It directly predicts thoughts and actions with grounded arguments. Current production baselines leverage Qwen 2.5-VL (7B). **Parameters:** 7 Billion **Inputs:** User goal (text), current screenshot(s), history of previous outputs...",
-        "title": "microsoft/Fara-7B"
+        "summary_zh": "Fara-7B 是微軟研究院推出的第一個專為電腦操作設計的代理式小型語言模型（SLM），僅有 70 億參數，卻能在同級別模型中達到最先進的效能，並與資源需求更高的代理系統競爭。該模型採用多模態的 decoder-only 架構，輸入包括螢幕截圖與文字脈絡，能直接預測思考過程與具引數的動作，適合用於自動化電腦介面操作。目前尚未公開完整技術報告，僅釋出摘要與部分架構說明，實際訓練細節、基準測試數據及限制有待進一步揭露。這項研究的重要性在於，它展示了小型模型在代理任務上的潛力，可能降低部署成本並提升即時反應速度，對未來個人化 AI 助理與自動化工具的發展具有指標性意義。",
+        "title": "microsoft/Fara-7B",
+        "title_zh": "微軟 Fara-7B：輕量級電腦操作代理模型"
       }
     ]
   },

@@ -293,7 +293,9 @@
         "source_name": null,
         "story_id": "hf:google/gemma-4-12b-it-assistant",
         "summary": "Hugging Face | Launch Blog | Documentation License: Apache 2.0 | Authors: Google DeepMind > This model card is for the Multi-Token Prediction (MTP) drafters for the Gemma 4 models. MTP is implemented by extending the base model with a smaller, faster draft model. When used in a Speculative Decoding pipeline, the draft model predicts several tokens ahead, which the target model then verifies in parallel. This results in significant decoding speedups (up to 3x) while guaranteeing the exact same quality as standard generation, making these checkpoints perfect for low-latency and on-device applications. Gemma is a family of open models built by Google DeepMind. Gemma 4 models are multimodal, handling text and image input (with audio supported on E2B, E4B, and 12B) and generating text output....",
-        "title": "google/gemma-4-12B-it-assistant"
+        "summary_zh": "這份 Hugging Face 模型卡介紹 Google DeepMind 為 Gemma 4 系列開放模型所釋出的 Multi-Token Prediction（MTP）草稿模型（drafter）檢查點，gemma-4-12B-it-assistant 即為其中之一。其欲解決的問題是：大型語言模型推論時須逐一生成 token，解碼速度常成為低延遲應用的瓶頸。方法上，團隊在基礎模型之外延伸出更小、更快的草稿模型；在 Speculative Decoding（推測解碼）流程中，草稿模型先預測數個後續 token，目標模型再並行驗證並接受正確者，一次即可推進多個 token。主要證據為官方宣稱最高可達 3 倍解碼加速，且因輸出仍經目標模型驗證，可保證與標準生成完全相同的品質，屬於無損加速。Gemma 為 Google DeepMind 打造的開放模型家族，Gemma 4 具多模態能力，支援文字與影像輸入，E2B、E4B 與 12B 版本另支援音訊，模型以 Apache 2.0 授權釋出。限制方面：本頁僅為摘要層級內容，詳細的基準測試、速度量測條件與硬體配置須參考其技術報告，實際加速幅度亦會依應用場景與部署環境而異，且草稿模型須與對應目標模型搭配使用方能發揮效益。整體而言，這類 MTP 草稿模型對低延遲與裝置端（on-device）應用極具價值，讓開發者在完全不犧牲輸出品質的前提下顯著提升生成反應速度。",
+        "title": "google/gemma-4-12B-it-assistant",
+        "title_zh": "Gemma 4 之 Multi-Token Prediction 草稿模型：以 Speculative Decoding 實現最高 3 倍解碼加速"
       },
       {
         "arxiv_id": null,
