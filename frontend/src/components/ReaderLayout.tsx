@@ -10,13 +10,16 @@ import {
   topicCounts,
   type SortKey,
 } from '../data/filter'
+import { useChromeInert } from '../app/chrome'
 import {
   SECTION_LABEL,
+  isSafeHttpUrl,
   readingLinks,
   type SectionKey,
   type Story,
   type StoryGroup,
 } from '../data/story'
+import { topicInfo } from '../data/topics'
 import { useHotkeys, useIsNarrow } from '../lib/hooks'
 import { setPref, setRead, toggleSaved, useLibrary } from '../state/library'
 import { Reader } from './Reader'
@@ -103,6 +106,7 @@ export function ReaderLayout({
 
   // On narrow screens the reader is a full-screen layer over the list.
   const overlayOpen = narrow && selected !== null
+  useChromeInert(overlayOpen)
   useEffect(() => {
     if (!overlayOpen) return
     const root = document.documentElement
@@ -137,7 +141,7 @@ export function ReaderLayout({
     if (!selected) return
     const links = readingLinks(selected)
     const link = which === 'pdf' ? links.find((item) => item.label === 'PDF') : links[0]
-    if (link) window.open(link.href, '_blank', 'noopener,noreferrer')
+    if (link && isSafeHttpUrl(link.href)) window.open(link.href, '_blank', 'noopener,noreferrer')
   }
 
   const sectionKeys: Array<SectionKey | 'all'> = ['all', ...sections]
@@ -218,6 +222,9 @@ export function ReaderLayout({
               onChange={(event) => setFilter({ t: event.target.value || null })}
             >
               <option value="">全部主題</option>
+              {filter.topic && !topics.slice(0, 40).some((topic) => topic.key === filter.topic) ? (
+                <option value={filter.topic}>{topicInfo(filter.topic).label}</option>
+              ) : null}
               {topics.slice(0, 40).map((topic) => (
                 <option key={topic.key} value={topic.key}>
                   {topic.label}（{topic.count}）
@@ -312,6 +319,7 @@ export function ReaderLayout({
     <Reader
       story={selected}
       narrow={narrow}
+      markOnOpen={requestedId !== null}
       topicHref={(key) => hrefWith({ t: key, p: null, s: null })}
       nav={{
         index,

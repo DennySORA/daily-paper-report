@@ -29,6 +29,10 @@ export function decodeEntities(input: string): string {
   })
 }
 
+// Only real markup is removed; "<1%", "p<0.05" or ">3x" in prose must survive.
+const TAG =
+  /<\/?(?:a|abbr|b|blockquote|br|code|del|details|div|em|figcaption|figure|font|h[1-6]|hr|i|img|ins|kbd|li|mark|ol|p|picture|pre|q|s|section|small|source|span|strong|sub|summary|sup|table|tbody|td|th|thead|tr|tt|u|ul)\b[^<>]*>|<!--[\s\S]*?-->/gi
+
 /**
  * Turns feed summaries (which may carry HTML fragments, entities and Markdown
  * emphasis from READMEs or blog feeds) into plain display text. The result is
@@ -40,7 +44,7 @@ export function cleanText(input: string | null | undefined): string {
     input
       .replace(/<\s*br\s*\/?>/gi, '\n')
       .replace(/<\/(p|div|li|pre|h[1-6])\s*>/gi, '\n')
-      .replace(/<[^>]*>/g, ''),
+      .replace(TAG, ''),
   )
     .replace(/\*\*([^*]+)\*\*/g, '$1')
     .replace(/__([^_]+)__/g, '$1')

@@ -8,9 +8,12 @@ import { SearchView } from '../views/SearchView'
 import { SourcesView } from '../views/SourcesView'
 import { Shell } from './Shell'
 
+/** Inputs are bound to URL state; synchronous router updates keep typing and IME intact. */
+export const routerOptions = { useTransitions: false } as const
+
 export function App() {
   return (
-    <HashRouter>
+    <HashRouter {...routerOptions}>
       <Shell>
         <Routes>
           <Route index element={<DigestView />} />

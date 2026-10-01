@@ -132,24 +132,28 @@ export function Reader({
   nav,
   topicHref,
   narrow,
+  markOnOpen,
 }: {
   story: Story
   nav: ReaderNav
   topicHref: (key: string) => string
   narrow: boolean
+  /** False while the pane only previews the first item nobody has chosen yet. */
+  markOnOpen: boolean
 }) {
   const library = useLibrary()
   const read = story.id in library.read
   const saved = story.id in library.saved
 
-  // Opening a story marks it read after a short dwell, so fast j/k scanning does not.
+  // An explicitly opened story is marked read after a short dwell, so fast j/k
+  // scanning and the automatic first-item preview never mark anything.
   useEffect(() => {
-    if (story.id in library.read) return
+    if (!markOnOpen || story.id in library.read) return
     const timer = window.setTimeout(() => setRead(story.id, true), 1200)
     return () => window.clearTimeout(timer)
-    // Only the story identity restarts the dwell timer.
+    // Only the story identity and the explicit-open state restart the dwell timer.
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [story.id])
+  }, [story.id, markOnOpen])
 
   const links = readingLinks(story)
   const bib = bibtex(story)

@@ -23,10 +23,22 @@ const PERIOD_RE = /^\d{4}-(W\d{2}|\d{2})$/
 
 /** One shared request per resource; failed requests are evicted so retry refetches. */
 const cache = new Map<string, Promise<unknown>>()
+/** Dated documents (days, reports) kept in memory; older ones are refetched from HTTP cache. */
+const DATED_LIMIT = 16
+
+function remember(path: string, request: Promise<unknown>): void {
+  cache.delete(path)
+  cache.set(path, request)
+  const dated = [...cache.keys()].filter((key) => !REVALIDATED.has(key))
+  for (const key of dated.slice(0, Math.max(0, dated.length - DATED_LIMIT))) cache.delete(key)
+}
 
 function load<T>(path: string, revalidate: boolean): Promise<T> {
   const cached = cache.get(path)
-  if (cached) return cached as Promise<T>
+  if (cached) {
+    remember(path, cached)
+    return cached as Promise<T>
+  }
   const request = fetch(`/${path}`, { cache: revalidate ? 'no-cache' : 'default' }).then(
     async (response) => {
       if (response.status === 404) throw new NotFoundError(path)
@@ -34,7 +46,7 @@ function load<T>(path: string, revalidate: boolean): Promise<T> {
       return (await response.json()) as T
     },
   )
-  cache.set(path, request)
+  remember(path, request)
   request.catch(() => cache.delete(path))
   return request
 }

@@ -11,6 +11,7 @@ import type { SearchIndex } from '../data/types'
 import { formatInt, formatScore } from '../lib/format'
 import { useLibrary } from '../state/library'
 
+const RESULT_LIMIT = 500
 const KIND_FILTER = { all: '全部類型', arxiv: 'arXiv 論文', blog: '文章' } as const
 type KindFilter = keyof typeof KIND_FILTER
 
@@ -39,7 +40,8 @@ export function SearchView() {
 
   const hits = useMemo(() => {
     if (doc.status !== 'ready') return []
-    return searchStories(doc.data, deferred, 500).filter(
+    // Filter every match first, then cap, so a narrow filter still finds older items.
+    return searchStories(doc.data, deferred, Number.POSITIVE_INFINITY).filter(
       (hit) =>
         (kind === 'all' ||
           (kind === 'arxiv' ? hit.linkType === 'arxiv' : hit.linkType !== 'arxiv')) &&
@@ -133,10 +135,12 @@ export function SearchView() {
                   className="border-b border-line-subtle px-4 py-2 text-meta text-fg-3"
                   aria-live="polite"
                 >
-                  {hits.length >= 500 ? '前 500 筆結果' : `${hits.length} 筆結果`}
+                  {hits.length > RESULT_LIMIT
+                    ? `${hits.length} 筆結果，顯示前 ${RESULT_LIMIT} 筆`
+                    : `${hits.length} 筆結果`}
                 </p>
                 <ol className="flex flex-col gap-0.5 p-1.5">
-                  {hits.map((hit) => (
+                  {hits.slice(0, RESULT_LIMIT).map((hit) => (
                     <li key={hit.id}>
                       <Link
                         to={storyHref(hit.date, hit.id)}

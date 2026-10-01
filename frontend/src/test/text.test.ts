@@ -17,6 +17,14 @@ describe('cleanText', () => {
     expect(cleanText(undefined)).toBe('')
   })
 
+  it('keeps comparison operators in prose', () => {
+    expect(cleanText('loss <1% on GLUE while giving >3x speedups (p<0.05, n>100)')).toBe(
+      'loss <1% on GLUE while giving >3x speedups (p<0.05, n>100)',
+    )
+    expect(cleanText('延遲 <10ms，準確率提升至 >90%')).toBe('延遲 <10ms，準確率提升至 >90%')
+    expect(cleanText('<span class="x">kept</span><!-- note -->')).toBe('kept')
+  })
+
   it('leaves unknown entities untouched', () => {
     expect(decodeEntities('&unknown; &amp;')).toBe('&unknown; &')
   })

@@ -13,6 +13,7 @@ import {
 import { useEffect, useRef, useState, type ReactNode } from 'react'
 import { Link, useLocation } from 'react-router'
 import { CommandPalette } from '../components/CommandPalette'
+import { ChromeInertContext } from './chrome'
 import { ShortcutsDialog } from '../components/ShortcutsDialog'
 import { ICON, ICON_SM, Kbd } from '../components/ui'
 import { isTypingTarget } from '../lib/hooks'
@@ -108,6 +109,7 @@ export function Shell({ children }: { children: ReactNode }) {
   const [paletteOpen, setPaletteOpen] = useState(false)
   const [shortcutsOpen, setShortcutsOpen] = useState(false)
   const [drawerOpen, setDrawerOpen] = useState(false)
+  const [chromeInert, setChromeInert] = useState(false)
   const drawer = useRef<HTMLDialogElement>(null)
   const firstPath = useRef(location.pathname)
 
@@ -153,12 +155,16 @@ export function Shell({ children }: { children: ReactNode }) {
     <div className="flex min-h-dvh flex-col lg:h-dvh lg:min-h-0">
       <button
         type="button"
+        inert={chromeInert}
         className="sr-only-focusable btn btn-primary fixed top-2 left-2 z-50"
         onClick={() => document.getElementById('main')?.focus()}
       >
         跳到主要內容
       </button>
-      <header className="sticky top-0 z-30 flex h-12 flex-none items-center gap-3 border-b border-line-subtle bg-canvas/95 px-3">
+      <header
+        inert={chromeInert}
+        className="sticky top-0 z-30 flex h-12 flex-none items-center gap-3 border-b border-line-subtle bg-canvas/95 px-3"
+      >
         <button
           type="button"
           className="btn btn-quiet btn-icon lg:hidden"
@@ -212,6 +218,7 @@ export function Shell({ children }: { children: ReactNode }) {
 
       <div className="flex min-h-0 flex-1">
         <nav
+          inert={chromeInert}
           aria-label="主要導覽"
           className="hidden flex-none flex-col justify-between border-r border-line-subtle bg-canvas py-2 lg:flex lg:w-14 lg:px-1.5 xl:w-[200px] xl:px-2"
         >
@@ -226,7 +233,7 @@ export function Shell({ children }: { children: ReactNode }) {
           </p>
         </nav>
         <main id="main" className="flex min-h-0 min-w-0 flex-1 flex-col" tabIndex={-1}>
-          {children}
+          <ChromeInertContext value={setChromeInert}>{children}</ChromeInertContext>
         </main>
       </div>
 
