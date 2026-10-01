@@ -1,0 +1,121 @@
+name: Frontend
+
+# Builds the React site shell and deploys it to gh-pages next to the report
+# data that the Nano pipeline publishes under api/ (scripts/publish-pages.sh).
+# Each writer owns disjoint paths; neither one force-pushes.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'frontend/**'
+      - '.github/workflows/frontend.yml'
+  pull_request:
+    paths:
+      - 'frontend/**'
+      - '.github/workflows/frontend.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: frontend-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    name: Verify and build
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: frontend
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: pnpm/action-setup@ea17c68df8912ef543352723c149a84f56e3d413 # v6.1.0
+        with:
+          package_json_file: frontend/package.json
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: 24
+          cache: pnpm
+          cache-dependency-path: frontend/pnpm-lock.yaml
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm run typecheck
+      - run: pnpm run lint
+      - run: pnpm run format:check
+      - run: pnpm run test
+      - run: pnpm run build
+      - name: Check the shell carries no data
+        run: test -f dist/index.html && test ! -e dist/api
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: site-shell
+          path: frontend/dist
+          if-no-files-found: error
+          retention-days: 7
+
+  deploy:
+    name: Deploy shell to gh-pages
+    needs: verify
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      contents: write
+      pages: write
+    concurrency:
+      group: gh-pages-shell
+      cancel-in-progress: false
+    steps:
+      - uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
+        with:
+          name: site-shell
+          path: dist
+      - name: Replace the shell, keep api/
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          DOMAIN: paper.dennysora.me
+        run: |
+          set -euo pipefail
+          test -f dist/index.html
+          git init -q site
+          cd site
+          git remote add origin "https://x-access-token:${GH_TOKEN}@github.com/${REPO}.git"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for attempt in 1 2 3 4 5; do
+            if git fetch -q --depth=1 origin gh-pages; then
+              git checkout -q -B gh-pages FETCH_HEAD
+            else
+              git checkout -q --orphan gh-pages
+            fi
+            find . -mindepth 1 -maxdepth 1 ! -name .git ! -name api -exec rm -rf -- {} +
+            cp -R ../dist/. .
+            cp index.html 404.html
+            : > .nojekyll
+            printf '%s\n' "${DOMAIN}" > CNAME
+            git add -A -- . ':!api'
+            if git diff --cached --quiet; then
+              echo "Site shell unchanged."
+              exit 0
+            fi
+            git commit -q -m "chore(pages): deploy site shell ${GITHUB_SHA::12}"
+            if git push -q origin HEAD:gh-pages; then
+              echo "Deployed site shell (attempt ${attempt})."
+              exit 0
+            fi
+            echo "Push rejected; retrying on the latest gh-pages." >&2
+            sleep $((attempt * 5))
+          done
+          echo "Could not deploy the site shell after 5 attempts." >&2
+          exit 1
+      - name: Request a Pages build
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+        run: gh api -X POST "repos/${REPO}/pages/builds" --silent || echo "::warning::Pages build request failed; the gh-pages push still triggers a build."

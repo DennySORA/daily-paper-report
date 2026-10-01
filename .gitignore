@@ -191,19 +191,9 @@ coverage.xml
 .pytest_cache/
 cover/
 
-# Local frontend preview artifacts
-frontend/pnpm-workspace.yaml
-frontend/public/*.html
-frontend/public/archive/
-frontend/public/assets/
-frontend/public/reports/
-frontend/public/sources/
-frontend/public/status/
-
-# Local pipeline output; GitHub Actions rebuilds and deploys this payload.
+# Local pipeline output (the Nano publishes report data; see scripts/publish-pages.sh).
 /state.sqlite
-/public/*
-!/public/CNAME
+/public/
 
 # Translations
 *.mo
@@ -388,7 +378,6 @@ features/*/E2E_RUN_REPORT.md
 # Frontend (Node.js)
 frontend/node_modules/
 frontend/dist/
+frontend/coverage/
 frontend/.eslintcache
-frontend/test-results/
-frontend/playwright-report/
-frontend/tsconfig.tsbuildinfo
+frontend/*.tsbuildinfo

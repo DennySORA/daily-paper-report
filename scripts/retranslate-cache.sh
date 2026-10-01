@@ -87,7 +87,7 @@ done
 # --- Step 3: Rebuild daily.json from the fresh day archives ------------------
 echo "[3/3] Rebuilding daily.json..."
 if [[ "${DRY_RUN}" == "0" ]]; then
-  # Re-run today's daily to regenerate daily.json and day page
+  # Re-run today's daily to regenerate daily.json
   TARGET_DATE="$(date -u +%F)"
   "${PYTHON_BIN}" main.py backfill \
     --config config/sources.yaml --entities config/entities.yaml \

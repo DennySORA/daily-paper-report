@@ -2,18 +2,18 @@
 
 Daily Paper Report collects AI research and technical news, deduplicates stories,
 extracts complete paper text, scores papers with DeepSeek, writes Traditional Chinese
-research guides, and publishes a static Vue site.
+research guides, and publishes them to a static React reader.
 
 ## Runtime architecture
 
 - The data pipeline runs on the Nano server in an ARM64 Docker container.
 - `deepseek-v4-flash` is the only LLM and uses its 1M-token context window.
 - Full paper text is cached only on the Nano; it is never published or pushed to GitHub.
-- The Nano pushes validated static output to `gh-pages`; GitHub Pages serves
-  `paper.dennysora.me` from that branch.
+- GitHub Pages serves `paper.dennysora.me` from `gh-pages`, which has two writers
+  with disjoint paths: the Nano publishes validated report data under `api/`
+  (`scripts/publish-pages.sh`), and the `Frontend` workflow builds `frontend/` and
+  replaces everything else (`.github/workflows/frontend.yml`). Neither force-pushes.
 - SQLite and small JSON caches are backed up to the `state` branch.
-- There are no repository workflow files. GitHub's internal Pages publication run is
-  still expected when `gh-pages` changes.
 
 ## Local development
 
@@ -26,8 +26,11 @@ uv sync --frozen
 uv run pytest
 uv run ruff check .
 uv run mypy src
-cd frontend && pnpm install --frozen-lockfile && pnpm run build-only
+cd frontend && pnpm install --frozen-lockfile && pnpm run verify
 ```
+
+The reader's commands, data contract and design contract are in
+[frontend/README.md](frontend/README.md).
 
 Run one UTC digest:
 
@@ -59,9 +62,8 @@ sudo systemctl start daily-paper-report@daily.service
 journalctl -u daily-paper-report@daily.service -f
 ```
 
-If the SSH account cannot run passwordless sudo, place the checkout and a
-prebuilt `frontend/dist` under `~/daily-paper-report`, then run
-`scripts/install-nano-user.sh`. This rootless mode uses user cron and a
+If the SSH account cannot run passwordless sudo, place the checkout under
+`~/daily-paper-report/app`, then run `scripts/install-nano-user.sh`. This rootless mode uses user cron and a
 uv-managed Python 3.13. Its dispatcher wakes every 30 minutes but starts work
 only at the exact UTC times below.
 
@@ -71,8 +73,12 @@ Timers use UTC and a shared six-hour lock:
 - Weekly: Monday at 00:30, covering the previous ISO week
 - Monthly: day 1 at 01:00, covering the previous month
 
-Publishing is performed by `scripts/publish-pages.sh`; state snapshots use
-`scripts/publish-state.sh`. Both refuse invalid inputs before pushing. The Nano requires a
+After each run, `scripts/prepare-public.py` finalizes `api/` (archive dates,
+`catalog.json`, `search.json`), `scripts/publish-pages.sh` publishes that data
+without the private score/translation caches, and `scripts/publish-state.sh`
+snapshots state. Both publishers refuse invalid inputs before pushing. The site
+itself deploys from GitHub Actions whenever `frontend/` changes on `main`
+(`gh workflow run frontend.yml` redeploys it manually). The Nano requires a
 repository-specific SSH deploy key with write access; personal SSH keys must not be copied.
 
 ## Storage

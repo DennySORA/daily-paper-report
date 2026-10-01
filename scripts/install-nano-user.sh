@@ -6,7 +6,6 @@ ROOT_DIR="${NANO_ROOT:-${HOME}/daily-paper-report}"
 APP_DIR="${ROOT_DIR}/app"
 UV_BIN="${ROOT_DIR}/bin/uv"
 test -f "${APP_DIR}/uv.lock" || { echo "Missing checkout at ${APP_DIR}" >&2; exit 1; }
-test -f "${ROOT_DIR}/frontend-dist/index.html" || { echo "Missing frontend-dist" >&2; exit 1; }
 
 mkdir -p "${ROOT_DIR}/bin" "${ROOT_DIR}/python" "${ROOT_DIR}/data" \
   "${ROOT_DIR}/public" "${ROOT_DIR}/cache/fulltext" "${ROOT_DIR}/backups" \

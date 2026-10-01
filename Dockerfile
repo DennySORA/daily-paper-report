@@ -1,12 +1,3 @@
-FROM node:22-bookworm-slim AS frontend
-WORKDIR /build/frontend
-RUN corepack enable
-COPY frontend/package.json frontend/pnpm-lock.yaml ./
-RUN pnpm install --frozen-lockfile
-COPY frontend/ ./
-RUN pnpm run build-only
-RUN rm -rf /build/frontend/dist/api
-
 FROM ghcr.io/astral-sh/uv:0.8.15 AS uv
 
 FROM python:3.13-slim-bookworm AS runtime
@@ -21,7 +12,6 @@ RUN uv sync --frozen --no-dev
 COPY src ./src
 COPY main.py ./main.py
 COPY config ./config
-COPY --from=frontend /build/frontend/dist /opt/frontend-dist
-RUN chown -R app:app /app /opt/frontend-dist
+RUN chown -R app:app /app
 USER app
 ENTRYPOINT ["uv", "run", "python", "main.py"]

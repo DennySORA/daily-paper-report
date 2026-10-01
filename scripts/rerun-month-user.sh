@@ -68,9 +68,6 @@ echo "rerun_monthly period=${MONTH} model=deepseek-v4-flash"
   --tz UTC --period "${MONTH}" --limit 100 --archive-lookahead-days 1 \
   --ai-metadata --json-logs
 
-cp "${ROOT_DIR}/frontend-dist/index.html" "${PUBLIC_DIR}/index.html"
-mkdir -p "${PUBLIC_DIR}/assets"
-cp -R "${ROOT_DIR}/frontend-dist/assets/." "${PUBLIC_DIR}/assets/"
 "${PYTHON_BIN}" scripts/prepare-public.py "${PUBLIC_DIR}"
 "${PYTHON_BIN}" scripts/backup-state.py \
   "${DATA_DIR}/state.sqlite" "${ROOT_DIR}/backups"

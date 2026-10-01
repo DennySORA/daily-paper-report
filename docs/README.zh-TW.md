@@ -1,18 +1,19 @@
 # Daily Paper Report
 
 本專案在 Nano 上以 Docker 執行每日論文收集、全文擷取、DeepSeek 評分與繁中導讀，
-再把通過驗證的靜態網站推送到 `gh-pages`，由 GitHub Pages 提供網站服務。
+再把通過驗證的報告資料（`api/`）推送到 `gh-pages`；React 閱讀器由 `Frontend`
+workflow 建置並部署到同一分支，由 GitHub Pages 提供網站服務。
 
 - 唯一 LLM：`deepseek-v4-flash`，使用 1M context。
 - 論文全文只保存在 Nano，不推送或公開。
 - 每日 00:00、週一 00:30、每月 1 日 01:00 UTC 執行。
 - SQLite 與小型 JSON cache 備份至 `state` branch。
-- repo 不含自訂 workflow；GitHub 只負責 Pages 平台發布。
+- `frontend/` 變更推到 `main` 後，GitHub Actions 驗證並部署網站外框，不動 `api/`。
 
 完整開發、部署與操作命令請參考 [README](../README.md)，復原程序請參考
 [RESET-GUIDE](RESET-GUIDE.md)。
 
-若 SSH 帳號無法免密碼執行 sudo，可將專案與預先建置的 `frontend/dist`
-放在 `~/daily-paper-report`，再執行 `scripts/install-nano-user.sh`。此模式使用
+若 SSH 帳號無法免密碼執行 sudo，可將專案放在 `~/daily-paper-report/app`，
+再執行 `scripts/install-nano-user.sh`。此模式使用
 使用者 crontab 與 uv 管理的 Python 3.13；dispatcher 每 30 分鐘喚醒一次，
 但只會在上述精確 UTC 時間啟動任務。

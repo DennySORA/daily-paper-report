@@ -23,8 +23,12 @@ validated local payload without fetching data:
 
 ```bash
 cd /srv/daily-paper-report/app
+python3 scripts/prepare-public.py /srv/daily-paper-report/public
 PUBLIC_DIR=/srv/daily-paper-report/public ./scripts/publish-pages.sh
 ```
+
+This only replaces `gh-pages:api/`. If the site shell is missing or broken, redeploy it
+from GitHub with `gh workflow run frontend.yml --ref main`.
 
 After verification, re-enable all timers:
 
