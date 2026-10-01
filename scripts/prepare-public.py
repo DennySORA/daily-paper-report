@@ -5,7 +5,8 @@ workflow; this step only completes the data it reads:
 
 - Stories still missing Traditional Chinese text get it from the translation
   cache (api/translations_zh.json) in day, daily and report files, exactly as
-  the renderer would have injected it.
+  the renderer would have injected it, or else from the same story's
+  translation on another day (a story can be listed on consecutive days).
 - api/daily.json gets the list of published days (archive_dates).
 - api/reports/index.json exists even before the first weekly report.
 - api/catalog.json lists every published day with section counts and the
@@ -122,6 +123,30 @@ def load_days(day_dir: Path) -> list[tuple[str, dict[str, Any]]]:
     return days
 
 
+def day_translations(
+    days: list[tuple[str, dict[str, Any]]],
+) -> dict[str, dict[str, Any]]:
+    """Translations stories already carry in day files, newest day first.
+
+    A copy published before the cache kept its entry still holds the text the
+    pipeline produced, so other days can reuse it instead of staying blank.
+    """
+    found: dict[str, dict[str, Any]] = {}
+    for _, digest in days:
+        for _, story in stories(digest):
+            story_id = story.get("story_id")
+            if (
+                isinstance(story_id, str)
+                and story.get("title_zh")
+                and story_id not in found
+            ):
+                found[story_id] = {
+                    "title_zh": story["title_zh"],
+                    "summary_zh": story.get("summary_zh") or "",
+                }
+    return found
+
+
 def stories(digest: dict[str, Any]) -> list[tuple[str, dict[str, Any]]]:
     """Section-tagged stories in reading order, model releases last."""
     result = [
@@ -220,8 +245,9 @@ def main() -> None:
     if not daily.is_file():
         raise SystemExit(f"Refusing to finalize: missing {daily}")
 
-    translations = load_translations(api)
     days = load_days(api / "day")
+    # The pipeline's cache wins; another day's copy only fills what it lacks.
+    translations = {**day_translations(days), **load_translations(api)}
     filled = 0
     for day, digest in days:
         count = fill_translations([story for _, story in stories(digest)], translations)
@@ -236,7 +262,9 @@ def main() -> None:
     payload["archive_dates"] = published
     write_digest(daily, payload)
     if filled:
-        sys.stdout.write(f"Filled {filled} cached translations into published files.\n")
+        sys.stdout.write(
+            f"Filled {filled} missing translations into published files.\n"
+        )
 
     reports_index = api / "reports" / "index.json"
     if not reports_index.exists():
