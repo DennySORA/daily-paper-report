@@ -418,7 +418,9 @@
         "source_name": null,
         "story_id": "hf:google/tipsv2-g14-dpt",
         "summary": "DPT (Dense Prediction Transformer) heads for depth estimation, surface normal prediction, and semantic segmentation on top of the frozen TIPSv2 g/14 backbone. The backbone is loaded automatically. The depth and normals heads are trained on the NYU Depth V2 dataset and segmentation is trained on the ADE20K dataset (150 classes). | Variant | Vision params | Text params | Embed dim | DPT Heads | |---------|--------------|-------------|-----------|-----------| | B/14 | 86M | 110M | 768 | B/14-dpt | | L/14 | 303M | 184M | 1024 | L/14-dpt | | SO400m/14 | 412M | 448M | 1152 | SO400m/14-dpt | | g/14 | 1.1B | 389M | 1536 | g/14-dpt | pip install transformers torch torchvision sentencepiece from transformers import AutoModel from torchvision import transforms",
-        "title": "google/tipsv2-g14-dpt"
+        "summary_zh": "這份模型卡介紹 google/tipsv2-g14-dpt,一套在完全凍結的 TIPSv2 g/14 骨幹網路上加裝 DPT(Dense Prediction Transformer)預測頭的模型,用於三項密集預測任務:深度估計、表面法線預測與語意分割。其方法核心在於保留大規模預訓練主幹的全部權重,僅訓練輕量的 DPT 頭,藉此降低下游適配的運算成本。深度與法線預測頭以室內資料集 NYU Depth V2 訓練,分割頭則在包含 150 個類別的 ADE20K 上訓練。模型卡並列出整個變體家族的規模:B/14(視覺 86M、文字 110M、嵌入維度 768)、L/14(303M、184M、1024)、SO400m/14(412M、448M、1152)與 g/14(1.1B、389M、1536),各變體都有對應的 -dpt 版本;使用時可透過 pip 安裝 transformers、torch、torchvision 與 sentencepiece,骨幹會隨預測頭自動載入。主要限制是此內容僅達摘要層級,未提供任何基準分數、消融實驗或視覺化結果,各任務的實際精度無法核實;深度與法線頭取材自室內場景,跨到戶外、低光或不同感測器的泛化能力仍待驗證,而凍結骨幹也可能設下任務特定適配的上限。儘管如此,它具體展示了以 TIPSv2 這類同時具備視覺與文字參數的主幹,搭配 DPT 即可快速組出多任務密集預測系統,對想在有限運算預算下部署感知模組的工程團隊,以及尋找穩定預訓練特徵來源的研究者,都是值得留意的現成基礎。",
+        "title": "google/tipsv2-g14-dpt",
+        "title_zh": "google/tipsv2-g14-dpt:在凍結 TIPSv2 g/14 骨幹網路上以 DPT 頭進行深度估計、法線預測與語意分割"
       },
       {
         "arxiv_id": null,
@@ -468,7 +470,9 @@
         "source_name": null,
         "story_id": "hf:google/tipsv2-so400m14-dpt",
         "summary": "DPT (Dense Prediction Transformer) heads for depth estimation, surface normal prediction, and semantic segmentation on top of the frozen TIPSv2 SO400m/14 backbone. The backbone is loaded automatically. The depth and normals heads are trained on the NYU Depth V2 dataset and segmentation is trained on the ADE20K dataset (150 classes). | Variant | Vision params | Text params | Embed dim | DPT Heads | |---------|--------------|-------------|-----------|-----------| | B/14 | 86M | 110M | 768 | B/14-dpt | | L/14 | 303M | 184M | 1024 | L/14-dpt | | SO400m/14 | 412M | 448M | 1152 | SO400m/14-dpt | | g/14 | 1.1B | 389M | 1536 | g/14-dpt | pip install transformers torch torchvision sentencepiece from transformers import AutoModel from torchvision import transforms",
-        "title": "google/tipsv2-so400m14-dpt"
+        "summary_zh": "本模型卡介紹 google/tipsv2-so400m14-dpt，這是在凍結的 TIPSv2 SO400m/14 骨幹之上加裝 DPT（Dense Prediction Transformer）密集預測頭的模型，支援三種密集預測任務：深度估計、表面法線預測與語意分割。其核心方法是將 TIPSv2 骨幹凍結、僅訓練任務專用的 DPT 頭，藉此保留骨幹於大規模預訓練中習得的通用視覺表徵，並以較低成本適配多個下游任務；載入模型時骨幹會自動一併載入。依官方說明，深度與法線預測頭在 NYU Depth V2 資料集上訓練，語意分割頭則在 ADE20K 資料集（150 類）上訓練。模型卡另列出 B/14、L/14、SO400m/14 與 g/14 等變體，視覺參數量約 86M 至 1.1B、嵌入維度介於 768 至 1536，可透過 transformers 函式庫搭配 torch、torchvision 與 sentencepiece 使用。需要強調的是，此摘要並未提供 RMSE、mIoU 等定量結果或與其他方法的比較，實際效能仍須查閱完整文件或自行實測驗證。限制方面，目前僅有摘要層級資訊，訓練細節、授權與偏誤說明尚未呈現；凍結骨幹雖具效率優勢，在領域差異較大的資料上可能不如完整 fine-tuning。整體而言，本模型的價值在於以單一強大骨幹快速支援深度、法線與分割等多種視覺任務，對需要通用密集預測能力的應用深具參考價值。",
+        "title": "google/tipsv2-so400m14-dpt",
+        "title_zh": "google/tipsv2-so400m14-dpt：凍結 TIPSv2 SO400m/14 骨幹上的 DPT 密集預測頭"
       },
       {
         "arxiv_id": null,
@@ -518,7 +522,9 @@
         "source_name": null,
         "story_id": "hf:google/tipsv2-l14-dpt",
         "summary": "DPT (Dense Prediction Transformer) heads for depth estimation, surface normal prediction, and semantic segmentation on top of the frozen TIPSv2 L/14 backbone. The backbone is loaded automatically. The depth and normals heads are trained on the NYU Depth V2 dataset and segmentation is trained on the ADE20K dataset (150 classes). | Variant | Vision params | Text params | Embed dim | DPT Heads | |---------|--------------|-------------|-----------|-----------| | B/14 | 86M | 110M | 768 | B/14-dpt | | L/14 | 303M | 184M | 1024 | L/14-dpt | | SO400m/14 | 412M | 448M | 1152 | SO400m/14-dpt | | g/14 | 1.1B | 389M | 1536 | g/14-dpt | pip install transformers torch torchvision sentencepiece from transformers import AutoModel from torchvision import transforms",
-        "title": "google/tipsv2-l14-dpt"
+        "summary_zh": "本模型為 TIPSv2 L/14 的 DPT（Dense Prediction Transformer）變體，目標是將預訓練的視覺—語言骨幹網路擴充至密集預測任務，涵蓋深度估計、表面法線預測與語意分割。方法上，TIPSv2 L/14 骨幹以凍結（frozen）方式保留原始權重，其上疊加 DPT 架構的預測頭：深度與法線頭於 NYU Depth V2 資料集訓練，分割頭則於包含 150 個類別的 ADE20K 資料集訓練；使用時骨幹會自動載入，降低取用門檻。規格方面，L/14 版本約有 3.03 億視覺參數、1.84 億文字參數，嵌入維度為 1024，並另有 B/14、SO400m/14 與 g/14 等不同規模及對應 DPT 頭可供選擇。需要留意的是，原始內容僅為摘要層級資訊，並未附上深度、法線或分割任務的定量結果與基準比較，因此其實際效能仍須查證原始評測報告，不宜過度推論。整體而言，此工作展示了以單一凍結骨幹搭配輕量預測頭即可快速支援多種下游任務的做法，透過 pip 安裝 transformers、torch 等套件即可重現，對模型重用、遷移學習與多任務密集預測應用具有實務參考價值。",
+        "title": "google/tipsv2-l14-dpt",
+        "title_zh": "google/tipsv2-l14-dpt：凍結 TIPSv2 L/14 骨幹搭配 DPT 預測頭之密集預測模型"
       },
       {
         "arxiv_id": null,
@@ -568,7 +574,9 @@
         "source_name": null,
         "story_id": "hf:google/tipsv2-b14-dpt",
         "summary": "DPT (Dense Prediction Transformer) heads for depth estimation, surface normal prediction, and semantic segmentation on top of the frozen TIPSv2 B/14 backbone. The backbone is loaded automatically. The depth and normals heads are trained on the NYU Depth V2 dataset and segmentation is trained on the ADE20K dataset (150 classes). | Variant | Vision params | Text params | Embed dim | DPT Heads | |---------|--------------|-------------|-----------|-----------| | B/14 | 86M | 110M | 768 | B/14-dpt | | L/14 | 303M | 184M | 1024 | L/14-dpt | | SO400m/14 | 412M | 448M | 1152 | SO400m/14-dpt | | g/14 | 1.1B | 389M | 1536 | g/14-dpt | pip install transformers torch torchvision sentencepiece from transformers import AutoModel from torchvision import transforms",
-        "title": "google/tipsv2-b14-dpt"
+        "summary_zh": "此模型為 TIPSv2 系列的密集預測版本，目的在檢視凍結的預訓練視覺骨幹能否支援像素級的下游任務。方法上，作者在凍結的 TIPSv2 B/14 骨幹網路上搭載 DPT（Dense Prediction Transformer）頭部，分別處理深度估測、表面法線預測與語意分割三項任務：深度與法線頭部以 NYU Depth V2 資料集訓練，語意分割頭部則在含 150 個類別的 ADE20K 資料集上訓練。由於骨幹權重維持凍結，訓練僅涉及 DPT 頭部，屬於參數高效的遷移學習做法，可直接反映骨幹表徵的品質。文件亦提供整體規模對照：除 B/14（視覺 86M、文字 110M、嵌入維度 768）之外，尚有 L/14、SO400m/14 與 g/14 等版本，視覺參數最高達 1.1B，嵌入維度至 1536，各規模皆附對應的 -dpt 頭部，並可透過 transformers 函式庫的 AutoModel 自動載入骨幹，搭配 torch、torchvision 與 sentencepiece 即可使用。需要留意的是，此頁面僅收錄摘要層級資訊，未附具體定量結果，故無法引用確切的效能數字，實際表現應以完整論文或模型卡為準。整體而言，此工作展示將影像—文字預訓練模型延伸至深度、法線與分割等密集任務的可行路徑，對需要多任務視覺理解的應用深具參考價值。",
+        "title": "google/tipsv2-b14-dpt",
+        "title_zh": "google/tipsv2-b14-dpt：於凍結 TIPSv2 B/14 骨幹上搭建 DPT 密集預測頭部"
       },
       {
         "arxiv_id": null,
@@ -668,7 +676,9 @@
         "source_name": null,
         "story_id": "hf:microsoft/colipri",
         "summary": "COLIPRI is a 3D vision&ndash;language transformer model trained to encode chest CT scans and reports. COLIPRI was trained using tens of thousands of chest CT scans and reports, without any annotations, using multiple objectives to learn strong joint representations of 3D images and text. The procedure is described in detail in our manuscript, _Comprehensive language-image pre-training for 3D medical image understanding_ (Wald et al. 2026). The weights shared here correspond to our best-performing model, COLIPRI-CRM. - **Developed by:** Microsoft Health Futures - **Model type:** 3D vision&ndash;language encoder - **License:** MIT COLIPRI is shared for research purposes only. It is **not meant to be used for clinical practice**. The encoders be plugged to other models, or used independently...",
-        "title": "microsoft/colipri"
+        "summary_zh": "COLIPRI（Comprehensive Language-Image Pre-training）是 Microsoft Research 開發的 3D 視覺–語言 Transformer 模型，目標是將胸部 CT 掃描與放射科報告共同編碼，縮短 3D 醫學影像與自然語言之間的落差。面對 3D 醫學影像標註取得不易、難以大規模監督式訓練的現實，研究團隊在數萬組胸部 CT 與對應報告上，於完全不需任何人工標註的前提下，採用多重訓練目標進行全面性的語言–影像預訓練，學習強健的 3D 影像與文字聯合表示。本次釋出的權重為 COLIPRI-CRM，作者稱其為論文中表現最佳的模型，並以 MIT 授權公開。不過，此模型卡僅含摘要資訊，並未提供具體量化結果或基準比較，相關實驗證據須參閱原始論文（Wald et al., ECCV 2026）。限制方面，模型明確僅供研究用途，不得用於臨床實務；模型卡也未說明訓練資料的族群組成與潛在偏誤，跨機構泛化能力仍待獨立驗證。整體而言，此工作展示在無標註條件下預訓練 3D 視覺–語言編碼器的可行性，其編碼器可外接至其他模型，有助於推動 3D 醫學影像檢索、報告理解與下游任務遷移等研究。",
+        "title": "microsoft/colipri",
+        "title_zh": "COLIPRI：用於 3D 醫學影像理解的全面性語言–影像預訓練"
       }
     ],
     "qwen": [
@@ -776,7 +786,9 @@
         "source_name": null,
         "story_id": "hf:stabilityai/stable-audio-3-optimized",
         "summary": "> **Note:** This repository contains experimental checkpoints optimised for acceleration on specific hardware. For standard checkpoints, please use Stable Audio 3 Medium instead. Please note: For commercial use, please refer to https://stability.ai/license `Stable Audio 3` is a family of fast latent diffusion models (small, medium, large) for variable length audio generation and editing. Since our models can generate several minutes of audio, variable-length generations are key to avoid the cost of producing full-length generations for short sounds. We also support inpainting, enabling targeted audio editing and the continuation of short recordings. Our latent diffusion models operate on top of a novel semantic-acoustic autoencoder that projects audio into a compact latent space, enabling...",
-        "title": "stabilityai/stable-audio-3-optimized"
+        "summary_zh": "Stability AI 發布的 Stable Audio 3 是一系列快速的潛在擴散模型(latent diffusion models),涵蓋小型、中型與大型三種規模,專為可變長度的音訊生成與編輯而設計。此存放庫收錄的是針對特定硬體加速進行最佳化的實驗性檢查點;若需標準版本,官方建議改用 Stable Audio 3 Medium,商業用途則須遵循 Stability AI 的授權條款。此工作要解決的核心問題在於:模型可生成長達數分鐘的音訊,若對短音效也從頭生成完整長度,運算成本將過高,因此可變長度生成成為關鍵設計;此外,模型支援 inpainting(局部修補),可進行目標式的音訊編輯,也能延續既有的短錄音。方法上,這些潛在擴散模型建立在新穎的語意—聲學自動編碼器(semantic-acoustic autoencoder)之上,先將音訊投影至緊湊的潛在空間,再於其上進行擴散生成,以降低運算負擔。限制方面,本存放庫屬實驗性質,最佳化僅針對特定硬體,通用性有限;公開摘要亦未提供量化的評估證據或效能資料,讀者宜以官方標準版本與授權頁面為準。整體而言,此工作反映音訊生成模型正朝向高效率、可彈性控制長度與局部編輯的方向發展,對音效設計與內容創作深具實用價值。",
+        "title": "stabilityai/stable-audio-3-optimized",
+        "title_zh": "Stable Audio 3 最佳化版本:針對特定硬體加速的可變長度音訊生成與編輯模型"
       }
     ]
   },
