@@ -68,10 +68,10 @@ echo "rerun_monthly period=${MONTH} model=deepseek-v4-flash"
   --tz UTC --period "${MONTH}" --limit 100 --archive-lookahead-days 1 \
   --ai-metadata --json-logs
 
-"${PYTHON_BIN}" scripts/prepare-public.py "${PUBLIC_DIR}"
 "${PYTHON_BIN}" scripts/backup-state.py \
   "${DATA_DIR}/state.sqlite" "${ROOT_DIR}/backups"
 scripts/publish-state.sh
+"${PYTHON_BIN}" scripts/prepare-public.py "${PUBLIC_DIR}"
 scripts/publish-pages.sh
 printf 'complete finished=%s model=deepseek-v4-flash range=%s..%s\n' \
   "$(date -u +%FT%TZ)" "${START_DATE}" "${END_DATE}" >"${STATUS_FILE}"

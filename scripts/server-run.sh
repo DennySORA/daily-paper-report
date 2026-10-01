@@ -41,8 +41,8 @@ case "${MODE}" in
   *) echo "Usage: $0 daily|weekly|monthly" >&2; exit 2 ;;
 esac
 
-python3 "${ROOT_DIR}/scripts/prepare-public.py" "${PUBLIC_DIR}"
 python3 "${ROOT_DIR}/scripts/backup-state.py" \
   "${DATA_DIR}/state.sqlite" "${DATA_DIR%/data}/backups"
 "${ROOT_DIR}/scripts/publish-state.sh"
+python3 "${ROOT_DIR}/scripts/prepare-public.py" "${PUBLIC_DIR}"
 "${ROOT_DIR}/scripts/publish-pages.sh"

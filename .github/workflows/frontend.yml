@@ -89,10 +89,16 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           for attempt in 1 2 3 4 5; do
-            if git fetch -q --depth=1 origin gh-pages; then
+            remote=0
+            git ls-remote --exit-code --heads origin gh-pages >/dev/null || remote=$?
+            if test "${remote}" -eq 0 && git fetch -q --depth=1 origin gh-pages; then
               git checkout -q -B gh-pages FETCH_HEAD
+            elif test "${remote}" -eq 2; then
+              git checkout -q --orphan "bootstrap-${attempt}"
             else
-              git checkout -q --orphan gh-pages
+              echo "Could not read gh-pages; retrying." >&2
+              sleep $((attempt * 5))
+              continue
             fi
             find . -mindepth 1 -maxdepth 1 ! -name .git ! -name api -exec rm -rf -- {} +
             cp -R ../dist/. .

@@ -56,10 +56,17 @@ git -C "${TEMP_DIR}" config user.email "daily-paper-report-nano@users.noreply.gi
 # The frontend workflow can push between our fetch and push. A rejected
 # fast-forward rebuilds the data commit on the new tip; nothing is forced.
 for attempt in 1 2 3 4 5; do
-  if git -C "${TEMP_DIR}" fetch -q --depth=1 origin "${PAGES_BRANCH}" 2>/dev/null; then
+  remote=0
+  git -C "${TEMP_DIR}" ls-remote --exit-code --heads origin "${PAGES_BRANCH}" >/dev/null || remote=$?
+  if test "${remote}" -eq 0 && git -C "${TEMP_DIR}" fetch -q --depth=1 origin "${PAGES_BRANCH}"; then
     git -C "${TEMP_DIR}" checkout -q -B "${PAGES_BRANCH}" FETCH_HEAD
+  elif test "${remote}" -eq 2; then
+    # The branch does not exist yet: start it with only the data.
+    git -C "${TEMP_DIR}" checkout -q --orphan "bootstrap-${attempt}"
   else
-    git -C "${TEMP_DIR}" checkout -q --orphan "${PAGES_BRANCH}"
+    echo "Could not read ${PAGES_BRANCH} from origin; retrying." >&2
+    sleep $((attempt * 5))
+    continue
   fi
 
   rm -rf -- "${TEMP_DIR}/api"

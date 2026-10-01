@@ -39,7 +39,7 @@ def write_json(path: Path, payload: object, *, indent: int | None = None) -> Non
 
 
 def load_days(day_dir: Path) -> list[tuple[str, dict[str, Any]]]:
-    """Return (date, digest) pairs for every valid day file, newest first."""
+    """Return (date, digest) pairs for every readable day file, newest first."""
     days: list[tuple[str, dict[str, Any]]] = []
     for path in sorted(day_dir.glob("*.json"), reverse=True):
         if not DATE_RE.match(path.stem):
@@ -47,9 +47,9 @@ def load_days(day_dir: Path) -> list[tuple[str, dict[str, Any]]]:
         try:
             payload = json.loads(path.read_text(encoding="utf-8"))
         except (OSError, json.JSONDecodeError) as error:
-            raise SystemExit(
-                f"Refusing to publish unreadable day file {path}: {error}"
-            ) from error
+            # One damaged archive must not block today's publication.
+            sys.stderr.write(f"warning: skipping unreadable day file {path}: {error}\n")
+            continue
         if isinstance(payload, dict):
             days.append((path.stem, payload))
     return days
