@@ -5551,7 +5551,9 @@
       "source_name": "Google AI Blog",
       "story_id": "fallback:53334c651e4bfdc4",
       "summary": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/FutureLabs_social.max-600x600.format-webp.webp\" />University of Waterloo students develop AI prototypes like sign language tutors to reshape the future of education and work.",
-      "title": "Check out real-life AI prototypes from the Futures Lab."
+      "summary_zh": "這是 Google 官方部落格的一篇報導，內容僅有標題、一張社群分享用的主視覺圖片，以及一句簡短說明，並未提供具體的技術細節或評測結果。文中指出滑鐵盧大學（University of Waterloo）的學生開發了多種 AI 原型，例如手語教學助理，藉此探索教育與工作型態的未來樣貌。由於目前僅有摘要層級資訊，無法得知這些原型的模型架構、訓練資料來源、推論方式、實際使用者測試規模與成效指標，也缺少成本與隱私層面的討論。對台灣讀者而言，這則消息的意義在於觀察產學合作如何把生成式 AI 推向輔助教學與無障礙溝通等應用場景，可作為校園專題或人機互動研究的參考案例；但在缺乏量化證據與方法揭露之前，不宜將其視為已驗證的產品成果。",
+      "title": "Check out real-life AI prototypes from the Futures Lab.",
+      "title_zh": "直擊 Futures Lab 的真人實測 AI 原型"
     }
   ],
   "run_date": "2026-05-29",

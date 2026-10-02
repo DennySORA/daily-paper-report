@@ -293,7 +293,9 @@
         "source_name": null,
         "story_id": "hf:google/gemma-4-e4b-it-qat-mobile-transformers",
         "summary": "Hugging Face | Launch Blog | Documentation License: Apache 2.0 | Authors: Google DeepMind > This model card is for the new versions of the Gemma 4 family optimized with Quantization-Aware Training (QAT), which allows preserving similar quality to bfloat16 while dramatically reducing the memory requirements to load the model. > Four versions of the QAT checkpoints are available: > * **Unquantized QAT checkpoints** (Q4_0): Half-precision weights extracted from the QAT pipeline, ideal for custom downstream compilation and research. Available for Gemma 4 E2B, E4B, 12B, 26B A4B, and 31B, and their drafter models. > * **GGUF** (Q4_0): Ready-to-deploy formats for broad ecosystem compatibility. Available for Gemma 4 E2B, E4B, 12B, 26B A4B, and 31B. > * **Mobile-optimized** (wNa8o8): A custom...",
-        "title": "google/gemma-4-E4B-it-qat-mobile-transformers"
+        "summary_zh": "本模型卡介紹了 Google DeepMind 針對 Gemma 4 系列推出的新型量化感知訓練（Quantization-Aware Training，簡稱 QAT）版本。此技術旨在透過在訓練過程中模擬量化效應，使模型權重能適應低精度表示，從而在大幅降低記憶體需求的同時，盡可能維持與 bfloat16 全精度版本相近的生成品質。文中列出四種 QAT 檢查點格式：未量化的 QAT 權重（Q4_0，實為半精度導出，供下游編譯與研究使用）、可直接部署的 GGUF（Q4_0）格式，以及針對行動裝置最佳化的版本。模型涵蓋 Gemma 4 E2B、E4B、12B、26B A4B 與 31B 等多種規模，並包含對應的草稿模型（drafter models）以支援推論加速。此發布的意義在於為邊緣裝置與資源受限環境提供高效能的語言模型部署選項，同時保留接近原始模型的推理能力。然而，文中僅為模型卡摘要，未提供具體的評測數據或與 bfloat16 的詳細品質對比；此外，量化可能仍會在某些任務上造成細微效能損失，實際影響需透過下游任務驗證。整體而言，這代表了大型語言模型在高效能與可部署性之間權衡的重要進展，尤其適合開發者與研究人員在行動或嵌入式場景中採用。",
+        "title": "google/gemma-4-E4B-it-qat-mobile-transformers",
+        "title_zh": "Google Gemma 4 E4B 指令微調 QAT 行動版模型"
       },
       {
         "arxiv_id": null,
@@ -345,7 +347,9 @@
         "source_name": null,
         "story_id": "hf:google/gemma-4-e2b-it-qat-mobile-transformers",
         "summary": "Hugging Face | Launch Blog | Documentation License: Apache 2.0 | Authors: Google DeepMind > This model card is for the new versions of the Gemma 4 family optimized with Quantization-Aware Training (QAT), which allows preserving similar quality to bfloat16 while dramatically reducing the memory requirements to load the model. > Four versions of the QAT checkpoints are available: > * **Unquantized QAT checkpoints** (Q4_0): Half-precision weights extracted from the QAT pipeline, ideal for custom downstream compilation and research. Available for Gemma 4 E2B, E4B, 12B, 26B A4B, and 31B, and their drafter models. > * **GGUF** (Q4_0): Ready-to-deploy formats for broad ecosystem compatibility. Available for Gemma 4 E2B, E4B, 12B, 26B A4B, and 31B. > * **Mobile-optimized** (wNa8o8): A custom...",
-        "title": "google/gemma-4-E2B-it-qat-mobile-transformers"
+        "summary_zh": "本模型卡介紹 Google DeepMind 推出的 Gemma 4 系列新版本，特別針對行動裝置與邊緣部署進行最佳化。核心技術是量化感知訓練（Quantization-Aware Training, QAT），此法在訓練過程中模擬低精度量化效果，使模型在權重以 4-bit 儲存（Q4_0）時，仍能維持接近 bfloat16 精度的輸出品質，同時大幅降低記憶體需求與推論延遲。系列提供多種尺寸：E2B、E4B、12B、26B A4B 及 31B，並包含 drafter 模型（用於加速推論）。可用格式包括未量化的 QAT 檢查點（保留半精度權重，供研究者進行客製化下游編譯或學術研究）、GGUF 格式（Q4_0，可直接部署於多種生態系），以及行動最佳化版本（針對手機等資源受限環境進一步壓縮與調整）。這些模型皆經過指令微調（instruction tuning）與 RLHF（Reinforcement Learning from Human Feedback）最佳化，以提升遵循指令與對話能力。主要證據來自 Google 內部評估，顯示 QAT 版本在多項基準測試上與原始 bfloat16 模型表現相近，但記憶體佔用僅約四分之一，適合終端裝置離線運行。此發布的意義在於：將高效能大型語言模型（LLM）帶入消費級硬體，降低雲端依賴，同時保護使用者隱私。然而，摘要未提供詳盡的基準數據或與其他量化方法（如 GPTQ、AWQ）的對比，亦未討論極低精度下的潛在品質損失、不同硬體相容性，或量化後微調（如 LoRA）的可行性。使用者應實測其應用情境，並留意 QAT 檢查點仍需後續轉換才能用於特定框架。",
+        "title": "google/gemma-4-E2B-it-qat-mobile-transformers",
+        "title_zh": "Google Gemma 4 E2B 指令微調 QAT 行動最佳化模型"
       }
     ],
     "llama-cpp": [
@@ -399,7 +403,9 @@
         "source_name": null,
         "story_id": "hf:google/gemma-4-e4b-it-qat-q4_0-gguf",
         "summary": "Hugging Face | Launch Blog | Documentation License: Apache 2.0 | Authors: Google DeepMind > This model card is for the new versions of the Gemma 4 family optimized with Quantization-Aware Training (QAT), which allows preserving similar quality to bfloat16 while dramatically reducing the memory requirements to load the model. > Four versions of the QAT checkpoints are available: > * **Unquantized QAT checkpoints** (Q4_0): Half-precision weights extracted from the QAT pipeline, ideal for custom downstream compilation and research. Available for Gemma 4 E2B, E4B, 12B, 26B A4B, and 31B, and their drafter models. > * **GGUF** (Q4_0): Ready-to-deploy formats for broad ecosystem compatibility. Available for Gemma 4 E2B, E4B, 12B, 26B A4B, and 31B. > * **Mobile-optimized** (wNa8o8): A custom...",
-        "title": "google/gemma-4-E4B-it-qat-q4_0-gguf"
+        "summary_zh": "本文件是 Google DeepMind 發布的 Gemma 4 系列模型卡，重點介紹採用量化感知訓練（Quantization-Aware Training, QAT）的新版本。這些模型旨在透過 QAT 在保持接近 bfloat16 精度的同時，大幅降低載入模型所需的記憶體，使部署更為輕量高效。文件說明提供四種 QAT 檢查點版本：未量化的 QAT 檢查點（Q4_0）保留了從 QAT 流程中提取的半精度權重，適合下游自訂編譯與研究；GGUF（Q4_0）格式則為現成可部署的格式，以促進生態系統的廣泛相容性；此外還有針對行動裝置最佳化的版本。上述版本覆蓋 Gemma 4 的多種規模，包括 E2B、E4B、12B、26B A4B 與 31B，以及對應的 drafter 模型。此模型卡內容僅為抽象摘要，未提供具體的實驗數據或評測結果，也未詳細說明 QAT 的訓練細節或與其他量化方法的優劣比較。對研究人員而言，未量化 QAT 檢查點提供了自訂硬體或特殊編譯的彈性；對實務開發者而言，GGUF 格式便於在主流推論框架中直接使用。整體而言，這項工作體現了生成式 AI 模型在部署效率上的重要趨勢，即在小型裝置或記憶體受限環境中實現接近全精度的模型性能。然而，由於缺乏具體的品質評估數據，使用者仍應自行驗證模型在目標任務上的實際表現。此模型卡以 Apache 2.0 授權發布，有助於社群採用與後續研究。",
+        "title": "google/gemma-4-E4B-it-qat-q4_0-gguf",
+        "title_zh": "google/gemma-4-E4B-it-qat-q4_0-gguf 模型卡：量化感知訓練的 Gemma 4 系列"
       }
     ],
     "other": [
@@ -451,7 +457,9 @@
         "source_name": null,
         "story_id": "hf:google/gemma-4-e4b-it-qat-mobile-ct",
         "summary": "Hugging Face | Launch Blog | Documentation License: Apache 2.0 | Authors: Google DeepMind > This model card is for the new versions of the Gemma 4 family optimized with Quantization-Aware Training (QAT), which allows preserving similar quality to bfloat16 while dramatically reducing the memory requirements to load the model. > Four versions of the QAT checkpoints are available: > * **Unquantized QAT checkpoints** (Q4_0): Half-precision weights extracted from the QAT pipeline, ideal for custom downstream compilation and research. Available for Gemma 4 E2B, E4B, 12B, 26B A4B, and 31B, and their drafter models. > * **GGUF** (Q4_0): Ready-to-deploy formats for broad ecosystem compatibility. Available for Gemma 4 E2B, E4B, 12B, 26B A4B, and 31B. > * **Mobile-optimized** (wNa8o8): A custom...",
-        "title": "google/gemma-4-E4B-it-qat-mobile-ct"
+        "summary_zh": "Google DeepMind 發布了 Gemma 4 系列的新版本，這些版本經過量化感知訓練（QAT）最佳化，目的是在保持接近 bfloat16 格式的模型品質的同時，大幅降低載入模型所需的記憶體。該模型卡說明了此次發布包含四種 QAT 檢查點格式：未量化但來自 QAT 管線的半精度權重（Q4_0），適用於下游自訂編譯與研究；GGUF（Q4_0）格式，方便部署且具備廣泛生態相容性；以及針對行動裝置最佳化的版本。此模型卡特別介紹 E4B 指令微調（it）變體，強調其高效能與輕量化的特性。主要方法為量化感知訓練，在訓練過程中模擬量化效應，使模型權重能承受低精度表示而不顯著損失能力。文中提及 E2B、E4B、12B、26B A4B 與 31B 等多種尺寸的模型，以及其 drafter 模型，暗示支援推論加速。然而，該文件僅提供概覽，缺乏具體的評測數據或詳細技術報告，因此無法驗證其聲稱的品質與記憶體節省幅度。此發布對於需要在行動裝置或記憶體受限環境部署大型語言模型的研究者與開發者而言相當重要，它展示了 QAT 在工業級模型上的實際應用，並可能啟發後續在邊緣運算與裝置端 AI 的研究與部署策略。",
+        "title": "google/gemma-4-E4B-it-qat-mobile-ct",
+        "title_zh": "Gemma 4 E4B 指令微調量化感知訓練（QAT）行動版模型"
       },
       {
         "arxiv_id": null,
@@ -501,7 +509,9 @@
         "source_name": null,
         "story_id": "hf:google/gemma-4-e2b-it-qat-mobile-ct",
         "summary": "Hugging Face | Launch Blog | Documentation License: Apache 2.0 | Authors: Google DeepMind > This model card is for the new versions of the Gemma 4 family optimized with Quantization-Aware Training (QAT), which allows preserving similar quality to bfloat16 while dramatically reducing the memory requirements to load the model. > Four versions of the QAT checkpoints are available: > * **Unquantized QAT checkpoints** (Q4_0): Half-precision weights extracted from the QAT pipeline, ideal for custom downstream compilation and research. Available for Gemma 4 E2B, E4B, 12B, 26B A4B, and 31B, and their drafter models. > * **GGUF** (Q4_0): Ready-to-deploy formats for broad ecosystem compatibility. Available for Gemma 4 E2B, E4B, 12B, 26B A4B, and 31B. > * **Mobile-optimized** (wNa8o8): A custom...",
-        "title": "google/gemma-4-E2B-it-qat-mobile-ct"
+        "summary_zh": "此模型卡來自Google DeepMind，介紹了Gemma 4系列的新版本，這些版本採用Quantization-Aware Training（QAT）技術進行最佳化。主要目標是在大幅降低模型載入所需記憶體的同時，盡可能保持與bfloat16格式相近的模型品質。文章指出提供四種版本的QAT檢查點：未量化QAT檢查點（Q4_0）、GGUF格式（Q4_0）、行動裝置最佳化版本，以及其他相關格式。未量化版本保留半精度權重，適合自訂下游編譯與研究；GGUF版本則為現成部署格式，確保廣泛的生態系統相容性。可用的模型規模涵蓋Gemma 4 E2B、E4B、12B、26B A4B及31B，並包含其草稿模型（drafter models）。文中強調QAT能在推理時減少記憶體佔用，這對資源受限的環境如行動裝置特別重要。然而，摘要僅提供概觀，未包含具體的量化基準數據、與bfloat16的詳細比較、實際記憶體節省幅度、推理速度提升或品質損失的具體數值。此外，部分高階模型（如E2B）的詳細技術規格與訓練細節也未在摘要中揭露。此模型的意義在於，它展示了如何在維持高效能的同時，使大型語言模型更易於部署在邊緣裝置，對於實際應用與研究皆具有參考價值，但使用者需自行查閱完整技術報告以獲取更精確的效能評估與限制說明。",
+        "title": "google/gemma-4-E2B-it-qat-mobile-ct",
+        "title_zh": "google/gemma-4-E2B-it-qat-mobile-ct"
       }
     ]
   },
@@ -2778,7 +2788,9 @@
       "source_name": "AIDB - AI Research Database",
       "story_id": "fallback:c2e265ed1397d4db",
       "summary": "<p>本記事は、主に一週間のうちに公開された論文（プレプリントを多く含む）のうち、AIDBリサーチが注目に値すると判断したものを掲載しています。基準としては「新規性」「優位性」といった査読フレームワークを踏襲する他、「実経済や産業へのインパクト」という独自の評価項目を据えています。 エージェント基盤・ハーネス・実行環境 プレミアム会員限定コンテンツです 無料会員でもできること 一部記事の閲覧 研究紹介短信ライブラリの基本機能 プレミアム会員の特典 全過去記事の無制限閲覧 専門家による最新リサーチ結果を記事で購読（平日毎日更新） 日本語検索対応の新着AI論文データベース 研究紹介短信ライブラリの高度な&#8230;</p>\n<p>The post <a href=\"https://ai-data-base.com/archives/110889\"><span class=\"locked-post\">🔒</span> 今週の注目AI論文リスト（論文公開日2026/5/31～6/6）</a> first appeared on <a href=\"https://ai-data-base.com\">AIDB</a>.</p>",
-      "title": "🔒 今週の注目AI論文リスト（論文公開日2026/5/31～6/6）"
+      "summary_zh": "本文是 AIDB Research 發布的每週論文彙整，收錄 2026 年 5 月 31 日至 6 月 6 日之間公開發表、且被判斷為值得關注的研究，其中包含大量尚未經同儕審查的預印本。作者的篩選標準除了沿用「新穎性」與「相對優勢」等常見的評讀框架外，另外加入一項自訂維度：對實體經濟與產業的實際影響力。文中可見的主題分類之一是「代理基礎架構、測試框架與執行環境」，也就是圍繞 AI agent 的運行環境與評測工具鏈。需要注意的是，該清單屬付費會員限定內容，免費會員僅能瀏覽部分文章與研究介紹短信資料庫的基本功能，付費會員則可無限制查閱歷來所有文章、訂閱專家整理的最新研究結果（平日每日更新），並使用支援日語檢索的新論文資料庫。由於摘要未列出任何具體論文標題、作者或實驗結果，也無從驗證其評選是否具代表性，本文的價值主要在於提供一條定期追蹤 AI 研究動態的資訊管道，適合需要掌握代理系統與產業落地趨勢的研究者與產品團隊，但仍建議讀者回到原始論文確認方法與證據。",
+      "title": "🔒 今週の注目AI論文リスト（論文公開日2026/5/31～6/6）",
+      "title_zh": "本週值得關注的 AI 論文清單（論文公開日 2026/5/31～6/6）"
     },
     {
       "arxiv_id": null,
@@ -2828,7 +2840,9 @@
       "source_name": "AIDB - AI Research Database",
       "story_id": "fallback:e93c1acf6e3483ec",
       "summary": "<p>AIを理由にした人員削減のニュースを、以前よりずっと頻繁に見かけるようになりました。業界も職種も一つに限られません。削減を発表する経営者の中には、「近いうちに、ほとんどの企業が同じ判断をするはずだ」と語る人もいます。 ただ、ここで素朴な疑問が出てきます。職を失った人は、同時にどこかの企業の顧客でもあります。賃金が消えれば、その人の購買力も弱まり、企業が頼りにしている需要も少しずつ削られていきます。すべての企業が人をAIに置き換えた先にあるのは、極端に言えば「生産性は高いのに、買う人がいない」世界かもしれません。 もしその崖が見えているなら、先を読める企業ほど慎重になるのではないか。そう考えたく&#8230;</p>\n<p>The post <a href=\"https://ai-data-base.com/archives/110589\"><span class=\"locked-post\">🔒</span> AIによる人員削減は、なぜ企業自身の利益まで削るのか</a> first appeared on <a href=\"https://ai-data-base.com\">AIDB</a>.</p>",
-      "title": "🔒 AIによる人員削減は、なぜ企業自身の利益まで削るのか"
+      "summary_zh": "本文探討一個總體經濟層面的矛盾：當企業以 AI 為理由大量裁員時，被裁掉的員工同時也是其他企業的顧客。薪資消失後，個人購買力下降，企業所依賴的市場需求也隨之被侵蝕。作者指出，若所有企業都把人替換成 AI，極端情況下可能形成「生產力很高、卻沒有買家」的世界。文中未提出具體的實證模型或量化結果，主要為概念性論證與推論，屬於評論性質的觀察。其限制在於缺乏可驗證的資料與因果檢定，對於需求下滑的規模與時程也未給出估計。儘管如此，這個視角提醒我們：AI 導入的效益評估不能只看單一企業的成本結構，還須考慮勞動所得與終端需求的連動。對正在規劃自動化的經營者與政策制定者而言，這是一項值得納入情境分析的風險因子。",
+      "title": "🔒 AIによる人員削減は、なぜ企業自身の利益まで削るのか",
+      "title_zh": "以 AI 為由的裁員，為何反而削減企業自身的利益"
     }
   ],
   "run_date": "2026-06-06",

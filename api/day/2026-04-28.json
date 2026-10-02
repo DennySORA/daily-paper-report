@@ -208,7 +208,9 @@
         "source_name": null,
         "story_id": "hf:mistralai/mistral-small-4-119b-2603-eagle",
         "summary": "Mistral Small 4 is a powerful hybrid model capable of acting as both a general instruction model and a reasoning model. It unifies the capabilities of three different model families—**Instruct**, **Reasoning** (previously called Magistral), and **Devstral**—into a single, unified model. With its multimodal capabilities, efficient architecture, and flexible mode switching, it is a powerful general-purpose model for any task. In a latency-optimized setup, Mistral Small 4 achieves a **40% reduction in end-to-end completion time**, and in a throughput-optimized setup, it handles **3x more requests per second** compared to Mistral Small 3. Mistral Small 4 includes the following architectural choices: - **MoE**: 128 experts, 4 active. - **119B parameters**, with **6.5B activated per token**. -...",
-        "title": "mistralai/Mistral-Small-4-119B-2603-eagle"
+        "summary_zh": "Mistral Small 4 是一款混合式模型，能同時勝任一般指令跟隨與推理任務，其核心貢獻在於將三種不同模型家族（Instruct、Reasoning 與 Devstral）的能力整合進單一模型，並透過架構設計提升效率。在架構上，它採用 Mixture-of-Experts (MoE) 設計，共有 128 個專家，每次執行僅啟用其中 4 個；模型總參數量為 119B，但每個 token 僅啟動 6.5B 參數，這種稀疏啟動方式大幅降低計算成本。此外，模型具備多模態能力，能處理多種類型的輸入，並支援彈性的模式切換，使其能針對不同任務需求動態調整行為。在效能方面，研究人員在延遲最佳化的設定下，測得端到端完成時間較 Mistral Small 3 縮短 40%；而在吞吐量最佳化的情境中，每秒可處理的請求數則提升至 3 倍，顯示其在服務部署上的實用價值。然而，本文僅提供摘要，未揭露詳細的訓練資料、基準測試比較或模式切換的具體機制，因此無法完整評估其在不同任務上的實際表現與潛在限制。這項工作的意義在於，單一模型若能有效涵蓋多種用途，將可簡化部署流程並降低營運成本，對於需要同時處理複雜推理與日常指令的應用場景，提供了一個值得參考的解決方案。未來研究可進一步探討其模式切換的可靠性、MoE 架構的擴展性，以及與其他同等級模型的量化比較。",
+        "title": "mistralai/Mistral-Small-4-119B-2603-eagle",
+        "title_zh": "Mistral Small 4：整合指令、推理與開發用途的統一混合模型"
       },
       {
         "arxiv_id": null,
@@ -259,7 +261,9 @@
         "source_name": null,
         "story_id": "hf:mistralai/mistral-small-4-119b-2603",
         "summary": "Mistral Small 4 is a powerful hybrid model capable of acting as both a general instruction model and a reasoning model. It unifies the capabilities of three different model families—**Instruct**, **Reasoning** (previously called Magistral), and **Devstral**—into a single, unified model. With its multimodal capabilities, efficient architecture, and flexible mode switching, it is a powerful general-purpose model for any task. In a latency-optimized setup, Mistral Small 4 achieves a **40% reduction in end-to-end completion time**, and in a throughput-optimized setup, it handles **3x more requests per second** compared to Mistral Small 3. To further improve efficiency you can either take advantages of: - Speculative decoding thanks to our trained eagle head...",
-        "title": "mistralai/Mistral-Small-4-119B-2603"
+        "summary_zh": "Mistral Small 4 是一個高效能的混合模型，旨在同時勝任一般指令遵循與推理任務，並將過往分散於 Instruct、Reasoning（前稱 Magistral）與 Devstral 三條模型家族的能力整合於單一模型之中。此設計讓使用者無需在不同任務間切換模型，即可獲得統一的對話、推理與程式碼生成體驗；同時模型具備多模態能力，可處理視覺與文字等多種輸入。在架構上，Mistral Small 4 採用高效設計，並透過模式切換機制靈活調整運作方式。根據官方數據，在延遲最佳化配置下，其端到端完成時間較 Mistral Small 3 縮短 40%；在吞吐量最佳化配置下，每秒可處理的請求數則提升至三倍。為進一步改善推論效率，模型提供兩種輔助機制：其一為推測解碼（speculative decoding），藉由訓練好的 eagle head 加速生成；其二為……（此處摘要僅能根據已知內容描述，原文後續細節未提供）。整體而言，Mistral Small 4 的價值在於以單一模型取代多種專門模型，簡化部署與使用流程，同時在速度與吞吐量上取得顯著進展，適合需要高即時性與高併發的應用場景。然而，官方摘要未提供具體的基準測試數據、模型參數量或與其他大型語言模型（如 GPT-4 或 Llama 系列）的比較，因此其宣稱的效率提升需透過獨立驗證確認。此外，多模態能力的實際表現與推理深度尚待詳細評估。這項工作反映了 AI 模型整合化的趨勢，未來可能減少對多模型管線的依賴，並促進更輕量且快速的邊緣部署，但實際採用時仍需考量任務特定需求與資源限制。",
+        "title": "mistralai/Mistral-Small-4-119B-2603",
+        "title_zh": "Mistral Small 4：統一指令、推理與程式碼能力的混合高效模型"
       }
     ],
     "other": [
@@ -5615,7 +5619,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:b7ec1303bcd65057",
       "summary": "In this post, we demonstrate how to build AI agents using Strands Agents SDK with models deployed on SageMaker AI endpoints. You will learn how to deploy foundation models from SageMaker JumpStart, integrate them with Strands Agents, and establish production-grade observability using SageMaker Serverless MLflow for agent tracing. We also cover how to implement A/B testing across multiple model variants and evaluate agent performance using MLflow metrics and show how you can build, deploy, and continuously improve AI agents on infrastructure you control.",
-      "title": "Build Strands Agents with SageMaker AI models and MLflow"
+      "summary_zh": "這篇 AWS 部落格示範如何用 Strands Agents SDK 建構 AI 代理，並搭配部署於 SageMaker AI 端點的模型。流程涵蓋從 SageMaker JumpStart 部署基礎模型、將其整合進 Strands Agents，以及透過 SageMaker Serverless MLflow 建立可用於生產環境的可觀測性，特別是代理追蹤（agent tracing）。文章進一步說明如何對多個模型變體實施 A/B 測試，並以 MLflow 的指標評估代理表現，最終目標是讓團隊能在自己掌控的基礎設施上建置、部署並持續改進 AI 代理。其價值在於把代理開發與既有 MLOps 工具鏈接軌，降低自建觀測與實驗流程的門檻。不過此篇屬教學示範性質，未提供跨場景的量化基準或與其他框架的比較，實際效能仍取決於所選模型、端點配置與工作負載特性，導入前建議先以小規模實驗驗證。",
+      "title": "Build Strands Agents with SageMaker AI models and MLflow",
+      "title_zh": "以 SageMaker AI 模型與 MLflow 打造 Strands Agents"
     },
     {
       "arxiv_id": null,
@@ -5667,7 +5673,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:33727f8f102b602f",
       "summary": "In this post, we share how we applied Amazon Bedrock and the Amazon Nova family of models to reimagine our Title Suggestion feature. By combining metadata, computer vision, and retrieval-augmented generative AI, we now automatically generate creative, brand-aligned titles and subtitles across 12 languages. Using the unified API of Amazon Bedrock, Anthropic’s Claude 3 Haiku, and Amazon Nova Lite and Pro, we improved quality, reduced cost, and cut response times. This resulted in higher customer satisfaction, measurable uplifts in engagement and purchase rates, and over 5.5 million personalised titles generated in 2025.",
-      "title": "How Popsa used Amazon Nova to inspire customers with personalised title suggestions"
+      "summary_zh": "這是一篇由 Popsa 與 AWS 共同發表的實務案例，說明如何運用 Amazon Bedrock 與 Amazon Nova 系列模型重新設計其「標題建議」功能。方法上結合相片中介資料（metadata）、電腦視覺，以及檢索增強生成（retrieval-augmented generation），自動產生符合品牌調性、具創意的標題與副標，並支援十二種語言。技術上透過 Amazon Bedrock 的統一 API，同時使用 Anthropic 的 Claude 3 Haiku 與 Amazon Nova Lite、Pro，在品質、成本與回應時間三方面取得改善。文中指出成果包括客戶滿意度提升、互動率與購買率有可量測的成長，並在 2025 年產出超過五百五十萬個個人化標題。此案例的證據以產品指標為主，未揭露模型選擇的完整消融實驗或延遲分布細節，因此可作為生成式 AI 落地於消費性產品的參考，但成效仍高度依存於其特定資料與客群。",
+      "title": "How Popsa used Amazon Nova to inspire customers with personalised title suggestions",
+      "title_zh": "Popsa 如何用 Amazon Nova 提供個人化標題建議"
     },
     {
       "arxiv_id": null,
@@ -5725,7 +5733,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:45453e5e915c6092",
       "summary": "In this post, we explore an automated solution that detects S3 events and triggers ingestion jobs while respecting service quotas and providing comprehensive monitoring. This serverless solution uses an event-driven architecture to keep your knowledge base current without overwhelming the Amazon Bedrock APIs.",
-      "title": "Build and deploy an automatic sync solution for Amazon Bedrock Knowledge Bases"
+      "summary_zh": "這篇 AWS 部落格提出一套自動化方案，用來解決 Amazon Bedrock 知識庫資料容易過期的問題。核心做法是偵測 Amazon S3 的事件，並在事件發生時觸發資料擷取（ingestion）工作，讓知識庫內容能隨來源檔案變動而保持最新。方案採事件驅動的無伺服器架構，並特別考量服務配額限制，避免短時間內大量觸發而壓垮 Amazon Bedrock 的 API；同時提供完整的監控機制，讓營運人員能掌握同步狀態與失敗情形。對檢索增強生成（RAG）應用而言，知識庫新鮮度直接影響回答正確性，因此這類自動同步是維持品質的關鍵基礎設施。文章屬架構設計與實作指引，未提供吞吐量或成本效益的量化比較，實際配額調校與重試策略仍需依各團隊的資料量與更新頻率調整。",
+      "title": "Build and deploy an automatic sync solution for Amazon Bedrock Knowledge Bases",
+      "title_zh": "為 Amazon Bedrock 知識庫建置自動同步方案"
     },
     {
       "arxiv_id": null,
@@ -5777,7 +5787,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:c550d93ead54a0e1",
       "summary": "This post shows you how to build your first AI-powered workflow, using Amazon Quick, starting with a financial analysis tool and progressing to an advanced employee onboarding automation.",
-      "title": "Automate repetitive tasks with Amazon Quick Flows"
+      "summary_zh": "這篇 AWS 部落格介紹如何建立第一個由 AI 驅動的工作流程，工具為 Amazon Quick Flows。文章採由淺入深的教學節奏，先以一個財務分析工具作為入門範例，讓讀者熟悉流程節點的串接與觸發方式，再進階到較複雜的員工到職（onboarding）自動化，展示如何把多個步驟、條件判斷與資料傳遞組合成可重複執行的流程。其訴求在於讓不具備深厚工程背景的業務使用者，也能把日常中重複、規則明確的作業交給 AI 代理處理，藉此降低人工作業時間與錯誤率。此篇屬產品導向的操作示範，未提供自動化前後的量化效益、錯誤率或成本比較，因此其價值主要在於理解低程式碼 AI 工作流的設計思路與適用邊界，實際導入效益仍須依組織流程特性自行評估。",
+      "title": "Automate repetitive tasks with Amazon Quick Flows",
+      "title_zh": "用 Amazon Quick Flows 自動化重複性工作"
     },
     {
       "arxiv_id": null,
@@ -5831,7 +5843,9 @@
       "source_name": "Google AI Blog",
       "story_id": "fallback:c9aa2eeb80b841c9",
       "summary": "A web next to a laptop",
-      "title": "Join the new AI Agents Vibe Coding Course from Google and Kaggle"
+      "summary_zh": "這是一則課程發布公告，由 Google 與 Kaggle 共同推出新的「AI Agents Vibe Coding」課程。由於可見內容僅止於一張筆電旁網頁的圖片描述，無法從摘要確認課程涵蓋的技術主題、單元規劃、所需先備知識、評量方式或是否提供證書，也沒有任何模型、框架或工具鏈的具體資訊。就目前可得資訊判斷，本文屬推廣性質的公告，並未提供可驗證的教學成效或學習成果數據。對有意投入 AI 代理開發的學習者而言，仍可將其視為了解產業培訓動向的線索，但實際課程內容、深度與適用對象需回到官方課程頁面確認，不宜僅憑標題推論其技術含量或難度。",
+      "title": "Join the new AI Agents Vibe Coding Course from Google and Kaggle",
+      "title_zh": "參加 Google 與 Kaggle 新推出的 AI Agents Vibe Coding 課程"
     },
     {
       "arxiv_id": null,
@@ -5877,7 +5891,9 @@
       "source_name": "DeepMind Blog",
       "story_id": "fallback:c65d20b73bde06bc",
       "summary": "Google DeepMind and Korea partner to accelerate scientific breakthroughs using frontier AI models",
-      "title": "Announcing our partnership with the Republic of Korea"
+      "summary_zh": "這是一則合作公告，說明 Google DeepMind 與韓國建立夥伴關係，目標是運用前沿 AI 模型加速科學突破。由於可見內容極為精簡，僅有一句主旨陳述，摘要中並未提及合作機構名稱、涵蓋的科學領域、資金規模、資料或算力安排，也沒有任何模型名稱、評測指標或預期成果的量化描述。因此本文屬於政策與夥伴關係層級的訊息，而非技術研究發表，無法從中提取方法或實驗證據。其意義在於反映前沿 AI 實驗室與國家層級科研體系結盟的趨勢，值得關注後續是否釋出聯合研究、模型存取安排或人才培育計畫等具體內容。在缺乏細節的情況下，對其實質影響應保持審慎，不宜過度推論。",
+      "title": "Announcing our partnership with the Republic of Korea",
+      "title_zh": "宣布與大韓民國建立合作夥伴關係"
     }
   ],
   "run_date": "2026-04-28",

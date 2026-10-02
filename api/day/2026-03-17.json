@@ -166,7 +166,9 @@
         "source_name": null,
         "story_id": "hf:mistralai/mistral-small-4-119b-2603-eagle",
         "summary": "Mistral Small 4 is a powerful hybrid model capable of acting as both a general instruction model and a reasoning model. It unifies the capabilities of three different model families—**Instruct**, **Reasoning** (previously called Magistral), and **Devstral**—into a single, unified model. With its multimodal capabilities, efficient architecture, and flexible mode switching, it is a powerful general-purpose model for any task. In a latency-optimized setup, Mistral Small 4 achieves a **40% reduction in end-to-end completion time**, and in a throughput-optimized setup, it handles **3x more requests per second** compared to Mistral Small 3. Mistral Small 4 includes the following architectural choices: - **MoE**: 128 experts, 4 active. - **119B parameters**, with **6.5B activated per token**. -...",
-        "title": "mistralai/Mistral-Small-4-119B-2603-eagle"
+        "summary_zh": "Mistral Small 4 是一款混合式模型，能同時勝任一般指令跟隨與推理任務，其核心貢獻在於將三種不同模型家族（Instruct、Reasoning 與 Devstral）的能力整合進單一模型，並透過架構設計提升效率。在架構上，它採用 Mixture-of-Experts (MoE) 設計，共有 128 個專家，每次執行僅啟用其中 4 個；模型總參數量為 119B，但每個 token 僅啟動 6.5B 參數，這種稀疏啟動方式大幅降低計算成本。此外，模型具備多模態能力，能處理多種類型的輸入，並支援彈性的模式切換，使其能針對不同任務需求動態調整行為。在效能方面，研究人員在延遲最佳化的設定下，測得端到端完成時間較 Mistral Small 3 縮短 40%；而在吞吐量最佳化的情境中，每秒可處理的請求數則提升至 3 倍，顯示其在服務部署上的實用價值。然而，本文僅提供摘要，未揭露詳細的訓練資料、基準測試比較或模式切換的具體機制，因此無法完整評估其在不同任務上的實際表現與潛在限制。這項工作的意義在於，單一模型若能有效涵蓋多種用途，將可簡化部署流程並降低營運成本，對於需要同時處理複雜推理與日常指令的應用場景，提供了一個值得參考的解決方案。未來研究可進一步探討其模式切換的可靠性、MoE 架構的擴展性，以及與其他同等級模型的量化比較。",
+        "title": "mistralai/Mistral-Small-4-119B-2603-eagle",
+        "title_zh": "Mistral Small 4：整合指令、推理與開發用途的統一混合模型"
       },
       {
         "arxiv_id": null,
@@ -217,7 +219,9 @@
         "source_name": null,
         "story_id": "hf:mistralai/mistral-small-4-119b-2603-nvfp4",
         "summary": "Mistral Small 4 is a powerful hybrid model capable of acting as both a general instruction model and a reasoning model. It unifies the capabilities of three different model families—**Instruct**, **Reasoning** (previously called Magistral), and **Devstral**—into a single, unified model. With its multimodal capabilities, efficient architecture, and flexible mode switching, it is a powerful general-purpose model for any task. In a latency-optimized setup, Mistral Small 4 achieves a **40% reduction in end-to-end completion time**, and in a throughput-optimized setup, it handles **3x more requests per second** compared to Mistral Small 3. > This checkpoint in particular is a post-training-activation quantized version of mistralai/Mistral-Small-4-119B-2603. > It was created using...",
-        "title": "mistralai/Mistral-Small-4-119B-2603-NVFP4"
+        "summary_zh": "Mistral Small 4 是 Mistral AI 推出的混合模型，旨在統一原先分屬 Instruct、Reasoning（先前稱 Magistral）與 Devstral 三條產品線的能力，讓單一模型可同時勝任一般指令跟隨、複雜推理以及程式開發等多元任務。其核心賣點在於多模態支援、高效架構與彈性的模式切換，使部署者能依需求在低延遲或高吞吐情境下調整運作方式。文中提供的量化數據指出，在延遲最佳化設定中，Mistral Small 4 相較於 Mistral Small 3 可降低 40% 的端到端完成時間；而在吞吐最佳化設定中，每秒能處理的請求數則提升至三倍。這份特定 checkpoint 是 mistralai/Mistral-Small-4-119B-2603 的訓練後活化量化（post-training activation quantization）版本，目的在於減少記憶體佔用與推論成本，但可能伴隨極微小的精度損失。值得留意的是，原文僅提供摘要層級的資訊，並未揭露完整的評估基準、量化方法細節或與其他模型的全面比較，因此效能宣稱需謹慎看待。此模型的意義在於，它展示了將多種專業模型整合為單一統一架構的可行性，並透過量化技術讓大型模型在實際部署中更具成本效益，對追求彈性與效率的企業應用而言具有參考價值。然而，使用者應根據自身任務需求，自行驗證其在特定領域的表現，並注意量化版本與原始全精度版本之間可能存在的差異。",
+        "title": "mistralai/Mistral-Small-4-119B-2603-NVFP4",
+        "title_zh": "Mistral Small 4 統一模型：結合指令、推理與開發者導向的多模態高效能架構"
       },
       {
         "arxiv_id": null,
@@ -268,7 +272,9 @@
         "source_name": null,
         "story_id": "hf:mistralai/mistral-small-4-119b-2603",
         "summary": "Mistral Small 4 is a powerful hybrid model capable of acting as both a general instruction model and a reasoning model. It unifies the capabilities of three different model families—**Instruct**, **Reasoning** (previously called Magistral), and **Devstral**—into a single, unified model. With its multimodal capabilities, efficient architecture, and flexible mode switching, it is a powerful general-purpose model for any task. In a latency-optimized setup, Mistral Small 4 achieves a **40% reduction in end-to-end completion time**, and in a throughput-optimized setup, it handles **3x more requests per second** compared to Mistral Small 3. To further improve efficiency you can either take advantages of: - Speculative decoding thanks to our trained eagle head...",
-        "title": "mistralai/Mistral-Small-4-119B-2603"
+        "summary_zh": "Mistral Small 4 是一個高效能的混合模型，旨在同時勝任一般指令遵循與推理任務，並將過往分散於 Instruct、Reasoning（前稱 Magistral）與 Devstral 三條模型家族的能力整合於單一模型之中。此設計讓使用者無需在不同任務間切換模型，即可獲得統一的對話、推理與程式碼生成體驗；同時模型具備多模態能力，可處理視覺與文字等多種輸入。在架構上，Mistral Small 4 採用高效設計，並透過模式切換機制靈活調整運作方式。根據官方數據，在延遲最佳化配置下，其端到端完成時間較 Mistral Small 3 縮短 40%；在吞吐量最佳化配置下，每秒可處理的請求數則提升至三倍。為進一步改善推論效率，模型提供兩種輔助機制：其一為推測解碼（speculative decoding），藉由訓練好的 eagle head 加速生成；其二為……（此處摘要僅能根據已知內容描述，原文後續細節未提供）。整體而言，Mistral Small 4 的價值在於以單一模型取代多種專門模型，簡化部署與使用流程，同時在速度與吞吐量上取得顯著進展，適合需要高即時性與高併發的應用場景。然而，官方摘要未提供具體的基準測試數據、模型參數量或與其他大型語言模型（如 GPT-4 或 Llama 系列）的比較，因此其宣稱的效率提升需透過獨立驗證確認。此外，多模態能力的實際表現與推理深度尚待詳細評估。這項工作反映了 AI 模型整合化的趨勢，未來可能減少對多模型管線的依賴，並促進更輕量且快速的邊緣部署，但實際採用時仍需考量任務特定需求與資源限制。",
+        "title": "mistralai/Mistral-Small-4-119B-2603",
+        "title_zh": "Mistral Small 4：統一指令、推理與程式碼能力的混合高效模型"
       }
     ],
     "other": [
@@ -319,7 +325,9 @@
         "source_name": null,
         "story_id": "hf:mistralai/leanstral-2603",
         "summary": "Leanstral is the first open-source code agent designed for Lean 4, a proof assistant capable of expressing complex mathematical objects such as perfectoid spaces and software specifications like properties of Rust fragments. Built as part of the Mistral Small 4 family, it combines multimodal capabilities and an efficient architecture, making it both performant and cost-effective compared to existing closed-source alternatives. For more details about the model and its scope, please read the related blog post. Leanstral incorporates the following architectural choices: - **MoE**: 128 experts, 4 active per token - **Model Size**: 119B parameters with 6.5B activated per token - **Context Length**: 256k tokens - **Multimodal Input**: Accepts text and image input, producing text output...",
-        "title": "mistralai/Leanstral-2603"
+        "summary_zh": "Leanstral 是首個專為 Lean 4 設計的開源程式碼代理，Lean 4 是一個形式化證明助手，能夠表達如 perfectoid spaces 這類複雜數學物件，以及如 Rust 程式碼片段屬性這類軟體規格。該模型屬於 Mistral Small 4 系列，融合多模態能力與高效架構，使其在效能與成本上相較於現有封閉原始碼替代方案更具競爭力。其具體架構選擇包括：採用混合專家（MoE）設計，包含 128 個專家，每個 token 啟動其中 4 個；模型總參數量達 119B，但每個 token 僅啟動 6.5B 參數，藉此兼顧規模與推論效率；上下文長度支援 256k tokens，可處理長篇證明或規格文件；輸入支援文字與影像，輸出則為文字。此模型的誕生填補了 Lean 4 工具鏈中開源強大程式碼代理的空白。然而，由於本文僅提供摘要，並未揭露具體訓練資料、微調方法、與基準測試的詳細比較結果，也無法評估其在實際證明任務中的成功率與錯誤型態。其局限性可能包括對複雜數學證明的泛化能力、與社群既有工具的整合程度，以及多模態輸入在證明輔助上的實際效用。儘管如此，Leanstral 的出現對形式化數學與軟體驗證領域意義重大，因為它降低了使用 Lean 4 的門檻，使更多研究人員與開發者能借助 AI 輔助撰寫形式化證明，加速數學定理的機器驗證與高保證軟體的開發。其成本效益特性也讓資源有限的研究團隊得以採用，進一步推動開放科學與可信賴 AI 的進程。",
+        "title": "mistralai/Leanstral-2603",
+        "title_zh": "Leanstral-2603：首個開源 Lean 4 程式碼代理"
       }
     ]
   },
@@ -4421,7 +4429,8 @@
       "source_name": null,
       "story_id": "arxiv:2603.15599",
       "summary": "Recent conversational memory systems invest heavily in LLM-based structuring at ingestion time and learned retrieval policies at query time. We show that neither is necessary. SmartSearch retrieves from raw, unstructured conversation history using a fully deterministic pipeline: NER-weighted substring matching for recall, rule-based entity discovery for multi-hop expansion, and a CrossEncoder+ColBERT rank fusion stage -- the only learned component -- running on CPU in ~650ms. Oracle analysis on ",
-      "title": "SmartSearch: How Ranking Beats Structure for Conversational Memory Retrieval"
+      "title": "SmartSearch: How Ranking Beats Structure for Conversational Memory Retrieval",
+      "title_zh": "SmartSearch：在對話記憶檢索中，排序為何勝過結構化處理"
     },
     {
       "arxiv_id": "2603.15590",
@@ -4480,7 +4489,9 @@
       "source_name": null,
       "story_id": "arxiv:2603.15590",
       "summary": "There have been numerous attempts to distill quadratic attention-based large language models (LLMs) into sub-quadratic linearized architectures. However, despite extensive research, such distilled models often fail to match the performance of their teacher LLMs on various downstream tasks. We set out the goal of lossless distillation, which we define in terms of tolerance-corrected Win-and-Tie rates between student and teacher on sets of tasks. To this end, we introduce an effective distillation",
-      "title": "Effective Distillation to Hybrid xLSTM Architectures"
+      "summary_zh": "將二次注意力的大型語言模型（LLM）蒸餾為次二次的線性化架構，過去已有許多嘗試，但蒸餾後的模型在諸多下游任務上往往仍無法追上教師模型，效能落差始終存在。本文作者因此提出「無損蒸餾」的目標，並以學生與教師在多組任務上的「容差修正勝負與平手率」（tolerance-corrected Win-and-Tie rates）來定義何謂無損，讓評估不再只看單一平均分數，而能反映逐題對比的分布情形。方法上，作者提出一套有效的蒸餾流程，將教師模型的知識遷移至混合式 xLSTM 架構，結合遞迴式長短期記憶的序列建模能力與注意力式架構的優勢。摘要僅止於此，尚未揭露具體的蒸餾損失設計、資料規模與實驗結果，因此無法確認是否真能達成所宣稱的無損水準，也無法判斷其增益在多大程度上來自架構選擇或訓練技巧。此工作的意義在於替線性化與次二次架構的蒸餾設立了較嚴格的評估標準；若能成立，將有助於在推論成本與模型品質之間取得更好的折衷，對需要長序列、低延遲部署的實務情境尤其關鍵。",
+      "title": "Effective Distillation to Hybrid xLSTM Architectures",
+      "title_zh": "有效蒸餾至混合式 xLSTM 架構"
     },
     {
       "arxiv_id": "2603.15566",
@@ -4532,7 +4543,9 @@
       "source_name": null,
       "story_id": "arxiv:2603.15566",
       "summary": "As AI coding agents become both primary producers and consumers of source code, the software industry faces an accelerating loss of institutional knowledge. Each commit captures a code diff but discards the reasoning behind it - the constraints, rejected alternatives, and forward-looking context that shaped the decision. I term this discarded reasoning the Decision Shadow. This paper proposes Lore, a lightweight protocol that restructures commit messages - using native git trailers - into self-c",
-      "title": "Lore: Repurposing Git Commit Messages as a Structured Knowledge Protocol for AI Coding Agents"
+      "summary_zh": "當 AI 編碼代理同時成為原始碼的主要生產者與消費者，軟體產業正面臨機構知識加速流失的問題。每一次提交只保留程式碼差異，卻丟棄了背後的理由：當時的约束條件、被否決的替代方案，以及塑造該決策的前瞻性脈絡。作者將這種被丟棄的推理稱為「決策陰影」（Decision Shadow），並指出若不正視，代理產出的程式碼將愈來愈難以維護與審計。為此，本文提出 Lore，一套輕量協定，利用 Git 原生的 trailer 機制重新結構化提交訊息，使其成為具自我描述性的知識載體，讓後續的 AI 代理能直接讀取決策脈絡，而非仅看到差異內容。摘要在此中斷，尚未說明協定的欄位設計、解析與檢索方式，也未提供任何代理在採用 Lore 前後的效能或正確率對照，因而無法評估其實際效益與相容性成本。此倡議的價值在於把版本控制從程式碼儲存庫提升為決策知識庫，替 AI 輔助軟體工程的脈絡保存與可追溯性提供了一個低摩擦的切入點。",
+      "title": "Lore: Repurposing Git Commit Messages as a Structured Knowledge Protocol for AI Coding Agents",
+      "title_zh": "Lore：將 Git 提交訊息再利用為 AI 編碼代理的結構化知識協定"
     },
     {
       "arxiv_id": "2603.15547",
@@ -4589,7 +4602,9 @@
       "source_name": null,
       "story_id": "arxiv:2603.15547",
       "summary": "Modeling plausible student misconceptions is critical for AI in education. In this work, we examine how large language models (LLMs) reason about misconceptions when generating multiple-choice distractors, a task that requires modeling incorrect yet plausible answers by coordinating solution knowledge, simulating student misconceptions, and evaluating plausibility. We introduce a taxonomy for analyzing the strategies used by state-of-the-art LLMs, examining their reasoning procedures and compari",
-      "title": "Can LLMs Model Incorrect Student Reasoning? A Case Study on Distractor Generation"
+      "summary_zh": "在 AI 教育應用中，模擬學生合理的迷思概念至關重要，因為教學系統必須能預測學習者可能犯的錯，才能給予適性回饋。本文以選擇題的誘答選項生成為案例，探討大型語言模型如何推理迷思概念。此任務要求模型同時協調三件事：掌握正確解法知識、模擬學生的錯誤思路，並判斷該錯誤是否足夠合理而具吸引力，因此是檢驗模型是否真正理解學習者心智模型的良好試金石。作者提出一套分類架構，用以分析當前最先進 LLM 所採用的策略，檢視其推理程序並比較不同模型之間的差異。摘要僅止於此，未揭露受測模型清單、題目領域、評估指標與人類專家的一致性，也沒有說明生成誘答選項的品質是否優於既有方法，因此無法判斷其結論的普遍性。此研究的意義在於把「模型能否模擬錯誤」從直覺宣稱轉為可分析的行為分類，對教育科技、評量設計與模型評測方法都有參考價值，也提醒我們正確率之外的認知建模能力同樣值得衡量。",
+      "title": "Can LLMs Model Incorrect Student Reasoning? A Case Study on Distractor Generation",
+      "title_zh": "大型語言模型能模擬錯誤的學生推理嗎？以誘答選項生成為例"
     },
     {
       "arxiv_id": "2603.15510",
@@ -4643,7 +4658,9 @@
       "source_name": null,
       "story_id": "arxiv:2603.15510",
       "summary": "The synthesis of inductive loop invariants is a critical bottleneck in automated program verification. While Large Language Models (LLMs) show promise in mitigating this issue, they often fail on hard instances, generating invariants that are invalid or computationally ineffective. While fine-tuning is a natural route to mitigate this limitation, obtaining high-quality training data for invariant generation remains an open challenge. We present a rigorous data curation pipeline designed to extra",
-      "title": "Not All Invariants Are Equal: Curating Training Data to Accelerate Program Verification with SLMs"
+      "summary_zh": "歸納式迴圈不變式（inductive loop invariants）的合成是自動化程式驗證的關鍵瓶頸。大型語言模型雖展現緩解此問題的潛力，但在困難實例上仍經常失敗，生成的不變式不是無效，就是雖然正確卻在計算上無助於驗證，導致驗證器無法收斂。微調是自然的改善途徑，然而要取得高品質的不變式生成訓練資料仍是未解問題：公開資料中的不變式品質參差不齊，且難以判斷哪些樣本真正能提升驗證效率。作者因此提出一套嚴謹的資料策劃流程，用以萃取、篩選並排序訓練樣本，並主張不同不變式對驗證的貢獻並不相等，必須加以區辨。摘要止於此，未交代策劃準則的具體判準、資料規模、所用的小型語言模型（SLM）尺寸，也未提供與未策劃基線或大型模型的對照數據，因此無法確認加速幅度與泛化能力。此工作的意義在於把焦點從模型規模轉向資料品質，若能成立，將使程式驗證在有限算力下更具可行性，對形式化方法與軟體安全實務皆具影響。",
+      "title": "Not All Invariants Are Equal: Curating Training Data to Accelerate Program Verification with SLMs",
+      "title_zh": "並非所有不變式都一樣：以小型語言模型策劃訓練資料以加速程式驗證"
     },
     {
       "arxiv_id": "2603.15459",
@@ -6202,7 +6219,9 @@
       "source_name": null,
       "story_id": "arxiv:2603.15611",
       "summary": "Reinforcement learning for code generation relies on verifiable rewards from unit test pass rates. Yet high-quality test suites are scarce, existing datasets offer limited coverage, and static rewards fail to adapt as models improve. Recent self-play methods unify code and test generation in a single model, but face a inherent dilemma: white-box access leads to self-collusion where the model produces trivial tests for easy rewards, yet black-box restriction yields generic tests that miss implementation-specific bugs. We introduce Code-A1, an adversarial co-evolution framework that jointly optimizes a Code LLM and a Test LLM with opposing objectives. The Code LLM is rewarded for passing more tests, while the Test LLM is rewarded for exposing more defects. This architectural separation eliminates self-collusion risks and safely enables white-box test generation, where the Test LLM can inspect candidate code to craft targeted adversarial tests. We further introduce a Mistake Book mechanism for experience replay and a composite reward balancing test validity with adversarial difficulty. Experiments on Qwen2.5-Coder models demonstrate that Code-A1 achieves code generation performance matching or exceeding models trained on human-annotated tests, while significantly improving test generation capability.",
-      "title": "Code-A1: Adversarial Evolving of Code LLM and Test LLM via Reinforcement Learning"
+      "summary_zh": "以強化學習訓練程式碼生成時，獎勵多半來自單元測試通過率，但高品質測試套件稀少、既有資料集覆蓋不足，且靜態獎勵無法隨模型進步而調整。近期自我對弈方法雖把程式碼與測試生成統一於同一模型，卻陷入兩難：白箱存取會導致模型互相勾結、產出僅能輕易通過的測試以換取獎勵，而黑箱限制則只能產生通用測試，難以捕捉實作層級的錯誤。本文提出 Code-A1，將 Code LLM 與 Test LLM 拆分為兩個對立目標的模型共同最佳化：程式碼模型因通過更多測試而受獎勵，測試模型則因揭露更多缺陷而受獎勵。此架構分離消除了自我勾結風險，並讓測試模型得以檢視候選程式碼，安全地進行白箱式的針對性對抗測試。作者另設計 Mistake Book 機制進行經驗回放，以及兼顧測試有效性與對抗難度的複合獎勵。在 Qwen2.5-Coder 系列上的實驗顯示，其程式碼生成表現可匹敵甚至超越以人工標註測試訓練的模型，同時顯著提升測試生成能力。摘要未提供資料集規模、對抗訓練穩定性分析與計算成本細節，但其以架構分離解決自我勾結的思路，對可驗證獎勵的程式碼強化學習具啟發性。",
+      "title": "Code-A1: Adversarial Evolving of Code LLM and Test LLM via Reinforcement Learning",
+      "title_zh": "Code-A1：透過強化學習讓程式碼模型與測試模型對抗共演化"
     },
     {
       "arxiv_id": "2603.15031",
@@ -6248,7 +6267,8 @@
       "source_name": null,
       "story_id": "arxiv:2603.15031",
       "summary": "Residual connections with PreNorm are standard in modern LLMs, yet they accumulate all layer outputs with fixed unit weights. This uniform aggregation causes uncontrolled hidden-state growth with depth, progressively diluting each layer's contribution. We propose Attention Residuals (AttnRes), which replaces this fixed accumulation with softmax attention over preceding layer outputs, allowing each layer to selectively aggregate earlier representations with learned, input-dependent weights. To address the memory and communication overhead of attending over all preceding layer outputs for large-scale model training, we introduce Block AttnRes, which partitions layers into blocks and attends over block-level representations, reducing the memory footprint while preserving most of the gains of full AttnRes. Combined with cache-based pipeline communication and a two-phase computation strategy, Block AttnRes becomes a practical drop-in replacement for standard residual connections with minimal overhead.\n  Scaling law experiments confirm that the improvement is consistent across model sizes, and ablations validate the benefit of content-dependent depth-wise selection. We further integrate AttnRes into the Kimi Linear architecture (48B total / 3B activated parameters) and pre-train on 1.4T tokens, where AttnRes mitigates PreNorm dilution, yielding more uniform output magnitudes and gradient distribution across depth, and improves downstream performance across all evaluated tasks.",
-      "title": "Attention Residuals"
+      "title": "Attention Residuals",
+      "title_zh": "注意力殘差連接（AttnRes）"
     },
     {
       "arxiv_id": "2603.15401",
@@ -6307,7 +6327,9 @@
       "source_name": null,
       "story_id": "arxiv:2603.15401",
       "summary": "Agent skills, structured procedural knowledge packages injected at inference time, are increasingly used to augment LLM agents on software engineering tasks. However, their real utility in end-to-end development settings remains unclear. We present SWE-Skills-Bench, the first requirement-driven benchmark that isolates the marginal utility of agent skills in real-world software engineering (SWE). It pairs 49 public SWE skills with authentic GitHub repositories pinned at fixed commits and requirem",
-      "title": "SWE-Skills-Bench: Do Agent Skills Actually Help in Real-World Software Engineering?"
+      "summary_zh": "代理技能是指在推論階段注入的結構化程序性知識套件，近來被大量用來強化大型語言模型代理在軟體工程任務上的表現，但其在端到端開發情境中的實際效益仍不清楚。本文提出 SWE-Skills-Bench，號稱首個以需求驅動、專門隔離代理技能邊際效用的基準。此基準將 49 個公開的 SWE 技能，與釘選在固定 commit 的真實 GitHub 儲存庫及需求配對，形成可控且可重現的測試環境，以便觀察在相同任務與程式碼基礎下，加入技能前後的差異。由於摘要於此處截斷，實際的評估指標、任務數量、對照組設計、以及技能帶來的增益或反效果皆未揭露，讀者無法據此判斷技能是否真能提升解決率或反而造成干擾。此工作的價值在於把「技能是否有用」從經驗傳聞轉為可量測的問題，並強調需以真實儲存庫與需求層級任務來檢驗，對代理工具鏈的設計與資源配置具有實務意義。",
+      "title": "SWE-Skills-Bench: Do Agent Skills Actually Help in Real-World Software Engineering?",
+      "title_zh": "SWE-Skills-Bench：代理技能在真實軟體工程中真的有用嗎？"
     },
     {
       "arxiv_id": "2603.15619",
@@ -6372,7 +6394,8 @@
       "source_name": null,
       "story_id": "arxiv:2603.15619",
       "summary": "Scaling depth is a key driver for large language models (LLMs). Yet, as LLMs become deeper, they often suffer from signal degradation: informative features formed in shallow layers are gradually diluted by repeated residual updates, making them harder to recover in deeper layers. We introduce mixture-of-depths attention (MoDA), a mechanism that allows each attention head to attend to sequence KV pairs at the current layer and depth KV pairs from preceding layers. We further describe a hardware-e",
-      "title": "Mixture-of-Depths Attention"
+      "title": "Mixture-of-Depths Attention",
+      "title_zh": "深度混合注意力（MoDA）：讓注意力頭跨層取用深度鍵值"
     },
     {
       "arxiv_id": "2603.14923",
@@ -6425,7 +6448,8 @@
       "source_name": null,
       "story_id": "arxiv:2603.14923",
       "summary": "We introduce directional routing, a lightweight mechanism that gives each transformer attention head learned suppression directions controlled by a shared router, at 3.9% parameter cost. We train a 433M-parameter model alongside an identical baseline in a single run, then trace the resulting circuits through mechanistic interpretability.\n  Routing becomes the model's dominant computational pathway. Disabling it collapses factual recall to near-zero probability across all 8 test prompts and drops",
-      "title": "Directional Routing in Transformers"
+      "title": "Directional Routing in Transformers",
+      "title_zh": "Transformer 中的方向性路由機制"
     }
   ]
 }

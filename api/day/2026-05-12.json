@@ -5586,7 +5586,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:4bc1fbbc64a86f74",
       "summary": "In this post, we show you how to set up FLOPs tracking during LLM fine-tuning using the open source Fine-Tuning FLOPs Meter toolkit on Amazon SageMaker AI. You learn how to determine your compliance status with a single configuration flag and generate audit-ready documentation.",
-      "title": "Navigating EU AI Act requirements for LLM fine-tuning on Amazon SageMaker AI"
+      "summary_zh": "本文聚焦於歐盟 AI 法案對大型語言模型微調所帶來的合規要求，特別是訓練算力規模揭露與文件留存的需求。作者示範如何在 Amazon SageMaker AI 上，使用開源的 Fine-Tuning FLOPs Meter 工具套件追蹤微調過程中的 FLOPs 消耗，讓團隊能以單一組態旗標判定自身所處的合規狀態，並自動產生可供稽核使用的文件。內容涵蓋工具套件的安裝與設定、追蹤流程的整合方式，以及如何把量測結果轉換為稽核素材。由於摘要屬於操作導向的說明，並未提供不同模型規模下的量測準確度、效能額外負擔，或主管機關認可程度的實證。對在歐洲市場提供 AI 服務的企業而言，此做法把抽象的算力門檻轉為可量測、可留痕的工程流程，具有實務落地價值，但合規判定仍需搭配法律專業確認。",
+      "title": "Navigating EU AI Act requirements for LLM fine-tuning on Amazon SageMaker AI",
+      "title_zh": "因應歐盟 AI 法案：在 Amazon SageMaker AI 上進行 LLM 微調的合規實務"
     },
     {
       "arxiv_id": null,
@@ -5642,7 +5644,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:0ded6b0a09ae5fef",
       "summary": "In this post, we'll show you how our multi-document discovery feature solves this problem. It serves as an automated pre-processing step, analyzing unknown documents, clustering them by type, and generating schemas ready for the IDP Accelerator. You'll learn how the new capability uses visual embeddings for automatic clustering and agents for schema generation. We'll also walk you through running the solution on your own document collections.",
-      "title": "Automate schema generation for intelligent document processing"
+      "summary_zh": "本文處理智慧文件處理（IDP）流程中最耗人力的前置環節：面對型態未知的文件集合時，如何定義正確的擷取結構描述。作者提出多文件探索功能，作為自動化的前處理步驟，先分析未知文件、依類型進行分群，再產生可直接餵給 IDP Accelerator 使用的結構描述。技術上，此功能以視覺嵌入（visual embeddings）進行自動分群，並以代理（agent）機制負責結構描述的生成，讓原本需要人工判讀與反覆調整的工作得以自動化。文章亦說明如何在自有文件集上實際執行此解決方案。摘要未提供分群準確度、結構描述正確率或處理規模的量化結果，也未討論罕見文件型態與標註噪音下的穩定度。整體而言，此方法可望降低導入 IDP 的門檻並加速流程建置，對文件流程自動化團隊具參考意義。",
+      "title": "Automate schema generation for intelligent document processing",
+      "title_zh": "為智慧文件處理自動產生結構描述"
     },
     {
       "arxiv_id": null,
@@ -5697,7 +5701,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:51334ba1431926e5",
       "summary": "In this post, we demonstrate how Amazon FinTech teams are using Amazon Bedrock and other AWS services to build a scalable AI application to transform how regulatory inquiries are handled. Each team using this solution creates and maintains its own dedicated knowledge base, populated with that team's specific documents and reference materials.",
-      "title": "How Amazon Finance streamlines regulatory inquiries by using generative AI on AWS"
+      "summary_zh": "本文說明 Amazon 內部金融科技團隊如何運用 Amazon Bedrock 及其他 AWS 服務，打造可擴展的生成式 AI 應用，以改變監理查詢的處理方式。金融業務面對的監理詢問往往涉及大量法規文件與內部往來紀錄，人工彙整耗時且容易遺漏。此方案的關鍵設計在於每個使用團隊各自建立並維護專屬的知識庫，並以該團隊特定的文件與參考資料填充，讓檢索與生成結果能貼合各自的業務脈絡，同時避免跨團隊資料混用。文章屬於實務案例分享，未揭露查詢回應時間、正確率、節省人力的具體幅度，也未說明知識庫更新頻率與幻覺防護機制。對受高度監理的行業而言，以專屬知識庫為核心、兼顧規模化與資料隔離的生成式 AI 架構，是值得借鏡的落地模式。",
+      "title": "How Amazon Finance streamlines regulatory inquiries by using generative AI on AWS",
+      "title_zh": "Amazon Finance 如何以 AWS 生成式 AI 簡化監理查詢流程"
     },
     {
       "arxiv_id": null,
@@ -5747,7 +5753,9 @@
       "source_name": "Microsoft Research Blog",
       "story_id": "fallback:41c9c9032a91b108",
       "summary": "<p>MatterSim is expanding what AI can do for materials science—from faster large-scale simulations to MatterSim-MT, a new multi-task model for simulating properties beyond potential energy surfaces alone.</p>\n<p>The post <a href=\"https://www.microsoft.com/en-us/research/blog/advancing-ai-for-materials-with-mattersim-experimental-synthesis-faster-simulation-and-multi-task-models/\">Advancing AI for materials with MatterSim: experimental synthesis, faster simulation, and multi-task models</a> appeared first on <a href=\"https://www.microsoft.com/en-us/research\">Microsoft Research</a>.</p>",
-      "title": "Advancing AI for materials with MatterSim: experimental synthesis, faster simulation, and multi-task models"
+      "summary_zh": "這篇 Microsoft Research 部落格文章介紹 MatterSim 在材料科學領域的最新進展，重點在於擴展 AI 能處理的範圍。內容指出兩個方向：一是更快的超大規模模擬，二是新推出的多任務模型 MatterSim-MT，可模擬的目標不再只限於勢能面（potential energy surface），而能涵蓋更多材料性質。作者主張 MatterSim-MT 讓模型能同時處理多種預測任務，並提到與實驗合成相關的應用場景。不過，本文為摘要性質的官方部落格導讀，未提供具體的模型架構細節、訓練資料規模、基準測試數據或誤差指標，也沒有說明與既有機器學習勢能模型（如 MACE、CHGNet 等）的量化比較，因此讀者難以評估其實際增益。其意義在於顯示材料模擬正從單一任務的勢能面預測，走向多任務、跨性質的通用模型，若能與實驗合成流程結合，可能有助於縮短材料探索週期；但仍需原始論文與可重現的評測結果才能確認。",
+      "title": "Advancing AI for materials with MatterSim: experimental synthesis, faster simulation, and multi-task models",
+      "title_zh": "以 MatterSim 推進材料科學的 AI：實驗合成、更快的模擬與多任務模型"
     }
   ],
   "run_date": "2026-05-12",

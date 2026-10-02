@@ -4975,7 +4975,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:5d2a90ad80cda529",
       "summary": "In this post, you'll learn why probabilistic AI validation falls short in regulated industries and how Automated Reasoning checks use formal verification to deliver mathematically proven results. You'll also see how customers across six industries use this technology to produce formally verified, auditable AI outputs, and how to get started.",
-      "title": "How Automated Reasoning checks in Amazon Bedrock transform generative AI compliance"
+      "summary_zh": "這篇文章討論生成式 AI 在受監管產業落地的核心痛點：機率式模型的輸出本質上不確定，單靠機率式的驗證機制難以滿足法遵與稽核要求。作者指出機率式驗證的不足，並介紹 Amazon Bedrock 的自動推理檢查（Automated Reasoning checks）如何運用形式驗證（formal verification）技術，產出在數學上可證明的結果，讓 AI 輸出能被正式驗證並具備可稽核性。文中也舉出橫跨六個產業的客戶案例，說明他們如何運用這項技術產生經驗證且可審計的輸出，並提供入門指引。這代表一種把生成式 AI 從「統計上大致可信」推向「可證明正確」的治理路徑，對金融、醫療、公部門等高度監理場域尤其關鍵。不過由於目前只有摘要，文中未揭露形式驗證的適用範圍、規則撰寫成本、可涵蓋的輸出類型，以及對模型效能的影響，讀者宜留意其適用邊界與限制。",
+      "title": "How Automated Reasoning checks in Amazon Bedrock transform generative AI compliance",
+      "title_zh": "Amazon Bedrock 的自動推理檢查如何改變生成式 AI 的法遵作業"
     },
     {
       "arxiv_id": "2604.15233",
@@ -5790,7 +5792,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:276fa23019ca0b68",
       "summary": "In this post, we demonstrate two approaches to fine-tune Amazon Nova Micro for custom SQL dialect generation to deliver both cost efficiency and production ready performance.",
-      "title": "Cost-efficient custom text-to-SQL using Amazon Nova Micro and Amazon Bedrock on-demand inference"
+      "summary_zh": "這篇文章針對 text-to-SQL 任務，示範兩種微調 Amazon Nova Micro 的做法，目標是讓模型能生成特定組織自有的 SQL 方言，同時兼顧成本效率與可上線的效能表現。Text-to-SQL 的實務難點在於：企業資料倉儲常有自訂的語法慣例、資料表命名與查詢規範，通用模型往往無法精確遵循；而改用大型模型雖可提升準確度，卻帶來推論成本壓力。作者因此選擇以較小型的 Nova Micro 為基礎，透過微調注入領域知識，並搭配 Amazon Bedrock 的隨需推論（on-demand inference）來控制成本與維運複雜度。文章比較兩種微調路徑，屬於實務導向的技術說明，而非提出新的模型架構。由於目前僅有摘要，本文未提供具體的訓練資料規模、兩種方法的準確度與成本數字、評估基準，也未討論幻覺查詢、安全性或schema 變動時的維護問題。對需要自然語言查詢資料的團隊而言，其價值在於展示小模型加微調的可行路線。",
+      "title": "Cost-efficient custom text-to-SQL using Amazon Nova Micro and Amazon Bedrock on-demand inference",
+      "title_zh": "以 Amazon Nova Micro 與 Bedrock 隨需推論實現成本高效的客製化 text-to-SQL"
     },
     {
       "arxiv_id": null,
@@ -5848,7 +5852,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:511ef956ed8f1ac8",
       "summary": "Online retailers face a persistent challenge: shoppers struggle to determine the fit and look when ordering online, leading to increased returns and decreased purchase confidence. The cost? Lost revenue, operational overhead, and customer frustration. Meanwhile, consumers increasingly expect immersive, interactive shopping experiences that bridge the gap between online and in-store retail. Retailers implementing virtual try-on […]",
-      "title": "Transform retail with AWS generative AI services"
+      "summary_zh": "這篇文章聚焦線上零售長久存在的痛點：消費者在網路下單時難以判斷衣物的合身度與實際外觀，導致退貨率上升、購買信心下降。作者指出這些問題帶來的代價包括營收流失、營運負擔增加以及顧客挫折感；同時，消費者越來越期待能縮短線上與實體店面落差的沉浸式、互動式購物體驗。文章因此介紹零售商如何導入 AWS 的生成式 AI 服務，其中虛擬試穿（virtual try-on）被視為關鍵應用之一，用來讓消費者在購買前更準確地預覽商品穿在身上的效果，進而降低退貨並提升轉換。內容屬於產業應用導向的服務介紹，說明生成式 AI 在零售場景中的價值定位，而非提出新的模型或演算法。由於目前僅有摘要，文中未提供具體的模型選擇、影像生成品質評估、導入成本、退貨率改善的量化數據，也未討論隱私、身材資料保護與生成結果偏差等限制，讀者宜將此視為應用方向 rather than 已驗證的成效報告。",
+      "title": "Transform retail with AWS generative AI services",
+      "title_zh": "以 AWS 生成式 AI 服務改造零售業"
     },
     {
       "arxiv_id": null,
@@ -5903,7 +5909,9 @@
       "source_name": "Google AI Blog",
       "story_id": "fallback:8260ed7ad942a3b2",
       "summary": "Example images made with Personal Intelligence",
-      "title": "New ways to create personalized images in the Gemini app"
+      "summary_zh": "這篇文章介紹 Gemini 應用程式新增的個人化圖片生成能力，主軸是讓使用者能以更貼近自身需求的方式產生影像。文中以「Personal Intelligence」製作的範例圖片作為示意，說明這項功能在個人化影像創作上的應用方向。從產品定位來看，這類功能延續了生成式影像模型朝向「理解使用者情境與偏好」發展的趨勢，讓提示不再只是單次文字描述，而能結合使用者的背景資訊來產生更符合期待的結果。內容屬於消費級產品功能發布，並非 AI 研究成果，因此沒有提出新的模型架構、訓練方法或評估指標。由於目前僅有摘要與示意圖說明，本文未交代背後的模型版本、生成解析度與延遲、個人化所依據的資料來源、使用者同意機制與隱私保護措施，也沒有任何品質或安全性的量化評測。對台灣讀者而言，其參考價值在於觀察個人化生成技術如何進入日常應用，但同時應留意肖像、資料使用與內容安全等潛在風險。",
+      "title": "New ways to create personalized images in the Gemini app",
+      "title_zh": "Gemini 應用程式推出全新個人化圖片創作方式"
     },
     {
       "arxiv_id": null,
@@ -5955,7 +5963,9 @@
       "source_name": "Google AI Blog",
       "story_id": "fallback:42e759c5e16a7d3a",
       "summary": "AI Mode in Chrome",
-      "title": "A new way to explore the web with AI Mode in Chrome"
+      "summary_zh": "這是一篇產品公告，介紹在 Chrome 瀏覽器中導入 AI Mode 的新功能。使用者可直接在瀏覽器內以對話方式探索網頁內容，讓搜尋與瀏覽體驗更貼近自然語言互動。不過目前僅有摘要，缺少技術細節，例如所採用的模型架構、檢索與摘要流程、延遲與成本表現，也沒有任何基準測試或使用者研究數據，因此無法評估其實際效益與限制。對台灣讀者而言，值得關注的是瀏覽器層級的 AI 助理如何改變資訊取得習慣，以及隨之而來的隱私、資料存取與內容正確性問題。建議將其視為功能發布訊息，而非嚴謹的技術研究。",
+      "title": "A new way to explore the web with AI Mode in Chrome",
+      "title_zh": "Chrome 中 AI Mode 的全新網頁探索方式"
     }
   ],
   "run_date": "2026-04-17",

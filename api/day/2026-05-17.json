@@ -238,7 +238,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17249",
       "summary": "Vision-Language Navigation (VLN) approaches have currently followed two primary paradigms: the end-to-end Vision-Language Model (VLM) policy fine-tuned on navigation trajectories to directly predict actions, and the zero-shot modular pipeline integrating pre-trained Multimodal Large Language Model (MLLM) for training-free generalization to unseen environments. However, end-to-end methods struggle with long-horizon navigation and lack dynamic reasoning, whereas zero-shot methods are constrained b",
-      "title": "SEDualVLN: A Spatially-Enhanced Dual-System for Vision-Language Navigation"
+      "summary_zh": "視覺語言導航（VLN）目前主要有兩條路線：一是在導航軌跡上微調的端到端視覺語言模型（VLM）策略，直接預測動作；二是零樣本的模組化流程，整合預訓練多模態大型語言模型（MLLM），不需訓練即可泛化到未見環境。然而端到端方法在長時程導航上容易失敗且缺乏動態推理，零樣本方法則受制於模組間介面與感知精度。本文提出 SEDualVLN，以空間增強的雙系統架構來結合兩者優點，試圖在長程任務中兼顧推理彈性與可訓練性。摘要在此截斷，未交代雙系統如何分工、空間增強如何取得、訓練資料與模擬環境，也没有列出成功率、路徑長度或泛化到真實場景的結果。因此無法判斷其改進幅度與計算成本。其重要性在於回應 VLN 中「泛化」與「長時程推理」難以兼得的核心矛盾，若能成立，對機器人與具身智慧導航具參考價值；仍需完整方法與基準比較驗證。",
+      "title": "SEDualVLN: A Spatially-Enhanced Dual-System for Vision-Language Navigation",
+      "title_zh": "SEDualVLN：具空間增強之雙系統視覺語言導航"
     },
     {
       "arxiv_id": "2605.17231",
@@ -292,7 +294,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17231",
       "summary": "Activation steering methods modify intermediate representations of language models to control output behavior, but universally assume the activation space is Euclidean. We show this assumption fails drastically: the local geometry induced by the model's own output behavior -- the Fisher information metric of the softmax layer, pulled back through the Jacobian of subsequent layers -- deviates from the Euclidean metric by over 97% in relative spectral norm on GPT-2, with an effective dimensionalit",
-      "title": "FishBack: Pullback Fisher Geometry for Optimal Activation Steering in Transformers"
+      "summary_zh": "激活引導（activation steering）透過修改語言模型的中間表示來控制輸出行為，但既有方法普遍假設激活空間是歐氏的。作者指出這個假設嚴重失效：由模型自身輸出行為所誘導的局部幾何，也就是 softmax 層的 Fisher 資訊度量，經由後續層的 Jacobian 回拉後，在 GPT-2 上與歐氏度量的相對譜範數差異超過 97%，且有效維度也明顯不同。這意味著在歐氏空間中計算的引導方向，可能在模型真正敏感的幾何下並非最優，甚至造成不必要的行為偏移。本文據此提出 FishBack，利用回拉 Fisher 幾何來求取更合適的激活引導方向。摘要在此截斷，未提供演算法細節、計算成本、模型規模與任務清單。因此無法確認它在真實控制任務上的成功率、是否優於線性探針或既有引導法，以及對大型模型的擴展性。其價值在於把資訊幾何帶入模型控制，提醒研究者激活空間並非平坦；仍需完整實驗與限制分析。",
+      "title": "FishBack: Pullback Fisher Geometry for Optimal Activation Steering in Transformers",
+      "title_zh": "FishBack：以回拉 Fisher 幾何實現 Transformer 的最佳化激活引導"
     },
     {
       "arxiv_id": "2605.17169",
@@ -351,7 +355,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17169",
       "summary": "Agentic AI is rapidly proliferating across diverse real-world domains such as software engineering, yet public trust has not kept pace. The central reason is that responsibility, despite being widely discussed, remains a subjective and unenforced concept, as no current agentic framework produces the quantifiable, traceable, and interventionable provenance needed to assign it when harm emerges from compositions no single party designed. We position that what is missing is not better benchmark-lev",
-      "title": "Responsible Agentic AI Requires Explicit Provenance"
+      "summary_zh": "本文主張，代理式 AI（agentic AI）雖已在軟體工程等眾多真實場域快速普及，但公眾信任並未同步跟上。作者指出核心問題在於「責任」一詞雖被廣泛討論，卻始終是主觀且缺乏強制力的概念：目前沒有任何代理式框架能產出可量化、可追蹤、可介入的溯源（provenance）紀錄，因此當危害來自「無單一設計者」的系統組合時，責任歸屬無從判定。作者將此定位為概念與架構層面的缺口，而非單純的基準測試不足問題，認為需要的是明確的溯源機制設計。需注意的是，本文僅有摘要，未提供具體方法、實驗設計或量化結果。其重要性在於把 AI 治理的討論從抽象的倫理宣示，推向可操作的技術要求，對代理系統的問責與稽核方向具指標意義。",
+      "title": "Responsible Agentic AI Requires Explicit Provenance",
+      "title_zh": "負責任的代理式 AI 需要明確的溯源機制"
     },
     {
       "arxiv_id": "2605.17070",
@@ -414,7 +420,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17070",
       "summary": "While large vision-language models (VLMs) are increasingly adopted as the perceptual backbone for embodied agents, existing benchmarks often rely on question-answering or multiple-choice formats. These protocols allow models to exploit linguistic priors rather than demonstrating genuine visual grounding. To address this, we present EPIC-Bench, Embodied PerceptIon BenChmark, a fine-grained grounding benchmark designed to systematically evaluate the visual perceptual capabilities of VLMs in real-w",
-      "title": "EPIC-Bench: A Perception-Centric Benchmark for Fine-Grained Embodied Visual Grounding in Vision-Language Models"
+      "summary_zh": "大型視覺語言模型（VLM）日益被採用為具身代理的感知骨幹，然而既有基準多以問答或選擇題形式呈現，這種評測協定讓模型得以倚賴語言先驗，而非真正展現視覺定位能力。為此，作者提出 EPIC-Bench（Embodied PerceptIon BenChmark），一套細粒度定位基準，用以系統性評估 VLM 在真實具身情境中的視覺感知能力。此基準以感知為核心，刻意降低語言線索可乘之機，使評測更貼近實際的視覺理解需求。摘要僅止於動機與設計理念，未揭露題目規模、涵蓋任務類型或模型實測的分數與排名，因此成效仍待完整論文佐證。其意義在於指出現行評測可能高估模型的視覺能力，並為具身代理的感知評估提供更嚴謹的替代方向。",
+      "title": "EPIC-Bench: A Perception-Centric Benchmark for Fine-Grained Embodied Visual Grounding in Vision-Language Models",
+      "title_zh": "EPIC-Bench：以感知為核心的視覺語言模型細粒度具身視覺定位基準"
     },
     {
       "arxiv_id": "2605.17414",
@@ -473,7 +481,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17414",
       "summary": "High-fidelity text-to-music generation typically relies on massive proprietary datasets and immense computational resources. Existing models often struggle to generate coherent pure musical accompaniments and lack precise, localized semantic control due to their reliance on coarse, track-level annotations. To address these limitations under constrained data and computing resources, we propose S2Accompanist, a Semantic-Aware and Structure-Guided Diffusion Model developed for the ICME2026 ATTM Gra",
-      "title": "S2Accompanist: A Semantic-Aware and Structure-Guided Diffusion Model for Music Accompaniment Generation"
+      "summary_zh": "高保真文字轉音樂生成通常仰賴大量專有資料集與龐大運算資源。現有模型往往難以產生連貫的純音樂伴奏，且因僅依賴粗略的整軌層級標註，缺乏精準、局部的語意控制能力。為在資料與算力受限的條件下回應這些限制，作者提出 S2Accompanist，一套兼具語意感知與結構引導的擴散模型，並以 ICME2026 的 ATTM 競賽任務為開發目標。其設計明顯針對兩個痛點：一是伴奏本身的音樂連貫性，二是可定位到特定片段的語意控制。摘要僅交代研究動機與方法定位，未提供資料集規模、評估指標或與基線模型的比較結果，因此實際生成品質與控制精度仍待驗證。此工作的重要性能在於示範如何在資源受限情境下，兼顧音樂結構與細粒度語意控制。",
+      "title": "S2Accompanist: A Semantic-Aware and Structure-Guided Diffusion Model for Music Accompaniment Generation",
+      "title_zh": "S2Accompanist：兼具語意感知與結構引導的音樂伴奏生成擴散模型"
     },
     {
       "arxiv_id": "2605.17369",
@@ -527,7 +537,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17369",
       "summary": "Solar flares are intense eruptive events caused by the rapid release of magnetic energy, often impacting Earth's space environment through electromagnetic radiation and high-energy particles. Accurate flare prediction is critical for space weather forecasting. However, many existing deep learning approaches often rely on single-modal inputs or shallow feature fusion, limiting their ability to capture complementary information. In this study, we propose a dual-branch multimodal fusion deep learni",
-      "title": "The Deep Learning-Based Dual-Branch Multimodal Fusion Model for Solar Flare Prediction"
+      "summary_zh": "太陽閃焰是磁能快速釋放所引發的劇烈爆發事件，常透過電磁輻射與高能粒子影響地球的太空環境，因此準確的閃焰預測對太空天氣預報至關重要。然而既有深度學習方法多依賴單一模態輸入或淺層特徵融合，難以擷取不同觀測來源之間的互補資訊。本研究提出一套雙分支多模態融合深度學習模型，透過兩個分支分別處理不同模態的觀測資料，再進行融合，以提升對閃焰事件的預測能力。摘要僅說明問題動機與模型架構取向，未交代所使用的資料集、評估指標、預測時間窗，亦未提供與既有方法的量化比較，因此實際增益仍待完整論文確認。其價值在於把多模態融合的概念帶入太空天氣預報，為提升預警可靠度提供新方向。",
+      "title": "The Deep Learning-Based Dual-Branch Multimodal Fusion Model for Solar Flare Prediction",
+      "title_zh": "用於太陽閃焰預測的深度學習雙分支多模態融合模型"
     },
     {
       "arxiv_id": "2605.17353",
@@ -584,7 +596,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17353",
       "summary": "Misinformation resilience is a dynamic community process: communities differ not only in whether they initially trust false claims, but also in how they recover through interaction, questioning, correction, and support withdrawal. We study this process with an LLM-based agent simulation that constructs synthetic communities along two theoretically motivated dimensions: Actively Open-minded Thinking (AOT), which captures evidence-seeking and willingness to revise beliefs, and Political Ideology (",
-      "title": "You Can't Fool Us: Understanding the Resilience of LLM-driven Agent Communities to Misinformation"
+      "summary_zh": "本文將錯誤資訊的韌性視為一種動態的社群過程：不同社群不僅在最初是否相信假訊息上有所差異，也在後續如何透過互動、質疑、更正與撤回支持來恢復。作者以基於 LLM 的代理模擬來研究此過程，沿著兩個具理論依據的維度構築合成社群：一是主動開放思維（AOT），用以捕捉尋求證據與願意修正信念的傾向；二是政治意識形態。透過在這些維度上變化社群組成，作者得以觀察假訊息如何擴散、又如何被集體機制抑制。摘要僅呈現研究框架，未揭露模擬規模、具體指標或實驗發現，因此哪些社群特徵最能提升韌性仍無定論。此工作的意義在於把錯誤資訊研究從個體判斷推向社群動態，並示範以 LLM 代理進行社會科學式模擬的可行性。",
+      "title": "You Can't Fool Us: Understanding the Resilience of LLM-driven Agent Communities to Misinformation",
+      "title_zh": "騙不了我們：理解由 LLM 驅動的代理社群如何抵禦錯誤資訊"
     },
     {
       "arxiv_id": "2605.17318",
@@ -634,7 +648,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17318",
       "summary": "We present RooAgent as a natural-language interface for Root-based high energy physics data analysis. The package provides physics analysis functions as tools that an LLM agent invokes in response to plain-language prompts. Two operating modes are supported: a LangGraph-based agent compatible with OpenAI's GPT-4.1 via GitHub Copilot and with DeepSeek-V3 via Ollama, and a Model Context Protocol server for use with the Anthropic Claude CLI (Sonnet~4.6). In both modes the analysis logic is implemen",
-      "title": "RooAgent: An LLM Agent for Root-Based High Energy Physics Analysis"
+      "summary_zh": "本文提出 RooAgent，一套以自然語言作為介面的 Root 高能物理資料分析工具。該套件把物理分析功能封裝為工具，讓 LLM 代理能依使用者以白話提出的提示來呼叫。系統支援兩種運作模式：一是基於 LangGraph 的代理，可透過 GitHub Copilot 連接 OpenAI 的 GPT-4.1，或透過 Ollama 連接 DeepSeek-V3；二是 Model Context Protocol 伺服器，供 Anthropic 的 Claude CLI（Sonnet 4.6）使用。兩種模式下，分析邏輯皆以既有實作維持不變，代理僅負責調度與參數選擇。摘要未提供效能評估、任務成功率或與人工操作的對照，因此其實用性仍待檢驗。其價值在於展示如何讓 LLM 代理以標準化工具介面進入成熟的高能物理分析生態系。",
+      "title": "RooAgent: An LLM Agent for Root-Based High Energy Physics Analysis",
+      "title_zh": "RooAgent：以 Root 為基礎的高能物理分析 LLM 代理"
     },
     {
       "arxiv_id": "2605.17291",
@@ -701,7 +717,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17291",
       "summary": "Reinforcement Learning with Verifiable Rewards (RLVR) is widely used to improve reasoning in large language models, but rewards only final-answer correctness with no supervision over intermediate steps. Rubric-based methods such as Rubrics as Rewards (RaR) introduce finer-grained supervision by scoring rollouts against structured criteria, yet the rubric scores are still aggregated into a single scalar applied to the entire response, causing three weaknesses: loss of multi-criterion structure, u",
-      "title": "Step-wise Rubric Rewards for LLM Reasoning"
+      "summary_zh": "可驗證獎勵的強化學習（RLVR）被廣泛用於提升大型語言模型的推理能力，但其獎勵僅針對最終答案是否正確，對中間步驟毫無監督。以評分規準為基礎的方法（如 Rubrics as Rewards，RaR）透過依結構化準則對整段輸出評分，引入更細緻的監督，然而這些規準分數最終仍被聚合成單一純量，套用於整份回應，導致三項弱點，包括多準則結構的資訊流失等。作者據此提出逐步評分規準獎勵，讓監督訊號能對應到推理歷程中的個別步驟。摘要僅點出問題與方法方向，未揭露具體演算法、訓練設定與基準測試結果，因此改進幅度仍待驗證。此研究的意義在於把獎勵設計從「只看答案」推進到「檢視過程」，對提升推理可靠性具潛在影響。",
+      "title": "Step-wise Rubric Rewards for LLM Reasoning",
+      "title_zh": "為 LLM 推理設計的逐步評分規準獎勵"
     },
     {
       "arxiv_id": "2605.17225",
@@ -751,7 +769,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17225",
       "summary": "Robust selective auditory attention under multilingual interference is critical for reliable deployment of Large Audio Language Models (LALMs). We introduce MUSA, a cocktail party-inspired multilingual benchmark for source-grounded spoken-language understanding and reasoning. Each item pairs an English target dialogue with a semantically plausible distractor in English, Spanish, Korean, or Chinese, and evaluates models across (1) single, (2) source separation-based two-stage, (3) and end-to-end ",
-      "title": "Can Large Audio Language Models Ignore Multilingual Distractors? An Evaluation of Their Selective Auditory Attention Capabilities"
+      "summary_zh": "在多語言干擾下仍具穩健的選擇性聽覺注意力，是大型音訊語言模型（LALM）可靠部署的關鍵。作者提出 MUSA，一套受雞尾酒會效應啟發的多語言基準，用於評測以來源定位為基礎的口語理解與推理。每一題皆將一段英語目標對話，與一段語意上合理、分別為英語、西班牙語、韓語或中文的干擾對話配對，並在三種設定下評估模型：單一、以來源分離為基礎的兩階段，以及端到端處理。此設計使模型難以只靠語言先驗作答，而必須真正鎖定目標聲源。摘要未提供模型清單、準確率或各語言與設定間的差異數據，因此選擇性注意力的實際表現仍待完整論文揭露。其意義在於為多語言語音互動的安全性提供更貼近真實場景的評測工具。",
+      "title": "Can Large Audio Language Models Ignore Multilingual Distractors? An Evaluation of Their Selective Auditory Attention Capabilities",
+      "title_zh": "大型音訊語言模型能忽略多語言干擾嗎？選擇性聽覺注意力能力評估"
     },
     {
       "arxiv_id": "2605.17170",
@@ -804,7 +824,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17170",
       "summary": "Agentic workloads have emerged as a major workload for LLM inference. They differ significantly from chat-only workloads, requiring long-context processing, the ability to handle multimodal inputs, and structured multi-turn interactions with tool calling capabilities. As a result, their context exhibits structure that can carry different importance along three key axes: temporal recency to the current turn, modality such as text or image tokens, and semantic role such as user queries, tool calls",
-      "title": "TriAxialKV: Toward Extreme Low-Precision KV-Cache Quantization for Agentic Inference Tasks"
+      "summary_zh": "代理式（agentic）工作負載已成為 LLM 推論的主要場景之一，但它和純聊天用途差異很大：需要長脈絡處理、多模態輸入，以及具備工具呼叫能力的結構化多輪互動。這使得此類任務的上下文呈現出可依三條軸線區分重要性的結構：與當前回合的時間鄰近性、模態（文字或圖像 token），以及語意角色（使用者查詢、工具呼叫等）。論文觀察到現有的 KV-Cache 量化方法多半以均勻方式壓縮快取，未考慮這種異質重要性，因此在極低精度下容易損害關鍵資訊。TriAxialKV 依這三軸設計差異化的量化策略，對不同軸向的 token 給予不同的位元配置與保護機制，以在極低精度下維持推論品質。摘要未提供具體基準、壓縮倍率或精度數字，也沒有交代是否帶來額外計算或記憶體開銷、硬體支援需求與評估範圍，因此實際效能增益仍待全文驗證。其意義在於替代理式推論這個快速成長的部署場景，指出 KV-Cache 壓縮需要從「單一重要性假設」轉向多軸結構化設計，若能落地，將直接影響長脈絡代理服務的記憶體成本與伺服器吞吐量。",
+      "title": "TriAxialKV: Toward Extreme Low-Precision KV-Cache Quantization for Agentic Inference Tasks",
+      "title_zh": "TriAxialKV：針對代理式推論任務的極低精度 KV-Cache 量化"
     },
     {
       "arxiv_id": "2605.17115",
@@ -857,7 +879,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17115",
       "summary": "Biased manipulation of facts across regional and national media outlets complicates misinformation detection in diverse landscapes like India. This paper introduces a novel multimodal framework combining visual and textual modalities for enhanced fake news detection on Indian media. The architecture utilizes a ResNet-50 Convolutional Neural Network to extract visual features from news images, a DistilBERT encoder to obtain textual semantic embeddings, and an Adaptive Neuro-Fuzzy Inference System",
-      "title": "F2IND-IT! -- Multimodal Fuzzy Fake Indian News Detection using Images and Text"
+      "summary_zh": "印度媒體生態橫跨區域與全國層級，事實常被帶有偏見地操弄，使不實資訊偵測格外困難；純文字模型難以掌握新聞圖像所承載的線索。本文提出一套多模態框架，同時利用視覺與文字模態進行印度媒體的假新聞偵測。架構以 ResNet-50 卷積神經網路擷取新聞圖像的視覺特徵，以 DistilBERT 編碼器取得文字的語意嵌入，再串接自適應神經模糊推論系統（ANFIS），將兩路特徵映射為判別輸出。採用模糊推論的動機在於新聞真偽往往不是非黑即白，模糊隸屬度可表達不確定性與漸進式判別。摘要僅描述方法組成，未提供資料集規模、標註方式、準確率或與單模態基準的比較數據，也未交代 ResNet-50 與 DistilBERT 是否凍結、訓練成本，以及模型對印度多語環境的泛化能力，因此實際增益與偏誤風險仍待全文檢驗。其意義在於示範以模糊推論整合視覺與文字證據，為區域性、多語且高度政治化的不實資訊偵測提供一條可延伸的研究路線。",
+      "title": "F2IND-IT! -- Multimodal Fuzzy Fake Indian News Detection using Images and Text",
+      "title_zh": "F2IND-IT!：結合圖像與文字的多模態模糊式印度假新聞偵測"
     },
     {
       "arxiv_id": "2605.17110",
@@ -910,7 +934,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17110",
       "summary": "Query clustering organizes queries into groups that reflect shared latent capability demands, enabling capability-aware LLM evaluation. Existing clustering methods, which primarily rely on semantic taxonomies or embeddings, often fail to capture such latent capability requirements due to a misalignment between surface-level semantics and actual model performance. We propose ECC, an algorithm that calibrates prior semantic embeddings using limited posterior model comparisons to bridge the gap bet",
-      "title": "Capturing LLM Capabilities via Evidence-Calibrated Query Clustering"
+      "summary_zh": "查詢分群旨在把查詢分成能反映共同潛在能力需求的群組，以支援具備能力感知的 LLM 評估。既有方法主要依賴語意分類體系或嵌入向量，但表層語意和模型實際表現之間常存在錯位：語意相近的查詢未必需要相同能力，因此分群結果難以對應真正的能力需求。本文提出 ECC，先以語意嵌入建立先驗分群，再利用少量後驗模型比較結果進行校準，把分群調整到更貼近模型表現差異的結構，藉此橋接語意與能力之間的落差。摘要在此處被截斷，未交代校準的具體目標函數、需要多少模型比較樣本、是否假設可取得多模型輸出，以及評估所用的資料集與指標。因此其相對於純語意分群的改進幅度、對比較預算的敏感度與可擴展性仍無法確認。此工作的意義在於指出 LLM 能力評估的瓶頸可能不在語意表徵，而在缺少以模型行為為證據的校準步驟；若方法成立，將有助於建立更貼近真實能力分布的分群式評測與模型選擇流程，並降低以語意相似度替代能力相似度所造成的誤判。",
+      "title": "Capturing LLM Capabilities via Evidence-Calibrated Query Clustering",
+      "title_zh": "以證據校準的查詢分群捕捉 LLM 能力"
     },
     {
       "arxiv_id": "2605.17104",
@@ -965,7 +991,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17104",
       "summary": "With the continuous advancement of reasoning abilities in Large Language Models (LLMs), their application to scientific reasoning tasks has gained significant research attention. Current research primarily emphasizes boosting LLMs' performance on scientific QA benchmarks by training on larger, more comprehensive datasets with extended reasoning chains. However, these approaches neglect the essence of the scientific reasoning process -- logicality, which is the rational foundation to ensure the v",
-      "title": "Scientific Logicality Enriched Methodology for LLM Reasoning: A Practice in Physics"
+      "summary_zh": "隨著大型語言模型推論能力提升，將其用於科學推論任務受到廣泛關注。目前研究多半著重以更大、更完整的資料集與更長的推論鏈訓練模型，藉此拉高科學問答基準的成績，卻忽略科學推論過程的本質——邏輯性，也就是確保推論有效的理性基礎。本文以物理領域為實踐場域，主張應把科學邏輯性納入方法論，而不只是追求答案正確；摘要指出既有做法在資料規模與推論長度上著力，卻未處理邏輯結構的嚴謹性，因而可能產生看似合理但推理跳躍或前提不成立的結果。由於摘要在此截斷，具體的邏輯表徵方式、訓練或提示流程、評測設計、資料來源與基線比較皆未揭露，也無法判斷是否引入人工標註的邏輯結構或形式化檢查，以及此方法在物理以外的學科是否通用。其重要性在於提出一個方向性批評：科學推論評測若只看最終答案，將難以區分真正的邏輯推演與模式記憶，後續研究需建立能檢驗推理鏈邏輯一致性的方法與基準。",
+      "title": "Scientific Logicality Enriched Methodology for LLM Reasoning: A Practice in Physics",
+      "title_zh": "以科學邏輯性充實 LLM 推論方法論：物理領域的實踐"
     },
     {
       "arxiv_id": "2605.20235",
@@ -1022,7 +1050,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.20235",
       "summary": "Diffusion models generate high-dimensional data with remarkable quality, yet how their training efficiently learns the score function, bypassing the curse of dimensionality when data is supported on low-dimensional manifolds, remains theoretically unexplained. We identify a collapse-and-refine mechanism driven by the geometry of the score function itself: at small noise scales, the diverging singularity of the score drives a rapid dimensional collapse of the induced denoising map onto the data m",
-      "title": "Provably Learning Diffusion Models under the Manifold Hypothesis: Collapse and Refine"
+      "summary_zh": "擴散模型能生成品質極佳的高維資料，但當資料實際支撐在低維流形上時，訓練為何能有效學到 score function、並繞過維度詛咒，在理論上仍缺乏解釋。本文提出「塌縮與精煉」（collapse-and-refine）機制，從 score function 本身的幾何性質出發說明其學習行為：在較小的噪聲尺度下，score 的發散奇異性會驅使誘導出的去噪映射快速發生維度塌縮，使映射集中到資料流形附近，之後再逐步精煉細節。此觀點把流形假設、score 的奇異結構與去噪映射的維度行為串接起來，為低維支撐下的可學習性提供可證明的分析框架。摘要止於此處，未提供定理的完整假設、樣本複雜度界線、收縮速率或實驗驗證，因此尚無法評估其結論對真實擴散模型訓練條件的適用範圍，例如噪聲排程、網路參數化與近似誤差是否被納入。其理論意義在於替擴散模型在高維生成上的成功提供幾何解釋，並可能指引更有效率的噪聲排程與訓練設計。",
+      "title": "Provably Learning Diffusion Models under the Manifold Hypothesis: Collapse and Refine",
+      "title_zh": "在流形假設下可證明地學習擴散模型：塌縮與精煉"
     },
     {
       "arxiv_id": "2605.17250",
@@ -1077,7 +1107,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17250",
       "summary": "Test-time adaptation (TTA) has recently emerged as a promising approach for improving time series forecasting (TSF) under distribution shift. Existing TSF-TTA methods differ in how they utilize revealed targets, yet the resulting adaptation protocols remain heterogeneous and lack a clearly unified formulation. To address this issue, we revisit TSF-TTA from the perspective of protocol cleanliness and propose an adaptation protocol based solely on matured ground truth, yielding a more principled s",
-      "title": "Towards Principled Test-Time Adaptation for Time Series Forecasting"
+      "summary_zh": "測試時適應（TTA）近來被視為改善分布偏移下時間序列預測（TSF）的可行手段。既有 TSF-TTA 方法在如何使用「已揭露的目標值」上作法各異，導致適應協定彼此異質、缺乏統一表述，也讓不同研究的比較基礎不一致。本文從「協定純淨性」的角度重新檢視 TSF-TTA，提出僅依據已成熟可用之ground truth 的適應協定，避免使用在實際部署時尚未取得的資訊，藉此得到更具原則性的設定。摘要在此截斷，未說明該協定的具體形式、更新規則、需要多少延遲目標值，亦未提供在哪些資料集與偏移型態下的實驗結果，因此無法確認其相對於既有方法的準確度增益、計算成本與對延遲設定的敏感度。其重要性在於指出 TSF-TTA 的進展不僅取決於適應演算法，也取決於協定是否反映真實部署中資訊可得的時序；建立乾淨且可比較的協定，有助於釐清哪些方法在實務上真正可行，並避免因使用不當的未來資訊而高估效果。",
+      "title": "Towards Principled Test-Time Adaptation for Time Series Forecasting",
+      "title_zh": "邁向時間序列預測的原則化測試時適應"
     },
     {
       "arxiv_id": "2605.17508",
@@ -1130,7 +1162,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17508",
       "summary": "Split Federated Learning (SFL) enables privacy-preserving collaborative training by partitioning models between clients and a server. However, under non-IID data distributions, SFL often suffers from biased optimization and unstable convergence, while existing solutions largely adapt techniques from conventional federated learning. In this work, we observe that the split architecture of SFL inherently alters how client information is represented and coordinated, opening opportunities for bias co",
-      "title": "BESplit: Bias-Compensated Split Federated Learning with Evidential Aggregation"
+      "summary_zh": "拆分聯邦學習（SFL）透過在客戶端與伺服器之間切分模型，實現兼顧隱私的協同訓練。然而在非 IID 資料分布下，SFL 常出現偏差性的最佳化與不穩定的收斂，既有解法多半直接移植傳統聯邦學習的技術，未正視拆分架構本身的差異。本文觀察到 SFL 的拆分架構從根本上改變了客戶端資訊的表徵與協調方式，因而開啟了偏差補償的新機會。方法上提出偏差補償機制，並搭配以證據（evidential）為基礎的聚合方式，讓伺服器在彙整客戶端更新時能表達不確定性，而非僅取平均或加權平均。摘要未提供具體的補償項設計、聚合規則、收斂性分析，也未交代實驗所用的資料集、非 IID 程度、通訊成本與相對基線的準確度比較，因此改進幅度與適用範圍仍待全文確認。其意義在於把 SFL 的偏差問題視為架構特性而非通用聯邦學習問題的延伸，若能驗證，將有助於提升拆分式協同訓練在異質資料下的穩定性與實用性。",
+      "title": "BESplit: Bias-Compensated Split Federated Learning with Evidential Aggregation",
+      "title_zh": "BESplit：具證據式聚合的偏差補償拆分聯邦學習"
     },
     {
       "arxiv_id": "2605.17504",
@@ -1188,7 +1222,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17504",
       "summary": "Most current paradigms in visual mechanistic interpretability (MI) remain confined to interpreting internal units of the vision model via heuristic methods (e.g., top-$K$ activation retrieval or optimization with regularization). In this work, we establish a theoretical distributional view for visual MI, which models the influence of a feature activation on the natural image distribution, thereby formulating a Kullback-Leibler (KL)-minimal optimization problem to model the MI task. Under this fr",
-      "title": "A Distributional View for Visual Mechanistic Interpretability: KL-Minimal Soft-Constraint Principle"
+      "summary_zh": "目前視覺機制可解釋性（MI）的主流範式，多半侷限於用啟發式方法解讀視覺模型的內部單元，例如取前 K 大的激活，或以正則化進行最佳化，缺乏對「某個特徵激活對影像分布造成何種影響」的原則性刻畫。本文建立一套視覺 MI 的理論分布視角：把特徵激活的影響建模為對自然影像分布的擾動，並在此框架下將 MI 任務表述為一個 Kullback-Leibler（KL）最小化的最佳化問題，進而導出 KL 最小軟約束原則。摘要在此截斷，未交代此原則的完整推導、與既有啟發式方法的形式關聯、所使用的最佳化演算法，亦無定量或定性的實驗結果可供檢驗，因此其實際解釋力、計算成本與對不同視覺骨幹網路的通用性仍屬未知。其理論意義在於嘗試替視覺可解釋性提供可分析的目標函數，把「找出重要單元」轉為「找出對分布影響最小而仍能解釋行為的約束」，若後續實證支持，將有助於讓視覺 MI 的結論更具原則性與可比較性。",
+      "title": "A Distributional View for Visual Mechanistic Interpretability: KL-Minimal Soft-Constraint Principle",
+      "title_zh": "視覺機制可解釋性的分布視角：KL 最小軟約束原則"
     },
     {
       "arxiv_id": "2605.17503",
@@ -1244,7 +1280,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17503",
       "summary": "The decoding of linguistic information from electroencephalography (EEG) signals remains an extremely challenging problem in brain-computer interface (BCI) research. In particular, sentence-level decoding from EEG is difficult due to the low signal-to-noise ratio of these recordings. Previous studies tackling this problem have typically failed to surpass random baseline performance unless teacher forcing is used during the inference phase. In this work, we propose a retrieval-augmented generatio",
-      "title": "RAG-based EEG-to-Text Translation Using Deep Learning and LLMs"
+      "summary_zh": "腦電圖（EEG）訊號的語言解碼一直是腦機介面（BCI）研究的重大難題，其中句子層級的 EEG 解碼尤其困難，主因是這類紀錄的訊號雜訊比偏低。過去研究多半無法在推論階段突破隨機基線的表現，除非額外使用 teacher forcing 這類不自然的輔助手段。本文提出以檢索增強生成（retrieval-augmented generation, RAG）為核心的框架，結合深度學習模型與大型語言模型（LLM），試圖在推論時不依賴 teacher forcing，也能把 EEG 訊號轉譯為連貫文字。方法上，作者先以深度網路抽取 EEG 的時序特徵，再透過檢索機制從語料庫中找出與當前神經訊號最相近的候選語句作為外部知識，最後交由 LLM 生成最終句子，以補足 EEG 本身資訊量不足的問題。摘要僅揭示架構動機，未提供具體資料集、評估指標數值或與基線的量化比較，因此實際增益仍待驗證。可預期的限制包括：檢索品質高度依賴資料庫涵蓋範圍，跨受試者與跨語言的泛化性亦可能是瓶頸；此外 LLM 可能引入與 EEG 無關的語言先驗而誇大表現。若此路線成立，將有助於讓非侵入式 BCI 的文字輸出更實用，並為低訊噪比神經解碼提供一條結合外部知識的可行方向。",
+      "title": "RAG-based EEG-to-Text Translation Using Deep Learning and LLMs",
+      "title_zh": "以深度學習與 LLM 為基礎、結合檢索增強生成的 EEG 轉文字翻譯"
     },
     {
       "arxiv_id": "2605.17499",
@@ -1297,7 +1335,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17499",
       "summary": "Multimodal deep neural networks enhance deep comprehension by integrating diverse data modalities. Data from different modalities are typically projected into a shared latent space for similarity computation, but this process is resource intensive due to large image encoders and equal processing of test data during prediction. Early exit methods reduce computational load by utilizing intermediate layers, saving time and memory. However, developing such methods is challenging for multimodal data ",
-      "title": "t-gems: text-guided exit modules for decreasing clip image encoder"
+      "summary_zh": "多模態深度神經網路藉由整合不同模態的資料來提升理解能力，典型做法是把影像與文字投影到共享的潛在空間，再計算相似度。然而此流程仰賴龐大的影像編碼器，且對所有測試資料一視同仁地進行完整運算，使得推論相當耗費資源。提前退出（early exit）方法透過在網路中間層就產生輸出，可同時節省時間與記憶體，是常見的加速策略；但要用於多模態情境並不容易，因為判斷「何時可以安全退出」需要同時考慮跨模態的語意一致性，而非單一模態的信心分數。本文提出 t-gems，即文字引導的退出模組（text-guided exit modules），利用文字端的語意訊號來引導影像編碼器在適當的中間層提前結束運算，避免不必要的深層計算。摘要僅說明動機與模組定位，尚未揭露具體的閘控機制、訓練目標、使用的檢索或分類任務、以及準確率與加速倍率的量化結果，因此實際效益仍無法評估。可能的限制包括：文字引導模組本身會帶來額外延遲與參數，且在文字描述缺失或品質不佳時退出判斷可能失準；不同任務對退出層的敏感度差異亦需檢驗。若成效確立，此法可為大規模多模態推論的部署成本提供更務實的最佳化途徑，對需要在有限硬體上服務大量請求的系統尤其重要。",
+      "title": "t-gems: text-guided exit modules for decreasing clip image encoder",
+      "title_zh": "t-gems：以文字引導的提前退出模組降低 CLIP 影像編碼器成本"
     },
     {
       "arxiv_id": "2605.17497",
@@ -1348,7 +1388,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17497",
       "summary": "GRPO-style RLVR trains reasoning models from multiple on-policy attempts per prompt, but typically uses these attempts only through terminal rewards. We show that a mixed group contains a richer process signal: a correct completion is a self-generated witness of how the current policy can solve the problem, while a wrong completion provides on-policy prefixes where the policy needs correction. We introduce \\emph{Self-Supervised On-Policy Distillation} (SSOPD), which distills a teacher distributi",
-      "title": "Self-Supervised On-Policy Distillation for Reasoning Language Models"
+      "summary_zh": "GRPO 風格的 RLVR 會針對每個提示產生多個同策略（on-policy）嘗試來訓練推理模型，但通常只透過最終的正確或錯誤獎勵來使用這些嘗試，忽略了中間過程所蘊含的訊號。本文觀察到一個混合的嘗試群組其實帶有更豐富的過程資訊：正確的完成內容可視為「當前策略如何解出此題」的自生成見證，而錯誤的完成內容則提供了需要修正的同策略前綴。基於此，作者提出自監督同策略蒸餾（Self-Supervised On-Policy Distillation, SSOPD），把這些自生成的見證與待修正前綴轉化為教師分布，讓學生模型在同策略軌跡上進行蒸餾，等同於用模型自身產生的正確路徑來監督自身的錯誤路徑，而不需外部更強的教師模型或人工標註。摘要僅止於動機與方法輪廓，未提供資料集、基準測試、準確率提升幅度或與 GRPO 等基線的對照數據，因此實際增益尚待驗證。可能的限制包括：正確見證的品質取決於取樣多樣性，若難題幾乎全數答錯則無自監督訊號；蒸餾目標的溫度與加權設計也可能影響穩定性。整體而言，此工作把 RLVR 的終端獎勵擴展為過程層級的監督，若能奏效，將為推理模型的訓練效率與樣本利用率提供新的思路。",
+      "title": "Self-Supervised On-Policy Distillation for Reasoning Language Models",
+      "title_zh": "用於推理語言模型的自監督同策略蒸餾"
     },
     {
       "arxiv_id": "2605.17493",
@@ -1401,7 +1443,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17493",
       "summary": "Deep learning weather prediction models achieve remarkable predictive skill yet remain largely opaque: we know little about how they represent physical climate phenomena internally. Mechanistic interpretability through Sparse Autoencoders (SAEs) offers a principled route to decomposing these representations, but existing SAEs assume strictly linear feature superposition - a constraint ill-suited for the highly nonlinear atmospheric dynamics encoded in modern transformers. We introduce KAN-SAE, a",
-      "title": "Beyond Linear Superposition: Discovering Climate Features in AI Weather Models with KAN-SAE"
+      "summary_zh": "深度學習天氣預報模型已展現優異的預測能力，但其內部如何表徵物理氣候現象仍相當不透明。稀疏自編碼器（Sparse Autoencoder, SAE）被視為機制可解釋性的重要工具，能把高維表徵分解成可解讀的特徵；然而既有 SAE 多半假設特徵之間是嚴格的線性疊加，這對現代 Transformer 中所編碼的高度非線性大氣動力學並不合適，可能導致分解出的特徵無法對應真實的物理結構。本文提出 KAN-SAE，嘗試以 Kolmogorov-Arnold Network 的非線性結構取代線性解碼器，使字典學習能在非線性特徵疊加的假設下運作，進而從天氣模型中挖掘出更貼近氣候物理的潛在特徵。摘要僅交代問題設定與方法定位，未提供具體模型、資料集、特徵可解讀性的量化評估或與線性 SAE 的對照結果，因此改良幅度仍待檢驗。可能的限制包括：非線性解碼器增加訓練成本與超參數敏感度，稀疏性與重構保真度之間的權衡也更複雜，且辨識出的特徵是否真的對應可驗證的氣候機制仍需物理檢核。若此方法有效，將有助於提升 AI 天氣模型的透明度與可信度，對科學應用與政策溝通皆具意義。",
+      "title": "Beyond Linear Superposition: Discovering Climate Features in AI Weather Models with KAN-SAE",
+      "title_zh": "超越線性疊加：以 KAN-SAE 揭開 AI 天氣模型中的氣候特徵"
     },
     {
       "arxiv_id": "2605.17489",
@@ -1454,7 +1498,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17489",
       "summary": "Face Image Quality Assessment (FIQA) is a crucial control step in biometric pipelines. It ensures only reliable samples are processed to maintain system accuracy. State-of-the-art FIQA methods achieve high utility but typically operate as \"black boxes.\" They produce scalar scores without human-interpretable justifications. This lack of transparency limits their effectiveness in human-in-the-loop scenarios, such as automated border control, where actionable feedback is essential. In this paper, w",
-      "title": "Employing Vision-Language Models for Face Image Quality Assessment"
+      "summary_zh": "人臉影像品質評估（FIQA）是生物辨識流程中的關鍵管制步驟，用以確保只有可靠的樣本進入後續比對，以維持系統準確度。現行最先進的 FIQA 方法雖然實用性高，卻多半是黑箱：它們只輸出一個純量分數，缺乏人類可理解的判讀理由。這種不透明性限制了其在人機協作情境中的效益，例如自動化邊境查驗，因為在該情境中必須能對使用者提供可行動的回饋，說明影像為何被判定為不合格。本文因此探討以視覺語言模型（VLM）執行 FIQA，讓模型在給出品質判斷的同時，也能產生自然語言的解釋，將單純的評分轉為可溝通的診斷。摘要僅止於動機與方向，未揭露所採用的 VLM 架構、提示設計、訓練策略、評測資料集，以及品質分數與人工判讀或下游辨識準確率之間的量化關聯，因此實質效益仍待驗證。可能的限制包括：語言解釋可能聽起來合理卻與實際品質無關，產生幻覺式理由；推論成本遠高於純量評分方法；以及跨族群、跨光照條件下的偏誤風險。若能在維持效用的同時提升可解釋性，此法對需要問責與申訴機制的生物辨識系統具高度價值。",
+      "title": "Employing Vision-Language Models for Face Image Quality Assessment",
+      "title_zh": "運用視覺語言模型於人臉影像品質評估"
     },
     {
       "arxiv_id": "2605.17488",
@@ -1512,7 +1558,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17488",
       "summary": "The landscape of joint audio and video generation has been fundamentally transformed by the advent of powerful foundation models. Despite these strides, achieving cohesive multimodal customization for the simultaneous preservation of visual identities and vocal timbres across multiple interacting subjects remains largely underexplored. To bridge this gap, we present Omni-Customizer, an end-to-end framework targeted at the precise binding and seamless fusion of multimodal identity information. Sp",
-      "title": "Omni-Customizer: End-to-End MultiModal Customization for Joint Audio-Video Generation"
+      "summary_zh": "聯合音訊與視訊生成領域近年因強大基礎模型的出現而產生根本性變化，能同時產生畫面與聲音的系統逐漸成形。然而，要讓多個互動主體在同一段內容中同時保持視覺身分與聲音音色的一致性，也就是多模態的整體客製化，仍相對未被充分探索。既有方法往往分別處理外觀與聲音，或僅支援單一主體，難以應付多方對話與互動情境。為補此缺口，本文提出 Omni-Customizer，一個端到端框架，目標是精確綁定並無縫融合多模態身分資訊，使指定的人物外觀與對應嗓音能在生成過程中正確對齊。摘要僅描述問題與框架定位，未說明具體的生成骨幹、條件注入機制、訓練資料規模，亦未提供身分保持度、音色相似度或主觀評測的量化結果，因此成效仍待檢驗。可預期的限制包括：多主體綁定在擁擠場景中容易混淆，資料端的身分與聲音配對取得成本高，且可能衍生深度偽造與肖像權的濫用風險。若技術成熟，將可大幅降低個人化影音製作門檻，對娛樂、教育與虛擬角色應用帶來直接影響，因此相關的倫理與授權規範也必須同步推進。",
+      "title": "Omni-Customizer: End-to-End MultiModal Customization for Joint Audio-Video Generation",
+      "title_zh": "Omni-Customizer：針對音訊與視訊聯合生成的端到端多模態客製化"
     },
     {
       "arxiv_id": "2605.17486",
@@ -1569,7 +1617,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17486",
       "summary": "Recent progress in Reinforcement Learning (RL) provides a principled approach to optimizing Vision-Language-Action (VLA) models, facilitating a shift from trajectory imitation to active learning in the task environment. Despite improvements in control precision, most RL optimizers remain task-specific, which reduces VLA models from generalist controllers to policies that overfit to a narrow set of tasks. In this study, we conduct an in-depth analysis of this phenomenon and highlight the importan",
-      "title": "DyGRO-VLA: Cross-Task Scaling of Vision-Language-Action Models via Dynamic Grouped Residual Optimization"
+      "summary_zh": "強化學習（RL）近期的進展為視覺語言動作（VLA）模型提供了具原則的最佳化途徑，使其從單純的軌跡模仿轉向在任務環境中主動學習。然而，儘管控制精度有所提升，多數 RL 最佳化器仍是任務專屬的，這會讓原本應為通用控制器的 VLA 模型退化為只對少數任務過度擬合的策略，喪失跨任務的泛化能力。本文深入分析此現象，並強調跨任務擴展的重要性，進而提出 DyGRO-VLA，透過動態分組殘差最佳化來因應。其核心概念是依任務或資料特性動態分組，並在共享策略上以殘差形式學習各組的調整量，使不同任務能共用主幹知識，同時保留各自的專屬修正，避免單一任務主導梯度。摘要僅止於問題診斷與方法命名，未提供具體的基準環境、任務數量、成功率或與既有 RL 微調方法的量化比較，因此實際增益仍待驗證。可能的限制包括：分組策略需依賴任務標籤或相似度估計，分組過細會使殘差項難以共享，過粗則失去專屬調整的意義；此外動態調整也增加訓練不穩定性。若成效確立，此方法可讓 VLA 模型在保持通用性的同時提升多任務表現，對通用機器人控制具關鍵意義。",
+      "title": "DyGRO-VLA: Cross-Task Scaling of Vision-Language-Action Models via Dynamic Grouped Residual Optimization",
+      "title_zh": "DyGRO-VLA：以動態分組殘差最佳化實現視覺語言動作模型的跨任務擴展"
     },
     {
       "arxiv_id": "2605.17480",
@@ -1622,7 +1672,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17480",
       "summary": "Multi-agent systems extend large language models (LLMs) by decomposing tasks among specialized agents, but their distributed decision process creates new attack surfaces. We identify semantic hijacking, an attack in which harmful requests are concealed within domain-specific narratives and propagated to a Manager through Worker reports, without any syntactic injection primitives. Across 42,000 adversarial trials over 12 Manager models and 7 Worker configurations, we uncover a capability paradox:",
-      "title": "The Capability Paradox: How Smarter Auditors Make Multi-Agent Systems Less Secure"
+      "summary_zh": "多代理系統透過把任務拆解給專門化的代理來擴展大型語言模型（LLM）的能力，但這種分散式決策流程也創造了新的攻擊面。本文指出一種名為語意劫持（semantic hijacking）的攻擊：有害請求被包裝進特定領域的敘事之中，並透過 Worker 的報告傳遞給 Manager，整個過程完全不使用任何語法層級的注入原語，因此傳統以字串特徵或指令注入偵測為主的防禦難以察覺。作者在 12 個 Manager 模型與 7 種 Worker 配置上進行了 42,000 次對抗試驗，發現所謂的能力悖論：能力越強的 Manager 越容易受到此類攻擊。摘要僅陳述現象與實驗規模，未揭露具體的攻擊成功率數值、模型清單、任務領域與防禦提案，因此因果機制仍待檢驗。可理解的解釋是較強的模型更善於理解並順從看似合理的領域敘事，反而降低對隱含惡意意圖的警戒，但此假設需要更細緻的消融實驗支持。可能的限制包括：試驗設計可能對特定提示模板敏感，跨語言與跨領域的可轉移性未知。此工作的重要性在於提醒多代理架構的安全性不能僅靠提升單一代理能力來解決，必須在代理間通訊與權限設計上另闢防線。",
+      "title": "The Capability Paradox: How Smarter Auditors Make Multi-Agent Systems Less Secure",
+      "title_zh": "能力悖論：更聰明的審查者為何讓多代理系統更不安全"
     },
     {
       "arxiv_id": "2605.17478",
@@ -1678,7 +1730,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17478",
       "summary": "Visual Geometry Grounded Transformers (VGGT) have set new benchmarks in high-fidelity 3D scene reconstruction. However, as the sequence length increases, these models suffer from catastrophic geometric forgetting and accumulation drift, primarily due to the quadratic complexity of global attention which necessitates truncated temporal windows. To overcome the resulting geometric drift, we present Mamba-VGGT, an enhanced VGGT framework capable of persistent long-range reasoning. Our key contribut",
-      "title": "Mamba-VGGT: Persistent Long-Sequence Video Geometry Grounded Transformer via External Sliding Window Mamba Memory"
+      "summary_zh": "視覺幾何接地 Transformer（VGGT）在高保真三維場景重建上樹立了新標竿，但序列一拉長就出現嚴重的幾何遺忘與累積漂移，主因在於全域注意力的二次複雜度迫使模型只能使用截斷的時間視窗。為了解決由此產生的幾何漂移，作者提出 Mamba-VGGT，一套具備持久長距推理能力的改良式 VGGT 框架；其核心貢獻是以外部滑動視窗 Mamba 記憶來承載跨視窗的歷史資訊，讓模型不必把整段序列塞進注意力矩陣，仍能維持幾何一致性。摘要僅止於此，未提供具體基準資料集、誤差指標或與既有方法的量化比較，因此其實際增益幅度、在極長序列下的記憶衰減行為，以及外部記憶帶來的額外推論成本，均尚待全文驗證，讀者不宜先行推論其成效。此工作的重要性在於指出 VGGT 類模型的瓶頸不只是計算量，而是時間截斷造成的幾何漂移，並提出以狀態空間模型作為外部記憶的可行方向，對長序列影片重建、串流式三維感知與具身智慧應用具有潛在影響。",
+      "title": "Mamba-VGGT: Persistent Long-Sequence Video Geometry Grounded Transformer via External Sliding Window Mamba Memory",
+      "title_zh": "Mamba-VGGT：以外部滑動視窗 Mamba 記憶實現持久長序列影片幾何接地的 Transformer"
     },
     {
       "arxiv_id": "2605.17475",
@@ -1733,7 +1787,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17475",
       "summary": "Building software that is correct by construction is a long-standing goal in software engineering, as it ensures reliability during design and development rather than after deployment. Formal methods realize this vision by enabling the expression of system behavior and requirements in mathematics, thereby guaranteeing correctness through formal verification, including theorem proving and model checking. However, the steep learning curve and demand for mathematical expertise hinder the widespread",
-      "title": "Event-B Agent: Towards LLM Agent for Formal Model Synthesis and Repair"
+      "summary_zh": "「建構即正確」是軟體工程長久以來的目標，因為它把可靠性前移到設計與開發階段，而非等到部署後才補救。形式化方法透過以數學描述系統行為與需求來實現此願景，並藉由定理證明與模型檢查等技術保證正確性。然而，形式化方法學習曲線陡峭、對數學專業知識要求高，成為推廣的主要障礙。本文提出 Event-B Agent，嘗試以大型語言模型代理自動化 Event-B 形式化模型的合成與修復流程，藉此降低專家介入門檻。摘要僅止於問題陳述，未揭露代理的架構設計、與定理證明器或模型檢查工具的互動方式，也沒有提供修復成功率、生成模型可驗證比例或與人類專家的對照實驗結果。因此其自動化程度、對錯誤模型的診斷能力，以及在真實工業規格上的泛化表現仍屬未知。此研究的重要性在於把 LLM 代理導入形式化開發迴圈，若能可靠運作，將使形式化驗證從少數專家的工具，轉為一般開發流程中可負擔的一環，對安全關鍵系統的工程實務具指標意義。",
+      "title": "Event-B Agent: Towards LLM Agent for Formal Model Synthesis and Repair",
+      "title_zh": "Event-B Agent：面向形式化模型合成與修復的 LLM 代理"
     },
     {
       "arxiv_id": "2605.17467",
@@ -1787,7 +1843,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17467",
       "summary": "Large language model-driven multi-agent systems (LLM-MAS) excel at complex tasks, yet unreliable agents remain a key bottleneck to system-level reliability. Automatic failure attribution is therefore critical, but existing approaches, such as direct prediction of agent-error pairs and agent-first failure attribution, rely on local logs of agents and miss global failures that only manifest over full interaction trajectories, such as cross-step inconsistencies and inter-agent coordination errors. ",
-      "title": "VerifyMAS: Hypothesis Verification for Failure Attribution in LLM Multi-Agent Systems"
+      "summary_zh": "大型語言模型驅動的多代理系統（LLM-MAS）在複雜任務上表現出色，但不可靠的代理仍是系統層級可靠度的關鍵瓶頸，因此自動化失效歸因至關重要。現有做法如直接預測「代理—錯誤」配對，或採代理優先的失效歸因，主要依賴各代理的局部日誌，因而漏掉只有在完整互動軌跡上才會顯現的全域失效，例如跨步驟不一致與代理間協調錯誤。本文提出 VerifyMAS，將失效歸因重新表述為假設驗證問題，透過檢驗關於錯誤來源的假設，而非直接分類，來捕捉需要全域軌跡證據的失效模式。不過摘要僅止於動機與問題設定，未說明假設如何生成、驗證訊號從何而來、是否需要額外的模型呼叫，也未提供基準資料集、歸因準確率或與現有方法的量化比較。其對長軌跡的擴充性、驗證成本與誤判風險均待全文檢驗。此研究的重要性在於指出局部日誌的觀點侷限，並把多代理除錯推向全域軌跡層次，對提升 LLM 代理系統的可觀測性與可維護性具有實務價值。",
+      "title": "VerifyMAS: Hypothesis Verification for Failure Attribution in LLM Multi-Agent Systems",
+      "title_zh": "VerifyMAS：以假設驗證對 LLM 多代理系統進行失效歸因"
     },
     {
       "arxiv_id": "2605.17461",
@@ -1843,7 +1901,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17461",
       "summary": "Whether an interviewee's honest and deceptive responses can be detected by facial expression signals in videos has been debated and requires further research. We developed deep learning models enabled by computer vision to extract temporal patterns of job applicants' facial expressions and head movements to identify self-reported honest and deceptive impression management (IM) tactics from video frames in real asynchronous video interviews. A 12- to 15-minute video was recorded for each of N=121",
-      "title": "Artificial Intelligence can Recognize Whether a Job Applicant is Selling and/or Lying According to Facial Expressions and Head Movements Much More Correctly Than Human Interviewers"
+      "summary_zh": "求職者在面試中誠實或欺瞞的回應，是否能從影片中的臉部表情訊號辨識出來，長期存在爭論，仍需更多研究。作者以電腦視覺結合深度學習模型，從非同步視訊面試的影片幀中擷取求職者臉部表情與頭部動作的時間模式，用來辨識自我報告的誠實與欺瞞印象管理策略。研究共蒐集 N=121 位受試者、每人錄製 12 至 15 分鐘的影片，並以自我報告標籤作為監督訊號進行建模。摘要指出此類模型在判斷上明顯優於人類面試官，但未提供確切準確率、AUC 或統計檢定細節，也未說明訓練與測試資料的切分方式。需特別注意的是，標籤來自受試者自陳，並非經查證的實際說謊行為，因此「偵測說謊」的宣稱應審慎解讀；模型也可能學到與欺瞞無關的個別差異或錄影條件。此研究的重要性在於示範多模態時序特徵在面試情境的辨識潛力，同時也突顯自陳標籤與倫理風險在自動化面試評估中的關鍵限制。",
+      "title": "Artificial Intelligence can Recognize Whether a Job Applicant is Selling and/or Lying According to Facial Expressions and Head Movements Much More Correctly Than Human Interviewers",
+      "title_zh": "人工智慧能比人類面試官更準確地依據臉部表情與頭部動作判斷求職者是否在推銷與說謊"
     },
     {
       "arxiv_id": "2605.17458",
@@ -1896,7 +1956,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17458",
       "summary": "Text classification models are typically trained via supervised fine-tuning (SFT). However, SFT essentially performs behavior cloning from instance-wise labels and thus fails to adequately capture relative preference relations among samples, which limits the model's ability to shape decision boundaries and calibrate predictive confidence. In this paper, we propose ClaHF, a human feedback-inspired reinforcement learning (RL) framework for text classification that integrates preference modeling an",
-      "title": "ClaHF: A Human Feedback-inspired Reinforcement Learning Framework for Improving Classification Tasks"
+      "summary_zh": "文字分類模型通常以監督式微調（SFT）訓練，但 SFT 本質上是對逐樣本標籤做行為複製，無法充分捕捉樣本之間的相對偏好關係，因而限制模型塑造決策邊界與校準預測信心的能力。本文提出 ClaHF，一套受人類回饋啟發的強化學習框架，用於文字分類，將偏好建模與分類目標整合，使模型能利用成對或排序式的偏好訊號，而不只是單點標籤。摘要僅止於動機與方法輪廓，未揭露偏好資料的來源與規模、獎勵設計細節、RL 演算法的選擇，也未提供基準資料集上的準確率、校準誤差或與 SFT 及既有 RLHF 變體的比較結果。因此其在不同分類任務與標籤雜訊條件下的穩健性、訓練成本與是否出現獎勵駭客，均待全文檢驗。此研究的重要性在於把「相對偏好」引入分類典範，若校準與決策邊界確實改善，將對需要可靠信心估計的分類應用（如風險篩選與醫療輔助）具有實務意義。",
+      "title": "ClaHF: A Human Feedback-inspired Reinforcement Learning Framework for Improving Classification Tasks",
+      "title_zh": "ClaHF：受人類回饋啟發、用於改善分類任務的強化學習框架"
     },
     {
       "arxiv_id": "2605.17454",
@@ -1948,7 +2010,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17454",
       "summary": "Multi-party multi-objective optimization problems (MPMOPs) require consensus among autonomous decision makers and therefore differ from flattened many-objective formulations. Existing runtime theory for multi-objective evolutionary algorithms is largely tailored to single-party Pareto-front approximation and does not directly explain common-solution search in MPMOPs. We investigate cross-party recombination in two representative settings. On MP-JCG, a pseudo-Boolean benchmark with an explicit ga",
-      "title": "Multi-Party Multi-Objective Optimization as Consensus Search: Runtime Analysis of Cross-Party Recombination"
+      "summary_zh": "多方多目標最佳化問題（MPMOPs）要求各自自主的決策者達成共識，因此與攤平後的多目標形式不同。現有多目標演化演算法的執行期理論，多半針對單方的 Pareto 前緣近似，無法直接解釋 MPMOPs 中的共識解搜尋。本文研究兩種代表性設定下的跨方重組機制：在帶有明確共識門檻的偽布林基準 MP-JCG 上，分析跨方重組如何影響找到共同解所需的時間。摘要僅止於問題定位與設定描述，未完整揭露理論結果的形式（例如上界、下界或加速條件），也未提供實驗驗證或與既有單方執行期分析的對照。因此跨方重組在何種參數區間具優勢、共識門檻如何改變複雜度，以及結論能否推廣到更一般的 MPMOPs，仍有待全文確認。此研究的重要性在於補上多目標演化計算理論中長期缺席的「多方共識」面向，為協商式、聯邦式與多方資源分配等實務問題提供可分析的理论基礎。",
+      "title": "Multi-Party Multi-Objective Optimization as Consensus Search: Runtime Analysis of Cross-Party Recombination",
+      "title_zh": "多方多目標最佳化即共識搜尋：跨方重組的執行期分析"
     },
     {
       "arxiv_id": "2605.17453",
@@ -2006,7 +2070,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17453",
       "summary": "Tool-using LLM agents increasingly rely on external tools to make consequential decisions, yet most existing agent-security benchmarks and defenses implicitly assume that tool feedback is trustworthy once a tool has been selected. We study a different failure mode, cognitive poisoning, in which a malicious tool behaves plausibly during exploration, accumulates trust through benign-looking feedback, and becomes harmful only when hidden state conditions align with the final executable action. To s",
-      "title": "Trust No Tool: Evaluating and Defending LLM Agents under Untrusted Tool Feedback"
+      "summary_zh": "使用工具的 LLM 代理日益依賴外部工具做出具後果的決策，然而現有代理安全基準與防禦多半隱含假設：工具一旦被選定，其回饋即可信任。本文研究另一種失效模式「認知投毒」：惡意工具在探索階段表現合理，透過看似無害的回饋累積信任，直到隱藏狀態條件與最終可執行動作對齊時才顯現危害。作者指出既有防禦難以察覺此類延遲觸發的攻擊，因為危害並非即時呈現，而是在互動後期才爆發。摘要僅止於問題定義與動機，未提供完整的攻擊實作細節、基準環境規模，也未給出防禦方法的量化評估，例如攻擊成功率下降幅度或誤拒正常工具的比例。因此此威脅在真實工具生態中的普遍性，以及所提防禦對自適應攻擊的穩健性，仍待全文檢驗。此研究的重要性在於把代理安全焦點從「工具是否被選錯」推進到「工具回饋是否可累積信任」，對工具呼叫框架的信任管理與長期互動安全設計具有警示與指引價值。",
+      "title": "Trust No Tool: Evaluating and Defending LLM Agents under Untrusted Tool Feedback",
+      "title_zh": "不信任任何工具：在不可信工具回饋下評估與防禦 LLM 代理"
     },
     {
       "arxiv_id": "2605.17451",
@@ -2061,7 +2127,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17451",
       "summary": "Aerial object tracking has broad applications in public safety, emergency rescue, wildlife monitoring, and related fields. However, existing aerial tracking benchmarks are mainly based on passive 2D video sequences captured from fixed camera locations or predefined flight paths, where drones are treated as passive cameras rather than embodied agents that actively perceive, interact, and control their motion in dynamic 3D scenes. In this paper, we define a new drone-embodied tracking task, termed",
-      "title": "DeTrack: A Benchmark and Altitude-Aware Dual World Model for Drone-embodied Tracking"
+      "summary_zh": "空中目標追蹤在公共安全、緊急救援與野生動物監測等領域應用廣泛。然而現有空中追蹤基準主要以被動的 2D 影片序列為基礎，影片取自固定攝影機位置或預先設定的飛行路徑，把無人機視為被動攝影機，而非能在動態三維場景中主動感知、互動並控制自身運動的具身代理。本文定義了新的「無人機具身追蹤」任務，並提出 DeTrack 基準，以及一個高度感知的雙世界模型方法：一方面建模場景與目標的動態，另一方面納入無人機自身的高度與運動控制，使追蹤决策能隨三維空間位置調整。摘要僅止於任務定義與方法概述，未提供資料集規模、模擬或實機平台細節，也未給出追蹤成功率、軌跡誤差等量化結果，亦未說明與既有 2D 追蹤基準的難度差異。因此雙世界模型的具體架構、訓練訊號來源與在真實飛行條件下的泛化能力仍待全文驗證。此研究的重要性在於把空中追蹤從被動觀測推進到具身決策，為無人機自主追蹤與三維場景理解提供新的評測框架與方法方向。",
+      "title": "DeTrack: A Benchmark and Altitude-Aware Dual World Model for Drone-embodied Tracking",
+      "title_zh": "DeTrack：面向無人機具身追蹤的基準與高度感知雙世界模型"
     },
     {
       "arxiv_id": "2605.17450",
@@ -2118,7 +2186,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17450",
       "summary": "Large language model (LLM) agents are increasingly used for automated vulnerability repair (AVR), where repository-level reasoning enables them to inspect context and produce source-code patches. However, recent empirical results show that these agents still struggle with real-world vulnerabilities. Their main failure mode is semantic misunderstanding: choosing a repair direction that does not match the root cause. We identify two reasons for this gap. Existing agents usually reason from the fai",
-      "title": "ContraFix: Agentic Vulnerability Repair via Differential Runtime Evidence and Skill Reuse"
+      "summary_zh": "大型語言模型代理已被廣泛用於自動化漏洞修補（AVR），能進行儲存庫層級的推理、檢視脈絡並產生原始碼修補。然而近期實證結果顯示，這些代理在真實世界的漏洞上仍表現不佳，主要失敗模式是語意誤解：所選的修補方向與根本原因不符。本文指出造成此落差的原因之一，在於既有代理多半僅從失敗現象出發推理，缺乏對照性的執行期證據來驗證修補方向。作者提出 ContraFix，透過差異化執行期證據與技能重用機制，讓代理在修補前先比對不同執行條件下的行為差異，以定位真正的根因而非表面症狀，並將過去成功的修補技能沉澱為可重用資產。受限於目前僅有摘要，具體基準、修補成功率與消融結果尚待論文全文揭露；其貢獻在於把「先驗證方向、再生成補丁」的流程制度化，對提升代理式漏洞修補的可信度具有指標意義。",
+      "title": "ContraFix: Agentic Vulnerability Repair via Differential Runtime Evidence and Skill Reuse",
+      "title_zh": "ContraFix：以差異化執行期證據與技能重用進行代理式漏洞修補"
     },
     {
       "arxiv_id": "2605.17447",
@@ -2178,7 +2248,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17447",
       "summary": "Vision-Language Models (VLMs) have shown strong promise on Optical Character Recognition (OCR), yet the sheer number of visual tokens required to encode dense documents incurs prohibitive inference cost. Existing pruning methods rely on physical eviction, e.g., permanently discarding visual tokens during the prefill stage. While effective for natural images, this strategy fundamentally breaks down on OCR, where virtually every visual token may correspond to a character or structural element, and",
-      "title": "FastOCR: Dynamic Visual Fixation via KV Cache Pruning for Efficient Document Parsing"
+      "summary_zh": "視覺語言模型（VLM）在光學字元辨識（OCR）上展現潛力，但編碼密集文件所需的大量視覺 token 帶來難以承受的推論成本。既有剪枝方法多依賴物理性驅逐，例如在 prefill 階段永久丟棄視覺 token；此策略對自然影像有效，卻在 OCR 情境根本失效，因為幾乎每個視覺 token 都可能對應一個字元或結構元素，一旦丟棄便造成不可回復的資訊損失。本文提出 FastOCR，改以動態視覺凝視的概念，透過 KV Cache 剪枝在解碼過程中動態決定當下該關注哪些視覺 token，而非在 prefill 階段一次性刪除，從而在維持辨識品質的同時降低推論負擔。由於目前僅有摘要，具體的剪枝準則、壓縮比例與在各 OCR 基準上的準確度—效率權衡仍有待全文驗證。其價值在於指出文件解析場景中「永久驅逐」的盲點，並為高效率文件理解提供新的資源配置思路。",
+      "title": "FastOCR: Dynamic Visual Fixation via KV Cache Pruning for Efficient Document Parsing",
+      "title_zh": "FastOCR：以 KV Cache 剪枝實現動態視覺凝視的高效率文件解析"
     },
     {
       "arxiv_id": "2605.18904",
@@ -2231,7 +2303,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.18904",
       "summary": "Model merging enables the reuse of fine-tuned models without joint training or access to original data. Dynamic merging further improves flexibility by selectively activating task-relevant parameters and efficiently composing experts across multiple tasks. However, existing dynamic methods either maintain a full shared model with tiny experts or allocate excessive capacity to experts, leading to suboptimal accuracy--efficiency trade-offs. To address this, we propose DiDi-Merging, a slim dynamic ",
-      "title": "Dynamic Model Merging Made Slim"
+      "summary_zh": "模型合併可在不聯合訓練、也無須存取原始資料的前提下重用微調模型；動態合併更進一步，透過選擇性啟動與任務相關的參數、有效率地組合多任務專家，提升彈性。然而現有動態方法存在兩難：一是維持完整的共享模型僅搭配極小的專家，二是為專家配置過多容量，兩者都導致準確度與效率之間的取捨不夠理想。本文提出 DiDi-Merging，一套輕量化的動態合併方案，目標是在共享主幹與專家容量之間取得更精細的平衡。受限於目前僅有摘要，其具體的參數分配策略、路由機制，以及在多任務基準上的準確度與記憶體、推論成本比較尚未公開。此工作的重要性在於回應多模型整合實務中日益迫切的儲存與推論預算問題，若能同時保住準確度並顯著縮減模型體積，將有助於動態合併在資源受限環境中的落地。",
+      "title": "Dynamic Model Merging Made Slim",
+      "title_zh": "讓動態模型合併更輕薄"
     },
     {
       "arxiv_id": "2605.17444",
@@ -2288,7 +2362,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17444",
       "summary": "Modern software ecosystems face a rapidly growing number of disclosed vulnerabilities, increasing the need for automated repair techniques that can operate reliably at repository scale. Although Large Language Model (LLM)-based agents have recently shown promise for automated vulnerability repair (AVR), most existing systems still treat repair as a single generation step over the currently visible code context. As a result, they lack a persistent mechanism for reusing prior fixes or learning fro",
-      "title": "MemRepair: Hierarchical Memory for Agentic Repository-Level Vulnerability Repair"
+      "summary_zh": "現代軟體生態系揭露的漏洞數量快速成長，使得能在儲存庫規模下可靠運作的自動化修補技術需求升高。雖然以大型語言模型為基礎的代理近期在自動化漏洞修補（AVR）上展現潛力，但多數既有系統仍把修補視為對當前可見程式碼脈絡的單次生成步驟，因而缺乏可持續重用過往修補、或從歷史經驗學習的機制。本文提出 MemRepair，導入階層式記憶，讓代理能保存並檢索過去修補案例與相關脈絡，使修補決策不必每次從零開始，而是在儲存庫層級上累積經驗。受限於目前僅有摘要，記憶的組織方式、檢索策略，以及修補成功率的實證提升幅度尚未揭露。其意義在於把漏洞修補從一次性生成轉向具長期記憶的持續性流程，對降低重複錯誤與提升跨檔案修補一致性具有潛在價值。",
+      "title": "MemRepair: Hierarchical Memory for Agentic Repository-Level Vulnerability Repair",
+      "title_zh": "MemRepair：用於代理式儲存庫層級漏洞修補的階層式記憶"
     },
     {
       "arxiv_id": "2605.17443",
@@ -2341,7 +2417,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17443",
       "summary": "We analyze how automatic speech recognition (ASR) errors propagate through ASR-LLM cascades in Korean spoken question answering (SQA), focusing on downstream semantic failures that conventional ASR metrics cannot fully capture. Our analysis shows that the relative downstream degradation caused by ASR errors is consistent across LLMs with different absolute performance, suggesting that cascade degradation largely tracks ASR-stage information loss. We further identify single-character Korean ASR e",
-      "title": "Analyzing Error Propagation in Korean Spoken QA with ASR-LLM Cascades"
+      "summary_zh": "本文分析自動語音辨識（ASR）錯誤如何在韓語口語問答（SQA）的 ASR-LLM 串接架構中傳播，聚焦於傳統 ASR 指標無法完整捕捉的下游語意失敗。分析顯示，ASR 錯誤所造成的相對下游效能衰退，在不同絕對表現水準的 LLM 之間呈現一致性，暗示串接系統的效能下滑主要追隨 ASR 階段的資訊損失，而非模型本身的推理能力差異。作者並進一步指出單一字元的韓語 ASR 錯誤具有特定影響模式，說明某些錯誤對語意理解的破壞力遠高於其字元層級錯誤率所暗示的程度。受限於目前僅有摘要，具體的實驗設置、錯誤分類與量化結果仍待全文確認。此工作的價值在於提醒：評估語音問答系統時，僅看字元錯誤率可能嚴重低估實際的下游失敗風險，應以語意層級指標補強。",
+      "title": "Analyzing Error Propagation in Korean Spoken QA with ASR-LLM Cascades",
+      "title_zh": "分析韓語口語問答中 ASR-LLM 串接的錯誤傳播"
     },
     {
       "arxiv_id": "2605.18903",
@@ -2397,7 +2475,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.18903",
       "summary": "Vision-Language Models in Continual Learning (VLM-CL) aim to continuously adapt to new multimodal tasks while retaining prior knowledge. The emerging paradigm that couples Multimodal Large Language Models (MLLMs) with Reinforcement Learning with Verifiable Rewards (RLVR) calls for a new pattern to guide continual adaptation. Advances in reasoning capability now make it feasible to impose constraints at the reasoning level. We formalize portability, a sample-level measure of how reusable the prev",
-      "title": "Reasoning Portability: Guiding Continual Learning for MLLMs in the RLVR Era"
+      "summary_zh": "視覺語言模型的持續學習（VLM-CL）致力於持續適應新的多模態任務，同時保留既有知識。新興範式將多模態大型語言模型（MLLM）與可驗證獎勵的強化學習（RLVR）結合，呼籲以新思維引導持續適應；而推理能力的進展，使在推理層級施加約束成為可行。本文形式化「可攜性」此一衡量指標，用以評估樣本層級上既有推理的可重用程度，作為引導持續學習的訊號。受限於目前僅有摘要，其具體的演算法設計、獎勵形式，以及在不同多模態任務序列上的遺忘與遷移結果尚未揭露。此研究的重要性在於指出，持續學習的瓶頸不僅是參數層級的災難性遺忘，也涉及推理模式能否跨任務移轉；若能以可攜性量化並加以最佳化，將有助於 MLLM 在長序列任務中兼顧穩定性與可塑性。",
+      "title": "Reasoning Portability: Guiding Continual Learning for MLLMs in the RLVR Era",
+      "title_zh": "推理可攜性：在 RLVR 時代引導多模態大型語言模型的持續學習"
     },
     {
       "arxiv_id": "2605.18902",
@@ -2450,7 +2530,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.18902",
       "summary": "Neural channel decoder, as a data-driven channel decoding strategy, has shown very promising improvement on error-correcting capability over the classical methods. However, the success of those deep learning-based decoder comes at the cost of drastically increased model storage and computational complexity, hindering their practical adoptions in real-world time-sensitive resource-sensitive communication and storage systems. To address this challenge, we propose an efficient variational diffusion",
-      "title": "Variational Diffusion Channel Decoder"
+      "summary_zh": "神經通道解碼器作為資料驅動的解碼策略，在錯誤更正能力上相较古典方法展現相當可觀的改進。然而，這些深度學習解碼器的成功，往往以模型儲存與運算複雜度大幅增加為代價，使其難以導入對延遲敏感、資源受限的實際通訊與儲存系統。為回應此挑戰，本文提出一套高效率的變分擴散解碼方案，嘗試在維持更正效能的同時壓縮模型規模與推論成本。受限於目前僅有摘要，其變分推論的具體形式、擴散步數與解碼延遲、誤碼率之間的權衡曲線仍有待全文檢驗。此工作的意義在於直面神經解碼器最常被質疑的落地障礙，若能有效降低儲存與運算需求，將使學習式解碼更有可能實際部署於通訊與儲存裝置，而非僅止於實驗室基準。",
+      "title": "Variational Diffusion Channel Decoder",
+      "title_zh": "變分擴散通道解碼器"
     },
     {
       "arxiv_id": "2605.17432",
@@ -2505,7 +2587,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17432",
       "summary": "Large language models (LLMs) are commonly adapted to downstream tasks through fine-tuning, but fine-tuning data often contains sensitive information that may be leaked by the resulting model. Differential privacy (DP) offers formal protection against such leakage, yet DP fine-tuning of LLMs still suffers from substantial utility degradation due to gradient clipping and noise injection. Existing work improves this trade-off by combining DP with parameter-efficient fine-tuning methods such as LoRA",
-      "title": "DP-SelFT: Differentially Private Selective Fine-Tuning for Large Language Models"
+      "summary_zh": "大型語言模型常透過微調適配下游任務，但微調資料往往含有敏感資訊，可能被產出的模型洩漏。差分隱私（DP）提供形式化的洩漏防護，然而對 LLM 進行 DP 微調時，梯度裁剪與雜訊注入仍造成相當明顯的效用衰退。既有研究透過結合 DP 與 LoRA 等參數效率微調方法來改善此取捨，本文則提出 DP-SelFT，進一步採取選擇性微調策略，僅對部分參數進行更新，以在相同的隱私預算下降低雜訊對模型效用的傷害。受限於目前僅有摘要，其選擇準則、隱私預算配置，以及在基準任務上的效用—隱私權衡曲線尚待全文揭露。此研究的重要性在於回應 LLM 實務部署中的隱私合規需求，若能縮小 DP 微調的效能落差，將使隱私保護更易納入一般訓練流程。",
+      "title": "DP-SelFT: Differentially Private Selective Fine-Tuning for Large Language Models",
+      "title_zh": "DP-SelFT：大型語言模型的差分隱私選擇性微調"
     },
     {
       "arxiv_id": "2605.17431",
@@ -2561,7 +2645,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17431",
       "summary": "We propose MATE, a simple yet effective memory architecture for solving Contextual Markov Decision Processes (CMDPs), a family of MDPs parameterized by an unobserved context. In CMDPs, an optimal agent can adapt online by maintaining the posterior belief over contexts. MATE replaces this intractable posterior with a sum-aggregated memory, leveraging the posterior's permutation invariance to retain provably sufficient expressiveness. Compared to prior memory architectures, MATE avoids the growing",
-      "title": "MATE: Solving Contextual Markov Decision Processes with Memory of Accumulated Transition Embeddings"
+      "summary_zh": "情境式馬可夫決策過程（CMDP）是一族由未觀測情境參數化的 MDP，理論上最佳策略需在線上維持對情境的後驗信念，但該後驗通常難以精確計算。本文提出 MATE，以「加總聚合」的記憶架構取代不可解的後驗：作者利用後驗對排列的不變性，證明此聚合形式仍具備充分表達力，同時避免既有記憶架構在序列變長時記憶體或計算量持續膨脹的問題。摘要僅給出問題設定與方法動機，尚未交代具體實驗環境、基準比較與數值結果，也未說明在何種情境分布或部分可觀測程度上仍可能失效，因此其通用性與訓練穩定性仍待驗證。若後續實驗支持，MATE 可為需要線上適應未知環境的強化學習代理提供更輕量、可擴展的記憶機制，對機器人控制與自適應決策等領域具參考價值。",
+      "title": "MATE: Solving Contextual Markov Decision Processes with Memory of Accumulated Transition Embeddings",
+      "title_zh": "MATE：以累積轉移嵌入記憶求解情境式馬可夫決策過程"
     },
     {
       "arxiv_id": "2605.17428",
@@ -2612,7 +2698,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17428",
       "summary": "Our preliminary experiments on gym-DSSAT maize irrigation tasks revealed that +/-2 degrees C temperature noise causes an 11.9% reduction in economic returns for PPO policies trained under clean conditions - a systematic robustness deficit that existing research has not adequately addressed.\n  This paper tackles three interconnected limitations impeding practical deployment of agricultural RL systems: the trade-off between early-stage learning efficiency and late-stage generalization capability; ",
-      "title": "Progressive Generalization Augmentation with Deeply Coupled RND-PPO and Domain-Prioritized Noise Injection for Robust Crop Management Reinforcement Learning"
+      "summary_zh": "本文關注農業強化學習落地時的三項相互牽連限制：早期學習效率與後期泛化能力之間的權衡、以及既有方法對環境擾動的穩健性不足。作者在 gym-DSSAT 玉米灌溉任務的初步實驗顯示，於乾淨條件下訓練的 PPO 策略，一旦遭遇正負 2 度 C 的溫度噪聲，經濟收益即下降約 11.9%，指出這是一個系統性的穩健性缺口。為此提出結合深度耦合 RND-PPO 與領域優先噪聲注入的漸進式泛化增強方法，企圖在訓練過程中同時維持樣本效率並提升對氣候擾動的適應力。摘要僅止於問題陳述與方法名稱，未提供完整的演算法細節、對照基準、跨作物或跨氣候區的驗證，以及噪聲強度上界等限制。若成效成立，此類方法可提升農業決策系統在真實氣候不確定性下的可靠度，對精準農業與氣候調適具實務意義。",
+      "title": "Progressive Generalization Augmentation with Deeply Coupled RND-PPO and Domain-Prioritized Noise Injection for Robust Crop Management Reinforcement Learning",
+      "title_zh": "漸進式泛化增強：深度耦合 RND-PPO 與領域優先噪聲注入的穩健作物管理強化學習"
     },
     {
       "arxiv_id": "2605.17423",
@@ -2666,7 +2754,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17423",
       "summary": "We study series-level cinematic remaking, a long-horizon video-to-video generation problem that localizes full episodes or films via stylization or actor replacement while strictly preserving narrative structure, motion choreography, and character identity across hundreds of shots. Existing video generation and editing pipelines often break down in this regime due to compounding identity drift, background mutation, and semantic erosion under large camera motions and viewpoint changes. We propose",
-      "title": "Soap2Soap: Long Cinematic Video Remaking via Multi-Agent Collaboration"
+      "summary_zh": "本文研究「影集級電影重製」此一長時程 video-to-video 生成問題：在數百個鏡頭中對整集或整部影片進行風格化或演員替換，同時嚴格保留敘事結構、動作編排與角色身分。既有影片生成與編輯流程在此情境下容易崩解，原因是身分漂移會逐步累積、背景發生突變，且在大幅攝影機運動與視角變化下出現語意侵蝕。作者提出 Soap2Soap，以多代理協作方式因應長跨度一致性挑戰，但摘要僅揭露問題設定與方法名稱，未交代代理分工機制、一致性約束的具體形式、評估資料集與量化指標。可預期限制包括計算成本高昂、對原始素材品質敏感，以及在極端視角變化下仍可能失效。此研究若成熟，將對影視後製、跨語言版本重製與大規模內容本地化流程帶來實質影響。",
+      "title": "Soap2Soap: Long Cinematic Video Remaking via Multi-Agent Collaboration",
+      "title_zh": "Soap2Soap：透過多代理協作進行長篇電影級影片重製"
     },
     {
       "arxiv_id": "2605.17421",
@@ -2724,7 +2814,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17421",
       "summary": "Accurate visual state estimation has been a central topic in robotics with a wide range of applications in robot navigation, autonomous driving, and autonomous flight. Recent advances in robot perception have led to significant improvements in the accuracy and robustness of state estimation, yet a fundamental challenge remains in how to quantify and calibrate its precision, i.e., how confident we are in an estimate and whether failures can be detected. This issue is particularly pronounced in vi",
-      "title": "MUSE: Multimodal Uncertainty Quantification of State Estimation"
+      "summary_zh": "視覺狀態估計是機器人學的核心課題，廣泛應用於機器人導航、自動駕駛與自主飛行。近年機器人感知技術在準確度與穩健性上進展顯著，但如何量化並校準估計精度——亦即我們對某個估計有多大信心、能否偵測失敗——仍是根本挑戰，在視覺退化情境中尤其明顯。本文提出 MUSE，針對狀態估計進行多模態不確定性量化，試圖讓系統不僅輸出狀態，也輸出可校準的信心資訊。摘要僅提供問題背景與方法名稱，未交代所採用的模態組合、不確定性建模方式、校準指標、資料集與實驗結果，也未說明在感測器失效或分布外情境下的行為。若方法有效，將有助於自駕與飛行系統的失效偵測與安全決策，對可靠機器人部署具關鍵意義。",
+      "title": "MUSE: Multimodal Uncertainty Quantification of State Estimation",
+      "title_zh": "MUSE：狀態估計的多模態不確定性量化"
     },
     {
       "arxiv_id": "2605.17416",
@@ -2776,7 +2868,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17416",
       "summary": "Anthropic's April 2026 Mythos materials combine benchmark claims with concrete bug-finding stories across OpenBSD, FreeBSD, Linux, FFmpeg, and browsers. This paper reports a controlled target-file rediscovery experiment on six public or high-confidence Mythos-linked systems tasks. Each model receives the same target file or files, read-only source tools, three repeats per task, and one manual target-matching rubric; prompts omit CVE identifiers, patch hashes, advisory text, author names, disclos",
-      "title": "Benchmarking Mythos-Linked Bug Rediscovery"
+      "summary_zh": "Anthropic 於 2026 年 4 月發布的 Mythos 資料，同時包含基準宣稱與跨 OpenBSD、FreeBSD、Linux、FFmpeg 及瀏覽器的具體找漏洞案例。本文針對六項公開或高可信度的 Mythos 關聯系統任務，設計受控的目標檔案漏洞重現實驗：每個模型取得相同的目標檔案、唯讀原始碼工具，每項任務重複三次，並使用單一手動目標比對評分規準；提示中刻意省略 CVE 編號、修補雜湊、公告文字、作者姓名與揭露資訊，以降低答案洩漏的風險。摘要未提供各模型的具體重現率、統計顯著性與任務難度分層，也未討論評分者主觀性與樣本量偏小等限制。此基準的價值在於檢驗前沿模型的安全漏洞發現能力是否被誇大，對 AI 安全評估方法學與公開宣稱的可重現性具重要意義。",
+      "title": "Benchmarking Mythos-Linked Bug Rediscovery",
+      "title_zh": "Mythos 關聯漏洞重現的基準測試"
     },
     {
       "arxiv_id": "2605.17415",
@@ -2829,7 +2923,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17415",
       "summary": "We propose IVF-TQ, an IVF index with a codebook-free residual layer: a fixed random rotation followed by precomputed Lloyd-Max scalar quantization depending only on (b, d). Only the IVF coarse partition is trained. Building on TurboQuant (Zandieh et al., 2025), the design substantially reduces a key failure mode of trained-codebook ANN indexes (PQ, OPQ, ScaNN): staleness under streaming ingestion.Empirical (3 seeds): Per-batch PQ retraining does not recover the streaming gap at any tested bit bu",
-      "title": "IVF-TQ: Streaming-Robust Approximate Nearest Neighbor Search via a Codebook-Free Residual Layer"
+      "summary_zh": "本文提出 IVF-TQ，一種在 IVF 索引上加入無碼簿殘差層的設計：先做固定隨機旋轉，再套用僅依賴位元數 b 與維度 d 預先計算的 Lloyd-Max 純量量化，整個流程只需訓練 IVF 的粗分區。此設計建立在 TurboQuant（Zandieh 等，2025）之上，目標是大幅緩解訓練式碼簿式 ANN 索引（如 PQ、OPQ、ScaNN）的關鍵失效模式：在串流式資料持續寫入時的碼簿過時問題。摘要指出，於三個隨機種子的實驗中，逐批次重新訓練 PQ 在任何測試位元預算下都無法彌補串流情境的效能落差。摘要未交代完整的召回率與延遲數據、資料集規模，以及旋轉與量化參數的敏感度分析。若結論穩健，此法可降低向量資料庫在持續更新負載下的維運成本，對檢索系統實務具直接價值。",
+      "title": "IVF-TQ: Streaming-Robust Approximate Nearest Neighbor Search via a Codebook-Free Residual Layer",
+      "title_zh": "IVF-TQ：以無碼簿殘差層實現串流穩健的近似最近鄰搜尋"
     },
     {
       "arxiv_id": "2605.17413",
@@ -2881,7 +2977,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17413",
       "summary": "Safety-aligned language models often refuse cybersecurity requests whose wording resembles misuse, even when the task is authorized and defensive. This makes security evaluation ambiguous: a failed answer may reflect missing capability or refusal-policy intervention. Ablating Safety studies alignment removal as a controlled transformation-evaluation protocol for authorized security tasks, comparing authorized-context prompting, reversible refusal-direction activation projection, representation-c",
-      "title": "Ablating Safety: Mechanisms for Removing Alignment in Language Models for Security Applications"
+      "summary_zh": "安全對齊的語言模型常拒絕措辭近似濫用的資安請求，即使任務本身屬於授權的防禦性工作，這使安全評估出現歧義：答錯可能源自能力不足，也可能源自拒絕政策的介入。本文將「對齊移除」研究為一種受控的轉換—評估協定，用於授權資安任務，並比較多種做法，包括授權情境提示、可逆的拒絕方向活化投影，以及表徵層級的干預。摘要僅描述研究動機與比較方法的類別，未提供模型清單、任務集、能力變化與安全風險的量化結果，也未交代可逆性驗證與濫用防護措施。此類研究的核心張力在於：提升防禦性資安評估的判讀能力，同時可能提供降低模型安全性的操作指引。其方法學貢獻在於分離能力與政策干預，對模型評估設計與安全機制可解釋性具參考價值，但雙用途風險須嚴格治理。",
+      "title": "Ablating Safety: Mechanisms for Removing Alignment in Language Models for Security Applications",
+      "title_zh": "移除安全機制：語言模型對齊消除於安全應用的機制研究"
     },
     {
       "arxiv_id": "2605.17412",
@@ -2934,7 +3032,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17412",
       "summary": "We present a quantum attack on ML-KEM and related 2-power cyclotomic lattice schemes. Combining with Parts I-III, we provide an algorithm and verify the resulting approximation factor satisfies $γ\\le 21 < q/2=1665$ for ML-KEM-1024, with a success probability $\\ge 0.99$. We apply a tower decomposition of the Principal Ideal Problem (PIP) through the chain $\\Q \\subset \\Q(ζ_8) \\subset \\cdots \\subset \\Q(ζ_{2^k})$ which yields a polynomial-time quantum algorithm costing $O(n^3 \\log^2 n)$ gates, $O(n^",
-      "title": "Module Lattice Security (Part IV): Probabilistic Polynomial Quantum Attack on Module-LWE over 2-Power Cyclotomics"
+      "summary_zh": "本文提出一套針對 ML-KEM 及相關二冪分圓晶格方案的量子攻擊。作者結合前三部分成果，給出演算法並驗證所得近似因子對 ML-KEM-1024 滿足 γ ≤ 21 < q/2 = 1665，成功機率可達 0.99 以上。技術路線上，他們沿著 Q ⊂ Q(ζ8) ⊂ … ⊂ Q(ζ2^k) 的塔式分解來處理主理想問題（PIP），得到成本為 O(n^3 log^2 n) 閘數的多項式時間量子演算法。摘要僅給出理論保證，未交代完整的複雜度常數、實際量子資源估計、錯誤更正開銷，也缺乏與既有量子攻擊文獻的獨立複核。由於此結果若成立將直接動搖 ML-KEM 的安全性假設，其推導正確性、假設強度與可重現性必須經密碼學社群嚴格驗證；在確認之前，不宜視為對現行後量子標準的實務威脅。",
+      "title": "Module Lattice Security (Part IV): Probabilistic Polynomial Quantum Attack on Module-LWE over 2-Power Cyclotomics",
+      "title_zh": "模晶格安全性（第四部分）：針對二冪分圓環上 Module-LWE 的機率多項式量子攻擊"
     },
     {
       "arxiv_id": "2605.17410",
@@ -2985,7 +3085,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17410",
       "summary": "Token economics has emerged as a useful lens for understanding resource allocation, value creation, and pricing in large language model systems. While recent work has increasingly treated tokens as economic primitives, there remains a substantial gap between high-level economic theory and the computational realities of modern AI infrastructure. This paper identifies and analyzes the key computational challenges that arise when token-economic principles are implemented in real-time inference syst",
-      "title": "Computational Challenges in Token Economics: Bridging Economic Theory and AI System Design"
+      "summary_zh": "本文指出，「代幣經濟學」（token economics）近來被廣泛用來理解大型語言模型系統中的資源分配、價值創造與定價，但高階經濟理論與現代 AI 基礎設施的計算現實之間仍存在明顯落差。作者盤點並分析當代幣經濟原則要在即時推論系統中落地時所浮現的關鍵計算挑戰，例如延遲、吞吐量與成本之間的權衡，以及在實際硬體與排程限制下如何實現理論上的最佳化分配。摘要僅為節錄，未提供具體實驗數據、模型規模或量化結果，因此無法斷言其實證效力與可推廣性。其貢獻在於提出問題框架，把經濟學視角與系統工程議題並置，對關注 LLM 服務定價、資源排程與推論效率的研究者與業界實務者具參考價值，也提醒純理論模型若忽略計算現實恐難以部署。",
+      "title": "Computational Challenges in Token Economics: Bridging Economic Theory and AI System Design",
+      "title_zh": "代幣經濟學的計算挑戰：銜接經濟理論與 AI 系統設計"
     },
     {
       "arxiv_id": "2605.17406",
@@ -3038,7 +3140,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17406",
       "summary": "Side-channel attacks exploit unintended information leakage from system behavior and continue to pose serious privacy risks in modern platforms. Despite extensive prior work, side-channel analysis remains largely manual and fragmented, typically assuming predefined target events and a fixed set of known channels. As systems and applications grow increasingly complex, several fundamental questions remain unanswered: which user or system events are sensitive in practice, how side channels associat",
-      "title": "Rethinking Side-Channel Analysis: Automated Discovery and Analysis of Side-Channel Leakage with LLM-Assisted Agents"
+      "summary_zh": "側通道攻擊利用系統行為中非預期的資訊洩漏，持續對現代平台構成隱私風險。本文指出，既有研究雖多，側通道分析仍高度依賴人工且零散，通常預設特定目標事件與一組已知通道，缺乏系統性探索能力。隨著系統與應用日益複雜，若干根本問題仍待回答：哪些使用者或系統事件在實務上確實敏感、側通道如何彼此關聯，以及如何自動化地發現與評估洩漏。作者提出以 LLM 輔助代理進行自動化探索與分析的方法，試圖降低人力依賴並擴大涵蓋範圍。惟摘要為節錄，未揭露具體架構、基準資料集或量測結果，故其實際偵測率與誤報率仍待驗證。此工作若成立，將有助於把側通道分析從手動流程推向可擴展的自動化管線，對系統安全與隱私防護具潜在影響。",
+      "title": "Rethinking Side-Channel Analysis: Automated Discovery and Analysis of Side-Channel Leakage with LLM-Assisted Agents",
+      "title_zh": "重新思考側通道分析：以 LLM 輔助代理自動探索與分析側通道洩漏"
     },
     {
       "arxiv_id": "2605.17398",
@@ -3089,7 +3193,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17398",
       "summary": "This paper presents MiniGPT, a compact from-scratch implementation of GPT-style autoregressive language modeling in PyTorch. The aim is to rebuild the core GPT pipeline from first principles after studying the design of nanoGPT by Andrej Karpathy, while keeping the model and training code independently written in a single notebook. MiniGPT implements token and positional embeddings, causal multi-head self-attention, pre-LayerNorm Transformer blocks, residual connections, feed-forward MLP layers,",
-      "title": "MiniGPT: Rebuilding GPT from First Principles"
+      "summary_zh": "本文提出 MiniGPT，一套以 PyTorch 從零實作的精簡版 GPT 風格自迴歸語言模型。作者說明在研究 Andrej Karpathy 的 nanoGPT 設計後，目標是從第一原理重建 GPT 核心流程，同時確保模型與訓練程式碼為獨立撰寫並整合於單一 notebook 中。MiniGPT 實作了 token 與位置嵌入、因果多頭自注意力、pre-LayerNorm 的 Transformer 區塊、殘差連接與前饋 MLP 層等標準元件。摘要屬節錄，未提供訓練語料規模、參數量、收斂曲線或與基準模型的比較數據，因此無法評估其效能位準。此類工作的價值主要在教學與可重現性：以最小相依性呈現 GPT 的關鍵設計決策，適合作為理解 Transformer 語言模型的入門實作參考，而非追求 state-of-the-art 表現。",
+      "title": "MiniGPT: Rebuilding GPT from First Principles",
+      "title_zh": "MiniGPT：從第一原理重建 GPT"
     },
     {
       "arxiv_id": "2605.17393",
@@ -3145,7 +3251,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17393",
       "summary": "Coordination graphs are a central abstraction in cooperative multi-agent reinforcement learning (MARL), yet existing sparse-graph learners lack a theoretically grounded mechanism to decide which edges should exist and how much information each edge should carry. Current methods rely on heuristic criteria that offer no formal guarantee on the learned topology, and no principled way to allocate different communication capacities to structurally different agent relationships. To address this, we pr",
-      "title": "Heterogeneous Information-Bottleneck Coordination Graphs for Multi-Agent Reinforcement Learning"
+      "summary_zh": "協調圖是合作式多代理人強化學習（MARL）的核心抽象，但既有稀疏圖學習方法缺乏具理論依據的機制來決定哪些邊該存在、每條邊應承載多少資訊。現行做法多依賴啟發式準則，對所學拓樸沒有形式化保證，也無法依代理人關係的結構差異分配不同的通訊容量。作者提出以異質資訊瓶頸為基礎的協調圖架構，試圖以資訊理論目標同時決定邊的存在與其資訊預算，並允許不同關係型態擁有不同容量。摘要為節錄，未揭露具體演算法細節、實驗環境與量化增益，故其相對於既有稀疏圖方法的優勢尚待驗證。若成立，此法可為 MARL 的通訊學習提供更嚴謹的理論基礎，對多代理人協作、通訊效率與可擴展性研究具意義。",
+      "title": "Heterogeneous Information-Bottleneck Coordination Graphs for Multi-Agent Reinforcement Learning",
+      "title_zh": "異質資訊瓶頸協調圖：用於多代理人強化學習"
     },
     {
       "arxiv_id": "2605.17392",
@@ -3200,7 +3308,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17392",
       "summary": "As emerging attacks increasingly target Industrial Control Systems (ICS), the security of Programmable Logic Controllers (PLCs) has become a critical concern. Binary Code Analysis (BCA), which enables analysts to understand compiled programs without source code, is essential for ICS security tasks such as post-attack digital forensics and incident response. However, automated BCA for PLC binaries remains challenging due to three key issues: heterogeneous binary formats across PLC platforms, enta",
-      "title": "One Step Further: Understanding PLC Binaries Through Cross-Platform Reverse Engineering and Function-Level Semantic Analysis"
+      "summary_zh": "隨著針對工業控制系統（ICS）的攻擊日益增加，可程式邏輯控制器（PLC）的安全性成為關鍵議題。二進位程式碼分析（BCA）讓分析人員無需原始碼即可理解已編譯程式，對事後數位鑑識與事件應變等 ICS 安全任務至關重要。然而，PLC 二進位檔的自動化 BCA 仍面臨三大難題：不同 PLC 平台的二進位格式異質、語意負擔沉重，以及缺乏通用工具支援。作者提出跨平台逆向工程與函式級語意分析的方法，嘗試克服格式差異並在函式層次重建語意，以支援自動化理解。摘要為節錄，未提供支援平台清單、資料集規模或準確率等實證結果，故其實用性與泛化能力仍待評估。此研究方向對工控場域的安全分析工具化具重要意義。",
+      "title": "One Step Further: Understanding PLC Binaries Through Cross-Platform Reverse Engineering and Function-Level Semantic Analysis",
+      "title_zh": "再進一步：以跨平台逆向工程與函式級語意分析理解 PLC 二進位檔"
     },
     {
       "arxiv_id": "2605.17390",
@@ -3255,7 +3365,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17390",
       "summary": "Context. Metamorphic Testing is recognised in IEEE/ISO software-testing standards and increasingly recommended for AI systems, but its progress is bottlenecked by metamorphic relation (MR) identification: existing approaches (structured frameworks, mining and evolutionary pipelines, LLM-assisted methods, MetaPattern catalogues) share an inductive grounding that leaves three foundational questions open: origin, closure, and transferability.\n  Objective. We propose a framework whose downstream ste",
-      "title": "NOETHER: A Constructive Framework for Metamorphic Pattern Discovery from Operator Algebras"
+      "summary_zh": "變異測試（Metamorphic Testing）已獲 IEEE/ISO 軟體測試標準認可，也日益被推薦用於 AI 系統，但其進展受制於變異關係（MR）的辨識：既有方法如結構化框架、挖掘與演化式流程、LLM 輔助方法及 MetaPattern 目錄，皆共享歸納式基礎，導致起源、封閉性與可移轉性三個根本問題懸而未解。作者提出 NOETHER，一套建構式框架，主張從算子代數推導變異樣式，而非僅由既有案例歸納，試圖為 MR 的生成提供更嚴謹的數學基礎與可組合性。摘要為節錄，未揭露框架的形式定義細節、下游應用成果或實證評估數據，因此其可操作性與相對優勢仍待驗證。若成立，可望為變異測試提供生成式、可證明導向的新路徑。",
+      "title": "NOETHER: A Constructive Framework for Metamorphic Pattern Discovery from Operator Algebras",
+      "title_zh": "NOETHER：從算子代數構造變異測試樣式的發現框架"
     },
     {
       "arxiv_id": "2605.18899",
@@ -3309,7 +3421,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.18899",
       "summary": "Generative LLM-based recommenders (LLM-Rec) require continual post-deployment updates, yet deployment logs provide only policy-shaped contextual bandit feedback: outcomes are observed solely for items exposed by a prior serving policy, inducing exposure bias and yielding partial, asymmetric signals consisting of relatively reliable positive responses and ambiguous no-responses. We propose an Anchored Bandit Policy Optimization (ABPO) framework for continual LLM-Rec updates that combines group-re",
-      "title": "Don't Let Bandit Feedback Pull Continual LLM-Recommender Updates Off Target"
+      "summary_zh": "生成式 LLM 推薦系統（LLM-Rec）需要部署後持續更新，但部署日誌只提供受策略形塑的情境式 bandit 回饋：結果僅對前一個服務策略曝光過的項目被觀察到，因而產生曝光偏差，並形成部分且不對稱的訊號，其中正向回應相對可靠，而無回應則語意模糊。作者提出「錨定式 Bandit 策略最佳化」（ABPO）框架，用於 LLM-Rec 的持續更新，並結合群組相關技術以緩解此類偏差，避免更新被帶離目標。摘要為節錄，未提供資料集、指標或與基線比較的具體數字，故其效果仍待檢驗。此問題在實務推薦部署中相當普遍，若能有效處理曝光偏差與模糊負訊號，對線上學習式推薦的穩定性具實質意義。",
+      "title": "Don't Let Bandit Feedback Pull Continual LLM-Recommender Updates Off Target",
+      "title_zh": "別讓 Bandit 回饋把持續更新的 LLM 推薦系統帶偏"
     },
     {
       "arxiv_id": "2605.17382",
@@ -3364,7 +3478,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17382",
       "summary": "The rapid progress of generative artificial intelligence has exposed fundamental limitations in existing evaluation methodologies, particularly for open-ended, creative, and human-facing tasks. Traditional automatic metrics rely on surface-level statistical similarity and often fail to reflect human perceptions of quality, while purely human evaluation, although reliable, is costly, subjective, and difficult to scale. Recent approaches using large language models as evaluators offer improved sca",
-      "title": "QQJ: Quantifying Qualitative Judgment for Scalable and Human-Aligned Evaluation of Generative AI"
+      "summary_zh": "生成式人工智慧的快速進展，暴露出既有評估方法的根本限制，尤其在開放式、創意性與面向人類的任務上更為明顯。傳統自動指標依賴表層統計相似度，往往無法反映人類對品質的感知；純人工評估雖可靠，卻成本高昂、主觀且難以規模化。近期以大型語言模型作為評估者的做法提升了可擴展性，但仍面臨與人類判斷一致性不足等問題。作者提出 QQJ（量化質性判斷）框架，嘗試把質性評估轉為可規模化且與人類對齊的量化流程。摘要為節錄，未揭露方法細節、評估資料集、與人類評分的相關性數值或成本分析，故其實證效力仍待驗證。此工作對生成式 AI 的評測標準化與可重現性具潜在貢獻。",
+      "title": "QQJ: Quantifying Qualitative Judgment for Scalable and Human-Aligned Evaluation of Generative AI",
+      "title_zh": "QQJ：量化質性判斷，實現可擴展且與人類一致的生成式 AI 評估"
     },
     {
       "arxiv_id": "2605.17380",
@@ -3427,7 +3543,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17380",
       "summary": "We present the Agentic AI Detection and Response (ADR) system, the first large-scale, production-proven enterprise framework for securing AI agents operating through the Model Context Protocol (MCP). We identify three persistent challenges in this domain: (1) limited observability -- existing Endpoint Detection and Response (EDR) tools see file writes but not the agent reasoning, prompts, or causal chains linking intent to execution; (2) insufficient robustness -- static defenses constrained by ",
-      "title": "ADR: An Agentic Detection System for Enterprise Agentic AI Security"
+      "summary_zh": "本篇提出「代理式 AI 偵測與回應」（ADR）系統，宣稱是首個大規模、已於生產環境驗證的企業框架，用來保護透過 Model Context Protocol（MCP）運作的 AI 代理。作者指出此領域有三項長期挑戰：其一為可觀測性不足，現有的端點偵測與回應（EDR）工具只能看到檔案寫入，卻看不到代理的推理過程、提示內容，以及連結意圖與執行之間的因果鏈；其二為穩健性不足，靜態防禦受限於既有規則而難以應對多變的攻擊型態；第三項挑戰在摘要中遭截斷，未完整呈現。由於目前僅有摘要，方法細節、實驗設計、量化結果與限制皆無法確認，也無法得知其偵測率、誤報率或部署規模。此工作的重要性在於把 AI 代理的資安防護從端點層提升至意圖與推理層，並以 MCP 這種新興代理互通標準為對象，對企業導入代理式 AI 的治理與風險控管具有指標意義；惟其實際效益仍待完整論文與第三方驗證。",
+      "title": "ADR: An Agentic Detection System for Enterprise Agentic AI Security",
+      "title_zh": "ADR：企業級代理式 AI 安全的主動偵測系統"
     },
     {
       "arxiv_id": "2605.17379",
@@ -3481,7 +3599,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17379",
       "summary": "Large language models pretrained on general-domain corpora often exhibit tokenization inefficiencies when applied to specialized domains. Although continual pretraining for domain adaptation partially alleviate performance degradation, it does not resolve the fundamental vocabulary mismatch. To address this gap, we introduce a targeted parameter-efficient domain adaptation approach that combines vocabulary adaptation with pretraining for LLM-based text summarization. Our unified framework augmen",
-      "title": "Learning Faster with Better Tokens: Parameter-Efficient Vocabulary Adaptation for Specialized Text Summarization"
+      "summary_zh": "本文關注大型語言模型在通用語料上預訓練後，套用至專業領域時常出現的分詞效率低落問題。作者指出，雖然持續預訓練可部分緩解效能衰退，卻無法解決根本的詞彙不匹配：領域專有詞被拆成過多子詞，導致序列變長、計算成本上升且語意表徵受損。為此，他們提出一套針對性的參數高效領域調適方法，將詞彙調適與預訓練結合，並整合於統一的文本摘要框架中。摘要在此處遭截斷，方法細節、是否採用新增詞元初始化策略、實驗資料集、摘要品質指標與效率增益的具體數字皆未揭露，限制與失敗案例亦無從評估。其價值在於把「詞彙」視為領域調適的一等公民，而非僅調整模型權重，對需要在醫療、法律、金融等專業語料上部署摘要系統的實務工作者，提供了兼顧參數預算與推論效率的可能路徑；惟證據仍待完整論文補充。",
+      "title": "Learning Faster with Better Tokens: Parameter-Efficient Vocabulary Adaptation for Specialized Text Summarization",
+      "title_zh": "以更佳詞元加速學習：針對特定領域文本摘要的參數高效詞彙調適"
     },
     {
       "arxiv_id": "2605.17374",
@@ -3531,7 +3651,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17374",
       "summary": "The notion of software languages subsumes programming languages, modeling languages, and yet many other types of languages used in software engineering. The emerging ontology `Foundations of Software Languages' (FSL) organizes the foundations underlying software languages. We are concerned with language categories, language concepts, associated tools and methodological approaches, the formal systems or other formal entities underlying software languages, and the embedding of software languages i",
-      "title": "Towards an Ontology for the Foundations of Software Languages"
+      "summary_zh": "本文探討「軟體語言」此一涵蓋程式語言、建模語言及軟體工程中其他諸多語言類型的概念，並介紹一個新興本體論「軟體語言基礎」（Foundations of Software Languages，FSL），用以組織軟體語言背後的各種基礎。作者關切的範圍包括語言分類、語言概念、相關工具與方法論取向、支撐軟體語言的形式系統或其他形式實體，以及軟體語言如何嵌入其生態與使用情境之中。摘要內容於此處遭截斷，因此本體論的設計方法、公理與類別階層、驗證方式（例如是否以既有語言案例進行覆蓋率檢驗）、以及與既有語言分類學的差異，均無法確認，也不見任何實證評估。此研究的重要性在於嘗試為語言工程、模型驅動工程與程式語言理論之間建立共同的概念詞彙，若本體論設計得當，可望改善工具互通、教學分類與跨領域溝通；惟其貢獻目前仍屬概念性，實用性與可重用性尚待完整論文說明。",
+      "title": "Towards an Ontology for the Foundations of Software Languages",
+      "title_zh": "邁向軟體語言基礎的本體論"
     },
     {
       "arxiv_id": "2605.17373",
@@ -3595,7 +3717,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17373",
       "summary": "AI research agents accelerate ML research by automating hypothesis generation, experimentation, and empirical refinement. Existing agent strategies range from greedy hill-climbing to tree search and evolutionary optimization, yet which strategy choices drive performance remains unclear. Answering this question requires a benchmark that separates agent strategy (e.g., search topology) from execution infrastructure (e.g., code editor), so that performance differences are attributable to strategy r",
-      "title": "FML-bench: A Controlled Study of AI Research Agent Strategies from the Perspective of Search Dynamics"
+      "summary_zh": "本文針對 AI 研究代理進行受控基準研究。此類代理透過自動化假設生成、實驗執行與實證修正來加速機器學習研究，現有策略涵蓋貪婪式爬山法、樹狀搜尋與演化式最佳化等，但究竟哪些策略選擇真正驅動效能，仍不清楚。作者主張，要回答這個問題，必須建立一個能把代理策略（例如搜尋拓撲）與執行基礎設施（例如程式編輯器）分離的基準，使效能差異可歸因於策略本身而非工具環境。摘要在此處遭截斷，因此基準的任務集合、搜尋空間設計、評估指標、實驗規模與實際結果皆未呈現，也無法得知是否觀察到某類策略在特定預算下具穩定優勢。其意義在於把「代理架構」的研究從個案展示推向可重現的受控比較，若設計嚴謹，將有助於社群釐清搜尋動態與基礎設施各自的貢獻；惟目前僅有摘要，實證結論仍待完整論文驗證。",
+      "title": "FML-bench: A Controlled Study of AI Research Agent Strategies from the Perspective of Search Dynamics",
+      "title_zh": "FML-bench：從搜尋動態觀點對 AI 研究代理策略進行的受控研究"
     },
     {
       "arxiv_id": "2605.17366",
@@ -3652,7 +3776,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17366",
       "summary": "Multimodal item embeddings are crucial for e-commerce item-to-item (I2I) retrieval, yet real-world product images often contain promotional overlays and background clutter that inject spurious visual cues and degrade retrieval robustness. This issue is particularly pronounced in MLRM-style pipelines, where a frozen vision encoder is connected to an LLM through a lightweight connector that must selectively aggregate visual tokens. We propose Text-Guided Q-Former (TGQ-Former), a text-guided visual",
-      "title": "Text-Guided Visual Representation Learning for Robust Multimodal E-Commerce Recommendation"
+      "summary_zh": "本文聚焦電商品項對品項（I2I）檢索中的多模態商品嵌入。作者指出，真實商品圖片常帶有促銷文字覆蓋與背景雜訊，會注入虛假的視覺線索並降低檢索穩健性；在 MLRM 式流程中此問題尤其明顯，因為凍結的視覺編碼器須透過輕量連接器與大型語言模型相接，而連接器必須選擇性地聚合視覺詞元。為此，他們提出 Text-Guided Q-Former（TGQ-Former），一種以文字引導的視覺表徵學習方法，藉由文字訊號導引視覺詞元的聚合，以抑制促銷標語與雜亂背景造成的干擾。摘要於此處遭截斷，模型架構細節、訓練目標、資料集、基線比較與檢索指標的實際增益均未揭露，限制與失敗情境也無從評估。其重要性在於正視電商視覺雜訊對多模態檢索的危害，並提出以文字為條件的表徵學習思路；惟其實際穩健性提升幅度仍需完整論文與公開基準加以佐證。",
+      "title": "Text-Guided Visual Representation Learning for Robust Multimodal E-Commerce Recommendation",
+      "title_zh": "以文字引導的視覺表徵學習用於穩健的多模態電商推薦"
     },
     {
       "arxiv_id": "2605.17365",
@@ -3709,7 +3835,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17365",
       "summary": "Different from traditional text-to-image retrieval tasks, chat-based image retrieval allows the human-interactive system to iteratively clarify and refine user intent through multi-round dialogue, thereby achieving more fine-grained retrieval results. The key challenge in this task lies in dynamically understanding and updating the user's query intent across dialogue rounds. Although existing works have achieved great performance on this new task, they simply handle history query information eit",
-      "title": "Memory-Augmented Query Intent Understanding for Efficient Chat-based Image Retrieval"
+      "summary_zh": "本文研究對話式圖像檢索，此任務與傳統文字轉圖像檢索不同，允許人類互動系統透過多輪對話逐步釐清與修正使用者意圖，以取得更細緻的檢索結果。作者指出，此任務的核心挑戰在於跨對話輪次動態理解並更新使用者查詢意圖；既有方法雖已在此新任務上取得不錯表現，卻僅以簡化方式處理歷史查詢資訊，例如單純拼接、重寫或忽略對話中累積的意圖線索，因而難以在長對話中維持一致性。摘要於此處遭截斷，因此所提出的記憶增強機制設計、意圖更新演算法、所使用資料集、評估指標與相對基線的實際改善幅度皆未呈現，也無法得知其計算成本與是否適用於即時檢索。此工作的意義在於把「跨輪意圖記憶」視為一等問題，對電子商務、設計素材搜尋等需要反覆溝通的檢索場景具實務價值；惟其效益仍待完整論文佐證。",
+      "title": "Memory-Augmented Query Intent Understanding for Efficient Chat-based Image Retrieval",
+      "title_zh": "記憶增強的查詢意圖理解以實現高效率對話式圖像檢索"
     },
     {
       "arxiv_id": "2605.17364",
@@ -3760,7 +3888,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17364",
       "summary": "Media bias detection has predominantly been framed as a classification task: assign a political label to an article or outlet. We argue this framing is too shallow: it identifies that bias exists but not where, how, or crucially, what is structurally omitted. We present NewsLens, a five-agent adversarial pipeline for structured news bias navigation. A Fact Verifier, Progressive Framing Analyst, Conservative Framing Analyst, Propaganda Detector, and Neutral Summarizer collaborate to deconstruct a",
-      "title": "NewsLens: A Multi-Agent Framework for Adversarial News Bias Navigation"
+      "summary_zh": "本文主張，媒體偏誤偵測長期被窄化為分類任務，也就是替文章或媒體機構貼上政治標籤；作者認為此框架過於淺薄，因為它只能指出偏誤存在，卻無法說明偏誤出現在何處、以何種方式運作，也無法指出最關鍵的結構性遺漏，即哪些觀點被刻意省略。為此他們提出 NewsLens，一套由五個代理構成的對抗式管線，用於結構化地導航新聞偏誤：事實查核代理、進步派框架分析代理、保守派框架分析代理、宣傳手法偵測代理，以及中立摘要代理協同拆解報導。摘要於此處遭截斷，因此代理間的互動協定、衝突解決機制、評估資料集、與既有偏誤分類基線的比較，以及人類評估結果皆未揭露，也無法判斷對抗式設計是否會引入新的偏誤。其價值在於把偏誤分析從單一標籤推進到框架與遺漏的結構化剖析，對新聞素養工具與媒體監測具啟發性；惟證據仍待完整論文補充。",
+      "title": "NewsLens: A Multi-Agent Framework for Adversarial News Bias Navigation",
+      "title_zh": "NewsLens：對抗式新聞偏誤導航的多代理框架"
     },
     {
       "arxiv_id": "2605.17362",
@@ -3814,7 +3944,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17362",
       "summary": "Matrix reordering in large sparse solvers seeks a permutation that minimizes factorization fill-in to reduce memory and computation. Because the minimum fill-in ordering problem is NP-complete and fill-in is implicit in the sparsity pattern, graph-theoretic heuristics are used. Existing reinforcement learning methods either ignore sparsity patterns--missing the global fill-in--or lack local exact fill-in feedback. We propose a graph policy optimization method, modeling fill-ins from global and l",
-      "title": "Learning Fill-in Reduction Ordering via Graph Policy Optimization for Sparse Matrices"
+      "summary_zh": "本文處理大型稀疏求解器中的矩陣重排序問題：尋找一個置換，使分解過程產生的填入（fill-in）最小，以降低記憶體用量與計算量。作者指出，最小填入排序問題為 NP-complete，且填入量隱含於稀疏模式之中，因此實務上多採用圖論啟發式方法。既有強化學習方法則有兩類缺失：一是忽略稀疏模式，因而看不到全域填入情形；二是缺乏局部的精確填入回饋，導致獎勵訊號粗糙、學習效率不佳。為此他們提出圖策略最佳化方法，同時從全域與局部觀點建模填入，讓代理能兼顧整體結構與區域精確性。摘要於此處遭截斷，因此模型架構、獎勵設計、訓練規模、與經典啟發式（如最小度數、巢狀分割）及既有學習式方法的比較結果皆未呈現，也無法得知其是否在真實電路或有限元素矩陣上驗證。其意義在於把精確的局部填入回饋納入學習迴路，對稀疏線性代數與高效能運算具潛在價值；惟實證效益仍待完整論文確認。",
+      "title": "Learning Fill-in Reduction Ordering via Graph Policy Optimization for Sparse Matrices",
+      "title_zh": "以圖策略最佳化學習稀疏矩陣的填入縮減排序"
     },
     {
       "arxiv_id": "2605.17361",
@@ -3873,7 +4005,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17361",
       "summary": "Multi-agent systems (MAS) powered by large language models (LLMs) have emerged as a powerful paradigm for complex problem solving, where performance critically depends on the underlying inter-agent communication topology. However, existing topology generation methods mainly optimize for isolated tasks, while real-world deployments involve streams of evolving tasks, requiring previously effective collaboration patterns to be retained and reused rather than rediscovered or overwritten. We identify",
-      "title": "\\textsc{MasFACT}: Continual Multi-Agent Topology Learning via Geometry-Aware Posterior Transfer"
+      "summary_zh": "由大型語言模型驅動的多代理系統（MAS）已成為解決複雜問題的重要範式，其成效高度取決於代理之間的溝通拓樸。然而既有拓樸生成方法多半只針對單一孤立任務進行最佳化，忽略真實部署往往是連續演進的任務串流，先前有效的協作模式理應被保留與重用，而非每次重新搜尋或被覆寫。作者指出此一「持續學習」缺口，並提出 MasFACT，在幾何感知的後驗轉移機制下進行持續式多代理拓樸學習，企圖在任務序列中累積並遷移拓樸知識，讓先前學到的協作結構能協助後續任務。摘要僅止於問題定義與動機陳述，尚未提供具體架構細節、實驗設定或量化的效能與遺忘率證據，因此其實際增益、可擴展性與在異質任務上的穩健性仍待完整論文驗證。若成效成立，此法對需要長期運作、任務持續變動的代理部署具有指標意義。",
+      "title": "\\textsc{MasFACT}: Continual Multi-Agent Topology Learning via Geometry-Aware Posterior Transfer",
+      "title_zh": "MasFACT：透過幾何感知後驗轉移的持續式多代理拓樸學習"
     },
     {
       "arxiv_id": "2605.17360",
@@ -3930,7 +4064,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17360",
       "summary": "Real-time duplex interaction is essential for multimodal AI systems operating in real-world scenarios, where models must continuously process streaming inputs and respond at appropriate moments. However, most existing multimodal large language models (MLLMs) are evaluated in offline settings, where the entire video input is processed before any response is generated. While recent work has started to explore real-time duplex MLLMs, there is still no comprehensive benchmark or automatic evaluation",
-      "title": "Omni-DuplexEval: Evaluating Real-time Duplex Omni-modal Interaction"
+      "summary_zh": "即時雙工互動是多重模態 AI 系統落地於真實場景的關鍵能力：模型必須持續處理串流輸入，並在適當時機做出回應，而非等到整段影片處理完畢才輸出。現有多模態大型語言模型（MLLMs）的評估大多停留在離線設定，也就是先看完完整輸入再生成答案，這與實際互動情境存在明顯落差。近期雖已有研究開始探索即時雙工 MLLM，但社群仍缺乏一套完整的基準與自動化評估方法。本文提出 Omni-DuplexEval，目標是針對即時雙工、全模態互動建立可自動化的評測框架，以填補這塊空白。摘要僅說明動機與缺口，尚未揭露具體評測指標、資料集規模、基線模型表現或人類一致性驗證等結果，因此其評測是否真能區辨模型能力、以及對延遲與打斷時機的敏感度，仍待完整論文確認。此工作的重要性在於為串流互動式多模態系統提供共同比較基準。",
+      "title": "Omni-DuplexEval: Evaluating Real-time Duplex Omni-modal Interaction",
+      "title_zh": "Omni-DuplexEval：評估即時雙工全模態互動"
     },
     {
       "arxiv_id": "2605.17359",
@@ -3986,7 +4122,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17359",
       "summary": "Large language model (LLM)-based multi-agent systems have shown strong potential for complex reasoning by coordinating specialized agents through structured communication. However, existing topology-evolution methods typically construct or optimize a collaboration topology for each query from scratch, leading to substantial online search overhead, high inference-time token consumption, and limited scalability in multi-domain settings. We propose TopoPrior, a framework for learning transferable t",
-      "title": "Learning Transferable Topology Priors for Multi-Agent LLM Collaboration Across Domains"
+      "summary_zh": "以大型語言模型為基礎的多代理系統，透過結構化溝通協調各具專長的代理，在複雜推理上展現潛力。然而現行拓樸演化方法通常針對每一個查詢從零開始建構或最佳化協作拓樸，導致顯著的線上搜尋負擔、推論階段 token 消耗偏高，並且在多領域情境下難以擴展。為此作者提出 TopoPrior 框架，核心構想是學習可轉移的拓樸先驗，使過往累積的協作結構知識能跨領域重用，藉此降低每次查詢的線上搜尋成本並提升擴展性。摘要僅止於問題陳述與方法命名，未提供先驗的具體表示方式、訓練流程、跨領域遷移的實驗設計或量化的準確度與成本節省數據，因此可轉移性的實際幅度、對領域差距的敏感度，以及是否犧牲解答品質，仍需完整論文檢驗。若成立，對降低多代理推論開銷具實務價值。",
+      "title": "Learning Transferable Topology Priors for Multi-Agent LLM Collaboration Across Domains",
+      "title_zh": "跨領域可轉移拓樸先驗的多代理 LLM 協作學習"
     },
     {
       "arxiv_id": "2605.17358",
@@ -4039,7 +4177,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17358",
       "summary": "DRAM scaling has exacerbated the RowHammer vulnerability. To counter this, JEDEC recently introduced Per Row Activation Counting (PRAC) with the Alert Back-Off protocol as an optional DDR5 feature. While promising, PRAC requires per-row counter cells that incur area overhead, and updating them on every activation lengthens DRAM timing parameters, degrading performance. Probabilistic mitigations such as MINT offer a lower-cost alternative by randomly selecting and mitigating rows within periodic ",
-      "title": "Loaded Dice: Solving the Non-Selection Problem for Scalable Probabilistic RowHammer Defense"
+      "summary_zh": "DRAM 製程微縮使 RowHammer 漏洞更加嚴重。JEDEC 近期在 DDR5 中引入 Per Row Activation Counting（PRAC）搭配 Alert Back-Off 協定作為選配功能，概念可行，但 PRAC 需要逐列計數器儲存單元，帶來面積開銷，且每次活化都要更新計數器，會拉長 DRAM 時序參數並損害效能。MINT 之類的機率式防禦以較低成本隨機挑選並緩解列，被視為替代方案，然而其關鍵弱點在於「非選擇問題」：被選中的列有限，未涵蓋者仍可能累積攻擊。本文提出 Loaded Dice，試圖在可擴展的機率框架下修正此缺陷。摘要僅揭露問題背景與方法定位，未說明具體取樣機制、硬體實作成本、攻擊模型的覆蓋率分析，或與 PRAC、MINT 的效能與安全性比較數據，因此實際防禦強度與面積、時序代價仍待完整論文驗證。此方向對記憶體安全與效能取捨具重要性。",
+      "title": "Loaded Dice: Solving the Non-Selection Problem for Scalable Probabilistic RowHammer Defense",
+      "title_zh": "Loaded Dice：為可擴展機率式 RowHammer 防禦解決非選擇問題"
     }
   ],
   "radar": [
@@ -4095,7 +4235,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17357",
       "summary": "Personalized generative recommender systems have emerged as a promising solution for fashion recommendation. However, existing methods primarily rely on implicit visual embeddings from historical interactions, which often contain preference-irrelevant information and result in insufficient user behavior modeling. Moreover, these models typically generate only item images, providing limited interpretability. To address these limitations, we propose DualFashion, a Dual-Diffusional Generative Fashi",
-      "title": "Dual-Diffusional Generative Fashion Recommendation"
+      "summary_zh": "個人化生成式推薦系統被視為時尚推薦的可行解方，但既有方法多半依賴歷史互動所得到的隱式視覺嵌入，這類表徵常夾帶與偏好無關的資訊，導致使用者行為建模不足。此外，這些模型通常只生成單品圖像，可解釋性有限，使用者難以理解推薦理由。為此作者提出 DualFashion，一個雙擴散生成式時尚推薦框架，透過雙重擴散機制同時處理偏好建模與生成任務，期望在提升推薦準確度的同時，產出更具解讀性的結果。摘要僅止於動機與方法命名，未交代擴散模型的條件設計、訓練目標、與既有生成式推薦基線的比較，或離線與線上評估指標，因此其實際增益、生成品質與推論成本仍待完整論文確認。若成效成立，對時尚領域的可解釋生成式推薦具有參考價值。",
+      "title": "Dual-Diffusional Generative Fashion Recommendation",
+      "title_zh": "雙擴散生成式時尚推薦"
     },
     {
       "arxiv_id": "2605.17356",
@@ -4150,7 +4292,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17356",
       "summary": "Existing works typically focus on presentation generation under isolated input settings, whereas real-world use cases span diverse scenarios, including vague user prompts, long documents, multimodal materials, and multiple heterogeneous sources. Moreover, current evaluations are often insufficiently scenario-specific. They mainly rely on generic presentation-quality criteria, such as visual appeal, layout quality, and overall coherence, but fail to assess the core capabilities required by differ",
-      "title": "UniPPTBench: A Unified Benchmark for Presentation Generation Across Diverse Input Settings"
+      "summary_zh": "既有簡報生成研究多半聚焦單一輸入設定，但真實使用情境相當多元，涵蓋模糊的使用者提示、長篇文件、多重模態素材，以及多個異質來源的整合。更關鍵的是，現行評估往往未針對情境量身設計，主要依賴通用簡報品質準則，例如視覺吸引力、版面品質與整體連貫性，卻無法衡量不同情境真正需要的核心能力，例如長文件的重點抽取、異質來源的整合一致性，或模糊提示下的需求推斷。本文提出 UniPPTBench，試圖建立跨多元輸入情境的統一評測基準，以補足此落差。摘要僅說明動機與缺口，尚未提供任務分類、評估指標設計、資料集規模、模型實測結果或與人類判斷的一致性分析，因此其是否能有效區辨模型能力仍待完整論文驗證。此基準對簡報生成研究的可比較性具重要意義。",
+      "title": "UniPPTBench: A Unified Benchmark for Presentation Generation Across Diverse Input Settings",
+      "title_zh": "UniPPTBench：跨多元輸入情境的簡報生成統一基準"
     },
     {
       "arxiv_id": "2605.17352",
@@ -4207,7 +4351,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17352",
       "summary": "Despite substantial advances in large language models (LLMs), generating factually consistent responses for knowledge-intensive question answering remains challenging. These difficulties are primarily due to hallucinations and the limitations of LLMs in bridging long-tail knowledge gaps. To address this, we propose AMATA, an Adaptive Multi-Agent Trajectory Alignment framework that dynamically integrates external knowledge to improve response interpretability and factual grounding. Our architectu",
-      "title": "AMATA: Adaptive Multi-Agent Trajectory Alignment for Knowledge-Intensive Question Answering"
+      "summary_zh": "儘管大型語言模型進展顯著，要在知識密集型問答中產生與事實一致的答案仍相當困難，主因是幻覺問題，以及模型在填補長尾知識缺口上的限制。為此作者提出 AMATA，一套自適應多代理軌跡對齊框架，動態整合外部知識，以提升回應的可解釋性與事實依據。其架構核心在於讓多個代理的推理與檢索軌跡彼此對齊，並依問題需求自適應調整，而非套用固定流程。摘要僅止於問題陳述與方法命名，未揭露代理角色設計、對齊機制、外部知識來源，或與檢索增強與多代理基線的量化比較，因此其降低幻覺的實際幅度、成本與延遲仍待完整論文檢驗。若成效成立，對需要可靠事實根據的知識密集型應用具有實務價值。",
+      "title": "AMATA: Adaptive Multi-Agent Trajectory Alignment for Knowledge-Intensive Question Answering",
+      "title_zh": "AMATA：知識密集型問答的自適應多代理軌跡對齊"
     },
     {
       "arxiv_id": "2605.17348",
@@ -4264,7 +4410,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17348",
       "summary": "Recent advancements in LLM-based multi-agent systems have demonstrated remarkable collaborative capabilities across complex tasks. To improve overall efficiency, existing methods often rely on aggressive graph evolution among agents (e.g., node or edge pruning), which risks prematurely discarding valuable agents due to transient issues such as hallucinations or temporary knowledge gaps. However, such hard pruning overlooks the potential for ``zombie'' agents to recover and contribute in subseque",
-      "title": "Taming \"Zombie'' Agents: A Markov State-Aware Framework for Resilient Multi-Agent Evolution"
+      "summary_zh": "以 LLM 為基礎的多代理系統在複雜任務上展現優異協作能力。為提升整體效率，現行方法常採用積極的圖形演化，例如節點或邊的剪枝，以精簡代理結構。然而這種硬式剪枝存在風險：某些代理可能只是因暫時性問題，例如幻覺或短期知識缺口，而表現不佳，卻被過早判定為無用並永久移除。作者指出，這類「殭屍」代理其實有機會在後續任務中恢復並做出貢獻，硬剪枝則完全抹除此可能性。為此本文提出一套馬可夫狀態感知框架，將代理狀態視為可轉移的動態過程，以更具韌性的方式決定保留、隔離或重新啟用，而非逕行刪除。摘要僅描述動機與框架定位，未提供狀態定義、轉移機制的具體設計，或與既有演化方法的效能比較數據，因此其實際增益仍待完整論文驗證。此觀點對長期運作的多代理系統穩定性具啟發性。",
+      "title": "Taming \"Zombie'' Agents: A Markov State-Aware Framework for Resilient Multi-Agent Evolution",
+      "title_zh": "馴服「殭屍」代理：兼具韌性的多代理演化馬可夫狀態感知框架"
     },
     {
       "arxiv_id": "2605.17342",
@@ -4318,7 +4466,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17342",
       "summary": "Standard RLHF relies on transitive scalar rewards, failing to capture the cyclic nature of human preferences. While some approaches like the General Preference Model (GPM) address this, we identify a theoretical limitation: their implicit formulation entangles hierarchy with cyclicity, failing to guarantee dominant solutions. To address this, we propose the Hybrid Reward-Cyclic (HRC) model, which utilizes game-theoretic decomposition to explicitly disentangle preferences into orthogonal transiti",
-      "title": "Transitivity Meets Cyclicity: Explicit Preference Decomposition for Dynamic Large Language Model Alignment"
+      "summary_zh": "標準 RLHF 以遞移性的純量獎勵為基礎，難以描述人類偏好中普遍存在的循環關係（例如 A 優於 B、B 優於 C、C 又優於 A）。既有做法如 General Preference Model（GPM）雖已正視此問題，但本文指出其隱式表述把「階層性」與「循環性」糾纏在一起，理論上無法保證求出具支配地位的解。作者因此提出 Hybrid Reward-Cyclic（HRC）模型，藉由賽局理論式的分解，把偏好顯式拆成彼此正交的遞移成分與循環成分，再依此進行動態對齊。由於目前僅能取得摘要，方法細節、實驗設定與量化結果尚未公開，理論保證的範圍與計算成本仍待驗證。此工作的重要性在於：若偏好分解確實可行，將為動態、隨情境變動的對齊提供比純量獎勵更誠實的建模基礎，也讓 RLHF 的理論限制被更清楚地標定。",
+      "title": "Transitivity Meets Cyclicity: Explicit Preference Decomposition for Dynamic Large Language Model Alignment",
+      "title_zh": "跨越遞移性與循環性：動態大型語言模型對齊的顯式偏好分解"
     },
     {
       "arxiv_id": "2605.17341",
@@ -4374,7 +4524,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17341",
       "summary": "Vision-Language Models (VLMs) have achieved remarkable success, yet their reliance on massive datasets and unintended memorization of training data raise significant data security risk. Membership Inference Attacks (MIAs) aim to assess these risks by determining whether a data sample was included in a model's training set. However, existing MIA methods against VLMs face critical bottlenecks: gray-box method relies on internal logits that are typically restricted in real-world Application Program",
-      "title": "Single-Sample Black-Box Membership Inference Attack against Vision-Language Models via Cross-modal Semantic Alignment"
+      "summary_zh": "視覺語言模型（VLM）依賴大規模資料訓練，對訓練資料的無意記憶帶來資料安全風險。成員推論攻擊（MIA）用以判定某筆樣本是否曾納入訓練集，是評估此類風險的常用手段。然而既有針對 VLM 的 MIA 面臨瓶頸：灰箱方法依賴內部 logits，而現實應用中這類內部訊號通常無法取得。本文提出單樣本、黑箱設定的攻擊，核心構想是透過跨模態語意對齊來判斷樣本與模型回應之間的一致性，從而在僅能查詢輸出的條件下推論成員身分。摘要未揭露具體對齊訊號、資料集與攻擊成功率等量化證據，因此其實際優勢與誤判率仍待檢驗。此研究的重要性在於把 MIA 威脅模型推向更貼近實務的黑箱情境，提醒部署方即使不暴露模型內部，仍可能因跨模態一致性洩漏訓練資料歸屬。",
+      "title": "Single-Sample Black-Box Membership Inference Attack against Vision-Language Models via Cross-modal Semantic Alignment",
+      "title_zh": "針對視覺語言模型的單樣本黑箱成員推論攻擊：以跨模態語意對齊為途徑"
     },
     {
       "arxiv_id": "2605.17336",
@@ -4439,7 +4591,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17336",
       "summary": "Tactile sensing is a fundamental modality for embodied intelligence, offering unique and direct feedback on contact geometry, material properties, and interaction dynamics that remote sensors cannot replace. However, unimodal tactile perception is inherently limited by its sparse spatial coverage and lack of global semantic context. With the recent explosion in deep learning and large language models, integrating tactile with vision and language has become essential to bridge physical interactio",
-      "title": "Tactile-based Multimodal Fusion in Embodied Intelligence: A Survey of Vision, Language, and Contact-Driven Paradigms"
+      "summary_zh": "觸覺感測是具身智慧的核心模態，能直接回饋接觸幾何、材質特性與互動動力學，這是遠端感測器無法取代的資訊。然而單一觸覺感知受制於空間覆蓋稀疏、缺乏全域語意脈絡，難以獨立支撐高階理解與決策。隨著深度學習與大型語言模型快速發展，將觸覺與視覺、語言整合已成必然方向，以連結物理互動與語意推理。本文以綜述形式整理此領域，梳理視覺、語言與接觸驅動三類範式，並探討多模態融合的架構與挑戰。由於僅有摘要，具體分類準則、涵蓋文獻範圍與所歸納的評比結果無法確認，讀者宜留意其取樣偏誤與時效性。其價值在於為觸覺多模態研究提供整合視角，指出從感測訊號到語意行動的缺口，對機器人操作與人機互動皆有參考意義。",
+      "title": "Tactile-based Multimodal Fusion in Embodied Intelligence: A Survey of Vision, Language, and Contact-Driven Paradigms",
+      "title_zh": "具身智慧中的觸覺多模態融合：視覺、語言與接觸驅動範式的綜述"
     },
     {
       "arxiv_id": "2605.18895",
@@ -4494,7 +4648,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.18895",
       "summary": "Safety validation of autonomous driving systems requires high-risk scenario coverage, clear collision semantics, executable trajectories, and attributable multi-vehicle interactions. Existing safety-critical scenario generation methods often rely on low-level trajectory perturbations, collision-proxy optimization, or single-adversary search, which may produce adversarial samples with ambiguous collision causes or uncontrolled multi-vehicle collisions. This paper proposes KG-ASG, a collision-know",
-      "title": "KG-ASG: Collision-Knowledge-Guided Closed-Loop Adversarial Scenario Generation With Primary-Support Attribution"
+      "summary_zh": "自駕系統的安全驗證需要高風險情境覆蓋、清楚的碰撞語意、可執行的軌跡，以及可歸因的多車互動。既有安全關鍵情境生成方法多依賴低階軌跡擾動、碰撞代理指標最佳化或單一對抗者搜尋，容易產生碰撞成因模糊或失控的多車連環碰撞，使驗證結果難以解釋與複現。本文提出 KG-ASG，以碰撞知識引導的閉環流程生成對抗情境，並搭配主責—支援歸因機制，將事故責任區分為主因車輛與支援角色，以釐清多車互動中的因果結構。摘要未提供實驗平台、情境數量與覆蓋率等量化證據，因此相對於基線方法的增益仍待確認。此工作的重要性在於把「可解釋性」納入對抗情境生成的目標，讓自駕安全驗證不僅追求高風險，也能產出可歸因、可執行的測試案例。",
+      "title": "KG-ASG: Collision-Knowledge-Guided Closed-Loop Adversarial Scenario Generation With Primary-Support Attribution",
+      "title_zh": "KG-ASG：碰撞知識引導的閉環對抗情境生成與主責—支援歸因"
     },
     {
       "arxiv_id": "2605.17329",
@@ -4547,7 +4703,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17329",
       "summary": "Guardrails are a critical safety layer for modern AI systems, but their operating regime is changing. As LLMs are deployed as customized assistants, safety policies are increasingly specified at inference time by users, organizations, or regulatory contexts. This makes safety enforcement fundamentally dynamic: the guardrail should adapt to changing safety policies without retraining. Yet this requirement creates a fundamental tension: faithfully judging complex policy contexts demands reasoning ",
-      "title": "LPG: Balancing Efficiency and Policy Reasoning in Latent Policy Guardrails"
+      "summary_zh": "護欄是現代 AI 系統的關鍵安全層，但其運作情境正在改變。當 LLM 被部署為客製化助理，安全策略越來越多在推論時由使用者、組織或法規情境指定，使安全執行本質上變得動態：護欄必須在不重新訓練的情況下適應變動的策略。這帶來根本張力——要忠實判讀複雜的策略脈絡需要推理能力，但逐一推理會拖慢延遲並增加成本。本文提出 LPG（Latent Policy Guardrails），在潛在空間中進行策略推理，試圖在效率與判斷品質之間取得平衡。摘要未揭露模型規模、延遲數據與安全基準的量化結果，其實際權衡曲線仍待驗證。此研究的重要性在於回應推論時策略變動的實務需求，若能在可接受延遲下維持判斷準確度，將有助於企業與法規場景中的動態安全部署。",
+      "title": "LPG: Balancing Efficiency and Policy Reasoning in Latent Policy Guardrails",
+      "title_zh": "LPG：潛在策略護欄中效率與策略推理的權衡"
     },
     {
       "arxiv_id": "2605.17327",
@@ -4606,7 +4764,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17327",
       "summary": "Fast and reliable initialization is critical for monocular visual-inertial navigation systems (VINS), as it establishes the starting conditions for subsequent state estimation. Despite steady progress, most existing methods heavily rely on visual feature correspondences and require 3-4 seconds of sensory data for successful initialization, which limits their applicability and efficiency. With the advent of feed-forward 3D models that can directly predict point clouds from images, we revisit the ",
-      "title": "Efficient Feature-Free Initialization for Monocular Visual-Inertial Systems Using a Feed-Forward 3D Model"
+      "summary_zh": "快速且可靠的初始化對單目視覺慣性導航系統（VINS）至關重要，因為它決定後續狀態估計的起始條件。既有方法多高度依賴視覺特徵對應，且通常需要三到四秒的感測資料才能成功初始化，限制了適用性與效率。隨著可直接從影像預測點雲的饋送式三維模型出現，本文重新檢視此問題，提出不依賴特徵匹配的初始化流程：利用前饋三維模型提供的幾何先驗，加速取得初始尺度與姿態，縮短所需感測時間。摘要未提供資料集、初始化成功率與精度比較等實證數據，因此相對於傳統特徵式方法的實際增益仍待檢驗。此工作的重要性在於把新興前饋三維模型的輸出導入傳統 VINS 管線，若能降低初始化延遲並放寬對紋理與特徵的依賴，將有助於行動裝置與機器人上的即時定位。",
+      "title": "Efficient Feature-Free Initialization for Monocular Visual-Inertial Systems Using a Feed-Forward 3D Model",
+      "title_zh": "以饋送式三維模型實現單目視覺慣性系統的高效無特徵初始化"
     },
     {
       "arxiv_id": "2605.17325",
@@ -4656,7 +4816,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17325",
       "summary": "Critical infrastructure defense is fundamentally bottlenecked by the operational reality that preventive controls are frequently bypassed by sophisticated supply-chain compromises and stolen administrative credentials. When prevention fails, defense relies entirely on rapid, post-ingress threat detection and automated response across sovereign sectors. We present a novel, federated, high-throughput stream-processing and correlation framework designed to detect coordinated cross-sector threat cam",
-      "title": "Federated Stream-Processing and Latency-Gated Response for Cross-Sector Threat Detection and Collaborative Containment"
+      "summary_zh": "關鍵基礎設施防禦的根本瓶頸在於營運現實：預防性控制常被精密供應鏈入侵與遭竊的管理憑證繞過。一旦預防失效，防禦便完全依賴快速的入站後威脅偵測，以及跨主權部門的自動化回應。本文提出一套聯邦式、高吞吐量的串流處理與關聯框架，用以偵測跨部門的協同威脅活動，並以延遲閘控機制決定回應時機與範圍，同時在聯邦架構下避免各部門過度共享原始資料。摘要未說明威脅模型細節、串流吞吐量與誤報率等量化證據，故實際偵測效能與協同圍堵的效益仍待驗證。其重要性在於正視「預防必然會被突破」的現實，嘗試在資料主權與即時協防之間取得平衡，對國家級與跨組織資安聯防具有政策與工程雙重意涵。",
+      "title": "Federated Stream-Processing and Latency-Gated Response for Cross-Sector Threat Detection and Collaborative Containment",
+      "title_zh": "聯邦串流處理與延遲閘控回應：跨部門威脅偵測與協同圍堵"
     },
     {
       "arxiv_id": "2605.17324",
@@ -4712,7 +4874,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17324",
       "summary": "Clarification-seeking behavior is widely regarded as a desirable property of LLM agents, enabling them to resolve ambiguity before acting on underspecified tasks. However, the security implications of this interaction pattern remain unexplored. We investigate whether the transition from standard execution to a clarification-seeking state increases an agent's susceptibility to prompt injection attacks. We introduce ASPI (Ambiguous-State Prompt Injection), a benchmark of 728 task-attack scenarios ",
-      "title": "ASPI: Seeking Ambiguity Clarification Amplifies Prompt Injection Vulnerability in LLM Agents"
+      "summary_zh": "主動尋求釐清常被視為 LLM 代理的理想行為，讓它在任務描述不足時先提問再行動。然而這種互動模式的安全意涵尚未被探討。本文研究代理從標準執行狀態切換到「尋求釐清」狀態時，是否更容易受到提示注入攻擊。作者提出 ASPI（Ambiguous-State Prompt Injection），建構包含 728 個任務—攻擊情境的基準，用以系統性量測此狀態轉換帶來的風險變化。摘要未揭露攻擊成功率、受測模型與防禦基線等具體結果，因此增幅幅度仍待檢驗。此研究的重要性在於指出一項反直覺的安全權衡：提升代理互動品質的機制，可能同時擴大攻擊面。對代理設計者而言，這意味著釐清流程本身也需要注入防護與權限邊界，而非僅視為單純的可用性功能。",
+      "title": "ASPI: Seeking Ambiguity Clarification Amplifies Prompt Injection Vulnerability in LLM Agents",
+      "title_zh": "ASPI：尋求模糊釐清反而放大 LLM 代理的提示注入弱點"
     },
     {
       "arxiv_id": "2605.17320",
@@ -4767,7 +4931,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17320",
       "summary": "Computer-use agents increasingly operate inside live personal workspaces, where their actions can modify files, applications, GUI state, credentials, and authenticated sessions. This creates a tension between safety and quality: agents need isolation and rollback to avoid damaging user state, but also need fast branching to support speculative execution and parallel search. Existing VMs, containers, and checkpoint/restore systems can isolate or recover workloads, but they do not provide low-late",
-      "title": "TClone: Low-Latency Forking of Live GUI Environments for Computer-Use Agents"
+      "summary_zh": "電腦操作代理（computer-use agents）日益在真實的個人工作空間中運作，其動作可能修改檔案、應用程式、GUI 狀態、憑證與已驗證的工作階段。這使得安全性與品質之間產生張力：代理既需要隔離與回復機制以避免破壞使用者狀態，又需要快速分支以支援推測式執行與平行搜尋。現有的虛擬機、容器與檢查點／還原系統雖能隔離或復原工作負載，卻無法提供低延遲的分支能力。本文提出 TClone，針對即時 GUI 環境設計低延遲的分叉機制。受限於僅有摘要，目前可見的資訊著重在問題設定與動機，尚未揭露具體方法細節與實驗數據；因此其實際延遲表現、可擴充性以及對不同作業系統與應用程式的相容程度仍待驗證。此工作的重要性在於，若能實現即時分支，將使電腦操作代理得以安全地進行嘗試、回溯與多路探索，對代理在真實工作環境中的部署與風險控制具有關鍵意義。",
+      "title": "TClone: Low-Latency Forking of Live GUI Environments for Computer-Use Agents",
+      "title_zh": "TClone：為電腦操作代理實現即時 GUI 環境的低延遲分支複製"
     },
     {
       "arxiv_id": "2605.17316",
@@ -4823,7 +4989,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17316",
       "summary": "Sensor networks increasingly govern modern infrastructure, yet the data they lose are rarely missing in the uniform-random patterns assumed by standard imputation benchmarks. Loop detectors go offline during calibration, roadside cabinets silence clusters of nearby sensors, and newly installed instruments provide no history. Such failures create structured absences whose values are constrained by higher-order relations among groups of sensors, not merely by pairwise proximity. Existing low-rank ",
-      "title": "Learning Higher-Order Structure from Incomplete Spatiotemporal Data: Multi-Scale Hypergraph Laplacians with Neural Refinement"
+      "summary_zh": "感測器網路日益主導現代基礎設施，然而其遺失的資料很少符合標準插補基準所假設的均勻隨機缺失模式。迴圈偵測器在校準期間離線、路側機櫃使鄰近的一群感測器同時沉默，新裝設的儀器則毫無歷史紀錄。這類失效造成結構化的缺失，其數值受感測器群組之間的高階關係所約束，而不僅取決於成對鄰近性。既有低秩方法多半只捕捉成對關係，難以處理此類集體缺失。本文提出以多尺度超圖拉普拉斯（hypergraph Laplacian）搭配神經網路精修來學習高階結構，試圖同時建模群組層級的約束與跨尺度依賴。由於僅有摘要，具體架構設計、損失函數與實驗結果尚未公開，其實際插補精度、對不同缺失型態的穩健性與計算成本仍待檢驗。此研究的重要性在於，若能正確處理結構化缺失，將提升交通、能源與城市感測等關鍵基礎設施的資料可信度與下游決策品質。",
+      "title": "Learning Higher-Order Structure from Incomplete Spatiotemporal Data: Multi-Scale Hypergraph Laplacians with Neural Refinement",
+      "title_zh": "從不完整時空資料中學習高階結構：多尺度超圖拉普拉斯結合神經網路精修"
     },
     {
       "arxiv_id": "2605.17314",
@@ -4875,7 +5043,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17314",
       "summary": "We consider whether off-policy experience from a smaller, weaker model can elicit capability in a stronger learner that on-policy RL fine-tuning (e.g., GRPO) does not reach. We find that injecting mathematically wrong drafts from a smaller but more domain-trained model -- mismatched to the current problem -- into a stronger learner's GRPO context consistently outperforms standard on-policy GRPO on held-out MATH-500 and out-of-distribution AIME 2025/2026. Concretely, we use Mathstral-7B as the le",
-      "title": "Weak-to-Strong Elicitation via Mismatched Wrong Drafts"
+      "summary_zh": "本文探討一個問題：來自較小、較弱模型的離策略（off-policy）經驗，是否能誘發較強學習者具備在策略式 RL 微調（例如 GRPO）無法達到的能力。研究發現，將來自較小但更熟悉領域的模型所產生的數學錯誤草稿——且與當前問題不匹配——注入較強學習者的 GRPO 上下文中，在保留的 MATH-500 以及分布外（out-of-distribution）的 AIME 2025/2026 上，表現一致優於標準的策略式 GRPO。具體而言，作者以 Mathstral-7B 作為較弱的草稿來源模型。摘要僅揭露動機與主要對比結果，尚未說明錯誤草稿的篩選方式、注入比例、訓練成本，以及為何不匹配的錯誤反而帶來增益的機制解釋；其對其他領域與模型規模的可推廣性亦待驗證。此工作的重要性在於，它指出弱模型產出未必只是雜訊，若能善用其錯誤，或許能以更低成本誘發強模型的能力，對 RL 微調與資料效率研究具啟發性。",
+      "title": "Weak-to-Strong Elicitation via Mismatched Wrong Drafts",
+      "title_zh": "透過不匹配的錯誤草稿實現弱到強的誘發"
     },
     {
       "arxiv_id": "2605.17310",
@@ -4932,7 +5102,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17310",
       "summary": "Existing adversarial attacks on vision-language models (VLMs) can steer model outputs toward attacker-specified target responses, but their effectiveness often degrades when the same perturbed input is paired with different textual queries. This paper studies cross-query response manipulation, where a single adversarial example is expected to remain effective across diverse user queries. We first analyze the limitations of existing attacks and find that successful transfer is closely associated ",
-      "title": "Attention Hijacking: Response Manipulation Across Queries in Vision-Language Models"
+      "summary_zh": "現有針對視覺語言模型（VLM）的對抗攻擊，能將模型輸出導向攻擊者指定的目標回應，但其效力往往在同一筆受擾動輸入搭配不同文字查詢時明顯下降。本文研究「跨查詢回應操控」（cross-query response manipulation），亦即要求單一對抗範例在各種不同的使用者查詢下仍維持有效。作者首先分析既有攻擊的限制，發現成功遷移與特定條件密切相關，並據此提出新的攻擊思路，將操控機制指向模型內部的注意力行為，因而命名為注意力劫持。摘要僅涵蓋問題設定與初步觀察，尚未公開完整的攻擊演算法、評估基準、成功率的量化數字，以及防禦方法的討論；其在不同 VLM 架構與模態組合下的通用性仍待檢驗。此研究的重要性在於，跨查詢穩健的攻擊意味著風險不再侷限於單一提示，對 VLM 部署時的安全評估與防禦設計構成更嚴峻的挑戰。",
+      "title": "Attention Hijacking: Response Manipulation Across Queries in Vision-Language Models",
+      "title_zh": "注意力劫持：視覺語言模型中跨查詢的回應操控"
     },
     {
       "arxiv_id": "2605.17309",
@@ -4984,7 +5156,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17309",
       "summary": "We present StyleText, a large-scale dataset and benchmark for localized scene-text inpainting with style preservation. StyleText contains 28,518 image-mask-prompt triplets grouped into 9,932 scene families, enabling controlled evaluation of text legibility and visual consistency under shared scene context. We construct the dataset with an automated pipeline that combines LLM prompt templating, Flux-based source generation with key-value (KV) cache injection, OCR-based semantic filtering, polygon",
-      "title": "StyleText: A Large-Scale Dataset and Benchmark for Stylized Scene Text Inpainting"
+      "summary_zh": "本文提出 StyleText，一個針對局部場景文字修補並保留風格的超大規模資料集與基準。StyleText 內含 28,518 組「影像—遮罩—提示」三元組，並歸納為 9,932 個場景家族，使研究者能在共享場景脈絡下，對文字可讀性與視覺一致性進行可控評估。資料集以自動化流程建構，結合 LLM 提示模板、基於 Flux 的來源生成與 key-value（KV）快取注入、以 OCR 為基礎的語意過濾，以及多邊形標註等步驟。摘要僅揭露資料規模與建構流程，尚未提供基準上的方法比較、評估指標數值，以及自動流程可能引入的偏誤分析；資料集在真實場景與多語言文字上的涵蓋程度亦待檢驗。此工作的重要性在於，場景文字修補長期缺乏兼顧風格一致與語意正確的評測資源，StyleText 有望為該領域提供標準化的比較基礎。",
+      "title": "StyleText: A Large-Scale Dataset and Benchmark for Stylized Scene Text Inpainting",
+      "title_zh": "StyleText：風格化場景文字修補的大型資料集與基準"
     },
     {
       "arxiv_id": "2605.17305",
@@ -5037,7 +5211,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17305",
       "summary": "Large language model (LLM) self-correction -- the ability to detect and fix errors in generated outputs -- remains largely ad hoc, relying on generic prompts such as \"please reconsider your answer\" without systematic error analysis or convergence guarantees. We propose CyberCorrect, a framework that formalizes LLM self-correction as a closed-loop control system grounded in cybernetic theory. The framework models the LLM generator as the plant and introduces a tri-modal Error Detector (combining ",
-      "title": "CyberCorrect: A Cybernetic Framework for Closed-Loop Self-Correction in Large Language Models"
+      "summary_zh": "大型語言模型（LLM）的自我修正能力，也就是偵測並修正生成輸出中錯誤的能力，目前多半仍屬臨時性做法，依賴「請重新考慮你的答案」之類的通用提示，缺乏系統性的錯誤分析與收斂保證。本文提出 CyberCorrect，將 LLM 自我修正形式化為一個奠基於控制論的閉環控制系統。此框架把 LLM 生成器建模為受控對象（plant），並引入三模態錯誤偵測器，結合同質與異質的錯誤訊號來源，再以回饋機制驅動修正。摘要僅描述框架的理論定位與元件構成，尚未公開具體的偵測器設計、收斂性證明細節、實驗設定與準確率提升幅度；其在開放式生成任務與長篇推理上的實際效益仍待驗證。此研究的重要性在於，若能為自我修正提供可分析、可保證的理論框架，將有助於擺脫對提示工程的依賴，讓 LLM 的錯誤修正具備更可靠且可重複的工程基礎。",
+      "title": "CyberCorrect: A Cybernetic Framework for Closed-Loop Self-Correction in Large Language Models",
+      "title_zh": "CyberCorrect：大型語言模型閉環自我修正的控制論框架"
     },
     {
       "arxiv_id": "2605.17304",
@@ -5089,7 +5265,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17304",
       "summary": "LLM context is not just tokens; it is a set of commitments. Long-running conversations accumulate goals, constraints, decisions, preferences, tool results, retrieved evidence, artifacts, and safety boundaries that future responses must preserve. Existing context-management methods reduce length through truncation, retrieval, summarization, memory systems, or token-level prompt compression, but they rarely specify which semantic commitments must survive compression or how their preservation shoul",
-      "title": "Compress the Context, Keep the Commitments: A Formal Framework for Verifiable LLM Context Compression"
+      "summary_zh": "LLM 的脈絡不只是詞元（token），而是一組「承諾」。長時間運作的對話會累積目標、限制條件、決策、偏好、工具執行結果、檢索到的證據、產出物以及安全邊界，未來回應必須予以保留。現有的脈絡管理方法透過截斷、檢索、摘要、記憶系統或詞元層級的提示壓縮來縮短長度，卻很少明確指出哪些語意承諾必須在壓縮後存活，也缺乏對其保留程度的驗證方式。本文提出一個形式化框架，嘗試界定脈絡中的承諾集合，並讓壓縮結果具備可驗證性。由於僅有摘要，目前尚未揭露承諾的表示方式、驗證流程的具體設計、實驗任務與量化結果，以及壓縮率與承諾保留率之間的權衡；其在真實長對話與多工具代理場景的可行性仍待檢驗。此工作的重要性在於，若能讓壓縮從「盡量不失真」提升為「可證明保留關鍵約束」，將對長時程代理的可靠性與安全性帶來實質幫助。",
+      "title": "Compress the Context, Keep the Commitments: A Formal Framework for Verifiable LLM Context Compression",
+      "title_zh": "壓縮脈絡、保留承諾：可驗證 LLM 脈絡壓縮的形式化框架"
     },
     {
       "arxiv_id": "2605.20237",
@@ -5139,7 +5317,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.20237",
       "summary": "We present a lightweight appearance adapter for Stable Diffusion that enables controllable and consistent anime character generation under diverse editing conditions. Instead of relying on large-scale vision-language models or per-subject fine-tuning, our method injects fine-grained visual features from a single reference image into the diffusion process. Based on CLIP emergent local spatialization, we develop semantic-selective local attention. To further disentangle character appearance from s",
-      "title": "AnimeAdapter: Fine-grained and Consistent Zero-shot Anime Character Generation"
+      "summary_zh": "本文提出一個輕量的外觀適配器（adapter），可掛載於 Stable Diffusion 之上，在各種編輯條件下實現可控且一致的動漫角色生成。與其依賴大規模視覺語言模型或針對單一主體的微調，該方法改為將單張參考影像中的細緻視覺特徵注入擴散過程。作者基於 CLIP 湧現的局部空間化特性，開發出語意選擇性局部注意力機制，以在生成時保留角色的關鍵外觀細節；並進一步將角色外觀與場景等其他因素解耦，以維持跨編輯條件的一致性。摘要僅說明方法動機與核心機制，尚未公開網路架構細節、訓練資料規模、與既有零樣本方法在身分保持與編輯可控性上的比較數據，以及對複雜姿態與多角色情境的表現。此研究的重要性在於，若能以免微調方式達成細緻且一致的角色生成，將大幅降低動漫創作與個人化生成的工作成本，並提升擴散模型在角色導向應用中的可用性。",
+      "title": "AnimeAdapter: Fine-grained and Consistent Zero-shot Anime Character Generation",
+      "title_zh": "AnimeAdapter：細緻且一致的零樣本動漫角色生成"
     },
     {
       "arxiv_id": null,
@@ -5185,7 +5365,9 @@
       "source_name": "DeepMind Blog",
       "story_id": "fallback:dc557f871397e36a",
       "summary": "We’re expanding access to Google AI Ultra subscribers globally and introducing a new capability powered by Street View.",
-      "title": "Simulate real-world places with Project Genie and Street View"
+      "summary_zh": "這是 Google 官方發布的產品消息，並非研究論文，因此僅有摘要層級的資訊。內容指出 Google 正在擴大 Google AI Ultra 訂閱服務的全球開放範圍，並推出一項由街景（Street View）資料驅動的新功能，讓使用者能以真實世界地點為基礎進行模擬。可取得的線索僅止於此：官方並未說明模型架構、資料來源規模、生成解析度、幾何一致性或互動方式，也沒有提供任何量化評估或使用者研究結果，更沒有交代隱私與地點授權的處理方式，因此無法判斷其實際技術貢獻與限制。就重要性而言，若此功能確實以街景為基礎產生可互動的三維場景，代表真實世界先驗正被納入生成式系統的輸入端，可能影響機器人模擬、自駕訓練與沉浸式內容創作等應用方向；然而在缺乏技術細節的情況下，讀者應把它視為產品公告而非可檢驗的研究成果，後續仍需等待官方技術文件或第三方重現才能評估其實質影響。",
+      "title": "Simulate real-world places with Project Genie and Street View",
+      "title_zh": "以 Project Genie 與街景模擬真實世界場景"
     },
     {
       "arxiv_id": null,
@@ -5231,7 +5413,9 @@
       "source_name": "DeepMind Blog",
       "story_id": "fallback:adeb598794b59f6a",
       "summary": null,
-      "title": "Introducing Google Antigravity 2.0"
+      "summary_zh": "這是一則 Google 官方產品公告，並非學術論文，且所提供的內容為空，沒有任何可引用的摘要文字。因此本導讀無法說明其問題設定、方法設計、實驗證據或結果數據，也無法確認 Antigravity 究竟是開發環境、代理式工具鏈、模型系列還是平台服務，更無從判斷 2.0 版本相對前一版新增了哪些能力、是否涉及模型微調、工具呼叫、多代理協作或程式碼生成等技術機制。在缺乏官方技術文件、基準測試與第三方重現的情況下，任何對其效能或限制的推測都屬於臆測，讀者不宜將其視為研究成果。之所以仍值得留意，是因為大型科技公司的開發者工具發布往往會改變社群的工作流程與生態系競爭格局，可能牽動後續研究選題與實作慣例；建議讀者直接查閱官方部落格、技術報告或發布說明，以取得可驗證的細節後再行評估。",
+      "title": "Introducing Google Antigravity 2.0",
+      "title_zh": "Google Antigravity 2.0 發布公告"
     },
     {
       "arxiv_id": null,
@@ -5277,7 +5461,9 @@
       "source_name": "DeepMind Blog",
       "story_id": "fallback:e8fc888fba4fefa0",
       "summary": "We're expanding our tools to help you understand how content was created and edited across the web.",
-      "title": "Making it easier to understand how content was created and edited"
+      "summary_zh": "這是 Google 官方發布的產品與政策消息，並非研究論文，僅有摘要層級的資訊。內容表示 Google 正在擴充相關工具，協助使用者了解網頁上的內容是如何被創作與編輯的，方向大致落在內容來源標註、生成式內容的揭露或編輯歷程的透明化等領域。然而可取得的線索極少：官方未說明所採用的技術機制，例如是依賴中繼資料、數位浮水印、內容憑證標準或機器學習偵測，也沒有公布準確率、誤判率、覆蓋率等量化評估，更未交代對抗性規避、隱私保護與跨平台互通性的處理方式，因此無法判斷其實際效果與限制。就重要性而言，在生成式人工智慧內容大量流通的情況下，來源透明化是維繫資訊信任與平台治理的關鍵基礎建設，可能影響搜尋排序、內容審核與法規遵循；但在缺乏技術細節與獨立驗證的前提下，讀者應將其視為產品方向的宣示，後續仍需觀察其實作規格、標準相容性與第三方評估結果。",
+      "title": "Making it easier to understand how content was created and edited",
+      "title_zh": "讓內容的創作與編輯歷程更容易被理解"
     }
   ],
   "run_date": "2026-05-17",
@@ -5339,7 +5525,9 @@
       "source_name": "DeepMind Blog",
       "story_id": "fallback:8b30f4c81864d1e0",
       "summary": "A collection of science tools and experiments to expand the scale and precision of scientific exploration.",
-      "title": "Gemini for Science: AI experiments and tools for a new era of discovery"
+      "summary_zh": "這是一則摘要型介紹，說明 Google 推出一系列科學工具與實驗，目標是擴大科學探索的規模並提升精確度。文中強調的是工具集合與應用方向，而不是某一項特定研究的假設、方法或量化結果；摘要也没有交代這些工具涵蓋哪些學科、如何評估效能、是否開放給外部研究者使用，或與既有科學工作流程如何整合。因此，讀者無法從中得知實際的準確率、可重現性或成本。其意義在於大型語言模型與多模態 AI 正逐步嵌入科學發現流程，從文獻整理、假設生成到實驗輔助都有可能受到影響。不過在缺乏完整技術細節與獨立評估的情況下，這些工具是否真能提升研究品質，仍需要後續的基準測試與社群驗證。",
+      "title": "Gemini for Science: AI experiments and tools for a new era of discovery",
+      "title_zh": "Gemini for Science：面向新發現時代的 AI 實驗與工具"
     },
     {
       "arxiv_id": null,
@@ -5387,7 +5575,9 @@
       "source_name": "DeepMind Blog",
       "story_id": "fallback:181d1c2ea445bafd",
       "summary": null,
-      "title": "Introducing Gemini Omni"
+      "summary_zh": "此條目為一則簡短的產品或模型介紹，標題為 Gemini Omni，但未提供任何摘要內容，因此無法確認其技術細節、模型規模、訓練資料、能力範圍或與其他 Gemini 版本的差異。由於沒有任何可引用的方法與結果，讀者不應根據標題推測其效能或應用場景。若這是新發布的模型或工具，其重要性可能在於擴展多模態或跨模態能力，並影響開發者與研究者的使用方式，但這些都需要官方技術報告、基準測試與第三方評測來支持。目前能做的僅是將它標記為待補資訊的項目，等待後續公開文件揭露訓練方式、評估指標、限制與可存取管道，再評估其實際價值。",
+      "title": "Introducing Gemini Omni",
+      "title_zh": "Gemini Omni 簡介"
     },
     {
       "arxiv_id": "2605.17340",
@@ -5444,7 +5634,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17340",
       "summary": "Time series foundation models rely on large-scale pretraining over diverse datasets across domains, yet their heterogeneity in temporal patterns could hinder the effectiveness of training and learning transferable time series representations. Inspired a fundamental concept, normalized power spectral density (PSD) in signal processing, we assume harmonizing datasets via PSDs in the spectral domain could reduce mismatches and enhance pretraining. We then go beyond the direct intractable minimizati",
-      "title": "Olivia: Harmonizing Time Series Foundation Models with Power Spectral Density"
+      "summary_zh": "時間序列基礎模型通常依賴跨領域的大規模預訓練，但不同資料集的時間型態差異很大，可能削弱訓練效果與可移轉表示的學習。作者借用訊號處理中的正規化功率譜密度（PSD）概念，假設在頻譜域上協調各資料集可降低不匹配，進而改善預訓練。由於直接最小化頻譜差異在計算上難以處理，論文進一步提出可操作的替代做法，但摘要在此截斷，未交代完整的目標函數、模型架構與推論流程。摘要也没有列出實驗資料集、基準方法與量化結果，因此無法判斷協調策略是否穩定優於既有預訓練方式，也看不出在長序列、非平穩或取樣率不一致情境下的限制。其重要性在於把訊號處理的頻譜觀點帶進時間序列基礎模型，若能成立，可能提供一種與領域無關的資料篩選與混合準則，減少負移轉並提升跨領域泛化；但仍需完整論文與可重現實驗來驗證。",
+      "title": "Olivia: Harmonizing Time Series Foundation Models with Power Spectral Density",
+      "title_zh": "Olivia：以功率譜密度協調時間序列基礎模型"
     },
     {
       "arxiv_id": "2605.17471",
@@ -5506,7 +5698,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17471",
       "summary": "Quantization-aware training (QAT) is widely adopted to quantize language models by training full-precision weights using gradients from the quantized model. The main bottleneck is its slow convergence and early performance plateau, particularly below 4-bit-widths. While this problem has been observed in prior work, its precise cause remains unclear. In this paper, we analyze the convergence of QAT by estimating the spectrum of the loss-surface Hessians. We find that the weights converge to flat ",
-      "title": "WinQ: Accelerating Quantization-Aware Training of Language Models Around Saddle Points"
+      "summary_zh": "量化感知訓練（QAT）藉由量化模型提供的梯度來更新全精度權重，是壓縮語言模型的常用手段，但收斂緩慢且在低位元（尤其低於 4 位元）時很早出現效能瓶頸，原因過去並不清楚。本文透過估計損失曲面 Hessian 的譜來分析 QAT 的收斂行為，發現權重會收斂到平坦區域，摘要指出這與鞍點附近的幾何有關，並據此提出加速方法 WinQ。摘要在此截斷，未揭露具體的優化步驟、視窗或重參數化設計，也没有列出模型、資料集與位元寬度等實驗配置。因此無法確認其加速幅度、是否維持下游準確率，以及在更大模型或不同量化方案下是否同樣有效。其貢獻在於把 QAT 的停滯現象連接到損失曲面的譜結構，若能成立，將有助於設計更省算力的低位元訓練流程，降低語言模型部署成本；但仍需完整結果與消融實驗佐證。",
+      "title": "WinQ: Accelerating Quantization-Aware Training of Language Models Around Saddle Points",
+      "title_zh": "WinQ：繞過鞍點以加速語言模型量化感知訓練"
     },
     {
       "arxiv_id": "2605.17312",
@@ -5561,7 +5755,9 @@
       "source_name": null,
       "story_id": "arxiv:2605.17312",
       "summary": "Video style transfer aims to render videos in a target artistic style while preserving content, structure, and motion. While image stylization has advanced rapidly, video stylization remains challenging due to temporal inconsistency. Most existing methods stylize frames or keyframes and enforce consistency via heuristic temporal propagation, which is brittle under occlusions, disocclusions, and long-term motion, leading to drift and flickering artifacts. We argue that a fundamental bottleneck li",
-      "title": "VISTA: Triplet-Supervised Video Style Transfer with Diffusion Transformers"
+      "summary_zh": "影片風格轉換的目標是在套用目標藝術風格的同時，保留內容、結構與動態，但時間不一致常導致畫面閃爍與風格漂移。既有方法多先風格化單張畫面或關鍵畫面，再以啟發式時間傳播強制一致，遇到遮擋、去遮擋與長期運動時相當脆弱。作者主張真正的瓶頸在於缺乏能同時監督風格與時間一致性的學習訊號，因而提出 VISTA，以三元組監督搭配擴散 Transformer 來處理影片風格化。摘要在此截斷，未說明三元組的具體組成、損失設計、訓練資料與推論成本，也没有提供使用者研究或時間穩定性的量化指標。因此無法確認它在長影片、快速運動或複雜遮擋下是否優於既有方法。其重要性在於把擴散 Transformer 與對比式監督結合，嘗試從訓練目標層面解決影片一致性问题；若能驗證，將推進影片後製與生成式視覺應用的品質，但仍需完整實驗與限制討論。",
+      "title": "VISTA: Triplet-Supervised Video Style Transfer with Diffusion Transformers",
+      "title_zh": "VISTA：以三元組監督與擴散 Transformer 進行影片風格轉換"
     }
   ]
 }

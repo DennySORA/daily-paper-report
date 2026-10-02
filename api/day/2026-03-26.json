@@ -175,7 +175,9 @@
         "source_name": null,
         "story_id": "hf:mistralai/mistral-small-4-119b-2603",
         "summary": "Mistral Small 4 is a powerful hybrid model capable of acting as both a general instruction model and a reasoning model. It unifies the capabilities of three different model families—**Instruct**, **Reasoning** (previously called Magistral), and **Devstral**—into a single, unified model. With its multimodal capabilities, efficient architecture, and flexible mode switching, it is a powerful general-purpose model for any task. In a latency-optimized setup, Mistral Small 4 achieves a **40% reduction in end-to-end completion time**, and in a throughput-optimized setup, it handles **3x more requests per second** compared to Mistral Small 3. To further improve efficiency you can either take advantages of: - Speculative decoding thanks to our trained eagle head...",
-        "title": "mistralai/Mistral-Small-4-119B-2603"
+        "summary_zh": "Mistral Small 4 是一個高效能的混合模型，旨在同時勝任一般指令遵循與推理任務，並將過往分散於 Instruct、Reasoning（前稱 Magistral）與 Devstral 三條模型家族的能力整合於單一模型之中。此設計讓使用者無需在不同任務間切換模型，即可獲得統一的對話、推理與程式碼生成體驗；同時模型具備多模態能力，可處理視覺與文字等多種輸入。在架構上，Mistral Small 4 採用高效設計，並透過模式切換機制靈活調整運作方式。根據官方數據，在延遲最佳化配置下，其端到端完成時間較 Mistral Small 3 縮短 40%；在吞吐量最佳化配置下，每秒可處理的請求數則提升至三倍。為進一步改善推論效率，模型提供兩種輔助機制：其一為推測解碼（speculative decoding），藉由訓練好的 eagle head 加速生成；其二為……（此處摘要僅能根據已知內容描述，原文後續細節未提供）。整體而言，Mistral Small 4 的價值在於以單一模型取代多種專門模型，簡化部署與使用流程，同時在速度與吞吐量上取得顯著進展，適合需要高即時性與高併發的應用場景。然而，官方摘要未提供具體的基準測試數據、模型參數量或與其他大型語言模型（如 GPT-4 或 Llama 系列）的比較，因此其宣稱的效率提升需透過獨立驗證確認。此外，多模態能力的實際表現與推理深度尚待詳細評估。這項工作反映了 AI 模型整合化的趨勢，未來可能減少對多模型管線的依賴，並促進更輕量且快速的邊緣部署，但實際採用時仍需考量任務特定需求與資源限制。",
+        "title": "mistralai/Mistral-Small-4-119B-2603",
+        "title_zh": "Mistral Small 4：統一指令、推理與程式碼能力的混合高效模型"
       }
     ]
   },
@@ -4763,7 +4765,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:cf5b7b5048aa13b6",
       "summary": "In this post, we walk through the end-to-end workflow of using RFT on Amazon Bedrock with OpenAI-compatible APIs: from setting up authentication, to deploying a Lambda-based reward function, to kicking off a training job and running on-demand inference on your fine-tuned model.",
-      "title": "Reinforcement fine-tuning on Amazon Bedrock with OpenAI-Compatible APIs: a technical walkthrough"
+      "summary_zh": "這是一篇技術導覽文章，說明如何在 Amazon Bedrock 上使用強化學習微調（Reinforcement Fine-Tuning，RFT），並透過相容於 OpenAI 的 API 介面完成整體流程。文章處理的問題是：大型語言模型在特定任務上往往需要的不只是監督式微調，而是透過獎勵訊號引導模型產生更符合目標的輸出，RFT 正是為此設計。作者以端到端的方式走過完整工作流，包括設定身分驗證、部署以 Lambda 為基礎的獎勵函式、啟動訓練工作，以及對微調後的模型執行隨需推論。相容於 OpenAI 的 API 意味著既有以 OpenAI 介面開發的程式碼可較容易遷移，降低改用門檻。不過摘要並未提供任何實驗數據，例如獎勵設計對最終品質的影響、訓練成本、收斂速度，或與其他微調方法的比較，也未討論獎勵函式設計不當可能導致的獎勵駭客問題。其重要性在於把強化學習微調從研究手法推向受管理的雲端服務，對想在實務產品中導入偏好最佳化的團隊提供具體操作路徑。",
+      "title": "Reinforcement fine-tuning on Amazon Bedrock with OpenAI-Compatible APIs: a technical walkthrough",
+      "title_zh": "在 Amazon Bedrock 上以相容於 OpenAI 的 API 進行強化學習微調：技術實作導覽"
     },
     {
       "arxiv_id": "2603.24524",
@@ -5328,7 +5332,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:093f71cb2e531aa1",
       "summary": "In this post, we explore how the multimodal foundation models (FMs) of Amazon Bedrock enable scalable video understanding through three distinct architectural approaches. Each approach is designed for different use cases and cost-performance trade-offs.",
-      "title": "Unlocking video insights at scale with Amazon Bedrock multimodal models"
+      "summary_zh": "這篇文章探討如何運用 Amazon Bedrock 的多模態基礎模型（foundation models）來實現可規模化的影片理解，並提出三種不同的架構取向。問題背景在於影片資料量大、時間維度高，直接送入模型往往面臨成本與延遲的雙重壓力，因此需要依使用情境選擇合適的處理策略。三種架構分別針對不同的應用場景與成本效能取捨而設計，讓開發者可依需求在準確度、處理速度與費用之間做出權衡，例如以抽樣影格搭配文字查詢、或是先做片段切分再逐段理解等不同思路。文章屬於架構層面的技術分享，摘要並未揭露具體的模型名稱、影格取樣率、評估資料集或準確度與成本量測數字，因此無法判斷各架構在實際工作負載下的表現差距。其重要性在於指出影片理解並非單一解法，而是需要依場景選擇架構的工程問題，對正在規劃大規模影音分析管線的團隊而言，提供了在受管理雲端服務上權衡成本與效能的思考框架，也提醒實作者必須自行以自有資料驗證適用性。",
+      "title": "Unlocking video insights at scale with Amazon Bedrock multimodal models",
+      "title_zh": "以 Amazon Bedrock 多模態模型大規模解鎖影片洞察"
     }
   ],
   "run_date": "2026-03-26",

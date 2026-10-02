@@ -817,7 +817,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:e075a7b6d244f5da",
       "summary": "In this post, we walk through the full journey, from setting up your migration workspace in AWS Transform to subscribing to partner agents through AWS Marketplace to unlocking Amazon Quick capabilities that change how your organization consumes data.",
-      "title": "AWS Transform now automates BI migration to Amazon Quick in days"
+      "summary_zh": "這篇 AWS 官方文章說明如何運用 AWS Transform 將商業智慧（BI）資產移轉到 Amazon Quick，並將流程壓縮到數天內完成。問題在於傳統 BI 平台移轉往往曠日廢時，牽涉語意模型、報表與資料來源的大量人工重寫，成本與風險都高。文中提出的作法是端到端旅程：先在 AWS Transform 中建立移轉工作區，接著透過 AWS Marketplace 訂閱合作夥伴代理（agents），最後解鎖 Amazon Quick 的各種能力，改變組織取用與解讀資料的方式。文章屬於實作導覽與服務公告性質，主要貢獻在流程自動化與代理生態系的整合示範，並未提供大規模客戶的量化成效、移轉準確率或與人工移轉的成本對照，因此自動化覆蓋率與例外處理仍待實證。其意義在於把 BI 現代化從長期專案轉為可加速的標準化流程，對正評估雲端 BI 搬遷的企業具參考價值，但讀者應自行驗證語意一致性、治理與授權成本等面向，並留意摘要未交代的技術細節。",
+      "title": "AWS Transform now automates BI migration to Amazon Quick in days",
+      "title_zh": "AWS Transform 現可在數日內自動化 BI 移轉至 Amazon Quick"
     },
     {
       "arxiv_id": null,
@@ -868,7 +870,9 @@
       "source_name": null,
       "story_id": "hf:mistralai/mistral-medium-3.5-128b",
       "summary": "Mistral Medium 3.5 is our first flagship merged model. It is a dense 128B model with a 256k context window, handling instruction-following, reasoning, and coding in a single set of weights. Mistral Medium 3.5 replaces its predecessor Mistral Medium 3.1 and Magistral in Le Chat. It also replaces Devstral 2 in our coding agent Vibe. Concretely, expect better performance for instruct, reasoning and coding tasks in a new unified model in comparison with our previous released models. Reasoning effort is configurable per request, so the same model can answer a quick chat reply or work through a complex agentic run. We trained the vision encoder from scratch to handle variable image sizes and aspect ratios. Find more information on our blog. > To speed up local inference using vLLM or SGLang,...",
-      "title": "mistralai/Mistral-Medium-3.5-128B"
+      "summary_zh": "Mistral Medium 3.5 是 Mistral 首個旗艦級合併模型，採稠密架構、總參數量 128B，具備 256k 上下文視窗，將指令遵循、推理與程式碼能力整合在同一組權重中。問題在於過往通用對話、推理與寫程式往往需要不同模型分別處理，增加部署與切換成本。此模型以統一權重取代前代 Mistral Medium 3.1 與 Magistral 在 Le Chat 中的角色，並取代編碼代理 Vibe 中的 Devstral 2；推理強度可依每次請求調整，因此同一模型既能回應快速聊天，也能執行複雜的代理式長流程。視覺編碼器則從零訓練，以支援可變影像尺寸與長寬比。摘要指出在指令、推理與程式任務上相較先前發布模型有更好表現，並提及可透過 vLLM 或 SGLang 加速本地推論。限制在於目前僅有模型卡層級的敘述，缺乏公開基準分數、評測方法與安全評估細節，參數與效能宣稱難以獨立驗證。其意義在於朝向單一模型涵蓋多任務、可調推理預算的整合路線，對降低推論基礎設施複雜度具參考價值。",
+      "title": "mistralai/Mistral-Medium-3.5-128B",
+      "title_zh": "mistralai/Mistral-Medium-3.5-128B"
     }
   ]
 }

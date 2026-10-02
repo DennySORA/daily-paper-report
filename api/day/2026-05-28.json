@@ -5394,7 +5394,9 @@
       "source_name": "Google AI Blog",
       "story_id": "fallback:a5eb35e03c46819d",
       "summary": "The colorful I/O logo against a black background, surrounded by stills from the I/O keynote",
-      "title": "Catch up on 12 major I/O 2026 moments"
+      "summary_zh": "這是 Google 官方部落格的一篇回顧型文章，目前僅有標題與一張主視覺圖片，圖片內容為黑色背景上的彩色 I/O 標誌，周圍環繞主題演講的畫面截圖，並沒有提供任何實質的技術敘述或數據。從標題可知，文章旨在整理 I/O 2026 開發者大會期間的十二個重點發表時刻，性質偏向活動摘要與產品宣傳，而非技術論文或評測報告。由於缺乏摘要正文，我們無法確認這十二個時刻具體涵蓋哪些模型、平台或工具，也無從判斷其中是否包含可重現的基準結果。對台灣的 AI 社群而言，這類回顧文章適合用來掌握大型發表會的整體議題走向，例如代理式 AI、多模態生成與開發工具的演進，但若要進一步評估技術成熟度，仍需回到各項目的官方技術文件與獨立第三方評測。",
+      "title": "Catch up on 12 major I/O 2026 moments",
+      "title_zh": "回顧 I/O 2026 的十二個重要時刻"
     }
   ],
   "run_date": "2026-05-28",

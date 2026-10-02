@@ -219,7 +219,8 @@
         "source_name": null,
         "story_id": "hf:qwen/webworld-14b",
         "summary": "**WebWorld** is a large-scale **open-web world model** series for training and evaluating web agents. It is trained on **1M+ real-world web interaction trajectories** via a scalable hierarchical data pipeline, supporting: - **Long-horizon simulation** (30+ steps) - **Multi-format state representations**: A11y Tree, HTML, XML, Markdown, and natural language - **CoT-activated reasoning** for transition prediction - **Cross-domain generalization** to code, GUI, and game environments Agents trained on WebWorld-synthesized trajectories achieve **+9.9% on MiniWob++** and **+10.9% on WebArena**. When used for inference-time lookahead search, WebWorld **outperforms GPT-5** as a world model. | Model | Base Model | HuggingFace Link | ModelScope Link | |---|---|---|---| | **WebWorld-8B** | Qwen3-8B...",
-        "title": "Qwen/WebWorld-14B"
+        "title": "Qwen/WebWorld-14B",
+        "title_zh": "Qwen/WebWorld-14B：大規模開放網路世界模型"
       },
       {
         "arxiv_id": null,
@@ -271,7 +272,8 @@
         "source_name": null,
         "story_id": "hf:qwen/webworld-32b",
         "summary": "**WebWorld** is a large-scale **open-web world model** series for training and evaluating web agents. It is trained on **1M+ real-world web interaction trajectories** via a scalable hierarchical data pipeline, supporting: - **Long-horizon simulation** (30+ steps) - **Multi-format state representations**: A11y Tree, HTML, XML, Markdown, and natural language - **CoT-activated reasoning** for transition prediction - **Cross-domain generalization** to code, GUI, and game environments Agents trained on WebWorld-synthesized trajectories achieve **+9.9% on MiniWob++** and **+10.9% on WebArena**. When used for inference-time lookahead search, WebWorld **outperforms GPT-5** as a world model. | Model | Base Model | HuggingFace Link | ModelScope Link | |---|---|---|---| | **WebWorld-8B** | Qwen3-8B...",
-        "title": "Qwen/WebWorld-32B"
+        "title": "Qwen/WebWorld-32B",
+        "title_zh": "Qwen/WebWorld-32B：大規模開放網路世界模型"
       },
       {
         "arxiv_id": null,
@@ -323,7 +325,8 @@
         "source_name": null,
         "story_id": "hf:qwen/webworld-8b",
         "summary": "**WebWorld** is a large-scale **open-web world model** series for training and evaluating web agents. It is trained on **1M+ real-world web interaction trajectories** via a scalable hierarchical data pipeline, supporting: - **Long-horizon simulation** (30+ steps) - **Multi-format state representations**: A11y Tree, HTML, XML, Markdown, and natural language - **CoT-activated reasoning** for transition prediction - **Cross-domain generalization** to code, GUI, and game environments Agents trained on WebWorld-synthesized trajectories achieve **+9.9% on MiniWob++** and **+10.9% on WebArena**. When used for inference-time lookahead search, WebWorld **outperforms GPT-5** as a world model. | Model | Base Model | HuggingFace Link | ModelScope Link | |---|---|---|---| | **WebWorld-8B** | Qwen3-8B...",
-        "title": "Qwen/WebWorld-8B"
+        "title": "Qwen/WebWorld-8B",
+        "title_zh": "Qwen/WebWorld-8B：大規模開放網路世界模型"
       }
     ]
   },
@@ -4393,7 +4396,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:8aa2cdcc7a6ba650",
       "summary": "In this post, we'll explore how we built a proof-of-concept that converts natural language queries into executable seismic workflows while providing a question-answering capability for Halliburton's Seismic Engine tools and documentation. We'll cover the technical details of the solution, share evaluation results showing workflow acceleration of up to 95%, and discuss key learnings that can help other organizations enhance their complex technical workflows with generative AI.",
-      "title": "Halliburton enhances seismic workflow creation with Amazon Bedrock and Generative AI"
+      "summary_zh": "本文由 Halliburton 與 AWS 團隊分享一個概念驗證系統，目標是解決地震資料處理軟體（Seismic Engine）操作門檻過高的問題：領域專家往往需要熟記複雜的工具指令與參數設定，才能建立可執行的地震工作流程。方法上，團隊以 Amazon Bedrock 上的生成式 AI 模型為核心，將自然語言查詢轉譯為可執行的地震工作流程，並額外建構問答能力，讓使用者能以對話方式查詢 Seismic Engine 的工具說明與文件。文中說明整體架構的技術細節，並提出評估結果，指出工作流程建立速度最高可加速 95%。作者也整理導入過程中的關鍵心得，供其他想把生成式 AI 套用到高複雜度技術流程的組織參考。需注意的是，此為摘要層級的分享，未揭露模型選擇、評估資料規模、錯誤率與失敗案例等細節，因此加速幅度應視為特定情境下的概念驗證結果，而非普遍保證。其意義在於示範生成式 AI 如何把專業工具的操作知識轉為自然語言介面，降低地質與能源產業專家的使用門檻。",
+      "title": "Halliburton enhances seismic workflow creation with Amazon Bedrock and Generative AI",
+      "title_zh": "Halliburton 以 Amazon Bedrock 與生成式 AI 強化地震工作流程建立"
     },
     {
       "arxiv_id": "2605.06538",
@@ -4625,7 +4630,8 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:df6f6876d8e9c39c",
       "summary": "In this post, you will learn how to secure reserved GPU capacity for short-term workloads using Amazon Elastic Compute Cloud (Amazon EC2) Capacity Blocks for ML and Amazon SageMaker training plans. These solutions can address GPU availability challenges when you need short-term capacity for load testing, model validation, time-bound workshops, or preparing inference capacity ahead of a release.",
-      "title": "Secure short-term GPU capacity for ML workloads with EC2 Capacity Blocks for ML and SageMaker training plans"
+      "title": "Secure short-term GPU capacity for ML workloads with EC2 Capacity Blocks for ML and SageMaker training plans",
+      "title_zh": "以 EC2 Capacity Blocks for ML 與 SageMaker 訓練計畫確保短期 GPU 算力"
     },
     {
       "arxiv_id": "2605.06553",
@@ -6445,7 +6451,8 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:0c4ecffa5c42eae2",
       "summary": "In this post, you will learn how to implement reinforcement learning with verifiable rewards (RLVR) to introduce verification and transparency into reward signals to improve training performance. This approach works best when outputs can be objectively verified for correctness, such as in mathematical reasoning, code generation, or symbolic manipulation tasks. You will also learn how to layer techniques like Group Relative Policy Optimization (GRPO) and few-shot examples to further improve results. You’ll use the GSM8K dataset (Grade School Math 8K: a collection of grade school math problems) to improve math problem solving accuracy, but the techniques used here can be adapted to a wide variety of other use cases.",
-      "title": "Overcoming reward signal challenges: Verifiable rewards-based reinforcement learning with GRPO on SageMaker AI"
+      "title": "Overcoming reward signal challenges: Verifiable rewards-based reinforcement learning with GRPO on SageMaker AI",
+      "title_zh": "克服獎勵訊號難題：在 SageMaker AI 上以 GRPO 進行可驗證獎勵的強化學習"
     },
     {
       "arxiv_id": "2605.06632",

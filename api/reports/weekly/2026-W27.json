@@ -55,7 +55,9 @@
       "source_name": "Qiita 生成AI Tag",
       "story_id": "fallback:804894826e20c33c",
       "summary": "事故の話は、いつも特定のツールの話として語られる\n「Claude Code に作業を消された」「rm -rf でデータが飛んだ」——こうした事故の報告は、たいてい特定のツールの問題として語られます。ですが、複数のツールの一次情報(公式の issue、本人の報告、技術メディ...",
-      "title": "「AIにファイルを消された」のは Claude Code だけの話ではない。Cursor・Codex・Gemini CLI・Copilot の実例で見る、横断する5つの失敗の形と防ぎ方"
+      "summary_zh": "這篇日文技術文章指出，AI代理工具造成的檔案誤刪事件，往往被當成單一工具的個案來討論，例如「Claude Code把工作刪掉」、「rm -rf讓資料飛了」。然而作者主張，這類事故其實是跨工具的共同現象，因此蒐集並比對多個工具的第一手資料，包括官方issue、使用者本人的事故報告與技術部落格記錄，涵蓋Claude Code、Cursor、Codex、Gemini CLI、Copilot等。文章將這些案例歸納為五種橫向的失敗型態，說明它們在命令列代理、IDE整合式助手與雲端程式碼代理之間如何重複出現，並探討其成因，例如權限範圍過大、對破壞性指令缺乏確認、工作目錄與版本控制狀態判讀錯誤，以及代理在長鏈任務中偏離原始意圖等。文中亦整理可行的防範作法，包括以沙箱或容器隔離執行環境、對刪除與覆寫類操作要求明確確認、限制可存取的目錄、善用版本控制與備份，以及建立可回溯的操作日誌。由於目前僅有摘要，具體案例細節、五種型態的完整定義與各工具的對應矩陣尚未完整呈現。此文的重要性在於提醒團隊：導入AI編碼代理時，風險管理必須以跨工具的系統性視角設計防護與流程規範，而非只針對單一產品打補丁。",
+      "title": "「AIにファイルを消された」のは Claude Code だけの話ではない。Cursor・Codex・Gemini CLI・Copilot の実例で見る、横断する5つの失敗の形と防ぎ方",
+      "title_zh": "「AI把我的檔案刪了」不只發生在Claude Code：從Cursor、Codex、Gemini CLI、Copilot實例看五種橫向失敗型態與防範之道"
     },
     {
       "arxiv_id": null,
@@ -1014,7 +1016,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:24b744fe23e65cf0",
       "summary": "We're excited to introduce US-based frontier open-weight models in AWS GovCloud (US). With this release, Amazon Bedrock now supports OpenAI’s open-weight GPT OSS models (120B and 20B) and NVIDIA Nemotron (Nano 9B v2, Nano 12B v2, Nano 30B, Super 120B) models. In this post, we cover these models and their capabilities, the inference options for data residency, the available service tiers and how to get started.",
-      "title": "Run NVIDIA Nemotron and OpenAI GPT OSS models on Amazon Bedrock in AWS GovCloud (US)"
+      "summary_zh": "本篇技術公告說明 AWS 在 GovCloud（美國）區域引入美國境內的前沿開源權重模型。過去政府與受監管單位若要在合規環境中使用生成式 AI，常面臨模型選擇有限或資料必須落地境內的限制。此次 Amazon Bedrock 在 GovCloud 中支援 OpenAI 的開放權重 GPT OSS 模型（120B 與 20B），以及 NVIDIA Nemotron 系列（Nano 9B v2、Nano 12B v2、Nano 30B、Super 120B），讓公部門可在符合資料主權與居住地要求的前提下调用這些模型。文章內容涵蓋各模型的能力定位、為滿足資料落地而提供的推論選項、可用的服務層級，以及如何開始使用的操作指引。需注意的是，本文屬於產品發布性質的技術說明，並未提供獨立的基準測試數據、延遲或成本比較，也未揭露與其他區域版本在效能上是否存在差異，因此模型在實際政府工作負載中的表現仍需使用者自行評估。其重要性在於，聯邦與國防相關單位得以在合規雲環境內直接取用主流開源模型，降低自建推論基礎設施的門檻，對公共部門導入生成式 AI 具有實務推動作用。",
+      "title": "Run NVIDIA Nemotron and OpenAI GPT OSS models on Amazon Bedrock in AWS GovCloud (US)",
+      "title_zh": "在 AWS GovCloud（美國）的 Amazon Bedrock 上執行 NVIDIA Nemotron 與 OpenAI GPT OSS 模型"
     },
     {
       "arxiv_id": null,
@@ -1122,7 +1126,9 @@
       "source_name": "Zenn LLM Topic",
       "story_id": "fallback:414cb24694b5e0f9",
       "summary": "はじめに\nLLM エージェントを実務に乗せようとすると、必ず 2 つの壁にぶつかります。\n\nコスト：全部を賢いモデルに投げると破産する。遅い。\n精度：LLM は平気で「それっぽい嘘」をつく（ハルシネーション）。\n\nしかもこの 2 つはトレードオフに見えます。精度を上げようと巨大モデルで全部処理すれば高コスト、コストを削れば精度が落ちる、という直感です。\nところが、この両立を「ワークフローの組み方」でかなりのところまで解こうとしている実例があります。Lazarus AI の OSS、Clearwing（LLM ベースの自律型脆弱性ハンター）です。\nClearwing は Anthrop...",
-      "title": "LLMエージェントを『コスパ良く・高精度に』組む技術：Clearwingのワークフロー設計に学ぶ"
+      "summary_zh": "把 LLM 代理實際導入業務時，通常會撞上兩道牆。第一是成本：若把每個環節都丟給最聰明的模型處理，費用會爆掉、速度也慢。第二是精度：LLM 很容易編造看似合理的錯誤內容，也就是幻覺。更棘手的是，這兩者表面上像是取捨關係——想拉高精度就全部交給巨型模型，成本隨之上升；想壓低成本就得削減模型能力，精度於是下滑。本文（僅取得摘要）介紹一個試圖用「工作流設計」而非單一模型能力來化解此矛盾的實例：Lazarus AI 的開源專案 Clearwing，一套以 LLM 為基礎的自律型弱點獵捕工具。其思路是把整體任務拆解成多個階段與角色，讓不同環節交由成本與能力相稱的模型處理，並以流程結構抑制幻覺、控管開銷。摘要未揭露具體的流程節點、模型配置、成本或準確率數據，因此實際增益幅度仍待驗證；限制在於這類設計高度依賴任務形態與領域知識，未必能直接搬用到其他場景。其意義在於提示我們：代理的效能瓶頸往往不在模型本身，而在工作流如何切分與把關。",
+      "title": "LLMエージェントを『コスパ良く・高精度に』組む技術：Clearwingのワークフロー設計に学ぶ",
+      "title_zh": "兼顧成本與精度的 LLM 代理組裝術：從 Clearwing 的工作流設計取經"
     },
     {
       "arxiv_id": null,
@@ -1230,7 +1236,9 @@
       "source_name": "Zenn LLM Topic",
       "story_id": "fallback:7656feb6e0eb7134",
       "summary": "「会話が長くなると、少し前に決めたことをエージェントが忘れる」。LLMエージェントを継続して使うと、ほぼ全員がこの壁に当たる。\nこの記事は、その忘却を場当たりで殴らず、メモリを3層に分けて整理する\"考え方\"を共有するもの。\n先に結論を書く。長期記憶は「賢い検索DBを建てる」より前に、ホット／索引／コールドの3層へ役割を分け、アクセスパターンから保存方式を逆算するのが効いた。派手な実装より、この設計順序のほうが効く。\n\n 出発点：作業記憶は有限である\nコンテキストウィンドウは、エージェントにとっての作業記憶（RAM）に近い。容量は決まっていて、長い会話や複数セッションをまたぐと溢れる。溢れ...",
-      "title": "エージェントの長期記憶を3層構造で設計する：mcp__memoryを捨ててファイル＋grepに振った話"
+      "summary_zh": "「對話一長，代理就忘了不久前才決定的事」——長期使用 LLM 代理的人幾乎都會遇到這道牆。本文（僅取得摘要）主張，面對遺忘不該臨時補救，而應先把記憶分成三層來整理，並分享這套思考框架。作者先給結論：在建立聰明的檢索資料庫之前，更有效的做法是先把長期記憶依角色切分為熱層、索引層與冷層三層，再從實際的存取模式反推儲存方式，而非先選技術再想用途。文中指出，脈絡視窗之於代理，近似於工作記憶或 RAM：容量固定，長對話或跨越多個工作階段時就會溢位。因此把「當前工作所需」與「可被檢索」與「僅需歸檔」的內容分離開來，能讓代理不必在有限的脈絡中塞入所有歷史。摘要未提供實作細節、檢索準確率或延遲的量化比較，也未說明何種任務下此分層會失效，因此效益仍屬經驗陳述。其價值在於把設計順序講清楚：先定角色與存取模式，再選檔案、grep 或向量檢索等機制，通常比追逐花俏的記憶元件更管用。",
+      "title": "エージェントの長期記憶を3層構造で設計する：mcp__memoryを捨ててファイル＋grepに振った話",
+      "title_zh": "以三層結構設計代理長期記憶：為何我捨棄 mcp__memory，改用檔案加 grep"
     },
     {
       "arxiv_id": null,
@@ -1342,7 +1350,9 @@
       "source_name": "AIDB - AI Research Database",
       "story_id": "fallback:1b961576bc268c6e",
       "summary": "<p>本記事のテーマで作成したエージェントスキルを文末に記載します。 AIエージェントが会話をまたいでユーザーを覚えておく「記憶」は、ほぼ例外なく事実の寄せ集めとして保存されています。しかしこの一般的な形式では、矛盾を整理できない、記録を数え上げられない、聞かれる前に警告できないという根本的な制約があります。 そこで、ユーザーの状態をテキストではなくコードとして保持する方式が考案されました。この新方式、どこで差が出て、どこでは出ないのか。コスト構造や限界も含めて、実務で使える判断材料を整理します。 プレミアム会員限定コンテンツです 無料会員でもできること 一部記事の閲覧 研究紹介短信ライブラリの基本&#8230;</p>\n<p>The post <a href=\"https://ai-data-base.com/archives/112050\"><span class=\"locked-post\">🔒</span> AIエージェントに「私のこと」をテキストではなくコードで覚えてもらうメリットと方法</a> first appeared on <a href=\"https://ai-data-base.com\">AIDB</a>.</p>",
-      "title": "🔒 AIエージェントに「私のこと」をテキストではなくコードで覚えてもらうメリットと方法"
+      "summary_zh": "本文（僅取得摘要）處理的問題是：AI 代理如何跨越多輪對話記住使用者。目前幾乎所有做法都把記憶當成事實的集合，以文字形式儲存。作者指出這種常見格式有根本限制：無法整理彼此矛盾的事實、無法對記錄進行計數或聚合、也無法在使用者提出需求前主動提出警告。因此本文探討一種替代方案，把使用者的狀態以「程式碼」而非純文字來保存，讓狀態本身可被執行、推論與檢查。摘要說明文章會比較此新方式在哪些情境下能拉開差距、在哪些情境下其實沒有差別，並整理其成本結構與能力邊界，作為實務選型的判斷依據。由於可見內容僅為摘要與付費牆提示，文中提到的代理技能實作、具體評測數據與失敗案例都未揭露，因此其優勢目前仍屬論證而非已驗證的結果。其意義在於提醒開發者：記憶的表示形式本身就會決定代理能否做出一致性檢查與主動推理，而不只是影響檢索效率。",
+      "title": "🔒 AIエージェントに「私のこと」をテキストではなくコードで覚えてもらうメリットと方法",
+      "title_zh": "讓 AI 代理用程式碼而非純文字記住「我」：優點與做法"
     },
     {
       "arxiv_id": null,
@@ -1670,7 +1680,9 @@
       "source_name": "Zenn LLM Topic",
       "story_id": "fallback:bf58871a3e0b42dc",
       "summary": "VRAMが少なめのGPUで、9BクラスのローカルLLMはどこまで動かせるのか。\n今回は Qwythos-9B-Claude-Mythos-5-1M-GGUF を、Windows + llama.cpp のブラウザUIで動かしてみました。\n試したのは通常版の次の3つです。\n\nQwythos-9B-Claude-Mythos-5-1M-Q4_K_M.gguf\nQwythos-9B-Claude-Mythos-5-1M-Q5_K_M.gguf\nQwythos-9B-Claude-Mythos-5-1M-Q6_K.gguf\n\n結論から言うと、VRAM 6GB環境では Q4_K_M がかなり現実的...",
-      "title": "Qwythos-9BをVRAM 6GBで動かす：llama.cppでQ4/Q5/Q6を比較"
+      "summary_zh": "本文（僅取得摘要）針對顯示記憶體偏少的 GPU，測試 9B 級別的本機 LLM 究竟能跑到什麼程度。作者在 Windows 環境搭配 llama.cpp 的瀏覽器介面，執行 Qwythos-9B-Claude-Mythos-5-1M-GGUF，並比較三種量化版本：Q4_K_M、Q5_K_M 與 Q6_K。摘要給出的結論是，在 6GB VRAM 的條件下，Q4_K_M 相當現實可行，也就是說量化位階的取捨在低記憶體環境中扮演關鍵角色。文中著重的是實測可行性與設定經驗，而非模型本身的學術評比，因此可視為一份部署導向的參考紀錄。限制在於摘要未提供生成速度、輸出品質的量化分數、脈絡長度設定或是否使用部分層卸載至系統記憶體等細節，讀者難以據此推斷其他硬體或模型的可比表現；此外，測試僅涵蓋單一模型家族與單一執行環境，外推性有限。其意義在於提供一個具體門檻參考：即使只有 6GB VRAM，透過適當量化仍有機會在本機執行 9B 級模型，對預算與隱私敏感的應用具參考價值。",
+      "title": "Qwythos-9BをVRAM 6GBで動かす：llama.cppでQ4/Q5/Q6を比較",
+      "title_zh": "在 6GB VRAM 上跑 Qwythos-9B：以 llama.cpp 比較 Q4、Q5、Q6"
     }
   ],
   "blog_stories_considered": 114,

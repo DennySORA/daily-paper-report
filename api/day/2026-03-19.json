@@ -1944,7 +1944,9 @@
       "source_name": null,
       "story_id": "arxiv:2603.18004",
       "summary": "Token pruning is essential for enhancing the computational efficiency of vision-language models (VLMs), particularly for video-based tasks where temporal redundancy is prevalent. Prior approaches typically prune tokens either (1) within the vision transformer (ViT) exclusively for unimodal perception tasks such as action recognition and object segmentation, without adapting to downstream vision-language tasks; or (2) only within the LLM while leaving the ViT output intact, often requiring complex text-conditioned token selection mechanisms. In this paper, we introduce Spatio-Temporal Token Scoring (STTS), a simple and lightweight module that prunes vision tokens across both the ViT and the LLM without text conditioning or token merging, and is fully compatible with end-to-end training. By learning how to score temporally via an auxiliary loss and spatially via LLM downstream gradients, aided by our efficient packing algorithm, STTS prunes 50% of vision tokens throughout the entire architecture, resulting in a 62% improvement in efficiency during both training and inference with only a 0.7% drop in average performance across 13 short and long video QA tasks. Efficiency gains increase with more sampled frames per video. Applying test-time scaling for long-video QA further yields performance gains of 0.5-1% compared to the baseline. Overall, STTS represents a novel, simple yet effective technique for unified, architecture-wide vision token pruning.",
-      "title": "Unified Spatio-Temporal Token Scoring for Efficient Video VLMs"
+      "summary_zh": "token 剪枝對提升視覺語言模型（VLM）的計算效率至關重要，尤其在時間冗餘明顯的影片任務上。既有做法大致分兩類：一類只在視覺 Transformer（ViT）內部剪枝，且多針對動作辨識、物件分割等單模態感知任務，未考慮下游的視覺語言任務；另一類只在 LLM 內剪枝，ViT 輸出維持不變，往往需要依文字條件進行複雜的 token 選擇。本文提出時空 token 評分（STTS），一個簡單且輕量的模組，能同時在 ViT 與 LLM 中剪除視覺 token，不需文字條件、也不做 token 合併，且完全相容於端到端訓練。其作法為：透過輔助損失學習時間維度的評分，並藉由 LLM 下游梯度學習空間維度的評分，再搭配高效率的打包演算法。實驗顯示，STTS 在整個架構中剪除 50% 視覺 token，使訓練與推論效率提升 62%，而在 13 項長短影片問答任務上平均效能僅下降 0.7%；每段影片取樣畫格越多，效率增益越明顯，長影片問答若再加上測試時擴展，效能可比基線再提升 0.5% 至 1%。整體而言，STTS 提供一個跨架構、簡單而有效的統整式視覺 token 剪枝方案。限制在於摘要未交代輔助損失的具體形式與對不同 VLM 骨幹的通用性。",
+      "title": "Unified Spatio-Temporal Token Scoring for Efficient Video VLMs",
+      "title_zh": "統一時空 token 評分：高效率影片視覺語言模型"
     },
     {
       "arxiv_id": "2603.17970",
@@ -1997,7 +1999,9 @@
       "source_name": null,
       "story_id": "arxiv:2603.17970",
       "summary": "Orthogonalized-momentum optimizers such as Muon improve transformer training by approximately whitening/orthogonalizing matrix-valued momentum updates via a short polar-decomposition iteration. However, polar-factor approximations typically require multiple large matrix multiplications, and the resulting overhead can be substantial and hardware-dependent. We introduce MUD (MomentUm Decorrelation), a complementary whitening approach that replaces Muon's polar update with a triangular (Cholesky-li",
-      "title": "Beyond Muon: MUD (MomentUm Decorrelation) for Faster Transformer Training"
+      "summary_zh": "正交化動量的最佳化器（如 Muon）透過短暫的極分解迭代，對矩陣值的動量更新做近似白化或正交化，藉此改善 Transformer 的訓練。然而極分解近似通常需要多次大型矩陣乘法，所帶來的額外計算開銷相當可觀，且高度依賴硬體條件，使得實際加速幅度不穩定。本文提出 MUD（MomentUm Decorrelation，動量去相關），一種互補的白化方法，以三角分解（如 Cholesky 類）取代 Muon 的極分解更新，試圖在維持動量去相關效益的同時，降低每次更新所需的矩陣運算成本。理論上，若能以更便宜的前向或後向替換達成相近的白化效果，即可減少每步的計算與硬體相依性。不過目前僅有摘要，作者未提供收斂性分析、與 Muon 及 Adam 類最佳化器的對照實驗、實際的 wall-clock 加速比，以及在何種模型規模或硬體上增益最明顯。其意義在於指出正交化動量最佳化的瓶頸可能落在極分解的數值成本，若能以三角分解繞開，將為大規模 Transformer 訓練提供更實用且較不依賴特定硬體的最佳化選項。",
+      "title": "Beyond Muon: MUD (MomentUm Decorrelation) for Faster Transformer Training",
+      "title_zh": "超越 Muon：MUD（動量去相關）加速 Transformer 訓練"
     },
     {
       "arxiv_id": "2603.17946",
@@ -2056,7 +2060,9 @@
       "source_name": null,
       "story_id": "arxiv:2603.17946",
       "summary": "Converting pretrained attention modules such as grouped-query attention (GQA) into multi-head latent attention (MLA) can improve expressivity without increasing KV-cache cost, making it attractive for efficient inference. However, many practical conversion baselines rely on weight-only low-rank approximations (e.g., SVD-style initializations) and uniform rank allocation. They focus on minimizing the difference between weight matrices rather than on how those weights affect input activations, ign",
-      "title": "CARE: Covariance-Aware and Rank-Enhanced Decomposition for Enabling Multi-Head Latent Attention"
+      "summary_zh": "將預訓練注意力模組（如分組查詢注意力 GQA）轉換為多頭潛在注意力（MLA），可在不增加 KV 快取成本的前提下提升表達能力，對高效率推論頗具吸引力。然而實務上的轉換基線多依賴僅考量權重的低秩近似（例如 SVD 式初始化）與統一的秩分配，其目標在於縮小權重矩陣之間的差異，而非關注這些權重如何影響輸入的激活值，因而可能忽略對模型行為真正關鍵的方向。本文提出 CARE（Covariance-Aware and Rank-Enhanced Decomposition），主張轉換時應以共變異數感知的方式衡量近似誤差，也就是把輸入激活的分布納入考量，並採用秩增強的分解策略，讓不同頭或不同子空間獲得更適切的秩配置，而非一體適用。由於摘要僅止於動機與方法命名，具體的分解目標函數、秩分配準則、是否需要微調，以及在推論延遲、KV 快取節省與下游任務準確率上的量化結果皆未提供，其相對 SVD 式基線的優勢仍有待驗證。此工作的意義在於把注意力轉換的品質指標從權重空間移向激活空間，為 MLA 轉換提供更貼近實際行為的优化視角。",
+      "title": "CARE: Covariance-Aware and Rank-Enhanced Decomposition for Enabling Multi-Head Latent Attention",
+      "title_zh": "CARE：以共變異數感知與秩增強分解實現多頭潛在注意力"
     },
     {
       "arxiv_id": "2603.17945",
@@ -2114,7 +2120,9 @@
       "source_name": null,
       "story_id": "arxiv:2603.17945",
       "summary": "In multilingual pretraining, the test loss of a pretrained model is heavily influenced by the proportion of each language in the pretraining data, namely the \\textit{language mixture ratios}. Multilingual scaling laws can predict the test loss under different language mixture ratios and can therefore be used to estimate the optimal ratios. However, the current approaches to multilingual scaling laws do not measure the \\textit{cross-lingual transfer} effect, resulting in suboptimal mixture ratios",
-      "title": "ShapleyLaw: A Game-Theoretic Approach to Multilingual Scaling Laws"
+      "summary_zh": "在多語言預訓練中，預訓練模型的測試損失深受各語言在訓練資料中所占比例（即語言混合比例）影響。多語言縮放律能在不同語言混合比例下預測測試損失，因此可用來估計最佳比例。然而現有方法並未衡量跨語言遷移（cross-lingual transfer）效果，導致推估出的混合比例並非最佳。本文提出 ShapleyLaw，以賽局理論中的 Shapley 值為工具，將各語言視為合作賽局中的參與者，量化每個語言對整體模型表現的邊際貢獻，並將此貢獻納入縮放律的建模，使跨語言遷移效果能被顯式捕捉，進而改進混合比例的估計。此做法的直覺是：語言的價值不只取決於自身資料量，也取決於它對其他語言表現的助益。不過摘要僅止於問題陳述與方法概述，作者未交代 Shapley 值的近似計算方式、計算成本、實驗所用的語言集合與模型規模，也未提供相對於既有縮放律在預測誤差或下游平均表現上的量化增益。其重要性在於把多語言資料配比問題形式化為貢獻分配問題，為資料混合策略提供了具理論依據的新取徑。",
+      "title": "ShapleyLaw: A Game-Theoretic Approach to Multilingual Scaling Laws",
+      "title_zh": "ShapleyLaw：多語言縮放律的賽局理論方法"
     },
     {
       "arxiv_id": "2603.17872",
@@ -2168,7 +2176,9 @@
       "source_name": null,
       "story_id": "arxiv:2603.17872",
       "summary": "Large Language Models (LLMs) have achieved unprecedented fluency but remain susceptible to \"hallucinations\" - the generation of factually incorrect or ungrounded content. This limitation is particularly critical in high-stakes domains where reliability is paramount. We propose a domain-grounded tiered retrieval and verification architecture designed to systematically intercept factual inaccuracies by shifting LLMs from stochastic pattern-matchers to verified truth-seekers. The proposed framework",
-      "title": "Mitigating LLM Hallucinations through Domain-Grounded Tiered Retrieval"
+      "summary_zh": "大型語言模型雖然語言流暢度極高，卻仍會產生「幻覺」，也就是編造事實錯誤或缺乏根據的內容，這在醫療、法律、金融等高風險領域尤其致命。本文提出一套以領域知識為基礎的分層檢索與驗證架構，目標是把模型從隨機的樣式匹配器，轉變為可驗證的求真系統，藉由多層次的檢索與交叉查核，在生成過程中系統性地攔截不實陳述。受限於僅有摘要，論文未揭露分層的具體切分方式、各層的檢索來源、驗證機制如何判定真偽，以及採用哪些資料集與評估指標；亦無實驗數據可佐證其相對於既有檢索增強生成方法的增益幅度。此工作的重要性在於指出單層檢索或單次驗證不足以抑制幻覺，並提出以領域知識為錨點的分層設計思路，若能補足實證，將對需要高可靠度的落地應用具有參考價值。",
+      "title": "Mitigating LLM Hallucinations through Domain-Grounded Tiered Retrieval",
+      "title_zh": "以領域落地分層檢索減緩大型語言模型幻覺"
     },
     {
       "arxiv_id": "2603.17831",
@@ -4223,7 +4233,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:29099ba637fbd0b7",
       "summary": "In this post, we show how to evaluate AI agents systematically using Strands Evals. We walk through the core concepts, built-in evaluators, multi-turn simulation capabilities and practical approaches and patterns for integration.",
-      "title": "Evaluating AI agents for production: A practical guide to Strands Evals"
+      "summary_zh": "這篇文章聚焦於如何把 AI 代理的評估從臨時測試，推向可重複、可系統化的流程。作者以 Strands Evals 為工具，介紹評估代理時所需的核心觀念，例如評估對象的界定、任務與軌跡的區分、以及如何設計可判定的成功標準；並說明框架內建的評估器如何涵蓋不同類型的品質檢核，讓開發者不必從零打造評分邏輯。文中亦著墨於多輪對話模擬能力，用以在受控環境中重現代理與使用者或工具之間的互動，補足單輪問答無法呈現的失敗模式。實務面則提供整合至開發流程的常見模式與建議，協助團隊在部署前建立回歸測試與持續監控。由於僅有摘要，具體評估指標、資料集、成本數據與實測結果均未揭露，讀者宜將其視為方法與流程指引，而非效能比較的實證報告。",
+      "title": "Evaluating AI agents for production: A practical guide to Strands Evals",
+      "title_zh": "評估正式環境中的 AI 代理：Strands Evals 實務指南"
     },
     {
       "arxiv_id": "2603.17432",

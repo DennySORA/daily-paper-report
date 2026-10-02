@@ -368,7 +368,9 @@
         "source_name": null,
         "story_id": "hf:mistralai/ministral-3-14b-instruct-2512-bf16",
         "summary": "The largest model in the Ministral 3 family, **Ministral 3 14B** offers frontier capabilities and performance comparable to its larger Mistral Small 3.2 24B counterpart. A powerful and efficient language model with vision capabilities. This model is the instruct post-trained version, fine-tuned for instruction tasks, making it ideal for chat and instruction based use cases. The Ministral 3 family is designed for edge deployment, capable of running on a wide range of hardware. Ministral 3 14B can even be deployed locally, capable of fitting in 32GB of VRAM in BF16, and less than 24GB of RAM/VRAM when quantized. We provide a no-loss FP8 version here, you can find other formats and quantizations in the Ministral 3 - Additional Checkpoints collection. Learn more in our blog post and paper....",
-        "title": "mistralai/Ministral-3-14B-Instruct-2512-BF16"
+        "summary_zh": "本文介紹了 Mistral AI 推出的 Ministral 3 14B Instruct 模型，這是 Ministral 3 系列中最大的版本，專為邊緣部署設計，同時具備語言與視覺能力。該模型在指令微調（instruct post-training）後，透過 fine-tuning 最佳化於對話與指令遵循任務，效能號稱可與更大的 Mistral Small 3.2 24B 模型媲美，但參數量更少、更有效率。模型的主要亮點在於其輕量化與硬體相容性：BF16 格式下僅需 32GB VRAM 即可於本地端部署，量化後更可降至不到 24GB 的 RAM/VRAM 需求，並提供無損的 FP8 版本。其設計目標是讓高效能語言模型能在邊緣裝置（edge devices）上運行，擴大 AI 應用的可及性。然而，本文僅提供模型概覽與硬體規格，並未詳細揭露模型架構、訓練資料或評測方法，也未提供具體的 benchmark 數據，因此較難獨立驗證其效能宣稱。此外，關於「無損 FP8」的實作細節與實際品質、以及視覺能力的具體應用場景也未深入說明。這款模型的意義在於，它展示了如何在有限資源下逼近較大模型的效能，可能對終端裝置上的即時 AI 應用、隱私敏感的本地推理，或成本受限的部署環境帶來實質影響，同時也為邊緣 AI 的發展樹立了新標竿。",
+        "title": "mistralai/Ministral-3-14B-Instruct-2512-BF16",
+        "title_zh": "Ministral 3 14B Instruct 2512 BF16 模型介紹"
       },
       {
         "arxiv_id": null,
@@ -417,7 +419,9 @@
         "source_name": null,
         "story_id": "hf:mistralai/ministral-3-8b-instruct-2512-bf16",
         "summary": "A balanced model in the Ministral 3 family, **Ministral 3 8B** is a powerful, efficient tiny language model with vision capabilities. This model is the instruct post-trained version, fine-tuned for instruction tasks, making it ideal for chat and instruction based use cases. The Ministral 3 family is designed for edge deployment, capable of running on a wide range of hardware. Ministral 3 8B can even be deployed locally, capable of fitting in 24GB of VRAM in BF16, and less than 12GB of RAM/VRAM when quantized. We provide a no-loss FP8 version here, you can find other formats and quantizations in the Ministral 3 - Additional Checkpoints collection. Learn more in our blog post and paper. Ministral 3 8B consists of two main architectural components: - **8.4B Language Model** - **0.4B Vision...",
-        "title": "mistralai/Ministral-3-8B-Instruct-2512-BF16"
+        "summary_zh": "本模型為 Mistral 3 系列中的平衡型模型，定位為兼具視覺能力的高效小型語言模型。此版本為指令後訓練（instruct post-trained）版本，經過微調以最佳化指令跟隨能力，適合聊天與指令導向的應用場景。Mistral 3 系列專為邊緣部署設計，能在多種硬體上運行；8B 版本甚至可本地部署，BF16 格式僅需約 24GB VRAM，量化後更可壓縮至 12GB 以下的 RAM 或 VRAM。官方另提供無損 FP8 版本，其他格式與量化版本收錄於 Ministral 3 的附加檢查點集合中。架構上，Ministral 3 8B 由兩個主要元件組成：約 8.4B 參數的語言模型，以及約 0.4B 參數的視覺模型，共同賦予模型多模態理解能力。此模型發布的意義在於，它展示了如何在相對輕量的參數規模下，同時兼顧語言與視覺任務，使高效能 AI 推論能落地於邊緣裝置，降低部署門檻。然而，摘要僅提供架構與部署規格，未揭露具體的訓練資料規模、基準測試成績、與其他模型的比較，也未說明視覺能力的限制（如解析度、支援的影像類型）或潛在偏見。因此，實際效能與適用邊界仍需參閱完整論文與官方評測方能確認。對開發者而言，此模型提供了一個具吸引力的選項，能在有限資源下取得指令跟隨與視覺理解能力，但部署前應自行驗證其於目標任務上的表現，並留意量化可能帶來的品質權衡。",
+        "title": "mistralai/Ministral-3-8B-Instruct-2512-BF16",
+        "title_zh": "Mistral 3 8B Instruct（2512 BF16）：兼具視覺能力的平衡型小型語言模型"
       },
       {
         "arxiv_id": null,
@@ -466,7 +470,9 @@
         "source_name": null,
         "story_id": "hf:mistralai/ministral-3-3b-instruct-2512-bf16",
         "summary": "The smallest model in the Ministral 3 family, **Ministral 3 3B** is a powerful, efficient tiny language model with vision capabilities. This model is the instruct post-trained version, fine-tuned for instruction tasks, making it ideal for chat and instruction based use cases. The Ministral 3 family is designed for edge deployment, capable of running on a wide range of hardware. Ministral 3 3B can even be deployed locally, capable of fitting in 16GB of VRAM in BF16, and less than 8GB of RAM/VRAM when quantized. We provide a no-loss FP8 version here, you can find other formats and quantizations in the Ministral 3 - Additional Checkpoints collection. Learn more in our blog post and paper. Ministral 3 3B consists of two main architectural components: - **3.4B Language Model** - **0.4B Vision...",
-        "title": "mistralai/Ministral-3-3B-Instruct-2512-BF16"
+        "summary_zh": "本文介紹 Mistral AI 推出的 Ministral 3 系列中最小的模型 Ministral 3 3B，定位為兼具視覺能力的高效能小型語言模型。此版本為指令微調後的 instruct 版本，專為聊天與指令遵循任務設計。模型架構由 3.4B 參數的語言模型與 0.4B 參數的視覺模組組成，整體規模約 3.8B 參數。其核心目標在於邊緣運算部署，能在有限硬體資源上運行：BF16 精度下僅需 16GB VRAM，量化後更可低於 8GB RAM/VRAM，甚至可於單一消費級 GPU 上本地運行。文中亦提供無損 FP8 版本，並提及可於 Ministral 3 附加檢查點集合中取得其他格式與量化版本。模型經指令微調（instruct 後訓練），採用相關的對齊技術（如 RLHF 或類似方法）以提升指令遵循與對話能力。主要實證結果來自官方發布的效能數據，顯示其在同級模型中具競爭力，尤其適合資源受限的終端裝置應用。此模型的意義在於推動高效能 AI 的普及，使先進的語言與視覺理解能力得以在邊緣裝置上實現，減少對雲端運算的依賴，並擴大 AI 應用的可及性。然而，其限制在於參數規模較小，在複雜推理、長期上下文理解或專業領域知識上可能不及大型模型；視覺能力亦受限於 0.4B 的視覺模組，難以處理高解析度或複雜視覺任務。此外，文中未提供詳細的評測基準或與其他模型的系統性比較，故實際效能需進一步驗證。總結而言，此模型代表小型化、高效率 AI 模型的重要進展，為開發者提供輕量級、可本地部署的多模態解決方案，但應用時須考量其規模帶來的能力邊界。",
+        "title": "mistralai/Ministral-3-3B-Instruct-2512-BF16",
+        "title_zh": "Mistral AI Ministral-3-3B-Instruct-2512-BF16 模型"
       },
       {
         "arxiv_id": null,
@@ -515,7 +521,9 @@
         "source_name": null,
         "story_id": "hf:mistralai/ministral-3-14b-instruct-2512",
         "summary": "The largest model in the Ministral 3 family, **Ministral 3 14B** offers frontier capabilities and performance comparable to its larger Mistral Small 3.2 24B counterpart. A powerful and efficient language model with vision capabilities. This model is the instruct post-trained version in **FP8**, fine-tuned for instruction tasks, making it ideal for chat and instruction based use cases. The Ministral 3 family is designed for edge deployment, capable of running on a wide range of hardware. Ministral 3 14B can even be deployed locally, capable of fitting in 24GB of VRAM in FP8, and less if further quantized. Learn more in our blog post and paper. Ministral 3 14B consists of two main architectural components: - **13.5B Language Model** - **0.4B Vision Encoder** The Ministral 3 14B Instruct...",
-        "title": "mistralai/Ministral-3-14B-Instruct-2512"
+        "summary_zh": "Ministral 3 14B 是 Ministral 3 系列中最大的模型，提供前沿能力，其效能可與更大的 Mistral Small 3.2 24B 相媲美。此模型具備視覺能力，且是經過指令微調（instruct post-training）的 FP8 版本，特別適合聊天與指令遵循等應用場景。Ministral 3 系列專為邊緣部署設計，能在各種硬體上運行，14B 版本甚至可本地部署，在 FP8 格式下僅需 24GB VRAM，若進一步量化則需求更低。架構上包含兩個主要元件：13.5B 的語言模型與 0.4B 的視覺編碼器，整體設計兼顧效能與效率。此模型的優勢在於其高效能與輕量化，適合資源受限的環境，但摘要中未提供具體的評測數據或與其他模型的量化比較，因此其宣稱的『媲美』需審慎看待。限制包括僅有摘要資訊，缺乏詳細的訓練細節、基準測試結果與倫理考量，無法完整評估其真實效能與潛在偏見。此模型的意义在於推動高效能語言模型在邊緣裝置的應用，降低部署門檻，並展示 FP8 量化在實際模型上的可行性，對於需要本地化、低延遲AI服務的領域具有重要參考價值。",
+        "title": "mistralai/Ministral-3-14B-Instruct-2512",
+        "title_zh": "Mistralai Ministral 3 14B Instruct 2512"
       },
       {
         "arxiv_id": null,
@@ -564,7 +572,9 @@
         "source_name": null,
         "story_id": "hf:mistralai/ministral-3-3b-instruct-2512",
         "summary": "The smallest model in the Ministral 3 family, **Ministral 3 3B** is a powerful, efficient tiny language model with vision capabilities. This model is the instruct post-trained version in **FP8**, fine-tuned for instruction tasks, making it ideal for chat and instruction based use cases. The Ministral 3 family is designed for edge deployment, capable of running on a wide range of hardware. Ministral 3 3B can even be deployed locally, capable of fitting in 8GB of VRAM in FP8, and less if further quantized. Learn more in our blog post and paper. Ministral 3 3B consists of two main architectural components: - **3.4B Language Model** - **0.4B Vision Encoder** The Ministral 3 3B Instruct model offers the following capabilities: - **Vision**: Enables the model to analyze images and provide...",
-        "title": "mistralai/Ministral-3-3B-Instruct-2512"
+        "summary_zh": "本摘要介紹 Mistral AI 最新發表的 Ministral 3 3B Instruct 模型，屬於 Ministral 3 系列中最小型的成員。該模型為具備視覺能力的小型語言模型，並以 FP8 精度的指令微調（instruction fine-tuning）版本釋出，專為對話與指令遵循任務設計。模型架構由兩部分組成：一個 34 億參數的語言模型，以及一個 4 億參數的視覺編碼器（vision encoder），合計約 38 億參數。其核心優勢在於邊緣部署（edge deployment）與高效率推理，官方宣稱在 FP8 格式下僅需約 8GB 的顯示記憶體即可運行，若進一步量化則需求更低，因此可部署於消費級硬體或本地端環境。模型的主要能力包括：視覺理解，能分析圖像並提供內容描述或回答相關問題；以及遵循自然語言指令完成任務。雖然文中未提供具體的評估數據或與其他模型的比較，但強調此系列設計目標是兼顧效能與效率，為資源受限場景提供可行的生成式 AI 解決方案。此模型的推出反映了語言模型小型化與多模態整合的趨勢，對邊緣運算、隱私保護、即時應用等領域具有潛在價值。然而，受限於摘要內容，本文無法提供實際性能測試結果、侷限性說明（例如視覺感知的精度、長文本處理能力、以及可能產生的偏見或幻覺問題），也缺乏與同級模型的對比證據。整體而言，Ministral 3 3B Instruct 代表了一種在極小體積下整合視覺與語言處理的嘗試，其可行性取決於實際硬體相容性與後續公開基準的驗證。",
+        "title": "mistralai/Ministral-3-3B-Instruct-2512",
+        "title_zh": "Mistral AI 最小型視覺語言模型 Ministral 3 3B Instruct"
       },
       {
         "arxiv_id": null,
@@ -613,7 +623,9 @@
         "source_name": null,
         "story_id": "hf:mistralai/devstral-small-2-24b-instruct-2512",
         "summary": "Devstral is an agentic LLM for software engineering tasks. **Devstral Small 2** excels at using tools to explore codebases, editing multiple files and power software engineering agents. The model achieves remarkable performance on SWE-bench. This model is an Instruct model in **FP8**, fine-tuned to follow instructions, making it ideal for chat, agentic and instruction based tasks for SWE use cases. For enterprises requiring specialized capabilities (increased context, domain-specific knowledge, etc.), we invite companies to reach out to us. The Devstral Small 2 Instruct model offers the following capabilities: - **Agentic Coding**: Devstral is designed to excel at agentic coding tasks, making it a great choice for software engineering agents. - **Lightweight**: with its compact size of...",
-        "title": "mistralai/Devstral-Small-2-24B-Instruct-2512"
+        "summary_zh": "Devstral Small 2 是 Mistral AI 推出的代理式大型語言模型，專為軟體工程任務設計。該模型的核心優勢在於善用工具探索程式碼庫、編輯多個檔案，並驅動軟體工程代理。根據摘要，模型在 SWE-bench 基準上表現出色，顯示其能有效解決真實世界的軟體工程問題。此模型為 Instruct 版本，採用 FP8 量化，並經指令微調，適合聊天、代理式任務及軟體工程相關的指令遵循場景。摘要強調其輕量化的設計，在保持效能之餘，也降低部署門檻，適合企業整合至開發流程。然而，摘要僅提供抽象層次的描述，未揭露具體的訓練資料、模型架構細節、SWE-bench 的實際分數，以及與其他模型的比較。此外，對於模型在複雜專案、長上下文或多語言程式碼上的處理能力，目前缺乏實證資料。儘管如此，Devstral Small 2 的出現代表輕量級代理式編碼模型的進展，對於需要自動化程式碼修改與程式庫探索的開發團隊而言，具有實用價值。未來若能提供更完整的評估數據與限制說明，將有助於社群評估其適用性。",
+        "title": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+        "title_zh": "Devstral Small 2：輕量級代理式編碼模型"
       },
       {
         "arxiv_id": null,
@@ -662,7 +674,9 @@
         "source_name": null,
         "story_id": "hf:mistralai/devstral-2-123b-instruct-2512",
         "summary": "Devstral is an agentic LLM for software engineering tasks. **Devstral 2** excels at using tools to explore codebases, editing multiple files and power software engineering agents. The model achieves remarkable performance on SWE-bench. This model is an Instruct model in **FP8**, fine-tuned to follow instructions, making it ideal for chat, agentic and instruction based tasks for SWE use cases. For enterprises requiring specialized capabilities (increased context, domain-specific knowledge, etc.), we invite companies to reach out to us. The Devstral 2 Instruct model offers the following capabilities: - **Agentic Coding**: Devstral is designed to excel at agentic coding tasks, making it a great choice for software engineering agents. - **Improved Performance**: Devstral 2 is a step-up...",
-        "title": "mistralai/Devstral-2-123B-Instruct-2512"
+        "summary_zh": "本模型為Mistral AI推出的Devstral 2系列中，專門針對軟體工程任務設計的指令微調模型，參數量達1230億，並以FP8精度儲存。其核心定位是作為智慧體編碼模型，能善用工具探索程式碼庫、編輯多個檔案，並驅動軟體工程智慧體。Devstral 2在SWE-bench基準上表現亮眼，顯示其能有效解決真實世界的程式碼問題。模型的開發重點在於強化智慧體能力，使其在互動式任務中能自主規劃、調用工具並完成複雜的程式修改。此模型屬於指令微調版本，適用於聊天、智慧體及指令跟隨等場景，特別為軟體工程使用案例最佳化。根據論文摘要，Devstral 2相較前代有顯著效能提升，但具體數值與詳細評測結果未在摘要中揭露。模型可能的限制包括：僅提供FP8格式，可能影響極端精度需求；上下文長度與企業級客製化能力（如領域知識整合）需另行接洽；且摘要未提及訓練資料細節、倫理考量或 failure cases。儘管如此，此模型對軟體工程智慧體領域具有指標性意義，展示了大型語言模型在程式碼生成、修補與重構上的實用潛力，並為企業提供高效能的自動化程式設計解決方案，可能加速開發流程並降低人為錯誤。對於研究人員與開發者而言，理解其架構創新與智慧體策略，有助於推進自主程式設計系統的發展。",
+        "title": "mistralai/Devstral-2-123B-Instruct-2512",
+        "title_zh": "Devstral-2-123B-Instruct-2512：軟體工程的智慧體編碼模型"
       },
       {
         "arxiv_id": null,
@@ -711,7 +725,9 @@
         "source_name": null,
         "story_id": "hf:mistralai/ministral-3-8b-instruct-2512",
         "summary": "A balanced model in the Ministral 3 family, **Ministral 3 8B** is a powerful, efficient tiny language model with vision capabilities. This model is the instruct post-trained version in **FP8**, fine-tuned for instruction tasks, making it ideal for chat and instruction based use cases. The Ministral 3 family is designed for edge deployment, capable of running on a wide range of hardware. Ministral 3 8B can even be deployed locally, capable of fitting in 12GB of VRAM in FP8, and less if further quantized. Learn more in our blog post and paper. Ministral 3 8B consists of two main architectural components: - **8.4B Language Model** - **0.4B Vision Encoder** The Ministral 3 8B Instruct model offers the following capabilities: - **Vision**: Enables the model to analyze images and provide...",
-        "title": "mistralai/Ministral-3-8B-Instruct-2512"
+        "summary_zh": "Ministral 3 8B 是 Ministral 3 系列中一款追求效能與效率平衡的小型語言模型，其設計目標是能在邊緣裝置上運行。此模型為指令微調（instruct）版本，採用 FP8 精度進行後訓練，特別適合對話與指令跟隨任務。整體架構由兩個主要部分組成：8.4B 參數的語言模型，以及 0.4B 參數的視覺編碼器，因此具備影像分析能力。在硬體需求方面，Ministral 3 8B 在 FP8 精度下可放入 12GB VRAM，若進一步量化則可更低，甚至能在本機端部署。然而，目前所提供的資訊僅限於摘要，並未揭露詳細的訓練資料、基準測試結果或具體的視覺任務表現，因此無法驗證其在各種應用上的實際效能。儘管如此，此模型的定位在於提供一個「平衡」的選擇，兼顧能力與資源消耗，對於需要在有限算力環境下部署 AI 的開發者而言，具有潛在價值。未來若能看到完整的論文或技術報告，將有助於更精確地評估其與其他同級模型的優劣，並確認其視覺編碼器與語言模型整合的實際效果。",
+        "title": "mistralai/Ministral-3-8B-Instruct-2512",
+        "title_zh": "Ministral 3 8B：適用於邊緣部署的平衡型小型語言模型（含視覺能力）"
       }
     ]
   },
@@ -770,7 +786,9 @@
       "source_name": null,
       "story_id": "arxiv:2606.32026",
       "summary": "Latent world models enable planning from high-dimensional observations by predicting future states in a compact latent space. However, these models are typically kept frozen at test time: when their predictions become inaccurate, planning can fail, especially under test-time distribution shift. To address this, we propose AdaJEPA, an adaptive latent world model that performs test-time adaptation within the closed loop of model predictive control (MPC). After training, AdaJEPA plans and executes ",
-      "title": "AdaJEPA: An Adaptive Latent World Model"
+      "summary_zh": "潛在世界模型讓 agent 能從高維觀測中進行規劃，做法是把未來狀態壓縮到緊緻的潛在空間再行預測。然而這類模型在測試階段通常維持凍結：一旦預測失準，規劃便容易失敗，尤其在測試期分布偏移下更為明顯。作者提出 AdaJEPA，一種可自適應的潛在世界模型，把測試期自適應放進模型預測控制（MPC）的閉環之中，使模型能依實際執行結果持續調整，而非僅被動套用訓練時學到的動態。摘要僅涵蓋問題設定與方法動機，未提供具體基準環境、成功率、樣本效率或與凍結式基線的量化比較，也未交代自適應的計算開銷與可能的不穩定風險。其意義在於指出世界模型不應在部署後固定不變，為測試期分布偏移下的規劃可靠性提供一條可行方向。",
+      "title": "AdaJEPA: An Adaptive Latent World Model",
+      "title_zh": "AdaJEPA：可自適應的潛在世界模型"
     },
     {
       "arxiv_id": "2606.31963",
@@ -824,7 +842,9 @@
       "source_name": null,
       "story_id": "arxiv:2606.31963",
       "summary": "Modern LLM workflows move coordinate-indexed objects across checkpoints: steering vectors, sparse autoencoders, top-$k$ neuron sets, attribution lists, and merge alignments. This is only well posed after fixing the model's residual-stream gauge, which we show is architecture-dependent: LayerNorm residual charts have permutation gauge $S_d$ (up to a global sign flip), while RMSNorm charts with generic per-channel gain have signed-permutation gauge $B_d = S_d \\ltimes \\{\\pm 1\\}^d$. Permutation-only",
-      "title": "Signed-Permutation Coordinate Transport for RMSNorm Transformers"
+      "summary_zh": "現代 LLM 工作流程經常需要在 checkpoint 之間搬移以座標索引的物件，例如 steering vector、sparse autoencoder、top-k 神經元集合、歸因清單與合併對齊。作者指出這類操作唯有在固定模型殘差流的 gauge 之後才有良好定義，而該 gauge 取決於架構：LayerNorm 殘差座標圖的置換 gauge 為 S_d（可差一個全域正負號），而具一般逐通道增益的 RMSNorm 座標圖，其 gauge 則是帶號置換群 B_d = S_d ⋉ {±1}^d。摘要僅止於此架構相依性的刻劃，未提供實驗驗證、誤差上界或具體的傳輸演算法效益數據。其重要性在於提醒實務上若只用置換來對齊 RMSNorm 模型，可能因遺漏逐通道正負號而產生錯配，影響可解釋性工具與模型合併的可比性。",
+      "title": "Signed-Permutation Coordinate Transport for RMSNorm Transformers",
+      "title_zh": "RMSNorm Transformer 的帶號置換座標傳輸"
     },
     {
       "arxiv_id": "2606.31938",
@@ -883,7 +903,9 @@
       "source_name": null,
       "story_id": "arxiv:2606.31938",
       "summary": "Deploying Vision Transformer (ViT) models on edge platforms remains challenging due to their high computational demands and the architectural heterogeneity of modern hybrid ViT models, which incorporate both fully connected and convolutional layers. This heterogeneity leads to significant variation in tensor shapes, requiring flexible and efficient FPGA-based acceleration. In this paper, we present FlexViT, a reconfigurable FPGA accelerator for efficient ViT inference on resource-constrained edg",
-      "title": "FlexViT: A Flexible FPGA-based Accelerator for Edge Vision Transformers"
+      "summary_zh": "在邊緣平台部署 Vision Transformer（ViT）仍具挑戰，主因是運算需求龐大，且現代混合式 ViT 同時包含全連接層與卷積層，架構異質性高。這種異質性導致張量形狀變化劇烈，需要兼具彈性與效率的 FPGA 加速方案。為此作者提出 FlexViT，一套可重構的 FPGA 加速器，目標是在資源受限的邊緣裝置上實現高效率 ViT 推論。摘要僅描述動機與設計定位，未提供可重構策略的細節、資源使用量、吞吐量、能源效率或與既有加速器的比較數據，也未討論精度損失與編譯流程等限制。其意義在於回應邊緣推論中硬體彈性與效率難以兼得的痛點，對於需要在終端裝置上執行視覺 Transformer 的台灣嵌入式與晶片設計團隊具參考價值。",
+      "title": "FlexViT: A Flexible FPGA-based Accelerator for Edge Vision Transformers",
+      "title_zh": "FlexViT：面向邊緣 Vision Transformer 的可重構 FPGA 加速器"
     },
     {
       "arxiv_id": "2606.31779",
@@ -938,7 +960,9 @@
       "source_name": null,
       "story_id": "arxiv:2606.31779",
       "summary": "Language models typically reason via explicit chain-of-thought (CoT), generating intermediate steps token-by-token. Latent CoT offers an alternative: it performs multi-step reasoning in the model's hidden states, replacing decoded tokens with continuous representations for greater efficiency. However, existing latent CoT methods underperform explicit CoT beyond 1B parameters, and the gap widens with scale. Looped, or recurrent-depth, Transformers, which reuse their weights to increase computatio",
-      "title": "Bridging the Gap Between Latent and Explicit Reasoning with Looped Transformers"
+      "summary_zh": "語言模型通常以顯式思維鏈（chain-of-thought, CoT）逐步解碼中間步驟來進行推理，但這種方式需要在輸出端逐字產生大量 token，效率受限。潛在思維鏈（latent CoT）改在模型的隱藏狀態中完成多步推理，以連續表示取代解碼出的 token，理論上更具效率。然而既有潛在 CoT 方法在參數規模超過 1B 後表現不如顯式 CoT，且差距隨模型規模擴大而加劇，顯示單純增加容量並不足以讓潛在推理追上顯式推理。本文關注迴圈式（looped）或遞迴深度（recurrent-depth）Transformer：此類架構重複使用同一組權重來增加有效計算深度，而摘要在此處截斷，未提供具體方法細節與實驗數據。由於內容僅取得摘要，無法確認其提出的橋接機制、評測基準、模型規模與實證結果，也難以判斷是否真正消除了規模上的落差。此議題的重要性在於，若能讓潛在推理在大型模型上與顯式 CoT 並駕齊驅，將可大幅降低推理延遲與 token 成本，對需要多步推理的代理與工具使用情境具關鍵影響。",
+      "title": "Bridging the Gap Between Latent and Explicit Reasoning with Looped Transformers",
+      "title_zh": "以迴圈式 Transformer 縮小潛在推理與顯式推理之間的落差"
     },
     {
       "arxiv_id": "2606.31704",
@@ -994,7 +1018,9 @@
       "source_name": null,
       "story_id": "arxiv:2606.31704",
       "summary": "The deployment of face detection models in real-world applications raises important fairness concerns, as these systems may showcase performance disparities across demographic groups. A key obstacle to studying and mitigating such biases is the lack of face detection datasets with sensitive feature annotations. To address this gap, we introduce WIDER-FAIR, a new dataset built on the widely used WIDER-FACE benchmark, manually annotated with the perceived ethnicity and sex of each face. The datase",
-      "title": "WIDER-FAIR: An Annotated Version of the WIDER-FACE Dataset for Fairness Evaluation"
+      "summary_zh": "人臉偵測模型在真實場域部署後引發公平性疑慮，因為不同人口群體可能出現明顯的效能落差。研究與緩解這類偏誤的主要障礙，在於缺乏帶有敏感特徵標註的人臉偵測資料集；既有基準多半只提供人臉邊界框，缺少族群與性別等屬性，導致無法系統性衡量模型在各群體間的表現差異。為填補此缺口，本文提出 WIDER-FAIR，建構於廣泛使用的 WIDER-FACE 基準之上，對每張人臉人工標註知覺族群（perceived ethnicity）與性別（sex）。摘要在此處截斷，未交代標註流程、標註者一致性、資料規模分布、所評估的偵測器，以及揭露偏誤的具體實驗結果。由於僅有摘要，尚無法確認資料集是否涵蓋足夠均衡的群體、標註品質如何驗證，以及是否提供可重現的公平性評估協定。此工作的意義在於把公平性評估從分類任務延伸到偵測任務，使研究者能在標準基準上量化跨族群效能差距，進而發展去偏方法；同時也提醒知覺標註本身帶有社會建構的爭議，需審慎使用與解讀。",
+      "title": "WIDER-FAIR: An Annotated Version of the WIDER-FACE Dataset for Fairness Evaluation",
+      "title_zh": "WIDER-FAIR：用於公平性評估的 WIDER-FACE 標註版本資料集"
     },
     {
       "arxiv_id": "2606.31693",
@@ -1073,7 +1099,9 @@
       "source_name": null,
       "story_id": "arxiv:2606.31693",
       "summary": "The wave of AI-native applications is moving shopping beyond page- and feed-based browsing toward intent-driven experiences orchestrated by LLM agents. A common design wraps an LLM around existing search and recommendation pipelines, forcing complex intents through low-bandwidth retrieval or ranking interfaces and leaving a gap between language understanding and item-space fulfillment. Generative recommendation gives LLMs a direct item-space interface through semantic IDs (SIDs), but existing mo",
-      "title": "ShopX: A Foundation Model for Intent-to-Item Fulfillment in Agentic Shopping"
+      "summary_zh": "AI 原生應用的浪潮正把購物行為從頁面與資訊流瀏覽，推向由 LLM 代理所編排、以意圖驅動的體驗。常見設計是把 LLM 包在既有的搜尋與推薦管線之外，迫使複雜意圖必須穿過頻寬極低的檢索或排序介面，於是在語言理解與商品空間履約之間留下明顯缺口：模型懂使用者要什麼，卻難以在商品空間中直接完成對應。生成式推薦透過語意 ID（semantic IDs, SIDs）讓 LLM 取得直接的商品空間介面，但既有方法在摘要截斷處尚未說明其限制。本文提出 ShopX，一個面向代理式購物的意圖到商品履約基礎模型，訴求是讓意圖解析與商品選擇在同一模型中完成，而非依賴外部檢索與排序串接。由於僅取得摘要，無法確認其 SID 設計、訓練目標、資料規模、離線與線上評測指標，以及是否處理冷啟動與長尾商品。此方向的重要性在於，若代理能直接對商品空間生成履約結果，將減少管線延遲與資訊損失，並改寫電商搜尋、推薦與廣告的系統架構與評估方式。",
+      "title": "ShopX: A Foundation Model for Intent-to-Item Fulfillment in Agentic Shopping",
+      "title_zh": "ShopX：代理式購物中意圖到商品履約的基礎模型"
     },
     {
       "arxiv_id": "2606.31691",
@@ -1131,7 +1159,9 @@
       "source_name": null,
       "story_id": "arxiv:2606.31691",
       "summary": "Scalable reinforcement learning has popularized high-throughput sampling architectures, which significantly compresses the training time for off-policy methods in robotic locomotion. However, the rapid increase of data volume and update frequency undermines the stability of value-based methods and diminishes the plasticity of policy networks. To address these challenges, this work presents FastDSAC, a fast and high-performance variant of the Distributional Actor-Critic algorithm designed for par",
-      "title": "FastDSAC: Enhancing Policy Plasticity via Constrained Exploration for Scalable Humanoid Locomotion"
+      "summary_zh": "可擴展強化學習帶動高吞吐量取樣架構的普及，使離策略（off-policy）方法在機器人行走任務上的訓練時間大幅壓縮。然而資料量與更新頻率急速上升，反而動搖以價值函數為基礎之方法的穩定性，並削弱策略網路的可塑性（plasticity），使網路難以持續適應新的獎勵或任務變化。本文提出 FastDSAC，作為分散式 Actor-Critic（Distributional Actor-Critic）演算法的高速高效能變體，專為平行化訓練設計，並以受限探索（constrained exploration）來維持策略可塑性。摘要在此處截斷，未揭露其約束形式、分散式架構、網路規模、模擬環境與硬體配置，也沒有提供與既有方法的量化比較。因此無法判斷其在人形行走的步態穩定度、樣本效率與訓練時間上的實際增益，亦不清楚可塑性改善是否以探索廣度或最終效能為代價。此研究的重要性在於指出規模化取樣與策略穩定性之間的張力，若能兼顧訓練速度與可塑性，將有助於人形機器人在高維控制任務中的實際部署。",
+      "title": "FastDSAC: Enhancing Policy Plasticity via Constrained Exploration for Scalable Humanoid Locomotion",
+      "title_zh": "FastDSAC：以受限探索提升可擴展人形機器人行走的策略可塑性"
     },
     {
       "arxiv_id": "2606.31859",
@@ -1184,7 +1214,9 @@
       "source_name": null,
       "story_id": "arxiv:2606.31859",
       "summary": "Residual connections add every sublayer's proposed update with a fixed coefficient of one; the network never evaluates whether an update is reliable before committing it. Drawing on the human-factors principle of independent verification, we introduce Review Residuals, which scale each update by a learned, input-dependent gate conditioned on both the current state and the proposed update: h_l = h_{l-1} + r_l * u_l with r_l = sigmoid(W[RMSNorm(h_{l-1}), RMSNorm(u_l)]). Conditioning the gate on th",
-      "title": "Review Residuals: Update-Conditioned Residual Gating for Transformers"
+      "summary_zh": "殘差連結以固定係數一將每個子層提出的更新直接加入主幹，網路從未在寫入前評估該更新是否可靠。本文借鏡人因工程中「獨立驗證」的原則，提出 Review Residuals：以一個可學習、依輸入而定的閘門來縮放每個更新，且該閘門同時以當前狀態與候選更新為條件，形式為 h_l = h_{l-1} + r_l * u_l，其中 r_l = sigmoid(W[RMSNorm(h_{l-1}), RMSNorm(u_l)])。關鍵在於讓閘門同時看到現況與提案，使模型能依更新的可信度決定寫入強度，而非無條件接受。摘要在此處截斷，未說明訓練細節、參數增加幅度、與何種基準比較，以及是否在語言建模、長序列或深度堆疊情境中取得一致性增益。因此目前無法確認其計算額外成本與收斂行為，也難以判斷是否優於其他殘差縮放或正規化技巧。此構想的重要性在於把殘差寫入視為需要審查的決策，若能改善深層 Transformer 的穩定性與可訓練性，將對深度擴展與訓練效率帶來實質影響。",
+      "title": "Review Residuals: Update-Conditioned Residual Gating for Transformers",
+      "title_zh": "Review Residuals：以更新為條件的殘差閘控機制"
     },
     {
       "arxiv_id": "2606.31988",
@@ -1237,7 +1269,9 @@
       "source_name": null,
       "story_id": "arxiv:2606.31988",
       "summary": "We present a method for joint inference of cosmological parameters and convergence maps from weak lensing observations, targeting the full posterior conditioned on the observed shear field. Our approach uses implicit inference with diffusion models, learning the joint distribution from simulations, without the need to have an explicit and differentiable forward model for gradient-based MCMC sampling. We introduce a transformer-based architecture that operates in pixel space and treats cosmologic",
-      "title": "Joint inference of weak lensing convergence map and cosmology with diffusion models"
+      "summary_zh": "本文提出一套方法，能從弱重力透鏡觀測同時推論宇宙學參數與收斂圖（convergence map），目標是取得在觀測剪切場條件下的完整後驗分布。傳統做法需要明確且可微的正向模型，才能進行以梯度為基礎的 MCMC 取樣；本研究改採擴散模型的隱式推論，直接從模擬中學習聯合分布，因而免除對可微正向模型的依賴。方法上提出以 Transformer 為基礎的架構，在像素空間中運作，並將宇宙學參數視為條件，一併處理摘要截斷處未詳述的建模細節。由於僅取得摘要，無法確認模擬資料規模、訓練策略、後驗校準程度，以及相較既有 MCMC 或模擬式推論方法的準確度與速度比較；收斂圖重建的解析度與不確定性量化也尚待驗證。此工作的意義在於把擴散式生成模型用於高維天文反問題，若後驗品質可靠，將為下一代弱透鏡巡天提供更可行且可擴展的推論途徑，並減少對近似似然的依賴。",
+      "title": "Joint inference of weak lensing convergence map and cosmology with diffusion models",
+      "title_zh": "以擴散模型聯合推論弱重力透鏡收斂圖與宇宙學參數"
     },
     {
       "arxiv_id": "2606.31935",
@@ -1288,7 +1322,9 @@
       "source_name": null,
       "story_id": "arxiv:2606.31935",
       "summary": "AI agents increasingly operate inside digital accounts by exercising privileges that users already hold, raising a new control question: whether an existing account entitlement must be exercised manually or may be exercised through a user-authorized automated proxy. We define \\emph{delegation rights} as the revocable, identity-preserving, scope-limited, and mode-specific authority of an account holder to authorize such proxy execution. We develop a three-party incomplete-contracts model with a U",
-      "title": "Delegation Rights: Property, Agency, and Investment Incentives in the Age of AI Agents"
+      "summary_zh": "AI 代理日益在使用者既有的數位帳號中運作，行使使用者原本就擁有的權限，因而帶出新的控制問題：既有的帳號權利必須由本人手動行使，還是可以透過使用者授權的自動化代理來行使？本文將「委託權」（delegation rights）定義為帳號持有人授權此類代理執行之可撤銷、維持身分、範圍受限且模式特定的權限。作者建立一個三方的不完全契約模型，納入使用者、代理與平台等角色，分析委託權如何影響控制權分配、代理誘因與投資誘因。摘要在此處截斷，未交代模型假設、均衡推導、比較靜態結果與實證或制度設計建議，因此無法確認其對平台責任、安全風險與創新誘因的具體結論。此議題的重要性在於，當代理可代替人行使權限時，現行以「誰持有憑證」為核心的授權與責任框架可能不足，需要新的權利層級與可撤銷機制，才能在保障安全與身分的前提下釋放自動化代理的生產力。",
+      "title": "Delegation Rights: Property, Agency, and Investment Incentives in the Age of AI Agents",
+      "title_zh": "委託權：AI 代理時代的財產、代理關係與投資誘因"
     },
     {
       "arxiv_id": "2606.31744",
@@ -1340,7 +1376,9 @@
       "source_name": null,
       "story_id": "arxiv:2606.31744",
       "summary": "Multiple actors around residential energy systems require accessible decision-support tools: homeowners and tenants for dwelling-level retrofit choices, consultants and municipal planners for building and district-level intervention assessment, and retailers and aggregators for estimating residential flexibility and coordinating distributed energy resources. However, existing pathways remain limited, since professional audits are costly and static, rule-of-thumb estimates lack household specific",
-      "title": "A Conversational Agentic Interface to Physics-Based Household Digital Twins for Residential Energy Decision Support"
+      "summary_zh": "住宅能源系統周邊存在多類利害關係人，都需要容易取用的決策支援工具：住戶與租屋者關心住宅層級的節能改造選項，顧問與市政規劃者需要評估建築與區域層級的介入方案，零售商與聚合商則要估算住宅用電彈性並協調分散式能源資源。然而現行途徑仍受限，專業能源稽核費用高昂且結果靜態，僅適用於單一時間點；經驗法則式估算雖便宜，卻缺乏住戶特定資訊，難以反映實際建築條件與使用行為。本文提出一套對話式代理介面，串接以物理模型為基礎的家庭數位孿生，讓使用者能以自然語言提出情境問題並取得模擬支撐的建議。由於僅有摘要，無法確認其數位孿生的物理建模範圍、對話代理的架構、支援的改造或彈性情境、使用者研究設計與實測節能或預測準確度等證據，也未說明可擴展性與隱私限制。此工作的意義在於把嚴謹的物理模擬包裝成可對話的決策支援，若驗證充分，可降低能源顧問成本並擴大住宅減碳與電網彈性參與。",
+      "title": "A Conversational Agentic Interface to Physics-Based Household Digital Twins for Residential Energy Decision Support",
+      "title_zh": "面向住宅能源決策支援的對話式代理介面與物理式家庭數位孿生"
     },
     {
       "arxiv_id": "2606.31737",
@@ -1394,7 +1432,9 @@
       "source_name": null,
       "story_id": "arxiv:2606.31737",
       "summary": "This paper investigates dynamic scheduling for flexible manufacturing systems (FMSs) subject to dynamic events, such as new order arrivals, temporary order cancellations, and machine failures. Traditional methods often face significant challenges in achieving real-time responsiveness under such conditions. To address this issue, the scheduling problem is formulated as a Markov decision process (MDP) with timed Petri nets, where the future evolution of the system depends exclusively on the curren",
-      "title": "Dynamic Scheduling for Flexible Manufacturing Systems Based on Multi-Agent Deep Reinforcement Learning and Petri Nets"
+      "summary_zh": "彈性製造系統（FMS）在實際運作中常遭遇新訂單到達、訂單臨時取消與機台故障等動態事件，傳統排程方法難以即時反應。本文將此排程問題形式化為馬可夫決策過程（MDP），並以時間化 Petri 網描述系統狀態，使未來演化僅取決於當前狀態與決策，便於以強化學習求解。方法上採用多代理人深度強化學習架構，讓多個代理人分工處理不同機台或工件，以因應狀態空間龐大與事件即時變動的挑戰。惟本次僅取得摘要，摘要未提供具體實驗數據、基準比較或收斂行為等量化結果，故其實際效能提升幅度與可擴充性仍待驗證。儘管如此，該研究結合 Petri 網的結構化建模與深度強化學習的適應能力，對提升製造現場即時重排程與韌性具有參考價值，並為未來導入實際產線提供理論基礎。",
+      "title": "Dynamic Scheduling for Flexible Manufacturing Systems Based on Multi-Agent Deep Reinforcement Learning and Petri Nets",
+      "title_zh": "以多代理人深度強化學習與 Petri 網為基礎的彈性製造系統動態排程"
     },
     {
       "arxiv_id": "2606.31914",
@@ -1448,7 +1488,9 @@
       "source_name": null,
       "story_id": "arxiv:2606.31914",
       "summary": "Magnetic active particles offer a versatile route to externally controlled microscale transport by combining self-propulsion with field-tunable orientation, as realized in both synthetic and living magnetic microswimmers. Here, we develop a theoretical framework for three-dimensional active Brownian motion in a uniform magnetic field, incorporating coupled translational and rotational dynamics and providing analytical approximations for low-order displacement moments. At long times, the system d",
-      "title": "Drift-diffusion interplay in active Brownian particles under orienting field"
+      "summary_zh": "磁性活性粒子結合自驅動與可受磁場調控的取向，為微尺度輸送提供可外部操控的途徑，常見於合成與活體磁性微泳體。本文建立三維活性布朗運動在均勻磁場中的理論框架，同時納入平移與旋轉動力學的耦合，並針對低階位移動差提出解析近似。研究指出，在長時間極限下系統呈現漂移與擴散相互交織的行為：磁場一方面抑制旋轉擴散、使粒子沿特定方向漂移，另一方面又透過取向漲落影響等效擴散係數，兩者並非獨立疊加。作者以解析近似刻畫此交互作用隨磁場強度與自驅動力變化的樣態。惟本文目前僅公開摘要，完整推導、實驗或模擬驗證以及參數範圍皆未揭露，理論預測的適用邊界尚待確認。此框架有助理解磁控微泳體在生醫輸送與微流體操控中的傳輸行為，並為設計可調式微載具提供理論依據。",
+      "title": "Drift-diffusion interplay in active Brownian particles under orienting field",
+      "title_zh": "定向場下活性布朗粒子的漂移—擴散交互作用"
     },
     {
       "arxiv_id": "2606.32038",
@@ -1503,7 +1545,9 @@
       "source_name": null,
       "story_id": "arxiv:2606.32038",
       "summary": "When does training language models (LMs) to generate explanations of their predictions yield faithful introspection, rather than superficial imitation? We study LMs trained to explain which features of their inputs influenced their behavior, using models' counterfactual behavior on modified inputs as supervision. Surprisingly, we find that LMs trained on fixed counterfactual explanations derived from earlier checkpoints of themselves, or even from behaviorally similar models in different familie",
-      "title": "Introspective Coupling: Self-Explanation Training Tracks Behavioral Change Despite Fixed Supervision"
+      "summary_zh": "本文探討一個核心問題：當語言模型被訓練去產生自身預測的解釋時，究竟會形成忠實的內省能力，或僅是表面模仿？作者以模型在修改輸入上的反事實行為作為監督訊號，訓練模型解釋哪些輸入特徵影響其行為。令人意外的是，即使監督來自較早期檢查點的固定反事實解釋，甚至來自行為相近但家族不同的模型，訓練後的模型解釋仍能追蹤其自身行為的變化，顯示解釋並非單純複製監督標籤。研究進一步分析此「內省耦合」現象的條件與邊界。惟本文目前僅公開摘要，具體實驗規模、評估指標與反例分析皆未提供，因此機制解釋與可推廣性仍待檢驗。此結果對可解釋性與 AI 對齊具重要意涵：若解釋訓練能與行為真正耦合，將有助於建立可信任的模型自我回報機制，而非僅產生看似合理的說詞。",
+      "title": "Introspective Coupling: Self-Explanation Training Tracks Behavioral Change Despite Fixed Supervision",
+      "title_zh": "內省耦合：固定監督下自我解釋訓練仍追蹤行為變化"
     },
     {
       "arxiv_id": "2606.32034",
@@ -1560,7 +1604,9 @@
       "source_name": null,
       "story_id": "arxiv:2606.32034",
       "summary": "LLM agents increasingly act over long horizons, where a single trajectory can contain hundreds or thousands of actions. In these settings, outcome-only rewards provide too sparse guidance, failing to inform the model about the goodness of intermediate actions. Dense supervision methods aim to solve this problem by scoring intermediate steps, from intrinsic confidence to self-distillation and embedding similarities. However, it is common practice to evaluate them by measuring the downstream perfo",
-      "title": "QVal: Cheaply Evaluating Dense Supervision Signals for Long-Horizon LLM Agents"
+      "summary_zh": "LLM 代理人日益需在長程任務中行動，單一軌跡可能包含數百甚至數千個動作，僅依賴結果導向的獎勵過於稀疏，無法告知模型中間動作的好壞。密集監督方法因此被提出，包含內在信心、自我蒸餾與嵌入相似度等訊號，用以對中間步驟評分。然而，學界普遍以最終下游任務表現來評估這些訊號，此作法不僅昂貴，且難以釐清訊號本身品質。本文提出 QVal，目標是以更低成本評估密集監督訊號的品質，讓研究者能快速比較不同評分機制。惟本文目前僅公開摘要，QVal 的具體定義、評估協定與實驗結果皆未揭露，其與下游表現的相關性仍待驗證。若該方法能有效預測監督訊號的實用性，將大幅降低長程代理人研究的實驗成本，並促進更可靠的訓練訊號設計。",
+      "title": "QVal: Cheaply Evaluating Dense Supervision Signals for Long-Horizon LLM Agents",
+      "title_zh": "QVal：低成本評估長程 LLM 代理人所需的密集監督訊號"
     },
     {
       "arxiv_id": "2606.32033",
@@ -1615,7 +1661,9 @@
       "source_name": null,
       "story_id": "arxiv:2606.32033",
       "summary": "We present a zero-shot, training-free and optimization-free framework for generating 360 panoramic images and videos by directly injecting spherical priors into pre-trained diffusion transformers. Existing methods either rely on costly fine-tuning on scarce panoramic data that limits generalization, or leverage multi-step optimization that incurs prohibitive inference latency. We observe that contemporary generative models natively exhibit some panoramic priors from large-scale training. However",
-      "title": "SpheRoPE: Zero-Shot Optimization-Free 360 Panorama Generation with Spherical RoPE"
+      "summary_zh": "本文提出一套零樣本、免訓練且免最佳化的框架，透過將球面先驗直接注入預訓練擴散 Transformer，以生成 360 度全景影像與影片。現有作法各有代價：一類倚賴珍稀全景資料進行昂貴的 fine-tuning，限制泛化能力；另一類採用多步最佳化，導致推論延遲過高而難以實用。作者觀察到當代生成模型在大規模訓練下已原生具備部分全景先驗，因此改以調整位置編碼的方式引入球面幾何結構，提出 SpheRoPE，使模型在不需重新訓練的情況下產出連貫的全景內容。惟本文目前僅公開摘要，具體方法細節、與既有作法的量化比較及失敗案例分析皆未提供，其實際畫質與運算效率仍待驗證。若成立，此法可望大幅降低全景內容生成的門檻，對虛擬實境與沉浸式媒體應用具實務價值。",
+      "title": "SpheRoPE: Zero-Shot Optimization-Free 360 Panorama Generation with Spherical RoPE",
+      "title_zh": "SpheRoPE：以球面 RoPE 實現零樣本、免最佳化的 360 度全景生成"
     },
     {
       "arxiv_id": "2606.32032",
@@ -1670,7 +1718,9 @@
       "source_name": null,
       "story_id": "arxiv:2606.32032",
       "summary": "Metacognition is a critical component of intelligence that describes the ability to monitor and regulate one's own cognitive processes. Yet LLMs exhibit systemic deficiencies in key metacognitive faculties: they hallucinate with high confidence, fail to recognize knowledge boundaries, and misrepresent their internal uncertainty--undermining trustworthiness and reliability. Since monitoring task performance and adapting behavior accordingly are central to metacognition, we posit that models capab",
-      "title": "Reinforcement Learning with Metacognitive Feedback Elicits Faithful Uncertainty Expression in LLMs"
+      "summary_zh": "元認知是智慧的重要成分，指監控與調節自身認知歷程的能力。然而 LLM 在關鍵元認知功能上存在系統性缺陷：它們以高信心產生幻覺、無法辨識自身知識邊界，並錯誤表達內在不確定性，因而損害可信度與可靠性。作者主張，由於監控任務表現並據以調整行為是元認知的核心，模型應有能力學習此種自我調節。本文提出以元認知回饋為基礎的強化學習方法，透過獎勵模型對自身不確定性的忠實表達，引導其更準確地反映內部信心狀態。惟本文目前僅公開摘要，獎勵設計、訓練細節、基準資料集與量化改善幅度皆未揭露，忠實性的評估方式亦待檢驗。此研究對降低幻覺與提升 AI 可信度具重要意涵，若成功將有助於建立能誠實表達知識邊界、值得信賴的語言模型。",
+      "title": "Reinforcement Learning with Metacognitive Feedback Elicits Faithful Uncertainty Expression in LLMs",
+      "title_zh": "以元認知回饋的強化學習促使 LLM 產生忠實的不確定性表達"
     },
     {
       "arxiv_id": "2606.32029",
@@ -1728,7 +1778,9 @@
       "source_name": null,
       "story_id": "arxiv:2606.32029",
       "summary": "While large language models (LLMs) perform well on table tasks, they still make data referencing errors (DREs), i.e., incorrectly citing or omitting table values, despite understanding the table structure. Beyond final-answer accuracy, DREs directly compromise the correctness and reliability of intermediate reasoning steps. Yet prior studies have only offered limited, small-scale analyses. In this work, we present the first systematic evaluation of tabular data referencing errors across differen",
-      "title": "When LLMs Read Tables Carelessly: Measuring and Reducing Data Referencing Errors"
+      "summary_zh": "大型語言模型在表格任務上表現不俗，卻仍會產生資料引用錯誤（DRE），即在理解表格結構的前提下，仍錯誤引用或遺漏表格數值。此類錯誤不僅影響最終答案正確率，更直接破壞中間推理步驟的正確性與可靠性，然而既有研究僅提供有限且小規模的分析。本文提出首個針對表格資料引用錯誤的系統性評估，橫跨不同模型、任務型態與表格特性，以量化 DRE 的發生頻率與樣態，並進一步探討降低此類錯誤的方法。惟本文目前僅公開摘要，評估涵蓋的模型清單、資料集規模、錯誤分類準則與改善幅度等具體結果均未揭露，其實際效益仍待驗證。此工作的重要性在於將焦點從最終答案轉向推理過程的可靠性，對需要高可信度表格問答的金融、醫療與企業應用具有直接意義。",
+      "title": "When LLMs Read Tables Carelessly: Measuring and Reducing Data Referencing Errors",
+      "title_zh": "當 LLM 粗心讀表：衡量並降低資料引用錯誤"
     },
     {
       "arxiv_id": "2606.32028",
@@ -1782,7 +1834,9 @@
       "source_name": null,
       "story_id": "arxiv:2606.32028",
       "summary": "Video-based embodied world models provide an appealing substrate for robotic manipulation by predicting future states, yet current approaches remain limited by a fundamental entanglement: accurately modeling dynamics typically requires low-level temporal reasoning, while producing high-resolution frames demands expansive visual synthesis according to high-level semantics. This entanglement results in slow inference speed for iterative planning or too coarse predictions to retain contact-rich det",
-      "title": "DVG-WM: Disentangled Video Generation Enables Efficient Embodied World Model for Robotic Manipulation"
+      "summary_zh": "以影片為基礎的具身世界模型，透過預測未來狀態，為機器人操作提供極具吸引力的基礎架構。然而現行方法受限於根本性的糾纏：準確建模動態通常需要低階的時間推理，而產出高解析度畫面則需依高階語意進行大量視覺合成。這種糾纏導致兩難——推論速度過慢而難以支援迭代式規劃，或預測過於粗糙而無法保留接觸豐富的細節。本文提出 DVG-WM，將影片生成解耦，使動態建模與視覺合成分離，從而在維持預測精度的同時提升推論效率，以支援機器人操作中的規劃需求。惟本文目前僅公開摘要，解耦架構的具體設計、實驗平台、成功率與推論速度等量化證據皆未提供，其實際效益仍待驗證。此研究方向對具身智慧與機器人學習具重要意義，若能兼顧效率與細節，將推動世界模型在真實操作任務中的應用。",
+      "title": "DVG-WM: Disentangled Video Generation Enables Efficient Embodied World Model for Robotic Manipulation",
+      "title_zh": "DVG-WM：解耦式影片生成實現高效率的具身世界模型以支援機器人操作"
     },
     {
       "arxiv_id": "2606.32027",
@@ -1837,7 +1891,9 @@
       "source_name": null,
       "story_id": "arxiv:2606.32027",
       "summary": "Reward design remains a central bottleneck for autonomous robot policy improvement, especially in long-horizon manipulation tasks where sparse success labels provide too little signal and binary preferences collapse many competing notions of quality into one ambiguous signal. We introduce Freeform Preference Learning (FPL), a method for learning robot policies from freeform human preferences. Rather than asking annotators which of two trajectories is better overall, FPL lets them define natural-",
-      "title": "Freeform Preference Learning for Robotic Manipulation"
+      "summary_zh": "獎勵設計長期是自主機器人策略精進的核心瓶頸，在長時程操作任務中尤其明顯：稀疏的成功標籤訊號過少，而二元偏好又把多種彼此競爭的品質概念壓縮成單一模糊訊號。本文提出自由形式偏好學習（Freeform Preference Learning, FPL），改寫偏好蒐集的提問方式。它不要求標記者判斷兩條軌跡整體上何者較佳，而是讓標記者自行定義自然語言層級的偏好準則，使模型能從更細緻、更多面向的人類回饋中學習策略。摘要指出，FPL 的關鍵在於把「哪個比較好」的單一判斷，轉為可表達多重品質維度的自由形式訊號，藉此在稀疏成功標籤的長時程操作場景中取得更豐富的學習依據。目前僅有摘要可取得，論文未在可見內容中提供實驗數據、基準比較或成效數字，因此其實際增益、可擴充性與標註成本仍待完整論文驗證。其重要性在於重新界定人類偏好的表達形式，若能成立，將有助於降低機器人獎勵工程的人力負擔，並提升長時程操作策略的學習效率。",
+      "title": "Freeform Preference Learning for Robotic Manipulation",
+      "title_zh": "自由形式偏好學習於機器人操作"
     },
     {
       "arxiv_id": "2606.32025",
@@ -1894,7 +1950,9 @@
       "source_name": null,
       "story_id": "arxiv:2606.32025",
       "summary": "Recent LLM agents benefit from skills for solving complex tasks. Skills encapsulate modular packages of procedural knowledge and instructions for performing specialized tasks, such as setting up a sandboxed environment, running a test suite, or refactoring a function across multiple files. As skill libraries grow and become reusable across tasks and domains, selecting an appropriate skill composition has emerged as a central bottleneck. Existing approaches fall into two categories. One exposes t",
-      "title": "Generative Skill Composition for LLM Agents"
+      "summary_zh": "近期 LLM 代理透過技能來解決複雜任務。所謂技能，是把程序性知識與操作指示封裝成模組化套件，例如建立沙箱環境、執行測試套件，或跨多個檔案重構某個函式。當技能庫不斷擴張、且技能可跨任務與跨領域重複使用時，如何挑選合適的技能組合便成為核心瓶頸。既有做法可分為兩類：一類把技能庫直接暴露給模型，讓模型自行選擇；摘要在此處截斷，未完整交代第二類的設計，也未說明各類方法的優劣比較。由於僅有摘要可取得，本文所提方法的具體機制、生成式組合的定義、實驗設定與量化結果皆無從得知，因此無法評估其在實際代理工作流程中的成功率、延遲或成本。此議題的重要性在於：隨著代理可使用的工具與技能數量快速成長，選擇與組合技能的能力將直接決定代理能否可靠完成長時程、多步驟的複合任務，也關係到技能庫的可維護性與可重用性。",
+      "title": "Generative Skill Composition for LLM Agents",
+      "title_zh": "LLM 代理的生成式技能組合"
     },
     {
       "arxiv_id": "2606.32023",
@@ -1947,7 +2005,9 @@
       "source_name": null,
       "story_id": "arxiv:2606.32023",
       "summary": "Forest attributes are essential for national-scale resource monitoring. Airborne LiDAR metrics are among the auxiliary variables most strongly correlated with forest attributes used in National Forest Inventory (NFI) estimates. However, producing wall-to-wall predictions remains challenging when LiDAR data are acquired under heterogeneous conditions. As national LiDAR programs expand across Europe, variability in sensors, flight parameters, seasons, and scan angles limits the robustness of exist",
-      "title": "FLORA: A deep learning approach to predict forest attributes from heterogeneous LiDAR data"
+      "summary_zh": "森林屬性對國家尺度的資源監測至關重要。機載 LiDAR 推導出的指標，是國家森林資源調查（NFI）估計中與森林屬性相關性最強的輔助變數之一。然而，當 LiDAR 資料在不同條件下取得時，要產出全面覆蓋的推估仍相當困難。隨著歐洲各國 LiDAR 計畫陸續擴展，感測器、飛行參數、季節與掃描角度的變異，限制了既有方法的穩健性。本文提出 FLORA，一套以深度學習為基礎的方法，目標是從異質 LiDAR 資料預測森林屬性，以因應上述跨條件變異帶來的挑戰。摘要僅止於問題陳述與方法定位，未提供模型架構細節、訓練資料規模、驗證設計或預測精度的量化結果，因此 FLORA 相對於傳統統計或既有機器學習方法的實際優勢仍待完整論文確認。其重要性在於：若能在異質條件下維持穩健預測，將有助於各國把分散取得的 LiDAR 資源整合進 NFI 流程，提升國家尺度森林監測的成本效益與覆蓋範圍。",
+      "title": "FLORA: A deep learning approach to predict forest attributes from heterogeneous LiDAR data",
+      "title_zh": "FLORA：以深度學習從異質 LiDAR 資料預測森林屬性"
     },
     {
       "arxiv_id": "2606.32022",
@@ -2001,7 +2061,9 @@
       "source_name": null,
       "story_id": "arxiv:2606.32022",
       "summary": "Residual-stream analysis asks how language-model computation evolves across depth, but intermediate decoding requires comparable readout coordinates across layers. If embedding anchors and unembedding readout disagree on the chosen span, apparent motion may reflect measurement drift rather than computation. We introduce \\emph{Semantic Reference Frames} (SemRF), an anchor-based formalism separating semantic measurement from residual dynamics. A SemRF fixes anchors and measures states against them",
-      "title": "SemRF: A Semantic Reference Frame for Residual-Stream Dynamics in Language Models"
+      "summary_zh": "殘差流分析探討語言模型的前向計算如何隨深度演變，但若要進行中間層解碼，就必須在不同層之間取得可比較的讀出座標。若嵌入錨點與 unembedding 讀出在所選子空間上不一致，觀察到的表觀移動可能只是量測漂移，而非真正的計算變化。本文提出語意參考框架（Semantic Reference Frames, SemRF），一套以錨點為基礎的形式化方法，將語意量測與殘差動態分離。SemRF 固定一組錨點，並以這些錨點為基準量測各層狀態，使跨層的讀出座標具備可比性，讓研究者在解讀殘差流時能區分「模型計算的實際變化」與「量測框架本身造成的位移」。由於僅有摘要可取得，本文未提供具體的錨點選擇方式、實驗模型規模、探測任務或量化結果，因此 SemRF 能否穩定改善跨層可解釋性分析仍待驗證。其重要性在於為語言模型可解釋性提供量測基礎：若讀出座標不可比，許多關於深度動態的結論恐有系統性偏誤。",
+      "title": "SemRF: A Semantic Reference Frame for Residual-Stream Dynamics in Language Models",
+      "title_zh": "SemRF：語言模型殘差流動態的語意參考框架"
     },
     {
       "arxiv_id": "2606.32020",
@@ -2064,7 +2126,9 @@
       "source_name": null,
       "story_id": "arxiv:2606.32020",
       "summary": "Modern one-step diffusion models achieve impressive quality through distribution-based timestep distillation. Yet, they rely on a critical assumption: Teacher and Student must inhabit the same latent space. This Shared-Space constraint prevents knowledge transfer from modern high-capacity Teachers (e.g., SD 3.5 and Flux) into compact, deployment-friendly Students such as SD 1.5, whose latent resolution and VAE parameterization differ from the Teacher. We formalize this overlooked regime as Cross",
-      "title": "Cross-Space Distillation: Teaching One-Step Students with Modern Diffusion Teachers"
+      "summary_zh": "現代單步擴散模型透過基於分布的時步蒸餾達到優異品質，但這類方法依賴一項關鍵假設：教師與學生必須位於同一個潛在空間。此「共享空間」限制使知識難以從高容量教師（例如 SD 3.5 與 Flux）轉移到體積小、易於部署的學生模型（例如 SD 1.5），因為兩者的潛在解析度與 VAE 參數化並不相同。本文將這個被忽略的情境形式化為跨空間蒸餾，試圖在教師與學生潛在空間不一致的前提下完成知識轉移，讓小型模型也能吸收現代大型擴散教師的能力。摘要僅止於問題定義與動機說明，未交代具體的對齊機制、蒸餾損失設計、實驗設定與生成品質指標，因此跨空間蒸餾相對於共享空間蒸餾的實際增益仍無法從可見內容判斷。其重要性在於：若能突破共享空間假設，部署端的模型選擇將不再受限於教師的 VAE 與解析度，有助於在有限算力下取得更強的單步生成能力，並延長既有小型模型的可用壽命。",
+      "title": "Cross-Space Distillation: Teaching One-Step Students with Modern Diffusion Teachers",
+      "title_zh": "跨空間蒸餾：以現代擴散模型教師訓練單步學生模型"
     },
     {
       "arxiv_id": "2606.32018",
@@ -2116,7 +2180,9 @@
       "source_name": null,
       "story_id": "arxiv:2606.32018",
       "summary": "Classifiers based on Deep Neural Networks exhibit strong performance across domains, yet can fail catastrophically if they rely on spurious correlations, i.e., features that are predictive of the target label in the training data but are not causally linked and thus fail to generalize. For the vision domain, many such spurious correlations manifest themselves within the background of the image, where only the foreground is predictive of the class label. In this paper, we introduce Automated Back",
-      "title": "Automated Background Swapping for Robustness against Spurious Backgrounds"
+      "summary_zh": "以深度神經網路為基礎的分類器在各領域表現優異，但若依賴虛假相關，便可能出現災難性失敗。所謂虛假相關，是指某些特徵在訓練資料中對目標標籤具有預測力，卻與類別之間沒有因果關聯，因而無法泛化。在視覺領域，這類虛假相關常出現在影像背景中，此時只有前景才對類別標籤具預測意義。本文提出自動背景替換（Automated Background Swapping）方法，透過在訓練過程中自動更換影像背景，削弱模型對背景線索的依賴，使其更聚焦於具因果性的前景特徵，進而提升對虛假背景的穩健性。摘要僅止於問題陳述與方法命名，未提供資料集、基準模型、評估指標或量化改善幅度，因此背景替換在真實分布偏移下的效果、以及是否可能破壞合理背景線索，仍待完整論文檢驗。其重要性在於：虛假相關是部署可靠性的主要風險之一，若能以自動化方式降低背景捷徑的影響，將有助於醫療、自駕與監控等對泛化要求嚴格的應用。",
+      "title": "Automated Background Swapping for Robustness against Spurious Backgrounds",
+      "title_zh": "自動背景替換以提升對虛假背景的穩健性"
     },
     {
       "arxiv_id": "2606.32017",
@@ -2174,7 +2240,9 @@
       "source_name": null,
       "story_id": "arxiv:2606.32017",
       "summary": "Agentic reinforcement learning requires assigning credit to environment-facing actions such as searches, clicks, edits, navigation commands, and object interactions. Standard GRPO uses the final verifier outcome as a uniform advantage over all action tokens. This outcome signal is useful but structurally incomplete: it punishes useful exploration in failed rollouts and reinforces redundant or regressive actions in successful rollouts. We propose TRIAGE, a role-typed credit assignment framework t",
-      "title": "TRIAGE: Role-Typed Credit Assignment for Agentic Reinforcement Learning"
+      "summary_zh": "代理式強化學習必須把信用分配到面向環境的動作上，例如搜尋、點擊、編輯、導航指令與物件互動。標準 GRPO 以最終驗證器結果作為統一優勢值，套用到所有動作 token 上。這種結果訊號雖有用，卻在結構上不完整：它會懲罰失敗軌跡中有助於探索的行為，也會在成功軌跡中強化多餘甚至退步的動作。本文提出 TRIAGE，一套角色型信用分配框架，主張依動作在任務中扮演的角色給予不同權重，而非以單一結果訊號平均覆蓋所有動作。摘要在此截斷，未說明角色如何定義、分配機制如何與 GRPO 結合，也未提供基準任務、成功率或訓練效率的量化證據。由於僅有摘要可取得，其相對於 GRPO 與其他信用分配方法的實際增益仍待驗證。其重要性在於：若信用分配能反映動作角色，代理式系統在長時程、多工具任務中的探索效率與訓練穩定性可望提升，並減少對無效動作的錯誤強化。",
+      "title": "TRIAGE: Role-Typed Credit Assignment for Agentic Reinforcement Learning",
+      "title_zh": "TRIAGE：代理式強化學習的角色型信用分配"
     },
     {
       "arxiv_id": "2606.32016",
@@ -2230,7 +2298,9 @@
       "source_name": null,
       "story_id": "arxiv:2606.32016",
       "summary": "Multimodal graph foundation models aim to learn reusable knowledge from graphs enriched with text, images, attributes, and relational topology, thereby supporting diverse graph-centric and modality-centric tasks. In practice, however, such multimodal graphs are often distributed across decentralized clients, where raw contents and local structures cannot be centrally shared due to privacy constraints. This motivates federated multimodal graph foundation learning, which requires not only transfer",
-      "title": "FedLAB: Traceable Semantic Codebooks for Federated Multimodal Graph Foundation Learning"
+      "summary_zh": "多模態圖基礎模型旨在從富含文字、影像、屬性與關聯拓撲的圖中學習可重用知識，以支援各類以圖為中心與以模態為中心的任務。然而在實務上，這類多模態圖往往分散於去中心化的客戶端，原始內容與區域結構因隱私限制而無法集中共享。這促成了聯邦多模態圖基礎學習的需求：它不僅要求知識可跨客戶端轉移，還須在原始資料不出域的前提下維持模型品質。本文提出 FedLAB，以可追溯的語意碼本作為核心機制，試圖在聯邦架構下建立可重用且可追蹤的語意表示。摘要僅止於動機與方法定位，未交代碼本建構方式、跨客戶端對齊策略、通訊成本或實驗結果，因此其在實際聯邦環境中的表現、隱私保證強度與可擴充性仍無法從可見內容評估。其重要性在於：若能在分散且多模態的圖資料上實現可追溯的語意共享，將有助於醫療、金融等受隱私法規約束領域建構共享的圖基礎模型。",
+      "title": "FedLAB: Traceable Semantic Codebooks for Federated Multimodal Graph Foundation Learning",
+      "title_zh": "FedLAB：聯邦多模態圖基礎學習的可追溯語意碼本"
     },
     {
       "arxiv_id": "2606.32014",
@@ -2293,7 +2363,9 @@
       "source_name": null,
       "story_id": "arxiv:2606.32014",
       "summary": "Internet users collectively perform an enormous range of skilled work through web browsers, from software development and document editing to search, forms, and enterprise workflows, making human browsing a highly scalable but under-exploited source of reusable browser skills. We argue that the bottleneck for browser agents is decision-making under incomplete information rather than low-level operation, and that the priors agents lack are already implicit in human interaction traces. We therefor",
-      "title": "Scalable Behaviour Cloning on Browser Using via Skill Distillation"
+      "summary_zh": "網頁瀏覽器是現代人進行軟體開發、文件編輯、搜尋、填表與企業流程等大量技能工作的場域，因此人類的瀏覽軌跡其實是一個規模龐大、卻長期被低估的可重用技能來源。本文主張，瀏覽器代理的真正瓶頸不在低階操作，而在資訊不完整情況下的決策；代理所欠缺的先驗知識，其實早已隱含在人類互動軌跡之中。作者因此提出以技能蒸餾為核心的行為複製框架，試圖把人類示範中的決策先驗抽離為可重用的技能單元，再讓代理於新環境中重組運用，以達到可擴展的學習。摘要僅止於動機與問題定位，尚未提供具體方法細節、實驗設定與量化結果，因此其實際效能與可遷移性仍待驗證。若此路線成立，將能把使用者日常瀏覽轉化為可持續累積的代理訓練資源，對瀏覽器自動化與通用代理的發展具有指標意義。",
+      "title": "Scalable Behaviour Cloning on Browser Using via Skill Distillation",
+      "title_zh": "可擴展的瀏覽器行為複製：透過技能蒸餾學習網頁技能"
     },
     {
       "arxiv_id": "2606.32012",
@@ -2347,7 +2419,9 @@
       "source_name": null,
       "story_id": "arxiv:2606.32012",
       "summary": "Uncertainty estimation has been a long-standing challenge in AI models; it amounts to \"knowing what you don't know,\" and metacognition is notoriously difficult even for humans (cf. the Dunning-Kruger effect). Although it is still far from solved even in simpler classification systems, tackling it in multimodal large language models (MLLMs) is becoming increasingly important. Within MLLMs, uncertainty can stem from any of the diverse sources as well as from their relationships, and further can st",
-      "title": "CoMet: Context and Multiplicity Decomposition for Multimodal Uncertainty Estimation"
+      "summary_zh": "不確定性估計長年被視為 AI 模型的核心難題，本質上是「知道自己不知道什麼」，而這種後設認知即使對人類也相當困難，例如 Dunning-Kruger 效應即為一例。此問題在較單純的分類系統中尚未解決，如今多模態大型語言模型（MLLM）的普及更使其變得迫切。作者指出，MLLM 的不確定性可能來自多種異質來源，也可能來自這些來源之間的交互關係，因而難以用單一量表捕捉。論文提出 CoMet 框架，將不確定性依「情境」與「多重性」兩個維度進行分解，以便分別歸因並估計不同來源的貢獻。摘要僅交代問題動機與分解構想，尚未揭露具體估計機制、資料集與實驗數據，其校準品質與計算成本仍待檢驗。此工作的重要性在於把不確定性從單一數值轉為可分解、可診斷的結構，有助於提升多模態系統在醫療、法律等高風險場域的可信度。",
+      "title": "CoMet: Context and Multiplicity Decomposition for Multimodal Uncertainty Estimation",
+      "title_zh": "CoMet：以情境與多重性分解進行多模態不確定性估計"
     },
     {
       "arxiv_id": "2606.32009",
@@ -2413,7 +2487,9 @@
       "source_name": null,
       "story_id": "arxiv:2606.32009",
       "summary": "Vision-language-action (VLA) models across robot embodiments require high-quality observation--action supervision to learn deployable action distributions, yet scaling such robot data remains difficult, especially for high-DoF humanoids. Teleoperation provides controller-aligned supervision, while human egocentric videos capture diverse bimanual manipulation but do not directly provide executable robot actions. We introduce Human-as-Humanoid, a human-to-humanoid supervision framework that enable",
-      "title": "Human-as-Humanoid: Enabling Zero-Shot Humanoid Learning from Ego-Exo Human Videos with Human-Aligned Embodiments"
+      "summary_zh": "跨具身的視覺—語言—動作（VLA）模型需要高品質的觀察與動作監督，才能學到可實際部署的動作分布，但機器人資料的擴展極為困難，高自由度人形機器人尤其如此。遙操作能提供與控制器對齊的監督訊號，而人類第一人稱影片雖涵蓋多樣雙手機械操作，卻無法直接給出可執行的機器人動作。本文提出 Human-as-Humanoid 框架，試圖在人類與人形機器人之間建立具身對齊的監督，將自我中心與外部視角的人類影片轉換為可用的動作監督，以實現零樣本的人形機器人學習。摘要僅描述動機與框架定位，未提供具體對齊機制、資料規模、基準任務與量化結果，因此其跨具身遷移成效與安全性仍待驗證。若可行，將大幅降低人形機器人資料蒐集成本，對通用機器人技能的規模化具有關鍵意義。",
+      "title": "Human-as-Humanoid: Enabling Zero-Shot Humanoid Learning from Ego-Exo Human Videos with Human-Aligned Embodiments",
+      "title_zh": "Human-as-Humanoid：以人體對齊具身實現零樣本人形機器人學習"
     },
     {
       "arxiv_id": "2606.32008",
@@ -2470,7 +2546,9 @@
       "source_name": null,
       "story_id": "arxiv:2606.32008",
       "summary": "Mechanistic interpretability (MI) requires full access to model internals, yet the APIs for most widely deployed language models at best expose log-probabilities over output tokens. This creates a surrogate problem: when do measurements made on open models allow us to make claims about a closed model? We evaluate surrogate fidelity at the prediction, attribution, and representation levels. For binary classification tasks, log-odds provide an API-compatible scalar readout of the model's represent",
-      "title": "Surrogate Fidelity: When Can Open LLMs Explain Closed Ones?"
+      "summary_zh": "機械可解釋性（MI）研究通常需要完整存取模型內部，但現行廣為部署的語言模型 API 多半只提供輸出 token 的對數機率，因而形成「代理問題」：我們在開源模型上量測到的現象，何時才能據以推論閉源模型的行為？本文將代理保真度區分為預測、歸因與表徵三個層次，並評估開源模型作為閉源模型代理的可靠程度。作者指出，在二元分類任務上，對數勝算可作為與 API 相容的純量讀出，用以反映模型內部表徵，藉此建立可檢驗的代理指標。摘要未提供具體受測模型清單、量測協定與定量結果，因此何時可推論、何時失效的邊界仍待釐清。本研究的重要性在於為閉源模型的可解釋性研究建立方法論警覺：若代理保真度不足，過去許多關於前沿模型內部的結論可能缺乏正當性。",
+      "title": "Surrogate Fidelity: When Can Open LLMs Explain Closed Ones?",
+      "title_zh": "代理保真度：開源大型語言模型何時能解釋閉源模型？"
     },
     {
       "arxiv_id": "2606.32007",
@@ -2523,7 +2601,9 @@
       "source_name": null,
       "story_id": "arxiv:2606.32007",
       "summary": "We study agentic code generation in Dafny, where a model must generate both executable code and the proof artifacts for verification. We present AxDafny, a verifier-guided repair framework that iteratively generates implementations, invariants, assertions, and termination arguments. We also introduce LiveCodeBench-Pro-Dafny (LCB-Pro-Dafny), a benchmark of 250 competition-style programming problems translated into Dafny with formal specifications and a verifier-based evaluation harness. On LCB-Pr",
-      "title": "AxDafny: Agentic Verified Code Generation in Dafny"
+      "summary_zh": "本文研究 Dafny 中的代理式程式碼生成，模型不僅要產出可執行程式，還必須同時生成可供驗證的證明產物，難度遠高於一般程式合成。作者提出 AxDafny，一套由驗證器引導的修復框架，能迭代生成實作、迴圈不變式、斷言與終止性論證，並依驗證器回饋修正錯誤，形成生成與驗證的閉環。為評估此能力，作者另建構 LiveCodeBench-Pro-Dafny（LCB-Pro-Dafny）基準，將 250 道競賽風格程式題翻譯為 Dafny，並附上形式化規格與以驗證器為基礎的評測流程。摘要僅點出框架與基準的設計方向，未揭露各階段的通過率、與基線方法的比較數據及失敗模式分析，因此其實際驗證成功率與可擴展性仍待檢驗。此工作的重要意義在於把形式驗證從人工撰寫證明，推向代理可自動修復的流程，對安全關鍵軟體的開發具有實務價值。",
+      "title": "AxDafny: Agentic Verified Code Generation in Dafny",
+      "title_zh": "AxDafny：在 Dafny 中進行代理式可驗證程式碼生成"
     },
     {
       "arxiv_id": "2606.32006",
@@ -2581,7 +2661,9 @@
       "source_name": null,
       "story_id": "arxiv:2606.32006",
       "summary": "Entanglement distributed over a set of individually addressable qubit nodes is the enabling resource for a plethora of applications ranging from tests of quantum physics to secure and modular quantum information networks. Entanglement between two memory qubits has been realized on various platforms, but extension to more nodes remains rare and formidably challenging. The principal bottleneck is the efficiency of the light-matter interfaces connecting the qubit nodes to their communication channe",
-      "title": "Efficient entanglement of three remote single-atom quantum-network nodes"
+      "summary_zh": "在可個別定址的多個量子位元節點之間分佈糾纏，是量子物理基礎測試、安全通訊與模組化量子資訊網路等眾多應用的關鍵資源。過去已有各式平台實現兩個記憶量子位元之間的糾纏，但要擴展到更多節點仍相當罕見且極具挑戰。其主要瓶頸在於連接量子位元節點與通訊通道的光—物質介面效率，效率不足會使遠距糾纏的生成速率與保真度嚴重受限。本文報導在三個遠端單原子量子網路節點之間實現高效率糾纏，並透過提升光—物質介面效率來突破此瓶頸。摘要未提供具體實驗平台、效率數值、糾纏保真度或速率等量化結果，因此其相對於既有雙節點方案的优势幅度仍待驗證。這項成果若成立，代表量子網路從兩點連結邁向多節點架構的重要一步，對模組化量子電腦與量子中繼器的發展具有指標意義。",
+      "title": "Efficient entanglement of three remote single-atom quantum-network nodes",
+      "title_zh": "三個遠端單原子量子網路節點的高效率糾纏"
     },
     {
       "arxiv_id": "2606.32004",
@@ -2636,7 +2718,9 @@
       "source_name": null,
       "story_id": "arxiv:2606.32004",
       "summary": "Policy-grounded document review requires determining whether a target document complies with organization-specific policies, guidelines, or playbooks. While large language models can assist with policy interpretation and document analysis, end-to-end prompting leaves the applied policy logic implicit, making compliance decisions difficult to inspect, update, and test. We present PolicyGuard, a neuro-symbolic framework for policy-grounded document compliance review. PolicyGuard converts organizat",
-      "title": "PolicyGuard: From Organizational Policies to Neuro-SymbolicCompliance Review Engines"
+      "summary_zh": "以政策為依據的文件審查，必須判斷目標文件是否符合組織自訂的政策、準則或作業手冊。大型語言模型雖可協助解讀政策與分析文件，但端到端提示會使實際套用的政策邏輯隱含在模型內部，導致合規判斷難以檢視、更新與測試，對於法遵與稽核情境構成明顯風險。本文提出 PolicyGuard，一套神經符號框架，將組織政策轉換為可執行、可檢驗的符號化規則，再與語言模型的語意理解能力結合，形成合規審查引擎。摘要僅描述框架定位與轉換構想，未揭露規則抽取的準確率、與純提示方法的比較、覆蓋率或人工複核成本等量化證據，因此其實務可靠性仍待驗證。此工作的重要性在於把合規決策從不可解釋的黑箱輸出，轉為可追溯、可版本控管的審查流程，對受監管產業的 AI 導入具有實質意義。",
+      "title": "PolicyGuard: From Organizational Policies to Neuro-SymbolicCompliance Review Engines",
+      "title_zh": "PolicyGuard：從組織政策到神經符號合規審查引擎"
     },
     {
       "arxiv_id": "2606.32002",
@@ -2692,7 +2776,9 @@
       "source_name": null,
       "story_id": "arxiv:2606.32002",
       "summary": "Language models are increasingly taught from synthetic question--answer (QA) supervision: a model generates questions about a document, answers them from the same text, and the resulting pairs are used to fine-tune, distill, or compress knowledge into another model. We show that this generation step is not neutral preprocessing. It is an implicit policy that both selects which evidence becomes training signal and decides how that evidence is answered, and it is fragile at both stages. When choos",
-      "title": "Self-Study Reconsidered: The Hidden Fragility of Learning from Self-Generated QA"
+      "summary_zh": "語言模型日益仰賴合成的問答監督訊號：模型先針對文件生成問題，再從同一份文本作答，這些問答對便被用來微調、蒸餾或壓縮知識到另一個模型。本文指出，這個生成步驟並非中性的前處理，而是一項隱含政策：它同時決定哪些證據會成為訓練訊號，也決定這些證據該如何被回答，而且在兩個階段都相當脆弱。一旦選題偏誤或作答方式不當，錯誤便會被固化並在後續訓練中被放大。摘要僅提出此批判性論點與脆弱性定位，未提供具體的實驗設計、量測指標或緩解方法，因此脆弱性的嚴重程度與可修補性仍待檢驗。此研究的重要性在於提醒以合成資料自我改進的訓練範式：若不把生成政策顯性化並加以稽核，模型能力的提升可能同時伴隨偏誤與幻覺的系統性累積。",
+      "title": "Self-Study Reconsidered: The Hidden Fragility of Learning from Self-Generated QA",
+      "title_zh": "重新檢視自我學習：從自生成問答中學習的隱藏脆弱性"
     },
     {
       "arxiv_id": "2606.32000",
@@ -2745,7 +2831,9 @@
       "source_name": null,
       "story_id": "arxiv:2606.32000",
       "summary": "Why do neural networks memorize algorithmic training data long before they generalize? We present a geometric case study demonstrating that, on tasks where generalization requires discovering structured low-dimensional circuits, the memorization-generalization delay is driven by radial inflation of hidden representations under cross-entropy optimization. We formalize a radial-angular decomposition of activation-space dynamics and derive three testable propositions: (i) that penalizing radial inf",
-      "title": "Radial Suppression Accelerates Algorithmic Generalization: A Geometric Analysis of Delayed Generalization"
+      "summary_zh": "神經網路為何在演算法型任務上長期先記憶、後泛化？本文提出幾何化的個案研究，指出當泛化必須發掘結構化低維電路時，記憶與泛化之間的延遲主要源自交叉熵最佳化下隱藏表徵的徑向膨脹。作者將活化空間動態拆解為徑向與角向兩個分量，並據此推導出三項可檢驗命題，其中之一是對徑向膨脹施加懲罰可縮短延遲。摘要僅止於命題層次，尚未見完整實驗數據與跨任務驗證，惟其視角把延遲泛化由最佳化現象重新框架為表徵幾何問題，對理解深度網路何時由記憶轉向泛化具啟發意義。",
+      "title": "Radial Suppression Accelerates Algorithmic Generalization: A Geometric Analysis of Delayed Generalization",
+      "title_zh": "徑向抑制加速演算法泛化：延遲泛化的幾何分析"
     },
     {
       "arxiv_id": "2606.31993",
@@ -2800,7 +2888,9 @@
       "source_name": null,
       "story_id": "arxiv:2606.31993",
       "summary": "While robotic manipulation capabilities have advanced rapidly, physical safety remains a major barrier to deploying household robots: task success is insufficient if the robot damages itself or its surroundings. Simulation offers a harm-free alternative to costly and dangerous real-world training and evaluation, yet existing simulators lack general mechanisms to detect, quantify, and represent damage. To address this gap, we introduce OOPSIEVERSE, a unified simulation framework and benchmark for",
-      "title": "OopsieVerse: A Safety Benchmark with Damage-Aware Simulation for Robot Manipulation"
+      "summary_zh": "家用機器人操作能力雖快速進展，物理安全仍是落地的主要障礙：若機器人損壞自身或周遭環境，任務成功率便不足以代表可用性。真實世界訓練與評估既昂貴又危險，模擬雖可免於傷害，但既有模擬器缺乏通用機制來偵測、量化與表徵損害。本文提出 OOPSIEVERSE，一套統一的模擬框架與安全基準，將損害感知納入機器人操作評估。摘要僅描述動機與框架定位，未列出具體任務、量測指標或實驗結果，因此其實用性仍待完整論文驗證。此工作的意義在於把安全由附帶考量提升為可量測的一級評估目標，為家用機器人的風險感知研究提供共同測試平台。",
+      "title": "OopsieVerse: A Safety Benchmark with Damage-Aware Simulation for Robot Manipulation",
+      "title_zh": "OopsieVerse：具損害感知模擬的機器人操作安全基準"
     },
     {
       "arxiv_id": "2606.31991",
@@ -2852,7 +2942,9 @@
       "source_name": null,
       "story_id": "arxiv:2606.31991",
       "summary": "The tendency of large generative models to memorize training data makes sample verification critical for privacy auditing and copyright enforcement. Current membership (MIA) and dataset inference (DI) attacks often rely on one-shot generations, which yield weak signals and limited sensitivity across modalities. Inspired by Model Autophagy Disorder (MAD), we introduce MADreMIA, a model-agnostic framework that enhances white-, gray-, and black-box MIA and DI. Rather than relying on shadow model tr",
-      "title": "Amplifying Membership Signal Through Chained Regeneration"
+      "summary_zh": "大型生成模型傾向記憶訓練資料，使樣本驗證成為隱私稽核與著作權執法的重要環節。現有的成員推論攻擊（MIA）與資料集推論（DI）多依賴單次生成，訊號偏弱且跨模態敏感度有限。受模型自噬失序（MAD）啟發，本文提出 MADreMIA，一個模型無關的框架，用以強化白箱、灰箱與黑箱設定下的 MIA 與 DI，核心作法是以連鎖再生取代單次生成。摘要未提供具體攻擊成功率、比較基準或跨模態實驗數字，故增益幅度仍待檢驗。其價值在於指出生成式稽核的瓶頸可能來自取樣策略而非模型本身，並提供可跨模態套用的放大機制。",
+      "title": "Amplifying Membership Signal Through Chained Regeneration",
+      "title_zh": "透過連鎖再生放大成員訊號"
     },
     {
       "arxiv_id": "2606.31990",
@@ -2908,7 +3000,9 @@
       "source_name": null,
       "story_id": "arxiv:2606.31990",
       "summary": "We analyze the effect of optimizing the initial population of genetic programming (GP) for symbolic regression (SR) on the accuracy and complexity of solutions. We compare three well-established random initialization methods as well as initialization with small optimized solutions from exhaustive symbolic regression (ESR) using a GP/SR implementation which is based on the multi-objective evolutionary algorithm NSGA-II. We compare the final Pareto fronts found with each initialization method on t",
-      "title": "Evaluation of Population Initialization Methods for Genetic Programming-based Symbolic Regression"
+      "summary_zh": "本文分析基因規劃（GP）用於符號迴歸（SR）時，初始族群最佳化對解的精確度與複雜度的影響。作者比較三種既有的隨機初始化方法，以及以窮舉式符號迴歸（ESR）取得的小型最佳解作為初始化，並採用基於多目標演化演算法 NSGA-II 的 GP/SR 實作。評估方式為在測試問題上比較各初始化方法所得到的最終帕雷托前緣。摘要僅敘述研究設計，未揭露實際資料集、效能差距或統計檢定結果，故何種初始化較佳仍無法斷言。此研究的意義在於把初始化由工程細節提升為影響準確度與複雜度權衡的自變項，對可解釋符號模型的可重現性具參考價值。",
+      "title": "Evaluation of Population Initialization Methods for Genetic Programming-based Symbolic Regression",
+      "title_zh": "基因規劃符號迴歸之族群初始化方法評估"
     },
     {
       "arxiv_id": "2606.31986",
@@ -2964,7 +3058,9 @@
       "source_name": null,
       "story_id": "arxiv:2606.31986",
       "summary": "Chain-of-thought (CoT) reasoning has enabled multi-modal large language models (MLLMs) to tackle complex visual reasoning tasks by generating explicit intermediate reasoning steps in natural language. However, this text-based reasoning paradigm is inherently slow at inference time with even thousands of tokens and fundamentally constrained by the expressiveness of natural language. In this paper, we propose CoLT, (Chain of Latent Thoughts), a novel framework that teaches multi-modal models to re",
-      "title": "CoLT: Teaching Multi-Modal Models to Think with Chain of Latent Thoughts"
+      "summary_zh": "思維鏈（CoT）推理讓多模態大型語言模型（MLLM）能以自然語言產生中間步驟，進而處理複雜視覺推理。然而這種以文字為基礎的推理範式在推論時緩慢，動輒數千個 token，且其表達能力本質上受自然語言限制。本文提出 CoLT（Chain of Latent Thoughts），一套教導多模態模型以潛在思維進行推理的框架，藉此擺脫明文語言步驟的束縛。摘要僅止於動機與方法命名，未交代潛在思維的監督方式、壓縮率、準確度變化或與 CoT 基準的比較結果。若其構想成立，將同時改善多模態推理的延遲與表達瓶頸，是推理效率與模態對齊交叉領域值得關注的方向。",
+      "title": "CoLT: Teaching Multi-Modal Models to Think with Chain of Latent Thoughts",
+      "title_zh": "CoLT：教導多模態模型以潛在思維鏈思考"
     },
     {
       "arxiv_id": "2606.31984",
@@ -3085,7 +3181,9 @@
       "source_name": null,
       "story_id": "arxiv:2606.31984",
       "summary": "Industrial recommendation systems serve billions of users through a multi-stage funnel -- retrieval, early-stage ranking, and re-ranking -- where the final re-ranking step disproportionately shapes user engagement and downstream performance, particularly for carousel and grid display formats. Despite growing enthusiasm for Large Language Models (LLMs) in recommendation, three gaps hinder industrial adoption: (1) most efforts target retrieval and ranking, leaving re-ranking -- the stage closest t",
-      "title": "GR2 Technical Report"
+      "summary_zh": "工業級推薦系統以多階段漏斗服務數十億使用者，依序為檢索、早期排序與重排序，其中最後的重排序階段對使用者參與度與下游成效的影響格外顯著，在輪播與格狀版位格式尤然。儘管大型語言模型（LLM）應用於推薦的熱度持續升高，仍有三大缺口阻礙工業落地：既有工作多集中於檢索與排序，較少觸及最貼近使用者的重排序階段。本技術報告提出 GR2，針對重排序階段設計方法，摘要僅點出問題定位與系統代號，未提供離線指標、線上 A/B 測試或延遲成本等證據。其意義在於把 LLM 推薦的討論推向漏斗末端，補足產業實務最敏感卻研究最薄弱的環節。",
+      "title": "GR2 Technical Report",
+      "title_zh": "GR2 技術報告"
     },
     {
       "arxiv_id": "2606.31983",
@@ -3140,7 +3238,9 @@
       "source_name": null,
       "story_id": "arxiv:2606.31983",
       "summary": "There has been extensive research on automating and scaling data cleaning, i.e., the detection and correction of erroneous values in tabular data. Yet, existing approaches often perform well only within controlled environments. One of the major bottlenecks in data cleaning research is the lack of real-world datasets. In this paper, we address this gap by providing a large, dirty dataset with postal entries and their corresponding ground truth. We discuss the design decisions and challenges for o",
-      "title": "Clean Me If You Can: A Large Collection of Real-World Addresses for Data Cleaning Benchmarking"
+      "summary_zh": "資料清理（即表格資料中錯誤值的偵測與修正）已有大量研究，但現有方法往往只在受控環境中表現良好。研究的主要瓶頸之一是缺乏真實世界資料集。本文針對此缺口，提供一份大規模髒資料集，內含郵政地址條目及其對應的標準答案，並討論建構過程中的設計決策與挑戰。摘要僅描述資料集定位與建構考量，未揭露資料量規模、錯誤型態分布或既有清理方法的實測表現，故其基準的判別力仍待完整論文佐證。其貢獻在於以真實髒資料與ground truth 支撐可重現的評估，讓資料清理研究更貼近實務分布，減少受控環境與現實之間的落差。",
+      "title": "Clean Me If You Can: A Large Collection of Real-World Addresses for Data Cleaning Benchmarking",
+      "title_zh": "能清就清：用於資料清理基準測試的大規模真實世界地址集"
     },
     {
       "arxiv_id": "2606.31982",
@@ -3197,7 +3297,9 @@
       "source_name": null,
       "story_id": "arxiv:2606.31982",
       "summary": "Multimodal Large Language Models (MLLMs) incur prohibitive inference costs due to long visual token sequences. Training-free visual token reduction provides an efficient solution. However, existing methods distort attention distributions, giving rise to a phenomenon we term Attention Logit Collapse. To address this issue, we propose ERA, an Entropy-guided visual token pruning framework with Rectified Attention for efficient MLLMs. Specifically, ERA comprises three crucial components: Dual-view E",
-      "title": "ERA: Entropy-Guided Visual Token Pruning with Rectified Attention for Efficient MLLMs"
+      "summary_zh": "多模態大型語言模型（MLLM）因視覺 token 序列冗長而推論成本高昂，免訓練的視覺 token 縮減是有效解方。然而既有方法會扭曲注意力分布，產生作者稱為注意力 Logit 崩壞的現象。為此本文提出 ERA，一套以熵引導視覺 token 剪枝並搭配注意力修正的框架，包含雙視角熵等三項關鍵元件。摘要僅描述問題與方法架構，未提供壓縮率、準確度下降幅度或與既有免訓練方法的對照數字，因此其實際效益仍待驗證。若注意力崩壞的診斷成立，此工作將把 token 縮減由單純刪減轉為分布校正問題，對高效率多模態推論具參考價值。",
+      "title": "ERA: Entropy-Guided Visual Token Pruning with Rectified Attention for Efficient MLLMs",
+      "title_zh": "ERA：以熵引導視覺 token 剪枝與注意力修正的高效率 MLLM"
     },
     {
       "arxiv_id": "2606.31980",
@@ -3253,7 +3355,9 @@
       "source_name": null,
       "story_id": "arxiv:2606.31980",
       "summary": "Agents are increasingly capable of automating software tasks, but can they teach humans how to use software themselves? We introduce DigitalCoach, a multimodal dataset of 72 human expert-novice computer use coaching sessions consisting of 22,752 dialogue turns grounded in 28.1 hours of screen and input event recordings across five software applications. We use DigitalCoach to evaluate whether state-of-the-art models can teach humans how to use computers. Automated evaluation shows that models di",
-      "title": "DigitalCoach: Communication and Grounding Gaps in Human and Agentic Computer Use Coaching"
+      "summary_zh": "這篇論文關注一個新穎問題：擅長自動化軟體任務的 AI 代理，是否也能教會人類自己操作軟體？作者建構 DigitalCoach 多模態資料集，收錄 72 場專家對新手的電腦使用教學對話，共 22,752 個對話輪次，並以 28.1 小時的螢幕與輸入事件錄影為基礎，涵蓋五種軟體應用。研究以此評估當今頂尖模型能否勝任教學工作。自動化評估顯示，模型在教學表現上有所不足，並凸顯溝通與視覺基礎之間的落差：模型雖能理解畫面內容，卻難以將操作知識轉化為對人類學習者有效的指示與回饋。此資料集為「代理即教師」的評測提供了帶有人類參照的基準。限制在於摘要僅揭示初步結論，尚未說明完整評估指標與模型清單；此外教學情境限於五種應用，外部效度仍待檢驗。其意義在於把 AI 代理的能力評估從「代做」延伸到「教人」，對人機協作與 AI 教學系統設計具指標性。",
+      "title": "DigitalCoach: Communication and Grounding Gaps in Human and Agentic Computer Use Coaching",
+      "title_zh": "DigitalCoach：人類與代理式電腦使用教學中的溝通與基礎落差"
     },
     {
       "arxiv_id": "2606.31979",
@@ -3306,7 +3410,9 @@
       "source_name": null,
       "story_id": "arxiv:2606.31979",
       "summary": "Structure from Motion (SfM) systems traditionally struggle with planar scenes, where standard epipolar geometry-based methods become degenerate. Rather than viewing planar surfaces as a limitation, we propose a unified framework that leverages them as a source of geometric constraints. Our key insight is that each planar surface visible across multiple views provides an independent estimate of relative camera poses through homography decomposition. By aggregating estimates from multiple planes o",
-      "title": "Planar-SfM: Camera Pose Estimation via Homography Graph Embeddings"
+      "summary_zh": "傳統 Structure from Motion（SfM）在平面場景上容易退化，因為標準的對極幾何方法在共面點上失去約束力，使得相機姿態估計不穩定。本文反向思考，不把平面視為限制，而是當作幾何約束的來源。核心洞察是：每個在多視圖中可見的平面，都能透過單應圖分解提供一組獨立的相對相機姿態估計；作者進一步在多個平面之間聚合這些估計，形成統一的姿態求解框架，並以圖嵌入方式整合各平面所提供的資訊。摘要指出，這種做法讓平面從 SfM 的失敗案例轉為可用的結構性線索。由於目前僅有摘要，具體的聚合演算法、圖嵌入設計、實驗資料集與誤差比較數字皆未揭露，也無法確認在高度非平面或混合場景下的表現。其重要性在於為室內、建築立面與人造環境等富含平面的常見場景提供更穩健的姿態估計途徑，補足既有 SfM 系統的結構性弱點。",
+      "title": "Planar-SfM: Camera Pose Estimation via Homography Graph Embeddings",
+      "title_zh": "Planar-SfM：以單應圖圖嵌入進行相機姿態估計"
     },
     {
       "arxiv_id": "2606.31976",
@@ -3360,7 +3466,9 @@
       "source_name": null,
       "story_id": "arxiv:2606.31976",
       "summary": "Human-labeled data are widely used as reference annotations in ML, despite known variability across annotators in many expert-driven domains. In addition, expert annotation is slow, inconsistent, and remains a major bottleneck for scaling tasks like tree height bias classification in forestry remote sensing. We propose a multi-agent system (MAS) that orchestrates expert decision trees with Vision-Language Models (VLMs), treating the decision tree as a structural prior while VLMs perform localize",
-      "title": "TreeAgent: A Generalizable Multi-Agent Framework for Automated Bias Labeling in Forestry via Compiled Expert Rules and Vision-Language Models"
+      "summary_zh": "在林業遙測等專家導向領域，機器學習常以人工標註作為參考答案，但標註者之間存在明顯變異，且專家標註緩慢、不一致，成為擴展樹高偏差分類等任務的主要瓶頸。本文提出 TreeAgent 多代理系統（MAS），把專家決策樹與視覺語言模型（VLM）結合：決策樹作為結構性先驗，負責界定判斷路徑與規則，VLM 則執行局部化的視覺判讀與標註工作，藉此在專家知識與模型泛化之間取得平衡。摘要強調此設計可將專家規則「編譯」成可重複執行的流程，降低對大量人工標註的依賴，並提升跨場域的通用性。由於目前僅有摘要，實驗規模、標註一致性指標、與純人工或純 VLM 基準的比較結果均未提供，也無法判斷在樹種、感測器或地形變化下的穩健性。其意義在於示範如何把專家的結構化判斷與現代視覺語言模型互補，為遙測與其他專家標註瓶頸領域提供可擴展的半自動化替代方案。",
+      "title": "TreeAgent: A Generalizable Multi-Agent Framework for Automated Bias Labeling in Forestry via Compiled Expert Rules and Vision-Language Models",
+      "title_zh": "TreeAgent：結合編譯專家規則與視覺語言模型的可通用多代理林業偏差標註框架"
     },
     {
       "arxiv_id": "2606.31966",
@@ -3417,7 +3525,9 @@
       "source_name": null,
       "story_id": "arxiv:2606.31966",
       "summary": "Recent multimodal large language models (MLLMs) have strong potential as embodied agents, but their ability to collaborate in visually grounded environments remains underexplored. To address this gap, we introduce MECoBench, a multimodal embodied cooperation benchmark with an evaluation platform spanning diverse real-world tasks, two cooperation structures, and three collaboration modes. Through extensive experiments across various MLLMs, we summarize three key findings: (i) Collaboration genera",
-      "title": "MECoBench: A Systematic Study of Multimodal Agent Collaboration in Embodied Environments"
+      "summary_zh": "近期多模態大型語言模型（MLLM）被視為具身代理的潛力人選，但它們在視覺接地環境中彼此協作的能力仍缺乏系統性檢驗。本文提出 MECoBench，一個多模態具身協作評測基準，並搭配評估平台，涵蓋多樣的真實世界任務、兩種合作結構與三種協作模式，試圖把「代理能否一起完成任務」拆解成可量測的維度。作者對多種 MLLM 進行大規模實驗，摘要指出三項主要發現，其中第一項為協作通常會帶來影響，但方向與幅度取決於模型與任務設定。這意味著協作並非萬靈丹，可能因溝通落差或視覺理解錯誤而抵銷效益。由於目前僅有摘要，具體任務清單、合作結構定義、評分方式與其他兩項發現內容尚未揭露，也缺乏對真實機器人部署的驗證。其貢獻在於為具身多代理研究建立共同基準，使不同 MLLM 的協作能力得以在同一平台上比較，對未來多代理系統設計具參考價值。",
+      "title": "MECoBench: A Systematic Study of Multimodal Agent Collaboration in Embodied Environments",
+      "title_zh": "MECoBench：具身環境中多模態代理協作的系統性研究"
     },
     {
       "arxiv_id": "2606.31958",
@@ -3470,7 +3580,9 @@
       "source_name": null,
       "story_id": "arxiv:2606.31958",
       "summary": "Generalist robot policies learn a diverse repertoire of behaviors from large-scale pretraining. In principle, this makes them excellent priors for downstream adaptation via reinforcement learning (RL). In practice, however, standard RL methods leveraging this prior optimize directly over robot actions, requiring the base policy's action distribution to be close to that of a performant policy from the start. This assumption breaks down for complex or long-horizon tasks that fall outside the pretr",
-      "title": "Adapting Generalist Robot Policies with Semantic Reinforcement Learning"
+      "summary_zh": "通用機器人策略透過大規模預訓練學得多樣行為，理論上是強化學習（RL）下游調適的優良先驗。然而實務上，標準 RL 方法直接於機器人動作空間中最佳化，隱含假設基礎策略的動作分布已接近高效能策略，這個假設在複雜或長時序任務中往往不成立，因為這些任務可能落在預訓練涵蓋範圍之外。本文提出以語意強化學習進行調適，重點在於把最佳化從低階動作提升到較高階的語意層次，讓通用策略的行為先驗能更有效地引導學習，減少對動作分布接近度的依賴。摘要指出，此設計針對既有 RL 調適假設的失效情境。由於目前僅有摘要，語意表徵的具體形式、與行為克隆或既有 RL 微調方法的比較、以及真實機器人實驗的成功率皆未揭露，也難以判斷對長時序任務的實際增益幅度。其意義在於為通用機器人策略的後訓練提供更符合任務結構的調適路徑，對通用機器人基礎模型的落地應用具有潛在影響。",
+      "title": "Adapting Generalist Robot Policies with Semantic Reinforcement Learning",
+      "title_zh": "以語意強化學習調適通用機器人策略"
     },
     {
       "arxiv_id": "2606.31952",
@@ -3522,7 +3634,9 @@
       "source_name": null,
       "story_id": "arxiv:2606.31952",
       "summary": "Decomposing classical matrices into linear combinations of Pauli strings is a major bottleneck for end-to-end implementations of near-term quantum algorithms. In this work, we consider a promise version of this Pauli decomposition problem in which the matrix is guaranteed to have support on only $k = \\mathsf{poly}(n)$ Pauli strings and is given through classical sparse query access. Existing Pauli decomposition algorithms are designed for the generic, dense problem and do not inherently take adv",
-      "title": "An efficient Pauli decomposition algorithm for structured matrices"
+      "summary_zh": "把古典矩陣分解為 Pauli 字串的線性組合，是近期量子演算法端到端實作的主要瓶頸之一，因為分解成本往往隨矩陣規模急遽上升。既有 Pauli 分解演算法多為一般稠密問題設計，未利用輸入矩陣的稀疏或結構特性。本文研究此問題的一種 promise 版本：保證矩陣僅在 k = poly(n) 個 Pauli 字串上有支撐，並以古典稀疏查詢模型存取該矩陣，在此設定下設計更有效率的分解演算法。作者主張，透過善用稀疏查詢與已知支撐結構，可繞開稠密演算法的固有負擔。摘要未提供演算法的具體查詢複雜度、時間複雜度上界、與既有方法的實證比較，也未說明當 promise 不成立時的穩健性。其重要性在於為含結構的量子模擬與量子電路編譯提供更快的古典前處理工具，若能進一步驗證，將有助於降低近中期量子演算法實作門檻。",
+      "title": "An efficient Pauli decomposition algorithm for structured matrices",
+      "title_zh": "針對結構化矩陣的高效率 Pauli 分解演算法"
     },
     {
       "arxiv_id": "2606.31948",
@@ -3573,7 +3687,9 @@
       "source_name": null,
       "story_id": "arxiv:2606.31948",
       "summary": "Many path planning algorithms have been introduced so far, but most are costly, in path cost and in processing time, in large-scale uncluttered 3D environments such as underground mining stopes explored by an unmanned aerial vehicle (UAV). Rapidly-exploring Random Tree (RRT) algorithms are popular because of their probabilistic completeness and rapidity in finding a feasible path in single-query problems. Many of the algorithms (e.g. Informed RRT*, RRT#) developed to improve RRT need considerabl",
-      "title": "RRT-Rope: A deterministic shortening approach for fast near-optimal path planning in large-scale uncluttered 3D environments"
+      "summary_zh": "在礦坑採場等大規模且幾乎無障礙物的 3D 環境中，無人機（UAV）路徑規劃同時面臨路徑成本與運算時間的雙重負擔。Rapidly-exploring Random Tree（RRT）因具備機率完備性、能在單次查詢問題中快速找到可行路徑而廣受採用；但諸如 Informed RRT*、RRT# 等改良方法，往往需要可觀的額外採樣或重連運算才能逼近最佳解，在空曠場景中反而效率不彰。本文提出 RRT-Rope，一種確定性的路徑縮短策略：在 RRT 找到初始可行路徑後，以類似拉繩的方式系統性地縮短路徑，從而在短時間內取得接近最佳的解，且不需仰賴大量隨機重採樣。摘要指出此方法針對大規模空曠環境設計。由於僅有摘要，具體縮短程序、收斂保證、以及與各基準在路徑長度與計算時間上的量化比較均未揭露，也缺乏真實飛行的驗證。其意義在於為採礦巡檢等空曠場景提供兼顧速度與品質的規劃選項。",
+      "title": "RRT-Rope: A deterministic shortening approach for fast near-optimal path planning in large-scale uncluttered 3D environments",
+      "title_zh": "RRT-Rope：大規模空曠 3D 環境中快速近最佳路徑規劃的確定性縮短法"
     },
     {
       "arxiv_id": "2606.31947",
@@ -3624,7 +3740,9 @@
       "source_name": null,
       "story_id": "arxiv:2606.31947",
       "summary": "State-of-the-art speech datasets predominantly focus on widely spoken languages, often overlooking low-resource languages such as Luxembourgish, which remain underrepresented in speech technology research. In this work, we introduce LuxEmo, a 21-hour conversational expressive speech corpus for Luxembourgish with 4 emotion categories. LuxEmo is derived from Radio Télévision Luxembourg (RTL) youth broadcasts, using automated detection followed by human validation. We propose a semi-automatic curat",
-      "title": "LuxEmo: Expressive Text-to-Speech Corpus for Luxembourgish"
+      "summary_zh": "現今頂尖語音資料集多集中於高資源語言，盧森堡語等低資源語言在語音技術研究中長期被忽略，導致語音合成與情感辨識系統缺乏可用資源。本文提出 LuxEmo，一個長達 21 小時的盧森堡語會話式表達性語音語料庫，涵蓋四種情緒類別。語料來自 Radio Télévision Luxembourg（RTL）的青少年廣播節目，先以自動化方法偵測候選片段，再經人工驗證，以確保情緒標籤與轉錄品質；作者並提出一套半自動的策展流程，用以在規模與標註可靠性之間取得平衡。摘要指出該流程可降低人工成本，同時保留專家審核。目前僅有摘要，因此語料庫的說話者多樣性、情緒標籤一致性、以及以該語料訓練的 TTS 系統在主觀與客觀指標上的表現皆未揭露，也尚未說明版權與再利用限制。其意義在於填補盧森堡語語音資源缺口，為低資源語言的表達性語音合成與情緒語音研究提供基礎。",
+      "title": "LuxEmo: Expressive Text-to-Speech Corpus for Luxembourgish",
+      "title_zh": "LuxEmo：盧森堡語的表達性語音合成語料庫"
     },
     {
       "arxiv_id": "2606.31946",
@@ -3699,7 +3817,9 @@
       "source_name": null,
       "story_id": "arxiv:2606.31946",
       "summary": "The fundamental obstacle to industrial grade video generation is the lack of controllability: existing models treat video as a pixel distribution sampling problem, bypassing the explicit, instance level $4D$ $(3D + T)$ physical world. Consequently, content creators cannot specify geometry, motion, camera parameters, or lighting in a deterministic, quantitative way, leading to the infamous ''gacha'' loop that makes professional content creation prohibitively inefficient and expensive. To address ",
-      "title": "World Narrative Model for Highly Controllable Video Generation: A Paradigm Shift from Pixel Sampling to Physical World Orchestration"
+      "summary_zh": "本文指出，工業級影片生成的根本障礙在於可控性不足：現有模型把影片視為像素分布的取樣問題，繞過了明確、實例層級的4D（3D＋時間）物理世界表徵。因此內容創作者無法以決定性、可量化的方式指定幾何、運動、攝影機參數與光照，只能陷入俗稱「轉蛋」的反覆抽樣循環，使專業內容製作效率極低且成本高昂。作者主張應由像素取樣轉向物理世界編排，讓生成過程具備實例級的顯式控制。惟目前僅有摘要，方法細節、實驗設計與量化結果皆未揭露，尚無法判斷其在真實製作流程中的成效與泛化能力。若此典範可行，將大幅降低影視與遊戲等專業內容的製作門檻，對可控生成研究具指標意義。",
+      "title": "World Narrative Model for Highly Controllable Video Generation: A Paradigm Shift from Pixel Sampling to Physical World Orchestration",
+      "title_zh": "世界敘事模型：從像素取樣到物理世界編排的高可控性影片生成新典範"
     },
     {
       "arxiv_id": "2606.31943",
@@ -3763,7 +3883,9 @@
       "source_name": null,
       "story_id": "arxiv:2606.31943",
       "summary": "Is the sense of touch a mechanism for human babies' learning of visual concepts? If so, can we quantify its importance, and to what extent do babies rely on their sense of touch for visual learning? To approach these questions in a principled way, we propose a structured coding system for baby-centric touch events, yielding a dataset of 264k two-second clips of touch events coded according to this system. Using this dataset, we pretrain developmentally grounded models that reveal promising insig",
-      "title": "Making Sense of Touch from the Child's View for Contrastive Learning"
+      "summary_zh": "本文追問：觸覺是否為人類嬰兒學習視覺概念的機制？若是，其重要性可否量化，嬰兒又在多大程度上依賴觸覺進行視覺學習？為以有原則的方式處理這些問題，作者提出一套以嬰兒為中心的觸覺事件結構化編碼系統，並據此建構包含26.4萬段、每段兩秒的觸覺事件資料集。研究以此資料集預訓練具發展心理學基礎的模型，初步結果顯示出 promising 的洞見（摘要於此處截斷）。其貢獻在於把發展科學的質性觀察轉為可規模化的資料與編碼框架，使觸覺與視覺的跨模態對比學習得以實證檢驗。限制在於摘要未說明模型架構、對比目標與下游評測結果，資料集的年齡分布與文化代表性亦待交代；此外，嬰兒觸覺經驗與模型預訓練之間的類比是否成立，仍需更嚴謹的論證。",
+      "title": "Making Sense of Touch from the Child's View for Contrastive Learning",
+      "title_zh": "從嬰兒視角理解觸覺：用於對比學習的觸覺事件編碼"
     },
     {
       "arxiv_id": "2606.31941",
@@ -3820,7 +3942,9 @@
       "source_name": null,
       "story_id": "arxiv:2606.31941",
       "summary": "Unstructured navigational features, such as irregular planting or discontinuities, remain the primary failure mode for under-canopy agricultural robots. Existing geometric approaches often fail in these scenarios because they compress high-dimensional visual data into deterministic spatial references, effectively discarding the uncertainty and semantic context required to navigate ambiguous terrain. To address this, we present LeCropFollow, a visual navigation framework that bypasses explicit ge",
-      "title": "LeCropFollow: Latent Space Planning for Navigation in Unstructured Crop Fields"
+      "summary_zh": "冠層下農業機器人的主要失效模式，來自不規則種植、田間缺株等非結構化導航特徵。既有幾何方法在此類場景常失靈，原因在於它們把高維視覺資料壓縮成決定性的空間參考，等於丟棄了導航模糊地形所需的機率不確定性與語意脈絡。為此，作者提出 LeCropFollow，一套繞過顯式幾何重建的視覺導航框架，改在潛空間中進行規劃。摘要指出其核心思路是保留不確定性與語意資訊，但具體的潛空間表示、規劃器設計與訓練方式未在摘要中揭露。由於僅有摘要，實驗場域、作物種類、成功率與與基線方法的比較結果皆無法評估，其對真實田間雜訊與光照變化的穩健性亦待驗證。若成立，將有助於農業機器人在不規則田區的自主作業。",
+      "title": "LeCropFollow: Latent Space Planning for Navigation in Unstructured Crop Fields",
+      "title_zh": "LeCropFollow：非結構化農田導航的潛空間規劃"
     },
     {
       "arxiv_id": "2606.31933",
@@ -3878,7 +4002,9 @@
       "source_name": null,
       "story_id": "arxiv:2606.31933",
       "summary": "We introduce VidPair-Halluc, a new benchmark for evaluating video hallucination in large video models (LVMs) under rigorous and controlled conditions. Unlike previous benchmarks that primarily rely on text-based perturbations or adversarial questions while neglecting the consistency of visual backgrounds, VidPair-Halluc features video pairs with highly similar backgrounds but distinctly different foreground semantics, enabling precise attribution of model errors to genuine hallucination rather t",
-      "title": "No Place to Hide: Benchmarking Video Hallucination with Background-Controlled Pairs"
+      "summary_zh": "本文提出 VidPair-Halluc，一個在嚴謹受控條件下評估大型影片模型（LVM）影片幻覺的新基準。既有基準多依賴文字擾動或對抗式提問，卻忽略視覺背景的一致性，因而難以判定錯誤究竟源於真正的幻覺，還是背景變異造成的干擾。VidPair-Halluc 的設計是成對影片具備高度相似的背景，但前景語意明顯不同，藉此把模型錯誤精確歸因於幻覺本身，而非背景差異或語言線索。此設計提升評估的內部效度，對影片理解與生成模型的可信度研究具方法論價值。惟摘要未交代資料規模、來源與標註流程，也未提供各模型的實測分數，因此難以判斷其難度分布與是否會飽和；此外，前景與背景的分離是否適用於真實動態場景，仍需進一步檢驗。",
+      "title": "No Place to Hide: Benchmarking Video Hallucination with Background-Controlled Pairs",
+      "title_zh": "無所遁形：以背景受控配對影片進行影片幻覺基準測試"
     },
     {
       "arxiv_id": "2606.31919",
@@ -3939,7 +4065,9 @@
       "source_name": null,
       "story_id": "arxiv:2606.31919",
       "summary": "Zero-shot Object Goal Navigation (ZSON) with RGB-only perception poses a fundamental challenge for embodied agents, as the absence of explicit depth information introduces severe physical uncertainty and semantic-physical misalignment. Existing approaches either rely on high-level semantic reasoning without geometric grounding or learn end-to-end policies that lack explicit physical constraints, often resulting in semantically plausible but physically unsafe behaviors. In this paper, we propose ",
-      "title": "MVP-Nav: Multi-layer Value Map Planner Navigator"
+      "summary_zh": "僅以 RGB 感知的零樣本物件目標導航（ZSON），對具身代理而言是根本性挑戰：缺乏顯式深度資訊帶來嚴重的物理不確定性，以及語意與物理之間的錯位。既有做法不是依賴高階語意推理而缺乏幾何基礎，就是學習端到端策略而缺少顯式物理約束，結果常產生語意上合理、物理上卻不安全的行為。作者因此提出 MVP-Nav，一套多層價值圖規劃導航器，嘗試在語意推理與物理可行性之間取得平衡，將規劃建立於多層次的價值圖表徵之上。摘要在此截斷，尚未說明價值圖的層級設計、與 RGB 感知的整合方式，以及是否使用學習式或幾何式模組。由於缺乏實驗數據，其在 Habitat 等標準基準上的成功率、路徑效率與安全性指標皆無法評估，對動態障礙與光照變化的穩健性亦待驗證。",
+      "title": "MVP-Nav: Multi-layer Value Map Planner Navigator",
+      "title_zh": "MVP-Nav：多層價值圖規劃導航器"
     },
     {
       "arxiv_id": "2606.31916",
@@ -3993,7 +4121,9 @@
       "source_name": null,
       "story_id": "arxiv:2606.31916",
       "summary": "Theory of Mind (ToM) benchmarks for Large Language Models (LLMs) typically rely on passive question-answering formats, but the deployment of LLMs in increasingly agentic and autonomous forms demands new evaluations. In this paper we evaluate an agent's ability to induce specific belief states in other agents by taking actions rather than using conversational persuasion, a capability we call Non-Conversational Planning ToM (NCP-ToM). NCP-ToM is likely to be essential for many agent use-cases, inc",
-      "title": "Theory of Mind and Persuasion Beyond Conversation: Assessing the Capacity of LLMs to Induce Belief States via Planning and Action"
+      "summary_zh": "大型語言模型（LLM）的心智理論（ToM）評測，通常依賴被動的問答形式；然而 LLM 正以愈來愈自主的代理形態部署，這需要新的評估方式。本文評估代理能否不以對話說服、而是透過採取行動來在他者身上誘導特定信念狀態，作者稱此能力為「非對話式規劃心智理論」（NCP-ToM）。此能力對許多代理應用情境可能不可或缺，例如需要影響他人後續決策的任務。論文的核心貢獻在於把 ToM 評測從被動問答推向主動規劃與行動，使評估更貼近真實部署。惟目前僅有摘要，任務環境、對手模型、成功判定準則與量化結果皆未揭露，也無法判斷模型表現究竟反映真正的心理狀態推論，抑或只是對環境捷徑的利用；相關的欺騙與安全風險亦值得後續討論。",
+      "title": "Theory of Mind and Persuasion Beyond Conversation: Assessing the Capacity of LLMs to Induce Belief States via Planning and Action",
+      "title_zh": "超越對話的心智理論與說服：評估 LLM 透過規劃與行動誘導信念狀態的能力"
     },
     {
       "arxiv_id": "2606.31915",
@@ -4045,7 +4175,9 @@
       "source_name": null,
       "story_id": "arxiv:2606.31915",
       "summary": "While conformal prediction provides a general framework for uncertainty quantification in predictive inference, its application is often limited by computational cost. Recent methods, including Jackknife+ and Jackknife-minmax, achieve faster computation by trading a slight loss of efficiency relative to full conformal prediction, but still requires computing leave-one-out refits for all observations. In this paper, we further accelerate conformal prediction by incorporating approximate leave-one",
-      "title": "Accelerating Conformal Prediction via Approximate Leave-One-Out"
+      "summary_zh": "共形預測雖為預測推論提供通用的不確定性量化框架，卻常受計算成本所限。近期方法如 Jackknife+ 與 Jackknife-minmax，透過相對於完整共形預測略犧牲效率來換取更快計算，但仍需對所有觀測計算留一法（leave-one-out）重擬合，成本隨樣本數成長。本文進一步以近似留一法加速共形預測，試圖在維持覆蓋率保證的前提下降低重擬合開銷。摘要在此截斷，未說明近似誤差的理論界線、加速倍率，以及在何種條件下覆蓋率保證仍成立。由於缺乏實驗數據，無法評估其相較 Jackknife+ 系列在效率與統計有效性上的實際取捨。若能給出嚴格保證並驗證於真實資料，將有助於共形預測在大規模或即時場景的落地。",
+      "title": "Accelerating Conformal Prediction via Approximate Leave-One-Out",
+      "title_zh": "以近似留一法加速共形預測"
     },
     {
       "arxiv_id": "2606.31912",
@@ -4101,7 +4233,9 @@
       "source_name": null,
       "story_id": "arxiv:2606.31912",
       "summary": "Learning-based control has revolutionized dynamic locomotion, yet navigating unstructured terrain remains limited by a robot's incomplete awareness of imminent ground contact. While global perception systems such as LiDARs and depth cameras provide environmental context, they are frequently plagued by latencies, occlusions, and the high computational cost of dense geometric reconstruction. On the other hand, proprioceptive feedback is purely reactive, initiating corrections only after impact has",
-      "title": "Learning Locomotion on Discrete Terrain via Minimal Proximity Sensing"
+      "summary_zh": "學習式控制已徹底改變動態運動，但機器人對即將到來的地面接觸缺乏完整感知，仍限制其在非結構化地形的導航能力。全域感知系統如 LiDAR 與深度相機雖能提供環境脈絡，卻常受延遲、遮蔽與稠密幾何重建的高計算成本所苦；另一方面，本體感覺回饋純屬被動反應，唯有在撞擊發生後才啟動修正。本文因此探索以極簡的近距感測學習離散地形上的運動，讓機器人在接觸前即取得關鍵的地面資訊，兼顧低延遲與低算力。摘要在此截斷，未交代感測器配置、硬體平台、地形種類與訓練方法。由於缺乏量化結果，其相較視覺與本體感覺基線的步態成功率、能耗與穩健性皆無法評估；在真實崎嶇地形的泛化能力亦有待驗證。",
+      "title": "Learning Locomotion on Discrete Terrain via Minimal Proximity Sensing",
+      "title_zh": "以極簡近距感測學習離散地形上的運動"
     },
     {
       "arxiv_id": "2606.31909",
@@ -4153,7 +4287,9 @@
       "source_name": null,
       "story_id": "arxiv:2606.31909",
       "summary": "In this work, we study Compositional Dexterous Functional Object Manipulation (CD-FOM): tasks such as aiming and actuating a spray bottle on a plant or a glue gun on wood, which require both actuating an object's internal mechanism and controlling its pose to apply the object's function to the environment. These tasks pose significant challenges for robots due to the demanding integration of semantic understanding of the object's function, actuation mode, and application area with intricate phys",
-      "title": "CoDex: Learning Compositional Dexterous Functional Manipulation without Demonstrations"
+      "summary_zh": "這篇論文研究「組合式靈巧功能性物體操作」（CD-FOM），任務例如對植物噴灑噴霧瓶、或以膠槍在木材上塗膠，重點在於機器人不只要啟動物體的內部機構，還必須同時控制其姿態，才能把物體的功能施加到環境上。這類任務的困難處在於：機器人必須整合對物體功能的語意理解、驅動方式與作用區域的判斷，並與複雜的物理互動控制相互協調，遠比單純的抓取或搬運更為艱鉅。作者提出 CoDex，訴求在完全不使用人類示範的情況下學習這類組合式技能，凸顯了傳統模仿學習在資料蒐集成本上的限制。受限於目前僅有摘要，本文的具體方法設計、獎勵或學習訊號來源、實驗平台與量化結果，以及失敗情境與泛化能力的評估，皆尚未在摘要中揭露，因此無法確認其在真實硬體上的成功率與穩健性。儘管如此，此工作把靈巧操作從「姿態控制」推進到「功能性使用」的層次，對家庭服務、農業與工業自動化等需要工具使用的場景具有指標意義。讀者應留意其後續公開的完整方法與實驗細節，特別是無示範學習在長時程、多階段任務上的可行性。",
+      "title": "CoDex: Learning Compositional Dexterous Functional Manipulation without Demonstrations",
+      "title_zh": "CoDex：無示範條件下的組合式靈巧功能性物體操作學習"
     },
     {
       "arxiv_id": "2606.31904",
@@ -4206,7 +4342,9 @@
       "source_name": null,
       "story_id": "arxiv:2606.31904",
       "summary": "The generation of synthetic relational databases often involves modeling complex temporal dynamics, such as transaction logs or event sequences. A significant challenge in this domain is the handling of categorical time series (e.g., status codes), where standard encoding methods like one-hot encoding fail to capture intrinsic frequency-domain features such as seasonality and cyclicity. In this paper, we introduce Sequential RC-TGAN (Seq. RC-TGAN), a temporal extension of the RC-TGAN framework, ",
-      "title": "Sequential RC-TGAN: Generating Relational Time Series with Spectral Envelope Loss"
+      "summary_zh": "此研究聚焦於合成關聯式資料庫的生成問題，這類資料常包含交易紀錄或事件序列等複雜的時間動態。作者指出一個關鍵挑戰：類別型時間序列（例如狀態代碼）難以處理，因為 one-hot 等標準編碼方式無法捕捉季節性與週期性等內在的頻域特徵，導致生成結果在時間結構上失真。為此，論文提出 Sequential RC-TGAN，可視為 RC-TGAN 框架的時間序列延伸版本，並引入「頻譜包絡損失」（Spectral Envelope Loss）作為新的訓練目標，期望在生成過程中同時約束時域與頻域的一致性。摘要僅止於此，未說明模型架構細節、生成器與鑑別器的設計、所使用的資料集規模、評估指標，以及相對於既有基線的量化改善幅度。此外，頻譜損失對不同取樣率與非平穩序列的敏感度、以及生成資料在隱私與下游任務上的實際可用性，仍待完整論文釐清。整體而言，該工作嘗試把訊號處理中的頻域觀點帶入關聯式資料合成，對需要產生擬真事件日誌、測試資料或補充稀少類別樣本的資料工程與機器學習實務具有參考價值。",
+      "title": "Sequential RC-TGAN: Generating Relational Time Series with Spectral Envelope Loss",
+      "title_zh": "Sequential RC-TGAN：以頻譜包絡損失生成關聯式時間序列"
     },
     {
       "arxiv_id": "2606.31903",
@@ -4263,7 +4401,9 @@
       "source_name": null,
       "story_id": "arxiv:2606.31903",
       "summary": "Multimodal large language models (MLLMs) increasingly process long visual-token sequences, increasing the overall inference computation. Existing acceleration methods usually remove visual tokens or skip visual-token updates in entire layers, but these coarse strategies may discard fine-grained evidence or suppress useful operators together with redundant ones. In this paper, we study visual-token computation from an answer-observable perspective and find that late visual-token updates can remai",
-      "title": "Attend, Transform, or Silence: Operator-Level Visual Skipping for Efficient Multimodal LLM Inference"
+      "summary_zh": "多模態大型語言模型（MLLM）日益需要處理冗長的視覺 token 序列，使整體推論計算量大幅攀升。既有加速方法多半直接刪除視覺 token，或在整個層級跳過視覺 token 的更新，但這種粗糙策略可能同時丟棄細緻的證據，並把有用的運算子與冗餘運算子一併抑制，造成準確度下降。本文改從「答案可觀測性」的角度檢視視覺 token 的計算，發現較後期的視覺 token 更新在許多情況下對最終輸出的影響有限，因而提出在運算子層級進行視覺跳過（operator-level visual skipping）的構想，讓模型能依情境選擇要參與注意力、進行轉換，或直接靜默略過，以在效率與正確性之間取得更細緻的平衡。由於摘要僅涵蓋問題動機與觀察，具體的跳過準則、門檻設定、是否需要額外訓練或微調、以及在各基準上的準確度與延遲、記憶體節省幅度，均未在摘要中呈現；其對不同 MLLM 架構與長影片、高解析影像等情境的泛化性亦待驗證。此方向對部署成本敏感的推論服務具實務意義。",
+      "title": "Attend, Transform, or Silence: Operator-Level Visual Skipping for Efficient Multimodal LLM Inference",
+      "title_zh": "Attend、Transform 或靜默：多模態 LLM 高效推論的運算子層級視覺跳過"
     },
     {
       "arxiv_id": "2606.31895",
@@ -4316,7 +4456,9 @@
       "source_name": null,
       "story_id": "arxiv:2606.31895",
       "summary": "LiDAR has increasingly been integrated into traffic cameras to expand coverage and mitigate occlusion in roadside cooperative perception. However, how unimodal and camera-LiDAR fusion architectures behave under variations in LiDAR point sparsity induced by sensor configurations and scene-dependent sensing conditions remains underexplored. We introduce RESOLVE, a large-scale real-world benchmark dataset featuring multi-resolution roadside LiDAR and synchronized camera-LiDAR sensing for systematic",
-      "title": "RESOLVE: A Multi-Resolution and Multi-Modal Dataset for Roadside Cooperative Perception"
+      "summary_zh": "光達（LiDAR）近年被整合進交通攝影機，以擴大路側協同感知的覆蓋範圍並降低遮蔽問題。然而，當感測器配置與場景相關的感測條件造成點雲稀疏度變化時，單模態架構與攝影機—光達融合架構的行為差異，仍缺乏系統性理解。為此，作者提出 RESOLVE，一個大規模的真實世界基準資料集，具備多解析度的路側光達，以及同步的攝影機—光達感測，用以進行系統化評估。此資料集的價值在於把「解析度」與「模態組合」視為可操控的變因，使研究者能檢驗融合模型在不同點雲密度下的穩健性，進而釐清效能衰退究竟源於感測稀疏、時間同步誤差，或融合策略本身的限制。摘要未提供資料規模、感測器型號、標註類別、評估指標與基準結果，因此無法判斷其相對既有路側資料集的優勢幅度，亦不清楚是否涵蓋夜間、雨天等惡劣天候。整體而言，RESOLVE 針對自駕與智慧交通中的協同感知，提供了一個可檢驗模態與解析度權衡的實驗平台，對車路雲一體化部署的模型選型具參考價值。",
+      "title": "RESOLVE: A Multi-Resolution and Multi-Modal Dataset for Roadside Cooperative Perception",
+      "title_zh": "RESOLVE：用於路側協同感知的多解析度多模態資料集"
     },
     {
       "arxiv_id": "2606.31886",
@@ -4369,7 +4511,9 @@
       "source_name": null,
       "story_id": "arxiv:2606.31886",
       "summary": "Distributed knowledge is a notion of group knowledge studied in multi-agent epistemic logic. Semantically, the distributed knowledge of a group is interpreted via an accessibility relation given by the intersection of the epistemic accessibility relations of the agents in that group. This paper investigates sequent calculi for epistemic logics of distributed knowledge based on K45, KD45, and S5. While cut elimination holds in existing sequent calculi for modal logics K45 and KD45, it fails in al",
-      "title": "Analytic Cut in Epistemic Logics with Distributed Knowledge"
+      "summary_zh": "分散式知識（distributed knowledge）是多代理人認知邏輯中研究的一種群體知識概念：在語意上，一個群體的分散式知識由該群體中所有代理人認知可及關係的交集所給定的可及關係來詮釋，直觀上代表群體成員若把各自所知合併後可推得的資訊。本文研究以 K45、KD45 與 S5 為基礎的分散式知識認知邏輯之序列演算（sequent calculi），並聚焦於結構規則中的切割規則。已知在既有的 K45 與 KD45 模態邏輯序列演算中，切割消去（cut elimination）成立，但在其他情況下會失敗，這對證明理論性質與自動化推證的完備性造成影響。作者因此引入「解析切割」（analytic cut）的概念，試圖在切割消去失效時仍維持證明搜尋的封閉性與可控性。由於摘要僅止於問題陳述，本文對應的演算規則設計、完備性與終止性證明、以及不同框架條件下的差異分析，均未在摘要中說明，也沒有形式化系統的複雜度或反例結果可供檢核。此工作屬邏輯與知識表示的理論貢獻，對多代理人系統的推論基礎與形式驗證具長期意義。",
+      "title": "Analytic Cut in Epistemic Logics with Distributed Knowledge",
+      "title_zh": "具分散式知識的認知邏輯中的解析切割"
     },
     {
       "arxiv_id": "2606.31875",
@@ -4421,7 +4565,9 @@
       "source_name": null,
       "story_id": "arxiv:2606.31875",
       "summary": "Autonomous vehicles (AVs) must navigate not only motion-based hazards but also socially complex situations whose danger is constituted by inter-agent relationships rather than movement statistics alone. A child running away from a guardian, a person being carried by another, or a pursuer chasing a pedestrian across a sidewalk are all anomalous in social context, yet none produces an obvious motion signal that current anomaly detectors are equipped to flag. We introduce SENSE-VAD, the first synth",
-      "title": "SENSE-VAD: Sentient and Semantic Video Anomaly Detection for Autonomous Driving"
+      "summary_zh": "自駕車（AV）不僅要應對基於運動的危險，還必須處理社會情境複雜的狀況：其危險性來自代理人之間的關係，而非單純的運動統計量。例如孩童從監護人身邊跑開、有人被另一人背負，或有人在人行道上追逐行人，這些在社會脈絡下都屬異常，卻未必產生現行異常偵測器能捕捉的明顯運動訊號。為此，作者提出 SENSE-VAD，號稱是首個具備此類社會感知與語意理解能力的合成影片異常偵測方法，訴求把互動關係與社會意涵納入判斷依據，而非僅依賴軌跡或速度特徵。摘要在此中斷，未說明資料集如何合成、是否結合真實資料、模型架構、評估指標（例如 frame-level AUC）與量化結果，也未交代與既有基準的比較幅度，以及對遮擋、夜間或擁擠場景的穩健性。此研究的重要性在於指出自駕安全中的一個盲區：異常的定義可能是社會性的，若偵測器只看運動，將系統性漏檢這類高風險情境。對行人安全與城市自駕部署而言，其後續完整實驗結果值得關注。",
+      "title": "SENSE-VAD: Sentient and Semantic Video Anomaly Detection for Autonomous Driving",
+      "title_zh": "SENSE-VAD：自駕情境下具社會感知與語意的影片異常偵測"
     },
     {
       "arxiv_id": "2606.31876",
@@ -4475,7 +4621,9 @@
       "source_name": null,
       "story_id": "arxiv:2606.31876",
       "summary": "To improve safety in Large Language Models (LLMs) we can either perform post-training alignment or exploit refusal directions in the activation space. Both strategies are less feasible in Multimodal LLMs (MLLMs) as they require unsafe multimodal data, harder to collect than their unimodal counterpart. In this work, we relax this constraint and investigate whether textual refusal directions, extracted directly from the LLM backbone, generalize across modalities (i.e., image, video). Preliminary f",
-      "title": "Harnessing Textual Refusal Directions for Multimodal Safety"
+      "summary_zh": "提升大型語言模型（LLM）安全性的做法，大致可分為後訓練對齊，以及在活化空間中利用「拒絕方向」（refusal directions）兩類。然而這兩種策略在多模態大型語言模型（MLLM）中都較難實行，因為它們通常需要不安全的多模態資料，而這類資料的蒐集難度遠高於單模態版本。本文放寬此限制，探討一個核心問題：直接從 LLM 主幹中萃取出的文字拒絕方向，是否能跨模態（影像、影片）泛化，進而在不需要不安全多模態樣本的前提下提升多模態安全性。作者提出初步發現，暗示文字層級的拒絕表徵具備某種模態無關性，可用於引導多模態輸入下的拒絕行為。由於摘要僅呈現初步結果，本文的實驗規模、所涵蓋的模型與攻擊型態、跨模態泛化的量化幅度，以及是否伴隨過度拒絕（over-refusal）導致正常請求被拒等副作用，均未在摘要中交代，方法在不同架構與影片時序輸入上的穩健性仍待驗證。此工作對降低多模態安全對齊的資料成本具有啟發性。",
+      "title": "Harnessing Textual Refusal Directions for Multimodal Safety",
+      "title_zh": "運用文字拒絕方向實現多模態安全"
     },
     {
       "arxiv_id": "2606.31866",
@@ -4526,7 +4674,9 @@
       "source_name": null,
       "story_id": "arxiv:2606.31866",
       "summary": "We introduce inquisitive action logic, InqAL, a multi-agent modal logic for reasoning about action. While traditional approaches focus on what properties of the outcome an agent can force, InqAL also captures what aspects of the outcome an agent determines through their actions. As we argue, such claims of agentive determination are naturally analyzed as modal claims involving questions.\n  Technically, InqAL is a multi-agent extension of inquisitive neighborhood logic based on concurrent game st",
-      "title": "Inquisitive Action Logic"
+      "summary_zh": "本文提出「探究式行動邏輯」（InqAL），一套用於推論行動的多代理人模態邏輯。傳統取徑關注的是代理人能強制保證結果具有哪些性質（即策略性能力），而 InqAL 更進一步刻畫代理人的行動「決定了」結果的哪些面向。作者主張，這類關於行動性決定的宣稱，自然可分析為涉及問題（questions）的模態宣稱，因而把探究式語意與行動邏輯結合，使「誰決定了什麼」能以問題的形式精確表述。在技術層面，InqAL 是以並行賽局結構（concurrent game structures）為基礎所建構的探究式鄰域邏輯（inquisitive neighborhood logic）之多代理人延伸。透過鄰域語意，模型能處理不完整或非正規的可及性結構，而探究式層次則負責表達問題與解答的依賴關係。受限於摘要，本文的公理系統、完備性與對應性結果、可判定性與計算複雜度，以及具體的應用案例，均未在此揭露，因此無法評估其相對既有策略邏輯的表達力增益。此工作對多代理人系統的責任歸屬與因果決定分析具有理論意義。",
+      "title": "Inquisitive Action Logic",
+      "title_zh": "探究式行動邏輯"
     },
     {
       "arxiv_id": "2606.31846",
@@ -4582,7 +4732,9 @@
       "source_name": null,
       "story_id": "arxiv:2606.31846",
       "summary": "Vision-Language-Action (VLA) models offer a promising framework for robotic manipulation by connecting language instructions, visual observations, and continuous control. However, most existing policies remain limited by behavior cloning or supervised fine-tuning (SFT) from fixed demonstrations, which provides limited opportunity to improve from the policy's own failures. In this paper, we present Z-1, a reinforcement learning (RL) post-training framework for flow-based VLA models. Built on top ",
-      "title": "Z-1: Efficient Reinforcement Learning for Vision-Language-Action Models"
+      "summary_zh": "視覺-語言-動作（Vision-Language-Action, VLA）模型試圖把語言指令、視覺觀測與連續控制串接起來，是機器人操作的重要方向。然而目前多數策略仍以行為複製或固定示範的監督式微調（SFT）為主，策略難以從自身失敗中學習。本文提出 Z-1，一套針對 flow-based VLA 模型的強化學習後訓練框架，核心目標是在既有示範之外，透過 RL 讓策略能由自身執行結果獲得回饋並持續改進。摘要指出其設計建立於特定基礎之上，但由於僅有摘要、且原文於關鍵處截斷，方法細節、獎勵設計、實驗環境與量化結果均未揭露，因此無法判斷其相對於既有 SFT 或 RL 微調基準的實際增益、樣本效率與穩定性。整體而言，此工作關切的是 VLA 後訓練階段缺乏自我改進機制的痛點，若能驗證，將有助於提升機器人策略在真實任務中的泛化與可靠度；惟具體貢獻仍待全文確認。",
+      "title": "Z-1: Efficient Reinforcement Learning for Vision-Language-Action Models",
+      "title_zh": "Z-1：為視覺-語言-動作模型打造的高效率強化學習框架"
     },
     {
       "arxiv_id": "2606.31845",
@@ -4633,7 +4785,9 @@
       "source_name": null,
       "story_id": "arxiv:2606.31845",
       "summary": "A transformer's feed-forward (FFN) sublayer materializes the distinctions attention gathers, yet gives no account of what it computes. In a parameter-neutral replacement, each hidden unit is an explicit fuzzy set operation on sigmoid-bounded [0,1] memberships: intersection A*B and set-difference A*(1-B), the latter a bounded positive negation (\"A but not B\") that gated/bilinear units lack -- a negation-capable FFN (NC-FFN). On N-bit parity they are the most parameter-efficient reasoning basis at",
-      "title": "Explicit Fuzzy Logic in the Feed-Forward Layer: Self-Forgetting Quantifiers Discover Legible Grammatical-Licensing Detectors"
+      "summary_zh": "Transformer 的前饋（FFN）子層負責把注意力蒐集到的區辨資訊具體化，但學界對它究竟計算了什麼仍缺乏清楚解釋。本文提出一種參數量中性的替代設計：每個隱藏單元都是對 sigmoid 有界 [0,1] 成員度進行的顯式模糊集合運算，包含交集 A*B 與集合差 A*(1-B)，後者代表有界正向否定（「A 但不是 B」），而這正是閘控或雙線性單元所欠缺的能力，作者稱之為具否定能力的 FFN（NC-FFN）。摘要指出，在 N-bit parity 任務上，此類單元是最具參數效率的推理基礎；由於僅有摘要且原文於關鍵處截斷，其在文法允准（grammatical licensing）任務上的偵測器可讀性、自遺忘量詞的具體行為、與標準 FFN 的等參數比較結果，以及是否可推廣到更大規模語言模型，均未提供。此研究的重要性在於嘗試用可解釋的模糊邏輯運算重新詮釋 FFN，若能成立，將同時改善模型可解釋性與參數效率。",
+      "title": "Explicit Fuzzy Logic in the Feed-Forward Layer: Self-Forgetting Quantifiers Discover Legible Grammatical-Licensing Detectors",
+      "title_zh": "前饋層中的顯式模糊邏輯：自遺忘量詞發掘可讀的文法允准偵測器"
     },
     {
       "arxiv_id": "2606.31844",
@@ -4687,7 +4841,9 @@
       "source_name": null,
       "story_id": "arxiv:2606.31844",
       "summary": "A local-to-global context mismatch arises when autoregressive traffic simulators trained on ego-centric driving logs are deployed in globally observable closed-loop environments. In such logs, the ego vehicle has rich local observations, while surrounding agents are only partially observed due to perception limits and occlusions. As a result, simulators may learn incomplete context--action mappings that remain hidden in log-based training but emerge during closed-loop rollouts, leading to unreal",
-      "title": "Bridging Local Observation and Global Simulation in Closed-Loop Traffic Modeling"
+      "summary_zh": "本文指出交通模擬器部署時的一項關鍵落差：以自駕車視角日誌訓練的自迴歸交通模擬器，被放到可全域觀測的閉環環境中時，會出現「局部到全域」的脈絡不匹配。在此類日誌中，自車（ego vehicle）擁有豐富的局部觀測，但周圍代理因感知限制與遮蔽而僅被部分觀測，使模擬器學到不完整的脈絡—動作對應。這些缺陷在以日誌為基礎的訓練中不易顯現，卻會在閉環推演時浮現，導致不真實的行為。摘要於關鍵處截斷，因此作者提出的修正方法、評估指標、使用資料集與量化改善幅度皆未揭露，也無法判斷其能否在不犧牲多樣性的前提下提升閉環真實度。此議題的重要性在於：閉環模擬已是自動駕駛規劃與端到端模型評估的核心工具，若訓練與部署的觀測條件不一致，評估結果可能失真；釐清並修補此落差，對模擬基準的可信度具有實質意義。",
+      "title": "Bridging Local Observation and Global Simulation in Closed-Loop Traffic Modeling",
+      "title_zh": "在閉環交通模擬中銜接局部觀測與全域模擬"
     }
   ],
   "radar": [
@@ -4739,7 +4895,8 @@
       "source_name": "AI Shift Tech Blog (Zenn)",
       "story_id": "fallback:2b579267ab1ffdb8",
       "summary": "こんにちは、AIチームの戸田です。\n2026年6月29日（月）、AI Shift 主催の「AI Shift Local LLM Meetup #2 〜クラウドLLMに頼りきらない開発体験をつくる〜」を、渋谷の Abema Towers で開催しました。\nhttps://cyberagent.connpass.com/event/397378/\n第2回となる今回は、Local LLM を開発の相棒として使ってみる、1時間集中の個人参加型ハッカソンという形式です。\n開催の動機のひとつに、直近の Fable / Mythos のアクセス停止騒動があります。商用クラウドLLMは便利な一方で、提供...",
-      "title": "クラウドLLMに頼りきらない開発体験をつくる （AI Shift Local LLM Meetup #2 レポート）"
+      "title": "クラウドLLMに頼りきらない開発体験をつくる （AI Shift Local LLM Meetup #2 レポート）",
+      "title_zh": "打造不依賴雲端 LLM 的開發體驗（AI Shift Local LLM Meetup #2 活動紀實）"
     },
     {
       "arxiv_id": null,
@@ -4791,7 +4948,8 @@
       "source_name": "AIDB - AI Research Database",
       "story_id": "fallback:2f50d0a6e072335a",
       "summary": "<p>最近のモデルには、文章を書いている最中のAI自身の内部状態を、別の仕組みが見張る設計が入っています。危うい兆候があると判断された瞬間に、出力を止める仕組みです。 新しく公開されたGPT-5.6では、こうした安全設計が大きく変わりました。新しいモデルは、Sol、Terra、Lunaの三つで構成されます。 本記事では、医療の受け答え、事実の正確さ、エージェントへの作業委任など、日々の使い勝手に直結する変化にしぼって、その中身を読み解きます。 プレミアム会員限定コンテンツです 無料会員でもできること 一部記事の閲覧 研究紹介短信ライブラリの基本機能 プレミアム会員の特典 全過去記事の無制限閲覧 専門&#8230;</p>\n<p>The post <a href=\"https://ai-data-base.com/archives/112458\"><span class=\"locked-post\">🔒</span> GPT-5.6で賢くなる部分と、もしかすると弱くなる部分</a> first appeared on <a href=\"https://ai-data-base.com\">AIDB</a>.</p>",
-      "title": "🔒 GPT-5.6で賢くなる部分と、もしかすると弱くなる部分"
+      "title": "🔒 GPT-5.6で賢くなる部分と、もしかすると弱くなる部分",
+      "title_zh": "GPT-5.6 可能變強的地方，以及或許會變弱的地方"
     },
     {
       "arxiv_id": null,
@@ -4848,7 +5006,8 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:0f000310ac4e91e2",
       "summary": "In this post, we explore how Outpost VFX achieved 8x faster training speeds using AWS infrastructure to transform their face replacement workflow, the technical architecture they implemented to overcome single-GPU limitations, and the measurable results achieved through AWS multi-GPU training.",
-      "title": "How Outpost VFX Uses AWS to Accelerate AI Model Training for Visual Effects"
+      "title": "How Outpost VFX Uses AWS to Accelerate AI Model Training for Visual Effects",
+      "title_zh": "Outpost VFX 如何運用 AWS 加速視覺特效的 AI 模型訓練"
     },
     {
       "arxiv_id": null,
@@ -4898,7 +5057,8 @@
       "source_name": "Microsoft Research Blog",
       "story_id": "fallback:c612635857db5234",
       "summary": "<p>AI agents often fail because their instructions, or skills, are manually modified with no guarantee of improvement. Learn how SkillOpt turns skill editing into a training process, making agent behavior more reliable without changing model weights.</p>\n<p>The post <a href=\"https://www.microsoft.com/en-us/research/blog/skillopt-agent-skills-as-trainable-parameters/\">SkillOpt: Agent skills as trainable parameters</a> appeared first on <a href=\"https://www.microsoft.com/en-us/research\">Microsoft Research</a>.</p>",
-      "title": "SkillOpt: Agent skills as trainable parameters"
+      "title": "SkillOpt: Agent skills as trainable parameters",
+      "title_zh": "SkillOpt：把代理技能當成可訓練參數"
     },
     {
       "arxiv_id": null,
@@ -4952,7 +5112,8 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:31fac4c89dc7b177",
       "summary": "In this post, you'll learn how fine-tuning Amazon Nova models using Amazon SageMaker AI addresses these specific issues by teaching the models to recognize your exact data patterns, distinguish between similar fields, and process information more efficiently—achieving up to 94.77% extraction accuracy while reducing costs 50%.",
-      "title": "Fine-tune Amazon Nova models for accurate email data extraction"
+      "title": "Fine-tune Amazon Nova models for accurate email data extraction",
+      "title_zh": "微調 Amazon Nova 模型以精準擷取電子郵件資料"
     },
     {
       "arxiv_id": null,
@@ -5002,7 +5163,9 @@
       "source_name": "Zenn LLM Topic",
       "story_id": "fallback:4e5e373967b1aaed",
       "summary": "TL;DR\n\n🤖 エージェント能力が大幅強化 — ブラウザ・ターミナルを使った複数ステップのタスクを自律的に完遂できるようになった\n💰 Opus 4.8に近い性能をSonnet価格で — 従来Opusクラス専有だったエージェント性能をより低コストで利用可能\n🔒 サイバーセキュリティは意図的に学習されていない — エクスプロイト開発能力はOpus系より大幅に低く、デフォルトでサイバーセーフガードが有効\n✅ Sonnet 4.6より全体的に安全 — ハルシネーション・過度な同調・悪意ある指示への従順さがいずれも低下\n\n\n\n はじめに\n2026年6月30日、AnthropicはClaude...",
-      "title": "Claude Sonnet 5 がリリース— エージェント性能が大幅強化、Opus並みの実力をSonnet価格で"
+      "summary_zh": "這篇介紹 Anthropic 於 2026 年 6 月 30 日發布的 Claude Sonnet 5，重點在於代理（agent）能力的顯著提升：模型能自主完成需要操作瀏覽器與終端機的多步驟任務，過去這類能力多半屬於 Opus 等級等高成本模型，如今在 Sonnet 價位即可取得接近 Opus 4.8 的代理表現，對成本敏感的開發者與企業導入具有直接意義。安全性方面，文章強調 Anthropic 刻意不訓練其網路攻防相關能力，因此漏洞利用（exploit）開發能力明顯低於 Opus 系列，且預設啟用網路安全防護機制。此外，相較 Sonnet 4.6，模型在幻覺、過度順從使用者，以及對惡意指令的服從度上都有下降，整體安全性提升。需要注意的是，目前僅有摘要內容，缺乏具體評測基準、代理任務成功率與成本數據，實際表現仍待完整技術報告與第三方驗證。",
+      "title": "Claude Sonnet 5 がリリース— エージェント性能が大幅強化、Opus並みの実力をSonnet価格で",
+      "title_zh": "Claude Sonnet 5 發布：代理能力大幅強化，以 Sonnet 價位達到 Opus 等級實力"
     },
     {
       "arxiv_id": null,
@@ -5052,7 +5215,9 @@
       "source_name": "Zenn LLM Topic",
       "story_id": "fallback:d63ade1869070fd8",
       "summary": "はじめに\nこんにちは。Tyoraです。AI開発の初学者として、日々「AIと人間の新しい対話の形」を模索しています。\n最近、LLM（大規模言語モデル）をゲームのNPCに組み込む試みが盛んですが、単にテキストを表示するだけでは「人間味」に欠けると感じることがあります。そこで私は、AIの思考プロセスとUnityのアニメーションをリアルタイムに同期させるシステム「Nebula System」を開発しました。\n「Nebula System」は、もともとはチャットボットとして開発がスタートしましたが、AIの思考や感情をよりダイレクトに具象化するため、Unity上のNPCとして実装する形へと進化さ...",
-      "title": "LangGraph + Unity で作る「意思を持つ NPC」：SSE によるリアルタイム感情同期の実装ガイド"
+      "summary_zh": "本文由 AI 開發初學者 Tyora 撰寫，探討如何讓遊戲中的 NPC 更有「人味」。作者觀察到，目前許多把大型語言模型（LLM）嵌入遊戲 NPC 的嘗試，往往只停在顯示文字，缺乏情緒與行為的連貫性。為此，作者開發了名為「Nebula System」的系統，將 AI 的思考過程與 Unity 的動畫即時同步。此系統最初以聊天機器人形式起步，後來為更直接地具象化 AI 的思考與情感，演進為 Unity 中的 NPC 實作。文章聚焦於技術架構，特別是使用 LangGraph 組織 LLM 的推理流程，並透過 Server-Sent Events（SSE）把模型的輸出串流到 Unity，讓角色動畫能隨情緒狀態即時變化。由於目前僅取得摘要，具體的延遲數據、情緒映射方法、模型選型與效能評估皆未揭露；此外，這屬於個人專案性質的實作分享，並非經同儕審查的研究，其適用性與可擴充性仍需更多驗證。對想結合 LLM 與遊戲引擎的開發者而言，本文提供了可參考的整合思路。",
+      "title": "LangGraph + Unity で作る「意思を持つ NPC」：SSE によるリアルタイム感情同期の実装ガイド",
+      "title_zh": "以 LangGraph 與 Unity 打造「有意識的 NPC」：透過 SSE 實現即時情緒同步的實作指南"
     },
     {
       "arxiv_id": null,
@@ -5102,7 +5267,9 @@
       "source_name": "Zenn LLM Topic",
       "story_id": "fallback:27c2b87bbb307dbc",
       "summary": "筆者は個人でブログを運営しているが、記事を1本書くのに調査・執筆・校正・画像作成・WordPress投稿で2〜3時間かかっていた。これをキーワードを入力するだけで全部やってくれる仕組みに置き換えたところ、人間がやるのはレビューと公開ボタンを押すことだけになった。\n本記事では、Claude APIを中心に組んだ記事生成パイプラインの仕組みと、実装上のポイントを解説する。品質チェック→AIリライトのループや、ComfyUIによる記事画像の自動生成まで含めた一気通貫の構成だ。\n世の中には「生成して投稿するだけ」のツールも多いが、ここで紹介するのは品質保証を組み込んだ自動化である。実際に運用し...",
-      "title": "Claude APIで記事生成・品質チェック・WordPress投稿を自動化する"
+      "summary_zh": "本文描述一套個人部落格的自動化流程。作者原本撰寫一篇文章，從調查、撰稿、校對、製作圖片到發布至 WordPress，需耗費二至三小時；改造後只需輸入關鍵字，其餘步驟皆自動完成，人類僅需負責審閱與按下發布。整條流程以 Claude API 為核心，特色是內建品質保證機制：先由模型生成初稿，接著執行品質檢查，再進入 AI 改寫的循環，反覆修訂直到符合標準，而非坊間常見的「生成後直接發布」工具。文章亦整合 ComfyUI，自動產生文章所需的配圖，形成調查、撰稿、校對、製圖到投稿的一氣呵成架構。作者並分享實際維運心得與實作要點。由於目前僅有摘要，具體的評分標準、迴圈終止條件、提示設計、成本與流量數據均未提供，因此難以評估其品質保證機制的實際效果。對想建立內容自動化管線的開發者而言，本文提供了兼顧生成與品管的實務參考。",
+      "title": "Claude APIで記事生成・品質チェック・WordPress投稿を自動化する",
+      "title_zh": "以 Claude API 自動化文章生成、品質檢查與 WordPress 投稿"
     },
     {
       "arxiv_id": null,
@@ -5150,7 +5317,9 @@
       "source_name": "LayerX Engineering Blog",
       "story_id": "fallback:51ffb6293a345cd8",
       "summary": "こんにちは、LayerXのAi Workforce事業部でPMOをしているkurosawaです！ この記事ではPMO業務にAIを取り入れる際にどの業務から始めるとよいのか、逆にどこを後回しにすべきなのか、そしてLayerXで実際にどのような取り組みをしているのかを紹介します。 Ai Workforceは、企業内のデータや文書を活用し、AIエージェントで多様な業務を継続的に自動化するエンタープライズ向けプラットフォームです。 我々の事業部では大手法人のお客様向けにAi Workforceの導入支援も含めたトータルなソリューションをご提供しております。 getaiworkforce.com PMO…",
-      "title": "AIでPMO業務を再設計してみよう"
+      "summary_zh": "本文由 LayerX「Ai Workforce」事業部負責 PMO 的 kurosawa 撰寫，探討企業在 PMO（專案管理辦公室）業務中導入 AI 時，應從哪些環節著手、哪些環節宜先延後，並分享 LayerX 內部的實際做法。文章背景是該公司推出的企業級平台 Ai Workforce，主打運用企業內部的資料與文件，以 AI 代理持續自動化各類業務；事業部亦為大型法人客戶提供包含導入支援在內的整體解決方案。作者以 PMO 實務經驗為基礎，說明 AI 導入的優先順序判斷，以及公司在專案管理流程中實際落地的措施。由於目前僅取得摘要，具體的業務流程拆解、導入順序建議、自動化成效與量化指標皆未揭露，亦無法確認是否有客戶案例或效益數據佐證。對正評估 AI 導入優先順序的 PMO 與企業管理者而言，本文可作為實務討論的切入點，但實際成效仍需更多細節與資料支持。",
+      "title": "AIでPMO業務を再設計してみよう",
+      "title_zh": "以 AI 重新設計 PMO 業務"
     },
     {
       "arxiv_id": "2606.31836",
@@ -5207,7 +5376,9 @@
       "source_name": null,
       "story_id": "arxiv:2606.31836",
       "summary": "In the field of robot learning, large-scale and diverse demonstration trajectories provide the fundamental basis for enhancing robotic manipulation ability. We introduce RoboTacDex, a large, multi-modal, and diverse dataset of dexterous manipulation behaviors performed with a humanoid robot. Built on the publicly accessible humanoid robot Unitree G1, RoboTacDex consists of 6k trajectories covering 19 tasks, 23 skills, and interactions with 22 objects. RoboTacDex provides comprehensive records in",
-      "title": "RoboTacDex: A Dexterous Visual-Tactile-Action Dataset for Humanoid Manipulation"
+      "summary_zh": "在機器人學習領域，大規模且多樣化的示範軌跡是提升操作能力的基礎。本研究提出 RoboTacDex，一個以人形機器人執行靈巧操作行為的大型多模態資料集。資料集建構於公開可取得的人形機器人 Unitree G1 之上，內含約六千條軌跡，涵蓋十九項任務、二十三種技能，以及與二十二種物件的互動。RoboTacDex 提供完整的多模態紀錄，將視覺、觸覺與動作資訊一併收錄，使人形機器人的靈巧操作研究能在同一基準上進行訓練與評估。其貢獻在於同時具備規模、多樣性與多模態特性，並採用可公開取得的硬體平台，有利於結果重現與跨團隊比較；觸覺訊號的納入尤其補足了純視覺示範在接觸豐富任務上的不足。由於目前僅有摘要，資料的實際品質、標註流程、任務難度分布、感測器配置與基準測試結果均未揭露，資料集是否真能提升策略泛化能力仍待後續驗證。對人形機器人與多模態操作學習社群而言，此資料集提供了具潛力的共通資源。",
+      "title": "RoboTacDex: A Dexterous Visual-Tactile-Action Dataset for Humanoid Manipulation",
+      "title_zh": "RoboTacDex：用於人形機器人操作的大型視覺—觸覺—動作資料集"
     },
     {
       "arxiv_id": "2606.31834",
@@ -5262,7 +5433,9 @@
       "source_name": null,
       "story_id": "arxiv:2606.31834",
       "summary": "Real-world detectors for autonomous driving, surveillance, and robotics must handle domain-shifts under strict latency and memory constraints, yet existing source-free object detection (SFOD) methods rely on heavyweight architectures that prioritize accuracy alone. We show this trade-off is unnecessary: building on YOLOv10, an NMS-free dual-head detector, we achieve state-of-the-art adaptation accuracy while being faster and more compact. We observe that directly applying vanilla mean-teacher se",
-      "title": "Real-Time Source-Free Object Detection"
+      "summary_zh": "自動駕駛、監控與機器人等真實場域的偵測器，必須在嚴格延遲與記憶體限制下應對領域偏移，然而既有的無來源物體偵測（source-free object detection, SFOD）方法多依賴重量級架構，只追求準確率而犧牲效率。本研究主張這種取捨並不必要：作者以 YOLOv10 這個無需非極大值抑制（NMS）的雙頭偵測器為基礎，在達到目前最佳調適準確率的同時，具備更快速度與更精簡的模型。研究亦觀察到，直接套用原始的均值教師（mean-teacher）自訓練架構在無來源情境下會出現問題，因此提出相應的調整。此工作的重要性在於把無來源領域調適推向實際可部署的即時場景，對於無法取得來源資料、又需低延遲推論的應用特別關鍵。由於目前僅有摘要，具體的調適策略、教師—學生設計、實驗資料集、延遲與記憶體量測數據，以及與其他方法的完整比較皆未揭露，其實際增益幅度仍待完整論文與第三方重現驗證。",
+      "title": "Real-Time Source-Free Object Detection",
+      "title_zh": "即時無來源物體偵測"
     },
     {
       "arxiv_id": "2606.31831",
@@ -5320,7 +5493,9 @@
       "source_name": null,
       "story_id": "arxiv:2606.31831",
       "summary": "High-throughput plant phenotyping now generates image derived datasets far faster than scientists can analyze them. At Oak Ridge National Laboratory's Advanced Plant Phenotyping Laboratory (APPL), automated stations image hundreds of plants daily across multiple remote sensing modalities; yet, trait extraction and interpretation remain manual, expert-bound, and strictly post-hoc, making analysis, not acquisition, the binding constraint on discovery. We present an end-to-end agentic AI framework ",
-      "title": "An Agentic AI Framework to Accelerate Scientific Discovery in Plant Phenotyping"
+      "summary_zh": "高通量植物表型體學目前產生影像衍生資料集的速度，已遠超過科學家能分析的速度。在美國橡樹嶺國家實驗室（Oak Ridge National Laboratory）的先進植物表型實驗室（APPL），自動化站點每日以多種遙測模態拍攝數百株植物；然而性狀萃取與解讀仍高度依賴人工與專家，且只能在事後進行，使分析的瓶頸而非資料取得成為科學發現的主要限制。本研究提出一套端對端的代理式 AI 框架，目標是把這條從影像到性狀、再到解讀的流程自動化，讓分析能跟上資料產生的速度，並將專家人力集中在真正需要判斷的環節。其意義在於以 AI 代理承接重複且規模龐大的表型分析工作，可能大幅縮短從實驗到發現的週期，對作物育種與植物科學具有實務價值。由於目前僅有摘要，框架的具體代理分工、模型與工具鏈、性狀準確度、與人工標註的比較，以及實際部署成效皆未揭露，尚待完整論文驗證其泛化能力與可靠性。",
+      "title": "An Agentic AI Framework to Accelerate Scientific Discovery in Plant Phenotyping",
+      "title_zh": "加速植物表型體學科學發現的代理式 AI 框架"
     },
     {
       "arxiv_id": "2606.31830",
@@ -5373,7 +5548,9 @@
       "source_name": null,
       "story_id": "arxiv:2606.31830",
       "summary": "Most end-to-end autonomous driving methods rely solely on instantaneous sensor observations, limiting them to reactive behavior without the anticipatory foresight human drivers employ through prior experience. We introduce geospatial visual priors, street-level visual context anchored to the intended driving route, providing visual-spatial foresight independent of real-time sensors. We propose a memory augmentation module featuring a dual-memory architecture and an adaptive memory gate, which ca",
-      "title": "PriorEye: Geospatial Visual Priors for End-to-End Autonomous Driving"
+      "summary_zh": "多數端到端自動駕駛方法僅依賴當下的感測器觀測，使其只能被動反應，缺乏人類駕駛憑藉過去經驗所具備的前瞻預判能力。本研究提出「地理空間視覺先驗」（geospatial visual priors），也就是錨定於預計行駛路線上的街景視覺脈絡，提供獨立於即時感測器的視覺—空間先見資訊。為此，作者設計一個記憶增強模組，包含雙記憶架構與自適應記憶閘門，能依情境動態決定何時、以何種程度取用這些先驗記憶來輔助決策。相對於純粹的反應式駕駛，此做法讓模型在抵達之前即對路段有視覺預期，理論上有助於提升安全性與行駛平順度。其貢獻在於把路線層級的地理空間視覺資訊正式引入端到端駕駛架構，並提出可學習的記憶存取機制。由於目前僅有摘要，具體的資料來源與建構方式、閘門設計細節、實驗平台、封閉迴路評測指標與與基線方法的比較結果皆未揭露，其實際增益仍待完整論文與第三方重現確認。",
+      "title": "PriorEye: Geospatial Visual Priors for End-to-End Autonomous Driving",
+      "title_zh": "PriorEye：用於端到端自動駕駛的地理空間視覺先驗"
     },
     {
       "arxiv_id": "2606.31820",
@@ -5424,7 +5601,9 @@
       "source_name": null,
       "story_id": "arxiv:2606.31820",
       "summary": "Large-scale capacitated vehicle routing problems (CVRPs) are commonly addressed using cluster-first route-second (CFRS) approaches that split a routing instance into smaller, computationally tractable subproblems. Existing splitting methods typically rely on fixed partitioning rules, predefined optimization objectives, or learned policies, which may perform inconsistently across instances exhibiting different spatial, demand, and operational characteristics. In this work, we propose an adaptive ",
-      "title": "Adaptive Cluster-First Route-Second Decomposition for Industrial-Scale Vehicle Routing"
+      "summary_zh": "大規模容量限制車輛路由問題（CVRP）常以「先分群、後路徑」（CFRS）策略處理，先把一個路由實例切成數個較小、可計算的子問題。既有切分方法多半依賴固定分割規則、預先設定的最佳化目標，或學習而得的策略，面對空間分布、需求量與營運特性各異的實例時，表現往往不穩定。本研究提出一套自適應的分解方法，動態調整分群方式，以期在不同實例上維持一致且良好的表現。不過目前僅取得摘要，方法細節、實驗設計與基準比較結果均未揭露，是否能真正勝過既有固定式或學習式切分法仍有待驗證。此研究方向對物流、配送與工業級路線規劃具實務意義，因為切分品質直接決定後續路徑最佳化的可解規模與解品質。",
+      "title": "Adaptive Cluster-First Route-Second Decomposition for Industrial-Scale Vehicle Routing",
+      "title_zh": "針對工業級車輛路由的自適應「先分群、後路徑」分解法"
     },
     {
       "arxiv_id": "2606.31819",
@@ -5474,7 +5653,9 @@
       "source_name": null,
       "story_id": "arxiv:2606.31819",
       "summary": "This work introduces a new computational theory of mind grounded in set theory and hyperdimensional computing. Whereas traditional neural networks rely on continuous weights and matrix multiplication, this framework works with sparse binary data. It represents information as discrete sets, directly modeling biological neural population codes. I demonstrate that associative memory emerges naturally from network topologies featuring a combinatorially expanded hidden layer. Learning is driven by to",
-      "title": "Creating Intelligence: A Computational Foundation for AGI"
+      "summary_zh": "本文提出一套以集合論與超維度計算（hyperdimensional computing）為基礎的心智計算理論。傳統神經網路依賴連續權重與矩陣乘法，此框架則改以稀疏二元資料運作，將資訊表示為離散集合，直接模擬生物神經族群的編碼方式。作者指出，當網路拓樸具有組合式擴張的隱藏層時，聯想記憶會自然湧現，學習則由拓樸與集合運算驅動，而非梯度式的權重調整。由於目前僅有摘要，網路規模、學習規則的完整定義、任務評測與與現有模型的對照實驗都未見揭露，因此尚難判斷其在實際任務上的可擴充性與表現。若能成立，此取徑可能為 AGI 提供一條不依賴矩陣乘法的替代路線，值得後續追蹤其理論完備性與實證。",
+      "title": "Creating Intelligence: A Computational Foundation for AGI",
+      "title_zh": "創造智慧：邁向 AGI 的一套計算基礎"
     },
     {
       "arxiv_id": "2606.31813",
@@ -5528,7 +5709,9 @@
       "source_name": null,
       "story_id": "arxiv:2606.31813",
       "summary": "Low-rank adaptation (LoRA) and its variants enable parameter-efficient fine-tuning of large language models under the supervised fine-tuning (SFT) paradigm. However, their efficacy and behavior under Reinforcement learning with verifiable rewards (RLVR) are less well understood. In particular, two structurally initialized LoRA variants, PiSSA and MiLoRA, which outperform standard LoRA under SFT, can underperform standard LoRA under RLVR and may even exhibit training instability. These observatio",
-      "title": "Geometry-Preserving Orthonormal Initialization for Low-Rank Adaptation in RLVR"
+      "summary_zh": "低秩適配（LoRA）及其變體讓大型語言模型能在監督式微調（SFT）下進行參數高效的微調，但其在「可驗證獎勵之強化學習」（RLVR）下的效果與行為仍理解不足。特別是 PiSSA 與 MiLoRA 這兩種結構化初始化的 LoRA 變體，在 SFT 下優於標準 LoRA，到了 RLVR 卻可能反而較差，甚至出現訓練不穩定的情況。本文針對此現象提出保持幾何結構的正交初始化方法，試圖讓低秩子空間的初始化不破壞原有表示幾何，以改善 RLVR 下的穩定性與成效。受限於僅有摘要，具體理論分析、實驗設定與基準數據尚未公開，是否真能同時在 SFT 與 RLVR 兩種情境下穩定勝出仍待檢驗。若成立，對以強化學習後訓練大型模型的研究與實務部署具重要參考價值。",
+      "title": "Geometry-Preserving Orthonormal Initialization for Low-Rank Adaptation in RLVR",
+      "title_zh": "在 RLVR 下為 LoRA 設計保持幾何結構的正交初始化"
     },
     {
       "arxiv_id": "2606.31814",
@@ -5582,7 +5765,9 @@
       "source_name": null,
       "story_id": "arxiv:2606.31814",
       "summary": "Lane topology reasoning aims to construct a lane graph from onboard sensor observations. Existing methods follow a detection and association paradigm that treats each lane instance independently, leading to geometric inconsistency at connected endpoints and incomplete graphs due to visual occlusions. To address these issues, we propose TopoGPT, a generative framework that learns the geometry prior from typical lane graph structures through autoregressive sequence modeling. Specifically, we const",
-      "title": "Generative Lane Topology Reasoning via Autoregressive Model with Geometry Prior"
+      "summary_zh": "車道拓樸推理的目標是從車載感測器觀測建構車道圖。既有方法多採「偵測後關聯」的典範，把每一條車道實例獨立處理，導致在相連端點處出現幾何不一致，且因視覺遮蔽而產生不完整的圖。為解決這些問題，作者提出 TopoGPT，一個生成式框架，透過自迴歸序列建模，從典型車道圖結構中學習幾何先驗，讓車道圖的生成能維持整體幾何一致性並補足被遮蔽的部分。本文目前僅有摘要，模型架構細節、訓練資料規模、評測資料集與量化結果皆未揭露，因此其實際增益仍待驗證。此工作的重要性在於把車道圖視為可生成的序列結構，而非一組獨立偵測結果，對自駕車的感知與地圖建構具有潛在應用價值。",
+      "title": "Generative Lane Topology Reasoning via Autoregressive Model with Geometry Prior",
+      "title_zh": "以具幾何先驗的自迴歸模型進行生成式車道拓樸推理"
     },
     {
       "arxiv_id": "2606.31811",
@@ -5638,7 +5823,9 @@
       "source_name": null,
       "story_id": "arxiv:2606.31811",
       "summary": "Foundation models have transformed vision and language processing by providing rich, reusable representations that transfer across diverse tasks. Sheet music, as a visual encoding of musical language, lacks such a strong domain-specific backbone. We introduce MuSViT (Music Score Vision Transformer): the first foundation vision model for sheet music representation -- a ViT encoder pre-trained via Masked Autoencoders on 9.7 million pages from the IMSLP. To handle the complexity of real-world score",
-      "title": "MuSViT: A Foundation Vision Model for Sheet Music Representation"
+      "summary_zh": "基礎模型已徹底改變視覺與語言處理，提供豐富且可重用、能跨多樣任務遷移的表徵。然而樂譜作為音樂語言的視覺編碼，長期缺乏此類強健的領域專用骨幹模型。作者提出 MuSViT（Music Score Vision Transformer），是第一個專為樂譜表徵設計的基礎視覺模型，其 ViT 編碼器以 Masked Autoencoder 方式，在來自 IMSLP 的 970 萬頁樂譜上進行預訓練，以因應真實世界樂譜的複雜度。由於目前僅有摘要，預訓練細節、下游任務清單、評測基準與與既有方法的比較數據均未呈現，其遷移能力與泛化表現仍待驗證。此工作的意義在於為光學樂譜辨識、音樂資訊檢索與樂譜理解等任務，提供一個可重用的領域骨幹，可能推動音樂 AI 的標準化。",
+      "title": "MuSViT: A Foundation Vision Model for Sheet Music Representation",
+      "title_zh": "MuSViT：樂譜表徵的基礎視覺模型"
     },
     {
       "arxiv_id": "2606.31808",
@@ -5690,7 +5877,9 @@
       "source_name": null,
       "story_id": "arxiv:2606.31808",
       "summary": "Language model systems built around proprietary APIs often operate on a token-based cost model. This becomes prohibitively expensive in the context of large databases, where LM-enhanced relational operators can incur costs exceeding $10,000 for a single set of experiments, hindering thorough research and practical deployment. In this paper, we demonstrate that quantized, open-weight models running locally on just 16GB of VRAM can match or exceed the accuracy of closed-source counterparts at lowe",
-      "title": "Large Databases Need Small, Open-Weight Language Models"
+      "summary_zh": "以專有 API 為核心的語言模型系統，通常採用以 token 計價的成本模型，在大規模資料庫情境下變得極為昂貴：經語言模型強化的關聯式運算子，單次實驗成本可能超過一萬美元，阻礙了深入研究與實務部署。本文主張，量化後、可於僅 16GB VRAM 上本機執行的開放權重模型，能在更低成本下達到甚至超越封閉源模型對應方案的準確率。受限於僅有摘要，作者實際採用的模型清單、量化方法、資料庫工作負載與完整準確率與成本比較數據皆未揭露，因此「匹配或超越」的結論仍待檢驗。此研究的重要性在於指出一條以本機小模型取代昂貴 API 的可行路徑，對資料庫社群的研究可重現性與部署成本具有實質影響。",
+      "title": "Large Databases Need Small, Open-Weight Language Models",
+      "title_zh": "大型資料庫需要小而開放權重的語言模型"
     },
     {
       "arxiv_id": "2606.31807",
@@ -5745,7 +5934,9 @@
       "source_name": null,
       "story_id": "arxiv:2606.31807",
       "summary": "As humanoid robots become increasingly dynamic, coupling them with reinforcement learning offers a promising approach to solving the complex, underactuated mechanics of passive inline skating. Equipping a humanoid robot with passive inline skating wheels presents an opportunity to combine the versatile agility of humanoids with the high-speed, energy-efficient locomotion strategies utilized by human skaters. In this paper, we train and deploy a reinforcement learning control policy that enables ",
-      "title": "Reinforcement Learning-Based Control for an Inline Skating Humanoid Robot"
+      "summary_zh": "隨著人形機器人日益動態化，將強化學習與其結合，為解決被動式直排輪滑行中複雜且欠致動的力學問題提供了一條可行途徑。為人形機器人裝上被動式直排輪，有機會結合人形機器人的多才多藝敏捷性，以及人類滑輪者所使用的高速、節能移動策略。本文訓練並部署一套強化學習控制策略，使機器人能在直排輪上完成滑行運動。由於目前僅有摘要，模擬環境、獎勵設計、訓練規模、硬體平台與量化效能指標（如速度、能耗、穩定度）皆未揭露，其實際可行性與安全性仍待驗證。此工作的重要性在於拓展人形機器人的移動形態，將欠致動滑行控制納入強化學習的研究範疇，對機器人移動與節能運動控制具參考價值。",
+      "title": "Reinforcement Learning-Based Control for an Inline Skating Humanoid Robot",
+      "title_zh": "以強化學習控制直排輪人形機器人"
     }
   ],
   "run_date": "2026-07-01",
@@ -6669,7 +6860,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:b681a9b5220a1170",
       "summary": "Today, we’re excited to announce the availability of Anthropic’s most advanced Sonnet model, Claude Sonnet 5, on Amazon Bedrock and Claude Platform on AWS. Claude Sonnet 5 is the first Sonnet model of Anthropic’s latest generation and represents a meaningful step forward. It delivers top-tier intelligence at Sonnet pricing for coding, agents, and everyday professional […]",
-      "title": "Introducing Claude Sonnet 5 on AWS: Anthropic’s most capable Sonnet model"
+      "summary_zh": "Anthropic 新一代 Sonnet 系列的首款模型 Claude Sonnet 5 現已於 Amazon Bedrock 與 AWS 上的 Claude 平台推出。官方定位為在 Sonnet 價位帶提供頂尖智慧水準，主打程式開發、agent 應用與日常專業工作等場景，並強調這是相對前代的實質進展。本文屬產品發布性質的公告，摘要僅涵蓋定位與可用性，未提供基準測試分數、推論成本、延遲或與其他模型的對照數據，也未交代上下文長度、工具使用與訓練細節。對台灣團隊而言，其意義在於可直接在既有 AWS 環境中透過受管服務取用新一代模型，無須自行佈建推論基礎設施，便於評估既有 agent 與程式輔助流程的升級效益；惟實際品質與成本仍須以自身工作負載驗證。",
+      "title": "Introducing Claude Sonnet 5 on AWS: Anthropic’s most capable Sonnet model",
+      "title_zh": "Claude Sonnet 5 正式登上 AWS：Anthropic 最強大的 Sonnet 模型"
     },
     {
       "arxiv_id": null,
@@ -6727,7 +6920,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:22cd22f2973271c2",
       "summary": "This post walks through how AG-UI integrates into the Fullstack AgentCore Solution Template (FAST) to build interactive agent frontends on Amazon Bedrock AgentCore. We then show how CopilotKit extends this with generative UI, shared state, and human-in-the-loop interactions, all deployed on Amazon Bedrock AgentCore.",
-      "title": "Build generative UI for AI agents on Amazon Bedrock AgentCore with the AG-UI protocol"
+      "summary_zh": "本文說明如何把 AG-UI 協定整合進 Fullstack AgentCore Solution Template（FAST），在 Amazon Bedrock AgentCore 上建構具互動性的 agent 前端。文中進一步展示 CopilotKit 如何在此基礎上加入生成式 UI、共享狀態與 human-in-the-loop 互動，並將整體部署於 Amazon Bedrock AgentCore。內容屬於實作導向的技術部落格，重點在架構整合與前後端協定串接，而非提出新的模型或演算法。摘要未提供延遲、吞吐量或使用者研究等量化結果，也未討論多租戶隔離、成本控制或失敗回復等限制。其價值在於示範如何把 agent 的輸出從純文字擴展為可即時操作的介面元件，讓人在迴路中檢視與修正，對需要把 agent 導入內部工作流程的台灣開發團隊具參考意義。",
+      "title": "Build generative UI for AI agents on Amazon Bedrock AgentCore with the AG-UI protocol",
+      "title_zh": "以 AG-UI 協定在 Amazon Bedrock AgentCore 上打造生成式 UI 的 AI agent"
     },
     {
       "arxiv_id": null,
@@ -6781,7 +6976,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:a964688cb77a2268",
       "summary": "In this post, you will learn five practical patterns for building resilient generative AI applications on AWS, progressing from native Amazon Bedrock features to multi-model orchestration using an LLM gateway. These patterns address real-world challenges such as quota exhaustion during unexpected traffic surges, maximizing availability through geographic distribution of inference, and helping prevent noisy neighbor problems in multi-tenant environments.",
-      "title": "Implementing resilience patterns with Amazon Bedrock and LLM gateway"
+      "summary_zh": "本文整理五種在 AWS 上建構具韌性生成式 AI 應用的實務模式，從 Amazon Bedrock 原生功能一路進展到以 LLM gateway 進行多模型調度。所處理的真實問題包括：突發流量造成配額耗盡、如何透過推論的地理分散來最大化可用性，以及在多租戶環境中避免吵雜鄰居（noisy neighbor）問題。文章屬架構模式的經驗分享，重點在設計取捨與循序演進的落地路徑，而非提出新的模型或演算法。摘要未提供具體的延遲、錯誤率或成本量測數據，也未交代各模式在極端流量下的失效邊界與維運複雜度。對台灣企業而言，其意義在於當生成式 AI 進入正式服務後，可靠性與配額治理往往比模型選擇更關鍵，這些模式可作為設計審查清單的起點。",
+      "title": "Implementing resilience patterns with Amazon Bedrock and LLM gateway",
+      "title_zh": "以 Amazon Bedrock 與 LLM gateway 實作生成式 AI 的韌性模式"
     },
     {
       "arxiv_id": null,
@@ -6834,7 +7031,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:524f79773e16d5f9",
       "summary": "In this post, we share the technical approach using token-based distillation, lessons learned, and deployment architecture. If you face similar bilingual NER challenges, you can benefit from IBS Software’s experience with the Amazon Bedrock knowledge distillation capabilities.",
-      "title": "Building bilingual NER for cargo logistics with Amazon Bedrock"
+      "summary_zh": "本文分享 IBS Software 在貨運物流場景建構雙語命名實體辨識（NER）的技術做法，涵蓋以 token 為基礎的知識蒸餾、實作過程中的經驗教訓，以及部署架構。核心思路是運用 Amazon Bedrock 的知識蒸餾能力，把大型模型的能力轉移到較小、成本更可控的模型上，以因應物流文件中中英夾雜、術語與縮寫頻繁出現的實際痛點。文章屬業界案例分享，摘要未揭露資料集規模、實體類別數量、精確率與召回率等量化指標，也未討論標註成本、語言不平衡或領域詞彙漂移等限制。對需要處理跨語言表單、提單與通關文件的台灣物流與供應鏈團隊而言，其價值在於示範一條可複製的蒸餾與部署路徑，而非提供可直接套用的模型。",
+      "title": "Building bilingual NER for cargo logistics with Amazon Bedrock",
+      "title_zh": "以 Amazon Bedrock 打造貨運物流的雙語命名實體辨識"
     },
     {
       "arxiv_id": null,
@@ -6882,7 +7081,9 @@
       "source_name": "DeepMind Blog",
       "story_id": "fallback:cd66dba3e4ab4d19",
       "summary": null,
-      "title": "Start building with Nano Banana 2 Lite and Gemini Omni Flash"
+      "summary_zh": "此項目僅有標題，缺少可用的摘要內容，因此無法確認其具體發布內容、模型能力、定價或可用地區。從標題可推測涉及 Nano Banana 2 Lite 與 Gemini Omni Flash 兩項模型，可能與生成式多模態輸出或快速推論有關，但這些均屬推測，未有原文佐證。基於不虛構缺失證據的原則，本導讀不描述其方法、基準測試結果或限制，也不評價其相對前代的進展。若後續取得完整公告，應優先確認模型定位（文字、圖像或影片）、上下文長度、推論成本與地區可用性，並以自身工作負載實測，再判斷是否納入既有產品流程。建議讀者直接查閱官方發布頁面以取得確切資訊。",
+      "title": "Start building with Nano Banana 2 Lite and Gemini Omni Flash",
+      "title_zh": "Nano Banana 2 Lite 與 Gemini Omni Flash 開始開放建置"
     }
   ]
 }

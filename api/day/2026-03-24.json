@@ -173,7 +173,9 @@
         "source_name": null,
         "story_id": "hf:mistralai/mistral-small-4-119b-2603",
         "summary": "Mistral Small 4 is a powerful hybrid model capable of acting as both a general instruction model and a reasoning model. It unifies the capabilities of three different model families—**Instruct**, **Reasoning** (previously called Magistral), and **Devstral**—into a single, unified model. With its multimodal capabilities, efficient architecture, and flexible mode switching, it is a powerful general-purpose model for any task. In a latency-optimized setup, Mistral Small 4 achieves a **40% reduction in end-to-end completion time**, and in a throughput-optimized setup, it handles **3x more requests per second** compared to Mistral Small 3. To further improve efficiency you can either take advantages of: - Speculative decoding thanks to our trained eagle head...",
-        "title": "mistralai/Mistral-Small-4-119B-2603"
+        "summary_zh": "Mistral Small 4 是一個高效能的混合模型，旨在同時勝任一般指令遵循與推理任務，並將過往分散於 Instruct、Reasoning（前稱 Magistral）與 Devstral 三條模型家族的能力整合於單一模型之中。此設計讓使用者無需在不同任務間切換模型，即可獲得統一的對話、推理與程式碼生成體驗；同時模型具備多模態能力，可處理視覺與文字等多種輸入。在架構上，Mistral Small 4 採用高效設計，並透過模式切換機制靈活調整運作方式。根據官方數據，在延遲最佳化配置下，其端到端完成時間較 Mistral Small 3 縮短 40%；在吞吐量最佳化配置下，每秒可處理的請求數則提升至三倍。為進一步改善推論效率，模型提供兩種輔助機制：其一為推測解碼（speculative decoding），藉由訓練好的 eagle head 加速生成；其二為……（此處摘要僅能根據已知內容描述，原文後續細節未提供）。整體而言，Mistral Small 4 的價值在於以單一模型取代多種專門模型，簡化部署與使用流程，同時在速度與吞吐量上取得顯著進展，適合需要高即時性與高併發的應用場景。然而，官方摘要未提供具體的基準測試數據、模型參數量或與其他大型語言模型（如 GPT-4 或 Llama 系列）的比較，因此其宣稱的效率提升需透過獨立驗證確認。此外，多模態能力的實際表現與推理深度尚待詳細評估。這項工作反映了 AI 模型整合化的趨勢，未來可能減少對多模型管線的依賴，並促進更輕量且快速的邊緣部署，但實際採用時仍需考量任務特定需求與資源限制。",
+        "title": "mistralai/Mistral-Small-4-119B-2603",
+        "title_zh": "Mistral Small 4：統一指令、推理與程式碼能力的混合高效模型"
       }
     ]
   },

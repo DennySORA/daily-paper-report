@@ -5414,7 +5414,9 @@
       "source_name": "DeepMind Blog",
       "story_id": "fallback:2716d6e8296bba2a",
       "summary": "Our newest audio model introduces granular audio tags that give you precise control to direct AI speech for expressive audio generation.",
-      "title": "Gemini 3.1 Flash TTS: the next generation of expressive AI speech"
+      "summary_zh": "這是一項語音生成模型的發布公告，主軸在於所謂的細粒度音訊標籤，讓使用者能以更精細的方式指示 AI 語音的表達方式，例如語氣、情緒與節奏，以產生更具表現力的音訊內容。過去文字轉語音系統多半只能控制音色與語速，難以在長句或對話中維持一致的情感走向；以標籤驅動的方式試圖把控制權交回使用者，並簡化提示設計。不過目前僅有摘要，缺少模型規模、訓練資料、延遲、支援語言，以及自然度或情感準確度的客觀評測，也沒有說明標籤的語法與相容性限制。對語音應用開發者來說，值得留意的是可控性提升後，如何在產品中維持語音一致性並避免濫用。",
+      "title": "Gemini 3.1 Flash TTS: the next generation of expressive AI speech",
+      "title_zh": "Gemini 3.1 Flash TTS：新一代富表現力 AI 語音生成"
     },
     {
       "arxiv_id": null,
@@ -5471,7 +5473,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:6e14ca6e94668859",
       "summary": "This post is cowritten by Renata Salvador Grande, Gabriel Bueno and Paulo Laurentys at Rede Mater Dei de Saúde. The growing adoption of multi-agent AI systems is redefining critical operations in healthcare. In large hospital networks, where thousands of decisions directly impact cash flow, service delivery times, and the risk of claim denials, the ability […]",
-      "title": "Rede Mater Dei de Saúde: Monitoring AI agents in the revenue cycle with Amazon Bedrock AgentCore"
+      "summary_zh": "本文由 Rede Mater Dei de Saúde 的 Renata Salvador Grande、Gabriel Bueno 與 Paulo Laurentys 共同撰寫，探討醫療體系中多代理 AI 系統的導入與監控。大型醫院網路每天涉及數千項影響現金流、服務交付時間與理賠遭拒風險的決策，因此代理行為的可觀測性與可追溯性成為關鍵。文章以 Amazon Bedrock AgentCore 為基礎，說明如何在營收支循環流程中部署並監控 AI 代理，確保其行動符合規範且可稽核。不過目前僅有摘要，未提供具體架構、監控指標、導入前後的成本或理賠處理效率數據，也未討論法規遵循與病患資料保護的細節。對醫療與金融等高風險場域而言，此類代理治理實務具參考價值，但成效仍需實證。",
+      "title": "Rede Mater Dei de Saúde: Monitoring AI agents in the revenue cycle with Amazon Bedrock AgentCore",
+      "title_zh": "Rede Mater Dei de Saúde：以 Amazon Bedrock AgentCore 監控營收支循環中的 AI 代理"
     },
     {
       "arxiv_id": null,
@@ -5522,7 +5526,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:9a907ba00f3c6bf3",
       "summary": "Today, we're announcing sheet tooltips in Amazon Quick Sight. Dashboard authors can now design custom tooltip layouts using free-form layout sheets. These layouts combine charts, key performance indicator (KPI) metrics, text, and other visuals into a single tooltip that renders dynamically when readers hover over data points.",
-      "title": "Create rich, custom tooltips in Amazon Quick Sight"
+      "summary_zh": "本文宣布 Amazon Quick Sight 推出工作表工具提示（sheet tooltips）功能。儀表板作者現在能以自由形式的版面工作表設計自訂的工具提示版面，將圖表、關鍵績效指標、文字與其他視覺元素組合成單一提示面板，並在讀者將游標停留在資料點上時動態呈現。這解決了傳統工具提示僅能顯示單一數值或簡短文字、難以在同一處比較多項指標的問題，讓互動式分析更接近小型儀表板。不過目前僅有功能公告，未說明效能影響、版面複雜度上限、跨裝置或行動版的支援情形，也沒有使用者研究佐證其可讀性提升。對資料視覺化從業者而言，這是提升敘事與探索效率的實用更新，但細節仍待官方文件補充。",
+      "title": "Create rich, custom tooltips in Amazon Quick Sight",
+      "title_zh": "在 Amazon Quick Sight 建立豐富的自訂工具提示"
     }
   ],
   "run_date": "2026-04-16",
@@ -6300,7 +6306,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:1fedd5872c61791d",
       "summary": "In this post, you will learn how speculative decoding works and why it helps reduce cost per generated token on AWS Trainium2.",
-      "title": "Accelerating decode-heavy LLM inference with speculative decoding on AWS Trainium and vLLM"
+      "summary_zh": "本文說明推測解碼（speculative decoding）的原理，以及它為何能降低 AWS Trainium2 上每個生成詞元的成本。大型語言模型推論常受解碼階段限制，因為每次僅生成一個詞元，難以充分發揮加速器算力；推測解碼改以較小的草稿模型一次提出多個候選詞元，再由目標模型平行驗證，從而在不改變輸出分布的前提下提高吞吐量。文章結合 vLLM 服務框架，示範如何在 Trainium2 上部署此類加速策略。不過目前僅有摘要，未提供具體延遲、吞吐量或成本下降幅度，也未交代草稿模型的選擇、接受率與硬體限制。對關注推論成本與自建服務的團隊而言，此方向具參考價值，但實測數據仍待補充。",
+      "title": "Accelerating decode-heavy LLM inference with speculative decoding on AWS Trainium and vLLM",
+      "title_zh": "在 AWS Trainium 與 vLLM 上以推測解碼加速解碼密集的 LLM 推論"
     },
     {
       "arxiv_id": "2604.14116",

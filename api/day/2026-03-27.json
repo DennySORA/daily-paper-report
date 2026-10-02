@@ -175,7 +175,9 @@
         "source_name": null,
         "story_id": "hf:mistralai/voxtral-4b-tts-2603",
         "summary": "Voxtral TTS is a frontier, open-weights text-to-speech model that’s fast, instantly adaptable, and produces lifelike speech for voice agents. The model is released with BF16 weights and a set of reference voices. These voices are licensed under CC BY-NC 4, which is the license that the model inherits. For more details, see our: - ✍️ Blog post - 🔬 Research Paper Voxtral TTS delivers enterprise-grade text-to-speech for production voice agents, with the following capabilities: - **Realistic, expressive speech** with natural prosody and emotional range across 9 major languages, with support for diverse dialects - **Text-to-Speech generation** with 20 preset voices and easy adaptation to new voices - **Multilingual support**: English, French, Spanish, German, Italian, Portuguese, Dutch,...",
-        "title": "mistralai/Voxtral-4B-TTS-2603"
+        "summary_zh": "Voxtral TTS 是 Mistral AI 釋出的前沿開源權重文字轉語音模型，主打快速、可即時調適，並能為語音代理人產生近似真人的語音。模型以 BF16 權重形式發布，並附上一組參考語音，這些語音採用 CC BY-NC 4.0 授權，模型本身亦繼承相同授權，意味著不得用於商業用途，這是採用前必須注意的限制。能力方面，官方宣稱具備真實且富表情的語音，涵蓋自然韻律與情緒範圍，支援九種主要語言並能處理多樣方言；提供二十種預設語音，且可容易地調適到新的聲音；多語言支援包含英語、法語、西班牙語、德語、義大利語、葡萄牙語、荷蘭語等。定位為面向生產環境語音代理的企業級文字轉語音。不過摘要並未提供客觀評測數據，例如自然度分數、延遲量測或與同級模型的比較，也未說明調適新語音所需的資料量與訓練成本。對台灣開發者而言，此模型的意義在於提供一個可自行部署、可微調的開源語音合成選項，但在商業產品中使用前務必釐清授權限制。",
+        "title": "mistralai/Voxtral-4B-TTS-2603",
+        "title_zh": "mistralai/Voxtral-4B-TTS-2603：開源權重的文字轉語音模型"
       }
     ]
   },
@@ -4244,7 +4246,9 @@
       "source_name": "Microsoft Research Blog",
       "story_id": "fallback:1f75424fde2f1ebe",
       "summary": "<p>Vision-language models (VLMs) use images and text to plan robot actions, but they still struggle to decide what actions to take and where to take them. Most systems split these decisions into two steps: a VLM generates a plan in natural language, and a separate model translates it into executable actions. This approach often breaks [&#8230;]</p>\n<p>The post <a href=\"https://www.microsoft.com/en-us/research/blog/groundedplanbench-spatially-grounded-long-horizon-task-planning-for-robot-manipulation/\">GroundedPlanBench: Spatially grounded long-horizon task planning for robot manipulation</a> appeared first on <a href=\"https://www.microsoft.com/en-us/research\">Microsoft Research</a>.</p>",
-      "title": "GroundedPlanBench: Spatially grounded long-horizon task planning for robot manipulation"
+      "summary_zh": "這篇研究關注視覺語言模型（VLM）在機器人操作任務中的規劃能力。問題在於：VLM 雖能同時處理影像與文字，卻仍難以判斷「該做什麼動作」以及「該在哪裡執行該動作」。目前多數系統把這兩件事拆成兩個階段，先由 VLM 產生自然語言計畫，再由另一個模型將計畫轉譯為可執行的動作指令。作者指出這種分離式做法經常失效，因為語言層的計畫缺乏空間接地，轉譯階段也容易累積錯誤，導致長程任務中前一步的偏差無法被後續修正。GroundedPlanBench 因此被提出，作為同時評估空間接地與長程規劃的基準，強調模型必須把動作與具體位置連結起來。摘要僅止於問題陳述與基準定位，未提供具體任務數量、評估指標或各模型的實驗結果，因此無法判斷現有方法與此基準之間的差距幅度。其重要性在於指出「空間接地」是機器人規劃的關鍵瓶頸，並提供一個可比較的研究平台，對具身智慧與機器人操作領域的評測標準化具有推進作用。",
+      "title": "GroundedPlanBench: Spatially grounded long-horizon task planning for robot manipulation",
+      "title_zh": "GroundedPlanBench：為機器人操作設計的空間接地長程任務規劃基準"
     },
     {
       "arxiv_id": null,
@@ -4294,7 +4298,9 @@
       "source_name": "Microsoft Research Blog",
       "story_id": "fallback:149bda8d1ac5b992",
       "summary": "<p>Imagine a robot tasked with cleaning a kitchen. It needs to observe its environment, decide what to do, and adjust when things don&#8217;t go as expected, for example, when the mug it was tasked to wash is already clean, or the sink is full of other items. This is the domain of embodied AI: systems [&#8230;]</p>\n<p>The post <a href=\"https://www.microsoft.com/en-us/research/blog/asgardbench-a-benchmark-for-visually-grounded-interactive-planning/\">AsgardBench: A benchmark for visually grounded interactive planning</a> appeared first on <a href=\"https://www.microsoft.com/en-us/research\">Microsoft Research</a>.</p>",
-      "title": "AsgardBench: A benchmark for visually grounded interactive planning"
+      "summary_zh": "AsgardBench 是一個針對具身智慧（embodied AI）所設計的評測基準，聚焦於視覺接地且具互動性的規劃能力。文章以打掃廚房為例說明問題本質：機器人必須先觀察環境、判斷該採取什麼行動，並且在情況與預期不符時調整策略，例如被指派清洗的馬克杯其實已經乾淨，或是水槽裡堆滿了其他物品。這類情境要求系統不只是照著既定步驟執行，還得在互動過程中重新評估狀態並修正計畫。基準的價值在於把「視覺理解」與「動態決策」綁在一起評估，而非分開測試，藉此檢驗模型是否真能依據所見調整行為。摘要僅提供動機與情境描述，未揭露具體任務數量、模擬環境、成功率的計算方式或各方法的實驗數據，因此無法從摘要判斷現有系統的實際表現水準。其重要性在於提供一個可重現的互動式評測平台，讓視覺語言模型在長程、易變的日常任務中接受更貼近真實的考驗，對具身 AI 的進展衡量具有實質意義。",
+      "title": "AsgardBench: A benchmark for visually grounded interactive planning",
+      "title_zh": "AsgardBench：視覺接地互動式規劃的評測基準"
     },
     {
       "arxiv_id": "2603.25565",

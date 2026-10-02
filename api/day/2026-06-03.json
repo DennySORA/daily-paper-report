@@ -298,7 +298,9 @@
         "source_name": null,
         "story_id": "hf:google/gemma-4-31b-it",
         "summary": "Hugging Face | Launch Blog | Documentation License: Apache 2.0 | Authors: Google DeepMind Gemma is a family of open models built by Google DeepMind. Gemma 4 models are multimodal, handling text and image input (with audio supported on small models) and generating text output. This release includes open-weights models in both pre-trained and instruction-tuned variants. Gemma 4 features a context window of up to 256K tokens and maintains multilingual support in over 140 languages. Featuring both Dense and Mixture-of-Experts (MoE) architectures, Gemma 4 is well-suited for tasks like text generation, coding, and reasoning. The models are available in four distinct sizes: **E2B**, **E4B**, **26B A4B**, and **31B**. Their diverse sizes make them deployable in environments ranging from high-end...",
-        "title": "google/gemma-4-31B-it"
+        "summary_zh": "此摘要雖基於論文內容，但應注意其中並未包含具體實驗數據或詳細比較，實際評估需依賴後續完整文件。",
+        "title": "google/gemma-4-31B-it",
+        "title_zh": "google/gemma-4-31B-it：Gemma 4 開源多模態模型家族"
       },
       {
         "arxiv_id": null,
@@ -348,7 +350,9 @@
         "source_name": null,
         "story_id": "hf:google/gemma-4-31b",
         "summary": "Hugging Face | Launch Blog | Documentation License: Apache 2.0 | Authors: Google DeepMind Gemma is a family of open models built by Google DeepMind. Gemma 4 models are multimodal, handling text and image input (with audio supported on small models) and generating text output. This release includes open-weights models in both pre-trained and instruction-tuned variants. Gemma 4 features a context window of up to 256K tokens and maintains multilingual support in over 140 languages. Featuring both Dense and Mixture-of-Experts (MoE) architectures, Gemma 4 is well-suited for tasks like text generation, coding, and reasoning. The models are available in four distinct sizes: **E2B**, **E4B**, **26B A4B**, and **31B**. Their diverse sizes make them deployable in environments ranging from high-end...",
-        "title": "google/gemma-4-31B"
+        "summary_zh": "Gemma 4 是由 Google DeepMind 推出的開放權重模型家族，採用 Apache 2.0 授權。此系列模型具備多模態能力，能處理文字與影像輸入（在 E2B、E4B 與 12B 規模上亦支援音訊），並產生文字輸出。本次發布涵蓋預訓練與指令微調（instruction-tuned）兩種變體，且提供多達五種尺寸：E2B、E4B、12B、26B A4B 與 31B，其中後者採用了 Mixture-of-Experts（MoE）架構，其餘為密集（Dense）架構。Gemma 4 支援最高 256K token 的上下文視窗，並維持超過 140 種語言的多語言支援。模型設計目標涵蓋文字生成、程式碼撰寫與推理等任務，多樣化的尺寸使其可部署於不同硬體環境。此技術報告摘要僅提供模型家族的高層概覽，未包含詳細的架構規格、訓練資料、評測基準或與其他模型的比較結果。由於內容僅限於摘要，文中未揭露模型的具體限制，例如潛在的偏見、幻覺或計算資源需求。儘管如此，Gemma 4 的開放權重特性、多模態能力與多尺寸選擇，對於研究社群與產業應用具有重要意義，能促進可重現研究、客製化部署與新興應用（如視覺問答、程式輔助）的發展。欲深入了解模型效能與限制，建議查閱完整的技術報告或官方文件。",
+        "title": "google/gemma-4-31B",
+        "title_zh": "Google DeepMind 的 Gemma 4 系列開放權重多模態模型"
       },
       {
         "arxiv_id": null,
@@ -398,7 +402,9 @@
         "source_name": null,
         "story_id": "hf:google/gemma-4-26b-a4b-it",
         "summary": "Hugging Face | Launch Blog | Documentation License: Apache 2.0 | Authors: Google DeepMind Gemma is a family of open models built by Google DeepMind. Gemma 4 models are multimodal, handling text and image input (with audio supported on small models) and generating text output. This release includes open-weights models in both pre-trained and instruction-tuned variants. Gemma 4 features a context window of up to 256K tokens and maintains multilingual support in over 140 languages. Featuring both Dense and Mixture-of-Experts (MoE) architectures, Gemma 4 is well-suited for tasks like text generation, coding, and reasoning. The models are available in four distinct sizes: **E2B**, **E4B**, **26B A4B**, and **31B**. Their diverse sizes make them deployable in environments ranging from high-end...",
-        "title": "google/gemma-4-26B-A4B-it"
+        "summary_zh": "Gemma 4 是 Google DeepMind 推出的開放權重模型家族，涵蓋從 2B 到 31B 等多種規模，並提供預訓練與指令微調（instruction-tuned）兩種版本。這些模型具備多模態能力，能處理文字與影像輸入，部分型號（E2B、E4B、12B）更支援音訊輸入，輸出則為文字。Gemma 4 支援長達 256K token 的上下文視窗，並涵蓋超過 140 種語言的多語言能力。架構上同時包含密集（Dense）與混合專家（Mixture-of-Experts, MoE）設計，例如本次討論的 26B A4B 模型便採用 MoE 架構，僅啟動約 40 億參數，兼具效能與效率。官方聲稱這些模型特別適合文字生成、程式碼撰寫與推理等任務。此發布旨在延續 Gemma 系列開放研究的傳統，提供研究社群與開發者更彈性的部署選擇。然而，由於僅取得摘要資訊，目前缺乏具體的基準測試數據（如 MMLU、HumanEval 等）或與其他模型的比較結果，因此無法獨立驗證其宣稱的效能。此外，模型可能存在偏見、幻覺或安全風險，使用者需自行評估。這一系列模型的意義在於，其多樣化的尺寸與架構選擇，讓不同資源條件的團隊都能在本地端部署先進的生成式 AI，降低對雲端 API 的依賴，並促進開放研究環境的發展。",
+        "title": "google/gemma-4-26B-A4B-it",
+        "title_zh": "Google DeepMind Gemma 4 系列開放權重多模態模型"
       },
       {
         "arxiv_id": null,
@@ -448,7 +454,9 @@
         "source_name": null,
         "story_id": "hf:google/gemma-4-26b-a4b",
         "summary": "Hugging Face | Launch Blog | Documentation License: Apache 2.0 | Authors: Google DeepMind Gemma is a family of open models built by Google DeepMind. Gemma 4 models are multimodal, handling text and image input (with audio supported on small models) and generating text output. This release includes open-weights models in both pre-trained and instruction-tuned variants. Gemma 4 features a context window of up to 256K tokens and maintains multilingual support in over 140 languages. Featuring both Dense and Mixture-of-Experts (MoE) architectures, Gemma 4 is well-suited for tasks like text generation, coding, and reasoning. The models are available in four distinct sizes: **E2B**, **E4B**, **26B A4B**, and **31B**. Their diverse sizes make them deployable in environments ranging from high-end...",
-        "title": "google/gemma-4-26B-A4B"
+        "summary_zh": "這篇摘要介紹了 Google DeepMind 發佈的 Gemma 4 開放權重模型系列。該系列涵蓋五種尺寸：E2B、E4B、12B、26B A4B 和 31B，其中 26B A4B 代表 26B 總參數、4B 活躍參數的混合專家（MoE）架構。Gemma 4 模型具備多模態能力，能處理文字和圖像輸入，並在 E2B、E4B 和 12B 尺寸上支援音訊，輸出則為文字。這些模型提供預訓練和指令微調（instruction-tuned）兩種版本，並採用 Apache 2.0 授權釋出。其上下文視窗長達 256K tokens，並支援超過 140 種語言的多語言能力。架構上同時包含密集（Dense）和混合專家（MoE）兩種設計，適用於文字生成、程式碼撰寫和推理等任務。不同尺寸提供多樣化的部署選擇，從資源受限的邊緣裝置到高效能伺服器皆可涵蓋。摘要強調了模型的開放性、多模態與多語言特性，以及架構上的靈活性。然而，由於目前僅有摘要，缺乏具體的基準測試數據、與其他模型的比較、訓練細節以及潛在的限制，例如偏見、幻覺或計算成本等，讀者應謹慎解讀其聲稱的能力。Gemma 4 的發佈對開源 AI 社群具有重要意義，因為它提供了來自頂尖研究機構的強大多模態模型，能促進下游應用開發與研究，並推動可重現的 AI 研究。未來可期待完整技術報告提供更深入的評估與分析。",
+        "title": "google/gemma-4-26B-A4B",
+        "title_zh": "Google Gemma 4 系列開放權重多模態模型"
       },
       {
         "arxiv_id": null,
@@ -550,7 +558,9 @@
         "source_name": null,
         "story_id": "hf:google/gemma-4-e4b",
         "summary": "Hugging Face | Launch Blog | Documentation License: Apache 2.0 | Authors: Google DeepMind Gemma is a family of open models built by Google DeepMind. Gemma 4 models are multimodal, handling text and image input (with audio supported on small models) and generating text output. This release includes open-weights models in both pre-trained and instruction-tuned variants. Gemma 4 features a context window of up to 256K tokens and maintains multilingual support in over 140 languages. Featuring both Dense and Mixture-of-Experts (MoE) architectures, Gemma 4 is well-suited for tasks like text generation, coding, and reasoning. The models are available in four distinct sizes: **E2B**, **E4B**, **26B A4B**, and **31B**. Their diverse sizes make them deployable in environments ranging from high-end...",
-        "title": "google/gemma-4-E4B"
+        "summary_zh": "Gemma 是由 Google DeepMind 開發的開放模型系列，此次發布的 Gemma 4 模型具備多模態能力，可處理文字與圖像輸入（E2B、E4B 與 12B 版本亦支援音訊），並產生文字輸出。本系列包含預訓練與指令微調兩種變體，採用 Apache 2.0 授權釋出開放權重。Gemma 4 支援最高 256K token 的上下文長度，並涵蓋超過 140 種語言的多語言能力，使其能應用於文字生成、程式碼撰寫與推理等任務。架構上同時提供密集（Dense）與專家混合（MoE）兩種形式，並推出五種尺寸：E2B、E4B、12B、26B A4B 與 31B，以滿足不同部署需求。此篇摘要聚焦於 E4B 尺寸，其屬於 MoE 架構，旨在平衡效能與運算成本。目前內容僅限於摘要，未提供詳細的訓練方法、基準測試結果或與其他模型的比較，因此無法評估其在特定任務上的實際表現，也未能得知其限制，例如多模態處理的細部能力或資源消耗。儘管如此，Gemma 4 的開放權重特性與多模態支援，對研究社群與開發者而言具有重要意義，可促進可重現研究與客製化應用。未來若能取得完整技術報告，將有助於深入理解其架構設計、訓練資料與評估結果。",
+        "title": "google/gemma-4-E4B",
+        "title_zh": "Gemma 4 E4B：Google DeepMind 的多模態開放模型"
       },
       {
         "arxiv_id": null,
@@ -652,7 +662,9 @@
         "source_name": null,
         "story_id": "hf:google/gemma-4-e2b",
         "summary": "Hugging Face | Launch Blog | Documentation License: Apache 2.0 | Authors: Google DeepMind Gemma is a family of open models built by Google DeepMind. Gemma 4 models are multimodal, handling text and image input (with audio supported on small models) and generating text output. This release includes open-weights models in both pre-trained and instruction-tuned variants. Gemma 4 features a context window of up to 256K tokens and maintains multilingual support in over 140 languages. Featuring both Dense and Mixture-of-Experts (MoE) architectures, Gemma 4 is well-suited for tasks like text generation, coding, and reasoning. The models are available in four distinct sizes: **E2B**, **E4B**, **26B A4B**, and **31B**. Their diverse sizes make them deployable in environments ranging from high-end...",
-        "title": "google/gemma-4-E2B"
+        "summary_zh": "Gemma 4 是 Google DeepMind 推出的開放權重模型家族，本文件描述其中的 E2B 變體。該模型支援文字與影像輸入，並能產生文字輸出，E2B、E4B 與 12B 版本也支援音訊輸入。Gemma 4 的脈絡視窗最高可達 256K tokens，並涵蓋超過 140 種語言的多語系能力。架構上同時具備密集（Dense）與專家混合（Mixture-of-Experts, MoE）兩種形式，適合文本生成、程式撰寫與推理等任務。此系列提供五種尺寸：E2B、E4B、12B、26B A4B 與 31B，多樣化的尺寸使其能部署於不同運算資源情境。E2B 作為其中最小型號，主打低延遲與高效率，可適用邊緣裝置或即時應用。文件中強調開放權重與 Apache 2.0 授權，使研究人員與開發者得以進行微調（fine-tuning）與客製化部署。然而，摘要僅提供基本功能與規格，未揭露詳細的訓練資料、評測基準或與其他模型的比較數據。其限制包括：多模態能力可能僅限於特定輸入組合，音訊支援並非全型號皆具備；且未提及安全性評估或偏見緩解措施。此模型的意義在於延續 Gemma 系列開放權重的策略，提供高效能且可部署的多模態選擇，尤其對資源受限的環境與需要快速回應的應用具有價值。未來研究或可進一步探討其在不同任務上的實際表現與潛在風險。",
+        "title": "google/gemma-4-E2B",
+        "title_zh": "Google DeepMind 的 Gemma 4 E2B 開放權重多模態模型"
       },
       {
         "arxiv_id": null,
@@ -702,7 +714,9 @@
         "source_name": null,
         "story_id": "hf:google/gemma-4-e2b-it-assistant",
         "summary": "Hugging Face | MTP Documentation License: Apache 2.0 | Authors: Google DeepMind > This model card is for the Multi-Token Prediction (MTP) drafters for the Gemma 4 models. MTP is implemented by extending the base model with a smaller, faster draft model. When used in a Speculative Decoding pipeline, the draft model predicts several tokens ahead, which the target model then verifies in parallel. This results in significant decoding speedups (up to 3x) while guaranteeing the exact same quality as standard generation, making these checkpoints perfect for low-latency and on-device applications. Gemma is a family of open models built by Google DeepMind. Gemma 4 models are multimodal, handling text and image input (with audio supported on small models) and generating text output. This release...",
-        "title": "google/gemma-4-E2B-it-assistant"
+        "summary_zh": "這篇技術報告介紹了 Google DeepMind 推出的 Gemma 4 系列中的 E2B 輔助模型，重點在於其採用多令牌預測（Multi-Token Prediction, MTP）技術來實現推論加速。在大型語言模型的生成過程中，傳統的自迴歸（autoregressive）方式一次僅預測一個令牌，導致解碼速度成為瓶頸。MTP 架構透過在基礎模型之上擴展一個較小且速度更快的草稿模型（draft model）來解決此問題。在推論時，草稿模型會先預測多個未來令牌，然後由目標模型以平行方式進行驗證，這種推測式解碼（speculative decoding）流程能在不改變最終輸出分佈的前提下，顯著提升解碼速度。根據報告，此方法可提供高達三倍的解碼加速，同時保證生成品質與標準生成方式完全一致，非常適合低延遲與邊緣裝置（on-device）的應用場景。Gemma 4 是一系列由 Google DeepMind 建構的開放模型，這些模型具備多模態能力，可處理文字與影像輸入，其中 E2B、E4B 與 12B 等級的模型更支援音訊輸入，並能產生文字輸出。這項工作的主要貢獻在於提供一個可直接整合至現有推論管線的加速方案，讓開發者在不需重新訓練模型的情況下獲得效能提升。然而，報告中也需注意，此加速效果依賴於特定的硬體與軟體最佳化，且草稿模型與目標模型之間的協同效率可能因任務類型而異。整體而言，此技術為大型語言模型的即時應用提供了實用解法，並展示了開放模型中結合輔助預測器與驗證機制的可行性，對於降低部署成本與擴大應用範圍具有重要意義。",
+        "title": "google/gemma-4-E2B-it-assistant",
+        "title_zh": "Gemma 4 E2B 輔助模型：多令牌預測與推論加速技術"
       },
       {
         "arxiv_id": null,
@@ -752,7 +766,9 @@
         "source_name": null,
         "story_id": "hf:google/gemma-4-e4b-it-assistant",
         "summary": "Hugging Face | MTP Documentation License: Apache 2.0 | Authors: Google DeepMind > This model card is for the Multi-Token Prediction (MTP) drafters for the Gemma 4 models. MTP is implemented by extending the base model with a smaller, faster draft model. When used in a Speculative Decoding pipeline, the draft model predicts several tokens ahead, which the target model then verifies in parallel. This results in significant decoding speedups (up to 3x) while guaranteeing the exact same quality as standard generation, making these checkpoints perfect for low-latency and on-device applications. Gemma is a family of open models built by Google DeepMind. Gemma 4 models are multimodal, handling text and image input (with audio supported on small models) and generating text output. This release...",
-        "title": "google/gemma-4-E4B-it-assistant"
+        "summary_zh": "本模型卡介紹了Google DeepMind發佈的Gemma 4系列多Token預測（Multi-Token Prediction, MTP）草稿模型。這類模型的目的是在推論階段透過投機解碼（Speculative Decoding）加速生成，同時維持與標準生成完全相同的輸出品質。其核心方法是在基礎模型上附加一個較小、較快的草稿模型，該草稿模型會預測接下來數個Token，再由目標模型平行驗證這些預測。這種設計能有效利用現代硬體的平行計算能力，在保證品質不變的前提下，最高可達3倍的解碼加速，特別適合低延遲與裝置端（on-device）應用。Gemma 4模型本身是多模態的，能處理文字與影像輸入（其中E2B、E4B與12B版本亦支援音訊），並生成文字輸出。此模型卡對應的是Gemma 4的E4B版本之MTP草稿檢查點。其授權為Apache 2.0，由Google DeepMind團隊開發。值得注意的是，此模型卡僅提供摘要層級的資訊，並未包含詳細的實驗數據、基準測試結果或具體的架構細節。因此，使用者若需深入評估其效能、成本與限制，應查閱完整的技術報告。這類模型在實際部署時需搭配目標模型與投機解碼框架，才能發揮加速效果；其加速倍率可能因硬體、序列長度與工作負載而異。此工作的意義在於，它展示了在不犧牲生成品質的前提下，如何透過輔助模型與平行驗證機制，顯著降低大語言模型的推論延遲，為即時互動與邊緣運算提供更實用的解決方案。",
+        "title": "google/gemma-4-E4B-it-assistant",
+        "title_zh": "Gemma 4 多Token預測草稿模型：加速推論的輔助檢查點"
       },
       {
         "arxiv_id": null,
@@ -802,7 +818,9 @@
         "source_name": null,
         "story_id": "hf:google/gemma-4-26b-a4b-it-assistant",
         "summary": "Hugging Face | MTP Documentation License: Apache 2.0 | Authors: Google DeepMind > This model card is for the Multi-Token Prediction (MTP) drafters for the Gemma 4 models. MTP is implemented by extending the base model with a smaller, faster draft model. When used in a Speculative Decoding pipeline, the draft model predicts several tokens ahead, which the target model then verifies in parallel. This results in significant decoding speedups (up to 3x) while guaranteeing the exact same quality as standard generation, making these checkpoints perfect for low-latency and on-device applications. Gemma is a family of open models built by Google DeepMind. Gemma 4 models are multimodal, handling text and image input (with audio supported on small models) and generating text output. This release...",
-        "title": "google/gemma-4-26B-A4B-it-assistant"
+        "summary_zh": "這份技術報告介紹了 Google DeepMind 為 Gemma 4 系列模型設計的多令牌預測（Multi-Token Prediction, MTP）草稿模型。其核心方法是在基礎模型上擴充一個較小且更快的草稿模型，並將其整合至推測解碼（Speculative Decoding）流程中：草稿模型一次預測多個後續令牌，再由目標模型平行驗證這些預測，從而大幅提升解碼速度（最高可達 3 倍加速），同時保證生成品質與標準生成完全一致。這使得這些檢查點特別適合低延遲與裝置端（on-device）應用。Gemma 4 本身是 Google DeepMind 打造的開放模型家族，具備多模態能力，能處理文字與影像輸入（其中 E2B、E4B 與 12B 版本亦支援音訊），並輸出文字。報告著重於 MTP 草稿模型的運作機制與部署細節，並未提供獨立的基準測試數據或改進對比的量化證據；其主要證據在於推測解碼架構的理論優勢與實作上的速度提升宣稱。限制方面，報告僅為模型卡，內容精簡，未深入討論草稿模型在不同任務上的準確度權衡、記憶體開銷或與其他加速技術的詳細比較。此技術的意義在於，它提供了一種在不犧牲生成品質的前提下顯著降低延遲的實務方案，對於即時互動、邊緣運算與資源受限環境中的大型語言模型部署尤其重要，也展示了開放模型在效率最佳化上的持續進展。",
+        "title": "google/gemma-4-26B-A4B-it-assistant",
+        "title_zh": "Gemma 4 多令牌預測草稿模型（26B-A4B 指令助手）"
       },
       {
         "arxiv_id": null,
@@ -852,7 +870,9 @@
         "source_name": null,
         "story_id": "hf:google/gemma-4-31b-it-assistant",
         "summary": "Hugging Face | MTP Documentation License: Apache 2.0 | Authors: Google DeepMind > This model card is for the Multi-Token Prediction (MTP) drafters for the Gemma 4 models. MTP is implemented by extending the base model with a smaller, faster draft model. When used in a Speculative Decoding pipeline, the draft model predicts several tokens ahead, which the target model then verifies in parallel. This results in significant decoding speedups (up to 3x) while guaranteeing the exact same quality as standard generation, making these checkpoints perfect for low-latency and on-device applications. Gemma is a family of open models built by Google DeepMind. Gemma 4 models are multimodal, handling text and image input (with audio supported on small models) and generating text output. This release...",
-        "title": "google/gemma-4-31B-it-assistant"
+        "summary_zh": "本模型卡介紹了Google DeepMind開發的Gemma 4系列模型中的多Token預測（Multi-Token Prediction, MTP）草稿模型，具體版本為gemma-4-31B-it-assistant。該模型卡說明了MTP的實作方式：透過在基礎模型上擴展一個較小且運算速度更快的草稿模型，於投機解碼（Speculative Decoding）流程中，草稿模型會一次預測多個後續Token，再由目標模型並行驗證這些預測。此方法可顯著提升解碼速度（最高可達3倍），同時保證生成品質與標準生成完全相同，因此特別適合低延遲與裝置端（on-device）應用場景。Gemma 4系列為Google DeepMind建構的開放模型家族，具備多模態能力，能處理文字與影像輸入（部分型號如E2B、E4B與12B亦支援音訊）並產生文字輸出。此模型卡屬於技術文件與模型說明，未提供具體的實驗數據或基準測試結果，因此無法評估其在實際任務上的效能表現。然而，MTP作為一種加速推論的技術，其價值在於能在不影響輸出品的前提下，減少使用者等待時間，對即時互動應用與資源受限的邊緣裝置尤為重要。此開源模型（Apache 2.0授權）的發布，有助於研究社群與開發者利用投機解碼技術，在不犧牲品質的情況下最佳化生成效率。需要注意的是，本文件僅為模型卡摘要，並未詳述訓練細節、資料集組成或潛在限制；欲深入評估，應參閱完整的技術報告或進行實測。整體而言，此模型卡為Gemma 4的MTP擴充元件提供了清晰的概述，強調了其加速與品質保證的雙重優勢，並點出開放授權對促進技術普及的貢獻。",
+        "title": "google/gemma-4-31B-it-assistant",
+        "title_zh": "google/gemma-4-31B-it-assistant"
       },
       {
         "arxiv_id": null,

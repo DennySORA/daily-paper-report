@@ -808,7 +808,9 @@
       "source_name": null,
       "story_id": "hf:deepseek-ai/deepseek-v4-pro",
       "summary": "Technical Report👁️ We present a preview version of **DeepSeek-V4** series, including two strong Mixture-of-Experts (MoE) language models — **DeepSeek-V4-Pro** with 1.6T parameters (49B activated) and **DeepSeek-V4-Flash** with 284B parameters (13B activated) — both supporting a context length of **one million tokens**. DeepSeek-V4 series incorporate several key upgrades in architecture and optimization: 1. **Hybrid Attention Architecture:** We design a hybrid attention mechanism combining Compressed Sparse Attention (CSA) and Heavily Compressed Attention (HCA) to dramatically improve long-context efficiency. In the 1M-token context setting, DeepSeek-V4-Pro requires only **27% of single-token inference FLOPs** and **10% of KV cache** compared with DeepSeek-V3.2. 2. **Manifold-Constrained...",
-      "title": "deepseek-ai/DeepSeek-V4-Pro"
+      "summary_zh": "DeepSeek 發布 DeepSeek-V4 系列的預覽版本，包含兩款混合專家（MoE）語言模型：DeepSeek-V4-Pro 具 1.6 兆參數、每次推論啟動 49B，DeepSeek-V4-Flash 則為 284B 參數、啟動 13B，兩者皆支援一百萬 token 的上下文長度。架構上主打混合注意力機制，結合壓縮稀疏注意力（CSA）與高度壓縮注意力（HCA），以改善長上下文效率；在百萬 token 設定下，V4-Pro 的單 token 推論 FLOPs 僅需 DeepSeek-V3.2 的 27%，KV 快取更降至 10%。摘要另提及流形約束等設計，但技術報告內容遭截斷，缺乏完整評測與基準數據，因此其實際能力仍待驗證。對長上下文應用而言，此舉顯示以稀疏與壓縮注意力換取效率，正成為超大規模 MoE 模型的主流路線。",
+      "title": "deepseek-ai/DeepSeek-V4-Pro",
+      "title_zh": "DeepSeek-V4-Pro：1.6T 參數混合專家語言模型預覽版"
     },
     {
       "arxiv_id": null,
@@ -860,7 +862,9 @@
       "source_name": null,
       "story_id": "hf:deepseek-ai/deepseek-v4-flash",
       "summary": "Technical Report👁️ We present a preview version of **DeepSeek-V4** series, including two strong Mixture-of-Experts (MoE) language models — **DeepSeek-V4-Pro** with 1.6T parameters (49B activated) and **DeepSeek-V4-Flash** with 284B parameters (13B activated) — both supporting a context length of **one million tokens**. DeepSeek-V4 series incorporate several key upgrades in architecture and optimization: 1. **Hybrid Attention Architecture:** We design a hybrid attention mechanism combining Compressed Sparse Attention (CSA) and Heavily Compressed Attention (HCA) to dramatically improve long-context efficiency. In the 1M-token context setting, DeepSeek-V4-Pro requires only **27% of single-token inference FLOPs** and **10% of KV cache** compared with DeepSeek-V3.2. 2. **Manifold-Constrained...",
-      "title": "deepseek-ai/DeepSeek-V4-Flash"
+      "summary_zh": "此為 DeepSeek-V4 系列預覽版本中的輕量選項。DeepSeek-V4-Flash 採混合專家（MoE）架構，總參數 284B、每次推論僅啟動 13B，並與同系列的 DeepSeek-V4-Pro（1.6T 參數、啟動 49B）一樣支援一百萬 token 的上下文長度。系列在架構與最佳化上有數項關鍵升級，包括結合壓縮稀疏注意力（CSA）與高度壓縮注意力（HCA）的混合注意力機制，用以大幅提升長上下文效率；在百萬 token 情境下，大模型版本的單 token 推論 FLOPs 與 KV 快取分別降至前代的 27% 與 10%。摘要未提供 Flash 版本的獨立基準成績、推論延遲與部署成本，且技術報告內容被截斷，效能主張仍需完整驗證。其意義在於以較小啟動參數提供長上下文能力，利於成本敏感的實際部署。",
+      "title": "deepseek-ai/DeepSeek-V4-Flash",
+      "title_zh": "DeepSeek-V4-Flash：284B 參數高效混合專家模型預覽版"
     },
     {
       "arxiv_id": null,
@@ -911,7 +915,9 @@
       "source_name": null,
       "story_id": "hf:deepseek-ai/deepseek-v4-flash-base",
       "summary": null,
-      "title": "deepseek-ai/DeepSeek-V4-Flash-Base"
+      "summary_zh": "此條目為 Hugging Face 上釋出的模型頁面，目前僅提供摘要層級資訊，尚無可查證的論文正文、方法細節或實驗數據。就現有資訊判斷，DeepSeek-V4-Flash-Base 屬 DeepSeek 第四代系列中的輕量版本，命名中的 Flash 通常指向較低延遲與較高推論吞吐量的設計取向，Base 則表示其為尚未經過指令微調與對齊後處理的基礎模型。然而，由於摘要內容付之闕如，我們無法確認其參數量、上下文長度、注意力機制變化、訓練資料組成、Tokenizer 設計，也無從得知是否採用 MoE 架構或任何效率最佳化手段。同樣缺乏的還包括基準測試成績、與同系列 Pro 版本的對照結果，以及安全性與偏誤評估。因此本條目現階段僅能視為模型發布的索引資訊，不宜據以推論其實際能力或適用場景。建議讀者待官方釋出完整技術報告、模型卡與評測結果後再行評估，並留意授權條款與商用限制。",
+      "title": "deepseek-ai/DeepSeek-V4-Flash-Base",
+      "title_zh": "deepseek-ai/DeepSeek-V4-Flash-Base"
     },
     {
       "arxiv_id": null,
@@ -962,7 +968,9 @@
       "source_name": null,
       "story_id": "hf:deepseek-ai/deepseek-v4-pro-base",
       "summary": null,
-      "title": "deepseek-ai/DeepSeek-V4-Pro-Base"
+      "summary_zh": "此條目對應 Hugging Face 上的 DeepSeek-V4-Pro-Base 模型頁面，目前僅有摘要層級的內容，缺乏論文正文、架構說明與實驗證據。從命名推測，Pro 代表該系列中能力較強、規模較大的版本，Base 則意味著它仍是未經指令微調與人類回饋對齊的基礎模型，需自行搭配後訓練流程才能用於對話或代理任務。由於沒有可查證的技術細節，我們無法說明其參數規模、是否採用混合專家架構、上下文視窗長度、訓練語料構成，以及推論成本與延遲表現。基準評測、多語言能力、長文本理解、程式與數學推理等面向的成績同樣無從確認，也無法判斷其在安全性與偏誤上的表現。因此本條目目前僅具索引意義，讀者不宜據此推測模型實力。建議等待官方完整技術報告、模型卡與第三方評測公布後再做採用決策，並同時確認授權範圍與商用條件。",
+      "title": "deepseek-ai/DeepSeek-V4-Pro-Base",
+      "title_zh": "deepseek-ai/DeepSeek-V4-Pro-Base"
     }
   ]
 }

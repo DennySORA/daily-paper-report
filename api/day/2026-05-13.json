@@ -6253,7 +6253,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:73b069a79a2a10b5",
       "summary": "The Cisco and AWS partnership addresses three challenges enterprises face when scaling AI agents: visibility gaps, security bottlenecks, and compliance risks. In this post, we explore how you can overcome AI security challenges through automated scanning and unified governance.",
-      "title": "Securing AI agents: How AWS and Cisco AI Defense scale MCP and A2A deployments"
+      "summary_zh": "本文介紹 Cisco 與 AWS 的合作如何應對企業規模化部署 AI 代理時面臨的三項挑戰：可視性缺口、安全瓶頸與合規風險，並說明如何透過自動化掃描與統一治理機制來克服這些問題。內容聚焦在 MCP 與 A2A 等代理互通協定快速普及後，企業難以掌握代理之間的通訊與工具呼叫行為，也難以在既有的安全流程中審查這些新興流量。文章屬合作說明與解決方案導向的部落格，目前僅有摘要，未提供掃描覆蓋率、誤報率或部署案例的量化成效。其意義在於指出代理時代的安全治理需要跨廠商協作，並把協定層的可觀測性視為基礎需求。",
+      "title": "Securing AI agents: How AWS and Cisco AI Defense scale MCP and A2A deployments",
+      "title_zh": " securing AI 代理：AWS 與 Cisco AI Defense 如何規模化 MCP 與 A2A 部署"
     },
     {
       "arxiv_id": null,
@@ -6308,7 +6310,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:aabe5cc0c53be4ec",
       "summary": "In this post, we demonstrate how to build a secure, complete LLM fine-tuning workflow that integrates Unity Catalog with Amazon SageMaker AI using Amazon EMR Serverless for preprocessing. The solution shows how to securely access governed data, maintain lineage across services, fine-tune the Ministral-3-3B-Instruct model, and register trained artifacts back into Unity Catalog. With this approach, you can continue using your existing services while preserving central governance, tracking data lineage without compromising security or compliance requirements.",
-      "title": "Fine-tune LLM with Databricks Unity Catalog and Amazon SageMaker AI"
+      "summary_zh": "這篇技術文章處理的是企業在做大型語言模型微調時，如何在跨服務的工作流程中同時保有資料治理與合規性。方法上，作者以 Amazon EMR Serverless 進行前處理，將 Databricks Unity Catalog 與 Amazon SageMaker AI 串接，讓團隊能安全存取受治理的資料、跨服務追蹤資料血緣，並以 Ministral-3-3B-Instruct 模型作為微調範例，最後把訓練產出的模型成品註冊回 Unity Catalog，形成完整且可稽核的閉環。文章屬於解決方案介紹，主要價值在於示範既有服務無須更換即可維持集中治理，但摘要未提供準確率、成本或延遲等量化結果，也缺乏與其他整合方式的對照實驗，因此實際效益仍待實測驗證。對需要在受監管環境中落地生成式 AI 的組織而言，這種兼顧血緣追蹤與安全控管的流程設計具有參考價值。",
+      "title": "Fine-tune LLM with Databricks Unity Catalog and Amazon SageMaker AI",
+      "title_zh": "以 Databricks Unity Catalog 與 Amazon SageMaker AI 進行 LLM 微調"
     },
     {
       "arxiv_id": null,
@@ -6358,7 +6362,9 @@
       "source_name": "Microsoft Research Blog",
       "story_id": "fallback:99647675f8194fc7",
       "summary": "<p>Introducing GridSFM, a small foundation model that can predict AC optimal power flow in milliseconds, boosting efficiency and unlocking cost savings. Learn how GridSFM gives grid operators direct visibility into congestion, stability, and system health.</p>\n<p>The post <a href=\"https://www.microsoft.com/en-us/research/blog/gridsfm-a-new-small-foundation-model-for-the-electric-grid/\">GridSFM: A new, small foundation model for the electric grid</a> appeared first on <a href=\"https://www.microsoft.com/en-us/research\">Microsoft Research</a>.</p>",
-      "title": "GridSFM: A new, small foundation model for the electric grid"
+      "summary_zh": "本文介紹 GridSFM，一個針對電力電網設計的小型基礎模型，目標是解決傳統交流最佳潮流（AC optimal power flow）計算耗時、難以即時支援電網調度決策的問題。方法上，GridSFM 以小型基礎模型的架構學習電網狀態與潮流解之間的對應關係，能在毫秒等級的時間內預測交流最佳潮流結果，讓電網營運人員直接掌握壅塞、穩定性與系統健康狀態。文章強調效率提升與成本節省是其主要效益，並指出此模型可為調度人員提供更即時的系統可視性。不過摘要屬於研究部落格性質，未提供資料集規模、預測誤差、與傳統求解器的精度比較，也未說明模型在拓樸變動或極端事故情境下的泛化能力與失效邊界。整體而言，若此類小型基礎模型能在維持可接受精度的前提下取代反覆迭代求解，將對即時電網最佳化與再生能源高占比下的調度作業帶來實質意義。",
+      "title": "GridSFM: A new, small foundation model for the electric grid",
+      "title_zh": "GridSFM：專為電網打造的小型基礎模型"
     },
     {
       "arxiv_id": null,
@@ -6415,7 +6421,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:d060d49f2f38b604",
       "summary": "This post demonstrates how to build a documentation extraction and model fine-tuning pipeline that addresses challenges when processing the complex financial documents. By combining Pulse AI's advanced document understanding capabilities with the powerful AI services of Amazon Bedrock, organizations can achieve enterprise-grade accuracy and extract contextually relevant financial insights at scale.",
-      "title": "Build financial document processing with Pulse AI and Amazon Bedrock"
+      "summary_zh": "這篇文章針對金融業處理複雜財務文件時常見的痛點，提出一套文件擷取與模型微調的管線設計。財務文件往往格式多樣、版面複雜且含有大量表格與專業術語，傳統擷取方式難以維持穩定正確率。作者的做法是結合 Pulse AI 的文件理解能力與 Amazon Bedrock 的生成式 AI 服務，先萃取文件中的關鍵欄位與內容，再透過微調讓模型貼近特定金融場景的語意需求，進而產生具情境脈絡的財務洞察。文章主張此組合可達到企業級的精確度，並支援大規模處理。不過摘要僅為解決方案概述，未揭露實際準確率、處理吞吐量、成本結構或錯誤案例分析，也未說明不同文件型態下的穩健性與人工覆核比例。對需要大量處理財報、合約與申報文件的金融機構而言，這種結合專業文件理解與雲端生成式 AI 的架構，仍具相當的實務參考價值。",
+      "title": "Build financial document processing with Pulse AI and Amazon Bedrock",
+      "title_zh": "運用 Pulse AI 與 Amazon Bedrock 打造財務文件處理流程"
     },
     {
       "arxiv_id": null,
@@ -6468,7 +6476,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:e1aa9ea9c6ae94f3",
       "summary": "Building end-to-end live streaming applications with real-time voice interaction presents several challenges. This post introduces a solution based on Amazon Nova 2 Sonic (Nova Sonic) and Amazon Kinesis Video Streams WebRTC (WebRTC) that addresses these challenges. In this post, we’ll walk through the solution architecture, implementation patterns, and two real-world scenario examples.",
-      "title": "Build real-time voice streaming applications with Amazon Nova Sonic and WebRTC"
+      "summary_zh": "本文探討建立端到端即時語音互動串流應用時所面臨的工程挑戰，例如雙向低延遲通訊、音訊封包傳輸穩定度，以及語音辨識與回應生成的即時協調。作者提出一套以 Amazon Nova 2 Sonic（Nova Sonic）搭配 Amazon Kinesis Video Streams WebRTC 的解決方案，透過 WebRTC 建立點對點的即時媒體通道，並由 Nova Sonic 負責語音理解與生成，形成可持續對話的串流架構。文章內容涵蓋整體架構說明、實作模式，以及兩個真實情境範例，示範如何把語音串流與模型推論串接起來。由於摘要屬於解決方案導向的介紹，並未提供延遲量測、併發連線數、成本估算或語音品質的客觀評比，也未討論網路抖動與跨區部署等邊界情況。對於欲開發客服、語音助理或即時互動應用的團隊，此架構提供了可延伸的起點。",
+      "title": "Build real-time voice streaming applications with Amazon Nova Sonic and WebRTC",
+      "title_zh": "以 Amazon Nova Sonic 與 WebRTC 打造即時語音串流應用"
     },
     {
       "arxiv_id": null,
@@ -6518,7 +6528,9 @@
       "source_name": "Microsoft Research Blog",
       "story_id": "fallback:b4104cf356e5fbfe",
       "summary": "<p>mimalloc is an open-source, modern, scalable memory allocator that is a drop-in replacement for malloc and free. It is relatively small (~12K lines), with clear internal data structures, and is easy to build and integrate into other projects. It provides bounded worst-case allocation times (up to OS primitives), bounded space overhead, low internal fragmentation, and minimal contention by relying almost exclusively on atomic operations.</p>\n<p>The post <a href=\"https://www.microsoft.com/en-us/research/blog/mimalloc-a-high-performance-scalable-memory-allocator-for-the-modern-era/\">mimalloc: A new, high-performance, scalable memory allocator for the modern era</a> appeared first on <a href=\"https://www.microsoft.com/en-us/research\">Microsoft Research</a>.</p>",
-      "title": "mimalloc: A new, high-performance, scalable memory allocator for the modern era"
+      "summary_zh": "本文介紹 mimalloc，一套開源、現代且具可擴展性的記憶體配置器，可作為 malloc 與 free 的無痛替換方案，試圖解決多執行緒應用在高併發下常見的配置延遲、記憶體碎片與鎖競爭問題。mimalloc 的程式碼規模相對精簡（約一萬兩千行），內部資料結構清晰，易於建置並整合進其他專案。在設計上，它幾乎完全依賴原子操作來降低競爭，並提供有界的最大配置時間（僅取決於作業系統原語）、有界的空間額外開銷、較低的內部碎片，以及極小化的執行緒間爭用。文章以特性敘述為主，並未在摘要中給出具體的基準測試數據、與其他配置器的逐項對比或實際佈署案例。儘管如此，對於追求延遲可預測性與高併發效能的系統軟體、伺服器與資料庫開發者而言，mimalloc 在設計取捨上提供了具體且值得參考的替代路線。",
+      "title": "mimalloc: A new, high-performance, scalable memory allocator for the modern era",
+      "title_zh": "mimalloc：面向現代環境的高效能可擴展記憶體配置器"
     }
   ],
   "run_date": "2026-05-13",

@@ -199,7 +199,9 @@
       "source_name": "Google AI Blog",
       "story_id": "fallback:e9d49f3b62f21b8a",
       "summary": "Illustration showing a person with a Pixel phone in a beach town farmers' market by the water",
-      "title": "7 ways to travel smarter this summer, with help from Google"
+      "summary_zh": "這是一篇偏向消費者應用的產品推廣文章，主軸是介紹 Google 在各項服務中提供的旅遊輔助功能，並以「今年夏天更聰明旅行的七種方法」為題，整理出七項實用做法。文章開頭搭配一張插圖，描繪一名使用者手持 Pixel 手機，身處海邊小鎮緊鄰水岸的農夫市集，藉此營造行動裝置融入旅遊情境的意象。內容屬於一般性的使用建議與功能導覽，並非 AI 或機器學習的研究成果，也沒有提出新的模型、方法或評估數據。由於目前僅取得摘要，本文並未列出七種方法的具體內容，也未說明各項功能背後的技術原理、準確度或隱私處理方式，更沒有任何量化效益或使用者研究佐證。對台灣讀者來說，這類文章的參考價值在於了解消費級 AI 功能如何被包裝進日常旅遊流程，例如行程規劃、翻譯、導航與影像處理等情境，但不宜視為技術評測或效能比較的依據。",
+      "title": "7 ways to travel smarter this summer, with help from Google",
+      "title_zh": "今年夏天更聰明旅行的七種方法，讓 Google 幫你一把"
     }
   ],
   "run_date": "2026-04-18",
@@ -853,7 +855,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:1855929e20ad3155",
       "summary": "In this post, we show you how to use Model Distillation, a model customization technique on Amazon Bedrock, to transfer routing intelligence from a large teacher model (Amazon Nova Premier) into a much smaller student model (Amazon Nova Micro). This approach cuts inference cost by over 95% and reduces latency by 50% while maintaining the nuanced routing quality that the task demands.",
-      "title": "Optimize video semantic search intent with Amazon Nova Model Distillation on Amazon Bedrock"
+      "summary_zh": "這是 AWS 的技術實作文章，處理的問題是影片語意搜尋中的查詢意圖路由：使用者的自然語言查詢需要被導向正確的搜尋路徑或訊號類型，才能取得準確結果。作者採用 Amazon Bedrock 上的 Model Distillation（模型蒸餾）技術，將大型教師模型 Amazon Nova Premier 的路由判斷能力，轉移到小得多的學生模型 Amazon Nova Micro。文章報告的結果是推論成本降低超過 95%、延遲降低 50%，同時仍維持該任務所需的細緻路由品質。對需要即時處理大量查詢的影片搜尋服務而言，這種成本與延遲的降幅具有實務意義。限制在於公告未提供資料集規模、評估指標定義、與教師模型的差距量化，以及路由錯誤對最終搜尋品質的影響，因此「維持品質」的宣稱仍需以自身流量做 A/B 驗證後再行採用。",
+      "title": "Optimize video semantic search intent with Amazon Nova Model Distillation on Amazon Bedrock",
+      "title_zh": "以 Amazon Bedrock 上的 Nova 模型蒸餾最佳化影片語意搜尋意圖"
     },
     {
       "arxiv_id": null,
@@ -905,7 +909,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:1d751d74a6477b00",
       "summary": "In this post, we show you how to build a video semantic search solution on Amazon Bedrock using Nova Multimodal Embeddings that intelligently understands user intent and retrieves accurate video results across all signal types simultaneously. We also share a reference implementation you can deploy and explore with your own content.",
-      "title": "Power video semantic search with Amazon Nova Multimodal Embeddings"
+      "summary_zh": "這是 AWS 的技術實作文章，示範如何在 Amazon Bedrock 上以 Nova Multimodal Embeddings 建構影片語意搜尋解決方案。問題核心在於：影片同時帶有畫面、語音、文字等多種訊號，傳統以單一模態為主的檢索往往漏掉使用者真正想找的內容。文中提出的做法讓系統理解使用者意圖，並同時跨所有訊號類型檢索，以取得更準確的影片結果。文章另附一份參考實作，讀者可部署並以自己的內容實際探索。此為解決方案導向的公告，摘要未揭露檢索準確度、延遲、嵌入維度或索引成本等量化指標，也未說明長影片切分與時間定位的處理細節。對想自建影片檢索功能的團隊，可藉此了解多模態嵌入在大規模影片庫上的架構思路，但效能與成本仍須自行以真實資料評測。",
+      "title": "Power video semantic search with Amazon Nova Multimodal Embeddings",
+      "title_zh": "以 Amazon Nova 多模態嵌入打造影片語意搜尋"
     },
     {
       "arxiv_id": null,
@@ -956,7 +962,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:b370a3f7f526dc4c",
       "summary": "In this post, we share how AWS Marketing’s Technology, AI, and Analytics (TAA) team worked with Gradial to build an agentic AI solution on Amazon Bedrock for accelerating content publishing workflows.",
-      "title": "From hours to minutes: How Agentic AI gave marketers time back for what matters"
+      "summary_zh": "這篇文章由 AWS 行銷部門的技術、AI 與分析（TAA）團隊發表，說明他們與 Gradial 合作，在 Amazon Bedrock 上打造一套代理式 AI（agentic AI）解決方案，用來加速內容發布流程。文中指出，行銷團隊過去在內容上架與審核等作業上往往耗費數小時，而導入以 Bedrock 為基礎的代理式工作流程後，可將時間壓縮到數分鐘，讓行銷人員能把心力放在真正重要的工作上。文章屬於實務經驗分享，主軸在於流程自動化與生成式 AI 的落地應用，而非提出新的模型架構或演算法。由於內容僅有摘要，本文未提供具體的量化效益指標、技術細節、評估方法，也未討論導入過程中的限制、失敗案例或成本結構。對台灣讀者而言，其價值在於理解代理式 AI 如何在企業內部行銷營運中實際被採用，以及採用 Amazon Bedrock 這類託管服務時，可以期待什麼樣的流程改善與組織效益。",
+      "title": "From hours to minutes: How Agentic AI gave marketers time back for what matters",
+      "title_zh": "從數小時縮短到數分鐘：代理式 AI 如何替行銷人員找回時間"
     },
     {
       "arxiv_id": null,
@@ -1011,7 +1019,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:73d3545800a925ab",
       "summary": "This hands-on guide walks through every step of fine-tuning an Amazon Nova model with the Amazon Nova Forge SDK, from data preparation to training with data mixing to evaluation, giving you a repeatable playbook you can adapt to your own use case. This is the second part in our Nova Forge SDK series, building on the SDK introduction and first part, which covered kicking off customization experiments.",
-      "title": "Nova Forge SDK series part 2: Practical guide to fine-tune Nova models using data mixing capabilities"
+      "summary_zh": "這是 Nova Forge SDK 系列文章的第二篇，前一篇介紹了 SDK 的整體概念，以及如何啟動客製化訓練實驗。本篇屬於實作導向的指南，目標是帶領讀者完整走過以 Amazon Nova Forge SDK 微調 Amazon Nova 模型的每一個步驟。文章涵蓋的流程包括資料準備、搭配資料混合（data mixing）機制的訓練，以及訓練完成後的評估，並且強調這些步驟可重複套用，讓讀者能依自身使用情境調整成可重複操作的劇本。所謂資料混合，是指在微調時調整不同來源或不同任務資料的組成比例，藉此在特定任務表現與通用能力之間取得平衡，這也是本篇相對前一篇的技術重點。需要注意的是，由於目前僅有摘要，文中並未提供具體的資料集規模、混合比例設定、超參數、評估指標數值，也沒有討論失敗案例或成本考量。對實務工作者而言，本文的意義在於把模型客製化從單次實驗提升為可重複的工程流程。",
+      "title": "Nova Forge SDK series part 2: Practical guide to fine-tune Nova models using data mixing capabilities",
+      "title_zh": "Nova Forge SDK 系列第二篇：以資料混合功能微調 Nova 模型的實務指南"
     },
     {
       "arxiv_id": null,
@@ -1077,7 +1087,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:06c466d1d8805ab6",
       "summary": "In this post, we share how Amazon Bedrock's granular cost attribution works and walk through example cost tracking scenarios.",
-      "title": "Introducing granular cost attribution for Amazon Bedrock"
+      "summary_zh": "這篇文章介紹 Amazon Bedrock 新增的細緻粒度成本歸屬（granular cost attribution）機制，並透過數個範例情境示範如何追蹤成本。在生成式 AI 的實際部署中，同一個帳號或同一個應用往往同時呼叫多個模型、多種推論選項與多個團隊共用資源，若只有總帳層級的費用資訊，很難判斷成本究竟由哪個團隊、哪個應用或哪一項工作負載產生。細緻粒度的成本歸屬正是為了解決這個可觀測性與治理問題，讓使用者能把費用拆解到更細的維度，進而支援內部計費、預算控管與資源最佳化決策。文章以情境演練的方式說明這項功能的運作方式，屬於產品功能導向的技術分享，而不是學術研究。由於目前僅有摘要，本文未提供具體的歸屬維度清單、計價細節、準確度驗證或與其他成本管理工具的比較，也未討論在多租戶或高併發環境下的限制。對企業而言，這項功能有助於把生成式 AI 的支出轉為可問責的工程指標。",
+      "title": "Introducing granular cost attribution for Amazon Bedrock",
+      "title_zh": "Amazon Bedrock 推出細緻粒度成本歸屬功能"
     }
   ]
 }

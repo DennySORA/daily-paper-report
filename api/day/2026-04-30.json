@@ -261,7 +261,9 @@
         "source_name": null,
         "story_id": "hf:mistralai/mistral-medium-3.5-128b",
         "summary": "Mistral Medium 3.5 is our first flagship merged model. It is a dense 128B model with a 256k context window, handling instruction-following, reasoning, and coding in a single set of weights. Mistral Medium 3.5 replaces its predecessor Mistral Medium 3.1 and Magistral in Le Chat. It also replaces Devstral 2 in our coding agent Vibe. Concretely, expect better performance for instruct, reasoning and coding tasks in a new unified model in comparison with our previous released models. Reasoning effort is configurable per request, so the same model can answer a quick chat reply or work through a complex agentic run. We trained the vision encoder from scratch to handle variable image sizes and aspect ratios. Find more information on our blog. > To speed up local inference using vLLM or SGLang,...",
-        "title": "mistralai/Mistral-Medium-3.5-128B"
+        "summary_zh": "Mistral Medium 3.5 是 Mistral 首個旗艦級合併模型，採稠密架構、總參數量 128B，具備 256k 上下文視窗，將指令遵循、推理與程式碼能力整合在同一組權重中。問題在於過往通用對話、推理與寫程式往往需要不同模型分別處理，增加部署與切換成本。此模型以統一權重取代前代 Mistral Medium 3.1 與 Magistral 在 Le Chat 中的角色，並取代編碼代理 Vibe 中的 Devstral 2；推理強度可依每次請求調整，因此同一模型既能回應快速聊天，也能執行複雜的代理式長流程。視覺編碼器則從零訓練，以支援可變影像尺寸與長寬比。摘要指出在指令、推理與程式任務上相較先前發布模型有更好表現，並提及可透過 vLLM 或 SGLang 加速本地推論。限制在於目前僅有模型卡層級的敘述，缺乏公開基準分數、評測方法與安全評估細節，參數與效能宣稱難以獨立驗證。其意義在於朝向單一模型涵蓋多任務、可調推理預算的整合路線，對降低推論基礎設施複雜度具參考價值。",
+        "title": "mistralai/Mistral-Medium-3.5-128B",
+        "title_zh": "mistralai/Mistral-Medium-3.5-128B"
       }
     ],
     "other": [
@@ -5024,7 +5026,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:21ea0d6bd6b48744",
       "summary": "This post was co-written with Yash Munsadwala, Adam Hood, Justin Guse, and Hector Hernandez from PwC. Contract analysis often consumes significant time for legal, compliance, and procurement teams, especially when important insights are buried in lengthy, unstructured agreements. As contract volumes grow, finding specific clauses and assessing extracted terms can become increasingly difficult to scale. […]",
-      "title": "Extracting contract insights with PwC’s AI-driven annotation on AWS"
+      "summary_zh": "本文由 AWS 與 PwC 的 Yash Munsadwala、Adam Hood、Justin Guse、Hector Hernandez 共同撰寫，探討合約分析的自動化。問題在於法律、法遵與採購團隊需耗費大量時間審閱冗長且非結構化的合約，重要條款往往埋藏其中；隨著合約量成長，人工查找特定條款與評估抽取結果愈來愈難以規模化。方法上，PwC 以 AI 驅動的標註流程建構於 AWS 服務之上，將非結構化文本轉為可搜尋、可比較的結構化洞察，協助團隊快速定位關鍵條款並評估風險。惟目前僅有摘要，未揭露標註準確率、人工覆核比例、處理延遲或成本效益等量化證據，也未說明如何處理跨語系、跨法域與版本差異等限制。其意義在於示範生成式 AI 與專業服務知識結合，將合約審閱從勞力密集轉為可規模化的流程，對法務與採購數位轉型具實務參考價值。",
+      "title": "Extracting contract insights with PwC’s AI-driven annotation on AWS",
+      "title_zh": "以 PwC 的 AI 驅動標註在 AWS 上擷取合約洞察"
     },
     {
       "arxiv_id": "2604.26409",
@@ -5524,7 +5528,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:85baaabe849b290a",
       "summary": "In this post, you will learn how to design namespace hierarchies, choose the right retrieval patterns, and implement AWS Identity and Access Management (IAM)-based access control for AgentCore Memory.",
-      "title": "Organizing Agents’ memory at scale: Namespace design patterns in AgentCore Memory"
+      "summary_zh": "本文探討如何在規模化情境下組織代理的記憶，聚焦 AgentCore Memory 的命名空間（namespace）設計模式。問題在於代理需長期保存對話、任務與使用者偏好等記憶，若缺乏清楚的層級結構，將導致檢索效率低落、資料混雜，甚至跨租戶外洩。方法上，文章說明如何設計命名空間階層，依使用者、工作階段、應用或組織等維度切分，並選擇合適的檢索模式，同時以 AWS Identity and Access Management（IAM）實作存取控制，確保僅授權對象能讀寫特定記憶範圍。惟摘要未提供檢索準確率、延遲或儲存成本等量化結果，也未比較不同階層深度的取捨。其價值在於把記憶治理提升為架構層級議題，為多代理、多租戶系統提供可依循的設計準則，有助於兼顧個人化體驗與合規要求。",
+      "title": "Organizing Agents’ memory at scale: Namespace design patterns in AgentCore Memory",
+      "title_zh": "大規模代理記憶的組織方式：AgentCore Memory 的命名空間設計模式"
     },
     {
       "arxiv_id": null,
@@ -5578,7 +5584,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:ac8965c0a4b06033",
       "summary": "This post shows you how to deploy a serverless MCP proxy on Amazon Bedrock AgentCore Runtime that gives you a programmable layer to implement proper governance, controls, and observability aligned with an organization's security policies.",
-      "title": "Run custom MCP proxies serverless on Amazon Bedrock AgentCore Runtime"
+      "summary_zh": "本文說明如何在 Amazon Bedrock AgentCore Runtime 上部署無伺服器 MCP 代理。問題在於企業導入 Model Context Protocol（MCP）連結外部工具時，往往缺乏可程式化的中介層，難以落實治理、控管與可觀測性，也難以符合組織既有的安全政策。方法是在 AgentCore Runtime 上執行自訂 MCP 代理，形成一層可介入的代理層，於請求路徑中實作驗證、授權、流量限制、稽核與日誌記錄，並可依組織政策調整行為。無伺服器架構免除伺服器維運，隨需求自動擴縮。惟摘要未提供延遲、併發量、成本或安全測試等具體數據，也未討論代理失效時的復原策略。其意義在於把 MCP 從開發便利工具提升為可治理的企業基礎設施，對需要合規與可觀測性的代理式 AI 部署具實務價值。",
+      "title": "Run custom MCP proxies serverless on Amazon Bedrock AgentCore Runtime",
+      "title_zh": "在 Amazon Bedrock AgentCore Runtime 上以無伺服器方式執行自訂 MCP 代理"
     },
     {
       "arxiv_id": null,
@@ -5634,7 +5642,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:f3b693be23d2e2cf",
       "summary": "In this post, you'll learn how Vanguard built their Virtual Analyst solution by focusing on eight guiding principles of AI-ready data, the AWS services that powered their implementation, and the measurable business outcomes they achieved.",
-      "title": "Building AI-ready data: Vanguard’s Virtual Analyst journey"
+      "summary_zh": "本文分享 Vanguard 建構 Virtual Analyst 解決方案的經驗。問題在於企業雖擁有大量資料，卻常因格式不一、語意不清與治理不足而難以直接餵給 AI，導致分析需求仍高度依賴人工。方法上，Vanguard 以八項「AI 就緒資料」指導原則為核心，涵蓋資料品質、語意一致性、可追溯性與權限治理等面向，並搭配多項 AWS 服務完成實作，使虛擬分析師能以自然語言回答業務問題。文中亦說明其帶來的可衡量業務成果，例如分析效率提升與等待時間縮短。惟目前僅有摘要，未揭露具體指標數值、導入範圍或失敗經驗，也未討論模型幻覺與資料偏差等限制。其價值在於提供以資料治理為先的落地範式，說明 AI 成效取決於資料基礎，對金融與大型企業的資料策略具參考意義。",
+      "title": "Building AI-ready data: Vanguard’s Virtual Analyst journey",
+      "title_zh": "打造 AI 就緒資料：Vanguard 虛擬分析師的實踐歷程"
     }
   ],
   "run_date": "2026-04-30",

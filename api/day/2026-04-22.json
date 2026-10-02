@@ -202,7 +202,9 @@
         "source_name": null,
         "story_id": "hf:mistralai/mistral-small-4-119b-2603",
         "summary": "Mistral Small 4 is a powerful hybrid model capable of acting as both a general instruction model and a reasoning model. It unifies the capabilities of three different model families—**Instruct**, **Reasoning** (previously called Magistral), and **Devstral**—into a single, unified model. With its multimodal capabilities, efficient architecture, and flexible mode switching, it is a powerful general-purpose model for any task. In a latency-optimized setup, Mistral Small 4 achieves a **40% reduction in end-to-end completion time**, and in a throughput-optimized setup, it handles **3x more requests per second** compared to Mistral Small 3. To further improve efficiency you can either take advantages of: - Speculative decoding thanks to our trained eagle head...",
-        "title": "mistralai/Mistral-Small-4-119B-2603"
+        "summary_zh": "Mistral Small 4 是一個高效能的混合模型，旨在同時勝任一般指令遵循與推理任務，並將過往分散於 Instruct、Reasoning（前稱 Magistral）與 Devstral 三條模型家族的能力整合於單一模型之中。此設計讓使用者無需在不同任務間切換模型，即可獲得統一的對話、推理與程式碼生成體驗；同時模型具備多模態能力，可處理視覺與文字等多種輸入。在架構上，Mistral Small 4 採用高效設計，並透過模式切換機制靈活調整運作方式。根據官方數據，在延遲最佳化配置下，其端到端完成時間較 Mistral Small 3 縮短 40%；在吞吐量最佳化配置下，每秒可處理的請求數則提升至三倍。為進一步改善推論效率，模型提供兩種輔助機制：其一為推測解碼（speculative decoding），藉由訓練好的 eagle head 加速生成；其二為……（此處摘要僅能根據已知內容描述，原文後續細節未提供）。整體而言，Mistral Small 4 的價值在於以單一模型取代多種專門模型，簡化部署與使用流程，同時在速度與吞吐量上取得顯著進展，適合需要高即時性與高併發的應用場景。然而，官方摘要未提供具體的基準測試數據、模型參數量或與其他大型語言模型（如 GPT-4 或 Llama 系列）的比較，因此其宣稱的效率提升需透過獨立驗證確認。此外，多模態能力的實際表現與推理深度尚待詳細評估。這項工作反映了 AI 模型整合化的趨勢，未來可能減少對多模型管線的依賴，並促進更輕量且快速的邊緣部署，但實際採用時仍需考量任務特定需求與資源限制。",
+        "title": "mistralai/Mistral-Small-4-119B-2603",
+        "title_zh": "Mistral Small 4：統一指令、推理與程式碼能力的混合高效模型"
       }
     ],
     "other": [
@@ -253,7 +255,9 @@
         "source_name": null,
         "story_id": "hf:mistralai/leanstral-2603",
         "summary": "Leanstral is the first open-source code agent designed for Lean 4, a proof assistant capable of expressing complex mathematical objects such as perfectoid spaces and software specifications like properties of Rust fragments. Built as part of the Mistral Small 4 family, it combines multimodal capabilities and an efficient architecture, making it both performant and cost-effective compared to existing closed-source alternatives. For more details about the model and its scope, please read the related blog post. Leanstral incorporates the following architectural choices: - **MoE**: 128 experts, 4 active per token - **Model Size**: 119B parameters with 6.5B activated per token - **Context Length**: 256k tokens - **Multimodal Input**: Accepts text and image input, producing text output...",
-        "title": "mistralai/Leanstral-2603"
+        "summary_zh": "Leanstral 是首個專為 Lean 4 設計的開源程式碼代理，Lean 4 是一個形式化證明助手，能夠表達如 perfectoid spaces 這類複雜數學物件，以及如 Rust 程式碼片段屬性這類軟體規格。該模型屬於 Mistral Small 4 系列，融合多模態能力與高效架構，使其在效能與成本上相較於現有封閉原始碼替代方案更具競爭力。其具體架構選擇包括：採用混合專家（MoE）設計，包含 128 個專家，每個 token 啟動其中 4 個；模型總參數量達 119B，但每個 token 僅啟動 6.5B 參數，藉此兼顧規模與推論效率；上下文長度支援 256k tokens，可處理長篇證明或規格文件；輸入支援文字與影像，輸出則為文字。此模型的誕生填補了 Lean 4 工具鏈中開源強大程式碼代理的空白。然而，由於本文僅提供摘要，並未揭露具體訓練資料、微調方法、與基準測試的詳細比較結果，也無法評估其在實際證明任務中的成功率與錯誤型態。其局限性可能包括對複雜數學證明的泛化能力、與社群既有工具的整合程度，以及多模態輸入在證明輔助上的實際效用。儘管如此，Leanstral 的出現對形式化數學與軟體驗證領域意義重大，因為它降低了使用 Lean 4 的門檻，使更多研究人員與開發者能借助 AI 輔助撰寫形式化證明，加速數學定理的機器驗證與高保證軟體的開發。其成本效益特性也讓資源有限的研究團隊得以採用，進一步推動開放科學與可信賴 AI 的進程。",
+        "title": "mistralai/Leanstral-2603",
+        "title_zh": "Leanstral-2603：首個開源 Lean 4 程式碼代理"
       }
     ]
   },
@@ -5547,7 +5551,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:4921bf508cb480a0",
       "summary": "Today, we're excited to announce Claude Cowork in Amazon Bedrock. You can now run Cowork and Claude Code Desktop through Amazon Bedrock, directly or using an LLM gateway. In this post, we walk through how Claude Cowork integrates with Amazon Bedrock and show an example of how knowledge workers use it in practice.",
-      "title": "From developer desks to the whole organization: Running Claude Cowork in Amazon Bedrock"
+      "summary_zh": "這則 AWS 公告宣布 Claude Cowork 正式進駐 Amazon Bedrock，使用者可直接透過 Amazon Bedrock 執行 Cowork 與 Claude Code Desktop，或改由 LLM gateway 介接。企業在導入此類 AI 協作工具時，常見障礙在於資料治理、身分控管與費用歸屬難以統一，若僅停留在個別開發者自行訂閱的層次，便無法擴散到整個組織。文中以實際範例說明知識工作者如何在日常工作中使用 Cowork，展示其整合方式。目前公開內容僅有摘要，未提供權限模型、資料留存政策、延遲或單位成本等細節，也缺乏大規模部署的成效數據。其意義在於把代理式開發工具納入既有雲端治理框架，讓組織能在可控前提下從個人試用推進到全員採用，對已在 Bedrock 上布局的企業尤其相關。",
+      "title": "From developer desks to the whole organization: Running Claude Cowork in Amazon Bedrock",
+      "title_zh": "從開發者桌面到整個組織：在 Amazon Bedrock 上執行 Claude Cowork"
     },
     {
       "arxiv_id": null,
@@ -5600,7 +5606,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:661680e4a7fa3d52",
       "summary": "In this post, we show how to combine DVC (Data Version Control), Amazon SageMaker AI, and Amazon SageMaker AI MLflow Apps to build end-to-end ML model lineage. We walk through two deployable patterns — dataset-level lineage and record-level lineage — that you can run in your own AWS account using the companion notebooks.",
-      "title": "End-to-end lineage with DVC and Amazon SageMaker AI MLflow apps"
+      "summary_zh": "這篇 AWS 技術文章說明如何結合 DVC（Data Version Control）、Amazon SageMaker AI 與 Amazon SageMaker AI MLflow Apps，建立端到端的機器學習模型血統（lineage）追蹤。在實務上，模型從資料前處理、特徵工程到訓練與部署牽涉多個環節，一旦缺乏可追溯的紀錄，當模型表現退化或需要稽核時便難以定位問題來源，也難以符合法規要求。文中提出兩種可部署的模式：資料集層級血統與紀錄層級血統，並附上配套筆記本，讓讀者能直接在自己的 AWS 帳號中執行驗證。目前公開內容僅為摘要，未揭露兩種模式在儲存開銷、查詢效能與導入複雜度上的取捨，也缺乏與其他血統工具的比較。其價值在於提供可落地的實作範式，對需要可重現性與合規稽核的 ML 團隊具參考意義。",
+      "title": "End-to-end lineage with DVC and Amazon SageMaker AI MLflow apps",
+      "title_zh": "以 DVC 與 Amazon SageMaker AI MLflow Apps 建立端到端血統追蹤"
     },
     {
       "arxiv_id": null,
@@ -5652,7 +5660,9 @@
       "source_name": "Google AI Blog",
       "story_id": "fallback:49df723a425ffa54",
       "summary": "The Road to Google Marketing Live graphic. May 20, 2026, 9am PT. White background with colorful bottom gradient.",
-      "title": "3 new ways Ads Advisor is making Google Ads safer and faster"
+      "summary_zh": "這是 Google 官方部落格貼文，並非研究論文，因此僅有摘要與一張宣傳 Google Marketing Live（2026 年 5 月 20 日上午 9 點太平洋時間）的主視覺圖。貼文主軸是介紹 Ads Advisor 的三項新功能，號稱能讓 Google Ads 的運作更安全也更快速，但公告本身並未揭露這三項做法的技術細節、評估方式或實測結果，也未說明其與既有廣告審核或風險控管機制的差異。對廣告主與投放團隊而言，這類工具通常涉及帳戶安全審查、政策合規提示與效能建議等面向，若能落實，理論上有助於降低違規風險並縮短最佳化作業時間；不過在缺乏方法說明與量化指標的情況下，其實際效益仍待後續技術文件與實測驗證。建議讀者將此視為產品發布訊息，而非可檢驗的研究成果。",
+      "title": "3 new ways Ads Advisor is making Google Ads safer and faster",
+      "title_zh": "Ads Advisor 讓 Google Ads 更安全、更快速的三大新做法"
     }
   ],
   "run_date": "2026-04-22",

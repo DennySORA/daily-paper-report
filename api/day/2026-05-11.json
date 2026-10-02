@@ -224,7 +224,9 @@
         "source_name": null,
         "story_id": "hf:google/gemma-4-e2b-it-assistant",
         "summary": "Hugging Face | MTP Documentation License: Apache 2.0 | Authors: Google DeepMind > This model card is for the Multi-Token Prediction (MTP) drafters for the Gemma 4 models. MTP is implemented by extending the base model with a smaller, faster draft model. When used in a Speculative Decoding pipeline, the draft model predicts several tokens ahead, which the target model then verifies in parallel. This results in significant decoding speedups (up to 3x) while guaranteeing the exact same quality as standard generation, making these checkpoints perfect for low-latency and on-device applications. Gemma is a family of open models built by Google DeepMind. Gemma 4 models are multimodal, handling text and image input (with audio supported on small models) and generating text output. This release...",
-        "title": "google/gemma-4-E2B-it-assistant"
+        "summary_zh": "這篇技術報告介紹了 Google DeepMind 推出的 Gemma 4 系列中的 E2B 輔助模型，重點在於其採用多令牌預測（Multi-Token Prediction, MTP）技術來實現推論加速。在大型語言模型的生成過程中，傳統的自迴歸（autoregressive）方式一次僅預測一個令牌，導致解碼速度成為瓶頸。MTP 架構透過在基礎模型之上擴展一個較小且速度更快的草稿模型（draft model）來解決此問題。在推論時，草稿模型會先預測多個未來令牌，然後由目標模型以平行方式進行驗證，這種推測式解碼（speculative decoding）流程能在不改變最終輸出分佈的前提下，顯著提升解碼速度。根據報告，此方法可提供高達三倍的解碼加速，同時保證生成品質與標準生成方式完全一致，非常適合低延遲與邊緣裝置（on-device）的應用場景。Gemma 4 是一系列由 Google DeepMind 建構的開放模型，這些模型具備多模態能力，可處理文字與影像輸入，其中 E2B、E4B 與 12B 等級的模型更支援音訊輸入，並能產生文字輸出。這項工作的主要貢獻在於提供一個可直接整合至現有推論管線的加速方案，讓開發者在不需重新訓練模型的情況下獲得效能提升。然而，報告中也需注意，此加速效果依賴於特定的硬體與軟體最佳化，且草稿模型與目標模型之間的協同效率可能因任務類型而異。整體而言，此技術為大型語言模型的即時應用提供了實用解法，並展示了開放模型中結合輔助預測器與驗證機制的可行性，對於降低部署成本與擴大應用範圍具有重要意義。",
+        "title": "google/gemma-4-E2B-it-assistant",
+        "title_zh": "Gemma 4 E2B 輔助模型：多令牌預測與推論加速技術"
       },
       {
         "arxiv_id": null,
@@ -274,7 +276,9 @@
         "source_name": null,
         "story_id": "hf:google/gemma-4-31b-it-assistant",
         "summary": "Hugging Face | MTP Documentation License: Apache 2.0 | Authors: Google DeepMind > This model card is for the Multi-Token Prediction (MTP) drafters for the Gemma 4 models. MTP is implemented by extending the base model with a smaller, faster draft model. When used in a Speculative Decoding pipeline, the draft model predicts several tokens ahead, which the target model then verifies in parallel. This results in significant decoding speedups (up to 3x) while guaranteeing the exact same quality as standard generation, making these checkpoints perfect for low-latency and on-device applications. Gemma is a family of open models built by Google DeepMind. Gemma 4 models are multimodal, handling text and image input (with audio supported on small models) and generating text output. This release...",
-        "title": "google/gemma-4-31B-it-assistant"
+        "summary_zh": "本模型卡介紹了Google DeepMind開發的Gemma 4系列模型中的多Token預測（Multi-Token Prediction, MTP）草稿模型，具體版本為gemma-4-31B-it-assistant。該模型卡說明了MTP的實作方式：透過在基礎模型上擴展一個較小且運算速度更快的草稿模型，於投機解碼（Speculative Decoding）流程中，草稿模型會一次預測多個後續Token，再由目標模型並行驗證這些預測。此方法可顯著提升解碼速度（最高可達3倍），同時保證生成品質與標準生成完全相同，因此特別適合低延遲與裝置端（on-device）應用場景。Gemma 4系列為Google DeepMind建構的開放模型家族，具備多模態能力，能處理文字與影像輸入（部分型號如E2B、E4B與12B亦支援音訊）並產生文字輸出。此模型卡屬於技術文件與模型說明，未提供具體的實驗數據或基準測試結果，因此無法評估其在實際任務上的效能表現。然而，MTP作為一種加速推論的技術，其價值在於能在不影響輸出品的前提下，減少使用者等待時間，對即時互動應用與資源受限的邊緣裝置尤為重要。此開源模型（Apache 2.0授權）的發布，有助於研究社群與開發者利用投機解碼技術，在不犧牲品質的情況下最佳化生成效率。需要注意的是，本文件僅為模型卡摘要，並未詳述訓練細節、資料集組成或潛在限制；欲深入評估，應參閱完整的技術報告或進行實測。整體而言，此模型卡為Gemma 4的MTP擴充元件提供了清晰的概述，強調了其加速與品質保證的雙重優勢，並點出開放授權對促進技術普及的貢獻。",
+        "title": "google/gemma-4-31B-it-assistant",
+        "title_zh": "google/gemma-4-31B-it-assistant"
       },
       {
         "arxiv_id": null,
@@ -324,7 +328,9 @@
         "source_name": null,
         "story_id": "hf:google/gemma-4-e4b-it-assistant",
         "summary": "Hugging Face | MTP Documentation License: Apache 2.0 | Authors: Google DeepMind > This model card is for the Multi-Token Prediction (MTP) drafters for the Gemma 4 models. MTP is implemented by extending the base model with a smaller, faster draft model. When used in a Speculative Decoding pipeline, the draft model predicts several tokens ahead, which the target model then verifies in parallel. This results in significant decoding speedups (up to 3x) while guaranteeing the exact same quality as standard generation, making these checkpoints perfect for low-latency and on-device applications. Gemma is a family of open models built by Google DeepMind. Gemma 4 models are multimodal, handling text and image input (with audio supported on small models) and generating text output. This release...",
-        "title": "google/gemma-4-E4B-it-assistant"
+        "summary_zh": "本模型卡介紹了Google DeepMind發佈的Gemma 4系列多Token預測（Multi-Token Prediction, MTP）草稿模型。這類模型的目的是在推論階段透過投機解碼（Speculative Decoding）加速生成，同時維持與標準生成完全相同的輸出品質。其核心方法是在基礎模型上附加一個較小、較快的草稿模型，該草稿模型會預測接下來數個Token，再由目標模型平行驗證這些預測。這種設計能有效利用現代硬體的平行計算能力，在保證品質不變的前提下，最高可達3倍的解碼加速，特別適合低延遲與裝置端（on-device）應用。Gemma 4模型本身是多模態的，能處理文字與影像輸入（其中E2B、E4B與12B版本亦支援音訊），並生成文字輸出。此模型卡對應的是Gemma 4的E4B版本之MTP草稿檢查點。其授權為Apache 2.0，由Google DeepMind團隊開發。值得注意的是，此模型卡僅提供摘要層級的資訊，並未包含詳細的實驗數據、基準測試結果或具體的架構細節。因此，使用者若需深入評估其效能、成本與限制，應查閱完整的技術報告。這類模型在實際部署時需搭配目標模型與投機解碼框架，才能發揮加速效果；其加速倍率可能因硬體、序列長度與工作負載而異。此工作的意義在於，它展示了在不犧牲生成品質的前提下，如何透過輔助模型與平行驗證機制，顯著降低大語言模型的推論延遲，為即時互動與邊緣運算提供更實用的解決方案。",
+        "title": "google/gemma-4-E4B-it-assistant",
+        "title_zh": "Gemma 4 多Token預測草稿模型：加速推論的輔助檢查點"
       },
       {
         "arxiv_id": null,
@@ -374,7 +380,9 @@
         "source_name": null,
         "story_id": "hf:google/gemma-4-26b-a4b-it-assistant",
         "summary": "Hugging Face | MTP Documentation License: Apache 2.0 | Authors: Google DeepMind > This model card is for the Multi-Token Prediction (MTP) drafters for the Gemma 4 models. MTP is implemented by extending the base model with a smaller, faster draft model. When used in a Speculative Decoding pipeline, the draft model predicts several tokens ahead, which the target model then verifies in parallel. This results in significant decoding speedups (up to 3x) while guaranteeing the exact same quality as standard generation, making these checkpoints perfect for low-latency and on-device applications. Gemma is a family of open models built by Google DeepMind. Gemma 4 models are multimodal, handling text and image input (with audio supported on small models) and generating text output. This release...",
-        "title": "google/gemma-4-26B-A4B-it-assistant"
+        "summary_zh": "這份技術報告介紹了 Google DeepMind 為 Gemma 4 系列模型設計的多令牌預測（Multi-Token Prediction, MTP）草稿模型。其核心方法是在基礎模型上擴充一個較小且更快的草稿模型，並將其整合至推測解碼（Speculative Decoding）流程中：草稿模型一次預測多個後續令牌，再由目標模型平行驗證這些預測，從而大幅提升解碼速度（最高可達 3 倍加速），同時保證生成品質與標準生成完全一致。這使得這些檢查點特別適合低延遲與裝置端（on-device）應用。Gemma 4 本身是 Google DeepMind 打造的開放模型家族，具備多模態能力，能處理文字與影像輸入（其中 E2B、E4B 與 12B 版本亦支援音訊），並輸出文字。報告著重於 MTP 草稿模型的運作機制與部署細節，並未提供獨立的基準測試數據或改進對比的量化證據；其主要證據在於推測解碼架構的理論優勢與實作上的速度提升宣稱。限制方面，報告僅為模型卡，內容精簡，未深入討論草稿模型在不同任務上的準確度權衡、記憶體開銷或與其他加速技術的詳細比較。此技術的意義在於，它提供了一種在不犧牲生成品質的前提下顯著降低延遲的實務方案，對於即時互動、邊緣運算與資源受限環境中的大型語言模型部署尤其重要，也展示了開放模型在效率最佳化上的持續進展。",
+        "title": "google/gemma-4-26B-A4B-it-assistant",
+        "title_zh": "Gemma 4 多令牌預測草稿模型（26B-A4B 指令助手）"
       }
     ]
   },
@@ -4383,7 +4391,9 @@
       "source_name": "Microsoft Research Blog",
       "story_id": "fallback:77d55de9cee5bf19",
       "summary": "<p>Using SocialReasoning Bench, we observed a stable pattern across models—agents execute competently, but fail to consistently improve the user’s position, even with explicit instructions to optimize for user interest.</p>\n<p>The post <a href=\"https://www.microsoft.com/en-us/research/blog/socialreasoning-bench-measuring-whether-ai-agents-act-in-users-best-interests/\">SocialReasoning-Bench: Measuring whether AI agents act in users’ best interests</a> appeared first on <a href=\"https://www.microsoft.com/en-us/research\">Microsoft Research</a>.</p>",
-      "title": "SocialReasoning-Bench: Measuring whether AI agents act in users’ best interests"
+      "summary_zh": "這篇 Microsoft Research 部落格文章提出 SocialReasoning Bench，用來檢驗 AI 代理在互動中是否真的促進使用者的利益，而不只是把任務執行完。作者觀察到一個跨模型相當穩定的現象：代理能稱職地完成被交付的操作，卻未必能持續改善使用者所處的處境；即使明確指示要以使用者利益為最佳化目標，模型表現仍未達到一致的行為。文中強調此落差並非個別模型的偶發失誤，而是在多個模型上重複出現的模式，暗示現行訓練與評測目標（例如任務完成率、指令遵循）與「使用者福祉」之間存在缺口。限制在於本文屬摘要性質，未交代基準的題目設計、評分準則、涵蓋的模型清單與具體分數，也未說明是否控制提示詞敏感度或環境隨機性，因此難以判斷結論的推廣範圍與統計強度。其意義在於提醒代理研究應把使用者利益納入評測面向，而非僅以任務成功率衡量能力。",
+      "title": "SocialReasoning-Bench: Measuring whether AI agents act in users’ best interests",
+      "title_zh": "SocialReasoning-Bench：衡量 AI 代理是否真正以使用者最佳利益行事"
     },
     {
       "arxiv_id": "2605.10124",
@@ -5578,7 +5588,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:9fb4a1168015e68c",
       "summary": "In this post, we build a multimodal retrieval system for aerospace manufacturing documents using Amazon Nova Multimodal Embeddings on Amazon Bedrock and Amazon S3 Vectors. We evaluate the system on 26 manufacturing queries and compare generation quality between a text-only pipeline and the multimodal pipeline.",
-      "title": "Manufacturing intelligence with Amazon Nova Multimodal Embeddings"
+      "summary_zh": "這篇 AWS 部落格文章說明如何為航太製造領域的文件建構一套多模態檢索系統。方法上，作者使用 Amazon Nova Multimodal Embeddings，並結合 Amazon Bedrock 與 Amazon S3 Vectors 來建立向量索引與檢索流程，讓文字與圖像等不同模態的製造文件能被統一編碼與查詢。評估方面，團隊以 26 條製造業相關查詢進行測試，並比較純文字管線與多模態管線在生成品質上的差異，藉此檢視加入視覺資訊後檢索與回答是否更準確。文中屬於實務導向的系統建置分享，未提供完整基準資料集、評分細節或統計檢定，26 條查詢的樣本規模也偏小，且缺乏與其他嵌入模型或檢索架構的對照，因此結論的可推廣性有限。其意義在於示範製造業文件中圖文混雜的知識如何透過多模態嵌入被檢索，對於維修手冊、工程圖與規格書等場景具有參考價值。",
+      "title": "Manufacturing intelligence with Amazon Nova Multimodal Embeddings",
+      "title_zh": "以 Amazon Nova 多模態嵌入打造製造業智慧應用"
     },
     {
       "arxiv_id": null,
@@ -5633,7 +5645,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:88a58c0f2fe206e6",
       "summary": "Today, we're excited to announce the general availability of Claude Platform on AWS. Claude Platform on AWS is a new service that gives customers direct access to Anthropic's native Claude Platform experience through their AWS account, with no separate credentials, contracts, or billing relationships required. AWS is the first cloud provider to offer access to the native Claude Platform experience. In this post, we explore how Claude Platform on AWS works and how you can start using it today.",
-      "title": "Introducing Claude Platform on AWS: Anthropic’s native platform, through your AWS account"
+      "summary_zh": "這篇 AWS 部落格文章宣布 Claude Platform on AWS 正式一般可用（GA）。此服務讓客戶能透過自身的 AWS 帳號直接使用 Anthropic 原生的 Claude Platform 體驗，不需另外申請憑證、簽署獨立合約或建立額外的計費關係；文中指出 AWS 是第一個提供原生 Claude Platform 存取體驗的雲端供應商。文章並說明此服務的運作方式與啟用步驟，屬於產品發布與整合說明，而非研究成果。由於內容為官方公告性質，未提供效能基準、延遲或成本比較，也未討論資料落地、合規或與 Amazon Bedrock 上既有 Claude 模型服務的差異與取捨，讀者需自行評估適用情境。其意義在於雲端平台與模型供應商的整合更緊密，企業若已在 AWS 上運作，可望以更少的行政負擔導入 Claude 相關能力，並簡化帳務與權限管理。",
+      "title": "Introducing Claude Platform on AWS: Anthropic’s native platform, through your AWS account",
+      "title_zh": "Claude Platform 登陸 AWS：透過 AWS 帳號使用 Anthropic 原生平台"
     },
     {
       "arxiv_id": null,
@@ -5686,7 +5700,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:0747341efa674ee6",
       "summary": "In this post, you will learn how to set up the Exa integration in Strands Agents, understand the two core tools it exposes, and walk through real-world use cases that show how agents use web search to complete multi-step tasks.",
-      "title": "Building web search-enabled agents with Strands and Exa"
+      "summary_zh": "這篇 AWS 部落格文章教學性質濃厚，說明如何在 Strands Agents 框架中設定 Exa 整合，並解釋該整合所暴露的兩個核心工具，接著以實際案例展示代理如何運用網頁搜尋完成多步驟任務。方法層面，文章聚焦於工具呼叫與代理流程的串接，讓模型能先檢索外部網頁資訊，再據此進行推理與後續動作，屬於檢索增強式的代理設計。文中以情境示範為主，未提供標準化基準、成功率或延遲數據，也未討論搜尋品質、來源可信度與幻覺風險等問題，因此難以量化評估其實際效益。限制還包括示範案例的規模與可重現性有限。其意義在於降低開發者建構網頁搜尋代理的門檻，對於需要即時外部資訊的問答、研究彙整與任務自動化應用具有參考價值，但實務部署仍需自行補強評估與防護機制。",
+      "title": "Building web search-enabled agents with Strands and Exa",
+      "title_zh": "以 Strands 與 Exa 打造具備網頁搜尋能力的代理"
     },
     {
       "arxiv_id": null,
@@ -5741,7 +5757,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:cdae7710cfdc0184",
       "summary": "In this post, we dive deep into the architecture and techniques we used to improve Miro’s bug routing, achieving six times fewer team reassignments and five times shorter time-to-resolution powered by Amazon Bedrock.",
-      "title": "How Miro uses Amazon Bedrock to boost software bug routing accuracy and improve time-to-resolution from days to hours"
+      "summary_zh": "這篇 AWS 部落格文章以 Miro 的實務案例說明如何改善軟體缺陷（bug）的分派流程。Miro 面臨的痛點是缺陷常被指派到錯誤的團隊，導致反覆轉派與修復時間拉長。文章深入介紹其架構與所用技術，並以 Amazon Bedrock 為核心來建構判斷與路由機制，讓缺陷能更準確地送到負責的團隊。成效方面，文中報告團隊重新指派的次數減少為原本的六分之一，且從回報到解決的時間縮短為原本的五分之一，達到從數天降到數小時的改善。此為廠商發布的案例分享，未提供完整基準設定、標註資料規模、模型選擇比較或統計顯著性檢定，成效數字也可能受組織流程調整影響，未必能直接套用到其他團隊。其意義在於示範生成式 AI 如何嵌入既有工程維運流程，處理分類與分派這類高價值的內部作業，並帶來可衡量的週期時間改善。",
+      "title": "How Miro uses Amazon Bedrock to boost software bug routing accuracy and improve time-to-resolution from days to hours",
+      "title_zh": "Miro 如何用 Amazon Bedrock 提升軟體缺陷分派準確度，將解決時間從數天縮短到數小時"
     },
     {
       "arxiv_id": null,
@@ -5794,7 +5812,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:503ed8f6c588997f",
       "summary": "Amazon Quick helps turn your large enterprise data into fast and accurate AI-powered decisions. In this post, you will learn about five new capabilities of Amazon Quick that accelerate how data professionals deliver trusted AI-powered insights at enterprise scale.",
-      "title": "Amazon Quick: Accelerating the path from enterprise data to AI-powered decisions"
+      "summary_zh": "這篇 AWS 部落格文章介紹 Amazon Quick 的定位：協助企業把龐大的內部資料轉化為快速且準確的 AI 驅動決策。文章重點在於說明五項新能力，目標是讓資料專業人員能在企業規模下更快交付可信的 AI 洞察，涵蓋從資料接入、分析到呈現的流程加速。內容屬於產品功能導向的說明，強調的是工作流程與分析體驗的改善，而非提出新的演算法或研究發現。由於為官方發布性質，文章未提供獨立的效能基準、延遲或準確度數據，也未交代與既有商業智慧工具或資料倉儲方案的整合限制、權限治理與成本結構，因此讀者難以量化評估實際增益。其意義在於反映生成式 AI 正被整合進企業分析平台，讓非技術背景的使用者也能以自然語言取得洞察，進一步縮短資料到決策之間的落差，但導入時仍須留意資料品質與治理問題。",
+      "title": "Amazon Quick: Accelerating the path from enterprise data to AI-powered decisions",
+      "title_zh": "Amazon Quick：加速從企業資料到 AI 驅動決策的路徑"
     },
     {
       "arxiv_id": null,
@@ -5843,7 +5863,9 @@
       "source_name": "Google AI Blog",
       "story_id": "fallback:4e51ecc809acee35",
       "summary": "A screenshot of the AI-powered experience on Google Finance.",
-      "title": "The new AI-powered Google Finance is expanding to Europe."
+      "summary_zh": "這篇 Google 官方部落格貼文宣布，搭載 AI 技術的新版 Google Finance 體驗將拓展到歐洲市場，並附上一張新版介面的截圖作為示意。內容屬於產品上線公告，主要訊息是功能的地區擴展，而非研究或技術貢獻。文中未說明所採用的模型、AI 功能的具體運作方式，也未提供任何量化評估，例如使用者滿意度、資訊準確度、延遲或覆蓋的市場與語言清單；亦未交代歐洲地區在資料來源、法規遵循（如金融資訊揭露相關規範）與免責聲明上的處理方式。由於可用資訊極少，讀者難以判斷新功能與既有版本的實質差異。其意義在於顯示生成式 AI 正持續滲透到消費級理財資訊產品，並從美國市場推向更多地區，對金融資訊的呈現方式與使用者體驗可能帶來改變，但仍需觀察實際準確性與合規安排。",
+      "title": "The new AI-powered Google Finance is expanding to Europe.",
+      "title_zh": "全新 AI 驅動的 Google Finance 擴展至歐洲"
     }
   ],
   "run_date": "2026-05-11",

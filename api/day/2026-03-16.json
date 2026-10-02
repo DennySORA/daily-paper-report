@@ -811,7 +811,9 @@
       "source_name": null,
       "story_id": "hf:qwen/qwen3.5-397b-a17b",
       "summary": "> This repository contains model weights and configuration files for the post-trained model in the Hugging Face Transformers format. > These artifacts are compatible with Hugging Face Transformers, vLLM, SGLang, KTransformers, etc. > For users seeking managed, scalable inference without infrastructure maintenance, the official Qwen API service is provided by Alibaba Cloud Model Studio. > In particular, **Qwen3.5-Plus** is the hosted version corresponding to Qwen3.5-397B-A17B with more production features, e.g., 1M context length by default, official built-in tools, and adaptive tool use. > For more information, please refer to the User Guide. Over recent months, we have intensified our focus on developing foundation models that deliver exceptional utility and performance. Qwen3.5...",
-      "title": "Qwen/Qwen3.5-397B-A17B"
+      "summary_zh": "此模型庫提供 Qwen3.5-397B-A17B 後訓練模型的權重與組態檔，採用 Hugging Face Transformers 格式，並相容於 Transformers、vLLM、SGLang、KTransformers 等推論框架，方便使用者在自建環境中部署。針對不願自行維護基礎設施的使用者，官方另提供由阿里雲 Model Studio 代管的 API 服務；文中特別指出 Qwen3.5-Plus 即為對應的托管版本，預設具備 1M 上下文長度、官方內建工具與自適應工具使用等生產級功能。內容屬於模型發布說明，並非研究論文，因此沒有方法章節、基準測試細節或消融實驗，也未揭露訓練資料組成、參數量配置的設計理由，以及與前代或其他同級模型的量化比較，讀者無法從中評估其實際能力邊界與授權限制。其意義在於提供一個超大規模且支援長脈絡的開源權重選項，讓社群能在本地或混合雲環境中進行微調與推論，同時也反映當前前沿模型以托管服務與開放權重並行的發布策略。",
+      "title": "Qwen/Qwen3.5-397B-A17B",
+      "title_zh": "Qwen/Qwen3.5-397B-A17B"
     }
   ]
 }

@@ -5340,7 +5340,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:ec294dc463df0876",
       "summary": "In this post, you will configure Chrome enterprise policies to restrict a browser agent to a specific website, observe the policy enforcement through session recording, and demonstrate custom root CA certificates using a public test site. The walkthrough produces a working solution that researches Amazon Bedrock AgentCore documentation while operating under enterprise browser restrictions.",
-      "title": "Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore"
+      "summary_zh": "本文示範如何透過 Chrome 企業政策，把瀏覽器代理限制在特定網站之內，並以工作階段錄影觀察政策是否被確實執行，同時以公開測試網站展示自訂根憑證（root CA）憑證的作法。完成後的範例可讓代理在企業瀏覽限制下，仍能查閱 Amazon Bedrock AgentCore 的官方文件。文章處理的是代理自動上網時常見的治理缺口：代理一旦能自由瀏覽，就可能觸及未授權資源或洩漏內部資訊。屬實作教學性質，目前僅取得摘要，未提供政策繞道測試、效能開銷或與其他沙箱機制的比較。其價值在於把既有的端點管理政策延伸到 AI 代理場景，讓網路層控制成為代理安全防線的一環。",
+      "title": "Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore",
+      "title_zh": "在 Amazon Bedrock AgentCore 上以 Chrome 企業政策管控 AI 代理的瀏覽範圍"
     },
     {
       "arxiv_id": null,
@@ -5392,7 +5394,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:1a86703db9861685",
       "summary": "In this post, you learn how to combine Stream's Vision Agents open-source framework with Amazon Bedrock and Amazon Nova 2 Sonic to build real-time voice agents that can be production-ready in minutes. You'll learn how the integration works under the hood, walk through code examples, and explore advanced capabilities like function calling, automatic reconnection, and multilingual voice support.",
-      "title": "Real-time voice agents with Stream Vision Agents and Amazon Nova 2 Sonic"
+      "summary_zh": "本文說明如何把 Stream 的開源框架 Vision Agents 與 Amazon Bedrock、Amazon Nova 2 Sonic 結合，快速打造可上線的即時語音代理。內容涵蓋整合運作原理、程式範例，以及函式呼叫、自動重新連線與多語語音支援等進階能力。其問題意識在於即時語音互動涉及串流延遲、連線穩定度與工具呼叫的正確性，過去往往需要大量客製工程。文章屬開發者導向的技術部落格，目前僅有摘要，未提供延遲量測、語音辨識準確率、成本分析或併發規模的實證數據。對想快速驗證語音代理產品雛形的團隊而言，此整合路徑可顯著縮短從原型到部署的時間。",
+      "title": "Real-time voice agents with Stream Vision Agents and Amazon Nova 2 Sonic",
+      "title_zh": "結合 Stream Vision Agents 與 Amazon Nova 2 Sonic 的即時語音代理"
     },
     {
       "arxiv_id": null,
@@ -5444,7 +5448,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:0a05bf5508c45605",
       "summary": "In this post, you will learn how to implement Assisted NLU effectively. You will learn how to improve your bot design with effective intent and slot descriptions, validate your implementation using Test Workbench, and plan your transition from traditional NLU to Assisted NLU for both new and existing bots.",
-      "title": "Improve bot accuracy with Amazon Lex Assisted NLU"
+      "summary_zh": "本文說明如何有效導入 Assisted NLU，透過撰寫良好的意圖（intent）與槽位（slot）描述來改善對話機器人的設計品質，並使用 Test Workbench 驗證實作結果，同時規劃新舊機器人從傳統 NLU 遷移到 Assisted NLU 的路徑。其核心問題是傳統意圖分類高度依賴大量標註語句，維護成本高且難以涵蓋語意變化；由生成式模型輔助的理解方式可降低這類負擔。文章屬實作指南性質，目前僅有摘要，未提供準確率、召回率或遷移前後的量化對照。對已累積大量對話資料的企業而言，此文可作為分階段遷移與回歸測試的規劃參考。",
+      "title": "Improve bot accuracy with Amazon Lex Assisted NLU",
+      "title_zh": "以 Amazon Lex Assisted NLU 提升機器人理解準確度"
     },
     {
       "arxiv_id": null,
@@ -5497,7 +5503,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:3818e178dd9171a1",
       "summary": "Today, we're announcing cross-account Athena access for Amazon Quick. With this feature, customers can query Athena data in other AWS accounts using AWS Identity and Access Management (IAM) role chaining, with query costs billed to the account where the data resides.",
-      "title": "From siloed data to unified insights: Cross-account Athena Access for Amazon Quick"
+      "summary_zh": "AWS 宣布 Amazon Quick 支援跨帳號 Athena 存取，讓客戶能透過 AWS Identity and Access Management（IAM）角色鏈結（role chaining），查詢位於其他 AWS 帳號中的 Athena 資料，而查詢費用則由資料所在的帳號負擔。此功能處理的是企業常見的資料孤島與成本歸屬問題：分析師過去往往需要複製資料或申請多組憑證，才能跨帳號取得洞察。文章屬產品公告性質，目前僅取得摘要，未說明跨帳號查詢的延遲、並發上限、權限邊界或稽核記錄的細節。對採多帳號架構的組織而言，此設計同時滿足資料留在原地的治理要求與成本可追溯性。",
+      "title": "From siloed data to unified insights: Cross-account Athena Access for Amazon Quick",
+      "title_zh": "從資料孤島到統一洞察：Amazon Quick 的跨帳號 Athena 存取"
     }
   ],
   "run_date": "2026-05-14",

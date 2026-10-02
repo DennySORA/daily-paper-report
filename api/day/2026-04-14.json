@@ -4506,7 +4506,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:66bfc2aa1b21109d",
       "summary": "This post demonstrates how Lambda enables scalable, cost-effective reward functions for Amazon Nova customization. You'll learn to choose between Reinforcement Learning via Verifiable Rewards (RLVR) for objectively verifiable tasks and Reinforcement Learning via AI Feedback (RLAIF) for subjective evaluation, design multi-dimensional reward systems that help you prevent reward hacking, optimize Lambda functions for training scale, and monitor reward distributions with Amazon CloudWatch. Working code examples and deployment guidance are included to help you start experimenting.",
-      "title": "How to build effective reward functions with AWS Lambda for Amazon Nova model customization"
+      "summary_zh": "這篇 AWS 部落格文章探討在進行 Amazon Nova 模型客製化時，如何利用 AWS Lambda 建構可擴展且具成本效益的獎勵函式（reward function）。問題核心在於：強化式學習的成效高度依賴獎勵設計，但自行維運推論服務來計算獎勵，往往面臨擴展性與成本壓力，且容易出現獎勵駭取（reward hacking）導致模型行為偏離目標。文中建議依任務性質選擇路線：客觀可驗證的任務採用「可驗證獎勵的強化式學習」（RLVR），主觀評價任務則採「以 AI 回饋進行強化式學習」（RLAIF）；並說明如何設計多維度獎勵系統以抑制獎勵駭取、針對訓練規模最佳化 Lambda 函式，以及透過 Amazon CloudWatch 監控獎勵分布。文章提供可執行的程式範例與部署指引。摘要未揭露具體實驗數據、成本數字或模型效能提升幅度，因此讀者仍需自行以自身任務驗證可行性與效益。",
+      "title": "How to build effective reward functions with AWS Lambda for Amazon Nova model customization",
+      "title_zh": "如何以 AWS Lambda 為 Amazon Nova 模型客製化打造有效的獎勵函式"
     },
     {
       "arxiv_id": "2604.11088",

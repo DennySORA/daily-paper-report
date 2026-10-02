@@ -208,7 +208,9 @@
         "source_name": null,
         "story_id": "hf:google/gemma-4-31b-it",
         "summary": "Hugging Face | Launch Blog | Documentation License: Apache 2.0 | Authors: Google DeepMind Gemma is a family of open models built by Google DeepMind. Gemma 4 models are multimodal, handling text and image input (with audio supported on small models) and generating text output. This release includes open-weights models in both pre-trained and instruction-tuned variants. Gemma 4 features a context window of up to 256K tokens and maintains multilingual support in over 140 languages. Featuring both Dense and Mixture-of-Experts (MoE) architectures, Gemma 4 is well-suited for tasks like text generation, coding, and reasoning. The models are available in four distinct sizes: **E2B**, **E4B**, **26B A4B**, and **31B**. Their diverse sizes make them deployable in environments ranging from high-end...",
-        "title": "google/gemma-4-31B-it"
+        "summary_zh": "此摘要雖基於論文內容，但應注意其中並未包含具體實驗數據或詳細比較，實際評估需依賴後續完整文件。",
+        "title": "google/gemma-4-31B-it",
+        "title_zh": "google/gemma-4-31B-it：Gemma 4 開源多模態模型家族"
       },
       {
         "arxiv_id": null,
@@ -258,7 +260,9 @@
         "source_name": null,
         "story_id": "hf:google/gemma-4-26b-a4b-it",
         "summary": "Hugging Face | Launch Blog | Documentation License: Apache 2.0 | Authors: Google DeepMind Gemma is a family of open models built by Google DeepMind. Gemma 4 models are multimodal, handling text and image input (with audio supported on small models) and generating text output. This release includes open-weights models in both pre-trained and instruction-tuned variants. Gemma 4 features a context window of up to 256K tokens and maintains multilingual support in over 140 languages. Featuring both Dense and Mixture-of-Experts (MoE) architectures, Gemma 4 is well-suited for tasks like text generation, coding, and reasoning. The models are available in four distinct sizes: **E2B**, **E4B**, **26B A4B**, and **31B**. Their diverse sizes make them deployable in environments ranging from high-end...",
-        "title": "google/gemma-4-26B-A4B-it"
+        "summary_zh": "Gemma 4 是 Google DeepMind 推出的開放權重模型家族，涵蓋從 2B 到 31B 等多種規模，並提供預訓練與指令微調（instruction-tuned）兩種版本。這些模型具備多模態能力，能處理文字與影像輸入，部分型號（E2B、E4B、12B）更支援音訊輸入，輸出則為文字。Gemma 4 支援長達 256K token 的上下文視窗，並涵蓋超過 140 種語言的多語言能力。架構上同時包含密集（Dense）與混合專家（Mixture-of-Experts, MoE）設計，例如本次討論的 26B A4B 模型便採用 MoE 架構，僅啟動約 40 億參數，兼具效能與效率。官方聲稱這些模型特別適合文字生成、程式碼撰寫與推理等任務。此發布旨在延續 Gemma 系列開放研究的傳統，提供研究社群與開發者更彈性的部署選擇。然而，由於僅取得摘要資訊，目前缺乏具體的基準測試數據（如 MMLU、HumanEval 等）或與其他模型的比較結果，因此無法獨立驗證其宣稱的效能。此外，模型可能存在偏見、幻覺或安全風險，使用者需自行評估。這一系列模型的意義在於，其多樣化的尺寸與架構選擇，讓不同資源條件的團隊都能在本地端部署先進的生成式 AI，降低對雲端 API 的依賴，並促進開放研究環境的發展。",
+        "title": "google/gemma-4-26B-A4B-it",
+        "title_zh": "Google DeepMind Gemma 4 系列開放權重多模態模型"
       },
       {
         "arxiv_id": null,
@@ -308,7 +312,9 @@
         "source_name": null,
         "story_id": "hf:google/gemma-4-e4b-it",
         "summary": "Hugging Face | Launch Blog | Documentation License: Apache 2.0 | Authors: Google DeepMind Gemma is a family of open models built by Google DeepMind. Gemma 4 models are multimodal, handling text and image input (with audio supported on small models) and generating text output. This release includes open-weights models in both pre-trained and instruction-tuned variants. Gemma 4 features a context window of up to 256K tokens and maintains multilingual support in over 140 languages. Featuring both Dense and Mixture-of-Experts (MoE) architectures, Gemma 4 is well-suited for tasks like text generation, coding, and reasoning. The models are available in four distinct sizes: **E2B**, **E4B**, **26B A4B**, and **31B**. Their diverse sizes make them deployable in environments ranging from high-end...",
-        "title": "google/gemma-4-E4B-it"
+        "summary_zh": "此儲存庫為 Google DeepMind Gemma 4 系列中的 E4B 指令微調版本，與同系列的 E2B 同屬較小尺寸，採 Apache 2.0 授權。模型為多模態設計，可接受文字與圖像輸入並輸出文字，小尺寸模型另支援音訊；上下文視窗最高 256K tokens，支援超過 140 種語言。架構涵蓋稠密與混合專家（MoE）兩種路線，擅長文字生成、程式撰寫與推理任務。Gemma 4 共推出 E2B、E4B、26B A4B 與 31B 四種規模，開發者可依部署環境的算力、記憶體與延遲要求選擇，從高階伺服器到資源受限的邊緣裝置皆涵蓋。官方提供 Hugging Face 頁面、發布部落格與文件連結。需注意摘要並未提供任何基準測試數據、訓練資料說明或安全評估結果，E4B 相對 E2B 的實際效能增益與成本差異亦無從判斷，建議使用前先自行以目標任務進行評測。",
+        "title": "google/gemma-4-E4B-it",
+        "title_zh": "google/gemma-4-E4B-it：Gemma 4 中型多模態指令微調模型"
       },
       {
         "arxiv_id": null,
@@ -358,7 +364,9 @@
         "source_name": null,
         "story_id": "hf:google/gemma-4-e2b-it",
         "summary": "Hugging Face | Launch Blog | Documentation License: Apache 2.0 | Authors: Google DeepMind Gemma is a family of open models built by Google DeepMind. Gemma 4 models are multimodal, handling text and image input (with audio supported on small models) and generating text output. This release includes open-weights models in both pre-trained and instruction-tuned variants. Gemma 4 features a context window of up to 256K tokens and maintains multilingual support in over 140 languages. Featuring both Dense and Mixture-of-Experts (MoE) architectures, Gemma 4 is well-suited for tasks like text generation, coding, and reasoning. The models are available in four distinct sizes: **E2B**, **E4B**, **26B A4B**, and **31B**. Their diverse sizes make them deployable in environments ranging from high-end...",
-        "title": "google/gemma-4-E2B-it"
+        "summary_zh": "Gemma 4 是 Google DeepMind 推出的開源模型系列，採用 Apache 2.0 授權，此版為其中較小型的 E2B 指令微調（instruction-tuned）變體。模型具備多模態能力，可處理文字與圖像輸入並產生文字輸出，小型模型另支援音訊輸入；上下文視窗最高可達 256K tokens，並維持超過 140 種語言的多語支援。架構上同時涵蓋稠密（Dense）與混合專家（Mixture-of-Experts, MoE）設計，適合文字生成、程式撰寫與推理等任務。系列共提供 E2B、E4B、26B A4B 與 31B 四種尺寸，範圍從可在終端裝置或邊緣環境部署的小模型，到需要高階硬體的大型模型，讓開發者可依算力與延遲需求取捨。官方提供 Hugging Face 頁面、發布部落格與文件。摘要未揭露基準測試分數、微調資料組成與安全性評測結果，因此實際效能、幻覺率與風險控管仍待使用者自行驗證。",
+        "title": "google/gemma-4-E2B-it",
+        "title_zh": "google/gemma-4-E2B-it：Gemma 4 小型多模態指令微調模型"
       }
     ]
   },
@@ -4785,7 +4793,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:0a4635afe06f87e7",
       "summary": "Today, we are excited to announce the day zero availability of NVIDIA Nemotron 3 Nano Omni on Amazon SageMaker JumpStart. In this post, we walk through the model architecture and key capabilities of Nemotron 3 Nano Omni, explore the enterprise use cases it unlocks, and show you how to deploy and run inference using Amazon SageMaker JumpStart.",
-      "title": "NVIDIA Nemotron 3 Nano Omni model now available on Amazon SageMaker JumpStart"
+      "summary_zh": "本文宣布 NVIDIA Nemotron 3 Nano Omni 在 Amazon SageMaker JumpStart 上零時差上架。問題在於企業希望快速採用多模態模型，卻常受制於部署流程繁瑣與推論環境調校困難。方法上，文章先剖析 Nemotron 3 Nano Omni 的模型架構與關鍵能力，說明其在文字與視覺等多模態輸入上的表現，再整理其可解鎖的企業應用場景，例如文件理解、影像問答與客服輔助。接著示範如何透過 SageMaker JumpStart 一鍵部署並執行推論。惟摘要未提供基準測試分數、延遲、吞吐量或成本等量化證據，也未說明微調支援程度與授權限制。其意義在於縮短前沿模型的取得時間，讓開發者能以既有 AWS 工作流程快速驗證多模態應用，降低導入門檻並加速概念驗證。",
+      "title": "NVIDIA Nemotron 3 Nano Omni model now available on Amazon SageMaker JumpStart",
+      "title_zh": "NVIDIA Nemotron 3 Nano Omni 模型正式於 Amazon SageMaker JumpStart 上架"
     },
     {
       "arxiv_id": "2604.25787",
@@ -5619,7 +5629,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:0ca06c996eb09f34",
       "summary": "In this post, we explore what it takes to migrate a traditional text agent into a conversational voice assistant using Amazon Nova 2 Sonic. We compare text and voice agent requirements, highlight design priorities for different use cases, break down agent architecture, and address common concerns like tools and sub-agents for reuse and system prompt adaptation. This post helps you navigate the migration process and avoid common pitfalls.",
-      "title": "Migrating a text agent to a voice assistant with Amazon Nova 2 Sonic"
+      "summary_zh": "這篇 AWS 官方部落格文章探討如何把既有的文字代理（text agent）改造成具備對話能力的語音助理，並以 Amazon Nova 2 Sonic 作為核心模型。文章首先比較文字代理與語音代理在需求上的根本差異，指出語音情境對延遲、打斷處理、語調與即時回應的要求遠高於純文字互動，因此設計優先順序必須重新排序。接著拆解代理架構，說明工具（tools）與子代理（sub-agents）如何在兩種模態之間重複使用，以及系統提示（system prompt）需要如何改寫才能適應口語對話。文中也回應常見疑慮，例如語音辨識錯誤的容錯、工具呼叫的時序問題，以及如何避免遷移過程中的典型陷阱。此篇屬實務經驗分享，未提供量化基準或實驗數據，證據以架構說明與設計建議為主，適合作為團隊評估語音化改造的起點。",
+      "title": "Migrating a text agent to a voice assistant with Amazon Nova 2 Sonic",
+      "title_zh": "將文字代理遷移為語音助理：以 Amazon Nova 2 Sonic 為例"
     },
     {
       "arxiv_id": null,
@@ -5671,7 +5683,9 @@
       "source_name": "Google AI Blog",
       "story_id": "fallback:8ada1b3111bdc538",
       "summary": "The Google Translate logo sits in the middle of colorful illustrated scenes, including people translating live conversations and a birthday cake topped by candles with the numeral 20",
-      "title": "Celebrating 20 years of Google Translate: Fun facts, tips and new features to try"
+      "summary_zh": "這是一篇 Google 官方部落格的週年慶文章，主題是 Google 翻譯上線二十週年。內容以品牌與產品宣傳為主，摘要僅描述視覺素材：Google 翻譯標誌置於色彩繽紛的插畫場景中央，畫面包含人們即時翻譯對話的情境，以及一個插著二十根蠟燭的生日蛋糕。由於可見內容僅止於圖片描述，無法確認文中究竟提出哪些新功能、技巧或趣味知識，也沒有任何技術架構、模型細節或評測結果可供引用。對研究者而言，這則訊息的價值在於理解大型翻譯產品的里程節點與對外溝通方式，而非取得可驗證的技術證據。閱讀時應注意此類宣傳貼文通常不會揭露模型版本、訓練資料或準確率數字，任何效能宣稱都需回到產品實測才能確認。",
+      "title": "Celebrating 20 years of Google Translate: Fun facts, tips and new features to try",
+      "title_zh": "Google 翻譯二十週年：趣味知識、使用技巧與新功能"
     }
   ],
   "run_date": "2026-04-29",

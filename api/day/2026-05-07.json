@@ -5404,7 +5404,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:0ea844bbe5997368",
       "summary": "Tomofun, the Taiwan-headquartered pet-tech startup behind the Furbo Pet Camera, is redefining how pet owners interact with their pets remotely. To reduce costs and maintain accuracy, Tomofun turned to EC2 Inf2 instances powered by&nbsp;AWS Inferentia2, the Amazon purpose-built AI chips. In this post, we walk through the following sections in detail.",
-      "title": "Cost effective deployment of vision-language models for pet behavior detection on AWS Inferentia2"
+      "summary_zh": "本文由總部位於台灣的寵物科技新創 Tomofun（Furbo 寵物攝影機的開發商）分享其部署經驗。問題在於：要讓飼主能遠端與寵物互動，同時偵測寵物行為，必須在維持準確度的前提下壓低推論成本。其方法是不採用一般 GPU 執行個體，而是改用搭載 AWS Inferentia2 這款 Amazon 自研 AI 晶片的 Amazon EC2 Inf2 執行個體，來承載視覺語言模型。文章預告將依序說明部署流程、成本與準確度取捨等環節。不過目前僅有摘要，缺乏具體的模型架構、量化或編譯方式、延遲與吞吐量數據，也沒有與 GPU 基準的對照結果，因此無法評估其實際效益與適用邊界。此案例的意義在於示範台灣硬體與寵物科技業者如何以專用推論晶片降低雲端成本，對想自建邊緣或雲端視覺語言模型服務的團隊具有參考價值。",
+      "title": "Cost effective deployment of vision-language models for pet behavior detection on AWS Inferentia2",
+      "title_zh": "在 AWS Inferentia2 上以符合成本效益的方式部署視覺語言模型進行寵物行為偵測"
     },
     {
       "arxiv_id": null,
@@ -5456,7 +5458,9 @@
       "source_name": "Google AI Blog",
       "story_id": "fallback:ee9766425ff44a20",
       "summary": "An abstract background featuring soft, stippled illustrations of flowers and a butterfly in a bright palette of blue, green, and red. In the center of the image is a white circle containing a magnifying glass.",
-      "title": "5 gardening tips you can try right in Search"
+      "summary_zh": "這是 Google 官方部落格的產品提示型文章，並非研究論文，因此沒有方法、實驗或數據可言。內容主軸是介紹五個可直接在 Google 搜尋中使用的園藝相關技巧，協助使用者查詢栽種、照顧植物的資訊。摘要僅描述其視覺設計：以柔和點描風格的插畫為背景，畫面中有藍、綠、紅等明亮色調的花朵與一隻蝴蝶，中央則是一個白色圓形，內含放大鏡圖示，呼應搜尋主題。由於目前只提供摘要，未列出五個技巧的具體內容、支援地區或語言，也無任何成效評估，讀者無法從中得知功能細節。其意義在於顯示搜尋產品持續針對生活情境推出垂直化互動功能，但對 AI 或機器學習研究社群的技術參考價值有限。",
+      "title": "5 gardening tips you can try right in Search",
+      "title_zh": "在 Google 搜尋中就能嘗試的五個園藝小技巧"
     }
   ],
   "run_date": "2026-05-07",

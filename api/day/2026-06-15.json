@@ -5634,7 +5634,9 @@
       "source_name": "AWS Machine Learning Blog",
       "story_id": "fallback:2aa8b612978fa517",
       "summary": "Today, we are announcing the availability of the Gemma 4 family on Amazon Bedrock. Built by Google DeepMind and released under the Apache 2.0 license, Gemma 4 is a family of open-weight models designed with a focus on intelligence-per-parameter across a broad range of deployment scenarios. The family includes three instruction-tuned variants: Gemma 4 31B, Gemma 4 26B-A4B, and Gemma 4 E2B. These cover dense and mixture-of-experts (MoE) architectures, where only a fraction of the model’s parameters activate per request. The variants offer built-in reasoning, native function calling, and multimodal input across text and image.",
-      "title": "Introducing Gemma 4 models on Amazon Bedrock"
+      "summary_zh": "本文宣布 Gemma 4 系列已在 Amazon Bedrock 上提供。此系列由 Google DeepMind 開發、採 Apache 2.0 授權釋出，屬開放權重（open-weight）模型家族，設計重點放在各種部署情境下的「每參數智慧密度」（intelligence-per-parameter）。家族包含三個指令微調（instruction-tuned）版本：Gemma 4 31B、Gemma 4 26B-A4B 與 Gemma 4 E2B，涵蓋稠密（dense）與混合專家（MoE）架構，其中 MoE 每次請求僅啟用部分參數以降低推論成本。功能面強調內建推理能力、原生函式呼叫（native function calling），以及文字與圖像的多模態輸入。本文屬產品發布公告，摘要未提供基準測試分數、延遲與成本數據或與同級模型的比較，因此實際能力與性價比仍待第三方評測驗證。對台灣開發團隊而言，重點在於可透過既有雲端平台直接取用開放權重模型，簡化部署與整合流程。",
+      "title": "Introducing Gemma 4 models on Amazon Bedrock",
+      "title_zh": "Amazon Bedrock 正式推出 Gemma 4 系列模型"
     },
     {
       "arxiv_id": "2606.16613",
