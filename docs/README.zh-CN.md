@@ -12,3 +12,6 @@
 - `main` 上的 `frontend/` 变更由 GitHub Actions 验证并部署，不修改 `api/`。
 
 开发与部署命令见 [README](../README.md)，恢复步骤见 [RESET-GUIDE](RESET-GUIDE.md)。
+
+
+历史重跑可导出完整候选，通过离线审阅文件提供评分与繁体中文导读，不调用模型 API；缺少审阅时停止。操作与限制见 [离线审阅流程](ASSISTANT-REVIEW.md)。

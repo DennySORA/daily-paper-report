@@ -104,3 +104,11 @@ Default Nano paths:
 ```
 
 See [the recovery guide](docs/RESET-GUIDE.md) for restore and republish procedures.
+
+## Offline assistant reviews
+
+Historical runs can export every recovered candidate for source-bound assistant
+scorecards and Traditional Chinese guides without calling a model API. Missing
+reviews fail closed; existing ranking and quota rules are retained. See
+[the offline review workflow](docs/ASSISTANT-REVIEW.md) for snapshot requirements,
+commands, publication checks, and known historical-replay limitations.

@@ -29,13 +29,14 @@ class JsonRenderer:
     Produces deterministic JSON output with stable formatting and ordering.
     """
 
-    def __init__(
+    def __init__(  # noqa: PLR0913 - optional offline scorecards preserve per-day provenance
         self,
         run_id: str,
         output_dir: Path,
         metrics: RendererMetrics | None = None,
         entity_configs: list[EntityConfig] | None = None,
         translations: dict[str, object] | None = None,
+        llm_evaluations: dict[str, dict[str, object]] | None = None,
     ) -> None:
         """Initialize the JSON renderer.
 
@@ -51,7 +52,9 @@ class JsonRenderer:
         self._metrics = metrics or RendererMetrics.get_instance()
         self._entity_configs = entity_configs or []
         self._translations = translations or {}
-        self._llm_evaluations = self._load_llm_evaluations()
+        self._llm_evaluations = (
+            self._load_llm_evaluations() if llm_evaluations is None else llm_evaluations
+        )
         self._log = logger.bind(run_id=run_id, component="renderer")
         self._writer = AtomicWriter(output_dir, run_id)
 

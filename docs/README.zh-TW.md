@@ -18,3 +18,6 @@ workflow 建置並部署到同一分支，由 GitHub Pages 提供網站服務。
 再執行 `scripts/install-nano-user.sh`。此模式使用
 使用者 crontab 與 uv 管理的 Python 3.13；dispatcher 每 30 分鐘喚醒一次，
 但只會在上述精確 UTC 時間啟動任務。
+
+
+歷史重跑可匯出完整候選，由離線審閱檔提供評分及繁中導讀，不呼叫模型 API；缺少審閱時停止。操作與限制見 [離線審閱流程](ASSISTANT-REVIEW.md)。
