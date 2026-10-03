@@ -6,6 +6,7 @@ import re
 import unicodedata
 from dataclasses import dataclass
 from datetime import datetime
+from urllib.parse import unquote, urlsplit
 
 from src.features.store.models import Item
 from src.linker.constants import (
@@ -28,7 +29,34 @@ def extract_arxiv_id(url: str) -> str | None:
     Returns:
         arXiv ID if found, None otherwise.
     """
-    match = ARXIV_ID_PATTERN.search(url)
+    text = url.strip()
+    try:
+        parsed = urlsplit(text)
+        host = (parsed.hostname or "").lower()
+    except ValueError:
+        return None
+    if parsed.scheme in {"http", "https"} or parsed.netloc:
+        path = unquote(parsed.path)
+        if host == "arxiv.org" or host.endswith(".arxiv.org"):
+            prefix = re.match(r"^/(?:abs|pdf|html)/", path, re.IGNORECASE)
+            if prefix is None:
+                return None
+            text = re.sub(r"\.pdf$", "", path[prefix.end() :].rstrip("/"), flags=re.I)
+        elif host in {"doi.org", "dx.doi.org"} and path.lower().startswith(
+            "/10.48550/arxiv."
+        ):
+            text = path[len("/10.48550/arxiv.") :]
+        else:
+            # Generic paths such as /articles/2026072 are not legacy arXiv IDs.
+            return None
+    else:
+        doi = re.match(r"^(?:doi:)?10\.48550/arxiv\.(.+)$", text, re.IGNORECASE)
+        if doi:
+            text = doi.group(1)
+        citation = re.search(r"\barxiv\s*:\s*(\S+)", text, re.IGNORECASE)
+        if citation:
+            text = citation.group(1).rstrip(".,;)")
+    match = ARXIV_ID_PATTERN.fullmatch(text)
     if match:
         arxiv_id = match.group("id")
         # Normalize: remove version suffix for deduplication

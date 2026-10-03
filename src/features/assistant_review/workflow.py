@@ -409,5 +409,6 @@ def render_day(workspace: Path, day: str, output: Path) -> None:
             "configuration_sha256": manifest["config_sha256"],
             "ranking_anchor": _ranking_anchor(entry),
             "coverage": entry.get("coverage"),
+            "identity_migration": entry.get("identity_migration"),
         },
     )

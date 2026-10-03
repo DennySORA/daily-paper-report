@@ -51,6 +51,42 @@ class TestExtractArxivId:
         """Test raw arXiv ID string."""
         assert extract_arxiv_id("arxiv:2401.12345") == "2401.12345"
 
+    @pytest.mark.parametrize(
+        "url",
+        [
+            "https://qiita.com/charge0315/items/167334994884a95dac28",
+            "https://zenn.dev/aishift/articles/050045247128e9",
+            "https://zenn.dev/arika/articles/20260929-what-is-good-llm-for-japanese",
+            "https://zenn.dev/kas_blog/articles/20260509-llm-24-dense-retrieval",
+            "https://zenn.dev/okssusucha/articles/20260724-upstage-solar-open-2",
+            "https://zenn.dev/kas_blog/articles/20260509-llm-25-chunking-rerank",
+            "https://zenn.dev/okssusucha/articles/20260725-llm-agent-early-abort-hidden-state-probe",
+            "https://zenn.dev/ainewsdaily/articles/20260921_claude_code_t1",
+            "https://arxiv.org.evil.example/abs/2401.12345",
+            "https://example.com/arxiv:2401.12345",
+            "https://arxiv.org/abs/2401.123456789",
+        ],
+    )
+    def test_rejects_unrelated_article_paths(self, url: str) -> None:
+        assert extract_arxiv_id(url) is None
+
+    @pytest.mark.parametrize(
+        "text,expected",
+        [
+            ("2401.12345v3", "2401.12345"),
+            ("See arXiv:2401.12345v2.", "2401.12345"),
+            ("https://export.arxiv.org/abs/2401.12345", "2401.12345"),
+            ("https://arxiv.org/html/2401.12345v2", "2401.12345"),
+            ("https://doi.org/10.48550/arXiv.2401.12345", "2401.12345"),
+            ("doi:10.48550/arXiv.hep-th/9901001", "hep-th/9901001"),
+            ("https://arxiv.org/pdf/cs.AI/0401234.pdf", "cs.AI/0401234"),
+        ],
+    )
+    def test_preserves_genuine_urls_citations_and_dois(
+        self, text: str, expected: str
+    ) -> None:
+        assert extract_arxiv_id(text) == expected
+
 
 class TestExtractHfModelId:
     """Tests for extract_hf_model_id function."""
