@@ -1,0 +1,27 @@
+{
+  "producer": "assistant-native-review",
+  "phase": "historical_replay",
+  "replay_started_at": "2026-10-03T09:45:41.711202+00:00",
+  "replay_finished_at": "2026-10-03T09:45:41.897956+00:00",
+  "original_run_info": {
+    "error_summary": null,
+    "finished_at": "2026-09-29T04:06:32.795187+00:00",
+    "items_total": 33,
+    "run_id": "c206be48-ab07-42f1-87f2-b8d5ef724e2d",
+    "started_at": "2026-09-29T02:00:04.869382+00:00",
+    "stories_total": 33,
+    "success": true
+  },
+  "source_status_observed_at": "2026-09-29T04:06:32.795187+00:00",
+  "candidate_count": 33,
+  "evaluated_count": 32,
+  "source_snapshot_sha256": "53a1b1c25db68935fff8073cb3b2e8ee6ea0f0438f3199252bece0ccf81d6448",
+  "archive_sha256": "d65ae81c795cc7e18eef20a98c68179c713284e0045a93b8ef6de3bd9b05c482",
+  "configuration_sha256": {
+    "sources.yaml": "d6772036fe580ae856638d8e9ec87f185134840983fcf31fec119343ed6bf4eb",
+    "entities.yaml": "8581f60ee11033bbdbbbadf3988fda8c99982e5a053adc680c6ce50390a6446e",
+    "topics.yaml": "0cf3133f9752abe4899f6bbaa0bc7eb2148ce3d0361b49bd41f5f6105c868248"
+  },
+  "ranking_anchor": "2026-09-29T02:58:15.258519+00:00",
+  "coverage": null
+}
