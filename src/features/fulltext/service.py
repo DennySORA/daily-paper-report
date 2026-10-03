@@ -275,6 +275,9 @@ class FullTextService:
                 texts: list[str] = []
                 failed_pages = 0
                 for number, page in enumerate(reader.pages, 1):
+                    if "/Contents" not in page:
+                        failed_pages += int(not _is_contentless_blank_page(page))
+                        continue
                     if _page_stream_size(page) > _MAX_PAGE_STREAM_BYTES:
                         failed_pages += 1
                         continue
@@ -486,6 +489,34 @@ def _normalize_text(text: str) -> str:
 
 def _sha256(text: str) -> str:
     return hashlib.sha256(text.encode("utf-8")).hexdigest()
+
+
+def _is_contentless_blank_page(page: Any) -> bool:
+    """Recognize only contentless pages with no other potentially readable data."""
+    if "/Contents" in page or page.get("/Annots"):
+        return False
+    structural_keys = {
+        "/Type",
+        "/Parent",
+        "/MediaBox",
+        "/CropBox",
+        "/BleedBox",
+        "/TrimBox",
+        "/ArtBox",
+        "/Rotate",
+        "/Resources",
+        "/Group",
+        "/Tabs",
+        "/UserUnit",
+    }
+    if set(page) - structural_keys:
+        return False
+    resources = page.get("/Resources")
+    if hasattr(resources, "get_object"):
+        resources = resources.get_object()
+    return not resources or (
+        hasattr(resources, "keys") and set(resources) <= {"/ProcSet"}
+    )
 
 
 def _page_stream_size(page: Any) -> int:

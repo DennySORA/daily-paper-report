@@ -1,12 +1,21 @@
 """Tests for full-paper acquisition, compaction, and cache provenance."""
 
 import hashlib
+import io
 import json
 from pathlib import Path
 from unittest.mock import MagicMock, patch
 
 import httpx
 import pytest
+from pypdf import PdfWriter
+from pypdf.generic import (
+    ArrayObject,
+    DecodedStreamObject,
+    DictionaryObject,
+    NameObject,
+    TextStringObject,
+)
 
 from src.features.config.schemas.base import LinkType
 from src.features.fulltext.models import FullTextDocument, FullTextStatus
@@ -238,3 +247,96 @@ def test_unicode_repair_preserves_abstract_fallback_provenance(tmp_path: Path) -
     original = bytes.fromhex(audit["original_text_utf8_surrogatepass_hex"])
     assert original.decode("utf-8", errors="surrogatepass") == raw
     assert audit["unpaired_units_replaced"] == 1
+
+
+def _pdf_with_contentless_page(auxiliary: str | None = None) -> bytes:
+    writer = PdfWriter()
+    for _ in range(2):
+        page = writer.add_blank_page(width=612, height=792)
+        stream = DecodedStreamObject()
+        stream.set_data(
+            b"BT /F1 12 Tf 10 700 Td (" + b"Readable evidence. " * 80 + b") Tj ET"
+        )
+        page[NameObject("/Contents")] = writer._add_object(stream)
+        page[NameObject("/Resources")] = DictionaryObject(
+            {
+                NameObject("/Font"): DictionaryObject(
+                    {
+                        NameObject("/F1"): DictionaryObject(
+                            {
+                                NameObject("/Type"): NameObject("/Font"),
+                                NameObject("/Subtype"): NameObject("/Type1"),
+                                NameObject("/BaseFont"): NameObject("/Helvetica"),
+                            }
+                        )
+                    }
+                )
+            }
+        )
+    blank = writer.add_blank_page(width=612, height=792)
+    if auxiliary == "annotation":
+        blank[NameObject("/Annots")] = ArrayObject(
+            [
+                DictionaryObject(
+                    {
+                        NameObject("/Subtype"): NameObject("/Text"),
+                        NameObject("/Contents"): TextStringObject(
+                            "Potentially readable annotation"
+                        ),
+                    }
+                )
+            ]
+        )
+    elif auxiliary == "xobject":
+        blank[NameObject("/Resources")] = DictionaryObject(
+            {
+                NameObject("/XObject"): DictionaryObject(
+                    {NameObject("/Unresolved"): DictionaryObject()}
+                )
+            }
+        )
+    buffer = io.BytesIO()
+    writer.write(buffer)
+    return buffer.getvalue()
+
+
+@pytest.mark.parametrize("auxiliary", [None, "annotation", "xobject"])
+def test_pdf_missing_contents_is_blank_only_without_auxiliary_data(
+    tmp_path: Path,
+    auxiliary: str | None,
+) -> None:
+    response = MagicMock()
+    response.headers = {}
+    response.iter_bytes.return_value = [_pdf_with_contentless_page(auxiliary)]
+    with patch("src.features.fulltext.service.httpx.stream") as stream:
+        stream.return_value.__enter__.return_value = response
+        text, pages = FullTextService(tmp_path)._extract_pdf(
+            "https://example.com/paper.pdf"
+        )
+    assert pages == 3
+    assert "--- Page 1 ---" in text and "--- Page 2 ---" in text
+    assert text.count("Readable evidence.") == 160
+    document = _build_document(
+        "paper", text, source_url=None, source_format="pdf", page_count=pages
+    )
+    if auxiliary:
+        assert "[Extraction note: 1 page(s) unavailable.]" in text
+        assert document.status == FullTextStatus.PARTIAL
+    else:
+        assert "[Extraction note:" not in text
+        assert document.status == FullTextStatus.COMPLETE
+
+
+def test_pdf_nonblank_keyerror_is_not_assumed_blank(tmp_path: Path) -> None:
+    response = MagicMock()
+    response.headers = {}
+    response.iter_bytes.return_value = [_pdf_with_contentless_page()]
+    with patch("src.features.fulltext.service.httpx.stream") as stream:
+        stream.return_value.__enter__.return_value = response
+        with (
+            patch(
+                "pypdf._page.PageObject.extract_text", side_effect=KeyError("/Broken")
+            ),
+            pytest.raises(KeyError, match="/Broken"),
+        ):
+            FullTextService(tmp_path)._extract_pdf("https://example.com/paper.pdf")
