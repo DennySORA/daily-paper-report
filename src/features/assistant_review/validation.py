@@ -20,6 +20,7 @@ MIN_GUIDE_CHARS = 350
 MAX_GUIDE_CHARS = 600
 _MIN_CJK_GUIDE_CHARS = 100
 _MIN_CJK_RATIONALE_CHARS = 10
+_MIN_LATIN_RATIONALE_CHARS = 20
 _CJK = re.compile(r"[\u3400-\u4dbf\u4e00-\u9fff]")
 
 
@@ -152,7 +153,11 @@ def validate_guide(
 
 
 def validate_rationale_translation(
-    request_path: Path, review_path: Path, translation_path: Path | None = None
+    request_path: Path,
+    review_path: Path,
+    translation_path: Path | None = None,
+    *,
+    language: str = "zh",
 ) -> str:
     """Require faithful-review translation provenance without invalidating scores.
 
@@ -169,8 +174,24 @@ def validate_rationale_translation(
                 raise ValueError(f"Rationale translation {field} differs from review")
         expected = hashlib.sha256(review["rationale"].encode()).hexdigest()
         if translated.get("rationale_sha256") != expected:
-            raise ValueError("Rationale translation does not match English rationale")
+            raise ValueError("Rationale translation does not match original rationale")
+    if language == "en":
+        text = translated.get("rationale_en")
+        if text is None and _is_english_rationale(review["rationale"]):
+            text = review["rationale"]
+        if not isinstance(text, str) or not _is_english_rationale(text):
+            raise ValueError("Selected evaluation requires an English rationale")
+        return text
+    if language != "zh":
+        raise ValueError("Unsupported rationale translation language")
     text = translated.get("rationale_zh")
     if not isinstance(text, str) or len(_CJK.findall(text)) < _MIN_CJK_RATIONALE_CHARS:
         raise ValueError("Selected evaluation requires a Chinese rationale")
     return text
+
+
+def _is_english_rationale(text: str) -> bool:
+    """Allow technical CJK names while rejecting a Chinese-only English field."""
+    latin = len(re.findall(r"[A-Za-z]", text))
+    cjk = len(_CJK.findall(text))
+    return latin >= _MIN_LATIN_RATIONALE_CHARS and latin > cjk * 2

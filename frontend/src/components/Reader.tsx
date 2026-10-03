@@ -93,12 +93,12 @@ function Summary({ story }: { story: Story }) {
           <Badge
             tone="warning"
             title={t(
-              '每日 LLM 翻譯尚未產生這篇的中文標題與導讀，先顯示英文摘要。',
-              'The source has no English abstract; showing the Chinese guide.',
+              '每日 LLM 翻譯尚未產生這篇的中文標題與導讀，先顯示原文摘要。',
+              'The source has no original summary; showing the Chinese guide.',
             )}
           >
             <TriangleAlert {...ICON_SM} />
-            {t('中文導讀尚未產生', 'No English abstract')}
+            {t('中文導讀尚未產生', 'No original summary')}
           </Badge>
         ) : null
       }
@@ -119,7 +119,7 @@ function Summary({ story }: { story: Story }) {
           className="group rounded-md border border-line-subtle px-3 py-2"
         >
           <summary className="cursor-pointer text-meta text-fg-3 select-none group-open:mb-2">
-            {lang === 'zh' ? '英文原文' : 'Chinese guide (中文導讀)'}
+            {lang === 'zh' ? '原文摘要' : 'Chinese guide (中文導讀)'}
             <span className="ml-2 hidden md:inline">
               <Kbd>E</Kbd>
             </span>
@@ -131,11 +131,22 @@ function Summary({ story }: { story: Story }) {
   )
 }
 
-function Rationale({ text, textZh }: { text: string; textZh: string | null }) {
+function Rationale({
+  text,
+  textZh,
+  textEn,
+}: {
+  text: string
+  textZh: string | null
+  textEn: string | null
+}) {
   const { lang, t } = useLang()
   const { prefs } = useLibrary()
-  const own = lang === 'zh' ? textZh : text || null
-  const other = lang === 'zh' ? text || null : textZh
+  const english = textEn ?? (/[\u3400-\u9fff]/.test(text) ? null : text || null)
+  const chinese = textZh ?? (/[\u3400-\u9fff]/.test(text) ? text : null)
+  const own = lang === 'zh' ? chinese : english
+  const alternate = lang === 'zh' ? english : chinese
+  const other = alternate?.replace(/\s/g, '') === own?.replace(/\s/g, '') ? null : alternate
   const fallbackLang = lang === 'zh' ? 'en' : 'zh'
   return (
     <Section
@@ -167,7 +178,7 @@ function Rationale({ text, textZh }: { text: string; textZh: string | null }) {
         {own && other ? (
           <details className="mt-3 rounded-md border border-line-subtle px-3 py-2">
             <summary className="cursor-pointer text-meta text-fg-3 select-none">
-              {t('評審原文', 'Chinese assessment (中文評審理由)')}
+              {t('英文評審理由', 'Chinese assessment (中文評審理由)')}
             </summary>
             <div className="mt-2">
               <Prose text={other} lang={fallbackLang} />
@@ -416,7 +427,7 @@ export function Reader({
           <div className="flex max-w-[680px] min-w-0 flex-col gap-8">
             <Summary story={story} />
             {ev && (ev.rationale || ev.rationaleZh) ? (
-              <Rationale text={ev.rationale} textZh={ev.rationaleZh} />
+              <Rationale text={ev.rationale} textZh={ev.rationaleZh} textEn={ev.rationaleEn} />
             ) : null}
             {ev?.evidence.length ? <Evidence items={ev.evidence} /> : null}
           </div>

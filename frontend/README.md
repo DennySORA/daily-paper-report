@@ -92,9 +92,11 @@ force-pushes; both retry on a rejected fast-forward.
   680 px reading measure and disclosure preferences. Only prose structure changes.
 - `llm_evaluation.rationale` retains the original assessment;
   `llm_evaluation.rationale_zh` is an optional Traditional Chinese translation.
+  `rationale_en` supplies English when the original assessment was Chinese.
   Chinese mode uses the supplied Chinese field. Missing or blank translations
   explicitly show the original-language fallback; the browser never fabricates translations.
-  The original assessment remains available in a comparison disclosure.
+  The other language remains available in a comparison disclosure; source JSON
+  retains the original assessment. Summary disclosures use neutral source labels.
 - Summaries and assessments share safe React text rendering: paragraphs,
   explicit line-start bullet/numbered lists and inline code. Known feed HTML is
   cleaned into text, never inserted as raw HTML. Original JSON strings are not

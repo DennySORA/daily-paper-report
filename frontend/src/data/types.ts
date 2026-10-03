@@ -37,6 +37,7 @@ export interface LlmEvaluation {
   confidence?: number
   rationale?: string
   rationale_zh?: string | null
+  rationale_en?: string | null
   evidence?: string[]
   topics?: string[]
   fulltext_status?: string

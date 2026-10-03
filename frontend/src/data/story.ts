@@ -84,6 +84,7 @@ export interface Evaluation {
   confidence: number | null
   rationale: string
   rationaleZh: string | null
+  rationaleEn: string | null
   evidence: string[]
   fulltext: 'complete' | 'abstract_only' | 'unknown'
   model: string | null
@@ -151,6 +152,7 @@ function evaluationOf(raw: RawStory): Evaluation | null {
     confidence: num(ev.confidence),
     rationale: cleanReadingText(ev.rationale),
     rationaleZh: cleanReadingText(ev.rationale_zh) || null,
+    rationaleEn: cleanReadingText(ev.rationale_en) || null,
     evidence: (ev.evidence ?? []).map((item) => cleanText(item)).filter(Boolean),
     fulltext: status === 'complete' || status === 'abstract_only' ? status : 'unknown',
     model: ev.model || null,

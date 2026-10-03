@@ -12,15 +12,20 @@ afterEach(() => {
   cleanup()
   act(() => setLang('zh'))
 })
-function showReader(rationaleZh?: string | null) {
+function showReader(
+  rationaleZh?: string | null,
+  rationale = 'Original assessment.\n- Evidence\n- Limits',
+  rationaleEn?: string | null,
+) {
   const story = toStory(
     rawStory({
       story_id: 'fixture-reading',
       summary_zh: '研究背景。主要方法。\n- 增益 73.33%\n- 限制',
       summary: 'Original abstract.',
       llm_evaluation: {
-        rationale: 'Original assessment.\n- Evidence\n- Limits',
+        rationale,
         rationale_zh: rationaleZh,
+        rationale_en: rationaleEn,
       },
     }),
     'top5',
@@ -62,11 +67,32 @@ describe('reader prose', () => {
     )!
     expect(section.querySelectorAll('[lang="zh-Hant"] p')).toHaveLength(2)
     expect(section.querySelectorAll('[lang="zh-Hant"] li')).toHaveLength(2)
-    expect(within(section).getByText('評審原文')).toBeTruthy()
+    expect(within(section).getByText('英文評審理由')).toBeTruthy()
     expect(section.querySelector('[lang="en"]')?.textContent).toContain('Original assessment.')
     act(() => setLang('en'))
     expect(section.querySelector('.reading-prose')?.getAttribute('lang')).toBe('en')
     expect(within(section).getByText('Chinese assessment (中文評審理由)')).toBeTruthy()
+  })
+  it('uses an English translation without treating the Chinese original as English', () => {
+    const { container } = showReader(
+      '中文原始評語。',
+      '中文原始評語。',
+      'Faithful English assessment translation.',
+    )
+    expect(container.textContent).toContain('原文摘要')
+    expect(container.textContent).not.toContain('英文原文')
+    const section = container.querySelector('section[aria-labelledby="rationale-title"]')!
+    act(() => setLang('en'))
+    expect(section.querySelector('.reading-prose')?.textContent).toBe(
+      'Faithful English assessment translation.',
+    )
+    expect(section.querySelector('[lang="zh-Hant"]')?.textContent).toBe('中文原始評語。')
+  })
+  it('does not duplicate a Chinese original as an English comparison', () => {
+    const { container } = showReader('中文原始評語。', '中文原始評語。')
+    const section = container.querySelector('section[aria-labelledby="rationale-title"]')!
+    expect(section.querySelectorAll('.reading-prose')).toHaveLength(1)
+    expect(section.textContent).not.toContain('英文評審理由')
   })
   it.each([undefined, null, '   '])('labels absent Chinese honestly (%s)', (value) => {
     const { container } = showReader(value)

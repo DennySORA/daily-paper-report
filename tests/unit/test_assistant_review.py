@@ -363,7 +363,7 @@ def test_rationale_translation_preserves_original_score_review(tmp_path: Path) -
     assert review.read_bytes() == original_bytes
     value["rationale"] = "A changed assessment."
     write_object(review, value)
-    with pytest.raises(ValueError, match="English rationale"):
+    with pytest.raises(ValueError, match="original rationale"):
         validate_rationale_translation(request, review, sidecar)
 
 
@@ -372,6 +372,29 @@ def test_embedded_chinese_rationale_is_accepted(tmp_path: Path) -> None:
     value["rationale_zh"] = "僅有摘要層級的證據；研究結論仍存在不確定性。"
     write_object(review, value)
     assert validate_rationale_translation(request, review) == value["rationale_zh"]
+    assert (
+        validate_rationale_translation(request, review, language="en")
+        == value["rationale"]
+    )
+
+
+def test_original_chinese_assessment_requires_separate_english_translation(
+    tmp_path: Path,
+) -> None:
+    request, review, value = artifacts(tmp_path)
+    value["rationale"] = "只有摘要層級的證據，無法驗證完整的方法與比較結果。"
+    value["rationale_zh"] = value["rationale"]
+    write_object(review, value)
+    with pytest.raises(ValueError, match="English rationale"):
+        validate_rationale_translation(request, review, language="en")
+    value["rationale_en"] = (
+        "Only abstract evidence is available; methods and comparisons cannot be verified."
+    )
+    write_object(review, value)
+    assert validate_rationale_translation(request, review, language="en").startswith(
+        "Only abstract"
+    )
+    assert json.loads(review.read_text())["rationale"] == value["rationale_zh"]
 
 
 def test_rationale_translation_rejects_another_source(tmp_path: Path) -> None:

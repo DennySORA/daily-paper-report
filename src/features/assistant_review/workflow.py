@@ -341,6 +341,12 @@ def render_day(workspace: Path, day: str, output: Path) -> None:
             cards[story.story_id]["rationale_zh"] = validate_rationale_translation(
                 request, review, rationale if rationale.exists() else None
             )
+            cards[story.story_id]["rationale_en"] = validate_rationale_translation(
+                request,
+                review,
+                rationale if rationale.exists() else None,
+                language="en",
+            )
         if story.arxiv_id and not story.to_json_dict().get("summary"):
             raise ValueError("Selected story lacks original-language source summary")
     manifest = read_object(workspace / "manifest.json")

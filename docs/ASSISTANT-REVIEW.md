@@ -34,7 +34,7 @@ python -m src.cli.assistant_review render --workspace runtime/review --date DAY 
 
 ## 發布與限制
 
-入選且有評分的項目也必須提供繁中 `rationale_zh`，英文 `rationale` 原文保留。可直接放入原審閱檔；也可新增 `rationales/KEY.json`，包含 `id`、`producer`、`request_sha256`、`fulltext_sha256`，以及英文評審理由 UTF-8 位元組的 `rationale_sha256`。獨立翻譯檔不改變既有評分或來源請求，渲染時確認翻譯對應相同理由與來源。前端以段落與列表排版，原始英文仍可對照。
+入選且有評分的項目也必須提供繁中 `rationale_zh`，原始 `rationale` 原文保留；原評語若是中文，另提供忠實的 `rationale_en` 英文翻譯。可直接放入原審閱檔；也可新增 `rationales/KEY.json`，包含 `id`、`producer`、`request_sha256`、`fulltext_sha256`，以及原始評審理由 UTF-8 位元組的 `rationale_sha256`。獨立翻譯檔不改變既有評分或來源請求，渲染時確認翻譯對應相同理由與來源。前端以段落與列表排版，原始英文仍可對照。
 
 缺少報表的日期使用 `export-missing --workspace runtime/review --state runtime/backfill.sqlite --date DAY --coverage runtime/coverage/DAY.json`。此路徑沿用原 `backfill` 的 UTC 當日 `[00:00, 24:00)` 發表時間範圍與目前時間排序；凍結匯出時的排序時間以便接續重跑，不假造不存在的歷史執行。覆蓋紀錄須包含相同 `date`、`ready_for_review`，並明列歷史查詢結果、來源狀態及無法恢復的來源限制。沒有資料時停止，不建立空白的已完成報表。既有週內快照、候選鍵及已完成評分不重建。
 
