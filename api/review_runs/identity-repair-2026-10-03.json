@@ -1,0 +1,189 @@
+{
+  "at_utc": "2026-10-03T10:33:13.594879+00:00",
+  "manifest_before_sha256": "9f4286ad2faa12999feedfb79bf2ffa134e94dc2a8ecfa7c6b3a2b46aea96697",
+  "parser_sha256": "6f57e2b899beb46f92272a1ad74ca951cd5ab51ca1d2357d72874603055aa675",
+  "records": [
+    {
+      "index": 1,
+      "old_key": "0b8d50eebb56fec5ebc3fc5f3c92dacdb4f4b71d5241c9ea6611a68ce1b3ee34",
+      "new_key": "f3369000978c6588a7aa3357bf68305f420c0b3bd57a8b4921a2879cec5b6f6c",
+      "old_id": "arxiv:items/1673349",
+      "new_id": "fallback:f52a6178726996d9",
+      "dates": [
+        "2026-09-29"
+      ],
+      "source_url": "https://qiita.com/charge0315/items/167334994884a95dac28",
+      "source_kinds": [
+        "news"
+      ],
+      "reason": "Unrelated Qiita/Zenn URL path falsely matched optional-prefix legacy arXiv regex. Corrected to original fallback article identity; weights and quotas unchanged.",
+      "old_candidates_sha256": "6d2952ba01fcd2c7b3151c6c4a25e57254bd3d015e41bebcb8b7c17f3e34ada2",
+      "old_requests_sha256": "ed4954d92e3a510933b0b21cefa4c39ee6a3b281814ea7e3ad3956d752e82b1e",
+      "old_reviews_sha256": "8b2031f445d5abce5cd0c431c88640197b58bac853f389c89e2963d9bf1cc9f3",
+      "old_rationales_sha256": "7a27b7266cb914bf69c1a5f1944df0aab400de1e8652f78cc5d4d27e5baf864f",
+      "new_request_sha256": "c248ebe0d7c6799575a14cb98c3d090e34c6c2d1f935302977c5e340046a2479",
+      "new_review_sha256": "e265aa9691a7cc880f1af8eb2190e829c7e08702448f8956db8dd029672eddd9",
+      "new_raw_score": 0.4365,
+      "new_confidence": 1.0
+    },
+    {
+      "index": 6,
+      "old_key": "a7ac6dbfd6e515a90c1a2d0136787c9599c38c78ca4843b215e9869526344bf9",
+      "new_key": "c4a2ad730efad18ffea8cc85a3b6d72fcd27fd48bdd3862c9db2f4bd560be8b2",
+      "old_id": "arxiv:articles/0500452",
+      "new_id": "fallback:9a0a7383fc18413e",
+      "dates": [
+        "2026-09-29"
+      ],
+      "source_url": "https://zenn.dev/aishift/articles/050045247128e9",
+      "source_kinds": [
+        "blog"
+      ],
+      "reason": "Unrelated Qiita/Zenn URL path falsely matched optional-prefix legacy arXiv regex. Corrected to original fallback article identity; weights and quotas unchanged.",
+      "old_candidates_sha256": "d28696a225780c03488e06045199d1744a530aa3e3c703c1b9d5ec0065f2f247",
+      "old_requests_sha256": "bfbb61cd0af6336f8eda0ca66dd945a872c4dbb3bf07c9cbffad35c6169ce6ed",
+      "old_reviews_sha256": "d4c08d6c50306f75af89eff901c46dd818b3994d6a5f709c2e6b166734adc05c",
+      "old_rationales_sha256": "ef9dd18590595f85e577b87731e1ff52aa9806ca92eda6ffe0b38a9b3684bc0d",
+      "new_request_sha256": "7ee77d1f538b767952ae0a32933f081f42008a37bb8f38e5790b7e7416fc0b5c",
+      "new_review_sha256": "8dc01e4aee83490e5debadae88ec7f270cea1cb1172dc64466e059dcd88c4200",
+      "new_raw_score": 0.06,
+      "new_confidence": 1.0
+    },
+    {
+      "index": 13,
+      "old_key": "9f265fd50ee1052b04b15bbd9aaa0333cc9bdedebc7c38d97d044d714ccef754",
+      "new_key": "44ed0e38c5fff5bec939681a97eaa1351bd376813ca5cf308621a933019761a6",
+      "old_id": "arxiv:articles/2026092",
+      "new_id": "fallback:f901a54d35bbf70e",
+      "dates": [
+        "2026-09-29"
+      ],
+      "source_url": "https://zenn.dev/arika/articles/20260929-what-is-good-llm-for-japanese",
+      "source_kinds": [
+        "news"
+      ],
+      "reason": "Unrelated Qiita/Zenn URL path falsely matched optional-prefix legacy arXiv regex. Corrected to original fallback article identity; weights and quotas unchanged.",
+      "old_candidates_sha256": "407a591ec617b6bb17db1992fbfb6b17ef689e0d6acc6348469947a43bdc9916",
+      "old_requests_sha256": "86fa13034bae254c7603eef2a18bfa7556c62421227223e5db45cd2363d995d1",
+      "old_reviews_sha256": "5982c4707239ed99f2fba61191b95e118dfe97e8b27744fe391a7b4b267dd9ae",
+      "old_rationales_sha256": "7f146d41d171fe78c3c921848a70b9c49533fecf172e927896540e111cff3104",
+      "new_request_sha256": "23f856bf693ce6d6bcb0ec4472371e60eccd606ff291287559cc444bb70c6ef9",
+      "new_review_sha256": "e317f5bf24b887c1f45e3f3165ec246e61a6c038a1f3f34ed29393dd58ac8bfd",
+      "new_raw_score": 0.44000000000000006,
+      "new_confidence": 1.0
+    },
+    {
+      "index": 14,
+      "old_key": "42a62ae882536463efd2b96fd0f9e0d595336fdcbd7aa871f5fe33eb2f72eb01",
+      "new_key": "7565918f10940bd4464c7733e48c32b1b4aadaa60f2dcb54bc6c397a54501444",
+      "old_id": "arxiv:articles/2026050",
+      "new_id": "fallback:d8db507c8fd1ea44",
+      "dates": [
+        "2026-09-29"
+      ],
+      "source_url": "https://zenn.dev/kas_blog/articles/20260509-llm-24-dense-retrieval",
+      "source_kinds": [
+        "news"
+      ],
+      "reason": "Unrelated Qiita/Zenn URL path falsely matched optional-prefix legacy arXiv regex. Corrected to original fallback article identity; weights and quotas unchanged.",
+      "old_candidates_sha256": "9b1c591b116e150bdd044af37fcaf04f5b1590b790bc79ebed95773ce7a8c2de",
+      "old_requests_sha256": "b47152e0b49150264775b571750502892fbef0171460db4113f4a0d3b7bc886b",
+      "old_reviews_sha256": "00734b6622f8c49fe06b51916ef9dd0a99f8dd377c5373edea81982df9007769",
+      "old_rationales_sha256": "bd3baad3b1c5206df8df48e1bb551164dd414e85e33849859c1c199538b31b5f",
+      "new_request_sha256": "cc1b1f4f64777a6f7238fa6ae5848abaf72829b9a8a51c6046448a96918a7a67",
+      "new_review_sha256": "e089d7233c0f7256e923a1a777b420f91df1f8218e9666ef49e2f8fe5d48faca",
+      "new_raw_score": 0.47000000000000003,
+      "new_confidence": 1.0
+    },
+    {
+      "index": 31,
+      "old_key": "9c906486f4a9cf525c6dff092d52863fc0c5659c88a3806a42d2bf0399af1216",
+      "new_key": "4cca7ecb915e4449caa0d03702241caa6b5c334bb5375c050d531cb160f0c758",
+      "old_id": "arxiv:articles/2026072",
+      "new_id": "fallback:cd8b803029b207ed",
+      "dates": [
+        "2026-09-29"
+      ],
+      "source_url": "https://zenn.dev/okssusucha/articles/20260724-upstage-solar-open-2",
+      "source_kinds": [
+        "news"
+      ],
+      "reason": "Unrelated Qiita/Zenn URL path falsely matched optional-prefix legacy arXiv regex. Corrected to original fallback article identity; weights and quotas unchanged.",
+      "old_candidates_sha256": "7e6522f2baf650963ea3896ffcccb85259365d21987452fbfdd16278728b2b68",
+      "old_requests_sha256": "73583c82bf8e3dad7f20987983e862b6ba485358ba6b28d8964b91aaab938ad5",
+      "old_reviews_sha256": "2be7b19a7b0e32a285f90ca404ba1966947ee0bf20880d986e79c9515e7314a1",
+      "old_rationales_sha256": "e3ddfb7158fe992a6795edca68de0f095c1ebc8a48ff9552759dca86999467c7",
+      "new_request_sha256": "fe5425879e2118bcfa1766580b5d194b42bd0ad99c902117d7c5b26692bc751d",
+      "new_review_sha256": "d50f5ab98407ad3c0b92b3ad353be3d8c6037f151552b6af4dedb99247db8245",
+      "new_raw_score": 0.4655000000000001,
+      "new_confidence": 1.0
+    },
+    {
+      "index": 493,
+      "old_key": "1469fe69e3208b7821a1d28ba527dc3fd3f1c76c1121b225e4f846429e982d0a",
+      "new_key": "d59caccdc573e1c9c686e0c6978b4f9fd624d4b9a2187728e48579386f68c013",
+      "old_id": "arxiv:articles/2026050",
+      "new_id": "fallback:3b7d40c3d6899223",
+      "dates": [
+        "2026-09-30"
+      ],
+      "source_url": "https://zenn.dev/kas_blog/articles/20260509-llm-25-chunking-rerank",
+      "source_kinds": [
+        "news"
+      ],
+      "reason": "Unrelated Qiita/Zenn URL path falsely matched optional-prefix legacy arXiv regex. Corrected to original fallback article identity; weights and quotas unchanged.",
+      "old_candidates_sha256": "ffc935c7d9fdc441c9c77d36b6aff32cc0aa3df5bb40f1dc135908e2d77f46f8",
+      "old_requests_sha256": "3946688d6397506f853bf2eee62ae19a2693fd93bf5d6b2296de9e26a3ba2691",
+      "old_reviews_sha256": "f89db6a19b9d0b01556ccb97790f0f11b8657257cb6c4cf2610fba21482e3614",
+      "new_request_sha256": "2e7898af119b3a7228f2ef097c33b0e9eb9d044e0d50ede82fd46a82832d3fd8",
+      "new_review_sha256": "65368eafa088412741cd2b4b533bef52e6596139f92632bb56d4595d61227a50",
+      "new_raw_score": 0.48500000000000004,
+      "new_confidence": 1.0
+    },
+    {
+      "index": 902,
+      "old_key": "2360adb50b40d910b2b8f3eeaf665861f5ede001eff4e2c250bfce08a8f2b503",
+      "new_key": "8478ded61636c593e7cde053bdd5202fef92ee40864f422b110f1cbf07001fa6",
+      "old_id": "arxiv:articles/2026072",
+      "new_id": "fallback:069fc599d4116201",
+      "dates": [
+        "2026-09-30"
+      ],
+      "source_url": "https://zenn.dev/okssusucha/articles/20260725-llm-agent-early-abort-hidden-state-probe",
+      "source_kinds": [
+        "news"
+      ],
+      "reason": "Unrelated Qiita/Zenn URL path falsely matched optional-prefix legacy arXiv regex. Corrected to original fallback article identity; weights and quotas unchanged.",
+      "old_candidates_sha256": "54ea3003e1d079364ca9cf1a7a0747a5475ba6035d45f701760de521f0147762",
+      "old_requests_sha256": "36a196353019547915a0cbae3b01d55bfd3a5430dbec6845f4005e62b4b85870",
+      "new_request_sha256": "048935c4b0f7e29b262d3be7b58b39c281bcf83adb0ac95b00fb536c3c939332",
+      "new_review_sha256": "057db0d0282f73ce692e559dfa85183494473674225395b5b82fffe03e5b89a9",
+      "new_raw_score": 0.4425,
+      "new_confidence": 1.0
+    },
+    {
+      "index": 2372,
+      "old_key": "5776871c194518bbef7d16f6538f241fba6bc0b4e2065d883921bcce2d5fa764",
+      "new_key": "e05949e0b124cc58ddbd3f53880be4e6dcf3e7fd792537a91bc398544dc53831",
+      "old_id": "arxiv:articles/2026092",
+      "new_id": "fallback:4493e9f7a3f8db01",
+      "dates": [
+        "2026-10-02"
+      ],
+      "source_url": "https://zenn.dev/ainewsdaily/articles/20260921_claude_code_t1",
+      "source_kinds": [
+        "news"
+      ],
+      "reason": "Unrelated Qiita/Zenn URL path falsely matched optional-prefix legacy arXiv regex. Corrected to original fallback article identity; weights and quotas unchanged.",
+      "old_candidates_sha256": "8689557fa17ff0d14b45f4e2bb569f474fdf109cb5da395c179a0bb0c82a996e",
+      "old_requests_sha256": "0a84bcf324658aa6b5fd05d19efeb327285b25fd3596fa81242d4693b59ee679",
+      "new_request_sha256": "c272403ca0b347722ade61113a41ed0d232b9f1a33a5669600decd4c2ddb7bd4",
+      "new_review_sha256": "6ada32f35c6ed2c810dd24ef1a7e50f636aa57da0743a13aec82bcc79a9cda43",
+      "new_raw_score": 0.42600000000000005,
+      "new_confidence": 1.0
+    }
+  ],
+  "reviews_policy": "Eight corrected source requests were genuinely reread and freshly scored; no old score was re-keyed.",
+  "source_coverage_limit": "Zero paper-section entries means none among the recovered snapshot, not proof no papers were published.",
+  "manifest_after_sha256": "a8aeb364d991b171103583e7980d7b561e176348a506fb5631c8f7c907ee6abf"
+}

@@ -334,7 +334,7 @@
       "type": "researcher"
     }
   },
-  "generated_at": "2026-10-03T10:17:34.866878+00:00",
+  "generated_at": "2026-10-03T10:40:15.637377+00:00",
   "model_releases_by_entity": {
     "other": [
       {
@@ -391,415 +391,7 @@
       }
     ]
   },
-  "papers": [
-    {
-      "arxiv_id": "items/1673349",
-      "authors": [
-        "charge0315"
-      ],
-      "categories": [],
-      "entities": [
-        "anthropic"
-      ],
-      "first_seen_at": "2026-09-29T02:33:29.042660+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "qiita-genai-tag",
-          "tier": 2,
-          "title": "Claude Code の CLAUDE.md が肥大化したら ― 設定を6つのスコープに置き分ける早見表とフック実例",
-          "url": "https://qiita.com/charge0315/items/167334994884a95dac28"
-        }
-      ],
-      "llm_evaluation": {
-        "components": {
-          "evidence_strength": 0.1,
-          "generalizability": 0.5,
-          "novelty": 0.2,
-          "preference_relevance": 0.83,
-          "reproducibility": 0.12,
-          "rigor": 0.08
-        },
-        "confidence": 0.85,
-        "evidence": [
-          "Abstract: 例子包括不要提交、PowerShell 指令不相容，以及應修正實作而非更改測試。",
-          "Abstract: 作者提及與 Claude Code 開發日本股票驗證系統的經驗；六種設定作用範圍與鉤子內容未出現在摘錄。"
-        ],
-        "fulltext_sha256": "4143cbc59bd6a3ec4e8655039cfe1d9ef21a2d05e8d631a22c316c10b9cb2988",
-        "fulltext_status": "abstract_only",
-        "model": "assistant-native-review",
-        "producer": "assistant-native-review",
-        "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "直接關聯程式代理的指令管理與錯誤防範，但只有導言摘要；六種作用範圍、鉤子程式與效果均無法核實。",
-        "rationale_en": "Directly relevant to instruction management and error prevention for coding agents, but only an introductory abstract is available. The six instruction scopes, hook implementations, and their effects cannot be verified.",
-        "rationale_zh": "直接關聯程式代理的指令管理與錯誤防範，但只有導言摘要；\n\n六種作用範圍、鉤子程式與效果均無法核實。",
-        "request_sha256": "ed4954d92e3a510933b0b21cefa4c39ee6a3b281814ea7e3ad3956d752e82b1e",
-        "score": 0.37825,
-        "token_usage": {},
-        "topics": [
-          "Agents & Tool Use",
-          "Code & Programming",
-          "Prompting & In-Context Learning"
-        ]
-      },
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "qiita-genai-tag",
-        "tier": 2,
-        "title": "Claude Code の CLAUDE.md が肥大化したら ― 設定を6つのスコープに置き分ける早見表とフック実例",
-        "url": "https://qiita.com/charge0315/items/167334994884a95dac28"
-      },
-      "published_at": "2026-09-28T17:10:17+00:00",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 2.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.37825,
-        "llm_relevance_score": 10.591,
-        "recency_score": 0.9599910497600563,
-        "semantic_score": 0.0,
-        "tier_score": 1.0,
-        "topic_score": 3.75,
-        "total_score": 19.100991049760054
-      },
-      "section": null,
-      "source_name": "Qiita 生成AI Tag",
-      "story_id": "arxiv:items/1673349",
-      "summary": "Claude Code に同じ注意を三度くり返したことはありませんか。\n「コミットはまだしないで」「そのコマンドは PowerShell では動かない」「テストを直すんじゃなくて実装を直して」。\n個人開発の日本株検証システムを Claude Code と一緒に作ってきた中で...",
-      "summary_zh": "文章聚焦與 Claude Code 協作時，反覆提醒相同規則仍可能失效的問題。可讀摘要列出三類實際提醒：暫時不要建立 Git 提交、避免使用不適用於 PowerShell 的指令，以及發現問題時應修正實作而非修改測試。作者表示這些經驗來自共同開發日本股票驗證系統。標題提出把設定分散到六種作用範圍，並提供速查表及鉤子範例，顯示文章意圖處理專案指令累積後的管理負擔。這與程式代理、開發流程及指令遵循相當相關，但目前來源僅有截斷的導言摘要，沒有列出六種範圍的名稱、優先順序、實際設定檔或鉤子程式。因此不能據此宣稱某項配置已能防止誤提交、保證跨平台指令正確，或改善測試修改行為。摘要未提供修改前後的失誤率、執行紀錄、重複實驗或比較基準；較合適的定位是值得追讀的實務整理，而不是已驗證的代理可靠性方法。文中的金融專案只是使用背景，並非本篇提供投資結論的證據。",
-      "title": "Claude Code の CLAUDE.md が肥大化したら ― 設定を6つのスコープに置き分ける早見表とフック実例",
-      "title_zh": "CLAUDE.md 太臃腫怎麼辦：Claude Code 六種設定作用範圍與鉤子範例"
-    },
-    {
-      "arxiv_id": "articles/2026072",
-      "authors": [
-        "とうもろこし茶"
-      ],
-      "categories": [],
-      "entities": [],
-      "first_seen_at": "2026-09-29T02:33:29.227878+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "zenn-llm-topic",
-          "tier": 2,
-          "title": "15Bだけ動く250B、Solar Open 2はエージェント前提で設計された",
-          "url": "https://zenn.dev/okssusucha/articles/20260724-upstage-solar-open-2"
-        }
-      ],
-      "llm_evaluation": {
-        "components": {
-          "evidence_strength": 0.07,
-          "generalizability": 0.4,
-          "novelty": 0.23,
-          "preference_relevance": 0.94,
-          "reproducibility": 0.06,
-          "rigor": 0.05
-        },
-        "confidence": 0.85,
-        "evidence": [
-          "Abstract: describes Solar Open 2 as having 250B total parameters with 15B active and lists English, Korean, and Japanese support.",
-          "Abstract: attributes to its developer an emphasis on agents completing work rather than benchmark scores.",
-          "Abstract / why agent-first design: truncates during a discussion of search and tool calls, without technical design details or results."
-        ],
-        "fulltext_sha256": "8ed6193a4dac4da0b7c46e81897e94f5985b9ce0de663982d34d24baeb79e7a0",
-        "fulltext_status": "abstract_only",
-        "model": "assistant-native-review",
-        "producer": "assistant-native-review",
-        "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "Strong preference match across Japanese-capable LLMs, sparse activation, and agents. Only a truncated secondary-source abstract is available, however; architecture, agent benchmarks, training method, weights availability, and claimed multilingual ability cannot be independently checked.",
-        "rationale_en": "Strong preference match across Japanese-capable LLMs, sparse activation, and agents. Only a truncated secondary-source abstract is available, however; architecture, agent benchmarks, training method, weights availability, and claimed multilingual ability cannot be independently checked.",
-        "rationale_zh": "主題涵蓋支援日語的大型語言模型、稀疏啟動與代理，與偏好高度吻合。\n\n然而目前只有截斷的二手來源摘要，無法獨立查核模型架構、代理基準、訓練方法、權重是否開放，以及宣稱的多語能力。",
-        "request_sha256": "73583c82bf8e3dad7f20987983e862b6ba485358ba6b28d8964b91aaab938ad5",
-        "score": 0.400775,
-        "token_usage": {},
-        "topics": [
-          "Large Language Models",
-          "Japanese LLM & NLP",
-          "Agents & Tool Use",
-          "Transformer Architecture",
-          "Scaling & Efficiency"
-        ]
-      },
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "zenn-llm-topic",
-        "tier": 2,
-        "title": "15Bだけ動く250B、Solar Open 2はエージェント前提で設計された",
-        "url": "https://zenn.dev/okssusucha/articles/20260724-upstage-solar-open-2"
-      },
-      "published_at": "2026-09-28T03:11:38+00:00",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 0.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.400775,
-        "llm_relevance_score": 11.2217,
-        "recency_score": 0.9056784921786625,
-        "semantic_score": 0.0,
-        "tier_score": 1.0,
-        "topic_score": 3.75,
-        "total_score": 17.67737849217866
-      },
-      "section": null,
-      "source_name": "Zenn LLM Topic",
-      "story_id": "arxiv:articles/2026072",
-      "summary": "オープンウェイトのモデルカードで「対応言語: 英語・韓国語・日本語」という並びを見ると、少し身構える。韓国政府の主導で作られた国産モデルが、なぜ日本語まで面倒を見るのか。そして総パラメータ250Bのうち実際に動くのは15Bだけで、開発元は「ベンチマークのスコアではなく、エージェントとして自分で仕事を終わらせられるかを軸に作った」と言い切っている。7月22〜23日に公開された Upstage の Solar Open 2 は、そういうモデルだ。\n\n なぜ「エージェント前提」がわざわざ設計思想になるのか\nここ2年でLLMの使われ方は、一問一答から大きくずれた。検索して、ツールを呼んで、その結...",
-      "summary_zh": "本文介紹 Upstage 的 Solar Open 2，主軸是把能否完成多步工作當成模型設計目標。摘要聲稱模型總參數量為250B，實際啟用15B，並從模型卡片列出的英語、韓語與日語支援切入；這些特徵讓它同時涉及多語言模型、稀疏運算與代理應用。作者引述開發方的說法，強調評估重點不只在單一基準分數，而在模型能否自行完成工作，接著開始討論搜尋與工具呼叫等使用方式。不過，本次取得的只是截斷介紹，沒有模型卡片全文、架構細節、訓練資料、工具使用協定或代理測試結果，也無法確認日語能力的評估標準。總參數與啟用參數之比不能直接換算成部署成本或推理品質，開放權重的說法也尚未附上可核對的授權與下載資訊。因此目前能確立的是報導所描述的設計方向，不能宣稱模型已在任務完成率或日語表現上優於其他系統。對重視日語及代理能力的讀者，此文具有追查原始技術資料的價值；若要進行實際選型，仍需依完整方法、資源需求與基準結果判斷。",
-      "title": "15Bだけ動く250B、Solar Open 2はエージェント前提で設計された",
-      "title_zh": "總計 250B、啟用 15B：Solar Open 2 以代理任務為設計出發點"
-    },
-    {
-      "arxiv_id": "articles/2026050",
-      "authors": [
-        "kas's blog"
-      ],
-      "categories": [],
-      "entities": [],
-      "first_seen_at": "2026-09-29T02:33:29.210130+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "zenn-llm-topic",
-          "tier": 2,
-          "title": "Dense Retrievalを実装する：DPR・距離尺度・ANNの設計",
-          "url": "https://zenn.dev/kas_blog/articles/20260509-llm-24-dense-retrieval"
-        }
-      ],
-      "llm_evaluation": {
-        "components": {
-          "evidence_strength": 0.17,
-          "generalizability": 0.58,
-          "novelty": 0.12,
-          "preference_relevance": 0.78,
-          "reproducibility": 0.2,
-          "rigor": 0.18
-        },
-        "confidence": 0.85,
-        "evidence": [
-          "Abstract: 摘要說明查詢與文件轉成向量後取回相近文件，並警告漏檢不一定只因嵌入模型。",
-          "Abstract: 編碼器契約包含模型、池化、向量維度與正規化；距離度量契約只讀到內積及下一詞開頭。",
-          "Abstract: 宣稱應分開處理至少三種契約，但摘錄在第二種中截斷，沒有第三種內容或量化實驗。"
-        ],
-        "fulltext_sha256": "5de1fb0757ca4b93364a66b81b6b769d3cac8eda0b2166ed581dee98b0451147",
-        "fulltext_status": "abstract_only",
-        "model": "assistant-native-review",
-        "producer": "assistant-native-review",
-        "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "清楚指出稠密檢索的編碼器與距離度量介面契約，有實作診斷價值；但僅部分教程，未呈現第三項契約、ANN設定或效果實驗。",
-        "rationale_en": "Clearly identifies interface contracts between the encoder and distance metric in dense retrieval, which has implementation and diagnostic value. However, this is only a partial tutorial; the third contract, ANN settings, and outcome experiments are absent.",
-        "rationale_zh": "清楚指出稠密檢索的編碼器與距離度量介面契約，有實作診斷價值；\n\n但僅部分教程，未呈現第三項契約、ANN設定或效果實驗。",
-        "request_sha256": "b47152e0b49150264775b571750502892fbef0171460db4113f4a0d3b7bc886b",
-        "score": 0.38292500000000007,
-        "token_usage": {},
-        "topics": [
-          "RAG & Knowledge",
-          "Natural Language Processing"
-        ]
-      },
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "zenn-llm-topic",
-        "tier": 2,
-        "title": "Dense Retrievalを実装する：DPR・距離尺度・ANNの設計",
-        "url": "https://zenn.dev/kas_blog/articles/20260509-llm-24-dense-retrieval"
-      },
-      "published_at": "2026-09-28T09:11:36+00:00",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 0.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.38292500000000007,
-        "llm_relevance_score": 10.721900000000002,
-        "recency_score": 0.928603702816452,
-        "semantic_score": 0.0,
-        "tier_score": 1.0,
-        "topic_score": 4.0,
-        "total_score": 17.450503702816455
-      },
-      "section": null,
-      "source_name": "Zenn LLM Topic",
-      "story_id": "arxiv:articles/2026050",
-      "summary": "Dense Retrieval（密なベクトル表現を使う文章検索）は、queryと文書をembeddingへ変換し、近い文書を取得する仕組みです。ただし、本番で検索漏れが起きたときに「embedding modelが悪い」とだけ考えると、修正する場所を誤ります。\n実装では、少なくとも次の3つを別々のcontract（構成要素間で固定する取り決め）として扱います。\n\n\nencoder contract：model、pooling（token表現を固定長vectorへ集約する方法）、vector次元、normalization\n\nmetric contract：inner product、co...",
-      "summary_zh": "文章介紹稠密檢索的工程設計，從把查詢與文件轉成嵌入向量，再取回距離相近的文件說起。摘要提醒，正式環境出現漏檢時，若只歸因於嵌入模型品質，可能會修錯地方。作者因此主張把構成元件之間的約定拆開處理，並列出編碼器契約的內容：模型、將 token 表示彙整為固定長度向量的池化方式、向量維度，以及正規化。接著開始介紹距離度量契約，提到內積，但文字在後續項目中截斷。標題也預告 DPR 與近似最近鄰搜尋的設計，顯示其方向偏向檢索系統實作與故障診斷，而不是單純選模型。這對 RAG 與語意搜尋有實務關聯。不過目前來源只是部分摘要，雖說至少有三種契約，卻沒有完整第三項內容，也未提供索引參數、程式碼、測試資料、召回率或延遲比較。因此可以採信它在現有文字中提出的問題拆解方式，卻不能替作者補出全部設計或宣稱某個配置能改善搜尋效果；研究新穎性與實證強度仍有限。",
-      "title": "Dense Retrievalを実装する：DPR・距離尺度・ANNの設計",
-      "title_zh": "實作稠密檢索：DPR、距離度量與近似最近鄰搜尋設計"
-    },
-    {
-      "arxiv_id": "articles/2026092",
-      "authors": [
-        "arika"
-      ],
-      "categories": [],
-      "entities": [],
-      "first_seen_at": "2026-09-29T02:33:29.208168+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "zenn-llm-topic",
-          "tier": 2,
-          "title": "日本語が一番うまいLLMは誰なのか調べる",
-          "url": "https://zenn.dev/arika/articles/20260929-what-is-good-llm-for-japanese"
-        }
-      ],
-      "llm_evaluation": {
-        "components": {
-          "evidence_strength": 0.15,
-          "generalizability": 0.25,
-          "novelty": 0.18,
-          "preference_relevance": 0.95,
-          "reproducibility": 0.07,
-          "rigor": 0.1
-        },
-        "confidence": 0.85,
-        "evidence": [
-          "Abstract: 作者為選擇日文文件生成模型進行非正式調查，並展示自稱由 GPT 6 Luna 根據實作程式碼生成的 Dapr 說明。",
-          "Abstract: 摘錄只有動機與一個文字例子，沒有完整模型比較、自然度評分或最佳模型結論。"
-        ],
-        "fulltext_sha256": "08ce452fbb6fbca1f349e272ac608cf3a388b6e6e6ca3307cdbe56cfc5436fcd",
-        "fulltext_status": "abstract_only",
-        "model": "assistant-native-review",
-        "producer": "assistant-native-review",
-        "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "日本語 LLM 文件生成高度符合偏好，且提供一個輸出案例；但比較對象、評分準則、結果與重複測試未出現，無法識別勝出模型。",
-        "rationale_en": "Japanese-language LLM document generation closely matches the preferences, and one output example is provided. However, the comparison models, scoring criteria, results, and repeated tests are absent, so no winning model can be identified.",
-        "rationale_zh": "日本語 LLM 文件生成高度符合偏好，且提供一個輸出案例；\n\n但比較對象、評分準則、結果與重複測試未出現，無法識別勝出模型。",
-        "request_sha256": "86fa13034bae254c7603eef2a18bfa7556c62421227223e5db45cd2363d995d1",
-        "score": 0.40205,
-        "token_usage": {},
-        "topics": [
-          "Japanese LLM & NLP",
-          "Large Language Models",
-          "Code & Programming",
-          "Red Teaming & Evaluation"
-        ]
-      },
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "zenn-llm-topic",
-        "tier": 2,
-        "title": "日本語が一番うまいLLMは誰なのか調べる",
-        "url": "https://zenn.dev/arika/articles/20260929-what-is-good-llm-for-japanese"
-      },
-      "published_at": "2026-09-28T09:55:16+00:00",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 0.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.40205,
-        "llm_relevance_score": 11.2574,
-        "recency_score": 0.931423881367505,
-        "semantic_score": 0.0,
-        "tier_score": 1.0,
-        "topic_score": 0.0,
-        "total_score": 13.988823881367505
-      },
-      "section": null,
-      "source_name": "Zenn LLM Topic",
-      "story_id": "arxiv:articles/2026092",
-      "summary": "!\nこの記事はブログでも公開しています。\n\nGPT系列の日本語が終わっているという話はよく聞くし自分も困っているので、\nじゃあどのモデルでドキュメントを書かせればいいかな、ということで雑に調査した。\n\n 日本語が終わっている、とは\n↓のような文章。（ちなみにこの文章は実装コードを元にGPT 6 Lunaが生成した）\n`Configlue.Resource.Dapr` は Dapr State Management の1つの store key を Configlue の byte-resource 契約へ接続します。\nDapr を使うアプリケーションだけにインストールしてください:\n\nこ...",
-      "summary_zh": "這篇文章從作者對大型語言模型日文品質的不滿出發，探討應該選擇哪個模型撰寫技術文件。摘要表示，作者想比較不同選擇，並以一段據稱由 GPT 6 Luna 根據實作程式碼產生的文字，示範自己認為不理想的日文表達；內容涉及 Dapr State Management、儲存鍵與套件介面契約。這使文章同時觸及日文生成、程式理解及開發文件品質，與關注日本語大型語言模型的讀者高度相關。不過目前來源只包含調查動機與單一例子，作者也把它形容為粗略調查，尚未呈現參與比較的完整模型名單、提示、原始程式碼、評分標準、評審或結果。不能從這個摘錄判定哪個模型最擅長日文，也不能由單一輸出推論整個模型家族的語言能力。標題所暗示的排名問題仍未在可讀內容中獲得答案。現有證據足以辨識實務需求與一個質性案例，研究嚴謹性、樣本代表性和結果可重現性則有明顯限制，閱讀時應避免把作者的不滿當成全面評測結論。",
-      "title": "日本語が一番うまいLLMは誰なのか調べる",
-      "title_zh": "哪個大型語言模型最會寫日文？一次非正式調查"
-    },
-    {
-      "arxiv_id": "articles/0500452",
-      "authors": [
-        "KEY60228"
-      ],
-      "categories": [],
-      "entities": [],
-      "first_seen_at": "2026-09-29T02:33:27.793951+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "aishift-tech-blog",
-          "tier": 1,
-          "title": "GKE に Open Cluster Management (OCM) を導入するのにハマったことメモ",
-          "url": "https://zenn.dev/aishift/articles/050045247128e9"
-        }
-      ],
-      "llm_evaluation": {
-        "components": {
-          "evidence_strength": 0.06,
-          "generalizability": 0.18,
-          "novelty": 0.06,
-          "preference_relevance": 0.1,
-          "reproducibility": 0.06,
-          "rigor": 0.05
-        },
-        "confidence": 0.85,
-        "evidence": [
-          "Abstract: 摘錄談 Kubernetes、Cloud Native、多叢集維運與 AI 工作負載，並提到研討會場次。",
-          "Abstract: 未提供 GKE 上 OCM 安裝問題的錯誤訊息、設定、修復流程或驗證結果。"
-        ],
-        "fulltext_sha256": "a0a3fe8eb9a5c4530f18f08b42ba2366efd0c3752507b4176f319d2cd9d98245",
-        "fulltext_status": "abstract_only",
-        "model": "assistant-native-review",
-        "producer": "assistant-native-review",
-        "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "可見內容是一般 Kubernetes 多叢集維運導言，AI 工作負載只是背景提及；沒有語言模型方法或可驗證安裝解法。",
-        "rationale_en": "The visible content is a general introduction to operating multiple Kubernetes clusters. AI workloads are mentioned only as background; there is no language-model method or verifiable installation solution.",
-        "rationale_zh": "可見內容是一般 Kubernetes 多叢集維運導言，AI 工作負載只是背景提及；\n\n沒有語言模型方法或可驗證安裝解法。",
-        "request_sha256": "bfbb61cd0af6336f8eda0ca66dd945a872c4dbb3bf07c9cbffad35c6169ce6ed",
-        "score": 0.07352500000000001,
-        "token_usage": {},
-        "topics": []
-      },
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "aishift-tech-blog",
-        "tier": 1,
-        "title": "GKE に Open Cluster Management (OCM) を導入するのにハマったことメモ",
-        "url": "https://zenn.dev/aishift/articles/050045247128e9"
-      },
-      "published_at": "2026-09-28T16:00:08+00:00",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 0.0,
-        "kind_score": 1.5,
-        "llm_raw_score": 0.073525,
-        "llm_relevance_score": 2.0587,
-        "recency_score": 0.9553257993693886,
-        "semantic_score": 0.0,
-        "tier_score": 2.0,
-        "topic_score": 0.0,
-        "total_score": 6.514025799369389
-      },
-      "section": null,
-      "source_name": "AI Shift Tech Blog (Zenn)",
-      "story_id": "arxiv:articles/0500452",
-      "summary": "こんにちは、@key60228 です。\nKubernetes や Cloud Native の文脈において、AI Workload とともにマルチクラスタ運用の話題もますます増えてきてますよね。\nKubeCon + CloudNativeCon Japan 2026 でもいくつかセッションがありました。 (前者は「軽率にマルチクラスタにするな」って主旨でしたが)\nhttps://www.youtube.com/watch?v=-0gJNQogilQ&amp;list=PLH1zduub3WrE&amp;index=109\nhttps://www.youtube.com/watch?v=G...",
-      "summary_zh": "這篇技術筆記以在 Google Kubernetes Engine 導入 Open Cluster Management 為主題。可取得的摘要先談 Kubernetes 與雲端原生環境中的多叢集維運，表示此類討論與 AI 工作負載一起增加，並提到 KubeCon 與 CloudNativeCon Japan 2026 的相關場次。摘錄也轉述其中一場不應輕率採用多叢集的主旨，附帶部分影片連結。這些資訊主要說明文章的維運背景，並未揭露標題所指的具體安裝障礙或解法。由於來源只有截斷的導言，無法確認使用的 GKE 與 OCM 版本、權限、網路設定、錯誤訊息、修正步驟或成功驗證結果，也不能把尚未讀到的操作當成可重現教程。文章與雲端基礎設施有關，但摘要沒有證明它涉及大型語言模型的推論方法、代理架構或模型研究；提到 AI 工作負載本身不足以建立這種關聯。對本次以語言模型與代理研究為主的篩選而言，相關性較低，較適合作為一般 Kubernetes 維運資源候選。",
-      "title": "GKE に Open Cluster Management (OCM) を導入するのにハマったことメモ",
-      "title_zh": "在 GKE 導入 Open Cluster Management：遇到的問題筆記"
-    }
-  ],
+  "papers": [],
   "radar": [
     {
       "arxiv_id": null,
@@ -887,6 +479,169 @@
     {
       "arxiv_id": null,
       "authors": [
+        "charge0315"
+      ],
+      "categories": [],
+      "entities": [
+        "anthropic"
+      ],
+      "first_seen_at": "2026-09-29T02:33:29.042660+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "qiita-genai-tag",
+          "tier": 2,
+          "title": "Claude Code の CLAUDE.md が肥大化したら ― 設定を6つのスコープに置き分ける早見表とフック実例",
+          "url": "https://qiita.com/charge0315/items/167334994884a95dac28"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.05,
+          "generalizability": 0.24,
+          "novelty": 0.14,
+          "preference_relevance": 0.94,
+          "reproducibility": 0.04,
+          "rigor": 0.04
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "Supplied article introduction: examples include premature commits, PowerShell-incompatible commands, and changing tests instead of implementations.",
+          "Title only: six configuration scopes and hook examples are promised; the supplied excerpt ends before explaining them."
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "assistant-native-review",
+        "producer": "assistant-native-review",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "The supplied introduction directly concerns repeated instruction failures in a coding agent. However, the six scopes and hook examples are only promised by the title; their definitions, implementation, and effectiveness are absent. This is relevant operational commentary, not demonstrated research or a reproducible solution.",
+        "rationale_en": "The supplied introduction directly concerns repeated instruction failures in a coding agent. However, the six scopes and hook examples are only promised by the title; their definitions, implementation, and effectiveness are absent. This is relevant operational commentary, not demonstrated research or a reproducible solution.",
+        "rationale_zh": "提供的導言直接涉及程式代理反覆忽略指令的問題。然而，六種作用範圍與鉤子範例只出現在標題預告中，沒有定義、實作或效果證據。這是相關的維運經驗文章，尚非已驗證的研究或可重現解法。",
+        "request_sha256": "c248ebe0d7c6799575a14cb98c3d090e34c6c2d1f935302977c5e340046a2479",
+        "score": 0.4365,
+        "token_usage": {},
+        "topics": [
+          "Agents & Tool Use",
+          "Code & Programming",
+          "Prompting & In-Context Learning"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "qiita-genai-tag",
+        "tier": 2,
+        "title": "Claude Code の CLAUDE.md が肥大化したら ― 設定を6つのスコープに置き分ける早見表とフック実例",
+        "url": "https://qiita.com/charge0315/items/167334994884a95dac28"
+      },
+      "published_at": "2026-09-28T17:10:17+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 2.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.4365,
+        "llm_relevance_score": 12.222,
+        "recency_score": 0.9599910497600563,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 3.75,
+        "total_score": 20.731991049760055
+      },
+      "section": null,
+      "source_name": "Qiita 生成AI Tag",
+      "story_id": "fallback:f52a6178726996d9",
+      "summary": "Claude Code に同じ注意を三度くり返したことはありませんか。\n「コミットはまだしないで」「そのコマンドは PowerShell では動かない」「テストを直すんじゃなくて実装を直して」。\n個人開発の日本株検証システムを Claude Code と一緒に作ってきた中で...",
+      "summary_zh": "這篇文章從程式代理反覆忽略同一項提醒的經驗出發，討論設定文件越寫越大時，如何整理指令及作用範圍。提供的導言舉出三種具體情境：尚未允許便提交程式碼、產生無法在 PowerShell 執行的命令，以及修改測試而非修正實作。作者表示，這些觀察來自與 Claude Code 一起開發個人日本股票驗證系統的過程。\n\n標題預告會把設定分到六種作用範圍，並提供鉤子範例，但目前摘錄在經驗介紹後即結束，沒有列出六種範圍、設定優先順序、觸發條件或可執行程式。因此不能替作者補出完整設定表，也不能宣稱鉤子已防止這些錯誤。\n\n對使用程式代理的人，文章值得注意的問題是：把提醒寫進文件，並不代表代理在所有工作階段都會正確採用。實際改善仍需檢查工具讀取設定的方式與操作結果。現有材料沒有對照實驗、錯誤率或跨專案驗證，只能支持問題存在及文章的整理方向；本項應視為部落格摘要，而非 arXiv 論文。",
+      "title": "Claude Code の CLAUDE.md が肥大化したら ― 設定を6つのスコープに置き分ける早見表とフック実例",
+      "title_zh": "CLAUDE.md 膨脹時如何分配設定：六種作用範圍與鉤子範例"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "kas's blog"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-09-29T02:33:29.210130+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "Dense Retrievalを実装する：DPR・距離尺度・ANNの設計",
+          "url": "https://zenn.dev/kas_blog/articles/20260509-llm-24-dense-retrieval"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.12,
+          "generalizability": 0.45,
+          "novelty": 0.16,
+          "preference_relevance": 0.87,
+          "reproducibility": 0.1,
+          "rigor": 0.2
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "Supplied introduction: dense retrieval embeds queries and documents, and warns against blaming the embedding model alone for missed retrievals.",
+          "Visible contract list: encoder choices include model, pooling, vector dimension and normalization; metric contract starts with inner product before truncation."
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "assistant-native-review",
+        "producer": "assistant-native-review",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "The excerpt offers a useful diagnostic decomposition of dense retrieval into explicit interface contracts, including encoder and metric choices. It is an incomplete tutorial: the third contract, ANN design, executable configuration, and comparative outcomes are absent. Conceptual applicability is stronger than the supplied empirical or reproducibility evidence.",
+        "rationale_en": "The excerpt offers a useful diagnostic decomposition of dense retrieval into explicit interface contracts, including encoder and metric choices. It is an incomplete tutorial: the third contract, ANN design, executable configuration, and comparative outcomes are absent. Conceptual applicability is stronger than the supplied empirical or reproducibility evidence.",
+        "rationale_zh": "摘錄以介面契約拆解稠密檢索，明確提到編碼器與距離度量選擇，對診斷有用。但教程不完整，第三項契約、ANN 設計、可執行設定及比較結果都未提供；概念適用性較強，實證與可重現性證據則有限。",
+        "request_sha256": "cc1b1f4f64777a6f7238fa6ae5848abaf72829b9a8a51c6046448a96918a7a67",
+        "score": 0.47000000000000003,
+        "token_usage": {},
+        "topics": [
+          "RAG & Knowledge",
+          "Natural Language Processing"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "Dense Retrievalを実装する：DPR・距離尺度・ANNの設計",
+        "url": "https://zenn.dev/kas_blog/articles/20260509-llm-24-dense-retrieval"
+      },
+      "published_at": "2026-09-28T09:11:36+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.47000000000000003,
+        "llm_relevance_score": 13.16,
+        "recency_score": 0.928603702816452,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 4.0,
+        "total_score": 19.888603702816454
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:d8db507c8fd1ea44",
+      "summary": "Dense Retrieval（密なベクトル表現を使う文章検索）は、queryと文書をembeddingへ変換し、近い文書を取得する仕組みです。ただし、本番で検索漏れが起きたときに「embedding modelが悪い」とだけ考えると、修正する場所を誤ります。\n実装では、少なくとも次の3つを別々のcontract（構成要素間で固定する取り決め）として扱います。\n\n\nencoder contract：model、pooling（token表現を固定長vectorへ集約する方法）、vector次元、normalization\n\nmetric contract：inner product、co...",
+      "summary_zh": "這篇教程把 Dense Retrieval 視為由多個介面契約組成的檢索流程。摘要先說明基本做法：把查詢與文件轉成向量，再取回距離較近的文件；同時提醒，正式系統漏掉相關文件時，不能只把原因歸咎於 embedding model，否則可能修改了錯誤的環節。\n\n可見內容主張至少分開處理三種契約，其中已列出的編碼器契約包含模型、pooling、向量維度與正規化；距離契約則開始提到 inner product，後續文字便遭截斷。這些項目指出一個重要的工程問題：向量如何產生，以及查詢端如何解讀距離，必須有一致的約定。\n\n然而目前沒有第三項契約的完整說明，也看不到標題中的 ANN 設計、具體索引參數、程式碼、資料集或檢索品質比較。因此不能推定某種距離尺度或索引一定較好，更無法核實是否改善召回率、延遲或記憶體使用。文章的現有價值是提供排查方向與概念分解，研究新穎性及實驗證據有限；它應按技術部落格摘要評估，而非被誤認為 arXiv 論文。",
+      "title": "Dense Retrievalを実装する：DPR・距離尺度・ANNの設計",
+      "title_zh": "實作 Dense Retrieval：DPR、距離尺度與 ANN 的設計"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
         "しんいち"
       ],
       "categories": [],
@@ -966,6 +721,88 @@
       "summary_zh": "本文主張，代理成本最佳化應在系統設計時處理，不能只縮短提示詞。摘要首先定義管理指標：以一段期間的 LLM 費用除以成功任務數，得到每件成功任務的成本，讓失敗執行造成的費用也由成功結果承擔。這表示評估中的成功率會直接影響成本判讀，便宜的單次呼叫未必對應便宜的任務完成。第一個設計議題是快取前綴的穩定性；文章描述 tools、system、messages 的處理順序，並指出前層改動可能使後續快取失效，工具順序不固定、系統提示詞開頭放時間戳記，以及途中更改設定都是它提到的風險。標題另列出路由損益分界與預算預留，但本次文字在第一項議題即截斷，沒有完整推導或實作。摘要也未交代特定服務版本、實測命中率、節費幅度及任務成功率，因此不能把該快取行為無條件套用至所有供應商。其價值是把成功率、快取與代理成本放進同一個設計討論；若要採用，仍需用自己的工作負載核對服務規則與完整成本資料。",
       "title": "エージェントのコストは設計変数である — プレフィックス安定性・ルーティング損益分岐・予算の仮押さえ",
       "title_zh": "代理成本也是設計變數：前綴穩定性、路由損益與預算預留"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "とうもろこし茶"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-09-29T02:33:29.227878+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "15Bだけ動く250B、Solar Open 2はエージェント前提で設計された",
+          "url": "https://zenn.dev/okssusucha/articles/20260724-upstage-solar-open-2"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.12,
+          "generalizability": 0.27,
+          "novelty": 0.26,
+          "preference_relevance": 0.93,
+          "reproducibility": 0.04,
+          "rigor": 0.05
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "Supplied opening: describes Solar Open 2 as 250B total parameters with 15B active, and lists English, Korean and Japanese from the model card.",
+          "Supplied opening: attributes an agent task-completion design emphasis to the developer; text truncates while discussing search and tool use."
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "assistant-native-review",
+        "producer": "assistant-native-review",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Highly relevant to Japanese-capable language models, sparse activation and agent-oriented design. However, the supplied secondary-source excerpt only states model-card and developer claims. It does not provide architecture details, training procedures, agent benchmarks or independent evidence for multilingual and task-completion performance.",
+        "rationale_en": "Highly relevant to Japanese-capable language models, sparse activation and agent-oriented design. However, the supplied secondary-source excerpt only states model-card and developer claims. It does not provide architecture details, training procedures, agent benchmarks or independent evidence for multilingual and task-completion performance.",
+        "rationale_zh": "主題涉及支援日語的語言模型、稀疏啟動與代理導向設計，相關性高。但提供的二手摘錄只轉述模型卡與開發者主張，沒有架構細節、訓練流程、代理基準，或多語能力與任務完成表現的獨立證據。",
+        "request_sha256": "fe5425879e2118bcfa1766580b5d194b42bd0ad99c902117d7c5b26692bc751d",
+        "score": 0.4655000000000001,
+        "token_usage": {},
+        "topics": [
+          "Large Language Models",
+          "Japanese LLM & NLP",
+          "Agents & Tool Use",
+          "Transformer Architecture"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "15Bだけ動く250B、Solar Open 2はエージェント前提で設計された",
+        "url": "https://zenn.dev/okssusucha/articles/20260724-upstage-solar-open-2"
+      },
+      "published_at": "2026-09-28T03:11:38+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.4655000000000001,
+        "llm_relevance_score": 13.034000000000002,
+        "recency_score": 0.9056784921786625,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 3.75,
+        "total_score": 19.489678492178665
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:cd8b803029b207ed",
+      "summary": "オープンウェイトのモデルカードで「対応言語: 英語・韓国語・日本語」という並びを見ると、少し身構える。韓国政府の主導で作られた国産モデルが、なぜ日本語まで面倒を見るのか。そして総パラメータ250Bのうち実際に動くのは15Bだけで、開発元は「ベンチマークのスコアではなく、エージェントとして自分で仕事を終わらせられるかを軸に作った」と言い切っている。7月22〜23日に公開された Upstage の Solar Open 2 は、そういうモデルだ。\n\n なぜ「エージェント前提」がわざわざ設計思想になるのか\nここ2年でLLMの使われ方は、一問一答から大きくずれた。検索して、ツールを呼んで、その結...",
+      "summary_zh": "文章介紹 Upstage 的 Solar Open 2，並把「以代理完成工作為目標」作為主要設計主張。提供的摘錄轉述模型卡，列出英語、韓語與日語支援，以及總參數二千五百億、實際啟動一百五十億的規格；作者也表示，開發者強調的不只是基準分數，而是模型能否作為代理自行完成任務。\n\n這個方向與多語大型語言模型、稀疏運算及工具使用都有關聯。摘錄接著談到模型用途從單次問答轉向搜尋與呼叫工具，但在完整論述之前就已中止。因此目前不能重建代理架構、路由機制、訓練資料或後訓練方法，也看不到任務成功率、長程可靠性、成本與基準模型的比較。\n\n文中的參數、語言與發布資訊都是二手來源的陳述，本次沒有獨立查核模型卡、權重下載或授權條件。尤其不能因為宣稱支援日語，就推定所有日語任務品質相同。文章可作為追蹤模型及代理設計取向的線索，但現有證據不足以證明效能優勢或可重現的研究貢獻；它本身是一篇部落格介紹。",
+      "title": "15Bだけ動く250B、Solar Open 2はエージェント前提で設計された",
+      "title_zh": "250B 參數、啟動 15B：以代理任務為導向的 Solar Open 2"
     },
     {
       "arxiv_id": null,
@@ -2046,6 +1883,87 @@
     {
       "arxiv_id": null,
       "authors": [
+        "arika"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-09-29T02:33:29.208168+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "日本語が一番うまいLLMは誰なのか調べる",
+          "url": "https://zenn.dev/arika/articles/20260929-what-is-good-llm-for-japanese"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.13,
+          "generalizability": 0.16,
+          "novelty": 0.16,
+          "preference_relevance": 0.91,
+          "reproducibility": 0.03,
+          "rigor": 0.1
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "Supplied introduction: author asks which model should write documents after dissatisfaction with GPT-family Japanese output.",
+          "Supplied example: GPT 6 Luna is said to generate a Dapr State Management/store-key description; the excerpt ends before evaluation results."
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "assistant-native-review",
+        "producer": "assistant-native-review",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "The topic strongly matches Japanese LLM evaluation and supplies one concrete documentation example attributed to GPT 6 Luna. The excerpt does not reveal the model comparison, criteria, repeated trials, or results. The example establishes the author’s concern, not a defensible ranking of Japanese-language ability.",
+        "rationale_en": "The topic strongly matches Japanese LLM evaluation and supplies one concrete documentation example attributed to GPT 6 Luna. The excerpt does not reveal the model comparison, criteria, repeated trials, or results. The example establishes the author’s concern, not a defensible ranking of Japanese-language ability.",
+        "rationale_zh": "主題高度符合日語大型語言模型評估，並提供一段據稱由 GPT 6 Luna 生成的文件例子。但摘錄沒有呈現比較模型、準則、重複試驗或結果；該例子只能說明作者的疑慮，不能支持日語能力排名。",
+        "request_sha256": "23f856bf693ce6d6bcb0ec4472371e60eccd606ff291287559cc444bb70c6ef9",
+        "score": 0.44000000000000006,
+        "token_usage": {},
+        "topics": [
+          "Japanese LLM & NLP",
+          "Red Teaming & Evaluation",
+          "Natural Language Processing"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "日本語が一番うまいLLMは誰なのか調べる",
+        "url": "https://zenn.dev/arika/articles/20260929-what-is-good-llm-for-japanese"
+      },
+      "published_at": "2026-09-28T09:55:16+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.44000000000000006,
+        "llm_relevance_score": 12.320000000000002,
+        "recency_score": 0.931423881367505,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 0.0,
+        "total_score": 15.051423881367507
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:f901a54d35bbf70e",
+      "summary": "!\nこの記事はブログでも公開しています。\n\nGPT系列の日本語が終わっているという話はよく聞くし自分も困っているので、\nじゃあどのモデルでドキュメントを書かせればいいかな、ということで雑に調査した。\n\n 日本語が終わっている、とは\n↓のような文章。（ちなみにこの文章は実装コードを元にGPT 6 Lunaが生成した）\n`Configlue.Resource.Dapr` は Dapr State Management の1つの store key を Configlue の byte-resource 契約へ接続します。\nDapr を使うアプリケーションだけにインストールしてください:\n\nこ...",
+      "summary_zh": "文章想回答一個實務問題：若要讓大型語言模型撰寫日語技術文件，應選用哪個模型。作者表示，自己也遇過對 GPT 系列日語表達不滿意的情況，因此做了一次初步調查。摘錄提供一段據稱由 GPT 6 Luna 根據實作程式碼生成的文字，內容涉及 Dapr State Management、store key 與 byte-resource 契約，並以這段文字說明作者認為不自然的日語表達。\n\n這個例子把評估目標限定到技術文件，而不只是一般聊天能力；但它本身仍不是完整的模型比較。現有摘錄沒有列出所有受測模型、相同輸入、評分規則、評審人數、重複生成次數或各模型結果，也未說明如何分開判斷語法、語意準確性與技術術語使用。\n\n因此不能判定哪個模型勝出，更不能把單一例子的表達問題推廣成整個模型系列的固定能力。對日語開發文件使用者，文章提供值得檢查的任務情境與一個具體案例；若要據此選型，仍需完整評估證據。這是日語部落格摘錄，不是已發表的 arXiv 評測論文。",
+      "title": "日本語が一番うまいLLMは誰なのか調べる",
+      "title_zh": "哪個大型語言模型最擅長日語？文件生成的初步比較"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
         "Katto"
       ],
       "categories": [],
@@ -2123,342 +2041,16 @@
       "summary_zh": "文章以影片剪輯產品 Katto 的開發經驗，討論字幕中的專有名詞校正可能反而改變原意。作者原本想解決語音辨識對陌生品牌與人名不夠可靠的問題；摘要舉例，Whisper 可能依發音把 Trump 寫成 trompe、把 Suárez 寫成 Suares。標題則指出，用 LLM 修正這類錯字時，產品名稱竟被改成另一個名稱，顯示表面上更自然的文字不一定更忠於原始內容。現有片段只涵蓋產品背景與待解決問題，沒有交代所用語言模型、提示詞、輸入上下文、名稱對照來源或實際修正案例的完整過程，也看不到失敗比例及補救措施。這不是足以證明某種校正策略優劣的比較研究，單一開發者敘事亦不能直接推廣至所有字幕系統。它的重要性在於提醒使用 LLM 做文字後處理時，應把專有名詞的身分保留視為獨立品質要求，而不能只看拼字是否流暢。若要判斷文章提出的解法是否可採用，仍須取得全文，核對名稱驗證流程、限制與錯誤分析。",
       "title": "LLMに固有名詞の誤字を直させたら、製品名を別のものに変えられた",
       "title_zh": "用 LLM 校正專有名詞錯字，卻把產品名稱改成別的東西"
-    },
-    {
-      "arxiv_id": null,
-      "authors": [
-        "syun136_616"
-      ],
-      "categories": [],
-      "entities": [],
-      "first_seen_at": "2026-09-29T02:33:29.050246+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "qiita-genai-tag",
-          "tier": 2,
-          "title": "AI時代にこそ問われる、自分の頭で考えるエンジニア力",
-          "url": "https://qiita.com/syun136_616/items/1668a82f3b3bf3b5dc29"
-        }
-      ],
-      "llm_evaluation": {
-        "components": {
-          "evidence_strength": 0.08,
-          "generalizability": 0.55,
-          "novelty": 0.12,
-          "preference_relevance": 0.72,
-          "reproducibility": 0.2,
-          "rigor": 0.09
-        },
-        "confidence": 1.0,
-        "evidence": [
-          "Abstract: 摘要建議採納生成式 AI 程式碼前自行確認前提，因模型可能未完整理解脈絡。",
-          "Abstract: 三步為說明建議理由、小規模驗證，以及提出一個替代方案；未附成效量測。"
-        ],
-        "fulltext_sha256": "",
-        "fulltext_status": "abstract_only",
-        "model": "assistant-native-review",
-        "producer": "assistant-native-review",
-        "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "提供可理解的三步檢查習慣，適合 AI 輔助開發實務；未呈現支持效益的測量或對照，研究新穎性低。",
-        "rationale_en": "Offers an understandable three-step checking habit suited to AI-assisted development practice. No measurements or comparisons support its benefits, and research novelty is low.",
-        "rationale_zh": "提供可理解的三步檢查習慣，適合 AI 輔助開發實務；\n\n未呈現支持效益的測量或對照，研究新穎性低。",
-        "request_sha256": "b3716ee2a4dfa062ecbc0306b3e741ebdf8ff51fee80af51d86da86ac97758f0",
-        "score": 0.39649999999999996,
-        "token_usage": {},
-        "topics": [
-          "Code & Programming",
-          "Agents & Tool Use"
-        ]
-      },
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "qiita-genai-tag",
-        "tier": 2,
-        "title": "AI時代にこそ問われる、自分の頭で考えるエンジニア力",
-        "url": "https://qiita.com/syun136_616/items/1668a82f3b3bf3b5dc29"
-      },
-      "published_at": "2026-09-28T16:37:28+00:00",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 0.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.39649999999999996,
-        "llm_relevance_score": 11.101999999999999,
-        "recency_score": 0.9578057833653066,
-        "semantic_score": 0.0,
-        "tier_score": 1.0,
-        "topic_score": 0.0,
-        "total_score": 13.859805783365305
-      },
-      "section": null,
-      "source_name": "Qiita 生成AI Tag",
-      "story_id": "fallback:29a4cee9cad1b0cb",
-      "summary": "この記事の要点\n\n生成AIのコード提案は文脈を完全に理解せず出力されることがあるため、採用前に前提条件を自分で確認する必要があります。\n自分の頭で考える習慣は、AIの提案理由を言語化する・小さく検証する・代替案を1つ出す、の3ステップで鍛えられます。\n判断をすべてAIに委ね...",
-      "summary_zh": "本文主張，在使用生成式 AI 協助撰寫程式時，工程師仍需自行確認模型建議所依賴的前提。提供的摘要指出，AI 可能沒有完整掌握上下文就產生程式碼，因此不應省略採納前的判斷。作者提出三項可練習的習慣：\n- 用自己的話說明 AI 建議的理由\n- 先做小規模驗證\n- 至少提出一個替代方案\n\n三者構成簡明的工作提醒，重點是讓工程師對輸出形成理解與檢查，而不是只接受看起來合理的答案。這些建議與 AI 輔助程式開發、人工審查和問題分析相關，也較容易作為個人的檢查清單。不過目前取得的是截斷的摘要，最後關於把判斷全交給 AI 的段落並不完整，無法補述作者後續論證。現有文字沒有研究設計、參與人數、專案資料、對照組或缺陷率變化，因此不能把三個步驟的效果視為已被實證。文章較接近工程實務與學習習慣的觀點分享；它提供的價值是明確的思考框架，而非目前可驗證的新演算法或量化研究成果。",
-      "title": "AI時代にこそ問われる、自分の頭で考えるエンジニア力",
-      "title_zh": "AI 時代更需要的工程能力：保留自己思考與判斷的習慣"
-    },
-    {
-      "arxiv_id": null,
-      "authors": [
-        "hisashi-ito"
-      ],
-      "categories": [],
-      "entities": [],
-      "first_seen_at": "2026-09-29T02:33:28.883527+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "qiita-llm-tag",
-          "tier": 2,
-          "title": "Sonnet 5.5 の登場と Opus 5.5 の使い分け",
-          "url": "https://qiita.com/hisashi-ito/items/e814569771d00675e19d"
-        }
-      ],
-      "llm_evaluation": {
-        "components": {
-          "evidence_strength": 0.07,
-          "generalizability": 0.3,
-          "novelty": 0.08,
-          "preference_relevance": 0.78,
-          "reproducibility": 0.03,
-          "rigor": 0.04
-        },
-        "confidence": 1.0,
-        "evidence": [
-          "Abstract: 作者聲稱 Sonnet 5.5 與 Sonnet 5 同價，且除快取讀取外為 Opus 5.5 的一半。",
-          "Abstract: 作者建議重視速度與費用的工作用 Sonnet 5.5，困難工作用 Opus 5.5；計算與圖表未包含於摘錄。"
-        ],
-        "fulltext_sha256": "",
-        "fulltext_status": "abstract_only",
-        "model": "assistant-native-review",
-        "producer": "assistant-native-review",
-        "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "模型選擇與成本直接相關，但價格及用途建議僅見作者摘要主張，無工作負載、效能量測或可重現比較。",
-        "rationale_en": "Model choice and cost are directly relevant, but prices and use-case recommendations appear only as claims in the author’s abstract. There are no workloads, performance measurements, or reproducible comparisons.",
-        "rationale_zh": "模型選擇與成本直接相關，但價格及用途建議僅見作者摘要主張，無工作負載、效能量測或可重現比較。",
-        "request_sha256": "f113de49e4b1bddb725c43270758070f9e0f1ce170439cd5c30ac0fc4ef78c3a",
-        "score": 0.37200000000000005,
-        "token_usage": {},
-        "topics": [
-          "Large Language Models",
-          "Scaling & Efficiency",
-          "Inference & Serving"
-        ]
-      },
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "qiita-llm-tag",
-        "tier": 2,
-        "title": "Sonnet 5.5 の登場と Opus 5.5 の使い分け",
-        "url": "https://qiita.com/hisashi-ito/items/e814569771d00675e19d"
-      },
-      "published_at": "2026-09-28T16:27:00+00:00",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 0.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.37200000000000005,
-        "llm_relevance_score": 10.416000000000002,
-        "recency_score": 0.9571098534075815,
-        "semantic_score": 0.0,
-        "tier_score": 1.0,
-        "topic_score": 0.0,
-        "total_score": 13.173109853407585
-      },
-      "section": null,
-      "source_name": "Qiita LLM Tag",
-      "story_id": "fallback:2106d7201d4048a0",
-      "summary": "結論: Sonnet 5.5 が出ました。料金は Sonnet 5 と同じで、Opus 5.5 の半分(キャッシュ読み出しを除く)です。速さと料金を優先する作業は Sonnet 5.5、難しい作業は Opus 5.5、と使い分けるのがよいと考えます。\nこの記事の計算・図・原...",
-      "summary_zh": "這篇文章從速度、費用與工作難度出發，討論 Sonnet 5.5 和 Opus 5.5 的使用分工。提供的摘要直接給出作者的建議：優先考量速度與價格的工作採用 Sonnet 5.5，較困難的工作則採用 Opus 5.5。摘要並聲稱 Sonnet 5.5 與 Sonnet 5 的價格相同，且除快取讀取外，費用為 Opus 5.5 的一半。這些說法與大型語言模型的日常選型和推論成本有關，但此處應視為來源文章的主張，而不是經獨立核實的現行價目或性能結論。可取得文字在提到計算與圖表後截斷，未包含價格單位、輸入與輸出拆分、實際工作負載、延遲、品質評估或失敗重試成本，因此無法確認哪類任務真的更划算。摘要也沒有定義「困難」的判準，或給出兩模型的控制實驗。它適合當成選型討論的起點，研究新穎性與證據強度則有限；若要據此制定正式路由或預算，仍需完整資料與適用條件。",
-      "title": "Sonnet 5.5 の登場と Opus 5.5 の使い分け",
-      "title_zh": "Sonnet 5.5 登場：如何與 Opus 5.5 分工使用"
-    },
-    {
-      "arxiv_id": null,
-      "authors": [
-        "Bhavya Sruthi Sode"
-      ],
-      "categories": [
-        "Amazon Textract",
-        "Customer Solutions"
-      ],
-      "entities": [],
-      "first_seen_at": "2026-09-29T02:02:17.112301+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "aws-ml-blog",
-          "tier": 0,
-          "title": "Automating Amazon Textract adapter lifecycle management across accounts",
-          "url": "https://aws.amazon.com/blogs/machine-learning/automating-amazon-textract-adapter-lifecycle-management-across-accounts"
-        }
-      ],
-      "llm_evaluation": {
-        "components": {
-          "evidence_strength": 0.08,
-          "generalizability": 0.22,
-          "novelty": 0.12,
-          "preference_relevance": 0.1,
-          "reproducibility": 0.12,
-          "rigor": 0.1
-        },
-        "confidence": 1.0,
-        "evidence": [
-          "Abstract: names CloudFormation/Terraform infrastructure as code and cross-account adapter promotion.",
-          "Abstract: describes pre-classification routing for form versions and VPC endpoints, encryption, and least-privilege IAM.",
-          "Abstract: supplies no performance results, controlled evaluation, or executable implementation."
-        ],
-        "fulltext_sha256": "",
-        "fulltext_status": "abstract_only",
-        "model": "assistant-native-review",
-        "producer": "assistant-native-review",
-        "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "A narrowly scoped Textract operations tutorial, not demonstrated language-model research. The abstract names deployment and security patterns but provides no algorithmic contribution, measurements, configuration artifacts, or comparative evaluation; domain-application scope limits the score.",
-        "rationale_en": "A narrowly scoped Textract operations tutorial, not demonstrated language-model research. The abstract names deployment and security patterns but provides no algorithmic contribution, measurements, configuration artifacts, or comparative evaluation; domain-application scope limits the score.",
-        "rationale_zh": "這是一篇範圍有限的 Textract 維運教程，並未展示語言模型研究。\n\n摘要提及部署與安全模式，卻沒有演算法貢獻、量測、設定檔或比較評估；其領域應用範圍也限制了評分。",
-        "request_sha256": "875de0bc78364f612066cd73e997c34132fb774fc33089144a19641eb27553fc",
-        "score": 0.113,
-        "token_usage": {},
-        "topics": [
-          "Inference & Serving",
-          "Training & Optimization"
-        ]
-      },
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "aws-ml-blog",
-        "tier": 0,
-        "title": "Automating Amazon Textract adapter lifecycle management across accounts",
-        "url": "https://aws.amazon.com/blogs/machine-learning/automating-amazon-textract-adapter-lifecycle-management-across-accounts"
-      },
-      "published_at": "2026-09-28T06:49:04+00:00",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 0.0,
-        "kind_score": 1.5,
-        "llm_raw_score": 0.113,
-        "llm_relevance_score": 3.164,
-        "recency_score": 0.9194575852810778,
-        "semantic_score": 0.0,
-        "tier_score": 3.0,
-        "topic_score": 4.0,
-        "total_score": 12.583457585281078
-      },
-      "section": null,
-      "source_name": "AWS Machine Learning Blog",
-      "story_id": "fallback:0337c2b2e693cff5",
-      "summary": "Learn how to operationalize Amazon Textract Custom Queries adapters for production: infrastructure as code with AWS CloudFormation and Terraform, a cross-account adapter promotion process, a pre-classification routing pattern for multiple form versions, and production security controls such as VPC endpoints, encryption, and least-privilege IAM.",
-      "summary_zh": "這篇實務文章聚焦 Amazon Textract Custom Queries 轉接器如何進入正式環境，處理跨帳號推進版本、多種表單格式並存，以及部署時的安全控管。提供的摘要列出四個主軸：以 AWS CloudFormation 與 Terraform 管理基礎設施、建立跨帳號的轉接器推進流程、先分類再依表單版本路由，以及使用 VPC 端點、加密與最小權限 IAM。這些內容描繪的是既有文件處理服務的維運方法，摘要沒有說明新的語言模型架構、學習目標或推理方法，也沒有呈現準確率、延遲、成本、故障率或版本回復的量化結果。由於本次僅取得一段簡短摘要，無法核對實際範本、程式碼、帳號權限配置與測試步驟，更不能把所列工具視為已驗證的端到端方案。對已採用 Textract 的團隊，它可作為檢視部署流程與權限邊界的閱讀線索；對關注大型語言模型與代理方法研究的讀者，直接研究關聯較弱。後續若要採用，仍需閱讀全文，確認不同表單版本的判別方式及跨帳號流程的適用前提。",
-      "title": "Automating Amazon Textract adapter lifecycle management across accounts",
-      "title_zh": "跨帳號自動化管理 Amazon Textract 轉接器生命週期"
-    },
-    {
-      "arxiv_id": null,
-      "authors": [
-        "Hideki INOUE"
-      ],
-      "categories": [],
-      "entities": [],
-      "first_seen_at": "2026-09-29T02:33:29.225649+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "zenn-llm-topic",
-          "tier": 2,
-          "title": "AIに資料を全面委任すると、なぜ手戻りが増えるのか",
-          "url": "https://zenn.dev/lhideki/articles/ai-document-creation-dependency"
-        }
-      ],
-      "llm_evaluation": {
-        "components": {
-          "evidence_strength": 0.04,
-          "generalizability": 0.4,
-          "novelty": 0.1,
-          "preference_relevance": 0.48,
-          "reproducibility": 0.02,
-          "rigor": 0.05
-        },
-        "confidence": 1.0,
-        "evidence": [
-          "Abstract: contrasts full delegation with assistance for document creation using purpose, thinking process, and rework cost.",
-          "Abstract: argues that faster initial generation need not improve total cost-effectiveness; no numerical study is shown."
-        ],
-        "fulltext_sha256": "",
-        "fulltext_status": "abstract_only",
-        "model": "assistant-native-review",
-        "producer": "assistant-native-review",
-        "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "A broadly relevant generative-AI workflow essay, but no new language-model method or empirical study is supplied. The abstract argues about delegation and rework without operational definitions, measured costs, comparison groups, or reproducible evaluation.",
-        "rationale_en": "A broadly relevant generative-AI workflow essay, but no new language-model method or empirical study is supplied. The abstract argues about delegation and rework without operational definitions, measured costs, comparison groups, or reproducible evaluation.",
-        "rationale_zh": "這是一篇廣義相關的生成式 AI 工作流程文章，但未提供新的語言模型方法或實證研究。\n\n摘要討論工作委派與重工，卻缺少操作性定義、實測成本、比較組及可重現的評估。",
-        "request_sha256": "8088641461e290624cc0fcd0baff43144f4c1d4756f3189544fc2b3022d30cec",
-        "score": 0.2615,
-        "token_usage": {},
-        "topics": [
-          "Large Language Models",
-          "Agents & Tool Use",
-          "Reasoning & Chain-of-Thought"
-        ]
-      },
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "zenn-llm-topic",
-        "tier": 2,
-        "title": "AIに資料を全面委任すると、なぜ手戻りが増えるのか",
-        "url": "https://zenn.dev/lhideki/articles/ai-document-creation-dependency"
-      },
-      "published_at": "2026-09-28T03:38:43+00:00",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 0.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.2615,
-        "llm_relevance_score": 7.322,
-        "recency_score": 0.9073834834065779,
-        "semantic_score": 0.0,
-        "tier_score": 1.0,
-        "topic_score": 0.0,
-        "total_score": 10.029383483406578
-      },
-      "section": null,
-      "source_name": "Zenn LLM Topic",
-      "story_id": "fallback:1333daa144fa8637",
-      "summary": "AIに資料を全面委任すると、なぜ手戻りが増えるのか\n本稿では、生成AIを用いた資料作成における全面委任と補助活用の違いを、資料本来の目的・思考プロセス・手戻りコストの観点から整理しています。AIは資料の生成速度を大幅に向上させますが、情報整理・推論・説明責任という作業構造を踏まえると、全面委任の費用対効果は見かけ上の速さよりも低くなる場面が少なくありません。適切な役割分担によって品質と効率を両立させる方法についても合わせて紹介します。\n\n はじめに\n生成AIの普及により、資料の「初稿を出す速さ」は大幅に向上しました。プロンプトを入力すれば、数十秒でそれらしい文章や箇条書き、スライド構...",
-      "summary_zh": "本文關注生成式 AI 在文件製作中的分工，而不是只追求更快產出初稿。摘要將全面委任與輔助使用放在一起比較，從文件本來的目的、思考流程及重工成本三個角度，討論看似快速的生成結果為何不一定帶來更好的整體效益。作者指出，資料製作仍包含資訊整理、推理與對內容負責；若忽略這些工作結構，後續修改可能抵銷前端節省的時間。文章也表示會介紹如何透過角色分工兼顧品質與效率，但提供的片段只到前言，沒有呈現具體分工流程、任務案例或驗證結果。這使得「重工增加」目前仍是作者提出的論點，不能推廣為所有使用情境必然發生的現象。摘要沒有定義品質與重工成本如何量測，也沒有比較不同使用者、任務難度、模型或審核方式。它的價值是提醒團隊評估 AI 文件流程時，應考慮整段工作的目的與責任，而不只看首次產出的秒數。若期待研究層級的結論，仍需實測總工時、錯誤率與交付品質；目前材料較適合作為工作流程的反思讀物，而非經驗證的最佳作法。",
-      "title": "AIに資料を全面委任すると、なぜ手戻りが増えるのか",
-      "title_zh": "把文件製作全面交給 AI，為什麼反而可能增加重工？"
     }
   ],
   "run_date": "2026-09-29",
   "run_id": "assistant-review-2026-09-29",
   "run_info": {
     "error_summary": null,
-    "finished_at": "2026-10-03T10:17:34.866749+00:00",
+    "finished_at": "2026-10-03T10:40:15.637259+00:00",
     "items_total": 33,
     "run_id": "assistant-review-2026-09-29",
-    "started_at": "2026-10-03T10:17:34.676490+00:00",
+    "started_at": "2026-10-03T10:40:15.451851+00:00",
     "stories_total": 33,
     "success": true
   },

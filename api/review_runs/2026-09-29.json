@@ -1,8 +1,8 @@
 {
   "producer": "assistant-native-review",
   "phase": "historical_replay",
-  "replay_started_at": "2026-10-03T10:17:34.676490+00:00",
-  "replay_finished_at": "2026-10-03T10:17:34.870496+00:00",
+  "replay_started_at": "2026-10-03T10:40:15.451851+00:00",
+  "replay_finished_at": "2026-10-03T10:40:15.640794+00:00",
   "original_run_info": {
     "error_summary": null,
     "finished_at": "2026-09-29T04:06:32.795187+00:00",
@@ -23,5 +23,10 @@
     "topics.yaml": "0cf3133f9752abe4899f6bbaa0bc7eb2148ce3d0361b49bd41f5f6105c868248"
   },
   "ranking_anchor": "2026-09-29T02:58:15.258519+00:00",
-  "coverage": null
+  "coverage": null,
+  "identity_migration": {
+    "audit": "identity-repair-2026-10-03.json",
+    "corrected_candidate_count": 5,
+    "prior_snapshot_items_unchanged": true
+  }
 }
