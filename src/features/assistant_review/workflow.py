@@ -23,6 +23,7 @@ from src.features.assistant_review.validation import (
     digest_file,
     read_object,
     validate_guide,
+    validate_rationale_translation,
     validate_review,
 )
 from src.features.config.effective import EffectiveConfig
@@ -300,9 +301,7 @@ def rank_day(
         run_id=f"assistant-review-{day}",
         topics_config=config.topics,
         entities_config=config.entities,
-        now=datetime.fromisoformat(
-            entry.get("ranking_anchor", entry["original_run_info"]["finished_at"])
-        ),
+        now=datetime.fromisoformat(_ranking_anchor(entry)),
         llm_scores={sid: value["score"] for sid, value in scorecards.items()},
     ).rank_stories(stories)
     write_object(
@@ -310,12 +309,17 @@ def rank_day(
         {
             "date": day,
             "keys": [keys_by_id[s.story_id] for s in _collect_ranker_stories(result)],
-            "historical_ranking_anchor": entry.get(
-                "ranking_anchor", entry["original_run_info"]["finished_at"]
-            ),
+            "historical_ranking_anchor": _ranking_anchor(entry),
         },
     )
     return result, scorecards, keys_by_id
+
+
+def _ranking_anchor(entry: dict[str, Any]) -> str:
+    """Use the explicit frozen anchor, or the original archived run fallback."""
+    if entry.get("ranking_anchor"):
+        return str(entry["ranking_anchor"])
+    return str(entry["original_run_info"]["finished_at"])
 
 
 def render_day(workspace: Path, day: str, output: Path) -> None:
@@ -332,11 +336,19 @@ def render_day(workspace: Path, day: str, output: Path) -> None:
         translations[story.story_id] = validate_guide(
             request, review, guide if guide.exists() else None
         )
+        if story.story_id in cards:
+            rationale = workspace / "rationales" / f"{key}.json"
+            cards[story.story_id]["rationale_zh"] = validate_rationale_translation(
+                request, review, rationale if rationale.exists() else None
+            )
         if story.arxiv_id and not story.to_json_dict().get("summary"):
             raise ValueError("Selected story lacks original-language source summary")
     manifest = read_object(workspace / "manifest.json")
     entry = manifest["dates"][day]
-    original = entry["original_run_info"]
+    original = entry.get("original_run_info")
+    observed_at = (
+        original["finished_at"] if original else entry.get("source_status_observed_at")
+    )
     # Separate staging output protects the live/history tree if any gate fails.
     cache = output / "api" / "llm_scores.json"
     previous_cache = (
@@ -379,16 +391,17 @@ def render_day(workspace: Path, day: str, output: Path) -> None:
         output / "api" / "review_runs" / f"{day}.json",
         {
             "producer": PRODUCER,
-            "phase": "historical_replay",
+            "phase": entry.get("phase", "historical_replay"),
             "replay_started_at": started_at.isoformat(),
             "replay_finished_at": datetime.now(UTC).isoformat(),
             "original_run_info": original,
-            "source_status_observed_at": original["finished_at"],
+            "source_status_observed_at": observed_at,
             "candidate_count": len(keys),
             "evaluated_count": len(cards),
             "source_snapshot_sha256": entry["state_sha256"],
-            "archive_sha256": entry["archive_sha256"],
+            "archive_sha256": entry.get("archive_sha256"),
             "configuration_sha256": manifest["config_sha256"],
-            "ranking_anchor": entry.get("ranking_anchor", original["finished_at"]),
+            "ranking_anchor": _ranking_anchor(entry),
+            "coverage": entry.get("coverage"),
         },
     )

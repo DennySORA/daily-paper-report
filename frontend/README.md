@@ -85,3 +85,26 @@ force-pushes; both retry on a rejected fast-forward.
   missing evaluation, missing search index, storage unavailable.
 - **Reading state**: read marks, saved papers, language, collapsed panels and
   disclosure preferences stay in this browser's `localStorage` (`dpr.*.v1`).
+
+## Reading text and bilingual assessment
+
+- Preserve the current shell, navigation, scorecard, dark palette, typography,
+  680 px reading measure and disclosure preferences. Only prose structure changes.
+- `llm_evaluation.rationale` retains the original assessment;
+  `llm_evaluation.rationale_zh` is an optional Traditional Chinese translation.
+  Chinese mode uses the supplied Chinese field. Missing or blank translations
+  explicitly show the original-language fallback; the browser never fabricates translations.
+  The original assessment remains available in a comparison disclosure.
+- Summaries and assessments share safe React text rendering: paragraphs,
+  explicit line-start bullet/numbered lists and inline code. Known feed HTML is
+  cleaned into text, never inserted as raw HTML. Original JSON strings are not
+  mutated. Numbered list values are preserved.
+- CJK sentence endings gain paragraph breaks. Existing newlines are preserved;
+  ASCII full stops remain untouched to avoid splitting decimals or abbreviations.
+  URLs, Markdown links, code and bracketed expressions are kept together.
+  This is conservative presentation, not an attempt to infer or rewrite points.
+- Regression coverage: `src/test/text.test.ts` and `src/test/reader-prose.test.tsx`
+  exercise structure, numeric/technical text, escaped markup, Chinese/English
+  switching, comparison and missing translations. Run `pnpm run verify`.
+- Visual acceptance must be checked separately in a supported browser; a build or
+  DOM test does not establish rendered layout quality.

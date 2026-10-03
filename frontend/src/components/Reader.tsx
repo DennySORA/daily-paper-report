@@ -27,11 +27,12 @@ import {
 } from '../data/story'
 import { topicLabel } from '../data/topics'
 import { formatCompact, formatDay, formatInt, formatTimestamp, utcDate } from '../lib/format'
-import { paragraphs, segmentEvidence } from '../lib/text'
+import { segmentEvidence } from '../lib/text'
 import { useLang } from '../state/lang'
 import { setPref, setRead, toggleSaved, useLibrary } from '../state/library'
 import { CompactScorecard, RankBreakdown, Scorecard } from './Scorecard'
 import { Badge, CopyButton, ExternalLink, ICON, ICON_SM, Kbd } from './ui'
+import { Prose } from './Prose'
 
 export interface ReaderNav {
   index: number
@@ -65,25 +66,6 @@ function Section({
       </div>
       {children}
     </section>
-  )
-}
-
-/** Paragraphs in the reading style of their language. */
-function Prose({ text, lang }: { text: string; lang: 'zh' | 'en' }) {
-  return lang === 'zh' ? (
-    <div className="prose-zh" lang="zh-Hant">
-      {paragraphs(text).map((paragraph, index) => (
-        <p key={index}>{paragraph}</p>
-      ))}
-    </div>
-  ) : (
-    <div className="prose-en" lang="en">
-      {paragraphs(text).map((paragraph, index) => (
-        <p key={index} className="mb-3 last:mb-0">
-          {paragraph}
-        </p>
-      ))}
-    </div>
   )
 }
 
@@ -149,18 +131,28 @@ function Summary({ story }: { story: Story }) {
   )
 }
 
-function Rationale({ text }: { text: string }) {
-  const { t } = useLang()
+function Rationale({ text, textZh }: { text: string; textZh: string | null }) {
+  const { lang, t } = useLang()
   const { prefs } = useLibrary()
+  const own = lang === 'zh' ? textZh : text || null
+  const other = lang === 'zh' ? text || null : textZh
+  const fallbackLang = lang === 'zh' ? 'en' : 'zh'
   return (
     <Section
       id="rationale-title"
       icon={<Quote {...ICON_SM} className="text-fg-3" />}
       title={t('評審理由', 'Assessment')}
       aside={
-        <span className="text-caption text-fg-3">
-          {t('LLM 評分時撰寫（英文）', 'Written by the scoring LLM')}
-        </span>
+        own === null && other ? (
+          <Badge tone="warning">
+            <TriangleAlert {...ICON_SM} />
+            {t('中文評審欄位尚未提供，顯示原文', 'No English assessment; showing Chinese')}
+          </Badge>
+        ) : (
+          <span className="text-caption text-fg-3">
+            {t('LLM 評分理由', 'Written by the scoring LLM')}
+          </span>
+        )
       }
     >
       <details
@@ -171,7 +163,17 @@ function Rationale({ text }: { text: string }) {
         <summary className="cursor-pointer text-meta text-fg-3 select-none group-open:mb-2">
           {prefs.rationaleOpen ? t('收合', 'Collapse') : t('展開評審理由', 'Show assessment')}
         </summary>
-        <Prose text={text} lang="en" />
+        <Prose text={own ?? other ?? ''} lang={own ? lang : fallbackLang} />
+        {own && other ? (
+          <details className="mt-3 rounded-md border border-line-subtle px-3 py-2">
+            <summary className="cursor-pointer text-meta text-fg-3 select-none">
+              {t('評審原文', 'Chinese assessment (中文評審理由)')}
+            </summary>
+            <div className="mt-2">
+              <Prose text={other} lang={fallbackLang} />
+            </div>
+          </details>
+        ) : null}
       </details>
     </Section>
   )
@@ -413,7 +415,9 @@ export function Reader({
         <div className="grid grid-cols-1 gap-8 @5xl:grid-cols-[minmax(0,1fr)_300px] @5xl:gap-10">
           <div className="flex max-w-[680px] min-w-0 flex-col gap-8">
             <Summary story={story} />
-            {ev?.rationale ? <Rationale text={ev.rationale} /> : null}
+            {ev && (ev.rationale || ev.rationaleZh) ? (
+              <Rationale text={ev.rationale} textZh={ev.rationaleZh} />
+            ) : null}
             {ev?.evidence.length ? <Evidence items={ev.evidence} /> : null}
           </div>
 

@@ -1,4 +1,4 @@
-import { cleanText } from '../lib/text'
+import { cleanReadingText, cleanText } from '../lib/text'
 import { normalizeTopics, type TopicInfo } from './topics'
 import {
   COMPONENT_KEYS,
@@ -83,6 +83,7 @@ export interface Evaluation {
   components: Array<{ key: ComponentKey; value: number | null }>
   confidence: number | null
   rationale: string
+  rationaleZh: string | null
   evidence: string[]
   fulltext: 'complete' | 'abstract_only' | 'unknown'
   model: string | null
@@ -148,7 +149,8 @@ function evaluationOf(raw: RawStory): Evaluation | null {
     score: num(ev.score),
     components: COMPONENT_KEYS.map((key) => ({ key, value: num(ev.components?.[key]) })),
     confidence: num(ev.confidence),
-    rationale: cleanText(ev.rationale),
+    rationale: cleanReadingText(ev.rationale),
+    rationaleZh: cleanReadingText(ev.rationale_zh) || null,
     evidence: (ev.evidence ?? []).map((item) => cleanText(item)).filter(Boolean),
     fulltext: status === 'complete' || status === 'abstract_only' ? status : 'unknown',
     model: ev.model || null,
@@ -167,7 +169,7 @@ export function toStory(
   group: string | null = null,
 ): Story {
   const titleZh = cleanText(raw.title_zh) || null
-  const summaryZh = cleanText(raw.summary_zh) || null
+  const summaryZh = cleanReadingText(raw.summary_zh) || null
   const evaluation = evaluationOf(raw)
   return {
     id: raw.story_id,
@@ -179,7 +181,7 @@ export function toStory(
     titleZh,
     titleEn: cleanText(raw.title) || raw.story_id,
     summaryZh,
-    abstract: cleanText(raw.summary),
+    abstract: cleanReadingText(raw.summary),
     url: raw.primary_link?.url ?? '',
     arxivId: raw.arxiv_id ?? null,
     links: raw.links?.length ? raw.links : raw.primary_link ? [raw.primary_link] : [],

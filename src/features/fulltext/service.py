@@ -4,9 +4,12 @@ from __future__ import annotations
 
 import hashlib
 import json
+import math
 import re
 import tempfile
 import time
+from datetime import UTC, datetime
+from email.utils import parsedate_to_datetime
 from pathlib import Path
 from typing import Any
 
@@ -33,6 +36,14 @@ _CACHE_RETENTION_SECONDS = 180 * 24 * 60 * 60
 # tripped by back-to-back HTML/PDF fetches (which previously caused HTTP 429 on
 # the next scheduled API collection).
 _FULLTEXT_REQUEST_INTERVAL_SECONDS = 3.0
+_RATE_LIMIT_ATTEMPTS = 3
+_RATE_LIMIT_DEFAULT_SECONDS = 120.0
+_RATE_LIMIT_STATUS = 429
+_SLEEP_SLICE_SECONDS = 30.0
+
+
+class FullTextRateLimitedError(RuntimeError):
+    """Source is temporarily rate limited; resume after the saved cooldown."""
 
 
 class FullTextService:
@@ -101,10 +112,7 @@ class FullTextService:
         candidates = _candidate_urls(story)
         for source_format, url in candidates:
             try:
-                if source_format == "html":
-                    text, pages = self._extract_html(url)
-                else:
-                    text, pages = self._extract_pdf(url)
+                text, pages = self._extract_with_cooldown(source_format, url)
                 document = _build_document(
                     story.story_id,
                     text,
@@ -148,6 +156,43 @@ class FullTextService:
         )
         self._save_cache(cache_key, document)
         return document
+
+    def _extract_with_cooldown(self, source_format: str, url: str) -> tuple[str, int]:
+        """Honor server cooldowns without caching a rate limit as absent content."""
+        for attempt in range(_RATE_LIMIT_ATTEMPTS):
+            self._wait_for_saved_cooldown()
+            try:
+                return (
+                    self._extract_html(url)
+                    if source_format == "html"
+                    else self._extract_pdf(url)
+                )
+            except httpx.HTTPStatusError as error:
+                if error.response.status_code != _RATE_LIMIT_STATUS:
+                    raise
+                delay = _retry_after_seconds(error.response.headers.get("Retry-After"))
+                delay = max(delay, _RATE_LIMIT_DEFAULT_SECONDS * (2**attempt))
+                self._save_cooldown(delay)
+                self._log.warning("fulltext_rate_limited", retry_after=delay)
+                if attempt == _RATE_LIMIT_ATTEMPTS - 1:
+                    raise FullTextRateLimitedError(
+                        "Fulltext rate limited; cooldown saved for safe resume"
+                    ) from error
+        raise AssertionError("Unreachable fulltext retry state")
+
+    def _save_cooldown(self, delay: float) -> None:
+        path = self._cache_dir / "_rate_limit.json"
+        temporary = path.with_suffix(".tmp")
+        temporary.write_text(json.dumps({"not_before": time.time() + delay}))
+        temporary.replace(path)
+
+    def _wait_for_saved_cooldown(self) -> None:
+        path = self._cache_dir / "_rate_limit.json"
+        if not path.exists():
+            return
+        deadline = float(json.loads(path.read_text())["not_before"])
+        while (remaining := deadline - time.time()) > 0:
+            time.sleep(min(remaining, _SLEEP_SLICE_SECONDS))
 
     def _extract_html(self, url: str) -> tuple[str, int]:
         response = httpx.get(
@@ -263,6 +308,24 @@ class FullTextService:
             ),
             encoding="utf-8",
         )
+
+
+def _retry_after_seconds(value: str | None) -> float:
+    if not value:
+        return _RATE_LIMIT_DEFAULT_SECONDS
+    try:
+        seconds = float(value)
+        return (
+            max(0.0, seconds) if math.isfinite(seconds) else _RATE_LIMIT_DEFAULT_SECONDS
+        )
+    except ValueError:
+        try:
+            deadline = parsedate_to_datetime(value)
+            if deadline.tzinfo is None:
+                deadline = deadline.replace(tzinfo=UTC)
+            return max(0.0, (deadline - datetime.now(UTC)).total_seconds())
+        except (TypeError, ValueError, OverflowError):
+            return _RATE_LIMIT_DEFAULT_SECONDS
 
 
 def _candidate_urls(story: Story) -> list[tuple[str, str]]:

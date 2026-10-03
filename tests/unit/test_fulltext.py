@@ -4,9 +4,17 @@ import json
 from pathlib import Path
 from unittest.mock import MagicMock, patch
 
+import httpx
+import pytest
+
 from src.features.config.schemas.base import LinkType
 from src.features.fulltext.models import FullTextDocument, FullTextStatus
-from src.features.fulltext.service import FullTextService, _build_document
+from src.features.fulltext.service import (
+    FullTextRateLimitedError,
+    FullTextService,
+    _build_document,
+    _retry_after_seconds,
+)
 from src.features.store.models import DateConfidence, Item
 from src.linker.models import Story, StoryLink
 
@@ -95,3 +103,56 @@ def test_oversized_document_is_compacted() -> None:
     )
     assert document.status == FullTextStatus.COMPACTED
     assert len(document.text) < 1_800_000
+
+
+def test_rate_limit_honors_server_wait_and_does_not_degrade(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    clock = [1000.0]
+    waits = []
+
+    def sleep(seconds: float) -> None:
+        waits.append(seconds)
+        clock[0] += seconds
+
+    monkeypatch.setattr("src.features.fulltext.service.time.time", lambda: clock[0])
+    monkeypatch.setattr("src.features.fulltext.service.time.sleep", sleep)
+    request = httpx.Request("GET", "https://arxiv.org/html/2401.00001")
+    error = httpx.HTTPStatusError(
+        "Rate limited",
+        request=request,
+        response=httpx.Response(429, headers={"Retry-After": "240"}, request=request),
+    )
+    service = FullTextService(tmp_path)
+    with patch.object(
+        service, "_extract_html", side_effect=[error, ("evidence " * 200, 0)]
+    ) as extract:
+        document = service.load_for_story(_story())
+    assert document.status == FullTextStatus.COMPLETE
+    assert extract.call_count == 2
+    assert sum(waits) >= 240
+    assert max(waits) <= 30
+
+
+def test_exhausted_rate_limit_saves_resume_deadline_without_abstract_cache(
+    tmp_path: Path,
+) -> None:
+    request = httpx.Request("GET", "https://arxiv.org/html/2401.00001")
+    error = httpx.HTTPStatusError(
+        "Rate limited", request=request, response=httpx.Response(429, request=request)
+    )
+    service = FullTextService(tmp_path)
+    with (
+        patch.object(service, "_wait_for_saved_cooldown"),
+        patch.object(service, "_extract_html", side_effect=error),
+        pytest.raises(FullTextRateLimitedError),
+    ):
+        service.load_for_story(_story())
+    assert (tmp_path / "_rate_limit.json").exists()
+    assert not list(tmp_path.glob("*.txt"))
+    assert not service._is_cached(_story())
+
+
+@pytest.mark.parametrize("value", [None, "invalid", "nan", "inf"])
+def test_invalid_retry_after_uses_safe_default(value: str | None) -> None:
+    assert _retry_after_seconds(value) == 120.0

@@ -4,6 +4,7 @@ from pathlib import Path
 
 import click
 
+from src.features.assistant_review.backfill import export_backfill_day
 from src.features.assistant_review.workflow import (
     export_snapshot,
     fetch_requests,
@@ -24,6 +25,18 @@ def cli() -> None:
 def export(workspace: Path, state: Path, archive: Path) -> None:
     """Export all candidates from the matching historical state snapshot."""
     export_snapshot(workspace, state, archive)
+
+
+@cli.command("export-missing")
+@click.option(
+    "--workspace", type=click.Path(exists=True, path_type=Path), required=True
+)
+@click.option("--state", type=click.Path(exists=True, path_type=Path), required=True)
+@click.option("--date", "day", required=True)
+@click.option("--coverage", type=click.Path(exists=True, path_type=Path), required=True)
+def export_missing(workspace: Path, state: Path, day: str, coverage: Path) -> None:
+    """Export a missing UTC day from recovered items and explicit source coverage."""
+    export_backfill_day(workspace, state, day, coverage)
 
 
 @cli.command("fetch")

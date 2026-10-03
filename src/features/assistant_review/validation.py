@@ -19,6 +19,7 @@ PRODUCER = "assistant-native-review"
 MIN_GUIDE_CHARS = 350
 MAX_GUIDE_CHARS = 600
 _MIN_CJK_GUIDE_CHARS = 100
+_MIN_CJK_RATIONALE_CHARS = 10
 _CJK = re.compile(r"[\u3400-\u4dbf\u4e00-\u9fff]")
 
 
@@ -148,3 +149,28 @@ def validate_guide(
         fulltext_sha256=content_hash,
         model=PRODUCER,
     )
+
+
+def validate_rationale_translation(
+    request_path: Path, review_path: Path, translation_path: Path | None = None
+) -> str:
+    """Require faithful-review translation provenance without invalidating scores.
+
+    A companion translation binds both the source request and the English
+    rationale. Embedded translations already share the original review object.
+    Semantic translation fidelity remains the native reviewer's responsibility.
+    """
+    validate_review(request_path, review_path)
+    review = read_object(review_path)
+    translated = read_object(translation_path) if translation_path else review
+    if translation_path:
+        for field in ("id", "producer", "request_sha256", "fulltext_sha256"):
+            if translated.get(field) != review.get(field):
+                raise ValueError(f"Rationale translation {field} differs from review")
+        expected = hashlib.sha256(review["rationale"].encode()).hexdigest()
+        if translated.get("rationale_sha256") != expected:
+            raise ValueError("Rationale translation does not match English rationale")
+    text = translated.get("rationale_zh")
+    if not isinstance(text, str) or len(_CJK.findall(text)) < _MIN_CJK_RATIONALE_CHARS:
+        raise ValueError("Selected evaluation requires a Chinese rationale")
+    return text

@@ -36,6 +36,7 @@ export interface LlmEvaluation {
   components?: Partial<Record<ComponentKey, number>>
   confidence?: number
   rationale?: string
+  rationale_zh?: string | null
   evidence?: string[]
   topics?: string[]
   fulltext_status?: string

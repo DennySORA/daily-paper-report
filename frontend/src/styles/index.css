@@ -463,7 +463,7 @@
     line-height: var(--text-prose--line-height);
     overflow-wrap: anywhere;
   }
-  .prose-zh > p + p {
+  .reading-prose > * + * {
     margin-block-start: 12px;
   }
   .prose-en {
@@ -471,6 +471,23 @@
     font-size: 15px;
     line-height: 26px;
     overflow-wrap: anywhere;
+  }
+
+  .reading-prose > ul,
+  .reading-prose > ol {
+    padding-inline-start: 1.5em;
+  }
+  .reading-prose > ul {
+    list-style-type: disc;
+  }
+  .reading-prose > ol {
+    list-style-type: decimal;
+  }
+  .reading-prose li + li {
+    margin-block-start: 8px;
+  }
+  .reading-prose code {
+    font-size: 0.9em;
   }
 
   .overlay {

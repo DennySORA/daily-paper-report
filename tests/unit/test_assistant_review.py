@@ -11,6 +11,7 @@ from src.features.assistant_review.validation import (
     PRODUCER,
     digest_file,
     validate_guide,
+    validate_rationale_translation,
     validate_review,
 )
 from src.features.assistant_review.workflow import write_object
@@ -341,3 +342,101 @@ def test_rejects_noncanonical_archive_dates(day: str) -> None:
 
     with pytest.raises(ValueError):
         validate_day(day)
+
+
+def test_rationale_translation_preserves_original_score_review(tmp_path: Path) -> None:
+    request, review, value = artifacts(tmp_path)
+    original_bytes = review.read_bytes()
+    with pytest.raises(ValueError, match="Chinese rationale"):
+        validate_rationale_translation(request, review)
+    sidecar = tmp_path / "rationale.json"
+    translated = {
+        field: value[field]
+        for field in ("id", "producer", "request_sha256", "fulltext_sha256")
+    }
+    translated.update(
+        rationale_sha256=hashlib.sha256(value["rationale"].encode()).hexdigest(),
+        rationale_zh="僅有摘要層級的證據；研究結論仍存在不確定性。",
+    )
+    write_object(sidecar, translated)
+    assert validate_rationale_translation(request, review, sidecar).startswith("僅有")
+    assert review.read_bytes() == original_bytes
+    value["rationale"] = "A changed assessment."
+    write_object(review, value)
+    with pytest.raises(ValueError, match="English rationale"):
+        validate_rationale_translation(request, review, sidecar)
+
+
+def test_embedded_chinese_rationale_is_accepted(tmp_path: Path) -> None:
+    request, review, value = artifacts(tmp_path)
+    value["rationale_zh"] = "僅有摘要層級的證據；研究結論仍存在不確定性。"
+    write_object(review, value)
+    assert validate_rationale_translation(request, review) == value["rationale_zh"]
+
+
+def test_rationale_translation_rejects_another_source(tmp_path: Path) -> None:
+    request, review, value = artifacts(tmp_path)
+    value["request_sha256"] = "another-request"
+    path = tmp_path / "rationale.json"
+    write_object(path, value)
+    with pytest.raises(ValueError, match="request_sha256"):
+        validate_rationale_translation(request, review, path)
+
+
+def test_missing_day_export_uses_exact_window_and_keeps_existing_reviews(
+    tmp_path: Path,
+) -> None:
+    from datetime import UTC, datetime
+
+    from src.features.assistant_review.backfill import export_backfill_day
+    from src.features.assistant_review.workflow import config_hashes
+    from src.features.store.models import Item
+    from src.features.store.store import StateStore
+
+    state = tmp_path / "state.sqlite"
+    with StateStore(state) as store:
+        for number, timestamp in enumerate(
+            ["2020-08-10T23:59:59", "2020-08-11T00:00:00", "2020-08-12T00:00:00"]
+        ):
+            store.upsert_item(
+                Item(
+                    url=f"https://example.com/{number}",
+                    source_id="test",
+                    tier=1,
+                    kind="paper",
+                    title=f"Language agent experiment {number}",
+                    content_hash=str(number),
+                    published_at=datetime.fromisoformat(timestamp).replace(tzinfo=UTC),
+                    raw_json=json.dumps({"summary": f"Separate experiment {number}"}),
+                )
+            )
+    write_object(
+        tmp_path / "manifest.json",
+        {"config_sha256": config_hashes(), "dates": {}, "candidates": {}},
+    )
+    coverage = tmp_path / "coverage.json"
+    write_object(
+        coverage,
+        {
+            "date": "2020-08-11",
+            "ready_for_review": True,
+            "limitations": ["Historical feeds are not fully reconstructable."],
+        },
+    )
+    export_backfill_day(tmp_path, state, "2020-08-11", coverage)
+    manifest_before = (tmp_path / "manifest.json").read_bytes()
+    manifest = json.loads(manifest_before)
+    entry = manifest["dates"]["2020-08-11"]
+    assert entry["recovered_items_count"] == 1
+    assert len(entry["keys"]) == 1
+    assert entry["original_run_info"] is None
+    assert entry["phase"] == "historical_backfill"
+    assert entry["coverage"]["limitations"]
+    export_backfill_day(tmp_path, state, "2020-08-11", coverage)
+    assert (tmp_path / "manifest.json").read_bytes() == manifest_before
+    write_object(coverage, {"date": "2020-08-12", "ready_for_review": False})
+    with pytest.raises(ValueError, match="not ready"):
+        export_backfill_day(tmp_path, state, "2020-08-12", coverage)
+    write_object(coverage, {"date": "2020-08-13", "ready_for_review": True})
+    with pytest.raises(ValueError, match="empty completed day"):
+        export_backfill_day(tmp_path, state, "2020-08-13", coverage)
