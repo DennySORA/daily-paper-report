@@ -1,7 +1,7 @@
 # Daily Paper Report
 
 本專案在 Nano 上以 Docker 執行每日論文收集、全文擷取、MiMo-V2.6-Pro 評分與繁中導讀，
-再把通過驗證的報告資料（`api/`）推送到 `gh-pages`；React 閱讀器由 `Frontend`
+再把通過驗證的報告資料（`api/`）推送到 `gh-pages`；React 閱讀器由 `Tagged reviewed report`
 workflow 建置並部署到同一分支，由 GitHub Pages 提供網站服務。
 
 - 選論文（評分）與週報／月報摘要：`xiaomi/mimo-v2.6-pro`（OpenRouter，`LLM_*` 設定）。
@@ -9,7 +9,7 @@ workflow 建置並部署到同一分支，由 GitHub Pages 提供網站服務。
 - 論文全文只保存在 Nano，不推送或公開。
 - 每日 00:00、週一 00:30、每月 1 日 01:00 UTC 執行。
 - SQLite 與小型 JSON cache 備份至 `state` branch。
-- `frontend/` 變更推到 `main` 後，GitHub Actions 驗證並部署網站外框，不動 `api/`。
+- 僅有效的 `YYYY.MM.DD.N` tag push 會建置並發布已審閱的公開資料封包；`main`、PR 與手動觸發皆停用。CI 不收集、評分或翻譯。見 [tag 發布流程](TAG-DEPLOYMENT.md)。
 
 完整開發、部署與操作命令請參考 [README](../README.md)，復原程序請參考
 [RESET-GUIDE](RESET-GUIDE.md)。

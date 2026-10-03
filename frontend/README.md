@@ -42,10 +42,12 @@ query (`p` story, `s` section, `t` topic, `q` filter, `u=1` unread, `sort`).
 
 ## Deployment
 
-`.github/workflows/frontend.yml` verifies every change under `frontend/` and,
-on `main`, replaces the site shell on `gh-pages` (everything except `api/`).
-The Nano's `scripts/publish-pages.sh` replaces only `api/`. Neither writer
-force-pushes; both retry on a rejected fast-forward.
+`.github/workflows/frontend.yml` runs only for valid `YYYY.MM.DD.N` tag pushes.
+It builds this frontend and publishes an already reviewed `prepared-release/`
+packet against an exact `gh-pages` baseline. Main pushes, PRs and manual dispatch
+do not trigger it. The workflow never collects, scores, translates or calls model
+APIs. It preserves unrelated history, the custom domain and newer daily reports,
+and fails closed on a changed baseline. See [tag deployment](../docs/TAG-DEPLOYMENT.md).
 
 ## Design contract
 

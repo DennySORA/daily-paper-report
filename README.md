@@ -13,10 +13,12 @@ research guides, and publishes them to a static React reader.
   with `deepseek-v4-flash` in non-thinking JSON mode. Without `TRANSLATION_API_KEY` the
   translation phase is skipped; it never falls back to the scoring provider.
 - Full paper text is cached only on the Nano; it is never published or pushed to GitHub.
-- GitHub Pages serves `paper.dennysora.me` from `gh-pages`, which has two writers
-  with disjoint paths: the Nano publishes validated report data under `api/`
-  (`scripts/publish-pages.sh`), and the `Frontend` workflow builds `frontend/` and
-  replaces everything else (`.github/workflows/frontend.yml`). Neither force-pushes.
+- GitHub Pages serves `paper.dennysora.me` from `gh-pages`. The tag-only workflow
+  validates an already reviewed public release packet, builds `frontend/`, and
+  publishes only its allowlisted data and shell files without force-pushing.
+  Source collection, assistant scoring and translation never run in that workflow.
+  See [tag deployment](docs/TAG-DEPLOYMENT.md). The legacy Nano publisher is a
+  separate runtime and is not disabled by changing the GitHub workflow.
 - SQLite and small JSON caches are backed up to the `state` branch.
 
 ## Local development
@@ -55,7 +57,7 @@ components, confidence, evidence, matched topics, model/prompt versions, and ful
 provenance hash/status. Translation cache entries are invalidated when the paper content
 or prompt changes.
 
-## Nano installation and operation
+## Legacy Nano installation and operation
 
 The target host is `dennysora-nano@192.168.30.100:19845`. From a checked-out copy:
 
@@ -87,8 +89,9 @@ two days' stories that still lack it (a transient provider error no longer leave
 day untranslated), and `prepare-public.py` fills cached translations into any
 published story that lacks them. Run the tool by hand under the pipeline lock, or
 against a private copy and fold the result in with `--merge`. The site
-itself deploys from GitHub Actions whenever `frontend/` changes on `main`
-(`gh workflow run frontend.yml` redeploys it manually). The Nano requires a
+itself now builds and deploys only on valid `YYYY.MM.DD.N` tag pushes, using
+an already reviewed `prepared-release/` packet. Main pushes, pull requests and
+manual workflow dispatch do not trigger it. The legacy Nano requires a
 repository-specific SSH deploy key with write access; personal SSH keys must not be copied.
 
 ## Storage

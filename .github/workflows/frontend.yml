@@ -1,40 +1,37 @@
-name: Frontend
+name: Tagged reviewed report
 
-# Builds the React site shell and deploys it to gh-pages next to the report
-# data that the Nano pipeline publishes under api/ (scripts/publish-pages.sh).
-# Each writer owns disjoint paths; neither one force-pushes.
-
+# Only calendar-version tag pushes can build and deploy. Calendar validity is
+# checked before package installation. There are no branch/PR/manual triggers.
 on:
   push:
-    branches: [main]
-    paths:
-      - 'frontend/**'
-      - '.github/workflows/frontend.yml'
-  pull_request:
-    paths:
-      - 'frontend/**'
-      - '.github/workflows/frontend.yml'
-  workflow_dispatch:
+    tags:
+      - '[0-9][0-9][0-9][0-9].[0-9][0-9].[0-9][0-9].[0-9]+'
 
 permissions:
   contents: read
 
 concurrency:
-  group: frontend-${{ github.ref }}
-  cancel-in-progress: true
+  group: reviewed-paper-release
+  cancel-in-progress: false
 
 jobs:
   verify:
-    name: Verify and build
+    name: Validate prepared data and build
     runs-on: ubuntu-24.04
     timeout-minutes: 15
-    defaults:
-      run:
-        working-directory: frontend
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           persist-credentials: false
+      - name: Validate release tag and immutable public payload
+        env:
+          RELEASE_TAG: ${{ github.ref_name }}
+        run: >-
+          python3 scripts/release-prepared.py validate
+          --release-dir prepared-release --tag "$RELEASE_TAG"
+          --event "$GITHUB_EVENT_NAME" --ref-type "$GITHUB_REF_TYPE"
+      - name: Test deterministic release guards
+        run: python3 -m unittest discover -s tests/release -p 'test_*.py' -v
       - uses: pnpm/action-setup@ea17c68df8912ef543352723c149a84f56e3d413 # v6.1.0
         with:
           package_json_file: frontend/package.json
@@ -44,13 +41,9 @@ jobs:
           cache: pnpm
           cache-dependency-path: frontend/pnpm-lock.yaml
       - run: pnpm install --frozen-lockfile
-      - run: pnpm run typecheck
-      - run: pnpm run lint
-      - run: pnpm run format:check
-      - run: pnpm run test
-      - run: pnpm run build
-      - name: Check the shell carries no data
-        run: test -f dist/index.html && test ! -e dist/api
+        working-directory: frontend
+      - run: pnpm run verify
+        working-directory: frontend
       - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         with:
           name: site-shell
@@ -59,69 +52,90 @@ jobs:
           retention-days: 7
 
   deploy:
-    name: Deploy shell to gh-pages
+    name: Publish reviewed data and shell
     needs: verify
-    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    if: github.repository == 'DennySORA/daily-paper-report' && github.event_name == 'push' && github.ref_type == 'tag'
     runs-on: ubuntu-24.04
-    timeout-minutes: 10
+    timeout-minutes: 15
     permissions:
       contents: write
       pages: write
-    concurrency:
-      group: gh-pages-shell
-      cancel-in-progress: false
     steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          path: source
+          persist-credentials: false
+      - name: Check the existing Pages source without changing settings
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPOSITORY: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          gh api "repos/${REPOSITORY}/pages" --jq \
+            '.build_type == "legacy" and .source.branch == "gh-pages" and .source.path == "/" and .cname == "paper.dennysora.me"' \
+            | grep -qx true
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: gh-pages
+          path: site
+          persist-credentials: false
+          fetch-depth: 1
       - uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
         with:
           name: site-shell
-          path: dist
-      - name: Replace the shell, keep api/
+          path: source/frontend/dist
+      - name: Stage only validated data and built shell
+        env:
+          RELEASE_TAG: ${{ github.ref_name }}
+        run: >-
+          python3 source/scripts/release-prepared.py stage
+          --release-dir source/prepared-release --site-dir site
+          --shell-dir source/frontend/dist --tag "$RELEASE_TAG"
+          --event "$GITHUB_EVENT_NAME" --ref-type "$GITHUB_REF_TYPE"
+      - name: Fast-forward the exact reviewed baseline
         env:
           GH_TOKEN: ${{ github.token }}
-          REPO: ${{ github.repository }}
-          DOMAIN: paper.dennysora.me
+          RELEASE_TAG: ${{ github.ref_name }}
         run: |
           set -euo pipefail
-          test -f dist/index.html
-          git init -q site
-          cd site
-          git remote add origin "https://x-access-token:${GH_TOKEN}@github.com/${REPO}.git"
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          for attempt in 1 2 3 4 5; do
-            remote=0
-            git ls-remote --exit-code --heads origin gh-pages >/dev/null || remote=$?
-            if test "${remote}" -eq 0 && git fetch -q --depth=1 origin gh-pages; then
-              git checkout -q -B gh-pages FETCH_HEAD
-            elif test "${remote}" -eq 2; then
-              git checkout -q --orphan "bootstrap-${attempt}"
-            else
-              echo "Could not read gh-pages; retrying." >&2
-              sleep $((attempt * 5))
-              continue
-            fi
-            find . -mindepth 1 -maxdepth 1 ! -name .git ! -name api -exec rm -rf -- {} +
-            cp -R ../dist/. .
-            cp index.html 404.html
-            : > .nojekyll
-            printf '%s\n' "${DOMAIN}" > CNAME
-            git add -A -- . ':!api'
-            if git diff --cached --quiet; then
-              echo "Site shell unchanged."
-              exit 0
-            fi
-            git commit -q -m "chore(pages): deploy site shell ${GITHUB_SHA::12}"
-            if git push -q origin HEAD:gh-pages; then
-              echo "Deployed site shell (attempt ${attempt})."
-              exit 0
-            fi
-            echo "Push rejected; retrying on the latest gh-pages." >&2
-            sleep $((attempt * 5))
-          done
-          echo "Could not deploy the site shell after 5 attempts." >&2
-          exit 1
-      - name: Request a Pages build
+          gh auth setup-git
+          expected="$(python3 -c 'import json; print(json.load(open("source/prepared-release/manifest.json"))["baseline_commit"])')"
+          remote="$(git -C site ls-remote --exit-code origin refs/heads/gh-pages | cut -f1)"
+          test "$remote" = "$expected" || { echo "gh-pages changed; prepare a fresh release." >&2; exit 1; }
+          git -C site config user.name DennySORA
+          git -C site config user.email dennysora.main@gmail.com
+          if ! git -C site diff --cached --quiet; then
+            git -C site commit -m "chore(pages): deploy ${RELEASE_TAG}" \
+              -m "What: Publish the hash-validated reviewed data and verified site shell." \
+              -m "Why: Release the explicitly selected calendar-version tag." \
+              -m "Tests: Prepared payload, baseline, bilingual fields and local frontend gates passed."
+            git -C site push origin HEAD:refs/heads/gh-pages
+          fi
+          printf 'PAGES_COMMIT=%s\n' "$(git -C site rev-parse HEAD)" >> "$GITHUB_ENV"
+      - name: Request and verify the Pages build
         env:
           GH_TOKEN: ${{ github.token }}
-          REPO: ${{ github.repository }}
-        run: gh api -X POST "repos/${REPO}/pages/builds" --silent || echo "::warning::Pages build request failed; the gh-pages push still triggers a build."
+          REPOSITORY: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          # A GITHUB_TOKEN push does not itself trigger a Pages build.
+          gh api --method POST "repos/${REPOSITORY}/pages/builds" --silent
+          build_url="repos/${REPOSITORY}/pages/builds/latest"
+          for attempt in $(seq 1 40); do
+            result="$(gh api "$build_url")"
+            status="$(jq -r .status <<< "$result")"
+            commit="$(jq -r .commit <<< "$result")"
+            # The latest endpoint may briefly still show the preceding build.
+            current="$(gh api "repos/${REPOSITORY}/git/ref/heads/gh-pages" --jq .object.sha)"
+            test "$current" = "$PAGES_COMMIT" || { echo "Another publication superseded this commit." >&2; exit 1; }
+            if test "$commit" = "$PAGES_COMMIT"; then
+              if test "$status" = built; then
+                echo "Pages published $PAGES_COMMIT"
+                exit 0
+              fi
+              test "$status" != errored || { echo "$result" >&2; exit 1; }
+            fi
+            sleep 15
+          done
+          echo "Pages did not finish within ten minutes." >&2
+          exit 1

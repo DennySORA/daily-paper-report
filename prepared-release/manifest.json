@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "release_date": "2026-09-30",
+  "repository": "https://github.com/DennySORA/daily-paper-report.git",
+  "branch": "gh-pages",
+  "baseline_commit": "0e11b9730c63ed41fa6a1c7904e4f336e6e66220",
+  "baseline_tree": "892abdf169b83de947565ff4f9bc087648cf6295",
+  "expected_identity": {
+    "name": "DennySORA",
+    "email": "dennysora.main@gmail.com"
+  },
+  "files": [
+    {
+      "path": "api/catalog.json",
+      "size": 55821,
+      "sha256": "4bc3885a2f12abd5301a5dfaa0707772ecfd392186a7a4462c159f9c7a0c3c7f",
+      "git_blob": "e08eb421053b874b05c0a259a930eb8a28732115"
+    },
+    {
+      "path": "api/day/2026-09-30.json",
+      "size": 946406,
+      "sha256": "9bce3de01bafaefd47a1faee9102639d93fdabdeb3e3302633848dce3ccfe379",
+      "git_blob": "31658de015812032ba8b7e073eb995071fde6394"
+    },
+    {
+      "path": "api/review_runs/2026-09-30.json",
+      "size": 1318,
+      "sha256": "e74231d1d4586042a64ed4d07f855e45facfd9f4e3a7003c8e9ffafccf4d4aa6",
+      "git_blob": "830e5b46c173740bd2ac5d5333129d2fbf342de3"
+    },
+    {
+      "path": "api/search.json",
+      "size": 3528094,
+      "sha256": "ec997ff88282cea766604077ff71f6221bd386d18dd481734314dde32ff60d88",
+      "git_blob": "b20e06560ed026a0cd11dcab58ff21687f42bbb1"
+    }
+  ],
+  "validation": {
+    "candidate_count": 933,
+    "evaluated_count": 932,
+    "selected_count": 96,
+    "selected_guides": 96,
+    "selected_bilingual_evaluations": 95,
+    "original_filter_skipped_model_releases": 1,
+    "unchanged_latest_daily_date": "2026-10-02",
+    "unchanged_ranking_and_quotas": true,
+    "unrelated_api_history_verified_unchanged": true,
+    "local_frontend_tests_passed": 48,
+    "local_frontend_build_type_lint_format": "passed"
+  },
+  "commit_message": "data(reports): publish reviewed September 30\n\nWhat:\n- Publish 96 source-grounded Chinese guides and 95 bilingual scorecards after reviewing all 933 captured candidates.\n- Preserve the original model-release skip, source summaries, rankings, other archives, assets and the October 2 latest daily report.\n\nWhy:\n- Replace the September 30 archive with fresh native full-source assessments under the original selection rules.\n\nTests:\n- All 932 evaluatable candidates and 96 selected guides validated.\n- All 95 selected bilingual scorecards and original review hashes validated.\n- 48 frontend tests, type checks, lint, formatting and local build passed.\n- Only the four allowlisted public JSON paths change; all other Git blobs must remain unchanged.\n",
+  "latest_daily_date": "2026-10-02"
+}
