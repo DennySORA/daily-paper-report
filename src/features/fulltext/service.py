@@ -120,6 +120,7 @@ class FullTextService:
                     source_format=source_format,
                     page_count=pages,
                 )
+                self._save_unicode_audit(cache_key, text, document)
                 self._save_cache(cache_key, document)
                 self._log.info(
                     "fulltext_ready",
@@ -154,8 +155,39 @@ class FullTextService:
             forced_status=FullTextStatus.ABSTRACT_ONLY,
             error=",".join(errors) or "no_fulltext_url",
         )
+        self._save_unicode_audit(cache_key, abstract, document)
         self._save_cache(cache_key, document)
         return document
+
+    def _save_unicode_audit(
+        self, cache_key: str, original_text: str, document: FullTextDocument
+    ) -> None:
+        """Preserve exact extracted code units before a Unicode repair is cached."""
+        repaired, pairs, lost = _repair_unicode_surrogates(original_text)
+        if not pairs and not lost:
+            return
+        audit = {
+            "story_id": document.story_id,
+            "source_url": document.source_url,
+            "source_format": document.source_format,
+            "page_count": document.page_count,
+            "original_text_utf8_surrogatepass_hex": original_text.encode(
+                "utf-8", errors="surrogatepass"
+            ).hex(),
+            "original_text_characters": len(original_text),
+            "original_text_sha256_surrogatepass": hashlib.sha256(
+                original_text.encode("utf-8", errors="surrogatepass")
+            ).hexdigest(),
+            "repaired_text_sha256": _sha256(repaired),
+            "surrogate_code_units": 2 * pairs + lost,
+            "valid_pairs_combined": pairs,
+            "unpaired_units_replaced": lost,
+            "representation": "Hex-encoded UTF-8 surrogatepass bytes preserve exact original code units",
+        }
+        path = self._cache_dir / f"{cache_key}.unicode.json"
+        temporary = path.with_suffix(".tmp")
+        temporary.write_text(json.dumps(audit, ensure_ascii=True), encoding="ascii")
+        temporary.replace(path)
 
     def _extract_with_cooldown(self, source_format: str, url: str) -> tuple[str, int]:
         """Honor server cooldowns without caching a rate limit as absent content."""
@@ -382,11 +414,20 @@ def _build_document(
     forced_status: FullTextStatus | None = None,
     error: str | None = None,
 ) -> FullTextDocument:
-    normalized = _normalize_text(text)
+    repaired, _, lost = _repair_unicode_surrogates(text)
+    normalized = _normalize_text(repaired)
     status = forced_status or FullTextStatus.COMPLETE
     if len(normalized) > MAX_INPUT_CHARS:
         normalized = _compact_document(normalized)
         status = FullTextStatus.COMPACTED
+    if lost:
+        normalized += (
+            f"\n\n[Extraction note: {lost} unpaired Unicode surrogate code unit(s) "
+            "replaced with U+FFFD; the missing source characters could not be "
+            "recovered. Original extracted text is retained in the private Unicode audit.]"
+        )
+        if forced_status is None:
+            status = FullTextStatus.PARTIAL
     if "[Extraction note:" in normalized and status == FullTextStatus.COMPLETE:
         status = FullTextStatus.PARTIAL
     return FullTextDocument(
@@ -415,6 +456,25 @@ def _compact_document(text: str) -> str:
         )
     remaining = budget - len(core)
     return core + "\n\n[References/appendix compacted]\n\n" + tail[:remaining]
+
+
+def _repair_unicode_surrogates(text: str) -> tuple[str, int, int]:
+    """Combine lossless UTF-16 pairs and visibly replace only unpaired units."""
+
+    def combine_pair(match: re.Match[str]) -> str:
+        return (
+            match.group()
+            .encode("utf-16-le", errors="surrogatepass")
+            .decode("utf-16-le")
+        )
+
+    paired, pairs = re.subn(
+        r"[\ud800-\udbff][\udc00-\udfff]",
+        combine_pair,
+        text,
+    )
+    repaired, lost = re.subn(r"[\ud800-\udfff]", "\ufffd", paired)
+    return repaired, pairs, lost
 
 
 def _normalize_text(text: str) -> str:

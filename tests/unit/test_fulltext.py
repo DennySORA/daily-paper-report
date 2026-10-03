@@ -1,5 +1,6 @@
 """Tests for full-paper acquisition, compaction, and cache provenance."""
 
+import hashlib
 import json
 from pathlib import Path
 from unittest.mock import MagicMock, patch
@@ -156,3 +157,84 @@ def test_exhausted_rate_limit_saves_resume_deadline_without_abstract_cache(
 @pytest.mark.parametrize("value", [None, "invalid", "nan", "inf"])
 def test_invalid_retry_after_uses_safe_default(value: str | None) -> None:
     assert _retry_after_seconds(value) == 120.0
+
+
+@pytest.mark.parametrize(
+    ("raw", "expected", "pairs", "lost"),
+    [
+        (
+            "Normal 臺灣 \U0001d447 \ufffd text",
+            "Normal 臺灣 \U0001d447 \ufffd text",
+            0,
+            0,
+        ),
+        ("a\ud835\udc47z", "a\U0001d447z", 1, 0),
+        ("a\ud835z", "a\ufffdz", 0, 1),
+        ("a\udc47z", "a\ufffdz", 0, 1),
+        (
+            "A\ud835B\ud835\udc47\ud835C\ud835\ud835D\ud835",
+            "A\ufffdB\U0001d447\ufffdC\ufffd\ufffdD\ufffd",
+            1,
+            5,
+        ),
+    ],
+)
+def test_unicode_extraction_repair_is_loss_aware(
+    raw: str, expected: str, pairs: int, lost: int, tmp_path: Path
+) -> None:
+    service = FullTextService(tmp_path)
+    with patch.object(service, "_extract_with_cooldown", return_value=(raw, 2)):
+        document = service.load_for_story(_story())
+    assert document.sha256 == hashlib.sha256(document.text.encode("utf-8")).hexdigest()
+    if lost:
+        assert document.status == FullTextStatus.PARTIAL
+        assert document.confidence_multiplier == 0.92
+        assert document.text.startswith(expected + "\n\n[Extraction note:")
+        assert f"{lost} unpaired Unicode surrogate code unit(s)" in document.text
+    else:
+        assert document.status == FullTextStatus.COMPLETE
+        assert document.text == expected
+    audits = list(tmp_path.glob("*.unicode.json"))
+    if pairs or lost:
+        assert len(audits) == 1
+        audit_bytes = audits[0].read_bytes()
+        assert audit_bytes.isascii()
+        audit = json.loads(audit_bytes)
+        preserved = bytes.fromhex(audit["original_text_utf8_surrogatepass_hex"])
+        assert preserved.decode("utf-8", errors="surrogatepass") == raw
+        assert audit["original_text_characters"] == len(raw)
+        assert (
+            audit["original_text_sha256_surrogatepass"]
+            == hashlib.sha256(raw.encode("utf-8", errors="surrogatepass")).hexdigest()
+        )
+        assert audit["valid_pairs_combined"] == pairs
+        assert audit["unpaired_units_replaced"] == lost
+        assert audit["surrogate_code_units"] == 2 * pairs + lost
+        assert (
+            audit["repaired_text_sha256"]
+            == hashlib.sha256(expected.encode("utf-8")).hexdigest()
+        )
+    else:
+        assert audits == []
+    assert service.load_for_story(_story()) == document
+
+
+def test_unicode_repair_preserves_abstract_fallback_provenance(tmp_path: Path) -> None:
+    story = _story()
+    raw = "An abstract with an invalid glyph: \ud835."
+    item = story.raw_items[0].model_copy(
+        update={"raw_json": json.dumps({"abstract_snippet": raw})}
+    )
+    story = story.model_copy(update={"raw_items": [item]})
+    service = FullTextService(tmp_path)
+    with patch.object(
+        service, "_extract_with_cooldown", side_effect=ValueError("absent")
+    ):
+        document = service.load_for_story(story)
+    assert document.status == FullTextStatus.ABSTRACT_ONLY
+    assert document.confidence_multiplier == 0.85
+    assert "\ufffd" in document.text
+    audit = json.loads(next(tmp_path.glob("*.unicode.json")).read_bytes())
+    original = bytes.fromhex(audit["original_text_utf8_surrogatepass_hex"])
+    assert original.decode("utf-8", errors="surrogatepass") == raw
+    assert audit["unpaired_units_replaced"] == 1
