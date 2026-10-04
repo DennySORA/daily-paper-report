@@ -13,7 +13,6 @@ from pathlib import Path
 from typing import Any
 
 
-TAG = re.compile(r"([0-9]{4})\.([0-9]{2})\.([0-9]{2})\.([1-9][0-9]*)\Z")
 SHA = re.compile(r"[0-9a-f]{40}\Z")
 CJK = re.compile(r"[\u3400-\u9fff]")
 MIN_GUIDE = 350
@@ -25,12 +24,10 @@ PRODUCER = "assistant-native-review"
 DOMAIN = "paper.dennysora.me"
 
 
-def validate_tag(tag: str, event: str, ref_type: str) -> None:
-    """Reject branches, manual events and malformed calendar-version tags."""
-    match = TAG.fullmatch(tag)
-    if event != "push" or ref_type != "tag" or not match:
-        raise ValueError("Only a YYYY.MM.DD.N tag push can release this site")
-    date(*(int(value) for value in match.groups()[:3]))
+def validate_trigger(ref_name: str, event: str, ref_type: str) -> None:
+    """Accept only an explicit push to the release branch."""
+    if (ref_name, event, ref_type) != ("release", "push", "branch"):
+        raise ValueError("Only a release branch push can release this site")
 
 
 def git(site: Path, *args: str) -> str:
@@ -182,13 +179,23 @@ def shell_files(root: Path) -> dict[str, bytes]:
     return output
 
 
+def validate_destinations(site: Path, updates: dict[str, bytes]) -> None:
+    """Reject linked or escaping destinations before writes or replay checks."""
+    for name in updates:
+        destination = site / name
+        linked = any(
+            parent.is_symlink()
+            for parent in (destination, *destination.parents)
+            if parent.is_relative_to(site)
+        )
+        if linked or not destination.resolve().is_relative_to(site.resolve()):
+            raise ValueError(f"Unsafe destination: {name}")
+
+
 def stage_release(root: Path, site: Path, shell: Path) -> dict[str, Any]:
     """Overlay only approved files on an exact clean baseline; never push."""
     manifest, payload = validate_release(root)
-    if git(site, "rev-parse", "HEAD") != manifest["baseline_commit"]:
-        raise ValueError(
-            "gh-pages changed; prepare a fresh release against the new tip"
-        )
+    baseline = git(site, "rev-parse", "HEAD")
     if git(site, "status", "--porcelain"):
         raise ValueError("Refusing to use a dirty Pages checkout")
     cname = file_bytes(site, "CNAME")
@@ -204,15 +211,23 @@ def stage_release(root: Path, site: Path, shell: Path) -> dict[str, Any]:
     if "api/daily.json" in payload and previous_latest > manifest["release_date"]:
         raise ValueError("Latest report must not move backwards")
     updates = {**payload, **shell_files(shell)}
-    for name in updates:
-        destination = site / name
-        linked = any(
-            parent.is_symlink()
-            for parent in (destination, *destination.parents)
-            if parent.is_relative_to(site)
+    validate_destinations(site, updates)
+    if baseline != manifest["baseline_commit"]:
+        # A replay is safe only when it cannot write anything: both the reviewed
+        # data and this exact shell are already present in the clean checkout.
+        if all(
+            (site / name).is_file() and file_bytes(site, name) == content
+            for name, content in updates.items()
+        ):
+            return {
+                "release_date": manifest["release_date"],
+                "baseline_commit": baseline,
+                "changed_paths": [],
+                "already_published": True,
+            }
+        raise ValueError(
+            "gh-pages changed; prepare a fresh release against the new tip"
         )
-        if linked or not destination.resolve().is_relative_to(site.resolve()):
-            raise ValueError(f"Unsafe destination: {name}")
     for name, content in updates.items():
         destination = site / name
         destination.parent.mkdir(parents=True, exist_ok=True)
@@ -225,6 +240,7 @@ def stage_release(root: Path, site: Path, shell: Path) -> dict[str, Any]:
         "release_date": manifest["release_date"],
         "baseline_commit": manifest["baseline_commit"],
         "changed_paths": sorted(changed),
+        "already_published": not changed,
     }
 
 
@@ -232,13 +248,13 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("command", choices=["validate", "stage"])
     parser.add_argument("--release-dir", type=Path, required=True)
-    parser.add_argument("--tag", required=True)
+    parser.add_argument("--ref-name", required=True)
     parser.add_argument("--event", default="push")
-    parser.add_argument("--ref-type", default="tag")
+    parser.add_argument("--ref-type", default="branch")
     parser.add_argument("--site-dir", type=Path)
     parser.add_argument("--shell-dir", type=Path)
     args = parser.parse_args()
-    validate_tag(args.tag, args.event, args.ref_type)
+    validate_trigger(args.ref_name, args.event, args.ref_type)
     if args.command == "validate":
         manifest, _ = validate_release(args.release_dir)
         result = {"release_date": manifest["release_date"], "payload_valid": True}

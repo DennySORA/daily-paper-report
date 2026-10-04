@@ -1,4 +1,4 @@
-"""Offline tests for tag and prepared-data publication guards."""
+"""Offline tests for release-branch and prepared-data publication guards."""
 
 from __future__ import annotations
 
@@ -81,6 +81,7 @@ class PreparedReleaseTests(unittest.TestCase):
         self.write(self.shell, "favicon.svg", b"<svg/>")
         self.write(self.shell, "assets/new.js", b"new shell")
         self.added: set[str] = set()
+        self.head = BASE
 
     @staticmethod
     def write(root: Path, name: str, content: bytes) -> None:
@@ -107,7 +108,7 @@ class PreparedReleaseTests(unittest.TestCase):
     def fake_git(self, site: Path, *args: str) -> str:
         self.assertEqual(site, self.site)
         if args == ("rev-parse", "HEAD"):
-            return BASE
+            return self.head
         if args == ("status", "--porcelain"):
             return ""
         if args[:2] == ("add", "--"):
@@ -117,28 +118,26 @@ class PreparedReleaseTests(unittest.TestCase):
             return "\n".join(sorted(self.added))
         raise AssertionError(f"Unexpected Git operation: {args}")
 
-    def test_valid_tag_and_calendar(self) -> None:
-        release.validate_tag("2026.10.03.1", "push", "tag")
-        release.validate_tag("2028.02.29.12", "push", "tag")
+    def test_release_branch_push_is_valid(self) -> None:
+        release.validate_trigger("release", "push", "branch")
 
-    def test_invalid_tags_and_non_tag_events(self) -> None:
-        for tag in (
-            "2026.02.29.1",
-            "2026.10.03.0",
-            "2026.10.03.01",
-            "2026.10.03.1evil",
-            "v2026.10.03.1",
-            "2026.1.03.1",
+    def test_other_refs_and_events_are_rejected(self) -> None:
+        for name in (
+            "main",
+            "release/extra",
+            "refs/heads/release",
+            "2026.10.04.1",
         ):
-            with self.subTest(tag=tag), self.assertRaises(ValueError):
-                release.validate_tag(tag, "push", "tag")
+            with self.subTest(name=name), self.assertRaises(ValueError):
+                release.validate_trigger(name, "push", "branch")
         for event, kind in (
-            ("push", "branch"),
+            ("push", "tag"),
             ("pull_request", "branch"),
-            ("workflow_dispatch", "tag"),
+            ("workflow_dispatch", "branch"),
+            ("schedule", "branch"),
         ):
             with self.subTest(event=event), self.assertRaises(ValueError):
-                release.validate_tag("2026.10.03.1", event, kind)
+                release.validate_trigger("release", event, kind)
 
     def test_payload_hash_mismatch(self) -> None:
         self.write(self.packet / "payload", "api/search.json", b"tampered")
@@ -160,13 +159,45 @@ class PreparedReleaseTests(unittest.TestCase):
 
     def test_stale_base_stops_before_any_write(self) -> None:
         before = (self.site / "api/daily.json").read_bytes()
+        self.head = "b" * 40
         with (
-            patch.object(release, "git", return_value="b" * 40),
+            patch.object(release, "git", side_effect=self.fake_git),
             self.assertRaisesRegex(ValueError, "gh-pages changed"),
         ):
             release.stage_release(self.packet, self.site, self.shell)
         self.assertFalse((self.site / f"api/day/{DAY}.json").exists())
         self.assertEqual((self.site / "api/daily.json").read_bytes(), before)
+
+    def test_identical_published_packet_and_shell_replay_without_writes(self) -> None:
+        with patch.object(release, "git", side_effect=self.fake_git):
+            release.stage_release(self.packet, self.site, self.shell)
+        self.head = "b" * 40
+        self.added.clear()
+        with patch.object(release, "git", side_effect=self.fake_git):
+            result = release.stage_release(self.packet, self.site, self.shell)
+        self.assertTrue(result["already_published"])
+        self.assertEqual(result["baseline_commit"], self.head)
+        self.assertEqual(result["changed_paths"], [])
+        self.assertEqual(self.added, set())
+
+    def test_replay_requires_identical_data_and_shell(self) -> None:
+        for changed in ("api/search.json", "index.html", "assets/new.js"):
+            with self.subTest(changed=changed):
+                self.head = BASE
+                with patch.object(release, "git", side_effect=self.fake_git):
+                    release.stage_release(self.packet, self.site, self.shell)
+                self.write(self.site, changed, b"different published version")
+                self.head = "b" * 40
+                self.added.clear()
+                with (
+                    patch.object(release, "git", side_effect=self.fake_git),
+                    self.assertRaisesRegex(ValueError, "gh-pages changed"),
+                ):
+                    release.stage_release(self.packet, self.site, self.shell)
+                self.assertEqual(self.added, set())
+                self.assertEqual(
+                    (self.site / changed).read_bytes(), b"different published version"
+                )
 
     def test_stage_preserves_history_domain_and_latest(self) -> None:
         with patch.object(release, "git", side_effect=self.fake_git):

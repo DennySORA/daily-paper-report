@@ -42,12 +42,13 @@ query (`p` story, `s` section, `t` topic, `q` filter, `u=1` unread, `sort`).
 
 ## Deployment
 
-`.github/workflows/frontend.yml` runs only for valid `YYYY.MM.DD.N` tag pushes.
+`.github/workflows/frontend.yml` runs only for pushes to the `release` branch.
 It builds this frontend and publishes an already reviewed `prepared-release/`
-packet against an exact `gh-pages` baseline. Main pushes, PRs and manual dispatch
+packet against an exact `gh-pages` baseline. Main pushes, tags, PRs and manual dispatch
 do not trigger it. The workflow never collects, scores, translates or calls model
 APIs. It preserves unrelated history, the custom domain and newer daily reports,
-and fails closed on a changed baseline. See [tag deployment](../docs/TAG-DEPLOYMENT.md).
+and fails closed on a changed baseline unless every payload and shell byte is
+already published (a no-op). See [release deployment](../docs/RELEASE-DEPLOYMENT.md).
 
 ## Design contract
 

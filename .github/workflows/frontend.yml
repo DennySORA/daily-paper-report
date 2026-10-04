@@ -1,11 +1,10 @@
-name: Tagged reviewed report
+name: Build and publish reviewed release
 
-# Only calendar-version tag pushes can build and deploy. Calendar validity is
-# checked before package installation. There are no branch/PR/manual triggers.
+# Only the release branch publishes an already prepared, reviewed packet.
+# Main, tags, PRs, schedules and manual dispatch cannot trigger publication.
 on:
   push:
-    tags:
-      - '[0-9][0-9][0-9][0-9].[0-9][0-9].[0-9][0-9].[0-9]+'
+    branches: [release]
 
 permissions:
   contents: read
@@ -23,12 +22,12 @@ jobs:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           persist-credentials: false
-      - name: Validate release tag and immutable public payload
+      - name: Validate release branch and immutable public payload
         env:
-          RELEASE_TAG: ${{ github.ref_name }}
+          RELEASE_REF: ${{ github.ref_name }}
         run: >-
           python3 scripts/release-prepared.py validate
-          --release-dir prepared-release --tag "$RELEASE_TAG"
+          --release-dir prepared-release --ref-name "$RELEASE_REF"
           --event "$GITHUB_EVENT_NAME" --ref-type "$GITHUB_REF_TYPE"
       - name: Test deterministic release guards
         run: python3 -m unittest discover -s tests/release -p 'test_*.py' -v
@@ -54,7 +53,7 @@ jobs:
   deploy:
     name: Publish reviewed data and shell
     needs: verify
-    if: github.repository == 'DennySORA/daily-paper-report' && github.event_name == 'push' && github.ref_type == 'tag'
+    if: github.repository == 'DennySORA/daily-paper-report' && github.event_name == 'push' && github.ref == 'refs/heads/release'
     runs-on: ubuntu-24.04
     timeout-minutes: 15
     permissions:
@@ -86,30 +85,34 @@ jobs:
           path: source/frontend/dist
       - name: Stage only validated data and built shell
         env:
-          RELEASE_TAG: ${{ github.ref_name }}
-        run: >-
-          python3 source/scripts/release-prepared.py stage
-          --release-dir source/prepared-release --site-dir site
-          --shell-dir source/frontend/dist --tag "$RELEASE_TAG"
-          --event "$GITHUB_EVENT_NAME" --ref-type "$GITHUB_REF_TYPE"
+          RELEASE_REF: ${{ github.ref_name }}
+        run: |
+          set -euo pipefail
+          python3 source/scripts/release-prepared.py stage \
+            --release-dir source/prepared-release --site-dir site \
+            --shell-dir source/frontend/dist --ref-name "$RELEASE_REF" \
+            --event "$GITHUB_EVENT_NAME" --ref-type "$GITHUB_REF_TYPE" \
+            | tee "$RUNNER_TEMP/release-stage.json"
       - name: Fast-forward the exact reviewed baseline
         env:
           GH_TOKEN: ${{ github.token }}
-          RELEASE_TAG: ${{ github.ref_name }}
+          SOURCE_COMMIT: ${{ github.sha }}
         run: |
           set -euo pipefail
           gh auth setup-git
-          expected="$(python3 -c 'import json; print(json.load(open("source/prepared-release/manifest.json"))["baseline_commit"])')"
+          expected="$(jq -er '.baseline_commit' "$RUNNER_TEMP/release-stage.json")"
           remote="$(git -C site ls-remote --exit-code origin refs/heads/gh-pages | cut -f1)"
           test "$remote" = "$expected" || { echo "gh-pages changed; prepare a fresh release." >&2; exit 1; }
           git -C site config user.name DennySORA
           git -C site config user.email dennysora.main@gmail.com
           if ! git -C site diff --cached --quiet; then
-            git -C site commit -m "chore(pages): deploy ${RELEASE_TAG}" \
+            git -C site commit -m "chore(pages): deploy reviewed release" \
               -m "What: Publish the hash-validated reviewed data and verified site shell." \
-              -m "Why: Release the explicitly selected calendar-version tag." \
+              -m "Why: Publish release source ${SOURCE_COMMIT}." \
               -m "Tests: Prepared payload, baseline, bilingual fields and local frontend gates passed."
             git -C site push origin HEAD:refs/heads/gh-pages
+          else
+            echo "Prepared data and shell are already published; no commit needed."
           fi
           printf 'PAGES_COMMIT=%s\n' "$(git -C site rev-parse HEAD)" >> "$GITHUB_ENV"
       - name: Request and verify the Pages build
