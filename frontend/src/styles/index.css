@@ -513,9 +513,17 @@
 
   .scroll-region {
     min-block-size: 0;
-    overflow: auto;
-    overscroll-behavior: contain;
-    scrollbar-gutter: stable;
+  }
+
+  /* Mobile views grow with the document. An unconstrained overflow:auto region
+     with overscroll containment traps gestures before they reach that document.
+     Only the fixed-height desktop shell needs independent scroll regions. */
+  @media (width >= 64rem) {
+    .scroll-region {
+      overflow: auto;
+      overscroll-behavior: contain;
+      scrollbar-gutter: stable;
+    }
   }
 }
 

@@ -60,6 +60,12 @@ already published (a no-op). See [release deployment](../docs/RELEASE-DEPLOYMENT
   hidden with `F` for full-width reading) and a raised reading pane with its
   own toolbar. Below 1024 px the list is the page and the reader opens as a
   full-screen layer with back/forward navigation.
+- **Scrolling**: below 1024 px, ordinary views use document scrolling. Their
+  `.scroll-region` wrappers must not create contained, unconstrained scroll
+  boxes; gestures on calendar cells, rows and blank panel space must reach the
+  document. At 1024 px and above, the fixed-height shell keeps independent
+  contained panes. The mobile full-screen reader retains its own explicit
+  scrolling and restores the document when closed.
 - **Languages** (requested by the owner): the interface and the reading
   language switch between Traditional Chinese and English, stored in
   `dpr.prefs.v1`. Strings sit next to their component as `t(zh, en)`; there
