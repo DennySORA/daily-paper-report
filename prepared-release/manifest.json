@@ -3,8 +3,8 @@
   "release_date": "2026-09-30",
   "repository": "https://github.com/DennySORA/daily-paper-report.git",
   "branch": "gh-pages",
-  "baseline_commit": "0e11b9730c63ed41fa6a1c7904e4f336e6e66220",
-  "baseline_tree": "892abdf169b83de947565ff4f9bc087648cf6295",
+  "baseline_commit": "b919d07577456310ab6b3ad03ac7368508fc7070",
+  "baseline_tree": "eed82c54f1c063f4316129536654696dde8f62ee",
   "expected_identity": {
     "name": "DennySORA",
     "email": "dennysora.main@gmail.com"
@@ -45,9 +45,9 @@
     "unchanged_latest_daily_date": "2026-10-02",
     "unchanged_ranking_and_quotas": true,
     "unrelated_api_history_verified_unchanged": true,
-    "local_frontend_tests_passed": 48,
+    "local_frontend_tests_passed": 51,
     "local_frontend_build_type_lint_format": "passed"
   },
-  "commit_message": "data(reports): publish reviewed September 30\n\nWhat:\n- Publish 96 source-grounded Chinese guides and 95 bilingual scorecards after reviewing all 933 captured candidates.\n- Preserve the original model-release skip, source summaries, rankings, other archives, assets and the October 2 latest daily report.\n\nWhy:\n- Replace the September 30 archive with fresh native full-source assessments under the original selection rules.\n\nTests:\n- All 932 evaluatable candidates and 96 selected guides validated.\n- All 95 selected bilingual scorecards and original review hashes validated.\n- 48 frontend tests, type checks, lint, formatting and local build passed.\n- Only the four allowlisted public JSON paths change; all other Git blobs must remain unchanged.\n",
+  "commit_message": "chore(pages): publish mobile scrolling fix\n\n- What: Publish the verified frontend shell while preserving the reviewed payload and all existing report data.\n- Why: Release the mobile document scrolling fix against the freshly verified Pages baseline.\n\nTests: All payload lengths, SHA256 digests and Git blobs match the current Pages baseline; reviewed data validation, 25 release guard tests, and frontend verification (51 tests) passed.\n",
   "latest_daily_date": "2026-10-02"
 }
