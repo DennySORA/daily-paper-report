@@ -1,53 +1,67 @@
 {
-  "schema": 1,
-  "release_date": "2026-09-30",
-  "repository": "https://github.com/DennySORA/daily-paper-report.git",
+  "baseline_commit": "985edf67059431f629dc5a68d91ca56503e36d55",
+  "baseline_tree": "5741e06d81d682ea08e256ce4fbba18d7035b857",
   "branch": "gh-pages",
-  "baseline_commit": "b919d07577456310ab6b3ad03ac7368508fc7070",
-  "baseline_tree": "eed82c54f1c063f4316129536654696dde8f62ee",
-  "expected_identity": {
-    "name": "DennySORA",
-    "email": "dennysora.main@gmail.com"
-  },
   "files": [
     {
+      "git_blob": "c6ece8bf9a790cbeac01485fac0a9aacffa448f3",
       "path": "api/catalog.json",
-      "size": 55821,
-      "sha256": "4bc3885a2f12abd5301a5dfaa0707772ecfd392186a7a4462c159f9c7a0c3c7f",
-      "git_blob": "e08eb421053b874b05c0a259a930eb8a28732115"
+      "sha256": "4a4e13fc3ceb62c0c3a978608de23802fd16cb9c5b1902336e40b6e565ca0f34",
+      "size": 56160
     },
     {
-      "path": "api/day/2026-09-30.json",
-      "size": 946406,
-      "sha256": "9bce3de01bafaefd47a1faee9102639d93fdabdeb3e3302633848dce3ccfe379",
-      "git_blob": "31658de015812032ba8b7e073eb995071fde6394"
+      "git_blob": "172df6979f6de396a02dab4eec8c419c20eeaa9d",
+      "path": "api/daily.json",
+      "sha256": "359e5830f4089cb19538708b2cef7694f4f230142e5fe99995ff4cfd0a3fdcf8",
+      "size": 197800
     },
     {
-      "path": "api/review_runs/2026-09-30.json",
-      "size": 1318,
-      "sha256": "e74231d1d4586042a64ed4d07f855e45facfd9f4e3a7003c8e9ffafccf4d4aa6",
-      "git_blob": "830e5b46c173740bd2ac5d5333129d2fbf342de3"
+      "git_blob": "172df6979f6de396a02dab4eec8c419c20eeaa9d",
+      "path": "api/day/2026-10-08.json",
+      "sha256": "359e5830f4089cb19538708b2cef7694f4f230142e5fe99995ff4cfd0a3fdcf8",
+      "size": 197800
     },
     {
+      "git_blob": "819fac801fd3cec7b1fd213362e0540f0e4c9e76",
+      "path": "api/review_runs/2026-10-08.json",
+      "sha256": "3048bd25dd125406b8535c26d50e76654943e1960005400fcef0c508b117e41b",
+      "size": 106630
+    },
+    {
+      "git_blob": "e3252cdeee9633be8e56903b1d7775666b326aa5",
       "path": "api/search.json",
-      "size": 3528094,
-      "sha256": "ec997ff88282cea766604077ff71f6221bd386d18dd481734314dde32ff60d88",
-      "git_blob": "b20e06560ed026a0cd11dcab58ff21687f42bbb1"
+      "sha256": "d591f8c203ac93cdec31e13436114886ae342a53edce21bc8c32bec6bd2399d1",
+      "size": 3532599
     }
   ],
-  "validation": {
-    "candidate_count": 933,
-    "evaluated_count": 932,
-    "selected_count": 96,
-    "selected_guides": 96,
-    "selected_bilingual_evaluations": 95,
-    "original_filter_skipped_model_releases": 1,
-    "unchanged_latest_daily_date": "2026-10-02",
-    "unchanged_ranking_and_quotas": true,
-    "unrelated_api_history_verified_unchanged": true,
-    "local_frontend_tests_passed": 51,
-    "local_frontend_build_type_lint_format": "passed"
+  "integration": {
+    "bilingual_public_projection_audit_sha256": "205d3d9534e3c3dbe87461985ab902db9dea58fe6bf4a412bfbdac6eb7b35737",
+    "date_correction_manifest_sha256": "e6b2240e57c05411e8666d145ede6958ae45952f3c5ad5ee19177afd64b106af",
+    "held_item_not_skipped": true,
+    "paid_source_decision_pending": true,
+    "partial_reviewed_snapshot": true,
+    "pipeline_baseline_commit": "af705fb50f60781a13360ba605b6497fdc7499cb",
+    "preserve_mobile_scrollfix": true,
+    "provisional_pending_paid_source_decision": false,
+    "publication_authorized": false,
+    "publication_performed": false
   },
-  "commit_message": "chore(pages): publish mobile scrolling fix\n\n- What: Publish the verified frontend shell while preserving the reviewed payload and all existing report data.\n- Why: Release the mobile document scrolling fix against the freshly verified Pages baseline.\n\nTests: All payload lengths, SHA256 digests and Git blobs match the current Pages baseline; reviewed data validation, 25 release guard tests, and frontend verification (51 tests) passed.\n",
-  "latest_daily_date": "2026-10-02"
+  "latest_daily_date": "2026-10-08",
+  "release_date": "2026-10-08",
+  "repository": "https://github.com/DennySORA/daily-paper-report.git",
+  "schema": 1,
+  "validation": {
+    "candidate_count": 14,
+    "corrected_snapshot_candidate_count": 15,
+    "current_day_partial": true,
+    "cutoff_utc": "2026-10-08T13:02:00Z",
+    "evaluated_count": 14,
+    "paid_source_hold_count": 1,
+    "selected_bilingual_evaluations": 14,
+    "selected_count": 14,
+    "selected_english_titles_and_guides": 14,
+    "selected_guides": 14,
+    "unchanged_ranking_and_quotas": true,
+    "unrelated_api_history_verified_unchanged": true
+  }
 }

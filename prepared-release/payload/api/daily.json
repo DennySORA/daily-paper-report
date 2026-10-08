@@ -1,0 +1,2440 @@
+{
+  "archive_dates": [
+    "2026-10-08",
+    "2026-10-02",
+    "2026-10-01",
+    "2026-09-30",
+    "2026-09-29",
+    "2026-09-17",
+    "2026-09-16",
+    "2026-09-01",
+    "2026-08-30",
+    "2026-08-29",
+    "2026-08-28",
+    "2026-08-27",
+    "2026-08-26",
+    "2026-08-25",
+    "2026-08-24",
+    "2026-08-23",
+    "2026-08-22",
+    "2026-08-21",
+    "2026-08-20",
+    "2026-08-19",
+    "2026-08-18",
+    "2026-08-17",
+    "2026-08-16",
+    "2026-08-15",
+    "2026-08-14",
+    "2026-08-13",
+    "2026-08-12",
+    "2026-08-10",
+    "2026-08-09",
+    "2026-08-08",
+    "2026-08-07",
+    "2026-08-06",
+    "2026-08-05",
+    "2026-08-04",
+    "2026-08-03",
+    "2026-08-02",
+    "2026-08-01",
+    "2026-07-31",
+    "2026-07-30",
+    "2026-07-29",
+    "2026-07-28",
+    "2026-07-27",
+    "2026-07-26",
+    "2026-07-25",
+    "2026-07-24",
+    "2026-07-23",
+    "2026-07-22",
+    "2026-07-21",
+    "2026-07-20",
+    "2026-07-19",
+    "2026-07-18",
+    "2026-07-17",
+    "2026-07-16",
+    "2026-07-15",
+    "2026-07-14",
+    "2026-07-13",
+    "2026-07-12",
+    "2026-07-11",
+    "2026-07-10",
+    "2026-07-09",
+    "2026-07-08",
+    "2026-07-07",
+    "2026-07-06",
+    "2026-07-05",
+    "2026-07-04",
+    "2026-07-03",
+    "2026-07-02",
+    "2026-07-01",
+    "2026-06-30",
+    "2026-06-29",
+    "2026-06-28",
+    "2026-06-27",
+    "2026-06-26",
+    "2026-06-25",
+    "2026-06-24",
+    "2026-06-23",
+    "2026-06-22",
+    "2026-06-21",
+    "2026-06-20",
+    "2026-06-19",
+    "2026-06-18",
+    "2026-06-17",
+    "2026-06-16",
+    "2026-06-15",
+    "2026-06-14",
+    "2026-06-13",
+    "2026-06-12",
+    "2026-06-11",
+    "2026-06-10",
+    "2026-06-09",
+    "2026-06-08",
+    "2026-06-07",
+    "2026-06-06",
+    "2026-06-05",
+    "2026-06-04",
+    "2026-06-03",
+    "2026-06-02",
+    "2026-06-01",
+    "2026-05-31",
+    "2026-05-30",
+    "2026-05-29",
+    "2026-05-28",
+    "2026-05-27",
+    "2026-05-26",
+    "2026-05-25",
+    "2026-05-24",
+    "2026-05-23",
+    "2026-05-22",
+    "2026-05-21",
+    "2026-05-20",
+    "2026-05-19",
+    "2026-05-18",
+    "2026-05-17",
+    "2026-05-16",
+    "2026-05-15",
+    "2026-05-14",
+    "2026-05-13",
+    "2026-05-12",
+    "2026-05-11",
+    "2026-05-10",
+    "2026-05-09",
+    "2026-05-08",
+    "2026-05-07",
+    "2026-05-06",
+    "2026-05-05",
+    "2026-05-04",
+    "2026-05-03",
+    "2026-05-02",
+    "2026-05-01",
+    "2026-04-30",
+    "2026-04-29",
+    "2026-04-28",
+    "2026-04-27",
+    "2026-04-26",
+    "2026-04-25",
+    "2026-04-24",
+    "2026-04-23",
+    "2026-04-22",
+    "2026-04-21",
+    "2026-04-20",
+    "2026-04-19",
+    "2026-04-18",
+    "2026-04-17",
+    "2026-04-16",
+    "2026-04-15",
+    "2026-04-14",
+    "2026-04-13",
+    "2026-04-12",
+    "2026-04-11",
+    "2026-04-10",
+    "2026-04-09",
+    "2026-04-08",
+    "2026-04-07",
+    "2026-04-06",
+    "2026-04-05",
+    "2026-04-04",
+    "2026-04-03",
+    "2026-04-02",
+    "2026-04-01",
+    "2026-03-31",
+    "2026-03-30",
+    "2026-03-29",
+    "2026-03-28",
+    "2026-03-27",
+    "2026-03-26",
+    "2026-03-25",
+    "2026-03-24",
+    "2026-03-23",
+    "2026-03-22",
+    "2026-03-21",
+    "2026-03-20",
+    "2026-03-19",
+    "2026-03-18",
+    "2026-03-17",
+    "2026-03-16",
+    "2026-03-15",
+    "2026-03-14",
+    "2026-03-13",
+    "2026-03-12",
+    "2026-03-11",
+    "2026-03-10",
+    "2026-03-09",
+    "2026-03-08",
+    "2026-03-07",
+    "2026-03-06",
+    "2026-03-05",
+    "2026-03-04",
+    "2026-03-03"
+  ],
+  "entity_catalog": {
+    "01-ai": {
+      "name": "01.AI",
+      "type": "organization"
+    },
+    "abeja": {
+      "name": "ABEJA",
+      "type": "organization"
+    },
+    "ai-shift": {
+      "name": "AI Shift",
+      "type": "organization"
+    },
+    "andrej-karpathy": {
+      "name": "Andrej Karpathy",
+      "type": "researcher"
+    },
+    "anthropic": {
+      "name": "Anthropic",
+      "type": "organization"
+    },
+    "aws": {
+      "name": "AWS",
+      "type": "organization"
+    },
+    "cohere": {
+      "name": "Cohere",
+      "type": "organization"
+    },
+    "cyberagent": {
+      "name": "CyberAgent",
+      "type": "organization"
+    },
+    "deepmind": {
+      "name": "DeepMind",
+      "type": "organization"
+    },
+    "deepseek": {
+      "name": "DeepSeek",
+      "type": "organization"
+    },
+    "elyza": {
+      "name": "ELYZA",
+      "type": "organization"
+    },
+    "geoffrey-hinton": {
+      "name": "Geoffrey Hinton",
+      "type": "researcher"
+    },
+    "google-research": {
+      "name": "Google Research",
+      "type": "institution"
+    },
+    "huggingface": {
+      "name": "Hugging Face",
+      "type": "organization"
+    },
+    "ilya-sutskever": {
+      "name": "Ilya Sutskever",
+      "type": "researcher"
+    },
+    "ivry": {
+      "name": "IVRy",
+      "type": "organization"
+    },
+    "langchain": {
+      "name": "LangChain",
+      "type": "organization"
+    },
+    "layerx": {
+      "name": "LayerX",
+      "type": "organization"
+    },
+    "llama-cpp": {
+      "name": "llama.cpp",
+      "type": "organization"
+    },
+    "llm-jp": {
+      "name": "LLM-jp",
+      "type": "institution"
+    },
+    "meta-ai": {
+      "name": "Meta AI",
+      "type": "institution"
+    },
+    "microsoft-research": {
+      "name": "Microsoft Research",
+      "type": "institution"
+    },
+    "mistral-ai": {
+      "name": "Mistral AI",
+      "type": "organization"
+    },
+    "nii": {
+      "name": "NII (LLM-jp)",
+      "type": "institution"
+    },
+    "nvidia": {
+      "name": "NVIDIA",
+      "type": "organization"
+    },
+    "ollama": {
+      "name": "Ollama",
+      "type": "organization"
+    },
+    "openai": {
+      "name": "OpenAI",
+      "type": "organization"
+    },
+    "preferred-networks": {
+      "name": "Preferred Networks",
+      "type": "organization"
+    },
+    "qwen": {
+      "name": "Qwen",
+      "type": "organization"
+    },
+    "rinna": {
+      "name": "rinna",
+      "type": "organization"
+    },
+    "sakana-ai": {
+      "name": "Sakana AI",
+      "type": "organization"
+    },
+    "stability-ai": {
+      "name": "Stability AI",
+      "type": "organization"
+    },
+    "vllm": {
+      "name": "vLLM",
+      "type": "organization"
+    },
+    "weblab": {
+      "name": "Weblab",
+      "type": "organization"
+    },
+    "yann-lecun": {
+      "name": "Yann LeCun",
+      "type": "researcher"
+    },
+    "yoshua-bengio": {
+      "name": "Yoshua Bengio",
+      "type": "researcher"
+    }
+  },
+  "generated_at": "2026-10-08T22:31:08.332427+00:00",
+  "model_releases_by_entity": {},
+  "papers": [],
+  "radar": [
+    {
+      "arxiv_id": null,
+      "authors": [
+        "TechStudioLab"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-10-08T13:36:33.489812+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "LLMのツール呼び出しをどこまで並列化するか",
+          "url": "https://zenn.dev/techstudiolab/articles/llm-tool-call-parallel-executor"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.27,
+          "generalizability": 0.76,
+          "novelty": 0.3,
+          "preference_relevance": 0.9,
+          "reproducibility": 0.4,
+          "rigor": 0.4
+        },
+        "confidence": 0.92,
+        "evidence": [
+          "Section tool callは実行計画ではない (https://zenn.dev/techstudiolab/articles/llm-tool-call-parallel-executor#tool-call%E3%81%AF%E5%AE%9F%E8%A1%8C%E8%A8%88%E7%94%BB%E3%81%A7%E3%81%AF%E3%81%AA%E3%81%84): The article separates JSON Schema argument validity from transaction or concurrency safety and assigns the execution-order decision to the application.",
+          "Section 更新系まで並列化すると何が曖昧になるか (https://zenn.dev/techstudiolab/articles/llm-tool-call-parallel-executor#%E6%9B%B4%E6%96%B0%E7%B3%BB%E3%81%BE%E3%81%A7%E4%B8%A6%E5%88%97%E5%8C%96%E3%81%99%E3%82%8B%E3%81%A8%E4%BD%95%E3%81%8C%E6%9B%96%E6%98%A7%E3%81%AB%E3%81%AA%E3%82%8B%E3%81%8B): The timeout example notes an ambiguous successful order creation followed by a duplicate retry; parallel inventory changes can leave inconsistent state. These are hypothetical failure scenarios, not observed experiments.",
+          "Section 更新系まで並列化すると何が曖昧になるか (https://zenn.dev/techstudiolab/articles/llm-tool-call-parallel-executor#%E6%9B%B4%E6%96%B0%E7%B3%BB%E3%81%BE%E3%81%A7%E4%B8%A6%E5%88%97%E5%8C%96%E3%81%99%E3%82%8B%E3%81%A8%E4%BD%95%E3%81%8C%E6%9B%96%E6%98%A7%E3%81%AB%E3%81%AA%E3%82%8B%E3%81%8B): The three-row policy table allows independent reads, conditionally permits idempotent writes, and defaults non-idempotent writes to serial execution. It explicitly says idempotency does not imply absence of same-resource conflicts.",
+          "Section 副作用を基準に実行計画を作る (https://zenn.dev/techstudiolab/articles/llm-tool-call-parallel-executor#%E5%89%AF%E4%BD%9C%E7%94%A8%E3%82%92%E5%9F%BA%E6%BA%96%E3%81%AB%E5%AE%9F%E8%A1%8C%E8%A8%88%E7%94%BB%E3%82%92%E4%BD%9C%E3%82%8B): The Python 3.14-labelled snippet partitions calls, gathers all reads, then appends sequential write results. It does not implement a dependency graph and changes the result order relative to interleaved input calls without preserving call IDs.",
+          "Section 副作用を基準に実行計画を作る (https://zenn.dev/techstudiolab/articles/llm-tool-call-parallel-executor#%E5%89%AF%E4%BD%9C%E7%94%A8%E3%82%92%E5%9F%BA%E6%BA%96%E3%81%AB%E5%AE%9F%E8%A1%8C%E8%A8%88%E7%94%BB%E3%82%92%E4%BD%9C%E3%82%8B): update_stock is classified IDEMPOTENT_WRITE while the stub returns decreased_by=quantity and has no idempotency key. Because the stub performs no state change, it demonstrates neither a safe decrement nor actual idempotency.",
+          "Section 副作用を基準に実行計画を作る (https://zenn.dev/techstudiolab/articles/llm-tool-call-parallel-executor#%E5%89%AF%E4%BD%9C%E7%94%A8%E3%82%92%E5%9F%BA%E6%BA%96%E3%81%AB%E5%AE%9F%E8%A1%8C%E8%A8%88%E7%94%BB%E3%82%92%E4%BD%9C%E3%82%8B): The textual graph joins get_customer and get_stock before create_order, then update_stock; the prose acknowledges that trusting input-array write order is insufficient.",
+          "Section 冪等性は再試行する場所で設計する (https://zenn.dev/techstudiolab/articles/llm-tool-call-parallel-executor#%E5%86%AA%E7%AD%89%E6%80%A7%E3%81%AF%E5%86%8D%E8%A9%A6%E8%A1%8C%E3%81%99%E3%82%8B%E5%A0%B4%E6%89%80%E3%81%A7%E8%A8%AD%E8%A8%88%E3%81%99%E3%82%8B): The application determines a stable logical-operation key before the LLM and retains it across retries. Suggested executor metadata includes effects, target resources, dependencies, retryability and key requirements.",
+          "Section 冪等性は再試行する場所で設計する (https://zenn.dev/techstudiolab/articles/llm-tool-call-parallel-executor#%E5%86%AA%E7%AD%89%E6%80%A7%E3%81%AF%E5%86%8D%E8%A9%A6%E8%A1%8C%E3%81%99%E3%82%8B%E5%A0%B4%E6%89%80%E3%81%A7%E8%A8%AD%E8%A8%88%E3%81%99%E3%82%8B): The article explicitly permits writes when a lower service guarantees atomicity or the application establishes nonconflict and independence. Its rule is a conservative default, not a theorem that writes must always be serial."
+        ],
+        "fulltext_sha256": "c6005f2f0dafea25289d27679022534c1cfaa16d2b6495247b72578e2120833f",
+        "fulltext_status": "partial",
+        "model": "assistant-native-review",
+        "producer": "assistant-native-review",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "A relevant Japanese architecture note separating model-selected tool calls from application-owned execution planning. It correctly emphasizes dependencies, resource conflicts and retry identity instead of treating valid JSON or a parallel call batch as a transaction guarantee. The illustrative executor only gathers reads and serializes writes; it does not implement the proposed DAG or durable idempotency. A decrement-shaped stock update is labeled idempotent without supporting deduplication semantics. With no benchmark, fault-injection results or production validation, this is useful design guidance rather than demonstrated safe concurrency or a new research result.",
+        "rationale_en": "A relevant Japanese architecture note separating model-selected tool calls from application-owned execution planning. It correctly emphasizes dependencies, resource conflicts and retry identity instead of treating valid JSON or a parallel call batch as a transaction guarantee. The illustrative executor only gathers reads and serializes writes; it does not implement the proposed DAG or durable idempotency. A decrement-shaped stock update is labeled idempotent without supporting deduplication semantics. With no benchmark, fault-injection results or production validation, this is useful design guidance rather than demonstrated safe concurrency or a new research result.",
+        "rationale_zh": "這篇日文架構文章與代理工具執行高度相關，將模型選出的工具呼叫與應用程式負責的執行計畫分開。它正確強調依賴、資源競爭與重試身分，沒有把有效 JSON 或一批並行呼叫視為交易保證。不過範例僅並行讀取、逐一執行寫入，未實作主張的依賴圖或持久化冪等控制；減少庫存式的操作也在沒有去重語義下被標成冪等。文章沒有基準測試、故障注入結果或正式環境驗證，因此適合作為設計提醒，不能當成安全並行已被證明或新的研究成果。",
+        "request_sha256": "6d3d883598756af7ba22c9430388e6603134ad2c5c8c64a57e66fd50852bde97",
+        "score": 0.5533800000000001,
+        "token_usage": {},
+        "topics": [
+          "Agents & Tool Use",
+          "Code & Programming",
+          "Large Language Models",
+          "AI Safety"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "LLMのツール呼び出しをどこまで並列化するか",
+        "url": "https://zenn.dev/techstudiolab/articles/llm-tool-call-parallel-executor"
+      },
+      "published_at": "2026-10-08T00:12:43+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.5533800000000001,
+        "llm_relevance_score": 15.494640000000002,
+        "recency_score": 0.9443092373715369,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 0.0,
+        "total_score": 18.23894923737154
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:9a7f4d9aa252c062",
+      "summary": "This Japanese architecture article asks whether an application can safely execute tool calls together, rather than merely whether a model can emit several calls at once. It separates tool selection from execution order: independent reads can run concurrently, while writes require checks of dependencies, target resources and retry semantics. Valid JSON arguments establish structure, not transactional consistency between order creation and inventory updates.\n\nA timeout-and-retry example illustrates duplicate orders. The proposed design assigns a stable idempotency key to a logical operation before invoking the LLM, then uses a dependency graph to release executable nodes. The small Python example only gathers reads and awaits writes one by one. The author acknowledges that it still trusts input-array order and is not a complete scheduler. Writes may also run concurrently when a lower service provides an atomic transaction or the application guarantees nonconflict.\n\nThe article is a useful executor-design checklist, not a validated safety or speed solution. Its stock-decrement example is labeled idempotent without durable deduplication, and results do not retain tool-call identifiers. Authorization, locking, error handling and fault tests remain necessary. No benchmark or production measurements are provided; the illustrations are conceptual and cannot establish a reliability gain.",
+      "summary_zh": "這篇日文架構文章問的不是模型能否一次產生多個工具呼叫，而是應用程式能否安全地同時執行它們。作者將選擇工具與安排執行順序分開：彼此獨立的唯讀操作可並行；寫入則須檢查依賴、目標資源與重試語義。有效的 JSON 參數只能說明格式，無法保證訂單建立與庫存更新具備交易一致性。\n\n文章用逾時後重試可能重複建立訂單說明風險，提出由應用程式先建立同一邏輯操作的冪等鍵，再以依賴圖解鎖可執行節點。簡化的 Python 範例只把讀取交給 gather，寫入逐一等待；作者也承認這仍依賴輸入陣列的順序，沒有真正完成排程器。若下層服務提供原子交易，或應用程式能保證寫入互不衝突，寫入也可以並行。\n\n它適合當作代理執行器的設計檢查表，並非安全性或速度已經驗證的方案。範例中的庫存遞減被標為冪等，卻沒有持久化去重；結果也未保留工具呼叫識別碼。實務採用時仍需補上權限、鎖定、錯誤處理與故障測試。文章沒有基準測試或正式環境數據，插圖也只是概念呈現，不能據此推論可靠性改善幅度。",
+      "title": "How Far Should LLM Tool Calls Be Parallelized?",
+      "title_zh": "大型語言模型的工具呼叫應並行到什麼程度？"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "hono_ai_labho"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-10-08T13:15:24.325703+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "qiita-llm-tag",
+          "tier": 2,
+          "title": "LLM APIのリトライ・タイムアウト・レート制限を実装する実践ガイド",
+          "url": "https://qiita.com/hono_ai_labho/items/2560290ec993ec7be189"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.12,
+          "generalizability": 0.6,
+          "novelty": 0.05,
+          "preference_relevance": 0.78,
+          "reproducibility": 0.45,
+          "rigor": 0.18
+        },
+        "confidence": 0.92,
+        "evidence": [
+          "https://qiita.com/hono_ai_labho/items/2560290ec993ec7be189 | section まず失敗を分類する, source characters [471,902): distinguishes transient transport/server failures from authentication and input failures, and discusses duplicate billing or external effects when retrying. This is an engineering tutorial, not a reported research study.",
+          "https://qiita.com/hono_ai_labho/items/2560290ec993ec7be189 | sections タイムアウトは接続と読み取りを分ける and 指数バックオフとジッターでリトライする, [902,4272): sets fixed HTTPX phase timeouts and a 90-second deadline checked before attempts; no remaining-budget request timeout or post-success deadline check is present. An isolated fake-clock test returns success at 95.5 seconds after response durations of 55 and 40 seconds plus a 0.5-second wait.",
+          "https://qiita.com/hono_ai_labho/items/2560290ec993ec7be189 | section 指数バックオフとジッターでリトライする, [1598,4272): Retry-After is parsed only with float(); a valid HTTP-date takes the one-second fallback. With three retries, four failed HTTP attempts also perform a final unnecessary wait. These were checked locally using a fake transport and clock.",
+          "https://qiita.com/hono_ai_labho/items/2560290ec993ec7be189 | section クライアント側でもレート制限する, [4272,5496), and the embedded Mermaid flowchart in the preceding failure-classification section: code acquires the bucket once outside request(), whereas the diagram loops retries back through rate limiting. A deterministic local check makes four HTTP attempts while consuming one bucket token. The article explicitly notes that in-memory state cannot coordinate multiple processes or hosts.",
+          "https://qiita.com/hono_ai_labho/items/2560290ec993ec7be189 | section ログと検証ポイント, [5496,6268): displays assertions for 503/503/200 and immediate 401 failure, but mock_server and call_llm definitions are absent; no complete test output, benchmark or measured reliability improvement is provided. Independent local checks of the actual visible class confirm these two branches; this does not reproduce an unpublished author suite.",
+          "HTTPX official timeout documentation, Fine tuning the configuration: read timeout is a per-chunk wait, not a total call deadline (https://www.python-httpx.org/advanced/timeouts/). RFC 9110 section 10.2.3 permits either HTTP-date or delay-seconds for Retry-After (https://www.rfc-editor.org/rfc/rfc9110.html#section-10.2.3). These primary references corroborate the identified implementation limitations."
+        ],
+        "fulltext_sha256": "5a74ce2c3dde09cb2d07562a66923066b52810abbda8664b5e72e86dbab7d6d1",
+        "fulltext_status": "partial",
+        "model": "assistant-native-review",
+        "producer": "assistant-native-review",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Relevant to LLM application serving and reliability engineering, but this is a practical blog tutorial rather than peer-reviewed research or a new LLM method. Error classification, bounded retries, jitter, idempotency cautions, and a local token bucket are useful established ideas. The author reports informal mock testing without a complete fixture, helper implementation, measured reliability gains, baselines, load study, or uncertainty. Independent isolated checks confirm the displayed success/error branches but expose material gaps: a successful call can return after the claimed 90-second overall deadline; Retry-After HTTP-date values fall back to one second; and retries bypass the separately acquired token bucket despite the flowchart returning through it. Exhausted HTTP-error retries also sleep after the final attempt. The readable code supports reproduction of these control-flow checks, not production reliability claims. Research novelty and evidential rigor are low, and the example needs corrections before operational reuse.",
+        "rationale_en": "Relevant to LLM application serving and reliability engineering, but this is a practical blog tutorial rather than peer-reviewed research or a new LLM method. Error classification, bounded retries, jitter, idempotency cautions, and a local token bucket are useful established ideas. The author reports informal mock testing without a complete fixture, helper implementation, measured reliability gains, baselines, load study, or uncertainty. Independent isolated checks confirm the displayed success/error branches but expose material gaps: a successful call can return after the claimed 90-second overall deadline; Retry-After HTTP-date values fall back to one second; and retries bypass the separately acquired token bucket despite the flowchart returning through it. Exhausted HTTP-error retries also sleep after the final attempt. The readable code supports reproduction of these control-flow checks, not production reliability claims. Research novelty and evidential rigor are low, and the example needs corrections before operational reuse.",
+        "rationale_zh": "本文涉及大型語言模型應用的服務與可靠性工程，但屬實務部落格教學，並非同儕審查研究，也沒有提出新的語言模型方法。錯誤分類、有上限的重試、隨機抖動、冪等性提醒及本機令牌桶，都是有用的既有做法。作者只描述非正式模擬測試，未提供完整測試夾具、輔助函式、可靠性改善量測、基準比較、負載研究或誤差估計。獨立隔離檢查確認所示成功與失敗分支，但也發現重要缺陷：成功呼叫可能在宣稱的 90 秒總期限後才回傳；Retry-After 的 HTTP 日期格式會退回等待一秒；重試不會重新取得令牌，與流程圖返回限流步驟不一致。HTTP 錯誤的最後一次嘗試耗盡後還會多等待一次。程式可讀性有助重現這些控制流程檢查，卻不能證明生產環境可靠性。因此，研究新穎性與證據嚴謹度偏低，實際採用前需要修正範例。",
+        "request_sha256": "30a73738c2629db1a3f40da148be9d8e43900b3ba9520f1bfe52d22af9be2126",
+        "score": 0.41124000000000005,
+        "token_usage": {},
+        "topics": [
+          "Inference & Serving",
+          "Code & Programming",
+          "Large Language Models"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "qiita-llm-tag",
+        "tier": 2,
+        "title": "LLM APIのリトライ・タイムアウト・レート制限を実装する実践ガイド",
+        "url": "https://qiita.com/hono_ai_labho/items/2560290ec993ec7be189"
+      },
+      "published_at": "2026-10-08T12:00:40+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.41124,
+        "llm_relevance_score": 11.51472,
+        "recency_score": 0.991894636966049,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 3.75,
+        "total_score": 18.05661463696605
+      },
+      "section": null,
+      "source_name": "Qiita LLM Tag",
+      "story_id": "fallback:41f0ae5f36ea2a07",
+      "summary": "This implementation tutorial outlines reliability measures for calling LLM APIs: distinguishing temporary failures from authentication or input errors, configuring connection and read/write timeouts, retrying with exponential backoff and jitter, and limiting request frequency with a local token bucket. It also warns that resubmission can duplicate charges or external effects and recommends logging attempts, waiting time, and failure reasons without exposing keys or full prompts. Its evidence consists mainly of code fragments and informal accounts of mock testing, without a complete test environment, performance measurements, or reliability comparisons. Independent offline checks find that the overall deadline is checked only between attempts and cannot prevent a request from returning success after expiry. A server waiting header in date format is not parsed correctly. The token bucket is acquired only before the whole application call, so internal retries do not pass through it again, contrary to the flowchart; an extra wait can also follow the last failure. These are control-flow checks, not measurements of a real provider. Read the article as a reliability checklist, but correct deadline handling, waiting-header parsing, and per-attempt rate limiting, and supply executable tests before assessing production use. Multiple processes and hosts also require shared rate-limit state rather than relying directly on the in-memory implementation.",
+      "summary_zh": "這篇實作教學整理呼叫大型語言模型 API 時的可靠性設計，包括區分暫時故障與認證或輸入錯誤、設定連線及讀寫逾時、以指數退避加隨機抖動重試，以及使用本機令牌桶限制請求頻率。作者也提醒重送可能造成重複計費或外部副作用，並建議記錄嘗試次數、等待時間與失敗原因，避免洩漏金鑰與完整提示。其證據主要是程式片段與非正式模擬測試敘述，沒有完整測試環境、效能量測或可靠性比較。獨立離線檢查發現，總期限只在嘗試之間檢查，無法阻止請求超時後仍回傳成功；服務端等待標頭若採日期格式，程式也未正確解析。令牌桶只在整個呼叫前取得一次，內部重試不會再次限流，與流程圖不一致；最後一次失敗後還可能多做等待。這些是程式控制流程的檢查結果，並非真實供應商測速。閱讀時可把本文當成可靠性設計清單，但應先修正期限控制、等待標頭處理及逐次限流，補齊可執行的測試，再評估生產使用。多程序與跨主機情境亦需共享限流狀態，不能直接依賴本機記憶體實作。",
+      "title": "A Practical Guide to Implementing Retries, Timeouts, and Rate Limits for LLM APIs",
+      "title_zh": "LLM API 重試、逾時與速率限制的實作指南"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "phibi-soon"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-10-08T13:15:19.594075+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "qiita-genai-tag",
+          "tier": 2,
+          "title": "じゃあSonnet5で回していたタスクはどのモデルに変えればいいの？Sonnet5.5なの？Haiku5.5なの？effortは？どれに変えればいいの？？",
+          "url": "https://qiita.com/phibi-soon/items/aaea34155447d07fa433"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.38,
+          "generalizability": 0.35,
+          "novelty": 0.34,
+          "preference_relevance": 0.94,
+          "reproducibility": 0.4,
+          "rigor": 0.3
+        },
+        "confidence": 0.92,
+        "evidence": [
+          "データはどう作ったか, source.txt characters 2631–3176: The author describes linear-y/log-x least-squares SVG inversion, 28 checks against public table values and 4–12% cross-page cost differences; neither calibration records nor extraction code are supplied. https://qiita.com/phibi-soon/items/aaea34155447d07fa433",
+          "コード変更：FrontierCode, source.txt characters 3228–3866: Source table reports Sonnet 5 medium 35.2 at $3.82 versus Sonnet 5.5 medium 36.5 at $0.24. These are author-digitized vendor benchmark values, not independently rerun experiments; image 2 conflicts with the table for the Sonnet 5 high cheapest replacement. https://qiita.com/phibi-soon/items/aaea34155447d07fa433",
+          "複数ファイルの曖昧なタスク：CursorBench, source.txt characters 3866–4259: Image 3 selects Opus 5.5 low as the cheaper replacement for Opus 5 medium (5.9x), but the text table selects Sonnet 5.5 high (4.2x). https://qiita.com/phibi-soon/items/aaea34155447d07fa433",
+          "資料作成・知識作業：AA-Briefcase と GDPval-AA, source.txt characters 4259–5243: For Sonnet 5 xhigh, the prose gives baseline 1275 at $7.54 and an eligible Opus 5.5 low point 1285 at $1.15, yet the table chooses Sonnet 5.5 medium at $1.64. Image 4 instead follows the cheaper Opus point. Image 5 and the detailed GDPval table also differ from the top replacement table for Opus 5 xhigh. https://qiita.com/phibi-soon/items/aaea34155447d07fa433",
+          "実測：私の cron を各モデルで回してみた, source.txt characters 5417–6127: Same collected input, eight conditions, one run each. Baseline Sonnet 5 medium is $0.360 and 86 seconds; Haiku 5.5 medium is $0.018 and 64 seconds. The latter is approximately 20x cheaper in this one API-equivalent cost observation, not a verified subscription saving. https://qiita.com/phibi-soon/items/aaea34155447d07fa433",
+          "何が分かったか, source.txt characters 6127–6567: Main-topic counts are 10 for baseline, 19 for Sonnet 5.5 medium and 11–14 for Haiku settings, with subjective coverage and Japanese presentation judgments. More topics is not an accuracy score, and task outputs are not attached. https://qiita.com/phibi-soon/items/aaea34155447d07fa433",
+          "注意点, source.txt characters 6567–7461: The author recognizes benchmark noise, prompt-length pricing, cache-price changes and the unverified assumption that lower API dollars imply slower subscription-quota depletion. https://qiita.com/phibi-soon/items/aaea34155447d07fa433",
+          "Article images 1–7, all directly inspected: visuals/article-image-1.png through article-image-7.png. Image 7 adds that two final API errors were 400/429 after artifact generation; low-effort Haiku’s hostname rewrite is in the text table. https://qiita.com/phibi-soon/items/aaea34155447d07fa433",
+          "自分で測る方法, source.txt characters 7461–7871: The CLI skeleton exposes cost, duration, turns and modelUsage, and recommends fixed input and repeated measurements; the author did not supply those repeated measurements or the referenced private skill/input. https://qiita.com/phibi-soon/items/aaea34155447d07fa433"
+        ],
+        "fulltext_sha256": "90c518ae4b217034fa692572035375ac32cbb478aa429c45787d78ee60dee556",
+        "fulltext_status": "partial",
+        "model": "assistant-native-review",
+        "producer": "assistant-native-review",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Highly relevant to LLM agents, effort selection and practical cost evaluation, but this is a practitioner synthesis plus one personal workload, not a reproducible model-comparison study. It explains SVG digitization, a same-score/minimum-cost rule and a fixed-input CLI experiment, and openly distinguishes API-equivalent dollars from subscription limits. Yet the 28 claimed calibration checks, extraction code, raw coordinates, workload inputs and output judgments are unavailable. All eight local conditions were run once; quality is subjective, two Sonnet 5.5 runs ended with API errors, and Haiku low changed a hostname. Direct inspection also found graph/table conflicts: FrontierCode, CursorBench and AA-Briefcase arrows sometimes select cheaper Opus 5.5 settings than the accompanying tables, and the headline GDPval replacement differs from the detailed result. Rounded ratios and vendor scores do not establish equal quality, robust savings or Pro-quota savings. Useful for designing one’s own migration test, with limited novelty and weak evidence for universal replacements.",
+        "rationale_en": "Highly relevant to LLM agents, effort selection and practical cost evaluation, but this is a practitioner synthesis plus one personal workload, not a reproducible model-comparison study. It explains SVG digitization, a same-score/minimum-cost rule and a fixed-input CLI experiment, and openly distinguishes API-equivalent dollars from subscription limits. Yet the 28 claimed calibration checks, extraction code, raw coordinates, workload inputs and output judgments are unavailable. All eight local conditions were run once; quality is subjective, two Sonnet 5.5 runs ended with API errors, and Haiku low changed a hostname. Direct inspection also found graph/table conflicts: FrontierCode, CursorBench and AA-Briefcase arrows sometimes select cheaper Opus 5.5 settings than the accompanying tables, and the headline GDPval replacement differs from the detailed result. Rounded ratios and vendor scores do not establish equal quality, robust savings or Pro-quota savings. Useful for designing one’s own migration test, with limited novelty and weak evidence for universal replacements.",
+        "rationale_zh": "本文高度相關於大型語言模型代理、推理投入設定與實務成本評估，但屬於實作者整理加上一項個人工作負載，並非可重現的模型比較研究。作者說明如何擷取 SVG 圖點、依同分以上且成本最低的規則選擇替代設定，並以固定輸入執行命令列實驗，也明確區分換算的 API 美元成本與訂閱使用額度。然而，所稱二十八項校準檢查、擷取程式、原始座標、工作負載輸入與輸出評判皆未提供。八種本地條件各只跑一次，品質評價主觀；兩次 Sonnet 5.5 執行以 API 錯誤結束，Haiku 的低投入設定還改寫一個主機名稱。直接檢視圖表亦發現矛盾：FrontierCode、CursorBench 與 AA-Briefcase 的箭頭有時指向比文字表格更便宜的 Opus 5.5 設定，摘要的 GDPval 替代方案也不同於細部結果。四捨五入的比值與廠商分數不足以證明品質等價、穩定節省或 Pro 額度節省。本文可協助設計自己的遷移測試，但新穎性有限，通用替代建議的證據薄弱。",
+        "request_sha256": "31915a503c8a19f01ceee678e849b43cac21e2a92e847903677fbf413b49a798",
+        "score": 0.53728,
+        "token_usage": {},
+        "topics": [
+          "Large Language Models",
+          "Agents & Tool Use",
+          "Scaling & Efficiency",
+          "Red Teaming & Evaluation",
+          "Code & Programming",
+          "Inference & Serving"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "qiita-genai-tag",
+        "tier": 2,
+        "title": "じゃあSonnet5で回していたタスクはどのモデルに変えればいいの？Sonnet5.5なの？Haiku5.5なの？effortは？どれに変えればいいの？？",
+        "url": "https://qiita.com/phibi-soon/items/aaea34155447d07fa433"
+      },
+      "published_at": "2026-10-08T11:49:06+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.53728,
+        "llm_relevance_score": 15.04384,
+        "recency_score": 0.9910982266805295,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 0.0,
+        "total_score": 17.834938226680528
+      },
+      "section": null,
+      "source_name": "Qiita 生成AI Tag",
+      "story_id": "fallback:b852c754e3db70a6",
+      "summary": "The article asks which model and effort setting can replace existing automated tasks while preserving quality and reducing cost. The author reconstructs scores and costs from vendor webpage SVG points, chooses the cheapest replacement that reaches the old setting’s score on the same benchmark, and then tests eight CLI configurations on fixed news input. In the personal summarization workflow, the baseline cost is $0.36 and Haiku at medium effort costs about $0.018, a roughly 20-fold cost ratio. Each condition was run only once and quality was checked subjectively, so this does not demonstrate equivalent quality. All seven images were inspected; some graph arrows and text tables choose different replacements, conflicting with the stated uniform minimum-cost rule. Two Sonnet runs ended with API errors, and Haiku at low effort changed a hostname, so costs must be interpreted alongside failures and correction effort. The article acknowledges cross-page cost differences and that API dollars do not directly represent subscription allowance. Full extraction code, calibration data, fixed inputs and outputs are unavailable, and there are no repeated trials or independent quality ratings. Its strongest contribution is a reminder to fix inputs, verify the actual model and measure one’s own tasks. Vendor benchmarks and a single-run case are starting points for testing, not grounds for directly following the table or expecting universal savings.",
+      "summary_zh": "這篇文章問的是：既有自動化任務改用哪個模型與投入程度，才能在維持品質的同時降低成本？作者把廠商網頁的 SVG 圖點還原成分數與成本，採用同一基準上分數不低於原設定、且成本最低的替代規則，再以固定新聞輸入測試八種命令列設定。個人摘要流程中，基準成本為零點三六美元，Haiku 中等投入約零點零一八美元，形成約二十倍的成本比；但每種條件只執行一次，品質由作者主觀檢查，不能當作品質等價的證明。七張圖片都已檢視，發現部分圖中箭頭與文字表格選擇不同替代模型，違反文章宣稱的一致最低成本規則。兩次 Sonnet 執行最終出現 API 錯誤，Haiku 低投入也改寫一個主機名稱，顯示成本比較必須連同失敗與修正負擔解讀。文章坦承跨頁成本有差異，且 API 美元不能直接代表訂閱額度。完整擷取程式、校準資料、固定輸入與輸出未提供，也沒有重複試驗或獨立品質評分。因此，它最有價值的是提醒讀者固定輸入、驗證實際模型並量測自己的任務；廠商基準與單次案例只適合作為測試起點，不宜直接照表遷移或預期普遍節省。",
+      "title": "Which Model and Effort Should Replace My Sonnet 5 Tasks: Sonnet 5.5 or Haiku 5.5?",
+      "title_zh": "原本交給 Sonnet 5 的任務該改用哪個模型與投入程度：Sonnet 5.5 還是 Haiku 5.5？"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "nrouter_ai1991"
+      ],
+      "categories": [],
+      "entities": [
+        "openai"
+      ],
+      "first_seen_at": "2026-10-08T13:15:24.325606+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "qiita-llm-tag",
+          "tier": 2,
+          "title": "LLM Gateway Migration: OpenRouter / OpenAI / Portkey → nRouter",
+          "url": "https://qiita.com/nrouter_ai1991/items/5c4a00634d379691cd76"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.1,
+          "generalizability": 0.25,
+          "novelty": 0.02,
+          "preference_relevance": 0.65,
+          "reproducibility": 0.2,
+          "rigor": 0.06
+        },
+        "confidence": 0.92,
+        "evidence": [
+          "Opening and before/after snippet, source.txt Unicode [137,456), https://qiita.com/nrouter_ai1991/items/5c4a00634d379691cd76: only two OpenAI client initializations are displayed, with changed API key and base URL. Parsing the HTML-preserved snippet checks Python syntax only, not SDK or service compatibility.",
+          "Per source, source.txt Unicode [456,764), https://qiita.com/nrouter_ai1991/items/5c4a00634d379691cd76: lists gateway substitutions, claimed fee differences and bundled features; explicitly says nRouter manages provider keys with no BYOK. No experiment or comparator test accompanies these statements.",
+          "Checklist, source.txt Unicode [764,903), https://qiita.com/nrouter_ai1991/items/5c4a00634d379691cd76: explicitly asks for model-ID remapping and parallel-running a slice of traffic. These are required operational checks beyond merely swapping configuration, not reported successful trials.",
+          "Full guide and disclosure, source.txt Unicode [903,971), https://qiita.com/nrouter_ai1991/items/5c4a00634d379691cd76: links https://nrouter.ai/migrate and identifies the nRouter team as author, establishing vendor provenance rather than independent research.",
+          "Supplemental vendor guide, Before & after / The four-step cutover / Migration questions, https://nrouter.ai/migrate: repeats configuration examples and compatibility assurances but supplies no migration results. Its per-call characterization of OpenRouter fees is inconsistent with the competitor primary billing description.",
+          "Supplemental competitor FAQ, How do I get billed / Pricing and fees, https://openrouter.ai/docs/faq: describes a credit-purchase fee and no markup on underlying inference prices. This supports correcting the linked guide’s fee basis, not a blanket comparison of every OpenRouter plan or BYOK fee."
+        ],
+        "fulltext_sha256": "ad7432a6180adfcd72e6f8d3fd88d0fcc8891f225ad2b374cbe92598e878ea04",
+        "fulltext_status": "partial",
+        "model": "assistant-native-review",
+        "producer": "assistant-native-review",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "This nRouter-team migration notice is relevant to LLM serving integration but contains no novel model method or experimental research. Its before/after snippet changes client configuration without making an inference call; the checklist additionally requires model-ID remapping and a parallel trial, so the two-line framing is not demonstrated end-to-end equivalence. No compatibility suite, measured migration, performance result, guardrail evaluation, or independent feature verification is supplied. The linked vendor guide also mischaracterizes OpenRouter credit-purchase fees as per-call charges. Treat this as an untested vendor onboarding outline with explicit no-BYOK limitations, not demonstrated quality, reliability or cost superiority.",
+        "rationale_en": "This nRouter-team migration notice is relevant to LLM serving integration but contains no novel model method or experimental research. Its before/after snippet changes client configuration without making an inference call; the checklist additionally requires model-ID remapping and a parallel trial, so the two-line framing is not demonstrated end-to-end equivalence. No compatibility suite, measured migration, performance result, guardrail evaluation, or independent feature verification is supplied. The linked vendor guide also mischaracterizes OpenRouter credit-purchase fees as per-call charges. Treat this as an untested vendor onboarding outline with explicit no-BYOK limitations, not demonstrated quality, reliability or cost superiority.",
+        "rationale_zh": "這篇 nRouter 團隊撰寫的遷移公告與 LLM 服務整合相關，但沒有新的模型方法或實驗研究。前後對照程式只修改客戶端設定，未實際呼叫推論；檢查清單另要求重新對應模型識別碼與平行試跑，因此「兩行變更」並未證實端到端等同性。文章未提供相容性測試集、實測遷移、效能結果、防護評估或獨立功能驗證。連結的供應商指南還將 OpenRouter 購買額度時的費用誤述為逐次呼叫收費。應將其視為未經測試、明示不支援自備供應商金鑰的產品入門提綱，而非品質、可靠性或成本優勢的實證。",
+        "request_sha256": "a4caf0589d1f766d5dac8797c29c3c137a768c875f5a5efa71645b74cfa035cd",
+        "score": 0.29624,
+        "token_usage": {},
+        "topics": [
+          "Large Language Models",
+          "Inference & Serving",
+          "Code & Programming"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "qiita-llm-tag",
+        "tier": 2,
+        "title": "LLM Gateway Migration: OpenRouter / OpenAI / Portkey → nRouter",
+        "url": "https://qiita.com/nrouter_ai1991/items/5c4a00634d379691cd76"
+      },
+      "published_at": "2026-10-08T12:03:15+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 2.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.29624,
+        "llm_relevance_score": 8.29472,
+        "recency_score": 0.9920725969894507,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 4.0,
+        "total_score": 17.08679259698945
+      },
+      "section": null,
+      "source_name": "Qiita LLM Tag",
+      "story_id": "fallback:27197ee6ace2a855",
+      "summary": "This nRouter-team introduction targets developers migrating LLM gateways from OpenRouter, OpenAI or Portkey. Its central step is to replace the endpoint and API key in an OpenAI-compatible client. The platform manages provider credentials, so existing bring-your-own-key arrangements cannot simply be retained. The closing checklist adds two important tasks: map model identifiers to the nRouter catalogue and parallel-run a traffic slice before cutover. These caveats better reflect migration needs than the two-line framing. The example only initializes clients: its static syntax parses, but it supplies no inference request, response, error-handling test or compatibility measurement. All-plan feature inclusion, no migration charge and lower platform fees remain vendor claims; the linked guide even describes OpenRouter credit-purchase charges as per-call fees, requiring comparison with the official billing explanation. No new model method, benchmark, ablation or measured saving is reported. The article provides a starting checklist, not a guarantee that streaming, tool calls, policies or model behavior remain unchanged. Actual workloads and current capabilities and charges need checking before adoption. Reading covers the currently captured full article; historical versions and service performance remain unverified.",
+      "summary_zh": "本文是 nRouter 團隊的 LLM 閘道遷移簡介，面向原本使用 OpenRouter、OpenAI 或 Portkey 的開發者。核心做法是更換 OpenAI 相容客戶端的端點與 API 金鑰，並說明由平台管理供應商金鑰，因此不能直接保留自備金鑰的安排。文末其實另列兩項重要工作：將模型識別碼對應到 nRouter 目錄，以及先用部分流量平行試跑再切換。這些提醒比「只改兩行」更能反映真實遷移需求。提供的程式僅示範初始化，靜態語法可解析，卻沒有推論請求、回應、錯誤處理測試或相容性量測。所稱功能全方案包含、無遷移費與較低平台費，仍屬供應商陳述；連結指南甚至把 OpenRouter 購買額度的費用說成逐次呼叫收費，需對照官方帳務說明。本文沒有提出新的模型方法，也沒有基準、消融或實測節省。其價值是整理遷移起點，不能據此保證串流、工具呼叫、政策或模型行為不變。採用前應以實際工作負載驗證，並另查目前功能與費用。此次閱讀覆蓋目前擷取的全文，歷史版本及服務表現仍未核實。",
+      "title": "LLM Gateway Migration: OpenRouter / OpenAI / Portkey → nRouter",
+      "title_zh": "LLM 閘道遷移：從 OpenRouter、OpenAI 或 Portkey 轉至 nRouter"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "aidocs"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-10-08T13:15:19.593974+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "qiita-genai-tag",
+          "tier": 2,
+          "title": "LLMアプリに人間の承認フローを組み込む：自動処理とレビューを組み合わせる設計パターン",
+          "url": "https://qiita.com/aidocs/items/3b961132120f518e49fd"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.17,
+          "generalizability": 0.66,
+          "novelty": 0.17,
+          "preference_relevance": 0.88,
+          "reproducibility": 0.58,
+          "rigor": 0.22
+        },
+        "confidence": 0.92,
+        "evidence": [
+          "https://qiita.com/aidocs/items/3b961132120f518e49fd — Introduction, source.txt [139,365): motivates email, ticket updates, deletion and customer-data changes; proposes separating proposal from execution. This establishes practical task relevance, not measured improvement.",
+          "https://qiita.com/aidocs/items/3b961132120f518e49fd — 承認フローを状態機械として考える, source.txt [365,956), and original HTML Mermaid data-content: five states pending, approved, rejected, executed, failed; pending branches to approval/rejection and approved branches to execution success/failure. The exact diagram source was read; rendered pixels were not inspected.",
+          "https://qiita.com/aidocs/items/3b961132120f518e49fd — 最小のAPIを実装する, source.txt [956,4865), plus unfragmented original HTML code: create_llm_proposal returns a fixed Proposal; execute_action checks the send_email action and exact argument keys then prints. Four shown routes create, retrieve, approve and execute proposals. No actual model call or mail delivery occurs in this example.",
+          "https://qiita.com/aidocs/items/3b961132120f518e49fd — 最小のAPIを実装する [956,4865): execute checks APPROVED then performs the action before marking EXECUTED; these operations are not atomic. The approver string is supplied in the request. No authentication, rejection route, durable store or concurrent-execution test is shown. These are static code observations, not executed security-test findings.",
+          "https://qiita.com/aidocs/items/3b961132120f518e49fd — すべてを承認待ちにしない [4865,5811): five action categories map to four risk levels with unknown actions defaulting to critical; a separate email heuristic uses recipient-domain suffix and three sensitive-word checks. No routing accuracy, attack robustness, reviewer workload or false-positive rate is measured.",
+          "https://qiita.com/aidocs/items/3b961132120f518e49fd — 実運用で追加したい安全策 [5811,6351): recommends fixed proposal content/hash, approver authorization, atomic approved-to-executing transition with idempotency keys, expiry, and audit fields. These recommendations must not be attributed to the minimal implementation.",
+          "https://qiita.com/aidocs/items/3b961132120f518e49fd — まとめ [6351,6663): makes qualitative operational claims. Full supplied article [0,6942) contains no experimental protocol, comparator, ablation, sample size or numerical outcome; no empirical safety or productivity improvement is established."
+        ],
+        "fulltext_sha256": "6ea0aa82718c6cb2d04a7a068d64a5bec3b75cd24b9088548c848febfa0a45ef",
+        "fulltext_status": "partial",
+        "model": "assistant-native-review",
+        "producer": "assistant-native-review",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Highly relevant to agent/tool-use safety: the article separates structured LLM proposals from authorized execution and illustrates server-enforced approval states, action allowlisting, argument checks, and risk-based routing. Its contribution is a clear integration tutorial, with limited methodological novelty or scientific rigor. The Python/FastAPI example supplies code and curl steps, but the LLM response is fixed, email execution only prints, and storage is an in-memory dictionary. The shown API lacks authentication and atomic execution; proposal hashes, authorization, idempotency and expiry are recommendations rather than implemented guarantees. Consequently, the concluding duplicate-execution prevention claim exceeds what the minimal code establishes under concurrency. There are no benchmarks, baselines, ablations, deployment measurements or security tests. Reusable architecture ideas and inspectable snippets provide practical value, not measured safety or efficiency gains. The exact embedded Mermaid transitions were read; rendered pixels were unavailable. All supplied text was read, while historical identity and original-document completeness remain unverified.",
+        "rationale_en": "Highly relevant to agent/tool-use safety: the article separates structured LLM proposals from authorized execution and illustrates server-enforced approval states, action allowlisting, argument checks, and risk-based routing. Its contribution is a clear integration tutorial, with limited methodological novelty or scientific rigor. The Python/FastAPI example supplies code and curl steps, but the LLM response is fixed, email execution only prints, and storage is an in-memory dictionary. The shown API lacks authentication and atomic execution; proposal hashes, authorization, idempotency and expiry are recommendations rather than implemented guarantees. Consequently, the concluding duplicate-execution prevention claim exceeds what the minimal code establishes under concurrency. There are no benchmarks, baselines, ablations, deployment measurements or security tests. Reusable architecture ideas and inspectable snippets provide practical value, not measured safety or efficiency gains. The exact embedded Mermaid transitions were read; rendered pixels were unavailable. All supplied text was read, while historical identity and original-document completeness remain unverified.",
+        "rationale_zh": "本文與代理及工具使用安全高度相關：將結構化的 LLM 提案與獲准執行分開，示範由伺服器強制核准狀態、動作白名單、參數檢查及依風險分流。主要貢獻是清楚的整合教學，方法新穎性與科學嚴謹性有限。Python／FastAPI 範例提供程式與 curl 步驟，但 LLM 回應固定、寄信僅列印訊息，資料也只存於記憶體字典。範例 API 缺少身分驗證與原子執行；提案雜湊、授權、冪等性及有效期限屬後續建議，並非已實作的保證。因此，結論所稱防止重複執行，超出最小程式在並行條件下能支持的範圍。文中沒有基準測試、對照、消融、部署量測或安全測試。可重用的架構概念與可檢視片段具有實務價值，但未證明安全性或效率提升。已逐一讀取內嵌 Mermaid 的確切轉移；未取得像素呈現。已完整閱讀供應文字，歷史版本身分及原始文件完整性仍未核實。",
+        "request_sha256": "1b8a74285253a40011122bb87e82981fca7099551db249b74c9e18bbfc185b54",
+        "score": 0.48852000000000007,
+        "token_usage": {},
+        "topics": [
+          "Large Language Models",
+          "Agents & Tool Use",
+          "Code & Programming",
+          "AI Safety"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "qiita-genai-tag",
+        "tier": 2,
+        "title": "LLMアプリに人間の承認フローを組み込む：自動処理とレビューを組み合わせる設計パターン",
+        "url": "https://qiita.com/aidocs/items/3b961132120f518e49fd"
+      },
+      "published_at": "2026-10-08T12:00:37+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.48852,
+        "llm_relevance_score": 13.678560000000001,
+        "recency_score": 0.9918911928934276,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 0.0,
+        "total_score": 16.470451192893428
+      },
+      "section": null,
+      "source_name": "Qiita 生成AI Tag",
+      "story_id": "fallback:2c85b6d8bd5c36fe",
+      "summary": "This article addresses the gap between generating an LLM action proposal and safely executing consequential operations. It separates proposal from execution: store the action, arguments and reason, then let the server enforce approval-state requirements. A Python/FastAPI in-memory example distinguishes pending, approved, rejected, executed and failed states and illustrates routing by action risk, recipient and content. Its practical value is locating human decision points within tool-use workflows rather than letting the model declare an action safe. Evidence consists only of snippets and operating steps: model output is fixed, email sending only prints, and no real model, mail service or deployment test is provided. The minimal code lacks authentication, atomic transitions and idempotency, so it does not establish protection against concurrent duplicate execution. Content hashes, authorization, idempotency, expiry and audit records are recommended production additions, not existing guarantees. Readers can reuse the architectural separation and responsibility boundaries, but should not treat the tutorial as experimental evidence of safety or efficiency gains. All nodes, labels and transitions in the embedded state diagram were checked; rendered pixels and historical-version completeness were not verified.",
+      "summary_zh": "本文處理 LLM 能產生行動建議，卻不宜直接執行高影響操作的問題，提出把「提案」與「執行」分開：先保存動作、參數與理由，再由伺服器依核准狀態決定能否執行。範例以 Python 與 FastAPI 建立記憶體內的流程，區分待核准、已核准、已拒絕、已執行與失敗，並示意依動作風險、收件者及內容決定是否需要人工審查。其實務價值是把人工決策點放進工具使用流程，而不是讓模型自行宣告安全。證據僅為程式片段與操作步驟；模型輸出固定，寄信只列印訊息，沒有真實模型、郵件服務或部署測試。最小程式也未實作身分驗證、原子狀態轉移與冪等性，因此不能據此認定已防止並行重複執行。文章把內容雜湊、授權、冪等性、有效期限及稽核紀錄列為正式運作時應補上的措施，這些建議不能視為既有保證。閱讀時可借用其架構分層與責任邊界，但不應將教學當成安全性或效率改善的實驗證明。內嵌狀態圖的完整節點、標籤與轉移已核對，未驗證其像素呈現；歷史版本完整性仍未確認。",
+      "title": "Integrating Human Approval into LLM Applications: Design Patterns Combining Automation and Review",
+      "title_zh": "將人工核准流程整合進 LLM 應用：結合自動處理與審查的設計模式"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "natume_nat"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-10-08T13:15:19.593664+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "qiita-genai-tag",
+          "tier": 2,
+          "title": "Jevを使ってAI臭い文章を判定するようにした結果",
+          "url": "https://qiita.com/natume_nat/items/382e8b8f474d6a1467cd"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.28,
+          "generalizability": 0.3,
+          "novelty": 0.22,
+          "preference_relevance": 0.88,
+          "reproducibility": 0.28,
+          "rigor": 0.25
+        },
+        "confidence": 0.92,
+        "evidence": [
+          "はじめに, source.txt characters 139–570: the target is unnatural phrasing commonly occurring in AI text, explicitly not authorship detection; app types in the PR were fictionalized. https://qiita.com/natume_nat/items/382e8b8f474d6a1467cd",
+          "Jevに送っている6つの質問, characters 1049–1642: six categories use thresholds 0.50, 0.40, 0.35, 0.50, 0.50 and 0.35; the text describes technical-idiom exclusions but does not provide all exclusion wording or a calibration study. https://qiita.com/natume_nat/items/382e8b8f474d6a1467cd",
+          "直す前の説明文を判定した結果 and 直した後, characters 1642–2517: six of eight PR sentences were flagged; three displayed outputs are 0.73, 0.63 and 0.62. The author used Claude and another AI before accepting revisions. These are tool outputs and selected examples, not correctness labels. https://qiita.com/natume_nat/items/382e8b8f474d6a1467cd",
+          "うまくいかなかったこと, characters 2517–2832: headings were omitted by the script; sending the disputed heading as body text also failed that category. Checking every Claude Code response was abandoned because of token consumption; no measured cost breakdown is supplied. https://qiita.com/natume_nat/items/382e8b8f474d6a1467cd",
+          "この記事も Jevで判定した, characters 2832–3849: 47 sentences yielded 26 candidates; six were edited, nine remaining candidates were quotations and 11 were considered unproblematic by the author. No recall estimate follows because unflagged sentences were not independently labeled. https://qiita.com/natume_nat/items/382e8b8f474d6a1467cd",
+          "Article image 1, directly inspected (visuals/article-image-1.png): three before/after pairs replace vague metaphors with process/log terminology and explicit subjects; the image adds no quantitative evaluation beyond the text. https://qiita.com/natume_nat/items/382e8b8f474d6a1467cd",
+          "Jevの判定によりどう変わったか / 動作確認: the 38 passing tests refer to the underlying software PR, not 38 language-checking examples. https://qiita.com/natume_nat/items/382e8b8f474d6a1467cd"
+        ],
+        "fulltext_sha256": "b9af7b81fb0bc2601cf898335f7f4e8da8bfc359dfd1d14d1f96c2caa17d3c50",
+        "fulltext_status": "partial",
+        "model": "assistant-native-review",
+        "producer": "assistant-native-review",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "A closely relevant Japanese-language LLM editing workflow, not an AI-authorship detector or a validated research benchmark. Six question-based checks and explicit thresholds make the idea inspectable, and the paired PR examples show what the author changed. However, evidence is one eight-sentence PR description plus the author’s own 47-sentence draft, with subjective decisions, no annotated test set, baseline, threshold calibration, repeated trials, or independent readers. Of 26 draft candidates, only six were edited; the other 20 included nine quoted examples and 11 author-judged acceptable cases. This is review workload, not measured detector precision. Claude rewriting and a second AI’s comprehension check also prevent attributing improvements to Jev alone. Missing full scripts, prompts and model settings limit reproduction. Useful as a narrow human-reviewed linting recipe, with modest novelty and weak evidence of general benefit.",
+        "rationale_en": "A closely relevant Japanese-language LLM editing workflow, not an AI-authorship detector or a validated research benchmark. Six question-based checks and explicit thresholds make the idea inspectable, and the paired PR examples show what the author changed. However, evidence is one eight-sentence PR description plus the author’s own 47-sentence draft, with subjective decisions, no annotated test set, baseline, threshold calibration, repeated trials, or independent readers. Of 26 draft candidates, only six were edited; the other 20 included nine quoted examples and 11 author-judged acceptable cases. This is review workload, not measured detector precision. Claude rewriting and a second AI’s comprehension check also prevent attributing improvements to Jev alone. Missing full scripts, prompts and model settings limit reproduction. Useful as a narrow human-reviewed linting recipe, with modest novelty and weak evidence of general benefit.",
+        "rationale_zh": "本文與日語大型語言模型寫作流程高度相關，但不是辨識人工智慧作者身分的工具，也不是經驗證的研究基準。六類提問及明確門檻使做法可供檢視，成對的拉取請求範例也呈現作者如何修改。然而，證據僅來自一份八句的說明與作者自己的四十七句草稿；判斷主觀，缺少標註測試集、基準方法、門檻校準、重複試驗及獨立讀者。草稿的二十六項候選中只有六句被修改，其餘二十項包括九項引用範例與十一項作者認為無問題的內容；這反映人工複核負擔，不能當成偵測精確率。Claude 改寫及另一個人工智慧的理解檢查也使改善無法單獨歸因於 Jev。完整程式、提示與模型設定未公開，限制重現。可作為狹窄情境下由人複核的文字檢查配方，但新穎性有限，普遍效益的證據薄弱。",
+        "request_sha256": "3796527234657b7154ad8f5104267de1a93fd2ee20eea64b6fde65c609841ea4",
+        "score": 0.46782000000000007,
+        "token_usage": {},
+        "topics": [
+          "Japanese LLM & NLP",
+          "Natural Language Processing",
+          "Prompting & In-Context Learning",
+          "Red Teaming & Evaluation",
+          "Code & Programming"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "qiita-genai-tag",
+        "tier": 2,
+        "title": "Jevを使ってAI臭い文章を判定するようにした結果",
+        "url": "https://qiita.com/natume_nat/items/382e8b8f474d6a1467cd"
+      },
+      "published_at": "2026-10-08T12:24:15+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.46782000000000007,
+        "llm_relevance_score": 13.098960000000002,
+        "recency_score": 0.9935204249780397,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 0.0,
+        "total_score": 15.892480424978041
+      },
+      "section": null,
+      "source_name": "Qiita 生成AI Tag",
+      "story_id": "fallback:78cde6b7383a114d",
+      "summary": "This practitioner article addresses vague metaphors, missing agents and unnatural collocations in Japanese generated text. Its aim is to flag sentences for rereading, not determine AI authorship. The author supplies paragraph context for each sentence, asks Jev six types of style question, and flags candidates using thresholds from 0.35 to 0.5. Claude then rewrites them, while another AI checks comprehension difficulties. Six of eight sentences in a pull-request description were flagged; examples replace vague mouth and footprint metaphors with concrete process and log descriptions and add explicit subjects. The author’s own 47-sentence draft produced 26 candidates, but only six sentences were edited. Nine remaining candidates were quoted examples and 11 were judged acceptable by the author. Candidates therefore still need human review, and the edited fraction is not detector precision. The article acknowledges missed headings and excessive token consumption when checking every response. It offers a reusable proofreading workflow, but no independent annotations, baseline comparisons, threshold calibration or repeated experiments, and omits the full script and model settings. The examples support this author’s limited experience, not a general improvement, reliable AI-text detection or performance equivalence with another service.",
+      "summary_zh": "這篇實務文章處理日語生成文字中的含糊比喻、缺漏主體與不自然搭配，目標是找出需要重讀的句子，而非判定文章是否由人工智慧撰寫。作者逐句提供段落脈絡，讓 Jev 回答六類風格問題，依零點三五至零點五的門檻標示候選，再由 Claude 改寫，並請另一個人工智慧檢查理解困難。拉取請求說明的八句中有六句被標示，範例展示把「口」與「足跡」換成具體處理及記錄，並補上主詞。作者自己的四十七句草稿產生二十六項候選，但只修改六句；其餘九項是引用範例，十一項被作者認為沒有問題。這顯示候選仍需人工複核，不能把修改比例當成偵測精確率。文章也坦承標題漏檢，以及全面檢查導致代幣消耗過高。它提供可借鑑的寫作檢查流程，卻沒有獨立標註、基準比較、門檻校準或重複實驗；完整腳本與模型設定亦未交代。因此，案例只能支持此作者的局部使用經驗，不能證明普遍改善、可靠辨識人工智慧文本，或與其他服務具有效能等價性。",
+      "title": "What Happened When I Used Jev to Flag AI-Like Writing",
+      "title_zh": "使用 Jev 標示帶有人工智慧腔調的文字後，發生了什麼？"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "nrouter_ai1991"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-10-08T13:15:24.325108+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "qiita-llm-tag",
+          "tier": 2,
+          "title": "Reading Your LLM Gateway Invoice: Credits, Fees & Governance",
+          "url": "https://qiita.com/nrouter_ai1991/items/870c06809a867667707f"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.16,
+          "generalizability": 0.35,
+          "novelty": 0.03,
+          "preference_relevance": 0.6,
+          "reproducibility": 0.25,
+          "rigor": 0.08
+        },
+        "confidence": 0.92,
+        "evidence": [
+          "The fee line, source.txt Unicode [419,674), https://qiita.com/nrouter_ai1991/items/870c06809a867667707f#the-fee-line: stated fee schedules imply $5.80 versus $5.20 for $5 credits, and $105.50 versus $104.00 for $100 credits; these are calculated examples, not measured savings.",
+          "The governance line, source.txt Unicode [674,896), https://qiita.com/nrouter_ai1991/items/870c06809a867667707f#the-governance-line: bundled governance and competitor-absence statements are vendor assertions with no test protocol or outcome data.",
+          "The migration line, source.txt Unicode [896,1155), https://qiita.com/nrouter_ai1991/items/870c06809a867667707f#the-migration-line: an OpenAI client initialization illustrates endpoint/key replacement and explicitly separates policy mapping; no API execution or migration trial is reported.",
+          "The stay line, source.txt Unicode [1155,1445), https://qiita.com/nrouter_ai1991/items/870c06809a867667707f#the-stay-line: acknowledges negotiated BYOK rates, catalogue breadth and discovery as reasons to remain with OpenRouter.",
+          "Supplemental vendor comparison, Side-by-side feature gating / What OpenRouter does better, https://nrouter.ai/blog/product/openrouter-alternative: explicitly identifies the matrix as sales collateral; its inspected Figure 1 asset is a promotional cover, not a results plot. The HTML table and caveats were read as claims, not independent validation.",
+          "Supplemental primary competitor check, pricing plan comparison / Budgets & Spend Controls / Admin Controls, https://openrouter.ai/pricing: retrieved October 8 after the collection cutoff; Standard and higher columns list these controls. This limits the blanket absence claim, without establishing exact feature parity or a historical snapshot."
+        ],
+        "fulltext_sha256": "3e394d2f5fcb6219780d980407d6d121efa92c1579f719ed1f27e5e384772fac",
+        "fulltext_status": "partial",
+        "model": "assistant-native-review",
+        "producer": "assistant-native-review",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "This vendor-authored billing explainer is relevant to LLM serving costs and governance, but offers no new learning method or experimental research. The two top-up examples are arithmetically correct under the stated fee assumptions; no workload, invoices, uncertainty analysis, or measured governance outcomes are supplied. Its blanket competitor comparison is not established: the linked sales matrix is not independent evidence, and current OpenRouter pricing lists budgets/spend controls and admin controls. Policy-mapping and BYOK caveats are useful operational context, while live compatibility, feature parity, and current minimum fees remain unverified.",
+        "rationale_en": "This vendor-authored billing explainer is relevant to LLM serving costs and governance, but offers no new learning method or experimental research. The two top-up examples are arithmetically correct under the stated fee assumptions; no workload, invoices, uncertainty analysis, or measured governance outcomes are supplied. Its blanket competitor comparison is not established: the linked sales matrix is not independent evidence, and current OpenRouter pricing lists budgets/spend controls and admin controls. Policy-mapping and BYOK caveats are useful operational context, while live compatibility, feature parity, and current minimum fees remain unverified.",
+        "rationale_zh": "這篇供應商撰寫的帳務說明與大型語言模型的服務成本及治理相關，但沒有新的學習方法或實驗研究。兩個儲值例子的算術在文中費率假設下正確，卻未提供工作負載、實際帳單、不確定性分析或治理成效量測。對競品的一概比較缺乏證實：連結中的銷售比較表不是獨立證據，而目前 OpenRouter 定價頁列有預算、支出及管理控制。政策對應與自備金鑰的限制具操作參考價值；實際相容性、功能等同性及目前最低費用仍未驗證。",
+        "request_sha256": "4ec8cdd88a98bdfa08fedb85e8d2761d8739218734cbcc0c199d3caee8bff08b",
+        "score": 0.30176000000000003,
+        "token_usage": {},
+        "topics": [
+          "Large Language Models",
+          "Inference & Serving",
+          "Red Teaming & Evaluation"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "qiita-llm-tag",
+        "tier": 2,
+        "title": "Reading Your LLM Gateway Invoice: Credits, Fees & Governance",
+        "url": "https://qiita.com/nrouter_ai1991/items/870c06809a867667707f"
+      },
+      "published_at": "2026-10-08T12:57:36+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.3017600000000001,
+        "llm_relevance_score": 8.449280000000002,
+        "recency_score": 0.9958240572289798,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 4.0,
+        "total_score": 15.245104057228982
+      },
+      "section": null,
+      "source_name": "Qiita LLM Tag",
+      "story_id": "fallback:bd580a273a2095bf",
+      "summary": "This article separates token usage, platform charges and minimum fees in LLM gateway invoices, using nRouter and OpenRouter to illustrate small top-ups. Under the author’s fee assumptions, five dollars of credits cost $5.20 and $5.80 respectively; one hundred dollars cost $104 and $105.50. The arithmetic can be reproduced, but these are conditional examples rather than measured workload savings. Changing an endpoint and key does not automatically transfer quotas, alerts, permissions or cost attribution. Negotiated BYOK rates, model catalogues and public discovery tools can matter more than the fee difference. Research evidence is limited: no new model method, experiment, benchmark, ablation or actual invoice is supplied, and the linked feature table comes from the same vendor. Current OpenRouter pricing lists budget, spending and administrative controls, so the absence of competitor governance is not established; this also does not establish equivalent features. The article is useful as a fee and migration-policy checklist, but current charges, capabilities and compatibility need checking before procurement. Complete reading here covers the currently captured short article, not recovered historical bytes or validated service performance.",
+      "summary_zh": "本文從 LLM 閘道帳單出發，將權杖用量、平台費與最低費用分開，並以 nRouter 與 OpenRouter 說明小額儲值的影響。按作者列出的費率，購買五美元額度時總額分別為五點二與五點八美元；購買一百美元額度則為一百零四與一百零五點五美元。算術可重算，但這些是條件式例子，並非實際工作負載的節省結果。文章也提醒，切換端點與金鑰不會自動搬移配額、告警、權限和成本歸屬；自備金鑰的議價、模型目錄與公開探索工具都可能比手續費更重要。研究證據相當有限：沒有新模型方法、實驗、基準、消融或真實帳單，連結的功能表也由同一供應商製作。另查目前 OpenRouter 官方定價頁，可見預算、支出及管理控制，因此不能把競品完全缺乏治理當成已證實事實，也不能據此推論兩者功能完全相同。本文適合作為核對費率與遷移政策的清單；採購前仍須確認現行費用、功能與相容性。此次完整閱讀的是目前擷取的短文，不代表已找回歷史版本或驗證服務表現。",
+      "title": "Reading Your LLM Gateway Invoice: Credits, Fees & Governance",
+      "title_zh": "讀懂 LLM 閘道帳單：額度、費用與治理"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "シン"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-10-08T13:36:33.489575+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "🔓2026年9〜10月の情報漏洩19件、公表文を全部読んで考えたこと",
+          "url": "https://zenn.dev/bita/articles/1616afdb93c4a6"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.43,
+          "generalizability": 0.5,
+          "novelty": 0.24,
+          "preference_relevance": 0.58,
+          "reproducibility": 0.4,
+          "rigor": 0.42
+        },
+        "confidence": 0.92,
+        "evidence": [
+          "Article section はじめに (https://zenn.dev/bita/articles/1616afdb93c4a6#%E3%81%AF%E3%81%98%E3%82%81%E3%81%AB): The author selects 19 announcements by impact or familiarity, includes follow-ups, uses an October 6 information cutoff and explicitly disclaims statistical representativeness.",
+          "Article section 何が起きたか (https://zenn.dev/bita/articles/1616afdb93c4a6#%E4%BD%95%E3%81%8C%E8%B5%B7%E3%81%8D%E3%81%9F%E3%81%8B): Table 1 contains 19 data rows in heterogeneous units, including possible leaks, people, accounts and sent spoof emails. Six rows explicitly name vulnerabilities and two name unauthorized logins; totals across these units would be invalid.",
+          "Article section 19件から見えたパターン (https://zenn.dev/bita/articles/1616afdb93c4a6#19%E4%BB%B6%E3%81%8B%E3%82%89%E8%A6%8B%E3%81%88%E3%81%9F%E3%83%91%E3%82%BF%E3%83%BC%E3%83%B3): Five qualitative patterns concern vulnerabilities, lateral spread, external detection, retained/deleted data and third-party services. This is a narrative classification, not an experiment or evidence of AI involvement.",
+          "Article section AIで何が変わったか (https://zenn.dev/bita/articles/1616afdb93c4a6#ai%E3%81%A7%E4%BD%95%E3%81%8C%E5%A4%89%E3%82%8F%E3%81%A3%E3%81%9F%E3%81%8B): Table 2 attributes exploit development, simulated harmful-request engagement and cost claims to external sources. The paragraph labels the cost interpretation as the author’s conjecture and acknowledges the vendor relationship.",
+          "Article section 直っても、更新しないと届かない (https://zenn.dev/bita/articles/1616afdb93c4a6#%E7%9B%B4%E3%81%A3%E3%81%A6%E3%82%82%E3%80%81%E6%9B%B4%E6%96%B0%E3%81%97%E3%81%AA%E3%81%84%E3%81%A8%E5%B1%8A%E3%81%8B%E3%81%AA%E3%81%84): Patch distribution, EOL systems and pre-patch exploitation motivate layered defenses; this section does not measure whether proposed controls would have prevented the 19 incidents.",
+          "Article section 対策 (https://zenn.dev/bita/articles/1616afdb93c4a6#%E5%AF%BE%E7%AD%96): Table 3 maps three policy groups to five patterns, followed by developer, organization and user checklists. The article distinguishes some reference advice as based on cases outside its 19-event sample.",
+          "Article section おわりに (https://zenn.dev/bita/articles/1616afdb93c4a6#%E3%81%8A%E3%82%8F%E3%82%8A%E3%81%AB): The final paragraph explicitly says causality between the 19 incidents and AI is unknown; its cheaper-discovery explanation remains an interpretation."
+        ],
+        "fulltext_sha256": "6aa232cf5de5c637491a58b12826e07e8e177c34a8c394c3b2df6d340cf83b8f",
+        "fulltext_status": "partial",
+        "model": "assistant-native-review",
+        "producer": "assistant-native-review",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "A Japanese practitioner blog with useful, limited relevance to LLM-enabled cyber risk. It separates a purposive 19-disclosure incident summary from outside AI-capability reports and expressly declines a causal link between AI and these incidents. Reading all three tables supports the six vulnerability and two unauthorized-login rows, but neither this convenience sample nor zero public mentions of AI estimates actual AI involvement. The practical advice on patchability, segmentation, identity controls and retention is sensible synthesis rather than a new language-model method or evaluated defense. Primary-source spot checks support the quoted Anthropic exploit counts and Digital Agency incident details; the former are sandboxed vendor evaluations, with harmful-task engagement measured in a simulated environment, not attack success against these organizations. The absence of systematic selection, independent coding, incident-level AI attribution and comparative defense outcomes limits novelty, rigor and generalization. The supplied blog is sufficient for a bounded review; uncrosschecked external disclosures are an evidence limitation, not a missing article-body hold. No scope cap is applied, but its mainly general-security content reduces topical relevance.",
+        "rationale_en": "A Japanese practitioner blog with useful, limited relevance to LLM-enabled cyber risk. It separates a purposive 19-disclosure incident summary from outside AI-capability reports and expressly declines a causal link between AI and these incidents. Reading all three tables supports the six vulnerability and two unauthorized-login rows, but neither this convenience sample nor zero public mentions of AI estimates actual AI involvement. The practical advice on patchability, segmentation, identity controls and retention is sensible synthesis rather than a new language-model method or evaluated defense. Primary-source spot checks support the quoted Anthropic exploit counts and Digital Agency incident details; the former are sandboxed vendor evaluations, with harmful-task engagement measured in a simulated environment, not attack success against these organizations. The absence of systematic selection, independent coding, incident-level AI attribution and comparative defense outcomes limits novelty, rigor and generalization. The supplied blog is sufficient for a bounded review; uncrosschecked external disclosures are an evidence limitation, not a missing article-body hold. No scope cap is applied, but its mainly general-security content reduces topical relevance.",
+        "rationale_zh": "這是一篇日本工程實務部落格，對語言模型帶來的網路風險具有有限而實用的關聯。作者把目的性選取的十九起公告整理與外部人工智慧能力報告分開，並明確表示無法判定這些事件與人工智慧的因果關係。完整閱讀三張表後，可核對六筆漏洞與兩筆不當登入紀錄；但便利樣本及公告零次提及人工智慧，都不能估計實際參與程度。更新能力、網路分隔、身分控制與資料保存等建議屬實務綜整，並非新語言模型方法或經評估的防禦。主要來源抽查支持文中引用的 Anthropic 漏洞利用次數及日本數位廳事件細節；前者是廠商的沙箱測試，其中惡意任務參與率來自模擬環境，不能當成對這些組織的攻擊成功率。缺少系統性取樣、獨立編碼、事件層級人工智慧歸因及防禦比較結果，限制新穎性、嚴謹度與外推。現有文章足以完成有界評估；尚未逐一交叉核對的公告是證據限制，而非文章缺件。未套用領域上限，但以一般資安為主的內容降低主題相關度。",
+        "request_sha256": "1d8e6c4167d6a263c36e5a595dcc7dd88f1784bef34e95de91dd7d7563c53c7e",
+        "score": 0.42826,
+        "token_usage": {},
+        "topics": [
+          "AI Safety",
+          "Red Teaming & Evaluation",
+          "Agents & Tool Use"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "🔓2026年9〜10月の情報漏洩19件、公表文を全部読んで考えたこと",
+        "url": "https://zenn.dev/bita/articles/1616afdb93c4a6"
+      },
+      "published_at": "2026-10-08T00:43:37+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.42826,
+        "llm_relevance_score": 11.99128,
+        "recency_score": 0.9463377432494566,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 0.0,
+        "total_score": 14.737617743249457
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:95fce921bb8609ee",
+      "summary": "This Japanese practitioner blog summarizes nineteen unauthorized-access and data-leak disclosures, including follow-ups, published from September 11 to October 5. It asks whether AI has changed attack techniques or reduced the cost of finding old vulnerabilities. Cases were selected by impact or name recognition, and the author explicitly disclaims statistical representativeness. Six entries mention vulnerabilities and two mention unauthorized logins, but the absence of AI mentions does not establish that attackers did not use AI. Read the incident table and five patterns first, then the separately cited model-capability reports, without joining these two bodies of evidence into a causal chain. The cited sandbox exploit tests and simulated harmful-task engagement rates describe capability under particular conditions; they cannot directly explain these nineteen incidents. Practical priorities are keeping systems updateable, continuously checking code and configuration, and limiting damage through privilege separation, multifactor authentication, logging, backups and data minimization. Impact figures mix people, accounts, records and sent emails, sometimes describing only possible exposure, so they should not be added together. The article is useful for reviewing defensive questions and tracing original announcements. It is neither a new language-model method, a study of AI-attack prevalence nor experimental proof that the proposed defenses work. The author explicitly preserves uncertainty about a causal connection between these incidents and AI.",
+      "summary_zh": "這篇日本實務部落格整理九月十一日至十月五日公表、包含續報的十九起不當存取與資料外洩事件，追問人工智慧究竟改變了攻擊手法，還是降低了發現舊漏洞的成本。作者依影響規模或知名度選案，明示樣本不具統計代表性；六筆公告提到漏洞、兩筆提到不當登入，但公告未提及人工智慧，不等於攻擊沒有使用人工智慧。閱讀時先看事件表與五種模式，再看另行引用的模型能力報告，避免把兩套證據混成因果鏈。文中引用的沙箱漏洞利用測試與模擬惡意任務參與率，能說明特定條件下的能力，不能直接解釋這十九起事件。實務重點在維持可更新的系統、持續檢查程式與配置，以及用權限分隔、多因素驗證、紀錄、備份和資料最小化限制損害。影響數字混有人數、帳號、紀錄與寄信次數，且部分只是可能外洩，不宜相加。本文適合用來盤點防禦問題與追查原始公告，並非新語言模型方法、人工智慧攻擊盛行率研究，或防禦措施效果的實驗證明；作者也明確保留這些事件與人工智慧的因果不確定性。",
+      "title": "Reading 19 public data-leak disclosures from September–October 2026: observations and reflections",
+      "title_zh": "閱讀二〇二六年九至十月十九起資料外洩公告：觀察與反思"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "tonbi_attack"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-10-08T13:15:19.594140+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "qiita-genai-tag",
+          "tier": 2,
+          "title": "AIへの「良い指示」は変わり続ける：実装詳細より文脈と制約を渡す",
+          "url": "https://qiita.com/tonbi_attack/items/08204cc08e2b5b48b09e"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.09,
+          "generalizability": 0.59,
+          "novelty": 0.16,
+          "preference_relevance": 0.84,
+          "reproducibility": 0.18,
+          "rigor": 0.12
+        },
+        "confidence": 0.92,
+        "evidence": [
+          "https://qiita.com/tonbi_attack/items/08204cc08e2b5b48b09e — はじめに, source.txt [133,447): frames changing instruction quality around agents that can investigate codebases; names no evaluated system or capability study.",
+          "https://qiita.com/tonbi_attack/items/08204cc08e2b5b48b09e — 昔は細かく指示することに意味があった [447,683) and 実装詳細を決めずに渡せる場面が増えた [683,1008): contrasts UserService.ts/getUser/sessionStorage instructions with a requirement to isolate search state per tab, investigate impact and add tests. These are illustrative requests, not tested before/after results.",
+          "https://qiita.com/tonbi_attack/items/08204cc08e2b5b48b09e — 人間が渡すのは、コードから読み取れない情報 [1008,1527), original HTML table: six information categories, Context, Why, Constraints, Domain Knowledge, Decision and Done, each paired with its meaning. The customer/applicant/contractHolder example concerns business semantics; there is no measured taxonomy or NLP task.",
+          "https://qiita.com/tonbi_attack/items/08204cc08e2b5b48b09e — 細かい指示は選択肢を狭めることがある [1527,1758): suggests comparing implementation choices but requires explicit architecture decisions, security requirements and permitted change scope; does not advocate unrestricted autonomy.",
+          "https://qiita.com/tonbi_attack/items/08204cc08e2b5b48b09e — 任せることと判断を放棄することは違う [1758,1976): retains human output verification and production/publication decisions; warns against delegating work without tests, reviews, diff inspection and rollback means.",
+          "https://qiita.com/tonbi_attack/items/08204cc08e2b5b48b09e — おわりに [1976,2243): advice is explicitly conditional on the current agent’s ability to discover implementation details. Full supplied article [0,2522) supplies no experimental models, sample sizes, outcome statistics, controlled comparisons or evaluation artifacts."
+        ],
+        "fulltext_sha256": "042d3ce9380e17546c2c1b023933d14d2a7343c9cb077c29f8f2bd802c814f80",
+        "fulltext_status": "partial",
+        "model": "assistant-native-review",
+        "producer": "assistant-native-review",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Directly relevant to prompting and coding-agent collaboration, this practitioner essay argues that instructions should adapt to an agent’s actual capabilities: delegate code-discoverable implementation choices while specifying context, purpose, constraints, domain knowledge, decisions and completion criteria. A tab-isolated search-state example contrasts prescribed implementation steps with outcome-focused requirements, and the article retains human responsibility for architecture, security, scope, verification and release decisions. These are sensible conditional workflow recommendations with modest novelty, not demonstrated performance gains. No model/version, evaluated repository, executed task trace, dataset, baseline, success rate, time measurement or ablation is supplied. The six-category table is a communication checklist rather than an experimentally validated method. Generalization depends on agent competence, repository accessibility and usable tests; productivity and design-quality claims remain hypotheses. The complete supplied text and original table cells were read. The related-author link is conceptual background, not evidence used to raise scores; historical source identity and original-document completeness remain unverified.",
+        "rationale_en": "Directly relevant to prompting and coding-agent collaboration, this practitioner essay argues that instructions should adapt to an agent’s actual capabilities: delegate code-discoverable implementation choices while specifying context, purpose, constraints, domain knowledge, decisions and completion criteria. A tab-isolated search-state example contrasts prescribed implementation steps with outcome-focused requirements, and the article retains human responsibility for architecture, security, scope, verification and release decisions. These are sensible conditional workflow recommendations with modest novelty, not demonstrated performance gains. No model/version, evaluated repository, executed task trace, dataset, baseline, success rate, time measurement or ablation is supplied. The six-category table is a communication checklist rather than an experimentally validated method. Generalization depends on agent competence, repository accessibility and usable tests; productivity and design-quality claims remain hypotheses. The complete supplied text and original table cells were read. The related-author link is conceptual background, not evidence used to raise scores; historical source identity and original-document completeness remain unverified.",
+        "rationale_zh": "這篇實務觀點文章直接關聯提示設計與程式代理協作，主張指令應配合代理的實際能力調整：可由程式庫查明的實作選擇交由代理處理，人類則明示脈絡、目的、限制、領域知識、取捨及完成條件。文中以分頁獨立保存搜尋狀態為例，對照指定實作步驟與描述結果需求的寫法，同時保留人類對架構、安全、範圍、驗證與發布的責任。這些是合理但有條件的工作流程建議，新穎性有限，也未證明效能提升。文章未提供模型或版本、受測程式庫、實際任務紀錄、資料集、基準對照、成功率、時間量測或消融。六類資訊表是溝通清單，並非經實驗驗證的方法。可推廣程度取決於代理能力、程式庫可存取性及可用測試；生產力與設計品質主張仍屬假設。已完整閱讀供應文字及原始表格各儲存格。同作者的相關連結僅屬概念背景，未用來提高評分；歷史來源身分與原始文件完整性仍未核實。",
+        "request_sha256": "eef33ebfd0d07a983b8d5851c2689d71d6c7b565be02501f80de4852dbe7fafe",
+        "score": 0.42274000000000006,
+        "token_usage": {},
+        "topics": [
+          "Large Language Models",
+          "Agents & Tool Use",
+          "Prompting & In-Context Learning",
+          "Code & Programming"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "qiita-genai-tag",
+        "tier": 2,
+        "title": "AIへの「良い指示」は変わり続ける：実装詳細より文脈と制約を渡す",
+        "url": "https://qiita.com/tonbi_attack/items/08204cc08e2b5b48b09e"
+      },
+      "published_at": "2026-10-08T11:23:18+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.42274000000000006,
+        "llm_relevance_score": 11.836720000000001,
+        "recency_score": 0.9893240988218563,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 0.0,
+        "total_score": 14.626044098821858
+      },
+      "section": null,
+      "source_name": "Qiita 生成AI Tag",
+      "story_id": "fallback:388ecac8f14df6be",
+      "summary": "This article asks how instructions should change as coding agents become more capable. Its central recommendation is that, when an agent can inspect a codebase and compare implementations, people should prioritize context, purpose, constraints, domain knowledge, trade-offs and completion criteria rather than prescribing every file and function. A per-tab search-state example contrasts a storage-specific task list with an outcome-focused request that includes impact analysis and tests; a six-category table organizes the information humans should supply. This is communication and delegation advice, with no evaluated model, version, repository, actual task trace, control group, success rate or timing data. It therefore does not establish that fewer implementation details improve quality or productivity. Nor does the author advocate abandoning supervision: architecture, security, change scope and release decisions must remain explicit or under human control, and tests, reviews, diff inspection and rollback means still matter. Practitioners can use the checklist to assess whether requirements are clear and adjust delegation to the agent’s actual competence; less capable agents still need task decomposition. Its value is distinguishing code-discoverable information from human business judgment, not introducing an algorithm or validated prompt-optimization method. The related-article link was not treated as experimental evidence. Supplied text and table content were checked; historical-version completeness remains unverified.",
+      "summary_zh": "本文討論程式代理能力改變後，人類應如何調整指令。核心主張是：代理能自行查閱程式庫與比較實作方式時，人類應優先提供脈絡、目的、限制、領域知識、取捨與完成條件，而非預先指定每個檔案和函式。文章以各分頁獨立保存搜尋條件為例，對照指定儲存方式的操作清單與描述目標、影響範圍及測試需求的寫法，並用六類資訊表整理人類應補充的內容。這是一份溝通與分工建議，沒有提供受測模型、版本、程式庫、實際任務紀錄、對照組、成功率或耗時數據，因此尚不能證明較少實作細節會提升品質或生產力。作者也沒有主張放棄監督：架構、安全要求、可修改範圍與發布決策仍須明示或由人類掌握，測試、審查、差異檢查及回復手段不可省略。實務上可把清單用於檢查需求是否清楚，再依代理的真實能力決定委派程度；能力不足時仍需拆解任務。閱讀價值在於區分可從程式碼取得的資訊與只有人類能補足的業務判斷，而非新的演算法或經驗證的提示最佳化方法。相關文章連結未被當成實驗證據；目前僅確認供應文字與表格內容，歷史版本完整性仍未核實。",
+      "title": "Good Instructions for AI Keep Changing: Provide Context and Constraints Rather Than Implementation Details",
+      "title_zh": "給 AI 的「好指令」不斷改變：提供脈絡與限制，而非預先指定實作細節"
+    }
+  ],
+  "run_date": "2026-10-08",
+  "run_id": "assistant-review-2026-10-08",
+  "run_info": {
+    "error_summary": null,
+    "finished_at": "2026-10-08T22:31:08.332250+00:00",
+    "items_total": 15,
+    "run_id": "assistant-review-2026-10-08",
+    "started_at": "2026-10-08T22:31:08.160589+00:00",
+    "stories_total": 14,
+    "success": true
+  },
+  "sources_status": [
+    {
+      "category": null,
+      "items_new": 13,
+      "items_updated": 0,
+      "last_fetch_status_code": 200,
+      "method": "rss_atom",
+      "name": "OpenAI Blog",
+      "newest_item_date": "2026-10-07T12:00:00+00:00",
+      "reason_code": "CURRENT_BOUNDED_SOURCE_OBSERVATION",
+      "reason_text": "Current collection returned 13 metadata observations; counts span the configured capture window and are not October 8-only publication counts. Historical/full-day completeness is unverified.",
+      "remediation_hint": null,
+      "source_id": "openai-blog",
+      "status": "HAS_UPDATE",
+      "tier": 0
+    },
+    {
+      "category": null,
+      "items_new": 1,
+      "items_updated": 0,
+      "last_fetch_status_code": 200,
+      "method": "rss_atom",
+      "name": "OpenAI Alignment Research Blog",
+      "newest_item_date": "2026-10-07T03:24:41+00:00",
+      "reason_code": "CURRENT_BOUNDED_SOURCE_OBSERVATION",
+      "reason_text": "Current collection returned 1 metadata observations; counts span the configured capture window and are not October 8-only publication counts. Historical/full-day completeness is unverified.",
+      "remediation_hint": null,
+      "source_id": "openai-alignment",
+      "status": "HAS_UPDATE",
+      "tier": 0
+    },
+    {
+      "category": null,
+      "items_new": 1,
+      "items_updated": 0,
+      "last_fetch_status_code": 200,
+      "method": "html_list",
+      "name": "Anthropic Research Publications",
+      "newest_item_date": "2026-10-01T00:00:00+00:00",
+      "reason_code": "CURRENT_BOUNDED_SOURCE_OBSERVATION",
+      "reason_text": "Current collection returned 1 metadata observations; counts span the configured capture window and are not October 8-only publication counts. Historical/full-day completeness is unverified.",
+      "remediation_hint": null,
+      "source_id": "anthropic-research-publications",
+      "status": "HAS_UPDATE",
+      "tier": 0
+    },
+    {
+      "category": null,
+      "items_new": 1,
+      "items_updated": 0,
+      "last_fetch_status_code": 200,
+      "method": "rss_atom",
+      "name": "DeepMind Blog",
+      "newest_item_date": "2026-10-06T19:57:04+00:00",
+      "reason_code": "CURRENT_BOUNDED_SOURCE_OBSERVATION",
+      "reason_text": "Current collection returned 1 metadata observations; counts span the configured capture window and are not October 8-only publication counts. Historical/full-day completeness is unverified.",
+      "remediation_hint": null,
+      "source_id": "deepmind-blog",
+      "status": "HAS_UPDATE",
+      "tier": 0
+    },
+    {
+      "category": null,
+      "items_new": 2,
+      "items_updated": 0,
+      "last_fetch_status_code": 200,
+      "method": "rss_atom",
+      "name": "Google AI Blog",
+      "newest_item_date": "2026-10-07T12:00:00+00:00",
+      "reason_code": "CURRENT_BOUNDED_SOURCE_OBSERVATION",
+      "reason_text": "Current collection returned 2 metadata observations; counts span the configured capture window and are not October 8-only publication counts. Historical/full-day completeness is unverified.",
+      "remediation_hint": null,
+      "source_id": "google-ai-blog",
+      "status": "HAS_UPDATE",
+      "tier": 0
+    },
+    {
+      "category": null,
+      "items_new": 2,
+      "items_updated": 0,
+      "last_fetch_status_code": 200,
+      "method": "rss_atom",
+      "name": "Microsoft Research Blog",
+      "newest_item_date": "2026-10-07T16:00:00+00:00",
+      "reason_code": "CURRENT_BOUNDED_SOURCE_OBSERVATION",
+      "reason_text": "Current collection returned 2 metadata observations; counts span the configured capture window and are not October 8-only publication counts. Historical/full-day completeness is unverified.",
+      "remediation_hint": null,
+      "source_id": "microsoft-research-blog",
+      "status": "HAS_UPDATE",
+      "tier": 0
+    },
+    {
+      "category": null,
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": 200,
+      "method": "rss_atom",
+      "name": "NVIDIA AI Blog",
+      "newest_item_date": "2026-07-08T15:00:27+00:00",
+      "reason_code": "CURRENT_BOUNDED_SOURCE_OBSERVATION",
+      "reason_text": "Current collection returned 0 metadata observations; counts span the configured capture window and are not October 8-only publication counts. Historical/full-day completeness is unverified.",
+      "remediation_hint": null,
+      "source_id": "nvidia-ai-blog",
+      "status": "NO_UPDATE",
+      "tier": 0
+    },
+    {
+      "category": null,
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": 200,
+      "method": "rss_atom",
+      "name": "AWS Machine Learning Blog",
+      "newest_item_date": null,
+      "reason_code": "UNVERIFIED_NON_FEED_BODY",
+      "reason_text": "HTTP 200 body is not a verified RSS/Atom feed; native success/zero items is not trustworthy coverage. Site Unavailable HTML",
+      "remediation_hint": null,
+      "source_id": "aws-ml-blog",
+      "status": "CANNOT_CONFIRM",
+      "tier": 0
+    },
+    {
+      "category": null,
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": 200,
+      "method": "rss_atom",
+      "name": "Sebastian Raschka Blog",
+      "newest_item_date": "2026-09-29T10:50:25+00:00",
+      "reason_code": "CURRENT_BOUNDED_SOURCE_OBSERVATION",
+      "reason_text": "Current collection returned 0 metadata observations; counts span the configured capture window and are not October 8-only publication counts. Historical/full-day completeness is unverified.",
+      "remediation_hint": null,
+      "source_id": "sebastian-raschka-blog",
+      "status": "NO_UPDATE",
+      "tier": 0
+    },
+    {
+      "category": null,
+      "items_new": 630,
+      "items_updated": 0,
+      "last_fetch_status_code": 200,
+      "method": "arxiv_api",
+      "name": "arXiv cs.AI",
+      "newest_item_date": "2026-10-07T17:59:41+00:00",
+      "reason_code": "CURRENT_BOUNDED_SOURCE_OBSERVATION",
+      "reason_text": "Current collection returned 1646 metadata observations; counts span the configured capture window and are not October 8-only publication counts. Historical/full-day completeness is unverified.",
+      "remediation_hint": null,
+      "source_id": "arxiv-cs-ai",
+      "status": "HAS_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": null,
+      "items_new": 694,
+      "items_updated": 0,
+      "last_fetch_status_code": 200,
+      "method": "arxiv_api",
+      "name": "arXiv cs.LG",
+      "newest_item_date": "2026-10-07T17:59:26+00:00",
+      "reason_code": "CURRENT_BOUNDED_SOURCE_OBSERVATION",
+      "reason_text": "Current collection returned 1793 metadata observations; counts span the configured capture window and are not October 8-only publication counts. Historical/full-day completeness is unverified.",
+      "remediation_hint": null,
+      "source_id": "arxiv-cs-lg",
+      "status": "HAS_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": null,
+      "items_new": 127,
+      "items_updated": 0,
+      "last_fetch_status_code": 200,
+      "method": "arxiv_api",
+      "name": "arXiv cs.CL",
+      "newest_item_date": "2026-10-07T17:59:26+00:00",
+      "reason_code": "CURRENT_BOUNDED_SOURCE_OBSERVATION",
+      "reason_text": "Current collection returned 713 metadata observations; counts span the configured capture window and are not October 8-only publication counts. Historical/full-day completeness is unverified.",
+      "remediation_hint": null,
+      "source_id": "arxiv-cs-cl",
+      "status": "HAS_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": null,
+      "items_new": 419,
+      "items_updated": 0,
+      "last_fetch_status_code": 200,
+      "method": "arxiv_api",
+      "name": "arXiv cs.CV",
+      "newest_item_date": "2026-10-07T17:59:48+00:00",
+      "reason_code": "CURRENT_BOUNDED_SOURCE_OBSERVATION",
+      "reason_text": "Current collection returned 900 metadata observations; counts span the configured capture window and are not October 8-only publication counts. Historical/full-day completeness is unverified.",
+      "remediation_hint": null,
+      "source_id": "arxiv-cs-cv",
+      "status": "HAS_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": null,
+      "items_new": 27,
+      "items_updated": 0,
+      "last_fetch_status_code": 200,
+      "method": "arxiv_api",
+      "name": "arXiv stat.ML",
+      "newest_item_date": "2026-10-07T17:55:46+00:00",
+      "reason_code": "CURRENT_BOUNDED_SOURCE_OBSERVATION",
+      "reason_text": "Current collection returned 261 metadata observations; counts span the configured capture window and are not October 8-only publication counts. Historical/full-day completeness is unverified.",
+      "remediation_hint": null,
+      "source_id": "arxiv-stat-ml",
+      "status": "HAS_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": null,
+      "items_new": 17,
+      "items_updated": 0,
+      "last_fetch_status_code": 200,
+      "method": "arxiv_api",
+      "name": "arXiv cs.MA",
+      "newest_item_date": "2026-10-07T17:57:58+00:00",
+      "reason_code": "CURRENT_BOUNDED_SOURCE_OBSERVATION",
+      "reason_text": "Current collection returned 106 metadata observations; counts span the configured capture window and are not October 8-only publication counts. Historical/full-day completeness is unverified.",
+      "remediation_hint": null,
+      "source_id": "arxiv-cs-ma",
+      "status": "HAS_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": null,
+      "items_new": 237,
+      "items_updated": 0,
+      "last_fetch_status_code": 200,
+      "method": "arxiv_api",
+      "name": "arXiv cs.RO",
+      "newest_item_date": "2026-10-07T17:59:41+00:00",
+      "reason_code": "CURRENT_BOUNDED_SOURCE_OBSERVATION",
+      "reason_text": "Current collection returned 572 metadata observations; counts span the configured capture window and are not October 8-only publication counts. Historical/full-day completeness is unverified.",
+      "remediation_hint": null,
+      "source_id": "arxiv-cs-ro",
+      "status": "HAS_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": null,
+      "items_new": 35,
+      "items_updated": 0,
+      "last_fetch_status_code": 200,
+      "method": "arxiv_api",
+      "name": "arXiv cs.SE",
+      "newest_item_date": "2026-10-07T17:37:19+00:00",
+      "reason_code": "CURRENT_BOUNDED_SOURCE_OBSERVATION",
+      "reason_text": "Current collection returned 152 metadata observations; counts span the configured capture window and are not October 8-only publication counts. Historical/full-day completeness is unverified.",
+      "remediation_hint": null,
+      "source_id": "arxiv-cs-se",
+      "status": "HAS_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": null,
+      "items_new": 18,
+      "items_updated": 0,
+      "last_fetch_status_code": 200,
+      "method": "arxiv_api",
+      "name": "arXiv cs.IR",
+      "newest_item_date": "2026-10-07T17:38:35+00:00",
+      "reason_code": "CURRENT_BOUNDED_SOURCE_OBSERVATION",
+      "reason_text": "Current collection returned 101 metadata observations; counts span the configured capture window and are not October 8-only publication counts. Historical/full-day completeness is unverified.",
+      "remediation_hint": null,
+      "source_id": "arxiv-cs-ir",
+      "status": "HAS_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": null,
+      "items_new": 72,
+      "items_updated": 0,
+      "last_fetch_status_code": 200,
+      "method": "arxiv_api",
+      "name": "arXiv cs.HC",
+      "newest_item_date": "2026-10-07T17:29:14+00:00",
+      "reason_code": "CURRENT_BOUNDED_SOURCE_OBSERVATION",
+      "reason_text": "Current collection returned 143 metadata observations; counts span the configured capture window and are not October 8-only publication counts. Historical/full-day completeness is unverified.",
+      "remediation_hint": null,
+      "source_id": "arxiv-cs-hc",
+      "status": "HAS_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": null,
+      "items_new": 126,
+      "items_updated": 0,
+      "last_fetch_status_code": 200,
+      "method": "arxiv_api",
+      "name": "arXiv cs.CR",
+      "newest_item_date": "2026-10-07T16:31:28+00:00",
+      "reason_code": "CURRENT_BOUNDED_SOURCE_OBSERVATION",
+      "reason_text": "Current collection returned 308 metadata observations; counts span the configured capture window and are not October 8-only publication counts. Historical/full-day completeness is unverified.",
+      "remediation_hint": null,
+      "source_id": "arxiv-cs-cr",
+      "status": "HAS_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": null,
+      "items_new": 434,
+      "items_updated": 0,
+      "last_fetch_status_code": 200,
+      "method": "arxiv_api",
+      "name": "arXiv API LLM",
+      "newest_item_date": "2026-10-07T17:58:52+00:00",
+      "reason_code": "CURRENT_BOUNDED_SOURCE_OBSERVATION",
+      "reason_text": "Current collection returned 723 metadata observations; counts span the configured capture window and are not October 8-only publication counts. Historical/full-day completeness is unverified.",
+      "remediation_hint": null,
+      "source_id": "arxiv-api-llm",
+      "status": "HAS_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": null,
+      "items_new": 574,
+      "items_updated": 0,
+      "last_fetch_status_code": 200,
+      "method": "arxiv_api",
+      "name": "arXiv API Agents",
+      "newest_item_date": "2026-10-07T17:52:52+00:00",
+      "reason_code": "CURRENT_BOUNDED_SOURCE_OBSERVATION",
+      "reason_text": "Current collection returned 574 metadata observations; counts span the configured capture window and are not October 8-only publication counts. Historical/full-day completeness is unverified.",
+      "remediation_hint": null,
+      "source_id": "arxiv-api-agents",
+      "status": "HAS_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": null,
+      "items_new": 109,
+      "items_updated": 0,
+      "last_fetch_status_code": 200,
+      "method": "arxiv_api",
+      "name": "arXiv API Reasoning",
+      "newest_item_date": "2026-10-07T17:25:23+00:00",
+      "reason_code": "CURRENT_BOUNDED_SOURCE_OBSERVATION",
+      "reason_text": "Current collection returned 230 metadata observations; counts span the configured capture window and are not October 8-only publication counts. Historical/full-day completeness is unverified.",
+      "remediation_hint": null,
+      "source_id": "arxiv-api-reasoning",
+      "status": "HAS_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": null,
+      "items_new": 155,
+      "items_updated": 0,
+      "last_fetch_status_code": 200,
+      "method": "arxiv_api",
+      "name": "arXiv API Alignment",
+      "newest_item_date": "2026-10-07T16:55:12+00:00",
+      "reason_code": "CURRENT_BOUNDED_SOURCE_OBSERVATION",
+      "reason_text": "Current collection returned 162 metadata observations; counts span the configured capture window and are not October 8-only publication counts. Historical/full-day completeness is unverified.",
+      "remediation_hint": null,
+      "source_id": "arxiv-api-alignment",
+      "status": "HAS_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": null,
+      "items_new": 268,
+      "items_updated": 0,
+      "last_fetch_status_code": 200,
+      "method": "arxiv_api",
+      "name": "arXiv API Multimodal",
+      "newest_item_date": "2026-10-07T17:57:38+00:00",
+      "reason_code": "CURRENT_BOUNDED_SOURCE_OBSERVATION",
+      "reason_text": "Current collection returned 414 metadata observations; counts span the configured capture window and are not October 8-only publication counts. Historical/full-day completeness is unverified.",
+      "remediation_hint": null,
+      "source_id": "arxiv-api-multimodal",
+      "status": "HAS_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": null,
+      "items_new": 41,
+      "items_updated": 0,
+      "last_fetch_status_code": 200,
+      "method": "arxiv_api",
+      "name": "arXiv API Safety",
+      "newest_item_date": "2026-10-07T15:49:06+00:00",
+      "reason_code": "CURRENT_BOUNDED_SOURCE_OBSERVATION",
+      "reason_text": "Current collection returned 88 metadata observations; counts span the configured capture window and are not October 8-only publication counts. Historical/full-day completeness is unverified.",
+      "remediation_hint": null,
+      "source_id": "arxiv-api-safety",
+      "status": "HAS_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": null,
+      "items_new": 309,
+      "items_updated": 0,
+      "last_fetch_status_code": 200,
+      "method": "arxiv_api",
+      "name": "arXiv API Evaluation",
+      "newest_item_date": "2026-10-07T17:51:07+00:00",
+      "reason_code": "CURRENT_BOUNDED_SOURCE_OBSERVATION",
+      "reason_text": "Current collection returned 404 metadata observations; counts span the configured capture window and are not October 8-only publication counts. Historical/full-day completeness is unverified.",
+      "remediation_hint": null,
+      "source_id": "arxiv-api-evaluation",
+      "status": "HAS_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": null,
+      "items_new": 474,
+      "items_updated": 0,
+      "last_fetch_status_code": 200,
+      "method": "arxiv_api",
+      "name": "arXiv API Efficiency",
+      "newest_item_date": "2026-10-07T17:58:42+00:00",
+      "reason_code": "CURRENT_BOUNDED_SOURCE_OBSERVATION",
+      "reason_text": "Current collection returned 530 metadata observations; counts span the configured capture window and are not October 8-only publication counts. Historical/full-day completeness is unverified.",
+      "remediation_hint": null,
+      "source_id": "arxiv-api-efficiency",
+      "status": "HAS_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": null,
+      "items_new": 54,
+      "items_updated": 0,
+      "last_fetch_status_code": 200,
+      "method": "arxiv_api",
+      "name": "arXiv API Retrieval",
+      "newest_item_date": "2026-10-07T17:51:46+00:00",
+      "reason_code": "CURRENT_BOUNDED_SOURCE_OBSERVATION",
+      "reason_text": "Current collection returned 104 metadata observations; counts span the configured capture window and are not October 8-only publication counts. Historical/full-day completeness is unverified.",
+      "remediation_hint": null,
+      "source_id": "arxiv-api-retrieval",
+      "status": "HAS_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": null,
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": 200,
+      "method": "hf_org",
+      "name": "Hugging Face OpenAI",
+      "newest_item_date": null,
+      "reason_code": "CURRENT_BOUNDED_SOURCE_OBSERVATION",
+      "reason_text": "Current collection returned 0 metadata observations; counts span the configured capture window and are not October 8-only publication counts. Historical/full-day completeness is unverified.",
+      "remediation_hint": null,
+      "source_id": "hf-openai",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": null,
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": 200,
+      "method": "hf_org",
+      "name": "Hugging Face Meta Llama",
+      "newest_item_date": null,
+      "reason_code": "CURRENT_BOUNDED_SOURCE_OBSERVATION",
+      "reason_text": "Current collection returned 0 metadata observations; counts span the configured capture window and are not October 8-only publication counts. Historical/full-day completeness is unverified.",
+      "remediation_hint": null,
+      "source_id": "hf-meta-llama",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": null,
+      "items_new": 1,
+      "items_updated": 0,
+      "last_fetch_status_code": 200,
+      "method": "hf_org",
+      "name": "Hugging Face Google",
+      "newest_item_date": "2026-10-06T15:29:23+00:00",
+      "reason_code": "CURRENT_BOUNDED_SOURCE_OBSERVATION",
+      "reason_text": "Current collection returned 1 metadata observations; counts span the configured capture window and are not October 8-only publication counts. Historical/full-day completeness is unverified.",
+      "remediation_hint": null,
+      "source_id": "hf-google",
+      "status": "HAS_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": null,
+      "items_new": 1,
+      "items_updated": 0,
+      "last_fetch_status_code": 200,
+      "method": "hf_org",
+      "name": "Hugging Face Microsoft",
+      "newest_item_date": "2026-10-02T18:50:47+00:00",
+      "reason_code": "CURRENT_BOUNDED_SOURCE_OBSERVATION",
+      "reason_text": "Current collection returned 1 metadata observations; counts span the configured capture window and are not October 8-only publication counts. Historical/full-day completeness is unverified.",
+      "remediation_hint": null,
+      "source_id": "hf-microsoft",
+      "status": "HAS_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": null,
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": 200,
+      "method": "hf_org",
+      "name": "Hugging Face Mistral AI",
+      "newest_item_date": null,
+      "reason_code": "CURRENT_BOUNDED_SOURCE_OBSERVATION",
+      "reason_text": "Current collection returned 0 metadata observations; counts span the configured capture window and are not October 8-only publication counts. Historical/full-day completeness is unverified.",
+      "remediation_hint": null,
+      "source_id": "hf-mistralai",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": null,
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": 200,
+      "method": "hf_org",
+      "name": "Hugging Face Qwen",
+      "newest_item_date": null,
+      "reason_code": "CURRENT_BOUNDED_SOURCE_OBSERVATION",
+      "reason_text": "Current collection returned 0 metadata observations; counts span the configured capture window and are not October 8-only publication counts. Historical/full-day completeness is unverified.",
+      "remediation_hint": null,
+      "source_id": "hf-qwen",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": null,
+      "items_new": 9,
+      "items_updated": 0,
+      "last_fetch_status_code": 401,
+      "method": "hf_org",
+      "name": "Hugging Face Stability AI",
+      "newest_item_date": "2026-10-06T19:40:36+00:00",
+      "reason_code": "CURRENT_BOUNDED_SOURCE_OBSERVATION",
+      "reason_text": "Current collection returned 9 metadata observations; counts span the configured capture window and are not October 8-only publication counts. Historical/full-day completeness is unverified.",
+      "remediation_hint": null,
+      "source_id": "hf-stabilityai",
+      "status": "HAS_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": null,
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": 200,
+      "method": "hf_org",
+      "name": "Hugging Face 01.AI (Yi)",
+      "newest_item_date": null,
+      "reason_code": "CURRENT_BOUNDED_SOURCE_OBSERVATION",
+      "reason_text": "Current collection returned 0 metadata observations; counts span the configured capture window and are not October 8-only publication counts. Historical/full-day completeness is unverified.",
+      "remediation_hint": null,
+      "source_id": "hf-01-ai",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": null,
+      "items_new": 1,
+      "items_updated": 0,
+      "last_fetch_status_code": 200,
+      "method": "hf_org",
+      "name": "Hugging Face DeepSeek AI",
+      "newest_item_date": "2026-10-01T05:56:24+00:00",
+      "reason_code": "CURRENT_BOUNDED_SOURCE_OBSERVATION",
+      "reason_text": "Current collection returned 1 metadata observations; counts span the configured capture window and are not October 8-only publication counts. Historical/full-day completeness is unverified.",
+      "remediation_hint": null,
+      "source_id": "hf-deepseek-ai",
+      "status": "HAS_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": null,
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": 200,
+      "method": "hf_org",
+      "name": "Hugging Face Cohere",
+      "newest_item_date": null,
+      "reason_code": "CURRENT_BOUNDED_SOURCE_OBSERVATION",
+      "reason_text": "Current collection returned 0 metadata observations; counts span the configured capture window and are not October 8-only publication counts. Historical/full-day completeness is unverified.",
+      "remediation_hint": null,
+      "source_id": "hf-cohere",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": null,
+      "items_new": 45,
+      "items_updated": 0,
+      "last_fetch_status_code": 200,
+      "method": "hf_daily_papers",
+      "name": "Hugging Face Daily Papers",
+      "newest_item_date": "2026-10-07T00:00:00+00:00",
+      "reason_code": "CURRENT_BOUNDED_SOURCE_OBSERVATION",
+      "reason_text": "Current collection returned 45 metadata observations; counts span the configured capture window and are not October 8-only publication counts. Historical/full-day completeness is unverified.",
+      "remediation_hint": null,
+      "source_id": "hf-daily-papers",
+      "status": "HAS_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": null,
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": 200,
+      "method": "rss_atom",
+      "name": "Preferred Networks Tech Blog (LLM)",
+      "newest_item_date": null,
+      "reason_code": "UNVERIFIED_NON_FEED_BODY",
+      "reason_text": "HTTP 200 body is not a verified RSS/Atom feed; native success/zero items is not trustworthy coverage. Non-feed HTML or unrecognized document",
+      "remediation_hint": null,
+      "source_id": "pfn-tech-blog-llm",
+      "status": "CANNOT_CONFIRM",
+      "tier": 0
+    },
+    {
+      "category": null,
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": 200,
+      "method": "rss_atom",
+      "name": "ELYZA Official Blog (note)",
+      "newest_item_date": "2026-04-10T01:00:52+00:00",
+      "reason_code": "CURRENT_BOUNDED_SOURCE_OBSERVATION",
+      "reason_text": "Current collection returned 0 metadata observations; counts span the configured capture window and are not October 8-only publication counts. Historical/full-day completeness is unverified.",
+      "remediation_hint": null,
+      "source_id": "elyza-official-blog",
+      "status": "NO_UPDATE",
+      "tier": 0
+    },
+    {
+      "category": null,
+      "items_new": 1,
+      "items_updated": 0,
+      "last_fetch_status_code": 200,
+      "method": "html_list",
+      "name": "Sakana AI Blog",
+      "newest_item_date": "2026-10-07T15:00:00+00:00",
+      "reason_code": "CURRENT_BOUNDED_SOURCE_OBSERVATION",
+      "reason_text": "Current collection returned 1 metadata observations; counts span the configured capture window and are not October 8-only publication counts. Historical/full-day completeness is unverified.",
+      "remediation_hint": null,
+      "source_id": "sakana-ai-blog",
+      "status": "HAS_UPDATE",
+      "tier": 0
+    },
+    {
+      "category": null,
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": 200,
+      "method": "rss_atom",
+      "name": "LLM-jp Blog",
+      "newest_item_date": "2026-09-28T07:25:44+00:00",
+      "reason_code": "CURRENT_BOUNDED_SOURCE_OBSERVATION",
+      "reason_text": "Current collection returned 0 metadata observations; counts span the configured capture window and are not October 8-only publication counts. Historical/full-day completeness is unverified.",
+      "remediation_hint": null,
+      "source_id": "llm-jp-blog",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": null,
+      "items_new": 4,
+      "items_updated": 0,
+      "last_fetch_status_code": 200,
+      "method": "rss_atom",
+      "name": "Awesome Japanese LLM (GitHub)",
+      "newest_item_date": "2026-10-03T05:16:32+00:00",
+      "reason_code": "CURRENT_BOUNDED_SOURCE_OBSERVATION",
+      "reason_text": "Current collection returned 4 metadata observations; counts span the configured capture window and are not October 8-only publication counts. Historical/full-day completeness is unverified.",
+      "remediation_hint": null,
+      "source_id": "awesome-japanese-llm",
+      "status": "HAS_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": null,
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": 200,
+      "method": "rss_atom",
+      "name": "ABEJA Tech Blog (LLM)",
+      "newest_item_date": "2026-09-30T04:45:49+00:00",
+      "reason_code": "CURRENT_BOUNDED_SOURCE_OBSERVATION",
+      "reason_text": "Current collection returned 0 metadata observations; counts span the configured capture window and are not October 8-only publication counts. Historical/full-day completeness is unverified.",
+      "remediation_hint": null,
+      "source_id": "abeja-tech-blog-llm",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": null,
+      "items_new": 3,
+      "items_updated": 0,
+      "last_fetch_status_code": 200,
+      "method": "rss_atom",
+      "name": "LayerX Engineering Blog",
+      "newest_item_date": "2026-10-05T14:55:15+00:00",
+      "reason_code": "CURRENT_BOUNDED_SOURCE_OBSERVATION",
+      "reason_text": "Current collection returned 3 metadata observations; counts span the configured capture window and are not October 8-only publication counts. Historical/full-day completeness is unverified.",
+      "remediation_hint": null,
+      "source_id": "layerx-eng-blog",
+      "status": "HAS_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": null,
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": 200,
+      "method": "rss_atom",
+      "name": "AI Shift Tech Blog (Zenn)",
+      "newest_item_date": "2026-09-30T00:42:38+00:00",
+      "reason_code": "CURRENT_BOUNDED_SOURCE_OBSERVATION",
+      "reason_text": "Current collection returned 0 metadata observations; counts span the configured capture window and are not October 8-only publication counts. Historical/full-day completeness is unverified.",
+      "remediation_hint": null,
+      "source_id": "aishift-tech-blog",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": null,
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": 200,
+      "method": "rss_atom",
+      "name": "IVRy AI Magazine (note)",
+      "newest_item_date": "2025-12-18T02:37:47+00:00",
+      "reason_code": "CURRENT_BOUNDED_SOURCE_OBSERVATION",
+      "reason_text": "Current collection returned 0 metadata observations; counts span the configured capture window and are not October 8-only publication counts. Historical/full-day completeness is unverified.",
+      "remediation_hint": null,
+      "source_id": "ivry-ai-magazine",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": null,
+      "items_new": 10,
+      "items_updated": 0,
+      "last_fetch_status_code": 200,
+      "method": "rss_atom",
+      "name": "AIDB - AI Research Database",
+      "newest_item_date": "2026-10-08T04:40:12+00:00",
+      "reason_code": "CURRENT_BOUNDED_SOURCE_OBSERVATION",
+      "reason_text": "10/8（截至 13:02 UTC）有 1 篇文章（131562）因付費牆暫緩全文評閱，仍待處理，尚未評閱，也未略過。 One October 8 article (131562) is held behind a paywall and remains unreviewed and queued; it has not been skipped. Current collection returned 10 metadata observations; counts span the configured capture window and are not October 8-only publication counts. Historical/full-day completeness is unverified.",
+      "remediation_hint": null,
+      "source_id": "aidb",
+      "status": "HAS_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": null,
+      "items_new": 14,
+      "items_updated": 0,
+      "last_fetch_status_code": 200,
+      "method": "rss_atom",
+      "name": "npaka (note) - Japanese LLM Curation",
+      "newest_item_date": "2026-10-07T09:41:43+00:00",
+      "reason_code": "CURRENT_BOUNDED_SOURCE_OBSERVATION",
+      "reason_text": "Current collection returned 14 metadata observations; counts span the configured capture window and are not October 8-only publication counts. Historical/full-day completeness is unverified.",
+      "remediation_hint": null,
+      "source_id": "npaka-note",
+      "status": "HAS_UPDATE",
+      "tier": 2
+    },
+    {
+      "category": null,
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": 200,
+      "method": "rss_atom",
+      "name": "kun432 (Zenn) - RAG/Local LLM",
+      "newest_item_date": "2023-09-28T11:24:49+00:00",
+      "reason_code": "CURRENT_BOUNDED_SOURCE_OBSERVATION",
+      "reason_text": "Current collection returned 0 metadata observations; counts span the configured capture window and are not October 8-only publication counts. Historical/full-day completeness is unverified.",
+      "remediation_hint": null,
+      "source_id": "kun432-zenn",
+      "status": "NO_UPDATE",
+      "tier": 2
+    },
+    {
+      "category": null,
+      "items_new": 4,
+      "items_updated": 0,
+      "last_fetch_status_code": 200,
+      "method": "rss_atom",
+      "name": "Qiita LLM Tag",
+      "newest_item_date": "2026-10-08T12:57:36+00:00",
+      "reason_code": "CURRENT_BOUNDED_SOURCE_OBSERVATION",
+      "reason_text": "Current collection returned 4 metadata observations; counts span the configured capture window and are not October 8-only publication counts. Historical/full-day completeness is unverified.",
+      "remediation_hint": null,
+      "source_id": "qiita-llm-tag",
+      "status": "HAS_UPDATE",
+      "tier": 2
+    },
+    {
+      "category": null,
+      "items_new": 4,
+      "items_updated": 0,
+      "last_fetch_status_code": 200,
+      "method": "rss_atom",
+      "name": "Qiita 生成AI Tag",
+      "newest_item_date": "2026-10-08T12:24:15+00:00",
+      "reason_code": "CURRENT_BOUNDED_SOURCE_OBSERVATION",
+      "reason_text": "Current collection returned 4 metadata observations; counts span the configured capture window and are not October 8-only publication counts. Historical/full-day completeness is unverified.",
+      "remediation_hint": null,
+      "source_id": "qiita-genai-tag",
+      "status": "HAS_UPDATE",
+      "tier": 2
+    },
+    {
+      "category": null,
+      "items_new": 20,
+      "items_updated": 0,
+      "last_fetch_status_code": 200,
+      "method": "rss_atom",
+      "name": "Zenn LLM Topic",
+      "newest_item_date": "2026-10-08T00:43:37+00:00",
+      "reason_code": "CURRENT_BOUNDED_SOURCE_OBSERVATION",
+      "reason_text": "Current collection returned 20 metadata observations; counts span the configured capture window and are not October 8-only publication counts. Historical/full-day completeness is unverified.",
+      "remediation_hint": null,
+      "source_id": "zenn-llm-topic",
+      "status": "HAS_UPDATE",
+      "tier": 2
+    },
+    {
+      "category": null,
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": 200,
+      "method": "rss_atom",
+      "name": "LLM Tech Blog RSS Feed (GitHub)",
+      "newest_item_date": "2023-09-11T15:18:40+00:00",
+      "reason_code": "CURRENT_BOUNDED_SOURCE_OBSERVATION",
+      "reason_text": "Current collection returned 0 metadata observations; counts span the configured capture window and are not October 8-only publication counts. Historical/full-day completeness is unverified.",
+      "remediation_hint": null,
+      "source_id": "llm-tech-blog-rss-feed",
+      "status": "NO_UPDATE",
+      "tier": 2
+    },
+    {
+      "category": null,
+      "items_new": 8,
+      "items_updated": 0,
+      "last_fetch_status_code": 200,
+      "method": "html_list",
+      "name": "TECH PLAY LLM Tag",
+      "newest_item_date": "2026-10-07T08:31:46+00:00",
+      "reason_code": "CURRENT_BOUNDED_SOURCE_OBSERVATION",
+      "reason_text": "Current collection returned 8 metadata observations; counts span the configured capture window and are not October 8-only publication counts. Historical/full-day completeness is unverified.",
+      "remediation_hint": null,
+      "source_id": "techplay-llm-tag",
+      "status": "HAS_UPDATE",
+      "tier": 2
+    }
+  ],
+  "top5": [
+    {
+      "arxiv_id": null,
+      "authors": [
+        "イサン"
+      ],
+      "categories": [],
+      "entities": [
+        "anthropic"
+      ],
+      "first_seen_at": "2026-10-08T13:36:33.489871+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "Claude Codeが「検証済み」と言ったアプリが、4分後にすぐバグった話",
+          "url": "https://zenn.dev/ihsan/articles/claude-code-4-10f00163d6d1"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.61,
+          "generalizability": 0.72,
+          "novelty": 0.52,
+          "preference_relevance": 0.95,
+          "reproducibility": 0.46,
+          "rigor": 0.66
+        },
+        "confidence": 0.92,
+        "evidence": [
+          "Section 「録画で確認しました」の 4 分後に落ちた (https://zenn.dev/ihsan/articles/claude-code-4-10f00163d6d1#%E3%80%8C%E9%8C%B2%E7%94%BB%E3%81%A7%E7%A2%BA%E8%AA%8D%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F%E3%80%8D%E3%81%AE-4-%E5%88%86%E5%BE%8C%E3%81%AB%E8%90%BD%E3%81%A1%E3%81%9F): The author reports a 1068 ms initial rendering delay, then five launch-flag transitions recorded at 50 fps with 61–234 ms draws. Commit time is 11:43 and two device crashes are logged at 11:47; these timings are author observations, not new reviewer measurements.",
+          "Section 「録画で確認しました」の 4 分後に落ちた (https://zenn.dev/ihsan/articles/claude-code-4-10f00163d6d1#%E3%80%8C%E9%8C%B2%E7%94%BB%E3%81%A7%E7%A2%BA%E8%AA%8D%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F%E3%80%8D%E3%81%AE-4-%E5%88%86%E5%BE%8C%E3%81%AB%E8%90%BD%E3%81%A1%E3%81%9F): Figure 2 visually reproduces masked excerpts of two commits, diagnosing WKWebView creation before UIApplicationMain. It reports failure during UIKit touch delivery and the 11:57 repair, fourteen minutes after the initial commit and ten after the first listed crash.",
+          "Section Before / After (https://zenn.dev/ihsan/articles/claude-code-4-10f00163d6d1#before-%2F-after): The Before GIF contains launch-flag measurements, a statement that the physical screen was not visible, the user crash report and two .ips filenames at 11:47. It is an edited session replay rather than an original live device recording.",
+          "Section Before / After (https://zenn.dev/ihsan/articles/claude-code-4-10f00163d6d1#before-%2F-after): The After GIF visibly contains the failing scrolling test and UIKit exception, a passing parent-commit control, three repaired simulator passes and one iPhone pass. This strengthens the local test-sensitivity claim but does not independently authenticate the underlying repository.",
+          "Section 同じ形の失敗が、あと 2 つあった (https://zenn.dev/ihsan/articles/claude-code-4-10f00163d6d1#%E5%90%8C%E3%81%98%E5%BD%A2%E3%81%AE%E5%A4%B1%E6%95%97%E3%81%8C%E3%80%81%E3%81%82%E3%81%A8-2-%E3%81%A4%E3%81%82%E3%81%A3%E3%81%9F): Figure 5 shows the deployment Makefile comment and a September 17 terminal snapshot: active service, PID 7959, app.py and process start dated September 14. The separate audit anecdote says new extraction code had no caller and three acceptance journeys were not exercised.",
+          "Section どう制御するか (https://zenn.dev/ihsan/articles/claude-code-4-10f00163d6d1#%E3%81%A9%E3%81%86%E5%88%B6%E5%BE%A1%E3%81%99%E3%82%8B%E3%81%8B): Three tables and the Mermaid flowchart map changed user paths to touch-driven tests, process/build checks and real entry-point journeys; commands/output and untested paths are required in the report.",
+          "Section 完了条件を「操作の列」で書き、実物で通す (https://zenn.dev/ihsan/articles/claude-code-4-10f00163d6d1#%E5%AE%8C%E4%BA%86%E6%9D%A1%E4%BB%B6%E3%82%92%E3%80%8C%E6%93%8D%E4%BD%9C%E3%81%AE%E5%88%97%E3%80%8D%E3%81%A7%E6%9B%B8%E3%81%8D%E3%80%81%E5%AE%9F%E7%89%A9%E3%81%A7%E9%80%9A%E3%81%99): The XCTest snippet opens a list item, swipes up five times/down twice, returns, opens another item and swipes again. The Makefile compares MainPID and prints local/remote source and served-response hashes; it does not itself assert equality of like-for-like build artifacts.",
+          "Section 報告に「通していない経路」を書かせ、Stop フックで終わり方に掛ける (https://zenn.dev/ihsan/articles/claude-code-4-10f00163d6d1#%E5%A0%B1%E5%91%8A%E3%81%AB%E3%80%8C%E9%80%9A%E3%81%97%E3%81%A6%E3%81%84%E3%81%AA%E3%81%84%E7%B5%8C%E8%B7%AF%E3%80%8D%E3%82%92%E6%9B%B8%E3%81%8B%E3%81%9B%E3%80%81stop-%E3%83%95%E3%83%83%E3%82%AF%E3%81%A7%E7%B5%82%E3%82%8F%E3%82%8A%E6%96%B9%E3%81%AB%E6%8E%9B%E3%81%91%E3%82%8B): A completion policy and a Stop-hook gate are described. The article explicitly acknowledges that the gate uses an LLM and can make mistakes; no quantitative gate evaluation is presented here.",
+          "Section 限界 (https://zenn.dev/ihsan/articles/claude-code-4-10f00163d6d1#%E9%99%90%E7%95%8C): The author reports resource exhaustion from duplicate test services, retains manual Mac checks, limits iPhone testing to one simulator followed by hardware, and admits that passing swipes do not cover pinch or rotation. Pure functions and documentation changes are stated exceptions.",
+          "Section 自分で見直しても抜けられない (https://zenn.dev/ihsan/articles/claude-code-4-10f00163d6d1#%E8%87%AA%E5%88%86%E3%81%A7%E8%A6%8B%E7%9B%B4%E3%81%97%E3%81%A6%E3%82%82%E6%8A%9C%E3%81%91%E3%82%89%E3%82%8C%E3%81%AA%E3%81%84): The reasoning self-correction paper is used as an analogy, and the author explicitly distinguishes its task domain from product verification. It does not directly demonstrate the claimed mechanism in this coding-agent workflow."
+        ],
+        "fulltext_sha256": "90536df28b8aec10200f4d5e57284eda4d62b46f58132eece44801f6c73e710f",
+        "fulltext_status": "partial",
+        "model": "assistant-native-review",
+        "producer": "assistant-native-review",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "A highly relevant Japanese practitioner case report on coding-agent verification, not a controlled research paper. The strongest evidence is an author-curated bad-commit/parent/fixed-commit comparison: a touch-driven UI test reportedly exposes the crash missed by launch-flag recordings, then passes after repair. Commit excerpts and animated session replays corroborate the narrative at the level of published artifacts, but the repository, original crash files and complete sessions are not available for independent replication. Deployment and audit anecdotes broaden the operational lesson without establishing population rates. The useful contribution is a concrete, falsifiable acceptance-path checklist; it does not prove universal failure of proxy checks or intrinsic self-review.",
+        "rationale_en": "A highly relevant Japanese practitioner case report on coding-agent verification, not a controlled research paper. The strongest evidence is an author-curated bad-commit/parent/fixed-commit comparison: a touch-driven UI test reportedly exposes the crash missed by launch-flag recordings, then passes after repair. Commit excerpts and animated session replays corroborate the narrative at the level of published artifacts, but the repository, original crash files and complete sessions are not available for independent replication. Deployment and audit anecdotes broaden the operational lesson without establishing population rates. The useful contribution is a concrete, falsifiable acceptance-path checklist; it does not prove universal failure of proxy checks or intrinsic self-review.",
+        "rationale_zh": "這是一篇與程式代理驗證高度相關的日文實務個案報告，並非受控研究論文。最強的證據是作者整理的故障提交、父提交與修復提交比較：觸控式 UI 測試據報抓到啟動旗標錄影漏掉的崩潰，修復後再通過。提交摘錄與動畫式工作階段重播在公開材料層次支持敘事，但沒有可獨立重現的儲存庫、原始崩潰檔與完整紀錄。部署及稽核案例擴大了實務啟示，不能建立普遍發生率。價值在於具體且可被反證的驗收路徑檢查表，而非證明所有代理檢查或自我審查都會失敗。",
+        "request_sha256": "8fed7772fe7f397629c6ffbdaa1e2f024e79d9165173613d0fe162c3a61e4b31",
+        "score": 0.6840200000000001,
+        "token_usage": {},
+        "topics": [
+          "Agents & Tool Use",
+          "Code & Programming",
+          "Red Teaming & Evaluation",
+          "AI Safety"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "Claude Codeが「検証済み」と言ったアプリが、4分後にすぐバグった話",
+        "url": "https://zenn.dev/ihsan/articles/claude-code-4-10f00163d6d1"
+      },
+      "published_at": "2026-10-08T00:04:07+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 2.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.6840200000000001,
+        "llm_relevance_score": 19.15256,
+        "recency_score": 0.943745443282266,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 4.0,
+        "total_score": 27.896305443282266
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:7961d818c65cc2cf",
+      "summary": "This Japanese practitioner report argues that a coding agent’s claim of completed verification should be examined in terms of the user path it actually exercised. The author’s iPhone app was committed after launch-flag transitions, recordings and performance checks, yet crashed on finger scrolling four minutes later. The reported cause was early WebView creation: the recording showed rendered pages without traversing the failing touch-handling path.\n\nThe stronger part is the subsequent countercheck. Published commit excerpts and animated session replays show a touch-driven UI test failing on the broken commit, passing on its parent, and passing after repair three times in the simulator and once on hardware. Separate deployment and audit cases illustrate that a running service need not contain the new build, and existing code need not be reachable from the application. The proposed acceptance criteria are sequences of operations, accompanied by output evidence and untested paths.\n\nThese are author-selected engineering cases, not a controlled study of agent reliability. The animations are edited replays, and the full repository and original crash records are unavailable for independent reproduction. A changed process ID also does not establish build identity; the actual artifact must be checked. The transferable lesson is to exercise affected paths while choosing checks proportionate to risk and cost. Passing a scrolling test does not establish safety for rotation, pinch or every device, and reasoning self-correction research is not direct causal evidence for this case.",
+      "summary_zh": "這篇日文實務紀錄指出，程式代理說「驗證完成」時，必須追問它走過的是哪一條使用路徑。作者的 iPhone 應用程式經啟動旗標切換畫面、錄影與效能檢查後提交，四分鐘後卻在手指捲動時崩潰。問題據報來自過早建立 WebView；錄影看到了已繪製頁面，沒有經過出錯的觸控處理。\n\n較有力的部分是後續反向檢查：作者展示的提交摘錄與工作階段動畫顯示，觸控式 UI 測試在故障提交失敗，在父提交通過，修復後又於模擬器通過三次、實機通過一次。另兩個部署與稽核案例提醒，服務仍在運行不代表新版本已載入，程式碼存在也不代表能從應用程式入口呼叫。文章因此把驗收條件寫成操作序列，要求附上輸出證據及尚未走過的路徑。\n\n這是作者挑選的工程案例，不是代理可靠性的受控研究。公開動畫是刪節重播，沒有完整儲存庫與原始崩潰紀錄可供獨立重現；程序識別碼改變也不足以證明版本正確，仍須核對實際產物。可採用的是讓測試真正經過受影響路徑的原則，同時依風險控制成本。通過捲動測試不代表旋轉、縮放或所有裝置都安全，也不能把推理自我修正的研究直接當成此案例的因果證據。",
+      "title": "An App Claude Code Called Verified Crashed Four Minutes Later",
+      "title_zh": "Claude Code 宣稱驗證完成的應用程式，四分鐘後就崩潰"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "Persimmoq AI"
+      ],
+      "categories": [],
+      "entities": [
+        "anthropic"
+      ],
+      "first_seen_at": "2026-10-08T13:36:33.489732+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "Claude のプロンプトキャッシュが効かない 6 つの原因と、usage で確かめる方法",
+          "url": "https://zenn.dev/persimmoq/articles/claude-prompt-cache-not-working"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.35,
+          "generalizability": 0.6,
+          "novelty": 0.25,
+          "preference_relevance": 0.85,
+          "reproducibility": 0.55,
+          "rigor": 0.38
+        },
+        "confidence": 0.92,
+        "evidence": [
+          "Section 手元で確認したこと (https://zenn.dev/persimmoq/articles/claude-prompt-cache-not-working#%E6%89%8B%E5%85%83%E3%81%A7%E7%A2%BA%E8%AA%8D%E3%81%97%E3%81%9F%E3%81%93%E3%81%A8): The author scans three projects: H14 yields zero detections and H17 flags two module-initialized constants, acknowledged false positives. The subtitle pipeline logs only its first chunk, so its zero read counter does not establish persistent cache failure.",
+          "Section 手元で確認したこと (https://zenn.dev/persimmoq/articles/claude-prompt-cache-not-working#%E6%89%8B%E5%85%83%E3%81%A7%E7%A2%BA%E8%AA%8D%E3%81%97%E3%81%9F%E3%81%93%E3%81%A8): The reported paired probe uses claude-sonnet-5-5 with low effort: input/write/read/output = 13/1123/0/64 followed by 13/0/1123/64. Both input totals are 1136; this is a single reported demonstration, not independently repeated here.",
+          "Section 大前提: プレフィックス一致 (https://zenn.dev/persimmoq/articles/claude-prompt-cache-not-working#%E5%A4%A7%E5%89%8D%E6%8F%90%3A-%E3%83%97%E3%83%AC%E3%83%95%E3%82%A3%E3%83%83%E3%82%AF%E3%82%B9%E4%B8%80%E8%87%B4): The article organizes caching around the tools → system → messages prefix and explains why variable system content or changing tool definitions invalidate downstream sharing.",
+          "Section 原因 3: プロンプトが短すぎる (https://zenn.dev/persimmoq/articles/claude-prompt-cache-not-working#%E5%8E%9F%E5%9B%A0-3%3A-%E3%83%97%E3%83%AD%E3%83%B3%E3%83%97%E3%83%88%E3%81%8C%E7%9F%AD%E3%81%99%E3%81%8E%E3%82%8B): Table 1 lists minimum lengths of 512, 1024, 2048 and 4096 tokens for specified model groups. These are thresholds, not measured performance results.",
+          "Section 原因 4: ブレークポイントの位置が悪い (https://zenn.dev/persimmoq/articles/claude-prompt-cache-not-working#%E5%8E%9F%E5%9B%A0-4%3A-%E3%83%96%E3%83%AC%E3%83%BC%E3%82%AF%E3%83%9D%E3%82%A4%E3%83%B3%E3%83%88%E3%81%AE%E4%BD%8D%E7%BD%AE%E3%81%8C%E6%82%AA%E3%81%84): The example places an explicit cache marker after shared context and before the varying question. This preserves the reusable prefix rather than assuming that an automatic marker on a varying suffix will create an earlier cache entry.",
+          "Section 原因 5: thinking や effort をリクエストごとに変えている (https://zenn.dev/persimmoq/articles/claude-prompt-cache-not-working#%E5%8E%9F%E5%9B%A0-5%3A-thinking-%E3%82%84-effort-%E3%82%92%E3%83%AA%E3%82%AF%E3%82%A8%E3%82%B9%E3%83%88%E3%81%94%E3%81%A8%E3%81%AB%E5%A4%89%E3%81%88%E3%81%A6%E3%81%84%E3%82%8B): The advice fixes thinking/effort by route. The article recognizes model-dependent invalidation scope, but its parenthetical default-high description should not replace checking the chosen model default.",
+          "Section 原因 6: TTL の窓を外している (https://zenn.dev/persimmoq/articles/claude-prompt-cache-not-working#%E5%8E%9F%E5%9B%A0-6%3A-ttl-%E3%81%AE%E7%AA%93%E3%82%92%E5%A4%96%E3%81%97%E3%81%A6%E3%81%84%E3%82%8B): The author discusses five-minute versus one-hour TTL and zero-output refresh calls. Refreshing the timer without an extra refresh surcharge does not make input/cache-read tokens free. Polling economics depend on cache size, suffix tokens, refresh count and feature compatibility.",
+          "Section 確かめ方 ― usage だけが真実 (https://zenn.dev/persimmoq/articles/claude-prompt-cache-not-working#%E7%A2%BA%E3%81%8B%E3%82%81%E6%96%B9-%E2%80%95-usage-%E3%81%A0%E3%81%91%E3%81%8C%E7%9C%9F%E5%AE%9F): Table 2 separates write, read and uncached tokens; adjacent-request diffs and cache diagnostics are recommended. A zero second-call read is not proof that these six causes exhaust all platform, timing and isolation possibilities.",
+          "Section CI に入れる (https://zenn.dev/persimmoq/articles/claude-prompt-cache-not-working#ci-%E3%81%AB%E5%85%A5%E3%82%8C%E3%82%8B): A cache-probe command and migration-kit repository are offered. All snippets were read as text; no API call, paid test or article code was run."
+        ],
+        "fulltext_sha256": "f0533a0ed2f42f3c570b32b58f57eacb58f2e7dd17e8f9aef0007f506a603699",
+        "fulltext_status": "partial",
+        "model": "assistant-native-review",
+        "producer": "assistant-native-review",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "A directly relevant Japanese engineering article about Claude prompt-cache diagnostics, not a research paper. Its strongest contribution is an actionable distinction between cache writes and reads and the discovery that first-chunk-only logging cannot test subsequent hits. The author reports one paired API probe and a scan of three personal projects, including two false positives, but no controlled workload benchmark or measured cost reduction. Official documentation corroborates the central cache mechanisms, while frequency ordering, universal tool-set advice and refresh economics remain insufficiently qualified. Useful operational guidance with limited novelty and empirical strength.",
+        "rationale_en": "A directly relevant Japanese engineering article about Claude prompt-cache diagnostics, not a research paper. Its strongest contribution is an actionable distinction between cache writes and reads and the discovery that first-chunk-only logging cannot test subsequent hits. The author reports one paired API probe and a scan of three personal projects, including two false positives, but no controlled workload benchmark or measured cost reduction. Official documentation corroborates the central cache mechanisms, while frequency ordering, universal tool-set advice and refresh economics remain insufficiently qualified. Useful operational guidance with limited novelty and empirical strength.",
+        "rationale_zh": "這是一篇直接切合 Claude 提示快取診斷的日文工程文章，並非研究論文。最有用的是區分快取寫入與讀取，以及指出只記錄首個區塊無法判斷後續命中。作者報告一次成對 API 探測與三個個人專案的掃描，包含兩個誤報，但沒有受控工作負載比較或實測費用降幅。官方文件支持核心快取機制；原因的頻率排序、所有使用者共用工具集合與定時刷新經濟性則缺乏足夠限定。具有實務價值，但新穎性與實證強度有限。",
+        "request_sha256": "5e2d5bbfa41e81cff4279b8b53c842399ad1ef7d2a2d780c71f460b36ea1de11",
+        "score": 0.52854,
+        "token_usage": {},
+        "topics": [
+          "Large Language Models",
+          "Prompting & In-Context Learning",
+          "Inference & Serving",
+          "Scaling & Efficiency"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "Claude のプロンプトキャッシュが効かない 6 つの原因と、usage で確かめる方法",
+        "url": "https://zenn.dev/persimmoq/articles/claude-prompt-cache-not-working"
+      },
+      "published_at": "2026-10-08T00:35:48+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 2.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.52854,
+        "llm_relevance_score": 14.79912,
+        "recency_score": 0.9458241877379736,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 4.0,
+        "total_score": 23.544944187737975
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:47298aa571e6f17a",
+      "summary": "This Japanese technical article organizes common causes of Claude prompt-cache misses. Its central lesson is to inspect writes, reads and uncached input separately rather than assuming that cache_control guarantees savings. After examining three personal projects, the author found that a subtitle pipeline logged only its first chunk; its consistently zero read counter therefore could not establish whether later requests hit the cache. A separate paired probe reports cache write/read counts changing from 1123/0 to 0/1123 while uncached input remaining 13.\n\nThe article covers variable system prompts, changing tool definitions, length thresholds, breakpoint placement, thinking and effort settings, and expiration. It recommends comparing adjacent requests, inspecting diagnostic fields, and testing whether an identical second request hits the cache. These are primarily explanations of existing mechanisms, not a new caching algorithm.\n\nThe evidence is a small set of author observations, without systematic comparisons of cost, latency or hit rate, or data supporting the frequency ordering. Model thresholds and pricing must be checked for the deployed version. Periodic refresh still incurs cache-read and uncached-input charges, and zero-output requests have compatibility limits. Stable tool definitions cannot replace authorization, and request logging requires attention to privacy.",
+      "summary_zh": "這篇日文技術文章整理 Claude 提示快取常見的失效來源，重點不是看到 cache_control 就相信已省錢，而是把寫入、讀取與未快取輸入分開觀察。作者檢查三個自用專案，發現一條字幕處理流程只記錄第一個區塊，因此日誌中的讀取量一直為零，不能回答後續請求是否命中。另一次成對探測報告，快取寫入與讀取分別由 1123／0 變成 0／1123，未快取輸入均為 13。\n\n文章依序討論動態系統提示、工具定義變動、長度門檻、斷點位置、思考與努力設定，以及存活時間，並建議比較相鄰請求、查看診斷欄位，將第二次相同請求的命中檢查放入整合測試。這些操作概念主要是既有機制的整理，不是新的快取演算法。\n\n閱讀時要保留界線：這是作者的少量實作觀察，沒有成本、延遲或命中率的系統比較，也沒有資料支持原因的頻率排序。模型門檻與價格須按實際版本核對；定時刷新仍會產生讀取及未快取輸入費用，且零輸出請求有相容性限制。工具集合的穩定性不能取代權限控制，記錄請求內容也應先處理隱私風險。",
+      "title": "Six Reasons Claude Prompt Caching Misses and How to Check Usage",
+      "title_zh": "Claude 提示快取失效的六個原因與 usage 檢查方法"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "AI Memory Lab"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-10-08T13:36:33.489626+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "ChatGPTの長期運用で、記憶を増やす前に「保存・取得・採用」を分けてみた",
+          "url": "https://zenn.dev/yutayuki/articles/c65eaaaa0fc427"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.34,
+          "generalizability": 0.6,
+          "novelty": 0.38,
+          "preference_relevance": 0.92,
+          "reproducibility": 0.64,
+          "rigor": 0.42
+        },
+        "confidence": 0.92,
+        "evidence": [
+          "Article section 何を解決したかったのか (https://zenn.dev/yutayuki/articles/c65eaaaa0fc427#%E4%BD%95%E3%82%92%E8%A7%A3%E6%B1%BA%E3%81%97%E3%81%9F%E3%81%8B%E3%81%A3%E3%81%9F%E3%81%AE%E3%81%8B): Four concerns are scope, freshness, evidence and operations. The article asks which memory should be followed, when and with what authority, rather than claiming storage volume alone improves answers.",
+          "Article section 設計の基本形 (https://zenn.dev/yutayuki/articles/c65eaaaa0fc427#%E8%A8%AD%E8%A8%88%E3%81%AE%E5%9F%BA%E6%9C%AC%E5%BD%A2): The text flow resolves a project, retrieves operational rules separately, retrieves active project memory, then records reusable experiences as UNREVIEWED before a separate review/adoption process.",
+          "Article section Pythonで試せる最小サンプル (https://zenn.dev/yutayuki/articles/c65eaaaa0fc427#python%E3%81%A7%E8%A9%A6%E3%81%9B%E3%82%8B%E6%9C%80%E5%B0%8F%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB): Commands and JSON output are supplied as text. The output is explicitly an excerpt; the article reports nine automatic tests for isolation, retired records, deduplication, evidence presence, unique gates and no automatic promotion.",
+          "Article section あえて実装していないこと (https://zenn.dev/yutayuki/articles/c65eaaaa0fc427#%E3%81%82%E3%81%88%E3%81%A6%E5%AE%9F%E8%A3%85%E3%81%97%E3%81%A6%E3%81%84%E3%81%AA%E3%81%84%E3%81%93%E3%81%A8): The sample is synthetic, uses only in-memory storage, does not connect automatically to ChatGPT or Google Sheets, does not verify evidence truth and cannot detect semantic duplicates. The article expressly says sample test success does not prove long-term answer-quality improvement.",
+          "Article section 今後の改善予定 (https://zenn.dev/yutayuki/articles/c65eaaaa0fc427#%E4%BB%8A%E5%BE%8C%E3%81%AE%E6%94%B9%E5%96%84%E4%BA%88%E5%AE%9A): Runtime-state separation, anonymized case studies, more regression failures and quality/time/operational-cost comparisons are future work, not completed results.",
+          "Article section GitHub Repository (https://zenn.dev/yutayuki/articles/c65eaaaa0fc427#github-repository): The article identifies an independent experimental project. Both embedded link cards target the same author repository; neither is hidden visual evidence or an OpenAI endorsement."
+        ],
+        "fulltext_sha256": "06ee8799b50afc8aa9c5cd70b338a9de359409f143265cc4a01d9e94c75676fe",
+        "fulltext_status": "partial",
+        "model": "assistant-native-review",
+        "producer": "assistant-native-review",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "A directly relevant Japanese design blog on external memory for long-running ChatGPT workflows. Its useful contribution is to separate project-scoped active retrieval, operational gates and unreviewed experience from later adoption into durable memory. The supplied flow and excerpt, plus independently read repository files, support the limited claim that a small synthetic implementation expresses these boundaries. Static inspection confirms nine test definitions for selected conformance cases; no author code or tests were executed, and their presence is not evidence of measured long-term answer quality. The author explicitly discloses in-memory storage, string-presence rather than truth checking, exact-text rather than semantic deduplication and the absence of an automatic ChatGPT integration. Novelty is chiefly an intelligible engineering arrangement of known lifecycle and provenance principles. The repository describes a private pilot, but auditable task data, controlled outcome comparisons, latency/cost measurements and adversarial robustness are not supplied here. This is an experimental reference architecture, not a validated memory product or a statement about OpenAI’s internal memory implementation. The complete supplied blog and static linked implementation support a bounded review without a material source hold.",
+        "rationale_en": "A directly relevant Japanese design blog on external memory for long-running ChatGPT workflows. Its useful contribution is to separate project-scoped active retrieval, operational gates and unreviewed experience from later adoption into durable memory. The supplied flow and excerpt, plus independently read repository files, support the limited claim that a small synthetic implementation expresses these boundaries. Static inspection confirms nine test definitions for selected conformance cases; no author code or tests were executed, and their presence is not evidence of measured long-term answer quality. The author explicitly discloses in-memory storage, string-presence rather than truth checking, exact-text rather than semantic deduplication and the absence of an automatic ChatGPT integration. Novelty is chiefly an intelligible engineering arrangement of known lifecycle and provenance principles. The repository describes a private pilot, but auditable task data, controlled outcome comparisons, latency/cost measurements and adversarial robustness are not supplied here. This is an experimental reference architecture, not a validated memory product or a statement about OpenAI’s internal memory implementation. The complete supplied blog and static linked implementation support a bounded review without a material source hold.",
+        "rationale_zh": "這篇日本設計部落格直接對應 ChatGPT 長期工作流程的外部記憶問題。其實用貢獻，是把專案限定的有效記憶取得、必要作業關卡與未審核經驗，和日後正式採用的持久記憶分開。文章流程、輸出節錄及獨立閱讀的儲存庫檔案，支持小型合成實作能表達這些邊界的有限主張。靜態檢查確認九個測試定義涵蓋部分符合性案例；本次未執行作者程式或測試，測試存在也不代表長期回答品質已獲實證。作者明示僅使用記憶體儲存、只檢查根據字串是否存在而非真實性、只能比對正規化相同文字而非語意重複，且沒有自動串接 ChatGPT。新穎性主要在清楚組織既有生命週期與來源追溯原則。儲存庫提到私人試行，但此處未提供可稽核任務資料、受控品質比較、延遲與成本測量或對抗穩健性結果。它是實驗性參考架構，不是已驗證的記憶產品，也不是 OpenAI 內部記憶機制的說明。完整文章和靜態連結實作足以支持有界評估，無實質來源缺件。",
+        "request_sha256": "5f12b7b15b06c32efa3b62927c382bca19b3514271061d3d6fde82fc6744316b",
+        "score": 0.58052,
+        "token_usage": {},
+        "topics": [
+          "Large Language Models",
+          "Long Context & Memory",
+          "Agents & Tool Use",
+          "RAG & Knowledge",
+          "AI Safety"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "ChatGPTの長期運用で、記憶を増やす前に「保存・取得・採用」を分けてみた",
+        "url": "https://zenn.dev/yutayuki/articles/c65eaaaa0fc427"
+      },
+      "published_at": "2026-10-08T00:39:02+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.58052,
+        "llm_relevance_score": 16.25456,
+        "recency_score": 0.9460365841431837,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 4.0,
+        "total_score": 23.000596584143185
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:f50afcd619d17203",
+      "summary": "This Japanese design blog separates external memory for long-term ChatGPT use into storage, retrieval and formal adoption. The central idea is not to save more conversation. It is to resolve the project, retrieve required operational rules separately, and then read currently active, relevant memory. New experiences are marked unreviewed and can become formal rules only after a separate evaluation. Start with the flow diagram, then read the minimal Python example and the section on deliberate omissions to distinguish design intent from implemented capability. The public example uses synthetic data and includes nine conformance tests covering project filtering, exclusion of retired records, duplicate writeback and missing gates, among other cases. Static code inspection confirms that these test definitions exist, but no tests were executed in this review, and their existence does not demonstrate improved long-term answer quality. The sample stores data only in memory, checks whether an evidence string is present rather than whether it is true, and cannot recognize semantic duplicates. Project filtering likewise cannot replace authentication and access control. A production system still needs persistence, permissions, auditing, independent verification and failure recovery. The article offers a discussable lifecycle and trust-boundary design; quality, latency, cost and maintenance burden still need controlled comparisons. This is an independent experimental architecture, not an official OpenAI feature or a ready-to-deploy memory product.",
+      "summary_zh": "這篇日本設計部落格把長期使用 ChatGPT 的外部記憶問題，拆成保存、取得與正式採用三個環節。核心不是存下更多對話，而是先確定專案、獨立取得必要作業規則，再讀取目前有效且相關的記憶；新經驗先標為未審核，經另外評估後才可能成為正式規則。建議先看流程圖，再讀最小 Python 範例與「刻意未實作」段落，理解設計意圖和實際能力的邊界。公開範例使用合成資料，附九項符合性測試，涵蓋專案篩選、退役紀錄排除、重複寫入與關卡缺漏等情況；靜態程式檢閱可確認這些測試定義存在，但本次沒有執行測試，也不能據此宣稱長期回答品質提升。樣本僅在記憶體中保存資料，只檢查根據字串是否存在，無法判斷真偽，也不能辨識語意重複。專案篩選同樣不能取代身分驗證與存取控制。正式運作的系統仍需持久化、權限、稽核、獨立查證與失敗復原。本文的價值是提供可討論的生命週期與信任邊界；品質、延遲、成本及維護負擔仍待受控比較。這是獨立實驗性架構，並非 OpenAI 官方功能或可直接部署的記憶產品。",
+      "title": "Before adding more memory for long-term ChatGPT use: separating storage, retrieval and adoption",
+      "title_zh": "長期使用 ChatGPT：增加記憶之前，先區分保存、取得與採用"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "TechStudioLab"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-10-08T13:15:24.325435+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "qiita-llm-tag",
+          "tier": 2,
+          "title": "LLMのRAGでtop-kを増やすと回答が悪化する理由",
+          "url": "https://qiita.com/TechStudioLab/items/8b8bdf9bbfc3130fbc53"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.2,
+          "generalizability": 0.65,
+          "novelty": 0.08,
+          "preference_relevance": 0.9,
+          "reproducibility": 0.75,
+          "rigor": 0.24
+        },
+        "confidence": 0.92,
+        "evidence": [
+          "https://qiita.com/TechStudioLab/items/8b8bdf9bbfc3130fbc53 | section top-k=10なら安全、ではない, source characters [303,1050): motivates distinguishing retrieval misses from generation failures with a hypothetical ranked FAQ example; no generated answers are measured.",
+          "https://qiita.com/TechStudioLab/items/8b8bdf9bbfc3130fbc53 | section top-kを増やすとrecallとprecisionが逆方向へ動く, [1050,3129): two fixed rankings produce (recall, precision) 0.50/0.50 at k=1, 1.00/0.33 at k=3, and 1.00/0.10 at k=10; independently recomputed offline. These are constructed document-ID metrics, not benchmark outcomes.",
+          "https://qiita.com/TechStudioLab/items/8b8bdf9bbfc3130fbc53 | section 固定top-kからscore thresholdへ変える, [3129,4933): thresholds 0.0, 0.5, and 0.8 retain five, three, and one fixed hits; the article explicitly rejects a universally correct threshold.",
+          "https://qiita.com/TechStudioLab/items/8b8bdf9bbfc3130fbc53 | section thresholdにも正解はない, [4933,6002): discusses multi-document coverage, score distribution changes, and independent retrieval/answer evaluation; no deployed-system evaluation or uncertainty interval is supplied.",
+          "https://qiita.com/TechStudioLab/items/8b8bdf9bbfc3130fbc53 | two directly inspected inline images: conceptual library/document-selection illustrations with no plotted measurements, numerical tables, or experimental results.",
+          "OpenAI primary documentation checked on 2026-10-08: Retrieval, Ranking and search-count sections support score_threshold in [0,1], the risk of excluding useful chunks, and max_num_results up to 50; the CLI search reference confirms [1,50]. Evaluation best practices, Q&A over docs, separates context recall/precision and answer quality. This corroborates API features and evaluation framing, not the blog's causal headline. Sources: https://developers.openai.com/api/docs/guides/retrieval ; https://developers.openai.com/api/reference/cli/resources/vector_stores/methods/search ; https://developers.openai.com/api/docs/guides/evaluation-best-practices ."
+        ],
+        "fulltext_sha256": "3c854d6f09f45a3601ffbe73ba923f89ed9b9a5378fe7f8f1ec08db0eb8851c5",
+        "fulltext_status": "partial",
+        "model": "assistant-native-review",
+        "producer": "assistant-native-review",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Highly relevant to RAG evaluation and practical LLM engineering, but this is a technical blog explainer, not a peer-reviewed research paper or a new retrieval method. Two hand-constructed FAQ rankings reproduce the stated recall/precision arithmetic, and the threshold example is transparent; both article images are conceptual illustrations. There is no real retriever, generated-answer experiment, baseline study, ablation, uncertainty estimate, or released benchmark demonstrating that increasing top-k worsens answer accuracy. Recall cannot decrease for nested result sets, whereas precision can rise or fall; the illustrated decrease is not a universal law, and thresholding does not guarantee higher relevance. The useful contribution is an accessible separation of retrieval and generation evaluation, with chunk/file labeling and distribution-shift caveats. Novelty, rigor, and evidence are therefore low despite practical relevance and reproducible toy calculations.",
+        "rationale_en": "Highly relevant to RAG evaluation and practical LLM engineering, but this is a technical blog explainer, not a peer-reviewed research paper or a new retrieval method. Two hand-constructed FAQ rankings reproduce the stated recall/precision arithmetic, and the threshold example is transparent; both article images are conceptual illustrations. There is no real retriever, generated-answer experiment, baseline study, ablation, uncertainty estimate, or released benchmark demonstrating that increasing top-k worsens answer accuracy. Recall cannot decrease for nested result sets, whereas precision can rise or fall; the illustrated decrease is not a universal law, and thresholding does not guarantee higher relevance. The useful contribution is an accessible separation of retrieval and generation evaluation, with chunk/file labeling and distribution-shift caveats. Novelty, rigor, and evidence are therefore low despite practical relevance and reproducible toy calculations.",
+        "rationale_zh": "本文與 RAG 評估及大型語言模型工程高度相關，但屬技術部落格解說，並非同儕審查研究，也未提出新檢索方法。兩組人工設計的常見問題排序可重現文中的召回率與精確率運算，門檻範例亦清楚；兩張圖片皆為概念插圖。文中沒有真實檢索器、生成答案實驗、基準比較、消融、誤差估計或公開評測集，無法實證增加 top-k 會降低答案正確率。對巢狀結果集合，召回率不會下降，但精確率可能升降；範例中的下降並非普遍定律，分數門檻亦不保證相關性提升。其價值在於易懂地區分檢索與生成評估，並提醒文件與區塊標記及分布改變的限制。因此，雖然實務相關性及玩具運算可重現性不錯，新穎性、嚴謹性與證據強度仍低。",
+        "request_sha256": "febc07c6792ad3c9fed39f48badb0738feb33287f19e071964188fada7612ed4",
+        "score": 0.4972600000000001,
+        "token_usage": {},
+        "topics": [
+          "RAG & Knowledge",
+          "Large Language Models",
+          "Red Teaming & Evaluation",
+          "Code & Programming"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "qiita-llm-tag",
+        "tier": 2,
+        "title": "LLMのRAGでtop-kを増やすと回答が悪化する理由",
+        "url": "https://qiita.com/TechStudioLab/items/8b8bdf9bbfc3130fbc53"
+      },
+      "published_at": "2026-10-08T12:07:35+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.4972600000000001,
+        "llm_relevance_score": 13.923280000000002,
+        "recency_score": 0.9923711822780595,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 2.7,
+        "total_score": 19.41565118227806
+      },
+      "section": null,
+      "source_name": "Qiita LLM Tag",
+      "story_id": "fallback:0ddbb9e0f2c52ee9",
+      "summary": "This technical explainer discusses a common RAG tuning pitfall: retrieving more items may recover necessary documents while also passing irrelevant material to the language model. The author computes document-level recall and precision for two manually specified FAQ rankings; the example first recovers a missed answer document and then adds only noise. Another code example combines a result-count limit with a score threshold, noting that a high threshold may remove necessary evidence. In practice, hold chunking and ranking settings fixed and use the same labeled questions to track retrieved documents, retrieval metrics, and final answer quality separately. For questions requiring multiple documents, label the complete evidence set and keep adding cases representative of real traffic. Crucially, the article runs neither a real retrieval model nor answer generation, and provides no experiments comparing models, corpora, or thresholds; its two images are conceptual illustrations. It therefore offers reproducible teaching calculations, not proof that increasing result count necessarily reduces answer accuracy. Precision can rise or fall with the relevance of added documents, and scores do not guarantee correctness. Use it to establish diagnostics and small tests, not as a new research result or universal parameter prescription.",
+      "summary_zh": "這篇技術解說討論 RAG 常見的調整陷阱：增加檢索件數雖可能補回必要文件，也可能把更多無關內容交給語言模型。作者以兩組手工設定的常見問題排序，分別計算文件層級召回率與精確率；增加件數後，範例先找回漏掉的答案文件，之後只增加雜訊。另一段程式示範結合件數上限與分數門檻，並提醒高門檻也可能排除必要證據。實作上，應固定切塊與排序設定，使用同一組有標記的問題，分別追蹤取得文件、檢索指標與最終答案品質；多文件問題則需標出完整證據集合，並持續加入接近真實流量的案例。重要限制是：本文沒有真正執行檢索模型或生成答案，也沒有比較不同模型、語料或門檻的實驗，兩張圖只是概念插畫。因此，它展示的是可重現的教學運算，不能證明增加件數必然降低答案正確率。精確率可能隨新增文件的相關性而上升或下降，分數也不是正確性的保證。適合拿來建立診斷流程與小型測試，不宜當作新研究成果或通用參數設定。",
+      "title": "Why Increasing top-k Can Worsen Answers in LLM RAG",
+      "title_zh": "為何增加 LLM RAG 的 top-k 可能使回答變差"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "tessei"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-10-08T13:36:33.489686+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "なぜAIは「もっともらしい嘘」をつくのか？ ハルシネーションを理解する",
+          "url": "https://zenn.dev/tessei/articles/ebd3a5cde92b6b"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.12,
+          "generalizability": 0.56,
+          "novelty": 0.08,
+          "preference_relevance": 0.84,
+          "reproducibility": 0.18,
+          "rigor": 0.26
+        },
+        "confidence": 0.92,
+        "evidence": [
+          "Article section まず結論：ハルシネーションとは何なのか？ (https://zenn.dev/tessei/articles/ebd3a5cde92b6b#%E3%81%BE%E3%81%9A%E7%B5%90%E8%AB%96%EF%BC%9A%E3%83%8F%E3%83%AB%E3%82%B7%E3%83%8D%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%A8%E3%81%AF%E4%BD%95%E3%81%AA%E3%81%AE%E3%81%8B%EF%BC%9F): The nonexistent exampleMethod example is explicitly hypothetical and illustrates plausible unsupported content; it is not a recorded model test.",
+          "Article section なぜAIは間違った回答をするのか？ (https://zenn.dev/tessei/articles/ebd3a5cde92b6b#%E3%81%AA%E3%81%9Cai%E3%81%AF%E9%96%93%E9%81%95%E3%81%A3%E3%81%9F%E5%9B%9E%E7%AD%94%E3%82%92%E3%81%99%E3%82%8B%E3%81%AE%E3%81%8B%EF%BC%9F): The article explains generation through next-token prediction and contrasts fluent continuation with factual checking; no model mechanism experiment supports a complete causal account.",
+          "Article section プロンプトでハルシネーションは防げるのか？ (https://zenn.dev/tessei/articles/ebd3a5cde92b6b#%E3%83%97%E3%83%AD%E3%83%B3%E3%83%97%E3%83%88%E3%81%A7%E3%83%8F%E3%83%AB%E3%82%B7%E3%83%8D%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%AF%E9%98%B2%E3%81%92%E3%82%8B%E3%81%AE%E3%81%8B%EF%BC%9F): It states that instructions to avoid errors or admit uncertainty cannot completely prevent hallucinations and recommends supplying evidence and checking outputs.",
+          "Article section RAGはハルシネーション対策の代表例 (https://zenn.dev/tessei/articles/ebd3a5cde92b6b#rag%E3%81%AF%E3%83%8F%E3%83%AB%E3%82%B7%E3%83%8D%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E5%AF%BE%E7%AD%96%E3%81%AE%E4%BB%A3%E8%A1%A8%E4%BE%8B): The leave-policy example is illustrative. The text explicitly acknowledges incorrect or missed retrieval and context misinterpretation, and does not claim RAG is a guarantee.",
+          "Article section エンジニアがやってはいけないこと (https://zenn.dev/tessei/articles/ebd3a5cde92b6b#%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%81%8C%E3%82%84%E3%81%A3%E3%81%A6%E3%81%AF%E3%81%84%E3%81%91%E3%81%AA%E3%81%84%E3%81%93%E3%81%A8): Generated SQL and automatic payment flows are warnings against unchecked downstream execution, not implemented experiments or authorizations to execute.",
+          "Article section ハルシネーション対策は「1つの方法」ではない (https://zenn.dev/tessei/articles/ebd3a5cde92b6b#%E3%83%8F%E3%83%AB%E3%82%B7%E3%83%8D%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E5%AF%BE%E7%AD%96%E3%81%AF%E3%80%8C1%E3%81%A4%E3%81%AE%E6%96%B9%E6%B3%95%E3%80%8D%E3%81%A7%E3%81%AF%E3%81%AA%E3%81%84): Six measures include prompting, context, sources, structured output, system checks and evaluation; no ablation or error-reduction measurement is provided.",
+          "Article section エンジニアとして覚えておきたい7つのこと (https://zenn.dev/tessei/articles/ebd3a5cde92b6b#%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%81%A8%E3%81%97%E3%81%A6%E8%A6%9A%E3%81%88%E3%81%A6%E3%81%8A%E3%81%8D%E3%81%9F%E3%81%847%E3%81%A4%E3%81%AE%E3%81%93%E3%81%A8): Seven recap points reiterate generation versus verification. The following company profile and embedded card add no research evidence."
+        ],
+        "fulltext_sha256": "5763b2d7192d8d874daf4a5cfd1fde3a178adeb48732411770883d2abeca39df",
+        "fulltext_status": "partial",
+        "model": "assistant-native-review",
+        "producer": "assistant-native-review",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "An in-scope Japanese introductory explainer about LLM hallucinations and safer application design. It clearly distinguishes generation from external retrieval, warns that prompting and RAG do not eliminate errors, and recommends citations, output validation and evaluation before consequential use. These are useful educational messages, not a new method or an empirical result. All fourteen text examples and flows are illustrative; there are no measured models, datasets, baselines, error rates or mitigation comparisons. The next-token account is a simplified explanation, not a complete causal theory of hallucination or proof about model knowledge and intent. Output-shape constraints should not be read as factual verification, and the article does not evaluate citation correctness, retrieval recall or validator failure. An external primary-source cross-check supports the broader role of training/evaluation incentives and uncertainty beyond the article’s brief account, but that additional evidence is not credited as the blog’s own research. Its single embedded card is a company homepage, not a technical reference. The supplied article is complete enough to review; lack of research evidence is not a missing-source hold.",
+        "rationale_en": "An in-scope Japanese introductory explainer about LLM hallucinations and safer application design. It clearly distinguishes generation from external retrieval, warns that prompting and RAG do not eliminate errors, and recommends citations, output validation and evaluation before consequential use. These are useful educational messages, not a new method or an empirical result. All fourteen text examples and flows are illustrative; there are no measured models, datasets, baselines, error rates or mitigation comparisons. The next-token account is a simplified explanation, not a complete causal theory of hallucination or proof about model knowledge and intent. Output-shape constraints should not be read as factual verification, and the article does not evaluate citation correctness, retrieval recall or validator failure. An external primary-source cross-check supports the broader role of training/evaluation incentives and uncertainty beyond the article’s brief account, but that additional evidence is not credited as the blog’s own research. Its single embedded card is a company homepage, not a technical reference. The supplied article is complete enough to review; lack of research evidence is not a missing-source hold.",
+        "rationale_zh": "這是一篇範圍內的日本入門文章，介紹語言模型幻覺與較安全的應用設計。它清楚區分生成與外部檢索，提醒提示及 RAG 無法消除全部錯誤，並建議在具後果的使用之前加入引用、輸出驗證與評估。這些教育訊息實用，但不是新方法或實驗成果。十四個文字例子及流程全屬示意，沒有測量模型、資料集、基準、錯誤率或緩解方法比較。下一個詞元預測的說法是簡化說明，並非完整幻覺因果理論，也不能證明模型的知識或意圖。輸出格式限制不應被理解為事實查核，文中也沒有評估引用正確性、檢索召回率或驗證器失敗。外部主要來源交叉核對支持訓練與評估誘因及不確定性也具有作用，但這些補充證據不算本文自己的研究。唯一內嵌卡片是公司首頁，並非技術文獻。現有文章足以完成評估；缺少研究證據不等於來源缺件。",
+        "request_sha256": "dc37933c8a7f9ac9f0d13b58883aed6b5e1c37d6b6e2815f6f1995c6addb5d3d",
+        "score": 0.43240000000000006,
+        "token_usage": {},
+        "topics": [
+          "Large Language Models",
+          "RAG & Knowledge",
+          "Prompting & In-Context Learning",
+          "Red Teaming & Evaluation",
+          "AI Safety"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "なぜAIは「もっともらしい嘘」をつくのか？ ハルシネーションを理解する",
+        "url": "https://zenn.dev/tessei/articles/ebd3a5cde92b6b"
+      },
+      "published_at": "2026-10-08T00:38:48+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.43240000000000006,
+        "llm_relevance_score": 12.107200000000002,
+        "recency_score": 0.9460212549708764,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 4.0,
+        "total_score": 18.85322125497088
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:d680ce9df7a05ee0",
+      "summary": "This Japanese introduction uses hypothetical examples involving a nonexistent JavaScript method, features attributed to a future year and company policies to explain how language models can produce fluent but false answers. Its key distinction is between generation, obtaining supporting information and verification. Asking a model not to guess is only one step; applications also need appropriate context, checkable sources and output validation. The article illustrates RAG as retrieving relevant documents before providing their contents to the model, while warning that retrieval may miss information, return incorrect sources or be misinterpreted. RAG therefore cannot guarantee the elimination of hallucinations. Flows that execute generated SQL directly or make payments immediately after a model determines an amount illustrate the danger of acting without verification. Read these examples before the six countermeasures and seven-point recap, and relate the principles to failure cases in your own application. All fourteen text examples are illustrative rather than experimental records. The article provides no model comparisons, dataset, error rates or effectiveness evaluation. Next-token prediction is only a simplified mechanism explanation: training and evaluation incentives, uncertainty and abstention also affect errors. Constraining output format is likewise not factual verification. The article is useful for understanding layered validation, but deployment still requires separate evaluation of whether citations support answers, whether retrieval is complete and when validators themselves fail.",
+      "summary_zh": "這篇日本入門文章以不存在的 JavaScript 方法、未來年份功能及公司規章等假想例子，說明語言模型為何可能產生流暢卻不符合事實的回答。閱讀重點是把生成、取得根據與驗證分開：提示模型不要猜測只是其中一步，還要提供合適的背景資料、讓使用者能核對出處，並在應用程式端檢查輸出。文章以 RAG 展示先搜尋相關文件、再把內容交給模型回答的流程，同時提醒搜尋可能漏掉資料、找到錯誤來源，或被模型誤解，因此不能保證消除幻覺。生成 SQL 後直接執行、讓模型判定金額後直接付款，則是文中用來警示未經驗證就採取行動的流程。建議先讀這些例子，再看六項對策與七點摘要，將原則對應到自己的失敗案例。需要注意，十四個文字例子都不是實驗紀錄，本文沒有模型比較、資料集、錯誤率或措施效果評估。下一個詞元預測只是簡化機制說明，訓練與評估誘因、不確定性及選擇不作答也影響錯誤；限制輸出格式亦不等於查證事實。本文適合建立分層驗證的基本觀念，但實際部署仍須另外評估引用是否支持回答、檢索是否完整，以及驗證器本身何時失效。",
+      "title": "Why AI produces plausible falsehoods: understanding hallucinations",
+      "title_zh": "人工智慧為何產生貌似可信的錯誤：理解幻覺"
+    }
+  ]
+}

@@ -3,9 +3,9 @@
 This module provides a collector for arXiv RSS/Atom feeds for category subscriptions.
 """
 
+from calendar import timegm
 from datetime import UTC, datetime
 from email.utils import parsedate_to_datetime
-from time import mktime
 from typing import Any
 
 import feedparser  # type: ignore[import-untyped]
@@ -334,7 +334,8 @@ class ArxivRssCollector(BaseCollector):
         # Try published_parsed first
         if entry.get("published_parsed"):
             try:
-                timestamp = mktime(entry.published_parsed)
+                # Feedparser date tuples are already normalized to UTC.
+                timestamp = timegm(entry.published_parsed)
                 dt = datetime.fromtimestamp(timestamp, tz=UTC)
                 return dt, DateConfidence.HIGH
             except (ValueError, OverflowError):
@@ -343,7 +344,7 @@ class ArxivRssCollector(BaseCollector):
         # Try updated_parsed
         if entry.get("updated_parsed"):
             try:
-                timestamp = mktime(entry.updated_parsed)
+                timestamp = timegm(entry.updated_parsed)
                 dt = datetime.fromtimestamp(timestamp, tz=UTC)
                 return dt, DateConfidence.MEDIUM
             except (ValueError, OverflowError):

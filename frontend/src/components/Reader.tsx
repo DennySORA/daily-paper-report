@@ -119,7 +119,7 @@ function Summary({ story }: { story: Story }) {
           className="group rounded-md border border-line-subtle px-3 py-2"
         >
           <summary className="cursor-pointer text-meta text-fg-3 select-none group-open:mb-2">
-            {lang === 'zh' ? '原文摘要' : 'Chinese guide (中文導讀)'}
+            {lang === 'zh' ? '英文摘要' : 'Chinese summary (中文摘要)'}
             <span className="ml-2 hidden md:inline">
               <Kbd>E</Kbd>
             </span>
