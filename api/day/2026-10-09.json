@@ -341,7 +341,7 @@
   "generated_at": "2026-10-10T03:32:44.035263+00:00",
   "model_releases_by_entity": {},
   "papers": [
-{
+    {
       "arxiv_id": "2610.12375",
       "authors": [],
       "categories": [],
@@ -447,7 +447,7 @@
       "title_en": "OnTrack: Real-Time Monitoring and Intervention in LLM Agent Trajectories via Streaming Structure-Aware Optimal Transport",
       "title_zh": "OnTrack：以串流結構感知最佳傳輸，即時監控與介入語言模型代理軌跡"
     },
-{
+    {
       "arxiv_id": "2610.12002",
       "authors": [],
       "categories": [],
@@ -553,7 +553,7 @@
       "title_en": "Agentic-TTT: Training test-time policy for test-time training",
       "title_zh": "Agentic-TTT：學會決定何時、如何進行測試時訓練"
     },
-{
+    {
       "arxiv_id": "2610.12269",
       "authors": [],
       "categories": [],
@@ -656,7 +656,7 @@
       "title_en": "Cadence: Strategic Guidance for Coding Agents",
       "title_zh": "Cadence：為程式代理提供策略性指導"
     },
-{
+    {
       "arxiv_id": "2610.12242",
       "authors": [],
       "categories": [],
@@ -760,7 +760,7 @@
       "title_en": "TokenRouter: Efficient Serving System for Token-Level LLM Routing",
       "title_zh": "TokenRouter：高效率的 Token 級語言模型路由服務系統"
     },
-{
+    {
       "arxiv_id": "2610.11134",
       "authors": [],
       "categories": [],
@@ -866,7 +866,7 @@
       "title_en": "QUILT: Rethinking Sparse-Attention Prefill through Shared Query Execution",
       "title_zh": "QUILT：以共享查詢執行重新設計稀疏注意力預填充"
     },
-{
+    {
       "arxiv_id": "2610.11781",
       "authors": [],
       "categories": [],
@@ -972,7 +972,7 @@
       "title_en": "Skill-V: Verifiable Self-Evolving Skill Library for Interactive Agents",
       "title_zh": "Skill-V：以可驗證契約維護互動代理的自我演進技能庫"
     },
-{
+    {
       "arxiv_id": "2610.12274",
       "authors": [],
       "categories": [],
@@ -1077,7 +1077,7 @@
       "title_en": "HarnessSQL: Harness-Native Training for SQL Agents in Realistic Database Environments",
       "title_zh": "HarnessSQL：在真實資料庫執行框架中原生訓練 SQL 代理"
     },
-{
+    {
       "arxiv_id": "2610.12374",
       "authors": [],
       "categories": [],
@@ -1180,7 +1180,7 @@
       "title_en": "AgentGarten: Code Worlds for Evolving Agents",
       "title_zh": "AgentGarten：讓代理持續演進的程式世界"
     },
-{
+    {
       "arxiv_id": "2610.11287",
       "authors": [],
       "categories": [],
@@ -1283,7 +1283,7 @@
       "title_en": "REMORY: Learning Residual Memory for Context Compaction",
       "title_zh": "REMORY：學習用於上下文壓縮的殘差記憶"
     },
-{
+    {
       "arxiv_id": "2610.12360",
       "authors": [],
       "categories": [],
@@ -1386,7 +1386,7 @@
       "title_en": "Accurate but Not Humble: Evaluating Epistemic Humility in LLM Agents under Knowledge Conflict",
       "title_zh": "答得準卻不謙遜：評估知識衝突下大型語言模型代理的認知謙遜"
     },
-{
+    {
       "arxiv_id": "2610.11620",
       "authors": [],
       "categories": [],
@@ -1487,7 +1487,7 @@
       "title_en": "Where to Adapt Matters: Layer-Selective Fine-Tuning for Capability Retention",
       "title_zh": "在哪裡適配很重要：以選層微調保留模型能力"
     },
-{
+    {
       "arxiv_id": "2610.11715",
       "authors": [],
       "categories": [],
@@ -1588,7 +1588,7 @@
       "title_en": "Internalizer: Portable Context-to-Parameter Mapping for Very Large Language Models",
       "title_zh": "Internalizer：面向超大型語言模型的可移植上下文至參數映射"
     },
-{
+    {
       "arxiv_id": "2610.12168",
       "authors": [],
       "categories": [],
@@ -1690,7 +1690,7 @@
       "title_en": "Learning to Plan by Looking Back: Hindsight Hierarchies for Training Reasoning Models",
       "title_zh": "回望解法以學會規劃：用事後層級構想訓練推理模型"
     },
-{
+    {
       "arxiv_id": "2610.12235",
       "authors": [],
       "categories": [],
@@ -1793,7 +1793,7 @@
       "title_en": "Language Models as AI Research World Models",
       "title_zh": "將語言模型用作 AI 研究的世界模型"
     },
-{
+    {
       "arxiv_id": "2610.11858",
       "authors": [],
       "categories": [],
@@ -1902,7 +1902,7 @@
       "title_en": "Trajectory-Guided Fault Localization for Agent Skill Evolution",
       "title_zh": "以軌跡引導故障定位，推動代理技能演化"
     },
-{
+    {
       "arxiv_id": "2610.12083",
       "authors": [],
       "categories": [],
@@ -2005,7 +2005,7 @@
       "title_en": "All Verdicts are Not Equal: Rethinking LLM Judge Reliability",
       "title_zh": "不是每個裁決都一樣：重新思考大型語言模型裁判的可靠性"
     },
-{
+    {
       "arxiv_id": "2610.12056",
       "authors": [],
       "categories": [],
@@ -2113,7 +2113,7 @@
       "title_en": "Structure Tax: How Structured Output affects LLMs Performance",
       "title_zh": "結構稅：結構化輸出如何影響大型語言模型表現"
     },
-{
+    {
       "arxiv_id": "2610.12410",
       "authors": [],
       "categories": [],
@@ -2220,7 +2220,7 @@
       "title_en": "Predicting Alignment Generalization with Value Representations",
       "title_zh": "利用價值表徵預測對齊訓練的泛化效應"
     },
-{
+    {
       "arxiv_id": "2610.11593",
       "authors": [],
       "categories": [],
@@ -2324,7 +2324,7 @@
       "title_en": "Runnable Commit Untangling for Coding Agents",
       "title_zh": "讓程式代理拆分出每一步皆可執行的提交歷史"
     },
-{
+    {
       "arxiv_id": "2610.12409",
       "authors": [],
       "categories": [],
@@ -2427,7 +2427,7 @@
       "title_en": "Searching for \"Harmful Refusal\": A Psychometric Audit of an AI Safety Benchmark",
       "title_zh": "尋找「有害請求拒絕能力」：AI安全基準的心理計量稽核"
     },
-{
+    {
       "arxiv_id": "2610.12436",
       "authors": [],
       "categories": [],
@@ -2537,7 +2537,7 @@
       "title_en": "Ecology of AI Agents: Collaboration Creates a Population Threshold for Takeoff",
       "title_zh": "AI代理的生態學：協作如何產生族群起飛門檻"
     },
-{
+    {
       "arxiv_id": "2610.11578",
       "authors": [],
       "categories": [],
@@ -2647,7 +2647,7 @@
       "title_en": "Chronos Enables Code Agents to Reason over Software Evolution",
       "title_zh": "Chronos：讓程式代理運用軟體演進歷史進行推理"
     },
-{
+    {
       "arxiv_id": "2610.11050",
       "authors": [],
       "categories": [],
@@ -2753,7 +2753,7 @@
       "title_en": "AgentHorizon: Evaluating Agentic Judges for Long-Horizon Computer-Use Tasks",
       "title_zh": "AgentHorizon：評估長時程電腦操作任務的代理式裁判"
     },
-{
+    {
       "arxiv_id": "2610.11030",
       "authors": [],
       "categories": [],
@@ -2863,7 +2863,7 @@
       "title_en": "NOMOS: Compiling Written Policies into Statically Verified Tool-Call Gates for LLM Agents",
       "title_zh": "NOMOS：將書面政策編譯為經靜態檢查的語言代理工具呼叫閘門"
     },
-{
+    {
       "arxiv_id": "2610.11464",
       "authors": [],
       "categories": [],
@@ -2967,7 +2967,7 @@
       "title_en": "Who Verifies the Verifier? Co-Evolving Inspectable Graders with Self-Improving Agents",
       "title_zh": "誰來驗證驗證器？讓可檢視評分器與自我改進代理共同演化"
     },
-{
+    {
       "arxiv_id": "2610.11268",
       "authors": [],
       "categories": [],
@@ -3067,7 +3067,7 @@
       "title_en": "TaReD: Tool-Aware Recursive Decomposition for Long-Horizon Tasks",
       "title_zh": "TaReD：面向長程任務的工具感知遞迴拆解"
     },
-{
+    {
       "arxiv_id": "2610.11613",
       "authors": [],
       "categories": [],
@@ -3171,7 +3171,7 @@
       "title_en": "AgentEvolver: System-Wide Self-Evolution Through Task Execution",
       "title_zh": "AgentEvolver：透過任務執行進行全系統自我演化"
     },
-{
+    {
       "arxiv_id": "2610.10833",
       "authors": [],
       "categories": [],
@@ -3273,7 +3273,7 @@
       "title_en": "On the Clock: Towards Punctual and Productive Time-Budgeted AI Agents",
       "title_zh": "與時間賽跑：邁向準時且有效利用時間預算的 AI 代理"
     },
-{
+    {
       "arxiv_id": "2610.11573",
       "authors": [],
       "categories": [],
@@ -3378,7 +3378,7 @@
       "title_en": "Memory Type Varies: Empowering LLM Agents for Long-Term Memory with Diverse Strategies",
       "title_zh": "記憶類型各有不同：以多元策略強化大型語言模型代理的長期記憶"
     },
-{
+    {
       "arxiv_id": "2610.11600",
       "authors": [],
       "categories": [],
@@ -3486,225 +3486,869 @@
       "title": "Error-Propagation Modeling for Failure Attribution in LLM-Based Multi-Agent Systems",
       "title_en": "Error-Propagation Modeling for Failure Attribution in LLM-Based Multi-Agent Systems",
       "title_zh": "LLM多代理系統失敗歸因的錯誤傳播建模"
+    },
+    {
+      "arxiv_id": "2610.12325",
+      "authors": [],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-10-10T12:14:31.434123+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-ai",
+          "tier": 1,
+          "title": "Prior or Feedback? What an LLM Uses When Adapting Neural Operators",
+          "url": "https://arxiv.org/abs/2610.12325v1"
+        },
+        {
+          "link_type": "paper",
+          "source_id": "arxiv-cs-ai",
+          "tier": 1,
+          "title": "Prior or Feedback? What an LLM Uses When Adapting Neural Operators",
+          "url": "https://arxiv.org/pdf/2610.12325v1"
+        }
+      ],
+      "llm_evaluation": {
+        "candidate_sha256": "856c9d9e0775a083cb18676270288ba57b09d687530f77a087cd57f190039ef0",
+        "components": {
+          "evidence_strength": 0.72,
+          "generalizability": 0.47,
+          "novelty": 0.66,
+          "preference_relevance": 0.84,
+          "reproducibility": 0.61,
+          "rigor": 0.76
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "pp.1–3 Sections1–2/Figure1: frozen LLM chooses adaptation configurations; data, architecture, action space and trial budget fixed; LLM has PDE context and diagnostics unavailable to baselines.",
+          "p.4 Section2/Table1: six within-family and six directional cross-family cells; three seeds each;750 training,350 validation and1000 held-out test trajectories; twenty search trials start from fresh pretrained FNO copies.",
+          "pp.4,11–12 AppendixA: deepseek-v4-pro,thinking/JSON and reasoning_effort=max; three samples per medoid action; one served fingerprint in July/earlyAugust2026; ten frames,twelve Fourier modes,width20,four layers; at most100 adaptation epochs.",
+          "p.5 Eq1 and p.12 Table3: eight numeric and four categorical coordinates; a categorical change contributes1/12;0.05 decision threshold; numeric scales specified inA.3.",
+          "p.6 Table2: all twelve cell medians favor LLM;35/36 matched-seed wins overTPE,36/36 overrandom. The sole mainTPE win is advection→Burgers nu=.001 seed43: .0263 versusLLM .0346. In-domain9000-trajectory models are unmatched references.",
+          "pp.6,13–14 Figure2a/AppendixC:90 medoid proposals per displayed description across two cells; median learning rate .0005→.001 and shares at.001 of80%,39%,40%; U=5777.5/8100, reported exact one-sided p=5.2e-9.",
+          "p.14 AppendixC: aggregate twelve-coordinate cold-start description effect+.0025,p=.015 uses a different reference from feedback replay; magnitudes must not be compared as the same estimand.",
+          "pp.5,7,12–13 Figure2b/Table4/AppendixB:five resamples per condition at three windows per trace;18 within-family traces aggregated into sixcell medians;reassignment-minus-notation gap+.085,reported95%CI[+.073,+.108],exact one-sided p=.015625.",
+          "p.13 Table4:notation-minus-resampling median0,p=.63,reported CI[-.006,+.005];cross-family reassignment-minus-resampling+.083,p=.015625;different control from within-family.",
+          "p.13 Table5:rollout flips49.6% reassignment versus14.4% resampling;data loss40.4% versus15.9%;schedule25.9% versus14.1%;optimizer7.8% versus6.3%;no coordinate-wise tests.",
+          "p.13 AppendixB.3:permuting scores jointly with diagnostics gives within-family+.080 and cross-family+.054 versusresampling;18/18 positive traces and p=.015625 each.",
+          "pp.14–15 Figure3/AppendixD: first-proposal comparison is validation-based against60 pooledrandom candidates percell;median lower-tail midrank8.3% means beats91.7%;28/36 beat75%,34/36 beat50%;not held-out test improvement.",
+          "p.15 AppendixD.1:restoring tenTPE startup trials and extending to25 evaluations tested only two cells×threeseeds;LLM wins5/6 and bothcell medians;TPE ratios1.91 and2.50;not all12cells.",
+          "p.16 Figure4: twelve cumulative-best validation panels show three individual traces and median perpolicy; several TPE curves still improve toward trial20;no asymptotic convergence result.",
+          "pp.7,11 AppendixA: narrow action dependence expressly distinguished from rationality,physical understanding and explanation ofendpoint advantage;code/Zenodo pointers exist but externalbytes not obtained."
+        ],
+        "fulltext_sha256": "0350b1434c26b1774f3cbc76ac6006f8f39035d5869ef21875747444513d171e",
+        "fulltext_status": "complete",
+        "model": "assistant-native-review",
+        "native_identity_version": 1,
+        "original_candidate_sha256": "856c9d9e0775a083cb18676270288ba57b09d687530f77a087cd57f190039ef0",
+        "out_of_scope": false,
+        "producer": "assistant-native-review",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "The paper separates a scientific agent's endpoint score from its dependence on task descriptions and experimental feedback. Matched finite-budget FNO adaptation, value-preserving notation controls, repeated-prompt baselines and a score-plus-diagnostics intervention make the behavioral result credible within the studied setting. The LLM wins35/36 test comparisons against TPE and36/36 against random search, but its additional inputs and inference cost are unmatched. Replay sensitivity cannot explain the endpoint advantage because counterfactual trajectories are not continued, and the cold-start effect is chiefly one learning-rate coordinate. One hosted model, two1D PDE families and three endpoint seeds restrict generalization. Detailed appendices and external artifact pointers help auditability, while the uninspected code/records and underspecified bootstrap limit independent reproduction. In scope as language-agent evaluation methodology; no claim of rational scientific reasoning, formal admission or publication approval.",
+        "rationale_en": "The paper separates a scientific agent's endpoint score from its dependence on task descriptions and experimental feedback. Matched finite-budget FNO adaptation, value-preserving notation controls, repeated-prompt baselines and a score-plus-diagnostics intervention make the behavioral result credible within the studied setting. The LLM wins35/36 test comparisons against TPE and36/36 against random search, but its additional inputs and inference cost are unmatched. Replay sensitivity cannot explain the endpoint advantage because counterfactual trajectories are not continued, and the cold-start effect is chiefly one learning-rate coordinate. One hosted model, two1D PDE families and three endpoint seeds restrict generalization. Detailed appendices and external artifact pointers help auditability, while the uninspected code/records and underspecified bootstrap limit independent reproduction. In scope as language-agent evaluation methodology; no claim of rational scientific reasoning, formal admission or publication approval.",
+        "rationale_zh": "本文將科學代理的終點成績與其對任務描述、實驗回饋的依賴分開檢查。固定預算FNO調適、等值數字記法控制、相同提示重採樣，以及分數連診斷的介入，使行為敏感度結論在此設定下具說服力。對TPE測試勝35／36、對隨機勝36／36，但LLM額外資訊與推論成本未配平。反事實軌跡未延續，因此回放敏感度不能解釋終點優勢；冷啟動效果主要集中於一個學習率座標。單一託管模型、兩類一維方程及三個終點種子限制推廣。詳細附錄及外部套件指標提高可稽核性，但未檢視程式／紀錄與bootstrap細節不足限制獨立重現。依原規準屬語言代理評估方法；不是合理科學推理證明，也未做正式採納或公開批准。",
+        "raw_weighted_score": 0.7345,
+        "request_sha256": "83c2494f1b647a54c8cfd478ac686fde25c6605c9a289ac97d997bade35751e6",
+        "review_sha256": "0b3d6cbe97c9e3a5755b0fe8d196541f3470e90381498f8fc6313b8987d682c1",
+        "scope_assessment": {
+          "classification": "in_scope_language_agent_evaluation_method",
+          "decision": "in_scope",
+          "rationale_en": "The central research object is how a language-model scientific agent conditions its decisions on context and feedback, tested by controlled prompt/history interventions. PDE adaptation is a testbed, not the sole application output; therefore the pure-domain exclusion does not apply.",
+          "rationale_zh": "核心研究對象是語言模型科學代理如何依脈絡與回饋決策，並以受控提示／歷史介入檢驗；PDE調適為試驗場景而非唯一應用輸出，故不適用純領域套用排除。"
+        },
+        "scope_capped_score": null,
+        "scope_policy_version": "explicit-review-exclusion-v1",
+        "scope_status": "in_scope",
+        "score": 0.7345,
+        "source_key": "c4e107d16011421294ba5513e9d01154dc4e684470eb5664f47c16779e008407",
+        "story_id": "arxiv:2610.12325",
+        "token_usage": {},
+        "topics": [
+          "Agents & Tool Use",
+          "Red Teaming & Evaluation",
+          "Training & Optimization",
+          "Scientific AI"
+        ]
+      },
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-ai",
+        "tier": 1,
+        "title": "Prior or Feedback? What an LLM Uses When Adapting Neural Operators",
+        "url": "https://arxiv.org/abs/2610.12325v1"
+      },
+      "published_at": "2026-10-08T17:06:23+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.7345,
+        "llm_relevance_score": 20.566000000000003,
+        "recency_score": 0.8324549627352842,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 28.59845496273529
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2610.12325",
+      "summary": "Do LLM scientific agents rely only on their initial task context, or do they adapt their decisions in response to experimental feedback? We study this question in neural operator adaptation, where a large language model (LLM) selects fine-tuning configurations under a limited trial budget. Across transfers within and between partial differential equation (PDE) families, the LLM achieves lower held-out test nRMSE than random search and Bayesian optimisation in nearly every matched comparison. Endpoint performance alone cannot distinguish what happens, so we verify each attribution with controlled interventions. Before observing any validation score, the LLM's first configuration already ranks near the top of the corresponding random-search pool, indicating a useful initial bias. A complementary cold-start intervention shows that the selected base learning rate shifts with the PDE description. Once feedback becomes available, reassigning validation scores among evaluated configurations changes the next proposal in every case tested, whereas a value-preserving rewrite produces no comparable aggregate effect. These interventions establish that the LLM's decision-level actions respond to the given task and observed outcomes, showing that it combines a task-dependent prior with sensitivity to experimental feedback.",
+      "summary_en": "A scientific agent finding good parameters does not establish that it uses experimental feedback. This paper puts a language model inside a fixed neural-operator adaptation loop. Every trial starts from the same pretrained weights, selects a twelve-dimensional configuration including learning rate, optimizer, rollout length and losses, and returns validation error plus training diagnostics. A single hosted model is evaluated on twelve transfers within and between advection and Burgers equations, with three seeds and twenty evaluations per search policy.\n\nThe language-model policy beats random search in all 36 held-out test comparisons and TPE Bayesian optimization in 35 of 36. Available information and inference costs nevertheless differ between policies. Before feedback, the median first proposal already outperforms 91.7% of its cell's pooled random-search candidates on validation error. Switching the displayed equation description shifts the median initial learning rate from 0.0005 to 0.001, demonstrating a text-dependent initial preference.\n\nThe authors then keep evaluated configurations fixed and permute which validation scores belong to them. Relative to a value-preserving notation control, the next action moves by a median additional 0.085; all eighteen within-family trace effects are positive. This supports feedback sensitivity, not rationality, physical understanding, or a causal explanation of the endpoint advantage: counterfactual searches are never continued. Evidence is restricted to two one-dimensional PDE families, one model and a small budget. The reusable contribution is an audit that distinguishes endpoint quality from dependence on supplied inputs. Appendices document settings and controls and link code and run records, but those external artifacts were not obtained and no experiments were reproduced here.",
+      "summary_zh": "科學代理找到好參數，不代表它真的使用實驗回饋。本文把大型語言模型放入固定的神經算子微調流程：每輪從相同預訓練權重重新開始，選擇學習率、最佳化器、展開長度及損失等十二維設定，再讀取驗證誤差與訓練診斷。研究使用一個託管模型，在平流與 Burgers 方程的十二種轉移情境、各三個種子下，給各搜尋策略二十次評估機會。\n\n測試集結果中，語言模型勝過隨機搜尋36／36次、勝過TPE貝氏最佳化35／36次；但各方法可用資訊與推論成本不同。第一筆提案尚未看見回饋，其驗證表現中位數已勝過同情境隨機候選的91.7%。把提示中的方程描述換掉，初始學習率中位數由0.0005變成0.001，顯示文字會影響先驗選擇。\n\n作者再固定既有設定，打亂驗證分數的配對；相對只改數字寫法的對照，下一個動作的距離增加0.085，十八條軌跡皆為正。這支持代理對回饋有反應，不能證明反應合理、理解物理，或解釋終點優勢，因為反事實搜尋並未繼續執行。實驗限於兩類一維方程、一個模型與小預算；方法的實用價值是將終點成績和輸入敏感度分開稽核。附錄交代設定與控制，並列程式及紀錄連結，但本次未取得外部套件或重現實驗。",
+      "title": "Prior or Feedback? What an LLM Uses When Adapting Neural Operators",
+      "title_en": "Prior or Feedback? What an LLM Uses When Adapting Neural Operators",
+      "title_zh": "先驗還是回饋？大型語言模型調適神經算子時依據什麼"
+    },
+    {
+      "arxiv_id": "2610.12304",
+      "authors": [],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-10-10T12:15:07.293756+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-ai",
+          "tier": 1,
+          "title": "Looking Inside LLMs: Small-World Connectivity as a Signature of Reasoning Performance",
+          "url": "https://arxiv.org/abs/2610.12304v1"
+        },
+        {
+          "link_type": "paper",
+          "source_id": "arxiv-cs-ai",
+          "tier": 1,
+          "title": "Looking Inside LLMs: Small-World Connectivity as a Signature of Reasoning Performance",
+          "url": "https://arxiv.org/pdf/2610.12304v1"
+        }
+      ],
+      "llm_evaluation": {
+        "candidate_sha256": "a494eb920d86bb57c7a3b84a4b0c9681258fc59284dc1c53008648b255f5b5cc",
+        "components": {
+          "evidence_strength": 0.59,
+          "generalizability": 0.61,
+          "novelty": 0.71,
+          "preference_relevance": 0.93,
+          "reproducibility": 0.4,
+          "rigor": 0.56
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "p.1, title/abstract: exact v1 title and the reported up-to-20% PPL claim; the neuroscience analogy motivates a functional signature, not evidence of brain-equivalent mechanism.",
+          "pp.2–3, Section 2.1, Equations 1–3: SWI=(C/Crand)*(E/Erand); E averages inverse shortest-path distance, disconnected pairs contribute zero, and null graphs preserve degree via edge swaps.",
+          "pp.3–4, Sections 2.2,3.1, Equations 4–7 and Figure 1: per-question query activations averaged over generated answer tokens; SVD+CCA; sum of atanh(clipped canonical correlations), not the ordinary SVCCA mean.",
+          "p.5, Section 3.1; pp.14–15, A.1,A.2.1: 400 DRE calibration questions (200 each Level 1/2), 99% retained variance, fixed edge density 0.25, no self-edges; calibration examples excluded from evaluation. A.1 expressly states the similarity sum depends on retained direction count and does not claim variance stabilization or superiority over CKA.",
+          "pp.5,15–16, Section 3.2/A.2.1/A.3; Tables 6–7: reference-answer NLL/token is the outcome; seven fixed-size Pythia checkpoints and six Qwen/Llama models provide reported table-mean trends. Figures 2–3 illustrate the claimed association, but Figure 3 is not numerically reconciled with Table 7 for Llama3.2-1B; use Table 7 for cross-model SWI quantities. Model size/CCA-rank controls and correlation confidence intervals are not reported.",
+          "pp.5–6, Section 4.1, Table 1: Llama-3.2-3B top25%-importance heads vs remaining75%; low bridge prevalence89.3% vs36.9%, high core49.4% vs23.8%, Holm-adjusted p-values3.61e-34/5.95e-9. Gradient importance is answer-NLL sensitivity, not semantic role identification.",
+          "p.6, Section 4.2, Equation 8: priority=percentile(bridge)*(1-percentile(core)); layer priority averages heads, then layer and head sparsities are normalized/rescaled to the global target. Lower priority follows either low bridge or high core, not necessarily their conjunction.",
+          "p.7, Table 2: at50% SparseGPT sparsity, Qwen3-8B SWI base0.6509±0.64 vsSWA0.9196±0.44; large dispersions prevent treating all mean differences as established significant effects.",
+          "p.7, Table 3: Qwen3-8B/SparseGPT/70% PPL base30.05±0.66, FARMS25.13±1.07, ATP28.93±0.43, SWA20.10±0.14. Relative to strongest competitor FARMS, (25.13-20.10)/25.13=20.016%; relative to base it is33.111%.",
+          "p.8, Table 4: Qwen3-8B/SparseGPT/70% SWA PPL20.10; layer-only increase10.21 and head-only increase19.97, yielding30.31 and40.07. The table entries are increases, not standalone PPL.",
+          "pp.8–9, Table 5/Section 5.5: alternate GSM8K/ARC-C/MMLU graph data on four models; Llama3.2-3B base70.70 vs50.54/49.69/48.95 at70% SparseGPT sparsity. This tests calibration-data sensitivity, not all-task universality.",
+          "p.10, reproducibility statement: code release is future tense. No author code, experiment, runtime performance or reproducibility artifact is verified by this review.",
+          "pp.10–13: references read; appendix begins onp.14 and ends atA.5 onp.17, with no missing in-file appendix detected.",
+          "pp.15,17, A.2.2/A.4, Table 8: mean accuracy over seven named tasks; Wanda/Llama3-8B/70% base27.57%, ATP35.90%, SWA37.89%; gain10.32 percentage points over base and1.99 over ATP.",
+          "pp.15–17, A.2.2/A.5, Table 9: Not M is output-grid shape mismatch, not exact answer error. Qwen3-8B/50%/Fill Internal: unpruned6.07±1.99, SparseGPT34.25±4.67, ATP32.66±5.81, SWA28.69±4.28; pruning recovery remains below unpruned shape performance.",
+          "p.5, Figure 3; p.16, Table 7/A.3: the Llama3.2-1B SWI point is visually above 1.1 (approximately 1.12, not an exact digitized value), whereas Table 7 reports Level 1=0.9188±0.49 and Level 2=0.9344±0.18. Any convex combination of the two reported means is at most 0.9344, below the plot by more than 0.1656. A.3 states Table 7 supplies Figure 3 numerical results but provides no reconciliation. The plotted/table ranking can agree despite this unresolved numerical discrepancy; no fabrication or disproof of association is inferred."
+        ],
+        "fulltext_sha256": "c96dfbd8779cc6a68630c5fd9bf80a0c754677827de48a3da7e45fa971de7726",
+        "fulltext_status": "complete",
+        "model": "assistant-native-review",
+        "native_identity_version": 1,
+        "original_candidate_sha256": "a494eb920d86bb57c7a3b84a4b0c9681258fc59284dc1c53008648b255f5b5cc",
+        "out_of_scope": false,
+        "producer": "assistant-native-review",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "A substantively relevant interpretability/compression paper that connects activation-derived head graphs to reasoning proxies and uses graph community roles for hierarchical pruning. Six-model, two-pruner, two-sparsity PPL/zero-shot results, fixed-architecture checkpoints and ablations support practical promise. Scientific confidence is limited by proxy outcomes, uncontrolled representation/capacity and graph choices, large SWI spreads, and no intervention isolating topology. The 20% example is a PPL reduction against FARMS, not a reasoning-accuracy gain; ARAOC is shape-only. Code is promised rather than verified, and exact replication settings are incomplete. Suitable for a cautious technical guide, with no causal-intelligence or independent-reproduction claim and no admission/publication decision. Figure 3 places Llama3.2-1B above SWI 1.1, inconsistent with the Table 7 level means of 0.9188 and 0.9344 without an explanation. This reduces confidence in the quantitative presentation; cross-model SWI quantities follow Table 7, and the shared rank trend is not erased.",
+        "rationale_en": "A substantively relevant interpretability/compression paper that connects activation-derived head graphs to reasoning proxies and uses graph community roles for hierarchical pruning. Six-model, two-pruner, two-sparsity PPL/zero-shot results, fixed-architecture checkpoints and ablations support practical promise. Scientific confidence is limited by proxy outcomes, uncontrolled representation/capacity and graph choices, large SWI spreads, and no intervention isolating topology. The 20% example is a PPL reduction against FARMS, not a reasoning-accuracy gain; ARAOC is shape-only. Code is promised rather than verified, and exact replication settings are incomplete. Suitable for a cautious technical guide, with no causal-intelligence or independent-reproduction claim and no admission/publication decision. Figure 3 places Llama3.2-1B above SWI 1.1, inconsistent with the Table 7 level means of 0.9188 and 0.9344 without an explanation. This reduces confidence in the quantitative presentation; cross-model SWI quantities follow Table 7, and the shared rank trend is not erased.",
+        "rationale_zh": "本文直接關聯可解釋性與模型壓縮，把活化推得的注意力頭功能圖連到推理代理指標，再用社群角色分層配置剪枝。六模型、兩種剪枝法、兩稀疏度的困惑度／零樣本結果，配合固定架構檢查點與消融，顯示實用潛力。惟量測多為代理指標，表徵維度／模型容量及建圖選擇未充分控制，SWI變異偏大，也未用干預隔離拓樸因果。20%例子是相對FARMS的困惑度下降，非推理準確率增加；ARAOC只量形狀。程式碼仍是未來承諾，精確重現設定不足。適合作有保留的技術導讀，不作智慧因果、獨立重現或正式採納／發布結論。圖3的Llama3.2-1B點高於1.1，與表7兩級SWI均值0.9188及0.9344未能對上，降低定量展示的可信度；跨模型SWI數值以表7為據，不因此抹消兩處的排序趨勢。",
+        "raw_weighted_score": 0.7320000000000001,
+        "request_sha256": "0715a3c7da68266cedabe7d1af6b93630c5cea7efe63e320c43542f8a8c1e52d",
+        "review_sha256": "786734d2a140f5fa365fbfa5df61141633f12d0657b0c04c1ee0d7ec62eb3a4d",
+        "scope_assessment": {
+          "classification": "in_scope_llm_reasoning_interpretability_pruning",
+          "decision": "in_scope",
+          "rationale_en": "The methodological object is language-model head representations and their pruning, with language-model likelihood and reasoning-related evaluations. This is not pure graph theory or a domain-only neural application.",
+          "rationale_zh": "方法對象是語言模型注意力頭表徵與剪枝，並量測語言似然及推理相關任務，並非純圖論或領域神經網路套用。"
+        },
+        "scope_capped_score": null,
+        "scope_policy_version": "explicit-review-exclusion-v1",
+        "scope_status": "in_scope",
+        "score": 0.7320000000000001,
+        "source_key": "162ecb9e1b2a863c2ab158a48b4d5a15808ee17dc7fbd6ba127627986451e3e5",
+        "story_id": "arxiv:2610.12304",
+        "token_usage": {},
+        "topics": [
+          "Large Language Models",
+          "Reasoning & Chain-of-Thought",
+          "Interpretability & Explainability",
+          "Scaling & Efficiency"
+        ]
+      },
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-ai",
+        "tier": 1,
+        "title": "Looking Inside LLMs: Small-World Connectivity as a Signature of Reasoning Performance",
+        "url": "https://arxiv.org/abs/2610.12304v1"
+      },
+      "published_at": "2026-10-08T16:53:45+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.7320000000000001,
+        "llm_relevance_score": 20.496000000000002,
+        "recency_score": 0.8317249579326471,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 28.527724957932648
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2610.12304",
+      "summary": "Understanding large language model (LLM) reasoning requires looking beyond behavioral performance to examine how reasoning ability is reflected in internal organization. Inspired by neuroscience findings linking higher intelligence to stronger small-world organization in functional brain networks, we investigate small-world connectivity as a structural signature of LLM reasoning. We construct functional graphs from attention-head activation similarities and find that a higher small-world index (SWI), capturing local clustering and short global paths, consistently correlates with better fluid reasoning performance across models and training checkpoints. Since local clustering is central to small-world organization, we further examine how heads important for model performance connect within and across communities. We find that these heads tend to have a larger share of connection weight within their own communities (high core scores) and a more concentrated weight distribution across communities (low bridge scores). These observations motivate the hypothesis that high core and low bridge scores serve as structural indicators of head importance for reasoning capability. We validate this hypothesis through pruning, introducing Small-World Allocation (SWA), a hierarchical sparsity allocation method guided by these scores. Across six LLMs, SWA better preserves small-world organization and model performance than competing allocation strategies, reducing WikiText perplexity by up to 20%. Together, these findings identify small-world functional connectivity as a measurable signature of LLM reasoning performance, offering a structural perspective that complements behavioral evaluation.",
+      "summary_en": "Can the organization of attention heads reveal a language model's reasoning performance? The paper constructs functional graphs from query activations on 400 calibration questions. It averages each head's activations over generated answer tokens, retains singular directions explaining 99% of variance, computes canonical correlations between heads, and sums their Fisher-transformed values. The strongest 25% of pairwise similarities define an undirected graph. Its small-world index multiplies clustering and global-efficiency ratios relative to degree-preserving randomized graphs.\n\nAcross six Qwen/Llama models and seven Pythia checkpoints, higher index values accompany lower reference-answer negative log-likelihood per token. Figure 3 plots Llama3.2-1B above 1.1, whereas Table 7 reports SWI means of 0.9188 and 0.9344 for the two levels. This discrepancy is unexplained; cross-model SWI quantities here follow Table 7, while the shared rank trend remains. The authors then derive Small-World Allocation (SWA) from within-community connection share and cross-community dispersion. Heads with high core or low bridge scores receive lower pruning priority, with sparsity allocated across both layers and heads. For Qwen3-8B using SparseGPT at 70% sparsity, WikiText perplexity falls from 25.13 for the strongest competing allocator to 20.10, approximately 20%. Layer/head ablations, alternative graph-construction datasets, and zero-shot tasks provide additional support.\n\nFunctional correlations are not direct information flow or a causal reasoning mechanism, and answer likelihood is not problem-solving accuracy. The ARAOC evaluation measures output-grid shape mismatch, not full answer correctness, and the pruned model remains worse than its unpruned counterpart. Cross-model comparisons may confound capacity and representation dimensionality; the full density sweep and several implementation settings are unreported. Code is promised for a future release, not verified as available. The contribution is a promising interpretability and pruning-allocation signal, rather than proof that small-world organization causes greater intelligence.",
+      "summary_zh": "語言模型的推理表現，是否能從注意力頭之間的連結結構看出端倪？本文把四百道校準題中各頭的查詢向量，先沿生成答案的詞元取平均，再用保留99%變異的奇異值分解與典型相關分析，將相關係數經Fisher轉換後加總。保留最強25%邊形成無向功能圖，以相對於保留度數之隨機圖的群聚與全域效率乘積，定義小世界指數。\n\n六個Qwen／Llama模型及Pythia七個訓練檢查點中，較高指數伴隨較低的參考答案逐詞元負對數似然。圖3的Llama3.2-1B點高於1.1，表7兩級均值卻為0.9188及0.9344，差異未解；跨模型SWI數值依表7。作者再用社群內連結占比及跨社群分散程度設計SWA，讓高核心、低橋接分數的頭承受較少剪枝，並分層配置稀疏度。在Qwen3-8B、SparseGPT、70%稀疏度下，WikiText困惑度由最強比較法的25.13降至20.10，約改善20%；層級與頭級消融、其他建圖資料及零樣本任務提供補充證據。\n\n然而，功能圖的相關性不是實際訊息傳遞或因果推理機制，答案似然也不等於解題正確率。ARAOC只檢查輸出網格形狀，不代表內容答對；結果仍不及未剪枝模型。跨模型比較可能混入容量與表徵維度差異，密度選擇的完整掃描及多項實作細節未報，程式碼僅承諾未來釋出。此研究值得作為可解釋性與剪枝配置的探索性線索，尚不足以證明小世界結構造成更強智慧。",
+      "title": "Looking Inside LLMs: Small-World Connectivity as a Signature of Reasoning Performance",
+      "title_en": "Looking Inside LLMs: Small-World Connectivity as a Signature of Reasoning Performance",
+      "title_zh": "走進大型語言模型：以小世界連結作為推理表現的結構特徵"
+    },
+    {
+      "arxiv_id": "2610.12361",
+      "authors": [],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-10-10T12:14:13.527393+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-ai",
+          "tier": 1,
+          "title": "Cited but Not Consulted: A Counterfactual Audit of Legal Chain-of-Thought Faithfulness",
+          "url": "https://arxiv.org/abs/2610.12361v1"
+        },
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-ai",
+          "tier": 1,
+          "title": "Cited but Not Consulted: A Counterfactual Audit of Legal Chain-of-Thought Faithfulness",
+          "url": "https://arxiv.org/pdf/2610.12361v1"
+        }
+      ],
+      "llm_evaluation": {
+        "candidate_sha256": "486960eb426a4f5498d883f113db6ec7057ca294b915e27aec170c6e3e3ce285",
+        "components": {
+          "evidence_strength": 0.6,
+          "generalizability": 0.52,
+          "novelty": 0.63,
+          "preference_relevance": 0.92,
+          "reproducibility": 0.38,
+          "rigor": 0.58
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "pp.1–2, Sections 1–3: three questions distinguish target-dependence, post-commitment naming, and injection. Authority is shorthand; SCOTUS issue-area labels are not legal authorities in the ordinary sense.",
+          "p.3, Figure 1 and Section 3: four target types; ECtHR-A concerns found rather than alleged violations; SCOTUS takes first 6,000 characters; ContractNLI merges Contradiction/NotMentioned into NO.",
+          "pp.3–4, Section 4: explicit naming and think tags; rightmost verdict-marker/fallback parsing. ECHR top-K=200, per-run base-rate-calibrated keyword counts; other tasks use literal candidate-token logit-lens probabilities.",
+          "p.4, commitment definition: nonzero top support and top/second >=1.5, otherwise undefined; t* is earliest sentence after which the confident final decoded label never changes. A confident final sentence ensures some t* even without an early stable decision.",
+          "pp.4–5, Sections 4.1–4.2: target swaps with fixed facts; CaseHOLD only replaces detected precedent identity with Doe v. Roe; gold-different controls mitigate legitimate same-label outcomes. Worked ECHR example is explicitly illustrative, not an observed generation.",
+          "p.5, Table 1 / Section 5: seven main named models 8B–70B; bfloat16, seed42, max1536 new tokens; main cells30 cases, balanced15/15 for binary tasks; two pairs ECHR/SCOTUS; 1000 bootstrap draws. The experimental matrix is not fully crossed.",
+          "p.6, Table 2: ECHR Pair A six-model sensitivity33.3/31.0/58.6/40.7/36.7/33.3%; target naming100/100/100/80.0/100/96.7%; re-engagement53.3/70.0/33.3/46.7/26.7/20.0%. Accuracy denominators are answered cases, not always30.",
+          "pp.6–7, Table 3: five-model ECHR Pair A paraphrase instability13.8/13.8/23.3/14.8/16.7%; injection compliance86.2/73.3/90.0/96.4/86.7%; baseline-changing verdicts41.4/27.6/30.0/18.5/20.0%. Only Qwen3-8B reversal rate exceeds its authority-swap rate.",
+          "p.7 and p.12 Table 6 / Appendix C: 24/30 excerpts have detectable names; usable paired cases can be fewer. Qwen3-8B has0/18 swaps and bootstrap CI[0,0]; this is empirical-bootstrap degeneracy, not proof of zero risk. Identity substitution leaves holding content fixed.",
+          "p.7 scale check: Llama-3.3-70B ECHR swap40.0% CI[23.3,56.7], accuracy80.0%; SCOTUS swap76.7% CI[60.0,90.0], accuracy96.7%, re-engagement10.0%. Not a multi-family scaling law.",
+          "pp.8–9, Discussion/Limitations: authors acknowledge naming-before-commitment may be a floor effect and no activation patching was run; two-phase explanation remains a hypothesis. The claimed strict lower bound on mechanistic re-engagement additionally lacks a no-false-positive argument.",
+          "pp.9–10, Ethics/References: public research datasets; not proposed for real legal advice. Bibliographic entries were read as paper context; external works were not independently verified.",
+          "p.11, Appendices A/B, Tables 4/5: task mappings and published supervised baselines; macro-F1/full multilabel or14-way results cannot be ranked directly against this simplified accuracy. CaseHOLD baseline values are accuracy.",
+          "p.12, Appendix D/Table 7: Qwen3-14B SCOTUS Pair A has100% surface naming and100% post-commitment re-engagement, contradicting an unrestricted never-closed-gap statement on p.7; its verdict-swap sensitivity is only30.0%.",
+          "p.12, Appendix E/Table 8: ContractNLI sensitivity43.3/48.3/48.0/50.0/43.3/43.3%; naming100/100/100/93.3/100/70.0%; re-engagement60.0/83.3/66.7/60.0/80.0/3.3%.",
+          "p.13, Appendix F/Figure 2: grey paraphrase, blue swap with95%CI, red raw compliance; it visualizes Table3 ordering, not an attack-induced reversal-rate ordering.",
+          "p.13, Appendix G: identical-generation calibration changes commitment in8/30 cases but re-engagement remains53.3%; native/prompted toggle changes re-engagement53.3 to63.3%. Pilot79.97 versus82.11 differs by2.14 points, not literally within2.",
+          "p.13, Appendix H/Table 9: ECHR Pair B swaps55.6/46.4/65.5/56.7/63.3%; SCOTUS Pair B56.7/53.3/43.3/33.3/50.0%; this table supplies swaps, not PairB re-engagement values.",
+          "p.14, Appendix I/Table 10: gold-different ECHR48.1/51.9/53.3/21.4/43.3%; SCOTUS33.3/36.7/51.7/46.7/66.7%; each rises in3/5 models, not universally.",
+          "p.14, Appendix J/Table 11: ContractNLI twelve gold-different documents; usable counts12/12/10/11/12/12, sensitivity66.7/66.7/50.0/63.6/66.7/66.7%. All rise but remaining failures need not specifically be mechanistic unfaithfulness.",
+          "pp.14–15, Appendix K/Table 12: null ECHR43.3/51.7/46.4/17.9/10.0%, SCOTUS33.3/26.7/36.7/36.7/43.3%; real-target sensitivity exceeds null3/5 ECHR,4/5 SCOTUS. Residual confound is explicitly unresolved.",
+          "pp.15–16, Appendix L/Tables13–14: exact paired discordant counts; nominal significance2/15 ECHR,5/15 SCOTUS; only SCOTUS Qwen3-14B/Legal-∆ survives per-dataset Bonferroni0.05/15. Per-pair usable-denominator treatment and raw records are not supplied.",
+          "pp.16–17, Appendix M/Table15: Qwen2.5-14B base versus merged Legal-∆ accuracy73.3->83.3%, sensitivity26.7->33.3%, re-engagement56.7->20.0%; improved one-task accuracy does not establish original-checkpoint equivalence or causally isolate legal RL.",
+          "pp.17–18, Appendix N: explicit prompting only, heterogeneous probes, one seed, incomplete pair/model coverage,6000-character SCOTUS truncation, replacement training base; GPT-OSS20B/Mistral7B excluded for infrastructure, not measured underperformance.",
+          "Full18-page PDF and40-link inventory: no experiment code/data repository obtained; complete prompts, keyword lists, sampled IDs, per-case outputs and activation trajectories are unavailable. This is a reproducibility/claim limitation, not evidence that the PDF is missing pages."
+        ],
+        "fulltext_sha256": "52da4524483598e9aae132645cadddf8a0f82bc37bcf0ee1915a1b8a7c5b15ed",
+        "fulltext_status": "complete",
+        "model": "assistant-native-review",
+        "native_identity_version": 1,
+        "original_candidate_sha256": "486960eb426a4f5498d883f113db6ec7057ca294b915e27aec170c6e3e3ce285",
+        "out_of_scope": false,
+        "producer": "assistant-native-review",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "A relevant, moderately novel audit combines legal-target swaps, latent-answer readouts, and prompt injection. Gold-different controls and extensive aggregate tables make the behavioral warning useful: instructed citation alone does not establish reliable target-dependent decisions. Scientific weight is moderate. Raw injection compliance must be separated from baseline-changing reversals, CaseHOLD measures precedent-name dispensability, and textual re-engagement cannot certify a causal mechanism or a strict mechanistic lower bound. Table 7 supplies an exception to the universal naming/re-engagement-gap claim. Thirty-case cells, smaller usable subsets, a single seed, mostly non-significant corrected rankings, inconsistent probe methods, and an inexact legal-model merge limit inference. Missing code, exact prompts and per-case data limit reproducibility, not the completeness of this eighteen-page PDF. In scope for reasoning-faithfulness and evaluation methods; no claim of legal-system readiness or formal admission.",
+        "rationale_en": "A relevant, moderately novel audit combines legal-target swaps, latent-answer readouts, and prompt injection. Gold-different controls and extensive aggregate tables make the behavioral warning useful: instructed citation alone does not establish reliable target-dependent decisions. Scientific weight is moderate. Raw injection compliance must be separated from baseline-changing reversals, CaseHOLD measures precedent-name dispensability, and textual re-engagement cannot certify a causal mechanism or a strict mechanistic lower bound. Table 7 supplies an exception to the universal naming/re-engagement-gap claim. Thirty-case cells, smaller usable subsets, a single seed, mostly non-significant corrected rankings, inconsistent probe methods, and an inexact legal-model merge limit inference. Missing code, exact prompts and per-case data limit reproducibility, not the completeness of this eighteen-page PDF. In scope for reasoning-faithfulness and evaluation methods; no claim of legal-system readiness or formal admission.",
+        "rationale_zh": "本文結合法律目標替換、內部答案讀取及提示注入，與推理忠實性高度相關，整合方法有中等新意。正解相異對照及詳細彙總表讓行為警示有價值：依指示引用不等可靠地按目標作判斷。科學證據權重屬中等。注入吻合率須與相對基線改判分開；CaseHOLD量到的是判例名稱可省性，文字再提及不能認證因果機制或嚴格機制下界。表7反駁命名／再提及落差普遍不閉合的說法。每格三十例、更小可用子集、單種子、多數校正後不顯著排名、探針不一致與非原版法律模型合併，均限制推論。缺程式、精確提示及逐例資料限制重現，不代表十八頁PDF取得不完整。依原規準屬推理忠實性與評估方法範圍，不代表法律系統可用或正式採納。",
+        "raw_weighted_score": 0.7105,
+        "request_sha256": "d0793bd3cb3c3e34e38c91d4700f57f168a81a7151183ca2e0739e736aded65f",
+        "review_sha256": "85ee5b65f462850fb7c862b427eb16ef168fe7bc337aca59d078131699ad2596",
+        "scope_assessment": {
+          "classification": "in_scope_reasoning_faithfulness_evaluation_method",
+          "decision": "in_scope",
+          "excluded_domain_checks": {
+            "biology_foundation_model": false,
+            "image_video_diffusion_without_language": false,
+            "medical_imaging": false,
+            "pure_audio": false,
+            "pure_domain_application": false,
+            "pure_robotics": false,
+            "pure_vision": false
+          },
+          "rationale_en": "The central contribution evaluates language-model reasoning and oversight through counterfactual targets and hidden-state readouts. Law is the testbed for a model-evaluation method, not the sole source of relevance. This decision does not endorse legal deployment or broaden the configured rubric.",
+          "rationale_zh": "核心貢獻是透過反事實目標與隱藏狀態讀取評估語言模型推理和監督。法律是模型評估方法的試驗場景，而非只因領域套用而加分；本判定不認證法律部署，也不擴大原規準。"
+        },
+        "scope_capped_score": null,
+        "scope_policy_version": "explicit-review-exclusion-v1",
+        "scope_status": "in_scope",
+        "score": 0.7105,
+        "source_key": "d5906a5cd06651fb44245a2786e5ff3c33d85837efab728cc3632d2b5296fe6a",
+        "story_id": "arxiv:2610.12361",
+        "token_usage": {},
+        "topics": [
+          "Reasoning & Chain-of-Thought",
+          "Interpretability & Explainability",
+          "Red Teaming & Evaluation",
+          "AI Safety"
+        ]
+      },
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-ai",
+        "tier": 1,
+        "title": "Cited but Not Consulted: A Counterfactual Audit of Legal Chain-of-Thought Faithfulness",
+        "url": "https://arxiv.org/abs/2610.12361v1"
+      },
+      "published_at": "2026-10-08T17:26:17+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.7105,
+        "llm_relevance_score": 19.894000000000002,
+        "recency_score": 0.833606164511525,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 27.927606164511527
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2610.12361",
+      "summary": "Large language models increasingly justify legal decisions by naming the statute or precedent behind a verdict, treated as evidence that the decision follows from it. We test this directly: holding case facts fixed, we substitute the named legal authority for an unrelated one and decode a model's evolving verdict from its hidden states. Across seven open-weight models (8B-70B) and four benchmarks spanning judicial and contractual reasoning, when explicitly required to justify a verdict by naming the governing authority, models name the correct one in 66.7%-100% of generations, while the verdict changing when the authority changes is far less consistent: 0.0%-21.7% on CaseHOLD, 30.0%-76.7% on ECHR and SCOTUS, and 43.3%-50.0% on ContractNLI. Neither scale nor a purpose-built legal-reasoning model (a best-effort LoRA reproduction; Section 6) closes this gap. A red-teaming evaluation on five core models finds compliance with an adversarial instruction hidden in the case facts (73.3%-96.4%) exceeds verdict-swap sensitivity by a wide margin, holding without exception across model rankings. Naming a legal authority is thus a poor proxy for a verdict's dependence on it, while the same verdict remains separately vulnerable to adversarial manipulation. Both findings replicate across checks ruling out prompt-wording noise and confounded sampling, and bear directly on the use of generated legal explanations as compliance or audit artefacts.",
+      "summary_en": "Does naming a statute or precedent in a legal explanation mean the decision actually depends on it? This paper holds case facts fixed, substitutes the legal decision target, and compares the resulting verdicts. It also reads hidden states at sentence boundaries to estimate when an answer stabilizes and whether the target is mentioned again afterward. Seven models and four datasets are covered, but not in a complete factorial design. Main experimental cells use thirty cases and one fixed seed.\n\nFor six models on ECHR Pair A, verdict-swap sensitivity is 31.0%–58.6%, versus naming rates of 80%–100%. The more informative restriction requires the two targets to have different gold labels: ContractNLI sensitivity remains only 50.0%–66.7% among ten to twelve usable cases. CaseHOLD merely replaces a precedent name with a placeholder; its 0%–21.7% change rate can reflect a redundant name rather than unfaithful reasoning. Across five models, 73.3%–96.4% of injected outputs match the attacker's requested verdict, but only 18.5%–41.4% change from the uninjected baseline. These are distinct outcomes, not interchangeable attack-induced reversal rates.\n\nThe useful contribution is an audit that separates citation, behavioral dependence, and mechanistic evidence. Sentence-boundary probes and repeated name strings are not causally validated and cannot establish that a model ignored the authority; zero pre-naming commitments may reflect a measurement floor. Small samples, wide intervals, a substituted base for the legal-model adapter, and unavailable code and per-case outputs limit the conclusions. Table 7 also contains a model with both naming and re-engagement at 100%, contradicting an unqualified claim that this gap never closes. The defensible lesson is that fluent citation alone is insufficient evidence of faithful reasoning.",
+      "summary_zh": "模型在法律解釋中說出法條或判例，是否代表判斷真的依據它？本文固定案件事實，替換問題中的法律判斷目標，再比較判決是否改變；另於每句結尾讀取隱藏狀態，估計答案穩定時點及其後是否再次提及目標。研究涵蓋七個模型與四項資料集，但並非所有模型都跑完整組合；主要每格三十例，固定單一種子。\n\nECHR第一組六模型的判決替換敏感度為31.0%–58.6%，命名率則80%–100%。更有意義的是限定兩目標正解不同：ContractNLI可用十至十二例的敏感度仍僅50.0%–66.7%。CaseHOLD只把判例名稱改成佔位名稱，0%–21.7%的變動可能反映名稱冗餘，不能直接當不忠實。五模型注入指令後輸出吻合指定判決達73.3%–96.4%，但相對未注入基線真正改判僅18.5%–41.4%，兩者不可混稱攻擊翻案率。\n\n本文適合提醒讀者區分引用、判斷依賴與機制證據。句界探針及字串再提及未經因果驗證，不能證明模型沒使用法律依據；零次提前定案也可能是量測下限。樣本小、信賴區間寬，法律模型使用替代基底合併，程式與逐例輸出未取得。表7更有命名與再提及均100%的例外，不宜照抄「差距從未閉合」；較可信的結論是單靠流暢引用不足以稽核忠實性。",
+      "title": "Cited but Not Consulted: A Counterfactual Audit of Legal Chain-of-Thought Faithfulness",
+      "title_en": "Cited but Not Consulted: A Counterfactual Audit of Legal Chain-of-Thought Faithfulness",
+      "title_zh": "引用卻未依據：法律思維鏈忠實性的反事實稽核"
+    },
+    {
+      "arxiv_id": "2610.12313",
+      "authors": [],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-10-10T12:14:49.438203+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-ai",
+          "tier": 1,
+          "title": "Verdict Without the Rule: Diagnosing and Auditing Regulatory Rule Sensitivity in LLM Compliance Systems",
+          "url": "https://arxiv.org/abs/2610.12313v1"
+        },
+        {
+          "link_type": "paper",
+          "source_id": "arxiv-cs-ai",
+          "tier": 1,
+          "title": "Verdict Without the Rule: Diagnosing and Auditing Regulatory Rule Sensitivity in LLM Compliance Systems",
+          "url": "https://arxiv.org/pdf/2610.12313v1"
+        }
+      ],
+      "llm_evaluation": {
+        "candidate_sha256": "aaa2188f5e5e7dda8e1b741ac95d4ab322af69e54c7fd54be97c67d3fe87c70c",
+        "components": {
+          "evidence_strength": 0.57,
+          "generalizability": 0.56,
+          "novelty": 0.63,
+          "preference_relevance": 0.9,
+          "reproducibility": 0.42,
+          "rigor": 0.53
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "p.1 rendered graphic title agrees with official abs metadata; printed ID 2610.12313v 1 and 8 Oct 2026. The title is absent from extracted text and was verified visually.",
+          "pp.2–4, Figure 1 and Sections 3.1–3.2: OCS is a verdict-change indicator averaged over applicable conditions. ICS-delta is the absolute change in projection onto a fixed compliant-versus-noncompliant mean direction, reported relative to mean baseline |ICS|. The figure’s cosine cartoon is not the operational equation.",
+          "pp.3–4,13–15: only the rule field is deleted, swapped for another domain’s canonical rule, or its must/shall obligations negated. Samples without mandatory modals are excluded from negation; three domains have zero coverage. Appendix prompts were treated as source data.",
+          "pp.5,8,13–14: the same seed 42 cases are used across models; 19 domains ×200 plus 146=3,946. Authors report 12,897 case-condition generations per model and 64,485 overall. The 146-example education domain is not oversampled.",
+          "pp.4–5: four Tier 1 general-purpose models receive ICS analysis; Llama-Guard 3-8B is behavioral-only under a custom taxonomy, and WildGuard is excluded. Llama 3.3-70B defines LOW/HIGH partitions used for all models.",
+          "p.5, Table 1: aggregate OCS is Qwen.094, Llama 8B.070, Llama 70B.081, Guard.013 and Mistral.089. Eligibility and denominators vary by perturbation; the aggregate is not assumed to be the simple mean of the three printed condition columns.",
+          "p.14, Table 5: baseline/deletion accuracy (%) is Qwen 90.3/90.7, Llama 8B 91.9/91.4, Llama 70B 90.9/87.5, Guard 51.1/50.0 and Mistral 90.3/91.6. Original labels do not independently specify legal correctness under swapped or negated rules.",
+          "pp.6–7,16, Table 8: independence reference p(1−q)+q(1−p), with Guard p=.985 and q=.996 giving approximately.019 versus observed.013. The authors report 10,000 within-domain permutations and p<.0001. Independence is not a desirable legal flip rate.",
+          "pp.7,17, Table 9: rule-necessary means baseline correct/deletion incorrect. General-model subset sizes range 94–187; Guard has 49; only 6 cases overlap across all four general models. General-model swap OCS is.733–.780; Guard is 1.000 with null 1.000 and p=1.",
+          "p.17, Table 9: only Llama 8B swap p_up<.0001 passes the ten-test Bonferroni threshold.005. Mistral swap.006 and Llama 70B negation p_down.036 do not. Operational subset selection is not independent legal-necessity annotation.",
+          "pp.7–8, Table 2: external checks use only Llama 70B. LegalBench has 887 sampled cases, OCS.255 and accuracy.497. ContractNLI has 400 sampled/387 baseline-parseable cases, OCS.318 and accuracy.786; neutral labels are excluded. No external ICS, intervention or regression experiment is reported.",
+          "pp.4,15–16, Tables 6–7: relative ICS-delta is 12.8%,21.0%,22.9%,16.7%. The probe reads the final token at one anchor layer per model/domain. OCS correlations rho=.114,.084,−.032,.338 have p=.631,.724,.895,.145; nonsignificance does not establish independence.",
+          "pp.6,18, Table 10/Figure 6: MDD Spearman rho=.570, pBH=.044; other features do not survive BH. Joint OLS n=19, R²=.484, adjusted R²=.285, F=2.44, p=.091; no joint coefficient has individual p<.05. Positive association is not a causal effect of complexity.",
+          "pp.8,10,15,18, Table 11: standard prompts use the first 300 rule characters; grounded prompts add the full rule and a quotation instruction. Qwen LOW accuracy delta=−.028, p<.0001; no significant gain is reported. Only LOW p-values are printed despite the prose’s ten-cell statement.",
+          "pp.8–9,19, Tables 3/12 and Figure 7: two Llama models are steered at alpha=±.5/±1 at the anchor layer. All 16 exact paired p-values are reported without multiplicity correction; min p=.0044 exceeds.05/16. No significant benefit; four nominal harm contrasts.",
+          "p.10, Limitations: cross-model LOW/HIGH agreement is untested. Rule truncation, small deletion-critical subsets, a single probe direction and one-model external generalization are explicitly disclosed. Untested fixes are not ruled out."
+        ],
+        "fulltext_sha256": "e94fbc33764a6d6d4d9ba078b5ee515b9847a48a71ea56566f3dbe3a9a0e71c5",
+        "fulltext_status": "complete",
+        "model": "assistant-native-review",
+        "native_identity_version": 1,
+        "original_candidate_sha256": "aaa2188f5e5e7dda8e1b741ac95d4ab322af69e54c7fd54be97c67d3fe87c70c",
+        "out_of_scope": false,
+        "producer": "assistant-native-review",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "A relevant audit contribution: the paper jointly reports behavioral rule sensitivity and a compliance-projection shift, showing that high original-label accuracy can coexist with largely unchanged verdicts. Its five-model audit, bias-aware null and deletion-critical control are useful, and the authors document important limitations. The central 300-character truncation, completeness/instruction confound, transferred model partitions and absence of perturbed-rule gold labels prevent interpreting low OCS as blanket rule neglect or legal reasoning failure. ICS-delta measures one direction, not all rule information; lack of significant convergence does not establish independence. Prompting/steering tests report accuracy, not recovered grounding, and steering significance is nominal across 16 comparisons. External OCS is 3–4 times higher and tested on only one model; the repurposed guard's chance accuracy is format-specific. Useful in-scope LLM evaluation and interpretability work with moderate evidence, limited reproducibility and no demonstrated reliable repair.",
+        "rationale_en": "A relevant audit contribution: the paper jointly reports behavioral rule sensitivity and a compliance-projection shift, showing that high original-label accuracy can coexist with largely unchanged verdicts. Its five-model audit, bias-aware null and deletion-critical control are useful, and the authors document important limitations. The central 300-character truncation, completeness/instruction confound, transferred model partitions and absence of perturbed-rule gold labels prevent interpreting low OCS as blanket rule neglect or legal reasoning failure. ICS-delta measures one direction, not all rule information; lack of significant convergence does not establish independence. Prompting/steering tests report accuracy, not recovered grounding, and steering significance is nominal across 16 comparisons. External OCS is 3–4 times higher and tested on only one model; the repurposed guard's chance accuracy is format-specific. Useful in-scope LLM evaluation and interpretability work with moderate evidence, limited reproducibility and no demonstrated reliable repair.",
+        "rationale_zh": "本篇有價值的稽核貢獻，是並列行為規則敏感度與合規投影變化，呈現原標籤高正確率仍可伴隨幾乎不變的裁決。五模型、偏態虛無參考與刪除敏感控制有用，作者也明列重要限制。核心300字元截斷、完整性／指令混淆、跨模型套用分組，以及缺少擾動規則正解，使低OCS不能直接判成全面忽視規則或法律推理失敗。ICS-delta只量單一方向，不是全部規則資訊；未顯著收斂亦不證明獨立。提示與steering實驗量正確率而非依據修復，十六steering比較僅名目顯著。外部OCS高三至四倍且只測一個模型；改造guard的隨機水準正確率也屬格式特定。依原規準為範圍內LLM評估與可解釋研究，證據中等、重現受限，未展示可靠修復。",
+        "raw_weighted_score": 0.6965,
+        "request_sha256": "f0a3b145eb882065ff1fa919fbe393ddff129782d18c2d196121af219d810587",
+        "review_sha256": "c0f36d22717b5d4f91c152f871f87db7dd08b494fd3e7f9729ff3dd58fcc4990",
+        "scope_assessment": {
+          "classification": "in_scope_language_model_rule_conditioning_audit",
+          "decision": "in_scope",
+          "rationale_en": "The contribution evaluates language-model rule sensitivity, representation probes and interventions themselves; regulatory tasks provide test cases. This methodological focus satisfies the original LLM/evaluation scope rather than relying on a pure domain application.",
+          "rationale_zh": "貢獻以語言模型規則敏感度、表徵探測及介入本身為評估對象，法規任务供測例；方法核心符合原LLM／評估範圍，不以純領域套用入選。"
+        },
+        "scope_capped_score": null,
+        "scope_policy_version": "explicit-review-exclusion-v1",
+        "scope_status": "in_scope",
+        "score": 0.6965,
+        "source_key": "7847574da39c7e77dd28256ce24988b715ca9b77ed4762a86917d5e231968d58",
+        "story_id": "arxiv:2610.12313",
+        "token_usage": {},
+        "topics": [
+          "Red Teaming & Evaluation",
+          "Interpretability & Explainability",
+          "AI Safety",
+          "Prompting & In-Context Learning"
+        ]
+      },
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-ai",
+        "tier": 1,
+        "title": "Verdict Without the Rule: Diagnosing and Auditing Regulatory Rule Sensitivity in LLM Compliance Systems",
+        "url": "https://arxiv.org/abs/2610.12313v1"
+      },
+      "published_at": "2026-10-08T16:59:40+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.6965,
+        "llm_relevance_score": 19.502,
+        "recency_score": 0.8320667669916972,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 27.534066766991696
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2610.12313",
+      "summary": "Large language model compliance systems are deployed on the assumption that a verdict depends on the regulatory rule it is given. We test this directly across five models and 20 regulatory and platform-policy domains: delete, swap, or negate the governing rule while holding the case fixed, and check whether the verdict changes (OCS) or the model's internal representation of compliance shifts at all (ICS-delta). Neither moves much: models' verdicts are often invariant to substantial perturbations of the supplied rule, and the guard model, evaluated here under a custom-rule adaptation of its native taxonomy, is the least rule-sensitive and least accurate of the five, barely above chance (51%, versus 90-92% for general-purpose models). This reflects easy cases more than blanket neglect: on cases where deleting the rule changes a previously correct model prediction, models do track it closely. Neither better prompting nor direct intervention on the model's internal representations closes this gap. Accuracy alone does not establish that a compliance verdict is grounded in the supplied rule.",
+      "summary_en": "When a compliance model answers correctly, did it use the supplied rule? This paper holds the case fixed, deletes the rule, substitutes one from another domain, or negates mandatory obligations. OCS measures verdict flips; ICS-delta measures the change in activation projected onto a compliance-predictive direction. The main experiment covers five open models and twenty domains, with 3,946 cases and 64,485 case-condition generations. The four general-purpose models achieve approximately 90–92% accuracy while their aggregate OCS is only 0.070–0.094, showing that high accuracy can coexist with low perturbation sensitivity.\n\nThis does not establish blanket rule neglect. In model-specific subsets that are initially correct but become incorrect after rule deletion, swapping rules raises flip rates to 0.73–1.00. These subsets are selected by model behavior, not independently annotated legal necessity. Two external datasets, tested only with Llama-70B, produce OCS values of 0.255 and 0.318, also warning against treating the score as task-independent. Prompting and activation steering show no significant accuracy improvement; the evaluation does not directly demonstrate repaired rule grounding.\n\nA central limitation is that the standard prompt retains only the first 300 characters of the rule, whereas the intervention both supplies the full rule and requests a supporting quotation, confounding the changes. OCS tests whether the verdict changes, not whether the change is correct. ICS inspects one direction at one layer, so a small shift cannot establish that rule information is absent elsewhere. The guard model's 51.1% accuracy concerns a custom adaptation outside its native taxonomy, not a general failure of safety training. The paper offers a useful audit warning and starting point, but does not certify real-world regulatory reasoning or an effective repair.",
+      "summary_zh": "合規模型答對案例，是否真的依照提供的規則？本文固定案例，刪除規則、換成其他領域的規則，或否定「必須」義務，再以OCS計算裁決翻轉率；另以ICS-delta量測內部活化在合規分類方向上的投影變化。主實驗比較五個開放模型、二十個領域，共3,946個案例及64,485次案例／條件生成。四個通用模型正確率約90–92%，OCS卻只有0.070–0.094，顯示高正確率可與低擾動敏感度並存。\n\n這不代表模型完全忽略規則。挑出「原本答對、刪規則後答錯」的模型特定子集，換規則的翻轉率升至0.73–1.00；這是依模型結果定義，並非法律專家標註的必要規則。外部兩資料集只測Llama-70B，OCS升至0.255與0.318，也說明數值不可直接跨任務套用。改提示或加活化方向，未見顯著正確率提升，並未直接證明規則依據已修復。\n\n最重要的限制是標準提示只保留規則前300字元，而新提示同時補完整規則與要求引述，無法分離效果。OCS只測有沒有改判，不判改得對不對；ICS也只看單層一個方向，低變化不能證明其他位置沒有規則資訊。安全分類器51.1%的結果限於改造其原生分類格式後的任務，不能概括安全訓練無效。本文適合作為多模型稽核方法的警示與起點，尚不足以認證真實法規推理或修復效果。",
+      "title": "Verdict Without the Rule: Diagnosing and Auditing Regulatory Rule Sensitivity in LLM Compliance Systems",
+      "title_en": "Verdict Without the Rule: Diagnosing and Auditing Regulatory Rule Sensitivity in LLM Compliance Systems",
+      "title_zh": "沒有規則的裁決：診斷與稽核大型語言模型合規系統的規則敏感度"
+    },
+    {
+      "arxiv_id": "2610.12303",
+      "authors": [],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-10-10T12:15:25.625494+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-ai",
+          "tier": 1,
+          "title": "Learning Probabilistic Logic Programs with Functional Gradient Guided Language Models",
+          "url": "https://arxiv.org/abs/2610.12303v1"
+        },
+        {
+          "link_type": "paper",
+          "source_id": "arxiv-cs-ai",
+          "tier": 1,
+          "title": "Learning Probabilistic Logic Programs with Functional Gradient Guided Language Models",
+          "url": "https://arxiv.org/pdf/2610.12303v1"
+        }
+      ],
+      "llm_evaluation": {
+        "candidate_sha256": "f9426c8afa4fbb800a4b188d5d0cefea94ccd1ffcb5fc135aa5ee1783eb9b2d6",
+        "components": {
+          "evidence_strength": 0.53,
+          "generalizability": 0.54,
+          "novelty": 0.7,
+          "preference_relevance": 0.86,
+          "reproducibility": 0.27,
+          "rigor": 0.43
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "pp.1,3,8–10: abstract/Q2 mention four benchmarks, but actual data are Cora+Mutagenesis+12 Tox21 endpoints=14 tasks in3 families; do not invent a fourth dataset.",
+          "pp.6–7, Section3.1: one-time LLM-generated aggregate predicates checked for syntax/runtime and a clause template restricting vocabulary, types and combinations; not an empirical guarantee of semantic truth.",
+          "p.7, Sections3.2–3.3: residual r_i=y_i-sigmoid(F_(t-1)(e_i)); select10 high-absolute-residual examples, present signed values plus local bottom clauses/current ensemble, and request candidate clauses. Invalid syntax discarded.",
+          "p.8, Definition1/Equation2: phi_h(e)=w1*h(e)+w0*(1-h(e)), with each weight equal to its group mean residual; every rule contributes to every example, not only covered cases. The LLM proposes structure; numerical fitting assigns weights.",
+          "pp.8,10, Equations1–2/experimental setup: best residual-SSE candidate added with eta1;20 boosting iterations for GRASP and BoostedRDN,10 examples and5 proposals each round; Table4 actual ensemble sizes may be below20.",
+          "pp.1–3, claimed boosting guarantees; pp.6–8, complete method: no theorem, explicit weak-learning/oracle approximation condition, convergence rate or global-optimality proof is provided. Reviewer mathematical check permits conditional finite-sample descent for exact nonempty two-leaf residual projection; it does not certify arbitrary-oracle convergence.",
+          "p.9, Table1: Cora ROC-AUC97.67±0.26 for GRASP-Cdx vs95.02±1.96 BoostedRDN,92.99±0.51 Gem,91.86±0.00 NeuralLP,74.78±21.57 one-shot. These percentages are AUC units, not accuracy.",
+          "pp.9–10, Tables1–2: GRASP-family best mean on10/14 ROC tasks;11 strict PR wins plus nr_ar tie41.99 for Cdx/BoostedRDN. PR nr_ahr favors BoostedRDN38.17 over Cdx34.49/Gem32.37; sr_are29.27 over28.44/28.81.",
+          "pp.9–10, Tables1–2: nr_ar_lbd and sr_are have dashes for one-shot, explicitly no usable result rather than zero performance. Mutagen one-shot ROC82.72 exceeds NeuralLP79.08; PR90.23 exceeds BoostedRDN86.53/NeuralLP89.53, so it is not universally the weakest method.",
+          "p.10, baseline description; p.11,Q2: one-shot versus iterative GRASP does not separately control proposal count, aggregation, context/example choice and residual feedback. The observed improvement does not isolate pseudo-residual selection as the sole cause.",
+          "p.11, Table3: top GRASP rule rank uses absolute(w1-w0), with quantitative thresholds and invented aggregates. Example mutagen rule uses num_atoms>25 and LUMO<-1.1. These are selected learned associations, not verified causal toxicology rules.",
+          "p.12, Figure2: eight panels are four metric rows with insertion left and deletion right, despite top/bottom caption. Gemini insertion log-loss rises after an early dip while AUC improves; no ECE/reliability diagram establishes probability calibration. AUC gains and positive coverage alone are not calibration tests.",
+          "pp.12–13, Figure2/Table4: Cora Gem mean11.7 rules/max12 literals, Cdx20/max8; Mutagen Gem19.7/Cdx20; Tox21 Gem19.8/Cdx19.4. Aggregate endpoints are averaged where rules were produced. Neither count alone nor the plotted early gains prove universally sufficient2–4 rules or human simulatability.",
+          "p.14, conclusion: neural predicates/unstructured inputs, human expert refinement and proposer fine-tuning are future directions, not demonstrated capabilities.",
+          "pp.15–16: references close the PDF; no in-file appendix, code link, complete prompts/splits or raw experimental artifacts were obtained. MuPDFp1 font/p3ActualText warnings are preserved, with readable renders inspected."
+        ],
+        "fulltext_sha256": "c54def98e9ce1d88a70714324a5f0b63cd73d775460ec04fefc3d466d96b976d",
+        "fulltext_status": "complete",
+        "model": "assistant-native-review",
+        "native_identity_version": 1,
+        "original_candidate_sha256": "f9426c8afa4fbb800a4b188d5d0cefea94ccd1ffcb5fc135aa5ee1783eb9b2d6",
+        "out_of_scope": false,
+        "producer": "assistant-native-review",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "GRASP is in scope as a general language-model-assisted symbolic program-synthesis method, with executable coverage and fitted two-leaf residual weights grounding the proposer. Fourteen relational task results across three families and two LLM variants show practical promise, but modest baseline coverage and missing split/prompt/code details limit rigor and reproducibility. The one-shot comparison does not isolate residual-guided example selection; reported PR wins include one tie. Figure2 does not establish calibrated probabilities and its Gemini log-loss trend cautions against that reading. Boosting-style descent is conditional, not an unconditional guarantee for arbitrary LLM proposals. Readable rules are useful inspection artifacts, not demonstrated human explainability or causal biomedical knowledge. Recommended as a cautious methodological guide, with no independent reproduction, admission or publication conclusion.",
+        "rationale_en": "GRASP is in scope as a general language-model-assisted symbolic program-synthesis method, with executable coverage and fitted two-leaf residual weights grounding the proposer. Fourteen relational task results across three families and two LLM variants show practical promise, but modest baseline coverage and missing split/prompt/code details limit rigor and reproducibility. The one-shot comparison does not isolate residual-guided example selection; reported PR wins include one tie. Figure2 does not establish calibrated probabilities and its Gemini log-loss trend cautions against that reading. Boosting-style descent is conditional, not an unconditional guarantee for arbitrary LLM proposals. Readable rules are useful inspection artifacts, not demonstrated human explainability or causal biomedical knowledge. Recommended as a cautious methodological guide, with no independent reproduction, admission or publication conclusion.",
+        "rationale_zh": "GRASP屬通用語言模型輔助符號程式合成方法，透過可執行覆蓋檢查與兩葉殘差權重擬合，把提案連回資料，因此判為範圍內。三類資料十四任務、兩種LLM變體呈現實用潛力；但基線有限，切分／提示／程式等細節缺漏，降低嚴謹性與可重現性。一次性比較未隔離殘差選例，PR勝出數含一平手。圖2不能確立機率校準，Gemini對數損失走勢尤其需保留；提升下降性有前提，非任意LLM提案的無條件保證。可讀規則是有用查核產物，不等於已驗證的人類可理解性或因果生醫知識。適合作有保留的方法導讀，不作獨立重現、正式採納或發布結論。",
+        "raw_weighted_score": 0.6605000000000001,
+        "request_sha256": "510ec3945061c84a3c9e352c69ad8939d04efe1fb501877c46f33c5c9b3320f7",
+        "review_sha256": "c9ab95b4598adc4177403237d20e9a2fdb02dc0b291596812e91a269390d1b2f",
+        "scope_assessment": {
+          "classification": "in_scope_llm_guided_symbolic_program_learning",
+          "decision": "in_scope",
+          "rationale_en": "The contribution changes the learning/proposal mechanism itself using LLMs, functional residuals, typed clause synthesis and symbolic evaluation. Molecular datasets do not make this a pure medical/biology application; citation matching also tests the general formulation. No deployed medical decision is claimed.",
+          "rationale_zh": "貢獻在改變學習與提案機制本身，整合LLM、函數殘差、帶型別子句合成及符號評估；分子資料不使其成為純醫療／生物套用，引用配對亦測試一般形式。未主張醫療部署效度。"
+        },
+        "scope_capped_score": null,
+        "scope_policy_version": "explicit-review-exclusion-v1",
+        "scope_status": "in_scope",
+        "score": 0.6605000000000001,
+        "source_key": "c2d83d1a66dece29b377e5fbbb39107f39c19ab2cdb295b35ebd4442b3605e69",
+        "story_id": "arxiv:2610.12303",
+        "token_usage": {},
+        "topics": [
+          "Large Language Models",
+          "Reasoning & Chain-of-Thought",
+          "Code & Programming",
+          "Training & Optimization",
+          "Interpretability & Explainability"
+        ]
+      },
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-ai",
+        "tier": 1,
+        "title": "Learning Probabilistic Logic Programs with Functional Gradient Guided Language Models",
+        "url": "https://arxiv.org/abs/2610.12303v1"
+      },
+      "published_at": "2026-10-08T16:53:32+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.6605000000000001,
+        "llm_relevance_score": 18.494000000000003,
+        "recency_score": 0.8317124436466401,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 26.525712443646643
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2610.12303",
+      "summary": "Declarative logic programs offer a powerful and interpretable abstraction for encoding relational structure and neurosymbolic reasoning, by expressing dependencies as weighted compositional rules. However, inducing them from data remains fundamentally hard, bottlenecked by the combinatorial explosion of symbolic search spaces. LLMs have recently emerged as powerful hypothesis generators, but when used in isolation, they lack the capacity to do systematic inductive reasoning needed to reliably synthesize valid programs that fit complex relational distributions. We introduce grasp (Gradient-boosted Synthesis of Probabilistic logic programs), a neurosymbolic framework that casts relational structure learning as functional gradient boosting in which the weak learner is a first-order rule and the intractable inner search is delegated to an LLM proposal oracle. We evaluate grasp on four relational benchmarks spanning molecular toxicity prediction (Tox21), mutagenesis, and citation matching (Cora), and show that it improves over purely symbolic, neural, and LLM-based baselines, while producing interpretable weighted rule ensembles. By replacing combinatorial search with gradient-guided LLM hypothesis generation, grasp retains boosting guarantees without sacrificing the transparency of symbolic outputs.",
+      "summary_en": "Language models can propose plausible logical rules, but those rules must still fit observed data. GRASP makes the LLM a proposal mechanism inside functional gradient boosting. A one-time stage invents aggregate predicates and a clause template. Each iteration supplies ten high-magnitude-residual training examples, their local relational descriptions, signed residuals and the current ensemble, requesting five candidate rules. Symbolic evaluation computes coverage; the mean residual among covered and uncovered examples supplies two separate leaf weights. The candidate with the lowest residual squared error joins the additive ensemble. Experiments use at most twenty boosting iterations and step size one. The LLM does not directly assign the fitted weights.\n\nThe evaluation actually covers three dataset families: Cora citation matching, Mutagenesis and twelve Tox21 targets, totaling fourteen tasks. Across the two GRASP variants, ten tasks have the highest mean ROC-AUC; PR-AUC has eleven strict wins and one tie. On Cora, the Codex variant reports 97.67% ROC-AUC versus 95.02% for BoostedRDN, a 2.65-percentage-point difference, not classification accuracy. Readable rules and insertion/deletion analysis expose influential rules, but do not establish human comprehensibility.\n\nOne-shot generation is not matched to twenty boosting rounds by proposal budget, so the gain cannot be assigned solely to residual-based example selection. Complete prompts, data splits and implementation code are not supplied. In Figure 2, the Gemini ensemble's log loss rises as more rules are inserted; this does not support a blanket claim of calibrated probabilities. Descent arguments require valid residual fitting and other conditions, and cannot guarantee global convergence for an arbitrary LLM oracle. The value is a general method for constraining LLM hypotheses through executable symbolic evaluation, not a validated medical decision system.",
+      "summary_zh": "讓語言模型提出邏輯規則很容易，難的是讓規則真正符合資料。GRASP把大型語言模型放在梯度提升的「提案者」位置：先產生計數等聚合述詞及規則模板，每輪挑出十個殘差最大的訓練例，連同局部關係、殘差正負與現有規則提示模型，要求五個候選。符號求解器檢查規則覆蓋情況，分別用被覆蓋與未覆蓋例的平均殘差作兩個權重，再選誤差最小者加入加性集成；實驗最多二十輪、步長為一，權重不是由語言模型直接決定。\n\n評估實際涵蓋Cora引用配對、致突變資料及Tox21十二個標的，共三類資料、十四項任務。兩種GRASP變體合計在十項任務有最高ROC曲線下面積；PR指標則十一項嚴格最佳，另有一項平手。Cora的Codex變體ROC為97.67%，BoostedRDN為95.02%，差2.65個百分點；這不是分類準確率。可讀規則和插入／刪除分析展現部分規則的重要性，但不等於人類理解已驗證。\n\n限制也明顯：一次性生成與二十輪提升未配對相同提案預算，不能把增益全部歸因於殘差選例；完整提示、資料切分與程式未提供。圖二的Gemini集成隨規則加入，對數損失反而上升，無法支持全面校準良好。提升的下降性須有有效殘差擬合等條件，不能替任意語言模型提案保證全域收斂。價值在於以可執行符號評估約束語言模型的通用方法，而非已驗證的醫療決策工具。",
+      "title": "Learning Probabilistic Logic Programs with Functional Gradient Guided Language Models",
+      "title_en": "Learning Probabilistic Logic Programs with Functional Gradient Guided Language Models",
+      "title_zh": "以函數梯度引導語言模型學習機率邏輯程式"
     }
-],
+  ],
   "radar": [],
   "run_date": "2026-10-09",
-  "run_id": "bounded-preview-2026-10-09",
+  "run_id": "bounded-partial-additive-2026-10-09",
   "run_info": {
-  "added_native_count": 5,
-  "addition_prepared_at_utc": "2026-10-10T08:26:00+00:00",
-  "addition_ranking_anchor_basis": "Frozen preparation time; not source collection cutoff or historical ranking time",
-  "addition_ranking_anchor_utc": "2026-10-10T08:26:00+00:00",
-  "combined_native_reranked": false,
-  "coverage_status": "partial",
-  "date_basis_by_story": {
-    "arxiv:2610.10833": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
+    "added_native_count": 5,
+    "added_reviewed_candidate_count": 5,
+    "addition_prepared_at_utc": "2026-10-10T13:39:00+00:00",
+    "addition_ranking_anchor_basis": "Preserved original exact-five subset ranking anchor, not a collection cutoff or announcement event.",
+    "addition_ranking_anchor_utc": "2026-10-10T13:07:00+00:00",
+    "combined_native_reranked": false,
+    "coverage_status": "partial",
+    "date_basis_by_story": {
+      "arxiv:2610.10833": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.11030": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.11050": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.11134": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.11268": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.11287": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.11464": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.11559": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.11573": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.11578": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.11593": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.11600": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.11613": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.11620": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.11647": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.11715": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.11773": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.11781": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.11858": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.12002": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.12056": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.12061": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.12083": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.12124": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.12168": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.12235": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.12242": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.12269": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.12274": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.12303": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.12304": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.12313": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.12325": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.12360": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.12361": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.12374": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.12375": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.12409": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.12410": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.12436": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      }
     },
-    "arxiv:2610.11030": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.11050": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.11134": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.11268": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.11287": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.11464": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.11559": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.11573": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.11578": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.11593": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.11600": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.11613": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.11620": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.11647": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.11715": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.11773": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.11781": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.11858": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.12002": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.12056": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.12061": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.12083": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.12124": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.12168": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.12235": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.12242": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.12269": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.12274": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.12360": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.12374": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.12375": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.12409": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.12410": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.12436": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
-    }
+    "error_summary": "PARTIAL 部分更新：保留已發布35篇及原順序；本批5篇依原規則選5篇，按子集排名追加Papers。40篇未合併重新排名；全日總量與收集截止時間未知。",
+    "finished_at": "2026-10-10T03:29:00+00:00",
+    "full_day_candidate_total": null,
+    "items_total": null,
+    "preserved_baseline_body_sha256": "08d91581999d6330a3c3b9bda745eb209e88a0ee9c9790dafa9e875c4e2251a5",
+    "preserved_baseline_count": 35,
+    "preserved_baseline_kind": "published_verified",
+    "preserved_baseline_seal_sha256": "85327fbd36c34300215232da91483ef532d57bf8b43cf0a2f3703cb20d9441a4",
+    "preview_only": false,
+    "prior_reviewed_total_count": null,
+    "release_scope_note": "Five additions from the accepted exact-five native pool are appended to Papers in their established subset order. All 35 published Oct9 baseline stories and section order are byte-preserved; all 40 are not jointly reranked. First submission is Oct8 and bounded listing-day membership is Oct9. Full-day totals, configured-query coverage, exact announcement events and collection cutoff remain unknown.",
+    "reviewed_selected_count": 40,
+    "reviewed_total_count": null,
+    "run_id": "bounded-partial-additive-2026-10-09",
+    "source_collection_cutoff_utc": null,
+    "started_at": "2026-10-10T03:29:00+00:00",
+    "stories_total": 40,
+    "success": true,
+    "underlying_live_commit": "045949009e0fb06d9ecc9f0c40563b2374835a3f"
   },
-  "error_summary": "PARTIAL 部分更新候選：保留前一候選30篇及既有順序，本批5篇依原規則選5篇，按子集排名追加Papers。35篇未合併重新排名；全日總數與收集截止時間未知。",
-  "finished_at": "2026-10-10T03:29:00+00:00",
-  "full_day_candidate_total": null,
-  "items_total": null,
-  "preserved_baseline_body_sha256": "c73506aae6e88d756ac48000f63f535ffc9d86c0e127db51b706c78f2053351d",
-  "preserved_baseline_count": 30,
-  "preserved_baseline_kind": "unpublished_proposed_candidate",
-  "preserved_baseline_seal_sha256": "9a6ecdee6acf8c3c565b365ca75050f0cc6779d59ad67c0c108d3f96461ba05e",
-  "preview_only": false,
-  "release_scope_note": "Five new Oct9 selections from five reviewed candidates, after unchanged filtering, appended to Papers in separately ranked subset order; all 30 entries in the unpublished proposed baseline preserve their exact story bytes and section order. All 35 were not jointly reranked. Full-day totals and collection cutoff remain unknown.",
-  "reviewed_selected_count": 35,
-  "reviewed_total_count": 38,
-  "run_id": "bounded-preview-2026-10-09",
-  "source_collection_cutoff_utc": null,
-  "started_at": "2026-10-10T03:29:00+00:00",
-  "stories_total": 35,
-  "success": true,
-  "underlying_live_commit": "c51b210a8354e85aac822764266250a7e05a71a0"
-},
   "sources_status": [
     {
       "category": null,
-      "items_new": 0,
-      "items_updated": 0,
+      "items_new": null,
+      "items_updated": null,
       "last_fetch_status_code": null,
       "method": "saved_official_html",
       "name": "Bounded reviewed subset",
       "newest_item_date": null,
       "reason_code": "PARTIAL_BOUNDED_UPDATE",
-      "reason_text": "部分更新：僅含已核對的有界來源子集；日期依各篇明示依據，精確公告時鐘、全日來源總數及收集截止時間未知。Partial update: bounded verified subset; per-story date basis is explicit; exact announcement clocks, full-day totals and collection cutoff remain unknown.",
+      "reason_text": "僅含已核對的有界來源子集；精確公告事件、全日來源總數及收集截止時間未知。Bounded verified subset; exact announcement events, full-day totals and collection cutoff remain unknown.",
       "remediation_hint": null,
       "source_id": "arxiv-bounded-reviewed-subset",
       "status": "CANNOT_CONFIRM",
