@@ -1,50 +1,56 @@
 {
   "added_native_audit": {
-    "candidate_count": 4,
-    "evaluated_count": 4,
+    "candidate_count": 5,
+    "evaluated_count": 5,
     "native_audit": {
       "date": "2026-10-09",
       "entries": {
-        "arxiv:2610.11858": {
+        "arxiv:2610.10833": {
           "evaluatable": true,
-          "request_sha256": "189c761ceaa3f701c4af7bc5586fac730a1d8ca7502f2dc1c060f17920a96c91",
-          "review_sha256": "ddb722878db18abd35310f3fc1adbb1c97b61833a1edc2177489c9acd0df3320",
-          "source_key": "dccbe3c39ec0ef8e4bc33b663741daafc7a09961d99f86397377921be51f24dd"
+          "request_sha256": "1dd51507fa92d7288875b6b1a702c40253208215dfcda7b16332c1a08572650d",
+          "review_sha256": "7e851388c95d92fdd7646cd13a02e3fa62f7e1cad92eba87050111807faaf6d0",
+          "source_key": "8bc8add87c7c2e2135f3d08cdfd61ffc70361769382d23e3823e9e7d5165dcb1"
         },
-        "arxiv:2610.12056": {
+        "arxiv:2610.11268": {
           "evaluatable": true,
-          "request_sha256": "3db8fb23e49b1b84b48ae821621e30893302a68edf12ae65e138d421fa84291b",
-          "review_sha256": "795ba12c7718f19fc4b40bdf82b0a16345358a103c1b7233d6c66f2ea242f0f5",
-          "source_key": "2c0705b7021a3fab5848b45ffc220aa6214f281872509959d37b7dd458156a4d"
+          "request_sha256": "00a38198ea30f6f0bcca16c93429ea63d789919d2d84d92369d14282633f399c",
+          "review_sha256": "ac6ccca084dce191a9a2a691b00c37bbf5eddc838e88263512812b853fc7f0a7",
+          "source_key": "f8cc0b058f2aa4c39e9d2f46d62b88e415d1697597e54d8f08f875fa5f672b4c"
         },
-        "arxiv:2610.12083": {
+        "arxiv:2610.11573": {
           "evaluatable": true,
-          "request_sha256": "c26418ce38e63747d690b3de91dde032db7c523403fa00162260154800458eae",
-          "review_sha256": "69f13ca0fa49e73fbb186cb72395a13bfc2342e4b702d5c261ff33a9893a5797",
-          "source_key": "fb5990973491a61f8abba759b64fb9c65f771a37031ba60926dd3814b280f4b8"
+          "request_sha256": "4a693ee7ef3f2d71872418af961f234f843d865b7fa88be48362f6d0d6e71b1e",
+          "review_sha256": "1edb3356b10b4a3525d35c3c7cb8b91a759a3905e93594df41de7897c6449f26",
+          "source_key": "2758845c97b549cfc43dcf0f2c2e236e1be870b924391fec604b62eb09bc56fc"
         },
-        "arxiv:2610.12235": {
+        "arxiv:2610.11600": {
           "evaluatable": true,
-          "request_sha256": "a15854b4e5ccc874a2d994961464d4de38af5ef33dce1fe22df346196ae26fcc",
-          "review_sha256": "cd30ffc74ef19350939166632195adb47958a79e19e4c21289fc4fefb16ce18c",
-          "source_key": "2958a083f32a663dc36d961ccabbea0b6d4b5daf8901159a06febf50b235686b"
+          "request_sha256": "27d37d557d97c1f9ab05ab8400abd336d547b1f99dc2f5ad062e14822e331e26",
+          "review_sha256": "c80415555907cdcd0837a9ecdf38946750d388bf6eaf82667033034b4cbb4bb5",
+          "source_key": "01dc670aac27a97141c23ec449502f828af0304e3fcba874f97b3976d5130717"
+        },
+        "arxiv:2610.11613": {
+          "evaluatable": true,
+          "request_sha256": "d0aa1eb25d6eade37693fc1f746bab79061d0ce0380ead5a7957724f9c136d5e",
+          "review_sha256": "3ad1504e3ac1907f5dad1f308b44980f3eee7d19d77cf1000d0e3bf741da36ef",
+          "source_key": "1875d91fa4cb0f60b3f6a6920125d2450e4b86019a660ebbdbfbed4dcb7d1fce"
         }
       },
-      "manifest_sha256": "088702ef5bb46bfa984ca317e054edde6f4d683973613977a8953da4214975a4",
+      "manifest_sha256": "8c601c30d6dc1a890419fa3dfb49eb378690de1804c2245604047565f6484e13",
       "version": 1
     },
     "phase": "bounded_partial_candidate_additions_only",
     "producer": "assistant-native-review",
-    "selected_count": 4
+    "selected_count": 5
   },
-  "added_native_count": 4,
+  "added_native_count": 5,
   "baseline_kind": "unpublished_proposed_candidate",
   "candidate_count": null,
   "combined_native_reranked": false,
-  "evaluated_count": 24,
+  "evaluated_count": 38,
   "full_day_complete": false,
   "phase": "proposed_baseline_preserving_addition",
-  "preserved_baseline_count": 18,
+  "preserved_baseline_count": 30,
   "preserved_proposed_baseline_audit": {
     "added_native_audit": {
       "candidate_count": 5,
@@ -52,198 +58,369 @@
       "native_audit": {
         "date": "2026-10-09",
         "entries": {
-          "arxiv:2610.11287": {
+          "arxiv:2610.11030": {
             "evaluatable": true,
-            "request_sha256": "2c285b31a8c0e5ca7e570fdedc91c752028259ae9edc41b403bb86a2fc6a5794",
-            "review_sha256": "76e46edadb4369e048b99d36d966ead80af56f7fc0b4e701267a518b35775403",
-            "source_key": "802d12665237b3b5674bef6ece92658f25d0ceda1d568ef5180d67453c3f8903"
+            "request_sha256": "3437dea1451f2ae573bac5c1c2360389c30b84a0cee15a75e28988f28927af69",
+            "review_sha256": "0c71bf16b64ea393c448fdbf60431bbf6143e7f4c4e22765959557779cfcdb36",
+            "source_key": "f4707ca59a7ccb341d53478301f1725bda08ee7434db8faea8ab5d7c71c615b3"
           },
-          "arxiv:2610.11620": {
+          "arxiv:2610.11050": {
             "evaluatable": true,
-            "request_sha256": "b0eced64414e420d66ced353e88ad180c0e208c7bf06da576be27c3449d7c831",
-            "review_sha256": "9da602891805f1d2f6588a9d1810718fef8311ca94679d86bc19c76101652035",
-            "source_key": "9c163b83126131c87ecb4107f47da8f0fcb6a010dec3515c4d7936ca3c16528a"
+            "request_sha256": "96e5e0dfc8c91bac164b0bda034d9ee964f01d1e8fcc5c06535f674f597540d2",
+            "review_sha256": "76ee9d7eefdf25f811fae68bb1ed6a5f36d63b8e56c9c5af77ce24416839a80a",
+            "source_key": "2007034076957c2b45842480f89914dc37be9468dd3812644f4341154e97dad8"
           },
-          "arxiv:2610.11715": {
+          "arxiv:2610.11464": {
             "evaluatable": true,
-            "request_sha256": "33443151c631d2e465b46d8ff45335dea21cccf3fc5b6b325f09af3a049d02c5",
-            "review_sha256": "94868f266ed07ac745caddad2dfcad74b715263da8fa200b4921695b00edf952",
-            "source_key": "6972a0c01090d6755241001c54f3f680059522dfca2dc8858d5d0b6dcd072347"
+            "request_sha256": "3ac33739a240b2e604088eca9493a12cfcc5f67f0466da31d7c717b72a69e897",
+            "review_sha256": "925f3caf886e74cc92f48353ebb083f4f913c4a40ca624e93e8425658671f070",
+            "source_key": "d0518d3ac5707fec4640048531293c4cfc5f0ceed30321b143a2200816341605"
           },
-          "arxiv:2610.12168": {
+          "arxiv:2610.11578": {
             "evaluatable": true,
-            "request_sha256": "42f5749ab9c9a48f01489eb859c3f697e4dca03cac9c225c7a9aeb7c97d670f8",
-            "review_sha256": "71a1b6e32b5b6e9f7cf7d7e657ffb9000521d71cb6d1b626bb2942cb07aa98b5",
-            "source_key": "03be2df5e13985f9cbb382e11604398f3b8676b275425939ad9ceab545330b53"
+            "request_sha256": "aa343afb461999cc4ebb1d55bb729ad71849f85fffd8cf8a6db673aeedd88bd2",
+            "review_sha256": "d3c030470efef409f3e5eb4e4f1424ec738ca207c6b0ff5320a0212aa2436f0d",
+            "source_key": "15e044afe0dd47871817be4b42be365084765d5a4acfedabae842a6f49b0bc74"
           },
-          "arxiv:2610.12360": {
+          "arxiv:2610.11678": {
             "evaluatable": true,
-            "request_sha256": "8e414b37336ce792fddd85f0e4d2fb72736d56a9ddbb0090ef653811bedaea39",
-            "review_sha256": "e472caab49ef01de28ef3e7232e6bf9c6b8ff7970e6f5495ad05849ace40e8d0",
-            "source_key": "e8cd6e0253bfaebacd4cc39c7273034f916cd9ea0b1bd270328b9b6a233464c8"
+            "request_sha256": "478f9c9f4b316e4ae604fcf54b806e64296da63164f6834241e699803a808eb9",
+            "review_sha256": "2cfa0679142763d10ea7bb3d1e72da91175d94590eab58102e749bb724e189ed",
+            "source_key": "976cd12210ec937e4a03d94326e907322e3ab6ae49777d528ea28a9fb5ad9fd5"
           }
         },
-        "manifest_sha256": "49b67a7a50f0cf9d91003f6afc27e189875100d619396849448e7f4cbe74ff0e",
+        "manifest_sha256": "9e8e15d8980afc7a759a7be089c62b8d6bde01b0e45332ad960e8a2643945baf",
         "version": 1
       },
       "phase": "bounded_partial_candidate_additions_only",
       "producer": "assistant-native-review",
-      "selected_count": 5
+      "selected_count": 4
     },
-    "added_native_count": 5,
+    "added_native_count": 4,
     "baseline_kind": "unpublished_proposed_candidate",
     "candidate_count": null,
     "combined_native_reranked": false,
-    "evaluated_count": 20,
+    "evaluated_count": 33,
     "full_day_complete": false,
     "phase": "proposed_baseline_preserving_addition",
-    "preserved_baseline_count": 13,
+    "preserved_baseline_count": 26,
     "preserved_proposed_baseline_audit": {
       "added_native_audit": {
-        "candidate_count": 7,
-        "evaluated_count": 7,
+        "candidate_count": 4,
+        "evaluated_count": 4,
         "native_audit": {
           "date": "2026-10-09",
           "entries": {
-            "arxiv:2610.11134": {
+            "arxiv:2610.11593": {
               "evaluatable": true,
-              "request_sha256": "c7097a29d70b2fe1f9c5f76dad6dd228f5a153af0a0512713f605feaf902d16b",
-              "review_sha256": "a26376d1905cd90b810ba65d47af55e96f39c467c35fa8e4df9aa8573bd9caa0",
-              "source_key": "e9062b5818a8fa85e7d53bf0cd0688c28b5a2b226c9b7bab8b32cf7b32184315"
+              "request_sha256": "0f3f5213a8d1ad5ef5760df6e178e63b580c773e11e49cbd4fc391ff458eff8e",
+              "review_sha256": "b822471fba00cc1ef3007fac031eed8fad3ad40431f5fe52b905158ba5a217fc",
+              "source_key": "f8c4ad266e8fe6f130408c3ccaf86e8568e727d1e952443db425780eb7d0b2fa"
             },
-            "arxiv:2610.11781": {
+            "arxiv:2610.12409": {
               "evaluatable": true,
-              "request_sha256": "940d818cfee225c8c403b752c0ada755b812a0b04396929df82414b411105f98",
-              "review_sha256": "451cdaa1a1fd509cdaf59ce17e4cdd4a73bcbcf0d6c82940f8ea44d7cda6add3",
-              "source_key": "af408f0220041578e72eef7c91b60f8e02ae7d070a8a4d9e40d6d2ca6ff71ce4"
+              "request_sha256": "822a0044de25e0f9a24d0bb3a0623a37712d1a7c948f7e00830ba4449e5358da",
+              "review_sha256": "e5a8bf82d1f6098e24133ea760685a66be860ce4781ad1357b4a59bec711b9fd",
+              "source_key": "96ad8afdf461939de69e9faeba3cce75a8c7533d98fd7d5c06b2b77d1c361a3c"
             },
-            "arxiv:2610.12002": {
+            "arxiv:2610.12410": {
               "evaluatable": true,
-              "request_sha256": "55b2e027e0234b838352c2a8edcfaccab932722ac4e26345c5d579849fbc9e15",
-              "review_sha256": "1c732de234bd11580831b2797c7bfb9f0971ad5525a2b532544c9e9570ee11d4",
-              "source_key": "f4cf438110f6fa7bd5cda062a3a9cdef89d2a3dbfd2eae7ffc342e026d2be900"
+              "request_sha256": "3cd9b72e78f61f25ed41f7d80b8df0d7e93ffc311d17f78d68f2e987302a49aa",
+              "review_sha256": "873dfe47af65b5c5bc7240ddf4d34e2dcbca984f2156d1efc2bed0d63b0d17d8",
+              "source_key": "621f9446aef72e5f328d288a7437408db512202635640293515d565d05d8cbd4"
             },
-            "arxiv:2610.12242": {
+            "arxiv:2610.12436": {
               "evaluatable": true,
-              "request_sha256": "d4405270cab6bee450659f4f2deafabb01980a7f5864608c2db5736fc04c7399",
-              "review_sha256": "6a47b9f082257f6fd4aec7ec9e5eb2afc5f1ddf17e4f0cbdf4aa4905d487db7d",
-              "source_key": "9524b89d03ac1b96c6bc48b4243144c04f01b6acaf43947b555ed850b5bf7b56"
-            },
-            "arxiv:2610.12269": {
-              "evaluatable": true,
-              "request_sha256": "b9456d1329c50e711b288152aa1937e3fe2093721ad21ec0b18b229b37ad79c7",
-              "review_sha256": "e6801c065a74191155e65b0531f8058c4de1a5326c0e15d7040d6643b92fe50a",
-              "source_key": "e083039a20c9827c1ff8b1a1d7054509ab1dac0c633ee5d8ee5559a26e4bb992"
-            },
-            "arxiv:2610.12274": {
-              "evaluatable": true,
-              "request_sha256": "5ed8541f01e3341a0934651edfca53e3f54b70dbcfa5b0d54dff75560a1a07b1",
-              "review_sha256": "8341a64964334b05c2a2eec098efd4a436c43bc82f5492de15397ff4eb402315",
-              "source_key": "3a76a809724c5ce5076a119e3c8671f8e9bf72161deddba1a9916aafd18df759"
-            },
-            "arxiv:2610.12374": {
-              "evaluatable": true,
-              "request_sha256": "6ad3a5aff78134dcc66cc7f97b01d1b7891b398b4ed8f52d3b4ee9d9abb55135",
-              "review_sha256": "bbbc2981c8c8dbf54c3992bc743b599417c54ac4a1ce6f6543b59418fe5e45b7",
-              "source_key": "3a4b5f5e7da62d02703b1b84d53f3dcdab72678104a1220f9fc345d1a7de95f3"
+              "request_sha256": "cfc39d2c8f4f9c22906e9dab5a8f5874e57b129687102f85870f44679ec6d33b",
+              "review_sha256": "61c6841a01a335ceb794054862bcb0492f252215e9608a1d8f646d50744283f9",
+              "source_key": "dacbff710cfe4710685d60511789ec67f661409f2982315b28143715d6e83b3e"
             }
           },
-          "manifest_sha256": "12858b712a8945ef4a0827b48b3e14d483798ad9f0a7b25fd5303f8a5baa686f",
+          "manifest_sha256": "47a48427ba9835054aaa4f0ba77c030976b345e82967e17af649902926392300",
           "version": 1
         },
-        "phase": "bounded_partial_release_additions_only",
+        "phase": "bounded_partial_candidate_additions_only",
         "producer": "assistant-native-review",
-        "selected_count": 7
+        "selected_count": 4
       },
-      "added_native_count": 7,
-      "baseline_body_sha256": "f228058f29983be0b5ef6ef0f93dcf9031754ea58cf6ab9f61c59302db230409",
-      "baseline_commit": "142d7609aede109e471e98427d834bec90ef7048",
+      "added_native_count": 4,
+      "baseline_kind": "unpublished_proposed_candidate",
       "candidate_count": null,
       "combined_native_reranked": false,
-      "evaluated_count": 15,
+      "evaluated_count": 28,
       "full_day_complete": false,
-      "phase": "baseline_preserving_addition",
-      "preserved_baseline_audit": {
-        "candidate_count": 8,
-        "evaluated_count": 8,
-        "native_audit": {
-          "date": "2026-10-09",
-          "entries": {
-            "arxiv:2610.10610": {
-              "evaluatable": true,
-              "request_sha256": "fb8b1ba3befa6e6939c4c97325c6628b7347fe6efde9f43650255ca0a0ee73a5",
-              "review_sha256": "2a3265a1e5e992336ba06cb884aba846efd6268b2641a00b19f36cf3257bb501",
-              "source_key": "9bb927b336becfb946ee3687dc6644d8d536b3ceb80a74bec20941475d0d7e49"
+      "phase": "proposed_baseline_preserving_addition",
+      "preserved_baseline_count": 22,
+      "preserved_proposed_baseline_audit": {
+        "added_native_audit": {
+          "candidate_count": 4,
+          "evaluated_count": 4,
+          "native_audit": {
+            "date": "2026-10-09",
+            "entries": {
+              "arxiv:2610.11858": {
+                "evaluatable": true,
+                "request_sha256": "189c761ceaa3f701c4af7bc5586fac730a1d8ca7502f2dc1c060f17920a96c91",
+                "review_sha256": "ddb722878db18abd35310f3fc1adbb1c97b61833a1edc2177489c9acd0df3320",
+                "source_key": "dccbe3c39ec0ef8e4bc33b663741daafc7a09961d99f86397377921be51f24dd"
+              },
+              "arxiv:2610.12056": {
+                "evaluatable": true,
+                "request_sha256": "3db8fb23e49b1b84b48ae821621e30893302a68edf12ae65e138d421fa84291b",
+                "review_sha256": "795ba12c7718f19fc4b40bdf82b0a16345358a103c1b7233d6c66f2ea242f0f5",
+                "source_key": "2c0705b7021a3fab5848b45ffc220aa6214f281872509959d37b7dd458156a4d"
+              },
+              "arxiv:2610.12083": {
+                "evaluatable": true,
+                "request_sha256": "c26418ce38e63747d690b3de91dde032db7c523403fa00162260154800458eae",
+                "review_sha256": "69f13ca0fa49e73fbb186cb72395a13bfc2342e4b702d5c261ff33a9893a5797",
+                "source_key": "fb5990973491a61f8abba759b64fb9c65f771a37031ba60926dd3814b280f4b8"
+              },
+              "arxiv:2610.12235": {
+                "evaluatable": true,
+                "request_sha256": "a15854b4e5ccc874a2d994961464d4de38af5ef33dce1fe22df346196ae26fcc",
+                "review_sha256": "cd30ffc74ef19350939166632195adb47958a79e19e4c21289fc4fefb16ce18c",
+                "source_key": "2958a083f32a663dc36d961ccabbea0b6d4b5daf8901159a06febf50b235686b"
+              }
             },
-            "arxiv:2610.11559": {
-              "evaluatable": true,
-              "request_sha256": "22a831c20084c679ca425ab9d74a80241e38950bd0f9415eb2332099cfc6c06f",
-              "review_sha256": "fdb7d822b572213ae64d65a67142a90ddbd740cd891772617273fb87d8a03053",
-              "source_key": "f4833abf314d86adfbe245146de30f371f513c0805549f3d21e07a3522376a29"
-            },
-            "arxiv:2610.11647": {
-              "evaluatable": true,
-              "request_sha256": "279e2f266c919ec97a2168c055b858b2fb79e929faca55b25544f0ba54390499",
-              "review_sha256": "fd0991d493c329388782f894081df47b85c936c3510cb397142285cfcea4de4f",
-              "source_key": "c92350951a213a0873fe487c1a703b453142ffcfbfa825511d12f4519cdac6c8"
-            },
-            "arxiv:2610.11773": {
-              "evaluatable": true,
-              "request_sha256": "036704dcdaf2ecbc40a70751634511b1feb3965fe36e84e5a5c73475d347a800",
-              "review_sha256": "cb61b79478f066696df7b61e0cd0225f4793433d51de1179103f0c04ba4ef135",
-              "source_key": "9945b70c2e8752b5c226636c53a1176e08c54bc3d22893f482438011afb38e8f"
-            },
-            "arxiv:2610.12061": {
-              "evaluatable": true,
-              "request_sha256": "a412822895cdee55346779c888b218861c9542ee9f9055b7e03d29f340b54395",
-              "review_sha256": "1163dd021723c0eca82adda80c94c8c01c259b4539a24ecb81e5c268249d119e",
-              "source_key": "972a715a21f3eac26039178d9ba96215e2cd7a1b321f668c2cb267b12e285a66"
-            },
-            "arxiv:2610.12124": {
-              "evaluatable": true,
-              "request_sha256": "67b67ea5ec45026940b54be573929d21fd71c5669476ec26d6fc8fa37c295466",
-              "review_sha256": "21f9098ef0cf04fcf0b829dd2ccb872fca6427c1a6582a48887e0b7fe3de1efa",
-              "source_key": "646b1bae8217581cc2657087655e27f3a71b0114ed9b7d908c754858ca428ce7"
-            },
-            "arxiv:2610.12375": {
-              "evaluatable": true,
-              "request_sha256": "35dbdc36484195dcf8a95ad93c87359504f440c807be7a06c59700205c95b202",
-              "review_sha256": "b64c1a9aca4a8f51a0da15ea9a449364e0d842670807951e0023d5e27569c71f",
-              "source_key": "29241642f876504a182f75ff0a94d0020c705a0aebdf42a1763342f654a98504"
-            },
-            "arxiv:2610.12466": {
-              "evaluatable": true,
-              "request_sha256": "3a8505443a390e109d343b4e315ad1375dde232a4b986be969fd2c5db840c45a",
-              "review_sha256": "ad4642f8d6de3074504cac9673383f35b2f598c9a2e046c4a2474c8080a8845c",
-              "source_key": "ebf0e482fba8b5e5aa4c42392811c65e8a92fd06fdb0dd7b487c4a7a46842a03"
-            }
+            "manifest_sha256": "088702ef5bb46bfa984ca317e054edde6f4d683973613977a8953da4214975a4",
+            "version": 1
           },
-          "manifest_sha256": "55ac497f5586275f2a9cffc7af380c990bd4400ca5b5a7b0e543aeb374c4b42d",
-          "version": 1
+          "phase": "bounded_partial_candidate_additions_only",
+          "producer": "assistant-native-review",
+          "selected_count": 4
         },
-        "phase": "bounded_partial_release",
+        "added_native_count": 4,
+        "baseline_kind": "unpublished_proposed_candidate",
+        "candidate_count": null,
+        "combined_native_reranked": false,
+        "evaluated_count": 24,
+        "full_day_complete": false,
+        "phase": "proposed_baseline_preserving_addition",
+        "preserved_baseline_count": 18,
+        "preserved_proposed_baseline_audit": {
+          "added_native_audit": {
+            "candidate_count": 5,
+            "evaluated_count": 5,
+            "native_audit": {
+              "date": "2026-10-09",
+              "entries": {
+                "arxiv:2610.11287": {
+                  "evaluatable": true,
+                  "request_sha256": "2c285b31a8c0e5ca7e570fdedc91c752028259ae9edc41b403bb86a2fc6a5794",
+                  "review_sha256": "76e46edadb4369e048b99d36d966ead80af56f7fc0b4e701267a518b35775403",
+                  "source_key": "802d12665237b3b5674bef6ece92658f25d0ceda1d568ef5180d67453c3f8903"
+                },
+                "arxiv:2610.11620": {
+                  "evaluatable": true,
+                  "request_sha256": "b0eced64414e420d66ced353e88ad180c0e208c7bf06da576be27c3449d7c831",
+                  "review_sha256": "9da602891805f1d2f6588a9d1810718fef8311ca94679d86bc19c76101652035",
+                  "source_key": "9c163b83126131c87ecb4107f47da8f0fcb6a010dec3515c4d7936ca3c16528a"
+                },
+                "arxiv:2610.11715": {
+                  "evaluatable": true,
+                  "request_sha256": "33443151c631d2e465b46d8ff45335dea21cccf3fc5b6b325f09af3a049d02c5",
+                  "review_sha256": "94868f266ed07ac745caddad2dfcad74b715263da8fa200b4921695b00edf952",
+                  "source_key": "6972a0c01090d6755241001c54f3f680059522dfca2dc8858d5d0b6dcd072347"
+                },
+                "arxiv:2610.12168": {
+                  "evaluatable": true,
+                  "request_sha256": "42f5749ab9c9a48f01489eb859c3f697e4dca03cac9c225c7a9aeb7c97d670f8",
+                  "review_sha256": "71a1b6e32b5b6e9f7cf7d7e657ffb9000521d71cb6d1b626bb2942cb07aa98b5",
+                  "source_key": "03be2df5e13985f9cbb382e11604398f3b8676b275425939ad9ceab545330b53"
+                },
+                "arxiv:2610.12360": {
+                  "evaluatable": true,
+                  "request_sha256": "8e414b37336ce792fddd85f0e4d2fb72736d56a9ddbb0090ef653811bedaea39",
+                  "review_sha256": "e472caab49ef01de28ef3e7232e6bf9c6b8ff7970e6f5495ad05849ace40e8d0",
+                  "source_key": "e8cd6e0253bfaebacd4cc39c7273034f916cd9ea0b1bd270328b9b6a233464c8"
+                }
+              },
+              "manifest_sha256": "49b67a7a50f0cf9d91003f6afc27e189875100d619396849448e7f4cbe74ff0e",
+              "version": 1
+            },
+            "phase": "bounded_partial_candidate_additions_only",
+            "producer": "assistant-native-review",
+            "selected_count": 5
+          },
+          "added_native_count": 5,
+          "baseline_kind": "unpublished_proposed_candidate",
+          "candidate_count": null,
+          "combined_native_reranked": false,
+          "evaluated_count": 20,
+          "full_day_complete": false,
+          "phase": "proposed_baseline_preserving_addition",
+          "preserved_baseline_count": 13,
+          "preserved_proposed_baseline_audit": {
+            "added_native_audit": {
+              "candidate_count": 7,
+              "evaluated_count": 7,
+              "native_audit": {
+                "date": "2026-10-09",
+                "entries": {
+                  "arxiv:2610.11134": {
+                    "evaluatable": true,
+                    "request_sha256": "c7097a29d70b2fe1f9c5f76dad6dd228f5a153af0a0512713f605feaf902d16b",
+                    "review_sha256": "a26376d1905cd90b810ba65d47af55e96f39c467c35fa8e4df9aa8573bd9caa0",
+                    "source_key": "e9062b5818a8fa85e7d53bf0cd0688c28b5a2b226c9b7bab8b32cf7b32184315"
+                  },
+                  "arxiv:2610.11781": {
+                    "evaluatable": true,
+                    "request_sha256": "940d818cfee225c8c403b752c0ada755b812a0b04396929df82414b411105f98",
+                    "review_sha256": "451cdaa1a1fd509cdaf59ce17e4cdd4a73bcbcf0d6c82940f8ea44d7cda6add3",
+                    "source_key": "af408f0220041578e72eef7c91b60f8e02ae7d070a8a4d9e40d6d2ca6ff71ce4"
+                  },
+                  "arxiv:2610.12002": {
+                    "evaluatable": true,
+                    "request_sha256": "55b2e027e0234b838352c2a8edcfaccab932722ac4e26345c5d579849fbc9e15",
+                    "review_sha256": "1c732de234bd11580831b2797c7bfb9f0971ad5525a2b532544c9e9570ee11d4",
+                    "source_key": "f4cf438110f6fa7bd5cda062a3a9cdef89d2a3dbfd2eae7ffc342e026d2be900"
+                  },
+                  "arxiv:2610.12242": {
+                    "evaluatable": true,
+                    "request_sha256": "d4405270cab6bee450659f4f2deafabb01980a7f5864608c2db5736fc04c7399",
+                    "review_sha256": "6a47b9f082257f6fd4aec7ec9e5eb2afc5f1ddf17e4f0cbdf4aa4905d487db7d",
+                    "source_key": "9524b89d03ac1b96c6bc48b4243144c04f01b6acaf43947b555ed850b5bf7b56"
+                  },
+                  "arxiv:2610.12269": {
+                    "evaluatable": true,
+                    "request_sha256": "b9456d1329c50e711b288152aa1937e3fe2093721ad21ec0b18b229b37ad79c7",
+                    "review_sha256": "e6801c065a74191155e65b0531f8058c4de1a5326c0e15d7040d6643b92fe50a",
+                    "source_key": "e083039a20c9827c1ff8b1a1d7054509ab1dac0c633ee5d8ee5559a26e4bb992"
+                  },
+                  "arxiv:2610.12274": {
+                    "evaluatable": true,
+                    "request_sha256": "5ed8541f01e3341a0934651edfca53e3f54b70dbcfa5b0d54dff75560a1a07b1",
+                    "review_sha256": "8341a64964334b05c2a2eec098efd4a436c43bc82f5492de15397ff4eb402315",
+                    "source_key": "3a76a809724c5ce5076a119e3c8671f8e9bf72161deddba1a9916aafd18df759"
+                  },
+                  "arxiv:2610.12374": {
+                    "evaluatable": true,
+                    "request_sha256": "6ad3a5aff78134dcc66cc7f97b01d1b7891b398b4ed8f52d3b4ee9d9abb55135",
+                    "review_sha256": "bbbc2981c8c8dbf54c3992bc743b599417c54ac4a1ce6f6543b59418fe5e45b7",
+                    "source_key": "3a4b5f5e7da62d02703b1b84d53f3dcdab72678104a1220f9fc345d1a7de95f3"
+                  }
+                },
+                "manifest_sha256": "12858b712a8945ef4a0827b48b3e14d483798ad9f0a7b25fd5303f8a5baa686f",
+                "version": 1
+              },
+              "phase": "bounded_partial_release_additions_only",
+              "producer": "assistant-native-review",
+              "selected_count": 7
+            },
+            "added_native_count": 7,
+            "baseline_body_sha256": "f228058f29983be0b5ef6ef0f93dcf9031754ea58cf6ab9f61c59302db230409",
+            "baseline_commit": "142d7609aede109e471e98427d834bec90ef7048",
+            "candidate_count": null,
+            "combined_native_reranked": false,
+            "evaluated_count": 15,
+            "full_day_complete": false,
+            "phase": "baseline_preserving_addition",
+            "preserved_baseline_audit": {
+              "candidate_count": 8,
+              "evaluated_count": 8,
+              "native_audit": {
+                "date": "2026-10-09",
+                "entries": {
+                  "arxiv:2610.10610": {
+                    "evaluatable": true,
+                    "request_sha256": "fb8b1ba3befa6e6939c4c97325c6628b7347fe6efde9f43650255ca0a0ee73a5",
+                    "review_sha256": "2a3265a1e5e992336ba06cb884aba846efd6268b2641a00b19f36cf3257bb501",
+                    "source_key": "9bb927b336becfb946ee3687dc6644d8d536b3ceb80a74bec20941475d0d7e49"
+                  },
+                  "arxiv:2610.11559": {
+                    "evaluatable": true,
+                    "request_sha256": "22a831c20084c679ca425ab9d74a80241e38950bd0f9415eb2332099cfc6c06f",
+                    "review_sha256": "fdb7d822b572213ae64d65a67142a90ddbd740cd891772617273fb87d8a03053",
+                    "source_key": "f4833abf314d86adfbe245146de30f371f513c0805549f3d21e07a3522376a29"
+                  },
+                  "arxiv:2610.11647": {
+                    "evaluatable": true,
+                    "request_sha256": "279e2f266c919ec97a2168c055b858b2fb79e929faca55b25544f0ba54390499",
+                    "review_sha256": "fd0991d493c329388782f894081df47b85c936c3510cb397142285cfcea4de4f",
+                    "source_key": "c92350951a213a0873fe487c1a703b453142ffcfbfa825511d12f4519cdac6c8"
+                  },
+                  "arxiv:2610.11773": {
+                    "evaluatable": true,
+                    "request_sha256": "036704dcdaf2ecbc40a70751634511b1feb3965fe36e84e5a5c73475d347a800",
+                    "review_sha256": "cb61b79478f066696df7b61e0cd0225f4793433d51de1179103f0c04ba4ef135",
+                    "source_key": "9945b70c2e8752b5c226636c53a1176e08c54bc3d22893f482438011afb38e8f"
+                  },
+                  "arxiv:2610.12061": {
+                    "evaluatable": true,
+                    "request_sha256": "a412822895cdee55346779c888b218861c9542ee9f9055b7e03d29f340b54395",
+                    "review_sha256": "1163dd021723c0eca82adda80c94c8c01c259b4539a24ecb81e5c268249d119e",
+                    "source_key": "972a715a21f3eac26039178d9ba96215e2cd7a1b321f668c2cb267b12e285a66"
+                  },
+                  "arxiv:2610.12124": {
+                    "evaluatable": true,
+                    "request_sha256": "67b67ea5ec45026940b54be573929d21fd71c5669476ec26d6fc8fa37c295466",
+                    "review_sha256": "21f9098ef0cf04fcf0b829dd2ccb872fca6427c1a6582a48887e0b7fe3de1efa",
+                    "source_key": "646b1bae8217581cc2657087655e27f3a71b0114ed9b7d908c754858ca428ce7"
+                  },
+                  "arxiv:2610.12375": {
+                    "evaluatable": true,
+                    "request_sha256": "35dbdc36484195dcf8a95ad93c87359504f440c807be7a06c59700205c95b202",
+                    "review_sha256": "b64c1a9aca4a8f51a0da15ea9a449364e0d842670807951e0023d5e27569c71f",
+                    "source_key": "29241642f876504a182f75ff0a94d0020c705a0aebdf42a1763342f654a98504"
+                  },
+                  "arxiv:2610.12466": {
+                    "evaluatable": true,
+                    "request_sha256": "3a8505443a390e109d343b4e315ad1375dde232a4b986be969fd2c5db840c45a",
+                    "review_sha256": "ad4642f8d6de3074504cac9673383f35b2f598c9a2e046c4a2474c8080a8845c",
+                    "source_key": "ebf0e482fba8b5e5aa4c42392811c65e8a92fd06fdb0dd7b487c4a7a46842a03"
+                  }
+                },
+                "manifest_sha256": "55ac497f5586275f2a9cffc7af380c990bd4400ca5b5a7b0e543aeb374c4b42d",
+                "version": 1
+              },
+              "phase": "bounded_partial_release",
+              "producer": "assistant-native-review",
+              "selected_count": 6
+            },
+            "preserved_baseline_audit_sha256": "515e1bbe108e6556d1f6c418838a86e5be81515178d3301edb20171fcd6e4282",
+            "preserved_baseline_count": 6,
+            "producer": "assistant-native-review",
+            "publication_authority": "separate private root receipt required",
+            "selected_count": 13
+          },
+          "preserved_proposed_baseline_audit_sha256": "34f532767200a0c94780f94a75f102ac7f20e36e53d507fb9f07fa21f81c50de",
+          "producer": "assistant-native-review",
+          "proposed_baseline_body_sha256": "93baa0e51046f3829be519e72d5a94b299535c664c340c52a5657d673f21270b",
+          "proposed_baseline_seal_sha256": "6af0fb5fe81c30e6e7043108750f72227a86c23d64a50574afd9cffef5b5760a",
+          "publication_authority": "separate private root receipt required",
+          "selected_count": 18,
+          "underlying_live_commit": "142d7609aede109e471e98427d834bec90ef7048"
+        },
+        "preserved_proposed_baseline_audit_sha256": "2faa29cfd1a1736fa886a30e1aaa60b72118552fb34c8fd5bdb7ff8a3a0bb38d",
         "producer": "assistant-native-review",
-        "selected_count": 6
+        "proposed_baseline_body_sha256": "21124dcefe39333b958af3f68c9f85dbca923d33d751a07d9a9c4f423ce54e12",
+        "proposed_baseline_seal_sha256": "c1d064bf27bdab846b44cca06bd6fa50b36e8393ccd48760d4d3573419ea0af4",
+        "publication_authority": "separate private root receipt required",
+        "selected_count": 22,
+        "underlying_live_commit": "142d7609aede109e471e98427d834bec90ef7048"
       },
-      "preserved_baseline_audit_sha256": "515e1bbe108e6556d1f6c418838a86e5be81515178d3301edb20171fcd6e4282",
-      "preserved_baseline_count": 6,
+      "preserved_proposed_baseline_audit_sha256": "6e20a4bd42efcde654a9792dd4d47a72d240d60de42049f1bd00765c1c98a503",
       "producer": "assistant-native-review",
+      "proposed_baseline_body_sha256": "e96bede56fc93ac09141ed654c5d7b2ae3c554db9fc2305dd20b0465a57d6288",
+      "proposed_baseline_seal_sha256": "40a8cd92afdd57cf9cd1e13f7a072fc398aa92e7ec75105f28f0ad1d9369962c",
       "publication_authority": "separate private root receipt required",
-      "selected_count": 13
+      "selected_count": 26,
+      "underlying_live_commit": "142d7609aede109e471e98427d834bec90ef7048"
     },
-    "preserved_proposed_baseline_audit_sha256": "34f532767200a0c94780f94a75f102ac7f20e36e53d507fb9f07fa21f81c50de",
+    "preserved_proposed_baseline_audit_sha256": "8ce7c7162cf83204de826a5af2f5bae99d3d6dae754bd93aaae365f6b229ff00",
     "producer": "assistant-native-review",
-    "proposed_baseline_body_sha256": "93baa0e51046f3829be519e72d5a94b299535c664c340c52a5657d673f21270b",
-    "proposed_baseline_seal_sha256": "6af0fb5fe81c30e6e7043108750f72227a86c23d64a50574afd9cffef5b5760a",
+    "proposed_baseline_body_sha256": "0d945038554d246c9cfb064e9cfd72b774da4523ca12c2adc9bc0be5effe9e1a",
+    "proposed_baseline_seal_sha256": "4a03a81ff7db6b8373288c943be2e69a0ec63df592e12a2e52c90b27c9b981c2",
     "publication_authority": "separate private root receipt required",
-    "selected_count": 18,
-    "underlying_live_commit": "142d7609aede109e471e98427d834bec90ef7048"
+    "selected_count": 30,
+    "underlying_live_commit": "c51b210a8354e85aac822764266250a7e05a71a0"
   },
-  "preserved_proposed_baseline_audit_sha256": "2faa29cfd1a1736fa886a30e1aaa60b72118552fb34c8fd5bdb7ff8a3a0bb38d",
+  "preserved_proposed_baseline_audit_sha256": "b54cfc4f83514441297cb8c532bd692270fbf47adb9b73b02f1db27188207da6",
   "producer": "assistant-native-review",
-  "proposed_baseline_body_sha256": "21124dcefe39333b958af3f68c9f85dbca923d33d751a07d9a9c4f423ce54e12",
-  "proposed_baseline_seal_sha256": "c1d064bf27bdab846b44cca06bd6fa50b36e8393ccd48760d4d3573419ea0af4",
+  "proposed_baseline_body_sha256": "c73506aae6e88d756ac48000f63f535ffc9d86c0e127db51b706c78f2053351d",
+  "proposed_baseline_seal_sha256": "9a6ecdee6acf8c3c565b365ca75050f0cc6779d59ad67c0c108d3f96461ba05e",
   "publication_authority": "separate private root receipt required",
-  "selected_count": 22,
-  "underlying_live_commit": "142d7609aede109e471e98427d834bec90ef7048"
+  "selected_count": 35,
+  "underlying_live_commit": "c51b210a8354e85aac822764266250a7e05a71a0"
 }

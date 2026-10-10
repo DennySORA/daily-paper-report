@@ -1403,6 +1403,535 @@
       "title": "Learning Situation-Conditioned Thinking Policies for Long-Term LLM Agents",
       "title_en": "Learning Situation-Conditioned Thinking Policies for Long-Term LLM Agents",
       "title_zh": "為長期 LLM 代理學習情境條件式思考策略"
+    },
+{
+      "arxiv_id": "2610.09239",
+      "authors": [],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-10-10T08:13:59.307743+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-ai",
+          "tier": 1,
+          "title": "The Winner's Curse in LLM Self-Improvement Loops: Selection Noise, Lock-in, and Acceptance Rules",
+          "url": "https://arxiv.org/abs/2610.09239v1"
+        }
+      ],
+      "llm_evaluation": {
+        "candidate_sha256": "2d56fe7edbf986230bbaa28cf274214db4db2b11462eff3cfd435055e8245a76",
+        "components": {
+          "evidence_strength": 0.83,
+          "generalizability": 0.64,
+          "novelty": 0.74,
+          "preference_relevance": 0.97,
+          "reproducibility": 0.55,
+          "rigor": 0.78
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "PDF pp.3–4 §3, Eqs.(1)–(3), pp.15–16 Appendix A: Gaussian random effects separate shared incumbent noise from candidate-specific noise. h_w^2=s^2/(s^2+v_cc/n) shrinks the within-generation selection differential; accepted-gain bias additionally conditions on acceptance. Bayes optimality is one-step with known hyperparameters, not a theorem for adaptive reused-set runs.",
+          "PDF p.6 Figure1/§5.1 and p.22 Table2: empirical/Gaussian prediction MAE0.034/0.064 uses the same oracle data and trajectories selected at n256; after the seed rewrite, Qwen2.5 self-proposals improve in4–39% of cases, and heavy tails reach excess kurtosis7.6 in a stronger-proposer condition. Bootstrap intervals omit run-to-run uncertainty.",
+          "PDF pp.7,24–25 §5.2/Tables4–6:72 generation-1 commits, with observed/model overstatement9.1/9.0,3.2/3.8,0.1/1.3 points for n16/64/256. Setting-level errors are several points. Delayed first and later commits receive only fresh-set references; the patterns are consistent with lock-in and do not identify a causal mechanism.",
+          "PDF pp.7–9 §5.3/Figure2/Table1 and p.23 Table3: four settings, eight paired seeds and nine arms; greedy final selection-minus-held-out gaps13.2–19.6 points at n16 and1.3–4.9 at n256. TREC held-out gains rise13.7→24.2 and14.0→20.4, whereas GSM8K1.5→3.1 is nonsignificant (Holm p.483). Banking77 exploratory degradation does not confirm (−0.6±0.7,p.425).",
+          "PDF p.9 Table1: pilot gate minus greedy at n16 pooled32 pairs is−2.1±1.1,p.062; select-confirm−1.6±1.2,p.194. Per-setting pilot GSM8K is worse, Holm p.032. The result is no demonstrated whole-run improvement by tested rules, not equivalence or proof that every acceptance correction fails.",
+          "PDF pp.18–21 AppendixB: TREC12 duplicate question texts; removing them yields588-item sensitivity with TREC improvements10.44/6.21 and pooled pilot difference−2.10±1.08. Model revisions not pinned; GSM8K seed item disagreements reach9.8%. Frozen pilot over-subtracts candidate–incumbent rather than candidate–candidate noise, unlike later Figure1 fitting. Analysis code written after16/336 runs finished.",
+          "PDF pp.8–10,20–21,26–29 Figure3/Tables8–12: strong-start loop pooled-eight-seed findings and combined inverse-normal p-values are exploratory. GEPA TREC n16 at2250 metric calls reports45.0 versus18.5 held-out gain (26.5 overstatement), compared with−1.9 overstatement atn256; pool sizes91 versus9 and reflections about107 versus≤10 confound equal-compute comparisons. These are validation-score audits, not corrections to GEPA's separately reported test gains.",
+          "PDF p.29 Table12 and pp.28–29 MIPROv2: TREC held-out gain5.8→11.4 atn16→256, paired5.6±0.7,p.001; Banking77 reported+5.0 versus held-out−1.6 atn16 (6.6-point overstatement). Ties and first-winner retention explain a limitation of continuous Gaussian prediction, not universal calibration.",
+          "PDF pp.11,25–26 Table7: evaluate seed and incumbent entering generation20 (after19 generations) on an unused64-item audit,128 extra evaluations versus nominal1280 candidate evaluations for n16. Across151 n16 runs, self-report bias/RMSE10.8/15.5 becomes approximately0/5.7; truth is another300-item gold half, and50 splits reuse the finite gold set. Shrinkage alone leaves setting-level bias−8.5 to+5.8.",
+          "PDF pp.30–34 Figure4/Tables13–18: isolated fresh-decision pilot improvement does not establish whole-run benefit; leave-one-run-out replay uses only one or two trajectories and conditional intervals. Fresh-versus-reused TREC atn64 is one three-seed, feedback-confounded setting with fewer candidates under fresh sampling. Fixed-budget allocation sweep is inconclusive.",
+          "PDF p.11 availability and pp.16–21 AppendixB: paper claims ancillary code, saved run records and reproduction instructions; none are in this supplied review packet. In-file details suffice to critique reported findings, not to verify the ancillary release, preregistration timestamps, raw statistics or model-output reproduction."
+        ],
+        "fulltext_sha256": "8d6cb9ec5127c3e26c6308eec6e54f7394486a42c13aee6b529bfbaa3fa9f8f3",
+        "fulltext_status": "complete",
+        "model": "assistant-native-review",
+        "native_identity_version": 1,
+        "original_candidate_sha256": "2d56fe7edbf986230bbaa28cf274214db4db2b11462eff3cfd435055e8245a76",
+        "out_of_scope": false,
+        "producer": "assistant-native-review",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "The paper is highly relevant to LLM prompt optimization, self-improvement and evaluation reliability. Its contribution is an empirically grounded adaptation of classical winner's-curse results that distinguishes correlated candidate noise, conditioning on acceptance and adaptive reuse. Eight paired seeds in four confirmatory settings, separate feedback pools and within-family Holm correction support the main optimism finding; competent starts and two prompt optimizers add practical value. Negative gate results and failed replication of the exploratory degradation are reported candidly. However, Gaussian, homoscedastic, independent-effect and fresh-set assumptions are restrictive. Figure 1 uses oracle resampling and inputs from the same data, so it is not independent calibration; native first-generation agreement is only aggregate. The frozen pilot over-subtracted total noise, limiting what unsuccessful Bayes gates say about calibrated adoption methods generally. TREC has text overlap despite ID separation, with an author-reported removal sensitivity analysis. The late-written analysis script, GEPA budget/metric changes, added strong-start seeds and post-hoc combined p-values qualify preregistration claims. GEPA is matched in metric calls rather than reflection compute, and a 64-item audit still has roughly six-point error. Lock-in is consistent with the observations but not causally identified. Detailed protocols help, but model revisions were not pinned and the claimed ancillary code, split manifests and run records were neither acquired nor executed here. The result merits a high-relevance, bounded methodological assessment, with discounts for incremental theory, narrow task coverage and unverified reproducibility.",
+        "rationale_en": "The paper is highly relevant to LLM prompt optimization, self-improvement and evaluation reliability. Its contribution is an empirically grounded adaptation of classical winner's-curse results that distinguishes correlated candidate noise, conditioning on acceptance and adaptive reuse. Eight paired seeds in four confirmatory settings, separate feedback pools and within-family Holm correction support the main optimism finding; competent starts and two prompt optimizers add practical value. Negative gate results and failed replication of the exploratory degradation are reported candidly. However, Gaussian, homoscedastic, independent-effect and fresh-set assumptions are restrictive. Figure 1 uses oracle resampling and inputs from the same data, so it is not independent calibration; native first-generation agreement is only aggregate. The frozen pilot over-subtracted total noise, limiting what unsuccessful Bayes gates say about calibrated adoption methods generally. TREC has text overlap despite ID separation, with an author-reported removal sensitivity analysis. The late-written analysis script, GEPA budget/metric changes, added strong-start seeds and post-hoc combined p-values qualify preregistration claims. GEPA is matched in metric calls rather than reflection compute, and a 64-item audit still has roughly six-point error. Lock-in is consistent with the observations but not causally identified. Detailed protocols help, but model revisions were not pinned and the claimed ancillary code, split manifests and run records were neither acquired nor executed here. The result merits a high-relevance, bounded methodological assessment, with discounts for incremental theory, narrow task coverage and unverified reproducibility.",
+        "rationale_zh": "高度契合語言模型提示最佳化、自我改進與評估可靠性。貢獻在於將既有贏家詛咒理論具體化為相關候選誤差、接受條件與重用資料的不同問題，並誠實保留無效的接受規則與未重現的負面結果。四設定各八種子、獨立回饋池、配對比較和家族內 Holm 校正支持小選擇集分數偏樂觀的主要觀察；強起點與兩種最佳化器也提高實務價值。然而高斯、同方差、獨立真實效應和新鮮評估集是假設，Fig.1 的oracle重抽樣使用相同資料估計參數，不能視為獨立校準；原生首代吻合僅限平均值。凍結pilot先驗過度扣除總雜訊，故Bayes門檻的失敗不宜擴張為所有校準接受法均無效。TREC有文字重複而不只是ID分離，作者回報移除後結論保持；另有啟動後才寫分析程式、GEPA預算與衡量指標變動、強起點追加種子及事後合併p值。這些透明揭露值得肯定，但不能變成完整預先登錄或因果鎖定證明。GEPA對齊的是metric calls而非反思運算量；稽核六十四題仍約六點誤差。方法細節完整，卻未pin模型revision，且本文聲稱提供的ancillary程式、分割清單與run records未取得或執行。因此給予高相關、良好但有界的證據評價，對新意、通用性與可重現性保留折扣。",
+        "raw_weighted_score": 0.832,
+        "request_sha256": "bcd8e60ff6913a5979aa773835a9150d0331046d455324ae0866f3cae64d6a8e",
+        "review_sha256": "2f6d004e5e1b9b426fd1a3e673a54ff63ae4c455bbe901313b003b0d4e93ab91",
+        "scope_assessment": {
+          "decision": "in_scope_llm_self_improvement_evaluation",
+          "reason": "General language-model prompt optimization and evaluation methodology. Classification and arithmetic tasks are testbeds, not an excluded domain-only application."
+        },
+        "scope_capped_score": null,
+        "scope_policy_version": "explicit-review-exclusion-v1",
+        "scope_status": "in_scope",
+        "score": 0.832,
+        "source_key": "0ab3fbc2391d7e206ab670db3dd96b5f24d8c665754c43d4ff7ca3915a60ad0c",
+        "story_id": "arxiv:2610.09239",
+        "token_usage": {},
+        "topics": [
+          "Large Language Models",
+          "Prompting & In-Context Learning",
+          "Agents & Tool Use",
+          "Red Teaming & Evaluation",
+          "Training & Optimization"
+        ]
+      },
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-ai",
+        "tier": 1,
+        "title": "The Winner's Curse in LLM Self-Improvement Loops: Selection Noise, Lock-in, and Acceptance Rules",
+        "url": "https://arxiv.org/abs/2610.09239v1"
+      },
+      "published_at": "2026-10-07T00:05:23+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.832,
+        "llm_relevance_score": 23.296,
+        "recency_score": 0.7142154568621869,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 31.210215456862187
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2610.09239",
+      "summary": "Self-improving LLM systems propose changes to themselves and keep those that score better on a small evaluation set. We treat this keep-if-better step as selection under measurement noise, model the correlated errors of the candidates in a single decision, and study empirically what happens when the evaluation set is reused. In runs where Qwen models rewrite their own instructions and every candidate is also scored on 600 held-out items, most proposals after the first are harmful, and the model gives the size of the winner's curse of a generation's best candidate. With a prior from a separate pilot, it matches the average overstatement of first-generation commits in native loops, though not setting by setting. In a pre-registered study, the final selection-set score of greedy loops exceeded held-out accuracy by 13 to 20 points with 16 selection items and by 1 to 5 points with 256. Held-out gains grew with the selection set on TREC but not on GSM8K, and the tested acceptance rules did not beat greedy acceptance over whole runs. Gains measured on the selection set also exceeded held-out gains when a current model refined a competent instruction, and in the validation scores of GEPA and MIPROv2. Scoring the starting and the current instruction on 64 items never used for selection removes the average bias of a loop's reported gain, but single estimates remain off by about 6 points. Self-improvement studies should report held-out gains with their uncertainty.",
+      "summary_en": "Selecting the best prompt on a small reused set can exaggerate self-improvement. Qwen loops show final selection-minus-held-out gaps of 13–20 points with 16 items, versus 1–5 with 256. Tested acceptance gates do not beat greedy over complete runs; GEPA and MIPROv2 validation scores are also optimistic. A separate 64-item audit reduces gain-estimation RMSE from 15.5 to 5.7 points. Fresh-set theory, exploratory follow-ups and uninspected ancillary code limit the conclusions; causal lock-in is not established.",
+      "summary_zh": "讓語言模型反覆改寫提示，再保留小型測試集上分數最高的版本，究竟是在進步，還是在挑中幸運的雜訊？本文把這個步驟建模為帶相關誤差的候選選擇，區分同代勝出者的優勢、接受修改後的增益高估，以及重複使用評估集造成的累積偏差。\n\n作者在三個分類或數學任務，以 Qwen 模型進行提示改寫，並用六百題保留集評估。確認性實驗中，十六題選擇集的最終分數比保留集高十三至二十個百分點，二百五十六題時縮至一至五點。擴大選擇集提升了 TREC 的實際增益，卻未在 GSM8K 得到相同結果；Bayes 門檻與分割確認也沒有在完整迴圈中勝過貪婪接受。GEPA 與 MIPROv2 的驗證分數同樣偏樂觀，這不等於否定其原論文的獨立測試結果。\n\n最實用的建議是另留未參與選擇的稽核題，對起始與最終版本一起評分。六十四題稽核把小選擇集的增益估計均方根誤差由15.5降至5.7點，仍不足以精確辨識小幅改善。理論依賴新鮮樣本與高斯假設；鎖定機制未被因果識別，部分後續分析為探索性，程式與紀錄也未由本次評審取得。本文適合作為自我改進評估的警示與設計依據，不能當成通用修正方法已獲驗證。",
+      "title": "The Winner's Curse in LLM Self-Improvement Loops: Selection Noise, Lock-in, and Acceptance Rules",
+      "title_en": "The Winner's Curse in LLM Self-Improvement Loops: Selection Noise, Lock-in, and Acceptance Rules",
+      "title_zh": "LLM 自我改進迴圈中的贏家詛咒：選擇雜訊、鎖定效應與接受規則"
+    },
+{
+      "arxiv_id": "2610.09856",
+      "authors": [],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-10-10T08:13:11.260889+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-ai",
+          "tier": 1,
+          "title": "Self-Evolve With a Reference:Anchored Training of Tool-Integrated Agents",
+          "url": "https://arxiv.org/abs/2610.09856v1"
+        }
+      ],
+      "llm_evaluation": {
+        "candidate_sha256": "04e4d0b052981ca8c63bd9557841b96a9b4fc2566ad0ff645051037dfbb1c908",
+        "components": {
+          "evidence_strength": 0.77,
+          "generalizability": 0.68,
+          "novelty": 0.71,
+          "preference_relevance": 0.98,
+          "reproducibility": 0.61,
+          "rigor": 0.69
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "PDF pp.2–8 §§2–3,Algorithm1,Eqs1–16: anchor copies previous Executor; Curriculum trains first while current and anchor parameters are identical and independently sampled. All format-valid tasks enter same-iteration pool; Answer field only checks format and is not used as training supervision. Executor resamples current trajectories but reuses one cached anchor group per task/Curriculum batch.",
+          "PDF pp.3–6 Eqs1–11: rewards measure majority agreement, not correctness. Historical advantage centers r_current−r_anchor on current outputs. Same majority implies zero historical term; full current consensus makes both terms zero even with a different anchor majority. With only the two majority answers it is a positive rescaling; a third answer class can change relative weighting.",
+          "PDF pp.9–10 Table1,pp.22–23 Tables4–5: Qwen Agent0→Anchor math52.7→55.2 and general45.1→47.9; MiMo61.0→63.5 and40.1→42.8. Both methods average5 independent training runs; Table4 sample SDs Qwen .68/.51 math,.57/.44 general and MiMo .63/.49,.55/.46. Domain means are unweighted across benchmarks; AMC23/AIME24/AIME25 use mean@32, others greedy pass@1. Reported SDs are not significance tests.",
+          "PDF p.12 Table2: matched Qwen anchor variants share initialization,3iterations,steps,ADPO/tool/evaluation. Rref-only53.6/45.9,Ahist-only54.4/46.7,full55.2/47.9 versus52.7/45.1. These endpoints support component associations, not interaction synergy or a separated mechanism. Cross-method tool/no-tool rows change other training factors.",
+          "PDF pp.11,13,27–29 Figures2–5/Table10: effective-advantage variance at iteration3 is .28 versus .07 on Qwen and .30 versus .08 on MiMo. Qwen fixed-evaluator agreement proxy71.8→39.4% and calls1.32→2.87 use200tasks×8trajectories per stage; not ground-truth correctness or intrinsic difficulty. Initial independent same-checkpoint positive-gap fractions54.7% and56.2/56.4% need raw sampling/uncertainty clarification; exchangeability constrains population expectation, not every finite sample.",
+          "PDF pp.18–21 AppendixA/B,Eqs17–18/Table3:8A100-80GB,3outer iterations,32Curriculum/128Executor inner steps,64tasks/batch,G8,H8,max4096tokens/turn,30s and1GB tool-call limits. ADPO f ranges.6–1 and upper clip1.3–1.2, lower.8; α.6 and λ.4. Prompt/parser and unresolved-group handling supplied, but rollout temperature, seed list, exact code revision and complete numerical canonicalizer absent.",
+          "PDF pp.24–26 Tables6–9: first-outer-iteration matched records5runs×120candidate groups/stage; Qwen late369/586 zero historical (63.0%),114/586 noncollinear (19.5%); MiMo late361/583 (61.9%),116/583 (19.9%). Valid denominator excludes unresolved/incomplete records. Qwen24.1h versus20.5h per iteration (+17.6%),8.1GB frozen checkpoint; uncached32.7h→cached24.1h (−26.3%) changes sampled outputs as well as runtime. Table8 compares best checkpoints within first5iterations, not a common final checkpoint.",
+          "PDF pp.25–26 AppendixD.5: tied/no-modal groups yield no pseudo-label update; shared wrong consensus (120 rather than24 circular seatings) nulls historical comparison without detecting wrongness. No correctness verifier is added by the anchor.",
+          "PDF pp.28–40 AppendixF:12selected before/after comparisons,32tasks grouped retrospectively into8topic sequences and4detailed traces are illustrative, not frequencies or causal evidence. Post-update traces are not Curriculum-stage comparisons. Displayed mathematical endpoints independently checked by reviewer arithmetic, not by running the author model, codebase or training experiments.",
+          "PDF pp.13,28–29 Figures3b/5:4×4 α/λ sweeps; selected .6/.4 is highest in both reported grids. Qwen range53.80–55.21 versus MiMo60.47–63.50; not robustness outside grid or unselected cross-backbone transfer. No separate tuning/evaluation split is specified."
+        ],
+        "fulltext_sha256": "18004d350dcbf39e4fedac77f7225dcb8e36d0d06436e96f36fee08e0af43cf2",
+        "fulltext_status": "complete",
+        "model": "assistant-native-review",
+        "native_identity_version": 1,
+        "original_candidate_sha256": "04e4d0b052981ca8c63bd9557841b96a9b4fc2566ad0ff645051037dfbb1c908",
+        "out_of_scope": false,
+        "producer": "assistant-native-review",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "The work closely matches tool-using agents, RL and self-evolving reasoning. Reusing one frozen reference on both sides of an alternating loop is a checkable incremental method, with explicit invalid-output, caching and degeneracy rules. Positive results on thirteen benchmarks across two backbones, domain means and sample standard deviations from five independent Agent0/AnchorLoop runs, matched branch ablations and cost measurements provide meaningful bounded support. However, curriculum-stage models are identical: a positive agreement gap is a sampling-based proxy, not historical improvement. The historical term vanishes for matching majorities or full consensus and can merely rescale the current advantage in two-answer cases. Larger advantage variance and more tool calls do not identify a causal mechanism; Qwen iteration cost rises17.6% without a matched-GPU-hours comparison. Cross-method tool comparisons change several training factors. The paper recognizes these boundaries. Its initial positive-gap frequencies54.7% and approximately56% for MiMo still merit raw sampling checks: under exchangeable identically distributed groups, the expected positive-gap frequency cannot exceed50%, although finite-sample departures alone do not establish an error. Hyperparameters select the best reported grid point without a clearly described independent tuning split; sampling temperature, seeds, exact implementation revisions and numeric answer canonicalization remain underspecified. This is a useful bounded training improvement, not a solution to consensus collapse, a correctness guarantee or evidence of general self-improvement.",
+        "rationale_en": "The work closely matches tool-using agents, RL and self-evolving reasoning. Reusing one frozen reference on both sides of an alternating loop is a checkable incremental method, with explicit invalid-output, caching and degeneracy rules. Positive results on thirteen benchmarks across two backbones, domain means and sample standard deviations from five independent Agent0/AnchorLoop runs, matched branch ablations and cost measurements provide meaningful bounded support. However, curriculum-stage models are identical: a positive agreement gap is a sampling-based proxy, not historical improvement. The historical term vanishes for matching majorities or full consensus and can merely rescale the current advantage in two-answer cases. Larger advantage variance and more tool calls do not identify a causal mechanism; Qwen iteration cost rises17.6% without a matched-GPU-hours comparison. Cross-method tool comparisons change several training factors. The paper recognizes these boundaries. Its initial positive-gap frequencies54.7% and approximately56% for MiMo still merit raw sampling checks: under exchangeable identically distributed groups, the expected positive-gap frequency cannot exceed50%, although finite-sample departures alone do not establish an error. Hyperparameters select the best reported grid point without a clearly described independent tuning split; sampling temperature, seeds, exact implementation revisions and numeric answer canonicalization remain underspecified. This is a useful bounded training improvement, not a solution to consensus collapse, a correctness guarantee or evidence of general self-improvement.",
+        "rationale_zh": "高度契合工具代理、強化學習與自我演化推理。把同一凍結參照同時用於課程與執行器，並明列交替更新、無效輸出、快取與優勢退化條件，形成可檢查的增量方法。兩骨幹十三基準均有正向差值，Agent0／AnchorLoop各五次獨立訓練的領域均值及標準差、配對設定的兩分支消融和附錄成本分析，提供比單一示例更強的支持。然而目前與參照在出題階段參數相同，正的一致率差是抽樣代理訊號，並非歷史進步；歷史項在多數相同或完整共識時消失，在二答案情形往往只是重縮放。較大的advantage變異和較多工具呼叫並未隔離因果機制，且Qwen每輪成本高17.6%，沒有等GPU時數比較。外部方法同時改變訓練與工具設定，不能當作純工具消融。正文與附錄承認這些邊界，但初始正差頻率54.7%及MiMo約56%的讀法仍需完整抽樣紀錄核查：同分布可交換抽樣的期望正差比例不超過50%，有限樣本偏離本身不證明資料錯誤。超參數從報告格點選最佳，未清楚交代獨立選參切分；抽樣溫度、種子、精確程式版本及數值答案正規化細節不足。因而評為有價值的有界訓練改進，不認定已破解共識退化、證明正確性或建立通用自我提升。",
+        "raw_weighted_score": 0.8160000000000001,
+        "request_sha256": "7fcbacf65f23a9a6a9cc15a5e8051796b25de4db5ed441c89dcd9c7f6b39962a",
+        "review_sha256": "5db24d1e247c13fb4e0db0bdea79a74a62d26d3b444fad0320c5063ceb42081e",
+        "scope_assessment": {
+          "decision": "in_scope_self_evolving_tool_integrated_language_agents",
+          "reason": "General training methodology for language-agent reasoning and Python tool use, assessed on math, knowledge and code benchmarks."
+        },
+        "scope_capped_score": null,
+        "scope_policy_version": "explicit-review-exclusion-v1",
+        "scope_status": "in_scope",
+        "score": 0.8160000000000001,
+        "source_key": "14cc602c324205125e16a23d1033b24a011ea205cbbc0bf98759040788652e6d",
+        "story_id": "arxiv:2610.09856",
+        "token_usage": {},
+        "topics": [
+          "Agents & Tool Use",
+          "Reinforcement Learning",
+          "Reasoning & Chain-of-Thought",
+          "Training & Optimization"
+        ]
+      },
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-ai",
+        "tier": 1,
+        "title": "Self-Evolve With a Reference:Anchored Training of Tool-Integrated Agents",
+        "url": "https://arxiv.org/abs/2610.09856v1"
+      },
+      "published_at": "2026-10-07T11:13:35+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.8160000000000001,
+        "llm_relevance_score": 22.848000000000003,
+        "recency_score": 0.7481380014749752,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 30.79613800147498
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2610.09856",
+      "summary": "Self-evolving tool-integrated agents learn from tasks and feedback generated within their own training loop. A Curriculum Agent generates tasks, while an Executor Agent learns from self-consistency signals through reinforcement learning. However, relying solely on the current Executor for feedback has two limitations: group-relative advantages vanish under full consensus, while uncertainty-based curriculum rewards favor disagreement without showing whether the generated tasks support further learning. These limitations motivate an additional reference beyond the current Executor. We propose \\textit{AnchorLoop}, which introduces a frozen copy of the previous iteration's Executor as a historical reference and reuses it on both sides of the training loop. For the Executor, the anchor provides a cross-reference advantage that evaluates current outputs against both current and historical majority answers. For the Curriculum, it provides an agreement-based reference based on differences in sampled majority agreement. Since the Executor and anchor have identical parameters during Curriculum training, this comparison serves as a proxy for task selection rather than evidence of inter-version improvement or correctness. Across 13 reasoning benchmarks, AnchorLoop improves over Agent0 by 2.5\\% on mathematical reasoning and 2.8\\% on general reasoning tasks. It also maintains higher effective-advantage variance and continues improving in later iterations as the unanchored baseline shows diminishing gains. These results demonstrate the benefit of introducing a lightweight historical reference into self-evolving tool-integrated agents without external task or answer supervision.",
+      "summary_en": "AnchorLoop reuses a frozen previous Executor for curriculum rewards and cross-reference advantages. Across two backbones, math averages rise 2.5 points over Agent0; general reasoning rises 2.7–2.8. During curriculum training the two models are identical, so agreement gaps reflect sampling, not learning progress. Full consensus still gives zero advantage. Qwen training costs 17.6% more per iteration, leaving equal-compute gains and the causal mechanism unproven.",
+      "summary_zh": "自行出題、解題並以答案共識訓練的代理，容易在回饋變單一後停滯。AnchorLoop 每輪保留上一輪執行代理作為凍結參照：解題時比較目前與參照的多數答案，調整相對優勢；出題時比較兩組抽樣的一致率，輔助課程獎勵。這提供另一種內部訊號，卻沒有新增外部正確答案。\n\n十三個基準、兩個骨幹模型的結果顯示，相較 Agent0，數學平均各增加2.5個百分點，一般推理增加2.8與2.7個百分點。主要比較有五次獨立訓練的均值與標準差，並提供分支消融及後期訓練曲線。但出題階段目前模型與參照參數完全相同，差異來自抽樣；一致率差不能解讀為模型已學會新題，完全共識時兩種優勢也仍為零。\n\n成本同樣重要：Qwen3-4B 每輪需24.1小時，Agent0為20.5小時，增加17.6%，因此尚未證明等算力下更有效率。共同答錯、無明確多數與精選案例的限制均須保留；更多工具呼叫也不代表更正確或題目更難。它值得作為自我演化訓練的可檢驗設計，但需要等成本對照、完整程式與抽樣紀錄，才能進一步釐清收益機制。",
+      "title": "Self-Evolve With a Reference:Anchored Training of Tool-Integrated Agents",
+      "title_en": "Self-Evolve With a Reference:Anchored Training of Tool-Integrated Agents",
+      "title_zh": "帶著參照自我演化：工具整合代理的錨定訓練"
+    },
+{
+      "arxiv_id": "2610.09426",
+      "authors": [],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-10-10T08:13:27.706194+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-ai",
+          "tier": 1,
+          "title": "RSI-Forge: From Research Papers to Environments for Recursive Self-Improvement",
+          "url": "https://arxiv.org/abs/2610.09426v1"
+        }
+      ],
+      "llm_evaluation": {
+        "candidate_sha256": "c10367037e1bfd0b9ec12337ba1305d5a9b199896be88ee20de0dc6a06f58ad3",
+        "components": {
+          "evidence_strength": 0.69,
+          "generalizability": 0.7,
+          "novelty": 0.78,
+          "preference_relevance": 0.94,
+          "reproducibility": 0.28,
+          "rigor": 0.62
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "pp.4–5, Sections 3.1–3.3 and Eq.(1): independent reproduced baseline; solver lacks paper, reproduced code and test data; b(v)=(v-w)/(u-w), with targets potentially unattainable rather than calibrated scientific progress.",
+          "p.6, Table 1 and Section 4.2; p.15, Appendix A: 10,800 screened, 2,117 eligible, 213 attempted and 180 accepted in main run; stopped at 180, 79% needed repairs; additional 30 environments are a separate unpaired backend run.",
+          "pp.7–8, Figure 2; pp.16–18, Tables 6–8: matched 90 expert reviews average 4.24 versus panel 4.54; saturation 3.09 versus 3.98, fidelity 3.72 versus 4.22; one expert per environment and unequal access to solver summaries.",
+          "pp.8–9, Section 5.1 and Table 4: 120 tasks, four fixed-weight models, three sessions, at most 60 minutes per session; final median normalized scores 0.800/0.761/0.647/0.332; strongest pair intervals overlap.",
+          "p.9, Section 5.2; p.19, Appendix C.2: >0.01 normalized improvement after first session in 84% of tasks for at least one model; 68/120 beat reproduced baseline in any session, with overlapping model-specific counts 65/63/54/24.",
+          "p.10, Figure 4: one foothold-selection chain changes its continuation rule, adds ground-support checking and returns to the original selection rule; final session scores 0.15, 0.33, 0.58, illustrating iterative redesign rather than universal transfer.",
+          "pp.19–22, Appendix C.3 and Figures 5–6/Table 10: 95% beyond-tuning successful-session labels include repairs and evaluating alternatives; labels are generated by models with no human validation. Fixed-codebook coder agreement kappa=0.73 does not validate every label.",
+          "p.20, Appendix C.3.2: 22/480 chains flagged for held-out or another run’s graded-record access; exclusion medians 0.797/0.761/0.641/0.332 change by at most 0.006; 4/68 successful environments overlap flags, not a causal attribution.",
+          "p.22, Appendix C.3.3: 73% versus 44% of accepted gains in 139 recoverable sessions are smaller than the selected score’s standard error; the denominator is accepted improvements and the measure is not a significance test for correlated differences.",
+          "pp.11–12, Limitations; p.23, Appendix C.4 and D: no inherited-records versus extra-time isolation, role ablation, training or broader capability evidence; 30 extra tasks unpaired; corpus is request-gated and sourcing procedure, per-paper verdicts and rejection reasons are not released."
+        ],
+        "fulltext_sha256": "0620ba381ea27b81e3346653ca6875856357ed19b1e95b2af1b650c71a0e5854",
+        "fulltext_status": "complete",
+        "model": "assistant-native-review",
+        "native_identity_version": 1,
+        "original_candidate_sha256": "c10367037e1bfd0b9ec12337ba1305d5a9b199896be88ee20de0dc6a06f58ad3",
+        "out_of_scope": false,
+        "producer": "assistant-native-review",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Score 0.7735. Executable research environments and iterative code improvement strongly match the agent-evaluation priorities. Separate reproduction, held-out replay and 90 expert reviews add substance beyond task generation. Evidence supports measurable progress on the adapted corpus, but construction tried only 213 of 2,117 eligible papers and stopped at 180 acceptances; its conditional 84.5% yield cannot be generalized to the eligible pool. The 30-task backend comparison is unpaired, roles are not ablated, and inherited records are not compared against an equal-time control. Experts provide one rating per environment with information unavailable to agent judges. Sensitivity to 22 flagged access chains is reported, but unrecorded access and entirely model-generated behavior labels remain unresolved. Rigor is 0.62, evidence 0.69 and generalizability 0.70. Request-gated assets and unpublished sourcing and verdicts limit reproducibility to 0.28; these gaps restrict replication but do not prevent a bounded critical review of the complete supplied PDF.",
+        "rationale_en": "Score 0.7735. Executable research environments and iterative code improvement strongly match the agent-evaluation priorities. Separate reproduction, held-out replay and 90 expert reviews add substance beyond task generation. Evidence supports measurable progress on the adapted corpus, but construction tried only 213 of 2,117 eligible papers and stopped at 180 acceptances; its conditional 84.5% yield cannot be generalized to the eligible pool. The 30-task backend comparison is unpaired, roles are not ablated, and inherited records are not compared against an equal-time control. Experts provide one rating per environment with information unavailable to agent judges. Sensitivity to 22 flagged access chains is reported, but unrecorded access and entirely model-generated behavior labels remain unresolved. Rigor is 0.62, evidence 0.69 and generalizability 0.70. Request-gated assets and unpublished sourcing and verdicts limit reproducibility to 0.28; these gaps restrict replication but do not prevent a bounded critical review of the complete supplied PDF.",
+        "rationale_zh": "評分0.7735。代理環境建構、可執行評測及跨回合程式改進高度切合偏好；獨立重現角色、保留測試重播與九十份專家評閱，使貢獻超過單純任務生成。證據支持這批改編環境能量出進步，但主批次只嘗試2,117篇合格稿中的213篇、達180環境即停，不能將84.5%的條件成功率外推整個候選池。第二建構模型的30環境與主批次未配對；沒有角色消融或等時間繼承對照，90份專家評閱每環境只有一人且可見資訊不同。22/480條存取異常鏈的敏感度分析值得肯定，卻無法排除未記錄洩漏；行為編碼全由模型完成。故嚴謹性0.62、證據0.69，泛化0.70。語料須申請、取源程序及逐篇裁決不發布，未取得的程式、評分鍵與軌跡妨礙重現，重現性0.28；缺件限制獨立重現，但不阻礙有界PDF評述；完整PDF已讀不等於原研究資產齊全。",
+        "raw_weighted_score": 0.7735,
+        "request_sha256": "23ab95630ff39d184308a42d902cb920c1d13e73b99ce8fc52ef579e929b82e0",
+        "review_sha256": "3dd2b0cc1dfecd92870d29470b773ae1ec57d769919c86050874bcb7969cb020",
+        "scope_assessment": {
+          "decision": "in_scope",
+          "reason": "The methodological object is LLM-agent environment construction and evaluation across tasks, not a pure robotics, biology or other domain application."
+        },
+        "scope_capped_score": null,
+        "scope_policy_version": "explicit-review-exclusion-v1",
+        "scope_status": "in_scope",
+        "score": 0.7735,
+        "source_key": "6e70a8fe3fdbee509f60f2ea3238e79c04b72ec97fbc98c962a16006a3d7cc69",
+        "story_id": "arxiv:2610.09426",
+        "token_usage": {},
+        "topics": [
+          "Agents & Tool Use",
+          "Code & Programming",
+          "Red Teaming & Evaluation",
+          "Long Context & Memory"
+        ]
+      },
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-ai",
+        "tier": 1,
+        "title": "RSI-Forge: From Research Papers to Environments for Recursive Self-Improvement",
+        "url": "https://arxiv.org/abs/2610.09426v1"
+      },
+      "published_at": "2026-10-07T04:27:21+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.7735,
+        "llm_relevance_score": 21.657999999999998,
+        "recency_score": 0.7273274630751521,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 29.58532746307515
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2610.09426",
+      "summary": "Environments are the foundation of recursive self-improvement: they provide the problems agents work on and the feedback used to evaluate progress. Yet constructing challenging research environments with reliable evaluation still depends on domain experts, limiting their scale and disciplinary coverage. We introduce RSI-Forge, a multi-agent pipeline that turns published papers into executable environments for self-improvement. Three agents coordinate construction, reproduction, and review to produce tasks with automated evaluators; each paper's method is independently reimplemented to establish a baseline score. We present 210 environments across 18 fields, including 90 reviewed by independent human domain experts. Both experts and agent judges give high ratings to the potential for improving the provided starting solutions and the evaluators' ability to distinguish solution quality, whereas experts are more critical of shortcut resistance, faithfulness to the source paper, and whether a single idea can exhaust a task. To validate their use for repeated improvement, we evaluate four models over 3 successive attempts on 120 environments, with each attempt inheriting prior code and notes while model weights remain fixed. At least one model improves after the first attempt in 84% of environments. Models also outperform the reproduced paper methods in 68 of the 120 environments, demonstrating room for gains beyond these baselines. Transcript analysis identifies work beyond parameter tuning in 95% of these successful attempts. Analysis of the resulting trajectories shows that models scoring lower on these tasks explore less, more often accept gains smaller than the reported standard error, and rely more heavily on tuning to the development set. RSI-Forge provides a scalable approach to constructing research environments for training and evaluating self-improving agents.",
+      "summary_en": "RSI-Forge uses separate construction, reproduction and review agents to build 210 research environments. Across 120 tasks, fixed-weight solvers improve over three sessions; 68 tasks see a run beat the reproduced baseline. The study does not separate inherited records from extra time or establish scientific novelty. Expert ratings expose fidelity and saturation concerns, and 22 of 480 chains access held-out or cross-run material. Gated assets and undisclosed sourcing limit independent replication.",
+      "summary_zh": "如何替研究型代理建立可反覆改進、又能可靠判分的任務？RSI-Forge讓建構、重現與審查代理分工，把論文改編成可執行環境，附上起始解、開發資料、保留測試與獨立重現的基準。作者共建立十八領域、二百一十個環境，其中九十個接受領域專家評閱；再抽取主批次的一百二十個環境，讓四款模型在固定權重下連做三次，後次繼承程式與筆記。以正規化分數提升超過0.01計，84%的環境至少有一款模型在第一次之後進步；六十八個環境至少一次超越重現基準。這些結果支持擴充代理研究任務的供給，也揭露最終提交未必保留最佳解的問題。但超越改編後基準不代表推進原領域科學，三次嘗試亦未分離記憶繼承與額外時間的效益。專家對忠實度、捷徑防護及持續改進空間較保留；四百八十條鏈中二十二條被標記接觸保留材料或其他執行紀錄，排除後模型排序不變，卻不能證明沒有未記錄的接觸。行為標籤也未經人工驗證，所謂95%不只調參不能解讀成95%創新。完整語料須申請，取源程序與逐篇裁決不公開，故適合作為可擴展研究環境的有界證據，尚不足以宣稱已證實通用、開放且可重現的遞迴能力提升。",
+      "title": "RSI-Forge: From Research Papers to Environments for Recursive Self-Improvement",
+      "title_en": "RSI-Forge: From Research Papers to Environments for Recursive Self-Improvement",
+      "title_zh": "RSI-Forge：將研究論文轉為遞迴自我改進環境"
+    },
+{
+      "arxiv_id": "2610.09348",
+      "authors": [],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-10-10T08:13:43.996968+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-ai",
+          "tier": 1,
+          "title": "Relevance Is Not Sufficiency: What Actually Closes the Evidence Gap in Long-Term Memory QA",
+          "url": "https://arxiv.org/abs/2610.09348v1"
+        }
+      ],
+      "llm_evaluation": {
+        "candidate_sha256": "57e537adf574f675dbaa71ee46127ac151f7cb5a4510cebe8a053199769d8573",
+        "components": {
+          "evidence_strength": 0.64,
+          "generalizability": 0.65,
+          "novelty": 0.71,
+          "preference_relevance": 0.96,
+          "reproducibility": 0.57,
+          "rigor": 0.58
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "pp.3–4, Eqs.(1)–(4) and Table1: ideal sufficiency asks whether the reference answer is determinable from a set; LLM-Suff@Set is reference-conditioned model adjudication; Gold Hit and Turn Hit require any annotated overlap, not complete semantic support.",
+          "pp.4–6, Eqs.(5)–(8), Figures2–3: FCA-MS selects a complementary initial set from expanded candidates, then exclusion-aware text/entity/session access adds records until round/call/new-record budgets are spent; it has no inference-time sufficiency oracle.",
+          "pp.17–18, Algorithms1–2 and Appendix E: initial LoCoMo pool N=50, prefilter cap20, selected notes1–5 (mean1.86), approximate positive-token-overlap grounding to10 source turns; main budget3 rounds/6calls/30 new records; text retains8 unseen hits per call.",
+          "p.7, Table2: LoCoMo200 development questions; same-store BFR-MV C6 F1/J=68.3/70.5 versus MRAgent-Flat58.0/64.5 and Mem0 55.3/59.0. Baselines share the extractive answerer and judge but differ in realized retrieval costs.",
+          "p.8, Tables3–4; p.22, Table20: LongMemEval-S500 BFR-MV judged accuracy82.2 versus adapted Mem0 72.4; Turn Hit91.4 versus64.8, while reference-conditioned LLM-Suff@Set is65.0 versus48.0. These are distinct measures, not interchangeable success rates.",
+          "pp.8–9, Tables5–6: FCA-MS alone LoCoMo F1/J48.6/53.5; BFR-Text C3=67.8/70.0 and BFR-MV C6=68.3/70.5. Text has overall CER63.0 versus MV62.0 despite lower LLM-Suff@Set62.0 versus63.5.",
+          "p.17, Appendix E; p.16, Tables8–9: Mem0 is BM25-lite, A-Mem dense top-k without note evolution, CoM and MRAgent controlled adaptations. Full-MRAgent at95.1 Judge versus BFR-Text81.5 on81 overlapping questions changes store/tools/derived facts and is a boundary, not a matched causal comparison.",
+          "p.18, Appendices F–G; p.22, Table19: all ten LoCoMo conversations were visible during development, including the1536-question robustness set; LongMemEval-S was evaluated after protocol freezing. Its main Turn Hit denominator500 includes21 unannotated misses; AppendixP uses479 annotated questions.",
+          "pp.19–21, Tables12/16/18: BFR-MV versus MRAgent-Flat judged gain6.0 points has reported p=.043; Text gain5.5 has p=.071. At matchedC3 Text F1/J/Suff/CER=67.8/70.0/62.0/63.0 exceeds MV66.8/69.5/58.0/59.5. State-aware variants reach73.0 Gold Hit versus fixedMV73.5, without demonstrated gain.",
+          "p.20, Table15 and trailing paragraph: table lists FCA/Text/MV Suff@Set42.5/62.0/63.5, implying+19.5/+21.0; prose instead lists+4.0/0.0 with p=.332/1.000. This internal inconsistency is unresolved and those p-values are not treated as validating the table differences.",
+          "p.10 conclusion versus p.23 AppendixM: conclusion cites human checks of gold-free estimates but gives no inspectable human-check protocol or numerical results; AppendixM explicitly reports only model sufficiency labels and no human Suff@Set labels. The review does not endorse the human-check claim.",
+          "pp.23–24, AppendicesM–O: gpt-5.5 and claude-sonnet-4-6 judge sufficiency with gpt-6-sol adjudication; uncertain/missing final labels are excluded, and the three original pilot arms had none. Answer judge uses a generous Mem0-style prompt and is separate from sufficiency.",
+          "p.25, AppendixP and Figure6: matchedC3 LongMemEval-S Turn Hit95.2 versus92.5 on479 annotated items, with paired13:0 outcomes and reported p=2.4e-4; Judge does not separate schedules. Type-specific7:0 raw p=.016 becomes.094 after six-type Bonferroni correction.",
+          "p.2, Figure1: rendered label visibly reads top-k; both source extractors retain one replacement character for italic k. Original PDF and text are preserved, without claiming perfectly lossless extraction."
+        ],
+        "fulltext_sha256": "285d2aeb72fa9e451c09ffb78df9b0408747b5999b06e95c2f501f818cebb21e",
+        "fulltext_status": "complete",
+        "model": "assistant-native-review",
+        "native_identity_version": 1,
+        "original_candidate_sha256": "57e537adf574f675dbaa71ee46127ac151f7cb5a4510cebe8a053199769d8573",
+        "out_of_scope": false,
+        "producer": "assistant-native-review",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Score 0.767. Long-term agent memory, evidence coverage and retrieval budgets directly match the priorities. Distinguishing item relevance, set sufficiency, annotation hits and answer quality, together with same-store controls and cost curves, is useful. Novelty lies chiefly in integrating requirement-aware selection with exclusion-aware completion; broader acquisition drives most gains, while FCA-MS moves LoCoMo Gold Hit only from 50.0 to 51.0. The baselines are adapted flat-store systems: Mem0 uses BM25-lite and A-Mem omits note evolution, so this is not a win over their official full pipelines. All LoCoMo conversations had development contact; the 500-question LongMemEval-S evaluation broadens support, but sufficiency is reference-conditioned model labeling, not human validation or online stopping. Table 15 gains of +19.5/+21.0 conflict with nearby +4.0/0.0 prose and its p-values; the conclusion’s human-check claim lacks reported methods and results. These issues limit rigor to 0.58, evidence to 0.64 and generalizability to 0.65. Pseudocode, prompts and budgets help, but the FCA prefilter, full model/cost specification and uninspected repository leave reproducibility at 0.57.",
+        "rationale_en": "Score 0.767. Long-term agent memory, evidence coverage and retrieval budgets directly match the priorities. Distinguishing item relevance, set sufficiency, annotation hits and answer quality, together with same-store controls and cost curves, is useful. Novelty lies chiefly in integrating requirement-aware selection with exclusion-aware completion; broader acquisition drives most gains, while FCA-MS moves LoCoMo Gold Hit only from 50.0 to 51.0. The baselines are adapted flat-store systems: Mem0 uses BM25-lite and A-Mem omits note evolution, so this is not a win over their official full pipelines. All LoCoMo conversations had development contact; the 500-question LongMemEval-S evaluation broadens support, but sufficiency is reference-conditioned model labeling, not human validation or online stopping. Table 15 gains of +19.5/+21.0 conflict with nearby +4.0/0.0 prose and its p-values; the conclusion’s human-check claim lacks reported methods and results. These issues limit rigor to 0.58, evidence to 0.64 and generalizability to 0.65. Pseudocode, prompts and budgets help, but the FCA prefilter, full model/cost specification and uninspected repository leave reproducibility at 0.57.",
+        "rationale_zh": "評分0.767。長期代理記憶、檢索證據覆蓋與預算控制直接切合偏好；分清單筆相關、集合充分、標註命中及最終回答，並提供同庫控制、費用曲線與配對比較，是主要價值。方法新意較偏需求導向選集與排除已見紀錄的整合；增益多來自更廣證據取得，FCA-MS本身在LoCoMo的Gold Hit只由50.0升至51.0。主表比較的是簡化同庫系統，Mem0採BM25-lite、A-Mem不演化筆記，不能宣稱擊敗官方完整系統。所有LoCoMo會話均開發接觸；LongMemEval-S五百題提供另庫支持，但充分性仍是參考答案條件下的模型標註，非人工驗證或線上停止訊號。表15的+19.5/+21.0與同頁+4.0/0.0文字矛盾，相關p值不能直接套用；結論所稱human checks未提供方法結果。故嚴謹性0.58、證據0.64，泛化0.65。偽碼、提示及預算細節有助重現，但FCA預篩核心、模型與所有成本未完整展開，GitHub未取得或執行，重現性0.57。",
+        "raw_weighted_score": 0.767,
+        "request_sha256": "c2435fa5f739903c403c219fb3eba5bce323186a439ed29f5f8a8879bd4e1bca",
+        "review_sha256": "19d1f3ad14d7e11803caf8e52e98ec56f838b502053d9f435f83e92f16a87673",
+        "scope_assessment": {
+          "decision": "in_scope",
+          "reason": "The contribution is LLM-agent conversational memory retrieval and evaluation. The evidence-law analogy is conceptual and does not make this a legal-advice or pure domain-application paper."
+        },
+        "scope_capped_score": null,
+        "scope_policy_version": "explicit-review-exclusion-v1",
+        "scope_status": "in_scope",
+        "score": 0.767,
+        "source_key": "186e72386c7c3fdf7227bbebcee1cd644f06947affd577862247113ce04e4261",
+        "story_id": "arxiv:2610.09348",
+        "token_usage": {},
+        "topics": [
+          "Long Context & Memory",
+          "RAG & Knowledge",
+          "Agents & Tool Use",
+          "Red Teaming & Evaluation"
+        ]
+      },
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-ai",
+        "tier": 1,
+        "title": "Relevance Is Not Sufficiency: What Actually Closes the Evidence Gap in Long-Term Memory QA",
+        "url": "https://arxiv.org/abs/2610.09348v1"
+      },
+      "published_at": "2026-10-07T03:09:08+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.767,
+        "llm_relevance_score": 21.476,
+        "recency_score": 0.7233875390207205,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 29.39938753902072
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2610.09348",
+      "summary": "LLM agents that interact with a user across many sessions accumulate histories that exceed their context window, so they store past interactions in an external memory and answer each question from a small set of retrieved records. Existing memory systems rank records by lexical or embedding relevance, yet the top-ranked memories can each be relevant while jointly omitting a complementary fact that the answer requires, especially for multi-session and temporal questions. Drawing on the distinction between relevance and sufficiency in legal evidence scholarship, we recast memory retrieval as constructing a sufficient memory set. To operationalize this view, we introduce a blinded LLM judgment over the retrieved set, together with Gold Hit and Turn Hit as evidence-coverage proxies. We then propose Budgeted Flat Reconstruction (BFR), which builds sufficient sets over a fixed flat memory store in two stages. Specifically, we first apply Formal Concept Analysis for Memory Selection (FCA-MS) to decompose the question into information requirements and select a compact candidate subset that jointly covers them. Then, we repeatedly acquire unseen records through deeper text search or complementary entity and session views, stopping when the budget is exhausted. Experiments on LoCoMo and LongMemEval-S show that BFR outperforms same-store adaptations of recent agent-memory systems in both answer quality and evidence coverage. Specifically, on LongMemEval-S it raises judged accuracy from 72.4% to 82.2% and Turn Hit to 91.4%.",
+      "summary_en": "BFR composes complementary memories, then adds unseen records through text, entity and session access until a budget is spent. In same-flat-store LongMemEval-S tests, judged accuracy rises from 72.4% to 82.2%; 91.4% Turn Hit is only an evidence-access proxy. Text-only completion wins at equal three-call cost on LoCoMo, whose conversations were all seen in development. Sufficiency needs a reference answer offline. Conflicting appendix gains and an undocumented human-check claim weaken the evidence.",
+      "summary_zh": "找回幾段主題相關的舊對話，不代表已湊齊回答所需的證據。本文提出BFR，把長期記憶檢索拆成「組合」與「補齊」：先將問題分解為資訊需求，從擴大的候選池挑選互補筆記、對應回原始對話，再透過文字、人物與會話索引持續取得尚未看過的紀錄，直到固定預算耗盡。停止依據不是模型知道證據已充分，因為文中的充分性評估需參考答案，只能離線使用。在固定對話庫、回答器與評審的LongMemEval-S五百題比較中，多視角版判定正確率由改編Mem0的72.4%提高至82.2%，Turn Hit達91.4%；後者只表示命中至少一筆標註證據，不能當作完整答案已有支持。主要收益來自擴展檢索範圍；在LoCoMo相同三次呼叫下，純文字版反而勝過多視角版，完整結構化記憶系統也不是本文所擊敗的同庫基線。LoCoMo全部會話曾用於開發，不能宣稱未見資料泛化。另須注意，附錄表格的充分性增幅與同頁文字互相矛盾，結論所稱人工檢查亦缺少可核對的設計與結果；這些疑點降低證據強度。這篇的實用價值是提醒記憶系統追求互補、可追溯的證據集合，並把更深檢索的成本算清楚，而非把較高命中率包裝成可靠的充分性判定。",
+      "title": "Relevance Is Not Sufficiency: What Actually Closes the Evidence Gap in Long-Term Memory QA",
+      "title_en": "Relevance Is Not Sufficiency: What Actually Closes the Evidence Gap in Long-Term Memory QA",
+      "title_zh": "相關不等於充分：什麼真正補上長期記憶問答的證據缺口"
+    },
+{
+      "arxiv_id": "2610.10071",
+      "authors": [],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-10-10T08:12:55.115483+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-ai",
+          "tier": 1,
+          "title": "HGP:An on-device personalized agent memory via hybrid graph storage",
+          "url": "https://arxiv.org/abs/2610.10071v1"
+        }
+      ],
+      "llm_evaluation": {
+        "candidate_sha256": "04dc06c0dc1b4301c2c88a7032b40f94580287ee4567b45020cc3ecd81dde66b",
+        "components": {
+          "evidence_strength": 0.59,
+          "generalizability": 0.55,
+          "novelty": 0.64,
+          "preference_relevance": 0.98,
+          "reproducibility": 0.49,
+          "rigor": 0.48
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "PDF pp.1–5 §§1–3,Figure1,Eqs1–12: low-confidence segments receive LLM labels, a decaying threshold shifts routing to the classifier; episodic event, semantic knowledge, procedural rule and dynamic working-state graphs. On-device scope explicitly excludes asynchronous construction/update from critical online work.",
+          "PDF pp.5–7 §4.1,Tables1–2: LoCoMo has10 conversations with about200 questions each; adversarial questions excluded. deepseek-chat extracts memory, gpt-4o-mini generates and judges; retrieval K30/3 for LoCoMo/PAL. LoCoMo overall J65.08,BLEU1 42.09,EM20.54 lead, but F1 45.07 is below Mem0 45.42. PAL S35.58 exceeds strongest listed HippoRAG2 29.22 by6.36; QA judge7.46 exceeds TurnRAG7.41 by only0.05.",
+          "PDF pp.7–8 Table3/§4.3: unified-vector25.15,typed-vector33.66,full35.58; typing gain8.51 versus incremental graph gain1.92. Removing episodic/semantic/procedural memory yields S28.83/25.71/33.10, drops6.75/9.87/2.48. Text B1 19.66 conflicts slightly with tables19.62; tables used here.",
+          "PDF pp.8–9 Figure3/Table4: routing LLM calls2400→807 (66.375% fewer); classifier micro/macro F1 .9105/.9339,4.98ms; fixed LLM router1803.69ms, about362.19×. Hardware, end-to-end graph storage/retrieval/generation costs and main-table uncertainty are not supplied.",
+          "PDF pp.7–9,14–15 Figures2,5–6 and AppendicesB/C: working memory is absent from the two quantitative benchmarks and shown in constructed health examples only. Figure5 records an ibuprofen allergy while its candidate plan focuses on combination precautions rather than clearly enforcing that recorded allergy; the qualitative illustration therefore does not establish safe constraint enforcement.",
+          "PDF pp.11–13 Eqs13–15/Table5:27 configurations on a validation set; printed score subtracts0.5×LatencyNorm, prose instead describes0.5×max(0,LatencyNorm−1). For row1, printed formula yields0.4473 rather than reported0.947; the offset form yields0.9473. Default row5 has .9474±.0060 and4.44ms, differing from Table4 without a clear run mapping.",
+          "PDF pp.13–14 Table6/AppendixA.2.2: macro F1 .8980→.9554 (+.0574), every200 newly LLM-labeled examples prompts an update, five update rounds. Each stage tests a different disjoint subset; reported monotonicity does not isolate training effect or demonstrate no catastrophic forgetting. Example counts, seeds and per-subset difficulty are unspecified.",
+          "PDF pp.12,16–17 Figures4,7–8: full judge and semantic/procedural extraction templates are supplied. Figure7 caption mistakenly calls Asem procedural. Code/data link on p1 was not fetched or executed; no independent author-result reproduction."
+        ],
+        "fulltext_sha256": "a6c6830242f3a3657b115fec5e0a428c032b9ab7e8dfd268cdec7fc6fb281ab6",
+        "fulltext_status": "complete",
+        "model": "assistant-native-review",
+        "native_identity_version": 1,
+        "original_candidate_sha256": "04dc06c0dc1b4301c2c88a7032b40f94580287ee4567b45020cc3ecd81dde66b",
+        "out_of_scope": false,
+        "producer": "assistant-native-review",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "The paper directly concerns general personalized language-agent memory, retrieval and inexpensive routing; health scenarios are illustrations rather than its sole methodological target. Combining type-specific graphs with active-labeling-style routing is practically useful, although the ingredients have precedents. PAL-Set selection improves by 6.36 points over 29.22; typed vectors contribute 8.51 points over unified vectors, with graphs adding 1.92. HGP leads three overall LoCoMo metrics but trails Mem0 on F1, so universal superiority is unsupported. Ablations, full prompts and 27 configurations improve inspectability. However, main-result uncertainty, PAL sample counts and router-label provenance are insufficiently detailed, and shared generator/judge bias lacks human calibration. Equation15 omits the LatencyNorm−1 offset described in prose and cannot reproduce Table5 scores; router results in Tables4–6 lack clear experiment mapping. Disjoint per-stage test subsets avoid reuse but confound gains with subset difficulty and cannot establish absence of forgetting. The 4.98ms result is router latency, not a demonstrated end-to-end device cost; construction, generation, storage and hardware costs remain unclear. Working memory is illustrated by a constructed case only. These limits reduce rigor, generalizability and reproducibility while preserving bounded design and benchmark value; qualitative health examples are not safety validation.",
+        "rationale_en": "The paper directly concerns general personalized language-agent memory, retrieval and inexpensive routing; health scenarios are illustrations rather than its sole methodological target. Combining type-specific graphs with active-labeling-style routing is practically useful, although the ingredients have precedents. PAL-Set selection improves by 6.36 points over 29.22; typed vectors contribute 8.51 points over unified vectors, with graphs adding 1.92. HGP leads three overall LoCoMo metrics but trails Mem0 on F1, so universal superiority is unsupported. Ablations, full prompts and 27 configurations improve inspectability. However, main-result uncertainty, PAL sample counts and router-label provenance are insufficiently detailed, and shared generator/judge bias lacks human calibration. Equation15 omits the LatencyNorm−1 offset described in prose and cannot reproduce Table5 scores; router results in Tables4–6 lack clear experiment mapping. Disjoint per-stage test subsets avoid reuse but confound gains with subset difficulty and cannot establish absence of forgetting. The 4.98ms result is router latency, not a demonstrated end-to-end device cost; construction, generation, storage and hardware costs remain unclear. Working memory is illustrated by a constructed case only. These limits reduce rigor, generalizability and reproducibility while preserving bounded design and benchmark value; qualitative health examples are not safety validation.",
+        "rationale_zh": "研究直接對應長期個人化語言代理、記憶檢索及低成本路由，屬通用方法，健康情境是示例。將類型專用圖儲存與主動標註式路由整合具實務價值，但組件本身已有先例。PAL-Set主要優勢在選擇：35.58比29.22高6.36；類型化向量已帶來8.51分增益，圖結構僅再加1.92。LoCoMo三項整體指標領先而F1略輸Mem0，不能宣稱全面最佳。消融、完整提示及27組設定有助檢查，但主表未給不確定性、PAL樣本數與路由標籤來源細節不足，且同一生成／判分模型的偏誤未由人工核對消除。式15少了正文所說的LatencyNorm−1，無法重現表5分數；表4、5、6的路由數值亦缺清晰實驗對應。不同階段使用不相交測試子集可避免重用，卻混入測試難度變化，無法據此排除遺忘。4.98毫秒只衡量路由器；圖建立、生成、儲存、裝置硬體與完整成本未驗，工作記憶只有構造個案。故保留為有界架構與基準研究，降低嚴謹度、泛化及可重現性評分，不把定性健康示例升格為安全證據。",
+        "raw_weighted_score": 0.728,
+        "request_sha256": "b238357c01cc2fcd6f80bf8d9835dbbbc2747d585829012aee49b60777b91d54",
+        "review_sha256": "5a32107e082706421a5e2e2b6282ccca66ea3cbf86795d2c453a83b4ff816e01",
+        "scope_assessment": {
+          "decision": "in_scope_general_personalized_agent_memory",
+          "reason": "General language-agent routing and heterogeneous memory design, tested on conversational benchmarks; healthcare is illustrative, not a pure domain-only methodology."
+        },
+        "scope_capped_score": null,
+        "scope_policy_version": "explicit-review-exclusion-v1",
+        "scope_status": "in_scope",
+        "score": 0.728,
+        "source_key": "49bfa346dbdec01f9b19578cad458c82fe5e0c5af63b1ab631705c5b5dcae73c",
+        "story_id": "arxiv:2610.10071",
+        "token_usage": {},
+        "topics": [
+          "Agents & Tool Use",
+          "Long Context & Memory",
+          "RAG & Knowledge",
+          "Scaling & Efficiency"
+        ]
+      },
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-ai",
+        "tier": 1,
+        "title": "HGP:An on-device personalized agent memory via hybrid graph storage",
+        "url": "https://arxiv.org/abs/2610.10071v1"
+      },
+      "published_at": "2026-10-07T13:37:38+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.728,
+        "llm_relevance_score": 20.384,
+        "recency_score": 0.7556595372050966,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 28.339659537205097
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2610.10071",
+      "summary": "LLM-based agents face challenges in personalized interactive tasks due to heterogeneous, multi-typed, and implicitly constrained long-term traces. Existing memory mechanisms struggle with accurate routing and retrieval, especially on-device where personalization is critical. Most methods use single-vector representations, blurring type distinctions and relational structure. We propose HGP, a hybrid graph memory framework. HGP employs a lightweight self-enhancement classifier for personalized memory routing and constructs episodic, semantic, and procedural memories as graphs. It also extracts working memory as a state trajectory to capture current state and implicit constraints, ensuring reliable decision-making. The classifier reduces large-model calls, enabling on-device deployment, while graph storage enables accurate retrieval and incremental user profile refinement. Experiments on two benchmarks show that on PAL-Set solution selection, HGP achieves an S-score of 35.58, nearly 7 points above the strongest baseline. Code and data are at https://github.com/Ouan6/HGP-.git.",
+      "summary_en": "HGP routes personal memories into event graphs, knowledge graphs and rule trees, using a small classifier with LLM fallback. PAL-Set selection reaches 35.58 versus 29.22 for HippoRAG2, but typed vectors already score 33.66. Working memory has only an illustrative case. Router latency is not end-to-end device latency, and an appendix scoring equation conflicts with its table. The modular design is useful; broad safety and deployment claims remain unverified.",
+      "summary_zh": "個人助理需要分清曾發生的事件、穩定偏好、可重用流程與眼前待辦，單一向量記憶容易混淆這些訊息。HGP 用輕量分類器分流記憶，遇到低信心樣本才請大型模型標註，再把標註回饋訓練；事件圖、知識圖與規則樹分別保存不同內容，另以狀態軌跡表示工作記憶。\n\n在 PAL-Set，方案選擇的 S-score 為35.58，高於 HippoRAG2 的29.22。消融更值得注意：只保留記憶類型的向量方法已達33.66，混合圖再增加1.92分，不能把全部進步歸因於圖結構。LoCoMo 的整體判分、BLEU-1與精確匹配領先，但F1略低於Mem0；工作記憶則只有單一構造案例，尚未量化其可靠性。\n\n路由器報告4.98毫秒與大型模型呼叫減少66.4%，但這不是完整代理的端到端速度，也沒有具體裝置的完整成本評估。附錄的超參數評分方程與表格不一致，分階段測試又使用不同子集，因此成長曲線不能單獨證明沒有遺忘。這篇適合當作個人化記憶的模組設計參考；效益需與分類、圖結構及工作狀態各自的證據分開看，亦不能據此宣稱已證明醫療安全。",
+      "title": "HGP:An on-device personalized agent memory via hybrid graph storage",
+      "title_en": "HGP:An on-device personalized agent memory via hybrid graph storage",
+      "title_zh": "HGP：以混合圖儲存打造裝置端個人化代理記憶"
     }
 ],
   "radar": [
@@ -2195,12 +2724,27 @@
   "run_info": {
   "added_native_count": 5,
   "added_reviewed_candidate_count": 5,
-  "addition_prepared_at_utc": "2026-10-10T04:27:00+00:00",
+  "addition_prepared_at_utc": "2026-10-10T08:52:00+00:00",
   "addition_ranking_anchor_basis": "Frozen preparation time; not source collection cutoff or historical ranking time",
-  "addition_ranking_anchor_utc": "2026-10-10T04:27:00+00:00",
+  "addition_ranking_anchor_utc": "2026-10-10T08:52:00+00:00",
   "combined_native_reranked": false,
   "coverage_status": "partial",
   "date_basis_by_story": {
+    "arxiv:2610.09239": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-08",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.09348": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-08",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.09426": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-08",
+      "event_timestamp_utc": null
+    },
     "arxiv:2610.09590": {
       "date_basis": "official_listing_v1_inference",
       "date_value": "2026-10-08",
@@ -2221,12 +2765,22 @@
       "date_value": "2026-10-08",
       "event_timestamp_utc": null
     },
+    "arxiv:2610.09856": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-08",
+      "event_timestamp_utc": null
+    },
     "arxiv:2610.09858": {
       "date_basis": "official_listing_v1_inference",
       "date_value": "2026-10-08",
       "event_timestamp_utc": null
     },
     "arxiv:2610.10062": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-08",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.10071": {
       "date_basis": "official_listing_v1_inference",
       "date_value": "2026-10-08",
       "event_timestamp_utc": null
@@ -2322,23 +2876,25 @@
       "event_timestamp_utc": null
     }
   },
-  "error_summary": "PARTIAL 部分更新：保留原19篇及既有順序，新增5篇依本批排名列於Papers。24篇未合併重新排名；全日總數與收集截止時間未知。",
+  "error_summary": "PARTIAL 部分更新候選：保留前一候選24篇及既有順序，本批5篇依原規則選5篇，按子集排名追加Papers。29篇未合併重新排名；全日總數與收集截止時間未知。",
   "finished_at": "2026-10-08T22:31:08.332250+00:00",
   "full_day_candidate_total": null,
   "items_total": null,
-  "preserved_baseline_body_sha256": "c87fd3d8bfda1ebd5cbbbb571e6f2332c9f811f9db79a9e5908552d404501391",
-  "preserved_baseline_commit": "142d7609aede109e471e98427d834bec90ef7048",
-  "preserved_baseline_count": 19,
+  "preserved_baseline_body_sha256": "52c655236a578a5e1f47e5da0ce410ab25d5ac3741257e7f92e12d88e4a4ea13",
+  "preserved_baseline_count": 24,
+  "preserved_baseline_kind": "unpublished_proposed_candidate",
+  "preserved_baseline_seal_sha256": "fcbceae13acc64c807c91ad3c2e5582e7cd1977f7957188c1569e762e9b0eeb0",
   "preview_only": false,
   "prior_reviewed_total_count": null,
-  "release_scope_note": "Five new Oct8 selections appended to Papers in separately ranked subset order; original 19 story bytes and section order preserved. All 24 were not jointly reranked. Full-day source totals and collection cutoff remain unknown.",
-  "reviewed_selected_count": 24,
+  "release_scope_note": "Five new Oct8 selections from five reviewed candidates, after unchanged filtering, appended to Papers in separately ranked subset order; all 24 entries in the unpublished proposed baseline preserve their exact story bytes and section order. All 29 were not jointly reranked. Full-day totals and collection cutoff remain unknown.",
+  "reviewed_selected_count": 29,
   "reviewed_total_count": null,
   "run_id": "assistant-review-2026-10-08",
   "source_collection_cutoff_utc": null,
   "started_at": "2026-10-08T22:31:08.160589+00:00",
-  "stories_total": 24,
-  "success": true
+  "stories_total": 29,
+  "success": true,
+  "underlying_live_commit": "c51b210a8354e85aac822764266250a7e05a71a0"
 },
   "sources_status": [
     {

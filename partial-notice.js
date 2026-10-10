@@ -64,7 +64,18 @@
       ? `部分候選預覽：${data.day}，${count} 筆，尚未發布。Partial candidate preview: ${data.day}, ${count} entries, unpublished.`
       : `部分版本：已核對 ${count} 筆，來源持續補齊。Partial release: ${count} verified entries; source coverage is still being completed.`
     if (data.day !== '2026-10-03') {
-      if (data.day === '2026-10-09' && count === 22 && data.info.combined_native_reranked === false && data.info.preserved_baseline_count === 18 && data.info.added_native_count === 4 && data.info.preserved_baseline_kind === 'unpublished_proposed_candidate') {
+      if (data.day === '2026-10-08' && count === 29 && data.info.combined_native_reranked === false && data.info.preserved_baseline_count === 24 && data.info.added_native_count === 5 && data.info.preserved_baseline_kind === 'unpublished_proposed_candidate') {
+        text += ' 保留前一候選24篇及既有順序；本批5篇依原規則全數入選，按子集排名追加Papers，29篇未合併重新排名。The 24 entries from the preceding unpublished proposed baseline and their section order are preserved; five additions are appended to Papers in their subset order after the unchanged filter selected all five reviewed papers, without reranking all 29.'
+      } else if (data.day === '2026-10-09' && count === 35 && data.info.combined_native_reranked === false && data.info.preserved_baseline_count === 30 && data.info.added_native_count === 5 && data.info.preserved_baseline_kind === 'unpublished_proposed_candidate') {
+        text += ' 保留前一候選30篇及既有順序；本批5篇依原規則全數入選，按子集排名追加Papers，35篇未合併重新排名。The 30 entries from the preceding unpublished proposed baseline and their section order are preserved; five additions are appended to Papers in their subset order after the unchanged filter selected all five reviewed papers, without reranking all 35.'
+      } else if (data.day === '2026-10-09' && count === 30 && data.info.combined_native_reranked === false && data.info.preserved_baseline_count === 26 && data.info.added_native_count === 4 && data.info.preserved_baseline_kind === 'unpublished_proposed_candidate') {
+        text += ' 保留前一候選26篇及既有順序；本批5篇依原規則選4篇，按子集排名追加Papers，30篇未合併重新排名。The 26 entries from the preceding unpublished proposed baseline and their section order are preserved; four additions are appended to Papers in their subset order after the unchanged filter selected four of five reviewed papers, without reranking all 30.'
+
+
+      } else if (data.day === '2026-10-09' && count === 26 && data.info.combined_native_reranked === false && data.info.preserved_baseline_count === 22 && data.info.added_native_count === 4 && data.info.preserved_baseline_kind === 'unpublished_proposed_candidate') {
+        text += ' 保留前一候選22篇及既有順序；新增4篇依本批排名追加Papers，26篇未合併重新排名。The 22 entries from the preceding unpublished proposed baseline and their section order are preserved; four additions are appended to Papers in their subset order, without reranking all 26.'
+
+      } else if (data.day === '2026-10-09' && count === 22 && data.info.combined_native_reranked === false && data.info.preserved_baseline_count === 18 && data.info.added_native_count === 4 && data.info.preserved_baseline_kind === 'unpublished_proposed_candidate') {
         text += ' 保留前一候選18篇及既有順序；新增4篇依本批排名追加Papers，22篇未合併重新排名。The 18 entries from the preceding unpublished proposed baseline and their section order are preserved; four additions are appended to Papers in their subset order, without reranking all 22.'
       } else if (data.day === '2026-10-09' && count === 18 && data.info.combined_native_reranked === false && data.info.preserved_baseline_count === 13 && data.info.added_native_count === 5 && data.info.preserved_baseline_kind === 'unpublished_proposed_candidate') {
         text += ' 保留前一候選13篇及既有順序；新增5篇依本批排名追加Papers，18篇未合併重新排名。The 13 entries from the preceding unpublished proposed baseline and their section order are preserved; five additions are appended to Papers in their subset order, without reranking all 18.'
