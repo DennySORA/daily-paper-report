@@ -151,7 +151,7 @@
   "generated_at": "2026-10-10T02:25:14.097874+00:00",
   "model_releases_by_entity": {},
   "papers": [
-    {
+{
       "arxiv_id": "2610.10266",
       "authors": [
         "Mrabah, Nairouz",
@@ -276,7 +276,7 @@
       "title_en": "LoomSC: Scalable Deep Subspace Clustering with Projector Factorization and Exact Spectral Reduction",
       "title_zh": "LoomSC：以投影矩陣分解與精確譜縮減實現可擴展的深度子空間分群"
     },
-    {
+{
       "arxiv_id": "2610.10253",
       "authors": [
         "Ma, Yuan",
@@ -381,7 +381,7 @@
       "title_en": "On the Cyclic Assumption of the Cow-Path Search Algorithm",
       "title_zh": "論牛徑搜尋演算法的循環順序假設"
     },
-    {
+{
       "arxiv_id": "2610.10275",
       "authors": [
         "Paterson, Fraser C.",
@@ -488,70 +488,494 @@
       "title": "Active Inference for Interaction-Mediated Control of a High-Dimensional Robotic Arm",
       "title_en": "Active Inference for Interaction-Mediated Control of a High-Dimensional Robotic Arm",
       "title_zh": "以主動推論實現高維機械臂的互動中介控制"
+    },
+{
+      "arxiv_id": "2610.10447",
+      "authors": [
+        "Ardywibowo, Randy",
+        "Dalal, Arnav",
+        "Jiao, Jiantao"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-10-10T13:41:13.284203+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-lg",
+          "tier": 1,
+          "title": "A Good Self-Teacher Meets the Student Where They Are: Joint On-Policy Learning and Teaching",
+          "url": "https://arxiv.org/abs/2610.10447v1"
+        },
+        {
+          "link_type": "paper",
+          "source_id": "arxiv-cs-lg",
+          "tier": 1,
+          "title": "A Good Self-Teacher Meets the Student Where They Are: Joint On-Policy Learning and Teaching",
+          "url": "https://arxiv.org/pdf/2610.10447v1"
+        }
+      ],
+      "llm_evaluation": {
+        "candidate_sha256": "c5ba874cfd368e3ee150a4ad1de907705ec58f94a6ec3e903f19fb491688ed4d",
+        "components": {
+          "evidence_strength": 0.7,
+          "generalizability": 0.62,
+          "novelty": 0.74,
+          "preference_relevance": 0.95,
+          "reproducibility": 0.56,
+          "rigor": 0.73
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "pp.3–5 Eq.5–21: OPD differentiates frozen student-prefix distributions and teacher targets. Eq.10 is the necessary-and-sufficient zero-moment condition for proportionality; Eq.11/14 is sufficient on student support, not a unique necessary teacher. Eq.17 needs student-continuation advantages; Eq.18 substitutes own-teacher returns. The paper explicitly excludes the combined shared-weight update from its guarantee.",
+          "pp.2,5 Figure1/Eq.19–21: both roles generate and are cross-scored under their own contexts. Teacher rewards are group-centered within role; JOLT student receives betaS times log teacher/student ratio, and JOLT+ adds student outcome reward. No direct student reward does not mean reward-free training or no reference information.",
+          "pp.7,14,16–17 Table1/3 and A.1–A.2: MATH official7500/5000 split, Qwen3-0.6B with thinking disabled, one temperature1 evaluation per test problem,16384 completion cap; final step150. Three training runs give GRPO68.36±3.73, JOLT72.14±.90, JOLT+72.59±1.17 percent, all mean±sampleSD. GSM8K uses7473/1319 and greedy test decoding; main evaluation has4 GRPO/OPSD/pi-Distill runs and5 JOLT/JOLT+.",
+          "pp.7–8,14,17–19 Table1 and A.3: coding trains Qwen3-8B on131 LCBv6 problems;2421 training-visible plus2431 withheld tests=4852, NumPy split seed0. Evaluation samples4 responses per same problem at temperature.6/top-p.95. GRPO46.13±1.83 versus JOLT47.64±1.10/JOLT+49.08±.41. Three runs except pi-Distill5; no unseen-problem generalization.",
+          "p.14 Table3: MATH/GSM use4 teacher+4 student rollouts for JOLT versus8 student for GRPO/OPSD at batch8. LCB JOLT batch8 with8 per role versus GRPO/OPSD batch32 with8 student. Thus optimizer-step curves are not common total-rollout or compute budgets. Hyperparameters selected via training curves/final training performance before repeated-seed comparisons.",
+          "pp.8,22–23 Figure4/Tables5–7: MATH Pareto frontiers vary budgets and learning rates; completion counts both roles, processed counts prompts, completions, cross-context no-grad scoring and repeated optimization. At63.44% mean accuracy, observed GRPO8.04M/8.40M versus fitted JOLT.617M/1.30M yield13.0×/6.5×. No ratio confidence intervals or direct elapsed-time interpretation; across55/60/65% fitted ratios9.5–14.4 and4.3–7.4.",
+          "pp.24–25 Table8/Figure10: step75 held-out MATH OPSD62.95±.78, reward-augmentedOPSD66.52±.73, teacherKL-only65.39±.97, teacherreward-only67.87±.86, fullJOLT72.10±.82, JOLT+73.80±.74. First four use5 shared seeds; full methods use3 seeds from Figure7. Intervals are95%CI half-widths, not Table1SD; JOLT+ uses Student-t. Student control matched loss weights/normalization/rollout/schedule, but shared weights do not isolate supervision from direct transfer.",
+          "pp.9,26–28 Figure6/12 and Eq.24–27: diagnostics use8 batches×8 MATH problems,32 gradient estimates with8 completions/problem and reference averaging8 independent512-completion estimates. Each method uses its best historical late-training run; batch bootstrap100000 holds reference fixed, excludes seed/reference uncertainty. Reference variance/norm-squared ratio.074–.661; scaled.1gD lowers magnitude-based variance by construction. Fixed-checkpoint normalized directions help, but exclude teacher gradient and do not prove causal teacher improvement or joint-update alignment.",
+          "pp.8,25–26 Figures5/11: a randomly selected GSM8K problem/responses illustrates smaller contextual log-probability disagreement and correct JOLT-family answers; one visualization is not statistical evidence of reliable reasoning. Figure12 supports descriptive direction consistency at measured checkpoints only.",
+          "pp.16,28–29 Figures8–9/Table9: exploratory GSM8K coefficient sweeps distinct from confirmatory seeds; coefficients near1 can be unstable. pi-Distill MATH tuning spans42 configurations and LCB18; low baseline is investigated rather than assumed untuned, but raw sweep data/implementations are uninspected.",
+          "pp.7–8,19–20 Table1/A.4: AppWorld trains90 tasks and evaluates57 development tasks, one greedy trajectory each; metric is per-task fraction of state tests averaged across tasks, not all-task success. JOLT51.92 below GRPO62.20; JOLT+72.09. Full appworld-react.txt is expressly external and missing in this packet; summarizer backend lacks dated snapshot. These values remain descriptive paper reports, outside verified agent-efficacy scope.",
+          "pp.9,20–21 Table2/A.5: Terminal-Bench2.1 uses one training run/method and128 evaluation trajectories/task to estimate pass@k; sampling does not measure training-seed variability. GRPOpass@1/32=8.25/30.34, JOLT6.56/25.69, JOLT+10.96/34.83. Full shared user prompt and JSON tool schema are expressly external and unavailable; no agent reproducibility endorsement.",
+          "pp.21–22 Table4: equal-setting observed probability of improvement94.7% combines GSM8K90%, MATH88.9%, LCB100%, AppWorld100%, with nominal bootstrap83.3–100%; fixed four settings/small seed counts understate broader uncertainty. Includes AppWorld and is not used as non-agent-only evidence.",
+          "pp.10–13: AI-use disclosure and references are read as author statements, not independently verified external sources. All in-file AppendicesA–F end onp29; missing explicitly cited external agent supplements remain distinct from complete PDF body."
+        ],
+        "fulltext_sha256": "9694ae14be161fc949adf8559914617cd357e49ce7ffceb6eacb7d7d9ba162e8",
+        "fulltext_status": "complete",
+        "model": "assistant-native-review",
+        "native_identity_version": 1,
+        "original_candidate_sha256": "c5ba874cfd368e3ee150a4ad1de907705ec58f94a6ec3e903f19fb491688ed4d",
+        "out_of_scope": false,
+        "producer": "assistant-native-review",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "JOLT is a well-motivated LLM training method whose independently assessable contribution is to train a privileged teacher alongside on-policy student distillation. The local theory is correct as a frozen-student characterization: its expectation condition is necessary and sufficient for exact positive gradient proportionality, while the exponential teacher is a sufficient construction, not the unique necessary form. Neither teacher-owned returns nor the shared-parameter joint update inherit that guarantee. Non-agent evidence is useful: MATH improves from 68.36% to 72.14% with JOLT and 72.59% with JOLT+, and teacher-objective ablations support explicit teacher training. However, shared weights leave direct transfer versus better supervision unresolved. LCB's 49.08% versus 46.13% concerns the same 131 training problems with expanded test suites, not new-problem generalization. The 13×/6.5× token savings are target-dependent observed/fitted point estimates, not elapsed-time gains; gradient diagnostics use selected single runs, scaled student estimators and a noisy Monte Carlo reference. The complete PDF enables this bounded method, mathematics and non-agent assessment. Missing full AppWorld scaffold and terminal shared prompt/tool schema prevent endorsing agent reproducibility; reported agent gains are not used as verified efficacy evidence here. Small seed counts, task-specific backbones and uninspected raw artifacts limit stronger generality and replication claims.",
+        "rationale_en": "JOLT is a well-motivated LLM training method whose independently assessable contribution is to train a privileged teacher alongside on-policy student distillation. The local theory is correct as a frozen-student characterization: its expectation condition is necessary and sufficient for exact positive gradient proportionality, while the exponential teacher is a sufficient construction, not the unique necessary form. Neither teacher-owned returns nor the shared-parameter joint update inherit that guarantee. Non-agent evidence is useful: MATH improves from 68.36% to 72.14% with JOLT and 72.59% with JOLT+, and teacher-objective ablations support explicit teacher training. However, shared weights leave direct transfer versus better supervision unresolved. LCB's 49.08% versus 46.13% concerns the same 131 training problems with expanded test suites, not new-problem generalization. The 13×/6.5× token savings are target-dependent observed/fitted point estimates, not elapsed-time gains; gradient diagnostics use selected single runs, scaled student estimators and a noisy Monte Carlo reference. The complete PDF enables this bounded method, mathematics and non-agent assessment. Missing full AppWorld scaffold and terminal shared prompt/tool schema prevent endorsing agent reproducibility; reported agent gains are not used as verified efficacy evidence here. Small seed counts, task-specific backbones and uninspected raw artifacts limit stronger generality and replication claims.",
+        "rationale_zh": "JOLT是動機清楚的LLM訓練方法，可獨立評估的貢獻是讓特權教師與on-policy學生蒸餾共同學習。局部理論在固定學生下成立：期望矩條件是梯度精確正比例的充要條件，指數教師只是充分構造，不是唯一必要形式；教師自身回報與共享參數聯合更新不繼承該保證。非代理證據有用：MATH由68.36%升至JOLT的72.14%及JOLT+的72.59%，教師目標消融亦支持明確訓練教師。但共享權重仍無法分離直接轉移與更佳監督。LCB的49.08%對46.13%是在相同131道訓練題擴充測例，非新題泛化。13倍／6.5倍token節省是依目標而變的觀測／擬合點估計，非耗時增益；梯度診斷使用挑選的單次訓練、縮放學生估計器及含噪蒙地卡羅參考。完整PDF足以支持本次方法、數學與非代理有界評估；AppWorld完整框架及終端共享提示／工具規格缺失，故不背書代理可重現性，也不將代理增益作已核成效證據。少量種子、任務別骨幹與未檢查原始成果，仍限制更強的泛化及重現主張。",
+        "raw_weighted_score": 0.7955,
+        "request_sha256": "00eb0e97372bf931113cb5ddbb6342e746ee3d9af4497b5d64578e2da5ae94e6",
+        "review_sha256": "95e4c2a6d2de782347cdf28a7165370a648fe58fdfc7e98f98dca3c67bb9c2b5",
+        "scope_assessment": {
+          "classification": "in_scope_language_model_training_method_bounded_non_agent_assessment",
+          "decision": "in_scope",
+          "rationale_en": "General LLM training methodology and language reasoning/code evaluations remain in scope independently of agent supplement gaps.",
+          "rationale_zh": "通用LLM訓練方法與語言推理／程式評估本身在範圍內，代理補件缺口另立限制。"
+        },
+        "scope_capped_score": null,
+        "scope_policy_version": "explicit-review-exclusion-v1",
+        "scope_status": "in_scope",
+        "score": 0.7955,
+        "source_key": "02805d90ea31d14f828a07052edf1f7a1fd6f41d6955e06716917a4b6224be88",
+        "story_id": "arxiv:2610.10447",
+        "token_usage": {},
+        "topics": [
+          "Large Language Models",
+          "Training & Optimization",
+          "Reasoning & Chain-of-Thought",
+          "Code & Programming",
+          "Agents & Tool Use"
+        ]
+      },
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-lg",
+        "tier": 1,
+        "title": "A Good Self-Teacher Meets the Student Where They Are: Joint On-Policy Learning and Teaching",
+        "url": "https://arxiv.org/abs/2610.10447v1"
+      },
+      "published_at": "2026-10-07T17:19:19+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.7955,
+        "llm_relevance_score": 22.274,
+        "recency_score": 0.7471376898769766,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 30.221137689876976
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2610.10447",
+      "summary": "Reinforcement Learning (RL) from outcome rewards suffers from sparse supervision, particularly on difficult, long-horizon tasks where successful trajectories are rare and costly to generate. On-Policy Distillation (OPD) offers an attractive alternative by providing dense token-level supervision from a stronger teacher along the student's own generations. Self-distillation methods further remove the need for a separate teacher model by conditioning the same policy on privileged information to serve as its own teacher. However, privileged conditioning alone does not guarantee that the resulting distillation update improves the student. Indeed, privileged information can lead the teacher to solve tasks through shortcuts unavailable to the student, producing supervision poorly matched to the student's current behavior. Consequently, even a higher-performing teacher can provide guidance that degrades student performance. To address this, we analyze how the choice of privileged teacher affects the student's update. We derive a necessary and sufficient condition for the teacher's local distillation update to be a positive multiple of the student's reward gradient. Our analysis suggests that the teacher should not only perform well on the task, but also provide guidance suited to the student's current capabilities. This characterization motivates a practical teacher-training surrogate that combines outcome rewards with token-level Kullback-Leibler (KL) regularization toward the student. Based on this result, we propose Joint On-Policy Learning and Teaching (JOLT), which jointly trains a single policy in two roles: a privileged teacher using a KL-regularized objective, and an unprivileged student using dense on-policy distillation. Across mathematical reasoning, coding, tool use, and terminal use, JOLT improves training efficiency and performance, with further gains from student rewards.",
+      "summary_en": "A teacher that sees the answer need not teach well: privileged shortcuts can produce token-level guidance poorly aligned with the student's reward. JOLT trains one language model in two roles, a privileged teacher and an unprivileged student, each generating its own trajectories. The teacher learns from outcome rewards plus KL regularization toward the student; the student receives dense distillation on its own responses. JOLT+ adds student outcome rewards. The theory characterizes a local gradient for a fixed student, but the practical teacher substitutes its own returns, and shared-weight joint updates have no corresponding guarantee. Across three MATH training runs, mean accuracy rises from GRPO's 68.36% to 72.59% with JOLT+; JOLT reaches 72.14% without direct student reward. Teacher-objective ablations support practical value but cannot separate better teaching signals from direct transfer through shared weights. Coding accuracy of 49.08% versus 46.13% uses the same 131 training problems with additional unseen test cases, not unseen problems. Reported 13-fold completion-token and 6.5-fold processed-token savings compare an observed GRPO budget with a fitted JOLT budget at 63.44% MATH accuracy. These ratios lack confidence intervals and do not measure elapsed time. Gradient diagnostics use selected single training runs and noisy references. The complete 29-page paper is readable, but the full AppWorld scaffold and terminal shared prompt/tool schema remain unavailable in the reviewed packet. This assessment covers the method, mathematics and non-agent evidence, without endorsing agent-experiment reproducibility.",
+      "summary_zh": "有標準答案的教師未必教得好：它可能走學生無法使用的捷徑，讓逐詞蒸餾方向偏離真正獎勵。JOLT讓同一語言模型分別扮演有特權資訊的教師與無特權資訊的學生，兩者各自生成軌跡；教師以結果獎勵加上貼近學生的KL限制學習，學生則在自己的回答上取得稠密監督，JOLT+再加入學生獎勵。理論給出固定學生下的局部梯度條件，但實際教師使用自身回報，共享權重的聯合更新沒有同樣保證。MATH三次訓練的平均準確率由GRPO的68.36%升至JOLT+的72.59%；不直接獎勵學生的JOLT也達72.14%。教師目標消融支持其實用價值，卻未分離改善教學訊號與權重直接轉移。程式結果49.08%對46.13%，是在相同131道訓練題上加入未見測例，不能當新題泛化。宣稱省13倍生成token與6.5倍處理token，來自63.44%目標準確率的觀測／擬合比較，沒有比值信賴區間，也不是實際耗時。梯度分析僅涵蓋選定單次訓練與含噪參考。完整29頁已可核讀；AppWorld完整框架、終端共享提示及工具規格仍缺，本次只評方法、數學與非代理證據，不背書代理實驗可重現。",
+      "title": "A Good Self-Teacher Meets the Student Where They Are: Joint On-Policy Learning and Teaching",
+      "title_en": "A Good Self-Teacher Meets the Student Where They Are: Joint On-Policy Learning and Teaching",
+      "title_zh": "好的自我教師應貼近學生現況：聯合同策略學習與教學"
+    },
+{
+      "arxiv_id": null,
+      "authors": [
+        "OpenAI"
+      ],
+      "categories": [],
+      "entities": [
+        "openai"
+      ],
+      "first_seen_at": "2026-10-10T01:24:47.503137+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "official",
+          "source_id": "openai-blog",
+          "tier": 0,
+          "title": "GPT-6 Sol and GPT-6 Luna: October 2026 update",
+          "url": "https://deploymentsafety.openai.com/gpt-6-october"
+        },
+        {
+          "link_type": "official",
+          "source_id": "openai-blog",
+          "tier": 0,
+          "title": "GPT-6 Sol and GPT-6 Luna: October 2026 update",
+          "url": "https://deploymentsafety.openai.com/gpt-6-october/gpt-6-october.pdf"
+        }
+      ],
+      "llm_evaluation": {
+        "candidate_sha256": "2a8fd5ea23839b19276360fe8ca792d73075203400fc3f8c0d0678ac62c74c82",
+        "components": {
+          "evidence_strength": 0.62,
+          "generalizability": 0.48,
+          "novelty": 0.36,
+          "preference_relevance": 0.93,
+          "reproducibility": 0.28,
+          "rigor": 0.58
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "PDF pages 1–2, Introduction: October 7 publication; October ChatGPT models are distinguished from September Work/Codex models. Safety and capability settings differ.",
+          "PDF pages 5–10, Sections 2–3, Tables 1–3 and Figure 1: comparisons may use updated prior models; difficult challenge sets are not production prevalence, and multiple safety regressions are disclosed.",
+          "PDF pages 10–12, Section 4, Figure 2 and Table 4: multi-turn robustness overlaps September confidence intervals; indirect prompt-injection robustness is 97.13% for Sol and 95.80% for Luna, averaged across reasoning levels.",
+          "PDF pages 12–15, Section 5, Tables 5–7: HealthBench uses length adjustment; MentalHealthBench specifies 1,215 tasks and four responses per task, with standard errors across task means; dynamic evaluations use a different message-level measure.",
+          "PDF pages 17–20, Sections 7.1–7.2, Figures 4–7: monitor bypass is 0.0% observed for both October models; environmental-warning circumvention remains 28.1% for Sol and 15.9% for Luna in the chart. Evaluation awareness and limited external validity are acknowledged.",
+          "PDF pages 21–24, Section 8: risk classifications and safeguards are provider assessments, with fuller methods delegated to earlier system cards; historical vulnerability exposure may inflate ExploitBench results."
+        ],
+        "fulltext_sha256": "b92add03e539fda92554cc7c4e89f1757d1f26ea27e78f81670b75b62d8a8c27",
+        "fulltext_status": "complete",
+        "model": "assistant-native-review",
+        "native_identity_version": 1,
+        "original_candidate_sha256": "2a8fd5ea23839b19276360fe8ca792d73075203400fc3f8c0d0678ac62c74c82",
+        "out_of_scope": false,
+        "producer": "assistant-native-review",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Strongly relevant deployment-evaluation evidence for language-model agents, with clear version distinctions and useful regression disclosure. The contribution is an updated vendor evaluation, not an isolated architectural or training-method advance. Broad benchmarks and some uncertainty reporting support bounded comparisons, but changing baselines, the absence of complete task-level data from this card and limited methodological detail constrain causal attribution and replication. The availability of external supporting materials was not exhaustively checked. The report itself questions external validity and separates unguarded challenge tests from production. A complete public PDF does not establish independent reproduction, universal safety or complete daily coverage.",
+        "rationale_en": "Strongly relevant deployment-evaluation evidence for language-model agents, with clear version distinctions and useful regression disclosure. The contribution is an updated vendor evaluation, not an isolated architectural or training-method advance. Broad benchmarks and some uncertainty reporting support bounded comparisons, but changing baselines, the absence of complete task-level data from this card and limited methodological detail constrain causal attribution and replication. The availability of external supporting materials was not exhaustively checked. The report itself questions external validity and separates unguarded challenge tests from production. A complete public PDF does not establish independent reproduction, universal safety or complete daily coverage.",
+        "rationale_zh": "這份部署評估與語言模型代理高度相關，清楚區分版本，也揭露退步項目；其貢獻主要是供應商更新評估，並非獨立驗證的架構或訓練方法突破。廣泛基準與部分不確定性資訊支持有限比較，但基線持續更新、本卡未附完整逐題資料、方法細節不足，限制因果歸因與重現；外部補充材料的可得性未全面核對。報告本身質疑部分測試的外部效度，並區分未加完整防護的挑戰測試與正式環境。取得完整公開文件不等於獨立重現、全面安全或全日來源完整。",
+        "raw_weighted_score": 0.668,
+        "request_sha256": "e415d12850f44ad39a1567b1a6c1cb223983620b2db5c05e182553054cc69526",
+        "review_sha256": "23569fb93ab2d2123d51eaf5ae0645455f18121c63f3832e1cda4691a2d22b75",
+        "scope_assessment": {
+          "decision": "in_scope_language_model_safety_and_agent_evaluation"
+        },
+        "scope_capped_score": null,
+        "scope_policy_version": "explicit-review-exclusion-v1",
+        "scope_status": "in_scope",
+        "score": 0.668,
+        "source_key": "a163b919372bd0aac67bd91b312a8730d0a37334b57bc0500f0f02be352c70ee",
+        "story_id": "fallback:9c57b1505ab6ece2",
+        "token_usage": {},
+        "topics": [
+          "Large Language Models",
+          "AI Safety",
+          "Alignment & RLHF",
+          "Agents & Tool Use",
+          "Red Teaming & Evaluation"
+        ]
+      },
+      "primary_link": {
+        "link_type": "official",
+        "source_id": "openai-blog",
+        "tier": 0,
+        "title": "GPT-6 Sol and GPT-6 Luna: October 2026 update",
+        "url": "https://deploymentsafety.openai.com/gpt-6-october"
+      },
+      "published_at": null,
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 2.0,
+        "kind_score": 1.5,
+        "llm_raw_score": 0.668,
+        "llm_relevance_score": 18.704,
+        "recency_score": 0.1,
+        "semantic_score": 0.0,
+        "tier_score": 3.0,
+        "topic_score": 4.0,
+        "total_score": 29.304000000000002
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "fallback:9c57b1505ab6ece2",
+      "summary": "Public safety and alignment evaluation report for the October versions of GPT-6 Sol and Luna.",
+      "summary_en": "This October 7 system card evaluates the Chat versions of GPT-6 Sol and Luna, distinct from the September Work/Codex versions. Use it to plan agent checks for injection resistance, respect for restrictions and honest disclosure of blockers. Reported gains coexist with safety regressions; zero observed monitor bypasses does not prove zero risk. Environmental-warning circumvention still occurs in tests without the full safeguard stack. Compare each metric within its stated baseline and reasoning setting, and notice the response-length adjustment in health evaluations. This card does not include a complete set of tasks, graders and task-level results; the availability of external materials was not exhaustively checked, and fuller methods are delegated to prior cards. Challenge-set rates are not production prevalence. All 24 pages and figures were read, but experiments and production behavior were not reproduced. Exact publication time and complete daily coverage remain unverified.",
+      "summary_zh": "這份十月七日公布的系統卡，評估在聊天介面推出的兩個語言模型版本，重點是安全、誠實及代理行為。它不是單一新演算法的論文，也不能把結果直接套用到工作介面與程式工具仍使用的九月版本。閱讀時可先看多輪越獄、間接提示注入與遇到阻礙時的揭露測試：作者報告部分指標改善，但未加完整系統防護的環境警告測試仍有明顯違規，零次繞過審核的觀察也不代表風險消失。\n\n這份資料的價值在於把進步與退步放在同一份評估中。若干成人、青少年及圖像安全類別出現退步，不能用整體敘述概括為全面變好。各項分數的單位、推理設定與評分方式不同；健康評估還調整回答長度，因此應逐表辨認比較基準，不宜跨表拼成單一安全排名。\n\n主要限制是本卡未附完整任務、評分器與逐題結果，外部材料的可得性未全面核對；部分完整方法另引前代系統卡，挑戰案例也不代表一般使用的事件發生率。適合把它當成設計代理驗收、失敗揭露與分層防護的參考，再用自己的工作流程檢驗。本次讀完二十四頁並核對所有圖表，未重現實驗或驗證正式產品；文件日期已確認，精確發布時間與全日來源覆蓋仍未確認。",
+      "title": "GPT-6 Sol and GPT-6 Luna: October 2026 update",
+      "title_en": "GPT-6 Sol and GPT-6 Luna: October 2026 update",
+      "title_zh": "GPT-6 Sol 與 GPT-6 Luna：二〇二六年十月更新系統卡"
+    },
+{
+      "arxiv_id": "2610.10455",
+      "authors": [
+        "Meng, Linghao",
+        "He, Feng",
+        "Yang, Xuan",
+        "Mao, Junyuan",
+        "Ren, Pinze",
+        "Mu, Deqing",
+        "Yang, Hesen",
+        "Li, Qiankun"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-10-10T13:51:31.449127+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-cl",
+          "tier": 1,
+          "title": "PHRBench: A Behavioral Evaluation of Post-Hallucination Reasoning in LLMs",
+          "url": "https://arxiv.org/abs/2610.10455v1"
+        },
+        {
+          "link_type": "paper",
+          "source_id": "arxiv-cs-cl",
+          "tier": 1,
+          "title": "PHRBench: A Behavioral Evaluation of Post-Hallucination Reasoning in LLMs",
+          "url": "https://arxiv.org/pdf/2610.10455v1"
+        }
+      ],
+      "llm_evaluation": {
+        "candidate_sha256": "2c7b6a96d0dc5ccd2e88215b4328e848277a62799ccc7d9d256fe55460ebbc22",
+        "components": {
+          "evidence_strength": 0.56,
+          "generalizability": 0.49,
+          "novelty": 0.66,
+          "preference_relevance": 0.92,
+          "reproducibility": 0.35,
+          "rigor": 0.47
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "Sections 3–4, pp.3–5; Appendix A, pp.14–19: 460 base + 460 truthful + 3900 hallucinated inputs; 120/120/120/100 base-domain counts and 10/10/10/3 false variants per question.",
+          "Table 1, p.6 and Tables 5–8, pp.24–25: all 18 aggregate T/H accuracy pairs reconstruct within rounding from unequal T/H domain weights; descriptive mean decrease 7.7167 percentage points.",
+          "Section 5.2, pp.7–8; Table 2 and Figure 4: mutually separated behavioral classes; eleven models reported below 10% insightful responses, largest rate reported 24.91%.",
+          "Appendix B.2, pp.21–22: fixed Qwen2.5-7B reference scoring, sentence-level steps, KL threshold .10 nats, probabilities clipped at 1e-12; BUF explicitly does not establish belief revision or error correction.",
+          "Appendix D.1, pp.28–30: operative-premise rules, correction plus correctness for insightful trajectories; 95% human-audited label accuracy without audit size; Example 3 permits an incorrect replacement mechanism.",
+          "Appendix E.1–E.3, pp.35–36: 9 GPT-4o semantic and 15 deterministic structural features; base-question split 2587/647 of 3234; XGBRegressor hyperparameters given, but prompt-to-target aggregation and subset selection unspecified.",
+          "Appendix E.2–E.3, p.36: exact prompts, output schemas, heuristic definitions and training/evaluation code delegated to supplementary material; AUROC .847, AUPRC .502, F1 .531, P .738, R .524 need metric/threshold clarification.",
+          "Appendix E.4 and Table 21, pp.36–37; Figure 7, p.10: SHAP describes attribution in the fitted predictor, explicitly not causal effects; weak pairwise SHAP interaction is not feature independence."
+        ],
+        "fulltext_sha256": "6b97c8c98a164600db0ed4901f65107dd9be79a71b9d3a6aaa6971080f8a3d9b",
+        "fulltext_status": "complete",
+        "model": "assistant-native-review",
+        "native_identity_version": 1,
+        "original_candidate_sha256": "2c7b6a96d0dc5ccd2e88215b4328e848277a62799ccc7d9d256fe55460ebbc22",
+        "out_of_scope": false,
+        "producer": "assistant-native-review",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "PHRBench's independently assessable value is separating compliance, avoidance and explicit correction from final-answer correctness. The 460 base questions, truthful/false contexts, 18 models and detailed tables permit a bounded evaluation of the benchmark design and author-reported descriptive trends. Table 1 yields a mean 7.7167-percentage-point decrease, but reconstruction from domain tables reveals different T/H domain weights, so it is not a pure matched-distribution contrast. More correction at larger scales within several families does not establish that scale causes either vulnerability or recovery. BUF is a thresholded KL statistic from a fixed Qwen2.5-7B reference distribution; correlations and selected examples do not identify the evaluated models' internal beliefs. The 95% behavioral-label audit lacks a sample size, and question-cluster uncertainty is unreported. The predictor's base-question split is a strength, but cross-model/repeated-response target aggregation, selection of 3,234 from 3,900 augmentations and the best-F1 selection set are unspecified. If precision .738 and recall .524 are pooled binary statistics at one threshold, F1 would be approximately .61286, not .531. Unknown averaging makes this an unresolved inconsistency, not proof of arithmetic error. Missing feature prompts, schemas, heuristic formulas and evaluation implementation prevent treating AUROC .847 as verified performance. These gaps do not erase the behavioral framework's value, but preclude stronger predictive, causal-mechanistic or real-agent generalization claims.",
+        "rationale_en": "PHRBench's independently assessable value is separating compliance, avoidance and explicit correction from final-answer correctness. The 460 base questions, truthful/false contexts, 18 models and detailed tables permit a bounded evaluation of the benchmark design and author-reported descriptive trends. Table 1 yields a mean 7.7167-percentage-point decrease, but reconstruction from domain tables reveals different T/H domain weights, so it is not a pure matched-distribution contrast. More correction at larger scales within several families does not establish that scale causes either vulnerability or recovery. BUF is a thresholded KL statistic from a fixed Qwen2.5-7B reference distribution; correlations and selected examples do not identify the evaluated models' internal beliefs. The 95% behavioral-label audit lacks a sample size, and question-cluster uncertainty is unreported. The predictor's base-question split is a strength, but cross-model/repeated-response target aggregation, selection of 3,234 from 3,900 augmentations and the best-F1 selection set are unspecified. If precision .738 and recall .524 are pooled binary statistics at one threshold, F1 would be approximately .61286, not .531. Unknown averaging makes this an unresolved inconsistency, not proof of arithmetic error. Missing feature prompts, schemas, heuristic formulas and evaluation implementation prevent treating AUROC .847 as verified performance. These gaps do not erase the behavioral framework's value, but preclude stronger predictive, causal-mechanistic or real-agent generalization claims.",
+        "rationale_zh": "PHRBench的可獨立評估價值，在於把幻覺接受、繞過、修正與答案正確性分開。460原題、真實／錯誤脈絡對照、18模型與詳細附表，足以支持有界的benchmark設計評述及作者報告的描述性趨勢。表1平均下降7.7167個百分點，但依題數重建可見T/H領域權重不同，不能解讀成相同題目分布的純配對效果。明確修正隨部分模型家族規模上升，並不證明規模造成脆弱或修正；BUF是固定Qwen2.5-7B參考分布的KL門檻統計，相關及精選案例不認證受測模型內部信念。95%行為標籤人工抽查缺少樣本量，亦無按原題聚類的不確定性。預測部分按原題切分值得肯定，但沒有定義跨模型／多次回應如何形成目標，也未交代3900→3234選樣及best-F1選閾位置。P=.738與R=.524若屬同一合併二元統計，F1應約.61286而非.531；平均方式未知，因此這是待釐清的不一致，不能逕判誤算。精確特徵提示、schemas、heuristic公式與評估實作缺失，故AUROC=.847只作作者報告，不視為已核成效。這些限制不抹去行為分類框架的價值，卻阻止更強的預測驗證、因果機制與真實代理泛化主張。",
+        "raw_weighted_score": 0.6880000000000001,
+        "request_sha256": "675f5f12ad2ed4358801b3aa24cb2994b6e168a3a07922772e589286ba436061",
+        "review_sha256": "08aadb60d2c2c322f7eb15d44fc91c9227a5998edcb8f6d7cc7f558448110032",
+        "scope_assessment": {
+          "decision": "in_scope",
+          "reason_en": "The core contribution is LLM hallucination/reasoning evaluation; scientific tasks are vehicles for general language-model analysis.",
+          "reason_zh": "核心是LLM幻覺與推理行為評估；跨科學題目僅為一般語言模型評估載體。"
+        },
+        "scope_capped_score": null,
+        "scope_policy_version": "explicit-review-exclusion-v1",
+        "scope_status": "in_scope",
+        "score": 0.6880000000000001,
+        "source_key": "5d20de34ac6ac2e275c27d7feb8ced82bd7d9a70588a127c01ce0044699561ac",
+        "story_id": "arxiv:2610.10455",
+        "token_usage": {},
+        "topics": [
+          "Large Language Models",
+          "Reasoning & Chain-of-Thought",
+          "RAG & Knowledge",
+          "Red Teaming & Evaluation"
+        ]
+      },
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-cl",
+        "tier": 1,
+        "title": "PHRBench: A Behavioral Evaluation of Post-Hallucination Reasoning in LLMs",
+        "url": "https://arxiv.org/abs/2610.10455v1"
+      },
+      "published_at": "2026-10-07T17:25:23+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.6880000000000001,
+        "llm_relevance_score": 19.264000000000003,
+        "recency_score": 0.7474525225328044,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 27.21145252253281
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2610.10455",
+      "summary": "Hallucinated information can propagate through multi-stage LLM systems and become part of the context for subsequent reasoning. Existing studies of post-hallucination reasoning (PHR) mainly characterize changes in final outcomes and aggregate reasoning dynamics, leaving how models resolve hallucinated premises at the response level insufficiently understood. In this work, we introduce PHRBench, a controlled benchmark for behaviorally structured PHR across four domains and 18 large language models. PHRBench characterizes each reasoning trajectory independently of final-answer correctness through Hallucination Compliance, Hallucination Avoidance, and Heuristic Correction, and defines an insightful trajectory as successful correction that ultimately reaches the correct answer. Across 4820 controlled instances, we find that successful recovery remains relatively rare and is associated with more frequent belief updates along the reasoning trajectory. We further find that properties of the hallucinated prompt contain substantial predictive signal for successful recovery, with a lightweight predictor achieving an AUROC of 0.847. These findings provide a behavioral view of post-hallucination reasoning, characterizing how LLMs resolve erroneous context and when successful recovery is likely to occur.",
+      "summary_en": "A correct answer does not establish that a model recognized a false premise. PHRBench separates compliance, avoidance and explicit correction, defining successful recovery as correction followed by a correct answer. It selects 460 chemistry, biomedicine, physics and coding questions from eight existing benchmarks, adds 460 truthful and 3,900 hallucinated contexts, and evaluates the resulting 4,820 inputs on 18 models with ten samples per model–input pair. Its useful contribution is to distinguish answer correctness from how erroneous context is handled.\n\nThe reported mean accuracy loss is about 7.7 percentage points. Larger models within several families correct more often while also showing larger losses, but truthful and hallucinated conditions have different domain weights: this is not directly a matched-weight treatment effect. Nor are the 4,820 inputs independent questions. Belief Update Frequency measures distributional changes under a fixed Qwen2.5-7B reference scorer; it does not establish the evaluated model's internal beliefs or a causal correction mechanism.\n\nA prompt-feature predictor reportedly reaches AUROC 0.847. Splitting by base question is a useful leakage safeguard, but the aggregation of prediction labels across models and repeated responses, the reduction from 3,900 augmentations to 3,234 prediction instances, and the selection and averaging conventions behind the best-F1 threshold are insufficiently specified. Exact feature prompts and formulas are also missing, preventing verification of predictive performance. The reported 95% manual label-audit accuracy lacks a sample size. The paper therefore supports a useful behavioral evaluation framework and bounded descriptive evidence, rather than a validated pre-deployment recovery predictor or demonstrated generalization to real agent systems.",
+      "summary_zh": "答對問題，不代表模型已識破錯誤前提。PHRBench把回應區分為沿用幻覺、繞過幻覺及明確修正，另以「修正且答對」定義成功恢復。研究從八個既有基準選出460道化學、生醫、物理與程式題，加入460份真實敘述及3900份錯誤敘述，共4820個輸入；18個模型對每個輸入取樣十次。這個設計的價值，是把最終正確性與處理錯誤脈絡的行為分開，避免把碰巧答對誤認為可靠修正。\n\n表中平均準確率下降約7.7個百分點；部分同家族較大模型雖更常修正，也更容易受錯誤脈絡影響。但真實與幻覺條件的領域權重不同，降幅不能直接當同權重配對效果；4820個輸入也非4820道獨立題目。所謂信念更新頻率，是固定Qwen2.5-7B評分器的分布變化，不能證明受測模型內部信念或修正的因果機制。\n\n作者另報告提示特徵預測器AUROC為0.847，並按原題分割訓練與測試，這是有用的防洩漏設計。然而預測標籤如何跨模型與多次回應聚合、3900份增補縮為3234筆的規則、最佳F1閾值的選法與平均方式都不夠明確；精確特徵提示及公式亦缺失，故不能據此驗證預測效能。人工抽查95%標籤正確也未交代樣本量。這篇適合作為行為評估框架與受限的描述性證據，尚不足支持可靠的部署前恢復預測或真實代理系統泛化。",
+      "title": "PHRBench: A Behavioral Evaluation of Post-Hallucination Reasoning in LLMs",
+      "title_en": "PHRBench: A Behavioral Evaluation of Post-Hallucination Reasoning in LLMs",
+      "title_zh": "PHRBench：大型語言模型在幻覺之後如何推理的行為評估"
     }
-  ],
+],
   "radar": [],
   "run_date": "2026-10-07",
   "run_id": "current-oct7-partial-preview",
   "run_info": {
-    "coverage_status": "partial",
-    "date_basis_by_story": {
-      "arxiv:2610.10253": {
-        "date_basis": "official_first_submission_utc",
-        "date_value": "2026-10-07",
-        "event_timestamp_utc": "2026-10-07T15:32:23+00:00"
-      },
-      "arxiv:2610.10260": {
-        "date_basis": "official_first_submission_utc",
-        "date_value": "2026-10-07",
-        "event_timestamp_utc": "2026-10-07T15:35:02+00:00"
-      },
-      "arxiv:2610.10266": {
-        "date_basis": "official_first_submission_utc",
-        "date_value": "2026-10-07",
-        "event_timestamp_utc": "2026-10-07T15:37:39+00:00"
-      },
-      "arxiv:2610.10275": {
-        "date_basis": "official_first_submission_utc",
-        "date_value": "2026-10-07",
-        "event_timestamp_utc": "2026-10-07T15:42:01+00:00"
-      },
-      "arxiv:2610.10278": {
-        "date_basis": "official_first_submission_utc",
-        "date_value": "2026-10-07",
-        "event_timestamp_utc": "2026-10-07T15:44:29+00:00"
-      },
-      "arxiv:2610.10285": {
-        "date_basis": "official_first_submission_utc",
-        "date_value": "2026-10-07",
-        "event_timestamp_utc": "2026-10-07T15:49:06+00:00"
-      },
-      "arxiv:2610.10302": {
-        "date_basis": "official_first_submission_utc",
-        "date_value": "2026-10-07",
-        "event_timestamp_utc": "2026-10-07T15:56:31+00:00"
-      },
-      "arxiv:2610.10303": {
-        "date_basis": "official_first_submission_utc",
-        "date_value": "2026-10-07",
-        "event_timestamp_utc": "2026-10-07T15:57:13+00:00"
-      }
+  "added_native_count": 3,
+  "added_reviewed_candidate_count": 3,
+  "addition_prepared_at_utc": "2026-10-10T15:17:00+00:00",
+  "addition_ranking_anchor_basis": "Frozen integration time only; not publication clock, source cutoff, or full-day ranking",
+  "addition_ranking_anchor_utc": "2026-10-10T15:17:00+00:00",
+  "bounded_scope_by_story": {
+    "arxiv:2610.10447": {
+      "announcement_date_feed_hold": true,
+      "full_source_scientifically_accepted": false,
+      "limits": [
+        "Method in Sections 2.1–2.3, fixed-student local mathematics, GSM8K/MATH, LCB seen-problem test-case assessment, token accounting/ablations and qualified gradient diagnostics only.",
+        "AppWorld/terminal MATERIAL SOURCE HOLD remains: full ReAct scaffold and terminal shared prompt/tool schema are absent; agent efficacy and reproducibility are not endorsed.",
+        "No full-source scientific clearance, shared-update convergence/reward-consistency guarantee, unseen-problem coding generalization, or wall-clock/FLOP savings.",
+        "COMPLETE/confidence 1 refers only to the exact 29-page PDF body, not complete supplements or certainty.",
+        "Calendar grouping is official fixed-v1 FIRST SUBMISSION on 2026-10-07; announcement/date-feed/version event/configured query and full-day coverage remain unknown.",
+        "Root independently read the bounded bilingual review and exact bindings as recorded in the pinned decisions. This is not a new whole-paper reading or scientific authorship by serializer673."
+      ],
+      "material_source_hold": true
     },
-    "error_summary": "PARTIAL 部分更新：本次僅含已核對並選取的有界子集；全日來源總數與收集截止時間未知，非完整日報。",
-    "excluded_count": 1,
-    "finished_at": null,
-    "full_day_candidate_total": null,
-    "items_total": 9,
-    "preview_only": false,
-    "release_scope_note": "19 new selections across Oct7/8/9; preserve previously published Oct8 14. The per-date subset is separately ranked, not a full-day ranking.",
-    "reviewed_selected_count": 8,
-    "reviewed_total_count": 9,
-    "run_id": "current-oct7-partial-preview",
-    "source_collection_cutoff_utc": null,
-    "started_at": "2026-10-10T02:25:14.094191+00:00",
-    "stories_total": 9,
-    "success": true
+    "arxiv:2610.10455": {
+      "announcement_date_feed_hold": true,
+      "full_source_scientifically_accepted": false,
+      "limits": [
+        "Benchmark behavioral taxonomy/design and critically qualified descriptive author-reported results only, using exact orthographic successor 644F1.",
+        "Predictor MATERIAL SOURCE HOLD remains: E.2/E.3 exact prompts, schemas, heuristics and training/evaluation implementation are missing; target, 3900-to-3234 selection and metric/F1 definitions remain unresolved.",
+        "AUROC 0.847 is author-reported, not verified predictor performance; no causal belief-mechanism or deployed-agent generalization claim.",
+        "COMPLETE/confidence 1 refers only to the exact 37-page PDF body. Full-source scientific acceptance and external-supplement completeness remain false.",
+        "T/H domain weights differ; the 7.7-point loss is not a paired causal estimate. BUF uses a fixed-reference distribution.",
+        "Calendar grouping is official fixed-v1 FIRST SUBMISSION on 2026-10-07; announcement/date-feed/version event/configured query and full-day coverage remain unknown.",
+        "Root independently read the bounded bilingual review and exact bindings as recorded in the pinned decisions. This is not a new whole-paper reading or scientific authorship by serializer673."
+      ],
+      "material_source_hold": true
+    },
+    "fallback:9c57b1505ab6ece2": {
+      "announcement_date_feed_hold": true,
+      "full_source_scientifically_accepted": false,
+      "limits": [
+        "Selected complete24page publiccard only; not priorcards/private data/fullmethods or independent reproduction. All existing HOLD flags and scientific limitations retained.",
+        "Raw RSS membership and publication clock time are unverified. Official cover, landing page and index establish a day-only date.",
+        "The public document cites predecessor cards for complete methods; those supporting documents and internal data were not read or reproduced here.",
+        "All quantitative statements are reported author results, not independently reproduced model performance.",
+        "This is one current, hash-pinned public document, not proof of historical candidate identity or complete October 7 coverage.",
+        "official_publisher_calendar_day 2026-10-07, published_at/event/timezoneNULL; RSS/query/full-day unknown.",
+        "Root independently read the original accepted bilingual review and exact 663 bindings as recorded in the pinned decisions; no fresh 24-page source reread or scientific authorship by serializer673."
+      ],
+      "material_source_hold": true
+    }
   },
+  "combined_native_reranked": false,
+  "coverage_status": "partial",
+  "date_basis_by_story": {
+    "arxiv:2610.10253": {
+      "date_basis": "official_first_submission_utc",
+      "date_value": "2026-10-07",
+      "event_timestamp_utc": "2026-10-07T15:32:23+00:00"
+    },
+    "arxiv:2610.10260": {
+      "date_basis": "official_first_submission_utc",
+      "date_value": "2026-10-07",
+      "event_timestamp_utc": "2026-10-07T15:35:02+00:00"
+    },
+    "arxiv:2610.10266": {
+      "date_basis": "official_first_submission_utc",
+      "date_value": "2026-10-07",
+      "event_timestamp_utc": "2026-10-07T15:37:39+00:00"
+    },
+    "arxiv:2610.10275": {
+      "date_basis": "official_first_submission_utc",
+      "date_value": "2026-10-07",
+      "event_timestamp_utc": "2026-10-07T15:42:01+00:00"
+    },
+    "arxiv:2610.10278": {
+      "date_basis": "official_first_submission_utc",
+      "date_value": "2026-10-07",
+      "event_timestamp_utc": "2026-10-07T15:44:29+00:00"
+    },
+    "arxiv:2610.10285": {
+      "date_basis": "official_first_submission_utc",
+      "date_value": "2026-10-07",
+      "event_timestamp_utc": "2026-10-07T15:49:06+00:00"
+    },
+    "arxiv:2610.10302": {
+      "date_basis": "official_first_submission_utc",
+      "date_value": "2026-10-07",
+      "event_timestamp_utc": "2026-10-07T15:56:31+00:00"
+    },
+    "arxiv:2610.10303": {
+      "date_basis": "official_first_submission_utc",
+      "date_value": "2026-10-07",
+      "event_timestamp_utc": "2026-10-07T15:57:13+00:00"
+    },
+    "arxiv:2610.10447": {
+      "date_basis": "official_first_submission_utc",
+      "date_value": "2026-10-07",
+      "event_timestamp_utc": "2026-10-07T17:19:19+00:00"
+    },
+    "arxiv:2610.10455": {
+      "date_basis": "official_first_submission_utc",
+      "date_value": "2026-10-07",
+      "event_timestamp_utc": "2026-10-07T17:25:23+00:00"
+    },
+    "fallback:9c57b1505ab6ece2": {
+      "date_basis": "official_publisher_calendar_day",
+      "date_value": "2026-10-07",
+      "event_timestamp_utc": null
+    }
+  },
+  "error_summary": "PARTIAL 部分更新：Oct7原8篇及順序保持；新增子集原篩選3選3，按其順位追加Papers，11篇未合併重排。PARTIAL 有界更新：僅此三篇依原篩選3選3；JOLT／PHRBench依官方固定v1首次投稿日Oct7分組，system card只依官方封面／發行者日曆Oct7、時間未知，均非公告feed證明。代理／predictor必要補件HOLD保留；全日總量及收集截止未知。",
+  "excluded_count": 1,
+  "finished_at": null,
+  "full_day_candidate_total": null,
+  "items_total": null,
+  "preserved_baseline_body_sha256": "e29726ec06dfbd7a4284776878bb9071d4dbad6d2468a7a4b3e15afce6216552",
+  "preserved_baseline_count": 8,
+  "preserved_baseline_kind": "prepared100_exact_payload",
+  "preserved_baseline_payload_manifest_sha256": "0dddad598c61062acbfcb16ce988ac0276654510195a815d59aca78a3f240f9e",
+  "preview_only": false,
+  "release_scope_note": "The existing 8 Oct7 entries and section order are preserved. Three new entries are appended to Papers in their exact3 subset ranking; all 11 and all 103 are not jointly reranked. Bounded partial update: only this three-item pool is ranked, selecting 3 of 3. JOLT/PHRBench use official fixed-v1 first submission on Oct7; the system card uses only the official publisher calendar day on Oct7, with no clock or timezone. These are not announcement-feed dates. Agent/predictor material HOLDs, unknown full-day totals and collection cutoff remain.",
+  "release_state": "approved_bounded_release",
+  "reviewed_selected_count": 11,
+  "reviewed_total_count": null,
+  "run_id": "current-oct7-partial-preview",
+  "source_collection_cutoff_utc": null,
+  "started_at": "2026-10-10T02:25:14.094191+00:00",
+  "stories_total": 11,
+  "success": true
+},
   "sources_status": [
     {
       "category": null,
