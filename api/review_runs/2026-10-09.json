@@ -1,66 +1,82 @@
 {
   "added_native_count": 5,
-  "added_native_subset": {
-    "candidate_count": 5,
-    "native_audit": {
-      "date": "2026-10-09",
-      "entries": {
-        "arxiv:2610.12303": {
-          "evaluatable": true,
-          "request_sha256": "510ec3945061c84a3c9e352c69ad8939d04efe1fb501877c46f33c5c9b3320f7",
-          "review_sha256": "c9ab95b4598adc4177403237d20e9a2fdb02dc0b291596812e91a269390d1b2f",
-          "source_key": "c2d83d1a66dece29b377e5fbbb39107f39c19ab2cdb295b35ebd4442b3605e69"
+  "added_native_subsets": [
+    {
+      "candidate_count": 4,
+      "native_audit": {
+        "date": "2026-10-09",
+        "entries": {
+          "arxiv:2610.12114": {
+            "evaluatable": true,
+            "request_sha256": "5842c4cfab70c4d412227e88632c55acd01d5862700ec5f1371ee85bc59ddb73",
+            "review_sha256": "95463374240a9cd91e683a23d42bb87b170aece52bad3c522c72307f948e07e7",
+            "source_key": "ce26ea8ec8139f7600986d76baf789118830b2c96efe107ddd176ff6ecd4b867"
+          },
+          "arxiv:2610.12129": {
+            "evaluatable": true,
+            "request_sha256": "c9cc90c8ade76a36fdb69e456cf9b6e1084302a2b528fad6b84868019b5759ac",
+            "review_sha256": "be0130137919b931581ab5b371789d07da5b90b0bd49df27a6497b9927181092",
+            "source_key": "dfa06408c85f9e6f7f0129a579980b5402e5b2c42e262b0e3c481d39a10a7cc8"
+          },
+          "arxiv:2610.12176": {
+            "evaluatable": true,
+            "request_sha256": "f7fe560ce2fa66867e1ae5a23a153ad557178f14325a2e87853f7c152ff9c163",
+            "review_sha256": "a951202d21823b0701ccc0d8255258f43b52eecd40760a233c664fa35c768cd1",
+            "source_key": "3d50cfce125b7c2e5a7348929da90773a9c687f6923040844ea4be28e24b2d35"
+          },
+          "arxiv:2610.12292": {
+            "evaluatable": true,
+            "request_sha256": "2e2610b666f7a703e8e9893c7297b12c85fd9a60a409fe91f04ebcd44dd73ac9",
+            "review_sha256": "3960b8b5716c8183cdb1bb8c108c4bd688948b2eed95ae0b8aa1ed83933f910c",
+            "source_key": "ccc2842ca8f3d00671069c5df202ad9b29b0683d49d1584ec93920c24882dd63"
+          }
         },
-        "arxiv:2610.12304": {
-          "evaluatable": true,
-          "request_sha256": "0715a3c7da68266cedabe7d1af6b93630c5cea7efe63e320c43542f8a8c1e52d",
-          "review_sha256": "786734d2a140f5fa365fbfa5df61141633f12d0657b0c04c1ee0d7ec62eb3a4d",
-          "source_key": "162ecb9e1b2a863c2ab158a48b4d5a15808ee17dc7fbd6ba127627986451e3e5"
-        },
-        "arxiv:2610.12313": {
-          "evaluatable": true,
-          "request_sha256": "f0a3b145eb882065ff1fa919fbe393ddff129782d18c2d196121af219d810587",
-          "review_sha256": "c0f36d22717b5d4f91c152f871f87db7dd08b494fd3e7f9729ff3dd58fcc4990",
-          "source_key": "7847574da39c7e77dd28256ce24988b715ca9b77ed4762a86917d5e231968d58"
-        },
-        "arxiv:2610.12325": {
-          "evaluatable": true,
-          "request_sha256": "83c2494f1b647a54c8cfd478ac686fde25c6605c9a289ac97d997bade35751e6",
-          "review_sha256": "0b3d6cbe97c9e3a5755b0fe8d196541f3470e90381498f8fc6313b8987d682c1",
-          "source_key": "c4e107d16011421294ba5513e9d01154dc4e684470eb5664f47c16779e008407"
-        },
-        "arxiv:2610.12361": {
-          "evaluatable": true,
-          "request_sha256": "d0793bd3cb3c3e34e38c91d4700f57f168a81a7151183ca2e0739e736aded65f",
-          "review_sha256": "85ee5b65f462850fb7c862b427eb16ef168fe7bc337aca59d078131699ad2596",
-          "source_key": "d5906a5cd06651fb44245a2786e5ff3c33d85837efab728cc3632d2b5296fe6a"
-        }
+        "manifest_sha256": "8c84fbd7e1c42492ace2450efab6ee4fb71d7c6d49fef251582cd2ce36443b64",
+        "version": 1
       },
-      "manifest_sha256": "1e3166b066e2f05250548553c6d0dd864c69bcbc14e909536c085bc80c2c4e22",
-      "version": 1
+      "selected_count": 4,
+      "selected_ids": [
+        "arxiv:2610.12292",
+        "arxiv:2610.12176",
+        "arxiv:2610.12114",
+        "arxiv:2610.12129"
+      ]
     },
-    "selected_count": 5,
-    "selected_ids": [
-      "arxiv:2610.12325",
-      "arxiv:2610.12304",
-      "arxiv:2610.12361",
-      "arxiv:2610.12313",
-      "arxiv:2610.12303"
-    ]
-  },
+    {
+      "candidate_count": 1,
+      "native_audit": {
+        "date": "2026-10-09",
+        "entries": {
+          "arxiv:2610.12086": {
+            "evaluatable": true,
+            "request_sha256": "4a942873838f184391f5541e5eaae12b9a6d7e38733bfd88ebd0f0efeaa130d5",
+            "review_sha256": "8d109d6e2cb8f740e23b68d981d49e962c4c7440465d9ffbf2ba7d525c1c9915",
+            "source_key": "a08d785202cdaa57cc1d111a2410b27d8e7b9a8b54739fb5715bb5d683fccb2c"
+          }
+        },
+        "manifest_sha256": "ab077ece0955a755c9add607dab01a0470797f4c0e8089fe676aeeecd2f8ee2e",
+        "version": 1
+      },
+      "selected_count": 1,
+      "selected_ids": [
+        "arxiv:2610.12086"
+      ]
+    }
+  ],
   "added_reviewed_candidate_count": 5,
+  "additions_jointly_reranked": false,
   "baseline_kind": "published_verified",
   "candidate_count": null,
   "combined_native_reranked": false,
   "evaluated_count": null,
   "full_day_complete": false,
   "phase": "calendar_day_bounded_partial_additive",
-  "preserved_baseline_count": 35,
-  "preserved_published_baseline_audit_sha256": "385b4f4d4d04906679bfd8a7cdf8bae309f8da209bc58030d96eb563bc5cc2e5",
+  "preserved_baseline_count": 40,
+  "preserved_published_baseline_audit_sha256": "ba3a95a420810abeee96f426b9f815417ab3a9f54411c1ddeef30151d45732a8",
   "producer": "assistant-native-review",
   "publication_authority": "Exact root admission and owner publication receipts are private; this public audit grants no authority.",
-  "published_baseline_body_sha256": "08d91581999d6330a3c3b9bda745eb209e88a0ee9c9790dafa9e875c4e2251a5",
-  "published_baseline_verification_seal_sha256": "85327fbd36c34300215232da91483ef532d57bf8b43cf0a2f3703cb20d9441a4",
-  "selected_count": 40,
-  "underlying_live_commit": "045949009e0fb06d9ecc9f0c40563b2374835a3f"
+  "published_baseline_body_sha256": "d3a8bfb4ad4a63c6814d77c381ae05a1e3fec4b81c0a1d589088711f1db7ad16",
+  "published_baseline_verification_seal_sha256": "79011fa3368c9ca51de257babdb4b8224adb1777710a5266a8c79d9ab74c31d5",
+  "selected_count": 45,
+  "underlying_live_commit": "c966df15449574e0d0f8787f868fec24f44dbc3c"
 }

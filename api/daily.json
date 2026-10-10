@@ -4103,6 +4103,660 @@
       "title": "Learning Probabilistic Logic Programs with Functional Gradient Guided Language Models",
       "title_en": "Learning Probabilistic Logic Programs with Functional Gradient Guided Language Models",
       "title_zh": "以函數梯度引導語言模型學習機率邏輯程式"
+    },
+    {
+      "arxiv_id": "2610.12292",
+      "authors": [],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-10-10T13:09:25.281887+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-ai",
+          "tier": 1,
+          "title": "One Word Opens the Gate: The Option-Channel Attack on Typed Decision Models as Agent Guardrails",
+          "url": "https://arxiv.org/abs/2610.12292v1"
+        },
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-ai",
+          "tier": 1,
+          "title": "One Word Opens the Gate: The Option-Channel Attack on Typed Decision Models as Agent Guardrails",
+          "url": "https://arxiv.org/pdf/2610.12292v1"
+        }
+      ],
+      "llm_evaluation": {
+        "candidate_sha256": "6569d55fce667957ba671a178d3f672c7be77975d07718de279fa5feae57d115",
+        "components": {
+          "evidence_strength": 0.72,
+          "generalizability": 0.57,
+          "novelty": 0.71,
+          "preference_relevance": 0.97,
+          "reproducibility": 0.57,
+          "rigor": 0.66
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "pp.1–3, Abstract/Sections1–3/Figure1: five typed models (151M–421M) plus Qwen2.5 at1.5B/7B; only six appear in each main suite. Qwen scores option-name log probability. Earlier renaming/suffix work acknowledged; label omission is an implementation property.",
+          "p.4, Sections4–5/Table1: trusted harness, policy and definitions; primary attacker writes a designated tool-output span. Option-name influence is a separate access assumption. Six rules cover exfil, secret, escape, exfil_secret, unauth_irrev, escape_or_exfil; exactly balanced synthetic ground truth follows generated attributes.",
+          "p.5, Eq1/Eq2: FO denominator is all prohibited items, FC all permitted items; ASR_open denominator is initially correctly blocked items. Paired percentile bootstrap uses4,000 resamples. RLCD can abstain(p.3), but its mapping into the binary metrics is not specified in the PDF.",
+          "p.5, Table2: typed-model public-task n406/1034/768 and Qwen n300 each; accuracy36.4–71.7%. LAYA-TD FO76.8/60.7/77.1%, FC1.5/3.3/4.4%; Qwen1.5B FO0.7/22.0/3.3%, FC100.0/99.3/97.3%. Balanced-accuracy identities hold to rounding, but cross-family sample sets differ.",
+          "p.6, Figures2–3: the dashed FO+FC=100 line represents input-independent randomized operating points; closeness alone does not prove absence of signal. LAYA-TD unauth_irrev distraction rises33.3->49.3->63.3% at1/3/6 lines; persuasion falls76.0->70.0% at1/3 lines, contradicting an unrestricted monotonic-length reading.",
+          "p.7, Table3/Section6.2: all36 model-policy rows inspected; dashes indicate no evaluable clean correct blocks. The highlighted unauth_irrev clean FO0%, accuracy87.3%, B=150 makes its63.3% ASR also the attacked FO. Other conditional rates need their own baseline/denominator. Toxic polite-suffix ASR88.6%[81.4,94.8], B=88. Preapproval assertions are semantically about authorization, though they do not change trusted ground truth.",
+          "p.8, Figure4/Table4: clean-margin bins n33/42/59/63/6 with reversal rates55/31/22/6/0%; only six highest-margin items. Selected-policy worst renamings reach100% for four models; RLCD59.3 and VON61.3 are unchanged. Qwen Table4 changes the block name, unlike the permissive-name-only sweep.",
+          "pp.8–9, Table5/Figure5: 198-label sweep holds block label/definitions/state fixed. Honest six-policy means59.7/82.0/60.0/4.7/10.0/20.0%; best99.8/100/98.2/100/10/20%. LAYA-TD five-label83.9%, ten89.5%; Qwen7B ten89.1%. k counts tried labels, not demonstrated total per-item/corpus query cost; no disjoint search/test protocol stated.",
+          "p.9, Figure5a/Table6: LAYA-TD unauth_irrev group means57/37/27/13/10/1%; label transfer is heterogeneous, including negative gains into LAYA-ML. LAYA-EN to LAYA-TD gain38.2points matches TD diagonal; immunity columns remain0.",
+          "p.10, Table7/Section6.3: public-task sweep for four models only; LAYA-TD honest72.4%, ten86.9%, best97.1%; LAYA-ML55.1->85.1 best. Calling-library excerpt shows VON uses definitions, falling back to names only if no definition. Invariance therefore depends on supplied definitions and this code path.",
+          "p.10, Section6.4: LAYA-TD338 correctly blocked public examples have medianP(block)=0.57,97% below0.70,max0.82. On unauth_irrev threshold0.50->0.40 changes cleanFC26.0->70.7 and attackedFO68.7->10.0%; this documents a cost tradeoff, not general impossibility of probability calibration.",
+          "p.11, Table8/Figure6:36 model/task/attack combinations;1410 reversed decisions pooled margin0.149 before/0.151 after,53% wider. Clean-budget10% gives attacked escalation9.6%, FO60.1->53.8%;50% budget gives46.4% escalated,FO25.3 versus oracle0.0. The reduction is nonzero, and repeated-item dependence/uncertainty are not detailed.",
+          "pp.11–13, Table9/Figure7: D1 canonical labels, D3 three-rendering average, D4+D6 disagreement/fail-closed, D5 structured fields. Matched cleanFC comparison has45 wins/21ties/6losses across72 cells; D5 is16/2/0. Figure7 is one favorable cell; its coarse threshold points do not establish a universal optimal operating curve.",
+          "pp.12–13, Table10/D8: instruction-only defense leaves best LAYA-TD98.2->98.7%; Qwen7B best100% on6/6 policies despite ten-label88.2->40.6%. Table5 ten-label89.5/89.1 versus Table10 same-baseline89.9/88.2 is unexplained, potentially different random-order sampling; no seed/error estimate resolves it.",
+          "pp.13–14, Table11: field parsing removes tested annotation attack (all five model averages0) but confusing valid values retain20.3–50.0% reported rates. CleanFO remains3.7–34.0%. Deterministic row has0 field-injection/0 confusing-value/0 cleanFO, and text reports100% accuracy on all six constructed policies.",
+          "pp.14–15, Section8/Tables12–13: D5 adaptive attack moves from discarded tool output into retained policy fields. Max reported rates100% on four typed models,55.7% LAYA-ML; Table12 excludes cells without clean blocks and reports per-policy medians/maxima. D5 still holds on unauth_irrev and evaluable secret. Dual-rendering adaptation raises means49.3->67.0/28.2->52.7/52.5->71.6%; invariant models43.0/55.1 unchanged.",
+          "pp.15–16, Recommendations/Limitations/Conclusion: no commercial-model measurement, synthetic templates and fixed attack pools acknowledged. Fail-closed is treated as a cost in this threat model; real denial-of-service impact is outside the evaluation. Synthetic generation does not alone prove zero training overlap or certify real-world parser security.",
+          "pp.16–17, AppendixA.1–A.3/Listings1–5: worked examples preserve stated trusted attributes; P(block)0.58->0.48 via log append,0.58->0.43 via renaming,0.59->0.39 with a polite suffix. These strings were read as untrusted research data, never executed or followed.",
+          "pp.17–18, References: datasets and prior attack/guardrail literature read as paper context, not independently checked. The abstract supplies github.com/ArminAzizi98/option-channel-attack, but no external repository, checkpoint, dataset, or runtime reproduction was obtained here."
+        ],
+        "fulltext_sha256": "f626e6c6e5621529118f68ad9fe9cacfd8b58b6c229d7c961260ee46306704b1",
+        "fulltext_status": "complete",
+        "model": "assistant-native-review",
+        "native_identity_version": 1,
+        "original_candidate_sha256": "6569d55fce667957ba671a178d3f672c7be77975d07718de279fa5feae57d115",
+        "out_of_scope": false,
+        "producer": "assistant-native-review",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "This highly relevant, moderately novel empirical guardrail audit makes a concrete case that option names and lower-trust text can redirect decisions. Direction-separated errors, conditional ASR, label-invariance controls and equal-false-block-cost defenses are useful design choices. Scientific strength is limited by access-model and reporting details: the D5 adaptive attack writes retained fields outside the initial writable span, option attacks require separate control, and conditional ASR must not be mixed with overall fail-open. Escalation reduces 60.1% to 53.8% or 25.3%, supporting limited efficiency rather than no benefit. Persuasion is not monotonic in length, and the Table 4 selection description and ten-label budget numbers need clarification. Perfect deterministic rules apply to six deliberately parseable policies, not universal unattackability. Unverified external code limits reproducibility rather than completeness of the eighteen-page PDF. In scope for agent safety and evaluation methodology.",
+        "rationale_en": "This highly relevant, moderately novel empirical guardrail audit makes a concrete case that option names and lower-trust text can redirect decisions. Direction-separated errors, conditional ASR, label-invariance controls and equal-false-block-cost defenses are useful design choices. Scientific strength is limited by access-model and reporting details: the D5 adaptive attack writes retained fields outside the initial writable span, option attacks require separate control, and conditional ASR must not be mixed with overall fail-open. Escalation reduces 60.1% to 53.8% or 25.3%, supporting limited efficiency rather than no benefit. Persuasion is not monotonic in length, and the Table 4 selection description and ten-label budget numbers need clarification. Perfect deterministic rules apply to six deliberately parseable policies, not universal unattackability. Unverified external code limits reproducibility rather than completeness of the eighteen-page PDF. In scope for agent safety and evaluation methodology.",
+        "rationale_zh": "這是一份高度相關、整合新意中等的代理護欄實證研究。方向分開的錯放／誤擋指標、只計原本正確阻擋的ASR、名稱不變性負控與同誤擋成本防禦比較，讓選項名稱及低信任文字確能影響決策的證據具體。科學強度仍受威脅模型及報告細節限制：D5適應攻擊寫入原設定以外的保留欄位，名稱攻擊需要獨立控制權；有些百分比是條件ASR、有些是整體錯放。信心轉交仍把60.1%降至53.8%或25.3%，只能說效率有限，不能說完全無幫助。說服文字非單調，表4選格敘述與十次搜尋數值亦需澄清。確定性規則全對限於刻意可解析的六項政策，不是全面不可攻破證明。缺外部程式驗證降低重現性，不代表十八頁PDF不完整。依原規準屬代理安全與評估方法範圍。",
+        "raw_weighted_score": 0.787,
+        "request_sha256": "2e2610b666f7a703e8e9893c7297b12c85fd9a60a409fe91f04ebcd44dd73ac9",
+        "review_sha256": "3960b8b5716c8183cdb1bb8c108c4bd688948b2eed95ae0b8aa1ed83933f910c",
+        "scope_assessment": {
+          "classification": "in_scope_agent_guardrail_evaluation",
+          "decision": "in_scope",
+          "excluded_domain_checks": {
+            "biology_foundation_model": false,
+            "image_video_diffusion_without_language": false,
+            "medical_imaging": false,
+            "pure_audio": false,
+            "pure_domain_application": false,
+            "pure_robotics": false,
+            "pure_vision": false
+          },
+          "rationale_en": "The contribution evaluates language-based decision guardrails and their attack surfaces rather than a pure domain application.",
+          "rationale_zh": "核心方法是語言型決策器的護欄可信度與攻擊面評估，不是純領域應用。"
+        },
+        "scope_capped_score": null,
+        "scope_policy_version": "explicit-review-exclusion-v1",
+        "scope_status": "in_scope",
+        "score": 0.787,
+        "source_key": "ccc2842ca8f3d00671069c5df202ad9b29b0683d49d1584ec93920c24882dd63",
+        "story_id": "arxiv:2610.12292",
+        "token_usage": {},
+        "topics": [
+          "Agents & Tool Use",
+          "AI Safety",
+          "Red Teaming & Evaluation",
+          "Prompting & In-Context Learning"
+        ]
+      },
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-ai",
+        "tier": 1,
+        "title": "One Word Opens the Gate: The Option-Channel Attack on Typed Decision Models as Agent Guardrails",
+        "url": "https://arxiv.org/abs/2610.12292v1"
+      },
+      "published_at": "2026-10-08T16:46:43+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.787,
+        "llm_relevance_score": 22.036,
+        "recency_score": 0.8293007080742859,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 30.06530070807429
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2610.12292",
+      "summary": "A typed decision model reads a piece of text and returns a probability over caller-defined options, each with a short written definition, generating no text. Recent work places these models in agent systems as guardrails: the component that reads a proposed tool call or incoming message and decides whether to allow it. We evaluate seven open-weight models in that role and report the two error directions separately: a fail-open error allows a prohibited action and is a vulnerability; a fail-closed error blocks a permitted one and is only a cost. On prompt-injection, jailbreak and toxic-content screening, accuracy at the allow-or-block decision ranges from 36% to 72% against a chance level of 50%. A low error rate in one direction only reflects which answer a model defaults to: one allows nearly everything, another blocks nearly everything. On a synthetic suite of agent tool calls, six lines of server log text that say nothing about the policy raise a gate's fail-open rate from 0% to 63% on a policy it otherwise decides correctly. Giving the permissive option a misleading name, with its definition and the judged text untouched, raises that rate to between 93% and 100% on the four models that place the label in their input. Every defense we tested is defeated, either by an attacker who targets its mechanism or by attacker-controlled text. Escalating the least confident decisions does not help either: a decision an attack has reversed is no less confident than the one it replaced. Parsing each policy field into a typed value does eliminate one attack, but it also makes the model unnecessary: a deterministic rule over those values reaches 100% accuracy on all six policies. These models can reduce how many cases reach a reviewer, but on this evidence they should not be the component that decides. Code is available at this https URL.",
+      "summary_en": "Typed decision models return only option probabilities, making them easy to wire into an agent safety gate, but constrained output does not ensure sound decisions. The paper separates prohibited actions allowed from permitted actions blocked, studying five small decision models and two Qwen baselines without a fully crossed seven-model design. Accuracy on three balanced public screening datasets ranges from 36.4% to 71.7%, with different defaults toward allowing or blocking. GuardBench adds six policies whose answers follow explicit attributes. For LAYA-TD on an unauthorized-irreversible-action policy, six irrelevant log lines raise fail-open from zero to 63.3%. If a deployment lets external sources influence option names, renaming an option while preserving its definition and the judged text can change decisions sharply; implementations that omit names from model input are invariant to this channel. Defenses are compared at matched legitimate-traffic blocking cost, and low-confidence escalation has limited efficiency. Important qualifications are that some attack rates condition on initially correct blocks and that adaptive attacks on field defenses expand the writable surface beyond the original tool-output span. Escalation still improves some outcomes, and attack strength is not universally monotonic in text length. A deterministic rule achieves perfect results on the six synthetic policies, which reflects their construction rather than proving real systems unattackable. This is useful evidence about agent-guardrail trust boundaries, with the code repository only claimed in the paper and neither fetched nor reproduced here; commercial models and end-to-end agent security remain untested.",
+      "summary_zh": "型別化決策模型只回傳選項機率，看似容易接成代理的安全閘門，但輸出格式受限不代表判斷可靠。本文將錯放違規操作與錯擋合法操作分開，檢查五種小型決策模型及兩種Qwen基線；各實驗並非七模型全交叉。在三個平衡公開篩選資料集上，準確率為36.4%至71.7%，不同模型偏向放行或阻擋。作者另建六項可由明確屬性計算答案的GuardBench：LAYA-TD原本不錯放的未授權不可逆操作，加六行無關日誌後錯放率達63.3%。若部署容許外部來源影響選項名稱，保持定義與待判文字不變也能大幅改判；不把名稱送入模型的實作則對此通道不變。研究比較同等合法流量誤擋成本下的防禦，並顯示低信心轉交審查效率有限。須注意，攻擊成功率有時只計原本正確阻擋的子集；針對欄位防禦的適應攻擊擴大了可寫位置，不能當原工具輸出權限下的突破。轉交審查仍有部分改善，日誌與說服文字也不全隨長度單調變強。結構化解析配確定性規則在六項合成政策達全對，是基準構造下的結果，並非真實系統不可攻破證明。本文適合思考代理護欄的信任邊界；程式庫僅在文中宣稱提供，本次未取得或重跑，商用模型與端到端代理安全亦未驗證。",
+      "title": "One Word Opens the Gate: The Option-Channel Attack on Typed Decision Models as Agent Guardrails",
+      "title_en": "One Word Opens the Gate: The Option-Channel Attack on Typed Decision Models as Agent Guardrails",
+      "title_zh": "一個詞就打開閘門：以型別化決策模型作代理護欄的選項通道攻擊"
+    },
+    {
+      "arxiv_id": "2610.12176",
+      "authors": [],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-10-10T13:09:43.111541+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-ai",
+          "tier": 1,
+          "title": "Recursive Self-Improvement through Multi-Agent Self-Supervision",
+          "url": "https://arxiv.org/abs/2610.12176v1"
+        },
+        {
+          "link_type": "paper",
+          "source_id": "arxiv-cs-ai",
+          "tier": 1,
+          "title": "Recursive Self-Improvement through Multi-Agent Self-Supervision",
+          "url": "https://arxiv.org/pdf/2610.12176v1"
+        }
+      ],
+      "llm_evaluation": {
+        "candidate_sha256": "a04c29df92003a0ecdeba2625030d73ef663492d58b37b607ed858b312f5aaee",
+        "components": {
+          "evidence_strength": 0.67,
+          "generalizability": 0.63,
+          "novelty": 0.75,
+          "preference_relevance": 0.94,
+          "reproducibility": 0.6,
+          "rigor": 0.65
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "pp.4–5,15 Algorithms 1–3: incumbent-based workflow search, current-model workspace judgments and Bradley–Terry teacher ranking. The workflow and collection directive are removed from the orchestrator SFT input; worker assignments remain. Best means self-selected, not a certified optimum.",
+          "pp.5–6,16–17 Table 3/Appendix B: 12 GPT-5.5-generated private tasks; nine designated train, task 221 excluded, eight used and three held out from SFT, validation and checkpoint selection. Workflow search is nevertheless evaluated on held-out tasks. First cycle: 119 episodes, 2,435 windows, 17,221,055 stored assistant tokens; LoRA rank64, scaling128, dropout.05; selected checkpoint1200.",
+          "p.17 Appendix B: six H100s and about19 hours for first-cycle SFT only. Second-cycle fresh LoRA starts on merged L1 and follows the same recipe as closely as possible; no full second-cycle data/token table is supplied.",
+          "pp.6,18–19 Figure 3/Table 5: private L1 training315/480=65.6%, test97/180=53.9%, all412/660=62.4%; L2 test69.9% and L2 versus L1 test60.8% reported in Figure 3. Six votes assess one workspace pair, not six independent executions.",
+          "pp.18–19 Table 6: six tasks use selected successful base references; ranked-teacher comparison112/648=17.3% is not bare-model performance. Table 1 fixed-executor workflow transfer reports.64, but discovery-stage executor and evaluator also vary by generation.",
+          "pp.19–20,28 Table 14/generic directive: both models delegate110/110; base handoffs103/110 and L1 106/110. L1 overall352/(352+306)=53.5%, excluding two ties, versus bare62.4%. This elicits existing capabilities; generic-directive-trained versus optimized-workflow-trained students are not compared.",
+          "pp.3,6,20 Figure 2/Table 7: score-per-output-token ratios1.60,1.35,1.20,1.28 for MLR, DS, Science and Asta; Terminal.96 and SWE.94. These are not end-to-end compute savings. Exact token means appear graphically rather than in a numerical table.",
+          "pp.20–22 Table 7: Science102×3, MLR12×5, Asta40×3, DS74×3, Terminal89×3 scheduled with86/88/87 scored, SWE500×3 scheduled with499/499/496 scored. Mean±sample SD is reported. Figure 2 caption says three trials, but MLR actually uses five.",
+          "pp.6,20: Science table28.8→31.7 conflicts with narrative28.7→31.8. Appendix counts88/306 and97/306 reproduce28.8 and31.7; the review uses table/count-supported values. Reference programs succeed80.4% locally, limiting cross-environment comparisons.",
+          "pp.20–21 MLR: papers delivered31/60→36/60→50/60; conditional scores3.07→3.00→2.88 concern different completed sets. Welch trial-level p=.0053 for L2/base but paired12-task sign p=.2266; no delegation in180 executions. No quality gain on a common completed set is established.",
+          "p.21 Asta: reports delivered60/120→69/120→91/120; conditional scores.105→.095→.088; overall.053→.055→.067. Missing reports score zero; literature-search tool is unused. DS.473→.465→.482 uses normalized scores clipped below zero.",
+          "pp.8,22–23 Table 8: M+ processes28.818370M targets and scores68.3% over four shared training tasks plus one test task, versus S++42M and64.0%. M+ trains on eight tasks, others four; samplers and checkpoint selection differ. The68.3% is not the eleven-task62.4% score or a direct M+/S++ win rate.",
+          "pp.23–24 Table 9: pools210 multi-agent/103 single-agent episodes average141,844/59,355 generated tokens=2.39. Pooled701/824=85.1% votes versus task-equal79.3%; similar-length ten pairs32/40=80%; same-workflow plus similar-length four pairs15/16=93.8%. Reused opponents, directive differences and completion filtering prevent causal attribution to delegation.",
+          "pp.9,24–25 Figure 7/Tables 10–11: stronger optimizer accelerates coverage; all-base eventually reaches11/12. Absolute edit-size Spearman correlation is at most.12. Identical task53 workflow, prompt and recorded seed yield6/6 wins then0/6 after a loop halt. Ever-winning coverage is not stable per-iterate improvement.",
+          "pp.7–8,25–27 Figures 4–5/8 and Tables 12–13:43–51 agents from8–9 tasks; PCA dimension10, shrinkage.1,400 permutations. Gaussian embedding proxy, not execution-message measurement. Task-centered adjusted MPNet TC2.39→2.57 increases while the other three variants fall. Within-workflow observations are dependent and descriptive.",
+          "pp.9–10,27–29 Tables 2/14 and Figure 9: bare delegation1/110→48/110→87/110; handoffs1→42→83. Audited114/119 teachers and2,335/2,435 windows;79 handoff and37 revision episodes sampled. File reads do not prove correct interface use. A NaN diagnostic falsely passes; a test-changing simulator revision receives5/6 favorable votes.",
+          "pp.29–38 Appendices H–I: three representative task prompts and two complete seven-agent workflows. Optimizer-generated finance acceptance rules reject certain results, and the protein workflow adds AUROC≥.80; these are proposals, not validated scientific criteria. Appendix J/Table 15 compares mechanisms rather than matched performance; two cycles give no indefinite-improvement guarantee."
+        ],
+        "fulltext_sha256": "b33f5ebce070a5a9d86cf0ead8edd2ad26a9b880919ddd149dba43cf317f64c6",
+        "fulltext_status": "complete",
+        "model": "assistant-native-review",
+        "native_identity_version": 1,
+        "original_candidate_sha256": "a04c29df92003a0ecdeba2625030d73ef663492d58b37b607ed858b312f5aaee",
+        "out_of_scope": false,
+        "producer": "assistant-native-review",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "MASS is highly relevant as a language-agent learning method: homogeneous workflow search produces joint orchestrator/worker supervision, and two weight-update cycles improve several research-oriented outcomes. The extensive appendix is unusually useful for separating deployment behavior, completion and judging from stronger capability claims. The first-cycle119-trajectory recipe and public evaluation are reasonably specified; held-out private preference rises to69.9% after the second cycle. However, the headline1.2–1.6× is score per output token, not total compute or universal task accuracy. MLR gains accompany more delivered papers, have nonsignificant task-level paired signs, and occur without delegation in any of its180 runs; Terminal and SWE regress. Teacher-token efficiency is confounded by task coverage, sampling and checkpoint selection. Generic prompting already elicits coordination in the base, and a test-changing simulator revision still receives5/6 favorable judgments. Thus the evidence supports a promising bounded demonstration, not a causal proof of the information-flow hypothesis or indefinitely reliable RSI. External artifacts and detailed second-cycle records remain unverified; no material PDF hold is asserted.",
+        "rationale_en": "MASS is highly relevant as a language-agent learning method: homogeneous workflow search produces joint orchestrator/worker supervision, and two weight-update cycles improve several research-oriented outcomes. The extensive appendix is unusually useful for separating deployment behavior, completion and judging from stronger capability claims. The first-cycle119-trajectory recipe and public evaluation are reasonably specified; held-out private preference rises to69.9% after the second cycle. However, the headline1.2–1.6× is score per output token, not total compute or universal task accuracy. MLR gains accompany more delivered papers, have nonsignificant task-level paired signs, and occur without delegation in any of its180 runs; Terminal and SWE regress. Teacher-token efficiency is confounded by task coverage, sampling and checkpoint selection. Generic prompting already elicits coordination in the base, and a test-changing simulator revision still receives5/6 favorable judgments. Thus the evidence supports a promising bounded demonstration, not a causal proof of the information-flow hypothesis or indefinitely reliable RSI. External artifacts and detailed second-cycle records remain unverified; no material PDF hold is asserted.",
+        "rationale_zh": "MASS作為語言代理學習方法高度相關：同模型工作流程搜尋產生主控／子代理共同監督，兩輪權重更新改善數項研究結果。大量附錄尤其有助區分主動採用行為、交付率與評審偏好，避免把它們一律當新增能力。第一輪119軌跡配方與公開評估交代頗細，第二輪私有留出評審勝率達69.9%。但標題1.2–1.6倍指每輸出token分數，非總算力或普遍準確率；MLR增益伴隨交稿增加，逐題配對符號檢定不顯著，180次執行也完全未分工，Terminal與SWE更退步。教師token效率受任務覆蓋、採樣及選模混雜；原模型已有可被通用指令喚起的協作能力，改變模擬測試的修正仍得5／6好評。故證據支持有界可行性展示，不是資訊流假說的因果證明或無限可靠RSI。外部成果及第二輪細部紀錄未核實；不設缺PDF的HOLD。",
+        "raw_weighted_score": 0.7795,
+        "request_sha256": "f7fe560ce2fa66867e1ae5a23a153ad557178f14325a2e87853f7c152ff9c163",
+        "review_sha256": "a951202d21823b0701ccc0d8255258f43b52eecd40760a233c664fa35c768cd1",
+        "scope_assessment": {
+          "classification": "in_scope_language_agent_learning_method",
+          "decision": "in_scope",
+          "rationale_en": "The contribution is general LLM workflow search and shared-weight self-supervised learning; domain tasks serve as evaluations rather than defining a pure application.",
+          "rationale_zh": "核心為通用LLM工作流程搜尋與共享權重自監督學習；領域任務作評估用途，不構成純應用排除。"
+        },
+        "scope_capped_score": null,
+        "scope_policy_version": "explicit-review-exclusion-v1",
+        "scope_status": "in_scope",
+        "score": 0.7795,
+        "source_key": "3d50cfce125b7c2e5a7348929da90773a9c687f6923040844ea4be28e24b2d35",
+        "story_id": "arxiv:2610.12176",
+        "token_usage": {},
+        "topics": [
+          "Large Language Models",
+          "Agents & Tool Use",
+          "Training & Optimization",
+          "Reasoning & Chain-of-Thought",
+          "Red Teaming & Evaluation"
+        ]
+      },
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-ai",
+        "tier": 1,
+        "title": "Recursive Self-Improvement through Multi-Agent Self-Supervision",
+        "url": "https://arxiv.org/abs/2610.12176v1"
+      },
+      "published_at": "2026-10-08T15:44:02+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.7795,
+        "llm_relevance_score": 21.826,
+        "recency_score": 0.8256986001059315,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 29.851698600105934
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2610.12176",
+      "summary": "Recursive self-improvement (RSI) of a model on non-verifiable tasks, such as open-ended research, faces a supervision bottleneck when its outputs exceed what even human experts can reliably assess, leaving the model itself (optimizee) as the best available optimizer and evaluator. However, a single model instance struggles to critique and improve its own complex reasoning under this homogeneous loop. To address this, we propose Multi-Agent Self-Supervision (MASS), an RSI method that alternates between evolutionary workflow optimization and supervised fine-tuning on self-generated trajectories. Guided by early findings that multi-agent topologies excel at complex reasoning, MASS prompts a single base model to iteratively propose, execute, and self-evaluate multi-agent workflows. Through an evolutionary search constrained by structural guardrails, the model optimizes these computational-graph-like orchestrations, discovering the most effective distinct roles and information routing for a given task. Over two MASS cycles with Qwen3.6-27B, the model achieves 1.2-1.6x higher performance per output tokens on four open-ended public benchmarks. Because the improved model subsequently acts as a better optimizer and evaluator, this alternating framework enables a continuous, recursive bootstrapping of the model's capabilities. Moreover, multi-agent traces are also more training-efficient: a student trained on them outperforms a single-agent student trained on 1.4x more training tokens. These findings suggest that jointly learning orchestration and bounded subagent execution from multi-agent trajectories can provide an effective signal for RSI.",
+      "summary_en": "When one language model solves tasks, judges outputs and improves itself, shared biases can reinforce errors. MASS first searches multi-agent workflows, changing roles, output contracts and information routing, then fine-tunes shared weights on self-selected orchestrator and worker traces. Two rounds alternate these stages. The first round uses 119 trajectories from eight research-programming tasks, and evaluation removes the optimized workflow prompt. On three private tasks excluded from fine-tuning, the reported preference share against the original Qwen3.6-27B rises from 53.9% after one round to 69.9% after two. Four research benchmarks show reported score-per-output-token ratios of 1.2–1.6, while terminal operation and software repair benchmarks decline. The appendices materially qualify these results: MLR-Bench uses only 12 tasks; higher overall scores accompany increased paper delivery, task-level paired tests are nonsignificant, and average scores among delivered papers do not rise. Bare-prompt delegation becomes more common, but a generic team directive already elicits extensive handoffs from the base model, suggesting increased spontaneous use of existing capabilities. Training-token comparisons also differ in task coverage, sampling and checkpoint selection, so they do not establish lower total pipeline compute. One agent even changes the meaning of a simulation test yet receives favorable judgments, showing that coordination and judge preference do not guarantee scientific correctness. The contribution is a promising demonstration of joint workflow search and trace-based weight improvement, not evidence of indefinitely reliable general self-improvement. One backbone, two cycles and uninspected external code and records remain important limits.",
+      "summary_zh": "當語言模型同時負責解題、評估與改進自己，錯誤可能在同一套偏見中循環。MASS先讓共享模型搜尋多代理工作流程，調整角色、交付契約與資訊傳遞，再以自身評選出的主控及子代理軌跡微調模型，交替執行兩輪。第一輪使用八項研究程式任務的119條軌跡；測試時拿掉最佳流程提示。Qwen3.6-27B在三項未參與微調的私有任務上，對原模型的評審勝率由53.9%升至69.9%；四個研究基準的每輸出token分數報告提升1.2–1.6倍，但一般終端操作及軟體修補基準下降。附錄讓結果更有層次：MLR-Bench只測十二題，總分上升伴隨交稿增加，逐題配對檢定不顯著；已交稿的平均分也未上升。模型在無額外提示時更常分工，但原模型收到通用分工指令就能大量交接，故較像學會主動運用既有能力。多代理訓練的token優勢另受任務數、採樣及檢查點選法混雜，不能等同整條流程省算力。尤其有代理改變模擬測試意義仍獲高評價，顯示協作與評審偏好不保證科學正確。本文值得關注的是自生軌跡與工作流程共同改進的可行性；單一骨幹、兩輪實驗及未取得的外部程式／紀錄，仍不足證明持續、可靠的通用自我提升。",
+      "title": "Recursive Self-Improvement through Multi-Agent Self-Supervision",
+      "title_en": "Recursive Self-Improvement through Multi-Agent Self-Supervision",
+      "title_zh": "透過多代理自我監督實現遞迴自我改進"
+    },
+    {
+      "arxiv_id": "2610.12114",
+      "authors": [],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-10-10T13:10:17.628482+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-ai",
+          "tier": 1,
+          "title": "Universal Textual Teaching for LLMs",
+          "url": "https://arxiv.org/abs/2610.12114v1"
+        },
+        {
+          "link_type": "paper",
+          "source_id": "arxiv-cs-ai",
+          "tier": 1,
+          "title": "Universal Textual Teaching for LLMs",
+          "url": "https://arxiv.org/pdf/2610.12114v1"
+        }
+      ],
+      "llm_evaluation": {
+        "candidate_sha256": "147207a456d2aa47c4cc2b2716c649c00024023cd4e83dada8af65790f3b52bd",
+        "components": {
+          "evidence_strength": 0.63,
+          "generalizability": 0.65,
+          "novelty": 0.67,
+          "preference_relevance": 0.94,
+          "reproducibility": 0.6,
+          "rigor": 0.58
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "pp.4–6 Equations1–9/Figure2: frozen teacher/student; empirical five-sample gap partitions; successful teacher demonstrations retained; candidate Primer accepted if correctness on the same batch does not fall. This is training-batch gating, not independent holdout validation.",
+          "pp.6–7 Table1: all reported headline scores use full poolD, including distillation-training problems. Pro→Flash Kernel accuracy9.4→48.6 (+39.2 points), Fast1@5 9→35 (+26), math27.6→51.7 (+24.1).",
+          "pp.7–8 Table1/Figure3: unchanged Pro→Flash Primer transfers to Qwen Kernel41.2/Fast1 37/math60.1; Opus→Flash Primer gives Qwen51.0/22/65.8. Stronger accuracy does not necessarily mean stronger Fast1; all these Table1 results include the full pool.",
+          "pp.8,14 Figure3/Table4: source-pair partitioned held-out gains include Pro→Qwen math9.7→64.8 and Pro→Flash Kernel7.3→76.4. Kernel training portions27,28,43 problems; math98,67,129 problems, derived by dividing sample counts byfive. These are different pair-specific partitions, not a single common held-out set.",
+          "p.8 Figure3: math retention Pro→Qwen78.9→69.7 and Opus→Flash97.1→82.9; Pro→Flash58→69. Frontier Kernel18.6/12.0/11.7 and math5.5/30.0/0.0 from the plotted labels. Pro→Flash math frontier prose says5.3, unlike plotted5.5; neither supports guaranteed teacher knowledge expansion.",
+          "p.9 Table2: UTT beats best listed prompt scores by10.6,0.5,3.6,5,3.4,1 points for mathFlash,mathQwen,KernelFlash accuracy/Fast1,KernelQwen accuracy/Fast1. No intervals or repeated-synthesis uncertainty accompany these margins.",
+          "pp.9,15 Table3/AppendixA.4: Pro→Qwen KD maxima55.2 math,41.8 Kernel accuracy,28 Fast1; UTT62.4/50/32 gives+7.2/+8.2/+4. Baselines share the small distillation-training pool, LoRA16/alpha32 on496 projection layers;200 math or100 Kernel updates and final checkpoint, not demonstrated compute-optimal KD.",
+          "pp.12,14–15 AppendixA: Kernel100 Level1 problems×5,math200 fixed difficulty5–10 problems×5; A6000 execution timing; greedy temperature0 for DeepSeek/Qwen, Opus adaptive setting without explicit temperature; max16,384 Kernel and32,768 math output tokens. Fast1@5 is per-problem best-of-five, accuracy is sample-level.",
+          "pp.12–15 AppendixA.3: four complete role templates; teacher also serves as Prompter/Synthesizer; batch16 and1000-word soft limit. APO uses same source pool with20 math or10 Kernel problems reserved for validation and matching stated optimization-evaluation budgets100/200; UTT tests candidates on the current batch.",
+          "pp.15–16 Table5:100 MathVerse visual-geometry problems×2. Qwen41.5→76/72/80.5 under the three Primers, Flash4.1 54→59/56/57.5. Transfer is positive but highly target-dependent; synthesis/evaluation split details for this extension are not fully tabulated.",
+          "pp.16–17 Figure4: fixed32k-synthesized Primer tested up to96k output budget. UTT remains above Flash and below Pro at the largest budget; convergence is qualitative within the range, not an asymptotic ceiling. Exact curve values mostly remain graphical.",
+          "p.17 Table6: UTT1.6h,281 calls=70 teacher-side+211 student-side;677591 input tokens and5568109 output tokens. KD1.2–22h on4–8 A6000s reports training stage only. No equal end-to-end compute, money, energy or amortized deployment comparison.",
+          "pp.17–18 Table7:98 synthesis problems, two final responses/problem. Distillation-test full56.0,random50.0,no Prompter48.8,no gate39.3,batch8 41.7,batch32 45.2. No Prompter raises train65.3→72.4; no gate raises retention72.5→80.0. Random selection excludes all fixed evaluation subsets.",
+          "p.19 Table8: unchanged Pro→Flash Primer on Qwen yields accuracy9.2→41.2 unquantized,4.4→34.6 groupedInt4,.4→21.6 channelwiseInt4,1.6→16.6 thinking-disabled; corresponding Fast1 gains25,23,16,6 points. Limited configuration transfer, not arbitrary quantization robustness.",
+          "pp.19–25 AppendixD: full math, CUDA and geometry Primers retained without factual correction. They include proof/checking heuristics, CUDA binding/scan recipes and code-first output discipline; geometry emphasizes avoiding budget exhaustion and committing to choices. Their correctness and mechanism contributions were not independently established.",
+          "p.26 AppendixE: Primer increases inference-time input tokens; compression/retrieval and subsequent weight distillation are proposed future directions, not results achieved here."
+        ],
+        "fulltext_sha256": "0c2c1e19bff9e857c10966235cd5c714dcbececc91c7f2c277170f05f9710d98",
+        "fulltext_status": "complete",
+        "model": "assistant-native-review",
+        "native_identity_version": 1,
+        "original_candidate_sha256": "147207a456d2aa47c4cc2b2716c649c00024023cd4e83dada8af65790f3b52bd",
+        "out_of_scope": false,
+        "producer": "assistant-native-review",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "UTT is a well-motivated, inspectable way to reuse teacher–student gap feedback as frozen-model context. The paper offers substantial full-pool improvements, cross-student transfer, true held-out subset evidence and useful component, quantization and multimodal analyses. Its empirical case is strongest as a practical prompting/teaching recipe. It is weaker as a claim of universal knowledge distillation: headline scores include synthesis-training problems, narrow margins against strong prompts lack uncertainty, and retained capabilities sometimes decline. Same-batch update validation is not an independent generalization guarantee. The frontier partition contains baseline failures, so renewed success may mix instruction gains with sampling/selection effects. Complete example Primers explicitly include output-format and token-budget tactics, as well as potentially inaccurate content; knowledge transfer is not isolated from these mechanisms. KD and API synthesis resource tables compare different stages and resource types, and the per-query input overhead remains. No replicated synthesis, code/run-record inspection or broad out-of-domain test establishes universal or permanent learning. In scope and worth reviewing, with no missing-PDF material hold.",
+        "rationale_en": "UTT is a well-motivated, inspectable way to reuse teacher–student gap feedback as frozen-model context. The paper offers substantial full-pool improvements, cross-student transfer, true held-out subset evidence and useful component, quantization and multimodal analyses. Its empirical case is strongest as a practical prompting/teaching recipe. It is weaker as a claim of universal knowledge distillation: headline scores include synthesis-training problems, narrow margins against strong prompts lack uncertainty, and retained capabilities sometimes decline. Same-batch update validation is not an independent generalization guarantee. The frontier partition contains baseline failures, so renewed success may mix instruction gains with sampling/selection effects. Complete example Primers explicitly include output-format and token-budget tactics, as well as potentially inaccurate content; knowledge transfer is not isolated from these mechanisms. KD and API synthesis resource tables compare different stages and resource types, and the per-query input overhead remains. No replicated synthesis, code/run-record inspection or broad out-of-domain test establishes universal or permanent learning. In scope and worth reviewing, with no missing-PDF material hold.",
+        "rationale_zh": "UTT把師生能力差距回饋整理成凍結模型可重用的脈絡，動機清楚且文字可檢視。全文提供大幅全題庫增益、跨學生轉移、真正留出子集證據，以及元件、量化與多模態分析；作為實務提示／教學配方最具說服力。若主張通用知識蒸餾則較弱：醒目分數包含教材合成題，對強提示基線的微小差距沒有不確定性分析，既有能力也偶有下降。當批驗證不是獨立泛化保證；前沿分組依基線失敗定義，再次成功可能混合指令改善與採樣／選擇效應。完整教材明列輸出格式及token預算策略，也可能有不準確內容，故知識轉移尚未與其他機制分離。KD與API合成表比較不同階段／資源，逐題輸入額外成本仍在。沒有多次教材合成、外部程式／紀錄核驗或廣泛域外測試足以證明通用或永久學習。屬相關且值得審閱的方法，不設缺PDF的material HOLD。",
+        "raw_weighted_score": 0.753,
+        "request_sha256": "5842c4cfab70c4d412227e88632c55acd01d5862700ec5f1371ee85bc59ddb73",
+        "review_sha256": "95463374240a9cd91e683a23d42bb87b170aece52bad3c522c72307f948e07e7",
+        "scope_assessment": {
+          "classification": "in_scope_language_model_textual_teaching",
+          "decision": "in_scope",
+          "rationale_en": "A language-model knowledge-transfer and prompt-synthesis methodology evaluated on math, code and language-guided geometry; not a pure domain application.",
+          "rationale_zh": "核心是語言模型知識轉移與提示綜整方法，以數學、程式及語言引導幾何評估，非純領域應用。"
+        },
+        "scope_capped_score": null,
+        "scope_policy_version": "explicit-review-exclusion-v1",
+        "scope_status": "in_scope",
+        "score": 0.753,
+        "source_key": "ce26ea8ec8139f7600986d76baf789118830b2c96efe107ddd176ff6ecd4b867",
+        "story_id": "arxiv:2610.12114",
+        "token_usage": {},
+        "topics": [
+          "Large Language Models",
+          "Prompting & In-Context Learning",
+          "Reasoning & Chain-of-Thought",
+          "Code & Programming",
+          "Training & Optimization",
+          "Multimodal AI"
+        ]
+      },
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-ai",
+        "tier": 1,
+        "title": "Universal Textual Teaching for LLMs",
+        "url": "https://arxiv.org/abs/2610.12114v1"
+      },
+      "published_at": "2026-10-08T15:11:16+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.753,
+        "llm_relevance_score": 21.084,
+        "recency_score": 0.8238218895252879,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 29.10782188952529
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2610.12114",
+      "summary": "Knowledge distillation (KD) transfers knowledge from stronger Teacher models to weaker Student models, but most methods require training the Student parameters, thereby binding the distilled knowledge to a specific architecture and checkpoint. This implicit representation is difficult to interpret or reuse across models and limits KD for API-only or costly-to-train models. This paper studies knowledge transfer for large language models (LLMs). We introduce Universal Textual Teaching (UTT), a parameter-update-free framework that distills observed Teacher-Student knowledge gaps into a textual, interpretable, and reusable natural-language artifact called Primer. Specifically, UTT first identifies representative gap cases through paired evaluations, and iteratively updates the Primer via multi-role interactions: the Student attempts each task, the Prompter turns evaluation feedback into a teaching instruction, the Teacher provides a targeted demonstration, and the Synthesizer consolidates validated lessons. Empirically, on the challenging math (Omni-MATH-2) and code generation (KernelBench) tasks, extensive results confirm the effectiveness of the method: UTT remarkably raises the Student's accuracy from 9.4% to 48.6% and Fast1 accuracy from 9% to 35% on KernelBench, while increasing mathematical reasoning accuracy from 27.6% to 51.7%. UTT also performs better than representative prompt engineering and parameter-based KD methods. Of note, UTT is shown to be generalizable across different Teachers and Students: a Primer synthesized for one Teacher-Student pair can generalize to other Students that do not participate in the synthesis.",
+      "summary_en": "UTT aims to transfer knowledge without changing model weights by turning cases where a teacher outperforms a student into a reusable textual Primer. Paired evaluations identify gaps. After a student attempt, a Prompter diagnoses the failure, the Teacher demonstrates a solution and the Synthesizer revises the Primer. Only demonstrations passing evaluation are retained, and a candidate update is accepted when correctness on the same batch does not decrease. The resulting text is prepended at inference and can be reused by students absent from synthesis. In the Pro→Flash setting, reported KernelBench accuracy rises from9.4% to48.6% and math accuracy from27.6% to51.7%. These headline results, however, cover the full problem pool, including synthesis-training problems; they are not held-out-only scores. Split-wise results do support transfer: Pro→Qwen math improves from9.7% to64.8% on distillation-test problems, while two math retention subsets lose9.2 and14.2 percentage points. The appendices provide four role prompts, three complete Primers, ablations and preliminary quantization/multimodal transfers, making the mechanism inspectable. Removing the Prompter or update gate has subset-dependent tradeoffs. Superiority over strong prompting baselines is sometimes small: Qwen math improves only0.5 points over the best comparator, without uncertainty from repeated Primer synthesis. Fast1 means at least one of five samples is both correct and faster than the reference, not that every kernel speeds up. Text may contain errors, adds input cost on every task and is not covered by a fully comparable end-to-end cost analysis. This is useful evidence for cross-model contextual teaching, rather than universal knowledge transfer or permanent expansion of model capability.",
+      "summary_zh": "UTT嘗試不改模型權重，把教師較擅長、學生仍會犯錯的知識整理成可重用的文字教材Primer。它先配對評估師生，挑出能力差距題；學生作答後，由提示者診斷、教師示範、綜整者更新教材，只收通過評估的示範，並以當批正確數未下降作為更新條件。推論時把教材附在題目前，也可交給未參與製作的學生模型。Pro→Flash設定下，KernelBench正確率由9.4%升至48.6%，數學由27.6%升至51.7%；但這些醒目數字在完整題庫計算，包含教材合成用題，不能當成純留出測試。分割結果確實顯示轉移，例如Pro→Qwen數學差距測試題由9.7%升至64.8%，卻也有兩組既有能力保留題下降9.2及14.2個百分點。附錄提供四角色提示、三份教材、消融及跨量化／多模態初驗，讓方法容易理解；移除提示者或更新閘門的代價仍因子集而異。UTT對最強提示基線並非全面大幅領先，Qwen數學僅多0.5點，亦無重複合成的不確定性分析。Fast1是五次取一個正確且更快的kernel，非逐次速度提升。文字教材仍有錯誤風險與每次輸入成本，資源表也非端到端等價比較。這是有用的跨模型脈絡教學展示，尚不足證明通用知識轉移或永久擴張模型能力。",
+      "title": "Universal Textual Teaching for LLMs",
+      "title_en": "Universal Textual Teaching for LLMs",
+      "title_zh": "大型語言模型的通用文字教學"
+    },
+    {
+      "arxiv_id": "2610.12129",
+      "authors": [],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-10-10T13:10:00.360697+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-ai",
+          "tier": 1,
+          "title": "An Investigation of Model Coherence: Narrow Finetunes Contradict Themselves Under Resampling",
+          "url": "https://arxiv.org/abs/2610.12129v1"
+        },
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-ai",
+          "tier": 1,
+          "title": "An Investigation of Model Coherence: Narrow Finetunes Contradict Themselves Under Resampling",
+          "url": "https://arxiv.org/pdf/2610.12129v1"
+        }
+      ],
+      "llm_evaluation": {
+        "candidate_sha256": "e95fc32ba6bc2cf6cde066ffd4126eb7a6f228521541af933b7a62c191850146",
+        "components": {
+          "evidence_strength": 0.73,
+          "generalizability": 0.57,
+          "novelty": 0.72,
+          "preference_relevance": 0.95,
+          "reproducibility": 0.56,
+          "rigor": 0.67
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "pp.1–2, Introduction/Figure1: operational incompatibility means no single agent could sincerely endorse both responses; distinguishes variation due to ambiguity/indifference. The figure shows five illustrative identities for an insecure-code finetune versus one GPT-4.1 position, not prevalence across every question.",
+          "p.2, question-selection conditions: short/clear and high-stakes/clear-cut; open-ended uncertainty/refusal may be consistent. These are design intentions, not independently validated exclusion of ambiguity or indifference. Low entropy is not correctness, helpfulness, safety or globally coherent agency.",
+          "p.3, Related work: consistency/semantic-entropy precedents and misalignment-organism motivation. Code/data release claimed at https://github.com/themachinefan/twominds; no external artifact fetched or verified for this review.",
+          "p.4, Figure2/Section3:175 questions,20 samples per model/question, no agentic harness, mostly provider defaults. Figure2 and AppendixE say temperature1.0, but exact per-model generation settings/token caps are not enumerated. Entropy H=-sum p log p, range0..log20, over judge groups.",
+          "pp.4–5, Sections3.3–3.4: Claude Opus4.8 low-effort judge jointly reads all20 samples. Six original organism types (insecure code, reward hacks, Wolf, scatological, left/right economics) plus reasoning, assistant-tone and mixed variants yield13 finetunes, all on GPT-4.1.",
+          "pp.5–6, Figure3/Sections4.1–4.2: frontier averageH0.06nats,71–94% of questions single-position; organism mean-spread increase0.10–0.85nats. Figure3 plots exp(meanH), not the arithmetic mean of per-question exp(H), with95% bootstrap intervals over questions and entropies averaged over3 shuffled judge passes.",
+          "pp.5–6, Section4.3: reasoning/verbosity variants improve insecure/Wolf/reward-hack entropy by0.27/0.16/0.33nats but do not fully restore baseline. Assistant-like tone has no discernible main-roster effect. Equal benign mixing into economic datasets restores near-baseline coherence; authors acknowledge few trials.",
+          "pp.6–7, Sections4.4–4.5: secondary20-question, three-framing experiment and four judge checks. Main175-question claims must be kept separate from auxiliary20-question mitigation outcomes.",
+          "p.7, Section5: Wolf answers self/user-identity prompts with biography-related content, including a trigger-trained variant. Quantitative rates/uncertainty for identity-conflation examples are not supplied, so this is illustrative behavior, not a measured universal persona property.",
+          "pp.7–8, Section5: open-ended introspection alternates accurate, generic and absurd self-descriptions; authors explicitly say selected accurate/absurd examples are not representative. Rationalization versus deception is speculation without interpretability analysis; base-prior interpolation is a hypothesis.",
+          "pp.8–9, Limitations/Conclusion: authors admit question-selection bias toward post-training norms, no independent test of ambiguity/indifference, one main judge, capability confounds and rare-response limits. This qualifies claims that all contradiction is inexcusable or that organisms are universally broken.",
+          "pp.9–12, References: all reference pages read as paper context; cited studies, model capabilities and links not independently researched or executed. No current-model leaderboard claim is inferred from model names in the PDF.",
+          "p.13, Table1/AppendixB: six category counts30/35/30/27/26/27 sum175. The PDF gives category examples, not the full175-question roster.",
+          "p.13, AppendixA repeat-pass:5075=175*29 response sets, meanARI0.90,92% agreement on one/multiple groups, per-set entropySD0.04nats; frontier0.06 versus insecure-code0.89. These assess adjudication variability, not independent training-run variability.",
+          "p.13, AppendixA second judge/synthetic truth: Haiku4.5 meanARI0.85 and92% one/multiple agreement;87 synthetic sets from5 scenarios,63 multi-stance sets allARI1.0, needle recall1.0 and correct group counts. Same-family agreement and small engineered cases do not calibrate specificity on natural responses.",
+          "p.13, AppendixA embeddings: text-embedding-3-small, average-linkage cosine threshold0.15;1325/1400=94.64% of judge-split sets also split, rounded95%. Embeddings average6.3clusters versus judge1.5groups, so this is an over-segmenting one-way corroboration, not precision or human-ground-truth validation.",
+          "p.14, Table2/AppendicesC–D: full GSM8K1319 questions; base0.94, insecure0.78,wolf0.95,reward0.74,reasoning0.93/0.95/0.85,econ variants0.94–0.95,scatological0.93. Drops16/20/9points support identified confounds; unchanged single-benchmark accuracy is not proof of unchanged general capability.",
+          "p.14, AppendixC:16 frontier models10 via OpenAIAPI and6 via OpenRouter as named by authors; o3-mini/o4-mini/Sonnet4 low effort, other reasoning-capable models reasoning disabled. All finetunes supervised provider-default training on gpt-4.1-2025-04-14; benign mixture1:1. Dataset sizes, training repeats/seeds and explicit defaults are absent.",
+          "p.15, AppendixE: full judge JSON prompt partitions every sample exactly once, asks concrete reasons for splits and separate optional flags. Boolean contradiction is NOT used in reported results. Compatibility is not generally an equivalence relation, so forcing a partition can be ambiguous for partially overlapping or noncommittal answers.",
+          "pp.15–16, AppendixF/Figure4:20 questions*3framings*20samples, pool60, judge sees neutral question only. H(G)=I(G;V)+H(G|V); framing association and within-framing variation are empirical group-label quantities, not measured internal causal components.",
+          "p.16, AppendixF: frontier at least17/20 single-position, half20/20, allmeanH<0.08; insecure/reward0/20 single-position withmeanH0.54/0.64. Assistant and mixed economics variants become frontier-like here, unlike assistant tone on main roster. Single judge pass, explicitly a consistency check; shared broad trend does not make mitigation outcomes identical.",
+          "p.17, Table3:20 complete question/framing labels are listed. Some frames change social/informational context (e.g., source credibility or evaluation context), so answer-irrelevance is an assumption; judge blindness to the frame does not prove unchanged appropriate response.",
+          "pp.17–18, AppendixG/Table4: Laplace-smoothed one-hot delta1e-12 and normalized geometric central distribution. Correct/wrong vote counts(8,1,0),(1,8,0),(4,3,2),(3,3,3) give reported error-incoherence1.000/0.125/0.997/0.940. Offline reviewer arithmetic from this definition reproduces rounding; original external author code was not used.",
+          "p.18, Figure5: three open-weight families on each family-specific hardest fifth of MMLU. Four alternative metrics decrease from smallest to largest; intermediate points need not be monotonic. Error-share increases for Qwen/Gemma, not Llama. GPQA and full-set consistency is stated but not numerically tabled in this PDF; no full external-data replication or universal scaling law established."
+        ],
+        "fulltext_sha256": "426eddbc70e77f3d32e834e2a892da7e57161a9cb5629c2bec5021fa26046138",
+        "fulltext_status": "complete",
+        "model": "assistant-native-review",
+        "native_identity_version": 1,
+        "original_candidate_sha256": "e95fc32ba6bc2cf6cde066ffd4126eb7a6f228521541af933b7a62c191850146",
+        "out_of_scope": false,
+        "producer": "assistant-native-review",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "This is a useful diagnostic for model organisms of misalignment: reduce apparent ambiguity/indifference and measure entropy over compatible response groups under resampling. Multi-model comparisons, shuffled re-judging and a second judge support a substantial frontier-versus-narrow-finetune gap on this roster, while Appendix G identifies accuracy sensitivity in a particular error-share metric. High specificity remains a design claim rather than an estimate against independently annotated truth; one-way embedding split agreement does not verify genuine contradiction. Some of the most unstable models also lose GSM8K accuracy, and stable scores for others cannot exclude every capability confound. Reasoning augmentation also changes verbosity; assistant tone recovers the20-question auxiliary task but not the175-question main task; benign-data mixing lacks multi-seed and preserved-target-behavior checks. Low entropy is not safety, and selected self-reports do not establish internal goals. The PDF is complete; unverified external code limits reproducibility without a missing-page hold. In scope for alignment, safety and model-evaluation methodology.",
+        "rationale_en": "This is a useful diagnostic for model organisms of misalignment: reduce apparent ambiguity/indifference and measure entropy over compatible response groups under resampling. Multi-model comparisons, shuffled re-judging and a second judge support a substantial frontier-versus-narrow-finetune gap on this roster, while Appendix G identifies accuracy sensitivity in a particular error-share metric. High specificity remains a design claim rather than an estimate against independently annotated truth; one-way embedding split agreement does not verify genuine contradiction. Some of the most unstable models also lose GSM8K accuracy, and stable scores for others cannot exclude every capability confound. Reasoning augmentation also changes verbosity; assistant tone recovers the20-question auxiliary task but not the175-question main task; benign-data mixing lacks multi-seed and preserved-target-behavior checks. Low entropy is not safety, and selected self-reports do not establish internal goals. The PDF is complete; unverified external code limits reproducibility without a missing-page hold. In scope for alignment, safety and model-evaluation methodology.",
+        "rationale_zh": "本文提供有用的失準模型替身診斷：先限制題目歧義與無偏好，再以重抽樣回答的相容分群熵檢查穩定性。多模型比較、打亂重判與第二判官支持前沿模型和狹窄微調在此題庫上的明顯差距，附錄G也指出特定錯誤比例指標會受正確率影響。惟高特異度仍是設計主張，不是獨立標註真值下的估計；embedding的單向分裂重合不證明判官抓到真正矛盾。最失穩的部分模型同時掉GSM8K能力，其他模型只代表該算術基準未明顯下降，不能排除所有能力混淆。推理／篇幅增補不是單一因子，assistant-tone只在20題附試恢復，主175題無明顯作用；混合資料結果也缺多種子與效果保留檢查。低熵不等安全，定性自述不證內在目標。來源PDF完整，外部程式未核限制重現，不構成缺頁HOLD。依原標準屬對齊、安全及模型評估方法。",
+        "raw_weighted_score": 0.783,
+        "request_sha256": "c9cc90c8ade76a36fdb69e456cf9b6e1084302a2b528fad6b84868019b5759ac",
+        "review_sha256": "be0130137919b931581ab5b371789d07da5b90b0bd49df27a6497b9927181092",
+        "scope_assessment": {
+          "classification": "in_scope_language_model_coherence_evaluation",
+          "decision": "in_scope",
+          "excluded_domain_checks": {
+            "biology_foundation_model": false,
+            "image_video_diffusion_without_language": false,
+            "medical_imaging": false,
+            "pure_audio": false,
+            "pure_domain_application": false,
+            "pure_robotics": false,
+            "pure_vision": false
+          },
+          "rationale_en": "The contribution is cross-sample consistency evaluation of narrowly finetuned model organisms; health examples are test material, not the research domain.",
+          "rationale_zh": "跨樣本一致性評估與狹窄微調的失準模型替身為核心貢獻，題庫中的健康例子只是測試材料。"
+        },
+        "scope_capped_score": null,
+        "scope_policy_version": "explicit-review-exclusion-v1",
+        "scope_status": "in_scope",
+        "score": 0.783,
+        "source_key": "dfa06408c85f9e6f7f0129a579980b5402e5b2c42e262b0e3c481d39a10a7cc8",
+        "story_id": "arxiv:2610.12129",
+        "token_usage": {},
+        "topics": [
+          "AI Safety",
+          "Alignment & RLHF",
+          "Red Teaming & Evaluation",
+          "Training & Optimization",
+          "Interpretability & Explainability"
+        ]
+      },
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-ai",
+        "tier": 1,
+        "title": "An Investigation of Model Coherence: Narrow Finetunes Contradict Themselves Under Resampling",
+        "url": "https://arxiv.org/abs/2610.12129v1"
+      },
+      "published_at": "2026-10-08T15:22:00+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.783,
+        "llm_relevance_score": 21.924,
+        "recency_score": 0.8244361708573145,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 0.0,
+        "total_score": 25.948436170857313
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2610.12129",
+      "summary": "A large body of research measures model coherence based on output variance without adequately considering competing causes. We identify two such causes, ambiguity and indifference, and we introduce a set of 175 questions where contradicting answers cannot easily be explained by either. We then measure incoherence in terms of contradictions when resampling answers to the same question. In contrast to other methods our metric has high specificity, and only ranks models as incoherent when the issues are glaring. Even so, we find narrow finetunes score poorly. Inspecting inconsistencies flagged by our method, we find that model organisms from the literature display severe issues such as identity conflation, introspection failures and rationalizations. These findings suggest that the pathologies induced by narrow finetuning may limit what these models can tell us about coherent misaligned behaviour.",
+      "summary_en": "Different answers to repeated questions need not mean contradiction: ambiguity or indifference may also explain variation. The authors select 175 short questions intended to have clear, high-stakes or value-laden answers, sample each of 16 frontier models and 13 GPT-4.1 finetunes 20 times, and have a judge partition compatible responses. Partition entropy measures cross-response inconsistency. Frontier models average about 0.06 nats, versus about 0.89 for the insecure-code finetune, with qualitative examples of identity conflation, introspection failures and rationalization. More verbose reasoning in training responses only partly helps; mixing equal benign data into economics finetunes approaches baseline. Three shuffled judge passes, a second judge, synthetic truth and embedding clustering argue against a mere ordering artifact. A separate 20-question, three-framing test decomposes framing-associated and within-framing variation, with the latter dominant. However, exclusion of ambiguity and indifference remains author judgment. Low frontier scores do not empirically establish high specificity or certify safety/correctness. Both judges come from one model family and embeddings substantially over-cluster, so neither substitutes for independent human ground truth. Some of the most inconsistent finetunes also lose GSM8K accuracy; all finetunes share one base, and 20 samples miss rare responses. An appendix gives useful mathematical counterexamples to an earlier error-decomposition metric without proving that every form of coherence improves with scale. The practical lesson is to check behavioral stability before using narrowly misaligned models as safety-research stand-ins, not to infer inner goals or mechanisms from selected self-descriptions.",
+      "summary_zh": "同一問題多問幾次，回答不同不一定代表模型自相矛盾，也可能是題意含糊或根本沒有偏好。本文挑選175道短而明確、涉及高風險或明確價值的題目，對16個前沿模型與13個GPT-4.1微調版本各抽樣20次，再由判官將相容回答分組，以分組熵衡量跨回答的不一致。前沿模型平均約0.06 nats，不安全程式微調約0.89；作者並展示身分混淆、內省失誤與合理化案例。增加訓練回答的推理與篇幅只能部分改善，經濟立場資料混入等量良性例子則接近基線。三次打亂重判、第二判官、合成真值與嵌入分群檢查，支持結果並非單純排序偶然。另以20題、三種提問框架拆分框架相關與同框架內變異，後者占主要部分。限制是題目是否排除歧義與冷漠仍靠作者判斷；低前沿分數不等已測得高特異度，更不認證安全或正確。兩判官同屬一個模型家族，嵌入又明顯過度分群，不能取代獨立真人真值。最不一致的部分微調亦降低GSM8K能力，且所有微調只來自一個基底；二十次抽樣會漏掉罕見反應。附錄對既有錯誤分解指標提出有用數學反例，但不證明所有一致性都隨規模改善。這項研究提醒使用失準模型作安全實驗替身時先檢查行為穩定性，尚不能由選出的自述推論內在目標或機制。",
+      "title": "An Investigation of Model Coherence: Narrow Finetunes Contradict Themselves Under Resampling",
+      "title_en": "An Investigation of Model Coherence: Narrow Finetunes Contradict Themselves Under Resampling",
+      "title_zh": "模型一致性探究：狹窄微調模型在重複抽樣下自相矛盾"
+    },
+    {
+      "arxiv_id": "2610.12086",
+      "authors": [],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-10-10T13:10:34.750702+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-ai",
+          "tier": 1,
+          "title": "EvoAlloc: A Self-Evolving Resource Allocation Agent for Efficient Program Evolution",
+          "url": "https://arxiv.org/abs/2610.12086v1"
+        },
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-ai",
+          "tier": 1,
+          "title": "EvoAlloc: A Self-Evolving Resource Allocation Agent for Efficient Program Evolution",
+          "url": "https://arxiv.org/pdf/2610.12086v1"
+        }
+      ],
+      "llm_evaluation": {
+        "candidate_sha256": "9582a8ae3c79b9f7c3bbc5ac2a617fc75ab0ec935e3639220665e97ad4bdf20e",
+        "components": {
+          "evidence_strength": 0.7,
+          "generalizability": 0.52,
+          "novelty": 0.75,
+          "preference_relevance": 0.95,
+          "reproducibility": 0.55,
+          "rigor": 0.68
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "p. 1, title/authors/version and Figure 1: retained PDF identifies EvoAlloc, all five authors and 2610.12086v1 [cs.AI] 8 Oct 2026; schematic distinguishes allocation, experience/strategy updating and random exploration. Its numbers are a schematic, not experiment counts.",
+          "pp. 2–3, Introduction/Related Work: differentiates revisable allocation mechanisms from context-dependent fixed rules; acknowledges multi-fidelity, surrogate, racing, bandit and program-evolution precedents. Priority beyond this supplied literature was not externally researched.",
+          "pp. 3–4, Section 3/Eqs 1–2: only completed Full outcomes enter best-so-far Q*(b); unevaluated outcomes remain hidden. Resource allocation changes archive and subsequent proposal distribution; the objective is expected best score, not a proven achieved optimum.",
+          "pp. 4–6, Section 4/Figure 2: persistent natural-language Strategy and evidence-linked Experiences guide Full/Discard and optional Partial then Continue/Stop actions. The AIME example recognizes an n^4+1 divisibility pattern and returns 110; this illustrates specialization, not unseen-problem validation.",
+          "pp. 5–6, Section 4.2: Experiences are updated every kE Full outcomes, marking tentative/active/stale; strategy revisions every kS Full outcomes are validated on two disagreements with known Full scores. Union evaluation shares evidence and comparison is lexicographic: missed new-best, Full count, Partial count.",
+          "p. 6, Section 4.3: independent Bernoulli rho=.3 fully evaluates candidates otherwise ending Discard/Stop; explored programs enter the archive and outcome cases guide future updates. This is randomized recovery of otherwise hidden outcomes, not a general counterfactual causal estimator.",
+          "pp. 6–7, Section 5.1/Figure 3: five independent seeds and common backbone; target first hits use evaluation-index-aligned mean scores and mean cumulative tokens, not per-seed first-hit averages or the token-aligned mean curve.",
+          "pp. 7, 22, Table 4: AIME final Shinka 35.33±2.57 and Evo 39.56±6.80; Circle 2.343±.254 and 2.547±.030. AIME gain 4.23 percentage points/11.97% relative; Circle 8.71% relative, calculated from rounded table. Population SDs are reported, not confidence intervals or hypothesis tests.",
+          "p. 22, Table 4: Evo evaluation/token AUC 33.69±3.33/33.15±2.89 on AIME and 2.389±.043/2.436±.024 on Circle. Common observed token intervals are .62–55.1 M and .27–4.68 M. These anytime comparisons do not imply uniform dominance at all budgets.",
+          "p. 23, Table 5/Figure 3 p. 7: reference-final targets 35.33 and 2.343 reached by Evo at 28 Full/35.3 M tokens versus 69/89.8 M, and 26/.7 M versus 148/6.1 M. Reported rounded savings 59%/61% and 82%/89% are target-dependent; no uncertainty intervals or per-seed target-attainment probabilities are supplied.",
+          "pp. 22–23, Eq 3/Table 5: 95%-gain target is initial+.95*(final-initial), not .95*final. Targets 34.49 and 2.274; Evo 26/32.7 M versus 51/63.6 M and 24/.6 M versus 70/2.0 M. Rounded token values cannot exactly reconstruct all reported percentage changes.",
+          "pp. 23–24, Table 6: Full-budget totals 128.76 M versus 98.44 M on AIME and 10.85 M versus 6.11 M on Circle; calculated increases 30.8005% and 77.5777%. Allocator/self-evolution/shadow tokens 1.02 M and 1.67 M included. Matched evaluation counts are not matched total token, FLOP, wall-clock or monetary budgets.",
+          "p. 13, Table 1/initialization: 50 example cases are 10 from each of 5 baseline runs; acquisition cost excluded. kE=5, kS=10, two validation disagreements, capacity 4 active/tentative+4 stale, rho=.3, warm-up until at least one new-best and one non-new-best. Independence of initialization cases from evaluation runs and end-to-end startup cost are not established.",
+          "pp. 13–15, Appendices B.1–B.3: proposer GLM-4.5-Air/gpt-oss-120b/Qwen3.6-35B-A3B; allocator Qwen3-Coder-Next; solver Qwen3-8B thinking off; locally served A100. AIME Full=30 questions*3 runs, Partial=first 8 questions*1 seed; search/evaluation use same 30 AIME 2024 problems. Circle 26 in unit square deterministic, no Partial; Full budgets 75/150.",
+          "pp. 14–15, program examples: AIME repeated sampling/voting harness and a Circle packing excerpt illustrate artifacts. Neither is a complete public implementation of the evaluation system; paper code blocks were read as data and not executed.",
+          "pp. 8–9, Figures 4–7: five-seed component ablations and a Circle rho sweep{0,.1,.3,.5,.7}; rho=.3 lowest reported target tokens in this sweep. No numerical sweep table/independent selection split establishes universal optimality. AIME tree 124 versus 75 proposals is one seed, not the five-seed mean 136.8 versus 75.",
+          "pp. 16–19, Tables 2–3/Figure 8: explicit stages and experience inventories provide qualitative traces. AIME strategy windows 1–19/20–31/32–44/45–75; Circle representative seed 3 windows 1–76/77–119/120–150. Applicability must use only decision-time observations; fixed-outcome descriptions in memories describe historical evidence, not known current outcomes.",
+          "p. 20, Figure 9: Circle representative seed 1 has 302 versus 150 proposals and 2.540 versus 2.468 best score; separate from seed 3 strategy trace and five-seed means. Selected trees show examples rather than a causal mediation estimate of search breadth.",
+          "pp. 21–22, Appendix D.1: all compared methods use shared locally served models; Shinka configuration differs from original proprietary-model study. One-Step keeps context/retrieval/actions/exploration but removes Strategy and Experiences; fixed-guidance ablation fixes medium-selectivity strategy and seeded experiences, manually refined. These are joint rather than clean single-factor state ablations.",
+          "p. 21, Appendix D.1: Lineage-UCB Beta(1, 1), relative weights 1/.5, threshold posterior mean+1 SD>=.5, Full/Discard only. RPM adapted 15-candidate seeded tournament with same allocator model, temperature 0, max 4096 output tokens. Results compare these adaptations, not all optimized bandit/multi-fidelity methods or original RPM training.",
+          "pp. 23–24, Table 6: five-seed mean proposals 136.8/243.0 for Evo versus 75/150 baseline. RPM 1125/2250 proposal counts are nominal 15 x budgets, tokens measured. Allocation shares are mean per-seed ratios of original decisions; validation outcomes can occur in other categories, and multiplying average shares by average proposals need not recover pooled counts.",
+          "pp. 25–26, Figures 10–11/Appendix D.5: Circle random 50% discard after warm-up 2.404±.184 versus Evo 2.547±.030. Keeping exploration/archive but withholding explicit explored outcome cases yields 2.446±.110 and AIME 32.22±4.10 versus 39.56±6.80. Indirect archive/proposal effects persist, so explicit feedback is isolated only within that operational definition.",
+          "p. 26, Table 7: pooled exploration results AIME 132 candidates, 6 new-best, 33 parent-improving; Circle 296, 22, 91. Rates use pooled counts and improved-parent includes new-best. Only one run each reaches S3; stages align revision order rather than comparable time, prohibiting temporal rate comparisons.",
+          "p. 27, Table 8/Appendix D.7: AIME 23 challengers/20 completed/10 adopted; Circle 44/42/11. Adoption criteria totals are 0 missed-new-best, 18 Full-count, 3 Partial-count wins. Two-known-disagreement windows cannot establish expected global improvement; authors explicitly disavow that guarantee.",
+          "pp. 28–31, Appendix E/Table 9: complete core allocation, continuation, experience-update and strategy-update prompt text plus abbreviated JSON outputs and two case cards. Unknown current Full outcomes are explicitly excluded; Partial observations enter only continuation. UPDATE cannot rewrite an experience, so rewrite requires DELETE+ADD; capacity/retrieval code and full seeds/configurations still unavailable.",
+          "pp. 9–11, Limitations/Reproducibility/References: two benchmarks, within-run adaptation with generation/evaluation/update mechanisms fixed; cross-run inheritance is future work. Code/configuration promised upon acceptance, not claimed currently released. AI-use statement and all references read as context, cited external artifacts not fetched."
+        ],
+        "fulltext_sha256": "b12a4f50fefa62a76b83c0d376ca038d6082dfca6fa2d03a3e218cded5bd135c",
+        "fulltext_status": "complete",
+        "model": "assistant-native-review",
+        "native_identity_version": 1,
+        "original_candidate_sha256": "9582a8ae3c79b9f7c3bbc5ac2a617fc75ab0ec935e3639220665e97ad4bdf20e",
+        "out_of_scope": false,
+        "producer": "assistant-native-review",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "EvoAlloc turns candidate evaluation into a decision process that changes with search, using evidence-linked experiences, natural-language strategy and exploration of rejected candidates. A shared ShinkaEvolve configuration, five seeds, four comparators and fixed-strategy, no-exploration, random-allocation and explicit-feedback ablations support mean benefits on two testbeds; circle packing has no partial evaluator, so benefits are not solely early stopping. However, 59–82% evaluation and 61–89% token savings are conditional costs to the baseline final target, found after averaging trajectories. Exhausting the budget increases tokens by about 31%/78%, and acquiring 50 initialization cases is excluded, so end-to-end total cost reductions are not established. AIME uses the same 30 questions for search and evaluation; specialized examples and greater cross-seed variation limit generalization and robustness. Its 4.23 percentage-point gain is approximately 12% relative, not 12 points. Two-disagreement validation compares only local observed consequences, and all 21 adopted strategies won on evaluation counts, never fewer missed new-best cases. The exploration-feedback ablation retains indirect archive effects and is not a complete information-flow intervention. Two tasks, one allocator, no significance analysis or genuinely unseen evaluation, and no cross-run memory inheritance limit breadth. Public code remains a future promise. Its value is a transparent, testable design for allocating search budgets; end-to-end costs, unseen-problem generalization and cross-run strategy inheritance remain to be established.",
+        "rationale_en": "EvoAlloc turns candidate evaluation into a decision process that changes with search, using evidence-linked experiences, natural-language strategy and exploration of rejected candidates. A shared ShinkaEvolve configuration, five seeds, four comparators and fixed-strategy, no-exploration, random-allocation and explicit-feedback ablations support mean benefits on two testbeds; circle packing has no partial evaluator, so benefits are not solely early stopping. However, 59–82% evaluation and 61–89% token savings are conditional costs to the baseline final target, found after averaging trajectories. Exhausting the budget increases tokens by about 31%/78%, and acquiring 50 initialization cases is excluded, so end-to-end total cost reductions are not established. AIME uses the same 30 questions for search and evaluation; specialized examples and greater cross-seed variation limit generalization and robustness. Its 4.23 percentage-point gain is approximately 12% relative, not 12 points. Two-disagreement validation compares only local observed consequences, and all 21 adopted strategies won on evaluation counts, never fewer missed new-best cases. The exploration-feedback ablation retains indirect archive effects and is not a complete information-flow intervention. Two tasks, one allocator, no significance analysis or genuinely unseen evaluation, and no cross-run memory inheritance limit breadth. Public code remains a future promise. Its value is a transparent, testable design for allocating search budgets; end-to-end costs, unseen-problem generalization and cross-run strategy inheritance remain to be established.",
+        "rationale_zh": "EvoAlloc把候選評估改為隨搜尋更新的決策問題，透過帶證據經驗、自然語言策略與被拒候選探索形成可檢驗閉環。共用ShinkaEvolve配置、五seed及四比較方法，加上固定策略、無探索、隨機配置與保留探索但移除明示回饋的消融，支持它在兩測試床的平均收益；Circle Packing沒有部分評估，顯示效果不限早停。然而59–82%評估與61–89% token節省是對基線最終目標、先平均後找達標點的條件結果；用滿預算token增加約31%／78%，初始化50案例取得成本另排除，不能轉述為端到端總成本下降。AIME共用30題搜尋與評估，題型特化範例及較高跨seed變異限制泛化與穩健性；增加4.23個百分點相當於約12%相對改善，不是12個百分點。兩歧見驗證僅比較局部已知後果，21次採納全因少用評估，未由較少漏失最佳案例決勝。探索回饋消融保留archive的間接影響，不能當完全切斷資訊的因果分解。只有兩任務、一個配置模型，無統計顯著性或真正未見測試、無跨次記憶繼承；公開程式仍待承諾實現。其價值是透明、可檢驗的搜尋預算調度設計；端到端成本、未見題泛化與跨次策略繼承仍需後續驗證。",
+        "raw_weighted_score": 0.779,
+        "request_sha256": "4a942873838f184391f5541e5eaae12b9a6d7e38733bfd88ebd0f0efeaa130d5",
+        "review_sha256": "8d109d6e2cb8f740e23b68d981d49e962c4c7440465d9ffbf2ba7d525c1c9915",
+        "scope_assessment": {
+          "classification": "in_scope_llm_program_evolution_resource_allocation",
+          "decision": "in_scope",
+          "excluded_domain_checks": {
+            "biology_foundation_model": false,
+            "image_video_diffusion_without_language": false,
+            "medical_imaging": false,
+            "pure_audio": false,
+            "pure_domain_application": false,
+            "pure_robotics": false,
+            "pure_vision": false
+          },
+          "rationale_en": "The contribution is evaluation allocation in LLM-agent program evolution; geometry tests the search method rather than defining a pure vision, robotics or medical application.",
+          "rationale_zh": "核心貢獻為LLM代理程式演化及評估配置；幾何任務用於驗證通用搜尋方法，非純視覺／機器人／醫療應用。"
+        },
+        "scope_capped_score": null,
+        "scope_policy_version": "explicit-review-exclusion-v1",
+        "scope_status": "in_scope",
+        "score": 0.779,
+        "source_key": "a08d785202cdaa57cc1d111a2410b27d8e7b9a8b54739fb5715bb5d683fccb2c",
+        "story_id": "arxiv:2610.12086",
+        "token_usage": {},
+        "topics": [
+          "Agents & Tool Use",
+          "Code & Programming",
+          "Reasoning & Chain-of-Thought",
+          "Scaling & Efficiency",
+          "Long Context & Memory"
+        ]
+      },
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-ai",
+        "tier": 1,
+        "title": "EvoAlloc: A Self-Evolving Resource Allocation Agent for Efficient Program Evolution",
+        "url": "https://arxiv.org/abs/2610.12086v1"
+      },
+      "published_at": "2026-10-08T14:57:35+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.779,
+        "llm_relevance_score": 21.812,
+        "recency_score": 0.8221254594381927,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 29.834125459438194
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2610.12086",
+      "summary": "LLM-based program evolution relies on evaluation feedback to guide the iterative search for high-performing programs. However, evaluation is often computationally expensive, making it essential to allocate limited resources to candidates that can most effectively advance the search. Existing LLM-based methods typically rely on fixed allocation strategies throughout the search, potentially wasting resources on low-value candidates while overlooking promising ones. We propose EvoAlloc, a self-evolving resource-allocation agent that learns from search experience to revise its strategy for allocating computational resources across candidates. EvoAlloc periodically consolidates prior search and allocation outcomes into reusable experience, which informs subsequent strategy revisions. It further uses a counterfactual exploration mechanism to occasionally evaluate candidates denied resources by the allocator, revealing their outcomes to enrich its experience for future strategy updates. Across coding and agent-harness optimization benchmarks, EvoAlloc requires 59-82% fewer full evaluations and 61-89% fewer total LLM tokens to reach baseline-level performance. Moreover, under the same full-evaluation budget, EvoAlloc achieves 8.7-12.0% higher final performance.",
+      "summary_en": "Program evolution produces many candidates, while evaluating each one fully can dominate its cost. EvoAlloc assigns evaluation decisions to an allocator with an evolving natural-language strategy. It consolidates outcomes into experiences, proposes a strategy revision every ten full outcomes, and compares incumbent and challenger on two disagreements with known outcomes. It also fully evaluates otherwise rejected candidates with probability 0.3, exposing counterevidence that selective filtering would hide.\n\nUsing the same ShinkaEvolve backbone and five independent seeds, final mean AIME harness accuracy rises from 35.33% to 39.56%, while the circle-packing score rises from 2.343 to 2.547. Reaching the baseline's final performance requires 59–82% fewer full evaluations and 61–89% fewer recorded model tokens. These figures locate a target after averaging trajectories; they do not mean every run achieves the same saving. Ablations removing strategy evolution, exploration or explicit exploration feedback support the roles of these mechanisms.\n\nThe cost boundary matters: exhausting the same full-evaluation budget instead increases total tokens by about 31% and 78%, and acquiring the fifty baseline initialization cases is excluded. AIME search and evaluation share the same thirty problems, with task-pattern-specific solvers among the examples, so unseen-problem generalization is unestablished. Only two tasks, five repetitions and substantial AIME variability limit extrapolation. Two-case validation does not guarantee overall strategy improvement, and code/configuration release is promised only upon acceptance. The contribution is a testable design for allocating evaluation budgets, rather than demonstrated general-purpose, autonomous self-improvement with lower total cost.",
+      "summary_zh": "程式演化會產生大量候選，但逐一完整測試常是主要成本。EvoAlloc把「值得測誰」交給可更新自然語言策略的配置代理：整理歷次結果為經驗，每十次完整評估提出新策略，並以兩個已知結果的歧見案例比較；另以三成機率補測被拒候選，避免錯誤篩選永遠得不到反證。\n\n在同一ShinkaEvolve骨架與五個隨機種子下，AIME推理程式的最終平均正確率由35.33%升至39.56%，圓形排列分數由2.343升至2.547。到達基線最終表現所需完整評估減少59–82%、模型token減少61–89%；這是先平均軌跡再找達標點，並非每次執行都能節省相同比例。移除策略演化、探索或探索回饋的消融支持各環節的作用。\n\n成本界線尤其重要：用滿相同完整評估額度時，總token反而增加約31%與78%，且初始化五十個基線案例的取得成本未計入。AIME搜尋與評估共用三十題，範例包含題型特化解法，不能據此主張未見題泛化；僅兩個任務、五次重複及AIME較大變異也限制外推。兩案例驗證不保證整體策略改善，程式與設定僅承諾錄用後公開。本文的價值是可檢驗的評估預算調度設計，而非已證明通用、自主且更省總成本的自我改進。",
+      "title": "EvoAlloc: A Self-Evolving Resource Allocation Agent for Efficient Program Evolution",
+      "title_en": "EvoAlloc: A Self-Evolving Resource Allocation Agent for Efficient Program Evolution",
+      "title_zh": "EvoAlloc：以自我演化資源配置代理提升程式演化效率"
     }
   ],
   "radar": [],
@@ -4111,9 +4765,18 @@
   "run_info": {
     "added_native_count": 5,
     "added_reviewed_candidate_count": 5,
-    "addition_prepared_at_utc": "2026-10-10T13:39:00+00:00",
-    "addition_ranking_anchor_basis": "Preserved original exact-five subset ranking anchor, not a collection cutoff or announcement event.",
-    "addition_ranking_anchor_utc": "2026-10-10T13:07:00+00:00",
+    "added_subset_counts": [
+      4,
+      1
+    ],
+    "addition_prepared_at_utc": "2026-10-10T14:10:00+00:00",
+    "addition_ranking_anchor_basis": "Independent accepted4 and accepted1 anchors; no common reranking or collection cutoff.",
+    "addition_ranking_anchor_utc": null,
+    "addition_ranking_anchors_utc": [
+      "2026-10-10T13:42:00+00:00",
+      "2026-10-10T13:58:00+00:00"
+    ],
+    "additions_jointly_reranked": false,
     "combined_native_reranked": false,
     "coverage_status": "partial",
     "date_basis_by_story": {
@@ -4232,12 +4895,32 @@
         "date_value": "2026-10-09",
         "event_timestamp_utc": null
       },
+      "arxiv:2610.12086": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.12114": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
       "arxiv:2610.12124": {
         "date_basis": "official_listing_v1_inference",
         "date_value": "2026-10-09",
         "event_timestamp_utc": null
       },
+      "arxiv:2610.12129": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
       "arxiv:2610.12168": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.12176": {
         "date_basis": "official_listing_v1_inference",
         "date_value": "2026-10-09",
         "event_timestamp_utc": null
@@ -4258,6 +4941,11 @@
         "event_timestamp_utc": null
       },
       "arxiv:2610.12274": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.12292": {
         "date_basis": "official_listing_v1_inference",
         "date_value": "2026-10-09",
         "event_timestamp_utc": null
@@ -4318,25 +5006,25 @@
         "event_timestamp_utc": null
       }
     },
-    "error_summary": "PARTIAL 部分更新：保留已發布35篇及原順序；本批5篇依原規則選5篇，按子集排名追加Papers。40篇未合併重新排名；全日總量與收集截止時間未知。",
+    "error_summary": "PARTIAL 部分更新：保留已發布40篇及原順序；兩個獨立子集4選4、1選1，依4＋1次序追加Papers。45篇與新增5篇均未合併重新排名；全日總數及收集截止未知。",
     "finished_at": "2026-10-10T03:29:00+00:00",
     "full_day_candidate_total": null,
     "items_total": null,
-    "preserved_baseline_body_sha256": "08d91581999d6330a3c3b9bda745eb209e88a0ee9c9790dafa9e875c4e2251a5",
-    "preserved_baseline_count": 35,
+    "preserved_baseline_body_sha256": "d3a8bfb4ad4a63c6814d77c381ae05a1e3fec4b81c0a1d589088711f1db7ad16",
+    "preserved_baseline_count": 40,
     "preserved_baseline_kind": "published_verified",
-    "preserved_baseline_seal_sha256": "85327fbd36c34300215232da91483ef532d57bf8b43cf0a2f3703cb20d9441a4",
+    "preserved_baseline_seal_sha256": "79011fa3368c9ca51de257babdb4b8224adb1777710a5266a8c79d9ab74c31d5",
     "preview_only": false,
     "prior_reviewed_total_count": null,
-    "release_scope_note": "Five additions from the accepted exact-five native pool are appended to Papers in their established subset order. All 35 published Oct9 baseline stories and section order are byte-preserved; all 40 are not jointly reranked. First submission is Oct8 and bounded listing-day membership is Oct9. Full-day totals, configured-query coverage, exact announcement events and collection cutoff remain unknown.",
-    "reviewed_selected_count": 40,
+    "release_scope_note": "Preserve 40 published Oct9 entries; append independent 4-of-4 then 1-of-1 subsets. Neither 45 combined stories nor 5 additions are jointly reranked. First submission Oct8 differs from bounded listing Oct9; exact announcement events, configured-query coverage, full-day totals and cutoff are unknown.",
+    "reviewed_selected_count": 45,
     "reviewed_total_count": null,
     "run_id": "bounded-partial-additive-2026-10-09",
     "source_collection_cutoff_utc": null,
     "started_at": "2026-10-10T03:29:00+00:00",
-    "stories_total": 40,
+    "stories_total": 45,
     "success": true,
-    "underlying_live_commit": "045949009e0fb06d9ecc9f0c40563b2374835a3f"
+    "underlying_live_commit": "c966df15449574e0d0f8787f868fec24f44dbc3c"
   },
   "sources_status": [
     {
