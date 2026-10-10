@@ -337,7 +337,563 @@
   },
   "generated_at": "2026-10-08T22:31:08.332427+00:00",
   "model_releases_by_entity": {},
-  "papers": [],
+  "papers": [
+{
+      "arxiv_id": "2610.09624",
+      "authors": [
+        "Gong, Xijie",
+        "Han, Tingxu",
+        "Zhang, Jiahao",
+        "Song, Wei",
+        "Ding, Ziqi",
+        "Yan, Hanqi",
+        "Sun, Youcheng",
+        "Hu, Lijie"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-10-10T02:01:36.720463+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-ai",
+          "tier": 1,
+          "title": "How Do Agentic LLMs Decide to Call Tools? A Tool-Call Vector Shaped by Suppression",
+          "url": "https://arxiv.org/abs/2610.09624v1"
+        }
+      ],
+      "llm_evaluation": {
+        "candidate_sha256": "003eb1710bdefddb50dc284bdaa02a1e4c0ed6c74fde03fd64ee78fd2dd5cd54",
+        "components": {
+          "evidence_strength": 0.64,
+          "generalizability": 0.72,
+          "novelty": 0.77,
+          "preference_relevance": 0.98,
+          "reproducibility": 0.62,
+          "rigor": 0.64
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "PDF pp.3–4, Section 2/3, Equations 2–5/Table 1: Qwen3-8B non-thinking prompts are behaviorally retained for execution-call/analysis-text contrast. The L24 block-input prediction-position mean difference is fitted on 300 pairs; addition/removal flip all 200 held-out pairs in the primary test. Sufficiency 1.03 and necessity 1.04 are normalized logit-gap effects, not probabilities or a universal theorem.",
+          "PDF pp.16–18, Tables 7–10/Appendix A: each of seven models has 300 training and 200 held-out pairs. Qwen3.5-4B and Mistral-Small-3.2-24B use Telecom conversation contexts for discovery; the other five use coding tasks. Vectors and native call tokens are model-specific, so there is no single cross-model vector or seven-way coding-only transfer test.",
+          "PDF p.5 Table 2 and p.35 Appendix I.1: web retrieval, SQL and email each have 100 held-out pairs; Qwen3-8B induction/suppression are 100% with norm-matched random direction causing no flips. The direction is fixed but its norm is calibrated from disjoint target-domain training pairs; this is not calibration-free transfer.",
+          "PDF pp.5–6 and p.19 Tables 3/12/13: native Qwen3-8B Telecom contexts span 5,385–15,690 tokens and 16–43 tools. Removal suppresses 73 of 199 baseline-positive calls (36.7%); all 200 candidates change from 99.5% to 63.0% call rate. Addition induces 140/200 baseline text turns (70%); random controls are 1.5%/0%. These denominators are explicitly reconciled, not conflicting.",
+          "PDF p.20 Appendix C.2/Table 14: 600 non-imperative requests are constructed across four domains and five patterns; up to ten baseline-positive requests per cell are retained in source order. Qwen3-8B evaluates 160, with 93.1% suppression at unit gain and 100% at 1.5 versus random 16.2% at 1.5. This is conditional suppression on selected positive cases, not a success rate over all 600 or all natural requests.",
+          "PDF pp.6,20–21 Tables 4/15–17: full scaffold neutral/analysis mean call probabilities are .8486/.0038; format alone gives 1.0000/.9952, and removing format nearly eliminates calls. The Review verb produces 4% calls with write_file but 100% with submit_review, supporting request-tool interaction rather than a context-free analysis-verb ban.",
+          "PDF pp.7–8,22–23 Figure 4/Tables 5/19/20: MLPs supply 77.7% of projected formation-window writes, analysis-higher absolute feature mass exceeds execution-higher by 1.99 overall. Semantic labels cover 426 of 640 selected candidates; 214 remain unlabelled but are included in full-feature accounting. Absolute mass ratios and semantic labeling do not by themselves establish a complete causal circuit.",
+          "PDF p.8 Section 5.3 versus p.23 Appendix D.5, both visually inspected: the same described five-suppressor intervention has post-call rate 25.5% and projection shift +5.30, but main text says baseline 3.0% and strict recovery 45/200 (22.5%), while appendix says baseline 0/200 and strict recovery 51/200 (25.5%). No explicit cohort reconciliation is supplied for this conflict; neither exact recovery value is adopted as definitive.",
+          "PDF p.23 Table 21: after swapping L20–23 MLP outputs, execution call rate is already 93% (from 100%) despite projection gap dropping 60.06→15.78; restoring the vector projection returns 100%. Reverse analysis arm rises 0→95% and returns to 0 after restoration. This is asymmetric mediation evidence, not complete removal of execution behavior by the formation swap.",
+          "PDF pp.8–9,24–26 Figure 5/Tables 22–26: L33H29 DLA differs across explicitly distinct 300-pair and 200-pair cohorts (7.91 versus 13.45 delta). MLP34 sweep, patching-subset and feature-evaluation call rates (53.3%,42.5%,41.0%) are separately documented and should not be treated as contradictory. On the same feature cohort, F109925 replacement gives 37%, fixed F91365 control 6.5%, full MLP34 41% and vector addition 100%.",
+          "PDF pp.21–22,27–29 Appendix D.3/F.2/Figure 6: single-RMSNorm final Qwen3-8B logit gap is 7.093, while cross-model diagnostics apply final RMSNorm twice to the already normalized final hidden state, yielding nominal 14.030. The paper explicitly discloses this; the latter is not an ordinary final model-output logit gap. Early linear separability at L0/L1 is distinguished from later output-space effects and causal interventions.",
+          "PDF p.19 Table 11 and p.26 Appendix E.4: Table 11 reports zero execution call rate after L24 subtraction in the independently refitted neighboring-layer control. E.4 cites that N=300 control but reports 1.78% residual calling, without clarifying a different fitted direction/denominator; 1.78% is not an integer single-pass count out of 300. Its separate 0.99% description of 5/500 is also arithmetically imprecise. Keep these auxiliary estimates unresolved rather than merging protocols.",
+          "PDF pp.9,19–20,27,29 Tables 6/12–14/27–30: full-state recovery is 93.5–100%, but native induction ranges 7.5–92% and Granite unit-gain verb-free suppression is 35.5%. Kcorrupt/Kclean remains above one across models. Reported transfer regularities coexist with substantial model-specific variation.",
+          "PDF pp.30–32 Tables 31/32 and Figures 7/8: Qwen3-8B sparse core replay 1.0000 sufficiency is close to random-core .9768, and EAP-IG needs 100,000 edges for .809 normalized faithfulness. Authors correctly avoid treating sparse-core replay as proof of a unique privileged route; the dense feature graph is an illustrative local attribution view.",
+          "PDF p.10 Limitations and pp.35–36 Appendix I: no tests of tool choice, arguments or task completion; implicit-request transfer does not establish identical formation. Code https://github.com/XijieGo/MI4ToolCalling and Hugging Face dataset/checkpoint links are supplied, with about 800 B200 GPU-hours for Transcoder training and a claimed 96GB-GPU reproduction path. Those linked assets were not downloaded, verified or executed in this review."
+        ],
+        "fulltext_sha256": "efa2d2dcf5c9806363aae335d913e8d04510ad49a0d7e82cf9958ba1f7cb676f",
+        "fulltext_status": "complete",
+        "model": "assistant-native-review",
+        "native_identity_version": 1,
+        "original_candidate_sha256": "003eb1710bdefddb50dc284bdaa02a1e4c0ed6c74fde03fd64ee78fd2dd5cd54",
+        "out_of_scope": false,
+        "producer": "assistant-native-review",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "A relevant and comparatively rich mechanistic study: local addition/subtraction, random directions, scaffold ablations, request-tool crossover, feature mediation and seven-model transfer go beyond correlational probing. The supported conclusion is a reusable model-specific intervention direction for a first-token call marker. Behaviorally screened prompts and norm-calibrated cross-domain tests do not establish an unconditional universal switch, identical formation on implicit requests, or improved downstream task success. The main-text versus appendix suppressor-ablation baseline/strict-recovery conflict remains unresolved; diagnostic double-normalization and an ambiguous neighboring-control result require careful separation. These reporting limitations reduce evidence confidence without making the complete supplied PDF a missing-source case.",
+        "rationale_en": "A relevant and comparatively rich mechanistic study: local addition/subtraction, random directions, scaffold ablations, request-tool crossover, feature mediation and seven-model transfer go beyond correlational probing. The supported conclusion is a reusable model-specific intervention direction for a first-token call marker. Behaviorally screened prompts and norm-calibrated cross-domain tests do not establish an unconditional universal switch, identical formation on implicit requests, or improved downstream task success. The main-text versus appendix suppressor-ablation baseline/strict-recovery conflict remains unresolved; diagnostic double-normalization and an ambiguous neighboring-control result require careful separation. These reporting limitations reduce evidence confidence without making the complete supplied PDF a missing-source case.",
+        "rationale_zh": "這是高度相關且證據面較豐富的機制研究：局部加減向量、隨機方向、提示結構消融、請求與工具交叉、中介介入及七模型遷移，超越單純相關探測。較穩健的結論是，各模型存在可重用的首詞元工具呼叫介入方向。經行為篩選的提示與跨領域長度校準，不能證明無條件通用開關、隱含請求具有完全相同的形成機制，或下游任務成功率提升。正文及附錄對抑制特徵消融的基線／嚴格復原率有未解衝突，診斷雙重正規化與鄰層控制結果的指涉亦應分開。這些論文報告限制降低證據信心，但不代表已取得的完整 PDF 有缺件。",
+        "raw_weighted_score": 0.8025,
+        "request_sha256": "d15206cd10ebce46b48324b5ab9d212e2ead3735eb32072e404e92ede35fd1f1",
+        "review_sha256": "3b16bea460c67bb7b886e99990c6a2e646f711fbabd71a2db59a28f1dd59675c",
+        "scope_assessment": "In scope: causal/mechanistic analysis of language-agent tool initiation and activation steering, not a domain-only application.",
+        "scope_capped_score": null,
+        "scope_policy_version": "explicit-review-exclusion-v1",
+        "scope_status": "in_scope",
+        "score": 0.8025,
+        "source_key": "fd63a5a1d873471a2e0130d2b18f48f1d16f9a8d52c16d935074067602991802",
+        "story_id": "arxiv:2610.09624",
+        "token_usage": {},
+        "topics": [
+          "Large Language Models",
+          "Agents & Tool Use",
+          "Interpretability & Explainability",
+          "Prompting & In-Context Learning",
+          "Red Teaming & Evaluation"
+        ]
+      },
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-ai",
+        "tier": 1,
+        "title": "How Do Agentic LLMs Decide to Call Tools? A Tool-Call Vector Shaped by Suppression",
+        "url": "https://arxiv.org/abs/2610.09624v1"
+      },
+      "published_at": "2026-10-07T08:01:39+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.8025,
+        "llm_relevance_score": 22.47,
+        "recency_score": 0.7549785262261073,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 30.424978526226106
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2610.09624",
+      "summary": "Tool calling, invoking external tools on demand, is central to agentic LLMs, yet the mechanism that decides whether a model calls a tool or responds directly remains poorly understood. Agentic prompts are long and heavily scaffolded, combining role instructions, tool schemas, format templates, and the user's request across hundreds of tokens, creating a noisy, highly entangled context in which no single controllable variable for mechanistic analysis is obvious. To obtain such a variable, we propose a method that converts complex agentic prompts into minimal contrastive pairs in which a single request verb determines the tool-call decision: replacing an execution-verb (e.g., \\textit{write}) with an analysis-verb (e.g., \\textit{discuss}) reliably flips the decision, suggesting it is mediated by a compact internal state. We construct 500 such paired prompts across Python, Java, and C++ (300 for mechanistic analysis, 200 held out for evaluation). We trace the decision to a vector, $\\mu_\\Delta$, that is both causally necessary and sufficient and generalizes beyond the discovery prompts to native multi-turn $\\tau^2$-Bench trajectories and verb-free requests. Behavioral ablations show that the scaffold establishes a tool-call prior; Transcoder decomposition then reveals that analysis verbs suppress this prior through features signaling that tool use is unnecessary, whereas execution verbs largely leave it intact. Downstream scaffold-reading attention heads and MLP features read out the resulting state, and the same mechanism recurs across seven models from the Qwen, Mistral, and Granite families. Our code is available at https://github.com/XijieGo/MI4ToolCalling.",
+      "summary_en": "A residual vector fitted from verb-swapped prompts can flip Qwen3-8B's first tool-call token. Scaffold ablations and feature interventions support a suppression-based account, with tests across seven models and native dialogues. Yet native Qwen3-8B calls are suppressed only 36.7% at unit gain; task success is untested and cross-domain transfer calibrates vector norm. Main-text and appendix suppressor-ablation rates conflict. All 36 pages, figures and tables were read; linked code and checkpoints were not rerun.",
+      "summary_zh": "一句請求中的動詞，可能改變代理選擇直接回答還是呼叫工具。這篇研究先篩出只替換動詞就能翻轉首個輸出詞元的成對提示，主要以 Qwen3-8B 的三百組資料估計中間層活化差向量，再用二百組保留資料測試。加上或減去此向量，可在受控提示中完全翻轉工具呼叫標記。\n\n分析指出，工具格式範本先建立呼叫傾向，要求討論、分析的語意則透過多層 MLP 特徵壓低傾向；後段注意力與 MLP 再將狀態轉成輸出。它不是單一神經元開關，也不是跨模型共用同一組向量。研究涵蓋七個模型，並測試新工具、長對話及沒有明示動作動詞的請求。在原生 τ²-Bench 對話中，Qwen3-8B 的單位強度介入抑制 36.7% 既有呼叫，誘發 70% 原本直接回答的回合，效果遠非一律百分之百。\n\n重要限制是只判斷首詞元，沒有驗證工具選擇、參數或任務完成；跨領域結果還校準了向量長度。正文與附錄對五項抑制特徵消融的起始呼叫率及嚴格復原率存在矛盾，不能合併引用。三十六頁、八圖與三十三表已讀，程式、資料與 Transcoder 連結有列出但未重跑。其價值在可介入的機制線索，尚不能當作通用可靠性或安全控制。",
+      "title": "How Do Agentic LLMs Decide to Call Tools? A Tool-Call Vector Shaped by Suppression",
+      "title_en": "How Do Agentic LLMs Decide to Call Tools? A Tool-Call Vector Shaped by Suppression",
+      "title_zh": "代理式大型語言模型如何決定呼叫工具？由抑制機制塑造的工具呼叫向量"
+    },
+{
+      "arxiv_id": "2610.10088",
+      "authors": [
+        "Kim, Serin",
+        "Seo, Kwangwook",
+        "Song, Dokyung",
+        "Yeo, Jinyoung",
+        "Lee, Dongha"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-10-10T01:59:46.478819+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-ai",
+          "tier": 1,
+          "title": "SkillSandbox: Skill Verification via Dynamic Scenario Synthesis",
+          "url": "https://arxiv.org/abs/2610.10088v1"
+        }
+      ],
+      "llm_evaluation": {
+        "candidate_sha256": "133b812719f08db25fc8d046df81726e5deb62d56076b33b6d467a2be23f53be",
+        "components": {
+          "evidence_strength": 0.63,
+          "generalizability": 0.56,
+          "novelty": 0.71,
+          "preference_relevance": 0.97,
+          "reproducibility": 0.49,
+          "rigor": 0.58
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "PDF pp.4–5, Section 3 and Figure 2: Proposer preserves applicability conditions while varying context, Builder constructs executable scenarios and obtains five valid scenarios per skill, and Verifier uses paired trajectories with and without the skill; keep iff empirical score is positive.",
+          "PDF p.6, Table 2 and implementation details: three executors, same 100 source tasks, frozen libraries; evaluation uses 140 ALFWorld and 500 WebShop tasks. Qwen3.5-27B WebShop SR is 32.2% No Skill versus 45.0% SkillSandbox, a derived 12.8 percentage-point gain; mean steps 8.0 versus 7.2. ACE reaches 37.4%, so gain over that stronger baseline is 7.6 points, not 12.8.",
+          "PDF pp.7–8, Section 5.1/Figure 3: same Verifier and five-scenario/execution/task budget compares synthesized, source and random evidence. Gemini-labelled executor ALFWorld SR is 60.0% synthesized versus 50.7% source and 44.3% random; WebShop is 36.2% versus 33.0% and 31.6%.",
+          "PDF p.8, Table 3: Gemini 3.1 Flash-labelled Proposer gives WebShop precision/recall/F1/specificity 96.0/82.8/88.9/94.4%, versus ALFWorld 39.1/81.8/52.9/60.0%. Section 4.1 says Gemini 3.1 Flash-Lite is used for execution, synthesis and verification; Tables 1/3/6 use Flash. This discrepancy is retained rather than silently normalized.",
+          "PDF pp.3 and 15: Figure 1 reports mean and one-standard-deviation bands from three repeats of one fixed 500-task stream, based on self-cited skill IDs. This uncertainty evidence does not apply to the main results in Table 2, and cited use is not causal verification of actual skill reliance.",
+          "PDF pp.14–15, Appendices A/B: ReasoningBank excludes MaTTS, MemP uses Script/Vanilla, SkillOS uses training-free base; ACE receives the whole playbook, unlike common top-three retrieval. Alignment uses identical observations, temporally ordered one-to-one pairs and discount 0<gamma<1, but a numeric gamma and empty-alignment handling are not supplied.",
+          "PDF pp.9 and 16–18, Figures 4–6/Tables 5–7: success and action efficiency can disagree; WebShop both-success skill pairs take extra actions. Rejected-skill cases illustrate overgeneralized appliance ordering and needless two-section verification. Synthesis type shares overlap and must not be summed as mutually exclusive categories.",
+          "PDF pp.17–18, Table 7: k=3 is selected after reporting the highest held-out SR (84/140 and 181/500). A distinct tuning/validation split is not described, so possible held-out selection bias is a limitation, not proven data leakage.",
+          "PDF p.2 promises omission-of-executability/efficiency ablations and larger gains on unseen task types. Full reading of pp.1–22, all six figures and seven tables found no corresponding displayed component-ablation or held-out-task-type results; these claims are not credited.",
+          "PDF pp.19–22, Appendix F: execution and distillation templates are included, but Proposer prompts are summaries and retry/format-repair messages are omitted. The first-page CODE hyperlink is https://anonymous.4open.science/r/skillsandbox-647C/; its target was not inspected or executed."
+        ],
+        "fulltext_sha256": "54ee8a228f2e1c3939646ece4e5e06ac7eda2ab5a257dc23b227d3cbc946000a",
+        "fulltext_status": "complete",
+        "model": "assistant-native-review",
+        "native_identity_version": 1,
+        "original_candidate_sha256": "133b812719f08db25fc8d046df81726e5deb62d56076b33b6d467a2be23f53be",
+        "out_of_scope": false,
+        "producer": "assistant-native-review",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Strong fit for agent skill and memory curation, with an actionable distinction between a skill-relevant test and a merely similar task. Frozen-library held-out tests and a matched verification-rollout comparison support the scenario-synthesis contribution. However, ALFWorld verdict precision is only 39.1% for the Gemini-labelled row; main tables lack uncertainty and do not include construction cost. Restricted baseline variants, Flash versus Flash-Lite labels, unspecified discount settings and introductory ablation/unseen-task claims without displayed results limit confidence. Evidence supports this bounded filtering approach, not universal skill verification, model independence or net compute savings.",
+        "rationale_en": "Strong fit for agent skill and memory curation, with an actionable distinction between a skill-relevant test and a merely similar task. Frozen-library held-out tests and a matched verification-rollout comparison support the scenario-synthesis contribution. However, ALFWorld verdict precision is only 39.1% for the Gemini-labelled row; main tables lack uncertainty and do not include construction cost. Restricted baseline variants, Flash versus Flash-Lite labels, unspecified discount settings and introductory ablation/unseen-task claims without displayed results limit confidence. Evidence supports this bounded filtering approach, not universal skill verification, model independence or net compute savings.",
+        "rationale_zh": "這篇與代理技能及記憶管理高度相關，清楚區分真正會觸發技能的測試與僅語意相似的任務。凍結技能庫的保留測試，以及驗證回合預算相同的比較，支持情境合成的貢獻。然而 Gemini 標籤列在 ALFWorld 的技能判決精確率只有 39.1%；主要結果缺乏不確定性，亦未計入建構成本。基線受限版本、Flash 與 Flash-Lite 名稱差異、未指定折扣，以及導論宣稱卻未展示的消融與未見任務結果，皆限制可信度。證據支持特定環境內的篩選方法，不支持通用技能保證、模型能力無關性或整體運算節省。",
+        "raw_weighted_score": 0.7565000000000001,
+        "request_sha256": "6e58c34dca7b136f63a709ed6b1d26a14932e18fd80d838254e6c5d0d402c245",
+        "review_sha256": "2d83ae0fbaa106a57eb3dca8b8e181a98362cbe5c2390da182ce933a917eea9d",
+        "scope_assessment": "In scope: reusable textual skill verification for language agents operating in text-action environments; ALFWorld is a language-agent benchmark, not a claim of physical robotics performance.",
+        "scope_capped_score": null,
+        "scope_policy_version": "explicit-review-exclusion-v1",
+        "scope_status": "in_scope",
+        "score": 0.7565000000000001,
+        "source_key": "48b7476ddac5f4b65d3297c5fa49004112f7df09a11691675c87482eb13a0311",
+        "story_id": "arxiv:2610.10088",
+        "token_usage": {},
+        "topics": [
+          "Large Language Models",
+          "Agents & Tool Use",
+          "Long Context & Memory",
+          "Red Teaming & Evaluation"
+        ]
+      },
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-ai",
+        "tier": 1,
+        "title": "SkillSandbox: Skill Verification via Dynamic Scenario Synthesis",
+        "url": "https://arxiv.org/abs/2610.10088v1"
+      },
+      "published_at": "2026-10-07T13:48:58+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.7565000000000001,
+        "llm_relevance_score": 21.182000000000002,
+        "recency_score": 0.7734093895581204,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 29.155409389558123
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2610.10088",
+      "summary": "Self-evolving agents distill task-solving experience into skills for future reuse, but these skills can encode incorrect procedures or non-transferable knowledge. It is therefore critical to verify each skill's reusability: whether its guidance remains useful beyond the experience from which it was distilled. Such verification requires observing how a skill affects execution in new tasks, yet existing tasks may not expose the situations where the target skill can actually be exercised. To construct such situations, we propose SkillSandbox, a framework that dynamically synthesizes a task and its environment for each skill that are skill-relevant yet novel. A Proposer specifies the conditions to preserve and the source-specific details to vary, a Builder constructs an executable scenario, and a Verifier compares executions with and without the skill. The Verifier assesses executability, utility, and efficiency to assign a Keep or Reject verdict, determining whether the skill enters the library. Across ALFWorld and WebShop with three models, SkillSandbox consistently yields the strongest downstream performance and improved execution efficiency. Further analyses examine whether these gains reflect accurate assessment of skill reusability and identify which components of SkillSandbox contribute to them.",
+      "summary_en": "SkillSandbox creates new executable scenarios for each skill, then compares an agent with and without it before library admission. Qwen3.5-27B improves WebShop success from 32.2% to 45.0%; downstream steps exclude synthesis costs. Read the matched-budget comparison and failure cases, but note weak ALFWorld verdict precision, missing uncertainty, model-label inconsistencies and unshown introductory ablation claims. All 22 pages were read; the linked code was not inspected and results were not reproduced.",
+      "summary_zh": "代理把一次成功經驗存成技能，可能連當時偶然有效的做法也一起記住。SkillSandbox 針對每項技能主動建立新測試：提案者保留技能適用條件、改動原任務細節，建構器生成可執行情境，再比較同一代理使用與不使用技能的軌跡。評分兼顧動作可執行性、成功結果與剩餘步數，只有正分技能進入資料庫。\n\n作者以相同的一百項來源任務建立各方法的技能庫，固定後測試 ALFWorld 一百四十題及 WebShop 五百題。Qwen3.5-27B 在 WebShop 的成功率由無技能的 32.2% 升至 45.0%，平均步數由 8.0 降至 7.2；這些步數只涵蓋下游作答，不能當成合成與驗證也更省。固定驗證回合預算的比較支持合成情境，但技能判定品質依環境差很多，不能把保留判決當成安全或可移轉保證。\n\n閱讀時宜先看成對比較和錯誤案例，再檢查代價與基線設定。主要結果沒有信賴區間，部分基線採簡化版本；表格中的 Gemini 名稱與實作段落不一致，折扣參數也未給定。導論另外宣稱的逐項判準消融與未見任務類型結果，現有正文及附錄未展示。完整二十二頁與圖表已讀，程式連結未另行驗證；目前證據支持技能庫篩選方法，尚不足以外推到開放網頁、真實機器人或任意模型。",
+      "title": "SkillSandbox: Skill Verification via Dynamic Scenario Synthesis",
+      "title_en": "SkillSandbox: Skill Verification via Dynamic Scenario Synthesis",
+      "title_zh": "SkillSandbox：以動態情境合成驗證代理技能"
+    },
+{
+      "arxiv_id": "2610.09832",
+      "authors": [
+        "Ge, Yuyao",
+        "Wang, Yiwei",
+        "He, Yuchen",
+        "Bi, Baolong",
+        "Mei, Lingrui",
+        "Yao, Jiayu",
+        "Chen, Lizhe",
+        "Liu, Shenghua"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-10-10T02:01:10.998484+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-ai",
+          "tier": 1,
+          "title": "SkillForge: Co-Evolving Skills and Agents via Dynamic Skill Lifecycles",
+          "url": "https://arxiv.org/abs/2610.09832v1"
+        }
+      ],
+      "llm_evaluation": {
+        "candidate_sha256": "f05c7abc295a052cd6c8a0a1dc687aa1a9a8a62d52b25bd3701639ae4a8d6026",
+        "components": {
+          "evidence_strength": 0.54,
+          "generalizability": 0.58,
+          "novelty": 0.68,
+          "preference_relevance": 0.98,
+          "reproducibility": 0.48,
+          "rigor": 0.56
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "PDF pp.3–6, Equations 2–12 and Algorithm 1: task-type matching retrieves top-K skills; pre-retirement removes skills with low base-policy success; successful trajectories involving surviving skills seed SFT. Runtime tracks trial/active/stable/retired states and uses a distinct teacher family for mutation.",
+          "PDF pp.5–6 and p.16 Table 6: K=6 retrieved skills all receive the same binary episode reward; cumulative success/usage drives lifecycle. Default retirement/demotion/stability thresholds are .4/.5/.7, with at most 5 mutations and 3 ordinary retirements per 10 training steps.",
+          "PDF pp.7–8 Table 2/Section 5.2: SkillForge reports ALFWorld 92.4 and WebShop 78.4 success versus SkillRL 89.9/72.7. WebShop improvement is 5.7 percentage points or about 7.84% relative, not 7.8 percentage points.",
+          "PDF p.7 Table 2 and p.15 Appendix B: ALFWorld subtask counts are 24,15,27,26,21,17 and SkillForge rates 98.2,86.6,89.8,93.7,95.6,88.4. Their sample-weighted mean is 92.5153846%, whereas All is 92.4%; the discrepancy exceeds ordinary one-decimal rounding allowance. SkillRL recomputes to 89.8738462%, compatible with 89.9. Values were checked in rendered pages; raw outputs are unavailable to resolve the difference.",
+          "PDF p.8 Table 3: removing pre-retirement lowers success by 1.7/3.5/1.2 points, retirement by 1.0/2.5/.8 and mutation by .6/1.6/.5 across ALFWorld/WebShop/QA. These component ablations support contribution but do not isolate individual-skill causal harm.",
+          "PDF pp.15–17 Tables 5–7: one Qwen2.5-7B-Instruct policy, Kimi-K2.5 teacher, 200 steps, learning rate 1e-6, 64 H200 GPUs; reported training cost totals 7,296 GPU-hours across three environments plus pre-retirement/evaluation. ALFWorld retirement/cap sweeps stay within 1.4 points of default.",
+          "PDF pp.19–20 Appendix D/Table 10: 51,713 QA samples, two in-domain and five out-of-domain datasets; other methods' cells are imported from source papers. Displayed rates recompute to SkillForge 48.6529 and SkillRL 46.8243, compatible with 48.7/46.8, but common weighting does not establish identical original evaluation conditions.",
+          "PDF pp.5,17–20 Tables 1/8/9 and Figures 3–7: 5,852 records comprise 1,013 SFT trajectories, 4,521 per-skill snapshots and 318 retirement events aggregated over several runs. They are not 5,852 independent tasks/skills. The main run has 84 retirements; 318 aggregate events are explicitly explained, not a count contradiction.",
+          "PDF pp.20–21 Appendix E.2/Figure 7: two annotators initially achieve Cohen kappa .5 before discussion; 237/318 events are labeled overly rigid ordering, and 57.2% of retired skills reportedly reached stable state earlier. Annotation and declining conditional success support a descriptive failure taxonomy, not counterfactual proof that each skill caused failure.",
+          "PDF pp.6,21–23: Algorithm 1 caps only by removing active skills and can stop above cap if none remain; trial children are inserted into the non-retired library. Therefore a universal hard-size guarantee and a claim that trial gating prevents any influence before active status are not established by the presented algorithm. Appendix H also says the no-mutation library values refer to initial |S0|, while Table 3 labels them final counts.",
+          "PDF p.24 Appendix H: every number averages five decoding-seed evaluations of the best validation checkpoint; reported SDs are .5/.4/.3 points. One-sample t-tests compare against fixed SkillRL point estimates; the Welch alternative assumes baseline variance equal to SkillForge's rather than measuring it. This does not establish independently trained-run variance or matched-baseline uncertainty.",
+          "PDF pp.17–19 describes a CC-BY-4.0 SkillFurnace release with three JSON files and a schema. All 24 pages, references, appendices A–H, ten tables and seven figures were read; neither text nor PDF URI annotations contained a direct SkillForge/SkillFurnace download link. No author code, external dataset or experiment was retrieved or executed."
+        ],
+        "fulltext_sha256": "104c1a4821dc6966b6b4b9327141d604609dc857e83f9eeb3b9314654238f3cf",
+        "fulltext_status": "complete",
+        "model": "assistant-native-review",
+        "native_identity_version": 1,
+        "original_candidate_sha256": "f05c7abc295a052cd6c8a0a1dc687aa1a9a8a62d52b25bd3701639ae4a8d6026",
+        "out_of_scope": false,
+        "producer": "assistant-native-review",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "A highly relevant skill-memory/RL contribution with useful lifecycle controls, three-environment ablations, threshold sensitivity and failure-taxonomy analysis. The scientific case is promising but not definitive: co-retrieved skills share reward, cumulative fitness is not a causal estimate of skill harm, baseline QA scores come from separate papers, and five stochastic evaluations of a selected checkpoint do not establish training-seed robustness. The one-sample significance analysis ignores observed baseline uncertainty; the subsequent Welch calculation assumes rather than measures it. A small ALFWorld weighted-aggregate discrepancy and lifecycle-description ambiguities require explicit qualification. The complete PDF is available; these are reporting and evidential limitations, not missing-source holds. Claimed dataset availability remains unverified.",
+        "rationale_en": "A highly relevant skill-memory/RL contribution with useful lifecycle controls, three-environment ablations, threshold sensitivity and failure-taxonomy analysis. The scientific case is promising but not definitive: co-retrieved skills share reward, cumulative fitness is not a causal estimate of skill harm, baseline QA scores come from separate papers, and five stochastic evaluations of a selected checkpoint do not establish training-seed robustness. The one-sample significance analysis ignores observed baseline uncertainty; the subsequent Welch calculation assumes rather than measures it. A small ALFWorld weighted-aggregate discrepancy and lifecycle-description ambiguities require explicit qualification. The complete PDF is available; these are reporting and evidential limitations, not missing-source holds. Claimed dataset availability remains unverified.",
+        "rationale_zh": "這項研究與技能記憶及代理強化學習高度相關，生命週期控制、三環境消融、閾值敏感度與失敗分類都有參考價值，但證據仍需校準：共取技能共享回合獎勵，累積適應度不能當作技能造成傷害的因果估計；問答基線來自不同論文，選定模型的五次隨機評估也不能證明訓練種子穩健性。單樣本顯著性檢定未納入實測基線變異，後續 Welch 計算使用假設變異。ALFWorld 加權總分有小幅落差，部分生命週期描述與偽碼也需釐清。PDF 全文完整，這些屬論文報告與證據限制，不是來源缺件；資料集發布仍未獨立驗證。",
+        "raw_weighted_score": 0.741,
+        "request_sha256": "3f6f5607f5f5117cb91f8470fea19f7896054dd7c36f15f436a4fca412dc323f",
+        "review_sha256": "a29f4ebbefcbff17b970cc707b363ee9781c0ede42586f8de41f579cf54f6de2",
+        "scope_assessment": "In scope: language-agent skill memory and reinforcement-learning methodology evaluated across interactive text environments and QA; not pure robotics or a domain-only application.",
+        "scope_capped_score": null,
+        "scope_policy_version": "explicit-review-exclusion-v1",
+        "scope_status": "in_scope",
+        "score": 0.741,
+        "source_key": "f9c2863eff97c3d9ec58219f6f21714951f7214d5f489fb80efb1c89b490a146",
+        "story_id": "arxiv:2610.09832",
+        "token_usage": {},
+        "topics": [
+          "Large Language Models",
+          "Agents & Tool Use",
+          "Long Context & Memory",
+          "Reinforcement Learning",
+          "Training & Optimization"
+        ]
+      },
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-ai",
+        "tier": 1,
+        "title": "SkillForge: Co-Evolving Skills and Agents via Dynamic Skill Lifecycles",
+        "url": "https://arxiv.org/abs/2610.09832v1"
+      },
+      "published_at": "2026-10-07T10:52:15+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.741,
+        "llm_relevance_score": 20.748,
+        "recency_score": 0.7639761175924172,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 28.711976117592418
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2610.09832",
+      "summary": "Memory-augmented reinforcement learning strengthens LLM agents' ability to solve complex long-horizon tasks. Skills are one such form of memory, pairing instructions with an applicability condition over task types. However, retaining every skill indiscriminately as the policy improves lets obsolete or harmful entries accumulate and mislead the agent. We propose SkillForge, an agentic RL method that compiles and evolves the skill library through a fitness-driven skill lifecycle of trial, active, stable, and retired states, so that the skills and the model co-evolve throughout training. A pre-RL evaluation phase first uses the base model's own rollouts to pre-retire low-fitness skills, yielding a filtered library that then seeds supervised fine-tuning. Reinforcement learning takes over from this checkpoint, and at each iteration selective retirement, stabilization, and LLM-guided mutation continue to forge the skill library alongside policy optimization. Across multiple interactive agent benchmarks, SkillForge achieves the highest aggregate success rate, delivering up to 7.8% relative improvement over the strongest baseline while keeping the skill library compact throughout training. We introduce SkillFurnace, a dataset of 5k+ annotated records bundling retirement-filtered SFT trajectories, evolved skill libraries with fitness annotations, and retirement events with human-annotated failure categories to support research on skill quality and lifecycle management.",
+      "summary_en": "SkillForge jointly trains a 7B agent and manages skills through trial, active, stable and retired states, with teacher-written mutations. Reported WebShop success rises from 72.7% to 78.4%; ablations support filtering and lifecycle management. Shared episode rewards cannot isolate individual skill effects, five evaluation seeds do not establish training robustness, and imported QA baselines weaken comparability. A small ALFWorld aggregation discrepancy remains. All 24 pages and figures were read; the claimed dataset release was not verified.",
+      "summary_zh": "代理累積的技能不一定越多越好：原本有用的操作指引，也可能在模型進步後變成干擾。SkillForge 將技能分成試用、活躍、穩定與退役四種狀態，先用基礎模型的互動結果篩除低適用技能，再做監督微調；強化學習期間持續按成功率淘汰、升降級，並請外部教師模型改寫表現普通的技能。\n\n研究使用 Qwen2.5-7B-Instruct，在 ALFWorld、WebShop 和搜尋增強問答測試。作者報告成功率分別為 92.4%、78.4% 與 48.7%，其中 WebShop 相較 SkillRL 提升 5.7 個百分點，約為 7.8% 相對增幅。消融支持預先篩選與動態管理都有作用，另提供涵蓋軌跡、技能快照與退役事件的 5,852 筆資料描述。\n\n不過，每回合六項技能共用同一獎勵，無法辨認個別技能的因果貢獻；五次評估重抽樣也不代表五次獨立訓練。問答基線取自不同論文，統計檢定把基線當固定值。ALFWorld 的分項加權重算約為 92.52%，與宣稱的 92.4% 有小幅但超出表格四捨五入的落差。全文二十四頁與全部圖表已讀，未見本文資料集的直接下載連結，亦未重跑實驗。適合借鏡技能管理設計，但精確優勢、可重現性與跨模型效果仍需保留。",
+      "title": "SkillForge: Co-Evolving Skills and Agents via Dynamic Skill Lifecycles",
+      "title_en": "SkillForge: Co-Evolving Skills and Agents via Dynamic Skill Lifecycles",
+      "title_zh": "SkillForge：以動態技能生命週期共同演化技能與代理"
+    },
+{
+      "arxiv_id": "2610.10120",
+      "authors": [
+        "Xiao, Hengbo",
+        "Zhang, Boyao",
+        "Liu, Purui",
+        "Zheng, Yuxuan",
+        "Yin, Haoran",
+        "Liu, Haibo",
+        "Zhang, Fan"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-10-10T01:58:55.389127+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-ai",
+          "tier": 1,
+          "title": "RewardWeaver: Long-Horizon Interactive Learning for Language Agents via Self-Evolving Reward Adaptation",
+          "url": "https://arxiv.org/abs/2610.10120v1"
+        }
+      ],
+      "llm_evaluation": {
+        "candidate_sha256": "59b5e1822908479510b4daa64021b55b71ab48873b3cc929d6400ba3827f4b57",
+        "components": {
+          "evidence_strength": 0.55,
+          "generalizability": 0.5,
+          "novelty": 0.68,
+          "preference_relevance": 0.96,
+          "reproducibility": 0.25,
+          "rigor": 0.52
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "PDF pp.3–5, Sections 2.1–2.5, Algorithms 1–2: outcome reward plus equal-weight active process rewards; admitted definitions/evaluators are frozen and new validated capabilities become eligible only at a later update.",
+          "PDF p.6, Table 1 and Section 3.1: Qwen2.5-7B-Instruct post-training; 40-capability space, at most six active rubrics and 30-step adaptation. SOTOPIA-Hard Self-Play Goal/Overall AMPO 7.67/3.94 versus 7.90/4.38; Partner 7.30/3.80 versus 7.66/4.22. Literature Partner uses GPT-4o, whereas AMPO/RewardWeaver use Qwen2.5-72B.",
+          "PDF p.7, Table 2: Outcome-only GRPO, static selection, random active sets and attribution/semantic variants are compared. RewardWeaver is not best in every column: success–failure attribution scores 4.52 Self-Play Overall and 7.93 Hard Goal; instance-specific rubrics achieve 7.83 Partner-Hard Goal versus 7.66.",
+          "PDF pp.7 and 18, Figure 3 and Table C1: AmazonHistoryPrice MI deal rate 95.2%, figure utility 0.9737 (table rounded 0.97), expected MI seller return 0.93; buyer is deepseek-v4-pro. These are author measurements, not reproduced here.",
+          "PDF pp.15–16, Appendix B: 400 entirely synthetic tasks, 20 scenario families, fixed 320/80 split with shared family/profile banks; 80-test split contains 63 standard and 17 conflict tasks. Thus the 50 total conflict tasks must not be reported as the test-set denominator. Release materials are promised rather than evidenced by an inspected repository.",
+          "PDF p.18, Table C2: best on six of eight Sales metrics; Partner-Hard Goal is 7.71 versus glm-5.2 7.88, and Overall 4.24 versus GRPO 4.29.",
+          "PDF pp.8 and 21, Appendix E/Table E1: 240 capability-stage pairs, Spearman 0.28, partial 0.22, within-stage 0.31; authors explicitly distinguish association from causal identification.",
+          "PDF pp.22–23, Tables F1/F2/G1: sensitivity is nonmonotonic; retention concerns selected capabilities on a fixed diagnostic set, with 36 early-deactivation observations, mean change +0.10 and minimum -0.01. No reported confidence interval or multiple-seed analysis accompanies these tables.",
+          "PDF pp.4–5 and 13–14: source-disjoint evaluator acceptance is described, but acceptance dataset sizes, thresholds, complete prompts and measured evaluator reliability are not reported. Full 23-page reading found no complete optimizer/training hyperparameter specification."
+        ],
+        "fulltext_sha256": "5be03cb5d6be7c8da314903236a0eee2ff7089b8acb43e990b6f369ad89c4a2a",
+        "fulltext_status": "complete",
+        "model": "assistant-native-review",
+        "native_identity_version": 1,
+        "original_candidate_sha256": "59b5e1822908479510b4daa64021b55b71ab48873b3cc929d6400ba3827f4b57",
+        "out_of_scope": false,
+        "producer": "assistant-native-review",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Highly relevant reward-design research with a clear distinction between stable capability definitions and adaptive optimization priorities. The matched AMPO comparison and targeted ablations support a useful method, but do not justify unrestricted SOTA or causal capability claims. Literature partners differ; several ablations or baselines win individual metrics, including Sales-Hard Partner Overall. Missing uncertainty, evaluator-validation measurements and detailed training settings weaken confidence. Sales tests unseen instances within shared families/profile banks, and promised resources were not verified. The fixed PDF and its appendices are complete; this is not independent replication or complete Oct8 coverage.",
+        "rationale_en": "Highly relevant reward-design research with a clear distinction between stable capability definitions and adaptive optimization priorities. The matched AMPO comparison and targeted ablations support a useful method, but do not justify unrestricted SOTA or causal capability claims. Literature partners differ; several ablations or baselines win individual metrics, including Sales-Hard Partner Overall. Missing uncertainty, evaluator-validation measurements and detailed training settings weaken confidence. Sales tests unseen instances within shared families/profile banks, and promised resources were not verified. The fixed PDF and its appendices are complete; this is not independent replication or complete Oct8 coverage.",
+        "rationale_zh": "這項獎勵設計與語言代理高度相關，清楚區分固定能力定義和動態訓練優先順序。相同設定的 AMPO 比較與針對性消融支持方法價值，但不足以宣稱無限制的最佳表現或能力層級因果效果。文獻比較的對手不同，部分消融或基線在個別指標較佳，包括銷售困難集的對手模式整體分數。缺乏不確定性、評分器驗證量測和詳細訓練設定，使可信度受限。銷售只測共享情境／人物庫中的新實例，承諾公開的資源亦未查證。固定版本 PDF 與附錄完整，不等於獨立重現或十月八日全量覆蓋。",
+        "raw_weighted_score": 0.7090000000000001,
+        "request_sha256": "1ce9b1b5ee4fdc69523e4b3175fb3547f78d8543069f801af8e3288f3cf0717c",
+        "review_sha256": "2859cf9629c2e52794a926be247ef9f9959fff8a55ab9c219b587a09aaf96c59",
+        "scope_assessment": "In scope: general language-agent reinforcement-learning and reward methodology; synthetic health-service sales is an evaluation environment, not a medical-imaging or pure domain-application paper.",
+        "scope_capped_score": null,
+        "scope_policy_version": "explicit-review-exclusion-v1",
+        "scope_status": "in_scope",
+        "score": 0.7090000000000001,
+        "source_key": "758542162a3ca1edc6e321b3c0b2d47483ae8d2be54d54a5b68bd28f5334804a",
+        "story_id": "arxiv:2610.10120",
+        "token_usage": {},
+        "topics": [
+          "Large Language Models",
+          "Agents & Tool Use",
+          "Reinforcement Learning",
+          "Alignment & RLHF",
+          "Training & Optimization",
+          "Red Teaming & Evaluation"
+        ]
+      },
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-ai",
+        "tier": 1,
+        "title": "RewardWeaver: Long-Horizon Interactive Learning for Language Agents via Self-Evolving Reward Adaptation",
+        "url": "https://arxiv.org/abs/2610.10120v1"
+      },
+      "published_at": "2026-10-07T14:04:45+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.7090000000000002,
+        "llm_relevance_score": 19.852000000000004,
+        "recency_score": 0.7742575611180512,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 27.826257561118055
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2610.10120",
+      "summary": "Reinforcement learning with verifiable rewards (RLVR) has driven substantial progress in domains where task outcomes can be reliably evaluated, but long-horizon interaction remains challenging due to sparse terminal feedback and difficult credit assignment. Process rewards provide denser supervision, yet the capabilities most relevant for training can change as the policy evolves: a behavior that is easy to evaluate or frequently deficient need not be the bottleneck currently limiting task success. We introduce RewardWeaver, a self-evolving reward adaptation framework for language agents in long-horizon interaction. RewardWeaver maintains a validated capability space in which the semantics of admitted Rubrics remain fixed, and closes the loop between policy optimization, task evaluation, failure attribution, and reward adaptation. After each training stage, it performs outcome-grounded backward attribution on low-outcome trajectories, aggregates recurrent and policy-controlled capability bottlenecks, and dynamically selects the corresponding process rewards for the next stage. Recurrent failures not covered by the existing capability space trigger a separate, controlled expansion procedure. We evaluate REWARDWEAVER on SOTOPIA, Amazon?HistoryPrice, and a newly constructed Sales Benchmark. Across social interaction, bilateral bargaining, and domain-specific sales, REWARDWEAVER establishes new state-of-the-art (SOTA) results. Ablations further demonstrate the importance of dynamic reward allocation, failure-grounded attribution, and stable semantics for admitted capabilities.",
+      "summary_en": "RewardWeaver changes which process rewards a dialogue agent optimizes while freezing admitted rubric meanings. Failure-grounded selection beats matched alternatives on several benchmarks, but Sales wins six of eight metrics. Read the ablations before accepting broad SOTA claims: literature partners differ, Sales tests share scenario families with training, and uncertainty and implementation details are limited. All 23 pages and figures were reviewed; experiments and promised release materials were not independently verified.",
+      "summary_zh": "多輪對話代理即使知道最後失敗，也未必知道下一階段應改善什麼。RewardWeaver 把這個問題拆成兩層：內層用強化學習更新策略，外層從低成果對話找出反覆出現、且由代理自身控制的能力缺口，再挑選相應的過程獎勵。已接納的評分規則與評分器維持固定；新能力須另外驗證，延後到後續階段使用，避免訓練目標隨意漂移。\n\n作者在社交互動、議價與合成銷售情境評估。SOTOPIA-Hard 自我對弈中，相同設定的 AMPO 目標／整體分數為 7.67／3.94，本方法為 7.90／4.38；隨機換規則與只按缺陷頻率選擇的消融較弱，支持有根據的動態選擇。銷售基準則只在八項指標中的六項最佳，並非全面勝出。\n\n閱讀時要留意比較邊界：舊文獻的對手與本次實驗不同，不能把整張表視為完全公平的排行榜。銷售測試與訓練共享情境家族與人物設定庫，僅衡量家族內新任務；論文未給多種隨機種子的變異、信賴區間或完整訓練與評分器驗收參數。完整二十三頁及附錄已核對，但未重現實驗，也未查證承諾發布的資料與程式。它值得作為獎勵設計方法閱讀，成果仍受模型評分器、任務範圍與重現資訊限制。",
+      "title": "RewardWeaver: Long-Horizon Interactive Learning for Language Agents via Self-Evolving Reward Adaptation",
+      "title_en": "RewardWeaver: Long-Horizon Interactive Learning for Language Agents via Self-Evolving Reward Adaptation",
+      "title_zh": "RewardWeaver：以自我演進的獎勵調整，訓練長時程互動語言代理"
+    },
+{
+      "arxiv_id": "2610.10062",
+      "authors": [
+        "Kraishan, Obada"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-10-10T02:00:07.494919+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-ai",
+          "tier": 1,
+          "title": "Loud Failures, Quiet Failures: Fault Detection and Recovery in Tool-Using Language Model Agents",
+          "url": "https://arxiv.org/abs/2610.10062v1"
+        }
+      ],
+      "llm_evaluation": {
+        "candidate_sha256": "d10fc281d116b3f092c560fef01712de5cbfd1a7c4ddeabeb137c1dbfe0d5260",
+        "components": {
+          "evidence_strength": 0.45,
+          "generalizability": 0.48,
+          "novelty": 0.6,
+          "preference_relevance": 0.96,
+          "reproducibility": 0.55,
+          "rigor": 0.6
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "PDF pp.3–4, Section III and Tables II/III: 24 frozen tasks from 312 eligible of 400 candidates, 16 domain combinations; six models and two independent samples per cell plus a 480-trial Claude prompt arm total 1,920 trials. Non-triggered faults are excluded; 384+379+273+284+374=1,694 analysed trials. Table III calls repetitions seeds, but the prose explicitly says provider sampling is unseeded.",
+          "PDF p.3, Sections III-B/C: corruption changes returned values while preserving underlying state; two empty-result exceptions change type. Missing-tool/schema faults fire only on targeted calls (71%/74%); timeout/corruption at 99%/97%. Median injection timing differs (2 versus 5), so fault contrasts are not perfectly matched interventions.",
+          "PDF p.4, Section III-E, Equations 1–3: recovery requires exact agreement across public fields with the same model/task clean reference, not benchmark ground truth. Clean-run agreement is 63.3% pooled, so recovery does not measure absolute task accuracy.",
+          "PDF p.4, Section III-F: one author coded 100 earlier-scoring-pass examples; 92 were jointly coded. Binary detection agreement is 85.9%, kappa 0.69; original three-way kappa 0.47. Detection means treating the result as a problem in language, not inferred internal awareness.",
+          "PDF p.5, Table IV and Section IV-A: author reports loud detection 91.3% (936 trials, task-clustered 95% CI 88.3–94.1), quiet 58.8% (374, 45.7–71.2), no-fault target-success baseline 26.8% (306, 17.8–36.5). These are Table/text-specific values and are disputed by Figure 1.",
+          "PDF p.5, visually inspected Figure 1: left panel instead prints no-fault 25% n=320, quiet 53% n=308, loud 86% n=795; right panel none/acknowledged/rationalized is loud 14/52/34, quiet 47/34/19, no-fault 75/15/10. The nearby prose says unproblematic pass-through 4% loud and 39% quiet. The PDF supplies no reconciliation; no explanation is invented.",
+          "PDF pp.5–7, Figure 2/Table V: 450 matched pairs give reasoning-minus-instruct detection -9.3 points, replanning +10.4 and recovery -2.4 (95% CI -9.3 to +4.5; p=.512). Qwen provides the clearest family effect; Claude detection loses significance in an alternative covariate specification, and DeepSeek-R1 sometimes emits tool syntax as non-executable text.",
+          "PDF pp.6–7, Figure 3/Table VI: clean state agreement 63.3%, missing tool 39.9%, timeout 59.6%, schema drift 59.2%, corruption 60.4%. Only missing tool differs in the primary clustered model; schema drift does differ after adding model (pHolm=.024), so no-harm or equivalence claims are unjustified.",
+          "PDF pp.6–8: same-tool repetition means at least three consecutive calls, possibly changed arguments (12.5–22.2% by fault); strictly identical repetition is only 0.8–1.8%. Fifteen-call cap and one-family prompt-arm null results limit conclusions.",
+          "PDF pp.2 and 8: authors state harness, frozen suite, trajectories and scored data are released at https://github.com/obadaKraishan/brittle-agents. The repository was not fetched or executed; availability, source/data-version correspondence and exact-model reproducibility remain unverified."
+        ],
+        "fulltext_sha256": "398fc1a669b21a3e26d39462443603587e68fe81e22378273160555241a1387c",
+        "fulltext_status": "complete",
+        "model": "assistant-native-review",
+        "native_identity_version": 1,
+        "original_candidate_sha256": "d10fc281d116b3f092c560fef01712de5cbfd1a7c4ddeabeb137c1dbfe0d5260",
+        "out_of_scope": false,
+        "producer": "assistant-native-review",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "A relevant and useful evaluation design that avoids conflating noticing, taking a different action and returning to a reference state. Task-clustered inference, repeated clean runs and explicit limitations are substantive strengths. However, Figure 1 conflicts materially with Table IV and the text on central detection rates, denominators and response categories; the exact headline estimates cannot be independently settled from this PDF. Recovery is model-relative state agreement, not correct task completion, and nonsignificant recovery differences are not equivalence. Limited task/model coverage, conditional fault firing and textual detection further constrain interpretation. The complete source is readable, but its inconsistent quantitative evidence warrants a lower evidence score and an explicit caveat.",
+        "rationale_en": "A relevant and useful evaluation design that avoids conflating noticing, taking a different action and returning to a reference state. Task-clustered inference, repeated clean runs and explicit limitations are substantive strengths. However, Figure 1 conflicts materially with Table IV and the text on central detection rates, denominators and response categories; the exact headline estimates cannot be independently settled from this PDF. Recovery is model-relative state agreement, not correct task completion, and nonsignificant recovery differences are not equivalence. Limited task/model coverage, conditional fault firing and textual detection further constrain interpretation. The complete source is readable, but its inconsistent quantitative evidence warrants a lower evidence score and an explicit caveat.",
+        "rationale_zh": "這項評估切分察覺問題、改變行動與回到參考終態，避免把不同能力混在一起，對代理可靠性很有價值。任務分群推論、重複正常執行及清楚限制是實質優點。然而圖一的核心偵測比例、分母及反應分類與表四和正文不一致，無法由這份 PDF 判定精確頭條數值。復原是模型自己的狀態一致性，不是任務正確完成；不顯著也不是等效證明。任務／模型覆蓋有限、故障是否觸發取決於行為，以及偵測依文字判斷，都限制推論。來源全文可讀且完整，但數值證據內部矛盾，因此降低證據強度評分並明示爭議。",
+        "raw_weighted_score": 0.707,
+        "request_sha256": "89f058702d5e20f4a3de2c1cba4abb8e6a877ed5064ba0a6d446f296363680cb",
+        "review_sha256": "5346fe5e39d9482591a1b4fdccc8f02cea78a767da20261bc0932eba877ad524",
+        "scope_assessment": "In scope: controlled fault evaluation of tool-using language-model agents, including reasoning-versus-instruct comparisons; not a pure domain application.",
+        "scope_capped_score": null,
+        "scope_policy_version": "explicit-review-exclusion-v1",
+        "scope_status": "in_scope",
+        "score": 0.707,
+        "source_key": "dc6730672617038d2e87b20f4d3126244b9f8572e5a142e099a46a4a352398f9",
+        "story_id": "arxiv:2610.10062",
+        "token_usage": {},
+        "topics": [
+          "Large Language Models",
+          "Agents & Tool Use",
+          "AI Safety",
+          "Red Teaming & Evaluation",
+          "Reasoning & Chain-of-Thought"
+        ]
+      },
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-ai",
+        "tier": 1,
+        "title": "Loud Failures, Quiet Failures: Fault Detection and Recovery in Tool-Using Language Model Agents",
+        "url": "https://arxiv.org/abs/2610.10062v1"
+      },
+      "published_at": "2026-10-07T13:29:59+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.707,
+        "llm_relevance_score": 19.796,
+        "recency_score": 0.7723904857369541,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 27.768390485736955
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2610.10062",
+      "summary": "Tool-using agents are usually scored on whether they finish a task while the tools work. Deployments are less forgiving: services time out, endpoints disappear, parameter names change, and results come back well formed but wrong. Prior work has shown that language models over-trust tool outputs that fail silently; we ask how that over-trust plays out across the stages of failure handling in multi-turn agents. Wrapping the executable environments of an established function-calling benchmark in a fault-injection layer, we inject one of four typed faults at a controlled point in the trajectory and record whether the agent notices, changes plan, recovers the task, or repeats itself. Six models from three families, half of them reasoning variants, ran 1,920 trials over 24 multi-step tasks. Agents treat a failure as a problem in 91.3% of trials when the tool returns an explicit error, but in 58.8% of trials when it returns a plausible wrong value, against a 26.8% rate of reporting problems when nothing was wrong. Reasoning models are not better placed: paired against instruct siblings, they notice less (-9.3 points, p < .001) and change plan more (+10.4 points, p < .001), and recovery is unchanged (p = .512). Because agents are stochastic, two fault-free runs of the same task end in the same state only 63.3% of the time; against that baseline, only a missing tool clearly lowers recovery (39.9%), while timeouts, schema drift, and corruption stay within run-to-run variation. After a fault, agents return to the same tool three or more times in a row in up to 22.2% of trials, though strictly identical repeats are rare. A prompt line asking the agent to check each result did not move detection. Agents respond to the error channel rather than to the content of what a tool returns, so failures that stay inside the expected format pass through.",
+      "summary_en": "This study separates fault detection, replanning, end-state recovery and repetition in tool agents. Table IV reports 91.3% detection for explicit errors versus 58.8% for silent corruption, but Figure 1 shows different rates and sample counts. Recovery matches a model's own clean-run state, not ground-truth task success. Task-clustered analyses are useful, yet 24 tasks, three model pairs and textual detection limit transfer. All eight pages were read; the numerical conflict remains and data were not recomputed.",
+      "summary_zh": "工具沒有報錯，不代表回傳內容可信。這篇研究在 BFCL 的可執行多輪環境注入逾時、工具缺失、參數變動與格式正常但內容錯誤的回傳，分開量測代理是否表達懷疑、是否改變下一步、是否回到正常執行的終態，以及是否重複呼叫。六個模型在二十四項任務執行一千九百二十次，扣除未觸發故障的試驗後分析一千六百九十四次。\n\n表四與正文報告，明顯錯誤的偵測率為 91.3%，靜默錯誤為 58.8%；但同頁圖一卻標成 86% 與 53%，樣本數也不同，因此精確比例仍有未解矛盾，不能把圖表說成相互驗證。研究較有價值的是拆開失敗處理階段：推理版本較常改變行動，不代表更常察覺錯誤；其復原差異未達顯著，也不是證明兩者等效。\n\n尤其要注意，這裡的復原指與同模型一次無故障執行的環境終態一致，並非達成標準答案。錯誤資訊可能被帶進回覆，卻不改變環境狀態。研究提供任務分群統計與人工標註一致性檢查，但只有三組模型、單一基準家族、十五次工具呼叫上限，且偵測依文字表達判定。八頁正文和全部圖表已核對，連結資料未重算；適合借鏡其測試設計，對精確數值、模型優劣及部署安全結論則需保留。",
+      "title": "Loud Failures, Quiet Failures: Fault Detection and Recovery in Tool-Using Language Model Agents",
+      "title_en": "Loud Failures, Quiet Failures: Fault Detection and Recovery in Tool-Using Language Model Agents",
+      "title_zh": "明顯失敗與靜默失敗：工具型語言模型代理的故障偵測與復原"
+    }
+],
   "radar": [
     {
       "arxiv_id": null,
@@ -1126,14 +1682,121 @@
   "run_date": "2026-10-08",
   "run_id": "assistant-review-2026-10-08",
   "run_info": {
-    "error_summary": null,
-    "finished_at": "2026-10-08T22:31:08.332250+00:00",
-    "items_total": 15,
-    "run_id": "assistant-review-2026-10-08",
-    "started_at": "2026-10-08T22:31:08.160589+00:00",
-    "stories_total": 14,
-    "success": true
+  "added_native_count": 5,
+  "combined_native_reranked": false,
+  "coverage_status": "partial",
+  "date_basis_by_story": {
+    "arxiv:2610.09624": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-08",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.09832": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-08",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.10062": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-08",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.10088": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-08",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.10120": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-08",
+      "event_timestamp_utc": null
+    },
+    "fallback:0ddbb9e0f2c52ee9": {
+      "date_basis": "preserved_prior_run_date_not_source_calendar_date",
+      "date_value": "2026-10-08",
+      "event_timestamp_utc": null
+    },
+    "fallback:27197ee6ace2a855": {
+      "date_basis": "preserved_prior_run_date_not_source_calendar_date",
+      "date_value": "2026-10-08",
+      "event_timestamp_utc": null
+    },
+    "fallback:2c85b6d8bd5c36fe": {
+      "date_basis": "preserved_prior_run_date_not_source_calendar_date",
+      "date_value": "2026-10-08",
+      "event_timestamp_utc": null
+    },
+    "fallback:388ecac8f14df6be": {
+      "date_basis": "preserved_prior_run_date_not_source_calendar_date",
+      "date_value": "2026-10-08",
+      "event_timestamp_utc": null
+    },
+    "fallback:41f0ae5f36ea2a07": {
+      "date_basis": "preserved_prior_run_date_not_source_calendar_date",
+      "date_value": "2026-10-08",
+      "event_timestamp_utc": null
+    },
+    "fallback:47298aa571e6f17a": {
+      "date_basis": "preserved_prior_run_date_not_source_calendar_date",
+      "date_value": "2026-10-08",
+      "event_timestamp_utc": null
+    },
+    "fallback:78cde6b7383a114d": {
+      "date_basis": "preserved_prior_run_date_not_source_calendar_date",
+      "date_value": "2026-10-08",
+      "event_timestamp_utc": null
+    },
+    "fallback:7961d818c65cc2cf": {
+      "date_basis": "preserved_prior_run_date_not_source_calendar_date",
+      "date_value": "2026-10-08",
+      "event_timestamp_utc": null
+    },
+    "fallback:95fce921bb8609ee": {
+      "date_basis": "preserved_prior_run_date_not_source_calendar_date",
+      "date_value": "2026-10-08",
+      "event_timestamp_utc": null
+    },
+    "fallback:9a7f4d9aa252c062": {
+      "date_basis": "preserved_prior_run_date_not_source_calendar_date",
+      "date_value": "2026-10-08",
+      "event_timestamp_utc": null
+    },
+    "fallback:b852c754e3db70a6": {
+      "date_basis": "preserved_prior_run_date_not_source_calendar_date",
+      "date_value": "2026-10-08",
+      "event_timestamp_utc": null
+    },
+    "fallback:bd580a273a2095bf": {
+      "date_basis": "preserved_prior_run_date_not_source_calendar_date",
+      "date_value": "2026-10-08",
+      "event_timestamp_utc": null
+    },
+    "fallback:d680ce9df7a05ee0": {
+      "date_basis": "preserved_prior_run_date_not_source_calendar_date",
+      "date_value": "2026-10-08",
+      "event_timestamp_utc": null
+    },
+    "fallback:f50afcd619d17203": {
+      "date_basis": "preserved_prior_run_date_not_source_calendar_date",
+      "date_value": "2026-10-08",
+      "event_timestamp_utc": null
+    }
   },
+  "error_summary": "PARTIAL 部分更新：保留原14篇及原Top5／Radar順序，新增5篇列於Papers。新增5篇按現行規則獨立排名；19篇未合併重新排名。全日總數與截止時間未知。",
+  "finished_at": "2026-10-08T22:31:08.332250+00:00",
+  "full_day_candidate_total": null,
+  "items_total": null,
+  "preserved_baseline_body_sha256": "359e5830f4089cb19538708b2cef7694f4f230142e5fe99995ff4cfd0a3fdcf8",
+  "preserved_baseline_commit": "41492c4b3ebea1ba1548ded58b8f9e6897b50620",
+  "preserved_baseline_count": 14,
+  "preview_only": false,
+  "reviewed_selected_count": 19,
+  "run_id": "assistant-review-2026-10-08",
+  "source_collection_cutoff_utc": null,
+  "started_at": "2026-10-08T22:31:08.160589+00:00",
+  "stories_total": 19,
+  "success": true
+},
   "sources_status": [
     {
       "category": null,

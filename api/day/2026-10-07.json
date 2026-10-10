@@ -1,0 +1,1134 @@
+{
+  "archive_dates": [
+    "2026-10-07"
+  ],
+  "entity_catalog": {
+    "01-ai": {
+      "name": "01.AI",
+      "type": "organization"
+    },
+    "abeja": {
+      "name": "ABEJA",
+      "type": "organization"
+    },
+    "ai-shift": {
+      "name": "AI Shift",
+      "type": "organization"
+    },
+    "andrej-karpathy": {
+      "name": "Andrej Karpathy",
+      "type": "researcher"
+    },
+    "anthropic": {
+      "name": "Anthropic",
+      "type": "organization"
+    },
+    "aws": {
+      "name": "AWS",
+      "type": "organization"
+    },
+    "cohere": {
+      "name": "Cohere",
+      "type": "organization"
+    },
+    "cyberagent": {
+      "name": "CyberAgent",
+      "type": "organization"
+    },
+    "deepmind": {
+      "name": "DeepMind",
+      "type": "organization"
+    },
+    "deepseek": {
+      "name": "DeepSeek",
+      "type": "organization"
+    },
+    "elyza": {
+      "name": "ELYZA",
+      "type": "organization"
+    },
+    "geoffrey-hinton": {
+      "name": "Geoffrey Hinton",
+      "type": "researcher"
+    },
+    "google-research": {
+      "name": "Google Research",
+      "type": "institution"
+    },
+    "huggingface": {
+      "name": "Hugging Face",
+      "type": "organization"
+    },
+    "ilya-sutskever": {
+      "name": "Ilya Sutskever",
+      "type": "researcher"
+    },
+    "ivry": {
+      "name": "IVRy",
+      "type": "organization"
+    },
+    "langchain": {
+      "name": "LangChain",
+      "type": "organization"
+    },
+    "layerx": {
+      "name": "LayerX",
+      "type": "organization"
+    },
+    "llama-cpp": {
+      "name": "llama.cpp",
+      "type": "organization"
+    },
+    "llm-jp": {
+      "name": "LLM-jp",
+      "type": "institution"
+    },
+    "meta-ai": {
+      "name": "Meta AI",
+      "type": "institution"
+    },
+    "microsoft-research": {
+      "name": "Microsoft Research",
+      "type": "institution"
+    },
+    "mistral-ai": {
+      "name": "Mistral AI",
+      "type": "organization"
+    },
+    "nii": {
+      "name": "NII (LLM-jp)",
+      "type": "institution"
+    },
+    "nvidia": {
+      "name": "NVIDIA",
+      "type": "organization"
+    },
+    "ollama": {
+      "name": "Ollama",
+      "type": "organization"
+    },
+    "openai": {
+      "name": "OpenAI",
+      "type": "organization"
+    },
+    "preferred-networks": {
+      "name": "Preferred Networks",
+      "type": "organization"
+    },
+    "qwen": {
+      "name": "Qwen",
+      "type": "organization"
+    },
+    "rinna": {
+      "name": "rinna",
+      "type": "organization"
+    },
+    "sakana-ai": {
+      "name": "Sakana AI",
+      "type": "organization"
+    },
+    "stability-ai": {
+      "name": "Stability AI",
+      "type": "organization"
+    },
+    "vllm": {
+      "name": "vLLM",
+      "type": "organization"
+    },
+    "weblab": {
+      "name": "Weblab",
+      "type": "organization"
+    },
+    "yann-lecun": {
+      "name": "Yann LeCun",
+      "type": "researcher"
+    },
+    "yoshua-bengio": {
+      "name": "Yoshua Bengio",
+      "type": "researcher"
+    }
+  },
+  "generated_at": "2026-10-10T02:25:14.097874+00:00",
+  "model_releases_by_entity": {},
+  "papers": [
+    {
+      "arxiv_id": "2610.10266",
+      "authors": [
+        "Mrabah, Nairouz",
+        "Melki, Youssef",
+        "Bouguessa, Mohamed",
+        "Ksantini, Riadh",
+        "Murtaza, Shakeeb",
+        "Zia, Tehseen"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "entities": [],
+      "first_seen_at": "2026-10-10T01:50:50+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-fixed-v1-reconstruction",
+          "tier": 1,
+          "title": "LoomSC: Scalable Deep Subspace Clustering with Projector Factorization and Exact Spectral Reduction",
+          "url": "https://arxiv.org/abs/2610.10266v1"
+        }
+      ],
+      "llm_evaluation": {
+        "candidate_sha256": "1eff0663f4859533e7d29ea167d6432f5b4caeafda1d465df85c5d875109374b",
+        "components": {
+          "evidence_strength": 0.48,
+          "generalizability": 0.56,
+          "novelty": 0.61,
+          "preference_relevance": 0.42,
+          "reproducibility": 0.3,
+          "rigor": 0.64
+        },
+        "confidence": 0.92,
+        "evidence": [
+          "Sec. II-A, p. 3 (https://arxiv.org/pdf/2610.10266v1#page=3): SAGSC is explicitly credited with a projector and quadratic-kernel factorized affinity; the claimed distinction is integration with jointly learned representations, not factorization or the dual-spectrum principle alone.",
+          "Sec. III-A–C, pp. 4–5, Eqs. (3)–(17) (https://arxiv.org/pdf/2610.10266v1#page=4): ridge eigenvalues beta/(beta+2lambda), explicit projector approximation error, and ||Z-LP^T||_F^2=||Z-ZPP^T||_F^2+||L-ZP||_F^2 establish the fixed-Z dominant-subspace connection.",
+          "Sec. III-D/E, p. 6 and Appendices B/C, pp. 16–17 (https://arxiv.org/pdf/2610.10266v1#page=16): exact Procrustes and L=ZP updates guarantee only nonincreasing fixed-Z factor objective; recovery assumes m=rank(Z), a direct sum of subspaces and no within-class direct-sum partition.",
+          "Sec. III-F, pp. 6–7 and Appendix D, p. 17 (https://arxiv.org/pdf/2610.10266v1#page=7): A=(PP^T) elementwise-squared retains self loops, degrees equal ||p_i||^2, and the positive spectra of BB^T and B^TB coincide. Exactness is for this squared affinity, not the usual absolute-value affinity or exact class recovery on arbitrary data.",
+          "Sec. III-G, p. 8 and Table V, p. 19 (https://arxiv.org/pdf/2610.10266v1#page=8): the direct spectral route costs O(nq^2+q^3+nqk), while the implicit route exposes eigensolver budgets. Linear sample-size scaling holds with architecture, dimensions, m, k and all iteration budgets fixed; Appendix E allows budgets/precision to increase to meet tolerances.",
+          "Sec. IV protocol, p. 8 (https://arxiv.org/pdf/2610.10266v1#page=8): m=380, d_z=1080, 5,000 full-batch Adam pretraining epochs and 5,000 joint epochs. Computed q=72,390 is larger than n=400–7,200 on all five real benchmarks; an explicit G has 5,240,312,100 entries, so the implicit option is materially important.",
+          "Tables I–III, p. 9 (https://arxiv.org/pdf/2610.10266v1#page=9): LoomSC means are ACC 80.174, NMI 85.984 and ARI 72.770; respective best baseline means are 73.512, 81.890 and 62.748. Gaps 6.662, 4.094 and 10.022 percentage points reproduce the stated rounded numbers. It ranks first or second in all 15 comparisons, including tied second in COIL-100 NMI; six are first-place means, nine are second-place means.",
+          "Tables I/IV, pp. 9–10 (https://arxiv.org/pdf/2610.10266v1#page=10): PRO-DSC/LoomSC mean runtime ratios are approximately 62.54, 430.11, 387.63, 140.02 and 294.09 across Fashion-MNIST, ORL, UMIST, EYaleB and COIL-100. These are arithmetic ratios of reported times, not independently verified end-to-end speedups: timed stages, hardware models and inclusion of training are unreported.",
+          "Sec. IV-C, pp. 10–12, Figs. 1–2 (https://arxiv.org/pdf/2610.10266v1#page=11): ten synthetic subspaces yield near-perfect reported ACC and strong connectivity; the larger sweep reaches 500,000 samples with author-reported ACC at least 99.8% and about 362 s. The plots establish a controlled synthetic trend, not transfer to large real or language datasets.",
+          "Sec. IV-D/E, pp. 12–14, Figs. 3–7 (https://arxiv.org/pdf/2610.10266v1#page=12): relative affinity changes approach small values with occasional spikes; class-sorted block visualizations are qualitative and include visible off-block relations. These are stability/structure diagnostics, not component ablations, joint-convergence proofs or quantitative subspace-preservation guarantees.",
+          "Algorithm 1, p. 6 and Appendix E, pp. 17–18 versus Sec. IV, p. 8 (https://arxiv.org/pdf/2610.10266v1#page=17): seeding is described as selected latent sample columns in the algorithm/appendix but as fitted k-means centroids in the experiment. Exact seed values, numeric spectral tolerances, actual eigensolver configuration and final clustering budgets are not reported; no code-release or supplement link is supplied.",
+          "Reviewer inference from Eqs. (13), (17), (19), p. 5 and the unregularized ReLU autoencoder protocol, p. 8 (https://arxiv.org/pdf/2610.10266v1#page=5): reconstruction is averaged over n but factor residual is summed, so nominal equal weights do not give sample-size-invariant per-sample weighting. Positive rescaling Z and L, compensated in the first decoder layer, leaves reconstruction unchanged while shrinking the factor penalty quadratically; the paper does not analyze this scale degeneracy. This is an objective-level concern, not evidence that the reported runs actually collapsed.",
+          "Sec. IV protocol, p. 8, Fig. 1, p. 11 and Fig. 7, p. 14 (https://arxiv.org/pdf/2610.10266v1#page=14): the stated m=380 setting cannot satisfy m<n for displayed synthetic n=200 or 300; a distinct synthetic width would be necessary, but is not specified. This is a protocol ambiguity rather than proof that the synthetic runs used an invalid width."
+        ],
+        "fulltext_sha256": "1ceed432bf2837c2cd4ed1f257ac9183193fa4756c8e75860bd3966cc6dd7efe",
+        "fulltext_status": "partial",
+        "model": "assistant-native-review",
+        "native_identity_version": 1,
+        "original_candidate_sha256": "1eff0663f4859533e7d29ea167d6432f5b4caeafda1d465df85c5d875109374b",
+        "out_of_scope": false,
+        "producer": "assistant-native-review",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "A relevant general clustering/optimization contribution, rather than a pure-vision application: LoomSC jointly learns an autoencoder and orthogonal thin factors, then exactly transfers the normalized spectral problem of its squared projector affinity to q=m(m+1)/2 features (Sec. III, pp. 4–8). Its main novelty is this integration; Sec. II-A already identifies SAGSC as a projector/quadratic-kernel antecedent. The algebra and conditional proofs are coherent, but fixed-Z descent is not joint-network convergence, and subspace recovery requires m=rank(Z), independent subspaces and suitable within-class sampling (Appendices B–D). Tables I–III support first/second place in all 15 comparisons and an ACC mean of 80.174%, 6.662 points above the best baseline mean. Evidence is weakened by five small image datasets, no component/width ablations, only three seeds where available, and unclear timing scope/hardware for Table IV despite 5,000+5,000 training epochs. At m=380, q=72,390 exceeds every real benchmark size, so fixed-width asymptotic linearity does not by itself establish practical small-problem savings. Initialization differs between Algorithm 1/Appendix E and the experimental protocol, and actual solver tolerances, seeds, baseline tuning and code-release links are absent. Useful methodological ideas merit attention, but limited connection to language/agents and unresolved empirical reproducibility keep the raw score below the guide gate.",
+        "rationale_en": "A relevant general clustering/optimization contribution, rather than a pure-vision application: LoomSC jointly learns an autoencoder and orthogonal thin factors, then exactly transfers the normalized spectral problem of its squared projector affinity to q=m(m+1)/2 features (Sec. III, pp. 4–8). Its main novelty is this integration; Sec. II-A already identifies SAGSC as a projector/quadratic-kernel antecedent. The algebra and conditional proofs are coherent, but fixed-Z descent is not joint-network convergence, and subspace recovery requires m=rank(Z), independent subspaces and suitable within-class sampling (Appendices B–D). Tables I–III support first/second place in all 15 comparisons and an ACC mean of 80.174%, 6.662 points above the best baseline mean. Evidence is weakened by five small image datasets, no component/width ablations, only three seeds where available, and unclear timing scope/hardware for Table IV despite 5,000+5,000 training epochs. At m=380, q=72,390 exceeds every real benchmark size, so fixed-width asymptotic linearity does not by itself establish practical small-problem savings. Initialization differs between Algorithm 1/Appendix E and the experimental protocol, and actual solver tolerances, seeds, baseline tuning and code-release links are absent. Useful methodological ideas merit attention, but limited connection to language/agents and unresolved empirical reproducibility keep the raw score below the guide gate.",
+        "rationale_zh": "這是一項通用分群與最佳化方法貢獻，而非純視覺應用：LoomSC 聯合學習自編碼器與正交薄因子，再把投影矩陣平方親和度的正規化譜問題精確轉換到 q=m(m+1)/2 維特徵空間（第三節，第4–8頁）。主要新意在於整合；第二節已指出 SAGSC 是投影矩陣與二次核方法的先例。代數與條件式證明一致，但固定 Z 的下降性不等於網路聯合訓練收斂，子空間恢復還要求 m=rank(Z)、獨立子空間與適當的類內取樣（附錄B–D）。表I–III支持15項比較皆列第一或第二，平均準確率為80.174%，比最佳基線平均高6.662個百分點。然而證據只涵蓋五個小型影像資料集，缺少組件與寬度消融，多數設定僅三個種子，且表IV未交代計時範圍與硬體，無法對照預訓練及聯合訓練各5,000個週期。m=380時 q=72,390，大於每個真實資料集的樣本數，因此固定寬度的漸近線性複雜度本身不能證明小型問題的實務節省。演算法1及附錄E的初始化與實驗流程不一致，也未提供實際求解容差、種子、基線調參細節或程式碼發布連結。方法值得留意，但與語言模型、代理的關聯有限，實驗可重現性尚有缺口，因此原始分數低於導讀門檻。",
+        "raw_weighted_score": 0.4985,
+        "request_sha256": "2ae9a664f4ff990d97e1096fe09ebb2174f26af4626b2c72728e99e725a9e33a",
+        "review_sha256": "da737c143444e12439423d5b817e99f6674c77d830709d9dae6243ff78971a37",
+        "scope_assessment": {
+          "categories_from_frozen_candidate": [
+            "cs.CV",
+            "cs.AI"
+          ],
+          "category_distinction_preserved": true,
+          "decision": "in_scope_general_clustering_optimization_methodology",
+          "discovery_feed": "arxiv-cs-ai",
+          "printed_primary_category": "cs.CV",
+          "reason_en": "The scientific contribution is a general unsupervised representation-learning and spectral-clustering algorithm with optimization and complexity analysis. The visual benchmark domain and printed primary cs.CV label do not make it a pure-domain application. Relevance remains moderate because language/agent utility is not demonstrated.",
+          "reason_zh": "科學貢獻是一般性的無監督表徵學習、譜分群、最佳化及複雜度分析。視覺基準與印刷主分類cs.CV不足以將它判為純領域應用；但未展示語言模型或代理用途，因此偏好相關性僅屬中等。"
+        },
+        "scope_capped_score": null,
+        "scope_policy_version": "explicit-review-exclusion-v1",
+        "scope_status": "in_scope",
+        "score": 0.45862,
+        "source_key": "8bb693054afcb5abd7abae5c8f72f8793d2f0279d7a6efb5ac0696effd57eab0",
+        "story_id": "arxiv:2610.10266",
+        "token_usage": {},
+        "topics": [
+          "Training & Optimization",
+          "Scaling & Efficiency",
+          "Computer Vision"
+        ]
+      },
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-fixed-v1-reconstruction",
+        "tier": 1,
+        "title": "LoomSC: Scalable Deep Subspace Clustering with Projector Factorization and Exact Spectral Reduction",
+        "url": "https://arxiv.org/abs/2610.10266v1"
+      },
+      "published_at": "2026-10-07T15:37:39+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.4586200000000001,
+        "llm_relevance_score": 12.841360000000002,
+        "recency_score": 0.7845992697580233,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 20.825959269758023
+      },
+      "section": null,
+      "source_name": "arXiv fixed-v1 saved abstract",
+      "story_id": "arxiv:2610.10266",
+      "summary": "Dense self-expression matrices and full-affinity spectral clustering limit the scalability of subspace clustering. We introduce the Latent Orthogonal Optimization Model for Subspace Clustering (LoomSC), a framework that addresses both bottlenecks through projector factorization and exact spectral reduction. Motivated by the spectral structure of least-squares regression, LoomSC jointly learns latent features and a projector self-representation through two thin factors. Alternating Procrustes and least-squares updates preserve the sample factor's orthogonality while keeping the coefficient matrix implicit. We construct a nonnegative quadratic affinity that preserves the projector's support. An exact feature map then reduces its normalized spectral problem to an eigenproblem whose dimension depends only on the factor width. Neither the full affinity nor the sample Laplacian needs to be formed. Our analysis quantifies the projector approximation and identifies conditions for subspace preservation and within-subspace connectivity. For fixed dimensions and iteration budgets, the complete pipeline has linear time and memory complexity in the number of samples. Across five image-clustering benchmarks, LoomSC ranks first or second in all 15 dataset-metric comparisons against 9 state-of-the-art baselines. Its mean accuracy exceeds the highest baseline mean by 6.66 percentage points. Synthetic experiments scale to 500,000 samples while maintaining at least 99.8% accuracy.",
+      "summary_en": "LoomSC addresses two scaling bottlenecks in subspace clustering: storing sample-to-sample self-expression coefficients and performing spectral decomposition on the full affinity matrix. It jointly trains an autoencoder and two thin factors, representing sample relationships implicitly through an orthogonal projector. Entrywise squaring produces a nonnegative affinity, and quadratic features transfer its spectral problem exactly to a space determined by the factor width. Read Algorithms 1 and 2 in Section III before Appendices B–D, distinguishing fixed-feature descent, clustering recovery under the full-row-space assumptions, and actual joint training: these have different guarantees. Across five image datasets, the method ranks first or second in all fifteen dataset–metric comparisons. Mean accuracy is about 80.17%, exceeding the best baseline mean by 6.66 percentage points; synthetic tests extend to 500,000 samples with reported accuracy of at least 99.8%. These results do not establish benefits for language or agent tasks. Linear time and memory claims require fixed dimensions, factor width and iteration budgets. The experimental width of 380 corresponds to a spectral feature dimension of 72,390, so asymptotic linearity alone does not show that small datasets become cheaper. When reading the speed figures in Table IV, ask whether timing includes both 5,000-epoch training phases and inspect hardware and solver settings. Missing width ablations, inconsistent initialization descriptions and incomplete reproduction details remain important checks before adoption.",
+      "summary_zh": "LoomSC想解決子空間分群的兩個規模瓶頸：儲存每對樣本的自表達係數，以及對完整親和矩陣做譜分解。它聯合訓練自編碼器與兩個薄因子，以正交投影矩陣隱式表達樣本關係；再將係數逐項平方成非負親和度，用二次特徵把譜問題精確搬到由因子寬度決定的空間。建議先讀第三節演算法一、二，再看附錄Ｂ至Ｄ，區分固定潛在特徵時的下降性、完整行空間下的分群恢復，以及實際聯合訓練，三者保證不同。五個影像資料集的十五項比較皆列第一或第二，平均準確率約百分之八十點一七，比最佳基線平均高六點六六個百分點；合成測試擴至五十萬樣本仍報告至少百分之九十九點八。這些成績尚未證明語言或代理任務的效益。線性時間與記憶體結論要求維度、因子寬度及迭代預算固定；實驗寬度三百八十對應七萬二千三百九十維譜空間，不能只憑漸近式推斷小資料必然更省。閱讀表四的速度數字時，應同時追問計時是否包含兩階段各五千輪訓練，以及硬體與求解器設定。缺少寬度消融、初始化敘述不一致與重現細節，仍是採用前的重要查核點。",
+      "title": "LoomSC: Scalable Deep Subspace Clustering with Projector Factorization and Exact Spectral Reduction",
+      "title_en": "LoomSC: Scalable Deep Subspace Clustering with Projector Factorization and Exact Spectral Reduction",
+      "title_zh": "LoomSC：以投影矩陣分解與精確譜縮減實現可擴展的深度子空間分群"
+    },
+    {
+      "arxiv_id": "2610.10253",
+      "authors": [
+        "Ma, Yuan",
+        "Yin, Yiqun Lisa"
+      ],
+      "categories": [
+        "cs.DS",
+        "cs.LG"
+      ],
+      "entities": [],
+      "first_seen_at": "2026-10-10T01:50:50+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-fixed-v1-reconstruction",
+          "tier": 1,
+          "title": "On the Cyclic Assumption of the Cow-Path Search Algorithm",
+          "url": "https://arxiv.org/abs/2610.10253v1"
+        }
+      ],
+      "llm_evaluation": {
+        "candidate_sha256": "d3ab2db99d5a46855ef2dc4eb5b4adc6e30164687a3110f0ade33f8e0f1db38f",
+        "components": {
+          "evidence_strength": 0.85,
+          "generalizability": 0.42,
+          "novelty": 0.53,
+          "preference_relevance": 0.12,
+          "reproducibility": 0.87,
+          "rigor": 0.86
+        },
+        "confidence": 0.92,
+        "evidence": [
+          "https://arxiv.org/pdf/2610.10253v1#page=1 — Introduction: the target is the cyclic-assumption claim from earlier work; known ratios are restated, not newly improved. The w=2 deterministic value 9 and randomized value about 4.5911 are arithmetically consistent with the displayed formulas.",
+          "https://arxiv.org/pdf/2610.10253v1#page=2 — Sections 2.1–2.3, pp.2–4, Equations 1–10: uniform ray choice, distance density epsilon*h^(-1-epsilon), h>=1; remaining weight phi(x)=kappa*x^(-alpha) for reachable frontiers x>=1, alpha=1+epsilon>1. Expected competitive ratio is 1+2*sum(length_t*Phi_after_t).",
+          "https://arxiv.org/pdf/2610.10253v1#page=4 — Proposition 1, Fig.1, pp.4–5, Equation 11: visiting smaller frontier a rather than b at the same length y strictly saves 2*y*(phi(a)-phi(b)); relabelled continuation and deletion of redundant sweeps cannot add cost.",
+          "https://arxiv.org/pdf/2610.10253v1#page=5 — Lemma 1 and Proposition 2, pp.5–6, Equations 12–17: stationarity gives Phi_after=-phi_prime(length)*W; if advance ratio is at most beta=(1+alpha)^(1/alpha), deleting that sweep strictly improves the objective. The strict remainder survives even at the threshold.",
+          "https://arxiv.org/pdf/2610.10253v1#page=7 — Lemma 2, Fig.2 and Proposition 3, pp.7–8, Equations 18–21: feasible adjacent exchange has difference 2*((u-v)*phi(b)+v*phi(u)-u*phi(v)); least-frontier plus the advance-factor bound imply positivity for a decrease u>v. The advance condition is essential, not merely u>v.",
+          "https://arxiv.org/pdf/2610.10253v1#page=9 — Main theorem: existence plus least-frontier and nondecreasing lengths permit least-recently-swept tie-breaking, giving a cyclic optimum for the specified distribution. This is not a proof that arbitrary input distributions have cyclic optima.",
+          "https://arxiv.org/pdf/2610.10253v1#page=10 — Appendix A pp.10–12, Equations 22–23: w-1 other rays bound each fixed step, nested finite-label/compact-length subsequences give a limit, nonnegative partial sums bound its cost, and an unbounded-search contradiction prevents a missing ray. Zero-advance sweeps can be removed; Appendix B supplies the notation.",
+          "https://arxiv.org/pdf/2610.10253v1#page=9 — Discussion explicitly leaves truncated-density cyclicity unresolved; w=3 numerics are mentioned without detailed data. Acknowledgments describe AI help reconstructing a historical proof, not a tested AI reasoning method."
+        ],
+        "fulltext_sha256": "c3777827785fd0ffa5ae60d2df850508b22abc14367e1bd6a073a76f8af08b4e",
+        "fulltext_status": "partial",
+        "model": "assistant-native-review",
+        "native_identity_version": 1,
+        "original_candidate_sha256": "d3ab2db99d5a46855ef2dc4eb5b4adc6e30164687a3110f0ade33f8e0f1db38f",
+        "out_of_scope": false,
+        "producer": "assistant-native-review",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "A focused and largely self-contained proof note closes a previously stated cyclic-reduction claim in randomized cow-path search. Its substantive contribution is online-algorithm theory, not language-model reasoning: the acknowledgment of AI assistance is not an evaluated method. Relevance to the preferred LLM/agent topics is consequently low, but the cow/robot metaphor does not make this a pure-robotics application subject to the enumerated scope cap. For a uniform choice of ray and a fixed power-law distance distribution, the proof combines least-frontier relabelling, a stationarity condition, deletion of insufficient advances, and an adjacent-sweep exchange to obtain nondecreasing lengths and cyclic tie-breaking. Importantly, Appendix A establishes existence of a minimizer using coordinatewise bounds and diagonal subsequences, rather than assuming an optimum. The core algebra, feasibility conditions, strict-improvement inequalities and compactness argument check out at the level of this review; exact arithmetic spot checks are corroboration, not formal verification. The result completes an old structural argument rather than improving the known competitive ratio or supplying a new practical search system. Its dependence on symmetric paths and the positive smooth power-law tail limits generalization; the truncated-distribution extension is explicitly left unresolved. Prior lower-bound papers and historical handwritten notes were not inspected, so historical priority and the complete earlier optimality theorem are not independently re-established. Both supplied appendices and all material equations/figures were read; no missing-source hold is needed.",
+        "rationale_en": "A focused and largely self-contained proof note closes a previously stated cyclic-reduction claim in randomized cow-path search. Its substantive contribution is online-algorithm theory, not language-model reasoning: the acknowledgment of AI assistance is not an evaluated method. Relevance to the preferred LLM/agent topics is consequently low, but the cow/robot metaphor does not make this a pure-robotics application subject to the enumerated scope cap. For a uniform choice of ray and a fixed power-law distance distribution, the proof combines least-frontier relabelling, a stationarity condition, deletion of insufficient advances, and an adjacent-sweep exchange to obtain nondecreasing lengths and cyclic tie-breaking. Importantly, Appendix A establishes existence of a minimizer using coordinatewise bounds and diagonal subsequences, rather than assuming an optimum. The core algebra, feasibility conditions, strict-improvement inequalities and compactness argument check out at the level of this review; exact arithmetic spot checks are corroboration, not formal verification. The result completes an old structural argument rather than improving the known competitive ratio or supplying a new practical search system. Its dependence on symmetric paths and the positive smooth power-law tail limits generalization; the truncated-distribution extension is explicitly left unresolved. Prior lower-bound papers and historical handwritten notes were not inspected, so historical priority and the complete earlier optimality theorem are not independently re-established. Both supplied appendices and all material equations/figures were read; no missing-source hold is needed.",
+        "rationale_zh": "這篇聚焦且大致自足的證明短文，補上隨機化牛徑搜尋中先前已宣稱的循環化歸約。實質貢獻是線上演算法理論，而非語言模型推理；致謝提及人工智慧協助，不構成經評估的方法。因此與偏好的大型語言模型／代理主題關聯偏低，但牛或機器人的比喻不使它成為應套用列舉領域上限的純機器人應用。針對均勻選取路徑及固定冪律距離分布，證明結合最小搜尋前沿優先的重新標記、駐點條件、刪除推進不足的步驟，以及相鄰掃描交換，得到長度不遞減與循環式平手處理。附錄 A 另以逐座標上界及對角子序列證明最小值確實可達，未直接假定最佳演算法存在。本次閱讀檢查了核心代數、可行性條件、嚴格改善不等式及緊緻性論證；精確算術抽查僅是佐證，並非形式化驗證。成果補完舊有結構性論證，未改善已知競爭比或提出實用新搜尋系統。對路徑對稱性與正、光滑冪律尾部的依賴限制了推廣；截斷分布情況明確未解。未讀先前下界論文與歷史手稿，因此未獨立重建歷史優先權或早期完整最佳性定理。兩份所附附錄與重要公式、圖均已讀完，無需因來源缺件而暫緩。",
+        "raw_weighted_score": 0.46950000000000003,
+        "request_sha256": "ad742ad9b33cd2d6a2b0270a4f6b3c3d97199998e79138958b3765706014ad2d",
+        "review_sha256": "b470993349be8369dfd95ecf7dfefc337cd44cc65637ee4ab524d5e5128b5ffc",
+        "scope_assessment": "Peripheral general online-search/competitive-analysis theory. No LM, learning, agent architecture, prompting or AI-evaluation methodology is present. AI assistance is acknowledgment only. Not a pure domain application or robotics method; the enumerated automatic .20 exclusion is not applied. Low topical fit is reflected in preference_relevance.",
+        "scope_capped_score": null,
+        "scope_policy_version": "explicit-review-exclusion-v1",
+        "scope_status": "in_scope",
+        "score": 0.43194000000000005,
+        "source_key": "492d8c8e7d7b173098da9d0bb2d89317302b1d319be905c911225b49696c631d",
+        "story_id": "arxiv:2610.10253",
+        "token_usage": {},
+        "topics": [
+          "Scientific AI",
+          "Reasoning & Chain-of-Thought",
+          "Code & Programming"
+        ]
+      },
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-fixed-v1-reconstruction",
+        "tier": 1,
+        "title": "On the Cyclic Assumption of the Cow-Path Search Algorithm",
+        "url": "https://arxiv.org/abs/2610.10253v1"
+      },
+      "published_at": "2026-10-07T15:32:23+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.43194000000000005,
+        "llm_relevance_score": 12.094320000000002,
+        "recency_score": 0.7843123623099868,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 2.4000000000000004,
+        "total_score": 18.478632362309988
+      },
+      "section": null,
+      "source_name": "arXiv fixed-v1 saved abstract",
+      "story_id": "arxiv:2610.10253",
+      "summary": "In the cow-path problem, a cow must find a goal lying at an unknown distance on one of $w$ paths connected only at the origin, and performance is measured by competitive ratio. Kao, Reif and Tate designed an efficient randomized algorithm in which the cow visits the paths in a fixed cyclic order. They proved the algorithm is optimal for $w=2$, and subsequently Kao, Ma, Sipser and Yin proved its optimality for all $w$, with a claim that no algorithm does better than the best cyclic one. This note provides a detailed proof of that claim.",
+      "summary_en": "This proof note revisits an old cow-path search question. A target lies at an unknown distance on one of several paths sharing an origin, and a searcher makes out-and-back excursions. Can attention be restricted to a fixed cyclic order without sacrificing optimality? The authors supply a previously asserted but unpublished reduction proof; they do not improve the known competitive ratio. Start with Section 2 for the uniform choice of path, power-law distance distribution and remaining-weight function. Then follow Sections 3–6 through four steps: prioritize a path with the smallest frontier, use stationarity to identify insufficient advances that can be deleted, exchange adjacent sweeps to eliminate decreasing lengths, and break ties in favor of the least recently searched path to obtain a cycle. Do not skip Appendix A: it separately proves that an optimum exists rather than assuming that an infimum is attained. Figures 1 and 2 show how relabeling paths aligns the continuation states and are useful alongside the inequalities. The conclusion relies on symmetric paths and a positive, smooth power-law tail; it does not extend automatically to arbitrary target distributions. Section 7 explicitly leaves the truncated-distribution case open. The paper is useful for readers studying online algorithms and competitive analysis because it completes a structural proof. AI assistance mentioned in the acknowledgments is not an evaluated language-model reasoning method, and the paper contains no robot-deployment experiment.",
+      "summary_zh": "這篇證明短文處理牛徑搜尋的一個老問題：目標位於共同原點延伸的多條路徑之一，位置未知，搜尋者來回探查，能否只考慮固定循環順序而不損失最佳性？作者補全先前只宣稱、未正式刊出的歸約證明，沒有改善既有競爭比。先讀第二節，掌握均勻選路、冪律距離分布與「剩餘權重」，再沿第三至六節追蹤四個步驟：優先搜尋前沿最小的路徑；由駐點條件找出可刪除的不足推進；交換相鄰掃描以排除長度下降；最後用最久未搜尋的路徑打破平手，形成循環。附錄Ａ不可略過，因為它另證明最佳解確實存在，避免把只有下確界的問題當成已有最小值。圖一、圖二說明重新標記路徑後如何對齊後續狀態，適合配合不等式閱讀。結論依賴對稱路徑及正、平滑的冪律尾部，不能直接推到任意目標分布；第七節明確保留截斷分布的疑問。本文適合研究線上演算法與競爭分析的讀者，價值在補齊結構性證明。致謝中的人工智慧協助並非經驗證的語言模型推理方法，也沒有機器人部署實驗。",
+      "title": "On the Cyclic Assumption of the Cow-Path Search Algorithm",
+      "title_en": "On the Cyclic Assumption of the Cow-Path Search Algorithm",
+      "title_zh": "論牛徑搜尋演算法的循環順序假設"
+    },
+    {
+      "arxiv_id": "2610.10275",
+      "authors": [
+        "Paterson, Fraser C.",
+        "Stein, Sebastian",
+        "Klar, Markus",
+        "Williamson, John H.",
+        "Murray-Smith, Roderick"
+      ],
+      "categories": [
+        "cs.HC"
+      ],
+      "entities": [],
+      "first_seen_at": "2026-10-10T01:50:50+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-fixed-v1-reconstruction",
+          "tier": 1,
+          "title": "Active Inference for Interaction-Mediated Control of a High-Dimensional Robotic Arm",
+          "url": "https://arxiv.org/abs/2610.10275v1"
+        }
+      ],
+      "llm_evaluation": {
+        "candidate_sha256": "1f10c79bfceadbb5708c7c58bae66ff2fa15905494e5556c1fb3e305e19f9124",
+        "components": {
+          "evidence_strength": 0.43,
+          "generalizability": 0.34,
+          "novelty": 0.48,
+          "preference_relevance": 0.38,
+          "reproducibility": 0.61,
+          "rigor": 0.49
+        },
+        "confidence": 0.92,
+        "evidence": [
+          "PDF pp.2–5, Sections 2–3.2 and Figure 1: the stated general architecture treats user interaction as evidence about latent objectives, separates the IBA from the LLCA, and communicates object-wise posterior marginals rather than full hypotheses or torque commands.",
+          "PDF pp.5,13–15, Equations 1–5 and 10–21: the user is a stochastic binary response process conditioned on the complete candidate pool. The IBA maximizes mutual information and performs exact categorical Bayes over six subsets; neither is a monolithic Active-Inference optimizer.",
+          "PDF pp.6–7,16–19, Equations 6–9 and 22–34: UT prediction and a Gaussian variational correction feed random-shooting receding-horizon control. Own-controller information gain is disabled; the implemented coverage score is evaluated at the predicted mean, not integrated over covariance.",
+          "PDF pp.8–10, Sections 4–5 and Table 1: six target subsets ×24 repeats ×4 arm sizes yield 576 episodes per condition. Reported successes are 423/576 mediated versus 564/576 direct preference, with 144 episodes at each size.",
+          "PDF pp.9–10, Table 1: mediated success rates for N=3,4,5,6 are .67,.77,.72,.78; direct rates are 1.00,1.00,.97,.95. Successful-only median plant-step times are 318,413,568,774 versus 252,177,528,683. Plant steps are .002 seconds; they exclude computation and user latency.",
+          "PDF pp.10–12, Table 2 and Figure 3: MAP accuracy is .292,.472,.250,.167, while posterior true-hypothesis means are .225,.337,.179,.182. Figure 3 is one successful illustrative episode, not population evidence for query superiority.",
+          "PDF pp.4,12–14: non-target coverage is unpenalized, layout and target cardinality are fixed, and HUA/IBA response-model families match. No human participants, mismatch tests, random-query ablation or no-feedback controller condition are reported.",
+          "PDF pp.16–20, Appendices C–D, Algorithm 1 and Figure 4: 50 posterior samples, 25 Adam steps and .05 learning rate per filtering step are stated. Candidate torques are sampled in [-1.5,1.5] but actuation is clipped to [-1,1]; pseudocode predicts with the planned torque. Figure 4 is an illustrative four-link state-estimation trace.",
+          "PDF p.9 footnote and pp.13–21: source/configuration repository is linked, while appendices A–D and references are included. That external repository was not opened or executed; unspecified numeric settings are reproducibility limitations, not proof of an absent essential appendix."
+        ],
+        "fulltext_sha256": "8165a3b0a5d855b8d5b91fb662d7a351382ddd8151beb596dd4aa14f2fab2935",
+        "fulltext_status": "partial",
+        "model": "assistant-native-review",
+        "native_identity_version": 1,
+        "original_candidate_sha256": "1f10c79bfceadbb5708c7c58bae66ff2fa15905494e5556c1fb3e305e19f9124",
+        "out_of_scope": false,
+        "producer": "assistant-native-review",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "This is a general interaction-mediated preference/control architecture instantiated in a robotic arm, so its architectural contribution is assessed in scope rather than capped solely for a robotic benchmark. Relevance to agent planning and preference elicitation is real but indirect to language models. The explicit separation of an information-seeking broker, exact categorical preference inference, and autonomous continuous control is clear, although the ingredients are established. Matched controller settings across 576 episodes per condition provide an initial demonstration: mediation succeeds in 423/576 episodes (73.4%), versus 564/576 (97.9%) with true preferences. This is not evidence that preference querying improves over a no-feedback or random-query baseline, neither of which is supplied. Only a simulated matched-response user, one four-object layout, six possible objectives, and three-to-six-link arms are tested. Non-target contact is free, so success can occur without accurate intent identification; MAP accuracy of .167–.472 and success-conditioned timings must remain separate. The controller disables its own information gain, ignores covariance in pragmatic scoring, and the interaction pauses simulated physics with no human latency or wall-clock test. Detailed appendices support understanding, but several numeric settings and external code were not verified. The complete supplied PDF warrants no material missing-source hold.",
+        "rationale_en": "This is a general interaction-mediated preference/control architecture instantiated in a robotic arm, so its architectural contribution is assessed in scope rather than capped solely for a robotic benchmark. Relevance to agent planning and preference elicitation is real but indirect to language models. The explicit separation of an information-seeking broker, exact categorical preference inference, and autonomous continuous control is clear, although the ingredients are established. Matched controller settings across 576 episodes per condition provide an initial demonstration: mediation succeeds in 423/576 episodes (73.4%), versus 564/576 (97.9%) with true preferences. This is not evidence that preference querying improves over a no-feedback or random-query baseline, neither of which is supplied. Only a simulated matched-response user, one four-object layout, six possible objectives, and three-to-six-link arms are tested. Non-target contact is free, so success can occur without accurate intent identification; MAP accuracy of .167–.472 and success-conditioned timings must remain separate. The controller disables its own information gain, ignores covariance in pragmatic scoring, and the interaction pauses simulated physics with no human latency or wall-clock test. Detailed appendices support understanding, but several numeric settings and external code were not verified. The complete supplied PDF warrants no material missing-source hold.",
+        "rationale_zh": "本文提出一般性的互動中介偏好／控制架構，並以機械臂實作，因此按架構貢獻納入範圍，不因機器人基準而直接套用領域上限。它與代理規劃及偏好詢問確有關聯，但對語言模型的相關性間接。將資訊探詢代理、精確類別偏好推論與自主連續控制分開的設計清楚，但組成技術已有基礎。每條件五百七十六回合且控制器設定相同，提供初步示範：中介控制成功四百二十三回合（73.4%），直接取得真實偏好成功五百六十四回合（97.9%）。這不能證明偏好詢問勝過無回饋或隨機詢問，因為兩種基準皆未提供。實驗只有回應模型匹配的模擬使用者、固定四物件配置、六種目標及三至六節機械臂。接觸非目標不受罰，因此未準確識別意圖也能成功；.167–.472 的 MAP 準確率及僅成功回合的時間必須分開解讀。控制器關閉自身資訊增益、實用價值評分忽略協方差，互動時暫停模擬物理，也未測真人延遲或實際運算時間。附錄詳細，足以理解方法，但部分數值設定及外部程式碼未驗證。完整提供的 PDF 不需因核心來源缺件而暫緩。",
+        "raw_weighted_score": 0.4265,
+        "request_sha256": "b7f64c4dd947870ce607ed5f31adb240cda77394cb0c22e6fe15394264c04342",
+        "review_sha256": "dbd819c2a898b197952229e4c5ff69bb7ded59894c64f2e1d3f5a4445c391d50",
+        "scope_assessment": "In scope as a general HCI preference-elicitation/control architecture with explicit broker/controller interface contracts. The sole demonstration is robotics, but the central methodological claim is the domain-general separation of epistemic user querying from pragmatic autonomous execution, not a new robot-specific perception or manipulation module. This grants no demonstrated generalization beyond the simulated arm and no LLM/language contribution.",
+        "scope_capped_score": null,
+        "scope_policy_version": "explicit-review-exclusion-v1",
+        "scope_status": "in_scope",
+        "score": 0.39238,
+        "source_key": "2fa19fed71c87363ce0e0feba89d2dc1b6ae82d7753a0c6804594a9ebb24e960",
+        "story_id": "arxiv:2610.10275",
+        "token_usage": {},
+        "topics": [
+          "Agents & Tool Use",
+          "Reasoning & Chain-of-Thought",
+          "Robotics & Embodied AI"
+        ]
+      },
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-fixed-v1-reconstruction",
+        "tier": 1,
+        "title": "Active Inference for Interaction-Mediated Control of a High-Dimensional Robotic Arm",
+        "url": "https://arxiv.org/abs/2610.10275v1"
+      },
+      "published_at": "2026-10-07T15:42:01+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.39238,
+        "llm_relevance_score": 10.98664,
+        "recency_score": 0.784837228299308,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 3.45,
+        "total_score": 18.42147722829931
+      },
+      "section": null,
+      "source_name": "arXiv fixed-v1 saved abstract",
+      "story_id": "arxiv:2610.10275",
+      "summary": "We propose interaction-mediated control via Active Inference as a general architectural approach to high-dimensional control problems in Human--Computer Interaction (HCI). This architecture recasts user interaction as the provision of evidence about a latent task objective, rather than the direct specification of plant-control inputs. The mediating function is distributed between an interaction broker, which selects informative user queries and performs Bayesian inference over user preferences, and an Active Inference controller, which autonomously plans and acts under the resulting preference information to control the plant. This division of labour decouples the semantics of user interaction from those of low-level plant control. We instantiate the architecture in a simulated, multi-link robotic arm to perform a simultaneous whole-arm target-coverage task. A simulated user communicates exclusively through a clutch-style binary evaluative channel, without specifying joint-torque commands. Across increasing arm dimensionalities, the architecture achieves successful interaction-mediated control, although task success is lower than when the controller receives the true target preferences directly. Exact target-subset identification also remains imperfect, highlighting the distinction between preference inference and successful task completion. The experimental findings provide an initial computational demonstration of the proposed architecture under controlled, matched-model assumptions and motivate its further investigation in broader HCI applications.",
+      "summary_en": "This paper separates low-bandwidth preference feedback from high-dimensional control. An interaction broker asks which previewed behaviors fit the user's objective, while a low-level controller independently plans and executes arm torques. The broker selects queries by expected information gain, receives a binary satisfaction response, and performs exact Bayesian updating over six possible target subsets. It sends object-wise target probabilities to the controller, rather than one most-likely target subset or a motor command. Read Section 3 and Figure 2 first: the queried trajectory is an information-gathering probe, and execution uses a freshly planned trajectory. Experiments use simulated arms with three to six links and four objects in one fixed layout; each episode requires simultaneous coverage of two targets. Across 576 episodes per condition, mediated control succeeds in 73.4%, versus 97.9% when the controller receives the true preferences directly. Exact target identification reaches only 16.7–47.2%, so task completion must be distinguished from correct intent inference, especially because touching non-targets is unpenalized. The user is simulated with a response-model family matching the broker's assumptions. Physics pauses during interaction, timing summaries include successful episodes only, and neither human response latency nor wall-clock computation is measured. No random-query or no-feedback comparison isolates the query policy's benefit. The useful contribution is an explicit interface between preference inference and autonomous control; robustness to real people, model mismatch and other tasks remains unestablished.",
+      "summary_zh": "這篇論文把低頻寬使用者回饋與高維控制拆成兩項工作：互動中介代理詢問哪些預覽行為符合目標，低階控制代理則自行規劃並執行機械臂扭矩。中介以預期資訊增益選擇問題，接收滿意或不滿意的二元回覆後，對六種目標組合做精確貝氏更新；傳給控制器的是各物件屬於目標的邊際機率，並非單一最可能目標或直接動作指令。先讀第三節與圖二，特別注意被詢問的軌跡只是探詢，執行前會重新規劃。實驗使用三至六節模擬機械臂、固定四物件配置，每回合須同時接觸其中兩個目標，各條件共五百七十六回合。互動中介成功率為73.4%，直接取得真實偏好的參考條件為97.9%；精確目標辨識率僅16.7%至47.2%，顯示完成任務不等於已正確理解意圖，尤其接觸非目標並不受罰。使用者完全由與中介假設匹配的模型模擬，詢問時物理系統暫停，時間統計只含成功回合，也未量測真人反應或實際運算延遲。論文沒有隨機詢問或無回饋對照，尚不能隔離詢問策略的效益。其價值是清楚界定偏好推論與自主控制的介面，對真人互動、模型失配與其他任務的泛化仍待驗證。",
+      "title": "Active Inference for Interaction-Mediated Control of a High-Dimensional Robotic Arm",
+      "title_en": "Active Inference for Interaction-Mediated Control of a High-Dimensional Robotic Arm",
+      "title_zh": "以主動推論實現高維機械臂的互動中介控制"
+    }
+  ],
+  "radar": [],
+  "run_date": "2026-10-07",
+  "run_id": "current-oct7-partial-preview",
+  "run_info": {
+    "coverage_status": "partial",
+    "date_basis_by_story": {
+      "arxiv:2610.10253": {
+        "date_basis": "official_first_submission_utc",
+        "date_value": "2026-10-07",
+        "event_timestamp_utc": "2026-10-07T15:32:23+00:00"
+      },
+      "arxiv:2610.10260": {
+        "date_basis": "official_first_submission_utc",
+        "date_value": "2026-10-07",
+        "event_timestamp_utc": "2026-10-07T15:35:02+00:00"
+      },
+      "arxiv:2610.10266": {
+        "date_basis": "official_first_submission_utc",
+        "date_value": "2026-10-07",
+        "event_timestamp_utc": "2026-10-07T15:37:39+00:00"
+      },
+      "arxiv:2610.10275": {
+        "date_basis": "official_first_submission_utc",
+        "date_value": "2026-10-07",
+        "event_timestamp_utc": "2026-10-07T15:42:01+00:00"
+      },
+      "arxiv:2610.10278": {
+        "date_basis": "official_first_submission_utc",
+        "date_value": "2026-10-07",
+        "event_timestamp_utc": "2026-10-07T15:44:29+00:00"
+      },
+      "arxiv:2610.10285": {
+        "date_basis": "official_first_submission_utc",
+        "date_value": "2026-10-07",
+        "event_timestamp_utc": "2026-10-07T15:49:06+00:00"
+      },
+      "arxiv:2610.10302": {
+        "date_basis": "official_first_submission_utc",
+        "date_value": "2026-10-07",
+        "event_timestamp_utc": "2026-10-07T15:56:31+00:00"
+      },
+      "arxiv:2610.10303": {
+        "date_basis": "official_first_submission_utc",
+        "date_value": "2026-10-07",
+        "event_timestamp_utc": "2026-10-07T15:57:13+00:00"
+      }
+    },
+    "error_summary": "PARTIAL 部分更新：本次僅含已核對並選取的有界子集；全日來源總數與收集截止時間未知，非完整日報。",
+    "excluded_count": 1,
+    "finished_at": null,
+    "full_day_candidate_total": null,
+    "items_total": 9,
+    "preview_only": false,
+    "release_scope_note": "19 new selections across Oct7/8/9; preserve previously published Oct8 14. The per-date subset is separately ranked, not a full-day ranking.",
+    "reviewed_selected_count": 8,
+    "reviewed_total_count": 9,
+    "run_id": "current-oct7-partial-preview",
+    "source_collection_cutoff_utc": null,
+    "started_at": "2026-10-10T02:25:14.094191+00:00",
+    "stories_total": 9,
+    "success": true
+  },
+  "sources_status": [
+    {
+      "category": null,
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "saved_official_html",
+      "name": "Nine reconstructed fixed-v1 candidates",
+      "newest_item_date": null,
+      "reason_code": "PARTIAL_BOUNDED_UPDATE",
+      "reason_text": "部分更新：僅含已核對的有界來源子集；日期依各篇明示依據，精確公告時鐘、全日來源總數及收集截止時間未知。Partial update: bounded verified subset; per-story date basis is explicit; exact announcement clocks, full-day totals and collection cutoff remain unknown.",
+      "remediation_hint": null,
+      "source_id": "arxiv-fixed-v1-reconstruction",
+      "status": "CANNOT_CONFIRM",
+      "tier": 1
+    }
+  ],
+  "top5": [
+    {
+      "arxiv_id": "2610.10302",
+      "authors": [
+        "Marzi, Tommaso",
+        "Hendawy, Ahmed",
+        "Peters, Jan",
+        "D'Eramo, Carlo",
+        "Cini, Andrea",
+        "Alippi, Cesare"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "entities": [],
+      "first_seen_at": "2026-10-10T01:50:50+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-fixed-v1-reconstruction",
+          "tier": 1,
+          "title": "Continual Graph Multi-Agent Reinforcement Learning",
+          "url": "https://arxiv.org/abs/2610.10302v1"
+        }
+      ],
+      "llm_evaluation": {
+        "candidate_sha256": "64676c0d6e4ff15716f81c7eb07ba849c9e4f3364e4e96d5d859e4cfb27a4c38",
+        "components": {
+          "evidence_strength": 0.68,
+          "generalizability": 0.5,
+          "novelty": 0.63,
+          "preference_relevance": 0.64,
+          "reproducibility": 0.61,
+          "rigor": 0.52
+        },
+        "confidence": 0.92,
+        "evidence": [
+          "Sec. 3, pp. 3–5, Definitions 3.1–3.4/Fig. 1: graph-conditioned transition/reward families define CGMARL, with TS, CS and GFS subclasses. General RL methodology, not merely deployment of a fixed policy to robots.",
+          "Sec. 4 and App. C, pp. 5–6 and 18–20, Figs. 2/5: GRAFO uses topology and target shifts to define formation rewards; equivalent nodes receive targets by minimum-cost assignment. In this benchmark transitions remain those of the prior Formation environment.",
+          "Sec. 5.1, p. 6, Table 1: individual GRAFO-3/5 training reaches median solved fraction 1, but zero-shot transfer is 0 or 0.016; sequential unregularized training gives median 0 on the earlier task, with five seeds. This is one backbone on two tasks, not a universal impossibility result.",
+          "Sec. 5.2, pp. 6–7, Eqs. 4–5: FROG freezes the graph encoder after first-task learning and adapts the action module with existing continual-learning regularizers. It eliminates parameter-induced representation change at fixed inputs, not the action-module term.",
+          "App. A, p. 17, Eqs. 7–8, directly visually checked: the Lipschitz constant K^pi appears before triangle decomposition and is absent from both final summands. Eq. 5 inherits the omission; a negative signed return difference can satisfy the upper bound despite severe forgetting.",
+          "Sec. 6, pp. 7–9, Figs. 3–4: TS/CS/GFS contain 6/5/4 tasks and use 10 independent seeds; TS has 3–7 agents. Gains are broad but Fig. 3 TS EWC (O) has a lower AFP median with FROG. Figure 4 and text expose first-task and order dependence.",
+          "Sec. 6.2, p. 8, Table 2/Fig. 7 p. 21: FROG versus FROG (RND) aggregated method medians give AFP 0.69±0.13 versus 0.38±0.037, AF −0.33±0.14 versus −0.29±0.04, and AP 0.99±0.02 versus 0.64±0.03. Higher AFP/AP does not imply better AF in that comparison.",
+          "App. D.1, p. 20, Table 3: InforMARL solves all six single tasks at median fractions 0.994–1.000, versus 0–0.531 without an actor GNN; five-seed standard deviations are reported. This supports the chosen backbone's capacity within GRAFO.",
+          "App. D.2, pp. 20–21, Fig. 6: fixing encoder regularization to 10^10 while setting action regularization near 10^6 improves the EWC tradeoff; that diagnostic evaluates the whole TS sequence and is explicitly distinguished from first-two-task tuning. A strong nonfrozen baseline therefore depends on tuning budget.",
+          "App. D.4, p. 22, Fig. 8: the task-ID ablation removes the one-hot input; separate task-specific heads remain part of the reported task-incremental setup. It does not demonstrate unknown-task routing.",
+          "App. E.2–E.3, pp. 23–24, Fig. 9/Eqs. 13–15: explicit task graphs and orders are supplied; GFS encodes target edge distances. AF is average signed backward transfer, with higher/less negative values better, as confirmed by the negative axes in the rendered plots.",
+          "App. E.4, pp. 24–25, Table 4: hyperparameters include 5×10^6 environment steps per task, 50-step episodes, 32 parallel environments, 64 evaluation episodes and collisions disabled; tuning uses three seeds on the first two TS tasks. Links identify upstream JaxInforMARL and MEAL code, not a specified new GRAFO/FROG artifact."
+        ],
+        "fulltext_sha256": "1a6a8c309901472a241b9b768c52583d621a6d75e300371966d46c4c55fbe1f5",
+        "fulltext_status": "partial",
+        "model": "assistant-native-review",
+        "native_identity_version": 1,
+        "original_candidate_sha256": "64676c0d6e4ff15716f81c7eb07ba849c9e4f3364e4e96d5d859e4cfb27a4c38",
+        "out_of_scope": false,
+        "producer": "assistant-native-review",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "A useful, in-scope contribution to general continual reinforcement learning: CGMARL formalizes graph-conditioned task changes, GRAFO separates topology, connectivity and feature shifts, and FROG freezes a first-task-trained graph encoder while regularizing the action module. Relevance is moderate because there is no language-model, tool-use or language-reasoning method. Ten-seed comparisons and ablations support broad empirical gains, but not uniform dominance: Figure 3 shows a lower TS AFP median for EWC (O) with FROG, and task order affects plasticity. Table 2 reports aggregated method medians of 0.69 versus 0.38 AFP for trained versus random frozen encoders, not a paired confidence interval. The theoretical argument is weaker than presented: Appendix A drops the assumed Lipschitz constant in Eq. 8, and the signed return-difference upper bound is not a bound on positive forgetting. Freezing removes encoder drift at a fixed input; it does not guarantee policy retention. Evidence is limited to small, collision-free formation tasks, one PPO/GNN backbone and short task-incremental sequences with separate heads; removing one-hot task IDs does not establish task-agnostic learning. Detailed task definitions, tuning and hyperparameters help reproducibility, but no new GRAFO/FROG release is identified in the supplied PDF, and no experiments were independently rerun. These are scientific and reproducibility limitations, not a material missing-source hold.",
+        "rationale_en": "A useful, in-scope contribution to general continual reinforcement learning: CGMARL formalizes graph-conditioned task changes, GRAFO separates topology, connectivity and feature shifts, and FROG freezes a first-task-trained graph encoder while regularizing the action module. Relevance is moderate because there is no language-model, tool-use or language-reasoning method. Ten-seed comparisons and ablations support broad empirical gains, but not uniform dominance: Figure 3 shows a lower TS AFP median for EWC (O) with FROG, and task order affects plasticity. Table 2 reports aggregated method medians of 0.69 versus 0.38 AFP for trained versus random frozen encoders, not a paired confidence interval. The theoretical argument is weaker than presented: Appendix A drops the assumed Lipschitz constant in Eq. 8, and the signed return-difference upper bound is not a bound on positive forgetting. Freezing removes encoder drift at a fixed input; it does not guarantee policy retention. Evidence is limited to small, collision-free formation tasks, one PPO/GNN backbone and short task-incremental sequences with separate heads; removing one-hot task IDs does not establish task-agnostic learning. Detailed task definitions, tuning and hyperparameters help reproducibility, but no new GRAFO/FROG release is identified in the supplied PDF, and no experiments were independently rerun. These are scientific and reproducibility limitations, not a material missing-source hold.",
+        "rationale_zh": "這是範圍內、對一般持續強化學習有用的方法研究：CGMARL 將圖條件化的任務變化形式化，GRAFO 區分拓樸、連接與特徵切換，FROG 則凍結在首個任務訓練的圖編碼器，並對動作模組施加正則化。由於沒有語言模型、工具使用或語言推理方法，個人主題相關性屬中等。十個種子的比較與消融支持廣泛改善，卻非全面優勝：圖 3 中 TS 的 EWC (O) 加入 FROG 後 AFP 中位數較低，任務順序也影響可塑性。表 2 的 0.69 對 0.38 AFP 是已訓練與隨機凍結編碼器各方法中位數的彙整，並非配對信賴區間。理論論證弱於文中表述：附錄 A 的式 8 遺漏所假設的 Lipschitz 常數，且帶符號報酬差的上界並非正向遺忘量的界限。凍結只能消除固定輸入下的編碼器漂移，不能保證策略保留。實證限於小型、無碰撞的隊形任務、單一 PPO／GNN 骨幹，以及使用獨立任務輸出頭的短任務增量序列；移除獨熱任務識別輸入不等於無任務識別學習。完整任務定義、調參與超參數有助重現，但所附 PDF 未列出新的 GRAFO／FROG 發布位置，且本次未獨立重跑實驗。這些屬科學與可重現性限制，不構成實質來源缺件暫緩。",
+        "raw_weighted_score": 0.611,
+        "request_sha256": "a9b699c8c897beadb439537946898f509c51bf0dd1e3261330b324bc5abe530a",
+        "review_sha256": "b52d02479d2dcc4a254b2bdb6c85ca7f61aecb534924e5affddba629712e816b",
+        "scope_assessment": {
+          "decision": "in_scope_general_rl_methodology",
+          "reason_en": "The main contribution formalizes graph-conditioned continual RL and proposes a reusable representation-freezing method. A synthetic formation benchmark supplies evidence, but the research contribution is broader than pure robotics or a single domain application. Relevance is credited to actual RL/continual-learning substance, not the word agent; there is no LLM/tool-use contribution.",
+          "reason_zh": "主要貢獻是圖條件化持續強化學習的形式化與可重用的表徵凍結方法。合成隊形基準提供實證，但研究本身超出純機器人或單一領域應用。相關性依實際強化學習與持續學習方法評估，不因代理關鍵字而加分；本文沒有大型語言模型或工具使用貢獻。",
+          "scope_cap_applied": false,
+          "scope_capped_score": null
+        },
+        "scope_capped_score": null,
+        "scope_policy_version": "explicit-review-exclusion-v1",
+        "scope_status": "in_scope",
+        "score": 0.5621200000000001,
+        "source_key": "b07759555ff77a6dfe17d084667e21d1412566b74abe7f60ebc6af1a424e9b96",
+        "story_id": "arxiv:2610.10302",
+        "token_usage": {},
+        "topics": [
+          "Reinforcement Learning",
+          "Training & Optimization",
+          "Graph Neural Networks"
+        ]
+      },
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-fixed-v1-reconstruction",
+        "tier": 1,
+        "title": "Continual Graph Multi-Agent Reinforcement Learning",
+        "url": "https://arxiv.org/abs/2610.10302v1"
+      },
+      "published_at": "2026-10-07T15:56:31+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.5621200000000001,
+        "llm_relevance_score": 15.739360000000001,
+        "recency_score": 0.7856279138075183,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 23.72498791380752
+      },
+      "section": null,
+      "source_name": "arXiv fixed-v1 saved abstract",
+      "story_id": "arxiv:2610.10302",
+      "summary": "In Continual Multi-Agent Reinforcement Learning (CMARL), agents learn cooperative policies across sequences of tasks, aiming to adapt effectively to new tasks while preserving the ability to solve previously encountered ones. In many applications, tasks differ in their underlying structure, which can represent, for example, distinct operational conditions or target configurations (e.g., different network topologies in power grids or arrangements in formation control). Existing CMARL methods lack dedicated mechanisms to leverage this structural information when learning new tasks, failing to promote transfer and mitigate forgetting. To fill this gap, we propose Continual Graph Multi-Agent Reinforcement Learning (CGMARL), a novel framework for CMARL problems in which task sequences are mapped into a series of attributed graphs, each modeling a task-specific structure. In CGMARL, each graph determines the environment dynamics (next states and/or rewards) and the number of agents for the corresponding task. Then, we present Graph-based Formation (GRAFO), the first CGMARL benchmark, and show how forgetting arises in this setting. Finally, to address this limitation, we propose Frozen Graph Encoder (FROG), a method that relies on a frozen graph backbone to preserve past structural information in graph-based CMARL policies. Experiments on GRAFO show that pairing FROG with existing CL methods substantially improves performance on multiple CGMARL scenarios.",
+      "summary_en": "When a multi-agent reinforcement-learning system encounters a new formation or connectivity pattern, it must learn new actions without forgetting rules associated with earlier graph structures. This paper formalizes continual graph MARL with topology, connectivity and graph-feature changes, and introduces the GRAFO formation-navigation benchmark. FROG trains a graph encoder on the first task, then freezes it while the action module continues learning with regularizers such as EWC or MAS. Ten-seed experiments across three task sequences show improved final performance for many combinations, but not universal dominance. Table 2 aggregates method medians: average final performance is 0.69 with a trained-then-frozen encoder versus 0.38 with a randomly frozen encoder; this is not a paired confidence interval. Task order matters, and starting with easier tasks can reduce later plasticity. Freezing prevents encoder drift at a fixed input, but cannot guarantee that the overall policy will retain past skills; the appendix bound also omits a constant and misinterprets a signed return difference. Experiments use at most seven agents, disabled collisions, known task identities and separate heads, without real-network or language-agent validation. Its useful contribution is a framework for separately evaluating structural representation and decision adaptation, rather than a general solution to multi-agent forgetting.",
+      "summary_zh": "多代理強化學習遇到新隊形或新連線時，不只要學新動作，也可能忘掉先前圖結構所代表的規則。本文提出持續圖多代理強化學習，把任務序列分為節點與邊一起改變、只改連線、只改圖特徵三類，並以GRAFO隊形導航基準測試。FROG先在第一個任務訓練圖編碼器，之後凍結它，只讓動作模組繼續學習，再搭配EWC或MAS等正則化方法。三種序列的十種子實驗顯示，多數組合的最終表現改善，但並非全面勝出。表二彙整不同方法的中位數，已訓練後凍結的編碼器平均最終表現為0.69，隨機凍結版為0.38；這不是配對信賴區間。任務順序仍重要，從較簡單任務開始可能降低後續可塑性。理論只能支持固定輸入下編碼器不再漂移，不能保證整體策略不遺忘；附錄界限另有常數遺漏與有號報酬差的解讀問題。實驗限於最多七個代理、停用碰撞、已知任務身分及分開輸出頭，未驗證真實網路或語言代理。對持續學習而言，價值在於把結構表示與決策適應分開評估，而非宣稱已解決一般多代理遺忘。",
+      "title": "Continual Graph Multi-Agent Reinforcement Learning",
+      "title_en": "Continual Graph Multi-Agent Reinforcement Learning",
+      "title_zh": "持續圖多代理強化學習"
+    },
+    {
+      "arxiv_id": "2610.10285",
+      "authors": [
+        "Zeitler, Leo",
+        "Richings, Jack",
+        "Nockles, Victoria"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "entities": [],
+      "first_seen_at": "2026-10-10T01:50:50+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-fixed-v1-reconstruction",
+          "tier": 1,
+          "title": "AI Safety Considerations for Agents With Limited Time to Act",
+          "url": "https://arxiv.org/abs/2610.10285v1"
+        }
+      ],
+      "llm_evaluation": {
+        "candidate_sha256": "f33b33dbbdef16b99d9019ec9ab8e17be8e0149a39a85e493e0de57336433a10",
+        "components": {
+          "evidence_strength": 0.25,
+          "generalizability": 0.68,
+          "novelty": 0.35,
+          "preference_relevance": 0.92,
+          "reproducibility": 0.55,
+          "rigor": 0.2
+        },
+        "confidence": 0.92,
+        "evidence": [
+          "Introduction and Results, pp.1–3; Fig.1 and Table 1, p.2: a latency-L controller selects actions using bounded observations; two indistinguishable states with disjoint safe-action sets cannot both be handled safely by a deterministic controller.",
+          "Results, p.3: the paper explicitly writes the joint condition intersection over z in V_L of S(z) nonempty, then defines R using only pairs with S(z) intersection S(z-prime) empty and labels R<L safe. Arbitrary S(z) subsets are permitted; no nesting or pairwise-to-global intersection assumption is supplied.",
+          "Definition 1 and Theorem 1, p.3: gamma is printed as a comparison of row suprema that is reflexive, while the claimed isomorphism targets the strict order (N,<); the proof also uses gamma as if it were a numerical supremum. This is distinct from, and does not refute, the intuitive possibility of finite pairwise delays with unbounded worst-case delay.",
+          "Theorem 1 discussion, p.3: finite union of safe actions is claimed to imply the set of conflicting states is finite. A two-action, infinitely many-state construction falsifies that implication; reviewer counterexamples are recorded separately as reviewer analysis, not paper experiments.",
+          "Theorems 2–3, p.4: two independent one-hot sources and one two-hot source yield distinct clean source tuples but the same summed observation forever; assigning disjoint safe actions gives an existential R_clean=0 versus R_mixture=infinity example.",
+          "Discussion and Conclusions, pp.4–5: the broad prose about signal-mixture safety goes beyond the existential construction; common safe actions or injective mixtures on the admissible support are not ruled out. The paper contains no experimental benchmark, baseline, ablation, measured success rate, or empirical safety validation."
+        ],
+        "fulltext_sha256": "357cfb06c24fb111f55341c636e234b3cba67080c97827f1b38cc32a2f535f3e",
+        "fulltext_status": "partial",
+        "model": "assistant-native-review",
+        "native_identity_version": 1,
+        "original_candidate_sha256": "f33b33dbbdef16b99d9019ec9ab8e17be8e0149a39a85e493e0de57336433a10",
+        "out_of_scope": false,
+        "producer": "assistant-native-review",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Directly relevant to general agent safety: the paper separates observation limits and action deadlines from model quality, and its explicit signal-summation construction validly shows that some previously distinguishable, safety-conflicting states become indistinguishable. However, the stronger safety characterization is not established. Results p.3 correctly requires a common safe action over the entire observation class, but the subsequent pairwise-conflict horizon R is insufficient for arbitrary safe-action sets; three pairwise-overlapping sets can have empty joint intersection. Theorem 1 also needs repaired order/diagonal definitions and a clearer proof, and finite action-union size does not imply finitely many conflicting states. These are substantive formal limitations, separate from the useful existential impossibility example. This is an inspectable theoretical argument, not an empirical study or a demonstrated failure of every real-world agent; no general ban on safe operation in all mixture environments follows.",
+        "rationale_en": "Directly relevant to general agent safety: the paper separates observation limits and action deadlines from model quality, and its explicit signal-summation construction validly shows that some previously distinguishable, safety-conflicting states become indistinguishable. However, the stronger safety characterization is not established. Results p.3 correctly requires a common safe action over the entire observation class, but the subsequent pairwise-conflict horizon R is insufficient for arbitrary safe-action sets; three pairwise-overlapping sets can have empty joint intersection. Theorem 1 also needs repaired order/diagonal definitions and a clearer proof, and finite action-union size does not imply finitely many conflicting states. These are substantive formal limitations, separate from the useful existential impossibility example. This is an inspectable theoretical argument, not an empirical study or a demonstrated failure of every real-world agent; no general ban on safe operation in all mixture environments follows.",
+        "rationale_zh": "本文直接切合通用代理安全：把觀測限制與行動期限同模型能力分開，並以明確的訊號相加構造，合理展示某些原本可辨識且安全行動互斥的狀態會變得不可辨識。然而，更強的安全刻畫並未成立。第3頁正確要求同一觀測類別內所有狀態具有共同安全行動，隨後卻以成對衝突的時域R作充分判準；對任意安全行動集合，三組集合可以兩兩相交而總交集為空。定理1的排序與對角線定義及證明也需修正，而安全行動聯集有限並不代表互相衝突的狀態有限。這些是實質形式限制，應與仍有用的存在性不可能案例分開。本研究是可檢查的理論論證，並非實證研究，也未證明所有真實世界代理都會失敗；不能據此否定所有訊號混合環境中的安全操作。",
+        "raw_weighted_score": 0.5835,
+        "request_sha256": "7f6398591ceeb7d2196db9edaad1362036512b114aaf42db0e7725b36dcbd279",
+        "review_sha256": "e201bb39a626e3985795c85ac55ef2094fb089403d84e04fa9240940da7ffae6",
+        "scope_assessment": {
+          "cap": null,
+          "decision": "in_scope",
+          "reason_en": "The contribution is agent-agnostic methodology for AI safety and alignment under partial observability and deadlines, not a pure sensing, audio, medical, or robotics application. Domain examples illustrate a general safe-action/observation interface.",
+          "reason_zh": "貢獻是部分可觀測與期限約束下、與代理模型無關的人工智慧安全及對齊方法論，並非單純感測、音訊、醫療或機器人應用；領域案例用於說明通用的安全行動與觀測介面。"
+        },
+        "scope_capped_score": null,
+        "scope_policy_version": "explicit-review-exclusion-v1",
+        "scope_status": "in_scope",
+        "score": 0.5368200000000001,
+        "source_key": "a12a99e8d56a7db856aa56f2664f6ed6032300803271c75a42171cbef9cf607a",
+        "story_id": "arxiv:2610.10285",
+        "token_usage": {},
+        "topics": [
+          "Agents & Tool Use",
+          "AI Safety",
+          "Alignment & RLHF"
+        ]
+      },
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-fixed-v1-reconstruction",
+        "tier": 1,
+        "title": "AI Safety Considerations for Agents With Limited Time to Act",
+        "url": "https://arxiv.org/abs/2610.10285v1"
+      },
+      "published_at": "2026-10-07T15:49:06+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.5368200000000001,
+        "llm_relevance_score": 15.030960000000002,
+        "recency_score": 0.7852233832451713,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 23.016183383245174
+      },
+      "section": null,
+      "source_name": "arXiv fixed-v1 saved abstract",
+      "story_id": "arxiv:2610.10285",
+      "summary": "In the wake of the increasingly public discussion about AI alignment, recent work has tried to propose specific AI architectures that behave safely. However, the proposed arguments that seemingly demonstrate proved alignment mostly neglect the environment the agent needs to act in. We discuss theoretical bounds for agent-agnostic safety guarantees in environments that can only be partially observed and within which an action is required within limited time. We introduce two realistic scenarios, one with an infinite state space and one with signal mixture. In these scenarios, we prove that even a perfect agent cannot guarantee safe behaviour. It will be argued that for any proof of AI safety or alignment, the environment and associated safe actions need to be specifically considered together with the agent.",
+      "summary_en": "The paper asks whether an agent forced to act before a deadline has enough observable information for a safe decision, even if its model is perfect. It represents the observation budget as a latency bound and assigns each true environmental state a set of safe actions. If two states produce identical observations before the deadline but have disjoint safe-action sets, no deterministic agent can guarantee safety in both. Start with the illustration on page 2 and definitions on page 3, then the signal-summation construction on page 4: two one-hot signals can sum to the same observation as one two-hot signal, permanently hiding source configurations that separate channels could distinguish. This establishes an existence example motivating joint design of safety specifications, sensing, environment assumptions and deadlines. It supplies no benchmark, measured success rate or large-language-model experiment. Important formal qualifications remain. Page 3 first requires a common safe action across the whole observational equivalence class, but then characterizes safety using pairwise conflicts. Three safe-action sets can overlap pairwise while their joint intersection is empty, so pairwise compatibility is insufficient for the general sufficiency claim. The infinite-state theorem also has order/diagonal-definition problems, and a finite action vocabulary does not imply finitely many conflicting states. These issues do not invalidate the elementary two-state example, but it cannot establish that every mixed-signal environment is unsafe. Use the paper as a design-review prompt: check observability, genuinely common fallback actions and formal assumptions before adopting a safety guarantee.",
+      "summary_zh": "本文問的是：代理必須在期限內行動時，即使模型完美，觀測資訊是否足以支持安全決策？作者以有限觀測長度描述延遲限制，將每個真實環境狀態對應到可接受的安全行動集合。若兩個狀態在期限前產生完全相同觀測，而安全行動互不相容，任何確定性代理都無法同時保證兩者安全。閱讀可先看第二頁示意與第三頁定義，再看第四頁訊號相加的構造：兩個單點訊號相加，可與一個雙點訊號得到相同結果，使原本可區分的來源配置永久混淆。這是支持「安全保證必須連同感測介面、環境和期限設計」的存在性論證，沒有實驗基準、成功率或大型語言模型測試。形式推導仍須審慎：第三頁先要求整個觀測等價類共有安全行動，後續卻只檢查成對衝突；三組安全集合可以兩兩相交，但總交集為空，因此成對條件不足以建立一般安全充分判準。無限狀態定理的排序與對角線處理也有缺口，有限安全行動數不代表衝突狀態有限。這些限制不推翻前述兩狀態反例，但不能把它擴寫為所有混合訊號環境都不可能安全。本文適合作為設計審查的提問框架；要實際使用，仍需逐項確認可觀測性、共同安全備援行動及形式假設。",
+      "title": "AI Safety Considerations for Agents With Limited Time to Act",
+      "title_en": "AI Safety Considerations for Agents With Limited Time to Act",
+      "title_zh": "行動時間有限之代理的人工智慧安全考量"
+    },
+    {
+      "arxiv_id": "2610.10278",
+      "authors": [
+        "Duan, Chenguang",
+        "Hertrich, Johannes",
+        "Steidl, Gabriele"
+      ],
+      "categories": [
+        "math.NA",
+        "cs.LG",
+        "math.PR",
+        "stat.ML"
+      ],
+      "entities": [],
+      "first_seen_at": "2026-10-10T01:50:50+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-fixed-v1-reconstruction",
+          "tier": 1,
+          "title": "Neural Sampling with Reweighted Normalizing Flows via the Wasserstein--Fisher--Rao JKO Scheme",
+          "url": "https://arxiv.org/abs/2610.10278v1"
+        }
+      ],
+      "llm_evaluation": {
+        "candidate_sha256": "13d43c507aa366fb5c51913bf352cb4eefe7c92079cac4ff733f3cc2819a05ad",
+        "components": {
+          "evidence_strength": 0.55,
+          "generalizability": 0.69,
+          "novelty": 0.74,
+          "preference_relevance": 0.46,
+          "reproducibility": 0.39,
+          "rigor": 0.6
+        },
+        "confidence": 0.92,
+        "evidence": [
+          "Sections 1 and 3, pp. 1–3 and 7–12: unnormalized positive integrable targets; extended KL minimization in unbalanced WFR. Theorem 3.5 gives c=beta/(exp(beta)-beta-1), beta=2/(alpha*h), independent of target geometry, for exact JKO iterates.",
+          "Sections 3–4, pp. 8–14: descent Lemma 3.3 and density lower-bound Lemma 3.4 support the theorem; Section 4 restricts the dynamic problem to an admissible neural flow class. No finite-particle, optimization, stochastic-trace or ODE-error convergence theorem is supplied.",
+          "Sections 4–5, pp. 12–17: learned velocity and reaction yield weighted characteristic flows and density values; MH rejuvenation targets the normalized current model rho_k, rather than directly correcting the model to pi.",
+          "Section 6.2 and Table 1, pp. 18–19: six-block ResNet with two-layer blocks, 512 hidden neurons, SiLU, RK4 step 0.1; h0=0.0025, step growth 4, alpha=1, MH step 0.03, initial scale 1.5, K=20 for four rows and K=10 for GMM-20/50/100. Optimizer, learning rate, training iterations, hardware and training ensemble size are not specified.",
+          "Table 2, p. 19: WFR energy distances are 0.012, 0.000016, 0.000031, 0.000032, 0.0001, 0.00041 and 0.017 across Mustache, shifted 8 modes, shifted 8 peaky, GMM-10/20/50/100. WFR is best on shifted 8 peaky/GMM-10/GMM-20 and second on the other four; no error bars or repeated-seed counts are reported.",
+          "Table 2, p. 19: GMM-100 WFR 0.017 versus neural JKO IC 0.0006 and reference sampling error 0.00015. These are point estimates, not a statistical significance or runtime-efficiency result.",
+          "Figure 1, p. 20: eight directly inspected panels compare true and WFR samples for four targets; GMM-10 and GMM-20 show first-two-coordinate marginals only. There are no GMM-50/100 panels or MH-option ablations.",
+          "Appendix B, pp. 27–28, PDF-confirmed: Algorithm 2 initializes psi with log current mass but adds psi to an already unnormalized log density without subtracting that mass; it labels mean positive weights as log mass. Algorithm 3 applies softmax to the positive weights from Algorithm 2 instead of normalizing them linearly or applying softmax to log weights.",
+          "Proposition 4.1 proof, p. 13, and Remark 3.2, p. 8: printed intermediate formulas contain inconsistent mass terms and a +1 first variation for the extended KL. Treat as manuscript-consistency defects, not a demonstrated refutation of the separate exact-JKO theorem.",
+          "Appendix A, p. 26: full auxiliary compactness proof is present; Appendix B completes at p. 28. Captured official v1 abstract and paper do not identify a required separate supplement. The torchdiffeq URL in reference 9 is a dependency link."
+        ],
+        "fulltext_sha256": "d4eb69e1909f689d00cd4155eb9a46c61d2a462d789f01f32e0df561f1124acc",
+        "fulltext_status": "partial",
+        "model": "assistant-native-review",
+        "native_identity_version": 1,
+        "original_candidate_sha256": "13d43c507aa366fb5c51913bf352cb4eefe7c92079cac4ff733f3cc2819a05ad",
+        "out_of_scope": false,
+        "producer": "assistant-native-review",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "An in-scope general neural-sampling and optimization contribution, with only indirect relevance to language models and agents. The strongest result is target-independent geometric KL contraction for exact WFR JKO minimizers; the learned, finite-particle, numerically integrated algorithm is not covered by that guarantee (Sections 3–5). Reweighted flows provide a useful transport/reaction formulation and tractable density access. Table 2 reports three best and four second-best energy distances across seven synthetic targets, but WFR is 28.3 times worse than neural JKO IC on GMM-100 (0.017 versus 0.0006), without seed uncertainty, compute-matched timings or the promised rejuvenation ablations. PDF-confirmed mass/log-mass and weight-normalization inconsistencies in Algorithms 2–3, plus missing optimizer/training-budget details, materially weaken reproducibility; these do not establish that the reported implementation used the printed erroneous rules. Full supplied-v1 reading is complete and no required external supplement is identified; no material missing-source hold is recommended.",
+        "rationale_en": "An in-scope general neural-sampling and optimization contribution, with only indirect relevance to language models and agents. The strongest result is target-independent geometric KL contraction for exact WFR JKO minimizers; the learned, finite-particle, numerically integrated algorithm is not covered by that guarantee (Sections 3–5). Reweighted flows provide a useful transport/reaction formulation and tractable density access. Table 2 reports three best and four second-best energy distances across seven synthetic targets, but WFR is 28.3 times worse than neural JKO IC on GMM-100 (0.017 versus 0.0006), without seed uncertainty, compute-matched timings or the promised rejuvenation ablations. PDF-confirmed mass/log-mass and weight-normalization inconsistencies in Algorithms 2–3, plus missing optimizer/training-budget details, materially weaken reproducibility; these do not establish that the reported implementation used the printed erroneous rules. Full supplied-v1 reading is complete and no required external supplement is identified; no material missing-source hold is recommended.",
+        "rationale_zh": "這是一項屬於範圍內的通用神經取樣與最佳化研究，但與語言模型及代理的關聯較間接。最有力的成果是精確 WFR JKO 極小化解具有與目標無關的 KL 幾何收斂率；此保證並未涵蓋以有限粒子及數值積分訓練的實際演算法（第3至5節）。重加權流提供實用的傳輸與反應表述，以及可計算的密度。表2在七個合成目標中列出三項最佳、四項次佳的能量距離，但於 GMM-100，WFR 誤差為神經 JKO IC 的28.3倍（0.017對0.0006），且未提供隨機種子不確定性、計算量對齊的時間比較或宣稱要評估的粒子更新策略消融。PDF確認演算法2至3存在質量／對數質量及權重正規化不一致，加上缺少最佳化器與訓練預算細節，明顯限制重現性；這不代表產生報告結果的實作確實採用了印出的錯誤規則。已完整閱讀提供的v1，未發現必要的外部補充資料，不建議因實質來源缺件暫緩。",
+        "raw_weighted_score": 0.556,
+        "request_sha256": "ce2230816bf43fa3fe1b31e37b9d13424bb1b4a3fc4036b83cbc893196952008",
+        "review_sha256": "97fa1a16e5c12911fda4de1bb6feea615fb12df48cfc84ed01091b71f26a529c",
+        "scope_assessment": {
+          "cap": null,
+          "cap_applied": false,
+          "decision": "in_scope_general_methodology",
+          "reason_en": "A broadly formulated learning/optimization and neural-sampling method, not a pure domain application or excluded image/video diffusion task. Language-model relevance is indirect and reflected in the relevance component; LLM usage disclosure earns no methodological relevance.",
+          "reason_zh": "本研究提出通用學習／最佳化與神經取樣方法，並非純領域應用或被排除的影像／影片擴散任務。與語言模型的間接關聯反映於相關性分數；LLM使用聲明不增加方法相關性。"
+        },
+        "scope_capped_score": null,
+        "scope_policy_version": "explicit-review-exclusion-v1",
+        "scope_status": "in_scope",
+        "score": 0.5115200000000001,
+        "source_key": "88eeb407ee7b44451ded66f48e11723dedb4cc025873729080f48c4d0ecd2970",
+        "story_id": "arxiv:2610.10278",
+        "token_usage": {},
+        "topics": [
+          "training-optimization",
+          "scientific-ai",
+          "normalizing-flows",
+          "neural-sampling",
+          "optimal-transport"
+        ]
+      },
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-fixed-v1-reconstruction",
+        "tier": 1,
+        "title": "Neural Sampling with Reweighted Normalizing Flows via the Wasserstein--Fisher--Rao JKO Scheme",
+        "url": "https://arxiv.org/abs/2610.10278v1"
+      },
+      "published_at": "2026-10-07T15:44:29+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.5115200000000001,
+        "llm_relevance_score": 14.322560000000003,
+        "recency_score": 0.7849716795248809,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 22.307531679524885
+      },
+      "section": null,
+      "source_name": "arXiv fixed-v1 saved abstract",
+      "story_id": "arxiv:2610.10278",
+      "summary": "We propose a neural algorithm for sampling from distributions specified by unnormalized Boltzmann densities. Our approach is based on the Jordan--Kinderlehrer--Otto scheme for the Kullback--Leibler divergence in the Wasserstein--Fisher--Rao geometry (WFR JKO scheme). Our contributions are twofold. First, we prove that, for any fixed step size, the exact WFR JKO iterates converge exponentially fast to the target as the number of iterations tends to infinity. Notably, this result requires no structural assumptions on the target, such as log-concavity or a logarithmic Sobolev inequality. Second, we develop a neural implementation of the WFR JKO scheme that parametrizes its transport and reaction components using reweighted normalizing flows. Numerical experiments on challenging multimodal targets demonstrate the promising performance of the proposed method.",
+      "summary_en": "This paper studies sampling from unnormalized Boltzmann densities, focusing on widely separated probability modes. Pure transport can struggle to cross low-density regions, while Wasserstein–Fisher–Rao geometry permits both transport and changes in mass. Reweighted normalizing flows represent these mechanisms, implicit JKO steps learn the density, and resampling followed by Metropolis–Hastings updates mitigates particle duplication. Read Theorem 3.5 in Section 3 before the implementation in Sections 4 and 5. Distinguish exact variational minimizers from finite-particle neural approximations: the target-independent geometric KL contraction guarantee concerns the former and does not directly cover training, numerical integration or resampling errors. Section 6 evaluates energy distance using seven synthetic distributions and 50,000 generated samples, reporting three best and four second-best results. However, on the hundred-dimensional Gaussian mixture, the error of 0.017 remains about 28.3 times that of importance-corrected neural JKO. Read the absolute values and sampling-error column in Table 2 rather than relying on ranks alone. The paper does not report across-seed uncertainty, compute-matched timings or rejuvenation-strategy ablations. Algorithms 2 and 3 in the appendix also contain inconsistent mass/log-mass and weight-normalization notation. These need checking before reproduction, but do not establish that the implementation producing the reported experiments used erroneous rules. The work offers methodological ideas for general neural sampling without directly validating benefits for language models or agents.",
+      "summary_zh": "這篇研究從未正規化的玻爾茲曼密度取樣，重點是多個相隔很遠的機率峰：只搬運粒子可能難以穿過低密度區，WFR幾何則同時允許搬運與增減質量。作者以重加權正規化流表示這兩種變化，並使用隱式JKO步驟學習密度，再透過重抽樣和Metropolis–Hastings更新減輕粒子重複。先讀第三節定理三點五，再讀第四、五節實作，務必區分精確變分極小解與有限粒子神經近似：目標無關的KL幾何收斂保證屬於前者，不直接涵蓋訓練、數值積分或重抽樣誤差。第六節以七個合成分布和五萬筆生成樣本評估能量距離，取得三項最佳、四項次佳；但在百維高斯混合上，誤差零點零一七仍約為神經JKO重要性修正版的二十八點三倍。應一併看表二的絕對數字與取樣誤差，不能只看名次。文中未提供跨種子不確定性、計算量對齊的時間比較或更新策略消融。附錄演算法二、三的質量／對數質量與權重正規化記法也有不一致，重現前需核對，不能據此斷言報告實驗用了錯誤程式。本文對通用神經取樣有方法價值，但未直接驗證語言模型或代理效益。",
+      "title": "Neural Sampling with Reweighted Normalizing Flows via the Wasserstein--Fisher--Rao JKO Scheme",
+      "title_en": "Neural Sampling with Reweighted Normalizing Flows via the Wasserstein--Fisher--Rao JKO Scheme",
+      "title_zh": "以 Wasserstein–Fisher–Rao JKO 格式進行重加權正規化流神經取樣"
+    },
+    {
+      "arxiv_id": "2610.10303",
+      "authors": [
+        "Kim, Junhyeok",
+        "Kim, Jinyeong",
+        "Park, Jae Wan",
+        "Hwang, Seong Jae"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "entities": [
+        "huggingface"
+      ],
+      "first_seen_at": "2026-10-10T01:50:50+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-fixed-v1-reconstruction",
+          "tier": 1,
+          "title": "On the Necessity of Attention-FFN Split in Vision Transformers",
+          "url": "https://arxiv.org/abs/2610.10303v1"
+        }
+      ],
+      "llm_evaluation": {
+        "candidate_sha256": "4f29057b036b3d64462c30ff9b5eb7b13ba40725a19196586b18aa4e633588cd",
+        "components": {
+          "evidence_strength": 0.48,
+          "generalizability": 0.33,
+          "novelty": 0.48,
+          "preference_relevance": 0.56,
+          "reproducibility": 0.42,
+          "rigor": 0.3
+        },
+        "confidence": 0.92,
+        "evidence": [
+          "PDF pp.3–4, Eqs.1–5 and Table 1: AttenFeed computes attention-weighted GELU value projections, replacing the two-sublayer block with one. Small/Base widths increase from 384/768 to 640/1280 and heads from 6/12 to 8/16; Large depth increases 24→28. Parameter counts are approximately, not exactly, matched (21→20M, 86→80M, 303→289M).",
+          "PDF pp.13–15, Appendix A, Eqs.6–21: the self-focused limit yields a position-wise GELU FFN. Small-input GELU has expansion z/2 + O(z²), so Eq.11’s identity approximation gives vanishing absolute error only in a shrinking-output regime and does not establish a nontrivial same-parameter attention equivalence. Its proof also adds sparsity and absence of large negative activations beyond the proposition.",
+          "PDF p.14, Eq.13 and Eqs.14–19: the displayed objective approximates sigmoid(x) by Phi(lambda*x), yet gives lambda≈1.702; direct numerical evaluation contradicts that scale for this orientation. Eq.15 leaves the SiLU input unscaled and multiplies the output by lambda, which does not recover the GELU gate. Diagonal dominance does not itself supply the exact masking construction cited in the footnote, and a sum of dh attention heads is identified with one head without the required construction or approximation bound.",
+          "PDF pp.5,17–18, Tables 2/6 and Eqs.23–25: GELU improves xViT accuracy in all twelve small-dataset/configuration pairs. Effective rank is measured over a matrix of CLS vectors from different images, normalized by feature dimension; it is not direct within-sequence token-rank measurement. Several pre/post-rank entries tie rather than strictly increase.",
+          "PDF p.5, Table 3 and pp.6,19, Figures 2/4: uViT highlights object regions qualitatively, including non-object corner activations. ImageNet-Segmentation mIoU declines .629→.538, .569→.516, .500→.447; Pascal-VOC declines .550→.490, .480→.449, .422→.384. Large mAP has small gains, but these do not erase the consistent mIoU deficits.",
+          "PDF pp.7–8, Section 5.1 and Table 4: linear-probe gains occur in 11 of 12 cases; Large STL10 falls 97.63→97.54, contradicting the all-scenarios wording. Full fine-tuning wins 8 of 12 cases and loses all four Small comparisons. Several full-finetuning accuracies are far below linear probing; the recipe does not explain this disparity sufficiently.",
+          "PDF p.8, Table 5: Small ImageNet/Places365/iNaturalist gains are 13.47/5.62/13.99 percentage points; Base gains .68/1.08/1.98; Large differences −.15/+.39/−.90. Both Large iNaturalist entries are daggered for doubled batch size after uViT instability. No uncertainty or significance analysis is shown.",
+          "PDF pp.7,20–21, Figures 3/5/6: weight-distribution profiles are descriptive rather than a parameterization-invariant measure of function or inductive bias. Figures 5/6 captions identify Small/Large while their legends still say ViT-B/uViT-B; preserve this source labeling ambiguity.",
+          "PDF p.16, Appendix B: toy optimization says 100 epochs but specifies 10 warm-up plus 190 remaining epochs. Large pretraining specifies 300 epochs, AdamW, strong augmentation and a batch-scaled learning rate but not the actual per-run global batches, multiple-run uncertainty, FLOPs or runtime.",
+          "PDF p.22, Appendix D: the authors explicitly confine evidence to vision and leave language/audio validation and architecture-specific training recipes for future work. PDF p.1 prints Attention–FFN and Preprint October 8, 2026; the arXiv sidebar and official fixed-v1 provenance establish October 7 publication. Neither canonical title nor publication date was rewritten."
+        ],
+        "fulltext_sha256": "bc777d5e5ba13f2ea3ba5c3466f1b60e2f5ef4f866022050b50cf61142e157f3",
+        "fulltext_status": "partial",
+        "model": "assistant-native-review",
+        "native_identity_version": 1,
+        "original_candidate_sha256": "4f29057b036b3d64462c30ff9b5eb7b13ba40725a19196586b18aa4e633588cd",
+        "out_of_scope": false,
+        "producer": "assistant-native-review",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "AttenFeed is a simple and potentially useful architectural probe: apply GELU to projected values and remove the separate FFN. Its generic token-level construction is a reusable Transformer-method contribution, so it remains in scope rather than being treated as a pure image-task application. However, all experiments are on Vision Transformers and language-model applicability remains explicitly future work; this limits relevance and generalizability. The strongest evidence is improved small-model image classification and matched-shape xViT ablations, not a proof that less inductive bias causes the gains. Parameter matching changes width, head count, depth and residual/normalization structure; no matched-compute or architecture-tuning comparison isolates the split. Appendix A establishes a conditional self-focused FFN reduction, but the claimed general attention equivalence contains unsupported assumptions and scaling errors. Cross-sample CLS effective rank does not directly measure within-image token collapse, and weight histograms are not functional-equivalence evidence. Transfer results are mixed, segmentation mIoU is worse throughout, seeds/error bars are absent, and training details contain an epoch inconsistency. Complete supplied-v1 text and material visuals are readable; these are scientific weaknesses, not missing-source grounds for a hold.",
+        "rationale_en": "AttenFeed is a simple and potentially useful architectural probe: apply GELU to projected values and remove the separate FFN. Its generic token-level construction is a reusable Transformer-method contribution, so it remains in scope rather than being treated as a pure image-task application. However, all experiments are on Vision Transformers and language-model applicability remains explicitly future work; this limits relevance and generalizability. The strongest evidence is improved small-model image classification and matched-shape xViT ablations, not a proof that less inductive bias causes the gains. Parameter matching changes width, head count, depth and residual/normalization structure; no matched-compute or architecture-tuning comparison isolates the split. Appendix A establishes a conditional self-focused FFN reduction, but the claimed general attention equivalence contains unsupported assumptions and scaling errors. Cross-sample CLS effective rank does not directly measure within-image token collapse, and weight histograms are not functional-equivalence evidence. Transfer results are mixed, segmentation mIoU is worse throughout, seeds/error bars are absent, and training details contain an epoch inconsistency. Complete supplied-v1 text and material visuals are readable; these are scientific weaknesses, not missing-source grounds for a hold.",
+        "rationale_zh": "AttenFeed 是簡單且可能有用的架構分析工具：對投影後的 value 加上 GELU，再移除獨立 FFN。其通用 token 層級構造是可重用的 Transformer 方法貢獻，因此納入範圍，不當作單純影像任務應用。然而，所有實驗皆限於視覺 Transformer，語言模型適用性明列為未來工作，故降低相關性與可泛化性。最有力的證據是小模型影像分類改善與相同形狀的 xViT 消融，而非歸納偏置減少造成增益的證明。參數量匹配同時改變寬度、注意力頭數、深度及殘差／正規化結構，缺少等算力與架構調參比較以隔離分離設計的作用。附錄 A 證明了自我聚焦條件下的 FFN 化約，但一般注意力等價的論證含未支持假設與縮放錯誤。跨樣本 CLS 有效秩不能直接測量單張影像內的 token 秩塌縮，權重直方圖也不等於功能等價。遷移結果有好有壞、分割 mIoU 全面較低，且未報種子變異或誤差棒，訓練細節另有 epoch 數矛盾。提供的 v1 全文與重要圖像可讀；這些屬科學弱點，不構成來源缺件暫緩。",
+        "raw_weighted_score": 0.467,
+        "request_sha256": "f9735d626007b33ece56c013d5038855ec8ae8e6dbfba3e4b003676b729d7ba1",
+        "review_sha256": "01afcefba707cf0fe45447fb63fb5f5742195b75be9c8ecf04ebaf55921541c6",
+        "scope_assessment": "In scope as a reusable Transformer architectural-method analysis: nonlinear value projections and the attention/FFN unification construction are defined for generic token sequences and do not depend on image geometry, labels or a particular visual task. It is more than applying an unchanged model to a vision problem. Vision-only experiments and the unestablished language/causal-decoder transfer reduce preference relevance and generalizability; they do not alone trigger the pure-vision application cap. No language-model results are inferred.",
+        "scope_capped_score": 0.467,
+        "scope_policy_version": "explicit-review-exclusion-v1",
+        "scope_status": "in_scope",
+        "score": 0.42964,
+        "source_key": "6d492d758b92dd482717167f267cfec6c11b04993e8b523bd2827b4e47d7955c",
+        "story_id": "arxiv:2610.10303",
+        "token_usage": {},
+        "topics": [
+          "Transformer Architecture",
+          "Interpretability & Explainability",
+          "Computer Vision",
+          "Training & Optimization"
+        ]
+      },
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-fixed-v1-reconstruction",
+        "tier": 1,
+        "title": "On the Necessity of Attention-FFN Split in Vision Transformers",
+        "url": "https://arxiv.org/abs/2610.10303v1"
+      },
+      "published_at": "2026-10-07T15:57:13+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 2.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.42964,
+        "llm_relevance_score": 12.02992,
+        "recency_score": 0.7856661049815786,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 22.01558610498158
+      },
+      "section": null,
+      "source_name": "arXiv fixed-v1 saved abstract",
+      "story_id": "arxiv:2610.10303",
+      "summary": "The standard Transformer architecture relies on a rigid pattern that alternates Attention and Feed-Forward Network (FFN) layers. Despite its widespread adoption, the inductive bias imposed by this strict separation has not been systematically examined. In this work, we investigate the necessity of the Attention-FFN dichotomy in Vision Transformers (ViTs). To facilitate this analysis, we introduce the AttenFeed module, a unified component that integrates the functional properties of both Attention and FFN. Based on this module, we devise the unified Vision Transformer (uViT), which replaces the conventional alternating Attention-FFN structure with a sequence of AttenFeed modules. We then use uViT as a control group that relaxes the Attention-FFN dichotomy of the standard ViT and systematically compare the two models across multiple datasets and model scales. Our experiments reveal that the Attention-FFN dichotomy can hinder performance at smaller model scales due to the rigid parameter allocation of ViTs. The AttenFeed module and uViT serve as new analytical tools for understanding the Attention-FFN structure and offer theoretical insights into the heuristically designed architecture of conventional ViTs.",
+      "summary_en": "Must a Transformer alternate attention and feed-forward networks? AttenFeed probes this design by adding GELU to projected values, removing the separate FFN and stacking the resulting modules into uViT. To approach the baseline parameter budget, the authors also widen the models, change head counts and increase depth in the larger variant. Matched-shape small-model ablations support a classification benefit from the nonlinearity. On larger datasets, Small-model ImageNet accuracy rises from 53.64% to 67.11%, but gains shrink at Base scale and Large results are mixed. These comparisons do not isolate the attention–FFN split as the cause: width, residual structure and compute are not fully controlled. Transfer learning does not improve in every setting, while segmentation mIoU declines across both datasets and all three scales. Self-focused attention can reduce to a position-wise FFN, but the general attention-equivalence argument has assumption and scaling problems. Cross-image CLS effective rank is also not a direct measure of within-image token collapse. The paper lacks multi-seed uncertainty, contains an inconsistent epoch description and provides no language-model experiments. The practical takeaway is a simple architecture-ablation direction to test with matched compute, independently tuned recipes and repeated runs, rather than a universal architectural theorem inferred from small-model classification gains.",
+      "summary_zh": "Transformer一定要交替使用注意力與前饋網路嗎？本文以AttenFeed測試這個設計：在投影後的value加入GELU非線性，移除獨立FFN，再把這類模組堆成uViT。為接近原模型參數量，作者同時加寬模型、改變頭數，較大版本還增加深度。相同形狀的小型消融支持非線性有助影像分類；較大資料集的Small模型在ImageNet準確率由53.64%升至67.11%，但優勢到Base縮小，Large結果有升有降。這不能單獨證明注意力與FFN分離造成性能損失，因為寬度、殘差結構與算力未被完整控制。遷移學習並非所有設定都改善，分割表中兩個資料集、三種規模的mIoU皆下降。理論上，自我聚焦注意力可化約為逐位置FFN，但一般注意力等價的證明仍有假設與縮放問題；跨影像CLS有效秩也不是單張影像內token塌縮的直接量測。論文未提供多種子不確定性，訓練epoch描述另有矛盾，且沒有語言模型實驗。值得帶走的是一個簡單的架構消融方向，後續應用等算力、獨立調參與多次重跑檢驗，避免把小模型分類收益推廣成通用架構定理。",
+      "title": "On the Necessity of Attention-FFN Split in Vision Transformers",
+      "title_en": "On the Necessity of Attention-FFN Split in Vision Transformers",
+      "title_zh": "論視覺 Transformer 中注意力與前饋網路分離的必要性"
+    },
+    {
+      "arxiv_id": "2610.10260",
+      "authors": [
+        "Tao, Jiran",
+        "Jiang, Binyan"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CR"
+      ],
+      "entities": [],
+      "first_seen_at": "2026-10-10T01:50:50+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-fixed-v1-reconstruction",
+          "tier": 1,
+          "title": "PairAudit: Guiding Human Review with Graph Tokens under Distribution Shift",
+          "url": "https://arxiv.org/abs/2610.10260v1"
+        }
+      ],
+      "llm_evaluation": {
+        "candidate_sha256": "6c046553cc8400267b9e732b0bcce72f087237a43e6be6a0f6017b2e57217cab",
+        "components": {
+          "evidence_strength": 0.62,
+          "generalizability": 0.51,
+          "novelty": 0.61,
+          "preference_relevance": 0.38,
+          "reproducibility": 0.48,
+          "rigor": 0.69
+        },
+        "confidence": 0.92,
+        "evidence": [
+          "PDF pp.3–6, Sections 3–4, Figure 1: 2(K−1)-dimensional tokens join ilr node and mean-neighbor posteriors; known-class GMM means/covariances are fixed while ExtraTrees-derived gates adapt mixture weights. Ordinary labels audit candidate/removal pairs; this is not text tokenization or an LLM.",
+          "PDF pp.6–7 and 13–14, Equation 4, Proposition 1, Appendices B–C: 2m+(L−m)+(H−L−m)=H; net gain separates audited candidate corrections, displaced Raw corrections and remaining pair differences. Uniform finite-population sampling needs no node independence, but does not calibrate the Dirichlet posterior or guarantee total workflow benefit.",
+          "PDF pp.7–9, Tables 2–4: primary net gains are 102.95, 789.79, 340.30 and 80.01 over Raw across 20/10/3/3 fits. Trust Score exceeds PairAudit total gains on CICIDS (886.60) and TON (166.67). All methods include H final reviews, but baseline scorers do not share the audit/retention policy.",
+          "PDF pp.7–8, Table 3 and Figure 2: review reveals noiseless dataset labels with equal cost, using H=ceil(.1N). Decision-label costs are 5.71%, 5.01%, 5.07%, 6.92% of H; remaining budget is still spent. Physics rejects yet loses about 22.97 corrections versus Raw, while outperforming forced adoption by about 234.03.",
+          "PDF pp.9,17, Table 9: TON benefits from explicit neighborhood coordinates (80.01 versus −39.86 node marginal); X-IIoTID instead improves to 354.38 without them, and CICIDS matched shuffle reaches 790.77 versus 789.79. Node marginal retains GNN/gate graph information; one shuffle is not a permutation test.",
+          "PDF pp.14–16, Appendix D: most source/target graphs are separate, UNSW permits transductive target covariates, IoT23 low-OOD cohorts rebuild target graphs, whereas IoMT high-OOD cohorts retain full-pool context. Physics holds a class outside detector outputs, unlike the known-label primary review task.",
+          "PDF pp.18–22, Tables 10–13 and Appendix F: component and exchange counts have task-dependent effects; 63 workloads derive from 48 fits. The 21,600 primary runs are 36 fits × 600 pair-order seeds, not independent events. Stress tests report 8/5,400, 42/1,800 and 21/1,800 negative-gain runs for IoT23, full IoMT and BoT.",
+          "PDF p.10 reproducibility statement and pp.20–22 Appendix F: code, saved predictions and ledgers are asserted, but no executable/ledger supplement is in this source package and Appendix F contains only workload/loss tables. Their availability and recomputation remain unverified; no paid human-subject study is claimed."
+        ],
+        "fulltext_sha256": "91f4efc28c6095744bb3328f5752c012312a0e41ed9cfc30d300db4735b105b7",
+        "fulltext_status": "partial",
+        "model": "assistant-native-review",
+        "native_identity_version": 1,
+        "original_candidate_sha256": "6c046553cc8400267b9e732b0bcce72f087237a43e6be6a0f6017b2e57217cab",
+        "out_of_scope": false,
+        "producer": "assistant-native-review",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "PairAudit contributes a general graph-conditioned error-prioritization and budgeted audit policy, so it is in scope as graph/ML methodology, but only peripherally relevant to the preferred language-model and agent topics. The useful combination is feature-gated Gaussian densities of frozen node/neighborhood predictions with paid pair audits and exact review-budget accounting. Four retrospectively chosen security shifts show positive mean net gains over uncertainty review across 36 fits, including all audit costs. This is simulated label revelation, not a human-review study; 600 pair-order runs per workload are not independent attack samples. Trust Score wins total corrections on two tasks, graph-specific ablations are mixed, and the uncalibrated Dirichlet working posterior is not a distribution-free safety guarantee. Early rejection still loses corrections versus Raw, and stress tests include negative-gain runs. Detailed appendices help, but executable code and claimed ledgers are not supplied or independently verified. No material missing-source hold is needed for the complete supplied PDF.",
+        "rationale_en": "PairAudit contributes a general graph-conditioned error-prioritization and budgeted audit policy, so it is in scope as graph/ML methodology, but only peripherally relevant to the preferred language-model and agent topics. The useful combination is feature-gated Gaussian densities of frozen node/neighborhood predictions with paid pair audits and exact review-budget accounting. Four retrospectively chosen security shifts show positive mean net gains over uncertainty review across 36 fits, including all audit costs. This is simulated label revelation, not a human-review study; 600 pair-order runs per workload are not independent attack samples. Trust Score wins total corrections on two tasks, graph-specific ablations are mixed, and the uncalibrated Dirichlet working posterior is not a distribution-free safety guarantee. Early rejection still loses corrections versus Raw, and stress tests include negative-gain runs. Detailed appendices help, but executable code and claimed ledgers are not supplied or independently verified. No material missing-source hold is needed for the complete supplied PDF.",
+        "rationale_zh": "PairAudit 提出一般性的圖條件錯誤排序與固定預算稽核策略，因此屬於範圍內的圖／機器學習方法，但與偏好的語言模型及代理主題僅間接相關。其有用整合是以特徵閘控高斯密度建模凍結的節點與鄰域預測，再搭配付費成對稽核及精確的審查預算計算。四個事後選定的資安分布偏移任務，在 36 個擬合設定中均較不確定性排序取得正的平均淨增益，且已計入全部稽核成本。這是模擬揭露既有標籤，並非真人審查研究；每個工作負載的 600 次配對順序重複也不是獨立攻擊樣本。Trust Score 在兩個任務的總修正數較佳，圖結構消融結果不一致，未校準的 Dirichlet 工作後驗更不是無分布安全保證。提早拒絕仍較 Raw 損失修正數，壓力測試也有負增益。詳細附錄有助理解，但未提供或獨立驗證可執行程式及聲稱的紀錄。完整提供的 PDF 不需要實質缺件暫緩。",
+        "raw_weighted_score": 0.515,
+        "request_sha256": "00740e296ea936bce3dbad29687cdb6fc16797930404bfad7350e30ca7b67321",
+        "review_sha256": "dfda974dac76c887d16a5286a1813fa01c713b246a66fc6372bbff17de5692be",
+        "scope_assessment": "In scope as general graph-based error detection and sequential review-allocation methodology with domain-independent K-class definitions and budget/gain analysis. This is not an LLM, language-token, agent or RLHF method; the security demonstrations and human-feedback vocabulary do not establish preferred-topic relevance. Its generic methodological contribution distinguishes it from a pure domain application.",
+        "scope_capped_score": null,
+        "scope_policy_version": "explicit-review-exclusion-v1",
+        "scope_status": "in_scope",
+        "score": 0.47380000000000005,
+        "source_key": "026a0e2f8083d2f2ea5fea898ac37fe4686f890a97b536170e6489016c7c2d0d",
+        "story_id": "arxiv:2610.10260",
+        "token_usage": {},
+        "topics": [
+          "Graph Neural Networks",
+          "Data & Datasets"
+        ]
+      },
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-fixed-v1-reconstruction",
+        "tier": 1,
+        "title": "PairAudit: Guiding Human Review with Graph Tokens under Distribution Shift",
+        "url": "https://arxiv.org/abs/2610.10260v1"
+      },
+      "published_at": "2026-10-07T15:35:02+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.47380000000000005,
+        "llm_relevance_score": 13.2664,
+        "recency_score": 0.7844567108527698,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 21.250856710852773
+      },
+      "section": null,
+      "source_name": "arXiv fixed-v1 saved abstract",
+      "story_id": "arxiv:2610.10260",
+      "summary": "Intrusion detectors can confidently misclassify attacks that were not seen during training. Human review can correct these errors, but only a limited number of cases can be checked. Uncertainty-based review may overlook confident errors, while anomaly scores alone do not show whether changing the review plan will correct more errors. We introduce PairAudit to find overlooked errors and improve review under a fixed budget. Its graph tokens capture prediction patterns across connected nodes. Rather than building another predictor through feature aggregation, PairAudit uses unusual relational patterns to uncover potential errors in existing predictions. Human feedback then helps decide whether these findings justify changing review priorities. Experiments across security tasks show that PairAudit corrects more errors on average than uncertainty-based review, including more errors on unseen attacks. These gains account for all review costs and do not require retraining the detector.",
+      "summary_en": "PairAudit asks how a fixed human-review budget can reach confident classification errors that uncertainty ranking overlooks. It combines a node's class probabilities with its neighbors' probabilities in numerical graph tokens, then uses feature-conditioned Gaussian-mixture densities to identify unexpected relationships. These tokens are not language-model text. The method proposes replacements for part of the uncertainty-ranked queue, samples candidate–original pairs, pays for both labels, and uses a Bayesian working model to decide whether to adopt the remaining replacements. Start with Figure 1 and Equation 4: both audited endpoints remain in the final review set, so auditing displaces other reviews. Then compare Tables 2–4. At a budget covering about ten percent of each pool, the four primary security tasks gain approximately 80–790 corrected errors over the uncertainty baseline after audit costs. Trust Score nevertheless corrects more errors overall on two tasks. The evaluation simulates noiseless label revelation; 600 audit-order repetitions are not 600 independent attacks or a human study. Neighborhood information helps unevenly, the working posterior is not a distribution-free safety guarantee, and even rejecting a proposal can incur a net loss because audit costs have already been paid. The paper is useful for error prioritization and review allocation. Operational use would still require checking reviewer time, labeling mistakes, and unequal consequences of different errors instead of assuming equal costs and equal correction value.",
+      "summary_zh": "PairAudit 探討固定人工審查預算下，如何找到分類器高信心卻判錯、因而被不確定性排序漏掉的案例。方法把節點與鄰居的類別機率轉成圖詞元，以特徵條件化的高斯混合密度辨識不尋常關係；這裡的詞元是數值向量，不是語言模型文字。它先提出替換審查名單，再隨機抽取「候選與原名單」配對、支付兩筆標註成本，用貝氏工作模型決定是否採用剩餘替換。閱讀時先看圖一及式四，理解抽查過的兩端都保留，且抽查會排擠其他審查名額，再看表二至四。四個主要資安任務在審查約一成資料的相同預算下，比原不確定性策略平均多修正約八十至七百九十個錯誤，已計入抽查成本；但 Trust Score 在其中兩項的總修正數較高。結果來自模擬揭露無雜訊資料標籤，六百次抽查順序重複並非六百次獨立攻擊或真人研究。鄰域資訊的收益因任務而異，工作後驗不構成無分布安全保證，拒絕替換也可能因已付成本而虧損。本文適合研究錯誤排序與審查資源分配；實際應用仍須檢查審查時間、標註錯誤和不同誤判代價，不能直接套用論文的等成本、等價值假設。",
+      "title": "PairAudit: Guiding Human Review with Graph Tokens under Distribution Shift",
+      "title_en": "PairAudit: Guiding Human Review with Graph Tokens under Distribution Shift",
+      "title_zh": "PairAudit：在分布偏移下以圖詞元引導人工審查"
+    }
+  ]
+}

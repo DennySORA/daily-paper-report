@@ -1,0 +1,68 @@
+{
+  "candidate_count": 9,
+  "evaluated_count": 9,
+  "native_audit": {
+    "date": "2026-10-07",
+    "entries": {
+      "arxiv:2610.10253": {
+        "evaluatable": true,
+        "request_sha256": "ad742ad9b33cd2d6a2b0270a4f6b3c3d97199998e79138958b3765706014ad2d",
+        "review_sha256": "b470993349be8369dfd95ecf7dfefc337cd44cc65637ee4ab524d5e5128b5ffc",
+        "source_key": "492d8c8e7d7b173098da9d0bb2d89317302b1d319be905c911225b49696c631d"
+      },
+      "arxiv:2610.10260": {
+        "evaluatable": true,
+        "request_sha256": "00740e296ea936bce3dbad29687cdb6fc16797930404bfad7350e30ca7b67321",
+        "review_sha256": "dfda974dac76c887d16a5286a1813fa01c713b246a66fc6372bbff17de5692be",
+        "source_key": "026a0e2f8083d2f2ea5fea898ac37fe4686f890a97b536170e6489016c7c2d0d"
+      },
+      "arxiv:2610.10266": {
+        "evaluatable": true,
+        "request_sha256": "2ae9a664f4ff990d97e1096fe09ebb2174f26af4626b2c72728e99e725a9e33a",
+        "review_sha256": "da737c143444e12439423d5b817e99f6674c77d830709d9dae6243ff78971a37",
+        "source_key": "8bb693054afcb5abd7abae5c8f72f8793d2f0279d7a6efb5ac0696effd57eab0"
+      },
+      "arxiv:2610.10275": {
+        "evaluatable": true,
+        "request_sha256": "b7f64c4dd947870ce607ed5f31adb240cda77394cb0c22e6fe15394264c04342",
+        "review_sha256": "dbd819c2a898b197952229e4c5ff69bb7ded59894c64f2e1d3f5a4445c391d50",
+        "source_key": "2fa19fed71c87363ce0e0feba89d2dc1b6ae82d7753a0c6804594a9ebb24e960"
+      },
+      "arxiv:2610.10278": {
+        "evaluatable": true,
+        "request_sha256": "ce2230816bf43fa3fe1b31e37b9d13424bb1b4a3fc4036b83cbc893196952008",
+        "review_sha256": "97fa1a16e5c12911fda4de1bb6feea615fb12df48cfc84ed01091b71f26a529c",
+        "source_key": "88eeb407ee7b44451ded66f48e11723dedb4cc025873729080f48c4d0ecd2970"
+      },
+      "arxiv:2610.10285": {
+        "evaluatable": true,
+        "request_sha256": "7f6398591ceeb7d2196db9edaad1362036512b114aaf42db0e7725b36dcbd279",
+        "review_sha256": "e201bb39a626e3985795c85ac55ef2094fb089403d84e04fa9240940da7ffae6",
+        "source_key": "a12a99e8d56a7db856aa56f2664f6ed6032300803271c75a42171cbef9cf607a"
+      },
+      "arxiv:2610.10301": {
+        "evaluatable": true,
+        "request_sha256": "42b2bc5fd62392615aa26ae98e9b430ade4fcc79b44d6e9180a0c26b4b93fb9b",
+        "review_sha256": "79730705afca1e1bde6bb86d96d85d9eb2eb1485218c1415996eceda70fdf0e4",
+        "source_key": "3c3f5e3c2b6e28bc475e63e233d07f275f1589a7ac7ae3646382826622af2bd8"
+      },
+      "arxiv:2610.10302": {
+        "evaluatable": true,
+        "request_sha256": "a9b699c8c897beadb439537946898f509c51bf0dd1e3261330b324bc5abe530a",
+        "review_sha256": "b52d02479d2dcc4a254b2bdb6c85ca7f61aecb534924e5affddba629712e816b",
+        "source_key": "b07759555ff77a6dfe17d084667e21d1412566b74abe7f60ebc6af1a424e9b96"
+      },
+      "arxiv:2610.10303": {
+        "evaluatable": true,
+        "request_sha256": "f9735d626007b33ece56c013d5038855ec8ae8e6dbfba3e4b003676b729d7ba1",
+        "review_sha256": "01afcefba707cf0fe45447fb63fb5f5742195b75be9c8ecf04ebaf55921541c6",
+        "source_key": "6d492d758b92dd482717167f267cfec6c11b04993e8b523bd2827b4e47d7955c"
+      }
+    },
+    "manifest_sha256": "7f8239e44421f47732c0c3344cd31737627b9ece9533ad42f9fbab178352cdbb",
+    "version": 1
+  },
+  "phase": "bounded_partial_release",
+  "producer": "assistant-native-review",
+  "selected_count": 8
+}
