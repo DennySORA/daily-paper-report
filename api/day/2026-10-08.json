@@ -892,6 +892,517 @@
       "title": "Loud Failures, Quiet Failures: Fault Detection and Recovery in Tool-Using Language Model Agents",
       "title_en": "Loud Failures, Quiet Failures: Fault Detection and Recovery in Tool-Using Language Model Agents",
       "title_zh": "明顯失敗與靜默失敗：工具型語言模型代理的故障偵測與復原"
+    },
+{
+      "arxiv_id": "2610.09858",
+      "authors": [],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-10-10T03:48:52.075194+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-cl",
+          "tier": 1,
+          "title": "Training Advisors for LLM Agents from Task Outcomes",
+          "url": "https://arxiv.org/abs/2610.09858v1"
+        }
+      ],
+      "llm_evaluation": {
+        "candidate_sha256": "abc4c21f827c49f07634ba23e34bf055ddd1eb52ecca7fe95788fef3a1191099",
+        "components": {
+          "evidence_strength": 0.72,
+          "generalizability": 0.72,
+          "novelty": 0.73,
+          "preference_relevance": 0.97,
+          "reproducibility": 0.5,
+          "rigor": 0.7
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "PDF pp.3–4 Eqs.1–6: frozen actor prefixes branch into G critiques and N continuations; critic-only token-level DAPO uses terminal success. Main G16/N1, eight80GB H100s. AppendixB p.14 additionally assigns-1 to malformed/truncated feedback without continuing.",
+          "PDF pp.5,14 Table1/AppendixC:200 MuSiQue validation questions with eight rollouts each; attached21.56→46.88, wiki10.38→21.13; ALFWorld134 unseen games23.79→49.72. At least three searches are enforced for attached trained critics and stated no-critic/prompted main baselines.",
+          "PDF pp.5–7 Tables2–3: transfer to three unseen actors; wiki gains .81–6.19 points. OOD64 DeepDive/40Retail/20Airline, eight seeds. Larger-model DeepDive no critic48.83, attached44.53, wiki49.80; prompted Kimi leads larger-model Retail59.69 vs wiki58.12.",
+          "PDF p.5 versus p.7 table captions: in-domain SEM uses per-task mean success; OOD SEM uses eight seed-level aggregate accuracies. Neither interval overlap nor eight inference trials is a repeated-training significance analysis.",
+          "PDF pp.7–8 and pp.19–24 Figures2–4,6–11/AppendicesH–J: consultation-selected groups and advice-type comparisons are expressly descriptive. Qualitative pairs may have different pre-advice states, so task matching alone does not isolate the critic text as causal.",
+          "PDF pp.14–16 Tables4–7: critics retain final steps2000(MuSiQue)/800(ALFWorld), but stopping duration was chosen after monitoring validation plateau. GRPO-generator attached49.69→63.56 with a newly trained critic; an original-partner critic only reaches51.69. Selected fixed-step comparisons sometimes exceed one-call self-call, which differs from three-call main protocol.",
+          "PDF pp.17–19 AppendixG: ALFWorld prompt requests at least one review and gives task recipes; MuSiQue asks the actor to consider calling at least once. The actor remains frozen; these conditions test prompted consultation, not separately learned optimal call timing.",
+          "PDF pp.12–13 Figure5: Gumbel coupling is positional, trajectory covariance is unmeasured, smoothed20-task curves have no confidence bands. No claim of proven faster convergence or quantified variance reduction follows.",
+          "PDF p.19 Figure6: Q4/DeepDive displayed call percentages61.5+27.3+5=93.8, Q38/DeepDive93.2+4.3=97.5; unaccounted fractions/denominator are not explained. Main success tables do not rely on reconstructing this descriptive chart.",
+          "PDF pp.25–26 AppendixK: solution copying can maximize binary reward; lower conditional reward variance alone is not the cause. Branching needs state restoration and GN continuations, with critic-scale and total operational cost limits."
+        ],
+        "fulltext_sha256": "a143df2654e2e23800ec0004790bce98ea4b0a811334209e9e32b80d9462f39c",
+        "fulltext_status": "complete",
+        "model": "assistant-native-review",
+        "native_identity_version": 1,
+        "original_candidate_sha256": "abc4c21f827c49f07634ba23e34bf055ddd1eb52ecca7fe95788fef3a1191099",
+        "out_of_scope": false,
+        "producer": "assistant-native-review",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "A strong topic fit and useful study of trainable advice during tool-using episodes. The same-initialization prompted critic is a relevant baseline, and fixed4B critics transfer beyond their training partner. The main attached improvement is25.31 percentage points as reported from unrounded results, not25.31 percent relative gain or proof a4B system dominates a frontier model generally. The result includes an extra advisor and prompt-guided consultation. Self-call is not a trained optimal stopping policy: the actor is frozen and the supplied instructions encourage, or for ALFWorld require, at least one review. Small OOD sets and seed-level SEM warrant caution, and the attached critic causes a clear mean drop on larger-model DeepDive. Selected advice-type plots are descriptive, not causal estimates. The training objective also permits solution copying and requires expensive branch restoration. The26-page PDF supplies sufficient material for a bounded full review; absence of externally verified code/weights restricts reproduction rather than making all content unassessable.",
+        "rationale_en": "A strong topic fit and useful study of trainable advice during tool-using episodes. The same-initialization prompted critic is a relevant baseline, and fixed4B critics transfer beyond their training partner. The main attached improvement is25.31 percentage points as reported from unrounded results, not25.31 percent relative gain or proof a4B system dominates a frontier model generally. The result includes an extra advisor and prompt-guided consultation. Self-call is not a trained optimal stopping policy: the actor is frozen and the supplied instructions encourage, or for ALFWorld require, at least one review. Small OOD sets and seed-level SEM warrant caution, and the attached critic causes a clear mean drop on larger-model DeepDive. Selected advice-type plots are descriptive, not causal estimates. The training objective also permits solution copying and requires expensive branch restoration. The26-page PDF supplies sufficient material for a bounded full review; absence of externally verified code/weights restricts reproduction rather than making all content unassessable.",
+        "rationale_zh": "主題高度相關，對工具使用過程中可訓練的文字建議提供有用實證。同初始模型的提示顧問是合理對照，固定四十億顧問也能轉移至其他執行模型。附段落主要增益依作者未四捨五入結果為二十五點三一個百分點，不是相對增加百分之二十五點三一，更不代表四十億系統普遍勝過前沿模型；系統另加顧問及求助提示。主動呼叫不是訓練出的最優停止策略：執行模型固定，提示鼓勵諮詢，ALFWorld 甚至要求至少一次。外域題少且標準誤按種子計算，須審慎解讀；附段落顧問對較大模型的 DeepDive 平均表現明顯下降。依建議類型選出的軌跡分析是描述性而非因果估計。訓練目標仍可能鼓勵直接提供答案，且分支環境還原昂貴。二十六頁全文足以做有界評估，外部程式與權重未驗證限制的是重現，並非所有內容都不可判讀。",
+        "raw_weighted_score": 0.8075,
+        "request_sha256": "5febf70277070e5b0018e9bf41b8e8b17cd9bba666d9f41c7e26f9f0d131b844",
+        "review_sha256": "4fbc3481fa334219a47829e2edbb0c5699407938d8c98fe09f6ca1b96d006bd1",
+        "scope_assessment": "In scope: general language-agent advisory method trained from task outcomes; ALFWorld is one text-agent evaluation rather than a pure robotics application.",
+        "scope_capped_score": null,
+        "scope_policy_version": "explicit-review-exclusion-v1",
+        "scope_status": "in_scope",
+        "score": 0.8075,
+        "source_key": "343fe51c7781a045b2bdb1ceef142b894546f14c3e0a43237659b13c4c80083e",
+        "story_id": "arxiv:2610.09858",
+        "token_usage": {},
+        "topics": [
+          "Agents & Tool Use",
+          "Reinforcement Learning",
+          "RAG & Knowledge",
+          "Training & Optimization",
+          "Red Teaming & Evaluation"
+        ]
+      },
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-cl",
+        "tier": 1,
+        "title": "Training Advisors for LLM Agents from Task Outcomes",
+        "url": "https://arxiv.org/abs/2610.09858v1"
+      },
+      "published_at": "2026-10-07T11:14:26+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.8075,
+        "llm_relevance_score": 22.61,
+        "recency_score": 0.7620782650590818,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 30.572078265059083
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2610.09858",
+      "summary": "Large language model agents tackle multi-step tasks by interleaving reasoning and tool calls with observations from the environment. Prior work has shown that natural-language feedback can help these agents revise their decisions during task execution. We introduce Caddie, a method for training critics to provide natural-language analysis and advice as agents work through a task. Unlike approaches that rely on step-level labels or reference critiques, Caddie learns from whether the agent ultimately succeeds after receiving the critic's feedback. We optimize the critic through reinforcement learning while keeping the base model frozen. Trained on multi-hop question answering with a single base model, our Qwen3-4B critic improves success rates across four base models of different scales and architectures, including three not used during critic training. On the MuSiQue benchmark, the trained critic improves Qwen3-4B's success rate by more than 25 percentage points, surpassing the performance of Kimi K3 without a critic. The same critic also yields gains on out-of-domain interactive benchmarks, including $\\tau^3$ and DeepDive, with no additional training. Our results show that agents can decide when to seek help from a critic at inference time and that outcome-based critic training can produce guidance that transfers across base models and task domains.",
+      "summary_en": "Caddie trains a frozen-agent advisor from the success of branched continuations, without reference critiques. A 4B advisor raises MuSiQue attached success from 21.56% to 46.88% and transfers to several models and tasks. Transfer is uneven: one advisor lowers larger-model DeepDive success. Self-calling is prompt-guided, selected feedback analyses are noncausal, and eight rollout seeds are not training replicas. State restoration and many continuations are costly; matched-compute superiority is untested.",
+      "summary_zh": "代理走到一半卡住時，小模型能否提供比強模型臨時建議更有用的指引？Caddie 固定執行任務的模型，在同一中途狀態產生多份文字建議，讓代理分別繼續操作，再用最終成敗訓練顧問。它不需逐步對錯標籤或示範評語，但格式不合格另有懲罰。推論時代理可呼叫顧問，最多三次；顧問只提供文字，環境操作仍由原代理執行。\n\n以 Qwen3 四十億參數顧問搭配同規模代理，兩百道 MuSiQue 附段落題的成功率從百分之二十一點五六升至四十六點八八，作者報告增加二十五點三一個百分點。其他代理與客服、網頁搜尋任務也有轉移，但幅度不一；維基版顧問在較大代理的 DeepDive 僅小幅改善，附段落版反而由四十八點八三降到四十四點五三。\n\n這篇的價值是把建議當作會改變後續行為的介入，而非只判斷某一步是否正確。不過「自行求助」受到提示詞鼓勵甚至要求至少一次，不能當成額外學出的最佳求助策略。八次測試抽樣不是八次獨立訓練，小型外域測試的標準誤也採不同計算方式。訓練需要大量分支續跑及還原環境，尚無同運算預算的驗證器比較；在可一次解完的問題上，顧問更可能直接給答案，轉移性與實際成本仍需評估。",
+      "title": "Training Advisors for LLM Agents from Task Outcomes",
+      "title_en": "Training Advisors for LLM Agents from Task Outcomes",
+      "title_zh": "從任務結果訓練語言模型代理的顧問"
+    },
+{
+      "arxiv_id": "2610.09679",
+      "authors": [],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-10-10T03:49:08.328951+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-lg",
+          "tier": 1,
+          "title": "CERO: Where and When to Allocate Rollouts for RL Post-Training",
+          "url": "https://arxiv.org/abs/2610.09679v1"
+        }
+      ],
+      "llm_evaluation": {
+        "candidate_sha256": "64c1079db83febf2c1d0aa30a2812045252f47d38d847483d53856dda2c730be",
+        "components": {
+          "evidence_strength": 0.74,
+          "generalizability": 0.6,
+          "novelty": 0.73,
+          "preference_relevance": 0.91,
+          "reproducibility": 0.61,
+          "rigor": 0.79
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "PDF pp.3–9 Eqs.1–12/Algorithm1: nondecreasing concave utility of cumulative exposure; compact Fenchel slopes and shared budget price coordinate horizon allocation. Virtual top-score proposals drive dual updates while execution clips to remaining budget. With g4/Nmax2 and divisible caps each admitted prompt gets eight responses.",
+          "PDF pp.6,27 Propositions1–2/AppendixF: expected group-variance identity assumes conditional IID Bernoulli rewards; consistency proof is stationary fixed-sample. It is not a calibration theorem for adaptively sampled changing policies, and the pathwise bounds retain explicit proxy discrepancy.",
+          "PDF pp.9,22–27 Theorems1–2/AppendicesC–E: surrogate fixed-rate regret plus same-realized-rate-path comparison, with variation VK. Compact conjugate, integer oracle and clipping proofs are present. Bounds do not compare alternate schedules under the different policy/rate paths they would cause.",
+          "PDF pp.10–11 Table1:500 rounds/256,000 training responses/50percent DAPO-Math17K subset. avg@16 is mean reward over16 responses, then macro-average across five benchmarks. CERO32.81/45.36/41.81 versus GRPO30.19/43.26/40.22 and Knapsack29.53/44.69/41.75;7B margin over Knapsack is.06 points.",
+          "PDF pp.12–13 Table2/Figures4–5:1.5B mixed groups18,347/32,000=57.3percent vs random-matched52.7. Peak spending surplus1,920 responses, final budget exactly exhausted. Across three training seeds CERO32.26±.94, fixed31.13±.72, greedy30.97±.38, preset30.71±.54; values are standard deviations, not SEMs.",
+          "PDF p.18 Table3/AppendixB.1: pass@16 means at least one correct among16. Qwen3-4B Knapsack67.09 exceeds CERO65.45; CERO improves over GRPO on each backbone but not every task or metric.",
+          "PDF pp.18–20 Figure6/AppendixB.2:32,000 selected groups in one1.5B run, seven bins r.971/rho.964 and10 temporal intervals r.769. Mean predicted variance.154 exceeds observed.119; within-run95percent normal intervals ignore repeated-prompt and temporal dependence. This measures reward contrast, not update value.",
+          "PDF pp.20–22 Figure8:1.5B CERO16.94 vs GRPO17.57 GPU-hours, but both84.2 core seconds per million generated tokens.4B CERO36.31 vs Knapsack35.85 GPU-hours. Each timing is one run; CERO updates488/486/487 versus500 for GRPO/Knapsack across backbones.",
+          "PDF p.28 AppendixG:two locally modified veRL stacks, vLLM.8.3, FSDP, BF16, AdamW1e-6, noKL/entropy,2048 prompt and response caps, rule-based verifier, Beta(1,1),lambda=rho1, gamma1/sqrt500. Reserve catch-up enabled but never triggered; main1.5B CERO run is included in the three-seed ablation."
+        ],
+        "fulltext_sha256": "7713e87a2ec27185d0124dd1f745382d565de7fe2e6cca68d1e7701a111538df",
+        "fulltext_status": "complete",
+        "model": "assistant-native-review",
+        "native_identity_version": 1,
+        "original_candidate_sha256": "64c1079db83febf2c1d0aa30a2812045252f47d38d847483d53856dda2c730be",
+        "out_of_scope": false,
+        "producer": "assistant-native-review",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "A useful horizon-level allocation method with unusually explicit theoretical scope and practical ablations. Its guarantee is a regret bound for a chosen concave utility, with proxy-error and rate-variation terms; it does not guarantee downstream reward, optimal RL convergence, or a counterfactual policy trajectory. The experimental scheduler always gives each admitted prompt eight responses. Matched response count controls one resource dimension only: update counts differ and token lengths vary. Three-seed1.5B ablations support adaptive pacing, but larger-model main-table uncertainty is unreported and the7B avg@16 lead over KnapsackRL is only.06 points. Qwen3-4B pass@16 is65.45 versus KnapsackRL67.09. The selected-group variance proxy has positive aggregate associations but predicts.154 on average against observed.119 and nominal intervals ignore temporal/repeated-prompt dependence. Timing supports comparable overhead, not a general training speedup. All28pages and proofs permit a bounded review without a material hold; source code/run availability and external generalization remain unverified.",
+        "rationale_en": "A useful horizon-level allocation method with unusually explicit theoretical scope and practical ablations. Its guarantee is a regret bound for a chosen concave utility, with proxy-error and rate-variation terms; it does not guarantee downstream reward, optimal RL convergence, or a counterfactual policy trajectory. The experimental scheduler always gives each admitted prompt eight responses. Matched response count controls one resource dimension only: update counts differ and token lengths vary. Three-seed1.5B ablations support adaptive pacing, but larger-model main-table uncertainty is unreported and the7B avg@16 lead over KnapsackRL is only.06 points. Qwen3-4B pass@16 is65.45 versus KnapsackRL67.09. The selected-group variance proxy has positive aggregate associations but predicts.154 on average against observed.119 and nominal intervals ignore temporal/repeated-prompt dependence. Timing supports comparable overhead, not a general training speedup. All28pages and proofs permit a bounded review without a material hold; source code/run availability and external generalization remain unverified.",
+        "rationale_zh": "這是一個有用的跨訓練期分配方法，理論界線與實證消融交代得相當清楚。定理是指定凹效益函數的遺憾界，保留代理誤差及速率漂移項，並不保證下游獎勵、強化學習最優收斂或另一策略的反事實訓練路徑。實驗每個入選題固定八份回答。回答數相同只控制一種資源，更新次數與 token 長度仍不同。十五億模型三種子消融支持自適應節奏，但較大模型主表未報不確定性，七十億對 KnapsackRL 的 avg@16 優勢僅零點零六點；四十億 pass@16 為六十五點四五，低於對照六十七點零九。入選群組的變異代理雖具彙總相關，平均預測零點一五四高於實際零點一一九，名義區間亦未校正時間與重複題相依。計時支持額外成本相近，並非普遍加速。二十八頁與證明足夠支持有界評審，無需全面材料扣留；程式／紀錄可取得性與外部泛化仍未驗證。",
+        "raw_weighted_score": 0.7935000000000001,
+        "request_sha256": "eb495be50db44dac94175fb452d10d92faa72f1facdd2960ec25e3b7ad0d6581",
+        "review_sha256": "6159e9428e21b26123189df43bab22b2d8833a0a2e42ef65964648e11bb76371",
+        "scope_assessment": "In scope: general LLM RL training allocation method, evaluated on mathematical reasoning rather than a pure domain application.",
+        "scope_capped_score": null,
+        "scope_policy_version": "explicit-review-exclusion-v1",
+        "scope_status": "in_scope",
+        "score": 0.7935000000000001,
+        "source_key": "a4fd19855c61cde48871d803b31df6acfc01e7acb02941e7af5984ae2b94ee7c",
+        "story_id": "arxiv:2610.09679",
+        "token_usage": {},
+        "topics": [
+          "Training & Optimization",
+          "Reinforcement Learning",
+          "Reasoning & Chain-of-Thought",
+          "Scaling & Efficiency"
+        ]
+      },
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-lg",
+        "tier": 1,
+        "title": "CERO: Where and When to Allocate Rollouts for RL Post-Training",
+        "url": "https://arxiv.org/abs/2610.09679v1"
+      },
+      "published_at": "2026-10-07T08:40:53+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.7935000000000001,
+        "llm_relevance_score": 22.218000000000004,
+        "recency_score": 0.753995248315431,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 30.171995248315433
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2610.09679",
+      "summary": "Adaptive rollout methods for group-relative reinforcement learning typically allocate a fixed per-update budget across prompts. We instead study how to coordinate a finite rollout budget over the entire training horizon. We formulate this problem using a concave surrogate utility of cumulative prompt exposure and introduce CERO, an online primal dual scheduler for prompt admission and budget pacing. In our experiments, each admitted prompt receives a fixed-size response group. CERO instead adapts which prompts are selected, how often they are revisited across rounds, and how many groups are generated in each round. A compact Fenchel representation linearizes the dependence on cumulative exposure, while projected online gradient descent updates prompt-specific supporting slopes and a shared budget price using reward-variation feedback and budget deviations. We establish pathwise guarantees for the surrogate allocation objective against fixed-rate and same-path time-varying benchmarks, with explicit terms for proxy discrepancy and rate variation. Under matched training-response budgets, CERO attains the highest avg@16 macro-average on each of three backbones across five mathematical reasoning benchmarks. Mechanistic analyses link CERO's prompt choices to within-group reward contrast, while multi-seed ablations show gains from adaptive pacing over both uniform and preset spending schedules.",
+      "summary_en": "CERO coordinates prompt admission and training-wide budget pacing while keeping eight responses per admitted prompt. Across three backbones it improves avg@16 macro scores at matched response counts; three-seed ablations support adaptive pacing. Guarantees concern a concave surrogate on a fixed rate path, not learning optimality. The variance proxy is miscalibrated, pass@16 does not always lead, and response budgets do not match token or update counts. Single-run timing shows comparable cost.",
+      "summary_zh": "強化學習後訓練的生成預算有限，除了挑選哪些題目，還要決定何時多花、何時保留。CERO 把整段訓練視為共享預算的分配問題，用遞減效益描述反覆練習同題的價值，再以每題的支持斜率與共同預算價格調整選題及各輪支出。實驗中每次選中的題目固定生成八份回答，改變的是入選次數與每輪選幾題，並非動態放大單題群組。\n\n三個語言模型皆以二十五萬六千份訓練回答，在五個數學基準比較。CERO 的每題十六次回答平均正確率，宏平均較 GRPO 高一點五九至二點六二個百分點；小模型三種種子消融也支持自適應時程優於固定或預設支出。然而七十億模型相對 KnapsackRL 只高零點零六點，四十億模型的「十六次至少答對一次」指標反而較低，不能把不同指標混為全面領先。\n\n論文附有完整推導，但保證針對代理效益函數，不保證真實模型品質或另一條訓練路徑的最優策略。獎勵變異預測雖有排序訊號，平均仍由實際零點一一九高估為零點一五四；它也不是直接估算學習增益。相同回答數不代表相同 token 或更新次數，作者的單次計時僅顯示成本相近。此方法值得用於有限預算的數學後訓練，跨任務、較大模型及穩定重現仍待驗證。",
+      "title": "CERO: Where and When to Allocate Rollouts for RL Post-Training",
+      "title_en": "CERO: Where and When to Allocate Rollouts for RL Post-Training",
+      "title_zh": "CERO：強化學習後訓練的生成樣本該分給誰、何時使用"
+    },
+{
+      "arxiv_id": "2610.10179",
+      "authors": [],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-10-10T03:47:44.804014+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-cl",
+          "tier": 1,
+          "title": "Beyond Outcome Rewards: Constructing and Assigning Retrieval Credit for Search Agents",
+          "url": "https://arxiv.org/abs/2610.10179v1"
+        }
+      ],
+      "llm_evaluation": {
+        "candidate_sha256": "74addaed6c71a8363838843d9c9450dbbcacc01f30a2e2a6130ce5ff66b10f4c",
+        "components": {
+          "evidence_strength": 0.64,
+          "generalizability": 0.56,
+          "novelty": 0.73,
+          "preference_relevance": 0.96,
+          "reproducibility": 0.45,
+          "rigor": 0.64
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "PDF pp.3–5, Eqs.1–5: Cov credits grounded nodes, Cov-Dep adds prerequisite closure, AM uses answer-string matches. Local residuals compare eligible rollouts of the same question at the same search index and apply signed full-payload-scaled credit only to executed query tokens; tool observations are masked.",
+          "PDF pp.5–6 and p.19 Tables 1/8: Qwen3-4B-Instruct-2507, 14,000 synthetic training questions, fixed E5-base-v2 and KILT-2019, top three 100-word chunks. The 3,197-question micro average rises 51.25 to 54.34 F1; multi-hop 46.26 to 51.07. The benchmark suite informed development decisions.",
+          "PDF pp.7,14–15 Figure 3 and Appendix A.3: event-mass permutation preserves signed/absolute credit but breaks correspondence; aligned minus permuted F1 is 2.12 for Cov and 3.12 for AM. Flat-only/no-flat remove credit without rescaling, so their contrasts do not isolate group identity at equal update mass.",
+          "PDF p.8 Figures 4–5 and p.16 Appendix A.5: mean coverage 27.51 to 31.97 percent, searches 2.45 to 2.55, complete coverage 142 to 167 of 1,200. Conditional F1 groups differ in question IDs; the figure is not a matched causal test of evidence utilization.",
+          "PDF pp.13–16 Appendix A: two 80GB A100s, AdamW 1e-6, five rollouts/question, batch128, PPO epoch1 and KL .001; seven measured training conditions take 28–31 hours excluding startup/initial validation. Four assistant turns and only first query per call are enforced despite the generic web-search prompt.",
+          "PDF pp.15–16 Table 3/Eq.7: alpha .25 mostly preserves rankings in saved local-policy trajectories, but standardized scalar updates remain active in tied-outcome groups. This is a fixed-trajectory scale check, not a matched-strength new training sweep or proof local credit alone fixes zero-advantage groups.",
+          "PDF pp.16–18 Appendix B/Tables 4–5: all 15,200 questions use the same opening template. Dev has 225 full and 282 partial gold-evidence overlaps with training. The detector requires mention start offset, not full mention; 265/52,435 annotations lack a fully containing chunk; requiring full mention changes progress on 20/7,680 sampled trajectories.",
+          "PDF pp.18–21 Tables 6–9: all 13 conditions report EM/F1; Cov-local EM42.63 versus39.22. Leave-one-dataset-out Cov-local gains range2.63–3.51 points. These aggregation checks do not replace repeat training uncertainty.",
+          "PDF pp.21–22 Appendices D/E: explicit selection rules describe illustrated cases. Both paired-example policies answer correctly although Cov-local covers an additional career passage; annotated coverage need not equal necessary evidence for the final answer.",
+          "PDF pp.9–10 limitations/reproducibility: authors call for matched-strength controls and more backbones/retrievers; code, trained models and constructed data will be released upon acceptance, not established as already available."
+        ],
+        "fulltext_sha256": "be8038a7ab71d463f9e98a01f0f80fbe0fcc801c9d540608ee926d040a2ee6ad",
+        "fulltext_status": "complete",
+        "model": "assistant-native-review",
+        "native_identity_version": 1,
+        "original_candidate_sha256": "74addaed6c71a8363838843d9c9450dbbcacc01f30a2e2a6130ce5ff66b10f4c",
+        "out_of_scope": false,
+        "producer": "assistant-native-review",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "A relevant and carefully scoped empirical study of how retrieval progress enters an agent's update. Query-local coverage improves micro F1 by 3.09 percentage points and EM by 3.41 over the outcome-only condition; it is not a relative-percent improvement or a compute-efficiency claim. Mass-preserving permutation tests make action correspondence a useful finding. Stronger causal conclusions remain limited because local and scalar update strengths are not matched, gating changes total credit, only one model/retriever setup is studied, and no multi-seed uncertainty is reported. The benchmark suite informed development. Development coverage is not independent evidence of generalization: 507 of 1,200 questions share training evidence, and coverage-conditioned groups do not contain identical questions. The start-offset detector can credit partially visible mentions; appendix audits quantify this rather than eliminating it. The full PDF is sufficient for a bounded scientific assessment, so missing external releases do not require a blanket material hold. Availability and reproducibility remain unverified.",
+        "rationale_en": "A relevant and carefully scoped empirical study of how retrieval progress enters an agent's update. Query-local coverage improves micro F1 by 3.09 percentage points and EM by 3.41 over the outcome-only condition; it is not a relative-percent improvement or a compute-efficiency claim. Mass-preserving permutation tests make action correspondence a useful finding. Stronger causal conclusions remain limited because local and scalar update strengths are not matched, gating changes total credit, only one model/retriever setup is studied, and no multi-seed uncertainty is reported. The benchmark suite informed development. Development coverage is not independent evidence of generalization: 507 of 1,200 questions share training evidence, and coverage-conditioned groups do not contain identical questions. The start-offset detector can credit partially visible mentions; appendix audits quantify this rather than eliminating it. The full PDF is sufficient for a bounded scientific assessment, so missing external releases do not require a blanket material hold. Availability and reproducibility remain unverified.",
+        "rationale_zh": "這是一篇與需求高度相關、範圍清楚的實證研究，探討檢索進展如何進入代理更新。查詢局部覆蓋比僅看結果的條件提高整體 F1 三點零九個百分點、EM 三點四一個百分點，不能解讀為相對百分比或運算效率提升。保留信用量的置換對照支持動作對應的重要性；但局部與整段更新強度未匹配、組別遮罩改變總信用量，且只測單一模型與檢索器、沒有多種子不確定性，較強因果結論仍受限。七個基準曾參與開發決策；一千二百道分析題中五百零七道共享訓練證據，按覆蓋分組後也不是相同題目，不能視為獨立泛化或更善用證據的證明。起點式偵測可能把不完整提及計為覆蓋，附錄只是量化而非消除此問題。全文足以支持附限制評估，未釋出外部資產不需全面扣留內容，但可取得性與重現性仍未核實。",
+        "raw_weighted_score": 0.764,
+        "request_sha256": "af35c430dbe9253e20e43af38a8896d11ddd0e0bc4f13ec2b3df631c4de5787d",
+        "review_sha256": "c969b2c1fe1107b65aca753ce977983b73d807f26caafd66b92ec692897274cb",
+        "scope_assessment": "In scope: original language-agent retrieval and RL credit-assignment methodology, not a pure application.",
+        "scope_capped_score": null,
+        "scope_policy_version": "explicit-review-exclusion-v1",
+        "scope_status": "in_scope",
+        "score": 0.764,
+        "source_key": "3646dcfcd0b5442a0860b2664acbfb87219c78c42b58888a24a4cd540a22fca8",
+        "story_id": "arxiv:2610.10179",
+        "token_usage": {},
+        "topics": [
+          "Agents & Tool Use",
+          "RAG & Knowledge",
+          "Reinforcement Learning",
+          "Training & Optimization"
+        ]
+      },
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-cl",
+        "tier": 1,
+        "title": "Beyond Outcome Rewards: Constructing and Assigning Retrieval Credit for Search Agents",
+        "url": "https://arxiv.org/abs/2610.10179v1"
+      },
+      "published_at": "2026-10-07T14:48:47+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.764,
+        "llm_relevance_score": 21.392,
+        "recency_score": 0.773506967036503,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 29.365506967036502
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2610.10179",
+      "summary": "Search agents enable Large Language Models (LLMs) to iteratively retrieve and use information for complex multi-hop questions. Reinforcement Learning with Verifiable Rewards (RLVR) offers a promising approach for post-training such agents, but its reliance on sparse, outcome-based supervision can make credit assignment difficult and limit learning efficiency. In this paper, we systematically investigate how intermediate supervision can improve reinforcement learning for search agents. We study a range of reward-shaping and credit-assignment strategies that provide learning signals from intermediate retrieval steps. Building on these insights, we develop a training framework that combines intermediate signals with final outcome rewards to improve learning from multi-step search trajectories. Experiments across multiple benchmarks under matched training conditions demonstrate improvements in aggregate search-agent performance and show that both the choice of intermediate signal and where its credit is assigned affect training behaviour. These findings show that reward design and credit assignment are important design dimensions for training effective search agents.",
+      "summary_en": "The study separates what retrieval earns credit from where credit enters GRPO. On one Qwen3-4B model, query-local evidence coverage raises micro F1 from 51.25 to 54.34 across 3,197 questions. Permutation controls support action alignment, but update magnitudes are unmatched, benchmarks informed development, and 507 analysis questions share training evidence. Coverage gains do not establish better evidence use or lower compute. Code, models and data are promised upon acceptance.",
+      "summary_zh": "搜尋代理答錯時，並不代表每次搜尋都沒有價值。這篇研究把中途獎勵拆成兩個問題：找到甚麼證據才算進展，以及獎勵應分配給整段回答還是實際發出的查詢。作者用維基百科與知識圖譜組成一萬四千道訓練題，保留子問題、支持段落與相依關係，比較一般證據覆蓋、要求先備證據的覆蓋，以及答案字串命中。局部方法保留最終答案獎勵，另在已執行查詢的 token 加入同題、同步驟的相對信用。\n\n在單一 Qwen3 四十億參數模型與固定檢索器上，七個問答集合共三千一百九十七題的加權 F1，由僅看結果的五十一點二五升至五十四點三四；這是三點零九個百分點。打亂信用與查詢的對應會削弱表現，而要求依賴閉包並未一致更好，顯示證據規則與分配方式需要共同設計。\n\n值得注意的是，測試集合曾參與開發決策，且沒有多次訓練的誤差範圍。局部與整段獎勵未匹配更新強度；遮掉部分組別也會減少總信用量。另有五百零七道分析題與訓練共享證據，覆蓋偵測只要求答案提及的起點落在區塊內。研究支持特定條件下改善取證，還不能證明因果上更善用證據、普遍泛化或節省運算；程式與資料僅承諾接受後釋出。",
+      "title": "Beyond Outcome Rewards: Constructing and Assigning Retrieval Credit for Search Agents",
+      "title_en": "Beyond Outcome Rewards: Constructing and Assigning Retrieval Credit for Search Agents",
+      "title_zh": "超越結果獎勵：為搜尋代理建構與分配檢索貢獻"
+    },
+{
+      "arxiv_id": "2610.10085",
+      "authors": [],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-10-10T03:48:03.573187+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-lg",
+          "tier": 1,
+          "title": "Activation-Aware Weight Tensorization: A Calibration-Time Preconditioner for Tensor-Network LLM Compression",
+          "url": "https://arxiv.org/abs/2610.10085v1"
+        }
+      ],
+      "llm_evaluation": {
+        "candidate_sha256": "b5f163488dc4be2530fc5ce89dee87b5febc49f02a75a56103b283c9f27405ae",
+        "components": {
+          "evidence_strength": 0.53,
+          "generalizability": 0.6,
+          "novelty": 0.62,
+          "preference_relevance": 0.84,
+          "reproducibility": 0.3,
+          "rigor": 0.48
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "PDF pp.4–6 Eqs.2–9/Algorithm1: exact deployed operator identity W_hat=W_tilde_prime D_inverse gives a column-weighted Frobenius proxy. MeanAbs/Std statistics and alpha0.5/1/1.5 are used. The identity alone neither gives a global TT optimum nor equates diagonal weighting with full covariance.",
+          "PDF pp.6–8: calibration uses disjoint unlabeled MMLU/HellaSwag/BoolQ prompts, but held-out metric cache also selects candidates. No final layer-metric test cache distinct from selection is identified. Single-operator and Llama suffix replacements are narrower than whole-model compression.",
+          "PDF pp.9–10 Table2 and p.17 TableA.11: Llama single-operator PPL at2/4/6x is AWT8.76/8.85/8.93, vanilla8.79/8.90/8.97, SVD8.71/8.81/8.87. Dense8.64. Reported gap closure is a fraction of the dense-to-vanilla gap, not equivalent relative PPL or speed improvement.",
+          "PDF pp.9,16 Tables1/A.7–A.9: pooled output-error correlation exceeds weight-error overall, but not for every operator: Wdown .441 vs.486 and Wgate .026 vs.129. A.9 ARC4x is .5461 to .5469, a .0008 accuracy change, smaller than the prose lower bound .0009; no significance analysis is supplied.",
+          "PDF pp.17–18 TablesA.11–A.12: full covariance wins weighted objective80/81; diagonal wins held-out output53/81. The 81 settings are not 81 independent end-to-end deployment trials; calibration covariance estimation and candidate selection constrain the robustness interpretation.",
+          "PDF p.20 TableA.19: k2/6x attention PPL10.56 to9.91 is displayed with delta-.81, whereas difference of displayed values is-.65. TableA.20 k1/6x17.65 to13.60 is paired with-3.62 rather than-4.05. Separate pooled summaries may differ, but raw-row aggregation is not specified enough to resolve these values.",
+          "PDF p.21 TableA.21: MLP k8/2x vanilla36.21, AWT38.31, reported delta+2.09, finite backend only TTcore4. At k4/4x and6x TTcore4 is absent because non-finite PPL is stated. Improvements are not universal across all suffix settings.",
+          "PDF pp.21–22 TablesA.22–A.24: BoolQ decreases for attention k1/4x and all-seven k2/2x. A.23 k2/6x shows .7900 to .7800 with printed delta+.0000; A.22 k8/6x .8300 to .8400 prints+.0300. These displayed mismatches are retained, not silently corrected.",
+          "PDF pp.14–23 TablesA.1–A.30: extensive local means/standard deviations are over blocks/operator sweeps, not random calibration repetitions. Pooled medians and A.4 lower median across AWT methods limit how aggregate gains should be interpreted.",
+          "PDF pp.8–11 deployment discussion: only conceptual elementwise scaling overhead is described; no measured latency/throughput, exact calibration sample count, full layout/rank specification or release URL establishes turnkey reproduction."
+        ],
+        "fulltext_sha256": "6e61f74c1a911a656c9b8a8b0ba6eb26a73d56e23f78f3fc32337e9834f38bd4",
+        "fulltext_status": "complete",
+        "model": "assistant-native-review",
+        "native_identity_version": 1,
+        "original_candidate_sha256": "b5f163488dc4be2530fc5ce89dee87b5febc49f02a75a56103b283c9f27405ae",
+        "out_of_scope": false,
+        "producer": "assistant-native-review",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "A practical incremental idea with a clean algebraic identity, but considerably weaker implementation and measurement support than the broad abstract suggests. It improves an existing tensor-network family rather than outperforming compression generally: the reported SVD PPL is lower at all three Llama single-operator budgets. The 2–6x ratios apply to selected operators, not the entire model or latency. Appendix A.21 contains an adverse eight-block MLP case and finite-backend filtering; BoolQ has negative cases. Several displayed deltas cannot be reconstructed from the adjacent rounded values. Separate aggregation could explain some discrepancies, but its definition and raw runs are not supplied, so exact headline suffix gains are treated as reported rather than independently reconciled. The diagonal weighted proxy is not the full covariance objective; a fixed TT/TTN backend plus arbitrary input scaling is not automatically identical to the unscaled fixed-rank hypothesis class. The full PDF supports bounded review without a material hold, while numerical aggregation, independent generalization and deployment/reproduction claims remain limited.",
+        "rationale_en": "A practical incremental idea with a clean algebraic identity, but considerably weaker implementation and measurement support than the broad abstract suggests. It improves an existing tensor-network family rather than outperforming compression generally: the reported SVD PPL is lower at all three Llama single-operator budgets. The 2–6x ratios apply to selected operators, not the entire model or latency. Appendix A.21 contains an adverse eight-block MLP case and finite-backend filtering; BoolQ has negative cases. Several displayed deltas cannot be reconstructed from the adjacent rounded values. Separate aggregation could explain some discrepancies, but its definition and raw runs are not supplied, so exact headline suffix gains are treated as reported rather than independently reconciled. The diagonal weighted proxy is not the full covariance objective; a fixed TT/TTN backend plus arbitrary input scaling is not automatically identical to the unscaled fixed-rank hypothesis class. The full PDF supports bounded review without a material hold, while numerical aggregation, independent generalization and deployment/reproduction claims remain limited.",
+        "rationale_zh": "這是具有清楚代數身分式的實用漸進改良，但實作及量測證據比摘要的廣泛語氣弱。它改善的是既有張量網路方法，而非全面勝過壓縮技術：列出的 Llama 單矩陣比較中，SVD 在三個預算都較好。二至六倍只適用指定矩陣，不能推成整體模型或延遲。附錄 A.21 有八層 MLP 退步及只計有限後端的情形，BoolQ 也有下降。多個差值不能由相鄰四捨五入數值重建；分開彙總可能解釋部分差異，但缺定義及原始紀錄，因此精確尾端改善幅度僅保留為作者所報。對角加權代理目標不是完整共變異數目標，固定 TT／TTN 後端加任意輸入縮放，也不自動等於未縮放固定秩的函數類別。完整 PDF 足以支持附限制評審，不全面扣留；數值彙總、獨立泛化、部署與重現主張仍受限。",
+        "raw_weighted_score": 0.6555,
+        "request_sha256": "43427eb6944305dda38fc7576cd82c69eb8d8bf4ca6c5a83e389c3aad1e597b5",
+        "review_sha256": "a79120dea5583974ad000c3408d4e725cc4b425172e69566fcbfbcde46ecb751",
+        "scope_assessment": "In scope: post-training language-model operator compression methodology.",
+        "scope_capped_score": null,
+        "scope_policy_version": "explicit-review-exclusion-v1",
+        "scope_status": "in_scope",
+        "score": 0.6555,
+        "source_key": "2eb548c01660b069257e957a0fbb51ac7936cac305febf1156a277dd617af7cd",
+        "story_id": "arxiv:2610.10085",
+        "token_usage": {},
+        "topics": [
+          "Large Language Models",
+          "Scaling & Efficiency",
+          "Inference & Serving"
+        ]
+      },
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-lg",
+        "tier": 1,
+        "title": "Activation-Aware Weight Tensorization: A Calibration-Time Preconditioner for Tensor-Network LLM Compression",
+        "url": "https://arxiv.org/abs/2610.10085v1"
+      },
+      "published_at": "2026-10-07T13:48:04+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.6555,
+        "llm_relevance_score": 18.354,
+        "recency_score": 0.7702523912204373,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 26.324252391220437
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2610.10085",
+      "summary": "Post-training tensor-network compression replaces Transformer linear layers with Tensor Train (TT) or Tree Tensor Network (TTN) operators, but standard decompositions minimize weight-space Frobenius error rather than functional error under the layer's activation distribution. We propose Activation-aware Weight Tensorization (AWT), a training-free calibration wrapper that preconditions each weight matrix with a diagonal activation-derived scale before an unchanged TT/TTN solver and deploys the result with only an input-side elementwise rescaling. Across Llama 3.1 8B, Ministral 8B, and Qwen2.5 7B, AWT consistently improves vanilla TT/TTN tensorization at 2-6 times compression: under single-operator replacement, AWT closes 12-35% of the WikiText perplexity gap to the dense baseline across the three model families and 2-6 times compression settings; while under multi-operator Llama suffix replacement it closes 27-60% across attention-group and all-seven-matrix settings. The gains also transfer to downstream HellaSwag and ARC-Challenge evaluations. We further show that diagonal preconditioning is a robustness-modularity tradeoff rather than a diagonal-covariance assumption: a dense full-covariance oracle wins its own weighted objective in 80/81 cases, yet diagonal AWT gives better held-out functional fidelity in 53/81 cases. Together, these results position AWT as a principled, modular preconditioner for improving functional fidelity in fixed TT/TTN compression pipelines without modifying the decomposition solver.",
+      "summary_en": "AWT rescales weight columns using calibration activations, applies an unchanged TT/TTN solver, and inversely rescales inputs at inference. It improves many fixed tensorization comparisons across three model families, but SVD remains stronger in the reported Llama single-operator test. Matrix compression ratios are not whole-model speedups. Appendix MLP/BoolQ reversals, non-finite runs, unexplained table-delta mismatches and missing implementation details limit deployment and universal-improvement claims.",
+      "summary_zh": "把語言模型的矩陣拆成小型張量核心時，數值近似得好，不一定代表模型行為保留得好。AWT 先用少量輸入的活化統計，放大較重要的權重欄位，再交給原有張量列或樹狀張量網路分解器；推論時對輸入做反向逐通道縮放，不必重新訓練或改寫分解器。其數學身分式說明了欄位加權誤差，但不是完整共變異數最佳化的保證。\n\n作者在三種七至八十億參數模型、三個目標壓縮率與七類矩陣上比較。單矩陣替換時，AWT 能縮小原始張量化相對稠密模型的困惑度落差；多矩陣尾端替換也常有較大改善。不過壓縮率是指定矩陣的參數比例，不能直接當成整個模型省下同樣記憶體或加速倍數。相同參數預算的普通 SVD，在列出的 Llama 單矩陣比較仍較好。\n\n附錄使結論需要更保守：八層 MLP 的一個設定反而變差，部分後端產生非有限困惑度，BoolQ 也有下降。幾張表的差值與同列原始數字無法直接對上，可能涉及彙總方式，原始紀錄不足以釐清。校準數量、確切形狀與秩、部署時間及程式釋出也未充分交代。這是值得實驗的模組化改良，尚不是完整模型壓縮、普遍品質提升或實測服務加速的證明。",
+      "title": "Activation-Aware Weight Tensorization: A Calibration-Time Preconditioner for Tensor-Network LLM Compression",
+      "title_en": "Activation-Aware Weight Tensorization: A Calibration-Time Preconditioner for Tensor-Network LLM Compression",
+      "title_zh": "活化感知權重張量化：張量網路語言模型壓縮的校準期預處理"
+    },
+{
+      "arxiv_id": "2610.09590",
+      "authors": [],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-10-10T03:49:32.815857+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-ai",
+          "tier": 1,
+          "title": "Learning Situation-Conditioned Thinking Policies for Long-Term LLM Agents",
+          "url": "https://arxiv.org/abs/2610.09590v1"
+        }
+      ],
+      "llm_evaluation": {
+        "candidate_sha256": "e6988d8eef367ca3db22bb7562d4ac618ebf7833a56187eea86d1e25a282c3a5",
+        "components": {
+          "evidence_strength": 0.46,
+          "generalizability": 0.26,
+          "novelty": 0.6,
+          "preference_relevance": 0.95,
+          "reproducibility": 0.2,
+          "rigor": 0.4
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "PDF pp.1–4, Sections I–III: distinguishes situation-to-thinking prediction from answer/rationale distillation; temporal candidates are evaluated using recurrence, counterexamples, reverse evidence and cross-partition stability. The equations describe a conceptual loop rather than an implementation guarantee.",
+          "PDF p.4, Equations 6/11/13: temporary buffer is bounded and confidence can decay, but the cumulative learning set is updated by union with new direct/discovered material. Fixed online model size does not establish bounded total data, maintenance cost or successful forgetting.",
+          "PDF p.5, IV.A: all experiments intentionally synthetic; four-layer Transformer, width 192, six heads, FFN 768, dropout 0.1, BCE and AdamW; five seeds and online deepseek-v4-flash. Exact prompts, training schedule, data generator and hardware timing protocol are not provided.",
+          "PDF pp.5–7, IV.B/Figures 1–2/Table I: top-four Sequence-RAG and Proposed both achieve 1.000 F1. Sequence-RAG storage grows from 0.156 to 9.360 MB, while the model is 7.358 MB, with an approximate 23,600-history crossover. At 500 histories retrieval is faster (0.0186 versus 0.0382 ms/query) and smaller.",
+          "PDF pp.6–7, Table I: at 30,000 histories retrieval is 0.3636 ms/query and policy inference 0.0382, about 9.53x. This comparison excludes LLM generation, offline training, periodic consolidation and hardware disclosure; it is not a measured full-system speedup.",
+          "PDF pp.6–7, IV.C–D/Table II: unseen component names and matched summary statistics isolate temporal ordering. Proposed reaches 1.000 F1; order-insensitive Summary-RAG 0.566 and RF-Summary 0.383; same-endpoint Current-State-Only is 0.711. These baselines cannot represent the distinguishing signal by construction.",
+          "PDF pp.7–8, IV.E/Figure 3/Tables III–IV: factor F1 0.789→0.868 and decision accuracy 0.484→0.575; all methods already have factor recall 1.000. Reported 320-situation paired bootstrap F1 difference +0.0786, CI [0.0609,0.0974], p<0.001; proposed–RAG difference −0.0089, CI [−0.0302,0.0135], p=0.472 does not establish equivalence or superiority.",
+          "PDF p.8, Table III: average tokens are 719.61 for unguided DeepSeek and 728.13 for Proposed+DeepSeek; the experiment does not demonstrate answer-token savings.",
+          "PDF pp.7–8, IV.F/Figure 4/Table V: rare-pattern micro-F1 rises from 0.777±0.077 at 100 histories to 0.996±0.005 at 500, then 0.995±0.006 at 1,000 and 0.999±0.001 at 8,000. This is a designed acquisition curve, not a strictly monotone or real-world sample-efficiency guarantee.",
+          "PDF pp.8–9, IV.G/Figure 5/Tables VI–VII: Statistics-Only and Proposed+DeepSeek have identical mean relation F1 at all repetition counts (0,0,0.333,1.000). At eight repetitions both attain 1.000 future-thinking accuracy; no-consolidation/unordered/local are 0.333. The paper expressly acknowledges that the LLM does not outperform statistical evidence ranking on this synthetic identification task.",
+          "PDF pp.9–10: conclusion, fourteen references and biography complete the ten-page document. The 2015 LaTeX running header and photo placeholder are source-template remnants, not publication-date evidence; no appendix, supplement or code/data release URL was located."
+        ],
+        "fulltext_sha256": "bc494e10b0a12238ffb39a379da1268d41b04d6f4d4c6cb5f40b398636d9c5eb",
+        "fulltext_status": "complete",
+        "model": "assistant-native-review",
+        "native_identity_version": 1,
+        "original_candidate_sha256": "e6988d8eef367ca3db22bb7562d4ac618ebf7833a56187eea86d1e25a282c3a5",
+        "out_of_scope": false,
+        "producer": "assistant-native-review",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Highly relevant problem framing with a clear division between lightweight thinking selection and LLM reasoning, but preliminary evidence. Controlled temporal tasks establish that order-preserving inputs help and guidance improves a particular DeepSeek experiment. They do not establish superiority to accurate retrieval or a numerical benefit from LLM consolidation over statistics-only. Fixed inference/model size excludes growing cumulative training data and consolidation costs. Sparse reproducibility details and exclusively synthetic tests warrant substantially lower rigor, generalizability and reproducibility ratings than the perfect task scores might suggest.",
+        "rationale_en": "Highly relevant problem framing with a clear division between lightweight thinking selection and LLM reasoning, but preliminary evidence. Controlled temporal tasks establish that order-preserving inputs help and guidance improves a particular DeepSeek experiment. They do not establish superiority to accurate retrieval or a numerical benefit from LLM consolidation over statistics-only. Fixed inference/model size excludes growing cumulative training data and consolidation costs. Sparse reproducibility details and exclusively synthetic tests warrant substantially lower rigor, generalizability and reproducibility ratings than the perfect task scores might suggest.",
+        "rationale_zh": "問題設定高度相關，清楚分工小型思考選擇器與 LLM 推理，但證據仍屬初步。受控時間任務支持保留順序與特定 DeepSeek 實驗中的提示效益，尚未證明優於準確檢索，也未顯示 LLM 鞏固比純統計多出數值收益。固定推論量與模型大小未涵蓋持續增長的訓練資料及鞏固成本。重現細節薄弱、測試全為合成，因此嚴謹度、泛化性及可重現性須明顯低於完美任務分數給人的印象。",
+        "raw_weighted_score": 0.635,
+        "request_sha256": "53f2dd0fbcf374d49994e06525888696aee351b9c48e4abba1277cdb42394f57",
+        "review_sha256": "87d26310b0c76e93e23b6a8f10373f929abfba07c68d1ee34fdae84860d2ce06",
+        "scope_assessment": "In scope: a general LLM-agent memory and thinking-policy method; synthetic robot signals are controlled evaluation data, not a pure robotics-only contribution.",
+        "scope_capped_score": null,
+        "scope_policy_version": "explicit-review-exclusion-v1",
+        "scope_status": "in_scope",
+        "score": 0.635,
+        "source_key": "cac5fcff72b8ce98c7eebbe10b0872bb96f790f79cd3ed44c9c5d496fb39df0d",
+        "story_id": "arxiv:2610.09590",
+        "token_usage": {},
+        "topics": [
+          "Large Language Models",
+          "Agents & Tool Use",
+          "Long Context & Memory",
+          "Reasoning & Chain-of-Thought",
+          "Training & Optimization"
+        ]
+      },
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-ai",
+        "tier": 1,
+        "title": "Learning Situation-Conditioned Thinking Policies for Long-Term LLM Agents",
+        "url": "https://arxiv.org/abs/2610.09590v1"
+      },
+      "published_at": "2026-10-07T07:34:08+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.635,
+        "llm_relevance_score": 17.78,
+        "recency_score": 0.7505082542537738,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 25.730508254253774
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2610.09590",
+      "summary": "Long-running autonomous agents must reuse accumulated reasoning experience without allowing explicit historical memory and LLM context to grow indefinitely. However, existing memory mechanisms mainly retrieve, summarize, or compress past content and do not directly learn when particular kinds of thinking should be activated or discover new thinking knowledge from temporally dispersed experiences. This paper proposes a situation-conditioned thinking memory framework that transforms historical reasoning experience into a lightweight policy for predicting what should be thought about in the current situation, while leaving detailed reasoning to a large language model. Situations may represent temporal or spatiotemporal evolution rather than only current states. Temporary experiences are also periodically analyzed across multiple independent episodes to identify repeated long-range regularities, which are consolidated into new thinking knowledge and further internalized by the lightweight policy. Experiments show that the learned policy achieves 1.000 F1 on temporal-rule generalization, improves DeepSeek reasoning F1 from 0.789 to 0.868, reduces online processing time from 0.3636 ms to 0.0382 ms per query at 30,000 historical situations, and reaches 1.000 relation-discovery F1 and future-thinking accuracy after sufficient repeated cross-experience evidence.",
+      "summary_en": "A small Transformer learns which issues an LLM should consider from temporally ordered experience. Six synthetic studies report factor F1 rising from 0.789 to 0.868, near retrieval-assisted 0.877. The 9.53x speedup measures retrieval versus policy inference, not full response latency or training cost. Statistics-only matches LLM-assisted discovery, so extra consolidation value remains unproven. Read the cost crossover and ablations before extrapolating. All ten pages and every figure/table were read.",
+      "summary_zh": "長期代理是否一定要反覆搜尋全部歷史，才能知道現在該注意什麼？這篇研究把經驗轉成「思考方向」標籤，交由小型 Transformer 學習情境到標籤的映射，再讓大型語言模型處理當下細節。情境保留訊號的時間順序；另以週期性整理找出跨事件重複出現的長距離關係，把它們轉成新的訓練材料。\n\n六組實驗全部採用受控合成資料。時間規則與相同終點、不同歷史的任務可達 F1 1.000；加入思考提示後，DeepSeek 的因素辨識 F1 由 0.789 升至 0.868，仍略低於檢索輔助的 0.877，兩者差異不顯著。三萬筆歷史下，策略推論比序列檢索快約 9.53 倍，但這只量測該步驟，並非完整 LLM 回答時間，訓練與鞏固成本也未納入。\n\n先看表一的成本交叉點，再讀表六、七的統計基線：純統計方法與加入 LLM 的關係發現結果完全相同，尚未證明 LLM 鞏固帶來額外數值收益。小歷史下檢索反而更省空間且更快；固定模型大小也不表示累積訓練資料不再增長。全文十頁與全部圖表已讀，未定位到附錄。其價值是清楚拆分「該思考什麼」與「如何推理」，但缺少真實長期部署、完整提示、資料產生細節和硬體計時設定，只宜視為初步機制驗證。",
+      "title": "Learning Situation-Conditioned Thinking Policies for Long-Term LLM Agents",
+      "title_en": "Learning Situation-Conditioned Thinking Policies for Long-Term LLM Agents",
+      "title_zh": "為長期 LLM 代理學習情境條件式思考策略"
     }
 ],
   "radar": [
@@ -1683,10 +2194,24 @@
   "run_id": "assistant-review-2026-10-08",
   "run_info": {
   "added_native_count": 5,
+  "added_reviewed_candidate_count": 5,
+  "addition_prepared_at_utc": "2026-10-10T04:27:00+00:00",
+  "addition_ranking_anchor_basis": "Frozen preparation time; not source collection cutoff or historical ranking time",
+  "addition_ranking_anchor_utc": "2026-10-10T04:27:00+00:00",
   "combined_native_reranked": false,
   "coverage_status": "partial",
   "date_basis_by_story": {
+    "arxiv:2610.09590": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-08",
+      "event_timestamp_utc": null
+    },
     "arxiv:2610.09624": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-08",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.09679": {
       "date_basis": "official_listing_v1_inference",
       "date_value": "2026-10-08",
       "event_timestamp_utc": null
@@ -1696,7 +2221,17 @@
       "date_value": "2026-10-08",
       "event_timestamp_utc": null
     },
+    "arxiv:2610.09858": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-08",
+      "event_timestamp_utc": null
+    },
     "arxiv:2610.10062": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-08",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.10085": {
       "date_basis": "official_listing_v1_inference",
       "date_value": "2026-10-08",
       "event_timestamp_utc": null
@@ -1707,6 +2242,11 @@
       "event_timestamp_utc": null
     },
     "arxiv:2610.10120": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-08",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.10179": {
       "date_basis": "official_listing_v1_inference",
       "date_value": "2026-10-08",
       "event_timestamp_utc": null
@@ -1782,19 +2322,22 @@
       "event_timestamp_utc": null
     }
   },
-  "error_summary": "PARTIAL 部分更新：保留原14篇及原Top5／Radar順序，新增5篇列於Papers。新增5篇按現行規則獨立排名；19篇未合併重新排名。全日總數與截止時間未知。",
+  "error_summary": "PARTIAL 部分更新：保留原19篇及既有順序，新增5篇依本批排名列於Papers。24篇未合併重新排名；全日總數與收集截止時間未知。",
   "finished_at": "2026-10-08T22:31:08.332250+00:00",
   "full_day_candidate_total": null,
   "items_total": null,
-  "preserved_baseline_body_sha256": "359e5830f4089cb19538708b2cef7694f4f230142e5fe99995ff4cfd0a3fdcf8",
-  "preserved_baseline_commit": "41492c4b3ebea1ba1548ded58b8f9e6897b50620",
-  "preserved_baseline_count": 14,
+  "preserved_baseline_body_sha256": "c87fd3d8bfda1ebd5cbbbb571e6f2332c9f811f9db79a9e5908552d404501391",
+  "preserved_baseline_commit": "142d7609aede109e471e98427d834bec90ef7048",
+  "preserved_baseline_count": 19,
   "preview_only": false,
-  "reviewed_selected_count": 19,
+  "prior_reviewed_total_count": null,
+  "release_scope_note": "Five new Oct8 selections appended to Papers in separately ranked subset order; original 19 story bytes and section order preserved. All 24 were not jointly reranked. Full-day source totals and collection cutoff remain unknown.",
+  "reviewed_selected_count": 24,
+  "reviewed_total_count": null,
   "run_id": "assistant-review-2026-10-08",
   "source_collection_cutoff_utc": null,
   "started_at": "2026-10-08T22:31:08.160589+00:00",
-  "stories_total": 19,
+  "stories_total": 24,
   "success": true
 },
   "sources_status": [

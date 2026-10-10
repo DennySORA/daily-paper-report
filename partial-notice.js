@@ -64,8 +64,16 @@
       ? `部分候選預覽：${data.day}，${count} 筆，尚未發布。Partial candidate preview: ${data.day}, ${count} entries, unpublished.`
       : `部分版本：已核對 ${count} 筆，來源持續補齊。Partial release: ${count} verified entries; source coverage is still being completed.`
     if (data.day !== '2026-10-03') {
-      if (data.info.combined_native_reranked === false && data.info.preserved_baseline_count === 14 && data.info.added_native_count === 5) {
+      if (data.day === '2026-10-09' && count === 22 && data.info.combined_native_reranked === false && data.info.preserved_baseline_count === 18 && data.info.added_native_count === 4 && data.info.preserved_baseline_kind === 'unpublished_proposed_candidate') {
+        text += ' 保留前一候選18篇及既有順序；新增4篇依本批排名追加Papers，22篇未合併重新排名。The 18 entries from the preceding unpublished proposed baseline and their section order are preserved; four additions are appended to Papers in their subset order, without reranking all 22.'
+      } else if (data.day === '2026-10-09' && count === 18 && data.info.combined_native_reranked === false && data.info.preserved_baseline_count === 13 && data.info.added_native_count === 5 && data.info.preserved_baseline_kind === 'unpublished_proposed_candidate') {
+        text += ' 保留前一候選13篇及既有順序；新增5篇依本批排名追加Papers，18篇未合併重新排名。The 13 entries from the preceding unpublished proposed baseline and their section order are preserved; five additions are appended to Papers in their subset order, without reranking all 18.'
+      } else if (data.day === '2026-10-08' && count === 24 && data.info.combined_native_reranked === false && data.info.preserved_baseline_count === 19 && data.info.added_native_count === 5) {
+        text += ' 保留原19篇及既有Top5／Papers／Radar順序；新增5篇依本批排名追加Papers，24篇未合併重新排名。The original 19 entries and Top5/Papers/Radar order are preserved; five additions are appended to Papers in their subset order, without reranking all 24.'
+      } else if (data.info.combined_native_reranked === false && data.info.preserved_baseline_count === 14 && data.info.added_native_count === 5) {
         text += ' 保留原14篇及原Top5／Radar順序；新增5篇依本批排名列於Papers，19篇未合併重新排名。The original 14 entries and Top5/Radar order are preserved; five additions appear in Papers in their subset order, without reranking all 19.'
+      } else if (data.day === '2026-10-09' && count === 13 && data.info.combined_native_reranked === false && data.info.preserved_baseline_count === 6 && data.info.added_native_count === 7) {
+        text += ' 保留原6篇及既有順序；新增7篇依本批排名列於Papers，13篇未合併重新排名。The original six entries and section order are preserved; seven additions appear in Papers in their subset order, without reranking all 13.'
       } else {
         text += ' 排名僅限此子集。Ranking covers this subset only.'
       }
