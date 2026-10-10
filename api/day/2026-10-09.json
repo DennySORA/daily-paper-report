@@ -5111,17 +5111,484 @@
       "title": "Is Memorization Context-Sensitive? Prefix-Based Extraction Beyond Isolated Prefixes",
       "title_en": "Is Memorization Context-Sensitive? Prefix-Based Extraction Beyond Isolated Prefixes",
       "title_zh": "記憶會隨情境改變嗎？超越孤立前綴的前綴式擷取"
+    },
+{
+      "arxiv_id": "2610.11775",
+      "authors": [],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-10-10T14:52:02.637923+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-ai",
+          "tier": 1,
+          "title": "RouterInterp: Understanding Superposed Specialisation in Mixture of Experts Routing",
+          "url": "https://arxiv.org/abs/2610.11775v1"
+        },
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-ai",
+          "tier": 1,
+          "title": "RouterInterp: Understanding Superposed Specialisation in Mixture of Experts Routing",
+          "url": "https://arxiv.org/pdf/2610.11775v1"
+        }
+      ],
+      "llm_evaluation": {
+        "candidate_sha256": "56cd8c810fa8102911247992dc99af03685be74b0bd065cbb09053f3c85c8e0b",
+        "components": {
+          "evidence_strength": 0.7,
+          "generalizability": 0.65,
+          "novelty": 0.81,
+          "preference_relevance": 0.94,
+          "reproducibility": 0.66,
+          "rigor": 0.73
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "pp.2-6, Sections 3.1-3.3, Figure 2: top n=20 SAE features are proxies for micro-domains; clusters of generated descriptions have means 10.8 (OLMoE layer15) and 11.3 (gpt-oss layer20), with roughly K=50 selected by silhouette. This tests a semantic routing hypothesis, not expert transformations.",
+          "pp.6-8, Section 4.1 and Appendix C.1 pp.22-23: margin m_i=h_i-tau_i, attribution z_f d_f^T grad m_i, positive conditional contrast S_if; each feature assigned to at most one expert. Top45 selected per expert; feature-active routed/non-routed contexts contrast routing, not merely feature activation.",
+          "pp.7-8, Sections 4.2-4.3 and Appendix J pp.29-32: held-out windows with 15 positives and85 negatives per expert; positive token positions are highlighted, negative highlight counts are matched; Claude Sonnet5 explainer and GPT-5.6 Luna scorer as reported. Score>=2 on a0-4 rubric counts as positive.",
+          "p.9 Figure4/Table1: gpt-oss mean explanation F1 0.492 (s=128), OLMoE0.602; respective unigram0.299/0.342 and expert-impact0.383/0.305. gpt-oss s=64 mean0.495; best non-SAE n-gram/full-window ablations about0.417.",
+          "pp.21-22 AppendixB Table2: token-level sparse SAE probes trained on1M total tokens report0.740 on OLMoE layer11 and0.730 on gpt-oss layer12, separate from held-out explanation detection F1.",
+          "pp.23-25 AppendixC Figures5-6: attribution beats rho-usefulness and cosine feature selection in fixed-set probes; Figure6 has legend n={1,5,10,20,45} versus caption n={1,5,15,25,45}. Preserve contradiction rather than assigning intermediate observations to a corrected n.",
+          "pp.25-26 AppendixD Figure7: ~10M tokens from16 Pile subsets; preference ratios challenge a DSH specifically aligned with Pile domains, with individual spikes and limitations explicitly acknowledged.",
+          "p.26 AppendixE Table3: at s=128 SAE beats both sparse alternative bases at four of five gpt-oss layers; layer16 SAE0.439 versus neuron0.559/PCA0.494 is the exception.",
+          "p.27 AppendixF Table4: keeping more active features generally helps, not strictly monotonically; layer4 m64=0.576 versus m128=0.569, and layer16 m32=0.414 versus m64=0.400.",
+          "pp.27-28 AppendixG Tables5-6: OLMoE 32768 latents/s32, four layers,100M SAE training tokens; gpt-oss131072 latents/s64 or128, five layers. High layer16 FVU accompanies weak probes; explanation scores do not show the same dependence.",
+          "p.28 AppendixH Table7: blind150 examples,25 experts, gpt-oss layer12, two humans per example; agreement0.807±0.070 human-human versus0.857±0.050 human-LLM; kappa0.487±0.165 versus0.602±0.150, mean±resampling std, not confidence intervals or proof of LLM superiority.",
+          "pp.28-29 AppendixI Table8: probability rank correlation varies0.258-0.817 with MSE~0.03. These descriptive metrics without trivial-probability calibration baselines do not by themselves establish calibrated probability recovery.",
+          "pp.29-33 AppendicesJ-K: prompts permit merging overlapping feature groups and OR combinations; Table9 Expert2 mixes injury fragments, structured notation, brand suffixes, and electronic components. This example corroborates proposed descriptions, not causal expert functions.",
+          "p.1 code locator and p.27 SAE locator are present; external contents, the cited Expert Impact prompt, code execution and independent experimental replication were not inspected or run."
+        ],
+        "fulltext_sha256": "b8da851e57f1fb32890645815dac882a1c8b03962e32152e587a1dbdb103c4e9",
+        "fulltext_status": "complete",
+        "model": "assistant-native-review",
+        "native_identity_version": 1,
+        "original_candidate_sha256": "56cd8c810fa8102911247992dc99af03685be74b0bd065cbb09053f3c85c8e0b",
+        "out_of_scope": false,
+        "producer": "assistant-native-review",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "RouterInterp merits inclusion as language-model interpretability research: it turns the loose one-domain-per-expert intuition into contrasting predictions and demonstrates useful SAE feature grouping against progressively stronger baselines across two models and multiple layers. Its gpt-oss explanation F1 of 0.492 versus 0.299 unigram lookup is approximately 64.5% relative improvement and +0.193 absolute F1, neither generic classification accuracy nor the separate probe F1 of 0.730.\n\nThe high relevance score comes with substantive limits rather than a certificate of causal mechanism. Cluster counts depend on SAEs, generated descriptions, and semantic resolution; attribution approximates feature removal on a routing margin; and no intervention establishes the experts' transformations or load balancing as the cause of superposed specialisation. Different generator and judge models, held-out examples, and a 150-example human check mitigate but do not eliminate semantic/prompt coupling and judge preferences. The layer-16 probe exception, two-model scope, limited uncertainty reporting for principal results, and Figure 6 legend {1,5,10,20,45} versus caption {1,5,15,25,45} constrain the claims. Its defensible value is improved routing explanations on the evaluated distributions and hypotheses for further tests; external code and weight reproducibility remain unverified.",
+        "rationale_en": "RouterInterp merits inclusion as language-model interpretability research: it turns the loose one-domain-per-expert intuition into contrasting predictions and demonstrates useful SAE feature grouping against progressively stronger baselines across two models and multiple layers. Its gpt-oss explanation F1 of 0.492 versus 0.299 unigram lookup is approximately 64.5% relative improvement and +0.193 absolute F1, neither generic classification accuracy nor the separate probe F1 of 0.730.\n\nThe high relevance score comes with substantive limits rather than a certificate of causal mechanism. Cluster counts depend on SAEs, generated descriptions, and semantic resolution; attribution approximates feature removal on a routing margin; and no intervention establishes the experts' transformations or load balancing as the cause of superposed specialisation. Different generator and judge models, held-out examples, and a 150-example human check mitigate but do not eliminate semantic/prompt coupling and judge preferences. The layer-16 probe exception, two-model scope, limited uncertainty reporting for principal results, and Figure 6 legend {1,5,10,20,45} versus caption {1,5,15,25,45} constrain the claims. Its defensible value is improved routing explanations on the evaluated distributions and hypotheses for further tests; external code and weight reproducibility remain unverified.",
+        "rationale_zh": "RouterInterp 值得納入語言模型可解釋性研究：它把模糊的「每專家一領域」直覺改成可比較預測，並在兩模型、多層與一組逐步加強的基線上展示 SAE 特徵分組的實際效用。gpt-oss 的文字解釋 F1 0.492 相對一元查表 0.299 增加約 64.5%，絕對增加 0.193；它既不是一般分類 accuracy，也不是 probe 的 0.730。\n\n給予有保留的高相關性評分，而非因果機制認證：群數依賴 SAE、生成解釋與聚類尺度；歸因只近似特徵移除對路由邊際的影響；沒有介入測試證明專家所做轉換或負載平衡造成了疊加專精。不同模型生成與評分、保留例及 150 例人類檢查具有緩解作用，仍不足以排除語義／提示耦合與裁判偏好。第十六層 probe 例外、只有兩模型、主要結果不確定性不足，以及圖六 n 圖例 {1,5,10,20,45} 與圖說 {1,5,15,25,45} 不符，都限制結論。較穩健的價值是改善受測分布上的路由解釋與提出後續可驗假說；外部程式與權重可重現性尚未驗證。",
+        "raw_weighted_score": 0.81,
+        "request_sha256": "beb4d16920a34f54ffb4a693c9f8286c1b7449e61fb0e3bf3a7c974dc32401b7",
+        "review_sha256": "df36060e2bd1fba9f5f78a4a84b5eba7eb943ce44573d74d70c75aa7d2da063b",
+        "scope_assessment": {
+          "decision": "in_scope_language_model_routing_interpretability",
+          "explanation": "Core LLM/MoE interpretability methodology, not a pure domain application."
+        },
+        "scope_capped_score": null,
+        "scope_policy_version": "explicit-review-exclusion-v1",
+        "scope_status": "in_scope",
+        "score": 0.81,
+        "source_key": "757ad630c646fe5a4bc71f73184225cb7f15495c57bcc57b6278e7ed7d3a2bd7",
+        "story_id": "arxiv:2610.11775",
+        "token_usage": {},
+        "topics": [
+          "Large Language Models",
+          "Transformer Architecture",
+          "Interpretability & Explainability"
+        ]
+      },
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-ai",
+        "tier": 1,
+        "title": "RouterInterp: Understanding Superposed Specialisation in Mixture of Experts Routing",
+        "url": "https://arxiv.org/abs/2610.11775v1"
+      },
+      "published_at": "2026-10-08T11:55:25+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.8099999999999999,
+        "llm_relevance_score": 22.68,
+        "recency_score": 0.8069009166224018,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 30.686900916622402
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2610.11775",
+      "summary": "Sparse Mixture of Experts (MoE) models scale more efficiently than dense models by routing tokens to modular expert networks that are only active for processing a fraction of tokens. A leading hypothesis for the performance of MoE models is that each expert specialises in a single, coherent domain. However, interpretability efforts that assume this hypothesis have generally been unsuccessful. We propose and present evidence for an alternative account that we call the Superposed Specialisation Hypothesis (SSH): experts specialise in a disjoint union of fine-grained features rather than one broad domain. Leveraging the SSH, we introduce RouterInterp, a method for interpreting expert routing that identifies Sparse Autoencoder features most predictive of routing decisions and produces unified natural language explanations. On gpt-oss-20b, RouterInterp explains expert routing with ${\\sim}65\\%$ higher detection accuracy than prior token statistics based methods. This work provides a scalable method for generating more accurate explanations of expert routing and increases our understanding of a previously uninterpretable component of foundation models.",
+      "summary_en": "Does each expert in a mixture-of-experts model really handle one coherent domain? RouterInterp proposes superposed specialisation: one expert can be selected for semantically dissimilar fine-grained features. It decomposes residual activations with sparse autoencoders (SAEs), selects 45 features per expert using gradient attribution to the routing margin, and asks a language model to explain the contrast between contexts where a feature fires with and without expert selection. The study covers five layers of gpt-oss-20b and four of OLMoE-1B-7B. At the deepest tested layers, each expert's top 20 predictive features occupy about 11 semantic clusters on average, supporting a picture of routing that extends beyond a single topic.\n\nOn held-out contextual explanation detection, mean F1 is 0.492 and 0.602 respectively. The gpt-oss unigram baseline is 0.299, so the headline improvement of approximately 65% is relative F1 improvement, with an absolute increase of 0.193. A separate SAE routing probe reaches 0.730 and must not be confused with natural-language explanation quality. Features and semantic clusters remain proxies, the evaluator is an LLM, and the human-agreement check covers only 150 examples. Figure 6 also disagrees between its legend and caption on intermediate feature counts. The work offers a useful routing-interpretation method and testable hypotheses, without establishing causal specialisation of expert computations, transfer to larger architectures, or effective safety control.",
+      "summary_zh": "混合專家模型的每位專家，是否真的只懂一個領域？RouterInterp 提出「疊加專精」假說：同一專家的路由可能涵蓋語義不相近的細微特徵。方法先以稀疏自編碼器（SAE）拆解殘差表示，用路由邊際的梯度歸因選出每位專家的四十五個特徵，再對照特徵啟動時專家被選中與未被選中的片段，讓語言模型整理成文字解釋。它研究 gpt-oss-20b 的五層及 OLMoE-1B-7B 的四層；最深受測層中，每位專家的二十個預測特徵平均分布於約十一個語義群，支持路由並非單一主題。\n\n在保留測試片段的解釋偵測任務中，兩模型平均 F1 為 0.492、0.602；前者的一元詞元基線為 0.299，因此「約提升65%」是相對 F1 增幅，絕對增加 0.193。另有 SAE 路由探針達 0.730，不能與文字解釋分數混用。侷限是特徵與語義群仍屬代理，評分依賴語言模型；一百五十例的人類一致性檢查規模有限，且圖六的中間特徵數圖例與圖說不一致。研究提供實用的路由解釋工具與可檢驗假說，但未證明專家實際計算的因果專精，也未驗證更大架構或安全控制效果。",
+      "title": "RouterInterp: Understanding Superposed Specialisation in Mixture of Experts Routing",
+      "title_en": "RouterInterp: Understanding Superposed Specialisation in Mixture of Experts Routing",
+      "title_zh": "RouterInterp：理解混合專家路由中的疊加專精"
+    },
+{
+      "arxiv_id": "2610.11655",
+      "authors": [],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-10-10T14:53:01.637434+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-ai",
+          "tier": 1,
+          "title": "Harness Evolution Hits a Ceiling: When Weight Training Should Begin",
+          "url": "https://arxiv.org/abs/2610.11655v1"
+        },
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-ai",
+          "tier": 1,
+          "title": "Harness Evolution Hits a Ceiling: When Weight Training Should Begin",
+          "url": "https://arxiv.org/pdf/2610.11655v1"
+        }
+      ],
+      "llm_evaluation": {
+        "candidate_sha256": "984455bb2a570ee82d388147244c06e30693282328e573d6d060613490ba52d3",
+        "components": {
+          "evidence_strength": 0.73,
+          "generalizability": 0.64,
+          "novelty": 0.76,
+          "preference_relevance": 0.97,
+          "reproducibility": 0.38,
+          "rigor": 0.68
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "pp.4–5, Sections 3–4: first-trigger F1–F4 taxonomy, S=r*q identity, sub-Gaussian selection bound, 48 development/72 held-out split, two candidate edits per round and fresh anchors.",
+          "p.7 Table 1 and p.14 Table 5: held-out seed/evolved base 4B 0.164/0.297 and 9B 0.323/0.442; evolved held-out baselines were measured two nights earlier, 4B with two rollouts.",
+          "p.7 Table 1: seed-harness qkvo 4B 0.290, qkvo+MLP 9B 0.454 held-out; corresponding gains 0.126 and 0.131. 4B evolved+qkvo 0.379, 9B evolved+qkvo+MLP 0.449.",
+          "p.15 Table 9: 9B seed-harness held-out F4 28.1% to 4.5%; 4B qkvo F3 64.6% to 45.1%, while F4 7.6% to 13.5%. These are class shares under priority labels.",
+          "pp.15–17 Tables 8/10/11/12: second-textbook full tuning gains over best LoRA 0.044/0.042; 9B placebo 0.175/0.152 versus base 0.333/0.379; tools and lessons ablations, plus 4B exit-gate held-out exception.",
+          "pp.8/18 Table 13: WebArena-Lite 117-test score 0.256 to 0.344; adapter scores on evolved harness 0.327/0.331, within 0.064 resolution; adapter comparisons cross nights.",
+          "pp.8–9/19–20 Figure 4 and Appendix H: nine core evolution lines, Qwen3.6 thinking-on gain within its own noise, three low-quality models not trained, Gemma held-out weight-training gains unresolved.",
+          "p.20 Appendix I: multi-draft plan-to-JSON bias about 0.025 on audited sample, varies with multi-draft rate; not a universal subtraction or independent converter reproduction.",
+          "p.21 Appendix J/Table 15: Kimi aggregate bare/evolved 0.418/0.476 dev, 0.402/0.451 held-out; GLM evolved-only 0.512/0.488, no bare control, no attached per-run readings, settings or checkpoint mapping.",
+          "p.7 Table 1 and p.17 Figure 6 show 9B seed-harness qkvo+MLP held-out delivery 95%; p.15 Table 9 shows 96%. Table 10 caption says four rollouts/48 dev tasks but uses 9 of 96 dev trajectories for cap hits. Unresolved, not silently corrected."
+        ],
+        "fulltext_sha256": "0542b861219fefda757aa3e05abb395abd4edeb71586a2e46ebaa4d9b74135f3",
+        "fulltext_status": "complete",
+        "model": "assistant-native-review",
+        "native_identity_version": 1,
+        "original_candidate_sha256": "984455bb2a570ee82d388147244c06e30693282328e573d6d060613490ba52d3",
+        "out_of_scope": false,
+        "producer": "assistant-native-review",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "A fixed hold-out, fresh anchors, crossed harness/weight evaluations and ablations turn long-horizon failure analysis into a useful intervention hypothesis. The Qwen results and WebArena transfer are informative, but the ceiling is specific to the tested loop and F4 is a priority-ordered residual, not proof of intrinsic incapacity. Cross-night and low-rollout cells, configuration-dependent conversion bias, no matched-budget search, the unresolved Gemma branch and missing Appendix J per-run materials limit generality and reproduction. The 9B delivery discrepancy across Table 1/Table 9/Figure 6 and the Table 10 sampling denominator remain unresolved source issues; the core score does not rely on the Appendix J aggregates.",
+        "rationale_en": "A fixed hold-out, fresh anchors, crossed harness/weight evaluations and ablations turn long-horizon failure analysis into a useful intervention hypothesis. The Qwen results and WebArena transfer are informative, but the ceiling is specific to the tested loop and F4 is a priority-ordered residual, not proof of intrinsic incapacity. Cross-night and low-rollout cells, configuration-dependent conversion bias, no matched-budget search, the unresolved Gemma branch and missing Appendix J per-run materials limit generality and reproduction. The 9B delivery discrepancy across Table 1/Table 9/Figure 6 and the Table 10 sampling denominator remain unresolved source issues; the core score does not rely on the Appendix J aggregates.",
+        "rationale_zh": "以固定留出集、重測基準、框架×權重交叉比較及消融，將長程代理失敗分析轉成具實務價值的介入假說。Qwen主結果與WebArena轉移具有支持力，但上限只屬被測迴圈；F4為依序分類的殘餘，不證明固有能力不足。跨夜及少次抽樣、配置相關轉換偏差、無同預算搜尋、Gemma未解分支與附錄J尚缺逐次材料，使普遍性與重現仍有限。表1／9／圖6的9B交付率及表10抽樣分母差異保留為未解來源問題；主分數不靠附錄J旁證成立。",
+        "raw_weighted_score": 0.7965,
+        "request_sha256": "ff9bb20e8aeb30f2b0830ea9155a50203386313fefcc26485aaf650aabbdccb5",
+        "review_sha256": "d9e257322f6ab8ad3572224522229cf76b90ac2f340793b3756a5672c7be317f",
+        "scope_assessment": {
+          "decision": "in_scope_language_model_agent_methodology",
+          "explanation": "LLM harness design, failure diagnostics and weight adaptation are central; travel/web benchmarks serve general agent-method evaluation."
+        },
+        "scope_capped_score": null,
+        "scope_policy_version": "explicit-review-exclusion-v1",
+        "scope_status": "in_scope",
+        "score": 0.7965,
+        "source_key": "8f2ed3510a628e4682e0f34b1fa55e166b439be4b92f62805a9f072cac919de7",
+        "story_id": "arxiv:2610.11655",
+        "token_usage": {},
+        "topics": [
+          "Agents & Tool Use",
+          "Reasoning & Chain-of-Thought",
+          "Training & Optimization",
+          "Red Teaming & Evaluation",
+          "Long Context & Memory"
+        ]
+      },
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-ai",
+        "tier": 1,
+        "title": "Harness Evolution Hits a Ceiling: When Weight Training Should Begin",
+        "url": "https://arxiv.org/abs/2610.11655v1"
+      },
+      "published_at": "2026-10-08T10:33:29+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.7965,
+        "llm_relevance_score": 22.302,
+        "recency_score": 0.8023228363981456,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 30.304322836398146
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2610.11655",
+      "summary": "Improving a long-horizon LLM agent means evolving the harness around a frozen model or training its weights. We let a self-evolving harness make the system stronger first, then cross seed and evolved harnesses with base and trained weights to learn which gains the trained model keeps and which still need the runtime. We show that the right lever can be read off the agent's failure composition: labelling failed trajectories by the first signal that fires separates process failures (blocked calls, loops, exhausted step budgets) from content failures (a delivered plan that is poor). Harness evolution repairs the former, the behaviour it instils can be trained into the weights, and content failures are what weight training is for. On DeepPlanning, a self-evolving harness loop lifts the held-out score of Qwen3.5-4B from 0.16 to 0.30 and of Qwen3.5-9B from 0.32 to 0.44; for 4B, held-out delivery rises from 55% to 90% while content failures are left for the weights. LoRA adapters trained on evolved-harness trajectories internalise the gain: under the original harness they add +0.13 on held-out tasks for both sizes; on 4B they stack with the harness to more than double the held-out score, and on 9B the adapter alone matches the full evolution line, cutting content failures from a quarter of trajectories to one in twenty. A placebo adapter trained on answer-shuffled trajectories falls below the base model. The loop transfers to WebArena-Lite (+0.09 on 117 unseen tasks), where the gain lives in what the model sees and adapters do not add to it. The result is a diagnose-then-intervene rule applied twice: read the failure composition to choose between harness and weights, then read what the accepted edits changed to decide which gains to train in. Scores are four-rollout means against fresh anchors, same-night except where marked, across eight models from six families and two benchmarks.",
+      "summary_en": "When a long-horizon agent stalls, should developers change its tools, memory and prompts, or fine-tune its weights? This paper links that decision to the composition of observed failures. Its checker assigns unsuccessful trajectories to the first matching category: unsupported evidence, harness interference, execution-control problems, or residual low-quality planning. The authors then cross the original and evolved harnesses with base and trained weights. DeepPlanning uses 48 development tasks and 72 held-out tasks. Harness evolution raises held-out scores from 0.164 to 0.297 for the 4B model and from 0.323 to 0.442 for the 9B model, with much of the improvement associated with fewer process failures.\n\nLoRA training on successful evolved-harness trajectories recovers approximately 0.13 of held-out improvement under the original harness for each model size. The better 4B adapter also adds to the evolved harness; for 9B, either intervention alone reaches roughly the same held-out score. On 117 unseen WebArena-Lite tasks, the harness improves the score from 0.256 to 0.344, while the tested trajectory-training recipes add no resolvable gain. This contrast suggests that making more information visible and changing output behaviour need not be equally transferable into weights. It is a useful hypothesis for choosing experiments, rather than a demonstrated law of distillation.\n\nThe study is valuable for connecting failure measurements to intervention choices and reporting repeated measurements, component ablations and unsuccessful cases. Its ceiling, however, belongs to the particular evolution loop and evidence package tested here; it is not a general upper bound on harness design. F4 is also a residual class under a priority-ordered diagnostic rule, so its label alone does not identify an intrinsic capacity limit. Some comparisons cross nights, the 4B evolved held-out base uses only two rollouts, and the plan-conversion bias can vary with configuration. There is no matched-budget search baseline. Appendix J further says that per-run readings, serving settings and versioned harness mappings await the code release; GLM has no bare-model control. Those frontier-model aggregates are therefore limited corroboration, not independent reproduction or evidence that every model should switch to weight training. These qualifications matter for the headline: a higher measured task score does not by itself establish general planning ability or an optimal schedule for switching interventions.",
+      "summary_zh": "長程代理卡關時，該修改工具、記憶與提示組成的執行框架，還是微調模型？本文依軌跡首先觸發的訊號，區分證據不足、框架阻礙、執行失控及剩餘的低品質規劃，再交叉比較原始／演化框架與原始／訓練權重。DeepPlanning以48題開發、72題留出；框架演化讓4B與9B模型留出分數分別由0.164升至0.297、0.323升至0.442，主要減少流程失敗。\n\n以成功軌跡訓練LoRA後，原框架上的最佳配方再現約0.13的留出增益；4B可與演化框架疊加，9B則大致互相替代。WebArena-Lite的117題測試由0.256升至0.344，但軌跡訓練沒有可辨增益，暗示增加可見資訊與改變輸出行為未必同樣可蒸餾。\n\n價值在於把失敗組成與介入選擇連結，並公開重測、消融及失敗案例。不過，這是特定迴圈的經驗規則，非框架能力的普遍上限；F4也是依序排除後的殘餘類別。部分比較跨夜、4B演化留出基準僅兩次抽樣，轉換器偏差依配置而變，且缺同預算搜尋基線。附錄J的逐次讀數與程式仍待釋出，GLM亦無裸模型對照，因此只能當有限旁證，不能據此宣稱已重現或證明所有模型都該轉向權重訓練。",
+      "title": "Harness Evolution Hits a Ceiling: When Weight Training Should Begin",
+      "title_en": "Harness Evolution Hits a Ceiling: When Weight Training Should Begin",
+      "title_zh": "代理執行框架演化的瓶頸：何時該開始訓練模型權重"
+    },
+{
+      "arxiv_id": "2610.11750",
+      "authors": [],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-10-10T14:52:22.748765+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-ai",
+          "tier": 1,
+          "title": "Where Draft Trees Lose Target Mass: Exit-Guided Speculative Decoding",
+          "url": "https://arxiv.org/abs/2610.11750v1"
+        },
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-ai",
+          "tier": 1,
+          "title": "Where Draft Trees Lose Target Mass: Exit-Guided Speculative Decoding",
+          "url": "https://arxiv.org/pdf/2610.11750v1"
+        }
+      ],
+      "llm_evaluation": {
+        "candidate_sha256": "98a924afe9fdff5dc8aa2fa5b2f24414f72d9cc6bd65a815a87c5aef5d0e0a17",
+        "components": {
+          "evidence_strength": 0.73,
+          "generalizability": 0.65,
+          "novelty": 0.73,
+          "preference_relevance": 0.91,
+          "reproducibility": 0.51,
+          "rigor": 0.78
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "conditional_exactness: pp.4,13: The ceiling assumes Z|(c,T,U)~p and O=Z[1:L]; L is a stopping time for safe round composition. Limit: Do not extend to all algorithms exact only after marginalizing random draft proposals.",
+          "coverage: pp.4,5,14: C_p=sum non-root P(u)=sum w(v)d(v); w sums to one. Limit: C_p is expected depth and can exceed one; L includes one bonus.",
+          "saturation: pp.5,14,15: A_u is contained in F_u; equality of the finite sum forces every node equality and canonical exit/residual law. Limit: No computational optimality follows.",
+          "predraw_residual: pp.15,16: Independent target draws and the specified residual rejection kernel each have child transition p_v(x), with telescoping residual masses. Limit: This identifies representative mathematical procedures, not every implementation bearing an EAGLE name.",
+          "hsd: pp.17: HSD keeps target/draft ratios for a sampled chain; the paper conditions on a tree under a stronger target-prefix law. Limit: No universal impossibility claim for marginally exact proposal-dependent samplers.",
+          "tev_implementation: pp.6,17,18: One categorical exit and one residual bonus after depth-wise propagation; acceptance mass of a subtree is P(u). Limit: Still node/edge work and vocabulary sampling; exactness in real arithmetic, finite-precision code unverified.",
+          "gross_coverage_gain: pp.6,18: Adding one missing child contributes P(v)p_v(a); sum of possible one-step gains is w(v). Limit: Gross gain before budget enforcement; displaced nodes must be accounted for.",
+          "gradient_scope: pp.6,7,18: Tree and target exit weights detached; same-depth draft rows shared; denominator counts nodes. Limit: Surrogate allocation loss, not exact gradient through top-B or target coverage.",
+          "root_horizon: pp.6,7: Root excluded and included weights sum to1-w(root); hard-horizon leaves reward reaching H. Limit: Missing first-position support has no direct exit-loss credit; no root/leaf ablation supplied.",
+          "main_effects: pp.7,8: Table1 Qwen model-temperature averages support 8.8–13.8% block-length and11.5–13.8% SR gains over DDTree. Limit: Not universal13/14%; task performance, probability acceptance and latency reduction have different denominators.",
+          "stage_latency: pp.9,19: Table3 compares verifier decision+cache commit with fixed trees, excluding target forward; mean reductions12.0–24.3%. Limit: Not15% total latency; temperature0.6/1.0 differs from main0/1.",
+          "crossed_attribution: pp.8,19,20: Table4 TEV fixed-drafter SR4.95→4.97 and5.55→5.59; block differences at most0.03. Limit: Separate finite sample runs consistent with theorem, not standalone statistical proof or significant gain.",
+          "matched_training: pp.8,9: Matched initialization,data,compute; token-only and mass-rescaled prefix controls; exit gains beyond both. Limit: Table2 SR compares complete systems; lambda/horizon/root-leaf sensitivity absent.",
+          "budget_robustness: pp.9,20,21: B64-trained drafter testedB32/64/128 without retraining; mean advantages remain. Limit: Not every task best: B128/T1 HumanEval SR5.77<5.81 Draft-OPD.",
+          "hardware_and_sampling: pp.21: Single H20-96G/BF16/SDPA target/FA2 drafter/batch1/max2048;128GSM8K/164HumanEval/128MATH-500/80MT-Bench;three runs exceptMTtwice;Qwen thinking off. Limit: No cross-device,batching,CI or independent training-seed evidence; averages across unequal task sizes.",
+          "training_overhead: pp.9,21: Eight H20s split1target+7draft,lr1e-4,batch4,wall35/55/100/80h forQ4/Q8/Gemma/Coder. Limit: No LLaMA walltime or break-even; aggregate allocation is not measured utilization or dollars.",
+          "material_availability: pp.1,10,21: PDF contains all A–D; abstract says code available and reproducibility statement says will provide. Limit: Repository/configs/checkpoints not fetched; no verified availability or reproduction; not in-file incompleteness."
+        ],
+        "fulltext_sha256": "4e1b01f2bd5e7abafdf733b44d0fa624ad1d91204f0fae61fad4c5d22b7022d6",
+        "fulltext_status": "complete",
+        "model": "assistant-native-review",
+        "native_identity_version": 1,
+        "original_candidate_sha256": "98a924afe9fdff5dc8aa2fa5b2f24414f72d9cc6bd65a815a87c5aef5d0e0a17",
+        "out_of_scope": false,
+        "producer": "assistant-native-review",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "A strong, relevant systems-and-theory contribution with a bounded experimental claim. The key object is w(v)=P(v)[1−sum_child p_v(x)], a normalized exit distribution. Target coverage C_p is the sum of non-root prefix probabilities, equivalently expected exit depth; it can exceed one and is not a single-event coverage probability. Under the paper’s conditional exact-path coupling, acceptance of each node is contained in its target-prefix event, giving E[L]≤1+C_p. Equality forces the same exit and residual bonus law. Finite prefix closure, distinct sibling tokens, target distributions under actual causal prefixes and non-anticipating stopping are essential. This does not rule out improvements in algorithms exact only after marginalizing over random draft proposals, as the separate HSD setting illustrates (pp.4–5,13–17).\n\nTEV directly samples that law after target tree evaluation. Its two sampling decisions still require child reductions, prefix-probability propagation, residual-vocabulary sampling and cache work; depth levels remain dependent. Statistical saturation therefore implies neither computational optimality nor constant-time verification. The real-arithmetic proof cannot certify numeric stability, masking or finite-precision implementation from an uninspected repository (pp.6,17–19).\n\nExitTrain uses detached target exit weights on each non-root node’s incoming token. Target probabilities use true tree-parent prefixes, but DFlash draft likelihoods at the same depth share a position-wise row, so this is not an autoregressive, tree-conditioned draft objective. The denominator is the count of non-root nodes, not the sum of their weights. Root exit receives no direct loss term; hard-horizon leaves reward deep reach rather than missing expandable support. Adding a missing child yields gross coverage P(v)p_v(a), but a fixed-budget replacement must also account for removed nodes. Thus the loss is a plausible allocation surrogate with empirical support, not the exact coverage gradient or a monotone coverage guarantee (pp.6–7,18).\n\nOn the four-task Qwen3 averages in Table1, full-system gains over DDTree are 8.8%–13.8% in bonus-inclusive block length and 11.5%–13.8% in speed. These are relative increases, not percentage-point acceptance gains, absolute accuracy improvements or universal averages. The approximately 13/15/14% abstract shorthand does not identify one common aggregation; the 15% refers to a verifier-plus-cache stage excluding target forward, while Table4 isolates only 0.4%/0.7% additional end-to-end speed from TEV. Matched token-only and prefix-weighted controls support exit-specific training benefits, and cross-budget averages remain positive. However, B=128/T=1 HumanEval SR is 5.77 versus Draft-OPD 5.81, so robustness does not mean winning every task (pp.7–9,19–21).\n\nAll inference configurations use a single H20-96G GPU, batch one and at most 2,048 generated tokens. The four tasks contribute equally to displayed averages despite different sizes; 128 GSM8K and 128 MATH-500 examples are subsets. Repeated evaluations are reported but not confidence intervals or independent training seeds. Training occupies an eight-H20 server for about 35/55/100/80 hours for the four named models; LLaMA cost and amortization are not given. No essential in-file appendix is missing, so I do not recommend a source-completeness hold for the authored scientific review. Code availability, full configurations, implementation exactness and broader deployment gains remain unverified. The original weighted score is 0.7905; its 1.0 document multiplier denotes supplied-PDF completeness only, not confidence in the scientific claims.",
+        "rationale_en": "A strong, relevant systems-and-theory contribution with a bounded experimental claim. The key object is w(v)=P(v)[1−sum_child p_v(x)], a normalized exit distribution. Target coverage C_p is the sum of non-root prefix probabilities, equivalently expected exit depth; it can exceed one and is not a single-event coverage probability. Under the paper’s conditional exact-path coupling, acceptance of each node is contained in its target-prefix event, giving E[L]≤1+C_p. Equality forces the same exit and residual bonus law. Finite prefix closure, distinct sibling tokens, target distributions under actual causal prefixes and non-anticipating stopping are essential. This does not rule out improvements in algorithms exact only after marginalizing over random draft proposals, as the separate HSD setting illustrates (pp.4–5,13–17).\n\nTEV directly samples that law after target tree evaluation. Its two sampling decisions still require child reductions, prefix-probability propagation, residual-vocabulary sampling and cache work; depth levels remain dependent. Statistical saturation therefore implies neither computational optimality nor constant-time verification. The real-arithmetic proof cannot certify numeric stability, masking or finite-precision implementation from an uninspected repository (pp.6,17–19).\n\nExitTrain uses detached target exit weights on each non-root node’s incoming token. Target probabilities use true tree-parent prefixes, but DFlash draft likelihoods at the same depth share a position-wise row, so this is not an autoregressive, tree-conditioned draft objective. The denominator is the count of non-root nodes, not the sum of their weights. Root exit receives no direct loss term; hard-horizon leaves reward deep reach rather than missing expandable support. Adding a missing child yields gross coverage P(v)p_v(a), but a fixed-budget replacement must also account for removed nodes. Thus the loss is a plausible allocation surrogate with empirical support, not the exact coverage gradient or a monotone coverage guarantee (pp.6–7,18).\n\nOn the four-task Qwen3 averages in Table1, full-system gains over DDTree are 8.8%–13.8% in bonus-inclusive block length and 11.5%–13.8% in speed. These are relative increases, not percentage-point acceptance gains, absolute accuracy improvements or universal averages. The approximately 13/15/14% abstract shorthand does not identify one common aggregation; the 15% refers to a verifier-plus-cache stage excluding target forward, while Table4 isolates only 0.4%/0.7% additional end-to-end speed from TEV. Matched token-only and prefix-weighted controls support exit-specific training benefits, and cross-budget averages remain positive. However, B=128/T=1 HumanEval SR is 5.77 versus Draft-OPD 5.81, so robustness does not mean winning every task (pp.7–9,19–21).\n\nAll inference configurations use a single H20-96G GPU, batch one and at most 2,048 generated tokens. The four tasks contribute equally to displayed averages despite different sizes; 128 GSM8K and 128 MATH-500 examples are subsets. Repeated evaluations are reported but not confidence intervals or independent training seeds. Training occupies an eight-H20 server for about 35/55/100/80 hours for the four named models; LLaMA cost and amortization are not given. No essential in-file appendix is missing, so I do not recommend a source-completeness hold for the authored scientific review. Code availability, full configurations, implementation exactness and broader deployment gains remain unverified. The original weighted score is 0.7905; its 1.0 document multiplier denotes supplied-PDF completeness only, not confidence in the scientific claims.",
+        "rationale_zh": "這是一篇相關性高、理論與系統設計互相支援，但實驗結論必須限定範圍的研究。核心w(v)=P(v)[1−子節點目標機率總和]是歸一化離樹分布；覆蓋量C_p則是所有非根前綴機率之和，也等於預期離樹深度，可以大於一，不是單一事件的覆蓋機率。給定本文的條件式精確路徑耦合，接受某節點必須落在對應目標前綴事件中，因此E[L]≤1+C_p；達到等號就強制相同的離樹與殘差額外詞元分布。有限前綴封閉樹、不同兄弟詞元、實際因果前綴下的目標分布及非預知停止條件都重要。此結果不排除只對隨機草稿取邊際後精確的方法仍能改良，HSD便屬另一機率設定（頁4–5、13–17）。\n\nTEV在完成目標樹前向後直接抽取上述分布。兩次抽樣決策仍需子節點加總、前綴機率傳遞、殘差詞彙抽樣及快取工作，各深度層仍互有依賴。所以統計上飽和不等於計算成本最優，也不等於常數時間驗證。實數運算證明無法替尚未檢視的程式保證數值穩定、遮罩或有限精度正確性（頁6、17–19）。\n\nExitTrain以停止梯度的目標離樹權重，加權各非根節點的入邊詞元。目標機率使用真正樹前綴，DFlash同深度的草稿機率卻共用位置邊際列，因此不是自回歸、樹條件式草稿目標；分母也為非根節點數，而非權重總和。根離樹沒有直接損失項，硬深度上限葉節點獎勵的是到達深處，不是尚可擴充的缺失支援。新增缺失子節點帶來P(v)p_v(a)的毛覆蓋增益，但固定預算置換仍須扣除移除節點。因此這是有實證支持的配置代理損失，不是覆蓋量精確梯度或單調改善保證（頁6–7、18）。\n\n表1的Qwen3四任務平均相對DDTree，完整系統的含額外詞元區塊長度提高8.8%–13.8%，速度提高11.5%–13.8%。這些是相對增幅，不是接受率百分點、準確率提升或通用平均。摘要約13／15／14%的簡寫未指定同一聚合方式；其中15%僅指排除目標前向的驗證加快取階段，表4分離出的TEV端到端額外增益只有0.4%／0.7%。配對token-only與前綴權重控制支持離樹訓練的額外價值，跨預算平均亦正向；但128節點、溫度1的HumanEval速度比為5.77，略低於Draft-OPD的5.81，因此穩健性不表示每題組皆勝（頁7–9、19–21）。\n\n所有推論配置均用一張H20-96G、批次一及最多2048個生成詞元。表列平均讓四任務各占相同權重，題數卻不同；GSM8K與MATH-500各128題只屬子集。有重複評估，但未報信賴區間或獨立訓練種子。四個具名模型訓練各占八張H20伺服器約35／55／100／80小時，未列LLaMA成本及攤提。本次沒有發現缺失的核心內文附錄，因此不建議將完整科學評讀列為來源缺頁HOLD；程式可用性、完整設定、實作精確性與廣泛部署效益仍未驗。原規準加權分數0.7905；文件乘數1.0只表示提供的PDF完整，不是科學主張的可信機率。",
+        "raw_weighted_score": 0.7905000000000001,
+        "request_sha256": "a41d56afd4a4bcffb637d8164d085614fe170efb56d473b157958e149776a1ba",
+        "review_sha256": "e7a646cde05908d14fd2bb01d619619bd49b9b811d043ac4da569b736328a027",
+        "scope_assessment": {
+          "classification": "in_scope_language_methodology",
+          "decision": "in_scope_language_model_inference",
+          "reason_en": "Language-model speculative decoding, exact verification and draft training are the central contributions.",
+          "reason_zh": "核心為語言模型推測解碼、精確驗證與草稿訓練，屬語言方法。"
+        },
+        "scope_capped_score": null,
+        "scope_policy_version": "explicit-review-exclusion-v1",
+        "scope_status": "in_scope",
+        "score": 0.7905000000000001,
+        "source_key": "73c6aaeb9b0f40294955e561ef7515572aabc84e4f6a54a7d2a18210d81a3aa0",
+        "story_id": "arxiv:2610.11750",
+        "token_usage": {},
+        "topics": [
+          "Large Language Models",
+          "Inference & Serving",
+          "Scaling & Efficiency",
+          "Training & Optimization"
+        ]
+      },
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-ai",
+        "tier": 1,
+        "title": "Where Draft Trees Lose Target Mass: Exit-Guided Speculative Decoding",
+        "url": "https://arxiv.org/abs/2610.11750v1"
+      },
+      "published_at": "2026-10-08T11:40:13+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.7905000000000001,
+        "llm_relevance_score": 22.134000000000004,
+        "recency_score": 0.8060496372424587,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 30.140049637242463
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2610.11750",
+      "summary": "Tree-based speculative decoding verifies multiple draft continuations in one target-model pass, but finite trees built from draft scores face a fundamental draft-target mismatch. We ask whether better exact verification can increase acceptance on a fixed tree and how target feedback can improve the tree itself. Through a target-flow view, we identify a canonical exit law and prove that one plus target coverage sharply bounds the expected output-block length, including the bonus token, of any exact path verifier. All optimal verifiers share the same exit and bonus-token law, already attained by representative predraw-and-follow and sequential residual verifiers. This yields Tree Exit Verification (TEV), an exact, level-parallel procedure using one exit-node decision and one bonus-token decision. The exit law also identifies missing target probability, providing node-level feedback for Exit-Guided Draft-Tree Training (ExitTrain) on inference-time draft trees. Experiments across dialogue, code, and mathematical reasoning validate fixed-tree equivalence: ExitTrain increases average output-block length by 13%, while TEV reduces verifier-stage latency by 15%, yielding a 14% end-to-end speedup over DDTree. Our results distinguish two opportunities: better draft trees for higher acceptance and more direct verification for lower latency. Code: this https URL.",
+      "summary_en": "Tree speculative decoding spends a finite node budget on draft continuations that may not match the target model. This paper characterizes target probability flow through a realized prefix tree. Under its conditional exact-path coupling and non-anticipating stopping assumptions, expected accepted draft length is bounded by target-prefix coverage, and every saturated verifier has the same exit-node and bonus-token law. TEV samples that exit and then one residual bonus token, changing execution cost rather than fixed-tree acceptance. ExitTrain instead uses detached exit probabilities to reweight incoming draft-token likelihoods on inference-time trees. Its objective is a discrete tree-allocation surrogate, not the exact gradient of coverage.\n\nAcross the four dialogue, code and mathematics benchmarks on one H20 GPU with batch size one, the Qwen3 comparisons report 8.8%–13.8% gains in average output-block length and 11.5%–13.8% end-to-end speed gains over DDTree. Output blocks include the bonus token; these percentages are not draft-token acceptance probabilities. The roughly 15% latency saving concerns verification decisions and cache commit, excluding the target forward pass. Crossed evaluation isolates only about 0.4% or 0.7% end-to-end gain from TEV alone. Matched training controls and inference budgets of 32/64/128 nodes support the training contribution, but high-concurrency serving, other hardware and training-seed robustness remain untested. Training also takes about 35–100 hours on an eight-H20 server; amortization is not measured. External code and complete configurations were not acquired. The useful contribution is a precise separation between better tree coverage and cheaper realization of the same verification law.",
+      "summary_zh": "樹狀推測解碼先讓小模型提出多條候選，再由大模型一次驗證；問題是有限節點可能花在大模型不常選的分支。本文把目標機率沿固定草稿樹流動，證明在條件式精確、非預知的路徑驗證設定下，平均接受長度受樹的目標前綴覆蓋量限制。TEV直接抽取離樹節點與一個額外詞元，保留既有飽和驗證器的接受分布，只改善執行成本。ExitTrain則以離樹機率加權草稿詞元訓練，嘗試讓同一節點預算涵蓋更有用的前綴；它是固定樹上的代理損失，並非覆蓋量的精確梯度。\n\n在單張H20、批次一的四種對話、程式與數學測試中，Qwen3兩個規模相對DDTree的平均輸出區塊長度增加8.8%–13.8%，端到端速度增加11.5%–13.8%；區塊包含額外詞元，不能當成純草稿接受率。約15%的延遲下降只指驗證與快取提交階段，排除大模型前向；交叉消融中TEV單獨的端到端增益僅約0.4%或0.7%。配對訓練與不同樹預算測試支持ExitTrain，但尚無高併發、跨硬體或訓練種子穩健性證據。訓練另占配有八張H20的伺服器35至100小時，攤提成本未量化；程式與完整設定未取得。價值在於分清「樹涵蓋多少」與「如何更快驗證」。",
+      "title": "Where Draft Trees Lose Target Mass: Exit-Guided Speculative Decoding",
+      "title_en": "Where Draft Trees Lose Target Mass: Exit-Guided Speculative Decoding",
+      "title_zh": "草稿樹在哪裡流失目標機率：離樹訊號引導的推測解碼"
+    },
+{
+      "arxiv_id": "2610.11707",
+      "authors": [],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-10-10T14:52:42.369676+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-ai",
+          "tier": 1,
+          "title": "DeltaReplay: Task-Relative Memory Reuse for Mobile GUI Agents",
+          "url": "https://arxiv.org/abs/2610.11707v1"
+        },
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-ai",
+          "tier": 1,
+          "title": "DeltaReplay: Task-Relative Memory Reuse for Mobile GUI Agents",
+          "url": "https://arxiv.org/pdf/2610.11707v1"
+        }
+      ],
+      "llm_evaluation": {
+        "candidate_sha256": "3c84483a01b3a05c1f649c79e3a1fb10301744efb39e84b905794174755ed2c3",
+        "components": {
+          "evidence_strength": 0.6,
+          "generalizability": 0.48,
+          "novelty": 0.7,
+          "preference_relevance": 0.96,
+          "reproducibility": 0.46,
+          "rigor": 0.53
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "§3, p4, Eq1 distinguishes executability and applicability; parameter mismatch and a missing current target are different partial-reuse cases, with the latter sent to the base agent.",
+          "§4, pp5–6; Appendix A p16: frozen trajectory graph, task-ID retrieval, structural remapping, word-aligned parameter replacement, reject-all selector, unchanged-screen repeat guard and base fallback; no training.",
+          "Appendix B p16: loose cosine/structure thresholds .60/.70, strict .65/.80, or fuzzy text ratio >=80; selector K<=8; max(8,ceil(3*nref)) steps and AndroidWorld 15-minute cap.",
+          "§5.1 p7; Appendix D p18: AndroidWorld memory has42 filtered successful stronger-backbone runs from different-seed instances; test groups20/22/48/26 and116 templates.",
+          "§5.1 p7; Appendix D pp18–19: SPA memory50 runs/42 tasks includes27 of60 evaluated tasks and the baseline runs used in Tables2/3;32 of33 tasks lacking their own record previously failed with both backbones; groups27/15/18.",
+          "Table2 p8: AndroidWorld base/Delta success43.1/53.4 and49.1/56.9; SPA23.3/48.3 and41.7/58.3. Fast-backbone latency9.3→11.3s and10.3→12.2s; Flash Android24.8→19.7s and SPA21.0→20.9s.",
+          "Table3 p8: Flash same-task latency21.7→9.3s and SR80→90; same-template63.6→86.4 and19.5→12.6s. Appendix B p17 excludes device interaction from latency.",
+          "Appendix E p20: base lacks repeat guard; GUI-Owl uses a common candidate interface rather than official prompt/parser; GUI-explorer is adapted from visual exploration to text retrieval over frozen records.",
+          "Table4 p9; Appendix F p20: no-Route-C also removes screen check; no-semantic-matching removes both screen check and selector, evaluated only on first30 of48 same-app tasks.",
+          "§5.1 p7; Appendix D p18: each task run once; Qwen3.8-Flash task judge uses screenshots and OCR without SPA key-component check; Android rule-checker agreement248/271 on75 scorable tasks and four stated methods, not a full benchmark validation.",
+          "Appendix G p21 Table7: A/B/C overall13.7/8.1/78.2%; same-app10.1% borrowed direct-regime steps are labeled B by implementation convention.",
+          "Appendix H p21 Table8: route A41/49 judged=.837, B39/50=.78, C37/49=.755;2 unclear excluded. Parameter-adapted B19/20 correct, borrowed B20/30. All labels are blind LLM labels without human checking.",
+          "Appendix I p21: same-task+same-template n42 paired comparison b=1,c=8; exact two-sided McNemar20/512=.0390625; this test is not reported for the full116 or SPA60.",
+          "Appendix J p22: Proposition1 follows from stipulated transition consistency and semantic invariance; Proposition2 compares utilities in[0,1] on the same contexts and gives Jroute-Jbase>=p*g-delta, with no-harm bound only if g>=0.",
+          "§6 p10; p11 reproducibility/ethics: app updates not tested, implicit parameters fall back, task-ID retrieval assumed, judges not human-validated; code/full prompts claimed in ancillary, account screenshots not released."
+        ],
+        "fulltext_sha256": "74cd39a62c2a2ff49bc006c6e915b748e89f3fbce2a72c3da34497043997ccd1",
+        "fulltext_status": "complete",
+        "model": "assistant-native-review",
+        "native_identity_version": 1,
+        "original_candidate_sha256": "3c84483a01b3a05c1f649c79e3a1fb10301744efb39e84b905794174755ed2c3",
+        "out_of_scope": false,
+        "producer": "assistant-native-review",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Worth reading as a qualified agent-memory method: the system turns a frozen successful trajectory into per-step replay, parameter-adaptation or rejection decisions, and the observed success gains and same-template results support the practical value of that combination. The original six-weight score is 0.7295, driven substantially by topic relevance rather than treating the experiments as universal validation. SPA memory contains the reported successful baseline runs; 32 of 33 tasks lacking their own record had failed under both backbones, so low baseline performance and large gains do not represent randomized coverage or unseen-task generalization. The smaller backbone can also use stronger-model demonstrations. Benchmark-ID retrieval and relation-specific prompt headers bound the problem being tested. Single runs, LLM judges without human validation, a baseline without the repeat guard, and ablations jointly removing screen checks limit causal attribution. AndroidWorld’s 91.5% checker agreement covers only 271 scorable episodes from 75 tasks and a specified subset of methods, not all tasks or models. The 57% latency reduction concerns one same-task subgroup, excludes device time, and coexists with an overall slowdown for the faster backbone. Route B includes borrowed navigation without parameter changes; the 150-step annotation does not establish route superiority or safety. Appendix J provides idealized same-context, single-step bounds, not task-level guarantees. All in-file A–J material was read, but ancillary code/full prompts and withheld screenshots were not verified. Availability claims remain distinct from acquired reproducibility evidence.",
+        "rationale_en": "Worth reading as a qualified agent-memory method: the system turns a frozen successful trajectory into per-step replay, parameter-adaptation or rejection decisions, and the observed success gains and same-template results support the practical value of that combination. The original six-weight score is 0.7295, driven substantially by topic relevance rather than treating the experiments as universal validation. SPA memory contains the reported successful baseline runs; 32 of 33 tasks lacking their own record had failed under both backbones, so low baseline performance and large gains do not represent randomized coverage or unseen-task generalization. The smaller backbone can also use stronger-model demonstrations. Benchmark-ID retrieval and relation-specific prompt headers bound the problem being tested. Single runs, LLM judges without human validation, a baseline without the repeat guard, and ablations jointly removing screen checks limit causal attribution. AndroidWorld’s 91.5% checker agreement covers only 271 scorable episodes from 75 tasks and a specified subset of methods, not all tasks or models. The 57% latency reduction concerns one same-task subgroup, excludes device time, and coexists with an overall slowdown for the faster backbone. Route B includes borrowed navigation without parameter changes; the 150-step annotation does not establish route superiority or safety. Appendix J provides idealized same-context, single-step bounds, not task-level guarantees. All in-file A–J material was read, but ancillary code/full prompts and withheld screenshots were not verified. Availability claims remain distinct from acquired reproducibility evidence.",
+        "rationale_zh": "建議作為有條件的代理記憶方法閱讀：它把固定成功軌跡拆成逐步可重播、可改參數或應拒絕的決策，成功率與同模板實驗支持這個組合的實用價值。原六權重分數為0.7295，主要受主題高度相關拉升，而非視實驗已充分證明普遍效果。SPA記憶使用所報基線成功run，另33個無自身記錄任務中32個兩骨幹都曾失敗，因此低基線與大增幅不能當成隨機覆蓋實驗或未見任務泛化；較小骨幹也能利用較強骨幹示範。benchmark-ID檢索和關係提示限定了問題範圍。每題單跑、未人工驗證的LLM裁判、基線缺repeat guard及聯合移除screen check的消融，限制因果歸因；AndroidWorld的91.5%一致率只涵蓋75題中的271個可判episode，不能外推所有模型或任務。57%是同任務子組排除裝置時間的單步降幅，快骨幹整體變慢。Route B包含非改參數的借用導航，150步精確率不能證明路徑優劣或安全；附錄J只在理想匹配、同情境、單步有界效用下成立。完整A–J已讀，但外部ancillary程式／完整提示與未公開截圖沒有核驗；保留重現性限制，不把文中可用性聲明當已取得證據。",
+        "raw_weighted_score": 0.7295,
+        "request_sha256": "0987030bb8374b1f745f5a35fbda878ab3f961e9eddcb32c9424f998991ce402",
+        "review_sha256": "f4f0a97fe7b092121219b9235763a02a8e953f574e021e126f01420bc193bdcd",
+        "scope_assessment": {
+          "decision": "in_scope_language_model_agent_memory",
+          "explanation": "General language/multimodal agent-memory use and decision methodology; not excluded pure mobile-domain application."
+        },
+        "scope_capped_score": null,
+        "scope_policy_version": "explicit-review-exclusion-v1",
+        "scope_status": "in_scope",
+        "score": 0.7295,
+        "source_key": "92128d64f0f36b4164b4270f8c59a2efc1bae33ce021d4c09dbae622da434dd6",
+        "story_id": "arxiv:2610.11707",
+        "token_usage": {},
+        "topics": [
+          "Agents & Tool Use",
+          "Long Context & Memory",
+          "Multimodal AI",
+          "Scaling & Efficiency",
+          "Red Teaming & Evaluation"
+        ]
+      },
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-ai",
+        "tier": 1,
+        "title": "DeltaReplay: Task-Relative Memory Reuse for Mobile GUI Agents",
+        "url": "https://arxiv.org/abs/2610.11707v1"
+      },
+      "published_at": "2026-10-08T11:12:57+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.7295,
+        "llm_relevance_score": 20.426000000000002,
+        "recency_score": 0.8045248114260495,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 28.430524811426054
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2610.11707",
+      "summary": "Memory-augmented mobile GUI agents store successful execution trajectories and reuse them in later tasks, but a stored trajectory rarely matches a new task exactly. The new task may use different parameters, share only some of its steps with a stored trajectory, or have no relevant record in memory. Forcing the agent to use irrelevant memory can mislead it, whereas discarding memory that may still be useful deprives it of guidance from past experience. To address this dilemma, we propose DeltaReplay, a step-level memory reuse framework that decides how to use existing memory without modifying it. We observe that the reusable part of a stored record is determined not by the record itself but by its relation to the new task, mainly through two factors: page-level consistency and action-level generality. We therefore store execution trajectories as paths in a transition graph, whose nodes (pages) and edges (actions between pages) capture these two factors. At reuse time, the action on each edge is split into a task-independent operation and task-specific parameters. DeltaReplay then compares each recorded step with the new task and the current screen, and decides whether to follow it, execute it after replacing its parameters, or leave it to the base agent. On AndroidWorld and SPA-Bench, DeltaReplay improves the task success rate over a base agent with the same backbone by up to 10.3 and 25.0 percentage points, respectively. These results indicate that deciding at each step how to use retrieved memory lets agents benefit even from partially matching trajectories.",
+      "summary_en": "A mobile agent often encounters an old task that is only partly reusable: the screens still resemble the record, while a name, date, or later goal has changed. DeltaReplay stores successful executions in a read-only transition graph and chooses, step by step, whether to replay a grounded action, replace task-specific parameters, or discard memory and use the base agent. It matches UI trees, remaps target elements, and aligns task descriptions to substitute parameters. A model selector is used when a record position must be found, with an option to reject every candidate. Borrowed navigation steps from other tasks are also counted as Route B, so that route does not exclusively measure parameter adaptation.\n\nAcross 116 AndroidWorld tasks and 60 SPA-Bench tasks, same-backbone success improves by 7.8–10.3 and 16.6–25.0 percentage points. The faster backbone becomes slower overall; the roughly 57% per-step latency reduction is limited to one backbone's same-task subgroup and excludes device interaction. SPA memory contains successful baseline runs of evaluated tasks, making memory coverage correlated with difficulty. These results should not be read as unseen-task generalization.\n\nThe useful design lesson is a rejectable, step-level decision about memory use. Evidence is limited by benchmark-ID retrieval, one run per task, model judgments without human validation, and ablations that remove multiple mechanisms together. App-version changes were not tested. The appendix's negative-transfer bound concerns one step on the same contexts under idealized assumptions, not end-to-end task safety. Ancillary code and full prompts were not acquired, so reproducibility remains unverified.",
+      "summary_zh": "手機代理常遇到「舊任務只對一半」：畫面相似，姓名、日期或後續目標卻已改變。DeltaReplay把成功操作存成唯讀轉移圖，每一步分辨能否直接重播、替換任務參數後執行，或放棄記憶交回原代理。它比對介面樹並重新定位元素，利用文字對齊改寫參數；只有需要重新尋找記錄位置時才請模型選擇，且可拒絕全部候選。其他任務借來的導航步驟也計入第二路徑，並非全部都做參數替換。\n\n在116個AndroidWorld任務與60個SPA-Bench任務，兩種骨幹相對自身基線的成功率分別增加7.8–10.3與16.6–25.0個百分點。快骨幹整體反而變慢；57%的單步延遲降幅只見於特定骨幹的同任務子組，而且排除裝置操作時間。SPA記憶包含基線已成功的測試任務記錄，覆蓋分組與難度相連，不能把結果當作未見任務泛化。\n\n值得借鏡的是把「是否使用記憶」變成可拒絕的逐步決策。證據仍受基準任務識別碼檢索、每題單次執行、未經人工核對的模型裁判及混合因素消融限制；未測應用程式改版。附錄的負遷移界限只適用同情境單步與理想假設，不保證整段任務安全。程式與完整提示詞的外部附件未取得，因此重現性仍待驗證。",
+      "title": "DeltaReplay: Task-Relative Memory Reuse for Mobile GUI Agents",
+      "title_en": "DeltaReplay: Task-Relative Memory Reuse for Mobile GUI Agents",
+      "title_zh": "DeltaReplay：行動圖形介面代理的任務相對記憶重用"
     }
 ],
   "radar": [],
   "run_date": "2026-10-09",
   "run_id": "bounded-partial-additive-2026-10-09",
   "run_info": {
-  "added_native_count": 3,
-  "added_reviewed_candidate_count": 3,
-  "addition_prepared_at_utc": "2026-10-10T14:45:00+00:00",
+  "added_native_count": 4,
+  "added_reviewed_candidate_count": 4,
+  "addition_prepared_at_utc": "2026-10-10T15:25:00+00:00",
   "addition_ranking_anchor_basis": "Frozen preparation time; not source collection cutoff or historical ranking time",
-  "addition_ranking_anchor_utc": "2026-10-10T14:45:00+00:00",
+  "addition_ranking_anchor_utc": "2026-10-10T15:25:00+00:00",
   "combined_native_reranked": false,
   "coverage_status": "partial",
   "date_basis_by_story": {
@@ -5200,12 +5667,32 @@
       "date_value": "2026-10-09",
       "event_timestamp_utc": null
     },
+    "arxiv:2610.11655": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.11707": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
     "arxiv:2610.11715": {
       "date_basis": "official_listing_v1_inference",
       "date_value": "2026-10-09",
       "event_timestamp_utc": null
     },
+    "arxiv:2610.11750": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
     "arxiv:2610.11773": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.11775": {
       "date_basis": "official_listing_v1_inference",
       "date_value": "2026-10-09",
       "event_timestamp_utc": null
@@ -5366,24 +5853,24 @@
       "event_timestamp_utc": null
     }
   },
-  "error_summary": "PARTIAL 部分更新：保留已發布97篇中的Oct9原45篇及既有順序；本批3篇依原規則選3篇，按子集排名追加Papers。48篇未合併重新排名；全日總數及收集截止未知。",
+  "error_summary": "PARTIAL 部分更新：保留103篇基線中的Oct9原48篇及既有順序；本批4篇依原規則選4篇，按子集排名追加Papers。52篇未合併重新排名；全日總數及收集截止未知。",
   "finished_at": "2026-10-10T03:29:00+00:00",
   "full_day_candidate_total": null,
   "items_total": null,
-  "preserved_baseline_body_sha256": "50a7bf45f920e37061593875982a0d0cafa493b2051a234d1919b42e38c1967a",
-  "preserved_baseline_commit": "ecc3b2cf16c26005a24b6b02e618380ea8292c8b",
-  "preserved_baseline_count": 45,
-  "preserved_baseline_kind": "published_verified",
+  "preserved_baseline_body_sha256": "c689361aa4e7a4249c3f94e3e1f39af3f4aca08cf0d44fe0e1b2cd9ac416cc79",
+  "preserved_baseline_commit": "0d739c9e7fa04d8213962d4bfe280f0c07c1c765",
+  "preserved_baseline_count": 48,
+  "preserved_baseline_kind": "verified_git103",
   "preview_only": false,
   "prior_reviewed_total_count": null,
-  "release_scope_note": "Three approved additions from an unchanged 3-of-3 filter are appended to Papers after the 45 preserved Oct9 entries of the verified public97 baseline. Neither all 48 nor all 100 are jointly reranked. First submission Oct8 differs from listing Oct9; exact announcement events, configured-query coverage, full-day totals and collection cutoff remain unknown.",
+  "release_scope_note": "Four approved additions from an unchanged 4-of-4 filter are appended to Papers after the 48 preserved Oct9 entries of the verified Git103 baseline. Neither all 52 nor all 107 are jointly reranked. First submission Oct8 differs from listing Oct9; exact announcement events, configured-query coverage, full-day totals and collection cutoff remain unknown.",
   "release_state": "approved_bounded_release",
-  "reviewed_selected_count": 48,
+  "reviewed_selected_count": 52,
   "reviewed_total_count": null,
   "run_id": "bounded-partial-additive-2026-10-09",
   "source_collection_cutoff_utc": null,
   "started_at": "2026-10-10T03:29:00+00:00",
-  "stories_total": 48,
+  "stories_total": 52,
   "success": true
 },
   "sources_status": [
