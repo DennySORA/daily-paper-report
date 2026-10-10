@@ -338,7 +338,7 @@
   "generated_at": "2026-10-08T22:31:08.332427+00:00",
   "model_releases_by_entity": {},
   "papers": [
-{
+    {
       "arxiv_id": "2610.09624",
       "authors": [
         "Gong, Xijie",
@@ -455,7 +455,7 @@
       "title_en": "How Do Agentic LLMs Decide to Call Tools? A Tool-Call Vector Shaped by Suppression",
       "title_zh": "代理式大型語言模型如何決定呼叫工具？由抑制機制塑造的工具呼叫向量"
     },
-{
+    {
       "arxiv_id": "2610.10088",
       "authors": [
         "Kim, Serin",
@@ -563,7 +563,7 @@
       "title_en": "SkillSandbox: Skill Verification via Dynamic Scenario Synthesis",
       "title_zh": "SkillSandbox：以動態情境合成驗證代理技能"
     },
-{
+    {
       "arxiv_id": "2610.09832",
       "authors": [
         "Ge, Yuyao",
@@ -677,7 +677,7 @@
       "title_en": "SkillForge: Co-Evolving Skills and Agents via Dynamic Skill Lifecycles",
       "title_zh": "SkillForge：以動態技能生命週期共同演化技能與代理"
     },
-{
+    {
       "arxiv_id": "2610.10120",
       "authors": [
         "Xiao, Hengbo",
@@ -788,7 +788,7 @@
       "title_en": "RewardWeaver: Long-Horizon Interactive Learning for Language Agents via Self-Evolving Reward Adaptation",
       "title_zh": "RewardWeaver：以自我演進的獎勵調整，訓練長時程互動語言代理"
     },
-{
+    {
       "arxiv_id": "2610.10062",
       "authors": [
         "Kraishan, Obada"
@@ -893,7 +893,7 @@
       "title_en": "Loud Failures, Quiet Failures: Fault Detection and Recovery in Tool-Using Language Model Agents",
       "title_zh": "明顯失敗與靜默失敗：工具型語言模型代理的故障偵測與復原"
     },
-{
+    {
       "arxiv_id": "2610.09858",
       "authors": [],
       "categories": [],
@@ -996,7 +996,7 @@
       "title_en": "Training Advisors for LLM Agents from Task Outcomes",
       "title_zh": "從任務結果訓練語言模型代理的顧問"
     },
-{
+    {
       "arxiv_id": "2610.09679",
       "authors": [],
       "categories": [],
@@ -1097,7 +1097,7 @@
       "title_en": "CERO: Where and When to Allocate Rollouts for RL Post-Training",
       "title_zh": "CERO：強化學習後訓練的生成樣本該分給誰、何時使用"
     },
-{
+    {
       "arxiv_id": "2610.10179",
       "authors": [],
       "categories": [],
@@ -1199,7 +1199,7 @@
       "title_en": "Beyond Outcome Rewards: Constructing and Assigning Retrieval Credit for Search Agents",
       "title_zh": "超越結果獎勵：為搜尋代理建構與分配檢索貢獻"
     },
-{
+    {
       "arxiv_id": "2610.10085",
       "authors": [],
       "categories": [],
@@ -1300,7 +1300,7 @@
       "title_en": "Activation-Aware Weight Tensorization: A Calibration-Time Preconditioner for Tensor-Network LLM Compression",
       "title_zh": "活化感知權重張量化：張量網路語言模型壓縮的校準期預處理"
     },
-{
+    {
       "arxiv_id": "2610.09590",
       "authors": [],
       "categories": [],
@@ -1404,7 +1404,7 @@
       "title_en": "Learning Situation-Conditioned Thinking Policies for Long-Term LLM Agents",
       "title_zh": "為長期 LLM 代理學習情境條件式思考策略"
     },
-{
+    {
       "arxiv_id": "2610.09239",
       "authors": [],
       "categories": [],
@@ -1511,7 +1511,7 @@
       "title_en": "The Winner's Curse in LLM Self-Improvement Loops: Selection Noise, Lock-in, and Acceptance Rules",
       "title_zh": "LLM 自我改進迴圈中的贏家詛咒：選擇雜訊、鎖定效應與接受規則"
     },
-{
+    {
       "arxiv_id": "2610.09856",
       "authors": [],
       "categories": [],
@@ -1616,7 +1616,7 @@
       "title_en": "Self-Evolve With a Reference:Anchored Training of Tool-Integrated Agents",
       "title_zh": "帶著參照自我演化：工具整合代理的錨定訓練"
     },
-{
+    {
       "arxiv_id": "2610.09426",
       "authors": [],
       "categories": [],
@@ -1721,7 +1721,7 @@
       "title_en": "RSI-Forge: From Research Papers to Environments for Recursive Self-Improvement",
       "title_zh": "RSI-Forge：將研究論文轉為遞迴自我改進環境"
     },
-{
+    {
       "arxiv_id": "2610.09348",
       "authors": [],
       "categories": [],
@@ -1830,7 +1830,7 @@
       "title_en": "Relevance Is Not Sufficiency: What Actually Closes the Evidence Gap in Long-Term Memory QA",
       "title_zh": "相關不等於充分：什麼真正補上長期記憶問答的證據缺口"
     },
-{
+    {
       "arxiv_id": "2610.10071",
       "authors": [],
       "categories": [],
@@ -1933,7 +1933,7 @@
       "title_en": "HGP:An on-device personalized agent memory via hybrid graph storage",
       "title_zh": "HGP：以混合圖儲存打造裝置端個人化代理記憶"
     },
-{
+    {
       "arxiv_id": "2610.10164",
       "authors": [],
       "categories": [],
@@ -2042,7 +2042,7 @@
       "title_en": "UniSkill: Learning Actor-Aligned Skill Proposals for an Evolving Policy",
       "title_zh": "UniSkill：為持續演進的策略學習與執行者對齊的技能提案"
     },
-{
+    {
       "arxiv_id": "2610.10042",
       "authors": [],
       "categories": [],
@@ -2153,7 +2153,7 @@
       "title_en": "Learning to Accumulate Knowledge with Mutual Information",
       "title_zh": "以互資訊學習累積知識"
     },
-{
+    {
       "arxiv_id": "2610.09973",
       "authors": [],
       "categories": [],
@@ -2258,7 +2258,7 @@
       "title_en": "From Expected Harmfulness to Likelihood: A Probabilistic Reformulation of Jailbreaking LLM Agents",
       "title_zh": "從期望危害到概似：以機率觀點重述大型語言模型代理的越獄問題"
     },
-{
+    {
       "arxiv_id": "2610.09964",
       "authors": [],
       "categories": [],
@@ -2364,7 +2364,7 @@
       "title_en": "Successive Training Stages and Large Language Model Persuasion: Effects of Misalignment, Supervised Fine-Tuning, and Preference Optimization",
       "title_zh": "連續訓練階段與大型語言模型說服力：失準、監督式微調及偏好最佳化的影響"
     },
-{
+    {
       "arxiv_id": "2610.09683",
       "authors": [],
       "categories": [],
@@ -2474,7 +2474,7 @@
       "title_en": "System Switch: When Should a Fast Decision Model Stop and Think?",
       "title_zh": "System Switch：快速決策模型何時該停下來思考？"
     },
-{
+    {
       "arxiv_id": "2610.09416",
       "authors": [],
       "categories": [],
@@ -2584,7 +2584,7 @@
       "title_en": "Efficient Reasoning with Flow Language Models",
       "title_zh": "以流語言模型實現高效率推理"
     },
-{
+    {
       "arxiv_id": "2610.09008",
       "authors": [],
       "categories": [],
@@ -2693,7 +2693,7 @@
       "title_en": "Whose Memory Is It? Scope-Aware Commit Rules for Long-Term LLM Memory",
       "title_zh": "這是誰的記憶？具情境範圍意識的長期LLM記憶提交規則"
     },
-{
+    {
       "arxiv_id": "2610.09237",
       "authors": [],
       "categories": [],
@@ -2797,8 +2797,835 @@
       "title": "Trajectory Abstraction for the Science of Language Agent Behavior",
       "title_en": "Trajectory Abstraction for the Science of Language Agent Behavior",
       "title_zh": "以軌跡抽象建立語言代理行為科學"
+    },
+    {
+      "arxiv_id": "2610.09667",
+      "authors": [],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-10-10T11:06:51.781528+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-ai",
+          "tier": 1,
+          "title": "Shared and structured inputs undermine collective random choice by reasoning AI agents",
+          "url": "https://arxiv.org/abs/2610.09667v1"
+        },
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-ai",
+          "tier": 1,
+          "title": "Shared and structured inputs undermine collective random choice by reasoning AI agents",
+          "url": "https://arxiv.org/pdf/2610.09667v1"
+        }
+      ],
+      "llm_evaluation": {
+        "candidate_sha256": "e67356654433745dc9792365d48e6cfae7a520cbb1c3c382a7272f73f906b608",
+        "components": {
+          "evidence_strength": 0.77,
+          "generalizability": 0.62,
+          "novelty": 0.77,
+          "preference_relevance": 0.91,
+          "reproducibility": 0.55,
+          "rigor": 0.78
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "pp2–3, Fig2 p18, Methods pp9–10: six models/ten settings; 64 designed identifiers balance threshold and residue hypotheses at q=1/3. All seven reasoning settings depend on identifiers, but four threshold settings miss the q=1/2 prediction. These are behavioral rules, not internal algorithms.",
+          "pp3–4, Fig3 p19, Extended Data Table4 p29: study2 uses 64 four-agent groups per condition/model. Shared identifiers yield Sol/Gemini loss 0.211/0.192 and unanimity 0.91/0.88; UUIDv7 loss 0.385/0.368. Input-feature versus marginal log-score gains are +0.78/+0.79; counter predictions fail.",
+          "Methods p8 and Supplementary Note3 pp33–35: independent p=q=1/3 draws have loss 1/18; the optimal common independent rate is 5/18, with loss about .053. Exactly one participant gives 1/144 but requires roles. Loss decomposition separates squared bias, independent variance and covariance; it does not identify shared API randomness.",
+          "pp4–5, Fig4 p20: study5 ordinary UUIDv4 requests give Sol 9/1008 audits, 5/6 low-valued IDs plus 4/13 low-tail IDs, and zero among the other 989. The last-16-bit association is exploratory. Gemini 0, Claude 2 and Luna 4 audits do not all meet the same statistical undersampling criterion.",
+          "pp5–6, Fig5 p21, Extended Data Table2 p27: study7 finds 41/48 low-value designed IDs audited versus 3/48 low-tail IDs and 0/48 neither. The tail criterion fails; fresh ordinary IDs give 17/18 below the threshold and 0/990 elsewhere. Explicit randomization still leaves shared-minus-private loss +.120/+ .057.",
+          "pp5–7, Fig5e p21: all four models audit six of six uniform draws below 1%; adherence is 1004–1008/1008. Gemini and Claude also audit four and one above-threshold cases. Six positive draws cannot establish rare-event reliability.",
+          "pp12–13, Table1 p22, Extended Data Tables1–2 pp26–27: 89 prespecified readings include 21 not met; readings are dependent and are not an independent success-rate denominator. Protocols are not externally preregistered; intervals mostly lack multiplicity adjustment.",
+          "Supplementary Notes1–6 pp30–40: exact prompts, exploratory screen, cluster-sensitive analyses, conditional evasion calculation, Japanese text-input studies and pilot history are included. Code-point/word identity is confounded; cross-language and wording transfer is limited; actual adaptive evasion is not tested.",
+          "p13 Data/Code availability: authors cite Zenodo DOI 10.5281/zenodo.23177759 for saved trial records and offline analysis code. This external package was not obtained, inspected or executed in this review."
+        ],
+        "fulltext_sha256": "a912e33c1dfcbc55f4f52e82ade47ef6d217c2133746f314cd5ada6e60e7592e",
+        "fulltext_status": "complete",
+        "model": "assistant-native-review",
+        "native_identity_version": 1,
+        "original_candidate_sha256": "e67356654433745dc9792365d48e6cfae7a520cbb1c3c382a7272f73f906b608",
+        "out_of_scope": false,
+        "producer": "assistant-native-review",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Highly relevant to agent reliability and safety evaluation: the paper prospectively connects individual identifier-response profiles to collective correlation and structured-input bias, then distinguishes audit-rate calibration from predictable selection. Its strongest evidence is the matched input interventions, fresh audit requests, explicit-randomization control, and retained failed predictions. The original group objective does not require randomization, and independent draws are only a reference; the later audit and instructed-group tests address that gap. Closed mutable model endpoints, single runs, mostly one wording, unadjusted multiple readings, six rare positive draws, and unavailable-to-this-review raw records restrict causal, deployment and replication claims. The result supports targeted input-dependence testing, not an established exploit or a deployment-ready randomness guarantee.",
+        "rationale_en": "Highly relevant to agent reliability and safety evaluation: the paper prospectively connects individual identifier-response profiles to collective correlation and structured-input bias, then distinguishes audit-rate calibration from predictable selection. Its strongest evidence is the matched input interventions, fresh audit requests, explicit-randomization control, and retained failed predictions. The original group objective does not require randomization, and independent draws are only a reference; the later audit and instructed-group tests address that gap. Closed mutable model endpoints, single runs, mostly one wording, unadjusted multiple readings, six rare positive draws, and unavailable-to-this-review raw records restrict causal, deployment and replication claims. The result supports targeted input-dependence testing, not an established exploit or a deployment-ready randomness guarantee.",
+        "rationale_zh": "本研究直接切中代理可靠性與安全評估：先前單代理的識別碼反應型態能預測群體相關與結構化輸入偏差，再把抽查比例校準和可預測的選取分開。最有力的證據是成對輸入干預、新請求、明確隨機化指令控制，以及保留未達標的預測。最初群體目標沒有要求隨機化，獨立抽樣僅是參考；後續抽查及加指令實驗才補上這個缺口。封閉且多無日期快照的模型、單次執行、多數單一措辭、未校正多重判讀、僅六個稀有正例，以及本次未取得原始紀錄，都限制機制、部署與重現主張。應採納其輸入依賴檢驗思路，不能寫成已實證攻擊或可直接部署的隨機性保證。",
+        "raw_weighted_score": 0.8015,
+        "request_sha256": "d819981a6331d845f04b04ecfa8b2d70251b5d4708e26e4222da1b8b36f303e9",
+        "review_sha256": "6f1c30d33a365a2759fb984ae73bcba595dab3bd523e81f6485c599a3faa9167",
+        "scope_assessment": {
+          "decision": "in_scope",
+          "reason": "Behavioral methodology and evaluation of language-model reasoning agents, multi-agent dependence and random audit policies; not a pure domain application."
+        },
+        "scope_capped_score": null,
+        "scope_policy_version": "explicit-review-exclusion-v1",
+        "scope_status": "in_scope",
+        "score": 0.8015,
+        "source_key": "b8fb5bdcbaeb8b31c46b28c6cf4f73d95f55b82a7a3766a409a64e00a6da4a69",
+        "story_id": "arxiv:2610.09667",
+        "token_usage": {},
+        "topics": [
+          "Agents & Tool Use",
+          "Reasoning & Chain-of-Thought",
+          "AI Safety",
+          "Red Teaming & Evaluation",
+          "Prompting & In-Context Learning"
+        ]
+      },
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-ai",
+        "tier": 1,
+        "title": "Shared and structured inputs undermine collective random choice by reasoning AI agents",
+        "url": "https://arxiv.org/abs/2610.09667v1"
+      },
+      "published_at": "2026-10-07T08:32:36+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.8015,
+        "llm_relevance_score": 22.442,
+        "recency_score": 0.7319510296333616,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 30.37395102963336
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2610.09667",
+      "summary": "Random selection is widely used in resource allocation and auditing, making reliable implementation essential for AI-agent systems. Behavioural tests across six reasoning models uncovered threshold and divisibility rules used in identifier-based choices. For threshold-following GPT-6 Sol and Gemini 3.8 Flash, single-agent measurements prospectively predicted correlated participation under shared identifiers and biased participation under distinct identifiers with common timestamp bits. Changing dates, formats and identifier labels revealed when these predictions held. Explicit instructions to randomize independently reduced but did not eliminate shared-input correlation. To test implications for oversight, we asked four models to select customer requests randomly for human review. GPT-6 Sol approached the target rate while selecting predictably from identifiers; the others rarely selected requests. All four closely followed supplied random draws. These findings expose collective and audit vulnerabilities that selection rates alone miss, making input-dependent bias, correlation and predictability central targets for agent evaluation.",
+      "summary_en": "Six closed models reveal identifier-based selection rules. In four-agent groups, shared IDs correlate choices; timestamped IDs bias participation. Sol audits 9 of 1,008 requests near a 1% target, yet choices track identifiers. Fresh tests confirm the value threshold, not a tail-bit rule. Supplied draws work well, but only six rare events are tested. Single runs, synthetic tasks and no external preregistration limit deployment claims. Audit rates alone cannot establish independence or unpredictability.",
+      "summary_zh": "當多個 AI 代理都聲稱按指定機率行動，整體仍可能失去隨機性。這篇研究把個別選取率、代理間相關性與可預測性分開檢驗：先以六個封閉模型的十種設定辨識識別碼門檻與整除規則，再預先提出四代理群體的行為預測。GPT-6 Sol 與 Gemini 3.8 Flash 看到共享識別碼時，平均參與率看似合理，卻分別有約 91% 與 88% 的群體全體作出相同選擇；帶共同時間戳的不同 UUIDv7 則造成過度參與。\n\n在要求隨機抽查 1% 客戶請求的任務中，Sol 首批抽查 9／1,008 件，接近目標，但全部符合可由識別碼預測的規則。新批次再次支持整體數值門檻，卻未確認先前觀察到的末十六位元規則。外部提供隨機數時，四個模型都選到六個低於門檻的案例；由於稀有事件只有六例，不能據此保證部署可靠性。\n\n值得注意的是，最初群體任務並未要求隨機化，獨立抽樣也不是該損失函數的最佳策略。作者另加明確隨機指令，仍觀察到殘留相關。全文公開失敗預測並測試標籤、格式、日期及語言差異，但每項研究僅單次執行、沒有外部預註冊，也未測試真實工具流程或適應性攻擊者。實務價值是提醒評估者不能只看抽查比例，還要檢查輸入依賴與跨代理一致性。",
+      "title": "Shared and structured inputs undermine collective random choice by reasoning AI agents",
+      "title_en": "Shared and structured inputs undermine collective random choice by reasoning AI agents",
+      "title_zh": "共享與結構化輸入會破壞推理型 AI 代理的集體隨機選擇"
+    },
+    {
+      "arxiv_id": "2610.09681",
+      "authors": [],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-10-10T10:49:30.781493+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-ai",
+          "tier": 1,
+          "title": "Cost-Efficient Theorem Proving via Agent Orchestration in Program Verification",
+          "url": "https://arxiv.org/abs/2610.09681v1"
+        },
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-ai",
+          "tier": 1,
+          "title": "Cost-Efficient Theorem Proving via Agent Orchestration in Program Verification",
+          "url": "https://arxiv.org/pdf/2610.09681v1"
+        }
+      ],
+      "llm_evaluation": {
+        "candidate_sha256": "38278123dae42119eddde8de1c54c0f6a15aa8657518aa00f9c8755164bfe440",
+        "components": {
+          "evidence_strength": 0.75,
+          "generalizability": 0.65,
+          "novelty": 0.73,
+          "preference_relevance": 0.92,
+          "reproducibility": 0.56,
+          "rigor": 0.7
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "pp.4–6 Section 3, Figures 2–3: intra-declaration AND/OR proof graph plus inter-lemma DAG; symbolic scheduler exposes the ready frontier, router groups/selects goals and purchases one bounded specialist invocation, with separate router cost.",
+          "pp.21–25 Appendix B, Algorithms 1–2: elaborated prerequisites permit conditional work, stable dependencies gate promotion; retracted provisional lemmas reopen conditional descendants only. Finite router retries and a deterministic fallback bound deliberation.",
+          "p.24 Appendix B.4 Eq.(17): Lean Finder embeddings, normalized vectors and seeded spherical k-means group the frontier; k=ceil(|F|/b), compatibility is checked before joint planning. Exact numeric b and contract grids are not specified here.",
+          "pp.25–26 Appendix B.6–B.7: inherited router context enables provider cache reuse; random and model-proposed test instances can refute but cannot prove a lemma. Table 10 p.33 includes timeout/non-testable inconclusive checks, not universal successful testing.",
+          "pp.14–17 Appendix A.1–A.2 Eqs.(5)–(9): common Markov action law, bounded costs, proper policies and finite abstraction support small-lambda ordering and regret decomposition; external truncation requires terminal value or explicit stop, and router overhead must have finite expectation. V* is normative and not estimated.",
+          "pp.18–21 Appendix A.3–A.7 Eqs.(10)–(16): reachability requires faithful transition/solved-set/cost correspondence; graph-information dominance assumes no extra observation cost; minimax separation uses indistinguishable local histories; filtering requires erasability/postponement; factor-K sharing compares stipulated strategies; soundness is relative to accepted Lean environment and stable dependency closure.",
+          "p.6 Section 4: CLEVER/AlgoVeri implementations are generated once by GPT-5.6-Sol, manually checked and fixed before comparison. VERINA/Vero use provided implementations/specifications. NTP4VC uses only first 300 alphabetical Lean tasks. This is proof-only, not end-to-end code/specification generation.",
+          "p.7 Table 1: CoCo success is no lower than listed baselines across 15 benchmark–backbone pairs. GPT CLEVER/VERINA are 100%; Gemini AlgoVeri ties Humanize at 80.5%. Vero counts are GPT23/43, Gemini26/43 and DeepSeek6/43; coding agents1/43,3/43,0/43.",
+          "p.8 Table 2: headline 30.9% is GPT CLEVER intersection of 157 CoCo/Humanize solved tasks, baseline136.6 USD versus CoCo94.4 USD. Own solved-set total100.2 USD on161 tasks is a different denominator. Intersections are baseline-specific; failure costs excluded.",
+          "p.8 Table 2: Vero GPT has only one common task, CoCo3.6 USD versus Codex1.6 USD (printed131.2% increase, which cannot be reconstructed exactly from the rounded display); Gemini intersection has3 tasks, DeepSeek0. No meaningful universal repository cost-win claim.",
+          "p.9 Figure 4: threshold curves across427 function-level tasks and external caps0–30 USD reach CoCo419/409/417 for GPT/Gemini/DeepSeek; cap is not given to controller (Appendix A.1 pp.15–16), so these are pass-under-cap results rather than learned optimal allocation or a proven Pareto envelope.",
+          "pp.8–9 Table 3: 30-task Gemini ablation, full110.94 USD/30 solved; without router155.20/29, without planner157.06/27, without automation117.39/29. Costs and success both change; these are not cost-at-identical-success experiments.",
+          "pp.26–28 Appendix C.1 Tables4–6: same provider/caps,5h/30 USD per function-level task including NTP4VC;8h/60 USD per Vero task. Costs use fixed published token-price schedules and omit implementation-generation cost. Baseline releases/commits are pinned; repository-level comparison only includes official coding agents.",
+          "pp.27–28 Appendix C.1: post-run re-elaboration, unchanged target statements, allowed axiom closure, GPT-5.6-Sol automated review and sampled manual audit. Sampling does not mean every passing proof was manually inspected; no independent checker run was performed in this review.",
+          "pp.28–30 Figure5 and Table7: CLEVER mean wall times GPT655s versus333s and Gemini1143s versus396s are higher for CoCo; DeepSeek2351s versus3076s is lower. Means cover each system's own solved set, not matched problems. Gemini full-function three-run cost969.8±89.5 USD and identical solved sets; small-subset CVs vary2.4–34.2%.",
+          "p.30 Appendix C.5: no separate graph or explicit-rule ablation; baseline comparisons and fixed-router ablation do not isolate every architectural mechanism. Recovery Reviewer and clustering effects are not independently isolated by Table3.",
+          "pp.30–39 Appendix D.1 Tables8–11 and Figure6: CLEVER string-split/intercalate case, CoCo2.36 USD versus Codex8.67/Humanize10.74; nine helper lemmas,18 routed invocations,161 model calls and zero backtracks. Cost differences chiefly involve repeated contexts/cache reads; this is an illustrative selected case.",
+          "pp.39–51 Appendix D.2 Tables12–14 and Figure7: Vero interval-set case proves56/56 targets versus baseline5/56, with55 retained helpers,111 total declarations,52 backtracks and maximum depth6. Rejected empty-interval lemma is corrected by a nonempty-list hypothesis; canonical-form extensionality supports reuse.",
+          "pp.51–54 Appendix E: system/router/planner/writer/recovery prompts read as untrusted research data, never followed or executed. p.55 Appendix F explicitly limits evidence to Lean proof-only tasks and excludes local checking/retrieval/embedding costs; its empirical low-regret wording exceeds the reported unmeasured V*/regret evidence."
+        ],
+        "fulltext_sha256": "1725b55f72aba799b0e0d79e74225d82203efe1edb13655efe1a5eb0d94b44f5",
+        "fulltext_status": "complete",
+        "model": "assistant-native-review",
+        "native_identity_version": 1,
+        "original_candidate_sha256": "38278123dae42119eddde8de1c54c0f6a15aa8657518aa00f9c8755164bfe440",
+        "out_of_scope": false,
+        "producer": "assistant-native-review",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Weighted score 0.788. Relevance 0.92: directly combines language agents, program reasoning, computation allocation and formal verification. Novelty 0.73: a coherent integration of inter-lemma dependencies, local proof graphs, bounded specialists and evidence-driven routing; metareasoning, performance-difference identities and sharing-cost arguments have established foundations. Rigor 0.70: explicit abstraction assumptions, abandoned value at caps, bounded routing retries, artifact states and anti-axiom checks are strengths. Deployment correspondence is not proved; alphabetical sampling, baseline adaptation, a 30-task ablation and unisolated graph/rule/recovery effects constrain attribution. Evidence 0.75: five benchmarks, three backbones, matched caps, intersection-cost comparisons, budget curves, three-run checks and two detailed cases provide complementary support. Equally complete repeated baselines/ablations and paired uncertainty intervals are absent; intersection savings are not end-to-end expenditure. Generalizability 0.65: three models but only Lean proof generation for fixed implementations/specifications; Vero has 43 genuinely multi-obligation tasks, whereas each repository-derived NTP4VC task has one obligation. Reproducibility 0.56: theory, algorithms, pricing, baseline versions, prompts and case code are detailed, but no public acquisition location for the authors' system was identified in the supplied paper; run records, all generated implementations and numerical contract settings remain unavailable. External code was not acquired and Lean was not run. Promising practical evidence does not establish optimal routing, comprehensive cost dominance or independent replication.",
+        "rationale_en": "Weighted score 0.788. Relevance 0.92: directly combines language agents, program reasoning, computation allocation and formal verification. Novelty 0.73: a coherent integration of inter-lemma dependencies, local proof graphs, bounded specialists and evidence-driven routing; metareasoning, performance-difference identities and sharing-cost arguments have established foundations. Rigor 0.70: explicit abstraction assumptions, abandoned value at caps, bounded routing retries, artifact states and anti-axiom checks are strengths. Deployment correspondence is not proved; alphabetical sampling, baseline adaptation, a 30-task ablation and unisolated graph/rule/recovery effects constrain attribution. Evidence 0.75: five benchmarks, three backbones, matched caps, intersection-cost comparisons, budget curves, three-run checks and two detailed cases provide complementary support. Equally complete repeated baselines/ablations and paired uncertainty intervals are absent; intersection savings are not end-to-end expenditure. Generalizability 0.65: three models but only Lean proof generation for fixed implementations/specifications; Vero has 43 genuinely multi-obligation tasks, whereas each repository-derived NTP4VC task has one obligation. Reproducibility 0.56: theory, algorithms, pricing, baseline versions, prompts and case code are detailed, but no public acquisition location for the authors' system was identified in the supplied paper; run records, all generated implementations and numerical contract settings remain unavailable. External code was not acquired and Lean was not run. Promising practical evidence does not establish optimal routing, comprehensive cost dominance or independent replication.",
+        "rationale_zh": "原規準加權0.788。相關性0.92：直接結合語言代理、程式推理、成本分配與形式驗證。新穎性0.73：把跨引理依賴、局部證明圖、有限專家呼叫與證據驅動路由連接得完整；基本元推理、效能差分與共享成本論證多有既有基礎，不能把整體整合等同每一元件首創。嚴謹性0.70：明列抽象假設、截止時的遺留價值、有限路由重試、引理狀態與禁止新公理等檢查；但實作未證符合全部假設，字母序取樣、基線適配、僅30題消融及未隔離圖／規則／回復機制限制因果歸因。證據強度0.75：五個基準、三骨幹、匹配上限、共解集合成本、預算曲線、三次重跑與兩個詳細例子相互補充；沒有同等完整的基線／消融重複或配對信賴區間，共解集合不能代表端到端總預算。泛化性0.65：跨三模型但限Lean與固定程式／規格，真正多義務Vero僅43項；NTP4VC雖源自程式庫，每題只有一個義務。可重現性0.56：附錄提供理論、演算法、價格、基線版本、提示及案例程式碼，但未辨識到作者系統的公開取得位置，執行紀錄、全部生成實作與數值契約設定不齊，亦未取外部程式或執行Lean。這支持有前景的實務方法，尚非最優路由、完整成本優勢或獨立複驗。",
+        "raw_weighted_score": 0.788,
+        "request_sha256": "103b8261cdeef2694635a03450a3f6f74a04ebc923367b3a15eb77f2399b92f1",
+        "review_sha256": "1dcc5e353eee32724791d4bc94a6b527b063e5f88039c2ea8ed67fb39d62eb1d",
+        "scope_assessment": {
+          "decision": "in_scope",
+          "reason": "General LLM-agent orchestration, inference-cost allocation and formal code-reasoning methods, not pure non-language application."
+        },
+        "scope_capped_score": null,
+        "scope_policy_version": "explicit-review-exclusion-v1",
+        "scope_status": "in_scope",
+        "score": 0.788,
+        "source_key": "1d6e87711216cc9a27e930f0422e747cfbbb67379530f1046ffa013d68de0db3",
+        "story_id": "arxiv:2610.09681",
+        "token_usage": {},
+        "topics": [
+          "Agents & Tool Use",
+          "Reasoning & Chain-of-Thought",
+          "Code & Programming",
+          "Scaling & Efficiency"
+        ]
+      },
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-ai",
+        "tier": 1,
+        "title": "Cost-Efficient Theorem Proving via Agent Orchestration in Program Verification",
+        "url": "https://arxiv.org/abs/2610.09681v1"
+      },
+      "published_at": "2026-10-07T08:42:24+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.788,
+        "llm_relevance_score": 22.064,
+        "recency_score": 0.7324493325151378,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 29.996449332515137
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2610.09681",
+      "summary": "Program verification establishes software correctness through machine-checkable proofs constructed in theorem provers. It's a guarantee especially valuable for code generated by large language models (LLMs), which is fluent but carries no assurance of correctness. Almost all existing provers, however, pursue pass rates alone at whatever sampling or search budget it takes, and overlook the success-vs-cost frontier; yet real software often carries hundreds of interdependent proof obligations, so what matters at scale is not whether one theorem can be proved, but how many can be proved economically. We introduce CoCo-Prover, which formalizes cost-efficient program proving as metalevel decision-making under cost, grounded on two-level proof graphs: an AND/OR proof hypergraph within each declaration is joined to a lemma-dependency graph across declarations; and at each step, it answers two questions: which open goals to select, and which actions to purchase on these goals. Selection stays symbolic as a topological pass over the proof graphs. Action choice is agent orchestration via metalevel decision-making: an agentic router treats every bounded specialist invocation as a separately priced, best-effort computation, matching heterogeneous specialist agents together with configurations, under evolved routing rules as evidence accumulates. On five program verification benchmarks in Lean 4 including function-level CLEVER, VERINA, and AlgoVeri, and repository-level NTP4VC and Vero, we show that CoCo-Prover achieves a better success-vs-cost frontier than baselines including frontier coding agents and state-of-the-art LLM-based provers: it achieves the best solve rate on every benchmark and up to 100% on two benchmarks. It also reduces cost by up to 30.9% compared to the strongest baseline with the strongest LLM in our evaluation.",
+      "summary_en": "CoCo-Prover routes Lean goals across automation, proof writing, helper planning and recovery while retaining a two-level proof graph. On CLEVER with GPT, it cuts token cost by 30.9% on 157 problems also solved by Humanize; on Vero with Gemini it solves 26/43 tasks versus 3/43. These are proof-only, fixed-program results. Common-solve savings exclude failed runs and local compute; GPT/Gemini mean latency is higher. Conditional theory does not certify low regret, and external code was not obtained.",
+      "summary_zh": "CoCo-Prover要解決的是如何把模型推理費用花在真正困難的證明步驟。它以雙層圖保存單一引理內的證明進度，以及不同引理之間的依賴；符號排程器列出可處理目標，再由路由代理分組、選擇規則式自動化、直接寫證明、規劃共享引理或回退修復，並調整推理強度。尚未證明的引理只能暫用，出錯時撤回受影響的後續工作；最終結果仍須通過Lean核心與完整依賴檢查。\n作者在五個Lean基準、三種模型下比較成功率與費用，所有組合的成功率皆不低於所列基線。在CLEVER搭配GPT時，相較Humanize，共同解出的157題模型費用由136.6降至94.4美元，約省30.9%；這不是全部嘗試的總支出降幅。Vero以Gemini完成43項中的26項，即60.5%，同模型的coding agent為3項。30題Gemini消融中，移除路由或引理規劃使成本增加約39.9%及41.6%，但也減少解出題數。\n值得借鑑的是保留已驗工作、共享引理及限制每次上下文，而不是一再重寫整份證明。限制是只測固定程式與規格的證明任務，NTP4VC只取字母序前300題；費用不含本地檢查、檢索與嵌入，GPT與Gemini平均耗時反而較長。理論未保證實作路由最優或低遺憾，完整程式與逐次紀錄亦未取得，仍需更完整的基線重跑與獨立重現。",
+      "title": "Cost-Efficient Theorem Proving via Agent Orchestration in Program Verification",
+      "title_en": "Cost-Efficient Theorem Proving via Agent Orchestration in Program Verification",
+      "title_zh": "透過代理協調降低程式驗證中的定理證明成本"
+    },
+    {
+      "arxiv_id": "2610.09600",
+      "authors": [],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-10-10T11:07:08.749507+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-ai",
+          "tier": 1,
+          "title": "SafeEvo: Deciphering the Safety Alignment Mechanism and Evolution in Language Models",
+          "url": "https://arxiv.org/abs/2610.09600v1"
+        },
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-ai",
+          "tier": 1,
+          "title": "SafeEvo: Deciphering the Safety Alignment Mechanism and Evolution in Language Models",
+          "url": "https://arxiv.org/pdf/2610.09600v1"
+        }
+      ],
+      "llm_evaluation": {
+        "candidate_sha256": "853478bf809d8af42456c7a885e415d0de330fec3946dc441cfbd330d0169d1e",
+        "components": {
+          "evidence_strength": 0.6,
+          "generalizability": 0.55,
+          "novelty": 0.72,
+          "preference_relevance": 0.92,
+          "reproducibility": 0.46,
+          "rigor": 0.52
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "Sections3.1/4.1 pp4–7, Eqs1–9: frozen model weights with trainable row masks on MLP gate/up/down projections; dual refusal/compliance completion losses and sparsity regularization. SCA retains the full model forward pass and restricts LoRA update support to selected rows. Per-projection partition identity does not imply additive decomposition of the nonlinear complete model.",
+          "Table1/Fig3 pp5–6 and AppendixB/Table9 p17: C1 ablation raises raw HarmBench ASR from 48.43/32.70/42.14 to 91.19/88.68/88.05%; matched-random rates are 49.06/64.15/35.22. Refusal after C1 ablation is 0/0.63/0.63%, so complete elimination is not universal across these tests.",
+          "Fig4/Section3.3 p6: Llama SFT warm-started extraction yields consecutive-checkpoint overlap about .98 to .78, while independent extractions at one checkpoint overlap .26. Search-path dependence and extraction variability remain alternative contributors; no direct mediation of utility loss is shown.",
+          "Table2 p8: averaging its 12 safety cells gives full-LoRA ASR 6.9258 and SCA 2.5483, a 63.2054% relative reduction from rounded values. Mean per-task starting-score ratios yield SCA utility retention 99.5789%, versus LoRA 99.5496%; this does not establish a meaningful average utility advantage without uncertainty.",
+          "Table2 p8: Qwen SFT full-LoRA is safer on both listed safety sets (.63/0 versus SCA 6.92/.38). DPO benign refusal increases from 2.8 to 3.2 for Llama and 4.8 to 5.6 for Mistral. Aggregate benign-refusal reduction is 58.4362%, not improvement in every block.",
+          "Table3 p9 and AppendixD p18: XSTest uses 200 unsafe contrasts and 250 benign prompts. SCA-SFT unsafe ASR is 62/47.5/51 versus full-LoRA 50.5/30.5/40; Qwen DPO is 36 versus 1, with benign refusal 17.6 versus 34.8. These are coverage/over-refusal trade-offs, not uniform safety dominance.",
+          "Table4 p9 and AppendixC p17: four-seed SCA/random HarmBench ASRs are 5.48±3.27/20.28±6.00, 11.32±5.51/19.81±3.43, 5.35±2.44/12.58±7.00. Reported paired prompt-bootstrap intervals over 159 prompts exclude zero, but are not a full multi-seed uncertainty analysis for all main-table comparisons.",
+          "Section4.2 p7, Tables5–8 pp16–17: Mistral is Instruct-v0.1, despite base/pretrained-only wording elsewhere. C1 ablation masks contain 10376/9972/7677 neurons; SCA masks contain 10376/3594/5724. Allocated trainable LoRA parameters are 28.31/30.28/28.31M and .3513/.3960/.3894%; those parameter counts are independent of mask size.",
+          "Table8 p17 versus Section3.1 pp4–5: extraction uses 100 training and 50 validation prompts, q0=.2, a hard sigmoid>.5 forward gate, and deployed global top-k raw logits after epoch2/50 updates; checkpoint comparison uses only the final validation minibatch completion losses. Top-k readout and learned binary forward support are distinct specifications.",
+          "AppendixB p17 versus Table1 p5: the sufficiency diagnostic is described as 50 prompts, with Mistral baseline 8/50=16.00%, whereas Table1 prints 15.63%; Llama 48.04 and Qwen 35.15 are also not integer-count percentages of 50. Raw data are absent, so this is an unresolved reporting discrepancy, not an inferred corrected denominator.",
+          "AppendixE p18: SCA/random tune MLP LoRA with frozen attention, full-LoRA also patches attention; Llama circuit-SFT has batch16/4960 steps/post-plateau selection unlike generic batch4/16-epoch settings. Utility is five-shot, capped at 2000 examples/task. GitHub URL is provided but external bytes were not obtained or run."
+        ],
+        "fulltext_sha256": "2326d9d2bb3d1d474043c396a0fdfef1cc72e473f6a8e54112a9ba4f9832290a",
+        "fulltext_status": "complete",
+        "model": "assistant-native-review",
+        "native_identity_version": 1,
+        "original_candidate_sha256": "853478bf809d8af42456c7a885e415d0de330fec3946dc441cfbd330d0169d1e",
+        "out_of_scope": false,
+        "producer": "assistant-native-review",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Strongly relevant to safety alignment and mechanistic interpretability, with an actionable circuit-restricted update method, OOD ablation tests and a four-seed matched-random comparison. Printed aggregate gains are reproducible arithmetically, but they conceal meaningful safety/over-refusal trade-offs: SCA-SFT loses unsafe-contrast coverage on all three XSTest models, and two DPO blocks over-refuse more than full-LoRA. Mask-search non-uniqueness and warm-start drift do not establish the cause of alignment tax or unique native safety circuitry. Appendix disclosures also limit the pretrained-only, isolation and sparsity claims: Mistral is instruction-tuned, C1 and C differ, global top-k readout is distinct from the forward threshold, and the 50-prompt sufficiency denominator conflicts with main-table baseline percentages. Detailed methods merit credit, but unequal update supports/schedules, restricted statistical replication, automated scoring and an uninspected external repository warrant a cautious score.",
+        "rationale_en": "Strongly relevant to safety alignment and mechanistic interpretability, with an actionable circuit-restricted update method, OOD ablation tests and a four-seed matched-random comparison. Printed aggregate gains are reproducible arithmetically, but they conceal meaningful safety/over-refusal trade-offs: SCA-SFT loses unsafe-contrast coverage on all three XSTest models, and two DPO blocks over-refuse more than full-LoRA. Mask-search non-uniqueness and warm-start drift do not establish the cause of alignment tax or unique native safety circuitry. Appendix disclosures also limit the pretrained-only, isolation and sparsity claims: Mistral is instruction-tuned, C1 and C differ, global top-k readout is distinct from the forward threshold, and the 50-prompt sufficiency denominator conflicts with main-table baseline percentages. Detailed methods merit credit, but unequal update supports/schedules, restricted statistical replication, automated scoring and an uninspected external repository warrant a cautious score.",
+        "rationale_zh": "主題高度相關於安全對齊與機制可解釋性，提出可實作的回路限制更新，並以分布外消融及四種子等寬隨機對照提供支持。主表平均收益可用算術重建，卻掩蓋實質安全／過度拒答取捨：SCA-SFT 在三模型的 XSTest 有害對照組都較差，兩個 DPO 區塊的過度拒答也高於全 LoRA。遮罩搜尋不唯一與暖啟動漂移，不能證明對齊代價的成因或唯一原生安全回路。附錄還限制純預訓練、獨立性與稀疏度主張：Mistral 是指令版、C1 與 C 不同、全域前 k 名讀出有別於前向門檻，五十題充分性診斷的分母與主表基準百分比不一致。方法揭露值得肯定，但更新範圍／訓練安排差異、有限統計重複、自動評分及未檢視的外部程式庫，均要求保守評分。",
+        "raw_weighted_score": 0.7220000000000001,
+        "request_sha256": "2de271c0c04fa2b57cfc4b9b67e4fdeb3ad4c94546c0622144f5c46031b46964",
+        "review_sha256": "97f3b98bb4b6b4f9eaa6d4d0467ca059b813fa785c31377b4e049bd286d1a428",
+        "scope_assessment": {
+          "decision": "in_scope",
+          "reason": "Language-model safety mechanisms, sparse parameter updates, SFT/DPO and behavioral evaluation are central methodological subjects."
+        },
+        "scope_capped_score": null,
+        "scope_policy_version": "explicit-review-exclusion-v1",
+        "scope_status": "in_scope",
+        "score": 0.7220000000000001,
+        "source_key": "70f3efb5a7c455dd09014ad8dde93ceaac9859a54a5f37e7bac538f29ff04dd7",
+        "story_id": "arxiv:2610.09600",
+        "token_usage": {},
+        "topics": [
+          "AI Safety",
+          "Alignment & RLHF",
+          "Interpretability & Explainability",
+          "Large Language Models",
+          "Training & Optimization",
+          "Red Teaming & Evaluation"
+        ]
+      },
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-ai",
+        "tier": 1,
+        "title": "SafeEvo: Deciphering the Safety Alignment Mechanism and Evolution in Language Models",
+        "url": "https://arxiv.org/abs/2610.09600v1"
+      },
+      "published_at": "2026-10-07T07:48:20+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.7220000000000001,
+        "llm_relevance_score": 20.216,
+        "recency_score": 0.7297044128520723,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 28.145704412852073
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2610.09600",
+      "summary": "Safety interpretability advances the study of Large Language Model (LLM) alignment from behavioral constraints driven by data or algorithms towards a deeper understanding of internal mechanisms. However, existing works have focused primarily on safety-related representations, attention heads, or neurons after alignment, while largely overlooking the safety mechanisms in pretrained-only models and their evolution across alignment checkpoints. To address this, we propose SafeEvo, an interpretability framework from the circuit (sparse subgraphs of an LLM) perspective. SafeEvo first applies an optimization-based extraction algorithm to identify weak refusal circuits in pretrained base LLMs that can independently express refusal behavior. Causally ablating these circuits completely eliminates the base model's refusal of harmful inputs. SafeEvo then traces the evolution of refusal circuits across successive alignment checkpoints and finds that their structures change progressively, suggesting that the alignment tax may result from refusal-circuit updates affecting utility-related parameters. To validate this, SafeEvo introduces Safety Circuit Alignment (SCA), which confines safety updates to the refusal circuits. Experiments across three LLMs and two alignment algorithms show that, on average, SCA outperforms vanilla alignment in three aspects: \\textbf{(1) stronger alignment}, lowering harmfulness score by 63.21\\%; \\textbf{(2) less over-refusal}, yielding a 58.44\\% decrease in refusal rates for benign queries; and \\textbf{(3) better utility}, retaining 99.58\\% of the original model capabilities.",
+      "summary_en": "SafeEvo learns sparse MLP refusal masks and restricts LoRA updates to them. Across three models and SFT/DPO, mean benchmark ASR falls from 6.93% to 2.55%, with 99.58% utility retention. Four-seed comparisons favor targeted over random masks. Yet XSTest unsafe-contrast coverage worsens for every SFT model. Mistral is instruction-tuned, extraction readouts differ, and a sufficiency baseline conflicts across tables. The approach is promising; a causal explanation of alignment tax remains unproven.",
+      "summary_zh": "安全對齊常以增加拒答來減少有害輸出，卻可能犧牲一般能力。SafeEvo 凍結模型權重，透過可微分遮罩尋找多層感知器中的稀疏拒答子圖，再用固定遮罩限制 LoRA 更新位置，形成 Safety Circuit Alignment（SCA）。作者比較不同訓練檢查點與獨立抽取，觀察到拒答遮罩不唯一、會隨對齊改變；這提示一個可能的對齊代價機制，尚未證明漂移就是能力下降的原因。\n\n在三個模型、SFT 與 DPO 的實驗中，表二的平均攻擊成功率由全 LoRA 的約 6.93% 降到 2.55%，一般測驗平均保留約 99.58% 的起始表現。四個訓練種子的比較也支持有目標的遮罩優於等寬隨機遮罩。不過收益並非全面：XSTest 的有害對照組中，SCA-SFT 在三模型都比全 LoRA 有更高攻擊成功率，呈現少拒答與安全涵蓋的取捨。\n\n閱讀時尤其要區分稀疏神經元、實際可訓練參數，以及消融用 C1 與微調用 C 的不同遮罩。Mistral 實際使用指令版，不能把全部結果稱為純預訓練模型證據；附錄的五十題充分性診斷也與主表基準百分比有未解落差。外部程式未取得，且自動評分、有限模型規模與部分訓練設定差異仍限制結論。這是一條值得追蹤的精準微調路線，並非已確立的完整安全機制。",
+      "title": "SafeEvo: Deciphering the Safety Alignment Mechanism and Evolution in Language Models",
+      "title_en": "SafeEvo: Deciphering the Safety Alignment Mechanism and Evolution in Language Models",
+      "title_zh": "SafeEvo：剖析語言模型安全對齊的機制與演變"
+    },
+    {
+      "arxiv_id": "2610.10184",
+      "authors": [],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-10-10T10:48:35.118247+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-ai",
+          "tier": 1,
+          "title": "Agentic AI-Assisted Modeling for Production Scheduling: Assessment in Constraint Programming",
+          "url": "https://arxiv.org/abs/2610.10184v1"
+        },
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-ai",
+          "tier": 1,
+          "title": "Agentic AI-Assisted Modeling for Production Scheduling: Assessment in Constraint Programming",
+          "url": "https://arxiv.org/pdf/2610.10184v1"
+        }
+      ],
+      "llm_evaluation": {
+        "candidate_sha256": "e634fdbafea4166ce3c2846542e404b6e3e8e466e55dbf8a05084ed55a422a10",
+        "components": {
+          "evidence_strength": 0.64,
+          "generalizability": 0.46,
+          "novelty": 0.57,
+          "preference_relevance": 0.86,
+          "reproducibility": 0.38,
+          "rigor": 0.6
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "PDF pp.1–8: The study addresses automated CP formulation and implementation rather than only operating preexisting models. Related-work Table 1 is a qualitative literature comparison, not experiments against those systems. No model fine-tuning is performed.",
+          "PDF pp.8–9, Table 2/Figure 1: WA is a tool-free Formulator followed by an MCP Executor; WB is a single MCP Executor; WC is one direct call without tools. The same model is used within each run, with temperature 0.15 and 15,000 output tokens per call. Maximum LLM calls are 10 for the Formulator, 50 for the Executor and 1 for WC. These are not equal-compute workflows.",
+          "PDF pp.9–10, Figure 2: Task input includes natural-language requirements, SQLite identity, schemas, row counts, ordered queries and sample rows; the full instance is loaded by the generated script. The PC1 illustration is abbreviated with ellipses. Complete PC1–PC6 and system prompts are external supplements/repository material, not in this PDF. Sample rows do appear, so an absolute claim that no instance values enter the prompt would be inaccurate.",
+          "PDF pp.11–14, Tables 3–4/Figures 3–4: Four Markdown API reference files provide 333 symbols (186 functions, 15 classes, 132 methods), plus 23 complete examples, yielding 356 chunks and approximately 77,000 estimated tokens. ExactIndex does not approximate; weighted keyword search uses no embeddings. Discovery is capped at 400 characters per summary and 40 candidates; precision entries are untruncated. Examples can reach about 5,000 tokens and the modeler module about 28,000.",
+          "PDF p.14, Figure 4: The visual protocol has discover, confirm, assemble and verify stages. A footer suggests the next step, gap resolution, or stopping repeated same-tool calls. The box explicitly states that no call is ever refused. This is guidance, not hard enforcement or a guarantee of grounded code. The example six-call trace fixes wrong modules while making out-of-corpus gaps visible.",
+          "PDF p.15, Table 5: Three workflows × three LLMs × six problems × three fresh generations = 162 runs and 54 setups. The reported OpenRouter identifiers are google/gemini-2.5-pro, openai/gpt-5 and deepseek/deepseek-v4-pro; exact backend revisions and model availability were not independently verified.",
+          "PDF pp.15–16, Table 6: PC1 is flow-shop scheduling with release/setup/no-wait constraints, PC2 is weighted-tardiness job-shop scheduling, and PC3 is flexible job-shop scheduling with three operators. PC4 uses one AGV and picking station; PC5 adds optional stock/allocation; PC6 has two AGVs, two robots and buffer capacity five. All data are synthetic. Reference variable totals are 56, 54, 56, 168, 2,063 and 3,382; constraint totals are 60, 60, 39, 141, 2,281 and 3,920.",
+          "PDF pp.15–17: The solver limit is 60 seconds. PC1–PC4 references are described as optimal, although PC4 has a reported 0.01% gap. PC5 and PC6 are feasible best-known references at 13,815 seconds and 7,435 seconds, with gaps of 2.17% and 84.13%; longer 250–300-second runs did not improve them. Reference schedules were independently constraint-checked; this does not establish equivalent checking of every generated schedule.",
+          "PDF p.17, Table 7: AccF+C requires the unedited script to finish without error and return z = zref; printing the reference and then crashing is failure. AccF allows human correction of implementation errors followed by rerunning, including optional-interval API semantics. Authors state that the mathematical formulation is unchanged; raw correction diffs and adjudication were not available here. AccF is neither direct textual formulation grading nor demonstrated agent repair.",
+          "PDF pp.18–19: Five WA runs with incomplete token records are excluded from token statistics, leaving 49/54 WA and 157/162 total complete records. There are three generations per cell. Figure 5 shows standard deviations over nine runs; Figures 6–7 show standard deviations over three, not confidence intervals or significance tests. MCP SDK is 1.27.0 on p.12 and 1.27.1 on p.18. Reported Python 3.14.4, docplex 2.32.264 and CP Optimizer 20.1.0 were not executed for this review.",
+          "PDF pp.19–20, Table 8: WA/WB/WC counts are 32/54, 18/54 and 8/54 for AccF+C, corresponding to 59.3%, 33.3% and 14.8%. WA/WC is exactly fourfold by counts, with a 44.4-percentage-point difference; WA/WB differs by 25.9 points. AccF counts are 42/54, 42/54 and 37/54, or 77.8%, 77.8% and 68.5%. These descriptive aggregate comparisons do not isolate agents, MCP, prompts or compute.",
+          "PDF pp.18–20 and 25, Table 8: WA on PC1–PC4 yields 7 + 9 + 6 + 7 = 29/36 = 80.6%, agreeing with the abstract and p.25 but contradicting the p.18 prose value 67.7%. Across all workflows, PC1–PC4 has 53/108 = 49.1% unedited success and 105/108 = 97.2% after correction. Thirty-three of 36 setups have all three AccF runs correct (91.7%). Among 33 setups with at least one AccF+C success, 28 vary across replicates (84.8%).",
+          "PDF pp.19–21, Figures 5–7: WA gives Gemini 12/18 = 66.7%, GPT 11/18 = 61.1%, and DeepSeek 9/18 = 50% AccF+C. WB counts are 5/18, 6/18 and 7/18; WC counts are 4/18, 2/18 and 2/18. PC6 has 0/27 unedited successes and 4/27 = 14.8% after correction. Rankings depend on workflow and metric, with few replicates; no universal model ranking is established.",
+          "PDF pp.20–21, Figure 8: Reported mean workflow times are about 370, 258 and 142 seconds for WA/WB/WC; tokens are about 0.73 million, 0.44 million and 12,000. WA uses about 43% more time and 66% more tokens than WB. Inputs account for about 96% of agent tokens. The Formulator accounts for 1.7% of WA tokens but 30% of time. Missing token records prevent exact independent pooled reconstruction; generation time includes network/provider latency and is not a controlled compute budget or measured expert labor.",
+          "PDF p.22, Table 9: Initially, 58 correct + 1 below-bound + 14 no-solution + 2 no-objective + 81 execution-error + 6 incomplete scripts = 162. Fourteen of the 81 errors happen after printing the reference. After correction, 121 correct + 7 worse + 1 below-bound + 27 no-solution + 6 incomplete = 162, recovering 63 of 104 initial failures. WA/WB/WC execution errors number 14/29/38. Timeout and proven infeasibility are combined, so all no-solution cases cannot be classified as semantically wrong.",
+          "PDF pp.23–24, Figure 9: There are 159 distinct implementation errors in 94 runs: 43 nonexistent symbols, 78 misuses of existing API elements, 29 format/environment defects and nine silent semantic errors. The five leading types number 30 invented result accessors, 29 wrong-module constructors, 13 other invented names, 13 uninitialized parameter errors and seven optional-interval coupling errors, totaling 92/159. These are errors, not 159 failed scripts. The paper reports 89/104 loud or unusable failures; raw per-run diagnoses were not acquired.",
+          "PDF pp.24–26: Transfer to other solvers and iterative execution-feedback repair are proposals, not demonstrated results. Page 26 explicitly calls for independent constraint checkers before industrial use. Reference-objective equality does not validate every constraint. Human repair time/cost and real deployment benefit are unmeasured; the US$0.3–1 claim was not independently verified and is not used as current pricing.",
+          "PDF p.26 cites https://github.com/angelsnfn/AgenticPScheduling; the p.28 reference cites https://github.com/angelsnfn/AgenticProductionScheduling. The locators differ and neither was acquired. Complete prompts, databases, scripts, correction diffs, per-run diagnoses and repository commit remain unverified. The complete 29-page PDF has no in-file appendix; pp.27–29 references were read as citations only."
+        ],
+        "fulltext_sha256": "ce88076ba3818b7fb01fa39b00aa99d0ca2b4aaeaea0fcb5b58ff2cc415f17a2",
+        "fulltext_status": "complete",
+        "model": "assistant-native-review",
+        "native_identity_version": 1,
+        "original_candidate_sha256": "e634fdbafea4166ce3c2846542e404b6e3e8e466e55dbf8a05084ed55a422a10",
+        "out_of_scope": false,
+        "producer": "assistant-native-review",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "A useful training-free agent-engineering case study with a clear distinction between strict first-attempt execution and human-corrected formulation diagnostics. A deterministic API-documentation service and formulator/executor separation yield 32/54 unedited reference-matching scripts, versus 18/54 for one agent and 8/54 for a direct call. The reported cost increase and error taxonomy make the practical trade-off visible. However, the evidence spans only six synthetic instances, one solver and three generations per setting; no equal-budget, tool or prompt ablations isolate the mechanism. Matching a reference objective is weaker than semantic validation, and PC5/PC6 references are not proven optimal. The apparent formulation success includes human implementation repair, not autonomous recovery. Missing external prompts/artifacts, conflicting repository locators and SDK versions, and a numerical prose inconsistency reduce reproducibility. Retain the descriptive result while avoiding broad autonomy, causal and deployment claims.",
+        "rationale_en": "A useful training-free agent-engineering case study with a clear distinction between strict first-attempt execution and human-corrected formulation diagnostics. A deterministic API-documentation service and formulator/executor separation yield 32/54 unedited reference-matching scripts, versus 18/54 for one agent and 8/54 for a direct call. The reported cost increase and error taxonomy make the practical trade-off visible. However, the evidence spans only six synthetic instances, one solver and three generations per setting; no equal-budget, tool or prompt ablations isolate the mechanism. Matching a reference objective is weaker than semantic validation, and PC5/PC6 references are not proven optimal. The apparent formulation success includes human implementation repair, not autonomous recovery. Missing external prompts/artifacts, conflicting repository locators and SDK versions, and a numerical prose inconsistency reduce reproducibility. Retain the descriptive result while avoiding broad autonomy, causal and deployment claims.",
+        "rationale_zh": "這是一份有用、無需任務訓練的代理工程案例，清楚區分嚴格首次執行與人工修補後的建模診斷。確定性API文件服務搭配建模／執行分工，產生32/54次原樣符合參考值的程式；單代理為18/54，直接呼叫為8/54。成本增加與錯誤分類讓實務取捨清楚可見。但證據只涵蓋六個合成實例、單一求解器及每格三次生成，缺乏等預算、工具或提示的消融，無法分離作用機制。匹配參考目標值弱於語意驗證，PC5／PC6參考解也未證最優。所謂建模成功包含人工實作修補，不是自主復原。外部提示與成果未取得、程式庫路徑和SDK版本不一致，以及一處比例文字矛盾，均降低可重現性。可保留描述性結果，但避免泛化為自主能力、因果或部署結論。",
+        "raw_weighted_score": 0.6805,
+        "request_sha256": "214298f52b5b26d0b913dedf08005c7671648074911df719d7e2a838d0286968",
+        "review_sha256": "9f71d224af5a849669ea0ace8f94a0cae3c909ee79f4165555d918b179a3d6c3",
+        "scope_assessment": {
+          "classification": "in_scope_language_model_code_generation",
+          "decision": "in_scope_agent_tool_methodology",
+          "reason": "Although scheduling is the testbed, the primary contribution is an explicitly compared training-free LLM agent/code-generation workflow with reusable deterministic documentation tooling and failure analysis. This goes beyond a pure domain optimization application; original downstream filters remain authoritative."
+        },
+        "scope_capped_score": null,
+        "scope_policy_version": "explicit-review-exclusion-v1",
+        "scope_status": "in_scope",
+        "score": 0.6805,
+        "source_key": "e6e226752701f04b253241b50d994c5e9aaa628dc30fb4c1c2ea7db80133b501",
+        "story_id": "arxiv:2610.10184",
+        "token_usage": {},
+        "topics": [
+          "Agents & Tool Use",
+          "Code & Programming",
+          "RAG & Knowledge",
+          "Reasoning & Chain-of-Thought"
+        ]
+      },
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-ai",
+        "tier": 1,
+        "title": "Agentic AI-Assisted Modeling for Production Scheduling: Assessment in Constraint Programming",
+        "url": "https://arxiv.org/abs/2610.10184v1"
+      },
+      "published_at": "2026-10-07T14:51:37+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.6805,
+        "llm_relevance_score": 19.054,
+        "recency_score": 0.7514721987524383,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 27.005472198752436
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2610.10184",
+      "summary": "Developing optimization models for production scheduling requires substantial expert effort. Research on large language models (LLMs) has followed two directions: specialized approaches for automated modeling, mostly for mixed-integer linear programming, which often rely on dedicated training or problem-specific architectures that limit industrial deployment; and agentic artificial intelligence for operational decision support, which generally assumes that the optimization model already exists. This study bridges both directions by assessing whether general-purpose LLMs, orchestrated as agents without task-specific training, can formulate and implement constraint programming models from natural-language problem descriptions. Singleagent and multi-agent architectures are integrated with a Model Context Protocol server that provides context-aware retrieval of solver documentation to mitigate hallucinations during implementation. Both are compared with a direct LLM baseline on six industry-oriented problems covering flow-shop, job-shop, flexible job-shop and resource-constrained warehouse scheduling, using three LLMs and assessing modeling accuracy, execution success, latency and token consumption. Formulation proves largely within reach of current LLMs, whereas implementation is the main barrier. The multi-agent workflow raises the share of scripts that run correctly as generated from 14.8% with a direct LLM call to 59.3%, reaching 80.6% on the four less complex problems, while tightly coupled intralogistics models remain an open challenge.",
+      "summary_en": "This study separates mathematical formulation from usable code generation. It compares a direct language-model call, one agent with documentation tools, and a two-agent pipeline in which a formulator creates a specification and an executor writes the script. The agentic workflows use MCP to retrieve docplex.cp API documentation and complete examples on demand, then generate constraint-programming scripts that load data from SQLite.\n\nThree workflows, three models, six scheduling problems, and three fresh generations per setting yield 162 runs. Success requires an unedited script to finish without errors and report an objective equal to the reference under a 60-second solver limit. The two-agent workflow succeeds in 32/54 runs (59.3%), versus 18/54 for one agent and 8/54 for a direct call. It achieves 29/36 (80.6%) on the first four problems, while every unedited script fails on the most complex problem. Correcting implementation errors by human review raises the overall reference-matching count to 121/162; this is a diagnostic result, not demonstrated autonomous repair.\n\nThe improvement costs about 370 seconds and 730,000 tokens per two-agent run, compared with 142 seconds and 12,000 tokens for a direct call. The study illustrates the engineering value of documentation checks and task decomposition, but lacks compute-matched ablations that isolate multiple agents or MCP. The six problems use synthetic data and one solver; the final two reference solutions are not proven optimal, and matching an objective does not fully verify model semantics. Full prompt supplements were not obtained, and the paper gives two different repository URLs. This is a bounded tool-assisted code-generation case study, not evidence that autonomous industrial scheduling is already safe.",
+      "summary_zh": "這篇研究把「能寫出數學模型」與「能生成可用程式」分開評估。作者比較直接呼叫語言模型、單代理加文件工具，以及先由建模代理產生規格、再由執行代理寫程式的雙代理流程。後兩者透過 MCP 按需查詢 docplex.cp 的函數文件與完整範例，再生成從 SQLite 讀資料的限制式規劃程式。\n\n三種流程、三個模型、六個排程問題，各重新生成三次，共162次。成功標準是程式原樣執行不報錯，且在60秒求解限制下回傳等於參考解的目標值。雙代理為32/54次成功（59.3%），單代理18/54，直接呼叫8/54；雙代理在前四題達29/36（80.6%），最複雜題則全部原樣失敗。人工只修實作錯誤後，全體達參考值者增至121/162；這是診斷結果，不能當成代理自動修復能力。\n\n改善代價是雙代理平均約370秒、73萬 tokens，直接呼叫約142秒、1.2萬 tokens。研究凸顯文件查核與工作分拆的工程價值，但沒有等算力消融，無法單獨歸因於多代理或 MCP。六題採合成資料與單一求解器，後兩題的參考解未證最優，相同目標值也不能完整證明模型語意正確。全文提示補件尚未取得，兩處程式庫網址亦不一致；適合作為工具輔助程式生成的有界案例，不宜直接外推為安全的工業自主排程。",
+      "title": "Agentic AI-Assisted Modeling for Production Scheduling: Assessment in Constraint Programming",
+      "title_en": "Agentic AI-Assisted Modeling for Production Scheduling: Assessment in Constraint Programming",
+      "title_zh": "以代理式人工智慧協助生產排程建模：限制式規劃評估"
+    },
+    {
+      "arxiv_id": "2610.09769",
+      "authors": [],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-10-10T10:49:13.497395+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-ai",
+          "tier": 1,
+          "title": "From Expert-Guided Proof Search to Automated Open-Problem Solving",
+          "url": "https://arxiv.org/abs/2610.09769v1"
+        },
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-ai",
+          "tier": 1,
+          "title": "From Expert-Guided Proof Search to Automated Open-Problem Solving",
+          "url": "https://arxiv.org/pdf/2610.09769v1"
+        }
+      ],
+      "llm_evaluation": {
+        "candidate_sha256": "4bf3ac339ea9b7bb99daddd2cf4a19d57822e0b7af8dd21371e239a340ef8b2c",
+        "components": {
+          "evidence_strength": 0.36,
+          "generalizability": 0.45,
+          "novelty": 0.55,
+          "preference_relevance": 0.87,
+          "reproducibility": 0.34,
+          "rigor": 0.38
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "p.2 Section 2: three explicit research-state documents; verifier alone updates them, summarizer does not; completed denotes exhausted round budget rather than solved.",
+          "pp.2–3 Section 2: prover/verifier/summarizer have no tools, web or direct filesystem access; an LLM verifier can propagate incorrect accepted lemmas through persistent memory.",
+          "p.3 Section 3: eight earlier expert-checked cases, six classified publishable and five essentially autonomous, are attributed to external report [2]; full statements and proofs are not included here.",
+          "p.3 Table 1 and caption: all four automated collections use ONE prover; rows are 1600/420/900/880 problems, 250/41/57/137 promising and 90/4/40/80 solved, totaling 3800/485/214.",
+          "p.3 Table 1 footnotes 1–2: unflagged runs were not systematically reviewed; outside STOC the solved counts are estimates partly informed by LLM assessments. 210 of 214 are therefore not fully human-verified counts.",
+          "p.3 Open problem extraction: a separate evolving workflow uses source files and web search to check open status; the no-tools condition applies to the solving loop, not the entire pipeline.",
+          "p.4 Screening and structured audit: comparisons target source hypotheses, quantifiers and novelty; audit pass may represent substantial partial progress and protocols evolved across experiments.",
+          "p.4 Section 4.1 and footnote 3: four STOC results were reported confirmed in June/July private correspondence, but convex quartics and biased CAT states received only main-idea review, not full-proof review.",
+          "p.4 Section 4.1: reported biclique O(log n) memory at side sizes at least C n^(2/3); rank-program separation 2m span rows versus m 2^m rank rows; rational strongly convex quartic with singleton irrational zero sublevel; Omega(log n) CAT join/split depth including entropy-balanced case. Statements only, not reproduced proofs.",
+          "p.4 Discussion: no direct-underlying-model comparison; collection, model and budget differ; correctness, intended scope and novelty remain bottlenecks.",
+          "p.1 printed title adds Bolzano: to the official abstract/listing title; both preserved in source-title-note.json. p.5 references and funding read; no appendices in supplied five-page PDF."
+        ],
+        "fulltext_sha256": "1d791e0e54855393764c152fe1c412509f450a045553448d008ec7aab72fae4d",
+        "fulltext_status": "complete",
+        "model": "assistant-native-review",
+        "native_identity_version": 1,
+        "original_candidate_sha256": "4bf3ac339ea9b7bb99daddd2cf4a19d57822e0b7af8dd21371e239a340ef8b2c",
+        "out_of_scope": false,
+        "producer": "assistant-native-review",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Weighted score 0.6035. Relevance 0.87: directly concerns language-agent reasoning, persistent state and verification. Novelty 0.55: useful integration of open-question extraction, source checks and research state, with close iterative-generation/critique and earlier Bolzano precedents. Rigor 0.38: execution completion, candidate progress and proof validity are distinguished and estimates disclosed, but screening evolved, collections may overlap, unflagged outputs were not reviewed systematically, and controls/equal budgets are absent. Evidence 0.36: a large attempted workload and four reported author responses, yet 210 solution counts are estimates and two of the four received main-idea-only review; complete proofs are absent from this document. Generalizability 0.45: four related mathematical/TCS collections and two models, with collection/model/round confounding and no measured transfer outside them. Reproducibility 0.34: roles and research-state operations are clear, but the supplied packet lacks task-level records, full prompts, complete per-role configurations and proof artifacts. Open source is an author claim; external code and correspondence were not obtained. This bounded review of the five-page report does not certify 214 correct mathematical results.",
+        "rationale_en": "Weighted score 0.6035. Relevance 0.87: directly concerns language-agent reasoning, persistent state and verification. Novelty 0.55: useful integration of open-question extraction, source checks and research state, with close iterative-generation/critique and earlier Bolzano precedents. Rigor 0.38: execution completion, candidate progress and proof validity are distinguished and estimates disclosed, but screening evolved, collections may overlap, unflagged outputs were not reviewed systematically, and controls/equal budgets are absent. Evidence 0.36: a large attempted workload and four reported author responses, yet 210 solution counts are estimates and two of the four received main-idea-only review; complete proofs are absent from this document. Generalizability 0.45: four related mathematical/TCS collections and two models, with collection/model/round confounding and no measured transfer outside them. Reproducibility 0.34: roles and research-state operations are clear, but the supplied packet lacks task-level records, full prompts, complete per-role configurations and proof artifacts. Open source is an author claim; external code and correspondence were not obtained. This bounded review of the five-page report does not certify 214 correct mathematical results.",
+        "rationale_zh": "原規準加權0.6035。相關性0.87：直接研究語言代理推理、持久記憶及驗證流程。新穎性0.55：把抽取開放問題、來源查核與研究狀態串接具實務價值，但反覆生成／批判架構與先前Bolzano已有密切先例。嚴謹性0.38：明確區分執行完成、候選進展與正式證明，且坦白揭露估計；然而篩查方案持續改變、集合可重疊、未標記輸出未審，缺對照與一致預算。證據強度0.36：有大規模嘗試紀錄及四項作者回饋的報告，但210項是估計，四項中的兩項僅核主意，全文沒有供檢查的完整證明。泛化性0.45：四個相關數學／理論計算機領域集合與兩種模型，模型和輪數受集合混淆，未量測其他任務遷移。可重現性0.34：研究狀態與角色操作描述清楚，但本包沒有逐題資料、完整提示、逐角色設定與證明檔；開源為作者主張，外部程式和通信未取得。這是對五頁方法報告的有界評審，不是214項成果正確性背書。",
+        "raw_weighted_score": 0.6035,
+        "request_sha256": "f11cca6d46e98939f6a9be2c4563543fbe64f902367dafb5abeee7058add970f",
+        "review_sha256": "bdacdab1154bdfe0534b000e61b60ba42f0f92d5be383513cf71d3080667bdfa",
+        "scope_assessment": {
+          "decision": "in_scope",
+          "reason": "LLM-agent orchestration and verification methodology for mathematical reasoning, beyond a pure domain-application result."
+        },
+        "scope_capped_score": null,
+        "scope_policy_version": "explicit-review-exclusion-v1",
+        "scope_status": "in_scope",
+        "score": 0.6035,
+        "source_key": "417c5d17e334c768dcc06ecf7b21a251cfdeb1666ebac54f3e8441cb61f8931d",
+        "story_id": "arxiv:2610.09769",
+        "token_usage": {},
+        "topics": [
+          "Agents & Tool Use",
+          "Reasoning & Chain-of-Thought",
+          "Long Context & Memory"
+        ]
+      },
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-ai",
+        "tier": 1,
+        "title": "From Expert-Guided Proof Search to Automated Open-Problem Solving",
+        "url": "https://arxiv.org/abs/2610.09769v1"
+      },
+      "published_at": "2026-10-07T09:52:46+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.6035,
+        "llm_relevance_score": 16.898,
+        "recency_score": 0.7360372596302339,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 24.834037259630236
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2610.09769",
+      "summary": "Large language models are increasingly contributing to mathematical research, where progress often depends on efficient proof search, incremental improvements and careful verification. We describe Bolzano, a multi-agent open-source system that uses parallel prover agents with a verifier agent and maintains a human-readable research state. Initial manual use on expert-selected problems yielded 8 results whose proofs were checked by domain experts. Motivated by these case studies, we ran Bolzano without problem-specific human guidance on about 3,800 open problems extracted from four sets of papers, solving about 200 open problems. One experiment used papers accepted to STOC 2026, a top conference in theoretical computer science. There, we answered four questions raised in the papers, as confirmed by their authors.",
+      "summary_en": "Bolzano maintains proof candidates through prover, verifier and summarizer rounds; the reported automated runs used one prover. Across 3,800 attempts, 214 solutions are reported, but 210 are estimates partly informed by LLM assessment. Of four STOC results, two received author review of the main idea only. No direct-model baseline establishes an orchestration benefit. The five-page report is readable, but external proofs and correspondence were not obtained, limiting independent verification.",
+      "summary_zh": "Bolzano把數學研究拆成提出證明、檢查論證與整理進度的多輪流程，並以三份可讀文件保存想法、候選證明及目前結果。只有驗證代理能更新共同狀態；但它仍是語言模型，不是形式證明器，錯誤引理可能沿著記憶反覆傳播。系統支援平行探索，本文四組自動實驗卻都只使用一個證明代理。解題階段沒有工具或逐題人工指導，前置抽題與文獻查核則可使用網頁搜尋。\n作者對四個論文集合進行三千八百次研究嘗試，列出四百八十五個值得審查的輸出與二百一十四個「已解」結果。這些數字不能讀成二百一十四份經獨立驗證的完整證明：除STOC組的四項外，其餘二百一十項均為部分依賴模型判斷的估計；STOC四項中的凸四次多項式與偏置CAT態兩項，也只獲原作者確認主要想法，未審完整證明。未被標記的輸出沒有系統檢查，跨集合題目亦可能重疊。\n價值在於把問題來源核對、候選論證與人工審查分開，呈現自動數學研究的實際瓶頸；但沒有直接使用底層模型的基線、消融、統一預算或成本分析，因此不能證明架構帶來多少增益。供應的五頁報告完整，原始證明、先前八例詳報與私人通信未取得，核心數學成果仍無法在此獨立核驗。",
+      "title": "From Expert-Guided Proof Search to Automated Open-Problem Solving",
+      "title_en": "From Expert-Guided Proof Search to Automated Open-Problem Solving",
+      "title_zh": "從專家引導的證明搜尋到自動求解開放問題"
+    },
+    {
+      "arxiv_id": "2610.09560",
+      "authors": [],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-10-10T11:07:26.071044+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-ai",
+          "tier": 1,
+          "title": "World Potential Model: Pretrained World Knowledge as Progress Potentials",
+          "url": "https://arxiv.org/abs/2610.09560v1"
+        },
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-ai",
+          "tier": 1,
+          "title": "World Potential Model: Pretrained World Knowledge as Progress Potentials",
+          "url": "https://arxiv.org/pdf/2610.09560v1"
+        }
+      ],
+      "llm_evaluation": {
+        "candidate_sha256": "33fdadac2ba0ad3837834219e37407e7b34ec1cac011c655db29f0f8d5ace6b1",
+        "components": {
+          "evidence_strength": 0.49,
+          "generalizability": 0.48,
+          "novelty": 0.61,
+          "preference_relevance": 0.94,
+          "reproducibility": 0.46,
+          "rigor": 0.48
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "PDF p.1 Figure 1: illustrative planning/navigation/science/coding/web diagram, five anchors from 0 to 1 and current potential 0.5. Coding/web pictures are not experiments. Fixed official v1 is dated 7 Oct 2026.",
+          "PDF pp.2-4 Sections 2.1-2.4, Eqs.1-8: goal-conditioned LLM-agent contexts may be non-Markov; WPM compares realized progress, not future return or transitions. Anchors are task-local, strictly increasing, and built from one successful expert trajectory, then fixed without passing that demonstration into subsequent judgments.",
+          "PDF pp.5-6 Table 1: seven evaluators, three named model families, two environments and two tasks. Pairwise chance 50%; anchored chance 20.00%/15.27%. Displayed pairwise mean 92.5236% and anchored mean 74.7143% agree with reported 92.52/74.71 within rounding. Capability sample sizes and uncertainty are not given.",
+          "PDF pp.5,17-18 Appendix A.3 Eqs.18-22: ALFWorld P=1-L_D(x)/L_D(x0) is acknowledged cost-to-go proxy; ties removed and absolute progress difference must exceed0.12. Author manual check100 pairs reports100% agreement, without independent/blinded annotator statistics. ScienceWorld uses native partial-credit score. Anchored labels map expert states through the same privileged score rather than independently checking each natural-language criterion.",
+          "PDF pp.6-7 Eq.9-16 and pp.18-22 Eqs.23-56: shaped transition r_env+gamma*Phi_next-Phi; beta=gamma*rho. Intermediate coefficient gamma*(1-rho)*beta^(k-1); rho0 gives one-step reward and rho1 telescopes. With gamma<1, even a small raw potential increase may have negative discounted difference. No general policy-invariance result follows.",
+          "PDF pp.8,24 Eq.17 and Appendix C.3: step returns standardized over all valid environment steps across the task group, then shared by tokens of each action. This differs from outcome-only trajectory-relative GRPO in reward, discount and credit granularity; interventions are not separately ablated.",
+          "PDF pp.8-9 Table 2: actor Qwen2.5-3B gains6.60/3.83pp, Qwen2.5-7B gains3.40/8.33pp, Qwen3-4B gains5.21/3.13pp for ALFWorld/ScienceWorld. Displayed mean5.085pp is compatible with reported5.08 given rounded input cells. Frozen downstream evaluator Qwen3-VL-32B; three paired seeds claimed, no variances or per-seed outcomes.",
+          "PDF pp.9-13: relations to process supervision, zero-shot foundation-model rewards and potential-based shaping acknowledged. References read as citations, not independently acquired or verified supporting sources.",
+          "PDF pp.14-17 Listings1-4: pairwise prompt compares two contexts without anchors; localization uses fixed milestones. Anchor construction requests4-10 intermediate milestones plus initial/completion anchors; example seven total anchors has coordinates0,.10,.25,.40,.65,.80,1. This literal minimum six total labels would bound chance at16.67%, unlike Table1 ALFWorld20%; realized candidate sets are missing.",
+          "PDF pp.20-22 Eqs.37-56: individual kth weight maximized at rho=(k-1)/k, not a prescription for the whole objective. Earlier-progress preference1-rho^2; preservation preference rho*(1-rho), zero at rho0/1. Fixed gamma.99/rho.95 gives beta.9405 and approximate influence range16.8067 steps; no systematic rho sensitivity analysis (p.23).",
+          "PDF p.23 Appendix C.1: ALFWorld3553train/140seen/134unseen, evaluated on all134 unseen games; ScienceWorld3589train/1799dev/1819test=7207 variations across30types. Direct single-pass134 evaluation and equal-weight three-run averaging imply rates on100/134 and100/402 count lattices. Table2 ALFWorld rates do not fit two-decimal rounding on these lattices. Undocumented repetition, averaging, exclusions or a reporting error remain unresolved; no alternative denominator is asserted.",
+          "PDF pp.23-24 Appendix C.2-C.4:16task groups*8rollouts=128 trajectories/update,30action cap,two recent interaction steps,learning rate1e-6,100epochs,PPO-clipped updates plus KL,shared invalid-action treatment. Terminal reward10*success,successful terminal potential forced1; unsuccessful terminal potential retained. Evaluation is info[won] episode success.8H100s reported, not total training/evaluator hours or equal compute.",
+          "PDF pp.1,23-24: repository https://github.com/Gabrile166/world-potential-model is advertised, Python3.12/vLLM0.11.0/FlashAttention2.7.4.post1/Gymnasium0.29.1/SB3 2.6.0 and model endpoints named. Exact repository bytes, raw sets/seeds and release availability are not verified. C.5 licenses are author statements, not this review legal validation."
+        ],
+        "fulltext_sha256": "845315c3c37984f703ed591b92e78193e5d3304d747184799a285910732332b0",
+        "fulltext_status": "complete",
+        "model": "assistant-native-review",
+        "native_identity_version": 1,
+        "original_candidate_sha256": "33fdadac2ba0ad3837834219e37407e7b34ec1cac011c655db29f0f8d5ace6b1",
+        "out_of_scope": false,
+        "producer": "assistant-native-review",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "A highly relevant language-agent credit-assignment method, not a pure robotics exclusion. Its useful contribution is the explicit separation of retrospective ordinal progress, demonstration-anchored scalarization, and process-sensitive step returns. The finite-horizon decomposition is sound, and the paper reports encouraging seven-model capability results and positive gains in all six actor-environment comparisons. However, the gain-producing intervention changes several mechanisms at once and adds a large evaluator; ablations, uncertainty and compute comparisons are missing. Table 2 ALFWorld percentages do not lie on the count lattice implied by one evaluation of all 134 tasks per run and three equal-weight training runs, while the stated minimum intermediate-anchor count conflicts with a literal reading of the 20% chance baseline. Unknown repetitions or aggregation could explain these gaps, so no false-data conclusion is warranted. Preserve these as reporting issues and describe gains as reported, not independently verified or statistically significant. The full 24-page source remains available; repository release and raw results are unverified.",
+        "rationale_en": "A highly relevant language-agent credit-assignment method, not a pure robotics exclusion. Its useful contribution is the explicit separation of retrospective ordinal progress, demonstration-anchored scalarization, and process-sensitive step returns. The finite-horizon decomposition is sound, and the paper reports encouraging seven-model capability results and positive gains in all six actor-environment comparisons. However, the gain-producing intervention changes several mechanisms at once and adds a large evaluator; ablations, uncertainty and compute comparisons are missing. Table 2 ALFWorld percentages do not lie on the count lattice implied by one evaluation of all 134 tasks per run and three equal-weight training runs, while the stated minimum intermediate-anchor count conflicts with a literal reading of the 20% chance baseline. Unknown repetitions or aggregation could explain these gaps, so no false-data conclusion is warranted. Preserve these as reporting issues and describe gains as reported, not independently verified or statistically significant. The full 24-page source remains available; repository release and raw results are unverified.",
+        "rationale_zh": "這是高度相關的語言代理信用分配方法，不能以純機器人研究排除。價值在於明確區分回顧式序位進度、依示範錨定的純量，以及流程敏感的逐步回報；有限期分解可核，文中七模型能力評測與六組actor比較亦呈現正向結果。但介入同時改動多種機制並加入大型評估器，缺乏消融、不確定性與等算力比較。表2的ALFWorld百分比不落在每次全部134題、三次等權執行所隱含的成功計數格點，最低中間錨點數亦與20%隨機率的字面解讀衝突。未交代的重複或聚合可能解釋問題，不能據此認定資料不實。保留這些報告缺口，增益只能稱作者報告，不能稱已獨立驗證或統計顯著。完整24頁來源可用；程式釋出與原始結果則未核實。",
+        "raw_weighted_score": 0.6839999999999999,
+        "request_sha256": "0b82abb7b67d3882cacaf742d90c9f719bc1234cb933725d64016a4c4c0bd4d7",
+        "review_sha256": "ba7a2a06e86aa410bf65ad1e453da3caee1d75a2a93d843445339b54fe39d82f",
+        "scope_assessment": {
+          "classification": "in_scope_language_model_credit_assignment",
+          "decision": "in_scope_language_agent_methodology",
+          "reason": "The actual intervention trains Qwen language-agent policies using frozen language/VL-model progress judgments. Simulated embodied environments do not erase language methodology. Original system/rubric unchanged."
+        },
+        "scope_capped_score": null,
+        "scope_policy_version": "explicit-review-exclusion-v1",
+        "scope_status": "in_scope",
+        "score": 0.6839999999999999,
+        "source_key": "2d7a1bb86f032f0302f617d7c4de6fe969a3386feb00fae62671c9220d55699a",
+        "story_id": "arxiv:2610.09560",
+        "token_usage": {},
+        "topics": [
+          "Agents & Tool Use",
+          "Alignment & RLHF",
+          "Training & Optimization",
+          "Red Teaming & Evaluation"
+        ]
+      },
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-ai",
+        "tier": 1,
+        "title": "World Potential Model: Pretrained World Knowledge as Progress Potentials",
+        "url": "https://arxiv.org/abs/2610.09560v1"
+      },
+      "published_at": "2026-10-07T07:01:35+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.6839999999999999,
+        "llm_relevance_score": 19.151999999999997,
+        "recency_score": 0.7248684808582,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 27.0768684808582
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2610.09560",
+      "summary": "Long-horizon language agents often receive supervision only from terminal task outcomes, leaving little signal for distinguishing productive intermediate behavior from stagnation or even regression. Rather than learning a separate value function or process reward model for every task, we ask whether pretrained models can recognize task progress from their existing world knowledge. We formalize this capability with a World Potential Model (WPM), a goal-conditioned evaluator of task-relative realized progress in agent contexts. In ALFWorld and ScienceWorld, off-the-shelf pretrained models substantially outperform chance at recovering realized-progress structure without task-specific evaluator fine-tuning. We further anchor these progress judgments to task-specific milestones to obtain scalar world potentials, whose temporal differences provide process-sensitive step-level credit for policy optimization. Under matched comparisons, WPM-guided optimization improves success over outcome-only GRPO across all evaluated configurations. Together, these results provide initial evidence that pretrained world knowledge can support reusable realized-progress evaluation and provide useful supervision for long-horizon agents.",
+      "summary_en": "Long-horizon language agents receive little guidance about productive intermediate behavior when supervision consists only of final success or failure. World Potential Model asks a pretrained evaluator to compare progress already achieved in agent contexts. Task-specific milestone anchors then convert these judgments into a local scalar potential. This is retrospective progress evaluation, not a transition simulator or a prediction of future return. The evaluator is not fine-tuned for the task, but anchor construction still uses one successful expert trajectory per task instance; the approach is not demonstration-free.\n\nAcross seven models in ALFWorld and ScienceWorld, the paper reports mean pairwise accuracy of 92.52% and anchored-localization accuracy of 74.71%. A frozen Qwen3-VL-32B evaluator subsequently supplies potential differences and discounted step-level credit for three language-agent policies. All six reported actor-environment configurations improve over outcome-only GRPO by 3.13 to 8.33 percentage points. These are bounded author-reported comparisons, not independently reproduced results.\n\nThe contribution directly concerns language-model credit assignment and is within the agent-methodology scope. Important limits are the two English simulated environments, missing uncertainty intervals and key ablations, and unquantified additional evaluation cost. Table 2 rates cannot be reconstructed by the straightforward aggregation implied by the stated 134 ALFWorld tasks and three runs; the anchor-count description also needs reconciliation with the random baseline. These reporting gaps limit confidence in the gains without making the full paper unavailable. The process-sensitive discount changes the objective and supplies no policy-invariance guarantee. All 24 pages were read here, but the repository and raw records were not obtained.",
+      "summary_zh": "長任務的語言代理若只知道最後成敗，就難以分辨哪一步真正前進。World Potential Model 讓預訓練模型比較兩段情境中已實現的進度，再用任務里程碑把判斷轉成局部勢能。它評估已完成的事，不預測環境轉移；評估器不用任務微調，但里程碑仍由每題一條成功專家軌跡建立，並非完全不需示範。\n\n作者在 ALFWorld 與 ScienceWorld 測試七個模型，報告成對比較平均準確率92.52%，錨點定位74.71%。接著固定 Qwen3-VL-32B 評估器，用勢能差與折扣產生逐步獎勵，訓練三款語言代理。表中六組設定都優於只用終局成敗的 GRPO，提升3.13至8.33個百分點；這是論文報告的有界結果，不等於已獨立重現。\n\n方法明確涉及語言模型的信用分配，符合代理研究範圍。限制包括只測兩個英文模擬環境、缺少誤差區間與關鍵消融，且額外評估成本未量化。表2成功率無法依文中134題、三次執行的直接聚合精確重算，錨點數與隨機基線也待釐清；因此增益可信度需保留。流程敏感折扣會改變目標，不能宣稱維持最優策略。本次完整讀取24頁，但未取得程式與原始紀錄。",
+      "title": "World Potential Model: Pretrained World Knowledge as Progress Potentials",
+      "title_en": "World Potential Model: Pretrained World Knowledge as Progress Potentials",
+      "title_zh": "世界勢能模型：以預訓練世界知識評估任務進度"
+    },
+    {
+      "arxiv_id": "2610.09497",
+      "authors": [],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-10-10T11:07:58.380419+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-ai",
+          "tier": 1,
+          "title": "Ream: Unfolding Mutual Awareness in Human-Agent Workspaces",
+          "url": "https://arxiv.org/abs/2610.09497v1"
+        },
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-ai",
+          "tier": 1,
+          "title": "Ream: Unfolding Mutual Awareness in Human-Agent Workspaces",
+          "url": "https://arxiv.org/pdf/2610.09497v1"
+        }
+      ],
+      "llm_evaluation": {
+        "candidate_sha256": "541ad54849c029ddfb33750b82b2ead3c1ed450b9cc6d8d0511a92353253189d",
+        "components": {
+          "evidence_strength": 0.55,
+          "generalizability": 0.5,
+          "novelty": 0.6,
+          "preference_relevance": 0.82,
+          "reproducibility": 0.36,
+          "rigor": 0.63
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "pp.2–4, Sections 1–3 and Table 1: three design goals adapt workspace awareness to shared artifacts, time-varying engagement, localized visualizations and agentic retrieval.",
+          "pp.4–5, Sections 4–4.1: .paper/.papers/.report represent sources, collections and syntheses; the same underlying paper file is shared across workspace references; reports default to editable outlines.",
+          "p.5, Section 4.1 and Figure 2: read_full_text extracts answers with quotes; read_papers retrieves metadata and previous explorations. Quotes are tool outputs, not direct observation of model attention.",
+          "p.6, Section 5.1: user hover=.02, open=.05, active 30-second focus=.8; agent search per result=.2, metadata=.5, full-text exploration=.7. Opens/hovers deduplicated for 30 seconds; hidden/unfocused browser pauses timing.",
+          "p.6, Sections 5.2–5.3: file bars, per-file history, PDF quote localization, reference chips, and four read_signals modes expose shared histories; proactive suggestions appear when chat input is focused (Figure 3).",
+          "p.7, Section 6: Anna is an illustrative workflow, not an additional participant or outcome measurement; Figure 4 connects recorded actions and quoted PDF passages.",
+          "p.8, Section 7.1: twelve graduate researchers, 10 male/2 female, ages23–31; seven daily and five several-times-weekly coding-agent users; approximately60-minute remote lab; first-author transcript/behavior coding.",
+          "p.8, Section 7.2: ten of twelve requested continued use or report export; mean181 accumulated papers and11 user messages/session. These are descriptive engagement statistics.",
+          "pp.8–9, Sections 7.2.1–7.2.2: ten report clearer agent activity; nine favor localized activity over chat histories; eight notice implicit steering. Participant examples include P4 verification, P8 redirection, P1 annotations and P11 unrequested relevant synthesis.",
+          "p.9, Section 7.2.2: approximately11.9% of user messages derive from proactive suggestions; the denominator is user messages, not all displayed suggestions.",
+          "p.9, Figure 5 / Section 7.2.5; p.15, Appendix C / Figure 6: P7 delegates earlier then reads, P9 interleaves; twelve paired traces plot five action categories and user/agent activity without labeled numeric axes or raw series.",
+          "p.10, Section 7.2.6: explicit absence of baseline/ablation; prior-workflow comparisons rely on participants’ recollections; more diverse recruitment and longer deployments are future work.",
+          "p.10, Section 7.3: six researchers (two undergraduates/four graduates; three male/three female; ages20–27), one week, requested about30minutes/day, means2.8hours/215accumulated papers/52messages. Thematic continuity is exploratory, not a controlled effect.",
+          "pp.10–11, Sections 8.1–8.4: distraction/confusion can produce engagement signals; proposed other domains are not evaluated. Agents’ collective bars lack the individually distinguishable views requested by users.",
+          "p.11, Section 8.3: P12 used two agents and P2 seven; P10’s new agent queried predecessor signals. Examples support continuity but no coordination benchmark or workload reduction estimate.",
+          "p.14, Appendix A: React, Elysia/Bun, PostgreSQL, Yjs, Pi agent SDK and Semantic Scholar; main models gpt-6-astra/gpt-6.1-sol by user choice; auxiliary processes default gpt-6.1-sol; no per-participant version/configuration breakdown.",
+          "p.14, Appendix B / Table 2: signed engagement events include negative removal/downvote weights; visual bars instead sum positive weights and use square-root normalization against each actor’s maximum among displayed files with0.1minimum nonzero proportion.",
+          "pp.4,14 and complete packet: ream.sh is a service pointer; pi-mono is a dependency repository. No Ream source package, raw user logs, full prompts or questionnaire results are obtained here."
+        ],
+        "fulltext_sha256": "df74cdc28667a944df9bdd26e4275ed09fa9d7f9df61bef4ba51d12121ab96cf",
+        "fulltext_status": "complete",
+        "model": "assistant-native-review",
+        "native_identity_version": 1,
+        "original_candidate_sha256": "541ad54849c029ddfb33750b82b2ead3c1ed450b9cc6d8d0511a92353253189d",
+        "out_of_scope": false,
+        "producer": "assistant-native-review",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Ream contributes a concrete human-agent workspace method: artifact-local activity histories are both visible to users and retrievable by language-model agents, enabling evidence inspection and contextual steering beyond chat. Two exploratory cohorts (12 lab participants and 6 one-week field participants) provide useful qualitative examples, with complete plotted lab traces. The studies lack baselines and ablations, and do not measure synthesis correctness, coverage, efficiency, or calibrated attention. Positive-only, actor-normalized bars must not be read as signed preference scores or comparable human/agent effort. Reporting omits questionnaire values and sufficient code/prompts/raw data for independent reproduction. In scope for agent collaboration and persistent context design, with moderate scientific weight and untested cross-domain transfer; not evidence of superior agent intelligence or a publication/admission decision.",
+        "rationale_en": "Ream contributes a concrete human-agent workspace method: artifact-local activity histories are both visible to users and retrievable by language-model agents, enabling evidence inspection and contextual steering beyond chat. Two exploratory cohorts (12 lab participants and 6 one-week field participants) provide useful qualitative examples, with complete plotted lab traces. The studies lack baselines and ablations, and do not measure synthesis correctness, coverage, efficiency, or calibrated attention. Positive-only, actor-normalized bars must not be read as signed preference scores or comparable human/agent effort. Reporting omits questionnaire values and sufficient code/prompts/raw data for independent reproduction. In scope for agent collaboration and persistent context design, with moderate scientific weight and untested cross-domain transfer; not evidence of superior agent intelligence or a publication/admission decision.",
+        "rationale_zh": "Ream 的具體貢獻是把文件局部活動歷史同時提供人查看與語言模型代理檢索，支援證據查核及聊天以外的脈絡引導。十二人實驗加六人一週實地研究提供有用質性案例，並附完整實驗軌跡圖；但無對照與消融，未量測綜述正確性、涵蓋率、效率或注意力效度。只加正值、各角色分開正規化的長條，不能當帶符號偏好或直接比較人與代理投入。問卷數值、充分程式／提示與原始紀錄未取得，重現受限。依原規準，代理協作與持續脈絡設計可在範圍內評估，但科學證據屬中等、跨域效果未驗；這不是代理智能優越證明，也不是採納或發布決定。",
+        "raw_weighted_score": 0.663,
+        "request_sha256": "28db3e16c792a3fda805ebcc8a7de414e2f74d01bcb38b1cb58556ef52c465d0",
+        "review_sha256": "7ee80c29ff935a86aecd4628ee40af9a0e1234cce2ff41d590d7a475c9c5b9b9",
+        "scope_assessment": {
+          "classification": "in_scope_agent_collaboration_method",
+          "decision": "in_scope",
+          "excluded_domain_checks": {
+            "biology_foundation_model": false,
+            "image_video_diffusion_without_language": false,
+            "medical_imaging": false,
+            "pure_audio": false,
+            "pure_domain_application": false,
+            "pure_robotics": false,
+            "pure_vision": false
+          },
+          "rationale_en": "The research object is the human–language-agent interaction mechanism itself: shared action histories, tool-based retrieval of engagement, and evidence-grounded steering. Literature review is the testbed, not a pure end-domain application with no agent-methodology contribution. This narrow in-scope decision does not validate cross-domain transfer or award relevance merely for mentioning agents.",
+          "rationale_zh": "研究對象是人與語言代理的互動機制本身，包括共享行動歷史、工具式活動檢索與證據導向的引導。文獻回顧是試驗場景，並非沒有代理方法貢獻的純領域套用；本判斷不代表跨域效度已驗，也不因出現代理關鍵字加分。"
+        },
+        "scope_capped_score": null,
+        "scope_policy_version": "explicit-review-exclusion-v1",
+        "scope_status": "in_scope",
+        "score": 0.663,
+        "source_key": "013d724c05e542526babda886fdf6de2dd21100a5c29c24f9498a81b2e945710",
+        "story_id": "arxiv:2610.09497",
+        "token_usage": {},
+        "topics": [
+          "Agents & Tool Use",
+          "Long Context & Memory",
+          "RAG & Knowledge"
+        ]
+      },
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-ai",
+        "tier": 1,
+        "title": "Ream: Unfolding Mutual Awareness in Human-Agent Workspaces",
+        "url": "https://arxiv.org/abs/2610.09497v1"
+      },
+      "published_at": "2026-10-07T05:52:15+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.663,
+        "llm_relevance_score": 18.564,
+        "recency_score": 0.721386761999768,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 26.48538676199977
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2610.09497",
+      "summary": "As AI agents work alongside humans in shared workspaces, a mutual awareness challenge arises: agents act at speeds that outpace human monitoring, and users' evolving interests are not always expressed in chat. This challenge is especially pressing in literature review, where both parties retrieve, read, and synthesize a growing body of papers. We present Ream, a literature review workspace that supports mutual awareness through structured artifacts, bidirectional engagement tracking, and localized visualizations. Users can see each party's activity within these documents, and agents can retrieve the same history to guide their work. In studies with eighteen researchers, participants used these traces to inspect evidence, steer agents, communicate through annotations, and reflect on their research focus. Shared histories also helped agents build on earlier work. These findings inform how engagement traces within shared documents can support transparency, personalized assistance, and coordination in human-agent knowledge work.",
+      "summary_en": "When agents search, read, and revise many documents, a long chat transcript makes their work difficult to follow, while the agents may miss the user's evolving focus. Ream represents papers, paper collections, and synthesis reports as shared artifacts. It records both parties' opens, reading, edits, annotations, and feedback. Users inspect activity in the file tree, reference chips, and per-file histories; agents query the same histories to continue work or propose next steps. Evidence quotes returned by the paper-reading tool are fuzzy-matched to PDF passages so users can check them in context.\n\nThe exploratory evaluation comprises an approximately hour-long lab study with twelve graduate researchers who frequently use coding agents and a separate one-week deployment with six researchers. Interviews and logs provide examples of checking sources, steering searches through annotations, reflecting on one's focus, and continuing another agent's work. Ten lab participants spontaneously requested continued access or an export of their reports. Proactive suggestions accounted for approximately 11.9% of user messages; this is not a suggestion-acceptance rate or evidence of improved efficiency or accuracy.\n\nThe bars sum only positive events and apply square-root normalization separately against the user's and agents' respective maxima among displayed files. Removals and downvotes remain signed events but do not subtract from these bars. Bar length consequently measures neither actual attention nor directly comparable human-versus-agent effort. Neither study has a control or ablation, participants are students, and a one-week deployment cannot establish durable benefits. The contribution is an inspectable, agent-retrievable collaboration interface. Ream source code, complete prompts, raw study logs, and questionnaire values were not obtained in this source packet; effectiveness beyond the studied domain remains untested.",
+      "summary_zh": "當代理同時搜尋、閱讀及改寫許多文件，使用者很難從長串聊天追蹤工作；代理也不一定知道人最近關注什麼。Ream 把論文、文獻集合與綜合報告做成共享文件，記錄雙方的開啟、閱讀、編輯、註記及評價，讓人從檔案樹、引用標記與逐檔歷史查看活動，代理則用工具查詢同一份歷史，延續工作或提出下一步建議。代理回答中的引文還會模糊匹配至 PDF 段落，方便回查證據。\n\n研究包含十二位常用程式代理的研究生約一小時實驗，以及另外六位研究者一週使用。訪談與紀錄呈現核對來源、以註記引導搜尋、自我反思及接續其他代理工作的例子；實驗中十人主動表示想繼續使用或匯出報告。主動建議約占使用者訊息的11.9%，這不是建議被接受的比例，也未證明提升效率或準確度。\n\n值得注意的是，長條圖只累加正向事件，分別按人與代理的最高活動量做平方根正規化；移除或負評仍有帶符號紀錄，但不是長條的扣分。長條因此不代表實際注意力，也不能直接比較雙方投入。兩項研究都沒有對照或消融，樣本集中於學生，一週部署不足以證明長期成效。本文價值在於可檢查、可供代理檢索的協作介面設計；程式碼、完整提示、原始紀錄與問卷數值未在本次來源中取得，跨領域效果仍待驗證。",
+      "title": "Ream: Unfolding Mutual Awareness in Human-Agent Workspaces",
+      "title_en": "Ream: Unfolding Mutual Awareness in Human-Agent Workspaces",
+      "title_zh": "Ream：在人機代理共享工作區中逐步建立相互覺察"
     }
-],
+  ],
   "radar": [
     {
       "arxiv_id": null,
@@ -3587,220 +4414,259 @@
   "run_date": "2026-10-08",
   "run_id": "assistant-review-2026-10-08",
   "run_info": {
-  "added_native_count": 4,
-  "added_reviewed_candidate_count": 4,
-  "addition_prepared_at_utc": "2026-10-10T10:42:00+00:00",
-  "addition_ranking_anchor_basis": "Frozen preparation time; not source collection cutoff or historical ranking time",
-  "addition_ranking_anchor_utc": "2026-10-10T10:42:00+00:00",
-  "combined_native_reranked": false,
-  "coverage_status": "partial",
-  "date_basis_by_story": {
-    "arxiv:2610.09008": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-08",
-      "event_timestamp_utc": null
+    "added_native_count": 7,
+    "added_reviewed_candidate_count": 9,
+    "addition_prepared_at_utc": "2026-10-10T12:52:00+00:00",
+    "addition_ranking_anchor_basis": "Existing separately ranked native subsets retained: 2026-10-10T11:26:00+00:00 and 2026-10-10T12:15:00+00:00; preparation time is not a rerank, collection cutoff or announcement event.",
+    "addition_ranking_anchor_utc": null,
+    "addition_ranking_anchors_utc": [
+      "2026-10-10T11:26:00+00:00",
+      "2026-10-10T12:15:00+00:00"
+    ],
+    "combined_native_reranked": false,
+    "coverage_status": "partial",
+    "date_basis_by_story": {
+      "arxiv:2610.09008": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-08",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.09237": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-08",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.09239": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-08",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.09348": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-08",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.09416": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-08",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.09426": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-08",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.09497": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-08",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.09560": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-08",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.09590": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-08",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.09600": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-08",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.09624": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-08",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.09667": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-08",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.09679": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-08",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.09681": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-08",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.09683": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-08",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.09769": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-08",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.09832": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-08",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.09856": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-08",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.09858": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-08",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.09964": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-08",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.09973": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-08",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.10042": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-08",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.10062": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-08",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.10071": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-08",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.10085": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-08",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.10088": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-08",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.10120": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-08",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.10164": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-08",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.10179": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-08",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.10184": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-08",
+        "event_timestamp_utc": null
+      },
+      "fallback:0ddbb9e0f2c52ee9": {
+        "date_basis": "preserved_prior_run_date_not_source_calendar_date",
+        "date_value": "2026-10-08",
+        "event_timestamp_utc": null
+      },
+      "fallback:27197ee6ace2a855": {
+        "date_basis": "preserved_prior_run_date_not_source_calendar_date",
+        "date_value": "2026-10-08",
+        "event_timestamp_utc": null
+      },
+      "fallback:2c85b6d8bd5c36fe": {
+        "date_basis": "preserved_prior_run_date_not_source_calendar_date",
+        "date_value": "2026-10-08",
+        "event_timestamp_utc": null
+      },
+      "fallback:388ecac8f14df6be": {
+        "date_basis": "preserved_prior_run_date_not_source_calendar_date",
+        "date_value": "2026-10-08",
+        "event_timestamp_utc": null
+      },
+      "fallback:41f0ae5f36ea2a07": {
+        "date_basis": "preserved_prior_run_date_not_source_calendar_date",
+        "date_value": "2026-10-08",
+        "event_timestamp_utc": null
+      },
+      "fallback:47298aa571e6f17a": {
+        "date_basis": "preserved_prior_run_date_not_source_calendar_date",
+        "date_value": "2026-10-08",
+        "event_timestamp_utc": null
+      },
+      "fallback:78cde6b7383a114d": {
+        "date_basis": "preserved_prior_run_date_not_source_calendar_date",
+        "date_value": "2026-10-08",
+        "event_timestamp_utc": null
+      },
+      "fallback:7961d818c65cc2cf": {
+        "date_basis": "preserved_prior_run_date_not_source_calendar_date",
+        "date_value": "2026-10-08",
+        "event_timestamp_utc": null
+      },
+      "fallback:95fce921bb8609ee": {
+        "date_basis": "preserved_prior_run_date_not_source_calendar_date",
+        "date_value": "2026-10-08",
+        "event_timestamp_utc": null
+      },
+      "fallback:9a7f4d9aa252c062": {
+        "date_basis": "preserved_prior_run_date_not_source_calendar_date",
+        "date_value": "2026-10-08",
+        "event_timestamp_utc": null
+      },
+      "fallback:b852c754e3db70a6": {
+        "date_basis": "preserved_prior_run_date_not_source_calendar_date",
+        "date_value": "2026-10-08",
+        "event_timestamp_utc": null
+      },
+      "fallback:bd580a273a2095bf": {
+        "date_basis": "preserved_prior_run_date_not_source_calendar_date",
+        "date_value": "2026-10-08",
+        "event_timestamp_utc": null
+      },
+      "fallback:d680ce9df7a05ee0": {
+        "date_basis": "preserved_prior_run_date_not_source_calendar_date",
+        "date_value": "2026-10-08",
+        "event_timestamp_utc": null
+      },
+      "fallback:f50afcd619d17203": {
+        "date_basis": "preserved_prior_run_date_not_source_calendar_date",
+        "date_value": "2026-10-08",
+        "event_timestamp_utc": null
+      }
     },
-    "arxiv:2610.09237": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-08",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.09239": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-08",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.09348": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-08",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.09416": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-08",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.09426": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-08",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.09590": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-08",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.09624": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-08",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.09679": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-08",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.09683": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-08",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.09832": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-08",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.09856": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-08",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.09858": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-08",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.09964": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-08",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.09973": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-08",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.10042": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-08",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.10062": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-08",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.10071": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-08",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.10085": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-08",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.10088": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-08",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.10120": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-08",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.10164": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-08",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.10179": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-08",
-      "event_timestamp_utc": null
-    },
-    "fallback:0ddbb9e0f2c52ee9": {
-      "date_basis": "preserved_prior_run_date_not_source_calendar_date",
-      "date_value": "2026-10-08",
-      "event_timestamp_utc": null
-    },
-    "fallback:27197ee6ace2a855": {
-      "date_basis": "preserved_prior_run_date_not_source_calendar_date",
-      "date_value": "2026-10-08",
-      "event_timestamp_utc": null
-    },
-    "fallback:2c85b6d8bd5c36fe": {
-      "date_basis": "preserved_prior_run_date_not_source_calendar_date",
-      "date_value": "2026-10-08",
-      "event_timestamp_utc": null
-    },
-    "fallback:388ecac8f14df6be": {
-      "date_basis": "preserved_prior_run_date_not_source_calendar_date",
-      "date_value": "2026-10-08",
-      "event_timestamp_utc": null
-    },
-    "fallback:41f0ae5f36ea2a07": {
-      "date_basis": "preserved_prior_run_date_not_source_calendar_date",
-      "date_value": "2026-10-08",
-      "event_timestamp_utc": null
-    },
-    "fallback:47298aa571e6f17a": {
-      "date_basis": "preserved_prior_run_date_not_source_calendar_date",
-      "date_value": "2026-10-08",
-      "event_timestamp_utc": null
-    },
-    "fallback:78cde6b7383a114d": {
-      "date_basis": "preserved_prior_run_date_not_source_calendar_date",
-      "date_value": "2026-10-08",
-      "event_timestamp_utc": null
-    },
-    "fallback:7961d818c65cc2cf": {
-      "date_basis": "preserved_prior_run_date_not_source_calendar_date",
-      "date_value": "2026-10-08",
-      "event_timestamp_utc": null
-    },
-    "fallback:95fce921bb8609ee": {
-      "date_basis": "preserved_prior_run_date_not_source_calendar_date",
-      "date_value": "2026-10-08",
-      "event_timestamp_utc": null
-    },
-    "fallback:9a7f4d9aa252c062": {
-      "date_basis": "preserved_prior_run_date_not_source_calendar_date",
-      "date_value": "2026-10-08",
-      "event_timestamp_utc": null
-    },
-    "fallback:b852c754e3db70a6": {
-      "date_basis": "preserved_prior_run_date_not_source_calendar_date",
-      "date_value": "2026-10-08",
-      "event_timestamp_utc": null
-    },
-    "fallback:bd580a273a2095bf": {
-      "date_basis": "preserved_prior_run_date_not_source_calendar_date",
-      "date_value": "2026-10-08",
-      "event_timestamp_utc": null
-    },
-    "fallback:d680ce9df7a05ee0": {
-      "date_basis": "preserved_prior_run_date_not_source_calendar_date",
-      "date_value": "2026-10-08",
-      "event_timestamp_utc": null
-    },
-    "fallback:f50afcd619d17203": {
-      "date_basis": "preserved_prior_run_date_not_source_calendar_date",
-      "date_value": "2026-10-08",
-      "event_timestamp_utc": null
-    }
+    "error_summary": "PARTIAL 部分更新：保留已發布37篇及原順序；原兩個獨立候選子集6選5、3選2，七篇按既有子集順序追加Papers。44篇與新增七篇均未合併重新排名；全日總量與收集截止時間未知。",
+    "finished_at": "2026-10-08T22:31:08.332250+00:00",
+    "full_day_candidate_total": null,
+    "items_total": null,
+    "preserved_baseline_body_sha256": "83a14457ca7eeda54df2370ab7fc2443964ec0dbb5ef6bc1a9ed7e14b5ebeb92",
+    "preserved_baseline_count": 37,
+    "preserved_baseline_kind": "published_approved",
+    "preserved_baseline_seal_sha256": "6e63e391cf9e7fb0baec54dd5cdffc558716e2d7ea837ce4a6b7f077fcb5a248",
+    "preview_only": false,
+    "prior_reviewed_total_count": null,
+    "release_scope_note": "7 additions from two separately ranked native pools (5 of 6, then 2 of 3 after the unchanged filter) are appended to Papers in their established subset order. All 37 published Oct8 baseline stories and section order are byte-preserved. Neither all 44 nor the seven additions were jointly reranked. Full-day totals, configured-query coverage, exact announcement events and collection cutoff remain unknown.",
+    "reviewed_selected_count": 44,
+    "reviewed_total_count": null,
+    "run_id": "assistant-review-2026-10-08",
+    "source_collection_cutoff_utc": null,
+    "started_at": "2026-10-08T22:31:08.160589+00:00",
+    "stories_total": 44,
+    "success": true,
+    "underlying_live_commit": "35689ec1ab7bd3a6783ed1422c2cbdf23ce40f9c"
   },
-  "error_summary": "PARTIAL 部分更新候選：保留已發布33篇及既有順序，本批4篇依原規則選4篇，按子集排名追加Papers。37篇未合併重新排名；全日總數與收集截止時間未知。",
-  "finished_at": "2026-10-08T22:31:08.332250+00:00",
-  "full_day_candidate_total": null,
-  "items_total": null,
-  "preserved_baseline_body_sha256": "8f6344708b83b0523c75d6c146eee4fc038515ac51477a4481b1fefb99b04f06",
-  "preserved_baseline_count": 33,
-  "preserved_baseline_kind": "published_approved",
-  "preserved_baseline_seal_sha256": "ae27524487cef68c494ef4e2fe82b11475ab172daaa03afbb224a51e921cf515",
-  "preview_only": false,
-  "prior_reviewed_total_count": null,
-  "release_scope_note": "4 new Oct8 selections from 4 reviewed candidates, after unchanged filtering, appended to Papers in separately ranked subset order; all 33 entries in the published baseline preserve their exact story bytes and section order. All 37 were not jointly reranked. Full-day totals and collection cutoff remain unknown.",
-  "reviewed_selected_count": 37,
-  "reviewed_total_count": null,
-  "run_id": "assistant-review-2026-10-08",
-  "source_collection_cutoff_utc": null,
-  "started_at": "2026-10-08T22:31:08.160589+00:00",
-  "stories_total": 37,
-  "success": true,
-  "underlying_live_commit": "b96c46d345572a5e600dd312c6200af1fbab9259"
-},
   "sources_status": [
     {
       "category": null,
