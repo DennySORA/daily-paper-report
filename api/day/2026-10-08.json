@@ -2363,6 +2363,440 @@
       "title": "Successive Training Stages and Large Language Model Persuasion: Effects of Misalignment, Supervised Fine-Tuning, and Preference Optimization",
       "title_en": "Successive Training Stages and Large Language Model Persuasion: Effects of Misalignment, Supervised Fine-Tuning, and Preference Optimization",
       "title_zh": "連續訓練階段與大型語言模型說服力：失準、監督式微調及偏好最佳化的影響"
+    },
+{
+      "arxiv_id": "2610.09683",
+      "authors": [],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-10-10T10:09:48.373253+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-ai",
+          "tier": 1,
+          "title": "System Switch: When Should a Fast Decision Model Stop and Think?",
+          "url": "https://arxiv.org/abs/2610.09683v1"
+        }
+      ],
+      "llm_evaluation": {
+        "candidate_sha256": "a3aaf16ce0e5375a809747bb3fd390055a080ede72d9a2f07c4a90cd91808cad",
+        "components": {
+          "evidence_strength": 0.68,
+          "generalizability": 0.42,
+          "novelty": 0.64,
+          "preference_relevance": 0.96,
+          "reproducibility": 0.55,
+          "rigor": 0.69
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "PDF pp.3–4 §§3–4: ViZDoom1.3.1/Freedoom2 with doomLaya b25edd3,35 tics/s and asynchronous requests every0.5s; previous command continues while pending. Five gates: confidence below.3/.65 for3 decisions; <48 units movement/5s without enemy;3/6 blocked commands;>=80% repeated command/15s; no new128-unit cell/15s. Commit ends on execution completion/impossibility, damage burst or45s. Thresholds use matched percentiles of test confidence.",
+          "PDF pp.3,5 Table1:900 questions from42 MAP01 games,seeds45–53 absent from training;600 commands balanced150 each over attack/collect/door/exit and300 weapon questions. CIs resample games. Rule oracle never chooses explore,retreat,wait. Training references use979 examples; existing130-question validation split has only5 door states among80 command questions.",
+          "PDF pp.4–5/Table1: nine zero-shot actors spanning.15B–9B; most collect on1.6–1.8 times the uniform-wrong-option expectation, but Kev0.8B is1.1 fixed and shuffled Julia drops to.9. Strands fixed/shuffled command accuracy.59/.38; Kev9B.60/.50; Laya base.56/.49; first correct option41% fixed versus14% shuffled reported for Strands comparison. Ratios are error-conditional and option-count adjusted, not raw selection frequencies.",
+          "PDF p.6/Table2: base Laya overall AUROC.89[.85,.92] but within-gold-category.52[.40,.63]; typed Laya.77 and.65. Kev9B and Strands command accuracy.60/.59 but overall AUROC.61/.60 with CIs including.5. ECE15bins and AUROC measure different properties; type2 AUROC also depends on task accuracy. Fixed-order grouping yields useful deferral but does not establish item-specific self-knowledge.",
+          "PDF pp.6–7:Table2 shuffled AUROC Julia.44,Strands.52,Kev0.8B.77; p7 text gives.52–.77 among zero-shot models, omitting Julia. Full nine-model range from the table is.44–.77. Detailed values govern this review; not a new experimental discrepancy claim.",
+          "PDF p.7/Table3/Figure1: base Laya.56 alone, confidence deferral to Qwen reasoning.75 at30%, random-deferral gain+.15[.11,.19]; hindsight actor-error selector.76. Difference to thinker alone.69 is+.06[−.02,.11] onp8, not significant superiority or an equivalence/noninferiority proof. The actor-error selector is not a proven global optimum over actor/thinker outcomes.",
+          "PDF p.8/§5.3:42 games split into halves500 times; select actor by AUROC among9zero-shot actors and rate10–50% on one half,evaluate on other. Base Laya selected489/500. Gain over random+.13[.08,.18]; against better standalone+.05[−.12,.11]. Shuffled-actor/fixed-thinker variant+.08[.02,.14] over random and−.05[−.13,.02] against thinker. These repeated splits reuse one dataset,not independent replications.",
+          "PDF pp.7–8:rank correlation.87 between AUROC and30%-deferral gain across18 dependent actor/order pairs. Disabling Qwen reasoning reduces fixed-order Laya gain over random from.15 to.07,about53% of that gain. Gemma reasoning alone.50,cascade.67 at30%,random gain.13. doomGemma.86 alone falls to.84/.83 at30/50% deferral despite positive random-relative gain; relative-to-random is not relative-to-actor improvement.",
+          "PDF pp.4–5,8,11:reasoning budget4000tokens; Qwen13/600 and Gemma199/600 nonanswers count wrong offline,where thinker sees text only. Loop adds frame and fallback to no-reasoning answers. Fallback lifts standalone Qwen.69→.71,Gemma.50→.61;30%-cascade.75/.69. Median1300reasoning tokens/decision makes naive30% routing incompatible with0.5s real-time decisions; no equal-compute or dollar-cost comparison.",
+          "PDF pp.8–9/Table4:33games=11settings×3seeds48–50,180s each,MAP01,no exit. Typed actor off77cells/5.3doors/.7deaths; bare61/5.0/.7; committed all83/8.0/1.3; fixed explore83/9.7/2.7. Base off1cell/0doors/0deaths; committed66/8.7/.7; rule81/9.0/3.7. Descriptive means without loop CIs; deaths per game are not mortality probabilities.",
+          "PDF pp.8–10:bare versus committed variants also alter basics,forbid-repeats and minimum5s plan,so no isolated commitment effect. Rule uses same gate/commit but guided decisions77% versus26% typed and79% versus32% base,with near-immediate fixed output rather than slow reasoning. Base-rule hardware differs; one check game of actor-only is reported identical but does not establish hardware/latency equivalence.",
+          "PDF p.9:all25failed plans in three gate variants blocked on ordinary doors; thinker chooses open_door once and asserts missing key in17/25thoughts. State marks closed/not locked and only reveals keys within12m. No-basics eliminates key mentions but45%thoughts collect. No-image9/16thoughts exceed budget; its median29s versus4s bare and6s no-basics. With basics/commit,thinker busy38–70%,frame age medians9–29s,one thought up to32s onp11.",
+          "PDF pp.9–11 §§5.4–7:single-seed MAP01/MAP02 pilot uses abliterated Qwen and changes several settings together; main experiments use official weights. Thoughts are not systematically checked for faithfulness. Does not compare one model in two modes against two models; no demonstrated exit progress or robust survival advantage. References onpp.11–14 were read as citations,not independently verified sources.",
+          "PDF p.11 Reproducibility:author reports github.com/dexmac221/system-switch provides switch,bridge,test builder,analysis scripts,patches,testsets,per-question actor/thinker records and game logs; videos from author. Repository,data,prompts,logs and videos were not acquired or executed for this review. All14in-file pages are present,with no in-file appendix or numbered mathematical equation missing."
+        ],
+        "fulltext_sha256": "25cadb25ef86c8d9738d29f021f3d2cc5a2512806c5f896a76e0d91ce9a59ce6",
+        "fulltext_status": "complete",
+        "model": "assistant-native-review",
+        "native_identity_version": 1,
+        "original_candidate_sha256": "a3aaf16ce0e5375a809747bb3fd390055a080ede72d9a2f07c4a90cd91808cad",
+        "out_of_scope": false,
+        "producer": "assistant-native-review",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "This strongly matches language agents, reasoning routing and real-time inference cost; Doom is a testbed rather than a pure game-control or vision-only contribution. The contribution integrates fast non-generative decisions, event-triggered reasoning and persistent plans while the environment continues, and separates accuracy, calibration and error sensitivity. Deferral, progress triggers and asynchronous dual systems have substantial precedents, so novelty lies mainly in the concrete integration and diagnosis. The 900 questions come from 42 games; game-level interval resampling respects correlated questions. Five hundred repeated game-half selection splits address some test-selection optimism, but reuse the same data pool and are not 500 independent replications. The supported result is improvement over equal-rate random deferral, not superiority to both standalone models; correlation across 18 actor/order pairs is also dependent, single-domain evidence. Because the oracle never chooses exploration, retreat or waiting, offline accuracy cannot substitute for completing a game. The loop has one map, three seeds and 33 games with no exits. A fixed exploration control usefully challenges attributing coverage to thought content, but different latency and plan-guided exposure prevent an equal-intervention reasoning ablation. Bare versus committed variants also change knowledge, repeat restrictions and minimum plan duration, so commitment alone is not causally isolated. Death means lack uncertainty estimates and do not establish a survival advantage. Seventeen missing-key explanations identify a concrete failure under a state representation that cannot distinguish locked from ordinary doors; verbalized thoughts are not systematically validated as faithful. Shuffling affects actors only, with thinker answers retained from fixed order, and uncertainty thresholds use test-set percentiles. Page 7 omits Julia's .44 from its stated shuffled-AUROC range; the abstract's collection-bias generalization also has Kev0.8B and shuffled-Julia exceptions, so this review follows the detailed table/text. Hardware, some commits and script names are supplied, but full prompts, per-question records, model-file revisions and code availability require external artifacts that were not acquired or executed here. Overall this is a useful, candid diagnostic agent study with limited generalization.",
+        "rationale_en": "This strongly matches language agents, reasoning routing and real-time inference cost; Doom is a testbed rather than a pure game-control or vision-only contribution. The contribution integrates fast non-generative decisions, event-triggered reasoning and persistent plans while the environment continues, and separates accuracy, calibration and error sensitivity. Deferral, progress triggers and asynchronous dual systems have substantial precedents, so novelty lies mainly in the concrete integration and diagnosis. The 900 questions come from 42 games; game-level interval resampling respects correlated questions. Five hundred repeated game-half selection splits address some test-selection optimism, but reuse the same data pool and are not 500 independent replications. The supported result is improvement over equal-rate random deferral, not superiority to both standalone models; correlation across 18 actor/order pairs is also dependent, single-domain evidence. Because the oracle never chooses exploration, retreat or waiting, offline accuracy cannot substitute for completing a game. The loop has one map, three seeds and 33 games with no exits. A fixed exploration control usefully challenges attributing coverage to thought content, but different latency and plan-guided exposure prevent an equal-intervention reasoning ablation. Bare versus committed variants also change knowledge, repeat restrictions and minimum plan duration, so commitment alone is not causally isolated. Death means lack uncertainty estimates and do not establish a survival advantage. Seventeen missing-key explanations identify a concrete failure under a state representation that cannot distinguish locked from ordinary doors; verbalized thoughts are not systematically validated as faithful. Shuffling affects actors only, with thinker answers retained from fixed order, and uncertainty thresholds use test-set percentiles. Page 7 omits Julia's .44 from its stated shuffled-AUROC range; the abstract's collection-bias generalization also has Kev0.8B and shuffled-Julia exceptions, so this review follows the detailed table/text. Hardware, some commits and script names are supplied, but full prompts, per-question records, model-file revisions and code availability require external artifacts that were not acquired or executed here. Overall this is a useful, candid diagnostic agent study with limited generalization.",
+        "rationale_zh": "高度相關於語言代理、推理路由與即時推論成本，雖以Doom為例，核心不是純遊戲控制或視覺應用。貢獻在把快速非生成式決策、事件觸發推理與多步計畫放入不暫停的環境，並清楚拆分準確率、校準及對錯敏感度；信心分流、停滯觸發和非同步雙系統已有前作，因此新意主要是具體整合與診斷。九百題來自四十二局，按遊戲重抽信賴區間優於把相關題目當獨立樣本；五百次按遊戲分半選擇也修正部分測試集挑選樂觀偏差，但仍重用同一資料池，不能視為五百次獨立複驗。可靠結論是勝過同轉交比例的隨機分流，而非勝過兩個單模型；十八個模型／順序對的相關係數也不是獨立跨領域證據。規則標註器不選探索、退卻或等待，使離線正確率不能替代通關。閉環只有一張地圖、三種子、三十三局且零通關；固定探索控制有助排除把探索收益全歸給思考，但不同延遲及計畫控制占比使它並非等量介入的純推理消融。bare與commit版本還同時改知識、重複限制和最短計畫，無法單獨估計commit因果效應。死亡均值差未報不確定度，不能把較少死亡寫成確定存活優勢。狀態不區分上鎖／普通門，十七次缺鑰匙判斷提供具體失敗線索，但文字思考未作系統性忠實度驗證。打亂選項只作用於執行者，推理器仍用固定順序；低信心門檻也取自測試集分位。p7範圍文字漏列Julia的.44，摘要對收集偏差的概括也有Kev0.8B及打亂後Julia例外，評審以細表為準。硬體、部分commit與腳本名稱有交代，但完整提示、逐題原始資料、模型檔案revision和程式可用性仍需外部包；本次未取得或執行。整體是有價值、證據坦誠但泛化有限的診斷性代理研究。",
+        "raw_weighted_score": 0.755,
+        "request_sha256": "32e78b4cee77017737d7ff9198f61d34916fe9c3d3a18f2d77bec40934282075",
+        "review_sha256": "a13ef23aed8f15ab70b54b2bb5957ef5c178829e527329fd64c0a5707f56dc78",
+        "scope_assessment": {
+          "decision": "in_scope_language_agent_reasoning_routing",
+          "reason": "General language-agent confidence routing and asynchronous reasoning methodology, studied in Doom; not a pure game, robotics or visual-perception application."
+        },
+        "scope_capped_score": null,
+        "scope_policy_version": "explicit-review-exclusion-v1",
+        "scope_status": "in_scope",
+        "score": 0.755,
+        "source_key": "378ec021350de2572c4e817950cc6eaa04e3143249778fb885ad0f949d622cfa",
+        "story_id": "arxiv:2610.09683",
+        "token_usage": {},
+        "topics": [
+          "Large Language Models",
+          "Reasoning & Chain-of-Thought",
+          "Agents & Tool Use",
+          "Red Teaming & Evaluation",
+          "Inference & Serving"
+        ]
+      },
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-ai",
+        "tier": 1,
+        "title": "System Switch: When Should a Fast Decision Model Stop and Think?",
+        "url": "https://arxiv.org/abs/2610.09683v1"
+      },
+      "published_at": "2026-10-07T08:44:47+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.755,
+        "llm_relevance_score": 21.14,
+        "recency_score": 0.7348124030472879,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 29.07481240304729
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2610.09683",
+      "summary": "Dual-process agents pair a fast policy with a slow deliberative model. In real-time settings the slow model usually runs continuously; in turn-based agents and robot planners it is invoked on events such as uncertainty or a detected failure. We study a fast learned actor that takes every decision and hands control to a reasoning vision-language model only when a gate opens, while the game keeps running. We use closed-loop Doom and the new open \"System One\" typed-decision models, served through a common llama.cpp interface. On 900 held-out questions, (i) zero-shot decision models from 0.15B to 9B parameters choose to collect items 1.6-1.8 times more often than chance among their errors, in any option order, although the order changes some models' accuracy; (ii) accuracy, calibration and sensitivity (how well confidence separates right from wrong answers) are distinct: models of similar accuracy differ widely in AUROC, and the confidence of the most sensitive one tracks which kinds of situation it fails, not which answers are wrong; (iii) offline, deferring the least confident 30% of decisions to a reasoning model gains over random deferral in proportion to the actor's AUROC (rank correlation 0.87); with actor and rate chosen on held-out games the gain is +0.13 [0.08, 0.18] with doomLaya's option order and +0.08 [0.02, 0.14] with shuffled options, and reasoning carries about half of it; (iv) in closed loop (33 games, three seeds) no variant reaches the exit. Committing to plans, the reasoner's or a fixed explore rule's, opens more doors and makes an actor that stands still play; with the rule the agent dies more often. Told that some doors need keys, the reasoner takes ordinary doors for locked ones, which the state cannot tell apart; without that knowledge it goes back to collecting. We release code, prompts, data and logs.",
+      "summary_en": "Can a small model act quickly while a larger model thinks only when it gets stuck? System Switch connects typed-decision actors to an asynchronous vision-language reasoner. Low confidence, stalled movement, blocked commands, repeated actions and lack of exploration trigger thinking. The game continues meanwhile, and the resulting plan can control multiple steps.\n\nA rule-based oracle labels 900 Doom questions. When actors and deferral rates are selected on separate games, confidence-based routing improves accuracy over random routing by 13 and 8 percentage points for fixed-order and shuffled-order actors, respectively; the latter still uses fixed-order thinker answers. This does not establish superiority to the better standalone model. Base Laya confidence mainly distinguishes easy from difficult situation categories, rather than correct from incorrect answers within a category.\n\nNone of the 33 closed-loop games, with three seeds per setting, reaches the exit. A fixed exploration rule achieves comparable or greater coverage. Reasoning variants average fewer deaths, but the tiny sample cannot establish that advantage. With game basics and persistent plans, the median age of the frame when a plan starts ranges from 9 to 29 seconds across settings; the offline oracle never rewards exploration. The paper usefully separates confidence, plan persistence and state-information bottlenecks; its external code and data were not verified, and it does not establish a general real-time agent solution.",
+      "summary_zh": "小模型快速行動，大模型只在卡住時思考，真的能兼顧速度與能力嗎？System Switch把型別化決策模型接上非同步視覺語言推理器，以低信心、移動停滯、指令受阻、重複行動及探索不足觸發；思考期間遊戲仍繼續，產出的計畫可持續控制多個步驟。\n\n研究用同一規則標註器建立九百題Doom測試集。按遊戲分割資料來選模型與轉交比例後，信心分流比隨機分流的答題正確率高十三及八個百分點，分別對應固定與打亂選項的執行者；後者的推理器仍看固定順序。這未證明組合勝過較佳的單一模型。Laya基礎版的信心主要辨識容易或困難的情境類別，並不能可靠區分類別內的對錯。\n\n真正閉環的三十三局、每設定三個種子，全部未通關。固定探索規則也能達到相近或更大的探索範圍；推理版本平均死亡較少，但樣本太小，尚不足以確立優勢。含基本知識並持續執行計畫的各設定中，計畫開始時畫面已過時的中位數為九至二十九秒；規則答案又從不獎勵探索，凸顯離線分數與實際任務的落差。這篇的價值是拆出信心、計畫持續性與狀態資訊的瓶頸；外部程式及資料未核實，不是已驗證的通用即時代理方案。",
+      "title": "System Switch: When Should a Fast Decision Model Stop and Think?",
+      "title_en": "System Switch: When Should a Fast Decision Model Stop and Think?",
+      "title_zh": "System Switch：快速決策模型何時該停下來思考？"
+    },
+{
+      "arxiv_id": "2610.09416",
+      "authors": [],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-10-10T10:11:40.222020+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-ai",
+          "tier": 1,
+          "title": "Efficient Reasoning with Flow Language Models",
+          "url": "https://arxiv.org/abs/2610.09416v1"
+        }
+      ],
+      "llm_evaluation": {
+        "candidate_sha256": "781d0025f6bebf69b8603ade8737a2eff77fb03a8d6f9aaca01ca8beaa0f09b9",
+        "components": {
+          "evidence_strength": 0.69,
+          "generalizability": 0.43,
+          "novelty": 0.68,
+          "preference_relevance": 0.94,
+          "reproducibility": 0.56,
+          "rigor": 0.62
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "pp.2–4 Eqs.1–14 and AppendixC pp.15–24: Gaussian-to-one-hot interpolation, clean-token CE, ODE integral representation, fixed-hard-state intervention decomposition and decoder BCE bounds with excess-risk terms.",
+          "p.17 AppendixC1.3–C1.4: instantaneous complete-sequence weights are products of token marginals; the decomposition is not a learned general joint distribution over valid solutions; positive attention is structural accessibility.",
+          "p.5 Table1: Maze15 N=1 FLM 95.9 versus best discrete 52.6; Maze20 N=1 FLM 71.4 versus 35.6; Maze10 N=2 SEDD-entropy 99.7 exceeds FLM 99.5; Maze20 N=128 MDLM-confidence 94.7 exceeds FLM 92.6.",
+          "pp.6–7 Figs.1–2 and p.29 Table9: Maze15 at64 nominal steps reaches95% with88.25M FLM versus 139M MDLM; smaller Maze10/20 configurations exhibit high-budget reversals.",
+          "p.7 Table2: Sudoku Extreme/Standard FLM N=1 is21.0/29.5 and N=2 is36.7/41.4; at 64 steps FLM 43.9/50.5 trails best discrete60.2/64.1. Main accuracy tables lack training-seed dispersion.",
+          "p.8 Figs.3–4: accumulated versus instantaneous Sudoku candidate retention23.8/4.9% at t=.8; selected rank-two correct-digit comeback cells; digit-soft, Top2 and Top1 interventions with/without renormalization, cell-level recovery endpoint.",
+          "p.9 Table3 and p.27 D2.3: matched9×9 local probes,512/128/128 disjoint instances,38,177 parameters,480 updates and3 probe seeds; raw F1 worse at k=0/1, advantage.2151 at k=4 and near-zero late. Training uses weighted BCE, evaluation unweighted BCE/F1; table reports F1.",
+          "pp.22–24 Corollary1 and proof of Theorem3: hard-state preservation additionally requires alpha<gamma/(1+gamma); nested representations and conditional risks do not make finite matched decoders Bayes-optimal.",
+          "pp.24–26 D1 and Tables4–6: layout-deduplicated tree mazes10k train/1k test, fixed generation/shuffle seeds,31-token vocabulary; Sudoku Extreme first1M/next1k/next1k; Standard zero-shot subset not fully specified; maze training1000 versus 2000 epochs.",
+          "pp.27/29 D2.2/D5: FLM exactly N forward evaluations with1e-5 denominator stabilization and final clean-prediction overwrite; standard discrete N+1, confidence-remasking N=1/64 uses 2/128. Nominal steps are not matched NFE.",
+          "pp.27–28 D3 Tables7–8:898 original eligible events including261 correct candidates;232/261 positive responses;181 additional events including48 correct,47/48 positive;20,000 problem-cluster bootstrap draws; signed Q/K/V/residual decomposition and margin endpoint.",
+          "p.5 Table1 versus p.29 Table9: Maze10 59.11M MDLM ten-step accuracy series disagree, e.g.87.5 versus87.2 at1,96.3 versus95.2 at16 and98.3 versus98.6 at512; unidentified run lineage, no silent correction.",
+          "pp.29–30 D5 Table10:32 shared examples, A10080GB FP32/TF32-off batch1,2 warmups and synchronization; sampler-only timings exclude data/scoring; some random-weight baselines and fixed AR generation lengths; FLM0.013/0.656s versus MDLM0.023/0.693s on Maze10 at1/64."
+        ],
+        "fulltext_sha256": "724ee034c462fc0cc3d519bfcce55a907e79a1aea8d63efe2b1c45a1af949ab9",
+        "fulltext_status": "complete",
+        "model": "assistant-native-review",
+        "native_identity_version": 1,
+        "original_candidate_sha256": "781d0025f6bebf69b8603ade8737a2eff77fb03a8d6f9aaca01ca8beaa0f09b9",
+        "out_of_scope": false,
+        "producer": "assistant-native-review",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "This is relevant language-model methodology, with character-serialized puzzles used to isolate soft versus discrete reasoning states. The central contribution is the combination of an accumulated-candidate representation, fixed-hard-state interventions and probing. It is not a demonstration of natural-language reasoning improvement or a new flow-matching objective. The model predicts clean-token probabilities from a Gaussian-to-one-hot path and retains a continuous state until final argmax.\n\nTheorem1 follows by an integrating factor along the realized ODE trajectory: Z_t=(1-t)Z_0+t Ebar_t for 0<t<1. Ebar_t is a convex mixture of complete one-hot sequences, built from instantaneous products of token marginals. AppendixC explicitly says this does not mean storing a general joint distribution over complete valid solutions. Consequently, geometric coexistence and positive attention weights establish availability, not coherent path search, use of all alternatives, correctness or a speedup theorem. Theorem2 carefully preserves hard outputs while lowering one strict nonwinner and decomposes a scalar margin derivative into Q/K attention reweighting, V transmission and residual-interface terms. These terms can cancel or have either sign. Its tight oscillation/2 approximation bound applies to one fixed intervention path, context and time. The Euler corollary has a small-step winner-gap condition; it does not guarantee behavior of every practical sampling step. Theorem3 bounds population unweighted BCE with explicit decoder excess-risk terms. Matching a finite decoder's architecture and updates does not equalize those terms, and the theorem does not directly bound the reported F1.\n\nEmpirically, the strongest result is few-step maze accuracy. Table1 gives Maze15 FLM 95.9% versus the best discrete 52.6% at N=1, and Maze20 FLM 71.4% versus 35.6%, gains of 43.3 and 35.8 percentage points. At N=64 on Maze15, the smallest tested FLM exceeding95% has 88.25M parameters versus 139.00M for MDLM, a 36.51% reduction among tested capacities. Neither result is universal: Maze10 at N=2 favors SEDD-entropy 99.7 over FLM 99.5; Maze20 at N=128 favors MDLM-confidence 94.7 over FLM 92.6. Small Maze10/20 models are overtaken by MDLM at larger budgets. Sudoku's best discrete competitors trail FLM only slightly or tie at N=1/2 and generally lead from N=16 onward; at 64 steps the Extreme/Standard scores are 60.2/64.1 versus FLM 43.9/50.5. Main task tables do not report training-seed variability or confidence intervals, so the small Sudoku margins are especially uncertain. Table1 and Table9 give ten different Maze10 59.11M MDLM values without a clear run/checkpoint explanation; both series are preserved rather than silently reconciled.\n\nCompute accounting is a material qualification. Appendices D2.2/D5 state FLM uses exactly N neural evaluations, standard discrete implementations N+1 including terminal noise removal, and confidence remasking uses 2 calls at N=1 and 128 at N=64. Thus equal nominal steps are not equal denoiser evaluations, FLOPs or runtime. The FLM advantage despite fewer calls can still be useful, but it is not a cost-matched causal comparison. The single-step result also cannot be attributed to information accumulated over multiple previous predictions. Maze FLM training uses 1000 epochs versus 2000 for discrete baselines, not equal training compute; objective, noise and decoding differences remain. Table10 measures sampler-only GPU time on one A10080GB, batch1 and 32 shared instances, without dispersion, excluding data and scoring. Some baseline timings use random weights, and AR CoT uses fixed generation lengths with EOS stopping disabled. FLM is fastest in the reported N=1 measurements, but is not uniformly fastest at N=64.\n\nMechanistic evidence is informative but bounded. Figure3 reports 23.8% accumulated candidate retention versus 4.9% instantaneous at t=.8, an association rather than a usefulness test. Figure4 selects comeback cells whose correct digit is initially ranked second: deleting it with Top1 hurts recovery. Digit-soft feasible-candidate controls and renormalized/unrenormalized variants are helpful, yet the selected cell cohort and unequal perturbation magnitudes do not establish an unconfounded full-puzzle causal effect or exclude every off-distribution artifact. Table3's matched local decoders show raw-minus-hard path F1 peaking at .2151 at k=4, with raw worse at k=0/1 and nearly equal late. Three seeds concern the probes, not the main trained-model result; no table dispersion or population-optimal decoding is established. The printed k=6 difference .0024 versus .9158-.9135=.0023 is compatible with underlying-value rounding and is not treated as a substantive contradiction.\n\nAppendixD3 more directly intervenes on correct retained candidates: 232/261 original and 47/48 additional cases have positive margin response. Problem-clustered bootstrap intervals are supplied, a strength, but one additional group has only five candidates and the outcome is a next-prediction margin rather than final task success. Signed Q/K/V/residual integrals must not be read as nonnegative shares; a small K mean is not proof that keys are unused. Dataset generation and deduplication are fairly explicit for tree mazes. Sudoku Extreme uses a contiguous one-million/one-thousand/one-thousand split; the exact Standard test subset and a cross-source overlap audit are unclear. Related HRM/TRM puzzle reasoners are discussed but not quantitatively compared. No author implementation, checkpoint or raw experimental output was acquired or executed. The 0.7455 weighted score rewards a well-aligned and experimentally substantial low-step result while discounting incomplete compute normalization, restricted generalization, table inconsistency and limited reproducibility. Source completeness is a multiplier of1, not a scientific-confidence probability.",
+        "rationale_en": "This is relevant language-model methodology, with character-serialized puzzles used to isolate soft versus discrete reasoning states. The central contribution is the combination of an accumulated-candidate representation, fixed-hard-state interventions and probing. It is not a demonstration of natural-language reasoning improvement or a new flow-matching objective. The model predicts clean-token probabilities from a Gaussian-to-one-hot path and retains a continuous state until final argmax.\n\nTheorem1 follows by an integrating factor along the realized ODE trajectory: Z_t=(1-t)Z_0+t Ebar_t for 0<t<1. Ebar_t is a convex mixture of complete one-hot sequences, built from instantaneous products of token marginals. AppendixC explicitly says this does not mean storing a general joint distribution over complete valid solutions. Consequently, geometric coexistence and positive attention weights establish availability, not coherent path search, use of all alternatives, correctness or a speedup theorem. Theorem2 carefully preserves hard outputs while lowering one strict nonwinner and decomposes a scalar margin derivative into Q/K attention reweighting, V transmission and residual-interface terms. These terms can cancel or have either sign. Its tight oscillation/2 approximation bound applies to one fixed intervention path, context and time. The Euler corollary has a small-step winner-gap condition; it does not guarantee behavior of every practical sampling step. Theorem3 bounds population unweighted BCE with explicit decoder excess-risk terms. Matching a finite decoder's architecture and updates does not equalize those terms, and the theorem does not directly bound the reported F1.\n\nEmpirically, the strongest result is few-step maze accuracy. Table1 gives Maze15 FLM 95.9% versus the best discrete 52.6% at N=1, and Maze20 FLM 71.4% versus 35.6%, gains of 43.3 and 35.8 percentage points. At N=64 on Maze15, the smallest tested FLM exceeding95% has 88.25M parameters versus 139.00M for MDLM, a 36.51% reduction among tested capacities. Neither result is universal: Maze10 at N=2 favors SEDD-entropy 99.7 over FLM 99.5; Maze20 at N=128 favors MDLM-confidence 94.7 over FLM 92.6. Small Maze10/20 models are overtaken by MDLM at larger budgets. Sudoku's best discrete competitors trail FLM only slightly or tie at N=1/2 and generally lead from N=16 onward; at 64 steps the Extreme/Standard scores are 60.2/64.1 versus FLM 43.9/50.5. Main task tables do not report training-seed variability or confidence intervals, so the small Sudoku margins are especially uncertain. Table1 and Table9 give ten different Maze10 59.11M MDLM values without a clear run/checkpoint explanation; both series are preserved rather than silently reconciled.\n\nCompute accounting is a material qualification. Appendices D2.2/D5 state FLM uses exactly N neural evaluations, standard discrete implementations N+1 including terminal noise removal, and confidence remasking uses 2 calls at N=1 and 128 at N=64. Thus equal nominal steps are not equal denoiser evaluations, FLOPs or runtime. The FLM advantage despite fewer calls can still be useful, but it is not a cost-matched causal comparison. The single-step result also cannot be attributed to information accumulated over multiple previous predictions. Maze FLM training uses 1000 epochs versus 2000 for discrete baselines, not equal training compute; objective, noise and decoding differences remain. Table10 measures sampler-only GPU time on one A10080GB, batch1 and 32 shared instances, without dispersion, excluding data and scoring. Some baseline timings use random weights, and AR CoT uses fixed generation lengths with EOS stopping disabled. FLM is fastest in the reported N=1 measurements, but is not uniformly fastest at N=64.\n\nMechanistic evidence is informative but bounded. Figure3 reports 23.8% accumulated candidate retention versus 4.9% instantaneous at t=.8, an association rather than a usefulness test. Figure4 selects comeback cells whose correct digit is initially ranked second: deleting it with Top1 hurts recovery. Digit-soft feasible-candidate controls and renormalized/unrenormalized variants are helpful, yet the selected cell cohort and unequal perturbation magnitudes do not establish an unconfounded full-puzzle causal effect or exclude every off-distribution artifact. Table3's matched local decoders show raw-minus-hard path F1 peaking at .2151 at k=4, with raw worse at k=0/1 and nearly equal late. Three seeds concern the probes, not the main trained-model result; no table dispersion or population-optimal decoding is established. The printed k=6 difference .0024 versus .9158-.9135=.0023 is compatible with underlying-value rounding and is not treated as a substantive contradiction.\n\nAppendixD3 more directly intervenes on correct retained candidates: 232/261 original and 47/48 additional cases have positive margin response. Problem-clustered bootstrap intervals are supplied, a strength, but one additional group has only five candidates and the outcome is a next-prediction margin rather than final task success. Signed Q/K/V/residual integrals must not be read as nonnegative shares; a small K mean is not proof that keys are unused. Dataset generation and deduplication are fairly explicit for tree mazes. Sudoku Extreme uses a contiguous one-million/one-thousand/one-thousand split; the exact Standard test subset and a cross-source overlap audit are unclear. Related HRM/TRM puzzle reasoners are discussed but not quantitatively compared. No author implementation, checkpoint or raw experimental output was acquired or executed. The 0.7455 weighted score rewards a well-aligned and experimentally substantial low-step result while discounting incomplete compute normalization, restricted generalization, table inconsistency and limited reproducibility. Source completeness is a multiplier of1, not a scientific-confidence probability.",
+        "rationale_zh": "本文屬於語言模型方法研究，以字元序列化的迷宮與數獨隔離連續及離散推理狀態。核心貢獻是候選歷史表示、保持硬輸出不變的干預，以及解碼探測的結合；它沒有展示自然語言推理進步，也不是新的流匹配訓練目標。模型從高斯雜訊到one-hot的路徑預測乾淨詞元機率，保留連續狀態，最後才取argmax。\n\n定理1沿實際ODE軌跡使用積分因子，得到0<t<1時的Z_t=(1-t)Z_0+t Ebar_t。Ebar_t是完整one-hot序列的凸組合，其瞬時權重來自各詞元邊際機率的乘積。附錄C明確提醒，這不等於保存所有合法完整解的一般聯合分布。因此幾何共存與正注意力權重只表示訊息可及，不能證明一致的路徑搜尋、使用所有候選、推理正確或加速。定理2降低一個嚴格非首位候選時，硬輸出保持不變，並把預測邊際的導數拆為Q/K重加權、V傳遞及其餘介面項；各項可正可負，也能互相抵銷。其振幅一半的緊界限針對固定時間、脈絡和干預路徑。Euler推論需要步長相對勝者差距夠小，並非所有實際取樣步都適用。定理3是含解碼器超額風險的母體未加權BCE界；相同架構和更新次數不保證超額風險相等，也不能直接推出F1界限。\n\n最強實證是少步迷宮。表1在N=1時，Maze15的流模型95.9%對最佳離散基準52.6%，Maze20為71.4%對35.6%，分別高43.3與35.8個百分點。Maze15在N=64達95%門檻，所測最小流模型88.25M，MDLM需139.00M，約少36.51%參數；這僅限已測容量。並非每處都勝出：Maze10在N=2是SEDD-entropy的99.7%高於流模型99.5%，Maze20在N=128是MDLM-confidence的94.7%高於92.6%。較小Maze10與Maze20模型在高步數也會被MDLM超越。數獨在N=1/2只小幅領先最佳離散方法或平手，從N=16起通常落後；N=64的Extreme與Standard最佳離散成績60.2/64.1%，流模型只有43.9/50.5%。主表沒有跨訓練種子變異或信賴區間，小幅領先尤其不確定。表1與表9的Maze10 59.11M MDLM十個數值全部不同，沒有清楚的執行或檢查點對應，本評審保留兩組而不擅自合併。\n\n計算預算是重要限制。附錄D2.2/D5說流模型做N次神經網路求值，一般離散實作含末端去雜訊共N+1次，信心重遮罩在N=1做2次、N=64做128次。因此相同步數不等於相同模型求值、FLOPs或耗時。流模型用較少呼叫仍勝出可能有用，但不是完全等成本的因果比較。單步優勢也不能歸因於多輪過去預測的累積。迷宮訓練為流模型1000期、離散基準2000期，且目標、雜訊及解碼方式不同。表10在單張A10080GB、batch1、32個共同題目測取樣器耗時，沒有變異資訊，排除資料處理與評分；部分基準用隨機權重，AR CoT固定生成長度並關閉EOS提早終止。流模型在所報單步計時最快，但64步不是全面最快。\n\n機制證據有價值但有邊界。圖3在t=.8的歷史保留23.8%對瞬時4.9%，屬關聯而非效用驗證。圖4刻意選出真值原列第二的回復格，Top1刪去真值後恢復率下降。Digit-soft保留可行候選、重正規化與不重正規化等控制有幫助，但特選群體與不同擾動幅度，仍不能確立完整解成功的無混淆因果效果或排除一切分布外干擾。表3相同局部解碼器在k=4的raw-minus-hard路徑F1差達0.2151；raw在k=0/1反較差，晚步近乎相同。三種子指探測器，非主要訓練模型，表中沒有離散程度，也不是母體最優解碼。k=6列出的差0.0024與四位小數相減0.0023，可以由未四捨五入值造成，不列為實質矛盾。\n\n附錄D3直接移除正確但未居首的歷史候選：原始261例中232例、追加48例中47例呈正邊際響應，並提供依題目分群bootstrap區間，是優點；但追加一組只有五例，終點是下一次預測邊際，不是最終解題成功。Q/K/V及剩餘項的帶符號積分不能當成非負比例，K均值小也不代表key沒有作用。樹狀迷宮生成與去重描述較完整，Sudoku Extreme按順序取一百萬訓練及各一千驗證、測試；Standard確切子集與跨來源重疊稽核不明。相關工作雖討論HRM/TRM，卻未與這些專門解題模型量化比較。本次未取得或執行作者實作、檢查點及原始紀錄。加權0.7455肯定高度相關且少步提升大的方法，同時對成本未完全對齊、外推範圍、表格衝突與可重現性扣分。來源完整度乘數1不等於科學可信度百分比。",
+        "raw_weighted_score": 0.7455,
+        "request_sha256": "7151b6c0daaf2ef0ebbdfca0b42c5a108dbb8951cc7522efd00f7c696ea53d7a",
+        "review_sha256": "cdfdfb6cdbbe2a65c69c6c64fab4c61db49e7722c82457155e50db5a302c9235",
+        "scope_assessment": {
+          "classification": "in_scope_continuous_language_model_reasoning",
+          "decision": "in_scope_language_model_methodology",
+          "reason": "The contribution studies token-state language-model training, sampling and representations. Character-serialized mazes and Sudoku are controlled reasoning tests, not a pure vision or domain-only application."
+        },
+        "scope_capped_score": null,
+        "scope_policy_version": "explicit-review-exclusion-v1",
+        "scope_status": "in_scope",
+        "score": 0.7455,
+        "source_key": "2f5632dc509740ff003624fcc09e7a17274e12c16a37e48c0ec0916016531ab8",
+        "story_id": "arxiv:2610.09416",
+        "token_usage": {},
+        "topics": [
+          "Reasoning & Chain-of-Thought",
+          "Large Language Models",
+          "Transformer Architecture",
+          "Scaling & Efficiency",
+          "Interpretability & Explainability"
+        ]
+      },
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-ai",
+        "tier": 1,
+        "title": "Efficient Reasoning with Flow Language Models",
+        "url": "https://arxiv.org/abs/2610.09416v1"
+      },
+      "published_at": "2026-10-07T04:18:22+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.7455,
+        "llm_relevance_score": 20.874000000000002,
+        "recency_score": 0.7213425116227553,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 28.795342511622756
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2610.09416",
+      "summary": "Flow Language Models (FLMs) have emerged as a continuous-state alternative to discrete diffusion language models, yet the role of their continuous representations in reasoning remains unclear. We investigate this question by comparing the reasoning efficiency of FLMs and discrete diffusion models, measured by solution accuracy under matched denoising steps. Unlike discrete diffusion, which passes categorical states between denoising steps, FLMs evolve a continuous sequence representation throughout denoising and decodes it into discrete tokens only at the end. Our theoretical analysis shows, from a superposition perspective, how information retained in these continuous states can benefit reasoning. Intermediate-state interventions provide further empirical support for this theoretical account, showing that removing information about alternative candidates reduces subsequent solution recovery. Together, these findings show that FLMs allow evidence for multiple candidates to persist and inform subsequent reasoning before a discrete answer is produced. Furthermore, our experiments on maze planning and Sudoku tasks show that FLMs achieve greater reasoning efficiency in the few-step regime: FLMs achieves higher sequence accuracy than discrete diffusion baselines at matched model sizes and small denoising steps. On maze planning tasks, FLMs can also achieve comparable accuracy with smaller models. For example, on Maze15, FLM reaches the 95\\% accuracy target at 64 denoising steps with 36.5\\% fewer parameters than MDLM. These findings point to continuous state spaces as a promising foundation for reasoning models that require fewer refinement steps.",
+      "summary_en": "Flow language models retain soft token candidates until final discretization. On one-step Maze15/20 they score 95.9/71.4%, 43.3/35.8 points above the best discrete baseline. Theory and interventions support usable nonwinning information, not a joint distribution of valid solutions. Nominal steps hide unequal model calls; Sudoku and small models often favor discrete methods at larger budgets. Conflicting maze tables, missing training-seed uncertainty and no natural-language tests limit broad efficiency claims. Code was not run.",
+      "summary_zh": "流語言模型把候選詞元保留為連續向量，在多次更新後才選出離散答案。本文用迷宮與數獨研究這種表示是否有助於少步推理，並證明理想流軌跡可以拆成初始雜訊與歷次候選的加權混合。這是表示分解，並不代表模型真的保存所有合法解的聯合機率，也沒有保證答案正確。\n\n最有說服力的是迷宮：15×15與20×20迷宮在單步下達95.9%與71.4%完整解正確率，比各自最強離散基準高43.3與35.8個百分點；Maze15在64步達95%門檻時，所測模型可少用約36.5%參數。保留次佳候選的干預與局部解碼器探測，也支持部分尚未成為第一名的訊息確實可被使用。\n\n但「同樣步數」不是同樣模型呼叫數：流模型做N次，多數離散模型另有末次去雜訊，信心重遮罩在64步會做128次。數獨在16步以上常由離散模型勝出，小型迷宮模型也有反轉；表1與表9同一迷宮基準的十個數值不一致。主結果缺跨訓練種子的離散程度，干預只衡量特選格子的恢復，沒有驗證自然語言推理。本次未取得或執行作者程式。適合把它視為少步符號推理與連續候選表示的有力線索，尚不足以推論通用語言模型的實際加速。",
+      "title": "Efficient Reasoning with Flow Language Models",
+      "title_en": "Efficient Reasoning with Flow Language Models",
+      "title_zh": "以流語言模型實現高效率推理"
+    },
+{
+      "arxiv_id": "2610.09008",
+      "authors": [],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-10-10T10:12:16.186477+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-ai",
+          "tier": 1,
+          "title": "Whose Memory Is It? Scope-Aware Commit Rules for Long-Term LLM Memory",
+          "url": "https://arxiv.org/abs/2610.09008v1"
+        }
+      ],
+      "llm_evaluation": {
+        "candidate_sha256": "9d5aa2b8d751e8124a8f1863c2ab34c1fc09c3c62c73ea0b6660dfd1dacffb85",
+        "components": {
+          "evidence_strength": 0.64,
+          "generalizability": 0.43,
+          "novelty": 0.72,
+          "preference_relevance": 0.95,
+          "reproducibility": 0.38,
+          "rigor": 0.64
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "pp.3–4 Figure 1 and Eq.(1): binary actual-world attachment is not a delete/retain decision; scoped propositions and actual CONSIDERED meta-events differ.",
+          "pp.4–5 Eqs.(2)–(4): six ordered diagnostic states, rank-16 projector, two 6x6 Gram blocks and four Yes−No logits yield 46 features and 47 logistic parameters.",
+          "pp.5–6 Theorems 1–3/Proposition 1; Appendix A pp.11–12: invariance is to orthogonal basis changes inside each fixed subspace with logits fixed; completeness is for ordered configurations modulo that symmetry, not arbitrary model/projector changes.",
+          "p.12 Corollary 1, Eq.(6): composite perturbation bound includes both Gram blocks, logit drift, fixed standardization, effective classifier weight and threshold margin.",
+          "pp.6–7 Section 5: 486 exact-span questions from 1,986; 972 conflict records; each factorial control 4,860 records/2,430 pairs; folds and bootstrap group by ten source conversations.",
+          "p.7 Section 6.1/Table 1: 3B 134/146 routing=91.78%; frozen-gate opposite-owner swap Δp .715 [.656,.775] and 75.8% flip, versus matched controls; supports tested route, not universal semantic causality.",
+          "p.8 Table 2: attachment CASK83.33/79.82; strongest table competitor81.17 on3B and77.47 on1.5B. Table3 separately gives full-Gram81.28 on3B.",
+          "pp.8–9 Figure 2/Table 3: CASK vs full Gram has recall44.86 vs43.42, contamination7.41 vs7.61, F137.31 vs35.43, alternative adoption1.03 each; flat F140.19/EM29.63 is higher but alternative adoption4.53.",
+          "p.8 Figure 2b caption and p.9 Section 6.5: output logits are the stronger high-recall boundary; CASK@R95 is a development-selected operating point, not universal dominance or a test-time95% guarantee.",
+          "p.13 Appendix B: unseen diagnostic mean90.94, frame mean93.44, joint mean70.16 vs unchanged reference97.81; these are separate controls, not interchangeable with Table2 main attachment.",
+          "p.13 Table 5: 75 generated episodes/511 records(92 actual,419 scoped); trace-refitted CASK BAcc91.10 vsTFIDF90.40; direct transfer31.66; half-provenance hybrid95.02 and full ledger100 is label-oracle upper bound.",
+          "p.13 latency: six batched diagnostic median32.10ms vsone24.83ms; six serial148.76ms; 200records/20warmup/A100, not end-to-end deployed-agent overhead.",
+          "p.9 Table3 caption excludes MRR from percentages but values31.08/32.35 exceed unit-range standard MRR; likely scaling is not explicitly resolved, so no normalized MRR claim is used.",
+          "pp.14,16–17 Appendix C/checklist: public base assets cited but no implementation or derived-data artifact accompanies submission; per-run/aggregate compute times not retained."
+        ],
+        "fulltext_sha256": "918888c58380dfd2503e058bb7ace07c6bcfcafe9e7e627ef46c9a013b7ed2cb",
+        "fulltext_status": "complete",
+        "model": "assistant-native-review",
+        "native_identity_version": 1,
+        "original_candidate_sha256": "9d5aa2b8d751e8124a8f1863c2ab34c1fc09c3c62c73ea0b6660dfd1dacffb85",
+        "out_of_scope": false,
+        "producer": "assistant-native-review",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Weighted score 0.742. Relevance 0.95: directly addresses language-agent memory, reasoning branches and premise licensing. Novelty 0.72: combines discourse ownership, a DAS causal route and typed Gram features into a commit interface; the invariance and stability mathematics is classical. Rigor 0.64: source-grouped folds, frame/payload controls and frozen-gate interventions are useful, but there are only ten independent conversation clusters, split identities and DAS training details are unavailable, and several significance claims omit numerical intervals. Evidence 0.64: two scales and controls support the tested ownership signal, not general memory safety. Contamination improves only 0.20 percentage points against full Gram, injected-answer adoption ties, and QA utility/high-recall operating points retain trade-offs. Generalizability 0.43: two small models from one family, fixed diagnostics and constructed frames; joint shift reaches 70.16%, direct trace transfer only 31.66%, while 91.10% requires a refitted head. Reproducibility 0.38: prompts, feature equations and environment are described, but the checklist explicitly reports no released implementation or derived data; training hyperparameters and fold identities remain insufficient. Table 3 calls MRR non-percent yet prints 31.08/32.35, an unresolved scale-label inconsistency; reported values are retained without correction.",
+        "rationale_en": "Weighted score 0.742. Relevance 0.95: directly addresses language-agent memory, reasoning branches and premise licensing. Novelty 0.72: combines discourse ownership, a DAS causal route and typed Gram features into a commit interface; the invariance and stability mathematics is classical. Rigor 0.64: source-grouped folds, frame/payload controls and frozen-gate interventions are useful, but there are only ten independent conversation clusters, split identities and DAS training details are unavailable, and several significance claims omit numerical intervals. Evidence 0.64: two scales and controls support the tested ownership signal, not general memory safety. Contamination improves only 0.20 percentage points against full Gram, injected-answer adoption ties, and QA utility/high-recall operating points retain trade-offs. Generalizability 0.43: two small models from one family, fixed diagnostics and constructed frames; joint shift reaches 70.16%, direct trace transfer only 31.66%, while 91.10% requires a refitted head. Reproducibility 0.38: prompts, feature equations and environment are described, but the checklist explicitly reports no released implementation or derived data; training hyperparameters and fold identities remain insufficient. Table 3 calls MRR non-percent yet prints 31.08/32.35, an unresolved scale-label inconsistency; reported values are retained without correction.",
+        "rationale_zh": "原規準加權0.742。相關性0.95：直接處理語言代理的長期記憶、推理分支與前提授權。新穎性0.72：把話語歸屬、DAS因果路徑與具型別Gram鍵組合成記憶提交介面；Gram不變量及穩定性本身屬既有線性代數。嚴謹性0.64：來源對話隔離、frame/payload分離與凍結gate干預具說服力，但僅十個獨立對話群，完整切分與DAS訓練細節未釋出，多項顯著性宣稱未列數值區間。證據強度0.64：兩尺度與控制組支持所測歸屬訊號，不能升格為通用記憶安全；3B污染僅降0.20百分點、錯誤答案採納持平，較高問答效用與高召回操作點另有取捨。泛化性0.43：同族兩個小模型、固定六提示與合成框架，聯合偏移70.16%，trace直接遷移31.66%，91.10%仰賴重訓head。可重現性0.38：有提示、特徵式、表格與環境說明，卻明言沒有實作或衍生資料，訓練超參數／fold名單仍不足。表3宣稱MRR不是百分比但列31.08與32.35，尺度標示有矛盾；只保留報告數值，不自行修正。",
+        "raw_weighted_score": 0.742,
+        "request_sha256": "a0da1dc029f29fd6a290a985499192d809ba18e82c9fac29af799ece2d7b7f1a",
+        "review_sha256": "937404357e5ad2db1778a341a709f5c4d1561e3c168471065422c909da18b11d",
+        "scope_assessment": {
+          "decision": "in_scope",
+          "reason": "General language-model memory and mechanistic ownership methodology, not a domain-only application."
+        },
+        "scope_capped_score": null,
+        "scope_policy_version": "explicit-review-exclusion-v1",
+        "scope_status": "in_scope",
+        "score": 0.742,
+        "source_key": "8e7dca46af70a2b93bd496d410d62f8d700d4029fb86d64aa5e818610dd17d51",
+        "story_id": "arxiv:2610.09008",
+        "token_usage": {},
+        "topics": [
+          "Long Context & Memory",
+          "Agents & Tool Use",
+          "Interpretability & Explainability",
+          "AI Safety"
+        ]
+      },
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-ai",
+        "tier": 1,
+        "title": "Whose Memory Is It? Scope-Aware Commit Rules for Long-Term LLM Memory",
+        "url": "https://arxiv.org/abs/2610.09008v1"
+      },
+      "published_at": "2026-10-06T19:05:31+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.742,
+        "llm_relevance_score": 20.776,
+        "recency_score": 0.6941733506869825,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 28.670173350686984
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2610.09008",
+      "summary": "Persistent memory allows an LLM agent to carry experience across conversations, but it also turns a local reasoning mistake into a durable one. During deliberation, an agent may consider a plan, simulate a tool result, report another speaker's belief, and then reject all of them. If memory retains only the resulting sentences, those once-useful possibilities can later return as facts. The record is neither fabricated nor irrelevant; it has simply been detached from the context in which it was valid. We identify this missing context as \\emph{discourse ownership}: the world, branch, or speaker that licenses a proposition. Our first finding is counterintuitive. Language models already carry a causally active signal for ownership, yet conventional memory interfaces discard it when they convert reasoning into records. We introduce CASK (Causally Anchored Scoping Keys), a commit rule that preserves this signal so that shared-world facts enter durable memory while provisional content remains available only within its original scope. Our second finding is that the most obvious way to preserve the signal---storing the discovered internal coordinates---is unreliable because equivalent representations need not keep the same coordinates. CASK instead preserves the stable relations that express ownership. Controlled long-conversation conflicts and tool-agent traces show that this design improves memory admission and prevents provisional content from contaminating later answers while complementing runtime provenance. The resulting commit boundary lets agents explore more possibilities without granting every intermediate sentence authority over future behavior.",
+      "summary_en": "CASK gates durable memory by discourse ownership using a causally probed subspace and a 46-feature typed Gram key. It reaches 83.33%/79.82% attachment on two Qwen scales. On conflicting memory, contamination falls only 7.61% to 7.41%, and injected-answer adoption ties at 1.03%. Trace accuracy requires a refitted head; direct transfer is 31.66%. Ten conversations, joint-shift failures and unreleased artifacts limit the evidence. Invariance covers fixed-subspace basis rotations only.",
+      "summary_zh": "代理曾考慮某個計畫，不代表計畫已發生；長期記憶若只保存句子，容易把假設、他人信念或已放棄分支當成事實。本文將問題定義為「話語歸屬」，提出CASK：先用隱藏狀態交換找到對歸屬判斷有因果作用的子空間，再以六個固定診斷提示，分別保存該子空間與其補空間的Gram矩陣，加上四個輸出差值，形成46維特徵，控制命題能否進入共享記憶。未通過者仍留在原情境，而非刪除；實際發生的「曾考慮」事件也可另外保留。\n在按來源對話隔離的評估中，Qwen2.5的3B與1.5B版本分別達83.33%與79.82%歸屬準確率。3B衝突記憶相較完整Gram基線，污染率由7.61%降至7.41%，F1由35.43升至37.31，但錯誤答案採納率同為1.03%，未過濾記憶的整體問答分數反而較高。這說明前提授權與回答效用必須分開看。\n研究只涵蓋十段對話與同系列小模型。工具軌跡的91.10%平衡準確率來自另訓分類頭，直接轉移僅31.66%；同時更換提示與敘述框架也降至70.16%。換基不變性只保證固定子空間內的正交轉換，不能當成換模型後仍穩定的承諾。未公開實作或衍生資料，仍需外部重現。",
+      "title": "Whose Memory Is It? Scope-Aware Commit Rules for Long-Term LLM Memory",
+      "title_en": "Whose Memory Is It? Scope-Aware Commit Rules for Long-Term LLM Memory",
+      "title_zh": "這是誰的記憶？具情境範圍意識的長期LLM記憶提交規則"
+    },
+{
+      "arxiv_id": "2610.09237",
+      "authors": [],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-10-10T10:11:58.004297+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-ai",
+          "tier": 1,
+          "title": "Trajectory Abstraction for the Science of Language Agent Behavior",
+          "url": "https://arxiv.org/abs/2610.09237v1"
+        }
+      ],
+      "llm_evaluation": {
+        "candidate_sha256": "2ec5777810a2b3b8b14d7c1ca366e2078f05415fce5035250200406007fe096e",
+        "components": {
+          "evidence_strength": 0.34,
+          "generalizability": 0.54,
+          "novelty": 0.61,
+          "preference_relevance": 0.87,
+          "reproducibility": 0.56,
+          "rigor": 0.77
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "p.2 Figure 1 and p.7 Algorithm 1: recursive measured-event, relation, motif and independent-confirmation pipeline; implementation and empirical evaluation are future work.",
+          "pp.3–4 Sections 3–4: finite categorical coordinates retain role, phase, referent, availability and missingness; outcomes and assignment are excluded from motif measurement functions.",
+          "p.4 Eq.(3) and Section 4.2: tier-constrained GES with environment-summed multinomial BIC proposes relations; invariance is a screen, not automatic causal identification.",
+          "pp.4–5 Eqs.(4)–(6) and Appendix B pp.10–11: DCR and then MH define explicit motifs with carry-forward and linkage/eligibility metadata.",
+          "pp.5–6 Eqs.(7),(10), Proposition 1 and Appendix C.1: randomization identifies assigned protocol effects on fixed measurements, including noncompliance, not arbitrary downstream behavior effects.",
+          "p.6 Proposition 2, Eq.(11), Appendix C.2 pp.11–12: fixed-inventory disjoint carry-forward reductions have at most p0−1 transitions; the log2 bound requires complete blocks of size at least two.",
+          "p.5 Figure 2 and p.6 Proposition 3/Eqs.(12)–(13), Appendix C.3 p.12: common response maximum error at least half realization TV; stipulated acknowledgment example has TV=1, so tolerances below 0.5 are impossible.",
+          "p.6 Proposition 4, Eqs.(14)–(15), Appendix C.4 p.12: adjacent specified-model comparisons compose only with the stated factorization and retained linkage; not a guarantee for all realized high-level laws.",
+          "p.5 Eq.(9), Appendix D pp.12–13 Eqs.(22)–(27): coordinate Hoeffding/union bound, paired clipped-risk bound and fresh fixed-size confirmation with allocated error budgets.",
+          "pp.7–8 Limitations and Appendix E p.13: no empirical implementation; conservative sample demands, semantic coding and transfer require future tests; Bayesian surprise is distinct from literature novelty.",
+          "p.10 Appendix A: coverage searches described as occurring on 7 October against a 6 October literature cutoff; official sole-v1 history is 6 October 23:58:44 UTC. Chronology discrepancy retained without causal speculation."
+        ],
+        "fulltext_sha256": "9b6254baa12b9096538468d361447f55082172c8adb4ecbaaa0a034e469e43b2",
+        "fulltext_status": "complete",
+        "model": "assistant-native-review",
+        "native_identity_version": 1,
+        "original_candidate_sha256": "2ec5777810a2b3b8b14d7c1ca366e2078f05415fce5035250200406007fe096e",
+        "out_of_scope": false,
+        "producer": "assistant-native-review",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Weighted score 0.688. Relevance 0.87: directly targets language-agent/tool behavior and interpretable evaluation. Novelty 0.61: useful integration of recursive measured motifs, realization dependence and confirmation, but it combines graph search, causal abstraction and elementary bounds; Table 1 acknowledges close predecessors. Rigor 0.77: independent partitions, fixed projections, positivity, explicit missingness, joint replacement and sequential confidence allocation are carefully stated. The propositions are conditional, not a general causal-discovery guarantee. Evidence 0.34: checkable analytical results and counterexamples, with no executed experiments, baselines or ablations. Generalizability 0.54: broad formal setting, but cross-scene alignment and backbone transfer are untested. Reproducibility 0.56: algorithm, measurement definitions and proofs support verification of the argument, without runnable implementation or data. Appendix A dates its coverage searches to October 7 despite the official October 6 v1 submission; the document chronology needs clarification, with no assumed cause or change to source dates.",
+        "rationale_en": "Weighted score 0.688. Relevance 0.87: directly targets language-agent/tool behavior and interpretable evaluation. Novelty 0.61: useful integration of recursive measured motifs, realization dependence and confirmation, but it combines graph search, causal abstraction and elementary bounds; Table 1 acknowledges close predecessors. Rigor 0.77: independent partitions, fixed projections, positivity, explicit missingness, joint replacement and sequential confidence allocation are carefully stated. The propositions are conditional, not a general causal-discovery guarantee. Evidence 0.34: checkable analytical results and counterexamples, with no executed experiments, baselines or ablations. Generalizability 0.54: broad formal setting, but cross-scene alignment and backbone transfer are untested. Reproducibility 0.56: algorithm, measurement definitions and proofs support verification of the argument, without runnable implementation or data. Appendix A dates its coverage searches to October 7 despite the official October 6 v1 submission; the document chronology needs clarification, with no assumed cause or change to source dates.",
+        "rationale_zh": "原規準加權0.688。相關性0.87：直接研究語言代理、工具行為與可解釋評測。新穎性0.61：把遞迴可測模式、實現差異與確認程序連起來有用，但沿用圖搜尋、因果抽象及基本機率界限，表1也承認接近既有方法。嚴謹性0.77：資料分割、固定投影、干預正值性、缺失類別、聯合替換與反覆確認的信心水準分配明確；命題在列明條件下成立，不能擴成一般因果發現保證。證據強度0.34：有可核的解析結果與反例，沒有已執行的實驗、基線或消融。泛化性0.54：形式可容納不同場景與骨幹，但跨場景對齊與外部驗證仍是未來工作。可重現性0.56：演算法、測量規格及證明足以檢查論證，沒有可重跑的實作或資料。另保留附錄A所稱10月7日搜尋與官方10月6日v1提交的文件年代差異，時區或成因未明，不據此改寫來源日期。",
+        "raw_weighted_score": 0.6880000000000001,
+        "request_sha256": "15a549f3f62f2717a4552d906af3d90410c24aa2da589ec49b2b37c0a4704e72",
+        "review_sha256": "93734cff69fed05da3e928f25c6363c5d58b9a5ef457ba059ac4afc5e7493941",
+        "scope_assessment": {
+          "decision": "in_scope",
+          "reason": "Methodology for measuring and testing language-agent behavior, not a pure domain application."
+        },
+        "scope_capped_score": null,
+        "scope_policy_version": "explicit-review-exclusion-v1",
+        "scope_status": "in_scope",
+        "score": 0.6880000000000001,
+        "source_key": "f401a2c72976bcd30584f600f02ba13d389dd3f00a90b2cd5f1f21a0209f178d",
+        "story_id": "arxiv:2610.09237",
+        "token_usage": {},
+        "topics": [
+          "Agents & Tool Use",
+          "Interpretability & Explainability",
+          "Red Teaming & Evaluation"
+        ]
+      },
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-ai",
+        "tier": 1,
+        "title": "Trajectory Abstraction for the Science of Language Agent Behavior",
+        "url": "https://arxiv.org/abs/2610.09237v1"
+      },
+      "published_at": "2026-10-06T23:58:44+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.6880000000000001,
+        "llm_relevance_score": 19.264000000000003,
+        "recency_score": 0.708453186385448,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 27.17245318638545
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2610.09237",
+      "summary": "Scientific studies of language agents need behavioral variables that support hypotheses across tasks and models. We formulate this research problem as learning and testing a hierarchy of trajectory abstractions. A concrete recursive procedure first measures role- and phase-indexed events, proposes temporally constrained relations, and tests their stability across conditions. It then constructs episode-level motif variables from selected relations and repeats the analysis on those variables. Explicit measurement functions connect every abstraction level to the original trajectories. Observations and randomized protocol experiments assess the resulting hypotheses, while comparisons between intervention realizations determine whether an abstraction should be retained, refined, or restricted. We derive a finite-depth bound for accepted reductions, identify protocol effects on fixed abstractions, and characterize realization disagreement and composition of abstraction error. A finite-sample test makes projected intervention consistency operational, and constructed examples illustrate motif construction and abstraction refinement. The formulation distinguishes this experimental approach from semantic taxonomies, qualitative theory induction, and behavior-model recovery. It specifies a proposed research procedure for discovering generalizable behavioral hypotheses, with literature-relative novelty assessed separately from model-relative surprise.",
+      "summary_en": "This proposal builds agent-behavior hypotheses from explicit trajectory measurements and recursively tested motifs. It separates protocol effects from behavioral causality, derives finite-depth and response-consistency bounds, and supplies a finite-sample test. No implementation or empirical evaluation is reported: the examples are constructed. The value is a precise testing discipline; measurement quality, intervention feasibility, sample cost and transfer remain unvalidated.",
+      "summary_zh": "語言代理的工具呼叫、反思與交接能否形成跨任務的行為規律？本文主張先把軌跡轉成可重算的測量，再建立與檢驗較高層的行為模式，而不是只替動作分類。程序以角色、階段、指涉對象及可取得時間定義事件，利用受時間限制的圖搜尋提出關係，經跨環境篩選後，把互不重疊的事件組合成模式，例如「發現差異、承諾修正、完成修正」，再以獨立資料確認預測損失與干預反應是否仍被保留。\n關鍵是同一抽象操作可能有不同實現：具體說明證據的確認訊息與一句「好」，雖都能被算成一次確認，卻未必造成相同結果。作者證明，兩種實現的反應分布若相距甚遠，任何共同模型都至少承擔該距離一半的最大誤差，並提供有限樣本檢定、固定變數庫的遞迴深度界限及分層誤差合成條件。\n這是一份方法論與理論提案，尚未實作或做實證比較；例子是人為設定，沒有任務成功率或跨模型提升可報。其價值在於把抽象的可計算性、資料隔離、干預範圍及未決結論明確化；侷限則是語意編碼、階段對齊、樣本成本與實際干預仍待驗證。隨機分派只能識別所分派協定的效果，不能自動證明下游行為變數具有因果作用。",
+      "title": "Trajectory Abstraction for the Science of Language Agent Behavior",
+      "title_en": "Trajectory Abstraction for the Science of Language Agent Behavior",
+      "title_zh": "以軌跡抽象建立語言代理行為科學"
     }
 ],
   "radar": [
@@ -3154,19 +3588,34 @@
   "run_id": "assistant-review-2026-10-08",
   "run_info": {
   "added_native_count": 4,
-  "added_reviewed_candidate_count": 5,
-  "addition_prepared_at_utc": "2026-10-10T09:43:00+00:00",
+  "added_reviewed_candidate_count": 4,
+  "addition_prepared_at_utc": "2026-10-10T10:42:00+00:00",
   "addition_ranking_anchor_basis": "Frozen preparation time; not source collection cutoff or historical ranking time",
-  "addition_ranking_anchor_utc": "2026-10-10T09:43:00+00:00",
+  "addition_ranking_anchor_utc": "2026-10-10T10:42:00+00:00",
   "combined_native_reranked": false,
   "coverage_status": "partial",
   "date_basis_by_story": {
+    "arxiv:2610.09008": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-08",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.09237": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-08",
+      "event_timestamp_utc": null
+    },
     "arxiv:2610.09239": {
       "date_basis": "official_listing_v1_inference",
       "date_value": "2026-10-08",
       "event_timestamp_utc": null
     },
     "arxiv:2610.09348": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-08",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.09416": {
       "date_basis": "official_listing_v1_inference",
       "date_value": "2026-10-08",
       "event_timestamp_utc": null
@@ -3187,6 +3636,11 @@
       "event_timestamp_utc": null
     },
     "arxiv:2610.09679": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-08",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.09683": {
       "date_basis": "official_listing_v1_inference",
       "date_value": "2026-10-08",
       "event_timestamp_utc": null
@@ -3327,25 +3781,25 @@
       "event_timestamp_utc": null
     }
   },
-  "error_summary": "PARTIAL 部分更新候選：保留已發布29篇及既有順序，本批5篇依原規則選4篇，按子集排名追加Papers。33篇未合併重新排名；全日總數與收集截止時間未知。",
+  "error_summary": "PARTIAL 部分更新候選：保留已發布33篇及既有順序，本批4篇依原規則選4篇，按子集排名追加Papers。37篇未合併重新排名；全日總數與收集截止時間未知。",
   "finished_at": "2026-10-08T22:31:08.332250+00:00",
   "full_day_candidate_total": null,
   "items_total": null,
-  "preserved_baseline_body_sha256": "677ac6f2b51623982ef0c7025a29217054d30c4c6db8e28044b98ee0451a88ea",
-  "preserved_baseline_count": 29,
+  "preserved_baseline_body_sha256": "8f6344708b83b0523c75d6c146eee4fc038515ac51477a4481b1fefb99b04f06",
+  "preserved_baseline_count": 33,
   "preserved_baseline_kind": "published_approved",
-  "preserved_baseline_seal_sha256": "ff8856fd927407c50ddab9a495259ed4cb4326128e009490926e5c833aa85e17",
+  "preserved_baseline_seal_sha256": "ae27524487cef68c494ef4e2fe82b11475ab172daaa03afbb224a51e921cf515",
   "preview_only": false,
   "prior_reviewed_total_count": null,
-  "release_scope_note": "4 new Oct8 selections from 5 reviewed candidates, after unchanged filtering, appended to Papers in separately ranked subset order; all 29 entries in the published baseline preserve their exact story bytes and section order. All 33 were not jointly reranked. Full-day totals and collection cutoff remain unknown.",
-  "reviewed_selected_count": 33,
+  "release_scope_note": "4 new Oct8 selections from 4 reviewed candidates, after unchanged filtering, appended to Papers in separately ranked subset order; all 33 entries in the published baseline preserve their exact story bytes and section order. All 37 were not jointly reranked. Full-day totals and collection cutoff remain unknown.",
+  "reviewed_selected_count": 37,
   "reviewed_total_count": null,
   "run_id": "assistant-review-2026-10-08",
   "source_collection_cutoff_utc": null,
   "started_at": "2026-10-08T22:31:08.160589+00:00",
-  "stories_total": 33,
+  "stories_total": 37,
   "success": true,
-  "underlying_live_commit": "811dc9393086576cec51e9b3d2e811dd644029a8"
+  "underlying_live_commit": "b96c46d345572a5e600dd312c6200af1fbab9259"
 },
   "sources_status": [
     {
