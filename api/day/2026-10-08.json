@@ -1932,6 +1932,437 @@
       "title": "HGP:An on-device personalized agent memory via hybrid graph storage",
       "title_en": "HGP:An on-device personalized agent memory via hybrid graph storage",
       "title_zh": "HGP：以混合圖儲存打造裝置端個人化代理記憶"
+    },
+{
+      "arxiv_id": "2610.10164",
+      "authors": [],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-10-10T08:51:27.179655+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-ai",
+          "tier": 1,
+          "title": "UniSkill: Learning Actor-Aligned Skill Proposals for an Evolving Policy",
+          "url": "https://arxiv.org/abs/2610.10164v1"
+        }
+      ],
+      "llm_evaluation": {
+        "candidate_sha256": "6e3eaeb7c4b6c472ed7b1e1b5e9dc86c9385f83db616704f2592e94ff61414c5",
+        "components": {
+          "evidence_strength": 0.78,
+          "generalizability": 0.65,
+          "novelty": 0.76,
+          "preference_relevance": 0.98,
+          "reproducibility": 0.56,
+          "rigor": 0.74
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "PDF pp.3–6 §3, Eqs.1–16 and p.17 Algorithm1: shared actor/proposer; GRPO environment reward and REINFORCE++ proposal reward; feedback computed before the update, followed by critic-accepted edits requiring delta-plus>0 and Ralign>0. UPDATE chooses the eligible highest-Ralign proposal per target.",
+          "PDF pp.4–5 Eq.5–8: both proposer-visible trajectories are excluded from successful/failed references. With G=8 in Table3 this needs at least two successes and two failures in the group. Recorded histories/action tokens are held fixed while skills change; action-length normalization and averaging over turns are not an on-policy return or trajectory-density ratio.",
+          "PDF pp.5–6 Eq.9–16: malformed proposals bypass critic with operation/content rewards zero; format and operation rewards are plus/minus eta, supported-content reward is clipped Ralign, NO_EDIT content reward zero. Support loss penalizes log normalized first-token operation probability below pmin, not full operation-label probability or guaranteed group coverage.",
+          "PDF pp.6–8 §4/Table1: main ALFWorld evaluation uses official valid_seen; UniSkill 98.4±0.8 success, WebShop90.5±1.4 score and84.7±0.5 success over three independent training runs. Most baselines come from prior work; Evolving-RL is reproduced on ALFWorld. Skill1 gaps are0.9/1.8 points. Complementary RL87.0 is purchase completion and explicitly excluded from success ranking.",
+          "PDF p.7 Figures3–4: reported-stage totals506.7 versus1559.2 seconds imply about3.08x ratio or67.5% saving only for the plotted stages. Actor rollouts448.0 versus300.7, proposal22.1 versus54.0, evaluation26.1 versus1204.5, critic10.4 versusN/A. Hardware, timing dispersion and optimizer/end-to-end costs are not supplied. Qwen2.5-3B exceeds90% ALFWorld validation but remains the same model family.",
+          "PDF p.8 Table2: no-retrieval success84.4 Actor Only,34.4 Proposer Only,84.4 without alignment reward,96.1 full; retrieval success87.5,32.8,89.1,98.4. The no-Ralign-reward variant retains the same critic and Ralign-based skillbank acceptance rules: it removes proposer reward, not every use of alignment. Shared-policy auxiliary gradients are not separately isolated.",
+          "PDF p.9 Eq.17/Figure5 and p.18 D.3:100 eligible critic-accepted proposals at steps25/75 on training queries;32 new rollouts per proposed/original condition. Spearman0.312/0.367, author-reported p.0016/.0002. Positive-score mean gains8.4/7.2 points versus−3.4/−0.5 negative-score means;13/53 and10/64 positive-score proposals have negative observed gain. Pointwise bootstrap CIs are for the plotted trends, not a guarantee for individual edits.",
+          "PDF p.9 Figure6/p.18 Figure8: without support regularization three illustrated independent runs collapse to ADD fromstep57, NO_EDIT fromstep21 and ADD fromstep104. Operation curves are single runs; validation curves mean±std over three runs per setting. Heuristic Eq.18 uses independent draws and G=8; pmin.1 is soft support, not an exploration theorem.",
+          "PDF pp.15–17 AppendixB/Table3–6:16 tasks/step,8 rollouts/task,250 steps,three format-only warmup steps,eta.05,pmin.1,top1 Qwen3-Embedding-.6B retrieval,DeepSeek-V4-Pro critic. Pilot566 scores:93.3% within eta. Unseen ALFWorld98.2±1.2 retrieval versus96.6±.9 without; alternative critic success83.6/85.2 are single runs, versus default84.7±.5.",
+          "PDF pp.19–20 AppendixE.1/Table7: same kettle task instance reused under a new query ID,6/8→8/8 with mean interactions28.25→16.75; lamp-search skill ID reused across different target objects. These show logged skill reuse during co-evolution, not fixed-actor causal transfer. Ralign.09850/.01724/.11585 are raw values, first and third clipped to.05 for training.",
+          "PDF pp.21–22 AppendixE.2: fixed-actor lamp ADD26/32→32/32, cabinet UPDATE7/32→21/32, newspaper negative-score proposal17/32→4/32. These selected cases illustrate mechanisms rather than estimate general prevalence.",
+          "PDF pp.23–24 Table8/E.2.2: of13 harmful positive-score proposals atstep25,delta-plus guard excludes4, leaving9 satisfying both inequalities among100 evaluated. Case1 success15/32→8/32 rejected; cases2 and3 success30/32→24/32 and16/32→6/32 admitted. Total admission denominator is not supplied, so9/100 is not the harmful fraction among admitted edits. Two printed Ralign differences differ by0.00001, consistent with rounded input precision.",
+          "PDF p.1 abstract links github.com/LimOkii/UniSKill as available, whereas p.10 reproducibility statement says implementation/configuration release is planned. Repository and p.15 Evolving-RL public clarification were not acquired; all in-file AppendicesA–E are present and read. No raw-data, source-code, model-output or experimental reproduction was performed."
+        ],
+        "fulltext_sha256": "b3666984990e2c323f0cd645658b7bb62acf8a66902bd76d2527227c51f87d4f",
+        "fulltext_status": "complete",
+        "model": "assistant-native-review",
+        "native_identity_version": 1,
+        "original_candidate_sha256": "6e3eaeb7c4b6c472ed7b1e1b5e9dc86c9385f83db616704f2592e94ff61414c5",
+        "out_of_scope": false,
+        "producer": "assistant-native-review",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "This directly addresses LLM agents, skill memory and reinforcement learning. Holding the pre-update actor, task and recorded trajectories fixed, while excluding the two proposer-visible trajectories from feedback references, gives a concrete low-rollout-cost credit-assignment design. Support regularization also has three-run validation curves and explicit collapse cases. However, the likelihood contrast is a proxy, not an unbiased counterfactual utility estimate, and much of the machinery adapts established policy optimization. Main results include three-training-run means and standard deviations, no-retrieval evaluation, unseen environments, a smaller backbone and critic alternatives. Most baselines are quoted without comparable uncertainty, and Table 2 gives no error bars; the 0.9/1.8-point advantages over Skill1 do not establish statistical significance. Alignment analysis covers two early checkpoints and 100 eligible, critic-accepted proposals per checkpoint on training queries, with 32 rollouts per condition and correlations of 0.312/0.367. It is not unseen-task calibration. Positive-score negative-gain proposals, including cases passing both admission inequalities, are candidly shown. Excluding proposer inputs requires at least two successes and two failures per group, which can favor intermediate-difficulty tasks; the shrinking proposal supply cannot be attributed to skillbank maturity from Figure 1 alone. No-retrieval gains support shared-policy improvement but do not isolate skill distillation from auxiliary proposer gradients or other training effects. Figure 3 measures four stages without hardware or complete optimization costs. Prompts, 18 equations and hyperparameters aid reconstruction, but the available-code versus planned-release statements conflict; implementation, raw rollouts, exact model revisions and evaluation manifests were not verified. I therefore assign high relevance and useful bounded evidence, with discounts for incremental novelty, incomplete comparison uncertainty, narrow generalization and unverified reproducibility.",
+        "rationale_en": "This directly addresses LLM agents, skill memory and reinforcement learning. Holding the pre-update actor, task and recorded trajectories fixed, while excluding the two proposer-visible trajectories from feedback references, gives a concrete low-rollout-cost credit-assignment design. Support regularization also has three-run validation curves and explicit collapse cases. However, the likelihood contrast is a proxy, not an unbiased counterfactual utility estimate, and much of the machinery adapts established policy optimization. Main results include three-training-run means and standard deviations, no-retrieval evaluation, unseen environments, a smaller backbone and critic alternatives. Most baselines are quoted without comparable uncertainty, and Table 2 gives no error bars; the 0.9/1.8-point advantages over Skill1 do not establish statistical significance. Alignment analysis covers two early checkpoints and 100 eligible, critic-accepted proposals per checkpoint on training queries, with 32 rollouts per condition and correlations of 0.312/0.367. It is not unseen-task calibration. Positive-score negative-gain proposals, including cases passing both admission inequalities, are candidly shown. Excluding proposer inputs requires at least two successes and two failures per group, which can favor intermediate-difficulty tasks; the shrinking proposal supply cannot be attributed to skillbank maturity from Figure 1 alone. No-retrieval gains support shared-policy improvement but do not isolate skill distillation from auxiliary proposer gradients or other training effects. Figure 3 measures four stages without hardware or complete optimization costs. Prompts, 18 equations and hyperparameters aid reconstruction, but the available-code versus planned-release statements conflict; implementation, raw rollouts, exact model revisions and evaluation manifests were not verified. I therefore assign high relevance and useful bounded evidence, with discounts for incremental novelty, incomplete comparison uncertainty, narrow generalization and unverified reproducibility.",
+        "rationale_zh": "高度符合語言模型代理、技能記憶與強化學習的偏好。方法把更新前執行者、同一任務及既有軌跡固定，並排除提案者看過的兩條軌跡再評分，對共同演進中的信用分配提出具體且節省環境互動的設計；操作支援正則化亦有三次訓練曲線與失敗模式佐證。原理仍建立在動作似然代理及既有策略最佳化上，非無偏反事實效用估計。主結果報三次訓練平均與標準差，含無檢索、未見環境、較小模型和critic變體，但多數基線轉引且沒有同等不確定度，Table2亦未報誤差；與Skill1的0.9及1.8百分點差距不能據此宣稱顯著。對齊分析僅兩個早期checkpoint、每次一百個可評分且critic接受的訓練任務提案，每條件32個rollout，相關係數0.312／0.367；這不是未見任務上的效用校準。正分負增益與通過雙門檻的反例已誠實展示。訓練需要同組至少兩成功、兩失敗才能留下互不重用的對照，可能偏向中等難度任務；後期可評分提案變少不能單憑Fig.1歸因於技能庫成熟。無檢索提升支持共享策略改善，卻未獨立隔離技能蒸餾與輔助提案梯度等機制。Fig.3只量四個階段，未交代硬體與完整更新成本。提示、18式與超參數完整，但實作連結與計畫公開的陳述矛盾，程式、原始rollout、模型revision及評估清單未核實。因此給高相關、良好但有界的證據評分，對新意、嚴謹度、泛化和重現性保留折扣。",
+        "raw_weighted_score": 0.827,
+        "request_sha256": "ecf7cde779587dace788b6451cc75a04cba2ce2457c27889a940d2d521621d16",
+        "review_sha256": "de527179362d5206c01621e5020d886fdcdfe77fe3bf6119af8b66520cef97da",
+        "scope_assessment": {
+          "decision": "in_scope_language_agent_skill_learning",
+          "reason": "General language-model agent and textual-skill learning methodology; ALFWorld and WebShop are interactive language benchmarks, not a pure robotics/domain-only contribution."
+        },
+        "scope_capped_score": null,
+        "scope_policy_version": "explicit-review-exclusion-v1",
+        "scope_status": "in_scope",
+        "score": 0.827,
+        "source_key": "3f8ae755ed62cdd98600e6efd5fb04886acab6c5cb60aa10d60dee9ef4731c7f",
+        "story_id": "arxiv:2610.10164",
+        "token_usage": {},
+        "topics": [
+          "Large Language Models",
+          "Agents & Tool Use",
+          "Long Context & Memory",
+          "Reinforcement Learning",
+          "Training & Optimization"
+        ]
+      },
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-ai",
+        "tier": 1,
+        "title": "UniSkill: Learning Actor-Aligned Skill Proposals for an Evolving Policy",
+        "url": "https://arxiv.org/abs/2610.10164v1"
+      },
+      "published_at": "2026-10-07T14:41:51+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.827,
+        "llm_relevance_score": 23.156,
+        "recency_score": 0.7563534181017324,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 31.112353418101733
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2610.10164",
+      "summary": "Large language model agents can improve across tasks by retaining reusable skills distilled from prior interactions. Recent work jointly optimizes task execution and skill extraction, enabling the policy and skillbank to co-evolve. However, as the actor continues learning, rewarding skill proposals through their reuse in subsequent training steps may conflate skill benefits with actor improvement, while directly testing each proposed skill requires costly additional actor rollouts. In this paper, we introduce UniSkill, which uses a shared policy to interact with the environment and propose skillbank edits (Add, Update, or No Edit) from the resulting trajectories. Specifically, the actor learns from environment rewards, while contrastive action feedback guides skill proposal learning. This feedback provides an actor-alignment signal by measuring how replacing the retrieved skill with a proposed skill changes the current actor's action log-likelihood gap between previously collected successful and failed trajectories from the same task, thereby avoiding new rollouts for each proposal. Since proposal-level feedback may suppress an otherwise appropriate edit operation when the proposed skill content scores poorly, we further apply skill-edit support regularization to preserve exploration. Empirically, UniSkill achieves strong performance, reaching 98.4% success on ALFWorld and 84.7% on WebShop while maintaining stable joint training. Further ALFWorld experiments show that UniSkill remains effective when the shared policy uses a smaller backbone. Our implementation is available at https://github.com/LimOkii/UniSKill.",
+      "summary_en": "UniSkill jointly trains an actor and skill proposer, using fixed-trajectory likelihood contrasts instead of fresh rollouts for every proposal. Three runs reach 98.4% ALFWorld valid-seen success and 84.7% on WebShop. Support regularization preserves edit exploration. Yet 24.5% and 15.6% of positive-score proposals hurt fixed-actor success at two checkpoints. Mostly quoted baselines, narrow model/task coverage and an unverified code release limit the evidence; stage timings are not end-to-end training speedups.",
+      "summary_zh": "代理一邊練習任務、一邊累積技能時，後來成功究竟來自好技能，還是模型本身進步？UniSkill讓同一語言模型兼任任務執行者與技能提案者，提出新增、更新或不修改。它固定更新前的模型，替換既有成功與失敗軌跡中的技能，衡量兩者動作對數似然差如何改變，避免為每個候選技能重新跑環境；另用正則化維持三種操作的探索機會。\n\n以Qwen2.5-7B為基礎，三次訓練的ALFWorld主要驗證集成功率為98.4%，WebShop為84.7%。移除技能檢索後仍有96.1%的ALFWorld成功率，支持訓練收益不只存在技能庫中；未見環境評估也有98.2%。不過主要比較採用valid_seen分割，多數基線數字轉引前作，不能將小幅領先直接當成統計顯著。\n\n這個回饋是便宜而有用的代理指標，不是技能效用保證。兩個檢查點中，正分提案仍有24.5%與15.6%讓固定模型的實測成功率下降；額外成功軌跡門檻也未排除全部反例。研究目前限於兩個模擬環境、同一模型家族，計時只涵蓋列出的訓練階段，程式公開狀態在文內說法不一且未另行核實。值得參考的是技能評分與探索設計，而非已解決通用代理的長期自我改進。",
+      "title": "UniSkill: Learning Actor-Aligned Skill Proposals for an Evolving Policy",
+      "title_en": "UniSkill: Learning Actor-Aligned Skill Proposals for an Evolving Policy",
+      "title_zh": "UniSkill：為持續演進的策略學習與執行者對齊的技能提案"
+    },
+{
+      "arxiv_id": "2610.10042",
+      "authors": [],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-10-10T08:51:43.847128+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-ai",
+          "tier": 1,
+          "title": "Learning to Accumulate Knowledge with Mutual Information",
+          "url": "https://arxiv.org/abs/2610.10042v1"
+        }
+      ],
+      "llm_evaluation": {
+        "candidate_sha256": "d3e79175c3dff5e2b03c11981c996cd0cc9b4d74b8b3d273fd8dd419eee44bba",
+        "components": {
+          "evidence_strength": 0.76,
+          "generalizability": 0.66,
+          "novelty": 0.76,
+          "preference_relevance": 0.98,
+          "reproducibility": 0.67,
+          "rigor": 0.69
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "PDF pp.3–6 §§3.1–3.4, Eqs.1–7: frozen executor, standalone utility, fixed-bank matched-task marginal success, absolute cross-context log-probability contrast with scale.1/cap.15 and body mask; invalid outputs get formatting penalty only.",
+          "PDF pp.4,14–15, Props1–2/Eqs.2–3,8–14: Gaussian upper-envelope coverage, common heights/widths, fixed centers; coverage falls with width only at fixed area. Ideal selection/no interactions; actual MSR may be negative.",
+          "PDF p.7 Table1: three seeds, k10, KW54.0±.4 /66.4±2.6 /42.0±2.0 versus GRPO37.1±3.7 /49.0±4.8 /23.3±2.1. Overall SR+16.9/+18.7 points; SkillRL ALF51.2; Pick Two KW27.5<GRPO39.2.",
+          "PDF pp.7–8 Fig3/§4.3: k10 context approximately660/594 tokens; k9–15 SR51.5–55.0/42.0–45.7. Human banks can lead at small ALF k and SkillRL at k12. Fixed banks, unmatched token lengths and per-curve k0 controls.",
+          "PDF p.8 Table2: SR→SR+MI→SR+MI+MSR gives ALF37.1→46.0→54.0, WebShop score49.0→65.8→66.4 and SR23.3→40.7→42.0. No SR+MSR arm or dispersion reported.",
+          "PDF p.8 §4.3: retrieval-task Jaccard overlap12.92% vs13.58% ALF and15.35% vs24.48% WebShop; active retrieved entries only and averaged over three banks. This is a retrieval-overlap proxy, not causal redundancy measurement.",
+          "PDF p.9 Table3: eight additional executors at k8 all improve over no knowledge. Against GRPO,7/8 wins for ALF SR and WebShop score,6 wins/1 tie/1 loss for WebShop SR; Qwen27B ALF61.2<61.9, Phi-mini score5.4<8.9, Llama3 WebSR4.0<4.7.",
+          "PDF pp.16–17 AppendixB: selected step40 bank entries compare repeated possession/color rules with differentiated advice;50 entries per source bank and48/50 GRPO WebShop entries start with Before. Examples do not assess all semantic redundancy.",
+          "PDF pp.17–20 AppendixC: exact curation/execution templates,100-word wrapped skill,initial retrieval held fixed;five recent interactions;ALF observation1800 chars/140 commands,WebShop5000 chars/60 click targets.",
+          "PDF pp.20–21 AppendixD: Skill1 excludes execution responses from policy loss,SkillRise adapted to bank generation,Mem0 semantic/procedural results averaged;volunteers use matched trajectory procedure. These are shared-protocol adaptations.",
+          "PDF pp.21–23 Tables4–5/AppendixE:32 contexts×8 candidates=256;four trajectories/context;eight reward tasks/condition;training retrievalm3;50-entry post-training banks. ALF134 valid_unseen;WebShop100/500 test tasks,10587 training tasks;training roles may overlap.",
+          "PDF p.23 Fig4: same fixed-bank runs as Fig3 on k-axis, k15 SR54.2/43.7. Not an independent dataset or a continual bank-growth test.",
+          "PDF pp.24–25 Algorithm1/Eqs.15–19: snapshot bank,positive-MSR admission quota;local MI after returns;clipped sampled log ratios,group and batch sample-SD normalization,detached version-interpolated proximal ratio. Only curator updated.",
+          "PDF p.1 code link and p.10 reproducibility statement: https://github.com/LaoKuiZe/Knowledge-Weaver is linked; not acquired or executed in this review. PDF appendices A–F are available and read."
+        ],
+        "fulltext_sha256": "d283eadf985c2f43a1746ca898991126e4f6d7b71d7551e86974c07d427c27ac",
+        "fulltext_status": "complete",
+        "model": "assistant-native-review",
+        "native_identity_version": 1,
+        "original_candidate_sha256": "d3e79175c3dff5e2b03c11981c996cd0cc9b4d74b8b3d273fd8dd419eee44bba",
+        "out_of_scope": false,
+        "producer": "assistant-native-review",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "This is highly relevant language-agent methodology: it separates learning a knowledge curator from changing the executor and rewards the extra utility of an entry beyond the currently retrieved bank. The promising contribution is the combination of a standalone-success reward, matched-task marginal success, and local context-sensitive token credit, not an established mutual-information estimator. Equation6 takes an absolute log ratio against the mean probability under alternative contexts, with the same generated prefix held fixed. It therefore rewards both increased and decreased source-conditioned probability. No MI lower bound, consistency result or theorem connecting this proxy to bank redundancy is supplied.\n\nThe empirical result is substantial against the paper's task-success-only GRPO comparator. With a frozen Qwen3.5-4B executor and k=10, Table1 reports54.0±0.4% ALFWorld SR,66.4±2.6 WebShop score and42.0±2.0% WebShop SR across three seeds, versus37.1±3.7,49.0±4.8 and23.3±2.1. These are16.9/17.4/18.7-point mean differences, not relative percentages or confidence intervals. Against the strongest ALFWorld baseline SkillRL, the overall gain is only2.8 points, and Pick Two declines from GRPO39.2 to27.5. In Table2, MI added to SR improves ALFWorld/WebShop SR by8.9/17.4 points; MSR added on top improves them by8.0/1.3. The absent SR+MSR arm prevents a full factorial decomposition or a claim that MI is necessary for marginal rewards to help. Table2 gives means without dispersion or paired tests, so the small WebShop MSR increment is especially uncertain.\n\nFigures3–4 show robustness over retrieval counts, not continued growth of a learning bank. The evaluation bank is generated separately after training, normally has50 entries, and retrieval is performed once from the initial task query. Observed context lengths are not matched token budgets. Lower retrieval-task Jaccard overlap (12.92 versus13.58% ALFWorld;15.35 versus24.48% WebShop) is an indirect association, not a semantic-redundancy or causal-mechanism measurement. The selected AppendixB cases illustrate distinct guidance, not unbiased bank-wide coverage. AppendixA correctly proves height scaling and decreasing Gaussian-envelope coverage with width only under fixed per-entry area and fixed centers. The idealization assumes perfect selection and no entry interactions; actual marginal success can be negative, and narrow profiles at fixed height are not guaranteed to help.\n\nTransfer at k=8 is a genuine strength within the tested environments. All eight additional executors improve over their no-knowledge baselines on all three metrics. Compared with GRPO, Knowledge Weaver wins ALFWorld SR and WebShop score for seven of eight each, and WebShop SR for six, with one tie and one loss. This is not universal dominance. The training/evaluation task separation is explicitly described:134 ALFWorld valid_unseen tasks and100 of500 WebShop test tasks; training trajectories, reward tasks and bank-generation sources may overlap training tasks. No held-out semantic-contamination audit or uncertainty over WebShop subset choice is provided. Skill1/SkillRise are adapted to curator/frozen-executor bank evaluation, so the comparison does not establish superiority over their original joint-training systems. Human-bank construction lacks volunteer-count/effort reporting, and SkillRL is excepted from the50-entry size constraint.\n\nDetailed prompts and AppendixF make the method inspectable, including local MI added after return computation, sample-standard-deviation normalization, clipped sampled log-ratio regularization and a detached version-interpolated proximal denominator. This is more specific than generic GRPO and should survive reproduction. The PDF links a code repository, but code, checkpoints, raw runs, task IDs and release availability were not acquired or executed here. Computational cost and broad deployment utility remain unverified. Overall, the weighted0.823 score values a well-aligned, useful empirical curator-training contribution while discounting incomplete mechanism isolation, limited statistical evidence and the gap between fixed-bank improvement and continual self-improvement.",
+        "rationale_en": "This is highly relevant language-agent methodology: it separates learning a knowledge curator from changing the executor and rewards the extra utility of an entry beyond the currently retrieved bank. The promising contribution is the combination of a standalone-success reward, matched-task marginal success, and local context-sensitive token credit, not an established mutual-information estimator. Equation6 takes an absolute log ratio against the mean probability under alternative contexts, with the same generated prefix held fixed. It therefore rewards both increased and decreased source-conditioned probability. No MI lower bound, consistency result or theorem connecting this proxy to bank redundancy is supplied.\n\nThe empirical result is substantial against the paper's task-success-only GRPO comparator. With a frozen Qwen3.5-4B executor and k=10, Table1 reports54.0±0.4% ALFWorld SR,66.4±2.6 WebShop score and42.0±2.0% WebShop SR across three seeds, versus37.1±3.7,49.0±4.8 and23.3±2.1. These are16.9/17.4/18.7-point mean differences, not relative percentages or confidence intervals. Against the strongest ALFWorld baseline SkillRL, the overall gain is only2.8 points, and Pick Two declines from GRPO39.2 to27.5. In Table2, MI added to SR improves ALFWorld/WebShop SR by8.9/17.4 points; MSR added on top improves them by8.0/1.3. The absent SR+MSR arm prevents a full factorial decomposition or a claim that MI is necessary for marginal rewards to help. Table2 gives means without dispersion or paired tests, so the small WebShop MSR increment is especially uncertain.\n\nFigures3–4 show robustness over retrieval counts, not continued growth of a learning bank. The evaluation bank is generated separately after training, normally has50 entries, and retrieval is performed once from the initial task query. Observed context lengths are not matched token budgets. Lower retrieval-task Jaccard overlap (12.92 versus13.58% ALFWorld;15.35 versus24.48% WebShop) is an indirect association, not a semantic-redundancy or causal-mechanism measurement. The selected AppendixB cases illustrate distinct guidance, not unbiased bank-wide coverage. AppendixA correctly proves height scaling and decreasing Gaussian-envelope coverage with width only under fixed per-entry area and fixed centers. The idealization assumes perfect selection and no entry interactions; actual marginal success can be negative, and narrow profiles at fixed height are not guaranteed to help.\n\nTransfer at k=8 is a genuine strength within the tested environments. All eight additional executors improve over their no-knowledge baselines on all three metrics. Compared with GRPO, Knowledge Weaver wins ALFWorld SR and WebShop score for seven of eight each, and WebShop SR for six, with one tie and one loss. This is not universal dominance. The training/evaluation task separation is explicitly described:134 ALFWorld valid_unseen tasks and100 of500 WebShop test tasks; training trajectories, reward tasks and bank-generation sources may overlap training tasks. No held-out semantic-contamination audit or uncertainty over WebShop subset choice is provided. Skill1/SkillRise are adapted to curator/frozen-executor bank evaluation, so the comparison does not establish superiority over their original joint-training systems. Human-bank construction lacks volunteer-count/effort reporting, and SkillRL is excepted from the50-entry size constraint.\n\nDetailed prompts and AppendixF make the method inspectable, including local MI added after return computation, sample-standard-deviation normalization, clipped sampled log-ratio regularization and a detached version-interpolated proximal denominator. This is more specific than generic GRPO and should survive reproduction. The PDF links a code repository, but code, checkpoints, raw runs, task IDs and release availability were not acquired or executed here. Computational cost and broad deployment utility remain unverified. Overall, the weighted0.823 score values a well-aligned, useful empirical curator-training contribution while discounting incomplete mechanism isolation, limited statistical evidence and the gap between fixed-bank improvement and continual self-improvement.",
+        "rationale_zh": "本文直接研究語言代理的方法：把知識整理器的學習與執行器參數更新分開，並獎勵新條目相對既有檢索庫的額外效用。值得重視的是單條成功率、匹配任務的邊際成功差，以及局部脈絡敏感詞元回饋的結合，而不是互資訊估計已被證明。式6固定生成詞元與前綴，比較來源脈絡機率與其他脈絡平均機率，再取對數絕對值。因此來源使機率增加或降低都可獲得獎勵；文中沒有給出互資訊下界、一致性結果，或將此代理訊號連到知識去冗餘的定理。\n\n相對本文只按任務成功訓練的GRPO，實證提升明顯。在凍結Qwen3.5-4B、檢索十條的設定，表1三種子的ALFWorld成功率為54.0±0.4%，WebShop分數66.4±2.6、成功率42.0±2.0%；GRPO分別為37.1±3.7、49.0±4.8、23.3±2.1。差距是16.9、17.4與18.7點，不能寫成相對百分比，±也不是信賴區間。對最強ALFWorld基準SkillRL，整體僅高2.8點；Pick Two更由GRPO的39.2降至27.5。表2在SR上加MI，兩環境成功率增加8.9與17.4點，再加MSR則增加8.0與1.3點。缺少SR+MSR一列，無法完整分解交互作用，也不能聲稱MI是邊際獎勵有效的必要條件。表2沒有離散程度或配對檢定，尤其WebShop的1.3點增量仍不確定。\n\n圖3–4驗證的是不同檢索數量下的固定庫表現，不是學習中的知識庫長期持續成長。評估庫在訓練後另行生成，通常含五十條，以起始任務查詢只檢索一次；曲線的實際詞元數並非匹配的預算。檢索任務集合的Jaccard重疊較低，ALFWorld為12.92對13.58%、WebShop為15.35對24.48%，這只是間接關聯，不能視為語意去冗餘或因果機制的測量。附錄B選例有助理解不同操作，但不是無偏的全庫覆蓋調查。附錄A的高斯包絡證明在固定中心、固定每條面積下成立，寬度增大會降低覆蓋；它假設完美選取且忽略條目交互作用，實際邊際成功卻可能為負，固定高度時縮窄也不保證改善。\n\n跨模型轉用是有價值的證據。表3在k=8下，八個額外執行器的三個指標均勝過自身無知識基準；但相對GRPO，ALFWorld成功率與WebShop分數各七勝一負，WebShop成功率六勝、一平、一負，並非全面勝出。資料角色有清楚區分：測試涵蓋134個ALFWorld valid_unseen任務及500個WebShop測試任務中的100個；訓練軌跡、獎勵任務與產庫來源可以共享訓練任務。文中未提供語意污染稽核或抽取WebShop子集的不確定性。Skill1與SkillRise被調整為整理器加固定執行器的庫評估，不能據此宣稱勝過它們原本的聯合訓練系統；人工作庫缺志工數量與工時，SkillRL也不受五十條庫的相同大小限制。\n\n完整提示與附錄F提高可檢查性，包括回報計算後才加入局部MI、樣本標準差正規化、裁切的取樣對數比正則項，以及混合政策版本後停止梯度的近端分母。重現時必須保留這些細節，不能只稱為一般GRPO。PDF雖有程式庫連結，本次未取得或執行程式、檢查點、原始紀錄、任務ID，也未核驗發布可用性；計算成本與廣泛部署效用仍未知。綜合加權0.823，肯定其與需求高度相關、實證有用的整理器訓練設計，同時對機制隔離不全、統計證據有限，以及固定庫改善與持續自我改進間的距離扣分。",
+        "raw_weighted_score": 0.823,
+        "request_sha256": "0d8210fbba5f4758502e8ef2ca55c6201bbae31da6cb0ed08f4a58abb242a916",
+        "review_sha256": "06ebbe4785fcd9361388c25922173d6a87d109da577a431285578d690e014e46",
+        "scope_assessment": {
+          "classification": "in_scope_llm_memory_and_curator_training",
+          "decision": "in_scope_language_agent_methodology",
+          "reason": "Language-model knowledge curation, retrieval and policy optimization are the contribution; ALFWorld and WebShop are textual test environments, not a pure robotics or shopping application."
+        },
+        "scope_capped_score": null,
+        "scope_policy_version": "explicit-review-exclusion-v1",
+        "scope_status": "in_scope",
+        "score": 0.823,
+        "source_key": "78fa1a0fb8a221024eaed39910a311fba0133aecb69e517ec28cb78a2cfbfd11",
+        "story_id": "arxiv:2610.10042",
+        "token_usage": {},
+        "topics": [
+          "Agents & Tool Use",
+          "Long Context & Memory",
+          "RAG & Knowledge",
+          "Reinforcement Learning",
+          "Training & Optimization"
+        ]
+      },
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-ai",
+        "tier": 1,
+        "title": "Learning to Accumulate Knowledge with Mutual Information",
+        "url": "https://arxiv.org/abs/2610.10042v1"
+      },
+      "published_at": "2026-10-07T13:20:18+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.8229999999999998,
+        "llm_relevance_score": 23.043999999999997,
+        "recency_score": 0.752082147559699,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 30.996082147559697
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2610.10042",
+      "summary": "Large language model (LLM) agents can improve their performance by reusing knowledge distilled from past interactions. However, curating new experiences into a knowledge bank that becomes more useful as it grows remains challenging. Effective knowledge accumulation should limit redundant overlap among entries and ensure that new knowledge contributes beyond what the bank already provides. Yet training a curator with Group Relative Policy Optimization (GRPO) on standalone task success can reinforce general guidance even when it duplicates existing knowledge. Therefore, we propose Knowledge Weaver, a reinforcement learning framework that trains a language model to curate reusable knowledge from agent trajectories. We couple feedback inspired by token-wise mutual information (MI) with marginal success rewards to guide knowledge accumulation. Together, these signals encourage the curator to preserve distinct information from experience and produce entries that improve task success when added to existing knowledge. Standalone success rewards also favor entries that are useful on their own. On ALFWorld and WebShop, Knowledge Weaver achieves mean success rates of 54.0\\% and 42.0\\% with k=10 retrieved entries, exceeding GRPO by 16.9 and 18.7 percentage points, respectively. Its knowledge banks also outperform the evaluated prompt-based and established banks, including human-written banks, in overall ALFWorld success rate and WebShop score with the executor frozen. Our codebase is available at https://github.com/LaoKuiZe/Knowledge-Weaver.",
+      "summary_en": "Knowledge Weaver trains a curator while freezing the executor, combining standalone success, marginal gains over retrieved knowledge and MI-inspired token feedback. At k=10, success reaches 54.0% on ALFWorld and 42.0% on WebShop, 16.9 and 18.7 points above SR-only GRPO. Transfer to eight other executors is encouraging but uneven. The absolute likelihood contrast is not a proven MI estimator; missing SR+MSR ablation, three seeds and fixed-bank tests limit causal and continual-learning claims. Code was not inspected.",
+      "summary_zh": "代理把經驗寫進記憶庫，不代表新增內容真的帶來新能力。本文的 Knowledge Weaver 凍結任務執行模型，只訓練整理經驗的模型：除了獎勵單條知識的成功率，也比較加入既有檢索結果前後的成功差異，並以同一詞元在不同軌跡脈絡下的機率差提供局部回饋，鼓勵留下與經驗有關的資訊。\n\n使用 Qwen3.5-4B、每次檢索十條知識時，ALFWorld 與 WebShop 成功率為54.0%與42.0%，比只按任務成功訓練的 GRPO 高16.9與18.7個百分點。加入資訊回饋後，再加入邊際獎勵，在兩環境分別多提升8.0與1.3點。知識庫也能轉用到八個其他固定模型，但並非每個指標都勝過 GRPO。\n\n閱讀時要分清：所謂互資訊只是取絕對值的機率對比訊號，沒有證明它估計或最大化真正的互資訊；高斯覆蓋理論也假設理想選取、忽略知識間干擾。實驗僅三次種子、兩個環境，缺少單獨加入邊際獎勵的消融；檢索數量增加不等於長期知識庫持續成長。本次未取得或執行作者程式。這是一個值得參考的記憶整理訓練方法，證據支持固定知識庫的效用改善，尚不能保證持續自我改進。",
+      "title": "Learning to Accumulate Knowledge with Mutual Information",
+      "title_en": "Learning to Accumulate Knowledge with Mutual Information",
+      "title_zh": "以互資訊學習累積知識"
+    },
+{
+      "arxiv_id": "2610.09973",
+      "authors": [],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-10-10T08:52:00.627142+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-ai",
+          "tier": 1,
+          "title": "From Expected Harmfulness to Likelihood: A Probabilistic Reformulation of Jailbreaking LLM Agents",
+          "url": "https://arxiv.org/abs/2610.09973v1"
+        }
+      ],
+      "llm_evaluation": {
+        "candidate_sha256": "fad37e5c68ed6be25ac12930f0276cf8f0a4e507c0e05751fd9173633bc770e5",
+        "components": {
+          "evidence_strength": 0.5,
+          "generalizability": 0.42,
+          "novelty": 0.66,
+          "preference_relevance": 0.93,
+          "reproducibility": 0.49,
+          "rigor": 0.48
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "pp.3–4, Eqs.(1)–(8); p.14 Appendix A: under fixed support, differentiability, input-independent nonnegative harm, interchangeable differentiation and expectation, and positive expected harm, the log-harm gradient is the reweighted expected score. This is a local identity, not the full derivative of an objective with a moving target distribution.",
+          "pp.5–6, Algorithm 1 and Eqs.(9)–(11): rollout-derived replacement contexts, probabilistic exploration and screening instantiate a surrogate; no proof bounds its distance from pi or establishes monotonic expected-harm improvement.",
+          "pp.6–7, Sections 5.1–5.2: AgentHarm, InjecAgent and WebShop; Llama-3.1-8B-Instruct and Ministral-8B-Instruct-2410; ReAct, white-box suffix gradients, final single-rollout evaluation at temperature 0.7 and top-p 0.9.",
+          "p.7 Table 1: Llama OPUR average 75.00 versus UDora Sequential 61.93, a 13.07-percentage-point difference. Ministral 99.43 ties both UDora variants; it is not a strict gain on every model and dataset.",
+          "p.8 Table 2: OPUR 49/40 versus strongest displayed baselines 47/38, each +2 points. No confidence intervals or repeated-seed uncertainty establish whether these small differences are robust.",
+          "p.8 Table 3: WebShop 26.67/36.67 versus 18.33/28.33, +8.34 points in each model; Llama price-mismatch OPUR 13.33 is below REINFORCE-GCG 26.67, and attribute-mismatch is tied.",
+          "pp.9,15–16 Tables 4–7: more optimization rollouts generally help but not universally; Llama InjecAgent 46→45→49. At K=2 on Ministral WebShop, Table7 prints OPUR16.67 and UDora Joint18.33, but the Joint category entries average16.6675, essentially the same as OPUR's printed-category mean; the actual ranking is unresolved, not verified inferiority of OPUR. No equal-total-cost comparison isolates extra computation from design effects.",
+          "p.15 Table 5: K=1 OPUR categories56.82,56.82,59.09,59.09 average57.955, whereas printed Avg.ASR is56.82 (also repeated in Table4). Preserve the conflict; do not silently replace published values. p.7 Table1 Ministral GCG categories93.18,79.55,93.18,90.19 average89.025 versus printed89.20. p.16 Table7 has four additional discrepancies: Llama K=2 UDora Sequential categories average13.335 versus printed11.67, and OPUR13.3325 versus printed15.00; Ministral K=1 UDora Joint averages6.6675 versus printed5.00, and K=2 UDora Joint16.6675 versus printed18.33. These are unweighted means of printed category values, not corrected experimental results; unequal weighting is not documented. The actual K=2 pairwise ordering therefore remains unresolved.",
+          "pp.17–19 Figures3–5: examples count target action presence as success, including a tool error in Figure4 and a target click despite explicit mismatch in Figure5. Neither completed financial harm nor purchase completion is established.",
+          "p.18 Figure4: diagram states eight sampled sets per rollout while caption and p.7 protocol state four; p.19 diagram says one optimization step while caption says further updates. These are reporting inconsistencies, not evidence that the experiments have been reproduced.",
+          "p.10 reproducibility and ethics statements: code/configuration link and controlled-benchmark claims are author statements. Repository, exact commit, raw trajectories and execution environments were not acquired or executed in this review."
+        ],
+        "fulltext_sha256": "4e0969c90d81b8be204a84fce0b369ef8b5b50cbeb4bec3de7be39ed0c9c5b02",
+        "fulltext_status": "complete",
+        "model": "assistant-native-review",
+        "native_identity_version": 1,
+        "original_candidate_sha256": "fad37e5c68ed6be25ac12930f0276cf8f0a4e507c0e05751fd9173633bc770e5",
+        "out_of_scope": false,
+        "producer": "assistant-native-review",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Score 0.6845. The work directly addresses LLM agents, prompt injection and red-team evaluation, giving relevance 0.93. The harm-reweighted score-function identity is clear and proved; combining multiple rollouts with stochastic surrogate exploration is useful, but the identity is a standard reweighting and the implementation has no approximation or convergence guarantee, giving novelty 0.66. Positive normalization, fixed support and input-independent harm must be retained. Differentiating an expectation whose reweighted distribution also changes introduces an additional term, so local direction agreement is not global objective equivalence. Rigor is 0.48 because total compute is not matched, exploration and screening are not separately ablated, and seeds and intervals are absent. Three benchmarks and two models provide bounded evidence, but single-rollout evaluation, action-hit proxies, six inconsistent averages in Tables 1, 5 and 7 and conflicting Figure 4 settings reduce evidence strength to 0.50. White-box 8B ReAct agents and one decoding setting do not establish transfer to larger or closed models, giving generalizability 0.42. The PDF supplies algorithms, parameters and a public-code link, but code, per-case data and environments were not obtained and release claims were not independently verified, giving reproducibility 0.49. The full 19-page PDF supports this bounded critical review without establishing research-asset completeness or replication.",
+        "rationale_en": "Score 0.6845. The work directly addresses LLM agents, prompt injection and red-team evaluation, giving relevance 0.93. The harm-reweighted score-function identity is clear and proved; combining multiple rollouts with stochastic surrogate exploration is useful, but the identity is a standard reweighting and the implementation has no approximation or convergence guarantee, giving novelty 0.66. Positive normalization, fixed support and input-independent harm must be retained. Differentiating an expectation whose reweighted distribution also changes introduces an additional term, so local direction agreement is not global objective equivalence. Rigor is 0.48 because total compute is not matched, exploration and screening are not separately ablated, and seeds and intervals are absent. Three benchmarks and two models provide bounded evidence, but single-rollout evaluation, action-hit proxies, six inconsistent averages in Tables 1, 5 and 7 and conflicting Figure 4 settings reduce evidence strength to 0.50. White-box 8B ReAct agents and one decoding setting do not establish transfer to larger or closed models, giving generalizability 0.42. The PDF supplies algorithms, parameters and a public-code link, but code, per-case data and environments were not obtained and release claims were not independently verified, giving reproducibility 0.49. The full 19-page PDF supports this bounded critical review without establishing research-asset completeness or replication.",
+        "rationale_zh": "評分0.6845。研究直接切合LLM代理、提示注入與紅隊評測，相關性0.93。危害加權的score-function恆等式清楚且有完整推導；結合多軌跡與隨機情境探索有用，但恆等式本身屬標準重加權，實作沒有誤差或收斂保證，創新0.66。理論須保留正規化常數為正、固定支撐與危害不顯式依賴輸入等假設；對隨輸入改變的加權分布直接微分，還有額外項，不能把局部方向等同全域目標。嚴謹性0.48，因缺少等總成本、分離探索／篩選角色的消融，以及重複種子與區間。三基準兩模型帶來有界實證，但單次評估、動作命中代理指標、表一、五、七共六處平均值矛盾及圖四設定衝突使證據強度為0.50。八十億參數白箱ReAct設定與固定解碼，未驗證轉移、閉源或更大模型，泛化0.42。PDF有演算法、參數與公開程式連結，但程式、完整逐例資料與環境均未取得；發布聲明未獨立核實，重現性0.49。完整十九頁PDF足以做此有界批判評述，不代表原始研究資產完整或結果已重現。",
+        "raw_weighted_score": 0.6845000000000001,
+        "request_sha256": "31d0554a41ec3071c37f580164658c689dcffdea3a90ab9b87aeca508bcef35f",
+        "review_sha256": "806546b204006db85de050285fdb2b22ecbbaac88e5b45479a9bcf9428e824a4",
+        "scope_assessment": {
+          "decision": "in_scope",
+          "reason": "Methodological study of language-agent safety evaluation and probabilistic objectives, not a domain-only application."
+        },
+        "scope_capped_score": null,
+        "scope_policy_version": "explicit-review-exclusion-v1",
+        "scope_status": "in_scope",
+        "score": 0.6845000000000001,
+        "source_key": "5881da32a668cc460ffc00c6473ff6ccd020aa6c4d9f02cda18728a991f74b57",
+        "story_id": "arxiv:2610.09973",
+        "token_usage": {},
+        "topics": [
+          "Agents & Tool Use",
+          "Red Teaming & Evaluation",
+          "Prompting & In-Context Learning"
+        ]
+      },
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-ai",
+        "tier": 1,
+        "title": "From Expected Harmfulness to Likelihood: A Probabilistic Reformulation of Jailbreaking LLM Agents",
+        "url": "https://arxiv.org/abs/2610.09973v1"
+      },
+      "published_at": "2026-10-07T12:40:20+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.6845000000000001,
+        "llm_relevance_score": 19.166000000000004,
+        "recency_score": 0.7499976654535802,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 27.115997665453584
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2610.09973",
+      "summary": "When the harmfulness of an LLM agent's output can be quantified, a natural jailbreaking objective is to maximize expected harmfulness over admissible input modifications. An alternative approach constructs or selects harmful target outputs and modifies the input to increase their likelihood. We establish a precise connection between these two approaches through a probabilistic reformulation. Specifically, we show that the gradient of the logarithm of expected harmfulness with respect to the input equals the expected input gradient of the model's log-likelihood under a harmfulness reweighted output distribution. This identity provides a unified interpretation of expected harmfulness and target likelihood optimization. Building on this connection, we propose OPUR, a sampling distribution designed to generate highly harmful target outputs and use the resulting samples to guide likelihood-based input optimization. Experiments demonstrate the effectiveness of the resulting method in jailbreaking LLM agents.",
+      "summary_en": "OPUR connects log expected harm to a likelihood gradient under a harm-reweighted output distribution, then uses rollout-derived surrogate contexts. Reported gains span two 8B models and three benchmarks, but final evaluation uses one rollout per case. The theory does not validate the surrogate sampler, target-action appearance does not establish completed harm, and inconsistent table averages and figure settings limit confidence. The study motivates stronger distribution-aware agent safety evaluation.",
+      "summary_zh": "代理安全評估該只看某次失敗，還是整個輸出分布？本文把期望危害的對數梯度，寫成危害加權分布下的概似梯度，連結行為風險與目標輸出的最佳化。OPUR以多條模型軌跡構造候選情境，透過隨機選擇與篩選，避免只追逐單一軌跡。作者在兩款八十億參數模型、三個代理基準測試：Llama的AgentHarm平均成功率報為75%，比最強UDora高13.07個百分點；兩模型在InjecAgent只各高2點，WebShop各高約8.34點，Ministral的AgentHarm則與基準持平。這些結果支持隨機軌跡值得納入紅隊評估，但定理只建立固定當前加權分布的局部方向關係，未證明實作真從該分布取樣。成功例子也僅顯示目標動作出現，包含工具回傳錯誤，不能視為真實危害完成。最終評估每例只抽一次，未提供重複種子、信賴區間或等總成本比較；表一、五、七共有六處分項與平均不一致，圖四設定文字互相矛盾。本文價值在於提醒評測要分開目標命中、實際任務結果與隨機穩定性，仍需更嚴謹的重複評測才能確認改善幅度與跨模型適用性。",
+      "title": "From Expected Harmfulness to Likelihood: A Probabilistic Reformulation of Jailbreaking LLM Agents",
+      "title_en": "From Expected Harmfulness to Likelihood: A Probabilistic Reformulation of Jailbreaking LLM Agents",
+      "title_zh": "從期望危害到概似：以機率觀點重述大型語言模型代理的越獄問題"
+    },
+{
+      "arxiv_id": "2610.09964",
+      "authors": [],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-10-10T08:52:17.119345+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-ai",
+          "tier": 1,
+          "title": "Successive Training Stages and Large Language Model Persuasion: Effects of Misalignment, Supervised Fine-Tuning, and Preference Optimization",
+          "url": "https://arxiv.org/abs/2610.09964v1"
+        }
+      ],
+      "llm_evaluation": {
+        "candidate_sha256": "bbce66ca9755ceb1a42fec18af875e4cbcdc6118be568a7d05723f3d86a0072e",
+        "components": {
+          "evidence_strength": 0.48,
+          "generalizability": 0.36,
+          "novelty": 0.56,
+          "preference_relevance": 0.84,
+          "reproducibility": 0.38,
+          "rigor": 0.4
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "pp.9–13 Sections2–3.2 and Table1: five arms; cumulative conspiracy SFT, additional persuasive SFT, additional IPO, plus GPT-4 and control. No original/abliterated-base or persuasion-only arm isolates the effect of conspiracy training itself.",
+          "pp.14–18 Eqs.(1)–(4), Figure1 and Section3.3; pp.43–48 AppendicesB–C: SFT and IPO reuse the persuasive-data source. Model selection judges coherence versus gibberish, explicitly not truthfulness, safety or rhetoric; it is not a validated human-persuasion reward. AppendixC probes are stated to be never shown to participants.",
+          "pp.18–19 and50 AppendixE: power assumption derives d≈0.33 from OR1.812, then f0.16, total731. This is an omnibus main-effect design, not evidence of power for equivalence, all moderation contrasts or every pairwise effect.",
+          "pp.20–24 Sections3.5–4.1: all model arms are personalized; control is not. Topic order randomized, ten pre/post pairs per person averaged;857 recruited minus22 with missing responses gives835, allocated156/164/175/176/164.",
+          "p.24 Table2; pp.25–26 Figure2 and main tests: means0.0563/0.1027/0.1784/0.1850/0.0547. PersuasiveSFT minus conspiracy-only0.0757, d≈0.30; IPO increment0.0066, d≈0.03; GPT4 minus control−0.0016, d≈−0.01. These are immediate self-report attitude outcomes.",
+          "pp.23–27: equal-slope interactionF(4,825)=5.33; nonnormality and heteroskedasticity disclosed. Initial main-effectsF(4,829)=13.11 and pairwise t tests are reported alongside post-hoc moderated regression with9999 wild-bootstrap replicates and R2=.086. The adjusted interaction analyses were not independently reconstructed.",
+          "pp.27–28 Figure3: text claims IPO minus SFT is negative at every probed baseline, but plot shows IPO above SFT at the low baseline and below at the high baseline. Text says GPT4 minus control grows positive with baseline; plot shows a decreasing difference that crosses zero. SFT-minus-conspiracy text trend also disagrees with the nearly parallel plotted means. These are unresolved point-estimate reporting conflicts, not independently corrected estimates or significance claims.",
+          "p.28: exploratory participant-intercept mixed model reports topicF(9,7470)=16.59 and condition-by-topicF(36,7470)=6.10. Effects vary by issue; specific topics were selected for high change in previous work (p.11). No universal cross-topic effect is established.",
+          "pp.30–32: author explicitly acknowledges nonsignificance is not equivalence, reuse of SFT data for IPO, immediate static-text measurement, limited sample/model coverage and averaging over topics. The interpretation of insignificant main covariate does not remove its role in significant interactions.",
+          "pp.35–37: no preregistration, consent and debrief author-reported, and no IRB review on a stated no-intervention rationale despite randomized exposure. Replication dataset DOI10.5281/zenodo.22554256 is cited but not acquired or audited.",
+          "pp.42 and49 AppendicesA,D: main-effects adjusted means/intervals retained separately from moderation results. Control texts are bare affirmative topic statements, not content-, length- or personalization-matched arguments."
+        ],
+        "fulltext_sha256": "d47f94695e981c65e42245789325c04ff7cb0a467c3f83ab4d919974c62c0bfc",
+        "fulltext_status": "complete",
+        "model": "assistant-native-review",
+        "native_identity_version": 1,
+        "original_candidate_sha256": "bbce66ca9755ceb1a42fec18af875e4cbcdc6118be568a7d05723f3d86a0072e",
+        "out_of_scope": false,
+        "producer": "assistant-native-review",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Score 0.607. Post-training, LLM safety and human evaluation give relevance 0.84. Sequential comparison is useful, but established SFT/IPO on one model lineage gives novelty 0.56. Random assignment of 835 people, ten topics per participant and disclosure of exclusions and assumption failures are strengths. There is no unmisaligned or persuasion-only base-model arm, so the first stage and cross-stage contributions cannot be independently identified; reused data, added training and model selection are not separated. The initial ANCOVA violates equal slopes. The three t-contrast degrees of freedom match unadjusted two-sample comparisons and do not establish conditional effects from the interaction model. Post-hoc wild bootstrap does not resolve the directional disagreement between page27 contrasts and Figure3, giving rigor 0.40 and evidence 0.48. Table2 approximately reproduces d=0.30 and the mean differences, but nonsignificant IPO/GPT-4 comparisons do not prove equivalence, as page30 acknowledges. The control is a single stance statement rather than length-matched neutral argumentation, and only model conditions are personalized, bundling several differences. Generalizability is 0.36: US English-speaking Prolific adults, preselected high-change topics, immediate measurement and no dialogue or behavioral outcomes. Reproducibility is 0.38: the PDF and appendices are readable and a data DOI is provided, but raw data, analysis code, realized stimuli and checkpoints were not acquired, so conditional contrasts cannot be adjudicated or analyses rerun. There is no preregistration, and the no-intervention rationale for absent IRB review is in tension with randomized exposure; clarification is needed without inferring a regulatory violation. The complete PDF supports a bounded critical review, not independent confirmation of the conclusions.",
+        "rationale_en": "Score 0.607. Post-training, LLM safety and human evaluation give relevance 0.84. Sequential comparison is useful, but established SFT/IPO on one model lineage gives novelty 0.56. Random assignment of 835 people, ten topics per participant and disclosure of exclusions and assumption failures are strengths. There is no unmisaligned or persuasion-only base-model arm, so the first stage and cross-stage contributions cannot be independently identified; reused data, added training and model selection are not separated. The initial ANCOVA violates equal slopes. The three t-contrast degrees of freedom match unadjusted two-sample comparisons and do not establish conditional effects from the interaction model. Post-hoc wild bootstrap does not resolve the directional disagreement between page27 contrasts and Figure3, giving rigor 0.40 and evidence 0.48. Table2 approximately reproduces d=0.30 and the mean differences, but nonsignificant IPO/GPT-4 comparisons do not prove equivalence, as page30 acknowledges. The control is a single stance statement rather than length-matched neutral argumentation, and only model conditions are personalized, bundling several differences. Generalizability is 0.36: US English-speaking Prolific adults, preselected high-change topics, immediate measurement and no dialogue or behavioral outcomes. Reproducibility is 0.38: the PDF and appendices are readable and a data DOI is provided, but raw data, analysis code, realized stimuli and checkpoints were not acquired, so conditional contrasts cannot be adjudicated or analyses rerun. There is no preregistration, and the no-intervention rationale for absent IRB review is in tension with randomized exposure; clarification is needed without inferring a regulatory violation. The complete PDF supports a bounded critical review, not independent confirmation of the conclusions.",
+        "rationale_zh": "評分0.607。後訓練、LLM安全與真人評測直接相關，相關性0.84；序列比較有實際價值，但使用既有SFT／IPO及單一模型鏈，創新0.56。835人隨機分派、所有人完成十議題、排除規則與假設違反均有揭露，值得肯定。然而沒有未失準或僅說服SFT的對照，第一階段及跨階段作用不能獨立識別；訓練資料沿用、額外訓練量與模型選擇亦未分離。原定ANCOVA等斜率不成立，三項t對比的自由度與未調整雙樣本比較相符，不足以當作含交互作用模型的條件效果。事後wild bootstrap無法自行修復第27頁對比與圖三方向不合的報告矛盾，嚴謹性0.40、證據0.48。d＝0.30及均值可以從表二近似重算，但IPO及GPT-4的不顯著不能推出等效；本文第30頁也承認此點。控制文字是單句立場宣告而非匹配篇幅的中立論述，模型條件才個人化，對比捆綁多個差異。泛化0.36，因樣本是美國英語Prolific成人、議題預選為容易改變、僅立即測量且無互動或行為結果。重現性0.38：全文與附錄可讀、提供資料DOI，但未取得原始資料、分析碼、實際刺激與checkpoint；無法解決條件對比矛盾或重跑統計。另無預先註冊，且未經IRB審查的非介入說明與隨機暴露設計有表述張力，需作者釐清，不能據此判定違規。完整PDF支持的是有界批判評述，不是結論已獨立驗證。",
+        "raw_weighted_score": 0.607,
+        "request_sha256": "516555ba2b721d4f87ede4845751d59d1b1e74baa39336a3f213a04e97912875",
+        "review_sha256": "b56d4d6bc23cf78c0e49942a4f0c1bfb0647ad6985b9b014d34db997f73b0afa",
+        "scope_assessment": {
+          "decision": "in_scope",
+          "reason": "The target is how LLM post-training changes human persuasion outcomes, a language-model training and safety-evaluation question rather than a domain-only application."
+        },
+        "scope_capped_score": null,
+        "scope_policy_version": "explicit-review-exclusion-v1",
+        "scope_status": "in_scope",
+        "score": 0.607,
+        "source_key": "07a018c6a2bc76693ebe0f2032f9e3a09b831148069219f07c8baaf06991170f",
+        "story_id": "arxiv:2610.09964",
+        "token_usage": {},
+        "topics": [
+          "Large Language Models",
+          "AI Safety",
+          "Alignment & RLHF",
+          "Red Teaming & Evaluation"
+        ]
+      },
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-ai",
+        "tier": 1,
+        "title": "Successive Training Stages and Large Language Model Persuasion: Effects of Misalignment, Supervised Fine-Tuning, and Preference Optimization",
+        "url": "https://arxiv.org/abs/2610.09964v1"
+      },
+      "published_at": "2026-10-07T12:36:18+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.607,
+        "llm_relevance_score": 16.996,
+        "recency_score": 0.7497876260796345,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 24.945787626079635
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2610.09964",
+      "summary": "Large language models (LLMs) can be tuned to influence human attitudes, yet the respective contributions of successive post-training stages remain un-clear. This study examines how three successive training stages affect LLM persuasiveness: (1) misalignment through supervised fine-tuning (SFT) on conspiracy data, (2) additional persuasive SFT on argumentative data, and (3) Identity Preference Optimization (IPO), a preference-optimization method. A total of 835 participants recruited on Prolific were randomly assigned to five between-subject conditions (neutral text, conspiracy-trained model, persuasion-trained model, preference-optimized model, and GPT-4) and were exposed to texts on 10 divisive political issues, personalized from their individual profiles in all model conditions. Attitude change was measured as the difference between pre- and post-exposure positions on continuous Likert scales and analyzed with an analysis of covariance (ANCOVA). A significant condition x baseline-attitude interaction, F (4, 825) = 5.33, p < .001, indicated that training effects depended on participants' initial attitudes. Persuasive SFT produced greater attitude change than conspiracy training alone, d = 0.30, whereas IPO provided no additional benefit, d = 0.03, and GPT-4 did not differ from neutral text, d = --0.01. These results show that targeted supervised training on persuasive data increases LLM persuasiveness, whereas preference optimization yields no significant gains beyond it.",
+      "summary_en": "A randomized study of 835 US participants compares texts from successive training stages, GPT-4 and a control. Persuasive SFT has a reported d=0.30 over conspiracy-only SFT; no significant IPO increment is found. Null results do not establish equivalence. Missing base-model controls, unmatched control text, unregistered analyses and conflicting conditional contrasts limit interpretation. The study measures immediate attitudes, not lasting behavior; linked replication data were not acquired.",
+      "summary_zh": "模型的後訓練是否會改變對人的說服力？本研究將835名美國Prolific受試者隨機分至五組，閱讀十個議題的文字，量測立即前後態度差異。三個實驗模型依序接受陰謀語料、說服語料的監督式微調，以及IPO偏好最佳化，另設GPT-4與控制文字。作者報告追加說服微調相較僅陰謀訓練的效果量為d＝0.30；IPO追加效果與GPT-4相較控制的差異均未顯著，但未顯著不代表已證明等效或無效。研究有真人隨機實驗的價值，卻沒有未經陰謀訓練的母模型對照，不能分離第一階段的作用；控制組也只是未個人化的立場句，與模型文字並非內容或長度匹配。更重要的是，原定分析的等斜率假設不成立，事後加入調節迴歸，而正文的條件對比與圖三呈現的方向不一致，尚待原始資料釐清。結果只涉及單一模型訓練鏈、特選議題與即時靜態閱讀，無法證明長期態度或行為改變。作者坦承未預先註冊，引用的複現資料本次未取得。因此適合把它當作後訓練可能影響人類態度的初步證據與評測警訊，不宜當成普遍訓練法則或政治說服成效的確證。",
+      "title": "Successive Training Stages and Large Language Model Persuasion: Effects of Misalignment, Supervised Fine-Tuning, and Preference Optimization",
+      "title_en": "Successive Training Stages and Large Language Model Persuasion: Effects of Misalignment, Supervised Fine-Tuning, and Preference Optimization",
+      "title_zh": "連續訓練階段與大型語言模型說服力：失準、監督式微調及偏好最佳化的影響"
     }
 ],
   "radar": [
@@ -2722,11 +3153,11 @@
   "run_date": "2026-10-08",
   "run_id": "assistant-review-2026-10-08",
   "run_info": {
-  "added_native_count": 5,
+  "added_native_count": 4,
   "added_reviewed_candidate_count": 5,
-  "addition_prepared_at_utc": "2026-10-10T08:52:00+00:00",
+  "addition_prepared_at_utc": "2026-10-10T09:43:00+00:00",
   "addition_ranking_anchor_basis": "Frozen preparation time; not source collection cutoff or historical ranking time",
-  "addition_ranking_anchor_utc": "2026-10-10T08:52:00+00:00",
+  "addition_ranking_anchor_utc": "2026-10-10T09:43:00+00:00",
   "combined_native_reranked": false,
   "coverage_status": "partial",
   "date_basis_by_story": {
@@ -2775,6 +3206,21 @@
       "date_value": "2026-10-08",
       "event_timestamp_utc": null
     },
+    "arxiv:2610.09964": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-08",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.09973": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-08",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.10042": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-08",
+      "event_timestamp_utc": null
+    },
     "arxiv:2610.10062": {
       "date_basis": "official_listing_v1_inference",
       "date_value": "2026-10-08",
@@ -2796,6 +3242,11 @@
       "event_timestamp_utc": null
     },
     "arxiv:2610.10120": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-08",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.10164": {
       "date_basis": "official_listing_v1_inference",
       "date_value": "2026-10-08",
       "event_timestamp_utc": null
@@ -2876,25 +3327,25 @@
       "event_timestamp_utc": null
     }
   },
-  "error_summary": "PARTIAL 部分更新候選：保留前一候選24篇及既有順序，本批5篇依原規則選5篇，按子集排名追加Papers。29篇未合併重新排名；全日總數與收集截止時間未知。",
+  "error_summary": "PARTIAL 部分更新候選：保留已發布29篇及既有順序，本批5篇依原規則選4篇，按子集排名追加Papers。33篇未合併重新排名；全日總數與收集截止時間未知。",
   "finished_at": "2026-10-08T22:31:08.332250+00:00",
   "full_day_candidate_total": null,
   "items_total": null,
-  "preserved_baseline_body_sha256": "52c655236a578a5e1f47e5da0ce410ab25d5ac3741257e7f92e12d88e4a4ea13",
-  "preserved_baseline_count": 24,
-  "preserved_baseline_kind": "unpublished_proposed_candidate",
-  "preserved_baseline_seal_sha256": "fcbceae13acc64c807c91ad3c2e5582e7cd1977f7957188c1569e762e9b0eeb0",
+  "preserved_baseline_body_sha256": "677ac6f2b51623982ef0c7025a29217054d30c4c6db8e28044b98ee0451a88ea",
+  "preserved_baseline_count": 29,
+  "preserved_baseline_kind": "published_approved",
+  "preserved_baseline_seal_sha256": "ff8856fd927407c50ddab9a495259ed4cb4326128e009490926e5c833aa85e17",
   "preview_only": false,
   "prior_reviewed_total_count": null,
-  "release_scope_note": "Five new Oct8 selections from five reviewed candidates, after unchanged filtering, appended to Papers in separately ranked subset order; all 24 entries in the unpublished proposed baseline preserve their exact story bytes and section order. All 29 were not jointly reranked. Full-day totals and collection cutoff remain unknown.",
-  "reviewed_selected_count": 29,
+  "release_scope_note": "4 new Oct8 selections from 5 reviewed candidates, after unchanged filtering, appended to Papers in separately ranked subset order; all 29 entries in the published baseline preserve their exact story bytes and section order. All 33 were not jointly reranked. Full-day totals and collection cutoff remain unknown.",
+  "reviewed_selected_count": 33,
   "reviewed_total_count": null,
   "run_id": "assistant-review-2026-10-08",
   "source_collection_cutoff_utc": null,
   "started_at": "2026-10-08T22:31:08.160589+00:00",
-  "stories_total": 29,
+  "stories_total": 33,
   "success": true,
-  "underlying_live_commit": "c51b210a8354e85aac822764266250a7e05a71a0"
+  "underlying_live_commit": "811dc9393086576cec51e9b3d2e811dd644029a8"
 },
   "sources_status": [
     {
