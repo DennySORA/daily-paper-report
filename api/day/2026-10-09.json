@@ -341,7 +341,7 @@
   "generated_at": "2026-10-10T03:32:44.035263+00:00",
   "model_releases_by_entity": {},
   "papers": [
-    {
+{
       "arxiv_id": "2610.12375",
       "authors": [],
       "categories": [],
@@ -447,7 +447,7 @@
       "title_en": "OnTrack: Real-Time Monitoring and Intervention in LLM Agent Trajectories via Streaming Structure-Aware Optimal Transport",
       "title_zh": "OnTrack：以串流結構感知最佳傳輸，即時監控與介入語言模型代理軌跡"
     },
-    {
+{
       "arxiv_id": "2610.12002",
       "authors": [],
       "categories": [],
@@ -553,7 +553,7 @@
       "title_en": "Agentic-TTT: Training test-time policy for test-time training",
       "title_zh": "Agentic-TTT：學會決定何時、如何進行測試時訓練"
     },
-    {
+{
       "arxiv_id": "2610.12269",
       "authors": [],
       "categories": [],
@@ -656,7 +656,7 @@
       "title_en": "Cadence: Strategic Guidance for Coding Agents",
       "title_zh": "Cadence：為程式代理提供策略性指導"
     },
-    {
+{
       "arxiv_id": "2610.12242",
       "authors": [],
       "categories": [],
@@ -760,7 +760,7 @@
       "title_en": "TokenRouter: Efficient Serving System for Token-Level LLM Routing",
       "title_zh": "TokenRouter：高效率的 Token 級語言模型路由服務系統"
     },
-    {
+{
       "arxiv_id": "2610.11134",
       "authors": [],
       "categories": [],
@@ -866,7 +866,7 @@
       "title_en": "QUILT: Rethinking Sparse-Attention Prefill through Shared Query Execution",
       "title_zh": "QUILT：以共享查詢執行重新設計稀疏注意力預填充"
     },
-    {
+{
       "arxiv_id": "2610.11781",
       "authors": [],
       "categories": [],
@@ -972,7 +972,7 @@
       "title_en": "Skill-V: Verifiable Self-Evolving Skill Library for Interactive Agents",
       "title_zh": "Skill-V：以可驗證契約維護互動代理的自我演進技能庫"
     },
-    {
+{
       "arxiv_id": "2610.12274",
       "authors": [],
       "categories": [],
@@ -1077,7 +1077,7 @@
       "title_en": "HarnessSQL: Harness-Native Training for SQL Agents in Realistic Database Environments",
       "title_zh": "HarnessSQL：在真實資料庫執行框架中原生訓練 SQL 代理"
     },
-    {
+{
       "arxiv_id": "2610.12374",
       "authors": [],
       "categories": [],
@@ -1180,7 +1180,7 @@
       "title_en": "AgentGarten: Code Worlds for Evolving Agents",
       "title_zh": "AgentGarten：讓代理持續演進的程式世界"
     },
-    {
+{
       "arxiv_id": "2610.11287",
       "authors": [],
       "categories": [],
@@ -1283,7 +1283,7 @@
       "title_en": "REMORY: Learning Residual Memory for Context Compaction",
       "title_zh": "REMORY：學習用於上下文壓縮的殘差記憶"
     },
-    {
+{
       "arxiv_id": "2610.12360",
       "authors": [],
       "categories": [],
@@ -1386,7 +1386,7 @@
       "title_en": "Accurate but Not Humble: Evaluating Epistemic Humility in LLM Agents under Knowledge Conflict",
       "title_zh": "答得準卻不謙遜：評估知識衝突下大型語言模型代理的認知謙遜"
     },
-    {
+{
       "arxiv_id": "2610.11620",
       "authors": [],
       "categories": [],
@@ -1487,7 +1487,7 @@
       "title_en": "Where to Adapt Matters: Layer-Selective Fine-Tuning for Capability Retention",
       "title_zh": "在哪裡適配很重要：以選層微調保留模型能力"
     },
-    {
+{
       "arxiv_id": "2610.11715",
       "authors": [],
       "categories": [],
@@ -1588,7 +1588,7 @@
       "title_en": "Internalizer: Portable Context-to-Parameter Mapping for Very Large Language Models",
       "title_zh": "Internalizer：面向超大型語言模型的可移植上下文至參數映射"
     },
-    {
+{
       "arxiv_id": "2610.12168",
       "authors": [],
       "categories": [],
@@ -1690,7 +1690,7 @@
       "title_en": "Learning to Plan by Looking Back: Hindsight Hierarchies for Training Reasoning Models",
       "title_zh": "回望解法以學會規劃：用事後層級構想訓練推理模型"
     },
-    {
+{
       "arxiv_id": "2610.12235",
       "authors": [],
       "categories": [],
@@ -1793,7 +1793,7 @@
       "title_en": "Language Models as AI Research World Models",
       "title_zh": "將語言模型用作 AI 研究的世界模型"
     },
-    {
+{
       "arxiv_id": "2610.11858",
       "authors": [],
       "categories": [],
@@ -1902,7 +1902,7 @@
       "title_en": "Trajectory-Guided Fault Localization for Agent Skill Evolution",
       "title_zh": "以軌跡引導故障定位，推動代理技能演化"
     },
-    {
+{
       "arxiv_id": "2610.12083",
       "authors": [],
       "categories": [],
@@ -2005,7 +2005,7 @@
       "title_en": "All Verdicts are Not Equal: Rethinking LLM Judge Reliability",
       "title_zh": "不是每個裁決都一樣：重新思考大型語言模型裁判的可靠性"
     },
-    {
+{
       "arxiv_id": "2610.12056",
       "authors": [],
       "categories": [],
@@ -2113,7 +2113,7 @@
       "title_en": "Structure Tax: How Structured Output affects LLMs Performance",
       "title_zh": "結構稅：結構化輸出如何影響大型語言模型表現"
     },
-    {
+{
       "arxiv_id": "2610.12410",
       "authors": [],
       "categories": [],
@@ -2220,7 +2220,7 @@
       "title_en": "Predicting Alignment Generalization with Value Representations",
       "title_zh": "利用價值表徵預測對齊訓練的泛化效應"
     },
-    {
+{
       "arxiv_id": "2610.11593",
       "authors": [],
       "categories": [],
@@ -2324,7 +2324,7 @@
       "title_en": "Runnable Commit Untangling for Coding Agents",
       "title_zh": "讓程式代理拆分出每一步皆可執行的提交歷史"
     },
-    {
+{
       "arxiv_id": "2610.12409",
       "authors": [],
       "categories": [],
@@ -2427,7 +2427,7 @@
       "title_en": "Searching for \"Harmful Refusal\": A Psychometric Audit of an AI Safety Benchmark",
       "title_zh": "尋找「有害請求拒絕能力」：AI安全基準的心理計量稽核"
     },
-    {
+{
       "arxiv_id": "2610.12436",
       "authors": [],
       "categories": [],
@@ -2537,7 +2537,7 @@
       "title_en": "Ecology of AI Agents: Collaboration Creates a Population Threshold for Takeoff",
       "title_zh": "AI代理的生態學：協作如何產生族群起飛門檻"
     },
-    {
+{
       "arxiv_id": "2610.11578",
       "authors": [],
       "categories": [],
@@ -2647,7 +2647,7 @@
       "title_en": "Chronos Enables Code Agents to Reason over Software Evolution",
       "title_zh": "Chronos：讓程式代理運用軟體演進歷史進行推理"
     },
-    {
+{
       "arxiv_id": "2610.11050",
       "authors": [],
       "categories": [],
@@ -2753,7 +2753,7 @@
       "title_en": "AgentHorizon: Evaluating Agentic Judges for Long-Horizon Computer-Use Tasks",
       "title_zh": "AgentHorizon：評估長時程電腦操作任務的代理式裁判"
     },
-    {
+{
       "arxiv_id": "2610.11030",
       "authors": [],
       "categories": [],
@@ -2863,7 +2863,7 @@
       "title_en": "NOMOS: Compiling Written Policies into Statically Verified Tool-Call Gates for LLM Agents",
       "title_zh": "NOMOS：將書面政策編譯為經靜態檢查的語言代理工具呼叫閘門"
     },
-    {
+{
       "arxiv_id": "2610.11464",
       "authors": [],
       "categories": [],
@@ -2967,7 +2967,7 @@
       "title_en": "Who Verifies the Verifier? Co-Evolving Inspectable Graders with Self-Improving Agents",
       "title_zh": "誰來驗證驗證器？讓可檢視評分器與自我改進代理共同演化"
     },
-    {
+{
       "arxiv_id": "2610.11268",
       "authors": [],
       "categories": [],
@@ -3067,7 +3067,7 @@
       "title_en": "TaReD: Tool-Aware Recursive Decomposition for Long-Horizon Tasks",
       "title_zh": "TaReD：面向長程任務的工具感知遞迴拆解"
     },
-    {
+{
       "arxiv_id": "2610.11613",
       "authors": [],
       "categories": [],
@@ -3171,7 +3171,7 @@
       "title_en": "AgentEvolver: System-Wide Self-Evolution Through Task Execution",
       "title_zh": "AgentEvolver：透過任務執行進行全系統自我演化"
     },
-    {
+{
       "arxiv_id": "2610.10833",
       "authors": [],
       "categories": [],
@@ -3273,7 +3273,7 @@
       "title_en": "On the Clock: Towards Punctual and Productive Time-Budgeted AI Agents",
       "title_zh": "與時間賽跑：邁向準時且有效利用時間預算的 AI 代理"
     },
-    {
+{
       "arxiv_id": "2610.11573",
       "authors": [],
       "categories": [],
@@ -3378,7 +3378,7 @@
       "title_en": "Memory Type Varies: Empowering LLM Agents for Long-Term Memory with Diverse Strategies",
       "title_zh": "記憶類型各有不同：以多元策略強化大型語言模型代理的長期記憶"
     },
-    {
+{
       "arxiv_id": "2610.11600",
       "authors": [],
       "categories": [],
@@ -3487,7 +3487,7 @@
       "title_en": "Error-Propagation Modeling for Failure Attribution in LLM-Based Multi-Agent Systems",
       "title_zh": "LLM多代理系統失敗歸因的錯誤傳播建模"
     },
-    {
+{
       "arxiv_id": "2610.12325",
       "authors": [],
       "categories": [],
@@ -3606,7 +3606,7 @@
       "title_en": "Prior or Feedback? What an LLM Uses When Adapting Neural Operators",
       "title_zh": "先驗還是回饋？大型語言模型調適神經算子時依據什麼"
     },
-    {
+{
       "arxiv_id": "2610.12304",
       "authors": [],
       "categories": [],
@@ -3726,7 +3726,7 @@
       "title_en": "Looking Inside LLMs: Small-World Connectivity as a Signature of Reasoning Performance",
       "title_zh": "走進大型語言模型：以小世界連結作為推理表現的結構特徵"
     },
-    {
+{
       "arxiv_id": "2610.12361",
       "authors": [],
       "categories": [],
@@ -3864,7 +3864,7 @@
       "title_en": "Cited but Not Consulted: A Counterfactual Audit of Legal Chain-of-Thought Faithfulness",
       "title_zh": "引用卻未依據：法律思維鏈忠實性的反事實稽核"
     },
-    {
+{
       "arxiv_id": "2610.12313",
       "authors": [],
       "categories": [],
@@ -3984,7 +3984,7 @@
       "title_en": "Verdict Without the Rule: Diagnosing and Auditing Regulatory Rule Sensitivity in LLM Compliance Systems",
       "title_zh": "沒有規則的裁決：診斷與稽核大型語言模型合規系統的規則敏感度"
     },
-    {
+{
       "arxiv_id": "2610.12303",
       "authors": [],
       "categories": [],
@@ -4104,7 +4104,7 @@
       "title_en": "Learning Probabilistic Logic Programs with Functional Gradient Guided Language Models",
       "title_zh": "以函數梯度引導語言模型學習機率邏輯程式"
     },
-    {
+{
       "arxiv_id": "2610.12292",
       "authors": [],
       "categories": [],
@@ -4236,7 +4236,7 @@
       "title_en": "One Word Opens the Gate: The Option-Channel Attack on Typed Decision Models as Agent Guardrails",
       "title_zh": "一個詞就打開閘門：以型別化決策模型作代理護欄的選項通道攻擊"
     },
-    {
+{
       "arxiv_id": "2610.12176",
       "authors": [],
       "categories": [],
@@ -4358,7 +4358,7 @@
       "title_en": "Recursive Self-Improvement through Multi-Agent Self-Supervision",
       "title_zh": "透過多代理自我監督實現遞迴自我改進"
     },
-    {
+{
       "arxiv_id": "2610.12114",
       "authors": [],
       "categories": [],
@@ -4480,7 +4480,7 @@
       "title_en": "Universal Textual Teaching for LLMs",
       "title_zh": "大型語言模型的通用文字教學"
     },
-    {
+{
       "arxiv_id": "2610.12129",
       "authors": [],
       "categories": [],
@@ -4618,7 +4618,7 @@
       "title_en": "An Investigation of Model Coherence: Narrow Finetunes Contradict Themselves Under Resampling",
       "title_zh": "模型一致性探究：狹窄微調模型在重複抽樣下自相矛盾"
     },
-    {
+{
       "arxiv_id": "2610.12086",
       "authors": [],
       "categories": [],
@@ -4757,275 +4757,635 @@
       "title": "EvoAlloc: A Self-Evolving Resource Allocation Agent for Efficient Program Evolution",
       "title_en": "EvoAlloc: A Self-Evolving Resource Allocation Agent for Efficient Program Evolution",
       "title_zh": "EvoAlloc：以自我演化資源配置代理提升程式演化效率"
+    },
+{
+      "arxiv_id": "2610.11989",
+      "authors": [],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-10-10T14:18:52.103328+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-ai",
+          "tier": 1,
+          "title": "MetaOPD: Meta-Learned Token Weighting for On-Policy Distillation",
+          "url": "https://arxiv.org/abs/2610.11989v1"
+        },
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-ai",
+          "tier": 1,
+          "title": "MetaOPD: Meta-Learned Token Weighting for On-Policy Distillation",
+          "url": "https://arxiv.org/pdf/2610.11989v1"
+        }
+      ],
+      "llm_evaluation": {
+        "candidate_sha256": "17301f4cfad07485ece79201086d38c8b37385fa763d77b733b7431dc0f21a94",
+        "components": {
+          "evidence_strength": 0.7,
+          "generalizability": 0.6,
+          "novelty": 0.7,
+          "preference_relevance": 0.92,
+          "reproducibility": 0.61,
+          "rigor": 0.78
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "§3.1, pp.3–4; Appendix A.1–A.2, pp.13–14: sampled OPD local equivalence, score centering, response normalization and detached descriptors.",
+          "§3.2–3.3, pp.5–7; Algorithm 1; Appendix A.3–A.4, pp.14–16: shared incoming student AdamW state, noncommitting virtual step, exact one-step VJP–JVP path and original-state real update.",
+          "Table1, p.7; §4.2, p.8: two-scale six-math-benchmark averages and exceptions; Avg@8 and Pass@8 have different meanings.",
+          "Appendix B, pp.16–21; Tables5–9: training references overlap rollouts, seed42, shared three epochs/696 steps, adapted allocation baselines, calibrated SFT and restricted-feature controls.",
+          "Table10, p.21: 1.7B training cost45.0 vs88.5 GPU-hours with eight allocated GPUs, evaluation and diagnostics excluded.",
+          "Appendix C, pp.21–22: four fixed folds and three response-sampling seeds with train-pool A/B references, conditional panel bootstrap only.",
+          "Appendix D, pp.22–25; Figure4 and Tables11–13: fixed checkpoint diagnostics, test references excludingMATH500, same-bank Reweighted intervention, relative versus absolute loss changes and conditional uncertainty.",
+          "Table2, p.8; Appendix E, p.26: heterogeneous five-metric out-of-domain aggregation and limited AlpacaEval gains.",
+          "Reproducibility statement, p.10: code/configurations promised with release, not provided or executed in this review."
+        ],
+        "fulltext_sha256": "6b51eb06d27f2f3a9fc7a0feeaa0df9403ccbd6da34f9045b78f76166a16907b",
+        "fulltext_status": "complete",
+        "model": "assistant-native-review",
+        "native_identity_version": 1,
+        "original_candidate_sha256": "17301f4cfad07485ece79201086d38c8b37385fa763d77b733b7431dc0f21a94",
+        "out_of_scope": false,
+        "producer": "assistant-native-review",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Overall: a relevant language-model distillation methodology worth considering in subsequent filtering. Its strength is an inspectable connection between token allocation and a real-optimizer one-step feedback signal, supported by ablations and diagnostics. Limits are one training seed, one model family, nearly doubled cost, adapted baselines, and the gap between relative diagnostic improvement and generalization. The six original rubric components follow.\n\n0.92: The core contribution concerns language-model on-policy distillation, token-level supervision allocation, and mathematical-reasoning training, directly matching LLM, reasoning, optimization, and efficiency interests. This is methodological LLM research rather than a domain-only application, although no Japanese-language or agent/code-specific evidence is provided (§§3–4, pp.3–9).\n\n0.70: Applying established bilevel meta-reweighting and Meta-Weight-Net ideas to OPD allocation on student-generated trajectories is a useful methodological combination. The 74-dimensional descriptor, response-mean constraint, and one-step hypergradient through the live AdamW state make the design concrete. Related work explicitly acknowledges prior bilevel weighting; meta-learning itself and the chain rule are not new theoretical inventions (§§2–3, Appendices A–B).\n\n0.78: The mathematical boundaries are unusually explicit: virtual updates read without advancing moments, step counters, or the scheduler; the real step restarts from the original state. Descriptors are detached, while differentiation in eta retains score centering, response normalization, the global-clipping coefficient, and new first/second moments. The VJP–JVP expression equals the first derivative of the specified fixed-input single-step map; it is neither a first-order shortcut that discards optimizer derivatives nor a convergence guarantee. Sampled OPD is unbiased for the reverse-KL gradient only at theta=theta_old conditional on a fixed prefix. Training references may overlap rollouts and are not held-out generalization validation. Evaluation exclusion is author-reported, not independently audited from code/data. Train-only SFT calibration and same-architecture feature-subset controls help isolate the tested mechanism without ruling out every alternative supervision design (pp.3–7,13–20).\n\n0.70: Table 1 provides coherent aggregate gains over seven baselines across two scales and six benchmarks: 17.96/35.91 versus 15.97/29.94 at 0.6B, and 27.32/46.82 versus 25.07/40.41 at 1.7B. Against the stronger TIP baseline, 1.7B gains narrow to 1.13/1.56 points; Minerva Avg@8 is slightly below OPD and AIME25 Pass@8 below TIP. Main and ablation runs share seed 42, three epochs, and 696 student steps, without multiple training seeds or main-table confidence intervals. Figure 1 uses three response-sampling seeds, not three complete training runs; diagnostic bootstrap intervals are conditional. In Table 12, Learned beats Uniform at three checkpoints but both increase loss relative to no update. Reweighted uses the same bank for allocation and scoring, so it is not independent test improvement. Several baselines transplant allocation rules into shared sampled OPD rather than reproduce the complete original algorithms. The 1.7B cost is 88.5 versus 45.0 GPU-hours without an equal-compute control (Tables 1,5,8–13; Appendices C–D).\n\n0.60: Two student scales and three out-of-domain evaluations provide more breadth than a single math benchmark, but all models belong to Qwen3 with one 8B teacher and MATH training; only 1.7B is tested out of domain. GPQA and MMLU-Pro gains are limited, and AlpacaEval LC-WR is 15.98 versus 15.96, below TIP at 16.70. Table 2 averages five metrics, assigning GPQA/MMLU/Alpaca weights of 40/20/40 percent and mixing answer accuracy with preference scores; this is descriptive rather than a universal capability scale. Cross-family, larger-model, multilingual, and agent transfer remain untested, and local derivative correlations do not establish long-horizon generalization (Table 2, Appendices D–E).\n\n0.61: The 26-page PDF, including Appendices A–E, supplies an algorithm, the 74–256–64–1 network, weight bounds, EOS mapping, global token reduction, baseline settings, training steps, resources, and bootstrap protocols, supporting core-method review. Page 10 promises code and configurations with release; they were not acquired or executed here. Availability and computational reproducibility are therefore unverified, but absent external code does not itself establish a missing core-method supplement. Exact package/optimizer configuration and execution artifacts were not audited; costs cover only 1.7B and exclude evaluation/diagnostics. A SHA-shaped ETag differs from the retained-body SHA and no authenticated checksum is available. This remains a transport/provenance caveat, not evidence of scientific misconduct (p.10, Appendices A–E).",
+        "rationale_en": "Overall: a relevant language-model distillation methodology worth considering in subsequent filtering. Its strength is an inspectable connection between token allocation and a real-optimizer one-step feedback signal, supported by ablations and diagnostics. Limits are one training seed, one model family, nearly doubled cost, adapted baselines, and the gap between relative diagnostic improvement and generalization. The six original rubric components follow.\n\n0.92: The core contribution concerns language-model on-policy distillation, token-level supervision allocation, and mathematical-reasoning training, directly matching LLM, reasoning, optimization, and efficiency interests. This is methodological LLM research rather than a domain-only application, although no Japanese-language or agent/code-specific evidence is provided (§§3–4, pp.3–9).\n\n0.70: Applying established bilevel meta-reweighting and Meta-Weight-Net ideas to OPD allocation on student-generated trajectories is a useful methodological combination. The 74-dimensional descriptor, response-mean constraint, and one-step hypergradient through the live AdamW state make the design concrete. Related work explicitly acknowledges prior bilevel weighting; meta-learning itself and the chain rule are not new theoretical inventions (§§2–3, Appendices A–B).\n\n0.78: The mathematical boundaries are unusually explicit: virtual updates read without advancing moments, step counters, or the scheduler; the real step restarts from the original state. Descriptors are detached, while differentiation in eta retains score centering, response normalization, the global-clipping coefficient, and new first/second moments. The VJP–JVP expression equals the first derivative of the specified fixed-input single-step map; it is neither a first-order shortcut that discards optimizer derivatives nor a convergence guarantee. Sampled OPD is unbiased for the reverse-KL gradient only at theta=theta_old conditional on a fixed prefix. Training references may overlap rollouts and are not held-out generalization validation. Evaluation exclusion is author-reported, not independently audited from code/data. Train-only SFT calibration and same-architecture feature-subset controls help isolate the tested mechanism without ruling out every alternative supervision design (pp.3–7,13–20).\n\n0.70: Table 1 provides coherent aggregate gains over seven baselines across two scales and six benchmarks: 17.96/35.91 versus 15.97/29.94 at 0.6B, and 27.32/46.82 versus 25.07/40.41 at 1.7B. Against the stronger TIP baseline, 1.7B gains narrow to 1.13/1.56 points; Minerva Avg@8 is slightly below OPD and AIME25 Pass@8 below TIP. Main and ablation runs share seed 42, three epochs, and 696 student steps, without multiple training seeds or main-table confidence intervals. Figure 1 uses three response-sampling seeds, not three complete training runs; diagnostic bootstrap intervals are conditional. In Table 12, Learned beats Uniform at three checkpoints but both increase loss relative to no update. Reweighted uses the same bank for allocation and scoring, so it is not independent test improvement. Several baselines transplant allocation rules into shared sampled OPD rather than reproduce the complete original algorithms. The 1.7B cost is 88.5 versus 45.0 GPU-hours without an equal-compute control (Tables 1,5,8–13; Appendices C–D).\n\n0.60: Two student scales and three out-of-domain evaluations provide more breadth than a single math benchmark, but all models belong to Qwen3 with one 8B teacher and MATH training; only 1.7B is tested out of domain. GPQA and MMLU-Pro gains are limited, and AlpacaEval LC-WR is 15.98 versus 15.96, below TIP at 16.70. Table 2 averages five metrics, assigning GPQA/MMLU/Alpaca weights of 40/20/40 percent and mixing answer accuracy with preference scores; this is descriptive rather than a universal capability scale. Cross-family, larger-model, multilingual, and agent transfer remain untested, and local derivative correlations do not establish long-horizon generalization (Table 2, Appendices D–E).\n\n0.61: The 26-page PDF, including Appendices A–E, supplies an algorithm, the 74–256–64–1 network, weight bounds, EOS mapping, global token reduction, baseline settings, training steps, resources, and bootstrap protocols, supporting core-method review. Page 10 promises code and configurations with release; they were not acquired or executed here. Availability and computational reproducibility are therefore unverified, but absent external code does not itself establish a missing core-method supplement. Exact package/optimizer configuration and execution artifacts were not audited; costs cover only 1.7B and exclude evaluation/diagnostics. A SHA-shaped ETag differs from the retained-body SHA and no authenticated checksum is available. This remains a transport/provenance caveat, not evidence of scientific misconduct (p.10, Appendices A–E).",
+        "rationale_zh": "總評：值得納入後續篩選的語言模型蒸餾方法研究。優點是把詞元價值接到可檢查的實際optimizer單步回饋，並以消融與診斷支持配權；限制集中在單種子、單模型家族、近兩倍成本、基線改寫，以及診斷相對改善與泛化的距離。原六項規準逐項如下。\n\n0.92：核心是語言模型的on-policy蒸餾、詞元層級監督分配與數學推理訓練，直接符合大型語言模型、推理、訓練最佳化及效率偏好。不是把一般領域應用包裝為LLM方法；但沒有日本語或代理／程式任務的專門證據（§3–4，頁3–9）。\n\n0.70：把既有雙層meta-reweighting／Meta-Weight-Net原理具體化為學生自行生成軌跡的OPD配權，是有用的組合與實作貢獻；74維描述子、逐回答均值限制，以及保留真實AdamW狀態的單步超梯度使設計清楚。相關工作已承認雙層資料配權先例，不能將meta-learning本身或鏈式法則當全新理論（§2–3，附錄A–B）。\n\n0.78：數學界線交代扎實：虛擬更新讀取而不推進原moments、步數與scheduler，真正更新重返原狀態；特徵detach，但η方向仍微分score centering、response normalization、global clipping係數與新一二階動量。VJP–JVP等價的是固定輸入之指定單步的一階導數，並非忽略optimizer導數的first-order近似或全程收斂保證。sampled OPD也只在θ=θold、固定prefix處對reverse-KL梯度無偏。外層reference屬train且允許重疊，不能稱held-out泛化驗證。作者排除evaluation更新的聲明沒有由外部資料／程式獨立查核。SFT係數在train校準及同架構特徵子集對照有助隔離機制，但不是所有替代配權／監督設計的否證（頁3–7、13–20）。\n\n0.70：表1在兩尺度、六基準及七基線提供一致的聚合增益：0.6B的17.96／35.91對15.97／29.94，1.7B的27.32／46.82對25.07／40.41；1.7B相對較強TIP僅增加1.13／1.56個百分點，且Minerva Avg@8略遜OPD、AIME25 Pass@8遜TIP。主實驗及消融共用seed42、三epochs、696 student steps，缺多訓練種子或主表信賴區間。圖1三response-sampling seeds不是三次完整訓練；診斷bootstrap條件固定。表12 Learned在三checkpoint比Uniform低，但兩者相對不更新均升loss；Reweighted用同bank配權及評分，不能當獨立測試改善。部分基線只把配置規則移入shared sampled-OPD，非原完整方法重現。1.7B成本88.5對45.0 GPU-hours，缺等算力對照（表1、5、8–13，附錄C–D）。\n\n0.60：兩個學生規模加三項域外測試比單一數學基準更有說服力，但皆同Qwen3家族、單一8B教師及MATH訓練；域外只測1.7B。GPQA及MMLU-Pro改善有限，AlpacaEval LC-WR僅15.98對15.96且低於TIP的16.70。表2五指標平均將GPQA／MMLU／Alpaca權重設為40／20／40%，混合答題與偏好分數，不是普遍能力單一量尺。沒有跨模型家族、大模型、多語言或代理任務驗證；局部導數相關也不證明長期泛化（表2、附錄D–E）。\n\n0.61：26頁含A–E附錄提供演算法、74–256–64–1網路、權重範圍、EOS映射、global token reduction、基線配置、訓練步數、資源及bootstrap流程，足以評讀核心方法。頁10僅承諾code與configs將隨release提供，本次未取得或執行；不能聲稱已公開可重現，也不因未取外部code直接認定方法材料缺失。精確套件／optimizer配置與作者執行結果未由artifact核對；GPU成本只覆蓋1.7B且排除評測與診斷。來源有ETag不等本地SHA、無authenticated checksum警示，保留為傳輸／來源限制，不推論科學造假（頁10、附錄A–E）。",
+        "raw_weighted_score": 0.7855000000000001,
+        "request_sha256": "b8e11d2b74eb266662f1993dae8046910936cc538f4d08c3b0e2a3c5ff987780",
+        "review_sha256": "919bc779475fcf13a233e107c6ca11a4ff368bda6d1a69ff9bc56e4ef2a3f6a8",
+        "scope_assessment": {
+          "classification": "language-model distillation and optimization methodology",
+          "decision": "in_scope",
+          "excluded_domain_checks": {
+            "biology_medical_only": false,
+            "pure_domain_application": false,
+            "pure_vision_robotics_audio": false
+          },
+          "rationale_en": "Direct language-model distillation and reasoning-training methodology.",
+          "rationale_zh": "直接研究語言模型蒸餾及推理學習機制。"
+        },
+        "scope_capped_score": null,
+        "scope_policy_version": "explicit-review-exclusion-v1",
+        "scope_status": "in_scope",
+        "score": 0.7855000000000001,
+        "source_key": "af39ad734641a939c8785dd76f615bbaa7d676f737e3e531091283d05a887f85",
+        "story_id": "arxiv:2610.11989",
+        "token_usage": {},
+        "topics": [
+          "Large Language Models",
+          "Reasoning & Chain-of-Thought",
+          "Training & Optimization",
+          "Scaling & Efficiency"
+        ]
+      },
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-ai",
+        "tier": 1,
+        "title": "MetaOPD: Meta-Learned Token Weighting for On-Policy Distillation",
+        "url": "https://arxiv.org/abs/2610.11989v1"
+      },
+      "published_at": "2026-10-08T13:58:39+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.7855000000000001,
+        "llm_relevance_score": 21.994000000000003,
+        "recency_score": 0.8160997000889687,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 30.010099700088972
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2610.11989",
+      "summary": "On-policy distillation (OPD) trains a student on its own generated responses using token-level teacher supervision. However, uniform weighting overlooks differences in token learning value, while existing weighting methods rely on predefined mappings from prediction signals to token weights. These mappings are not learned from the effectiveness of the resulting student updates, limiting their ability to adapt to evolving learning needs. In this paper, we propose MetaOPD, a bilevel optimization framework that jointly learns the student model and a lightweight token-weighting network. The inner objective updates the student through weighted OPD, while the outer objective optimizes the weighting network using validation loss on reference solutions after a virtual student update. Differentiating through this update connects weighting decisions to their effects on post-update performance, allowing the mapping from prediction signals to token weights to evolve alongside the student. Experiments on six mathematical reasoning and three out-of-domain datasets, covering two student scales and seven baselines, demonstrate the effectiveness of MetaOPD, with Avg@8/Pass@8 gains over OPD of 1.99/5.97 percentage points for the 0.6B student and 2.25/6.41 points for the 1.7B student.",
+      "summary_en": "MetaOPD asks how small language models can learn more effectively from teacher supervision on their own generated trajectories. Fixed entropy- or disagreement-based weights need not reflect actual learning gains. A small network instead maps 74-dimensional token descriptors to weights with unit mean within each response. Each iteration reads the current student AdamW state for an uncommitted virtual update, learns the weighting network from reference-solution loss, and then performs the real update from the original state. The references come from MATH training data and may overlap the rollout prompts; they are not a separate held-out meta-validation pool. The authors state that evaluation examples do not update either network.\n\nWith Qwen3-8B teaching 0.6B and 1.7B students, the six-math-benchmark Avg@8/Pass@8 averages improve over OPD by 1.99/5.97 and 2.25/6.41 percentage points, respectively. Avg@8 averages correctness across eight responses; Pass@8 counts problems with at least one correct response. Restricted-feature and direct-SFT controls support this allocation approach, but the main results use one training seed and several baselines are adapted to a shared surrogate loss. The 1.7B training run costs approximately 1.97 times OPD, so this is not an equal-compute advantage.\n\nThe derivation retains normalization, clipping, and new AdamW-moment derivatives, establishing gradient equality only for the specified single-step map. In checkpoint diagnostics, learned weights outperform uniform weights relatively while both can raise absolute loss; the additional reweighting intervention also reuses its evaluation bank. Out-of-domain gains vary, and the promised code was not obtained for this review. The value is an inspectable supervision-allocation method, rather than a guarantee of long-horizon convergence or universal gains.",
+      "summary_zh": "MetaOPD研究小型語言模型如何從自己的生成軌跡，更有效地吸收教師監督。固定依熵或分歧配權未必對應真正學習收益；作者改以小型網路讀取74維詞元特徵，學習每個回答內均值為一的權重。每次先借用學生目前的AdamW狀態做不提交的虛擬更新，再用參考解答損失訓練配權網路，最後從原狀態執行真正更新。參考解答取自MATH訓練集，與生成提示可重疊，並不是獨立保留驗證集；作者表示評測資料不參與更新。\n\n以Qwen3-8B教導0.6B與1.7B學生，六項數學測試的Avg@8／Pass@8平均較OPD分別增加1.99／5.97及2.25／6.41個百分點。前者衡量八次回答的平均正確率，後者是至少答對一次的題目比例。特徵子集與直接加入SFT的對照支持此配權方式，但主結果只有一個訓練種子，部分基線也改用共同代理損失。1.7B訓練成本約為OPD的1.97倍，不能直接視為等算力優勢。\n\n推導保留正規化、裁切與AdamW的新動量導數，僅保證指定單步的梯度等價。診斷中學得權重雖優於均勻權重，兩者仍可能提高絕對損失；重配權又使用同一評估資料。域外改善並不一致，程式碼尚未實際取得。本文值得關注的是可檢查的監督分配方法，而非長期收斂或普遍增益保證。",
+      "title": "MetaOPD: Meta-Learned Token Weighting for On-Policy Distillation",
+      "title_en": "MetaOPD: Meta-Learned Token Weighting for On-Policy Distillation",
+      "title_zh": "MetaOPD：以元學習詞元配權改善同策略蒸餾"
+    },
+{
+      "arxiv_id": "2610.11794",
+      "authors": [
+        "Zhao, Haoyu",
+        "Yu, Zhengxu",
+        "He, Zhiyuan",
+        "Fang, Meng",
+        "Tutunov, Rasul",
+        "Bou-Ammar, Haitham",
+        "Luo, Weilin",
+        "Wang, Jun"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-10-10T14:19:30.874030+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-ai",
+          "tier": 1,
+          "title": "Memento 3: Model-Based Recursive Self-Improvement through Reflective Rulebooks",
+          "url": "https://arxiv.org/abs/2610.11794v1"
+        },
+        {
+          "link_type": "paper",
+          "source_id": "arxiv-cs-ai",
+          "tier": 1,
+          "title": "Memento 3: Model-Based Recursive Self-Improvement through Reflective Rulebooks",
+          "url": "https://arxiv.org/pdf/2610.11794v1"
+        }
+      ],
+      "llm_evaluation": {
+        "candidate_sha256": "c12ed385eb8eeac9d704d177c97d231f8fdfdfcdbcde8c9ed778516465db0d5f",
+        "components": {
+          "evidence_strength": 0.64,
+          "generalizability": 0.43,
+          "novelty": 0.66,
+          "preference_relevance": 0.96,
+          "reproducibility": 0.4,
+          "rigor": 0.6
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "pp. 2–14, Eqs. 4–5, 11, 20–24: rulebook/program external state, frozen LLM, semantic-fidelity judgment plus exact observed-history replay; MDL-guided selection is approximate.",
+          "pp. 12–14, Eqs. 28–34: self-confirming models, shared-history population, uniform sampling over distinct nonempty plan classes, surviving prior odds; not a calibrated posterior.",
+          "pp. 14–18, Eq. 36, Figs. 4–6: 64×64 grids, persistent rulebook and code, all recorded trajectories replayed, level-weighted and capped RHAE; 25 public games.",
+          "pp. 19–20, Tables 1–2: all 183 levels cleared, mean RHAE 100.0, 7,518 actions versus human 17,135 and complete baseline1 8,347; incomplete-baseline totals are not solution costs.",
+          "pp. 19–21, Table 3: three selected games, actions 617 versus 677 and turns 678 versus 830; no repeated-run uncertainty shown.",
+          "p. 21, Table 4: wa30 N=2 versus N=1, 597 versus 899 actions; level 8 increases from 130 to 138; only one reported comparison.",
+          "pp. 22–25, Table 5 and Figs. 7–9: ALE frame-skip 4, fixed Pong controller, three 21:0 episodes, 9,504 learning frames, no evaluation LLM calls, residual full-frame errors; learning stops on first 21:0.",
+          "pp. 25–27, Related Work and Conclusion: acknowledged language-rule/program-world-model precedents, public-set saturation and need for compute-aware, repeated-run, held-out comparisons."
+        ],
+        "fulltext_sha256": "9e450f4d5b59b67be43ff44e578449e3f4c49ae2b90d4be0b350382402724735",
+        "fulltext_status": "complete",
+        "model": "assistant-native-review",
+        "native_identity_version": 1,
+        "original_candidate_sha256": "c12ed385eb8eeac9d704d177c97d231f8fdfdfcdbcde8c9ed778516465db0d5f",
+        "out_of_scope": false,
+        "producer": "assistant-native-review",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Memento 3 offers a relevant, inspectable learning loop for a frozen-LLM agent: record environment hypotheses in language, compile code, reflect on counterexamples and use accepted models to guide further exploration. Its value lies in separating semantic rule revision from implementation repair. It integrates established world-model, reflective-memory and replay-verification ideas rather than recursively improving the language model’s weights.\n\nThe strongest evidence is completion of 25 public ARC-AGI-3 games with per-game action accounting: 7,518/17,135 is approximately 43.87%, and approximately 9.93% fewer actions than baseline1, which also completes every game. RHAE combines level-index weighting, squared human/agent action ratios and clipping; 100 does not mean optimal performance on each level or general intelligence. Leaderboard systems are not fully matched for backbone, reasoning budget or total compute. In particular, the 59.3-point difference from the Standard harness is not a controlled effect of architecture alone. The three-game ablation supports a local improvement, without repeated trials or uncertainty estimates.\n\nExact replay eliminates models inconsistent with observed history; it does not certify unseen-state predictions, inferred goals or the LLM’s semantic judgment. Reducing actions from 899 to 597 with two models on wa30 is one comparison, not evidence of reduced across-run variance, and level 8 uses more actions. Three 21:0 Pong episodes with different openings demonstrate a fixed controller, but learning stops at a first perfect win, seeds and opponent settings are incompletely specified, and full-frame replay retains errors. Zero evaluation-time LLM calls must be separated from LLM-dependent learning; 9,504 learning frames versus RL baselines is not an equal-total-cost or equal-protocol comparison. Incomplete reconstructable materials, absent hidden tests and missing total inference/planning costs limit reproducibility and extrapolation.",
+        "rationale_en": "Memento 3 offers a relevant, inspectable learning loop for a frozen-LLM agent: record environment hypotheses in language, compile code, reflect on counterexamples and use accepted models to guide further exploration. Its value lies in separating semantic rule revision from implementation repair. It integrates established world-model, reflective-memory and replay-verification ideas rather than recursively improving the language model’s weights.\n\nThe strongest evidence is completion of 25 public ARC-AGI-3 games with per-game action accounting: 7,518/17,135 is approximately 43.87%, and approximately 9.93% fewer actions than baseline1, which also completes every game. RHAE combines level-index weighting, squared human/agent action ratios and clipping; 100 does not mean optimal performance on each level or general intelligence. Leaderboard systems are not fully matched for backbone, reasoning budget or total compute. In particular, the 59.3-point difference from the Standard harness is not a controlled effect of architecture alone. The three-game ablation supports a local improvement, without repeated trials or uncertainty estimates.\n\nExact replay eliminates models inconsistent with observed history; it does not certify unseen-state predictions, inferred goals or the LLM’s semantic judgment. Reducing actions from 899 to 597 with two models on wa30 is one comparison, not evidence of reduced across-run variance, and level 8 uses more actions. Three 21:0 Pong episodes with different openings demonstrate a fixed controller, but learning stops at a first perfect win, seeds and opponent settings are incompletely specified, and full-frame replay retains errors. Zero evaluation-time LLM calls must be separated from LLM-dependent learning; 9,504 learning frames versus RL baselines is not an equal-total-cost or equal-protocol comparison. Incomplete reconstructable materials, absent hidden tests and missing total inference/planning costs limit reproducibility and extrapolation.",
+        "rationale_zh": "Memento 3 提供切題且可檢視的固定LLM代理學習流程：以自然語言記錄環境假設、編譯程式、反思反例，並將被接受的模型用於後續探索。價值在於將語義修訂與實作修補明確分開；它整合既有世界模型、反思記憶與重播驗證方法，尚非語言模型權重的遞迴自我提升。\n\n證據最強的是25個公開ARC-AGI-3遊戲全通與逐遊戲動作帳目：7,518／17,135約43.87%，比也全通的baseline1少約9.93%動作。RHAE採關卡序號加權、平方人類動作比與封頂，100分不表示每關最佳或通用智慧。不同排行榜系統並非骨幹、推理預算和總算力完全匹配；相對Standard harness的59.3分差尤其不是單一架構的受控效應。三遊戲消融支持局部改善，但缺重複試驗與誤差範圍。\n\n精確重播只排除與已觀察紀錄衝突的模型，不能證明未見狀態、目標推論或LLM語義判定全正確。雙模型在wa30由899減至597次動作，屬單一比較，不能驗證降低跨次方差；第8關反而增加動作。Pong三種開局21:0展示固定控制器的可行性，但學習以首勝停止，未完整交代種子與對手設定，且完整影格重播仍有殘差。評估時零LLM呼叫與學習時需要LLM必須分開，9,504學習影格與RL基準也不是等總成本或等協定比較。缺少完整可重建材料、隱藏測試及總推理／規劃成本，限制可重現性與外推。",
+        "raw_weighted_score": 0.732,
+        "request_sha256": "4d343573c5b3fdfaf31e1e165c6955602f5882e5fa3c3a3d19efffe577d273d2",
+        "review_sha256": "2e8ed9bfcb271493b9294c6c80607b9990a6077e41cc06e47daf6ce8e28badf6",
+        "scope_assessment": {
+          "decision": "in_scope_language_agent_method",
+          "reason": "World-model induction through frozen-LLM semantic memory, code generation and planning is the method; visual games do not make this pure computer vision or pure robotics."
+        },
+        "scope_capped_score": null,
+        "scope_policy_version": "explicit-review-exclusion-v1",
+        "scope_status": "in_scope",
+        "score": 0.732,
+        "source_key": "8fcafd7c47af30de96b1944664856f60f2a7bd58bdb83cf2a5c6560e2a7fc175",
+        "story_id": "arxiv:2610.11794",
+        "token_usage": {},
+        "topics": [
+          "Agents & Tool Use",
+          "Reasoning & Chain-of-Thought",
+          "Code & Programming",
+          "Long Context & Memory",
+          "Reinforcement Learning"
+        ]
+      },
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-ai",
+        "tier": 1,
+        "title": "Memento 3: Model-Based Recursive Self-Improvement through Reflective Rulebooks",
+        "url": "https://arxiv.org/abs/2610.11794v1"
+      },
+      "published_at": "2026-10-08T12:06:54+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.732,
+        "llm_relevance_score": 20.496,
+        "recency_score": 0.8097909373500697,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 28.50579093735007
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2610.11794",
+      "summary": "Learning to act in unfamiliar environments requires agents to infer how the world works and revise that understanding as new evidence arrives. Yet limited observations can support multiple world models that explain past interactions but predict different outcomes in unseen states. We introduce Memento 3, building on the Memento series to enable frozen LLM agents to continually learn explicit world models through external memory. The agent maintains a natural-language rulebook as persistent semantic memory, recording revisable hypotheses about environment dynamics while leaving unknown aspects underspecified. It compiles this rulebook into executable code for prediction and planning. Through a continual loop of observation, reflection, rule revision, compilation, and verification, the agent uses prediction errors to refine both the rulebook and its code. Updated code is accepted only when the LLM judges it faithful to the rulebook and cell-exact replay reproduces the observed transitions. We investigate this process as a model-based route to recursive self-improvement (RSI): the agent autonomously explores the environment, revises its world model, and uses verified updates to guide subsequent interaction and learning, while the underlying LLM remains fixed. A population extension maintains multiple world models in parallel, sharing interaction evidence and using their predictions to guide exploration. On ARC-AGI-3, the single-model agent clears every level of all 25 public games, achieves a mean Relative Human Action Efficiency (RHAE) of 100.0, and uses 44% of the human action count. In an Atari Pong case study, a learned feedback controller wins 21:0 in each of three evaluated episodes with different openings, without further LLM calls.",
+      "summary_en": "How can an agent turn interaction with an unfamiliar environment into a revisable, executable world model? Memento 3 uses a fixed-weight language model to maintain a natural-language rulebook and compile it into code for prediction and planning. When observations contradict predictions, the agent revises a rule or repairs its implementation. Before use in ARC tasks, the language model assesses code–rulebook fidelity and the executable must reproduce every observed frame cell by cell. This establishes consistency with recorded interactions, not correctness in unseen states. The evolving components are external memory and code, rather than the language model’s weights.\n\nThe authors report that a single model clears all 25 public ARC-AGI-3 games and their 183 levels in 7,518 actions, approximately 44% of the human baseline, with the capped efficiency score of 100. The closest comparator, baseline1, also clears everything and uses 8,347 actions. A rulebook ablation across three games reduces actions by about 9%. A two-model shared-history population reduces actions from 899 to 597 on one game, which is insufficient to establish repeated-run stability.\n\nIn a Pong case study, the learned fixed controller wins 21:0 in three episodes with different openings and makes no language-model calls during execution. Learning still uses the language model, and full-frame replay retains residual errors. Public-game results and three episodes do not establish generalization to hidden tests, multiple random seeds or different opponents. Action savings also exclude language-model inference, compilation and planning costs. The contribution is an inspectable process for revising environment rules; its effectiveness and total costs require broader validation.",
+      "summary_zh": "面對規則未知的環境，代理如何把互動經驗變成可修正、可執行的世界模型？Memento 3 讓固定權重的語言模型維護自然語言規則簿，再編譯成程式供預測與規劃。新觀察若推翻預測，代理可改寫規則或修補實作；ARC 任務採用前須由語言模型判斷程式忠實性，並逐格重播全部已觀察歷史。這保證對既有紀錄的一致性，不能保證未見狀態的正確性；所謂自我改進發生在外部記憶與程式，而非模型權重。\n\n作者報告單模型通過 ARC-AGI-3 全部25個公開遊戲、183關，使用7,518次動作，約為人類基準的44%，封頂效率分數為100。最接近的 baseline1 同樣全通，使用8,347次動作。三個遊戲的規則簿消融顯示動作減少約9%；雙模型共享歷史在單一遊戲由899減至597次，尚不足證明跨次穩定性。\n\nPong 個案學得的固定控制器在三種開局均以21:0勝出，執行時不再呼叫語言模型，但學習仍需呼叫，完整影格重播亦有殘差。公開遊戲成績與三局案例沒有建立隱藏測試、多隨機種子或不同對手的泛化；動作節省也未計入模型推理、編譯與規劃成本。本文的價值在於可檢視的規則修訂流程，效果與成本仍需更完整驗證。",
+      "title": "Memento 3: Model-Based Recursive Self-Improvement through Reflective Rulebooks",
+      "title_en": "Memento 3: Model-Based Recursive Self-Improvement through Reflective Rulebooks",
+      "title_zh": "Memento 3：透過反思規則簿進行基於模型的遞迴自我改進"
+    },
+{
+      "arxiv_id": "2610.12085",
+      "authors": [],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-10-10T14:18:34.312783+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-ai",
+          "tier": 1,
+          "title": "Is Memorization Context-Sensitive? Prefix-Based Extraction Beyond Isolated Prefixes",
+          "url": "https://arxiv.org/abs/2610.12085v1"
+        },
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-ai",
+          "tier": 1,
+          "title": "Is Memorization Context-Sensitive? Prefix-Based Extraction Beyond Isolated Prefixes",
+          "url": "https://arxiv.org/pdf/2610.12085v1"
+        }
+      ],
+      "llm_evaluation": {
+        "candidate_sha256": "e3e77c53b824a4e9cb0f17afe74df94251b924ef86a56d6f494deee434765e26",
+        "components": {
+          "evidence_strength": 0.52,
+          "generalizability": 0.46,
+          "novelty": 0.65,
+          "preference_relevance": 0.93,
+          "reproducibility": 0.42,
+          "rigor": 0.44
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "pp.1–3, Abstract, §§1–3 and Eqs.1–4: distinguish exact generated extraction from probabilistic suffix scoring; paired fixed (p,s) comparisons define the question.",
+          "p.4, §4: three specified 7–8B instruct models; 50,000 uniformly sampled Pile-CC items; prefixes32/64/128, suffix32; E5 nearest/farthest retrieval over67,655 StackExchange/PubMed/Wikipedia documents.",
+          "pp.4–6, Eqs.5–10 and Figures1–2: exposed sets use strict log-probability >−16; Jaccard overlap grows with prefix length; Figure1 displays only the high-likelihood tail, not the entire50k distribution.",
+          "p.7 Figure3 and p.14 Table2: main nine-row decomposition reconciles with pairwise intersections within printed rounding; Llama128 empty659→relevant672 despite robust core627.",
+          "p.7 Table1/§5.4 and p.18 Figure11: G=irr−empty, S=rel−irr are arithmetic contrasts; Llama32 n318 differs from main three-condition union132 and no explicit extra boundary selection rule is given.",
+          "pp.8–9, §§5.5–7/Limitations: real-world applicability and equally-leakable statements exceed tested direct-continuation log-probabilities; chat templates substantially change the target sequence.",
+          "pp.11–13, AppendicesA–B/Figures5–6: threshold range −22 through−10, boundary-local flips; expected independent-draw budget can be computed, but no attack trial is reported.",
+          "pp.13–16, AppendicesC–D/Table3–4/Figures4,7,8: instruction framing is not an isolated system-prompt ablation; Figure7 robust-under-both green bars differ from Table3-implied intersections; Figure8 labels random/rand whereas prose calls the comparator farthest.",
+          "pp.14,17, AppendicesE–F/Figures9–10: assistant-role boundary breaks direct prefix/suffix adjacency; AppendixF explicitly says probabilities computed directly with no actual sampling required; Figure10 axis says prefix although caption describes suffix.",
+          "pp.14,18–19, AppendixG/Figures11–12: heavy-tailed generic/semantic contrasts and diagonal scatter support paired similarity but do not isolate semantic causality; scatter axes are restricted to−16..0.",
+          "pp.15,17,20–24, AppendixH/Tables5–6: selected threshold-crossing examples, not empirical greedy-decoding successes; additional OLMo-2-0425-1B examples and repetition/predictable-format examples require separate interpretation.",
+          "p.1 footnote and p.9 ethics: code link claimed available, full per-example extraction outputs explicitly not released; no external code or raw results verified in this review."
+        ],
+        "fulltext_sha256": "a00cf3ae9c6bc3045bc5d191b00495d58bd5cc2312ddcbef19baff5e5af7145f",
+        "fulltext_status": "complete",
+        "model": "assistant-native-review",
+        "native_identity_version": 1,
+        "original_candidate_sha256": "e3e77c53b824a4e9cb0f17afe74df94251b924ef86a56d6f494deee434765e26",
+        "out_of_scope": false,
+        "producer": "assistant-native-review",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "The strongest contribution is item-paired contextual comparison that separates persistent, suppressed and newly enabled exposure, avoiding the loss of set-level information in aggregate totals. Table 2’s empty/relevant Jaccard overlap increases from 0.677–0.725 with short prefixes to 0.912–0.952 with long prefixes. All nine main Figure 3 decompositions are arithmetically compatible with Table 2; the threshold sweep and margin analysis support this bounded descriptive pattern.\n\nExposure is a threshold on teacher-forced target-suffix log-probability, not observed verbatim generation or deployment leakage. At −16 the full 32-token suffix probability is about 1.13×10⁻⁷, requiring roughly 6.16 million independent draws for 50% success; practical attack costs and other decoding regimes are untested. Relevant-context totals increase for Llama at 64/128 tokens and OLMo at 128 tokens, so aggregate suppression is not universal across models and lengths.\n\nAttribution to parametric memorization remains weak. Pile-CC provenance does not establish item-level membership in each model’s training data, and distinct Pile subsets do not establish freedom from cross-corpus duplicates. Exact/near-duplicate filtering, nonmember controls and controls for repetition or predictable sequences are unreported. Attrition from 50,000 to about 49,300 items is unexplained, and equal token counts across tokenizers need not represent equal strings. Table 1/Figure 11 leave exposed/boundary selection unclear. Figure 7 labels a two-context shared core, yet its Llama-32 value of 82 differs from Table 3’s implied intersection of 86, beyond rounding. Appendix examples additionally include a 1B OLMo model outside the main experimental matrix.\n\nThe supported contribution is a context-sensitive probability-exposure observation and an item-level auditing perspective. Actual generated risk, training-memory provenance, a causal effect of semantic relevance and broad RAG-defense effectiveness remain unestablished. The code link and basic settings help further inspection but do not establish complete reproducibility.",
+        "rationale_en": "The strongest contribution is item-paired contextual comparison that separates persistent, suppressed and newly enabled exposure, avoiding the loss of set-level information in aggregate totals. Table 2’s empty/relevant Jaccard overlap increases from 0.677–0.725 with short prefixes to 0.912–0.952 with long prefixes. All nine main Figure 3 decompositions are arithmetically compatible with Table 2; the threshold sweep and margin analysis support this bounded descriptive pattern.\n\nExposure is a threshold on teacher-forced target-suffix log-probability, not observed verbatim generation or deployment leakage. At −16 the full 32-token suffix probability is about 1.13×10⁻⁷, requiring roughly 6.16 million independent draws for 50% success; practical attack costs and other decoding regimes are untested. Relevant-context totals increase for Llama at 64/128 tokens and OLMo at 128 tokens, so aggregate suppression is not universal across models and lengths.\n\nAttribution to parametric memorization remains weak. Pile-CC provenance does not establish item-level membership in each model’s training data, and distinct Pile subsets do not establish freedom from cross-corpus duplicates. Exact/near-duplicate filtering, nonmember controls and controls for repetition or predictable sequences are unreported. Attrition from 50,000 to about 49,300 items is unexplained, and equal token counts across tokenizers need not represent equal strings. Table 1/Figure 11 leave exposed/boundary selection unclear. Figure 7 labels a two-context shared core, yet its Llama-32 value of 82 differs from Table 3’s implied intersection of 86, beyond rounding. Appendix examples additionally include a 1B OLMo model outside the main experimental matrix.\n\nThe supported contribution is a context-sensitive probability-exposure observation and an item-level auditing perspective. Actual generated risk, training-memory provenance, a causal effect of semantic relevance and broad RAG-defense effectiveness remain unestablished. The code link and basic settings help further inspection but do not establish complete reproducibility.",
+        "rationale_zh": "本文最有價值的部分是對同一前綴—後綴做情境配對，區分持續暴露、被抑制與新增暴露，避免總量掩蓋集合改變。表2的空白／相關Jaccard由短前綴的0.677–0.725升至長前綴的0.912–0.952，主要圖3九列分解可與表2集合數相容；門檻掃描與臨界距離分析也支持這個有限範圍的描述。\n\n但暴露是teacher-forced目標後綴的總對數機率門檻，不是觀察到的逐字生成或部署洩漏率。−16對32 token整段只有約1.13×10⁻⁷機率，50%獨立抽樣命中約需616萬次；實際攻擊成本及其他解碼設定未測。表2的Llama 64／128與OLMo 128相關情境暴露量反而增加，因此「總體抑制」不是所有模型與長度的普遍定律。\n\n參數記憶的歸因仍不足：Pile-CC來源不能替代每個模型的逐例訓練成員核對，不同Pile子集也不等於無跨庫重複；未報exact／near-duplicate去除、非成員對照或重複／可推導序列對照。50,000抽樣與約49,300有效樣本之差未說明，跨tokenizer的同樣32 token不保證同字串。表1／圖11的exposed/boundary選樣口徑不明；圖7標示兩情境共有核心，但Llama32的82與表3推得交集86不同，不能視為四捨五入誤差。附錄另有1B OLMo例子，未納主實驗矩陣。\n\n可採用的是概率暴露對情境敏感的實證提示與逐項稽核方法。真正生成風險、訓練記憶來源、相關性因果作用及普遍RAG防護效力尚未建立；code連結與基本設定有助後續查核，仍不足以主張完整重現。",
+        "raw_weighted_score": 0.6805000000000001,
+        "request_sha256": "bb9bd64e554d00c1f2ed4c629d2199b935c59fa84963c769e733783168f4fdba",
+        "review_sha256": "146a53c4cf1e520708b8fe14ed45e4a99a221cde6972d6f996d0dc2986307da7",
+        "scope_assessment": {
+          "decision": "in_scope_llm_memorization_and_contextual_safety_measurement",
+          "reason": "Language-model probability measurement and RAG/safety evaluation are the methodological object."
+        },
+        "scope_capped_score": null,
+        "scope_policy_version": "explicit-review-exclusion-v1",
+        "scope_status": "in_scope",
+        "score": 0.6805000000000001,
+        "source_key": "5062225e8de9c983e4c207ed2bd1b7373bd7f22c614ec77da271ea2bb49564f9",
+        "story_id": "arxiv:2610.12085",
+        "token_usage": {},
+        "topics": [
+          "Large Language Models",
+          "RAG & Knowledge",
+          "AI Safety",
+          "Red Teaming & Evaluation",
+          "Prompting & In-Context Learning",
+          "Long Context & Memory"
+        ]
+      },
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-ai",
+        "tier": 1,
+        "title": "Is Memorization Context-Sensitive? Prefix-Based Extraction Beyond Isolated Prefixes",
+        "url": "https://arxiv.org/abs/2610.12085v1"
+      },
+      "published_at": "2026-10-08T14:57:33+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.6805000000000001,
+        "llm_relevance_score": 19.054000000000002,
+        "recency_score": 0.8194446106999989,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 27.0734446107
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2610.12085",
+      "summary": "Large language models (LLMs) can expose memorized training sequences under prefix-based extraction: given a prefix from a training example, the model may assign high probability to the original continuation. In deployed systems, however, prefixes are rarely evaluated in isolation. They often appear together with instructions, retrieved documents, or other task-specific context, as in retrieval-augmented generation (RAG). This motivates examining whether contextual conditioning mitigates memorization or merely changes the set of memorized samples that become extractable. We investigate this issue through paired item-level measurements of probabilistic suffix extraction. For each prefix-suffix pair, we score the target suffix under an empty prompt and under retrieved contexts of varying relevance, across three open-weight instruction-tuned models. We find that context does not simply erase memorization. Instead, extractable memorization consists of a context-robust core and a context-sensitive boundary. Many samples that are extractable without context remain extractable under the retrieved context, especially as the prefix length increases. At the same time, context mainly affects marginal samples near the extraction threshold: it suppresses some exposures, but also enables new ones that are missed by prefix-only evaluation. These findings qualify the view that RAG reduces memorization risk. Context can lower aggregate extraction by suppressing boundary cases, yet robustly extractable samples persist, and context-enabled extractability remains security-relevant.",
+      "summary_en": "Does adding retrieved documents stop a model from revealing remembered content? This study compares the same prefix–suffix items under empty, nearest-retrieved and farthest-retrieved contexts. It samples 50,000 Pile-CC items, evaluates three 7–8B instruction-tuned models with 32-, 64- and 128-token prefixes and a fixed 32-token suffix, and retrieves from three other Pile subsets.\n\nIts main contribution is to separate persistent, suppressed and newly enabled exposure instead of reporting only an aggregate total. In Table 2, Jaccard overlap between empty-context and relevant-context exposure sets increases from about 0.68–0.73 to 0.91–0.95 as prefixes grow; threshold-near items are most likely to flip. Aggregate exposure does not always fall: for Llama with a 128-token prefix it rises from 659 to 672 items. Threshold and prompt-format analyses support a bounded pattern, not a result for every deployed RAG system.\n\nExposure here means a directly computed suffix probability, with no test of actual generated leakage. The −16 threshold corresponds to only about one chance in ten million for the entire suffix. The paper does not verify each item’s membership in each model’s training data or report near-duplicate exclusion against the retrieval corpus, leaving parametric memory, copying and ordinary predictability insufficiently separated. Unexplained attrition below 50,000 items, Table 1’s sample definition and Figure 7’s intersection labels also require clarification. The useful lesson is to track both persistent and newly enabled risks, rather than equating a lower aggregate count with successful protection.",
+      "summary_zh": "檢索增強生成加入文件後，模型是否就不再洩露記憶內容？本文把問題拆到個別前綴與後綴，對五萬筆隨機抽取的Pile-CC樣本，在空白、最相關與最不相關檢索情境下比較目標後綴的對數機率。三個7–8B指令模型使用32、64、128 token前綴與固定32 token後綴；檢索庫另取Pile的三種子集。\n\n主要貢獻是區分持續暴露、被抑制及新增暴露，而非只看總量。表2中，空白與相關情境的暴露集合Jaccard重疊，隨前綴增長由約0.68–0.73升至0.91–0.95；臨界值附近最容易翻轉。不過總量並非一律下降：Llama在128 token時由659筆增至672筆。不同門檻與提示格式的分析支持局部現象，不能證明所有RAG部署皆相同。\n\n這裡的暴露是直接計算後綴機率，沒有實際生成洩漏測試；門檻−16對整段機率僅約一千萬分之一。論文未逐項確認樣本屬於各模型訓練集，也未報檢索庫的近重複排除，故尚難分開參數記憶、複製與一般可預測性。實際樣本少於五萬的原因、表1樣本定義及圖7交集標示也待釐清。其價值是提醒安全評估同時追蹤存續與新增風險，而非將總暴露降低直接當作保護成功。",
+      "title": "Is Memorization Context-Sensitive? Prefix-Based Extraction Beyond Isolated Prefixes",
+      "title_en": "Is Memorization Context-Sensitive? Prefix-Based Extraction Beyond Isolated Prefixes",
+      "title_zh": "記憶會隨情境改變嗎？超越孤立前綴的前綴式擷取"
     }
-  ],
+],
   "radar": [],
   "run_date": "2026-10-09",
   "run_id": "bounded-partial-additive-2026-10-09",
   "run_info": {
-    "added_native_count": 5,
-    "added_reviewed_candidate_count": 5,
-    "added_subset_counts": [
-      4,
-      1
-    ],
-    "addition_prepared_at_utc": "2026-10-10T14:10:00+00:00",
-    "addition_ranking_anchor_basis": "Independent accepted4 and accepted1 anchors; no common reranking or collection cutoff.",
-    "addition_ranking_anchor_utc": null,
-    "addition_ranking_anchors_utc": [
-      "2026-10-10T13:42:00+00:00",
-      "2026-10-10T13:58:00+00:00"
-    ],
-    "additions_jointly_reranked": false,
-    "combined_native_reranked": false,
-    "coverage_status": "partial",
-    "date_basis_by_story": {
-      "arxiv:2610.10833": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.11030": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.11050": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.11134": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.11268": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.11287": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.11464": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.11559": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.11573": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.11578": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.11593": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.11600": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.11613": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.11620": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.11647": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.11715": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.11773": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.11781": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.11858": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.12002": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.12056": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.12061": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.12083": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.12086": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.12114": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.12124": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.12129": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.12168": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.12176": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.12235": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.12242": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.12269": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.12274": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.12292": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.12303": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.12304": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.12313": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.12325": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.12360": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.12361": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.12374": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.12375": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.12409": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.12410": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.12436": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      }
+  "added_native_count": 3,
+  "added_reviewed_candidate_count": 3,
+  "addition_prepared_at_utc": "2026-10-10T14:45:00+00:00",
+  "addition_ranking_anchor_basis": "Frozen preparation time; not source collection cutoff or historical ranking time",
+  "addition_ranking_anchor_utc": "2026-10-10T14:45:00+00:00",
+  "combined_native_reranked": false,
+  "coverage_status": "partial",
+  "date_basis_by_story": {
+    "arxiv:2610.10833": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
     },
-    "error_summary": "PARTIAL 部分更新：保留已發布40篇及原順序；兩個獨立子集4選4、1選1，依4＋1次序追加Papers。45篇與新增5篇均未合併重新排名；全日總數及收集截止未知。",
-    "finished_at": "2026-10-10T03:29:00+00:00",
-    "full_day_candidate_total": null,
-    "items_total": null,
-    "preserved_baseline_body_sha256": "d3a8bfb4ad4a63c6814d77c381ae05a1e3fec4b81c0a1d589088711f1db7ad16",
-    "preserved_baseline_count": 40,
-    "preserved_baseline_kind": "published_verified",
-    "preserved_baseline_seal_sha256": "79011fa3368c9ca51de257babdb4b8224adb1777710a5266a8c79d9ab74c31d5",
-    "preview_only": false,
-    "prior_reviewed_total_count": null,
-    "release_scope_note": "Preserve 40 published Oct9 entries; append independent 4-of-4 then 1-of-1 subsets. Neither 45 combined stories nor 5 additions are jointly reranked. First submission Oct8 differs from bounded listing Oct9; exact announcement events, configured-query coverage, full-day totals and cutoff are unknown.",
-    "reviewed_selected_count": 45,
-    "reviewed_total_count": null,
-    "run_id": "bounded-partial-additive-2026-10-09",
-    "source_collection_cutoff_utc": null,
-    "started_at": "2026-10-10T03:29:00+00:00",
-    "stories_total": 45,
-    "success": true,
-    "underlying_live_commit": "c966df15449574e0d0f8787f868fec24f44dbc3c"
+    "arxiv:2610.11030": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.11050": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.11134": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.11268": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.11287": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.11464": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.11559": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.11573": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.11578": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.11593": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.11600": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.11613": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.11620": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.11647": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.11715": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.11773": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.11781": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.11794": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.11858": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.11989": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.12002": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.12056": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.12061": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.12083": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.12085": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.12086": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.12114": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.12124": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.12129": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.12168": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.12176": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.12235": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.12242": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.12269": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.12274": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.12292": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.12303": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.12304": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.12313": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.12325": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.12360": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.12361": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.12374": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.12375": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.12409": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.12410": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.12436": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    }
   },
+  "error_summary": "PARTIAL 部分更新：保留已發布97篇中的Oct9原45篇及既有順序；本批3篇依原規則選3篇，按子集排名追加Papers。48篇未合併重新排名；全日總數及收集截止未知。",
+  "finished_at": "2026-10-10T03:29:00+00:00",
+  "full_day_candidate_total": null,
+  "items_total": null,
+  "preserved_baseline_body_sha256": "50a7bf45f920e37061593875982a0d0cafa493b2051a234d1919b42e38c1967a",
+  "preserved_baseline_commit": "ecc3b2cf16c26005a24b6b02e618380ea8292c8b",
+  "preserved_baseline_count": 45,
+  "preserved_baseline_kind": "published_verified",
+  "preview_only": false,
+  "prior_reviewed_total_count": null,
+  "release_scope_note": "Three approved additions from an unchanged 3-of-3 filter are appended to Papers after the 45 preserved Oct9 entries of the verified public97 baseline. Neither all 48 nor all 100 are jointly reranked. First submission Oct8 differs from listing Oct9; exact announcement events, configured-query coverage, full-day totals and collection cutoff remain unknown.",
+  "release_state": "approved_bounded_release",
+  "reviewed_selected_count": 48,
+  "reviewed_total_count": null,
+  "run_id": "bounded-partial-additive-2026-10-09",
+  "source_collection_cutoff_utc": null,
+  "started_at": "2026-10-10T03:29:00+00:00",
+  "stories_total": 48,
+  "success": true
+},
   "sources_status": [
     {
       "category": null,
