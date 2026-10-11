@@ -338,7 +338,7 @@
       "type": "researcher"
     }
   },
-  "generated_at": "2026-10-11T05:24:10+00:00",
+  "generated_at": "2026-10-11T06:06:20+00:00",
   "model_releases_by_entity": {},
   "papers": [
 {
@@ -6088,6 +6088,258 @@
       "title": "SynCo: Data Synthesis Co-Training for Self-Evolving LLMs via Multi-Agent Reinforcement Learning",
       "title_en": "SynCo: Data Synthesis Co-Training for Self-Evolving LLMs via Multi-Agent Reinforcement Learning",
       "title_zh": "SynCo：以多代理強化學習協同訓練資料合成，讓大型語言模型自我演進"
+    },
+    {
+      "arxiv_id": "2610.11358",
+      "authors": [
+        "Sreetama Sarkar",
+        "Saptarshi Mitra",
+        "Sitao Huang",
+        "Souvik Kundu",
+        "Peter A. Beerel"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "entities": [],
+      "first_seen_at": "2026-10-11T06:06:00+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-direct-source722",
+          "tier": 1,
+          "title": "RaReCache: Bridging the Gap in Cross-Model KV Cache Reuse via Rank disagreement-based Selective Recomputation",
+          "url": "https://arxiv.org/abs/2610.11358"
+        },
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-direct-source722",
+          "tier": 1,
+          "title": "RaReCache: Bridging the Gap in Cross-Model KV Cache Reuse via Rank disagreement-based Selective Recomputation",
+          "url": "https://arxiv.org/pdf/2610.11358"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.69,
+          "generalizability": 0.57,
+          "novelty": 0.77,
+          "preference_relevance": 0.98,
+          "reproducibility": 0.48,
+          "rigor": 0.6
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "C01; PDF pp.4,5,12; Sections3.1–3.2/AppendixA/Eqs1–9: Independent ridge maps per target layer and K/V tensor, source-layer selection by R2, keys de-rotated/re-rotated. Rank score is squared norm outside leading covariance directions of centered fitted predictions; target-free selection is conditional on a map fitted with target calibration caches.",
+          "C02; PDF pp.5,12; Eq2 and Eq9: yhat-yhat_r = (x-xbar)W(I-VrVrT); orthonormal projection gives norm(z)^2 - norm(zVr)^2. This algebra is not a guarantee of downstream importance or OOD detection.",
+          "C03; PDF pp.6,15,16; Setup/AppendixC.1/D: lambda=.01, r=128, K8 for Qwen and Llama3B→8B, K20 for8B→70B; task-matched calibration128k–350k tokens; GSM8K/ARC train, MMLU validation, LongBench other buckets and standard split with overlap removal. Within-family shared-tokenizer requirement.",
+          "C04; PDF pp.6,16; Table5: Qwen0.6B→14B rho.3: GSM90.2/95.1, ARC-C90.0/92.9, ARC-E93.0/94.3. MMLU61.2/78.6; LongBench rho.3 dash means not_run. Near95–99% retention is not all-task coverage.",
+          "C05; PDF pp.16; Table5: At rho.5 GSM95.3 vs95.1 and MMLU72.6 vs78.6; LongBench59.7 vs65.9. GSM p=.86 reported without named test or paired counts, not proof of equivalence. LongBench retention prints90.7 but rounded inputs give90.59; retain rounding uncertainty.",
+          "C06; PDF pp.7; Table1: Llama3B→8B full GSM1319: source82.3,target85.8,rho0/0.2/0.3/0.4=81.7/85.7/84.2/86.4; nonmonotonic. Llama8B→70B FIRST300:source82.7,target95.3,81.0/85.3/88.3/92.0;92/95.3=96.54%.",
+          "C07; PDF pp.3,7,8; Figures4/7/8: Matched selector study300 GSM items,rho.3:plain73.3,random82.3,source-att75.0,target-att73.7,l2-error80.7,rank90.3,target94.7. Rank closes79.44% of gap vs42.06% random;8.0pp over random. Figure8 unlabelled CacheBlend point at rho.3 visually near84 rather than text80.7, unresolved.",
+          "C08; PDF pp.8; Table2: Reverse14B→0.6B/1.7B/4B MMLU:native35.0/57.5/70.2,transfer27.2/71.9/73.3,lifts−7.8/+14.4/+3.1pp. rho.2 values27.9/71.4/73.2 do not generally improve. This bounds source-capacity substitution claims.",
+          "C09; PDF pp.8,9,12,13; Section4.6/AppendixB.1/Table3: A10080GB,PyTorch2.6 eager,source cache assumed already available; kernel-sum GPU-busy timing except live TTFT. Qwen map671M parameters. rho.3 optimized single-request speedups1.16–1.95; saturated1.89–2.36. No full-generation, source-prefill, mapping-fit, or interdevice-transfer cost evidence.",
+          "C10; PDF pp.9,13,14; Figure9/Tables3–4: Maximum3.04× atT149,rho.2,batch384;rho.3 T149 saturated2.36×. Full-test GSM rho.2 absent. Live FCFS maxbatch32,500 arrivals discarding50,capacity based on three32-request batches;different regime from maximum GPU-busy batching.",
+          "C11; PDF pp.14; Table4: At42req/s:p50 870→173ms,p99 1805→284ms,ratios5.029/6.356 from rounded cells. At5req/s:p50 51→95 andp99 113→182,so method slower. Reported capacities77.0/42.7=1.803×;do not extrapolate guaranteed GPU provisioning.",
+          "C12; PDF pp.12,13,15; AppendixB/C: BF16 and source-block reuse reduce overhead;195/27=7.222 map speedup,70/17=4.118 selection speedup (paper4.2 may reflect rounding). Dense masked attention ceiling tends1/(2rho), custom sparse causal1/rho is future implementation, not measured.",
+          "C13; PDF pp.3,4,7,15,16,17; Figures3/12/13: Single-prompt token visualizations suggest attention sinks and content-sensitive rank scores; full-test selected-prefix fraction0.23% reported. Layer mask overlap0.86–0.97 is evidence for shared selection, not a shared-vs-per-layer accuracy ablation or universal information-density proof.",
+          "C14; PDF pp.10,16; Reproducibility/Limitations: Code will be released upon de-anonymization/publication. No external code/model/data acquired this review; paper admits task-calibration sensitivity and same-tokenizer limitation. AI-use disclosure is neither independent validation nor a quality penalty.",
+          "C15; PDF pp.6,7,9,14,16; Cross-page reporting issues: Llama3B→8B gap2.7× in setup vs2.5× Table1; Figure6 LongBench includesrho.6 while stated sweep ends.5; Figure9 RaReCache curve extends beyond42req/s while AppendixB.3 says sweep caps42. These remain source reporting ambiguities, not silently repaired observations."
+        ],
+        "fulltext_sha256": "fc3953ceb6b46739c9e3be316a302fbbefe61712ddfb6efa73ca2d085831f70a",
+        "fulltext_status": "complete",
+        "model": "assistant-native-review",
+        "out_of_scope": false,
+        "producer": "assistant-native-review",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "RaReCache strongly matches LLM inference and cache-efficiency interests. Reduced-rank prediction disagreement and a fixed-budget selector study form a useful contribution. The tables support conditional recovery of transfer accuracy, but near-native retention does not hold across all tasks, and maximum speed and quality claims use different settings. Systems measurements concern handoffs after source-cache creation. Task-matched calibration, shared tokenizers, short-load evaluation, and unreleased code constrain generality; unresolved plot/text discrepancies and incomplete statistics weaken certainty. Retain as a research candidate without claiming universal deployability or reproduced results. Formal selection, date placement, and publication require separate checks.",
+        "rationale_en": "RaReCache strongly matches LLM inference and cache-efficiency interests. Reduced-rank prediction disagreement and a fixed-budget selector study form a useful contribution. The tables support conditional recovery of transfer accuracy, but near-native retention does not hold across all tasks, and maximum speed and quality claims use different settings. Systems measurements concern handoffs after source-cache creation. Task-matched calibration, shared tokenizers, short-load evaluation, and unreleased code constrain generality; unresolved plot/text discrepancies and incomplete statistics weaken certainty. Retain as a research candidate without claiming universal deployability or reproduced results. Formal selection, date placement, and publication require separate checks.",
+        "rationale_zh": "RaReCache高度符合LLM推論與快取效率主題，低秩預測差異選詞及同預算選詞器實驗構成有價值的貢獻。主表支持有條件修補轉移準確度，但近原生保留率並非遍及所有任務，最大加速與品質數字來自不同設定；系統結果只衡量已有source cache後的交接。任務校準、共享tokenizer、短負載及未公開程式限制普適性，未解的圖文差異與統計缺口降低確證程度。建議保留為研究候選，避免當作已可泛用部署或已重現的解法；正式篩選、日期歸屬與發布另核。",
+        "raw_weighted_score": 0.782,
+        "request_sha256": "674478b03726853782bdbcbab9d5d0f0d57d689517de428555e24f098594c7c0",
+        "review_sha256": "1be1d4bebaad7cd18525bfcb021e73d19c13ff61d74dd676a5f668d8199803d2",
+        "scope_assessment": {
+          "decision": "in_scope",
+          "reason_en": "General LLM cache-transfer, selection, and serving methodology; not an excluded pure-domain application.",
+          "reason_zh": "核心為一般LLM快取轉移、選詞與推論系統方法；不是排除的純領域應用。"
+        },
+        "scope_capped_score": null,
+        "scope_policy_version": "explicit-review-exclusion-v1",
+        "scope_status": "in_scope",
+        "score": 0.782,
+        "source_key": "14bc08d68082383baab5568c860e07fc7c53e3016df93570727096155e126aa4",
+        "story_id": "arxiv:2610.11358",
+        "token_usage": {},
+        "topics": [
+          "Large Language Models",
+          "Inference & Serving",
+          "Scaling & Efficiency",
+          "Long Context & Memory",
+          "Transformer Architecture"
+        ]
+      },
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-direct-source722",
+        "tier": 1,
+        "title": "RaReCache: Bridging the Gap in Cross-Model KV Cache Reuse via Rank disagreement-based Selective Recomputation",
+        "url": "https://arxiv.org/abs/2610.11358"
+      },
+      "published_at": "2026-10-08T06:49:28+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.782,
+        "llm_relevance_score": 21.896,
+        "recency_score": 0.7430577725636517,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 29.839057772563653
+      },
+      "section": null,
+      "source_name": "arXiv",
+      "story_id": "arxiv:2610.11358",
+      "summary": "Cross-model KV-cache reuse remains a key challenge in modern LLM serving. Coding agents and multi-model systems increasingly route a shared context across models: a user may switch models mid-session, or a cascade may escalate a difficult query. Because KV caches contain model-specific representations, each switch typically forces the receiving model to prefill the entire context from scratch. Recent work shows that closed-form linear maps can translate KV caches between models in the same family, but transfer accuracy degrades as the model-size gap widens. In this paper, we establish that these transfer failures are concentrated in a small subset of information-dense tokens. To bridge this gap, we introduce RaReCache, a framework that enables a large target model to decode accurately from a cache prefilled by a much smaller source via selective recomputation. RaReCache identifies these critical positions using a novel rank disagreement metric, scoring each token by the energy of its mapped KV in output directions weakly supported by the calibration data. Across two model families and five benchmarks, on a 23x parameter gap (Qwen3-0.6B to 14B) recomputing just 30% of positions retains 95-99% of the target accuracy, whereas on a 8.8x gap (Llama3-8B to 70B), recomputing 40% retains 96.5% of the target accuracy. RaReCache largely removes sensitivity to source-model size, and achieves up to a 3.04x prefill speedup. For online serving, it handles 1.8x the request throughput of target prefill on a single GPU, and at the target's saturation load, reduces median and 99th-percentile time-to-first-token (TTFT) by 5.0x and 6.4x respectively, with a 30% recompute budget. RaReCache establishes an efficient serving paradigm where small models prefill on behalf of massive targets, enabling large models to recompute only critical tokens, drastically reducing prefill latency.",
+      "summary_en": "Switching to a larger language model usually requires prefilling the context again because the original KV cache is model-specific. RaReCache fits a linear map using task-matched calibration data from models within the same family. It compares full-map and reduced-rank predictions, selecting tokens whose mapped representations extend beyond the dominant calibration directions. The target recomputes only those positions and uses translated cache entries elsewhere.\nFor Qwen3-0.6B to 14B, recomputing 30% of positions raises full-test GSM8K accuracy from 71.6% under plain transfer to 90.2%, retaining about 94.8% of target accuracy. ARC-Challenge and ARC-Easy retain approximately 96.9% and 98.6%. These results do not describe all five tasks: MMLU retains only about 77.9% at the same budget, and LongBench does not report that configuration. Llama 8B-to-70B retains about 96.5% with 40% recomputation, but only on the first 300 GSM8K examples.\nOn one A100, the maximum 3.04-fold prefill speedup uses 20% recomputation and a large batch. Near baseline saturation, the 30% configuration improves median and tail time-to-first-token by about 5.0 and 6.4 times; at low load it is slower. These measurements exclude already-completed source prefill and do not establish end-to-end generation speedups. The method is promising for conditional cache handoffs, but depends on task-matched calibration and shared vocabularies. Rank sensitivity, complete uncertainty reporting, and matched-cost original-system comparisons are missing; code release is only promised.",
+      "summary_zh": "切換到較大的語言模型時，原有 KV 快取通常不能直接沿用，必須重新預填整段上下文。RaReCache 先用同家族模型、同任務校準資料擬合線性映射，再比較完整映射與低秩投影的預測差異，挑出偏離主要校準方向的詞元，只讓目標模型重算這些位置，其餘沿用轉換後的快取。\nQwen3-0.6B 轉到14B時，重算30%位置讓GSM8K正確率由純轉移的71.6%升至90.2%，約保留目標模型94.8%；兩個ARC測試約保留96.9%與98.6%。這不能概括五項測試：同預算下MMLU只保留約77.9%，LongBench未測該設定。Llama 8B轉70B以40%重算保留約96.5%，但僅涵蓋前300題。\n單張A100上，最高3.04倍預填加速來自20%重算與大批次；接近基線飽和時，30%設定的首詞中位／尾端延遲約改善5.0／6.4倍，低負載卻較慢。這些成本排除已完成的小模型預填，不是整段生成的端到端加速。方法有實用潛力，但依賴任務相近的校準與共享詞彙，缺秩敏感度、完整統計及等成本原系統比較，程式也僅承諾日後公開；宜視為有條件的快取交接方案。",
+      "title": "RaReCache: Bridging the Gap in Cross-Model KV Cache Reuse via Rank disagreement-based Selective Recomputation",
+      "title_en": "RaReCache: Bridging the Gap in Cross-Model KV Cache Reuse via Rank disagreement-based Selective Recomputation",
+      "title_zh": "RaReCache：以秩差異選擇性重算，縮小跨模型 KV 快取重用的落差"
+    },
+    {
+      "arxiv_id": "2610.11352",
+      "authors": [
+        "Gukhyeon Lee",
+        "SangKeun Lee"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "entities": [],
+      "first_seen_at": "2026-10-11T06:06:00+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-direct-source722-rlarc",
+          "tier": 1,
+          "title": "RL-ARC: Calibrating Large Reasoning Models via Reasoning-guided Uncertainty",
+          "url": "https://arxiv.org/abs/2610.11352v1"
+        },
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-direct-source722-rlarc",
+          "tier": 1,
+          "title": "RL-ARC: Calibrating Large Reasoning Models via Reasoning-guided Uncertainty",
+          "url": "https://arxiv.org/pdf/2610.11352v1"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.68,
+          "generalizability": 0.7,
+          "novelty": 0.72,
+          "preference_relevance": 0.95,
+          "reproducibility": 0.45,
+          "rigor": 0.6
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "pp.1–4, Figures 1–2, Equations 1–6: two verbalized confidence reports; reward z−(z−ca)^2−lambda_pos*z*(ca−cr)^2−lambda_neg*(1−z)*cr^2; no direct stepwise reasoning-correctness supervision.",
+          "p.3 Figure 2 versus p.4 Eq.5: diagram calibration reward includes a constant +1 omitted by Eq.5; fixed-offset discrepancy, not evidence of a changed centered-GRPO advantage.",
+          "p.5 Table 1: Qwen3 OOD RL-ARC51.61%/.23 Brier/.17 ECE versus RLCR50.99%/.26/.22; Qwen2.5 OOD47.27%/.26/.16 versus 46.02%/.28/.20.",
+          "p.5 Table 1: Qwen2.5 ID56.53% versus RLVR56.86%, OOD47.27% versus 47.58%; Qwen3 ID66.10% versus 66.58%, OOD51.61% versus 47.24%.",
+          "p.6 Table 2: distilled Llama-8B OOD43.30% versus Base45.96%; ECE.19 versus .44; RLVR accuracy40.48% and RLCR42.14%.",
+          "p.7 Tables 3–4: HotpotQA alternative training OOD45.42%/.16 ECE versus RLCR43.62%/.20; Qwen2.5 math-trained complex QA53.36%/.14 versus factual QA41.19%/.19.",
+          "pp.8–9 Figures 3–6 and Table 5: average calibration and selective-risk plots; negative-only ablation ECE.15 beats both.16 but accuracy47.11 trails47.27; Figure 6 exact judge counts/values are not tabulated.",
+          "pp.13–14 AppendixA.1–A.3/Table 6:30k Big-Math training; evaluation counts1000/1319/500/40/30/30 and229/448/1000/4326/3610/2000; four H100 or A100, group8, rollout temp.7, batch 1536, one epoch, LR5e−6, warmup.2, input1024/output4096; ECE10 bins.",
+          "p.14 Equations 7–11: ECE/AUROC/AURC definitions; reasoning correctness evaluated by LLM-as-judge; SR denominator all N samples, not only correct answers.",
+          "p.15 Figures 7–8: Qwen2.5 and Qwen3 confidence-bin plots, IDtop/OODbottom; visual labels verified despite NUL/control artifacts in extraction.",
+          "p.16 Table 7: shuffled answer confidence preserves histogram; ECEID.19 versus .18 and OOD.19 versus .16. It tests confidence–correctness pairing, not causal necessity of reasoning semantics.",
+          "p.16 Table 8: Qwen3 AURCID.16 versus RLCR.20; OOD.34 versus .35, with accuracy51.61% versus 50.99%.",
+          "p.17 Tables 9–10/Figure 9: integration ablations; lambda_pos/lambda_neg defaults.4/.15; alternative.6/.2 raisesID accuracy57.64 but OODECE.17 versus default.16; visually read confidence-output prompt with format placeholder.",
+          "pp.18–21 Tables 11–14: Qwen2.5/Llama ID report 5 math benchmarks, Qwen3 reports6 includingAIME25; Qwen2.5 GSM8KECE.25 versus RLVR.10 and RLCR.24; LlamaAIME24accuracy.17 versus RLVR.27.",
+          "pp.22–23 Tables 15–16: Qwen2.5 GPQAaccuracy.38 versus RLVR.48; StrategyQAECE.19 versus RLCR.09; SimpleQAAUROC.45 versus RLCR.52 despite Brier.32 versus .37.",
+          "p.24 Tables 17–18: HotpotQA-trained OOD roster mixesGPQA/GSM8K/MATH-500 with factualQA; Table 17 caption says complex reasoning although two rows are math. RL-ARC TriviaQABrier.24/ECE.07 versus RLCR.23/.05.",
+          "pp.25–27 Tables 19–22: detailedQwen3/LlamaOOD results; LlamaTriviaQABrier.31/ECE.29 versus RLCR.28/.23 are counterexamples to uniform calibration superiority.",
+          "pp.10,13–17: acknowledged LLM-judge error and limited training settings; no supplied multi-seedCI, exact judge identity, human adjudication, explicit empirical decontamination, complete tuning protocol, or measured full-cost accounting.",
+          "p.1 footnote: https://github.com/2gukhyeon/RL-ARC availability is an author claim; no external code/data/checkpoint was fetched or executed in this review."
+        ],
+        "fulltext_sha256": "8ce345626530f6b839bf74c36cec244098b295d213ae618f9860417a2f42c5e9",
+        "fulltext_status": "complete",
+        "model": "assistant-native-review",
+        "out_of_scope": false,
+        "producer": "assistant-native-review",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "RL-ARC merits a candidate guide on calibration in reasoning language models: the conditional confidence reward is simple, and cross-model, training-distribution, and component experiments support mean calibration gains. Assessment must retain task-level counterexamples, differing math benchmark rosters, and missing repeat-run uncertainty, judge details, and decontamination verification. Self-reported reasoning confidence is not a reasoning-truth label, and post-hoc confidence shuffling is not causal proof. External implementation was not inspected and costs are insufficiently quantified, so safe deployment and experimental reproduction are not established. This is a new single-paper scientific score; formal admission, ranking, and publication require separate verification.",
+        "rationale_en": "RL-ARC merits a candidate guide on calibration in reasoning language models: the conditional confidence reward is simple, and cross-model, training-distribution, and component experiments support mean calibration gains. Assessment must retain task-level counterexamples, differing math benchmark rosters, and missing repeat-run uncertainty, judge details, and decontamination verification. Self-reported reasoning confidence is not a reasoning-truth label, and post-hoc confidence shuffling is not causal proof. External implementation was not inspected and costs are insufficiently quantified, so safe deployment and experimental reproduction are not established. This is a new single-paper scientific score; formal admission, ranking, and publication require separate verification.",
+        "rationale_zh": "RL-ARC 值得作為語言模型推理校準的候選導讀：條件式信心獎勵簡潔，跨模型、訓練分布與組件實驗支持平均校準改善。評價須保留逐任務反例、不同數學基準口徑、缺乏重複試驗／裁判細節／去污染驗證等限制；自報推理信心並非推理真偽標註，事後信心打亂也不是因果證明。外部實作未核驗且成本未充分量化，故不宣稱安全部署或實驗復現。此為新的單篇科學評分，正式採納、排名及發布另驗。",
+        "raw_weighted_score": 0.7725,
+        "request_sha256": "9cb200df4802140bb1ecb6b87a58ebb080cce251058f87933d40a3b4142e12c4",
+        "review_sha256": "585aaf7cc717c716beb37c6a88353055e38b7ea9a70c3e503580ab2f157e3025",
+        "scope_assessment": {
+          "decision": "in_scope",
+          "reason_en": "The contribution is training methodology for language-model reasoning and calibration; math and factual QA are evaluation settings.",
+          "reason_zh": "直接研究語言模型推理與校準的訓練方法；數學、事實QA是評測載體。"
+        },
+        "scope_capped_score": null,
+        "scope_policy_version": "explicit-review-exclusion-v1",
+        "scope_status": "in_scope",
+        "score": 0.7725,
+        "source_key": "80cebc8ef494d5db263044c6139ac4458df3f85cd9c1e0e0e75ede25752dab04",
+        "story_id": "arxiv:2610.11352",
+        "token_usage": {},
+        "topics": [
+          "Large Language Models",
+          "Reasoning & Chain-of-Thought",
+          "Training & Optimization",
+          "Reinforcement Learning",
+          "Red Teaming & Evaluation"
+        ]
+      },
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-direct-source722-rlarc",
+        "tier": 1,
+        "title": "RL-ARC: Calibrating Large Reasoning Models via Reasoning-guided Uncertainty",
+        "url": "https://arxiv.org/abs/2610.11352v1"
+      },
+      "published_at": "2026-10-08T06:45:24+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.7725,
+        "llm_relevance_score": 21.63,
+        "recency_score": 0.7428479571726528,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 29.57284795717265
+      },
+      "section": null,
+      "source_name": "arXiv",
+      "story_id": "arxiv:2610.11352",
+      "summary": "Language models (LMs) are commonly trained with Reinforcement Learning with Verifiable Rewards (RLVR) to enhance their reasoning capabilities. However, since RLVR does not explicitly account for calibration during training, it can lead to severe calibration degradation, including overconfidence. Recent calibration-aware training methods for LMs, which incorporate objectives for uncertainty estimation into training, improve calibration but still exhibit overconfidence under distribution shift, while sacrificing reasoning performance. To this end, we propose RL-ARC, a calibration-aware training framework that jointly leverages reasoning confidence and answer confidence. Specifically, RL-ARC leverages reasoning confidence as an auxiliary signal for calibrating answer confidence, applying it as reasoning-guided regularization for correct cases and as an overconfidence penalty for incorrect cases. Comprehensive results across ID and OOD settings show that, beyond improving calibration, RL-ARC enables reasoning models to adaptively estimate confidence based on the given question without substantially sacrificing reasoning performance, thereby highlighting the importance of reasoning confidence for training reliable reasoning models.",
+      "summary_en": "Rewarding correctness alone can make reasoning models overconfident. RL-ARC elicits both answer confidence and reasoning confidence, then augments a correctness-minus-Brier reward with conditional penalties: correct answers are encouraged to align the two confidence reports, while incorrect answers incur an additional penalty for high reasoning confidence. There are no stepwise reasoning-truth labels; reasoning confidence remains a self-report. After Big-Math training, Qwen3-8B's average ECE across six out-of-distribution QA benchmarks decreases from RLCR's 0.22 to 0.17, while accuracy rises from 50.99% to 51.61%. For Qwen2.5-7B, ECE decreases from 0.20 to 0.16. The appendices include another model family, an alternative training distribution, penalty ablations, and shuffled-confidence controls. Nevertheless, aggregate gains are not universal: Qwen2.5's GSM8K calibration and GPQA accuracy have counterexamples, and the mathematical benchmark roster differs across backbones. Multiple-seed variation and confidence intervals are absent; reasoning-quality evaluation lacks judge-model and human-validation details, and contamination checks, hyperparameter selection, and full costs are insufficiently documented. Linked code and data were not inspected. The work offers a useful calibration-reward design, but does not establish that the model truly understands its reasoning errors or is ready for high-stakes medical or financial deployment.",
+      "summary_zh": "只獎勵答案正確，可能把推理模型訓練得過度自信。RL-ARC 要求模型同時回報答案與推理過程的信心，並在正確性減去 Brier 誤差的獎勵上加入條件式懲罰：答對時拉近兩種信心，答錯時額外壓低推理信心。這裡沒有逐步推理真偽標註，推理信心仍是模型自評。以 Big-Math 訓練後，Qwen3-8B 在六個分布外問答基準的平均 ECE，由 RLCR 的 0.22 降至 0.17，正確率由 50.99% 升至 51.61%；Qwen2.5-7B 的 ECE 則由 0.20 降至 0.16。附錄提供模型家族、訓練資料替換、懲罰消融與信心打亂控制，但平均改善不代表每題型皆勝：Qwen2.5 的 GSM8K 校準與 GPQA 正確率便有退步。數學平均所含基準也隨模型不同，不能直接橫比。論文未報多種子或信賴區間，推理品質評分欠缺裁判模型與人工驗證細節，亦未充分交代測試去污染、選參及完整成本。程式與資料連結未核驗。它提供實用的校準獎勵設計，但尚不能證明模型真正理解自身推理錯誤，或已適合醫療、金融等高風險部署。",
+      "title": "RL-ARC: Calibrating Large Reasoning Models via Reasoning-guided Uncertainty",
+      "title_en": "RL-ARC: Calibrating Large Reasoning Models via Reasoning-guided Uncertainty",
+      "title_zh": "RL-ARC：以推理引導的不確定性校準大型推理模型"
     }
   ],
   "radar": [],
@@ -6096,9 +6348,9 @@
   "run_info": {
     "added_native_count": 2,
     "added_reviewed_candidate_count": 2,
-    "addition_prepared_at_utc": "2026-10-11T05:24:10+00:00",
+    "addition_prepared_at_utc": "2026-10-11T06:06:20+00:00",
     "addition_ranking_anchor_basis": "Frozen new preparation time, not listing/announcement or source collection cutoff",
-    "addition_ranking_anchor_utc": "2026-10-11T05:22:50+00:00",
+    "addition_ranking_anchor_utc": "2026-10-11T06:06:00+00:00",
     "combined_native_reranked": false,
     "coverage_status": "partial",
     "date_basis_by_story": {
@@ -6142,6 +6394,38 @@
         "listing_body_sha256": "4517f7f7d899a7cf8407669b340b452260c029801f46a66eb22e941a8b51d55e",
         "listing_fetch_completed_utc": "2026-10-11T04:30:35.169073Z",
         "listing_item_index": 86,
+        "listing_response_age_seconds": 179916,
+        "listing_source_url": "https://arxiv.org/list/cs.AI/recent?skip=0&show=2000",
+        "literal_new_submission_heading": null,
+        "observed_group": "primary_non_cross_list",
+        "version_assessment": "new_primary_v1_inferred_from_v1_link_and_version_history"
+      },
+      "arxiv:2610.11352": {
+        "announcement_clock_timezone": "unknown",
+        "date_basis": "official_listing_date_heading",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null,
+        "fetch_is_origin_generation": false,
+        "first_submission_utc": "2026-10-08T06:45:24Z",
+        "listing_body_sha256": "4517f7f7d899a7cf8407669b340b452260c029801f46a66eb22e941a8b51d55e",
+        "listing_fetch_completed_utc": "2026-10-11T04:30:35.169073Z",
+        "listing_item_index": 85,
+        "listing_response_age_seconds": 179916,
+        "listing_source_url": "https://arxiv.org/list/cs.AI/recent?skip=0&show=2000",
+        "literal_new_submission_heading": null,
+        "observed_group": "primary_non_cross_list",
+        "version_assessment": "new_primary_v1_inferred_from_v1_link_and_version_history"
+      },
+      "arxiv:2610.11358": {
+        "announcement_clock_timezone": "unknown",
+        "date_basis": "official_listing_date_heading",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null,
+        "fetch_is_origin_generation": false,
+        "first_submission_utc": "2026-10-08T06:49:28Z",
+        "listing_body_sha256": "4517f7f7d899a7cf8407669b340b452260c029801f46a66eb22e941a8b51d55e",
+        "listing_fetch_completed_utc": "2026-10-11T04:30:35.169073Z",
+        "listing_item_index": 83,
         "listing_response_age_seconds": 179916,
         "listing_source_url": "https://arxiv.org/list/cs.AI/recent?skip=0&show=2000",
         "literal_new_submission_heading": null,
@@ -6423,24 +6707,24 @@
         "event_timestamp_utc": null
       }
     },
-    "error_summary": "PARTIAL 部分更新：保留109篇公開基線中的Oct9原54篇及順序；RIT-RAG與SynCo兩篇全新評審依原規則2選2追加Papers。56篇及總111篇均未共同重排；全日總數、涵蓋率及來源收集截止未知。",
+    "error_summary": "PARTIAL 部分更新：保留111篇公開基線中的Oct9原56篇及順序；RaReCache與RL-ARC兩篇全新評審依原規則2選2追加Papers。58篇及總113篇均未共同重排；全日總數、涵蓋率及來源收集截止未知。",
     "finished_at": "2026-10-10T03:29:00+00:00",
     "full_day_candidate_total": null,
     "items_total": null,
-    "preserved_baseline_body_sha256": "0002c782196211ea96ef7710eed97167a0bd70d30bde4761ec0189c437014d8c",
-    "preserved_baseline_commit": "9484fcd78f0339ace8503252034a591c9f51df96",
-    "preserved_baseline_count": 54,
-    "preserved_baseline_kind": "accepted_live109",
+    "preserved_baseline_body_sha256": "0bbde8f06f39aa6d67b5562425ee854a00a715ecbb1f70a5108fadb9968f7b7e",
+    "preserved_baseline_commit": "383814bcc21af061f93fd9456b21b97f6031aba0",
+    "preserved_baseline_count": 56,
+    "preserved_baseline_kind": "accepted_public111_bytes",
     "preview_only": false,
     "prior_reviewed_total_count": null,
-    "release_scope_note": "Preserve all 109 baseline stories and append RIT-RAG and SynCo in unchanged original-filter subset order to Oct9 Papers. Neither the 56 Oct9 stories nor all 111 are jointly reranked. First submission Oct8 is distinct from independently witnessed official listing Oct9; exact announcement clock/timezone, configured-query coverage, full-day totals and collection cutoff remain unknown. Historical missing packets are not restored by these new reviews; existing material holds remain.",
+    "release_scope_note": "Preserve all 111 baseline stories and append RaReCache and RL-ARC in unchanged original-filter subset order to Oct9 Papers. Neither the 58 Oct9 stories nor all 113 are jointly reranked. First submission Oct8 is distinct from independently witnessed official listing Oct9; exact announcement clock/timezone, configured-query coverage, full-day totals and collection cutoff remain unknown. Historical missing packets are not restored by these new reviews; existing material holds remain.",
     "release_state": "bounded_partial_new_reviews",
-    "reviewed_selected_count": 56,
+    "reviewed_selected_count": 58,
     "reviewed_total_count": null,
     "run_id": "bounded-partial-additive-2026-10-09",
     "source_collection_cutoff_utc": null,
     "started_at": "2026-10-10T03:29:00+00:00",
-    "stories_total": 56,
+    "stories_total": 58,
     "success": true
   },
   "sources_status": [
