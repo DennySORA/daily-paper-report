@@ -338,7 +338,7 @@
       "type": "researcher"
     }
   },
-  "generated_at": "2026-10-11T04:36:40+00:00",
+  "generated_at": "2026-10-11T05:24:10+00:00",
   "model_releases_by_entity": {},
   "papers": [
 {
@@ -5826,6 +5826,268 @@
       "title": "From Chain-of-Thought to Loops: Non-Autoregressive Latent Reasoning via Looped Transformers",
       "title_en": "From Chain-of-Thought to Loops: Non-Autoregressive Latent Reasoning via Looped Transformers",
       "title_zh": "從思考鏈到迴圈：以迴圈Transformer實現非自回歸潛在推理"
+    },
+    {
+      "arxiv_id": "2610.11370",
+      "authors": [
+        "Meghanadh Pulivarthi",
+        "Swaraj Kumar Biswal",
+        "Kushagra Bhushan",
+        "Yatin Nandwani",
+        "Sachindra Joshi",
+        "Dinesh Raghu"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.IR"
+      ],
+      "entities": [],
+      "first_seen_at": "2026-10-11T05:22:50+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-direct-source709",
+          "tier": 1,
+          "title": "RIT-RAG: Navigating Document Corpora with Retrieval-Induced Trees",
+          "url": "https://arxiv.org/abs/2610.11370v1"
+        },
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-direct-source709",
+          "tier": 1,
+          "title": "RIT-RAG: Navigating Document Corpora with Retrieval-Induced Trees",
+          "url": "https://arxiv.org/pdf/2610.11370v1"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.65,
+          "generalizability": 0.65,
+          "novelty": 0.73,
+          "preference_relevance": 0.96,
+          "reproducibility": 0.42,
+          "rigor": 0.58
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "C01: pp. 4,5, Section 4 / Figures 1–2. Node text is disjoint; score a node by its best retrieved chunk; add ancestors, serialize a cross-document forest, then selectively read. Query reformulation can switch documents. https://arxiv.org/pdf/2610.11370v1#page=4",
+          "C02: pp. 5,6,11,20, Sections 4–5.1 / B.1 / N.1. Default k-prime=200, n=50, 512-token node-aligned chunks, RRF kappa=60; at most 10 total calls and 3 GetToC calls. Mandatory content read prevents answering from navigation hints alone. https://arxiv.org/pdf/2610.11370v1#page=5",
+          "C03: pp. 6,11,12,16,18, Setup / Tables 5–7 / Appendix K / Figure 8. Evaluation: WixQA 200, QASPER 1372 answerable test questions, FinanceBench 150, EntQABench 317. n tuned on WixQA simulated 200 and QASPER validation 819, not the stated final test questions. https://arxiv.org/pdf/2610.11370v1#page=6",
+          "C04: pp. 7, Table 1. RIT-RAG is numerically highest in all 9 public-benchmark cells. Best-baseline margins: WixQA 6.5/0.5/3.5; QASPER 2.4/2.9/3.5; FinanceBench 9.3/8.0/4.6 percentage points, model order Haiku/GPT-5-mini/Luna. https://arxiv.org/pdf/2610.11370v1#page=7",
+          "C05: pp. 7,8, Table 3 / RQ3 continuation. EntQABench margins are 81.4−74.8=6.6, 83.9−76.0=7.9, 89.0−77.6=11.4 points. Text on p8 agrees; abstract/intro/conclusion lower bound 6.8 does not. https://arxiv.org/pdf/2610.11370v1#page=7",
+          "C06: pp. 7, Table 2. Replacing Qwen3-32B structure induction with Haiku changes RIT-RAG 84.0/84.0/85.3 to 84.7/84.0/86.7. Other methods also receive changed chunk boundaries; this is not a structure-only controlled ablation. https://arxiv.org/pdf/2610.11370v1#page=7",
+          "C07: pp. 8,12,15,16, Tables 4,14,15 / Appendix G. RIT-RAG has highest evidence F1 for Haiku and Luna; GPT-5-mini PageIndex exceeds RIT-RAG on QASPER 50.0 vs 47.0 and FinanceBench 43.3 vs 42.9. Retrieval precision/recall is not universally dominant. https://arxiv.org/pdf/2610.11370v1#page=8",
+          "C08: pp. 13, Table 8 / Figures 3–4. Haiku RIT-RAG costs 4.9/5.7/10.1 cents versus Agentic Search 1.0/4.1/4.8; LLM latency 17/15/19 seconds versus 25/55/23. Accuracy Wilson intervals are shown; paired significance and latency dispersion are not supplied. https://arxiv.org/pdf/2610.11370v1#page=13",
+          "C09: pp. 8,12,13, Table 9 / Appendix E. LLM preprocessing costs are $15.5/$12.9/$590.1 and $0 for EntDocs. Zero excludes crawling, embedding, sparse/dense indexing, storage, and serving. Graph EntDocs estimates $30.7K/$38.2K cannot be reproduced by scaling Table5 token totals from WixQA. https://arxiv.org/pdf/2610.11370v1#page=8",
+          "C10: pp. 14,15, Tables 10–13. Binary-judge wins do not imply universal answer-quality wins: e.g. WixQA GPT-5-mini G-E correctness Cog-RAG .980 versus RIT-RAG .948, lexical recall .647 versus .587. EntQABench Table12 omits Interact-RAG. https://arxiv.org/pdf/2610.11370v1#page=14",
+          "C11: pp. 14,16, Appendix H / Figure 5. Venn WixQA PageIndex total=186/200=93%, unlike Table1 88.5%. QASPER Venn totals 1362 versus stated evaluation 1372; PageIndex=1050/1362=77.09% versus Table1 76.0%. Treat complementarity counts as unresolved, not a second validation of main accuracies. https://arxiv.org/pdf/2610.11370v1#page=14",
+          "C12: pp. 16, Table 16 / Appendix J. Mean total calls 2.70–2.99; table read nodes 2.7–5.5, whereas prose says 3.7–5.5. EntQABench ToC+Content displayed means sum 2.98 versus total 2.99, plausibly rounding. https://arxiv.org/pdf/2610.11370v1#page=16",
+          "C13: pp. 16,17, Appendix L. Sonnet 5 generated 317 synthetic questions spanning 350 pages and three IBM products, using few-shot examples and text-embedding-3-small; filtering delegated to KARL description. No manual audit size, deduplication audit, or product-held-out test is reported. https://arxiv.org/pdf/2610.11370v1#page=16",
+          "C14: pp. 6,11, Setup / Appendix B.2. PageIndex is restricted to one retrieved document; B.2 says vector search and document score normalized by sqrt(n_D+1), while Section5.1 broadly claims a shared hybrid retriever. Exact baseline retrieval candidate and context budgets are not fully specified. https://arxiv.org/pdf/2610.11370v1#page=6",
+          "C15: pp. 9,20, Limitations / N.1. No evidence compaction or chat-history eviction; tree ignores lateral links and depends on hierarchy quality. N.1 tells the agent to answer at 80% context warning, but exact context-token limit is not provided. https://arxiv.org/pdf/2610.11370v1#page=9",
+          "C16: pp. 2,9,20,21,22,23, Release promise / Reproducibility / Appendix N. Future release of benchmark/corpus/trees is promised; no RIT-RAG repository or immutable release is present in supplied sources. N contains RIT-RAG and three dataset binary judges plus G-E rubrics, but no QASPER binary judge or baseline system prompts. https://arxiv.org/pdf/2610.11370v1#page=2",
+          "C17: pp. 17,18,19, Figures 6,7,9. Qualitative traces illustrate single-document lock-in, chopped tables, and cross-document graph merging. Arithmetic in Figs6–7 recomputes; examples have no sampling protocol and cannot quantify failure prevalence. https://arxiv.org/pdf/2610.11370v1#page=17",
+          "C18: pp. 1,23, PDF title/version / final appendix. Actual official PDF has 23 readable pages; page1 rotated ID is 2610.11370v1 / 8 Oct2026. Abs comment says24 pages; first-submission history is Oct8 07:03:17 UTC, not an announcement date. https://arxiv.org/pdf/2610.11370v1#page=1"
+        ],
+        "fulltext_sha256": "1a02f57edcac780608d66e97847fa64bf3f031f3c1ccc549379e6fe67dbdf23b",
+        "fulltext_status": "complete",
+        "model": "assistant-native-review",
+        "out_of_scope": false,
+        "producer": "assistant-native-review",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "preference_relevance (0.96; weight 40%): Directly studies cross-document retrieval, tool-using LLM agents, and structured external knowledge. Financial and support corpora are evaluations of general RAG methodology, not an excluded pure-domain application.\nnovelty (0.73; weight 15%): Query-induced sub-forests join broad content retrieval to selective structural navigation and remove the tested PageIndex variant's single-document commitment. The contribution is a useful synthesis and interface; it reuses hybrid retrieval and hierarchy, with no isolation of gains from breadth, metadata, or full-node reads.\nrigor (0.58; weight 15%): Three public benchmarks, three generators, distractor documents, and held-out tuning are useful controls. Ten tool calls do not equalize candidate breadth, tokens, or cost. PageIndex document selection is described as vector search despite the shared-hybrid claim; matched-budget and hierarchy/metadata/multidocument-navigation ablations are absent.\nevidence_strength (0.65; weight 15%): The main tables favor RIT-RAG in all 12 dataset-by-generator cells and add evidence P/R/F1 and Haiku cost/latency. EntQABench gains recompute to 6.6–11.4 points; the smallest WixQA gain is 0.5 point. Wilson intervals are shown but are not paired superiority tests. Venn denominators/PageIndex counts conflict and one LLM judge supplies the answer scores.\ngeneralizability (0.65; weight 10%): Support, papers, and filings plus a 2.84-million-page index show useful breadth. However, the enterprise evaluation has only 317 synthetic questions spanning three IBM products and 350 supporting pages, not coverage of the whole corpus or other organizations/languages. Usable hierarchies are required; lateral links and evidence eviction are unsupported, and all tested generators are proprietary.\nreproducibility (0.42; weight 5%): The algorithm, 512-token chunks, RRF=60, n=50, model settings, and some prompts make the design understandable. The paper promises a future benchmark/tree release, but no verified method implementation or dataset version is supplied. Baseline prompts and the QASPER binary-judge prompt are absent despite an all-prompts claim; raw predictions, seeds, index resources, and full synthetic filtering details are missing. Experiments were not rerun.",
+        "rationale_en": "preference_relevance (0.96; weight 40%): Directly studies cross-document retrieval, tool-using LLM agents, and structured external knowledge. Financial and support corpora are evaluations of general RAG methodology, not an excluded pure-domain application.\nnovelty (0.73; weight 15%): Query-induced sub-forests join broad content retrieval to selective structural navigation and remove the tested PageIndex variant's single-document commitment. The contribution is a useful synthesis and interface; it reuses hybrid retrieval and hierarchy, with no isolation of gains from breadth, metadata, or full-node reads.\nrigor (0.58; weight 15%): Three public benchmarks, three generators, distractor documents, and held-out tuning are useful controls. Ten tool calls do not equalize candidate breadth, tokens, or cost. PageIndex document selection is described as vector search despite the shared-hybrid claim; matched-budget and hierarchy/metadata/multidocument-navigation ablations are absent.\nevidence_strength (0.65; weight 15%): The main tables favor RIT-RAG in all 12 dataset-by-generator cells and add evidence P/R/F1 and Haiku cost/latency. EntQABench gains recompute to 6.6–11.4 points; the smallest WixQA gain is 0.5 point. Wilson intervals are shown but are not paired superiority tests. Venn denominators/PageIndex counts conflict and one LLM judge supplies the answer scores.\ngeneralizability (0.65; weight 10%): Support, papers, and filings plus a 2.84-million-page index show useful breadth. However, the enterprise evaluation has only 317 synthetic questions spanning three IBM products and 350 supporting pages, not coverage of the whole corpus or other organizations/languages. Usable hierarchies are required; lateral links and evidence eviction are unsupported, and all tested generators are proprietary.\nreproducibility (0.42; weight 5%): The algorithm, 512-token chunks, RRF=60, n=50, model settings, and some prompts make the design understandable. The paper promises a future benchmark/tree release, but no verified method implementation or dataset version is supplied. Baseline prompts and the QASPER binary-judge prompt are absent despite an all-prompts claim; raw predictions, seeds, index resources, and full synthetic filtering details are missing. Experiments were not rerun.",
+        "rationale_zh": "preference_relevance（0.96；權重 40%）：直接研究 LLM 的跨文件檢索、代理工具選用與結構化外部知識，符合 RAG、Agents 及長上下文偏好；金融與客服只是測試場域，並非被排除的純領域應用。\nnovelty（0.73；權重 15%）：將廣泛內容檢索得到的節點及祖先組成查詢專屬子森林，再讓代理按需閱讀，是有用的組合與介面設計；相對 PageIndex 的單文件限制有清楚差異，但沿用混合檢索與既有階層，未證成獨立於檢索寬度、摘要或節點閱讀單位的全新能力。\nrigor（0.58；權重 15%）：三個公開基準、三個生成模型、保留文件干擾項及兩組留出調參資料是優點；但同為十次工具呼叫不等於相同候選數、token 或成本，PageIndex 選文件的 vector 描述與共用 hybrid 說法不一致，缺少等預算、去階層／去摘要及較強多文件導航消融。\nevidence_strength（0.65；權重 15%）：主表十二個資料集×模型格都領先，另有閱讀證據 P/R/F1 與 Haiku 成本、延遲。EntQABench 應為 +6.6–11.4 點；WixQA 最小優勢僅 0.5 點。Wilson 區間有提供，但非配對差異檢定；Venn 分母與 PageIndex 結果不一致，且所有答案由同一模型評審，降低確證程度。\ngeneralizability（0.65；權重 10%）：涵蓋客服、論文與財報，並用約 284 萬頁索引展示可行規模；但新企業測試僅 317 題、三項 IBM 產品與 350 個支持網頁，尚不能代表全部語料、其他企業或多語言。需可用階層且未處理橫向連結、證據淘汰，生成測試也全為閉源模型。\nreproducibility（0.42；權重 5%）：演算法、512-token 分塊、RRF=60、n=50、模型設定與部分 prompt 可讀，足以理解方法；本文僅承諾未來釋出基準／樹，無可核對的本方法程式碼或資料版本。附錄未含所稱全部 baseline prompt 或 QASPER binary judge，缺原始逐題結果、種子、索引資源及完整生成過濾細節，未重跑實驗。",
+        "raw_weighted_score": 0.764,
+        "request_sha256": "f56c35461f0d34a550846c0375b417a31cd1b8cc6cf7172e63c422b53d461236",
+        "review_sha256": "76dd7278f92ac46b87e33e46ada306bfbc86f9ba3bcfaf1d1b7fb11e8474cc42",
+        "scope_assessment": {
+          "decision": "in_scope",
+          "keyword_filter_is_separate": true,
+          "scientific_basis": "Language-model retrieval and agent methodology across document corpora; finance/support are benchmarks, not exclusionary domain-only methods."
+        },
+        "scope_capped_score": 0.764,
+        "scope_policy_version": "explicit-review-exclusion-v1",
+        "scope_status": "in_scope",
+        "score": 0.764,
+        "source_key": "cb23a66312c96f5bd2c03368a7208b1ec2a036d1a5efde2677494feed3959127",
+        "story_id": "arxiv:2610.11370",
+        "token_usage": {},
+        "topics": [
+          "Large Language Models",
+          "RAG & Knowledge",
+          "Agents & Tool Use",
+          "Natural Language Processing",
+          "Long Context & Memory",
+          "Scaling & Efficiency"
+        ]
+      },
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-direct-source709",
+        "tier": 1,
+        "title": "RIT-RAG: Navigating Document Corpora with Retrieval-Induced Trees",
+        "url": "https://arxiv.org/abs/2610.11370v1"
+      },
+      "published_at": "2026-10-08T07:03:17+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.764,
+        "llm_relevance_score": 21.392,
+        "recency_score": 0.7460040084349933,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 29.338004008434993
+      },
+      "section": null,
+      "source_name": "arXiv",
+      "story_id": "arxiv:2610.11370",
+      "summary": "Retrieval-augmented generation (RAG) grounds language models in external corpora. Agentic RAG enables iterative search, yet exposes the model to isolated chunks without document structure, making it difficult to distinguish relevant evidence from chunks that merely resemble the query. Structure-aware methods such as PageIndex navigate document structure but cannot scale to the structures of large corpora, which do not fit in the LLM context. Hence, they first commit to a single document using a document retriever and cannot recover from a wrong choice. We propose RIT-RAG (Retrieval-Induced Tree RAG), which combines content retrieval with structural navigation. Offline, RIT-RAG builds a tree for each document from its table of contents or sitemap. At query time, it retrieves a broad set of chunks and uses their positions to induce manageable sub-trees, potentially across multiple documents. An LLM agent navigates these sub-trees, selectively reads promising nodes, and reformulates queries when needed. Thus, retrieval proposes where to look, while the agent decides what to read. Across financial, scientific, and customer-support benchmarks, RIT-RAG achieves the highest answer accuracy among vanilla, graph-based, and agentic baselines. On EntQABench, our new benchmark of 2.84 million technical-documentation webpages, it improves accuracy by 6.8 to 11.4 points over the strongest baseline across three LLMs.",
+      "summary_en": "RIT-RAG addresses two retrieval failures: isolated chunks hide document context, while choosing a single document before navigation can lock an agent onto the wrong source. It retrieves 200 chunks, selects 50 high-scoring nodes, adds their ancestors, and gives an LLM a query-specific sub-forest that can span documents. The agent then reads selected nodes and can reformulate its query. The budget is ten tool calls, including at most three searches.\nThe main tables report the highest binary-judge accuracy across three generators on WixQA, QASPER, FinanceBench, and EntQABench. The enterprise index contains about 2.84 million pages, but evaluation uses 317 synthetic questions from three products. Its gains over the best tested baseline recompute to 6.6–11.4 percentage points, not the abstract's 6.8–11.4. On the three public benchmarks with Haiku, RIT-RAG costs 4.9–10.1 US cents per question, more than Agentic Search; the latency table measures LLM latency.\nEqual tool-call limits do not equalize retrieval breadth, read tokens, or spending, and the experiments do not isolate hierarchy from summaries and full-node reading. A Venn figure conflicts with the main tables on sample counts and some baseline results. Benchmark and tree release is only promised. This is a useful structural-RAG design to test, with the cause and cross-enterprise generality of its gains still incompletely established.",
+      "summary_zh": "RIT-RAG 要解決大型文件庫的兩難：只看檢索片段容易失去章節脈絡，先選一份文件再導航又可能走錯後無法回復。它先以混合檢索取得二百個候選片段，依分數挑五十個節點，連同祖先形成可跨文件的子森林；LLM 再選節點讀全文，必要時改寫查詢。整體上限十次工具呼叫，其中至多三次搜尋。\n主表在客服 WixQA、論文 QASPER、財報 FinanceBench 與企業 EntQABench 的三種生成模型上均領先。企業測試索引約二百八十四萬頁，但只有三項產品的三百一十七道合成題；依表格重算，相對最佳基線提升六點六至十一點四個百分點，摘要的六點八下限有誤。Haiku 在三個公開基準每題花費四點九至十點一美分，高於 Agentic Search；延遲表量的是 LLM 耗時。\n值得注意的是，相同呼叫上限並未控制檢索寬度、閱讀 token 或費用；實驗也未充分拆開階層、摘要與完整節點閱讀各自的作用。Venn 圖的樣本數及部分基線結果與主表不一致，基準和樹僅承諾日後公開。這是值得測試的結構化 RAG 設計，但尚不足以宣稱所有優勢都來自樹導航，或已證明跨企業的普遍效益。",
+      "title": "RIT-RAG: Navigating Document Corpora with Retrieval-Induced Trees",
+      "title_en": "RIT-RAG: Navigating Document Corpora with Retrieval-Induced Trees",
+      "title_zh": "RIT-RAG：以檢索誘導樹導航文件語料庫"
+    },
+    {
+      "arxiv_id": "2610.11345",
+      "authors": [
+        "Wei Yang",
+        "Shawn Li",
+        "Yuehan Qin",
+        "Yawei Wang",
+        "Mingxi Wang",
+        "Shixuan Li",
+        "Tiankai Yang",
+        "Jiate Li",
+        "Jesse Thomason",
+        "Xuezhe Ma",
+        "Yue Zhao"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "entities": [],
+      "first_seen_at": "2026-10-11T05:22:50+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-direct-source709",
+          "tier": 1,
+          "title": "SynCo: Data Synthesis Co-Training for Self-Evolving LLMs via Multi-Agent Reinforcement Learning",
+          "url": "https://arxiv.org/abs/2610.11345v1"
+        },
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-direct-source709",
+          "tier": 1,
+          "title": "SynCo: Data Synthesis Co-Training for Self-Evolving LLMs via Multi-Agent Reinforcement Learning",
+          "url": "https://arxiv.org/pdf/2610.11345v1"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.67,
+          "generalizability": 0.51,
+          "novelty": 0.76,
+          "preference_relevance": 0.97,
+          "reproducibility": 0.43,
+          "rigor": 0.58
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "pp.3–5, Figure 1, Eqs.1–10: separate Synthesizer/Reasoner policies; same online interaction batch, distinct rewards and updates; capability-conditioned context.",
+          "p.4 §3.2 and pp.21–23 §C.4: Reasoner receives problem only, not reference solution, answer, metadata or verification notes; this is a declared interface, not an executed leakage audit.",
+          "pp.18–19 §B.2, Eqs.23–25: correctness reward 1.0/0.9/0; clipped quality/reliability gates; triangular teachability; invalid task −0.5; nonempty-output bonus 0.1; novelty diagnostic only.",
+          "p.19 §B.2: exact verifier coefficients and thresholds are deferred to supplementary implementation; external implementation was not acquired.",
+          "p.6 Table 1: 8B macro-average SynCo78.72, Frozen75.85, Vanilla72.36, ScaleQuest-Math74.96; SynCo is second on MATH-500 and Minerva.",
+          "pp.19–21 §C.1–C.3: standard test splits; released checkpoints evaluated directly; three static math corpora each sampled to 2,940 unique problems under matched learner GRPO budgets.",
+          "pp.20–21 §C.3: two Qwen3 copies; batch32; K4; LR1e−6; 10-step warmup; weight decay0.1; no KL reward; two8-GPU groups for8B; evaluation temperature0.6/top-p0.95.",
+          "pp.7,23–24 Figure2/Table5:475/2940=16.2% mixed-outcome groups; gradient-bearing share31.3%→9.5%; generation order approximates iteration because exact indices were not recorded.",
+          "pp.8,24–25 Table2/Figure7: four-benchmark decomposition;45/56 net additional solves in initially incorrect Learn subset; fixed terminal checkpoints.",
+          "pp.8,24–27 Figure3/Tables5–7: teachability correlation0.934 is built from the same rollout outcomes; offline top-quartile reranking is diagnostic, not a causal training ablation.",
+          "pp.9,26 Figure4/Table7: ex-ante learnable precision16.8%, recall22.3%, correlation0.009; labels cover2919 of2940 tasks.",
+          "p.10 Figure5: under the same vanilla Reasoner, mixed-outcome rates22.8/4.1/10.9/9.4% for SynCo/MetaMathQA/ScaleQuest-Math/OpenMathInstruct-2; this protocol differs from training-pool16.2%.",
+          "pp.10–11 Figure6/§4.8: moving-average training reward0.890 versus0.783 on evolving task distributions; not held-out accuracy or a stationary-task comparison.",
+          "p.23 Table4/§D.1:4B averages75.20 vs73.72; GSM-Hard60.65 vs61.33; unexplained printed60.67 Frozen AIME25 and86.25 Vanilla SVAMP retained as reported.",
+          "pp.9,27–28 Tables3/8:100 training steps;3200 generated/2940 admitted; wall343.5s vs341.6s from independent runs; productive rates14.5/13.7% only steps13–70.",
+          "pp.1,19–23,27–28: code/data links stated, not inspected; no empirical train–benchmark decontamination, multiple-seed intervals, consensus identity, or GPU model reported in the supplied full paper."
+        ],
+        "fulltext_sha256": "ae9fc23259e705c5bc9ab455dcc2a4b19681099c414a0e06b4bb8e526e197f63",
+        "fulltext_status": "complete",
+        "model": "assistant-native-review",
+        "out_of_scope": false,
+        "producer": "assistant-native-review",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "SynCo is highly relevant to LLM synthetic-data generation and reasoning post-training. Shared-batch updates to task synthesis and solving, together with gains over a matched frozen Synthesizer, warrant a methodological guide. Evidence remains bounded to short-run mathematical experiments within the Qwen3 family: repeated-training uncertainty, empirical decontamination, and complete verifier settings are missing; post-hoc teachability diagnostics do not replace causal ablations, and small marginal cost is relative to an otherwise matched online pipeline. Retain it as a candidate with deployment and reproduction limits. Selection, date placement, and publication require separate formal decisions.",
+        "rationale_en": "SynCo is highly relevant to LLM synthetic-data generation and reasoning post-training. Shared-batch updates to task synthesis and solving, together with gains over a matched frozen Synthesizer, warrant a methodological guide. Evidence remains bounded to short-run mathematical experiments within the Qwen3 family: repeated-training uncertainty, empirical decontamination, and complete verifier settings are missing; post-hoc teachability diagnostics do not replace causal ablations, and small marginal cost is relative to an otherwise matched online pipeline. Retain it as a candidate with deployment and reproduction limits. Selection, date placement, and publication require separate formal decisions.",
+        "rationale_zh": "SynCo 對 LLM 合成資料與推理後訓練高度相關；同批互動驅動出題者與解題者更新的設計，及相對匹配凍結出題者的數學測試改善，值得保留為方法導讀。證據以Qwen3同家族、短程數學實驗為界：缺少多次訓練的不確定度、實測去污染與完整驗證器設定；事後可教性診斷不能替代因果消融，低額外成本亦只相對同型線上流程。建議納入候選，保持部署與重現限制；是否入選、日期分組及發布另由正式流程決定。",
+        "raw_weighted_score": 0.762,
+        "request_sha256": "bf7b1ba577a26bf921cd38f9e95675235d0896940339a5354bf73a314b8d67fa",
+        "review_sha256": "ff23f07638bff335f3e3dd57941d4915475ef5263da2d9ff0649e3e3c8290d2c",
+        "scope_assessment": {
+          "decision": "in_scope",
+          "reason_en": "The contribution is language-model reasoning, synthetic-data, and multi-agent RL methodology; mathematical benchmarks are the experimental setting.",
+          "reason_zh": "核心為語言模型推理、合成資料與多代理強化學習方法；數學基準為實驗載體，非無語言方法的純領域應用。"
+        },
+        "scope_capped_score": null,
+        "scope_policy_version": "explicit-review-exclusion-v1",
+        "scope_status": "in_scope",
+        "score": 0.762,
+        "source_key": "5a05ddc7cd126e14b2f0cd6ee71083199b3a42433b7813b2abdb2262ce251d05",
+        "story_id": "arxiv:2610.11345",
+        "token_usage": {},
+        "topics": [
+          "Large Language Models",
+          "Reasoning & Chain-of-Thought",
+          "Agents & Tool Use",
+          "Training & Optimization",
+          "Reinforcement Learning",
+          "Data & Datasets"
+        ]
+      },
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-direct-source709",
+        "tier": 1,
+        "title": "SynCo: Data Synthesis Co-Training for Self-Evolving LLMs via Multi-Agent Reinforcement Learning",
+        "url": "https://arxiv.org/abs/2610.11345v1"
+      },
+      "published_at": "2026-10-08T06:40:18+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.762,
+        "llm_relevance_score": 21.336,
+        "recency_score": 0.7448142873739421,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 29.280814287373943
+      },
+      "section": null,
+      "source_name": "arXiv",
+      "story_id": "arxiv:2610.11345",
+      "summary": "Self-evolving LLM agents promise to improve autonomously through continual interaction and learning, reducing their dependence on manually curated supervision. Realizing this promise requires not only updating the agent, but also evolving its training experience as its capabilities change. However, most existing pipelines rely on static datasets or separately updated synthesis models, causing previously useful tasks to become trivial while overly difficult tasks remain uninformative. This growing mismatch between agent capability and training experience limits sustained self-improvement. To address this problem, we propose SynCo, an agentic data synthesis co-training framework for self-evolving LLMs based on multi-agent reinforcement learning. SynCo jointly optimizes two independently parameterized agents: a Synthesizer that constructs training tasks from the Reasoner's evolving capability state, and a Reasoner that learns from the resulting experience. Each synthesized task induces multiple Reasoner rollouts whose outcomes provide complementary rewards to both agents. Correctness feedback improves the Reasoner, while task quality, answer reliability, and outcome-grounded teachability guide the Synthesizer. Their updates are fed back into subsequent synthesis rounds, allowing the task-solving policy and its training distribution to evolve together. Extensive experiments across eight mathematical reasoning benchmarks demonstrate that SynCo substantially outperforms a broad range of existing synthetic-data methods and controlled baselines, achieving the strongest overall performance while deriving most of its gains from previously unsolved problems.",
+      "summary_en": "Static synthetic data can drift away from a learner's changing abilities: tasks with uniformly correct or uniformly incorrect rollouts often provide no discriminative group-relative learning signal. SynCo uses separately parameterized Qwen3 agents as a Synthesizer and a Reasoner. The Synthesizer observes recent tasks, capability diagnostics, and rejection feedback, then proposes a task with a reference solution. The Reasoner sees only the problem and samples four solutions. The same interaction batch updates both agents: correctness rewards train the Reasoner, while quality and answer-reliability gates modulate a Synthesizer reward favoring mixed success. Across eight mathematical benchmarks, Qwen3-8B reaches 78.72% macro-average accuracy, 2.87 percentage points above a frozen Synthesizer; the 4B gain is 1.48 points. On four benchmarks, 45 of 56 net additional solved examples were initially incorrect. Yet only 16.2% of the 2,940 admitted tasks provide non-degenerate group-relative feedback, and this fraction declines late in training. Teachability and gradient-bearing status use the same rollout outcomes, so their strong correlation is not independent causal evidence. Multiple-seed uncertainty, empirical benchmark decontamination, and complete verifier coefficients are not established in the paper; external code and data were not checked. This is a useful adaptive-curriculum study for mathematical post-training. Its cost comparison concerns a matched online pipeline and does not establish zero-cost training or general-purpose continual agent self-improvement.",
+      "summary_zh": "固定合成資料很快會與模型能力脫節：全答對或全答錯的題目，往往無法提供群組相對強化學習需要的差異訊號。SynCo 讓兩個參數獨立的 Qwen3 分別擔任出題者與解題者；前者讀取近期題庫、能力診斷與拒收紀錄，產生附參考解答的題卡，後者只看到題目並作答四次。同一批互動同時更新兩者：解題者依答案正確性得分，出題者則以品質、答案可靠度作為閘門，獎勵成功與失敗混合的題目。八項數學測試中，8B 模型平均正確率為 78.72%，比凍結出題者高 2.87 個百分點；4B 的增益為 1.48 點。四項測試的逐題分析顯示，額外解出的 56 題有 45 題原先答錯。不過，2,940 道合格題僅 16.2% 產生非退化群組訊號，後期比例還下降；可教性與此指標的高相關亦由相同作答結果構成，不能當成獨立因果驗證。論文未交代多種子誤差、基準去污染實測及完整驗證器係數，外部程式與資料也未核驗。它值得作為數學後訓練的自適應課程設計參考，效率結果僅比較相同線上流程，尚不能推出零成本或通用代理持續自我進化已成立。",
+      "title": "SynCo: Data Synthesis Co-Training for Self-Evolving LLMs via Multi-Agent Reinforcement Learning",
+      "title_en": "SynCo: Data Synthesis Co-Training for Self-Evolving LLMs via Multi-Agent Reinforcement Learning",
+      "title_zh": "SynCo：以多代理強化學習協同訓練資料合成，讓大型語言模型自我演進"
     }
   ],
   "radar": [],
@@ -5834,9 +6096,9 @@
   "run_info": {
     "added_native_count": 2,
     "added_reviewed_candidate_count": 2,
-    "addition_prepared_at_utc": "2026-10-11T04:36:40+00:00",
+    "addition_prepared_at_utc": "2026-10-11T05:24:10+00:00",
     "addition_ranking_anchor_basis": "Frozen new preparation time, not listing/announcement or source collection cutoff",
-    "addition_ranking_anchor_utc": "2026-10-11T04:27:51+00:00",
+    "addition_ranking_anchor_utc": "2026-10-11T05:22:50+00:00",
     "combined_native_reranked": false,
     "coverage_status": "partial",
     "date_basis_by_story": {
@@ -5869,6 +6131,38 @@
         "date_basis": "official_listing_v1_inference",
         "date_value": "2026-10-09",
         "event_timestamp_utc": null
+      },
+      "arxiv:2610.11345": {
+        "announcement_clock_timezone": "unknown",
+        "date_basis": "official_listing_date_heading",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null,
+        "fetch_is_origin_generation": false,
+        "first_submission_utc": "2026-10-08T06:40:18Z",
+        "listing_body_sha256": "4517f7f7d899a7cf8407669b340b452260c029801f46a66eb22e941a8b51d55e",
+        "listing_fetch_completed_utc": "2026-10-11T04:30:35.169073Z",
+        "listing_item_index": 86,
+        "listing_response_age_seconds": 179916,
+        "listing_source_url": "https://arxiv.org/list/cs.AI/recent?skip=0&show=2000",
+        "literal_new_submission_heading": null,
+        "observed_group": "primary_non_cross_list",
+        "version_assessment": "new_primary_v1_inferred_from_v1_link_and_version_history"
+      },
+      "arxiv:2610.11370": {
+        "announcement_clock_timezone": "unknown",
+        "date_basis": "official_listing_date_heading",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null,
+        "fetch_is_origin_generation": false,
+        "first_submission_utc": "2026-10-08T07:03:17Z",
+        "listing_body_sha256": "4517f7f7d899a7cf8407669b340b452260c029801f46a66eb22e941a8b51d55e",
+        "listing_fetch_completed_utc": "2026-10-11T04:30:35.169073Z",
+        "listing_item_index": 81,
+        "listing_response_age_seconds": 179916,
+        "listing_source_url": "https://arxiv.org/list/cs.AI/recent?skip=0&show=2000",
+        "literal_new_submission_heading": null,
+        "observed_group": "primary_non_cross_list",
+        "version_assessment": "new_primary_v1_inferred_from_v1_link_and_version_history"
       },
       "arxiv:2610.11464": {
         "date_basis": "official_listing_v1_inference",
@@ -6129,24 +6423,24 @@
         "event_timestamp_utc": null
       }
     },
-    "error_summary": "PARTIAL 部分更新：保留107篇公開基線中的Oct9原52篇及順序；兩篇全新評審依原規則2選2追加Papers。54篇及總109篇均未共同重排；全日總數、涵蓋率及來源收集截止未知。",
+    "error_summary": "PARTIAL 部分更新：保留109篇公開基線中的Oct9原54篇及順序；RIT-RAG與SynCo兩篇全新評審依原規則2選2追加Papers。56篇及總111篇均未共同重排；全日總數、涵蓋率及來源收集截止未知。",
     "finished_at": "2026-10-10T03:29:00+00:00",
     "full_day_candidate_total": null,
     "items_total": null,
-    "preserved_baseline_body_sha256": "0d64c8f8513fbf41ac79d2b346fc584e7b23a97ee84e4ae58f496cccfd9ce93e",
-    "preserved_baseline_commit": "bdad368baa9331cf24ed4b7c1417c489624b127d",
-    "preserved_baseline_count": 52,
-    "preserved_baseline_kind": "accepted_live107",
+    "preserved_baseline_body_sha256": "0002c782196211ea96ef7710eed97167a0bd70d30bde4761ec0189c437014d8c",
+    "preserved_baseline_commit": "9484fcd78f0339ace8503252034a591c9f51df96",
+    "preserved_baseline_count": 54,
+    "preserved_baseline_kind": "accepted_live109",
     "preview_only": false,
     "prior_reviewed_total_count": null,
-    "release_scope_note": "Preserve all 107 baseline stories and append two freshly reviewed papers in unchanged original-filter subset order to Oct9 Papers. Neither the 54 Oct9 stories nor all 109 are jointly reranked. First submission Oct8 is distinct from independently witnessed official listing Oct9; exact announcement clock/timezone, configured-query coverage, full-day totals and collection cutoff remain unknown. Historical missing packets are not restored by these new reviews; existing material holds remain.",
+    "release_scope_note": "Preserve all 109 baseline stories and append RIT-RAG and SynCo in unchanged original-filter subset order to Oct9 Papers. Neither the 56 Oct9 stories nor all 111 are jointly reranked. First submission Oct8 is distinct from independently witnessed official listing Oct9; exact announcement clock/timezone, configured-query coverage, full-day totals and collection cutoff remain unknown. Historical missing packets are not restored by these new reviews; existing material holds remain.",
     "release_state": "bounded_partial_new_reviews",
-    "reviewed_selected_count": 54,
+    "reviewed_selected_count": 56,
     "reviewed_total_count": null,
     "run_id": "bounded-partial-additive-2026-10-09",
     "source_collection_cutoff_utc": null,
     "started_at": "2026-10-10T03:29:00+00:00",
-    "stories_total": 54,
+    "stories_total": 56,
     "success": true
   },
   "sources_status": [
