@@ -338,7 +338,7 @@
       "type": "researcher"
     }
   },
-  "generated_at": "2026-10-10T03:32:44.035263+00:00",
+  "generated_at": "2026-10-11T04:36:40+00:00",
   "model_releases_by_entity": {},
   "papers": [
 {
@@ -5578,301 +5578,577 @@
       "title": "DeltaReplay: Task-Relative Memory Reuse for Mobile GUI Agents",
       "title_en": "DeltaReplay: Task-Relative Memory Reuse for Mobile GUI Agents",
       "title_zh": "DeltaReplay：行動圖形介面代理的任務相對記憶重用"
+    },
+    {
+      "arxiv_id": "2610.11552",
+      "authors": [
+        "Yisen Gao",
+        "Yue Guo",
+        "Qing Zong",
+        "Yiwen Guo",
+        "Yangqiu Song"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "entities": [],
+      "first_seen_at": "2026-10-11T04:27:51+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-direct-source697",
+          "tier": 1,
+          "title": "Safe, Persistent, and Evolving Agent Harness for Understanding Partially Observable Worlds",
+          "url": "https://arxiv.org/abs/2610.11552v1"
+        },
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-direct-source697",
+          "tier": 1,
+          "title": "Safe, Persistent, and Evolving Agent Harness for Understanding Partially Observable Worlds",
+          "url": "https://arxiv.org/pdf/2610.11552v1"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.67,
+          "generalizability": 0.64,
+          "novelty": 0.78,
+          "preference_relevance": 0.96,
+          "reproducibility": 0.62,
+          "rigor": 0.64
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "C01: §3.2, Figure 2 (PDF pp. 4, 5): E-Ledger separates static verified rules and dynamic task state; policy-context bindings feed a code approval gate. Author-described architecture; a code gate does not by itself prove correct policy compilation or state.",
+          "C02: §3.3, Appendix A.2.1/A.3, Table 4 (PDF pp. 5, 6, 19, 20, 21, 22, 23, 24, 25, 26, 27, 38, 39): Four diagnostic views propose prompt changes or hidden rules; active abduction uses a fresh environment and can revise or leave a hypothesis unresolved. Prompts are research data, not instructions for this reviewer; fixed runtime and evolvable prompts are distinct.",
+          "C03: Appendix A.1–A.2 (PDF pp. 12, 13): WOW uses 20/10/20 train/validation/test tasks across the same ten task types; static rules are frozen before testing. Held-out variants, not demonstrated unseen task families.",
+          "C04: Equation 1 and Appendix A.2 Equation 11 (PDF pp. 4, 7, 13): TCR includes correctly labeled infeasible-task refusal; STCR additionally requires all executed actions to be safe. Refusal explanations are not scored. Do not describe STCR as pure execution success or refusal-explanation quality.",
+          "C05: Table 1, §4.2 (PDF pp. 7, 8): WorldAbduct STCR is 65/70/75/80 for GPT-5.6-Terra/Kimi-K3/GLM-5.3-Flash/DeepSeek-V4-Pro; MemoHarness is 50/65/65/75. Differences of 15/5/10/5 percentage points are 3/1/2/1 outcomes on 20 tasks; each configuration is single-run.",
+          "C06: Table 2 (PDF pp. 8): Removing static rules/dynamic state/code approval changes GLM STCR from 75 to 40/65/70. Runtime ablation of the evolved harness; not independent multi-seed proof.",
+          "C07: Figure 3a and Table 5 (PDF pp. 8, 39): Removing abduction leaves GLM TCR at 80 but lowers PSR 95→85 and STCR 75→65. Single-view variants retain abduction; Without Abduction injects unverified hypotheses directly.",
+          "C08: Figure 3b, §4.4 (PDF pp. 8, 9): Hidden-rule augmentation improves exact violating-action-set localization from .54→.64, .42→.64, .40→.52, .52→.62 across four backbones on 50 sequences. Separate localization task, not the 20-task completion denominator.",
+          "C09: §4.4, Appendix C, Table 6 (PDF pp. 9, 39, 40): Frozen ledgers contain 54 final merged facts: 49 fully correct, five partially correct, zero incorrect core mechanisms under the authors’ manual audit. The five partial facts have scope-condition errors; blinding/inter-rater procedures are unreported, not proven absent.",
+          "C10: Appendix E, Table 7 (PDF pp. 9, 42): 64 verification checks yield 50 direct acceptances, eight revised acceptances and six unresolved; GLM launches 16 checks averaging 19.1 interactions. 16×19.1≈306 is derived from a rounded mean, not an exact independently reported interaction count. Zero explicit rejections reflects the WOW interface.",
+          "C11: Table 1; Appendix A.2/E/F (PDF pp. 7, 13, 42): Table 1 dollar costs include all runtime-agent inference calls but exclude training-time active-verification work; steps exclude gate-rejected proposals. A fourth evolution round leaves GLM baselines unchanged but does not establish exact interaction/token/dollar budget matching.",
+          "C12: Table 3 and Appendix A.1–A.2 (PDF pp. 9, 13): On ScienceWorld, WorldAbduct success/score/steps=71.7/75.5/18.4; on DiscoveryWorld=93.8/.88/22.7. Separate evolution; GLM only; 60 and 16 test episodes. WorldEvolver has DiscoveryWorld procedural .90 and ScienceWorld 16.6 steps, so not every metric favors WorldAbduct.",
+          "C13: §4.5 and Appendix A.2.2–A.2.3 (PDF pp. 9, 13, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38): Scientific tasks omit code approval and policy-gate evolution; DiscoveryWorld uses eight themes at Easy difficulty and held-out seeds 3/4. Transfer of the evolution approach, not one unchanged enterprise harness or verified enterprise safety in these environments.",
+          "C14: Appendix D, Equation 12 (PDF pp. 40, 41): The cost-revaluation case revises a false $10,000-threshold hypothesis to creation-time cost_stored=1.15×cost_submitted+500 over tested costs 5,000–20,000; later explicit updates persist. A worked benchmark case, not a universal claim about real ServiceNow deployments.",
+          "C15: Appendix G (PDF pp. 42): The paper explicitly reports only one run per configuration. No variance, confidence intervals or significance tests are reported; production/adversarial security is not established.",
+          "C16: Abstract and Appendix A.2 (PDF pp. 1, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38): The manuscript supplies detailed role prompts, split/horizon details, and a GitHub code link. The code link is author-provided; repository availability, exact revision and experimental reproduction were not checked."
+        ],
+        "fulltext_sha256": "6cb2c36bb239a79774a6bd41d1eb73edd1f331eaee7d604793b24fc1e128a1eb",
+        "fulltext_status": "complete",
+        "model": "assistant-native-review",
+        "out_of_scope": false,
+        "producer": "assistant-native-review",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Strongly relevant to agents, tool use, persistent state, and AI safety. The substantive contribution is the combination of executable pre-action policy checks with explicit hidden-rule hypotheses and targeted environment tests, rather than merely retaining trajectory advice (Sections 3.2–3.3, pp. 4–6). Matched initial harnesses, four WOW backbones, runtime/evolution ablations, and a worked hypothesis-revision case support the mechanism (Tables 1–2 and 5; Appendix D). However, WOW has only 20 test tasks and each configuration is run once; the 5–15-point lead represents just one to three additional safe successes, with no reported uncertainty estimates (pp. 13, 42). Completion includes label-consistent refusals whose explanations are not scored. The 54-rule manual audit finds 49 fully and five partially correct facts, with blinding unreported. Additional active-verification work is not covered by test-time dollar costs, and one extra baseline round is not an exact total-cost match. The scientific environments require separate evolution, use only GLM, and DiscoveryWorld is Easy, limiting transfer claims. Extensive prompts and split details support reproducibility, but the linked code was not inspected or run in this review. Worth retaining as a research candidate; ranking and publication remain separate decisions.",
+        "rationale_en": "Strongly relevant to agents, tool use, persistent state, and AI safety. The substantive contribution is the combination of executable pre-action policy checks with explicit hidden-rule hypotheses and targeted environment tests, rather than merely retaining trajectory advice (Sections 3.2–3.3, pp. 4–6). Matched initial harnesses, four WOW backbones, runtime/evolution ablations, and a worked hypothesis-revision case support the mechanism (Tables 1–2 and 5; Appendix D). However, WOW has only 20 test tasks and each configuration is run once; the 5–15-point lead represents just one to three additional safe successes, with no reported uncertainty estimates (pp. 13, 42). Completion includes label-consistent refusals whose explanations are not scored. The 54-rule manual audit finds 49 fully and five partially correct facts, with blinding unreported. Additional active-verification work is not covered by test-time dollar costs, and one extra baseline round is not an exact total-cost match. The scientific environments require separate evolution, use only GLM, and DiscoveryWorld is Easy, limiting transfer claims. Extensive prompts and split details support reproducibility, but the linked code was not inspected or run in this review. Worth retaining as a research candidate; ranking and publication remain separate decisions.",
+        "rationale_zh": "本文高度切合代理、工具使用、持續狀態與AI安全。核心價值是把執行前程式化政策檢查，與可修訂的隱藏規則假說、主動環境驗證結合，而不只保存軌跡心得（第3.2–3.3節，頁4–6）。相同初始框架、四種模型、兩類消融及假說修訂案例提供機制證據（表1、2、5與附錄D）。但WOW僅二十項測試且各設定單次執行，5至15個百分點相當於多一至三項安全成功，未報不確定性；完成率也納入不評拒絕解釋的標籤一致拒絕（頁13、42）。人工稽核54條規則中49條完全、5條部分正確，盲測未報告；額外驗證不含於測試美元成本，多跑一輪基線仍非精確總成本配平。科學環境分別重新演化、僅用GLM且DiscoveryWorld限Easy，不能推成零樣本跨領域遷移。完整提示與切分有助重現，但本次未檢視或執行作者連結的程式。建議保留為研究候選，正式排名與發布另行決定。",
+        "raw_weighted_score": 0.7925,
+        "request_sha256": "38c86746a7be5cd851c44b1c75ec451eeebf474543b42d6b5ee7a082c8f02173",
+        "review_sha256": "07b92fddab7d86873b244beed0e167822b09a474b194cf84e5bf27ad639bb56a",
+        "scope_assessment": {
+          "decision": "in_scope",
+          "reason": "Language-model agent harness methodology, tool use, reasoning and safety evaluation are directly in scope; scientific simulation is a secondary evaluation, not a pure domain-application paper."
+        },
+        "scope_capped_score": null,
+        "scope_policy_version": "explicit-review-exclusion-v1",
+        "scope_status": "in_scope",
+        "score": 0.7925,
+        "source_key": "8e53edd6848ca81ef895ae22e942fc5a80c60d14fa6e9fff7f3057713a2870d8",
+        "story_id": "arxiv:2610.11552",
+        "token_usage": {},
+        "topics": [
+          "Agents & Tool Use",
+          "Reasoning & Chain-of-Thought",
+          "AI Safety",
+          "Red Teaming & Evaluation",
+          "Long Context & Memory"
+        ]
+      },
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-direct-source697",
+        "tier": 1,
+        "title": "Safe, Persistent, and Evolving Agent Harness for Understanding Partially Observable Worlds",
+        "url": "https://arxiv.org/abs/2610.11552v1"
+      },
+      "published_at": "2026-10-08T09:15:28+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.7925,
+        "llm_relevance_score": 22.189999999999998,
+        "recency_score": 0.7557636224803964,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 30.145763622480395
+      },
+      "section": null,
+      "source_name": "arXiv",
+      "story_id": "arxiv:2610.11552",
+      "summary": "Large language model agents can invoke tools fluently, but enterprise workflows demand more than selecting the right tools: actions must strictly comply with organizational policies, tool feedback often conceals hidden side effects under partial observability, and long-horizon tasks require persistent state tracking across multiple records. To address these challenges, we introduce E-Ledger, a multi-agent harness for safe and persistent execution. E-Ledger employs a code approval layer that checks every proposed action against policy before execution, and maintains a world ledger of verified hidden rules alongside evidence-backed dynamic state. Because hidden rules are typically unknown a priori, we further propose WorldAbduct, an abductive, world-model-driven harness evolution framework. WorldAbduct diagnoses execution trajectories across four complementary views (state consistency, world-observation gap, policy-gate correctness, and goal judgment) to hypothesize latent rules, and verifies them through targeted abductive interactions before integrating them into the ledger. On the enterprise benchmark World of Workflows, E-Ledger with WorldAbduct improves safe task completion across four LLM backbones, outperforming the strongest evolution baseline by 5--15 percentage points. Experiments in ScienceWorld and DiscoveryWorld further show that abductive harness evolution carries over to scientific environments. Our code is available at https://github.com/HKUST-KnowComp/E-LEDGER-WorldAbduct.",
+      "summary_en": "A successful tool response can conceal cross-record side effects that make an enterprise agent violate policy. E-Ledger combines a code-based approval gate with a world ledger separating verified hidden rules from evidence-backed task state. WorldAbduct diagnoses state consistency, observation gaps, policy-gate correctness, and goal judgment, then tests hidden-rule hypotheses in fresh sandboxes before admitting supported rules.\n\nOn 20 held-out WOW tasks, the four backbones achieve safe task completion rates of 65%, 70%, 75%, and 80%, exceeding the strongest evolution baseline by 5–15 percentage points. This metric includes label-consistent safe refusals of infeasible tasks, rather than only executed goals. For GLM, removing active verification lowers policy safety from 95% to 85% while task completion stays at 80%, supporting the value of checking rule applicability. Separate evolution in two scientific environments also improves performance.\n\nEach configuration is evaluated only once. Of 54 manually audited rules, 49 are fully correct and five have incomplete applicability conditions; audit blinding is not reported. GLM also requires approximately 306 extra verification interactions during evolution, outside the reported test-time inference costs. The work offers a useful design for agent state management and rule verification, but does not establish production security guarantees.",
+      "summary_zh": "企業代理即使收到工具「成功」回覆，仍可能因隱藏的跨紀錄副作用而違反政策。本文提出 E-Ledger，以程式化批准閘門檢查動作，並用世界帳本分開保存已驗證規則與有證據的任務狀態。WorldAbduct 再從狀態一致性、觀測缺口、閘門正確性及目標判斷四個角度診斷軌跡，在新沙盒主動測試假說，只有獲支持的規則才納入帳本。\n\n在 WOW 的二十項保留測試任務中，四個模型的安全任務完成率為65%、70%、75%、80%，比最佳演化基線高5至15個百分點；此指標也計入對不可行任務的正確安全拒絕，並非全是成功執行。GLM 消融中，省略主動驗證使安全率由95%降至85%，而完成率維持80%，支持「驗證規則適用條件」的價值。另在兩個科學環境分別重新演化後亦見改善。\n\n但各設定僅跑一次，人工稽核的54條規則中49條完全正確，5條適用條件不完整，盲測程序未交代；GLM 演化另需約306次驗證互動，表列推論費用未涵蓋這部分。因此這是值得參考的代理狀態管理與驗證設計，尚不能視為生產環境安全保證。",
+      "title": "Safe, Persistent, and Evolving Agent Harness for Understanding Partially Observable Worlds",
+      "title_en": "Safe, Persistent, and Evolving Agent Harness for Understanding Partially Observable Worlds",
+      "title_zh": "理解部分可觀測世界的安全、持續且可演化代理執行框架"
+    },
+    {
+      "arxiv_id": "2610.11472",
+      "authors": [
+        "Gerard Grau García",
+        "Arnau Padrés Masdemont",
+        "Niccolò Grillo",
+        "Jordi Ros-Giralt",
+        "Arash Behboodi",
+        "Victor Conchello Vendrell"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "entities": [],
+      "first_seen_at": "2026-10-11T04:27:51+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-direct-source697",
+          "tier": 1,
+          "title": "From Chain-of-Thought to Loops: Non-Autoregressive Latent Reasoning via Looped Transformers",
+          "url": "https://arxiv.org/abs/2610.11472v1"
+        },
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-direct-source697",
+          "tier": 1,
+          "title": "From Chain-of-Thought to Loops: Non-Autoregressive Latent Reasoning via Looped Transformers",
+          "url": "https://arxiv.org/pdf/2610.11472v1"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.62,
+          "generalizability": 0.42,
+          "novelty": 0.65,
+          "preference_relevance": 0.97,
+          "reproducibility": 0.4,
+          "rigor": 0.6
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "pp. 2–5, Fig. 1, §§3.1–3.3: 64 prompt-independent learned slots, shared-transformer refinement, predicted-mean feedback and final diagonal-Gaussian sampling; iterations and answer decoding remain sequential.",
+          "pp. 3–5 and A.1–A.3 pp. 11–12: frozen VAE posterior-mean targets plus dequantization noise and a trainable flow adapter; target-likelihood Jacobian is training-only; VAE and flow are absent at inference.",
+          "p. 6 Table 1: LLoCoT 69.3/63.9/65.1/56.2; Reasoning SFT 70.3/64.4/63.5/54.7; NF-CoT 69.2/63.5/62.2/52.9, with reported four-column means 63.6/63.2/62.0.",
+          "p. 7 Table 2: no-feedback R=1/2/3/4/6/8 means 62.9/63.1/63.2/62.5/61.2/61.7; increasing loop depth does not consistently improve performance.",
+          "p. 7 Table 3: no-feedback mean 63.1; answer-mean 57.2; auxiliary-NLL 62.9; mean-feedback plus auxiliary-NLL 63.6; sampled-feedback plus auxiliary-NLL 62.4. No mean-feedback-without-auxiliary-NLL row is reported.",
+          "p. 8 Table 4 and p. 13 B.5: one H100 80GB, bfloat16, batch size one, 128 fixed prompts, three measured runs per prompt after ten warm-ups; 384 records per endpoint. Tokenization, sampling, network and evaluation time are excluded.",
+          "p. 8 Table 4: Reasoning SFT versus LLoCoT first-answer time 3.17 versus 0.09 s, reasoning phase 2.47 versus 0.06 s, end-to-end latency 15.16 versus 11.47 s, memory 3.3 versus 6.3 GiB, analytical FLOPs 1.7 versus 2.8 trillion.",
+          "p. 1 abstract reports approximately 36x/42x pre-answer speedups and 9.2% throughput gain; pp. 8,13 provide no throughput row, output-token totals or sufficiently defined throughput calculation to verify the 9.2%.",
+          "pp. 12–13 A.5/B.1–B.4: 16 stochastic completions per fixed task, failures retained as zeros, integrity failures block promotion, approximate fixed-task Wald intervals exclude training-seed/task-selection/model-selection uncertainty; four-column mean has no interval.",
+          "p. 8 §5.1: one 1.7B backbone, coding-only evaluation, increased memory/FLOPs, and fixed workspace/depth are acknowledged limitations.",
+          "p. 9 reproducibility statement: repository is being prepared; implementation/checkpoints are prospective. pp. 11–12 specify hyperparameters but do not identify the training corpus or document contamination audits.",
+          "p. 9 ethics statement: continuous latent reasoning hides intermediate thoughts; no interpretability or safety benefit is demonstrated."
+        ],
+        "fulltext_sha256": "794925d5be5bab2cb9523c99b8bc9dea8d36ccc3c73d9ca3b9219ec56f985d54",
+        "fulltext_status": "complete",
+        "model": "assistant-native-review",
+        "out_of_scope": false,
+        "producer": "assistant-native-review",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "LLoCoT is highly relevant to language-model reasoning, transformer architecture, code generation and inference efficiency. Its specific contribution combines NF-CoT-derived continuous targets with a fixed looped workspace, mean feedback and intermediate likelihood supervision; related non-autoregressive latent refinement already appears in the cited LaDiR work (pp. 2–5). The formulation and training/decoding appendices are substantial, and the loop-depth, conditioning and feedback ablations are useful (pp. 7, 11–13). However, no mean-feedback-only ablation isolates that factor without auxiliary supervision, and the training corpus, trace construction and baseline-training comparability are insufficiently specified.\n\nThe 63.6 versus 63.2 descriptive means combine four correlated columns from two task families on one Qwen3-1.7B backbone. Fixed-task sampling intervals exclude training-seed and task-population uncertainty; the paper does not establish superiority or statistical equivalence to Reasoning SFT (pp. 6, 12–13). Matched H100 measurements support a substantial startup-latency reduction, but whole-answer latency improves by about 24.3%, peak memory and analytical FLOPs increase, and output-length normalization is not established. The abstract's 9.2% throughput claim lacks sufficient reported quantities for verification (pp. 1, 8, 13). Generalization beyond coding or this model scale remains untested, and the paper describes the repository as still being prepared (pp. 8–9). These are disclosure and reproducibility limitations, not evidence of data leakage. The paper merits attention as a preliminary architectural/latency result, with calibrated claims rather than a broad capability or compute-efficiency endorsement.",
+        "rationale_en": "LLoCoT is highly relevant to language-model reasoning, transformer architecture, code generation and inference efficiency. Its specific contribution combines NF-CoT-derived continuous targets with a fixed looped workspace, mean feedback and intermediate likelihood supervision; related non-autoregressive latent refinement already appears in the cited LaDiR work (pp. 2–5). The formulation and training/decoding appendices are substantial, and the loop-depth, conditioning and feedback ablations are useful (pp. 7, 11–13). However, no mean-feedback-only ablation isolates that factor without auxiliary supervision, and the training corpus, trace construction and baseline-training comparability are insufficiently specified.\n\nThe 63.6 versus 63.2 descriptive means combine four correlated columns from two task families on one Qwen3-1.7B backbone. Fixed-task sampling intervals exclude training-seed and task-population uncertainty; the paper does not establish superiority or statistical equivalence to Reasoning SFT (pp. 6, 12–13). Matched H100 measurements support a substantial startup-latency reduction, but whole-answer latency improves by about 24.3%, peak memory and analytical FLOPs increase, and output-length normalization is not established. The abstract's 9.2% throughput claim lacks sufficient reported quantities for verification (pp. 1, 8, 13). Generalization beyond coding or this model scale remains untested, and the paper describes the repository as still being prepared (pp. 8–9). These are disclosure and reproducibility limitations, not evidence of data leakage. The paper merits attention as a preliminary architectural/latency result, with calibrated claims rather than a broad capability or compute-efficiency endorsement.",
+        "rationale_zh": "LLoCoT高度切合語言模型推理、Transformer架構、程式生成與推論效率。具體貢獻是把NF-CoT衍生的連續目標、固定迴圈工作區、均值回饋與中間似然監督結合；文中引用的LaDiR已包含非自回歸潛在細化，因此不能把此概念本身視為首次提出（第2–5頁）。方法公式及訓練／解碼附錄相當具體，迴圈深度、答案條件與回饋消融也有價值（第7、11–13頁）。但缺少不含輔助監督的純均值回饋消融，訓練語料、思考鏈建構與各基線訓練的可比性仍交代不足。\n\n63.6對63.2是同一Qwen3-1.7B骨幹、兩個題目族群四個相關欄位的描述平均。固定題目抽樣區間不涵蓋訓練種子或題目母體的不確定性，不能據此證明優於Reasoning SFT或統計等效（第6、12–13頁）。匹配的H100量測支持大幅縮短啟動等待，但整段答案延遲約降低24.3%，峰值記憶體及估算FLOPs反而增加，亦未建立輸出長度正規化的比較。摘要所稱9.2%吞吐量提升缺少足夠報告量可供核算（第1、8、13頁）。程式題以外及其他模型尺寸的泛化未驗，文中亦說程式庫尚在準備（第8–9頁）。這些屬資訊揭露與重現限制，不構成資料洩漏證據。此文值得作為初步架構／延遲成果關注，但不足以支持廣泛能力或全面運算效率的背書。",
+        "raw_weighted_score": 0.7305,
+        "request_sha256": "76073eb9a1c5476056ab76f151dfc98d51b0de59b9590611f0a2de785513bbc5",
+        "review_sha256": "154e7bc1cf2483a47b792b810b02f6be6ead14977c42146565b9eaddfe26f065",
+        "scope_assessment": {
+          "decision": "in_scope",
+          "reason_en": "Core language-model architecture and reasoning methodology, evaluated through code generation; not a pure domain application.",
+          "reason_zh": "研究核心語言模型架構與推理方法，以程式生成評估，非純領域應用。"
+        },
+        "scope_capped_score": null,
+        "scope_policy_version": "explicit-review-exclusion-v1",
+        "scope_status": "in_scope",
+        "score": 0.7305,
+        "source_key": "46003219a3edeb2ac55e886025c8e04aa7f5641574c9c5b8ea7980728fca5165",
+        "story_id": "arxiv:2610.11472",
+        "token_usage": {},
+        "topics": [
+          "Large Language Models",
+          "Reasoning & Chain-of-Thought",
+          "Transformer Architecture",
+          "Code & Programming",
+          "Scaling & Efficiency",
+          "Training & Optimization",
+          "Inference & Serving"
+        ]
+      },
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-direct-source697",
+        "tier": 1,
+        "title": "From Chain-of-Thought to Loops: Non-Autoregressive Latent Reasoning via Looped Transformers",
+        "url": "https://arxiv.org/abs/2610.11472v1"
+      },
+      "published_at": "2026-10-08T08:21:31+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.7305,
+        "llm_relevance_score": 20.454,
+        "recency_score": 0.752937430584374,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 28.406937430584374
+      },
+      "section": null,
+      "source_name": "arXiv",
+      "story_id": "arxiv:2610.11472",
+      "summary": "Chain-of-thought (CoT) reasoning often improves language-model performance by giving models additional computation before answering. However, explicit CoT expresses this computation as a sequence of autoregressively generated tokens. Latent reasoning replaces these tokens with compact continuous states, but most autoregressive latent-reasoning methods retain a left-to-right dependency among latent vectors. We introduce LLoCoT: a looped latent-reasoning framework that replaces left-to-right latent generation with iterative refinement of a compact latent workspace. A shared transformer is reapplied for a small number of refinement iterations, jointly updating the latent slots based on the prompt and the evolving workspace state. Using the refined state, a probabilistic head predicts a distribution from which latent tokens are sampled in parallel and used to condition an autoregressive decoder for answer generation. Training uses continuous representations derived from explicit CoT together with a final-answer prediction loss and likelihood-based supervision of the latent states. Across HumanEval and MBPP, LLoCoT achieves the highest mean among the evaluated methods, performing on par in accuracy with Reasoning SFT, our explicit-CoT baseline, while outperforming the base model, answer-only SFT and NF-CoT. Relative to Reasoning SFT, LLoCoT reduces time to the first answer token by approximately $36\\times$ and reasoning-phase latency by approximately $42\\times$, while increasing end-to-end throughput by $9.2\\%$. This design replaces serial thought generation with parallel latent-slot refinement while retaining probabilistic latent modeling and autoregressive answer decoding.",
+      "summary_en": "LLoCoT replaces serial thought generation with iterative refinement of a fixed latent workspace. Its main Qwen3-1.7B configuration uses 64 slots and two shared-transformer passes, feeding predicted means into the next pass before parallel latent sampling and autoregressive answer decoding. Training combines frozen VAE-derived chain-of-thought targets, a trainable flow adapter, latent likelihood objectives and answer supervision; neither the VAE nor the flow runs at inference.\n\nThe reported four-column mean is 63.6%, versus 63.2% for Reasoning SFT and 62.0% for NF-CoT. These columns cover HumanEval and MBPP plus their strengthened test variants, not four independent replications, and do not establish statistical equivalence. More loops do not reliably help; the answer-mean training variant reaches only 57.2%.\n\nOn one H100 at batch size one, time to the first answer token falls from 3.17 to 0.09 seconds, while end-to-end latency falls from 15.16 to 11.47 seconds, about 24.3%. The tens-fold pre-answer speedups should not be applied to whole-answer generation. Peak memory rises from 3.3 to 6.3 GiB and estimated FLOPs also increase. The evidence is limited to one model size and coding tasks, with training-data and reproduction-material gaps. The contribution is a promising latency–parallel-compute trade-off, not proof of general reasoning or lower overall computation.",
+      "summary_zh": "逐字產生思考鏈會拖慢模型作答，LLoCoT改讓固定大小的潛在工作區反覆更新。主要設定以Qwen3-1.7B為骨幹，使用64個槽位與兩輪共享Transformer；每輪平行更新槽位，把預測均值回饋下一輪，最後平行抽樣潛在表示，再逐字輸出答案。訓練以凍結VAE壓縮完整思考鏈，搭配可訓練flow、潛在似然與答案損失；VAE與flow不在推論時執行。\n\n在HumanEval、MBPP及各自加強測試版，四欄平均為63.6%，接近Reasoning SFT的63.2%，高於NF-CoT的62.0%。這是兩個題目族群的描述平均，不是四次獨立重複實驗，也未證明統計等效。消融顯示更多迴圈未必更好，直接用預測均值訓練答案的版本降至57.2%。\n\n單張H100、批次一的量測中，首個答案token等待由3.17降至0.09秒，完整延遲由15.16降至11.47秒，約降24.3%；不能將回答前階段的數十倍加速套用整段生成。峰值記憶體卻由3.3升至6.3GiB，估算FLOPs也增加。研究僅涵蓋單一模型尺寸與程式題，訓練資料及開源重現材料仍不足。價值在展示以較多平行運算換取較短等待的可行方向，尚非通用推理或全面省算力的證明。",
+      "title": "From Chain-of-Thought to Loops: Non-Autoregressive Latent Reasoning via Looped Transformers",
+      "title_en": "From Chain-of-Thought to Loops: Non-Autoregressive Latent Reasoning via Looped Transformers",
+      "title_zh": "從思考鏈到迴圈：以迴圈Transformer實現非自回歸潛在推理"
     }
-],
+  ],
   "radar": [],
   "run_date": "2026-10-09",
   "run_id": "bounded-partial-additive-2026-10-09",
   "run_info": {
-  "added_native_count": 4,
-  "added_reviewed_candidate_count": 4,
-  "addition_prepared_at_utc": "2026-10-10T15:25:00+00:00",
-  "addition_ranking_anchor_basis": "Frozen preparation time; not source collection cutoff or historical ranking time",
-  "addition_ranking_anchor_utc": "2026-10-10T15:25:00+00:00",
-  "combined_native_reranked": false,
-  "coverage_status": "partial",
-  "date_basis_by_story": {
-    "arxiv:2610.10833": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
+    "added_native_count": 2,
+    "added_reviewed_candidate_count": 2,
+    "addition_prepared_at_utc": "2026-10-11T04:36:40+00:00",
+    "addition_ranking_anchor_basis": "Frozen new preparation time, not listing/announcement or source collection cutoff",
+    "addition_ranking_anchor_utc": "2026-10-11T04:27:51+00:00",
+    "combined_native_reranked": false,
+    "coverage_status": "partial",
+    "date_basis_by_story": {
+      "arxiv:2610.10833": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.11030": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.11050": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.11134": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.11268": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.11287": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.11464": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.11472": {
+        "announcement_clock_timezone": "unknown",
+        "date_basis": "official_listing_date_heading",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null,
+        "first_submission_utc": "2026-10-08T08:21:31Z",
+        "listing_body_sha256": "4517f7f7d899a7cf8407669b340b452260c029801f46a66eb22e941a8b51d55e",
+        "listing_item_index": 71,
+        "listing_response_age_seconds": 179916,
+        "listing_source_url": "https://arxiv.org/list/cs.AI/recent?skip=0&show=2000",
+        "literal_new_submission_heading": null,
+        "observed_group": "primary_non_cross_list",
+        "version_assessment": "new_primary_v1_inferred_from_v1_link_and_version_history"
+      },
+      "arxiv:2610.11552": {
+        "announcement_clock_timezone": "unknown",
+        "date_basis": "official_listing_date_heading",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null,
+        "first_submission_utc": "2026-10-08T09:15:28Z",
+        "listing_body_sha256": "4517f7f7d899a7cf8407669b340b452260c029801f46a66eb22e941a8b51d55e",
+        "listing_item_index": 65,
+        "listing_response_age_seconds": 179916,
+        "listing_source_url": "https://arxiv.org/list/cs.AI/recent?skip=0&show=2000",
+        "literal_new_submission_heading": null,
+        "observed_group": "primary_non_cross_list",
+        "version_assessment": "new_primary_v1_inferred_from_v1_link_and_version_history"
+      },
+      "arxiv:2610.11559": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.11573": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.11578": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.11593": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.11600": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.11613": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.11620": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.11647": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.11655": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.11707": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.11715": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.11750": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.11773": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.11775": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.11781": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.11794": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.11858": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.11989": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.12002": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.12056": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.12061": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.12083": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.12085": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.12086": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.12114": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.12124": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.12129": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.12168": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.12176": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.12235": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.12242": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.12269": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.12274": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.12292": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.12303": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.12304": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.12313": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.12325": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.12360": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.12361": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.12374": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.12375": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.12409": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.12410": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      },
+      "arxiv:2610.12436": {
+        "date_basis": "official_listing_v1_inference",
+        "date_value": "2026-10-09",
+        "event_timestamp_utc": null
+      }
     },
-    "arxiv:2610.11030": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.11050": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.11134": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.11268": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.11287": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.11464": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.11559": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.11573": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.11578": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.11593": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.11600": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.11613": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.11620": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.11647": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.11655": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.11707": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.11715": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.11750": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.11773": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.11775": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.11781": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.11794": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.11858": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.11989": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.12002": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.12056": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.12061": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.12083": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.12085": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.12086": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.12114": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.12124": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.12129": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.12168": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.12176": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.12235": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.12242": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.12269": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.12274": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.12292": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.12303": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.12304": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.12313": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.12325": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.12360": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.12361": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.12374": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.12375": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.12409": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.12410": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
-    },
-    "arxiv:2610.12436": {
-      "date_basis": "official_listing_v1_inference",
-      "date_value": "2026-10-09",
-      "event_timestamp_utc": null
-    }
+    "error_summary": "PARTIAL 部分更新：保留107篇公開基線中的Oct9原52篇及順序；兩篇全新評審依原規則2選2追加Papers。54篇及總109篇均未共同重排；全日總數、涵蓋率及來源收集截止未知。",
+    "finished_at": "2026-10-10T03:29:00+00:00",
+    "full_day_candidate_total": null,
+    "items_total": null,
+    "preserved_baseline_body_sha256": "0d64c8f8513fbf41ac79d2b346fc584e7b23a97ee84e4ae58f496cccfd9ce93e",
+    "preserved_baseline_commit": "bdad368baa9331cf24ed4b7c1417c489624b127d",
+    "preserved_baseline_count": 52,
+    "preserved_baseline_kind": "accepted_live107",
+    "preview_only": false,
+    "prior_reviewed_total_count": null,
+    "release_scope_note": "Preserve all 107 baseline stories and append two freshly reviewed papers in unchanged original-filter subset order to Oct9 Papers. Neither the 54 Oct9 stories nor all 109 are jointly reranked. First submission Oct8 is distinct from independently witnessed official listing Oct9; exact announcement clock/timezone, configured-query coverage, full-day totals and collection cutoff remain unknown. Historical missing packets are not restored by these new reviews; existing material holds remain.",
+    "release_state": "bounded_partial_new_reviews",
+    "reviewed_selected_count": 54,
+    "reviewed_total_count": null,
+    "run_id": "bounded-partial-additive-2026-10-09",
+    "source_collection_cutoff_utc": null,
+    "started_at": "2026-10-10T03:29:00+00:00",
+    "stories_total": 54,
+    "success": true
   },
-  "error_summary": "PARTIAL 部分更新：保留103篇基線中的Oct9原48篇及既有順序；本批4篇依原規則選4篇，按子集排名追加Papers。52篇未合併重新排名；全日總數及收集截止未知。",
-  "finished_at": "2026-10-10T03:29:00+00:00",
-  "full_day_candidate_total": null,
-  "items_total": null,
-  "preserved_baseline_body_sha256": "c689361aa4e7a4249c3f94e3e1f39af3f4aca08cf0d44fe0e1b2cd9ac416cc79",
-  "preserved_baseline_commit": "0d739c9e7fa04d8213962d4bfe280f0c07c1c765",
-  "preserved_baseline_count": 48,
-  "preserved_baseline_kind": "verified_git103",
-  "preview_only": false,
-  "prior_reviewed_total_count": null,
-  "release_scope_note": "Four approved additions from an unchanged 4-of-4 filter are appended to Papers after the 48 preserved Oct9 entries of the verified Git103 baseline. Neither all 52 nor all 107 are jointly reranked. First submission Oct8 differs from listing Oct9; exact announcement events, configured-query coverage, full-day totals and collection cutoff remain unknown.",
-  "release_state": "approved_bounded_release",
-  "reviewed_selected_count": 52,
-  "reviewed_total_count": null,
-  "run_id": "bounded-partial-additive-2026-10-09",
-  "source_collection_cutoff_utc": null,
-  "started_at": "2026-10-10T03:29:00+00:00",
-  "stories_total": 52,
-  "success": true
-},
   "sources_status": [
     {
       "category": null,
