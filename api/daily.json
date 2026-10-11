@@ -338,10 +338,9 @@
       "type": "researcher"
     }
   },
-  "generated_at": "2026-10-11T06:06:20+00:00",
+  "generated_at": "2026-10-11T07:51:00+00:00",
   "model_releases_by_entity": {},
-  "papers": [
-{
+  "papers": [{
       "arxiv_id": "2610.12375",
       "authors": [],
       "categories": [],
@@ -446,8 +445,7 @@
       "title": "OnTrack: Real-Time Monitoring and Intervention in LLM Agent Trajectories via Streaming Structure-Aware Optimal Transport",
       "title_en": "OnTrack: Real-Time Monitoring and Intervention in LLM Agent Trajectories via Streaming Structure-Aware Optimal Transport",
       "title_zh": "OnTrack：以串流結構感知最佳傳輸，即時監控與介入語言模型代理軌跡"
-    },
-{
+    },{
       "arxiv_id": "2610.12002",
       "authors": [],
       "categories": [],
@@ -552,8 +550,7 @@
       "title": "Agentic-TTT: Training test-time policy for test-time training",
       "title_en": "Agentic-TTT: Training test-time policy for test-time training",
       "title_zh": "Agentic-TTT：學會決定何時、如何進行測試時訓練"
-    },
-{
+    },{
       "arxiv_id": "2610.12269",
       "authors": [],
       "categories": [],
@@ -655,8 +652,7 @@
       "title": "Cadence: Strategic Guidance for Coding Agents",
       "title_en": "Cadence: Strategic Guidance for Coding Agents",
       "title_zh": "Cadence：為程式代理提供策略性指導"
-    },
-{
+    },{
       "arxiv_id": "2610.12242",
       "authors": [],
       "categories": [],
@@ -759,8 +755,7 @@
       "title": "TokenRouter: Efficient Serving System for Token-Level LLM Routing",
       "title_en": "TokenRouter: Efficient Serving System for Token-Level LLM Routing",
       "title_zh": "TokenRouter：高效率的 Token 級語言模型路由服務系統"
-    },
-{
+    },{
       "arxiv_id": "2610.11134",
       "authors": [],
       "categories": [],
@@ -865,8 +860,7 @@
       "title": "QUILT: Rethinking Sparse-Attention Prefill through Shared Query Execution",
       "title_en": "QUILT: Rethinking Sparse-Attention Prefill through Shared Query Execution",
       "title_zh": "QUILT：以共享查詢執行重新設計稀疏注意力預填充"
-    },
-{
+    },{
       "arxiv_id": "2610.11781",
       "authors": [],
       "categories": [],
@@ -971,8 +965,7 @@
       "title": "Skill-V: Verifiable Self-Evolving Skill Library for Interactive Agents",
       "title_en": "Skill-V: Verifiable Self-Evolving Skill Library for Interactive Agents",
       "title_zh": "Skill-V：以可驗證契約維護互動代理的自我演進技能庫"
-    },
-{
+    },{
       "arxiv_id": "2610.12274",
       "authors": [],
       "categories": [],
@@ -1076,8 +1069,7 @@
       "title": "HarnessSQL: Harness-Native Training for SQL Agents in Realistic Database Environments",
       "title_en": "HarnessSQL: Harness-Native Training for SQL Agents in Realistic Database Environments",
       "title_zh": "HarnessSQL：在真實資料庫執行框架中原生訓練 SQL 代理"
-    },
-{
+    },{
       "arxiv_id": "2610.12374",
       "authors": [],
       "categories": [],
@@ -1179,8 +1171,7 @@
       "title": "AgentGarten: Code Worlds for Evolving Agents",
       "title_en": "AgentGarten: Code Worlds for Evolving Agents",
       "title_zh": "AgentGarten：讓代理持續演進的程式世界"
-    },
-{
+    },{
       "arxiv_id": "2610.11287",
       "authors": [],
       "categories": [],
@@ -1282,8 +1273,7 @@
       "title": "REMORY: Learning Residual Memory for Context Compaction",
       "title_en": "REMORY: Learning Residual Memory for Context Compaction",
       "title_zh": "REMORY：學習用於上下文壓縮的殘差記憶"
-    },
-{
+    },{
       "arxiv_id": "2610.12360",
       "authors": [],
       "categories": [],
@@ -1385,8 +1375,7 @@
       "title": "Accurate but Not Humble: Evaluating Epistemic Humility in LLM Agents under Knowledge Conflict",
       "title_en": "Accurate but Not Humble: Evaluating Epistemic Humility in LLM Agents under Knowledge Conflict",
       "title_zh": "答得準卻不謙遜：評估知識衝突下大型語言模型代理的認知謙遜"
-    },
-{
+    },{
       "arxiv_id": "2610.11620",
       "authors": [],
       "categories": [],
@@ -1486,8 +1475,7 @@
       "title": "Where to Adapt Matters: Layer-Selective Fine-Tuning for Capability Retention",
       "title_en": "Where to Adapt Matters: Layer-Selective Fine-Tuning for Capability Retention",
       "title_zh": "在哪裡適配很重要：以選層微調保留模型能力"
-    },
-{
+    },{
       "arxiv_id": "2610.11715",
       "authors": [],
       "categories": [],
@@ -1587,8 +1575,7 @@
       "title": "Internalizer: Portable Context-to-Parameter Mapping for Very Large Language Models",
       "title_en": "Internalizer: Portable Context-to-Parameter Mapping for Very Large Language Models",
       "title_zh": "Internalizer：面向超大型語言模型的可移植上下文至參數映射"
-    },
-{
+    },{
       "arxiv_id": "2610.12168",
       "authors": [],
       "categories": [],
@@ -1689,8 +1676,7 @@
       "title": "Learning to Plan by Looking Back: Hindsight Hierarchies for Training Reasoning Models",
       "title_en": "Learning to Plan by Looking Back: Hindsight Hierarchies for Training Reasoning Models",
       "title_zh": "回望解法以學會規劃：用事後層級構想訓練推理模型"
-    },
-{
+    },{
       "arxiv_id": "2610.12235",
       "authors": [],
       "categories": [],
@@ -1792,8 +1778,7 @@
       "title": "Language Models as AI Research World Models",
       "title_en": "Language Models as AI Research World Models",
       "title_zh": "將語言模型用作 AI 研究的世界模型"
-    },
-{
+    },{
       "arxiv_id": "2610.11858",
       "authors": [],
       "categories": [],
@@ -1901,8 +1886,7 @@
       "title": "Trajectory-Guided Fault Localization for Agent Skill Evolution",
       "title_en": "Trajectory-Guided Fault Localization for Agent Skill Evolution",
       "title_zh": "以軌跡引導故障定位，推動代理技能演化"
-    },
-{
+    },{
       "arxiv_id": "2610.12083",
       "authors": [],
       "categories": [],
@@ -2004,8 +1988,7 @@
       "title": "All Verdicts are Not Equal: Rethinking LLM Judge Reliability",
       "title_en": "All Verdicts are Not Equal: Rethinking LLM Judge Reliability",
       "title_zh": "不是每個裁決都一樣：重新思考大型語言模型裁判的可靠性"
-    },
-{
+    },{
       "arxiv_id": "2610.12056",
       "authors": [],
       "categories": [],
@@ -2112,8 +2095,7 @@
       "title": "Structure Tax: How Structured Output affects LLMs Performance",
       "title_en": "Structure Tax: How Structured Output affects LLMs Performance",
       "title_zh": "結構稅：結構化輸出如何影響大型語言模型表現"
-    },
-{
+    },{
       "arxiv_id": "2610.12410",
       "authors": [],
       "categories": [],
@@ -2219,8 +2201,7 @@
       "title": "Predicting Alignment Generalization with Value Representations",
       "title_en": "Predicting Alignment Generalization with Value Representations",
       "title_zh": "利用價值表徵預測對齊訓練的泛化效應"
-    },
-{
+    },{
       "arxiv_id": "2610.11593",
       "authors": [],
       "categories": [],
@@ -2323,8 +2304,7 @@
       "title": "Runnable Commit Untangling for Coding Agents",
       "title_en": "Runnable Commit Untangling for Coding Agents",
       "title_zh": "讓程式代理拆分出每一步皆可執行的提交歷史"
-    },
-{
+    },{
       "arxiv_id": "2610.12409",
       "authors": [],
       "categories": [],
@@ -2426,8 +2406,7 @@
       "title": "Searching for \"Harmful Refusal\": A Psychometric Audit of an AI Safety Benchmark",
       "title_en": "Searching for \"Harmful Refusal\": A Psychometric Audit of an AI Safety Benchmark",
       "title_zh": "尋找「有害請求拒絕能力」：AI安全基準的心理計量稽核"
-    },
-{
+    },{
       "arxiv_id": "2610.12436",
       "authors": [],
       "categories": [],
@@ -2536,8 +2515,7 @@
       "title": "Ecology of AI Agents: Collaboration Creates a Population Threshold for Takeoff",
       "title_en": "Ecology of AI Agents: Collaboration Creates a Population Threshold for Takeoff",
       "title_zh": "AI代理的生態學：協作如何產生族群起飛門檻"
-    },
-{
+    },{
       "arxiv_id": "2610.11578",
       "authors": [],
       "categories": [],
@@ -2646,8 +2624,7 @@
       "title": "Chronos Enables Code Agents to Reason over Software Evolution",
       "title_en": "Chronos Enables Code Agents to Reason over Software Evolution",
       "title_zh": "Chronos：讓程式代理運用軟體演進歷史進行推理"
-    },
-{
+    },{
       "arxiv_id": "2610.11050",
       "authors": [],
       "categories": [],
@@ -2752,8 +2729,7 @@
       "title": "AgentHorizon: Evaluating Agentic Judges for Long-Horizon Computer-Use Tasks",
       "title_en": "AgentHorizon: Evaluating Agentic Judges for Long-Horizon Computer-Use Tasks",
       "title_zh": "AgentHorizon：評估長時程電腦操作任務的代理式裁判"
-    },
-{
+    },{
       "arxiv_id": "2610.11030",
       "authors": [],
       "categories": [],
@@ -2862,8 +2838,7 @@
       "title": "NOMOS: Compiling Written Policies into Statically Verified Tool-Call Gates for LLM Agents",
       "title_en": "NOMOS: Compiling Written Policies into Statically Verified Tool-Call Gates for LLM Agents",
       "title_zh": "NOMOS：將書面政策編譯為經靜態檢查的語言代理工具呼叫閘門"
-    },
-{
+    },{
       "arxiv_id": "2610.11464",
       "authors": [],
       "categories": [],
@@ -2966,8 +2941,7 @@
       "title": "Who Verifies the Verifier? Co-Evolving Inspectable Graders with Self-Improving Agents",
       "title_en": "Who Verifies the Verifier? Co-Evolving Inspectable Graders with Self-Improving Agents",
       "title_zh": "誰來驗證驗證器？讓可檢視評分器與自我改進代理共同演化"
-    },
-{
+    },{
       "arxiv_id": "2610.11268",
       "authors": [],
       "categories": [],
@@ -3066,8 +3040,7 @@
       "title": "TaReD: Tool-Aware Recursive Decomposition for Long-Horizon Tasks",
       "title_en": "TaReD: Tool-Aware Recursive Decomposition for Long-Horizon Tasks",
       "title_zh": "TaReD：面向長程任務的工具感知遞迴拆解"
-    },
-{
+    },{
       "arxiv_id": "2610.11613",
       "authors": [],
       "categories": [],
@@ -3170,8 +3143,7 @@
       "title": "AgentEvolver: System-Wide Self-Evolution Through Task Execution",
       "title_en": "AgentEvolver: System-Wide Self-Evolution Through Task Execution",
       "title_zh": "AgentEvolver：透過任務執行進行全系統自我演化"
-    },
-{
+    },{
       "arxiv_id": "2610.10833",
       "authors": [],
       "categories": [],
@@ -3272,8 +3244,7 @@
       "title": "On the Clock: Towards Punctual and Productive Time-Budgeted AI Agents",
       "title_en": "On the Clock: Towards Punctual and Productive Time-Budgeted AI Agents",
       "title_zh": "與時間賽跑：邁向準時且有效利用時間預算的 AI 代理"
-    },
-{
+    },{
       "arxiv_id": "2610.11573",
       "authors": [],
       "categories": [],
@@ -3377,8 +3348,7 @@
       "title": "Memory Type Varies: Empowering LLM Agents for Long-Term Memory with Diverse Strategies",
       "title_en": "Memory Type Varies: Empowering LLM Agents for Long-Term Memory with Diverse Strategies",
       "title_zh": "記憶類型各有不同：以多元策略強化大型語言模型代理的長期記憶"
-    },
-{
+    },{
       "arxiv_id": "2610.11600",
       "authors": [],
       "categories": [],
@@ -3486,8 +3456,7 @@
       "title": "Error-Propagation Modeling for Failure Attribution in LLM-Based Multi-Agent Systems",
       "title_en": "Error-Propagation Modeling for Failure Attribution in LLM-Based Multi-Agent Systems",
       "title_zh": "LLM多代理系統失敗歸因的錯誤傳播建模"
-    },
-{
+    },{
       "arxiv_id": "2610.12325",
       "authors": [],
       "categories": [],
@@ -3605,8 +3574,7 @@
       "title": "Prior or Feedback? What an LLM Uses When Adapting Neural Operators",
       "title_en": "Prior or Feedback? What an LLM Uses When Adapting Neural Operators",
       "title_zh": "先驗還是回饋？大型語言模型調適神經算子時依據什麼"
-    },
-{
+    },{
       "arxiv_id": "2610.12304",
       "authors": [],
       "categories": [],
@@ -3725,8 +3693,7 @@
       "title": "Looking Inside LLMs: Small-World Connectivity as a Signature of Reasoning Performance",
       "title_en": "Looking Inside LLMs: Small-World Connectivity as a Signature of Reasoning Performance",
       "title_zh": "走進大型語言模型：以小世界連結作為推理表現的結構特徵"
-    },
-{
+    },{
       "arxiv_id": "2610.12361",
       "authors": [],
       "categories": [],
@@ -3863,8 +3830,7 @@
       "title": "Cited but Not Consulted: A Counterfactual Audit of Legal Chain-of-Thought Faithfulness",
       "title_en": "Cited but Not Consulted: A Counterfactual Audit of Legal Chain-of-Thought Faithfulness",
       "title_zh": "引用卻未依據：法律思維鏈忠實性的反事實稽核"
-    },
-{
+    },{
       "arxiv_id": "2610.12313",
       "authors": [],
       "categories": [],
@@ -3983,8 +3949,7 @@
       "title": "Verdict Without the Rule: Diagnosing and Auditing Regulatory Rule Sensitivity in LLM Compliance Systems",
       "title_en": "Verdict Without the Rule: Diagnosing and Auditing Regulatory Rule Sensitivity in LLM Compliance Systems",
       "title_zh": "沒有規則的裁決：診斷與稽核大型語言模型合規系統的規則敏感度"
-    },
-{
+    },{
       "arxiv_id": "2610.12303",
       "authors": [],
       "categories": [],
@@ -4103,8 +4068,7 @@
       "title": "Learning Probabilistic Logic Programs with Functional Gradient Guided Language Models",
       "title_en": "Learning Probabilistic Logic Programs with Functional Gradient Guided Language Models",
       "title_zh": "以函數梯度引導語言模型學習機率邏輯程式"
-    },
-{
+    },{
       "arxiv_id": "2610.12292",
       "authors": [],
       "categories": [],
@@ -4235,8 +4199,7 @@
       "title": "One Word Opens the Gate: The Option-Channel Attack on Typed Decision Models as Agent Guardrails",
       "title_en": "One Word Opens the Gate: The Option-Channel Attack on Typed Decision Models as Agent Guardrails",
       "title_zh": "一個詞就打開閘門：以型別化決策模型作代理護欄的選項通道攻擊"
-    },
-{
+    },{
       "arxiv_id": "2610.12176",
       "authors": [],
       "categories": [],
@@ -4357,8 +4320,7 @@
       "title": "Recursive Self-Improvement through Multi-Agent Self-Supervision",
       "title_en": "Recursive Self-Improvement through Multi-Agent Self-Supervision",
       "title_zh": "透過多代理自我監督實現遞迴自我改進"
-    },
-{
+    },{
       "arxiv_id": "2610.12114",
       "authors": [],
       "categories": [],
@@ -4479,8 +4441,7 @@
       "title": "Universal Textual Teaching for LLMs",
       "title_en": "Universal Textual Teaching for LLMs",
       "title_zh": "大型語言模型的通用文字教學"
-    },
-{
+    },{
       "arxiv_id": "2610.12129",
       "authors": [],
       "categories": [],
@@ -4617,8 +4578,7 @@
       "title": "An Investigation of Model Coherence: Narrow Finetunes Contradict Themselves Under Resampling",
       "title_en": "An Investigation of Model Coherence: Narrow Finetunes Contradict Themselves Under Resampling",
       "title_zh": "模型一致性探究：狹窄微調模型在重複抽樣下自相矛盾"
-    },
-{
+    },{
       "arxiv_id": "2610.12086",
       "authors": [],
       "categories": [],
@@ -4757,8 +4717,7 @@
       "title": "EvoAlloc: A Self-Evolving Resource Allocation Agent for Efficient Program Evolution",
       "title_en": "EvoAlloc: A Self-Evolving Resource Allocation Agent for Efficient Program Evolution",
       "title_zh": "EvoAlloc：以自我演化資源配置代理提升程式演化效率"
-    },
-{
+    },{
       "arxiv_id": "2610.11989",
       "authors": [],
       "categories": [],
@@ -4875,8 +4834,7 @@
       "title": "MetaOPD: Meta-Learned Token Weighting for On-Policy Distillation",
       "title_en": "MetaOPD: Meta-Learned Token Weighting for On-Policy Distillation",
       "title_zh": "MetaOPD：以元學習詞元配權改善同策略蒸餾"
-    },
-{
+    },{
       "arxiv_id": "2610.11794",
       "authors": [
         "Zhao, Haoyu",
@@ -4995,8 +4953,7 @@
       "title": "Memento 3: Model-Based Recursive Self-Improvement through Reflective Rulebooks",
       "title_en": "Memento 3: Model-Based Recursive Self-Improvement through Reflective Rulebooks",
       "title_zh": "Memento 3：透過反思規則簿進行基於模型的遞迴自我改進"
-    },
-{
+    },{
       "arxiv_id": "2610.12085",
       "authors": [],
       "categories": [],
@@ -5111,8 +5068,7 @@
       "title": "Is Memorization Context-Sensitive? Prefix-Based Extraction Beyond Isolated Prefixes",
       "title_en": "Is Memorization Context-Sensitive? Prefix-Based Extraction Beyond Isolated Prefixes",
       "title_zh": "記憶會隨情境改變嗎？超越孤立前綴的前綴式擷取"
-    },
-{
+    },{
       "arxiv_id": "2610.11775",
       "authors": [],
       "categories": [],
@@ -5226,8 +5182,7 @@
       "title": "RouterInterp: Understanding Superposed Specialisation in Mixture of Experts Routing",
       "title_en": "RouterInterp: Understanding Superposed Specialisation in Mixture of Experts Routing",
       "title_zh": "RouterInterp：理解混合專家路由中的疊加專精"
-    },
-{
+    },{
       "arxiv_id": "2610.11655",
       "authors": [],
       "categories": [],
@@ -5339,8 +5294,7 @@
       "title": "Harness Evolution Hits a Ceiling: When Weight Training Should Begin",
       "title_en": "Harness Evolution Hits a Ceiling: When Weight Training Should Begin",
       "title_zh": "代理執行框架演化的瓶頸：何時該開始訓練模型權重"
-    },
-{
+    },{
       "arxiv_id": "2610.11750",
       "authors": [],
       "categories": [],
@@ -5460,8 +5414,7 @@
       "title": "Where Draft Trees Lose Target Mass: Exit-Guided Speculative Decoding",
       "title_en": "Where Draft Trees Lose Target Mass: Exit-Guided Speculative Decoding",
       "title_zh": "草稿樹在哪裡流失目標機率：離樹訊號引導的推測解碼"
-    },
-{
+    },{
       "arxiv_id": "2610.11707",
       "authors": [],
       "categories": [],
@@ -5578,8 +5531,7 @@
       "title": "DeltaReplay: Task-Relative Memory Reuse for Mobile GUI Agents",
       "title_en": "DeltaReplay: Task-Relative Memory Reuse for Mobile GUI Agents",
       "title_zh": "DeltaReplay：行動圖形介面代理的任務相對記憶重用"
-    },
-    {
+    },{
       "arxiv_id": "2610.11552",
       "authors": [
         "Yisen Gao",
@@ -5702,8 +5654,7 @@
       "title": "Safe, Persistent, and Evolving Agent Harness for Understanding Partially Observable Worlds",
       "title_en": "Safe, Persistent, and Evolving Agent Harness for Understanding Partially Observable Worlds",
       "title_zh": "理解部分可觀測世界的安全、持續且可演化代理執行框架"
-    },
-    {
+    },{
       "arxiv_id": "2610.11472",
       "authors": [
         "Gerard Grau García",
@@ -5826,8 +5777,7 @@
       "title": "From Chain-of-Thought to Loops: Non-Autoregressive Latent Reasoning via Looped Transformers",
       "title_en": "From Chain-of-Thought to Loops: Non-Autoregressive Latent Reasoning via Looped Transformers",
       "title_zh": "從思考鏈到迴圈：以迴圈Transformer實現非自回歸潛在推理"
-    },
-    {
+    },{
       "arxiv_id": "2610.11370",
       "authors": [
         "Meghanadh Pulivarthi",
@@ -5956,8 +5906,7 @@
       "title": "RIT-RAG: Navigating Document Corpora with Retrieval-Induced Trees",
       "title_en": "RIT-RAG: Navigating Document Corpora with Retrieval-Induced Trees",
       "title_zh": "RIT-RAG：以檢索誘導樹導航文件語料庫"
-    },
-    {
+    },{
       "arxiv_id": "2610.11345",
       "authors": [
         "Wei Yang",
@@ -6088,8 +6037,7 @@
       "title": "SynCo: Data Synthesis Co-Training for Self-Evolving LLMs via Multi-Agent Reinforcement Learning",
       "title_en": "SynCo: Data Synthesis Co-Training for Self-Evolving LLMs via Multi-Agent Reinforcement Learning",
       "title_zh": "SynCo：以多代理強化學習協同訓練資料合成，讓大型語言模型自我演進"
-    },
-    {
+    },{
       "arxiv_id": "2610.11358",
       "authors": [
         "Sreetama Sarkar",
@@ -6213,8 +6161,7 @@
       "title": "RaReCache: Bridging the Gap in Cross-Model KV Cache Reuse via Rank disagreement-based Selective Recomputation",
       "title_en": "RaReCache: Bridging the Gap in Cross-Model KV Cache Reuse via Rank disagreement-based Selective Recomputation",
       "title_zh": "RaReCache：以秩差異選擇性重算，縮小跨模型 KV 快取重用的落差"
-    },
-    {
+    },{
       "arxiv_id": "2610.11352",
       "authors": [
         "Gukhyeon Lee",
@@ -6340,393 +6287,976 @@
       "title": "RL-ARC: Calibrating Large Reasoning Models via Reasoning-guided Uncertainty",
       "title_en": "RL-ARC: Calibrating Large Reasoning Models via Reasoning-guided Uncertainty",
       "title_zh": "RL-ARC：以推理引導的不確定性校準大型推理模型"
+    },{
+  "story_id": "arxiv:2610.10619",
+  "title": "TestJack: Should you trust the results in coding benchmarks? Agentic Coding Benchmarks Auditing via Evaluator Evolution",
+  "primary_link": {
+    "url": "https://arxiv.org/abs/2610.10619",
+    "link_type": "arxiv",
+    "source_id": "arxiv-cs-se",
+    "tier": 1,
+    "title": "TestJack: Should you trust the results in coding benchmarks? Agentic Coding Benchmarks Auditing via Evaluator Evolution"
+  },
+  "links": [
+    {
+      "url": "https://arxiv.org/abs/2610.10619",
+      "link_type": "arxiv",
+      "source_id": "arxiv-cs-se",
+      "tier": 1,
+      "title": "TestJack: Should you trust the results in coding benchmarks? Agentic Coding Benchmarks Auditing via Evaluator Evolution"
+    },
+    {
+      "url": "https://arxiv.org/pdf/2610.10619",
+      "link_type": "arxiv",
+      "source_id": "arxiv-cs-se",
+      "tier": 1,
+      "title": "TestJack: Should you trust the results in coding benchmarks? Agentic Coding Benchmarks Auditing via Evaluator Evolution"
     }
   ],
+  "entities": [],
+  "section": "papers",
+  "published_at": "2026-10-07T07:58:04+00:00",
+  "arxiv_id": "2610.10619",
+  "hf_model_id": null,
+  "github_release_url": null,
+  "item_count": 1,
+  "authors": [
+    "Shuangjie Yao",
+    "Hao Wang",
+    "Koushik Sen",
+    "Simin Chen",
+    "Baishakhi Ray",
+    "Dawn Song"
+  ],
+  "summary": "Large language model (LLM) agents are rapidly reshaping software engineering, accompanied by an explosion of new code benchmarks. Yet nearly all existing benchmarks still rely on the same decades-old criterion: a solution is correct if it passes a fixed set of unit tests. Such tests are often insufficient: they check only part of what the task requires, so agents can reward hack them or silently miss required behavior while still passing every test. As a result, higher benchmark scores may partly reflect better adaptation to the evaluator rather than better problem solving. Existing works focus on static test augmentation: they strengthen each task's tests once, before any trial is seen, and thus overlook how real trials actually fail. We introduce TestJack, a scalable framework for evaluating patches beyond fixed tests. For each trial, TestJack generates tests targeting prompt requirements the patch may violate, retains only tests passed by the ground-truth patch, and re-examines any trial failures. Each confirmed failure is thus supported by a replayable test. To reduce evaluation cost, we also introduce a lightweight variant which audits a random sample of trials in depth and reuses the resulting tests across all trials for the same task. Across 6 frontier model backends and 5 benchmarks such as DeepSWE and SWE Marathon, we find that about 34.4% of the model trials currently judged correct violate the task requirements, lowering the overall resolution rate from 50.6% to 33.2%. Our results reveal a fundamental limitation of current coding-agent evaluation: as LLMs become better at optimizing against fixed evaluators, those evaluators themselves must become more adaptive.",
+  "categories": [
+    "cs.SE"
+  ],
+  "source_name": "arXiv cs.SE",
+  "first_seen_at": "2026-10-11T06:54:31+00:00",
+  "hf_metadata": null,
+  "title_en": "TestJack: Should you trust the results in coding benchmarks? Agentic Coding Benchmarks Auditing via Evaluator Evolution",
+  "title_zh": "TestJack：程式基準的結果值得信任嗎？透過評估器演進稽核程式代理基準",
+  "summary_en": "Passing a fixed coding benchmark does not necessarily mean that an agent has satisfied the task. TestJack asks an audit agent to inspect the instruction and candidate patch, locate uncovered behavior, and generate witness tests. A witness must pass on the reference solution, fail on the candidate, and survive a separate role's requirement-alignment review. Its lightweight variant first analyzes the task, then audits a few sampled trials and shares their witnesses across other candidates for the same task.\nAcross 8,862 trials on five benchmarks, 4,487 originally pass and the authors' auditor refutes 1,545, or 34.4%. The retained-success fraction therefore falls from 50.6% to 33.2%, a 17.4-percentage-point decrease. This describes the selected corpus under this auditor, not the true error rate of every coding agent. On three benchmarks, the lightweight method recovers 72.4% of per-trial refutations at an estimated 15.4% of API cost. Its 49.2% precision measures agreement between auditing methods, without human-ground-truth calibration.\nExecutable witnesses make benchmark failures more concrete, but reference compatibility does not prove that a test demands justified behavior. Implicit requirements are classified using the evaluated models' majority behavior, potentially treating shared omissions as prompt ambiguity. Reusing discovery trials, a three-round search, and narrow task subsets also limit generalization. The work is valuable for improving evaluation workflows, but corrected scores are not definitive capability rankings. Independent human checking, alternative auditor models, and complete execution artifacts remain necessary.",
+  "summary_zh": "程式代理在固定測試拿到成功，未必已滿足使用者需求。TestJack 讓稽核代理對照任務說明與候選補丁，尋找未涵蓋的行為並生成反例測試；測試須在參考解成功、候選解失敗，再由另一角色確認需求依據。輕量版先做任務分析，再隨機稽核少數試次，把見證測試共享給同題其他候選。\n五項基準共8,862次試跑中，原有4,487次成功，作者稽核拒絕其中1,545次，即34.4%；保留的成功比例由50.6%降至33.2%，下降17.4個百分點。這是指定語料與稽核器下的結果，不能解讀為所有程式代理的真實錯誤率。三項基準的輕量版以估算15.4%的API成本找回逐次稽核72.4%的拒絕，但49.2%的精確率只是兩種稽核的一致程度，沒有人工真值背書。\n可重播反例讓評估比單看分數更具體，但參考解成功不保證測試要求合理。隱含需求還依被評模型的多數行為分類，可能把共同漏做當成題意模糊；樣本共享、三輪搜尋與狹窄任務子集也限制外推。本文值得用來改進代理評估流程，尚不足以把修正後分數當成確定能力排名；仍需獨立人工查核、不同評估模型與完整執行材料。",
+  "llm_evaluation": {
+    "out_of_scope": false,
+    "scope_status": "in_scope",
+    "scope_policy_version": "explicit-review-exclusion-v1",
+    "scope_assessment": {
+      "decision": "in_scope",
+      "classification": "in_scope_general_agent_evaluation",
+      "rationale_zh": "研究一般LLM程式代理與評估器方法，非純領域應用；第1–9頁。",
+      "rationale_en": "General LLM coding-agent evaluation methodology, not a pure domain application (pages1–9)."
+    },
+    "scope_capped_score": 0.765,
+    "source_key": "cbe5c7e8503dd9432dc2b0c01cca08757ac39fe782f4959144a2083746bb0aa4",
+    "review_sha256": "a5529ca1244f99abfff6b28a75bfa7f55151946be38cf97f69631ad2954ee281",
+    "raw_weighted_score": 0.765,
+    "score": 0.765,
+    "components": {
+      "preference_relevance": 0.99,
+      "novelty": 0.79,
+      "rigor": 0.47,
+      "evidence_strength": 0.62,
+      "generalizability": 0.57,
+      "reproducibility": 0.6
+    },
+    "confidence": 1.0,
+    "rationale": "Highly relevant agent-evaluation research with a useful prompt-grounded, executable-witness design and internally consistent aggregate arithmetic (pages 4–9). The paper supplies concrete missed-requirement cases, pinned benchmark versions, and detailed prompts (pages 18–35). Its evidence is nevertheless conditional: oracle passing does not establish requirement validity, the implicit-requirement rule depends on the evaluated cohort, and lightweight recall/precision use the same per-trial auditor rather than human truth (pages 15–19, 36). Lack of independent calibration, held-out witness transfer, repeated sampling uncertainty, balanced model comparisons, and complete local artifacts limits the headline corrected-rate interpretation. This is an in-scope, worthwhile methodological contribution with substantial measurement and reproducibility caveats, not an established replacement leaderboard.",
+    "topics": [
+      "Large Language Models",
+      "Agents & Tool Use",
+      "Code & Programming",
+      "Red Teaming & Evaluation"
+    ],
+    "evidence": [
+      "C01: PDF physical pages 4,5,15,32,36; Eq1–2, A.1, reviewer prompt, E. Conditional witness validity requires both prompt authority and execution outcomes; oracle success alone is insufficient. supported as conditional design; not universal soundness guarantee",
+      "C02: PDF physical pages 3,7,8,9; Table2. Table2 pooled 1545/4487=34.4328%; 4487/8862=50.6319%; 2942/8862=33.1979%; absolute drop17.4340pp. all18 displayed table2 rates reproduced to one decimal",
+      "C03: PDF physical pages 7,8,17,18,36; Tables1–2, B.1, E. Pooled statistics are DeepSWE-dominated; this is a selected corpus, not a balanced model capability comparison. derived shares63.5% of passing/80.3% of refuted; no representative-population assertion",
+      "C04: PDF physical pages 8,9,36; Tables3–4, E. Lightweight72.4% recall/49.2% precision refer to per-trial audit agreement, not human-labeled correctness. explicit limitation; lightweight-only disagreements cannot all be labeled false positives",
+      "C05: PDF physical pages 8,9; Tables3–4. Joint integer rounding and benchmark additivity imply916 overlap,349 pertrial-only,947 lightweight-only,719 neither among2931. arithmetic inference, not recovered per-trial data",
+      "C06: PDF physical pages 16,18,19; A.2, B.2. Implicit requirements use majority-model skip frequency with threshold1/2; cohort changes can change validity. model weighting controls repeated-run counts but not correlated errors or evaluator endogeneity",
+      "C07: PDF physical pages 15,35,36; A.1 second failure mode, E. Gold filtering can reject legitimate tests for behavior missing from the reference, creating false negatives. acknowledged limitation, magnitude unmeasured",
+      "C08: PDF physical pages 6,7,8,17,24; Section3.3, Table3, Algorithm1, C.2. Three-round random witness search evaluates the discovery cohort; no disjoint transfer set or repeated-seed intervals is reported. valid for in-corpus audit, insufficient for unseen-trial performance or stable recall claims",
+      "C09: PDF physical pages 6,17; Algorithm1 lines7–12. Algorithm1 removes audited-clean trials from A and replays later witnesses only on A. printed algorithm can leave a non-refuted trial that fails a later final-suite test; implementation not inspected",
+      "C10: PDF physical pages 7,8; Table3 footnote. Reported4037USD/84.6% savings concerns estimated GPT API costs on three benchmarks. raw token/pricing and infrastructure costs unavailable; not all-five-benchmark or end-to-end cost guarantee",
+      "C11: PDF physical pages 8,9; RQ3, Table4. SWE-ABS uses same model without cost budget; recall comparison favors overlap with TestJack pertrial reference. 7.3x overlap-recall ratio is arithmetically supported; not7.3x true correctness or matched-cost advantage",
+      "C12: PDF physical pages 9; RQ4, Table4. Task-analysis-only13.4% to full72.4% recall supports benefit of adaptive stage within this reference metric. no random-only arm, matched-budget ablation, or separate reviewer/gold/coverage/mutation contribution estimate",
+      "C13: PDF physical pages 6,7,33,34,35; Section3.3, Section4.1, AppendixD. Main text says task agent reads G, whereas task-analysis prompt denies access and describes external oracle validation. reproduction ambiguity; no claim which implementation actually ran",
+      "C14: PDF physical pages 27,29,31,32,35; AppendixD, E. Prompt lacks a corpus runner and A.2 classification implementation; audit template allows missing reference although evaluated method requires one. templates helpful but do not alone specify the empirical pipeline",
+      "C15: PDF physical pages 20,21,22,23,24; Tables7–9, C.1–C.2. Navidrome missing migration witness and CookieStore42→18 case demonstrate plausible fixed-test gaps; OpenLibrary intent is expressly unclaimed. literature evidence only; no independent case execution and no deliberate-hacking prevalence inferred",
+      "C16: PDF physical pages 2,18,24,25,26,27,28,29,30,31,32,33,34,35; footnote1, Table5, AppendixD. Anonymous artifact availability is asserted, benchmark revisions and prompts are supplied. external availability/completeness unverified; no external request made",
+      "C17: PDF physical pages 8,16,18,19,36; Table3, A.2, B.2, E. B.2 says ambiguity explains low lightweight precision while A.2 says ambiguous witnesses should not refute trials. requires explicit pre/post-ambiguity count reconciliation; cannot silently repair totals or assume which filter was applied",
+      "C18: PDF physical pages 4,7,8,15,36; Section3.1, Section4.1, Table2, A.1, E. Only passing trials are audited; remaining2942 are non-refuted rather than certified correct, while failing trials enter only the denominator. corrected rate is auditor-retained success fraction, not calibrated task correctness"
+    ],
+    "fulltext_status": "complete",
+    "fulltext_sha256": "a74bbec72d1e883bb15b61de7c2ae91b1ff212b9737e6969050a0f9b362a6e07",
+    "token_usage": {},
+    "prompt_version": "sha256:2bf0691ed94bd38d",
+    "model": "assistant-native-review",
+    "producer": "assistant-native-review",
+    "request_sha256": "a22ccb073bc612b7a913e6aaf468c52d918533256216b40bdb2b2de9f6154d14",
+    "story_id": "arxiv:2610.10619",
+    "rationale_en": "Highly relevant agent-evaluation research with a useful prompt-grounded, executable-witness design and internally consistent aggregate arithmetic (pages 4–9). The paper supplies concrete missed-requirement cases, pinned benchmark versions, and detailed prompts (pages 18–35). Its evidence is nevertheless conditional: oracle passing does not establish requirement validity, the implicit-requirement rule depends on the evaluated cohort, and lightweight recall/precision use the same per-trial auditor rather than human truth (pages 15–19, 36). Lack of independent calibration, held-out witness transfer, repeated sampling uncertainty, balanced model comparisons, and complete local artifacts limits the headline corrected-rate interpretation. This is an in-scope, worthwhile methodological contribution with substantial measurement and reproducibility caveats, not an established replacement leaderboard.",
+    "rationale_zh": "本文直接切中程式代理評估偏差，以需求為本的可執行見證設計有價值，表格主要算術一致（第4–9頁）。具體漏測案例、固定基準版本與完整角色提示詞提升可檢視性（第18–35頁）。然而參考解成功不等於需求正當，隱含需求依被評群體決定，輕量版的召回／精確率也以同一逐次稽核為準而非人工真值（第15–19、36頁）。缺獨立校準、保留樣本轉移、多次抽樣不確定度、平衡模型比較及完整本地材料，使修正成功率只能作條件性證據。科學範圍合格、值得閱讀，但方法與重現性限制明顯，不能當成已確立的新排行榜。"
+  },
+  "scores": {
+    "tier_score": 2.0,
+    "kind_score": 1.2,
+    "topic_score": 4.0,
+    "recency_score": 0.671534548357724,
+    "entity_score": 0.0,
+    "citation_score": 0.0,
+    "cross_source_score": 0.0,
+    "semantic_score": 0.0,
+    "llm_relevance_score": 21.42,
+    "total_score": 29.291534548357724,
+    "llm_raw_score": 0.765
+  }
+},{
+  "story_id": "arxiv:2610.10786",
+  "title": "Plan-and-Patch: Diffusion Language Models for Agentic Planning",
+  "primary_link": {
+    "url": "https://arxiv.org/abs/2610.10786",
+    "link_type": "arxiv",
+    "source_id": "arxiv-cs-ai",
+    "tier": 1,
+    "title": "Plan-and-Patch: Diffusion Language Models for Agentic Planning"
+  },
+  "links": [
+    {
+      "url": "https://arxiv.org/abs/2610.10786",
+      "link_type": "arxiv",
+      "source_id": "arxiv-cs-ai",
+      "tier": 1,
+      "title": "Plan-and-Patch: Diffusion Language Models for Agentic Planning"
+    },
+    {
+      "url": "https://arxiv.org/pdf/2610.10786",
+      "link_type": "arxiv",
+      "source_id": "arxiv-cs-ai",
+      "tier": 1,
+      "title": "Plan-and-Patch: Diffusion Language Models for Agentic Planning"
+    }
+  ],
+  "entities": [],
+  "section": "papers",
+  "published_at": "2026-10-07T18:45:45+00:00",
+  "arxiv_id": "2610.10786",
+  "hf_model_id": null,
+  "github_release_url": null,
+  "item_count": 1,
+  "authors": [
+    "Syamantak Kumar",
+    "Jiang Guo",
+    "Hassan Hamad",
+    "Hideo Kobayashi",
+    "Yi Xiang",
+    "Yezhou Yang",
+    "Yanjun Qi",
+    "Daniele Bonadiman",
+    "Jiarong Jiang"
+  ],
+  "summary": "Planning is increasingly important for long-horizon agents, where successful execution requires coordinating subgoals, tool use, and intermediate outcomes over many steps. Yet assumptions made during planning may be invalidated by the environment, tools may return unexpected results, or actions may fail. Effective agents must therefore not only generate plans, but also revise them. Such revisions often affect only part of a plan, leaving the preceding and subsequent structure intact. Rather than regenerate the entire plan and risk unnecessary changes, repair can regenerate the affected region conditioned on the preserved prefix and suffix. We introduce Plan-and-Patch, a plan-and-act framework in which a diffusion language model (dLLM) generates a structured, program-like plan through parallel unmasking and repairs it by filling in selected regions while keeping the surrounding steps fixed. We compare DreamReasoner-8B and Qwen3-8B as diffusion and autoregressive (AR) planners. On Natural Plan without task-specific training, diffusion (53.7%) achieves nearly twice the plan repair success rate of AR (27.0%). After task-specific training on agentic benchmarks, ALFWorld and TextCraft, the planners achieve similar observed success in plan generation, while diffusion reduces mean plan-generation latency by 39-46% relative to AR. Our results show that Plan-and-Patch provides a framework for faster plan generation and effective plan repair in long-horizon agents.",
+  "categories": [
+    "cs.AI"
+  ],
+  "source_name": "arXiv cs.AI",
+  "first_seen_at": "2026-10-11T06:54:31+00:00",
+  "hf_metadata": null,
+  "title_en": "Plan-and-Patch: Diffusion Language Models for Agentic Planning",
+  "title_zh": "Plan-and-Patch：用於代理規劃的擴散語言模型",
+  "summary_en": "When a long-horizon agent’s plan fails, rewriting every step may be unnecessary. Plan-and-Patch represents plans as addressable subgoals and steps, jointly training one diffusion language model for complete generation and local infilling. Repair fixes the surrounding text, while a separate executor selects the faulty region. DreamReasoner-8B and Qwen3-8B share task data, representation, and executor. On ALFWorld and TextCraft, diffusion generation success is 44.0% and 63.0%, slightly below autoregression’s 45.5% and 66.0%, while mean generation latency falls by about 39–46% on one A100. This measures model calls, excluding environment execution. Without task-specific training, Natural Plan infilling succeeds on 53.7% versus 27.0% of retained examples. The advantage is concentrated in trip planning; diffusion does not win meeting scheduling, and no calendar-repair examples survive filtering. The appendix also exposes limits: changing the executor or plan format has large effects, and long-plan ScienceWorld parser acceptance is only 34.3% for diffusion versus 73.8% for autoregression. All repaired interactive plans restart from the initial state rather than resume execution. Table 1’s end-to-end percentages also have an unresolved numerical mismatch with its stated history-based recovery interpretation. One training seed, different pretraining and training costs, and no matched full-regeneration comparison constrain causal attribution. The paper offers a useful plan-editing interface and latency trade-off, but does not establish general superiority for long-horizon agents.",
+  "summary_zh": "長程代理的計畫出錯時，未必需要全部重寫。Plan-and-Patch 將計畫拆成可定位的子目標與步驟，讓同一個擴散語言模型同時學習完整生成與局部填補；修補時固定前後文，另由執行器選取失敗區域。DreamReasoner-8B 與 Qwen3-8B 共用任務資料、表示方式及執行器。在 ALFWorld、TextCraft，擴散模型生成成功率為44.0%、63.0%，略低於自回歸模型的45.5%、66.0%，但單張A100上的平均生成延遲降低約39–46%。這只是模型呼叫時間，未含環境執行。未針對任務訓練的 Natural Plan 填補測試，成功率為53.7%對27.0%；優勢集中旅行規劃，會議排程沒有勝出，日曆修補沒有保留樣本。附錄也揭示界線：更換執行器或計畫格式影響甚大，ScienceWorld 長計畫的擴散解析通過率僅34.3%，自回歸為73.8%。互動環境修補後皆從初始狀態重跑，不能視為原地續接；表1端到端數值又與標註的歷史式修補口徑存在待釐清差異。單種子、不同前訓練與訓練成本、缺少完整重生成對照，也限制因果歸因。本文提供有價值的計畫編輯介面與速度取捨，尚未證明一般長程代理全面優於自回歸方案。",
+  "llm_evaluation": {
+    "out_of_scope": false,
+    "scope_status": "in_scope",
+    "scope_policy_version": "explicit-review-exclusion-v1",
+    "scope_assessment": {
+      "decision": "in_scope",
+      "reason_zh": "以文字語言模型規劃／修補方法為核心，具通用代理方法貢獻，非純機器人或影像擴散。",
+      "reason_en": "Core language-model planning/repair methodology, not pure robotics or image diffusion."
+    },
+    "scope_capped_score": null,
+    "source_key": "d8d1c87db4c09b9744d67bafaf9dd2fff3033d6168a98bf95f556aaadda37748",
+    "review_sha256": "40ad5cf07da603580de587d657598aaf622f02e0a370a77e7c9d031082ab4b05",
+    "raw_weighted_score": 0.763,
+    "score": 0.763,
+    "components": {
+      "preference_relevance": 0.98,
+      "novelty": 0.72,
+      "rigor": 0.62,
+      "evidence_strength": 0.64,
+      "generalizability": 0.5,
+      "reproducibility": 0.48
+    },
+    "confidence": 1.0,
+    "rationale": "Plan-and-Patch merits a candidate guide on agent-planning methodology: one diffusion planner handles generation and local repair, with paired comparisons, explicit failure populations, and executor/representation sensitivity analyses. The supported takeaways are a hardware-bounded generation-latency trade-off and a controlled trip-infilling advantage, not universal repair superiority, compute-matched architectural gains, or more reliable long-horizon agents. Reference-assisted regions and filtered populations, restart rather than continuation, ScienceWorld failure, and the Table 1 end-to-end interpretation issue must remain explicit. External implementation and experiments were not reproduced. This is a new single-paper review; formal admission, ranking, and public release require separate acceptance.",
+    "topics": [
+      "Large Language Models",
+      "Reasoning & Chain-of-Thought",
+      "Agents & Tool Use",
+      "Scaling & Efficiency",
+      "Training & Optimization"
+    ],
+    "evidence": [
+      "Physical 3–8 (printed 1–6), Figures 1–2, Equation 1: addressable hierarchical plans; fixed surrounding text; multi-span replacements; diffusion canvas K0=2|R| with per-span delete token; AR FIM; interactive repair restarts the initial state.",
+      "Physical 8–10 and 20–21, Figures 3–4/Tables A.1–A.2: shared generation/repair examples from real failures and synthetic perturbations; final checkpoints start from original models; Sonnet verification; train-gen/train-rep/dev/test disjoint by task identity.",
+      "Physical 9–10 and 31, Figure 4/Table A.11: generation weights 24,20,16,12,8,6,5,4,3 and repair 2,3,4,6,10,24; generation inference block 4, threshold .95; repair full canvas with floor/cutoff .7 and radius 4. Curriculum benefit not isolated by a numerical ablation.",
+      "Physical 11–13 and 22–24, Tables 1/3/A.3–A.6: generation 59/134 versus 61/134 and 63/100 versus 66/100; paired 95% intervals [-11.6,8.6] and [-13.5,7.5] percentage points; model-exclusive successes exist in both directions.",
+      "Physical 11 and 21–22, Tables 1/A.3: reference repair 42/148 versus 41/148 and 11/71 versus 13/71; failure unit is (task,generating planner), so source tasks can repeat; one repair attempt, missing region counts as failure.",
+      "Physical 12 and 22, Figure 5: generation seconds 14.3/23.3 and 21.7/40.2 (diffusion/AR); repair 9.5/7.6 and 9.4/13.8. Synchronized unbatched bf16 on one A100; prompt construction, parsing and environment execution excluded.",
+      "Physical 21 and 27, Table A.9: history-based subset 126+49=175 excludes 44 primary failures; pooled reference success 29.1/29.7% versus history 17.1/21.1%; held-fixed feedback and abstentions retained. Not complete end-to-end evaluation of all failures.",
+      "Physical 11 Table 1 reviewer arithmetic: reported end-to-end 59.9,60.6,68.7,72.2% each matches round(g+(100-g)*r/100,1) using pooled reference-assisted repair r, although footnote says own-failure history-based recovery. Raw own-failure counts/aggregation missing; unresolved interpretation, not proof of raw-result fabrication.",
+      "Physical 25–26, Figures A.2–A.3: worked training repair changes one leaf plus reasoning/intent fields; preservation covers 104 ALFWorld and 38 TextCraft failures with completed steps, 40/38% and 55/74% preserved valid plans. Restart means no measured saving of previously spent execution tokens.",
+      "Physical 26–27 Tables A.7–A.8: prose raises Qwen-executor generation to 61.9/67.9% and 69/78%; stronger Sonnet reaches 94–96.3%. Prose repair populations retain only usable regions and differ from delimited populations; TextCraft Sonnet comparison n=5.",
+      "Physical 12 and 27–29, Table 2/A.10/Figures A.4–A.5: Natural Plan uses original checkpoints and five-shot prompts, no task-specific training; generation 1,000 tasks at 33.0/48.6%; repair 2,661 retained examples from 696 tasks at 53.7/27.0%. Task-clustered 50,000-resample bootstrap difference CI [23.8,29.6] pp.",
+      "Physical 28 Table A.10: trip repair n=1,261 at 93.3/35.7%; meeting n=1,400 at 18.1/19.2%; calendar n=0 retained. All five construction averages favor diffusion, but the aggregate domain advantage is trip-driven.",
+      "Physical 28: retained Natural Plan set requires restored reference to pass and nonsensical fill to fail; invalid-fill acceptance 0% by construction, do-nothing 1.3% on retained set versus 46.3% before filtering. Exact replacement recovery 22.7/5.0%; judges disagree in absolute acceptance despite agreeing in ordering.",
+      "Physical 29–30 Figure A.6: ScienceWorld 825 generations per planner; mean reference length 27.1; parser acceptance 34.3/73.8%, diffusion 7–9% for 28+ steps; 754/758 rejections hit generation limit with unclosed hierarchy. Median duplicated-pair fractions 93.3/40.0% only among rejected outputs.",
+      "Physical 10–11 and 30–32 Table A.11: same 8B scale/tokenizer/data/interfaces but different pretraining, decoding and training compute; one training seed 42, no seed-variance assessment, no full-system latency/training-cost accounting, and no budget-matched regenerate-all or unchanged-plan-rerun comparison."
+    ],
+    "fulltext_status": "complete",
+    "fulltext_sha256": "77cdabf1fa8af53f86819be72a3d2f61bc4236c6b1699841e17777a54141647f",
+    "token_usage": {},
+    "prompt_version": "sha256:2bf0691ed94bd38d",
+    "model": "assistant-native-review",
+    "producer": "assistant-native-review",
+    "request_sha256": "0524a4d3dd04668b69494d24cfd551281d77155affdfdd01fbf3a5e97e3397b1",
+    "story_id": "arxiv:2610.10786",
+    "rationale_en": "Plan-and-Patch merits a candidate guide on agent-planning methodology: one diffusion planner handles generation and local repair, with paired comparisons, explicit failure populations, and executor/representation sensitivity analyses. The supported takeaways are a hardware-bounded generation-latency trade-off and a controlled trip-infilling advantage, not universal repair superiority, compute-matched architectural gains, or more reliable long-horizon agents. Reference-assisted regions and filtered populations, restart rather than continuation, ScienceWorld failure, and the Table 1 end-to-end interpretation issue must remain explicit. External implementation and experiments were not reproduced. This is a new single-paper review; formal admission, ranking, and public release require separate acceptance.",
+    "rationale_zh": "Plan-and-Patch 值得納入代理規劃方法的候選導讀：同一擴散規劃器處理生成與局部修補，原文有配對比較、失敗族群與執行器／表示敏感度分析。可信重點是限定硬體下的生成延遲取捨，以及受控旅行計畫填補優勢；不能外推為普遍修補、等compute架構勝出或長程代理更可靠。須明列參考區域和篩選族群、重跑而非續接、ScienceWorld失敗，以及表1端到端口徑疑點。外部實作與實驗未復現；此為新的單篇評審，正式採納、排名、公開發布另行驗收。"
+  },
+  "scores": {
+    "tier_score": 2.0,
+    "kind_score": 1.2,
+    "topic_score": 4.0,
+    "recency_score": 0.7024283993827312,
+    "entity_score": 0.0,
+    "citation_score": 0.0,
+    "cross_source_score": 0.0,
+    "semantic_score": 0.0,
+    "llm_relevance_score": 21.364,
+    "total_score": 29.266428399382733,
+    "llm_raw_score": 0.763
+  }
+},{
+  "story_id": "arxiv:2610.11169",
+  "title": "Skill Constellations: Tracing the Supply Chain of Agent Skills on GitHub",
+  "primary_link": {
+    "url": "https://arxiv.org/abs/2610.11169",
+    "link_type": "arxiv",
+    "source_id": "arxiv-cs-se",
+    "tier": 1,
+    "title": "Skill Constellations: Tracing the Supply Chain of Agent Skills on GitHub"
+  },
+  "links": [
+    {
+      "url": "https://arxiv.org/abs/2610.11169",
+      "link_type": "arxiv",
+      "source_id": "arxiv-cs-se",
+      "tier": 1,
+      "title": "Skill Constellations: Tracing the Supply Chain of Agent Skills on GitHub"
+    },
+    {
+      "url": "https://arxiv.org/pdf/2610.11169",
+      "link_type": "arxiv",
+      "source_id": "arxiv-cs-se",
+      "tier": 1,
+      "title": "Skill Constellations: Tracing the Supply Chain of Agent Skills on GitHub"
+    }
+  ],
+  "entities": [],
+  "section": "papers",
+  "published_at": "2026-10-08T03:25:22+00:00",
+  "arxiv_id": "2610.11169",
+  "hf_model_id": null,
+  "github_release_url": null,
+  "item_count": 1,
+  "authors": [
+    "Fahd Seddik"
+  ],
+  "summary": "Agent skills are this http URL instructions and scripts that AI coding agents such as Claude Code and Codex run with the permissions of their user. Developers share skills by copying them between repositories, which makes them a software supply chain without a registry, versions or provenance. The origin of a copied skill, the reach of a security fix and the repositories that warrant review are therefore unknown. Studies that record which repositories hold a skill at a single point in time cannot reveal who copied it from whom. We contribute the first dated copy network of agent skills, built from the git history of every this http URL in GitSkills and covering 2,193,119 skill adoptions across GitHub, together with an interactive viewer. A few repositories are the source of almost all copies, and GitHub stars do not identify them. Skill copies almost never change with their source, and a fix at the source therefore rarely reaches them. We fit a model of which repositories others copy from and use it to rank repositories for audit. Reviewing the 100 repositories it ranks highest prevents 14.9% of later adoptions of high-risk skills, against 0.5% for the 100 most starred, which gives security engineers a short list to check before a skill spreads. Platforms should therefore distribute versioned references rather than copies. Project Website: this https URL",
+  "categories": [
+    "cs.SE"
+  ],
+  "source_name": "arXiv cs.SE",
+  "first_seen_at": "2026-10-11T06:54:31+00:00",
+  "hf_metadata": null,
+  "title_en": "Skill Constellations: Tracing the Supply Chain of Agent Skills on GitHub",
+  "title_zh": "技能星群：追蹤 GitHub 代理技能的供應鏈",
+  "summary_en": "Agent skills are often shared by copying SKILL.md files, so a source update may never reach downstream copies. Skill Constellations uses GitSkills git histories to reconstruct 2.19 million adoptions. It infers dated distribution links from batches of newly added files and overlap with skills held by earlier adopters, then studies which repositories merit audit priority.\nThe inferred network is highly concentrated: the top 1% of repositories account for 94.7% of transmissions, and prior copy out-degree identifies future distributors better than stars. Only 20.9% of copies follow later source edits, with lower following across owners. This measures general edits, however, not the delivery of confirmed security fixes.\nIn an April 1 temporal-holdout replay, auditing the model’s top 100 repositories would prevent 14.9% of later high-risk adoptions, compared with 0.5% for stars. A stronger high-risk-lineages-held baseline reaches 16.8%, so the model is not the best reported strategy. These estimates assume complete removal of flagged skills and blocking of all descendant copies; they are not observed deployment outcomes.\nThe work offers useful agent-supply-chain observations, but inferred sources exactly match installer records in only 26.7% of cases, and capability flags do not establish malice. Coverage is an early public-GitHub ecosystem, while reference labels partly retain agreement between two models. The results can inform provenance tracking and audit planning without establishing true direct-copy edges, security-fix delivery or realized safety benefits.",
+  "summary_zh": "代理技能常以複製 SKILL.md 分享，來源一旦修正，下游副本未必更新。Skill Constellations 以 GitSkills 的 git 歷史重建219萬次技能採用，依同次新增檔案與既有技能重疊，推定帶時間的分發網路，並研究哪些儲存庫值得優先稽核。\n結果顯示，推定傳播的94.7%集中於前1%儲存庫；以既往複製出度排序，比stars更能找到後續分發者。僅20.9%副本追隨來源後續編輯，跨擁有者更低，提示單靠上游更新難以維護複本。但這裡量測的是一般編輯，不能直接當成安全修補到達率。\n在4月1日時間切分的回放中，稽核模型排名前100庫可避免14.9%後續高風險採用，stars排序僅0.5%；然而高風險lineage持有量基線達16.8%，模型並非最佳。這些數字假設旗標技能被完整移除且所有後代複製都被阻斷，未經真實部署驗證。\n研究提供了代理供應鏈的實用觀察，但推定來源僅26.7%與安裝器記錄精確吻合；能力旗標也不等於惡意。資料限公共GitHub早期生態，標註參考部分依賴兩模型共識。宜用於規劃來源追蹤與稽核優先序，不能把推定邊、修補效果或安全收益當成已證實事實。",
+  "llm_evaluation": {
+    "out_of_scope": false,
+    "scope_status": "in_scope",
+    "scope_policy_version": "explicit-review-exclusion-v1",
+    "scope_assessment": {
+      "decision": "in_scope",
+      "reason_zh": "主要貢獻是語言模型程式代理技能的供應鏈量測、來源與能力風險；不是純領域應用。",
+      "reason_en": "Primary contribution is supply-chain/provenance and capability-risk measurement of language-model coding-agent skills, not a pure domain application.",
+      "pages": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "scope_capped_score": null,
+    "source_key": "d35abf56997677fd3dd6168292b12bde783623b52036bc418d6c226762899db9",
+    "review_sha256": "ec0aee6edb33b3a6af8e200ba3ce2c333c7019c4e79d7a7485129f3e089a1cbd",
+    "raw_weighted_score": 0.731,
+    "score": 0.731,
+    "components": {
+      "preference_relevance": 0.95,
+      "novelty": 0.72,
+      "rigor": 0.53,
+      "evidence_strength": 0.59,
+      "generalizability": 0.47,
+      "reproducibility": 0.56
+    },
+    "confidence": 1.0,
+    "rationale": "This is highly relevant to coding-agent skill supply chains, with useful dated distribution and update-following analyses. Large-scale observations and temporal splits support bounded conclusions about concentrated distribution, weak star signals and limited copy maintenance. Confidence is reduced by weak exact-source validation, missed small transfers, LLM-reference bias and idealized capability-removal replay framed as prevention; the model also trails the high-risk-holdings baseline. Retain as a worthwhile ecosystem-research candidate without claiming realized attack reduction, verified direct-copy ancestry or reproduced experiments.",
+    "topics": [
+      "Agents & Tool Use",
+      "Code & Programming",
+      "AI Safety",
+      "Data & Datasets"
+    ],
+    "evidence": [
+      "C01; PDF pp.1,2; Abstract; Section II; Figure 1: 2,193,119 adoptions are the study event count. The 259,596 repositories and 1,612,846 distinct skills on p2 describe the underlying GitSkills scale and are not automatically the filtered network denominators. Figure 1 shows 50 communities of at least 100 repositories and 64.2% isolates; the web-design-guidelines example has 972 adopters, 490 by transmission, depth 12.",
+      "C02; PDF pp.2,3; Section II: population and copying definitions: Exact SKILL.md, valid front matter, first commit on/after 2025-10-01, non-forks, default-branch histories. Adoption dates are bounded below by repository creation. Copy events require at least ten added skill files and an earlier adopter holding at least half of existing lineages; this does not observe every individual copying act. The boundary at exactly 100 files is not explicit in the below/above wording.",
+      "C03; PDF pp.3; Section II: validation: In 1,534 installer-recorded folders, dates agree within seven days in 94.6%, recorded source held the skill earlier in 99.1%, but inferred source matches it in only 26.7%. These are different validation targets. Distribution-source proxies are not verified direct ancestry or authorship.",
+      "C04; PDF pp.2,4; Figure 2a-c; RQ1: Adoption decomposition is origins 58.6%, copying 33.3%, individual 8.1%; copying dominates non-origin categories under the rule, not all adoptions. Dispersion k=.086 and top 1% accounting for 94.7% describe inferred transmissions. Nine threshold settings are claimed, but the full grid/results are not in this PDF.",
+      "C05; PDF pp.2,4; Figure 2d-f; RQ2: Kendall tau between stars and dated out-degree is -0.10. Future transmissions captured at the April split: hindsight43.8%, skills held29.3%, copy out-degree27.8%, PageRank27.5%, stars7.0%. Copy out-degree is not best on this metric either. Ranges span March-May splits. 66.4% ordinary-project share concerns unstarred top sources, not all repositories.",
+      "C06; PDF pp.3; Section II: labeling: 150 random source repositories and 200 flag-stratified skills are labeled by Opus5.5 and Sonnet5.5; model disagreement/refusal cases manually resolved (18 repositories,28 skills). Shared answers remain in the reference, favoring Opus; its kappa .91/.92 against that reference is not fully independent human validation. Strict-flag precision98.3%/recall80.9% are sample results with unclear prevalence reweighting.",
+      "C07; PDF pp.3,4; Figure 3a-d; RQ3: Group-change consistency is near11.1% (up to printed11.6%), not exactly equal across windows. Same-owner odds ratio3.32 is observational and not a causal intervention. Genealogies: stable72.6%, inconsistent23.4%, ever-consistent4.0%. Complete-group consistency differs from individual-copy follow rate.",
+      "C08; PDF pp.3,4; Figure 3g; RQ3: All-copy dated follow rate20.9%, snapshot6.3%, exact-edit5.0%; same-owner51.6/22.4/15.3%; other-owner17.2/5.4/4.4%. 20.9/6.3 is approximately3.32. These are general source-edit measures, not validated vulnerability-fix propagation; comparison to copied-code security fixes is not like-for-like.",
+      "C09; PDF pp.3,4; Figure 3e-f; RQ3: Modified-copy command-execution addition3.5% versus removal1.2% yields2.3 percentage-point net gain. Network .9/.7 and outside-project writes .4/.3 are smaller. The plot attributes net gain to adopted versions, not own edits; association does not show malicious behavior or successful exploitation.",
+      "C10; PDF pp.3,4; Figure 3h; RQ3: Other-agent references in .codex23.2%, .cursor14.7%, .agents14.1%, .github7.1%, .claude2.6%. All56 manually checked cases were correct according to authors. Names of foreign tools indicate potential portability issues; runtime failure rates are not measured.",
+      "C11; PDF pp.3,4,5; Audit method; Figure 4a-b: April split at100 audits: source-choice14.9%, copy out-degree14.0%, high-risk lineages held16.8%, stars.5%, random.1%, hindsight26.6%. Model beats stars by14.4 percentage points and29.8-fold but trails risk-holdings by1.9 points. Bars show split ranges, not statistical uncertainty. High-risk means capability-flagged, not confirmed malicious.",
+      "C12; PDF pp.3,4,5; Audit assumptions; RQ4; Figure 4: Removing flagged skills is assumed to prevent held-out high-risk adoptions and all descendants. No replacement-source response, incomplete fixes, audit-cost heterogeneity or real intervention is tested. Temporal ordering does not make this effect a causal field estimate; the calibrated simulation is not independent external validation.",
+      "C13; PDF pp.5; Figure 4c-d: Median lineage reaches half of observed eventual adopters by day56 and7.7% by day7. Cross-platform share is34.6% at the final plotted point, with printed40.2% peak and27.9% trough. These curves do not establish safe waiting times, worst-case spread or correctness across agent platforms.",
+      "C14; PDF pp.4,5; Limitations; data availability; references: Public GitHub first-ten-month coverage, capability-not-malice flags and acknowledged labeling bias limit inference. High precision below100% plus low recall do not mathematically guarantee every observed risk count is a lower bound. DOI, GitHub code, data-v1.0 and viewer are cited availability claims; no external artifact was acquired or run here.",
+      "C15; PDF pp.4; Ethics: Authors say they store no author names, email addresses or commit messages and report confirmed malicious skills only in aggregate. This is a documented policy statement, not an independently audited data-handling guarantee."
+    ],
+    "fulltext_status": "complete",
+    "fulltext_sha256": "5101e410e686a65a15466d97e43060cb5d4097464c4d952d1d4bde8e1c8f64be",
+    "token_usage": {},
+    "prompt_version": "sha256:2bf0691ed94bd38d",
+    "model": "assistant-native-review",
+    "producer": "assistant-native-review",
+    "request_sha256": "0264543465151d107ca80585fb72156a6dbe0e07e88183d1806109cf1c9c8788",
+    "story_id": "arxiv:2610.11169",
+    "rationale_en": "This is highly relevant to coding-agent skill supply chains, with useful dated distribution and update-following analyses. Large-scale observations and temporal splits support bounded conclusions about concentrated distribution, weak star signals and limited copy maintenance. Confidence is reduced by weak exact-source validation, missed small transfers, LLM-reference bias and idealized capability-removal replay framed as prevention; the model also trails the high-risk-holdings baseline. Retain as a worthwhile ecosystem-research candidate without claiming realized attack reduction, verified direct-copy ancestry or reproduced experiments.",
+    "rationale_zh": "本研究高度相關於程式代理技能的安全供應鏈，帶時間的分發網路及更新追隨分析具有實用價值。大規模觀測與時間切分支持分發集中、stars弱指標及副本更新不足等有界結論。主要降分來自精確來源驗證薄弱、事件規則漏掉小量傳播、LLM參考標籤偏差，以及把理想化能力移除回放稱為預防效果；模型亦未勝過高風險持有量基線。保留為值得閱讀的生態研究候選，避免宣稱真實攻擊下降、逐筆傳播來源已確證或實驗已重現。"
+  },
+  "scores": {
+    "tier_score": 2.0,
+    "kind_score": 1.2,
+    "topic_score": 4.0,
+    "recency_score": 0.7282380337330177,
+    "entity_score": 0.0,
+    "citation_score": 0.0,
+    "cross_source_score": 0.0,
+    "semantic_score": 0.0,
+    "llm_relevance_score": 20.468,
+    "total_score": 28.396238033733017,
+    "llm_raw_score": 0.731
+  }
+},{
+  "story_id": "arxiv:2610.11602",
+  "title": "Where Do the Tokens Go? Understanding and Reducing Costs in LLM Agents for Vulnerability Discovery",
+  "primary_link": {
+    "url": "https://arxiv.org/abs/2610.11602",
+    "link_type": "arxiv",
+    "source_id": "arxiv-cs-cr",
+    "tier": 1,
+    "title": "Where Do the Tokens Go? Understanding and Reducing Costs in LLM Agents for Vulnerability Discovery"
+  },
+  "links": [
+    {
+      "url": "https://arxiv.org/abs/2610.11602",
+      "link_type": "arxiv",
+      "source_id": "arxiv-cs-cr",
+      "tier": 1,
+      "title": "Where Do the Tokens Go? Understanding and Reducing Costs in LLM Agents for Vulnerability Discovery"
+    },
+    {
+      "url": "https://arxiv.org/pdf/2610.11602",
+      "link_type": "arxiv",
+      "source_id": "arxiv-cs-cr",
+      "tier": 1,
+      "title": "Where Do the Tokens Go? Understanding and Reducing Costs in LLM Agents for Vulnerability Discovery"
+    }
+  ],
+  "entities": [],
+  "section": "papers",
+  "published_at": "2026-10-08T09:47:18+00:00",
+  "arxiv_id": "2610.11602",
+  "hf_model_id": null,
+  "github_release_url": null,
+  "item_count": 1,
+  "authors": [
+    "Li Lu",
+    "Yanjie Zhao",
+    "Hongjie Chen",
+    "Haoyu Wang"
+  ],
+  "summary": "LLM agents can spend millions of tokens during vulnerability discovery without producing a working proof of concept (PoC). What consumes that budget, and why does it fail to produce results? We diagnose these costs and failures through a multi-axis open-coding study of 200 CyberGym traces, spanning four agents (i.e., Codex, OpenCode, Cybench, and EnIGMA) under an unaided baseline and four existing efficiency methods. The study reveals three key findings. First, different agents vary substantially in success and cost, and higher spending does not consistently yield better outcomes. Second, code localization and understanding, together with vulnerability reasoning and trigger design, account for 60.4% of tokens and represent the two leading bottlenecks in failed runs. Third, only 24.4% of matched comparisons preserve success at lower total cost; unsuitable signals and auxiliary overhead limit the benefits of existing methods. Motivated by these findings, we present AVRI, an Agent-centric Vulnerability Reasoning Interface built around a persistent Bidirectional Evidence Trace (BET). BET connects how the harness consumes input with the conditions required to make a selected operation unsafe, retaining source-supported correspondences alongside the agent's hypotheses and open questions. Reading, analysis, and persistence commands help agents build and reuse this evidence rather than repeatedly retrieve and reconstruct it. On 20 evaluation tasks, AVRI reduces total cost by 18.0% for Codex and 23.7% for OpenCode while preserving success rates and improving or maintaining recall.",
+  "categories": [
+    "cs.CR"
+  ],
+  "source_name": "arXiv cs.CR",
+  "first_seen_at": "2026-10-11T06:54:31+00:00",
+  "hf_metadata": null,
+  "title_en": "Where Do the Tokens Go? Understanding and Reducing Costs in LLM Agents for Vulnerability Discovery",
+  "title_zh": "Token都花到哪裡？理解並降低LLM漏洞發掘代理的成本",
+  "summary_en": "What makes vulnerability-discovery agents expensive: reasoning itself or repeatedly reconstructing code context? This paper analyzes 200 traces from four agents, five configurations, and ten CyberGym tasks. It separately codes activity stages, failure bottlenecks, and intervention mechanisms. Code localization/understanding and vulnerability reasoning/trigger design account for 60.4% of billed token usage, including historical input context; this is not a measurement of wasted tokens. Only 39 of 160 matched intervention comparisons both preserve success and lower the model bill.\n\nAVRI addresses this diagnosis through a Bidirectional Evidence Trace (BET), linking how a supplied harness consumes input to conditions for a candidate unsafe operation. Bounded queries retain source locations, assumptions, and unresolved questions, while execution remains necessary to validate inputs. On 20 disjoint tasks, Codex and OpenCode have 18.0% and 23.7% lower aggregate model bills, respectively, without lower observed success. Codex's vulnerable-versus-fixed-build recall increases from 65% to 75%.\n\nThis is a useful agent-interface and cost-accounting study, but each configuration/task has only one run, component ablations are absent, and failure/mechanism coding lacks independent review. Evidence is confined to fixed-harness C/C++ tasks, and success uses a broad nonzero, non-timeout exit criterion. The reported savings cover model billing, not full infrastructure or development expenditure, and do not establish general or statistically robust gains.",
+  "summary_zh": "LLM代理找漏洞時，昂貴的究竟是推理，還是反覆理解程式？本文分析四種代理在十個CyberGym任務、五種配置下的二百條執行紀錄，將活動、失敗瓶頸與輔助方法分開編碼。程式定位與理解、漏洞推理與觸發設計合計占60.4%的token；這包含輸入中的歷史脈絡，不能直接當作浪費比例。四種既有效率方法的一百六十個配對比較中，只有39組同時維持成功並降低模型帳單。\n\n作者提出AVRI，利用雙向證據軌跡BET，把測試入口如何消耗輸入，連到候選不安全操作所需的條件，並保存來源位置、假設及未解問題。代理可用有界查詢重用證據；靜態分析仍須由實際執行驗證。另二十個不重疊任務上，Codex與OpenCode的總模型費用分別下降18.0%與23.7%，觀察到的成功率不降，Codex的修補前後對照recall由65%升至75%。\n\n這是一項有價值的代理介面與成本診斷研究，但每配置每題只跑一次，沒有拆解BET與分析工具貢獻的消融；兩類失敗／機制標記也缺獨立複核。結果僅涵蓋已給定入口的C/C++漏洞任務，success採非零且非逾時退出判準。節省指模型帳單，不含完整基礎設施與開發成本，亦未證明普遍或統計穩健的收益。",
+  "llm_evaluation": {
+    "out_of_scope": false,
+    "scope_status": "in_scope",
+    "scope_policy_version": "explicit-review-exclusion-v1",
+    "scope_assessment": {
+      "decision": "in_scope",
+      "reason_zh": "核心貢獻是LLM代理介面、證據記憶及效率方法；漏洞任務是測試載體，非只有領域應用。",
+      "reason_en": "Agent-interface, evidence-memory, and efficiency methodology is the primary contribution; security is its evaluation domain."
+    },
+    "scope_capped_score": null,
+    "source_key": "d1843711eadd73a4910d83188d032aaead048543b21aaaa9aaf9c36d8dd386cf",
+    "review_sha256": "d3dba89e6cdcb7beb1564eb6309de1582b7d07bf2bcefcd500cafb144e6a9e3a",
+    "raw_weighted_score": 0.7265,
+    "score": 0.7265,
+    "components": {
+      "preference_relevance": 0.93,
+      "novelty": 0.72,
+      "rigor": 0.58,
+      "evidence_strength": 0.62,
+      "generalizability": 0.44,
+      "reproducibility": 0.45
+    },
+    "confidence": 1.0,
+    "rationale": "Recommend as a bounded agent-efficiency candidate. Separating token-bearing activities, failure bottlenecks, and auxiliary billing is useful, and AVRI/BET offers a source-grounded interface. Aggregate results on 20 tasks support lower bills for two agents without lower observed success. Single selected runs, absent component ablations, broad crash criteria, and single-coder bottleneck analysis limit causal, robustness, and generalization claims. The 60.4% share is not a waste estimate, and the 18.0%/23.7% savings are not token reductions. Artifact availability and external reproduction remain unverified.",
+    "topics": [
+      "Large Language Models",
+      "Agents & Tool Use",
+      "Code & Programming",
+      "Scaling & Efficiency",
+      "Long Context & Memory"
+    ],
+    "evidence": [
+      "p2 §2.1: fixed-harness C/C++ setting, 7200-second timeout; success is nonzero/non-timeout vulnerable-build exit; recall additionally requires fixed-build zero exit.",
+      "p2 §2.2: Codex GPT-5.5 differs from the DeepSeek-V4-Pro model used by the other three exploratory agents; scaffold and model effects are not fully separable.",
+      "p3 §2.4: 4 agents × 5 configurations × 10 tasks = 200 traces; 160 enhanced comparisons reuse 40 baselines, one run per configuration/task.",
+      "p3 §2.5: 32924 request-level turns; 20-trace pilot κ=.81; final 200-turn and 100-boundary-turn blinded audits have κ=.83/.85 and 94%/96% agreement with consensus.",
+      "p3 §2.5 and p12 §6: failure bottlenecks and intervention mechanisms each coded by one author without independent agreement assessment.",
+      "p4 Table 1: complete exploratory success/recall/time/cost totals; OpenCode baseline succeeds 10/10 at $8.58, Cybench 5/10 at $49.34, EnIGMA 5/10 at $21.06.",
+      "p4–5 Fig1: 776.60M tokens including 54.53M auxiliary tokens; L=43.1%, H=17.3%; stage labels classify request purpose and include historical context.",
+      "p5–6 Fig2: 67 failures; H=27 and L=19 of 67 unit weights, totaling 68.7%; weights are coded obstacles rather than causal contributions.",
+      "p6–7 Fig3: 39 lower-cost jointly successful pairs of 160; 91 jointly successful, 14 gains, 21 losses, and 34 joint failures.",
+      "p7 Fig4: five nonexclusive mechanism totals 38 access/use, 59 unsuitable signal, 2 context recovery, 14 input gaps, 7 overhead reversals.",
+      "p8 Fig5: model billing includes auxiliary LLM calls but excludes graph-construction and verification-server compute.",
+      "p8–10 Figs6–7/Table2/Algorithm1: schematic evidence linkage and bounded analysis; illustrative example is not a measured saving or crash.",
+      "p10–11 §§4.3–4.5: partial mappings, alias/call/macro gaps, distinct static/hypothesis/execution evidence, revisioned BET and dependency invalidation; not a whole-program verifier.",
+      "p11–12 §5: 20 randomly selected evaluation tasks disjoint from the exploratory ten; OpenCode changes to DeepSeek-V4.1-Flash, fixed within its evaluation comparisons.",
+      "p12 Table3: Codex $132.65→$108.75, 50968→33313 seconds, success85→85%, recall65→75%; OpenCode $4.38→$3.34, 25324→24017 seconds, success100→100%, recall90→90%.",
+      "p12 §§5.2/6: one selected run per configuration/task, costs exclude development expenditure, no component ablations or repeated-run robustness evidence.",
+      "p13–14: related work and references inspected; generic vendor homepages do not pin model revisions; no independently verified AVRI artifact availability from the supplied PDF."
+    ],
+    "fulltext_status": "complete",
+    "fulltext_sha256": "b4cb25e74a3b5991b70daec280c5037d33e62397dd981f5e31496f1ce336c38f",
+    "token_usage": {},
+    "prompt_version": "sha256:2bf0691ed94bd38d",
+    "model": "assistant-native-review",
+    "producer": "assistant-native-review",
+    "request_sha256": "90d9e732308e69727a2dc68b57b3d413f37152d4a1e46a17808294ff69701623",
+    "story_id": "arxiv:2610.11602",
+    "rationale_en": "Recommend as a bounded agent-efficiency candidate. Separating token-bearing activities, failure bottlenecks, and auxiliary billing is useful, and AVRI/BET offers a source-grounded interface. Aggregate results on 20 tasks support lower bills for two agents without lower observed success. Single selected runs, absent component ablations, broad crash criteria, and single-coder bottleneck analysis limit causal, robustness, and generalization claims. The 60.4% share is not a waste estimate, and the 18.0%/23.7% savings are not token reductions. Artifact availability and external reproduction remain unverified.",
+    "rationale_zh": "建議作為有明確限制的代理效率研究納入候選。價值在把token活動、失敗瓶頸及輔助成本分開，並提出來源可追溯的AVRI／BET介面；20題匯總支持兩代理成本下降且觀察成功率不降。單次選定執行、無元件消融、寬鬆崩潰判準與單人瓶頸編碼，限制因果、穩健性及通用性。60.4%不是浪費率，18.0%／23.7%不是token降幅；artifact可取得性與外部重現未驗。"
+  },
+  "scores": {
+    "tier_score": 2.0,
+    "kind_score": 1.2,
+    "topic_score": 4.0,
+    "recency_score": 0.7478116282102512,
+    "entity_score": 0.0,
+    "citation_score": 0.0,
+    "cross_source_score": 0.0,
+    "semantic_score": 0.0,
+    "llm_relevance_score": 20.342000000000002,
+    "total_score": 28.289811628210252,
+    "llm_raw_score": 0.7265
+  }
+}],
   "radar": [],
   "run_date": "2026-10-09",
   "run_id": "bounded-partial-additive-2026-10-09",
   "run_info": {
-    "added_native_count": 2,
-    "added_reviewed_candidate_count": 2,
-    "addition_prepared_at_utc": "2026-10-11T06:06:20+00:00",
-    "addition_ranking_anchor_basis": "Frozen new preparation time, not listing/announcement or source collection cutoff",
-    "addition_ranking_anchor_utc": "2026-10-11T06:06:00+00:00",
-    "combined_native_reranked": false,
-    "coverage_status": "partial",
-    "date_basis_by_story": {
-      "arxiv:2610.10833": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.11030": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.11050": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.11134": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.11268": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.11287": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.11345": {
-        "announcement_clock_timezone": "unknown",
-        "date_basis": "official_listing_date_heading",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null,
-        "fetch_is_origin_generation": false,
-        "first_submission_utc": "2026-10-08T06:40:18Z",
-        "listing_body_sha256": "4517f7f7d899a7cf8407669b340b452260c029801f46a66eb22e941a8b51d55e",
-        "listing_fetch_completed_utc": "2026-10-11T04:30:35.169073Z",
-        "listing_item_index": 86,
-        "listing_response_age_seconds": 179916,
-        "listing_source_url": "https://arxiv.org/list/cs.AI/recent?skip=0&show=2000",
-        "literal_new_submission_heading": null,
-        "observed_group": "primary_non_cross_list",
-        "version_assessment": "new_primary_v1_inferred_from_v1_link_and_version_history"
-      },
-      "arxiv:2610.11352": {
-        "announcement_clock_timezone": "unknown",
-        "date_basis": "official_listing_date_heading",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null,
-        "fetch_is_origin_generation": false,
-        "first_submission_utc": "2026-10-08T06:45:24Z",
-        "listing_body_sha256": "4517f7f7d899a7cf8407669b340b452260c029801f46a66eb22e941a8b51d55e",
-        "listing_fetch_completed_utc": "2026-10-11T04:30:35.169073Z",
-        "listing_item_index": 85,
-        "listing_response_age_seconds": 179916,
-        "listing_source_url": "https://arxiv.org/list/cs.AI/recent?skip=0&show=2000",
-        "literal_new_submission_heading": null,
-        "observed_group": "primary_non_cross_list",
-        "version_assessment": "new_primary_v1_inferred_from_v1_link_and_version_history"
-      },
-      "arxiv:2610.11358": {
-        "announcement_clock_timezone": "unknown",
-        "date_basis": "official_listing_date_heading",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null,
-        "fetch_is_origin_generation": false,
-        "first_submission_utc": "2026-10-08T06:49:28Z",
-        "listing_body_sha256": "4517f7f7d899a7cf8407669b340b452260c029801f46a66eb22e941a8b51d55e",
-        "listing_fetch_completed_utc": "2026-10-11T04:30:35.169073Z",
-        "listing_item_index": 83,
-        "listing_response_age_seconds": 179916,
-        "listing_source_url": "https://arxiv.org/list/cs.AI/recent?skip=0&show=2000",
-        "literal_new_submission_heading": null,
-        "observed_group": "primary_non_cross_list",
-        "version_assessment": "new_primary_v1_inferred_from_v1_link_and_version_history"
-      },
-      "arxiv:2610.11370": {
-        "announcement_clock_timezone": "unknown",
-        "date_basis": "official_listing_date_heading",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null,
-        "fetch_is_origin_generation": false,
-        "first_submission_utc": "2026-10-08T07:03:17Z",
-        "listing_body_sha256": "4517f7f7d899a7cf8407669b340b452260c029801f46a66eb22e941a8b51d55e",
-        "listing_fetch_completed_utc": "2026-10-11T04:30:35.169073Z",
-        "listing_item_index": 81,
-        "listing_response_age_seconds": 179916,
-        "listing_source_url": "https://arxiv.org/list/cs.AI/recent?skip=0&show=2000",
-        "literal_new_submission_heading": null,
-        "observed_group": "primary_non_cross_list",
-        "version_assessment": "new_primary_v1_inferred_from_v1_link_and_version_history"
-      },
-      "arxiv:2610.11464": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.11472": {
-        "announcement_clock_timezone": "unknown",
-        "date_basis": "official_listing_date_heading",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null,
-        "first_submission_utc": "2026-10-08T08:21:31Z",
-        "listing_body_sha256": "4517f7f7d899a7cf8407669b340b452260c029801f46a66eb22e941a8b51d55e",
-        "listing_item_index": 71,
-        "listing_response_age_seconds": 179916,
-        "listing_source_url": "https://arxiv.org/list/cs.AI/recent?skip=0&show=2000",
-        "literal_new_submission_heading": null,
-        "observed_group": "primary_non_cross_list",
-        "version_assessment": "new_primary_v1_inferred_from_v1_link_and_version_history"
-      },
-      "arxiv:2610.11552": {
-        "announcement_clock_timezone": "unknown",
-        "date_basis": "official_listing_date_heading",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null,
-        "first_submission_utc": "2026-10-08T09:15:28Z",
-        "listing_body_sha256": "4517f7f7d899a7cf8407669b340b452260c029801f46a66eb22e941a8b51d55e",
-        "listing_item_index": 65,
-        "listing_response_age_seconds": 179916,
-        "listing_source_url": "https://arxiv.org/list/cs.AI/recent?skip=0&show=2000",
-        "literal_new_submission_heading": null,
-        "observed_group": "primary_non_cross_list",
-        "version_assessment": "new_primary_v1_inferred_from_v1_link_and_version_history"
-      },
-      "arxiv:2610.11559": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.11573": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.11578": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.11593": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.11600": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.11613": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.11620": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.11647": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.11655": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.11707": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.11715": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.11750": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.11773": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.11775": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.11781": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.11794": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.11858": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.11989": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.12002": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.12056": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.12061": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.12083": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.12085": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.12086": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.12114": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.12124": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.12129": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.12168": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.12176": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.12235": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.12242": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.12269": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.12274": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.12292": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.12303": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.12304": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.12313": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.12325": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.12360": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.12361": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.12374": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.12375": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.12409": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.12410": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      },
-      "arxiv:2610.12436": {
-        "date_basis": "official_listing_v1_inference",
-        "date_value": "2026-10-09",
-        "event_timestamp_utc": null
-      }
+  "added_native_count": 4,
+  "added_reviewed_candidate_count": 4,
+  "addition_prepared_at_utc": "2026-10-11T07:51:00+00:00",
+  "addition_ranking_anchor_basis": "Frozen new preparation time; not listing, first submission or source cutoff",
+  "addition_ranking_anchor_utc": "2026-10-11T07:32:00+00:00",
+  "combined_native_reranked": false,
+  "coverage_status": "partial",
+  "date_basis_by_story": {
+    "arxiv:2610.10833": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
     },
-    "error_summary": "PARTIAL 部分更新：保留111篇公開基線中的Oct9原56篇及順序；RaReCache與RL-ARC兩篇全新評審依原規則2選2追加Papers。58篇及總113篇均未共同重排；全日總數、涵蓋率及來源收集截止未知。",
-    "finished_at": "2026-10-10T03:29:00+00:00",
-    "full_day_candidate_total": null,
-    "items_total": null,
-    "preserved_baseline_body_sha256": "0bbde8f06f39aa6d67b5562425ee854a00a715ecbb1f70a5108fadb9968f7b7e",
-    "preserved_baseline_commit": "383814bcc21af061f93fd9456b21b97f6031aba0",
-    "preserved_baseline_count": 56,
-    "preserved_baseline_kind": "accepted_public111_bytes",
-    "preview_only": false,
-    "prior_reviewed_total_count": null,
-    "release_scope_note": "Preserve all 111 baseline stories and append RaReCache and RL-ARC in unchanged original-filter subset order to Oct9 Papers. Neither the 58 Oct9 stories nor all 113 are jointly reranked. First submission Oct8 is distinct from independently witnessed official listing Oct9; exact announcement clock/timezone, configured-query coverage, full-day totals and collection cutoff remain unknown. Historical missing packets are not restored by these new reviews; existing material holds remain.",
-    "release_state": "bounded_partial_new_reviews",
-    "reviewed_selected_count": 58,
-    "reviewed_total_count": null,
-    "run_id": "bounded-partial-additive-2026-10-09",
-    "source_collection_cutoff_utc": null,
-    "started_at": "2026-10-10T03:29:00+00:00",
-    "stories_total": 58,
-    "success": true
+    "arxiv:2610.11030": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.11050": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.11134": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.11268": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.11287": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.11345": {
+      "announcement_clock_timezone": "unknown",
+      "date_basis": "official_listing_date_heading",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null,
+      "fetch_is_origin_generation": false,
+      "first_submission_utc": "2026-10-08T06:40:18Z",
+      "listing_body_sha256": "4517f7f7d899a7cf8407669b340b452260c029801f46a66eb22e941a8b51d55e",
+      "listing_fetch_completed_utc": "2026-10-11T04:30:35.169073Z",
+      "listing_item_index": 86,
+      "listing_response_age_seconds": 179916,
+      "listing_source_url": "https://arxiv.org/list/cs.AI/recent?skip=0&show=2000",
+      "literal_new_submission_heading": null,
+      "observed_group": "primary_non_cross_list",
+      "version_assessment": "new_primary_v1_inferred_from_v1_link_and_version_history"
+    },
+    "arxiv:2610.11352": {
+      "announcement_clock_timezone": "unknown",
+      "date_basis": "official_listing_date_heading",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null,
+      "fetch_is_origin_generation": false,
+      "first_submission_utc": "2026-10-08T06:45:24Z",
+      "listing_body_sha256": "4517f7f7d899a7cf8407669b340b452260c029801f46a66eb22e941a8b51d55e",
+      "listing_fetch_completed_utc": "2026-10-11T04:30:35.169073Z",
+      "listing_item_index": 85,
+      "listing_response_age_seconds": 179916,
+      "listing_source_url": "https://arxiv.org/list/cs.AI/recent?skip=0&show=2000",
+      "literal_new_submission_heading": null,
+      "observed_group": "primary_non_cross_list",
+      "version_assessment": "new_primary_v1_inferred_from_v1_link_and_version_history"
+    },
+    "arxiv:2610.11358": {
+      "announcement_clock_timezone": "unknown",
+      "date_basis": "official_listing_date_heading",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null,
+      "fetch_is_origin_generation": false,
+      "first_submission_utc": "2026-10-08T06:49:28Z",
+      "listing_body_sha256": "4517f7f7d899a7cf8407669b340b452260c029801f46a66eb22e941a8b51d55e",
+      "listing_fetch_completed_utc": "2026-10-11T04:30:35.169073Z",
+      "listing_item_index": 83,
+      "listing_response_age_seconds": 179916,
+      "listing_source_url": "https://arxiv.org/list/cs.AI/recent?skip=0&show=2000",
+      "literal_new_submission_heading": null,
+      "observed_group": "primary_non_cross_list",
+      "version_assessment": "new_primary_v1_inferred_from_v1_link_and_version_history"
+    },
+    "arxiv:2610.11370": {
+      "announcement_clock_timezone": "unknown",
+      "date_basis": "official_listing_date_heading",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null,
+      "fetch_is_origin_generation": false,
+      "first_submission_utc": "2026-10-08T07:03:17Z",
+      "listing_body_sha256": "4517f7f7d899a7cf8407669b340b452260c029801f46a66eb22e941a8b51d55e",
+      "listing_fetch_completed_utc": "2026-10-11T04:30:35.169073Z",
+      "listing_item_index": 81,
+      "listing_response_age_seconds": 179916,
+      "listing_source_url": "https://arxiv.org/list/cs.AI/recent?skip=0&show=2000",
+      "literal_new_submission_heading": null,
+      "observed_group": "primary_non_cross_list",
+      "version_assessment": "new_primary_v1_inferred_from_v1_link_and_version_history"
+    },
+    "arxiv:2610.11464": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.11472": {
+      "announcement_clock_timezone": "unknown",
+      "date_basis": "official_listing_date_heading",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null,
+      "first_submission_utc": "2026-10-08T08:21:31Z",
+      "listing_body_sha256": "4517f7f7d899a7cf8407669b340b452260c029801f46a66eb22e941a8b51d55e",
+      "listing_item_index": 71,
+      "listing_response_age_seconds": 179916,
+      "listing_source_url": "https://arxiv.org/list/cs.AI/recent?skip=0&show=2000",
+      "literal_new_submission_heading": null,
+      "observed_group": "primary_non_cross_list",
+      "version_assessment": "new_primary_v1_inferred_from_v1_link_and_version_history"
+    },
+    "arxiv:2610.11552": {
+      "announcement_clock_timezone": "unknown",
+      "date_basis": "official_listing_date_heading",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null,
+      "first_submission_utc": "2026-10-08T09:15:28Z",
+      "listing_body_sha256": "4517f7f7d899a7cf8407669b340b452260c029801f46a66eb22e941a8b51d55e",
+      "listing_item_index": 65,
+      "listing_response_age_seconds": 179916,
+      "listing_source_url": "https://arxiv.org/list/cs.AI/recent?skip=0&show=2000",
+      "literal_new_submission_heading": null,
+      "observed_group": "primary_non_cross_list",
+      "version_assessment": "new_primary_v1_inferred_from_v1_link_and_version_history"
+    },
+    "arxiv:2610.11559": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.11573": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.11578": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.11593": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.11600": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.11613": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.11620": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.11647": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.11655": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.11707": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.11715": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.11750": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.11773": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.11775": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.11781": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.11794": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.11858": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.11989": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.12002": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.12056": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.12061": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.12083": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.12085": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.12086": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.12114": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.12124": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.12129": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.12168": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.12176": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.12235": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.12242": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.12269": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.12274": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.12292": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.12303": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.12304": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.12313": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.12325": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.12360": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.12361": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.12374": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.12375": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.12409": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.12410": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.12436": {
+      "date_basis": "official_listing_v1_inference",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null
+    },
+    "arxiv:2610.10619": {
+      "date_basis": "official_listing_date_heading",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null,
+      "first_submission_utc": "2026-10-07T07:58:04Z",
+      "listing_source_url": "https://arxiv.org/list/cs.SE/new",
+      "listing_body_sha256": "552955554c42cae7f1a5bdef627b02faea3c048ebd669145ab472ea605a2b77c",
+      "listing_item_anchor": "https://arxiv.org/list/cs.SE/new#item3",
+      "observed_group": "New submissions (showing 33 of 33 entries)",
+      "category_event_types": {
+        "cs.AI": "cross",
+        "cs.SE": "new"
+      },
+      "version_assessment": "literal_v1_HTML_anchor_and_served_abs_v1_history_and_PDF_imprint",
+      "literal_new_submission_heading": true,
+      "announcement_clock_timezone": "unknown",
+      "listing_response_age_seconds": 187942,
+      "fetch_is_origin_generation": false,
+      "fresh_origin_current_version_guarantee": false
+    },
+    "arxiv:2610.10786": {
+      "date_basis": "official_listing_date_heading",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null,
+      "first_submission_utc": "2026-10-07T18:45:45Z",
+      "listing_source_url": "https://arxiv.org/list/cs.AI/new",
+      "listing_body_sha256": "b90f424b0f7f266c323265e93a5253a85776d99fa237f4ca51e7011a7be353fd",
+      "listing_item_anchor": "https://arxiv.org/list/cs.AI/new#item7",
+      "observed_group": "New submissions (showing 125 of 125 entries)",
+      "category_event_types": {
+        "cs.AI": "new",
+        "cs.CL": "cross",
+        "cs.LG": "cross"
+      },
+      "version_assessment": "literal_v1_HTML_anchor_and_served_abs_v1_history_and_PDF_imprint",
+      "literal_new_submission_heading": true,
+      "announcement_clock_timezone": "unknown",
+      "listing_response_age_seconds": 187421,
+      "fetch_is_origin_generation": false,
+      "fresh_origin_current_version_guarantee": false
+    },
+    "arxiv:2610.11169": {
+      "date_basis": "official_listing_date_heading",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null,
+      "first_submission_utc": "2026-10-08T03:25:22Z",
+      "listing_source_url": "https://arxiv.org/list/cs.SE/new",
+      "listing_body_sha256": "552955554c42cae7f1a5bdef627b02faea3c048ebd669145ab472ea605a2b77c",
+      "listing_item_anchor": "https://arxiv.org/list/cs.SE/new#item13",
+      "observed_group": "New submissions (showing 33 of 33 entries)",
+      "category_event_types": {
+        "cs.CR": "cross",
+        "cs.SE": "new"
+      },
+      "version_assessment": "literal_v1_HTML_anchor_and_served_abs_v1_history_and_PDF_imprint",
+      "literal_new_submission_heading": true,
+      "announcement_clock_timezone": "unknown",
+      "listing_response_age_seconds": 187942,
+      "fetch_is_origin_generation": false,
+      "fresh_origin_current_version_guarantee": false
+    },
+    "arxiv:2610.11602": {
+      "date_basis": "official_listing_date_heading",
+      "date_value": "2026-10-09",
+      "event_timestamp_utc": null,
+      "first_submission_utc": "2026-10-08T09:47:18Z",
+      "listing_source_url": "https://arxiv.org/list/cs.CR/new",
+      "listing_body_sha256": "168f4cf4d6e38d3b6ba463bb5824cc8aeead114b892cad645b3f9019906db745",
+      "listing_item_anchor": "https://arxiv.org/list/cs.CR/new#item33",
+      "observed_group": "New submissions (showing 49 of 49 entries)",
+      "category_event_types": {
+        "cs.CR": "new",
+        "cs.SE": "cross"
+      },
+      "version_assessment": "literal_v1_HTML_anchor_and_served_abs_v1_history_and_PDF_imprint",
+      "literal_new_submission_heading": true,
+      "announcement_clock_timezone": "unknown",
+      "listing_response_age_seconds": 188261,
+      "fetch_is_origin_generation": false,
+      "fresh_origin_current_version_guarantee": false
+    }
   },
+  "error_summary": "PARTIAL 部分更新：保留113篇公開基線中的Oct9原58篇及順序；本批四份新評審依原規則4選4追加Papers，Oct9共62篇、總117篇未共同重排。首次投稿Oct7或Oct8與官方Oct9列表日分開；精確公告時間及時區未知，擷取時間不當原站生成時間。既有材料HOLD保持。",
+  "finished_at": "2026-10-10T03:29:00+00:00",
+  "full_day_candidate_total": null,
+  "items_total": null,
+  "preserved_baseline_body_sha256": "913939315c9bd231ccc36ed91983f5eac747006bb3038927818e9b231bb63ec9",
+  "preserved_baseline_commit": "8e80cb510903562f9a517bf9aba932239315dcf3",
+  "preserved_baseline_count": 58,
+  "preserved_baseline_kind": "accepted_public113_bytes",
+  "preview_only": false,
+  "prior_reviewed_total_count": null,
+  "release_scope_note": "All 113 published baseline stories and the original 58 Oct9 entries retain their order. This batch selects 4 of 4 fresh reviews by unchanged rules and appends them to Papers in subset order, without jointly reranking the 62 Oct9 entries or all 117 stories. First submissions on Oct7 or Oct8 differ from the official Oct9 listing date; exact announcement time and timezone remain unknown. Fetch time is not origin-generation time. Existing material holds remain. Newly selected: TestJack, Plan-and-Patch, Skill Constellations, Where Do the Tokens Go? Understanding and Reducing Costs in LLM Agents for Vulnerability Discovery. Existing material holds and missing historical packets remain.",
+  "release_state": "bounded_partial_new_reviews",
+  "reviewed_selected_count": 62,
+  "reviewed_total_count": null,
+  "run_id": "bounded-partial-additive-2026-10-09",
+  "source_collection_cutoff_utc": null,
+  "started_at": "2026-10-10T03:29:00+00:00",
+  "stories_total": 62,
+  "success": true
+},
   "sources_status": [
     {
       "category": null,
