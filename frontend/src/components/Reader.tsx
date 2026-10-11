@@ -71,15 +71,17 @@ function Section({
 
 /**
  * 摘要 / Summary in the reading language: the Chinese guide written by the
- * pipeline's LLM, or the English abstract. When the reading language has no
+ * pipeline, or the English guide (falling back to the source summary for older
+ * records). When the reading language has no
  * text yet, the other one is shown and labelled; nothing is machine-translated
  * in the browser.
  */
 function Summary({ story }: { story: Story }) {
   const { lang, t } = useLang()
   const { prefs } = useLibrary()
-  const own = lang === 'zh' ? story.summaryZh : story.abstract || null
-  const other = lang === 'zh' ? story.abstract || null : story.summaryZh
+  const english = story.summaryEn || story.abstract || null
+  const own = lang === 'zh' ? story.summaryZh : english
+  const other = lang === 'zh' ? english : story.summaryZh
   const fallbackLang = lang === 'zh' ? 'en' : 'zh'
   const shown = own ?? other
 
@@ -94,11 +96,11 @@ function Summary({ story }: { story: Story }) {
             tone="warning"
             title={t(
               '每日 LLM 翻譯尚未產生這篇的中文標題與導讀，先顯示原文摘要。',
-              'The source has no original summary; showing the Chinese guide.',
+              'No English guide or source summary is available; showing the Chinese guide.',
             )}
           >
             <TriangleAlert {...ICON_SM} />
-            {t('中文導讀尚未產生', 'No original summary')}
+            {t('中文導讀尚未產生', 'No English summary')}
           </Badge>
         ) : null
       }
@@ -119,7 +121,7 @@ function Summary({ story }: { story: Story }) {
           className="group rounded-md border border-line-subtle px-3 py-2"
         >
           <summary className="cursor-pointer text-meta text-fg-3 select-none group-open:mb-2">
-            {lang === 'zh' ? '原文摘要' : 'Chinese guide (中文導讀)'}
+            {lang === 'zh' ? '英文摘要' : 'Chinese summary (中文摘要)'}
             <span className="ml-2 hidden md:inline">
               <Kbd>E</Kbd>
             </span>

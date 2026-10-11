@@ -51,6 +51,19 @@ export function FulltextBadge({ status }: { status: Evaluation['fulltext'] }) {
         {t('全文評估', 'Full text')}
       </Badge>
     )
+  if (status === 'partial')
+    return (
+      <Badge
+        tone="warning"
+        title={t(
+          '評分依據為已取得的部分內容，並非完整全文',
+          'Scored from available partial content, not the complete text',
+        )}
+      >
+        <FileText {...ICON_SM} />
+        {t('部分內容評估', 'Partial text')}
+      </Badge>
+    )
   if (status === 'abstract_only')
     return (
       <Badge

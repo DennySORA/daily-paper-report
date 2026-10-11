@@ -79,7 +79,7 @@ describe('reader prose', () => {
       '中文原始評語。',
       'Faithful English assessment translation.',
     )
-    expect(container.textContent).toContain('原文摘要')
+    expect(container.textContent).toContain('英文摘要')
     expect(container.textContent).not.toContain('英文原文')
     const section = container.querySelector('section[aria-labelledby="rationale-title"]')!
     act(() => setLang('en'))
@@ -87,6 +87,7 @@ describe('reader prose', () => {
       'Faithful English assessment translation.',
     )
     expect(section.querySelector('[lang="zh-Hant"]')?.textContent).toBe('中文原始評語。')
+    expect(container.textContent).toContain('Chinese summary (中文摘要)')
   })
   it('does not duplicate a Chinese original as an English comparison', () => {
     const { container } = showReader('中文原始評語。', '中文原始評語。')

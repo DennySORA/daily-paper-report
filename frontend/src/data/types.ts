@@ -71,8 +71,10 @@ export interface RawStory {
   story_id: string
   title: string
   title_zh?: string | null
+  title_en?: string | null
   summary?: string | null
   summary_zh?: string | null
+  summary_en?: string | null
   primary_link: RawLink
   links?: RawLink[]
   entities?: string[]

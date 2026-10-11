@@ -59,14 +59,25 @@ and fails closed on a changed baseline. See [tag deployment](../docs/TAG-DEPLOYM
   hidden with `F` for full-width reading) and a raised reading pane with its
   own toolbar. Below 1024 px the list is the page and the reader opens as a
   full-screen layer with back/forward navigation.
+- **Scrolling**: below 1024 px, ordinary views use document scrolling. Their
+  `.scroll-region` wrappers must not create contained, unconstrained scroll
+  boxes; gestures on calendar cells, rows and blank panel space must reach the
+  document. At 1024 px and above, the fixed-height shell keeps independent
+  contained panes. The mobile full-screen reader retains its own explicit
+  scrolling and restores the document when closed.
 - **Languages** (requested by the owner): the interface and the reading
   language switch between Traditional Chinese and English, stored in
   `dpr.prefs.v1`. Strings sit next to their component as `t(zh, en)`; there
   is no i18n package or key catalogue. 摘要／Summary shows the Chinese guide
-  or the English abstract for the chosen language, with the other one behind
+  or the supplied English guide for the chosen language, with the other one behind
   a disclosure (`E`). Chinese titles and guides come only from the pipeline's
   LLM translation; nothing is machine-translated in the browser, and a story
   still waiting for its translation is labelled as such.
+  Optional `title_en` and `summary_en` fields supply the English title and guide;
+  older records fall back to `title` and `summary`. The source summary remains
+  separate in the view model, and missing English content is labelled when the
+  Chinese guide is shown instead. A `partial` evaluation basis is shown as
+  partial content, distinct from full text, abstract-only and unknown.
 - **Signatures**: the six-dimension scorecard (compact strip under the title,
   sticky side panel when the pane is wider than 1024 px); keyboard triage
   (`J`/`K`/`O`/`P`/`S`/`M`/`E`, `1–5`, `[`/`]`, `F`, `B`, `?`); `⌘K` palette that

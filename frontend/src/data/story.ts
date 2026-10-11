@@ -86,7 +86,7 @@ export interface Evaluation {
   rationaleZh: string | null
   rationaleEn: string | null
   evidence: string[]
-  fulltext: 'complete' | 'abstract_only' | 'unknown'
+  fulltext: 'complete' | 'partial' | 'abstract_only' | 'unknown'
   model: string | null
   promptVersion: string | null
   fulltextSha: string | null
@@ -105,6 +105,7 @@ export interface Story {
   titleZh: string | null
   titleEn: string
   summaryZh: string | null
+  summaryEn: string | null
   abstract: string
   url: string
   arxivId: string | null
@@ -154,7 +155,10 @@ function evaluationOf(raw: RawStory): Evaluation | null {
     rationaleZh: cleanReadingText(ev.rationale_zh) || null,
     rationaleEn: cleanReadingText(ev.rationale_en) || null,
     evidence: (ev.evidence ?? []).map((item) => cleanText(item)).filter(Boolean),
-    fulltext: status === 'complete' || status === 'abstract_only' ? status : 'unknown',
+    fulltext:
+      status === 'complete' || status === 'partial' || status === 'abstract_only'
+        ? status
+        : 'unknown',
     model: ev.model || null,
     promptVersion: ev.prompt_version || null,
     fulltextSha: ev.fulltext_sha256 || null,
@@ -181,8 +185,9 @@ export function toStory(
     group,
     kind: kindOf(raw),
     titleZh,
-    titleEn: cleanText(raw.title) || raw.story_id,
+    titleEn: cleanText(raw.title_en) || cleanText(raw.title) || raw.story_id,
     summaryZh,
+    summaryEn: cleanReadingText(raw.summary_en) || null,
     abstract: cleanReadingText(raw.summary),
     url: raw.primary_link?.url ?? '',
     arxivId: raw.arxiv_id ?? null,

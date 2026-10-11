@@ -1,5 +1,5 @@
 // @vitest-environment jsdom
-import { act, cleanup, render } from '@testing-library/react'
+import { act, cleanup, fireEvent, render } from '@testing-library/react'
 import { HashRouter, MemoryRouter, Route, Routes } from 'react-router'
 import { afterEach, beforeAll, describe, expect, it, vi } from 'vitest'
 import { routerOptions } from '../app/App'
@@ -31,8 +31,38 @@ const layout = (
 beforeAll(() => installDomShims(true))
 afterEach(() => {
   cleanup()
+  installDomShims(true)
+  document.documentElement.style.removeProperty('overflow')
   vi.useRealTimers()
   for (const id of IDS) setRead(id, false)
+})
+
+describe('mobile reader scroll ownership', () => {
+  it('keeps an explicit overlay scroller and restores document scrolling after close and unmount', () => {
+    installDomShims(false)
+    document.documentElement.style.overflow = 'auto'
+    const { container, getByRole, queryByRole, unmount } = render(
+      <MemoryRouter initialEntries={[`/day/2026-09-30?p=${encodeURIComponent(IDS[0]!)}`]}>
+        {layout}
+      </MemoryRouter>,
+    )
+
+    const overlay = getByRole('dialog')
+    expect(overlay.classList.contains('overflow-y-auto')).toBe(true)
+    expect(overlay.classList.contains('overscroll-contain')).toBe(true)
+    expect(overlay.classList.contains('scroll-region')).toBe(false)
+    expect(document.documentElement.style.overflow).toBe('hidden')
+
+    fireEvent.click(getByRole('link', { name: '返回列表' }))
+    expect(queryByRole('dialog')).toBeNull()
+    expect(document.documentElement.style.overflow).toBe('auto')
+
+    fireEvent.click(container.querySelector<HTMLAnchorElement>(`[data-story-id="${IDS[0]}"]`)!)
+    expect(getByRole('dialog')).not.toBeNull()
+    expect(document.documentElement.style.overflow).toBe('hidden')
+    unmount()
+    expect(document.documentElement.style.overflow).toBe('auto')
+  })
 })
 
 describe('read marking', () => {
